@@ -1,66 +1,206 @@
 # Getting Started
 
-Willkommen in der Dokumentation der Casoon UI Library. Hier finden Sie alle grundlegenden Informationen, die Sie benötigen, um mit der Bibliothek zu arbeiten.
+## Einführung
 
-## Was ist die Casoon UI Library?
+Die Casoon UI Library ist eine moderne, flexible und zugängliche Komponentenbibliothek für Webanwendungen. Sie bietet:
 
-Die Casoon UI Library ist eine moderne, modulare CSS-Bibliothek, die speziell für die Entwicklung von Webanwendungen entwickelt wurde. Sie bietet:
+- **Modulare Komponenten**: Jede Komponente kann unabhängig verwendet werden
+- **Responsive Design**: Optimiert für alle Bildschirmgrößen
+- **Zugänglichkeit**: WCAG 2.1 konform
+- **Theming**: Anpassbare Designs und Farben
+- **Performance**: Optimiert für schnelle Ladezeiten
 
-- **Modulares Design**: Importieren Sie nur die Komponenten, die Sie benötigen
-- **Responsive Layouts**: Vordefinierte Grid-Systeme und Breakpoints
-- **Design Tokens**: Konsistente Farben, Typografie und Abstände
-- **Utility-Klassen**: Schnelle Styling-Lösungen für häufige Aufgaben
-- **Theming**: Einfache Anpassung des Designs an Ihre Marke
+## Installation
 
-## Erste Schritte
+### Voraussetzungen
 
-Um mit der Casoon UI Library zu beginnen, folgen Sie diesen Schritten:
+- Node.js (Version 14 oder höher)
+- npm, yarn oder pnpm
+- Git
 
-1. [Installation](/getting-started/installation) - Installieren Sie die Bibliothek in Ihrem Projekt
-2. [Design Tokens](/getting-started/tokens) - Lernen Sie die grundlegenden Design-Prinzipien kennen
-3. [Typografie](/getting-started/typography) - Verstehen Sie das Typografie-System
-4. [Layout](/getting-started/layout) - Nutzen Sie das responsive Grid-System
-5. [Utilities](/getting-started/utilities) - Entdecken Sie die nützlichen Utility-Klassen
+### Schritt 1: Repository klonen
 
-## Grundlegende Konzepte
+```bash
+# Neues Repository initialisieren
+git init
 
-### CSS-Module
+# Repository klonen
+git clone https://github.com/your-username/casoon-ui-lib.git
 
-Die Bibliothek ist in einzelne CSS-Module aufgeteilt, die Sie nach Bedarf importieren können:
-
-```astro
----
-import 'casoon-ui-lib/modules/button.module.css';
-import 'casoon-ui-lib/modules/layout.module.css';
----
+# In das Projektverzeichnis wechseln
+cd casoon-ui-lib
 ```
 
-### Design Tokens
+### Schritt 2: Abhängigkeiten installieren
 
-Die Bibliothek verwendet CSS-Variablen für konsistente Design-Elemente:
+```bash
+# Mit npm
+npm install casoon-ui-lib
+
+# Oder mit yarn
+yarn add casoon-ui-lib
+
+# Oder mit pnpm
+pnpm add casoon-ui-lib
+```
+
+### Schritt 3: In Ihrem Projekt verwenden
 
 ```css
-:root {
-  --color-primary: var(--color-blue-500);
-  --spacing-unit: var(--spacing-4);
-  --border-radius: var(--radius-lg);
+/* Basis-Styles importieren */
+@import 'casoon-ui-lib/styles/base.css';
+
+/* Benötigte Module importieren */
+@import 'casoon-ui-lib/modules/button.module.css';
+@import 'casoon-ui-lib/modules/input.module.css';
+@import 'casoon-ui-lib/modules/modal.module.css';
+
+/* Theme importieren */
+@import 'casoon-ui-lib/themes/default.css';
+```
+
+## Framework Integration
+
+### React
+
+```jsx
+import 'casoon-ui-lib/styles/base.css';
+import 'casoon-ui-lib/modules/button.module.css';
+
+function MyComponent() {
+  return (
+    <button className="c-button c-button--primary">
+      Klick mich
+    </button>
+  );
 }
 ```
 
-### Responsive Design
+### Vue
 
-Nutzen Sie die eingebauten Breakpoints für responsives Design:
+```vue
+<template>
+  <button class="c-button c-button--primary">
+    Klick mich
+  </button>
+</template>
 
-```astro
-<div class="container">
-  <div class="grid grid--responsive">
-    <div class="col col--sm-12 col--md-6 col--lg-4">Inhalt</div>
-  </div>
-</div>
+<script>
+import 'casoon-ui-lib/styles/base.css';
+import 'casoon-ui-lib/modules/button.module.css';
+
+export default {
+  name: 'MyComponent'
+}
+</script>
+```
+
+### Angular
+
+```typescript
+import { Component } from '@angular/core';
+import 'casoon-ui-lib/styles/base.css';
+import 'casoon-ui-lib/modules/button.module.css';
+
+@Component({
+  selector: 'app-my-component',
+  template: `
+    <button class="c-button c-button--primary">
+      Klick mich
+    </button>
+  `
+})
+export class MyComponent {}
+```
+
+## Best Practices
+
+### Komponenten-Verwendung
+
+1. **Modularität**
+   - Importieren Sie nur die benötigten Komponenten
+   - Vermeiden Sie globale Styles
+   - Nutzen Sie CSS-Module für bessere Isolation
+
+2. **Zugänglichkeit**
+   - Verwenden Sie semantische HTML-Elemente
+   - Implementieren Sie ARIA-Attribute
+   - Stellen Sie ausreichenden Kontrast sicher
+
+3. **Responsive Design**
+   - Testen Sie auf verschiedenen Bildschirmgrößen
+   - Nutzen Sie die eingebauten Breakpoints
+   - Implementieren Sie mobile-first Ansätze
+
+### Performance-Optimierung
+
+1. **CSS-Optimierung**
+   ```css
+   /* Nur benötigte Module importieren */
+   @import 'casoon-ui-lib/modules/button.module.css';
+   @import 'casoon-ui-lib/modules/input.module.css';
+   ```
+
+2. **Tree Shaking**
+   - Nutzen Sie moderne Bundler wie Webpack oder Rollup
+   - Aktivieren Sie CSS-Module für bessere Optimierung
+   - Entfernen Sie ungenutzte Styles
+
+3. **Lazy Loading**
+   ```javascript
+   // Dynamische Imports für große Komponenten
+   import('casoon-ui-lib/modules/modal.module.css');
+   ```
+
+## Häufige Fragen (FAQ)
+
+### Installation
+
+**F: Wie aktualisiere ich die Bibliothek?**
+A: Führen Sie `npm update casoon-ui-lib` aus oder aktualisieren Sie die Version in Ihrer `package.json`.
+
+**F: Kann ich die Bibliothek ohne npm verwenden?**
+A: Ja, Sie können die CSS-Dateien direkt von einem CDN einbinden.
+
+### Komponenten
+
+**F: Wie passe ich das Design an?**
+A: Nutzen Sie CSS-Variablen oder überschreiben Sie die Styles mit höherer Spezifität.
+
+**F: Sind die Komponenten mit allen Browsern kompatibel?**
+A: Die Bibliothek unterstützt alle modernen Browser und IE11 mit Polyfills.
+
+## Troubleshooting
+
+### Häufige Probleme
+
+1. **Styles werden nicht angewendet**
+   - Überprüfen Sie die Import-Pfade
+   - Stellen Sie sicher, dass CSS-Module aktiviert sind
+   - Überprüfen Sie die Spezifität Ihrer Styles
+
+2. **Komponenten funktionieren nicht**
+   - Überprüfen Sie die Browser-Kompatibilität
+   - Stellen Sie sicher, dass alle Abhängigkeiten installiert sind
+   - Überprüfen Sie die Konsole auf Fehler
+
+3. **Performance-Probleme**
+   - Reduzieren Sie die Anzahl der importierten Module
+   - Nutzen Sie Code-Splitting
+   - Optimieren Sie Ihre Bundler-Konfiguration
+
+### Debugging
+
+```javascript
+// Aktivieren Sie Debug-Modus
+:root {
+  --debug: true;
+}
 ```
 
 ## Nächste Schritte
 
-- [Installation](/getting-started/installation) - Erfahren Sie, wie Sie die Bibliothek in Ihrem Projekt einrichten
-- [Komponenten](/components/) - Entdecken Sie die verfügbaren UI-Komponenten
-- [Beispiele](/examples/) - Sehen Sie sich praktische Anwendungsbeispiele an 
+- [Komponenten Übersicht](/getting-started/components)
+- [Design System](/foundation/colors)
+- [Theming](/foundation/theming)
+- [Zugänglichkeit](/foundation/accessibility) 
