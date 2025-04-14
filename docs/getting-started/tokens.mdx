@@ -1,0 +1,111 @@
+# Design Tokens
+
+Design Tokens sind die grundlegenden Bausteine unseres Design-Systems. Sie definieren konsistente Werte für Farben, Typografie, Abstände und mehr.
+
+## Farben
+
+Die Bibliothek verwendet das OKLCH-Farbmodell für bessere Farbkonsistenz und Zugänglichkeit.
+
+```css
+:root {
+  /* Primäre Farben */
+  --color-primary: var(--color-blue-500);
+  --color-secondary: var(--color-gray-500);
+  
+  /* Textfarben */
+  --color-text: var(--color-gray-900);
+  --color-text-light: var(--color-gray-600);
+  
+  /* Hintergrundfarben */
+  --color-background: var(--color-white);
+  --color-background-alt: var(--color-gray-50);
+}
+```
+
+## Typografie
+
+```css
+:root {
+  /* Schriftfamilien */
+  --font-family-sans: system-ui, -apple-system, sans-serif;
+  --font-family-mono: ui-monospace, monospace;
+  
+  /* Schriftgrößen */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  
+  /* Zeilenhöhen */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+}
+```
+
+## Abstände
+
+```css
+:root {
+  /* Basisabstände */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  
+  /* Container-Abstände */
+  --container-padding: var(--spacing-4);
+  --section-spacing: var(--spacing-8);
+}
+```
+
+## Border Radius
+
+```css
+:root {
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+}
+```
+
+## Schatten
+
+```css
+:root {
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+```
+
+## Verwendung
+
+Sie können diese Tokens in Ihrem CSS wie folgt verwenden:
+
+```css
+.button {
+  background-color: var(--color-primary);
+  padding: var(--spacing-3) var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  box-shadow: var(--shadow-sm);
+}
+```
+
+## Anpassung
+
+Um die Tokens anzupassen, überschreiben Sie sie einfach in Ihrem eigenen CSS:
+
+```css
+:root {
+  --color-primary: #ff0000;
+  --font-family-sans: 'Helvetica Neue', sans-serif;
+  --spacing-4: 2rem;
+}
+``` 

@@ -1,0 +1,66 @@
+# Getting Started
+
+Willkommen in der Dokumentation der Casoon UI Library. Hier finden Sie alle grundlegenden Informationen, die Sie benötigen, um mit der Bibliothek zu arbeiten.
+
+## Was ist die Casoon UI Library?
+
+Die Casoon UI Library ist eine moderne, modulare CSS-Bibliothek, die speziell für die Entwicklung von Webanwendungen entwickelt wurde. Sie bietet:
+
+- **Modulares Design**: Importieren Sie nur die Komponenten, die Sie benötigen
+- **Responsive Layouts**: Vordefinierte Grid-Systeme und Breakpoints
+- **Design Tokens**: Konsistente Farben, Typografie und Abstände
+- **Utility-Klassen**: Schnelle Styling-Lösungen für häufige Aufgaben
+- **Theming**: Einfache Anpassung des Designs an Ihre Marke
+
+## Erste Schritte
+
+Um mit der Casoon UI Library zu beginnen, folgen Sie diesen Schritten:
+
+1. [Installation](/getting-started/installation) - Installieren Sie die Bibliothek in Ihrem Projekt
+2. [Design Tokens](/getting-started/tokens) - Lernen Sie die grundlegenden Design-Prinzipien kennen
+3. [Typografie](/getting-started/typography) - Verstehen Sie das Typografie-System
+4. [Layout](/getting-started/layout) - Nutzen Sie das responsive Grid-System
+5. [Utilities](/getting-started/utilities) - Entdecken Sie die nützlichen Utility-Klassen
+
+## Grundlegende Konzepte
+
+### CSS-Module
+
+Die Bibliothek ist in einzelne CSS-Module aufgeteilt, die Sie nach Bedarf importieren können:
+
+```astro
+---
+import 'casoon-ui-lib/modules/button.module.css';
+import 'casoon-ui-lib/modules/layout.module.css';
+---
+```
+
+### Design Tokens
+
+Die Bibliothek verwendet CSS-Variablen für konsistente Design-Elemente:
+
+```css
+:root {
+  --color-primary: var(--color-blue-500);
+  --spacing-unit: var(--spacing-4);
+  --border-radius: var(--radius-lg);
+}
+```
+
+### Responsive Design
+
+Nutzen Sie die eingebauten Breakpoints für responsives Design:
+
+```astro
+<div class="container">
+  <div class="grid grid--responsive">
+    <div class="col col--sm-12 col--md-6 col--lg-4">Inhalt</div>
+  </div>
+</div>
+```
+
+## Nächste Schritte
+
+- [Installation](/getting-started/installation) - Erfahren Sie, wie Sie die Bibliothek in Ihrem Projekt einrichten
+- [Komponenten](/components/) - Entdecken Sie die verfügbaren UI-Komponenten
+- [Beispiele](/examples/) - Sehen Sie sich praktische Anwendungsbeispiele an 

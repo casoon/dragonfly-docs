@@ -1,0 +1,193 @@
+# Toast
+
+Die Casoon UI Library bietet flexible Toast-Komponenten für kurze Benachrichtigungen.
+
+## Installation
+
+```bash
+npm install casoon-ui-lib
+```
+
+## Verwendung
+
+```css
+@import 'casoon-ui-lib/modules/toast.module.css';
+```
+
+## Beispiele
+
+### Standard Toast
+
+```html
+<!-- Info Toast -->
+<div class="toast">
+  <div class="toast__icon">
+    <i class="icon icon--info"></i>
+  </div>
+  <div class="toast__content">
+    <p class="toast__message">Dies ist eine kurze Nachricht.</p>
+  </div>
+  <button class="toast__close">
+    <i class="icon icon--close"></i>
+  </button>
+</div>
+```
+
+### Varianten
+
+```html
+<!-- Success Toast -->
+<div class="toast toast--success">
+  <div class="toast__icon">
+    <i class="icon icon--check"></i>
+  </div>
+  <div class="toast__content">
+    <p class="toast__message">Aktion erfolgreich!</p>
+  </div>
+</div>
+
+<!-- Warning Toast -->
+<div class="toast toast--warning">
+  <div class="toast__icon">
+    <i class="icon icon--warning"></i>
+  </div>
+  <div class="toast__content">
+    <p class="toast__message">Bitte überprüfen Sie Ihre Eingabe.</p>
+  </div>
+</div>
+
+<!-- Error Toast -->
+<div class="toast toast--error">
+  <div class="toast__icon">
+    <i class="icon icon--error"></i>
+  </div>
+  <div class="toast__content">
+    <p class="toast__message">Ein Fehler ist aufgetreten.</p>
+  </div>
+</div>
+```
+
+### Positionierung
+
+```html
+<!-- Top Left Toast -->
+<div class="toast toast--top-left">
+  <div class="toast__content">
+    <p class="toast__message">Oben links</p>
+  </div>
+</div>
+
+<!-- Top Center Toast -->
+<div class="toast toast--top-center">
+  <div class="toast__content">
+    <p class="toast__message">Oben mittig</p>
+  </div>
+</div>
+
+<!-- Top Right Toast -->
+<div class="toast toast--top-right">
+  <div class="toast__content">
+    <p class="toast__message">Oben rechts</p>
+  </div>
+</div>
+
+<!-- Bottom Left Toast -->
+<div class="toast toast--bottom-left">
+  <div class="toast__content">
+    <p class="toast__message">Unten links</p>
+  </div>
+</div>
+
+<!-- Bottom Center Toast -->
+<div class="toast toast--bottom-center">
+  <div class="toast__content">
+    <p class="toast__message">Unten mittig</p>
+  </div>
+</div>
+
+<!-- Bottom Right Toast -->
+<div class="toast toast--bottom-right">
+  <div class="toast__content">
+    <p class="toast__message">Unten rechts</p>
+  </div>
+</div>
+```
+
+### Animationen
+
+```html
+<!-- Fade Toast -->
+<div class="toast toast--fade">
+  <div class="toast__content">
+    <p class="toast__message">Diese Nachricht wird ausgeblendet.</p>
+  </div>
+</div>
+
+<!-- Slide Toast -->
+<div class="toast toast--slide">
+  <div class="toast__content">
+    <p class="toast__message">Diese Nachricht wird eingeschoben.</p>
+  </div>
+</div>
+```
+
+## CSS Variablen
+
+```css
+:root {
+  /* Toast */
+  --toast-padding: var(--spacing-3);
+  --toast-border-radius: var(--radius-md);
+  --toast-box-shadow: var(--shadow-md);
+  --toast-max-width: 350px;
+  
+  /* Toast Colors */
+  --toast-bg: var(--white);
+  --toast-color: var(--gray-900);
+  
+  /* Toast Icon */
+  --toast-icon-size: 1.25rem;
+  --toast-icon-margin: var(--spacing-2);
+  
+  /* Toast Message */
+  --toast-message-font-size: var(--text-sm);
+  --toast-message-color: var(--gray-700);
+  
+  /* Toast Close */
+  --toast-close-size: 1rem;
+  --toast-close-color: var(--gray-500);
+  --toast-close-hover-color: var(--gray-700);
+  
+  /* Toast Position */
+  --toast-position-top: 1rem;
+  --toast-position-right: 1rem;
+  --toast-position-bottom: 1rem;
+  --toast-position-left: 1rem;
+  
+  /* Toast Animation */
+  --toast-animation-duration: 0.3s;
+  --toast-animation-timing: ease-in-out;
+}
+```
+
+## Best Practices
+
+1. **Zugänglichkeit**:
+   - Verwenden Sie ARIA-Attribute für Status und Rolle
+   - Stellen Sie sicher, dass der Toast-Text für Screenreader verfügbar ist
+   - Implementieren Sie Tastatur-Navigation
+
+2. **Responsive**:
+   - Optimieren Sie die Größe für mobile Geräte
+   - Verwenden Sie angemessene Abstände
+   - Passen Sie die Positionierung bei Bedarf an
+
+3. **Performance**:
+   - Begrenzen Sie die Anzahl gleichzeitiger Toasts
+   - Optimieren Sie die Animationen
+   - Entfernen Sie nicht mehr benötigte Toasts
+
+4. **UX**:
+   - Halten Sie die Nachrichten kurz und prägnant
+   - Verwenden Sie Toasts sparsam
+   - Geben Sie Feedback bei Interaktionen 

@@ -1,0 +1,146 @@
+# Accordion
+
+Die Casoon UI Library bietet flexible Accordion-Komponenten für aufklappbare Inhalte.
+
+## Standard Accordion
+
+```html
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">
+      <span class="accordion-title">Abschnitt 1</span>
+      <span class="accordion-icon">▼</span>
+    </button>
+    <div class="accordion-content">
+      <p>Inhalt von Abschnitt 1</p>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <button class="accordion-header">
+      <span class="accordion-title">Abschnitt 2</span>
+      <span class="accordion-icon">▼</span>
+    </button>
+    <div class="accordion-content">
+      <p>Inhalt von Abschnitt 2</p>
+    </div>
+  </div>
+</div>
+```
+
+## Accordion Varianten
+
+```html
+<!-- Bordered Accordion -->
+<div class="accordion accordion--bordered">
+  <!-- Accordion-Inhalt -->
+</div>
+
+<!-- Flush Accordion -->
+<div class="accordion accordion--flush">
+  <!-- Accordion-Inhalt -->
+</div>
+
+<!-- Multiple Accordion -->
+<div class="accordion accordion--multiple">
+  <!-- Accordion-Inhalt -->
+</div>
+```
+
+## Accordion mit Icons
+
+```html
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">
+      <span class="accordion-icon">📝</span>
+      <span class="accordion-title">Dokumentation</span>
+      <span class="accordion-arrow">▼</span>
+    </button>
+    <div class="accordion-content">
+      <!-- Inhalt -->
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <button class="accordion-header">
+      <span class="accordion-icon">⚙️</span>
+      <span class="accordion-title">Einstellungen</span>
+      <span class="accordion-arrow">▼</span>
+    </button>
+    <div class="accordion-content">
+      <!-- Inhalt -->
+    </div>
+  </div>
+</div>
+```
+
+## Accordion mit Animation
+
+```html
+<!-- Fade Accordion -->
+<div class="accordion accordion--fade">
+  <!-- Accordion-Inhalt -->
+</div>
+
+<!-- Slide Accordion -->
+<div class="accordion accordion--slide">
+  <!-- Accordion-Inhalt -->
+</div>
+
+<!-- Scale Accordion -->
+<div class="accordion accordion--scale">
+  <!-- Accordion-Inhalt -->
+</div>
+```
+
+## CSS Variablen
+
+```css
+:root {
+  /* Accordion */
+  --accordion-border-color: var(--gray-200);
+  --accordion-border-radius: var(--radius);
+  --accordion-spacing: var(--spacing-4);
+  
+  /* Accordion Header */
+  --accordion-header-padding: var(--spacing-4);
+  --accordion-header-bg: var(--white);
+  --accordion-header-hover-bg: var(--gray-50);
+  --accordion-header-active-bg: var(--gray-100);
+  
+  /* Accordion Content */
+  --accordion-content-padding: var(--spacing-4);
+  --accordion-content-bg: var(--white);
+  
+  /* Accordion Icon */
+  --accordion-icon-size: 1.25rem;
+  --accordion-icon-color: var(--gray-600);
+  
+  /* Accordion Animation */
+  --accordion-transition-duration: 200ms;
+  --accordion-transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+```
+
+## Best Practices
+
+1. **Zugänglichkeit**:
+   - Verwenden Sie semantische HTML-Elemente
+   - Implementieren Sie ARIA-Attribute
+   - Stellen Sie sicher, dass die Tastaturnavigation funktioniert
+
+2. **Responsive**:
+   - Optimieren Sie die Darstellung für mobile Geräte
+   - Verwenden Sie angemessene Abstände
+   - Stellen Sie sicher, dass der Inhalt gut lesbar ist
+
+3. **Performance**:
+   - Vermeiden Sie komplexe Animationen
+   - Optimieren Sie die Rendering-Performance
+   - Lazy-Loaden Sie Inhalte wenn möglich
+
+4. **UX**:
+   - Bieten Sie klare visuelle Hinweise
+   - Implementieren Sie Hover- und Focus-States
+   - Geben Sie Feedback bei Benutzerinteraktionen 

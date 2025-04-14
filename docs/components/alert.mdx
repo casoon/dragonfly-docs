@@ -1,0 +1,174 @@
+# Alert
+
+Die Casoon UI Library bietet flexible Alert-Komponenten für Benachrichtigungen und Feedback.
+
+## Installation
+
+```bash
+npm install casoon-ui-lib
+```
+
+## Verwendung
+
+```css
+@import 'casoon-ui-lib/modules/alert.module.css';
+```
+
+## Beispiele
+
+### Standard Alert
+
+```html
+<!-- Info Alert -->
+<div class="alert">
+  <div class="alert__icon">
+    <i class="icon icon--info"></i>
+  </div>
+  <div class="alert__content">
+    <h4 class="alert__title">Information</h4>
+    <p class="alert__message">Dies ist eine informative Nachricht.</p>
+  </div>
+  <button class="alert__close">
+    <i class="icon icon--close"></i>
+  </button>
+</div>
+```
+
+### Varianten
+
+```html
+<!-- Success Alert -->
+<div class="alert alert--success">
+  <div class="alert__icon">
+    <i class="icon icon--check"></i>
+  </div>
+  <div class="alert__content">
+    <h4 class="alert__title">Erfolg</h4>
+    <p class="alert__message">Die Aktion wurde erfolgreich ausgeführt.</p>
+  </div>
+</div>
+
+<!-- Warning Alert -->
+<div class="alert alert--warning">
+  <div class="alert__icon">
+    <i class="icon icon--warning"></i>
+  </div>
+  <div class="alert__content">
+    <h4 class="alert__title">Warnung</h4>
+    <p class="alert__message">Bitte überprüfen Sie Ihre Eingaben.</p>
+  </div>
+</div>
+
+<!-- Error Alert -->
+<div class="alert alert--error">
+  <div class="alert__icon">
+    <i class="icon icon--error"></i>
+  </div>
+  <div class="alert__content">
+    <h4 class="alert__title">Fehler</h4>
+    <p class="alert__message">Ein Fehler ist aufgetreten.</p>
+  </div>
+</div>
+```
+
+### Aktionen
+
+```html
+<!-- Alert mit Button -->
+<div class="alert">
+  <div class="alert__content">
+    <p class="alert__message">Möchten Sie diese Aktion ausführen?</p>
+  </div>
+  <div class="alert__actions">
+    <button class="button button--primary">Bestätigen</button>
+    <button class="button button--secondary">Abbrechen</button>
+  </div>
+</div>
+
+<!-- Alert mit Link -->
+<div class="alert">
+  <div class="alert__content">
+    <p class="alert__message">Neue Version verfügbar!</p>
+    <a href="#" class="alert__link">Jetzt aktualisieren</a>
+  </div>
+</div>
+```
+
+### Animationen
+
+```html
+<!-- Fade Alert -->
+<div class="alert alert--fade">
+  <div class="alert__content">
+    <p class="alert__message">Diese Nachricht wird ausgeblendet.</p>
+  </div>
+</div>
+
+<!-- Slide Alert -->
+<div class="alert alert--slide">
+  <div class="alert__content">
+    <p class="alert__message">Diese Nachricht wird eingeschoben.</p>
+  </div>
+</div>
+```
+
+## CSS Variablen
+
+```css
+:root {
+  /* Alert */
+  --alert-padding: var(--spacing-4);
+  --alert-border-radius: var(--radius-md);
+  --alert-border-width: 1px;
+  --alert-border-style: solid;
+  
+  /* Alert Colors */
+  --alert-bg: var(--white);
+  --alert-border-color: var(--gray-200);
+  --alert-color: var(--gray-900);
+  
+  /* Alert Icon */
+  --alert-icon-size: 1.5rem;
+  --alert-icon-margin: var(--spacing-3);
+  
+  /* Alert Title */
+  --alert-title-font-size: var(--text-lg);
+  --alert-title-font-weight: var(--font-bold);
+  --alert-title-margin: 0 0 var(--spacing-2);
+  
+  /* Alert Message */
+  --alert-message-font-size: var(--text-base);
+  --alert-message-color: var(--gray-700);
+  
+  /* Alert Close */
+  --alert-close-size: 1.25rem;
+  --alert-close-color: var(--gray-500);
+  --alert-close-hover-color: var(--gray-700);
+  
+  /* Alert Animation */
+  --alert-animation-duration: 0.3s;
+  --alert-animation-timing: ease-in-out;
+}
+```
+
+## Best Practices
+
+1. **Zugänglichkeit**:
+   - Verwenden Sie ARIA-Attribute für Status und Rolle
+   - Stellen Sie sicher, dass der Alert-Text für Screenreader verfügbar ist
+   - Implementieren Sie Tastatur-Navigation
+
+2. **Responsive**:
+   - Optimieren Sie das Layout für mobile Geräte
+   - Verwenden Sie angemessene Abstände
+   - Passen Sie die Schriftgrößen an
+
+3. **Performance**:
+   - Vermeiden Sie zu viele animierte Alerts
+   - Optimieren Sie die Animationen
+   - Entfernen Sie nicht mehr benötigte Alerts
+
+4. **UX**:
+   - Verwenden Sie klare und prägnante Nachrichten
+   - Bieten Sie Handlungsmöglichkeiten an
+   - Geben Sie Feedback bei Interaktionen 

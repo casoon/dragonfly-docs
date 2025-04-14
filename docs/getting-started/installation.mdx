@@ -1,0 +1,794 @@
+# Installation
+
+Diese Seite beschreibt die verschiedenen Möglichkeiten, die Casoon UI Library in Ihrem Projekt zu installieren und zu verwenden.
+
+## Voraussetzungen
+
+- Node.js 16 oder höher
+- npm oder ein anderer Package Manager (yarn, pnpm)
+- Ein Astro-Projekt
+
+## Installation mit npm
+
+```bash
+npm install casoon-ui-lib
+```
+
+## Installation mit yarn
+
+```bash
+yarn add casoon-ui-lib
+```
+
+## Installation mit pnpm
+
+```bash
+pnpm add casoon-ui-lib
+```
+
+## Verwendung in Astro
+
+### Basis-Import
+
+```astro
+---
+// Importiere die Basis-Styles
+import 'casoon-ui-lib/core.css';
+---
+
+<html>
+  <head>
+    <title>Meine Astro-Seite</title>
+  </head>
+  <body>
+    <!-- Dein Inhalt -->
+  </body>
+</html>
+```
+
+### Modulare Verwendung
+
+```astro
+---
+// Importiere nur die benötigten Module
+import 'casoon-ui-lib/modules/button.module.css';
+import 'casoon-ui-lib/modules/input.module.css';
+---
+
+<button class="btn btn--primary">Primärer Button</button>
+<input class="input" type="text" placeholder="Eingabefeld">
+```
+
+### Mit Lightning CSS
+
+```astro
+---
+import { css } from 'lightningcss';
+import buttonStyles from 'casoon-ui-lib/modules/button.module.css';
+
+const styles = css`
+  .custom-button {
+    composes: ${buttonStyles.btn};
+    background: var(--color-primary);
+    
+    &:hover {
+      background: var(--color-primary-dark);
+    }
+  }
+`;
+---
+
+<button class="custom-button">Custom Button</button>
+```
+
+## Verwendung
+
+### CSS-Module
+
+Die Casoon UI Library ist in einzelne CSS-Module aufgeteilt, die Sie nach Bedarf importieren können:
+
+```astro
+---
+// Import einzelner Module
+import 'casoon-ui-lib/modules/button.module.css';
+import 'casoon-ui-lib/modules/input.module.css';
+import 'casoon-ui-lib/modules/modal.module.css';
+---
+
+<!-- Verwendung der importierten Module -->
+<button class="btn btn--primary">Button</button>
+<input class="input" type="text">
+<div class="modal">Modal</div>
+```
+
+### Design Tokens
+
+Die Bibliothek verwendet CSS-Variablen für Design Tokens:
+
+```astro
+---
+import 'casoon-ui-lib/core.css';
+---
+
+<style>
+  .custom-element {
+    --color-primary: var(--color-blue-500);
+    --spacing-unit: var(--spacing-4);
+    --border-radius: var(--radius-lg);
+  }
+</style>
+```
+
+### Responsive Design
+
+Nutzen Sie die eingebauten Breakpoints für responsives Design:
+
+```astro
+---
+import 'casoon-ui-lib/modules/layout.module.css';
+---
+
+<div class="container">
+  <div class="grid grid--responsive">
+    <div class="col col--sm-12 col--md-6 col--lg-4">Inhalt</div>
+  </div>
+</div>
+```
+
+### Theming
+
+Passen Sie das Aussehen mit CSS-Variablen an:
+
+```astro
+---
+import 'casoon-ui-lib/core.css';
+---
+
+<style>
+  :root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --font-family-base: 'Inter', sans-serif;
+    --border-radius: 0.5rem;
+  }
+</style>
+```
+
+### Komponenten-Wrapper
+
+Erstellen Sie wiederverwendbare Astro-Komponenten:
+
+```astro
+---
+// Button.astro
+const { variant = 'primary', size = 'md' } = Astro.props;
+---
+
+<button 
+  class:list={[
+    'btn',
+    `btn--${variant}`,
+    `btn--${size}`
+  ]}
+>
+  <slot />
+</button>
+```
+
+### Themes
+
+Die Casoon UI Library bietet eine Reihe vordefinierter Themes, die Sie einfach in Ihr Projekt integrieren können:
+
+```astro
+---
+// Import eines vordefinierten Themes
+import 'casoon-ui-lib/themes/ocean.css';
+---
+
+<!-- Theme wird automatisch auf alle Komponenten angewendet -->
+<button class="btn btn--primary">Ocean Theme Button</button>
+```
+
+#### Verfügbare Themes
+
+1. **Ocean Theme**
+   - Blau-dominantes Farbschema
+   - Ideal für maritime oder technische Anwendungen
+   ```astro
+   import 'casoon-ui-lib/themes/ocean.css';
+   ```
+
+2. **Forest Theme**
+   - Grün-dominantes Farbschema
+   - Perfekt für Natur- oder Umweltanwendungen
+   ```astro
+   import 'casoon-ui-lib/themes/forest.css';
+   ```
+
+3. **Sunset Theme**
+   - Warme, orange-rote Farbtöne
+   - Geeignet für kreative oder künstlerische Projekte
+   ```astro
+   import 'casoon-ui-lib/themes/sunset.css';
+   ```
+
+4. **Night Theme**
+   - Dunkles Farbschema
+   - Optimiert für Nachtmodus oder Low-Light-Umgebungen
+   ```astro
+   import 'casoon-ui-lib/themes/night.css';
+   ```
+
+5. **Pastel Theme**
+   - Sanfte, pastellfarbene Töne
+   - Ideal für zarte oder feminine Designs
+   ```astro
+   import 'casoon-ui-lib/themes/pastel.css';
+   ```
+
+#### Theme-Wechsel zur Laufzeit
+
+Sie können Themes auch dynamisch zur Laufzeit wechseln:
+
+```astro
+---
+import 'casoon-ui-lib/themes/ocean.css';
+import 'casoon-ui-lib/themes/night.css';
+---
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('theme-night');
+  }
+</script>
+
+<button onclick="toggleTheme()">Theme wechseln</button>
+```
+
+#### Theme-Anpassung
+
+Jedes Theme kann durch Überschreiben der CSS-Variablen angepasst werden:
+
+```astro
+---
+import 'casoon-ui-lib/themes/ocean.css';
+---
+
+<style>
+  :root {
+    /* Überschreiben von Theme-Variablen */
+    --color-primary: var(--color-blue-600);
+    --color-secondary: var(--color-teal-500);
+    --color-background: var(--color-gray-50);
+  }
+</style>
+```
+
+## Konfiguration
+
+### Astro-Konfiguration
+
+Fügen Sie in Ihrer `astro.config.mjs` folgende Konfiguration hinzu:
+
+```js
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({
+  vite: {
+    css: {
+      transformer: 'lightningcss'
+    }
+  }
+});
+```
+
+### CSS-Konfiguration
+
+Erstellen Sie eine `postcss.config.js`:
+
+```js
+module.exports = {
+  plugins: {
+    'lightningcss': {}
+  }
+};
+```
+
+## CDN-Verwendung
+
+Alternativ können Sie die Bibliothek auch über CDN einbinden:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/casoon-ui-lib@latest/core.css">
+```
+
+## Troubleshooting
+
+### Häufige Probleme
+
+1. **Module nicht gefunden**
+   - Stellen Sie sicher, dass die Bibliothek korrekt installiert ist
+   - Überprüfen Sie die Pfade in Ihren Import-Statements
+
+2. **Styles werden nicht angewendet**
+   - Überprüfen Sie die CSS-Konfiguration
+   - Stellen Sie sicher, dass Lightning CSS korrekt eingerichtet ist
+
+3. **Performance-Probleme**
+   - Verwenden Sie nur die benötigten Module
+   - Nutzen Sie die Lightning CSS-Optimierungen
+
+## Nächste Schritte
+
+- [Komponenten](/components/) - Entdecken Sie die verfügbaren Komponenten
+- [Beispiele](/examples/) - Sehen Sie sich praktische Beispiele an
+- [Effekte](/effects/) - Lernen Sie die verfügbaren Effekte kennen
+
+## Anpassungen
+
+Die Casoon UI Library bietet verschiedene Möglichkeiten zur Anpassung, um sie an Ihre spezifischen Anforderungen anzupassen.
+
+### CSS-Variablen
+
+Die Bibliothek verwendet CSS-Variablen für die wichtigsten Design-Aspekte:
+
+```astro
+---
+import 'casoon-ui-lib/core.css';
+---
+
+<style>
+  :root {
+    /* Farben */
+    --color-primary: var(--color-blue-500);
+    --color-secondary: var(--color-gray-600);
+    --color-background: var(--color-white);
+    --color-text: var(--color-gray-900);
+    
+    /* Typografie */
+    --font-family-base: 'Inter', system-ui, sans-serif;
+    --font-size-base: 1rem;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    
+    /* Abstände */
+    --spacing-unit: 0.25rem;
+    --spacing-1: calc(var(--spacing-unit) * 1);
+    --spacing-2: calc(var(--spacing-unit) * 2);
+    --spacing-4: calc(var(--spacing-unit) * 4);
+    
+    /* Rahmen */
+    --border-radius-sm: 0.125rem;
+    --border-radius-md: 0.25rem;
+    --border-radius-lg: 0.5rem;
+    
+    /* Schatten */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+</style>
+```
+
+### Komponenten-Anpassung
+
+Jede Komponente kann individuell angepasst werden:
+
+```astro
+---
+import 'casoon-ui-lib/modules/button.module.css';
+---
+
+<style>
+  /* Button-Anpassungen */
+  .btn {
+    --btn-padding: var(--spacing-2) var(--spacing-4);
+    --btn-border-radius: var(--border-radius-md);
+    --btn-font-size: var(--font-size-base);
+    --btn-font-weight: var(--font-weight-medium);
+  }
+  
+  /* Spezifische Button-Varianten */
+  .btn--primary {
+    --btn-background: var(--color-primary);
+    --btn-color: var(--color-white);
+    --btn-border-color: var(--color-primary);
+  }
+</style>
+```
+
+### Responsive Anpassungen
+
+Passen Sie das Layout für verschiedene Bildschirmgrößen an:
+
+```astro
+---
+import 'casoon-ui-lib/modules/layout.module.css';
+---
+
+<style>
+  /* Breakpoints */
+  @media (min-width: 640px) {
+    :root {
+      --container-padding: var(--spacing-4);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    :root {
+      --container-max-width: 1200px;
+    }
+  }
+</style>
+```
+
+### Theme-Erweiterung
+
+Erstellen Sie ein eigenes Theme basierend auf einem bestehenden:
+
+```astro
+---
+import 'casoon-ui-lib/themes/ocean.css';
+---
+
+<style>
+  /* Erweitern des Ocean-Themes */
+  :root {
+    --color-primary: var(--color-teal-500);
+    --color-secondary: var(--color-cyan-400);
+    --color-accent: var(--color-indigo-500);
+    
+    /* Angepasste Schatten */
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+</style>
+```
+
+### Utility-Klassen
+
+Erstellen Sie eigene Utility-Klassen:
+
+```astro
+---
+import 'casoon-ui-lib/core.css';
+---
+
+<style>
+  /* Eigene Utility-Klassen */
+  .text-gradient {
+    background: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .hover-scale {
+    transition: transform 0.2s ease;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+</style>
+```
+
+### Performance-Optimierung
+
+Optimieren Sie die Performance durch selektive Importe:
+
+```astro
+---
+// Importieren Sie nur die benötigten Module
+import 'casoon-ui-lib/modules/button.module.css';
+import 'casoon-ui-lib/modules/input.module.css';
+import 'casoon-ui-lib/modules/layout.module.css';
+
+// Verwenden Sie Lightning CSS für optimierte Styles
+import { css } from 'lightningcss';
+
+const styles = css`
+  .optimized-component {
+    composes: btn;
+    /* Optimierte Styles */
+  }
+`;
+---
+```
+
+### Best Practices für Anpassungen
+
+1. **CSS-Variablen verwenden**
+   - Nutzen Sie die vorhandenen CSS-Variablen
+   - Definieren Sie neue Variablen für wiederverwendbare Werte
+
+2. **Modulare Anpassungen**
+   - Passen Sie Komponenten einzeln an
+   - Vermeiden Sie globale Überschreibungen
+
+3. **Responsive Design**
+   - Verwenden Sie die eingebauten Breakpoints
+   - Testen Sie Anpassungen auf verschiedenen Bildschirmgrößen
+
+4. **Performance**
+   - Importieren Sie nur benötigte Module
+   - Nutzen Sie Lightning CSS für optimierte Styles
+
+5. **Wartbarkeit**
+   - Dokumentieren Sie Anpassungen
+   - Verwenden Sie konsistente Namenskonventionen 
+
+## Framework
+
+### Astro
+
+Die Casoon UI Library ist speziell für die Verwendung mit Astro optimiert. Hier finden Sie detaillierte Informationen zur Integration.
+
+#### Projekt-Setup
+
+1. **Neues Astro-Projekt erstellen**
+   ```bash
+   npm create astro@latest mein-projekt
+   cd mein-projekt
+   ```
+
+2. **Casoon UI Library installieren**
+   ```bash
+   npm install casoon-ui-lib
+   ```
+
+3. **Astro-Konfiguration anpassen**
+   ```js
+   // astro.config.mjs
+   import { defineConfig } from 'astro/config';
+
+   export default defineConfig({
+     vite: {
+       css: {
+         transformer: 'lightningcss'
+       }
+     }
+   });
+   ```
+
+#### Komponenten-Integration
+
+1. **Basis-Komponente erstellen**
+   ```astro
+   ---
+   // src/components/Button.astro
+   const { variant = 'primary', size = 'md' } = Astro.props;
+   ---
+
+   <button 
+     class:list={[
+       'btn',
+       `btn--${variant}`,
+       `btn--${size}`
+     ]}
+   >
+     <slot />
+   </button>
+   ```
+
+2. **Layout-Komponente**
+   ```astro
+   ---
+   // src/components/Layout.astro
+   import 'casoon-ui-lib/modules/layout.module.css';
+   ---
+
+   <div class="container">
+     <header class="header">
+       <slot name="header" />
+     </header>
+     <main class="main">
+       <slot />
+     </main>
+     <footer class="footer">
+       <slot name="footer" />
+     </footer>
+   </div>
+   ```
+
+#### Theme-Integration
+
+1. **Theme-Komponente**
+   ```astro
+   ---
+   // src/components/ThemeProvider.astro
+   const { theme = 'ocean' } = Astro.props;
+   ---
+
+   <div class:list={[`theme-${theme}`]}>
+     <slot />
+   </div>
+   ```
+
+2. **Theme-Wechsel**
+   ```astro
+   ---
+   // src/pages/index.astro
+   import ThemeProvider from '../components/ThemeProvider.astro';
+   ---
+
+   <ThemeProvider theme="ocean">
+     <!-- Seiteninhalt -->
+   </ThemeProvider>
+   ```
+
+#### Performance-Optimierung
+
+1. **Selektive Importe**
+   ```astro
+   ---
+   // Nur benötigte Module importieren
+   import 'casoon-ui-lib/modules/button.module.css';
+   import 'casoon-ui-lib/modules/layout.module.css';
+   ---
+   ```
+
+2. **CSS-Optimierung mit Lightning CSS**
+   ```astro
+   ---
+   import { css } from 'lightningcss';
+   import buttonStyles from 'casoon-ui-lib/modules/button.module.css';
+
+   const styles = css`
+     .optimized-button {
+       composes: ${buttonStyles.btn};
+       /* Zusätzliche Styles */
+     }
+   `;
+   ---
+   ```
+
+#### Best Practices
+
+1. **Komponenten-Struktur**
+   - Erstellen Sie wiederverwendbare Astro-Komponenten
+   - Nutzen Sie Slots für flexible Inhalte
+   - Dokumentieren Sie Props und Events
+
+2. **Styling**
+   - Verwenden Sie CSS-Module für lokale Styles
+   - Nutzen Sie CSS-Variablen für Theming
+   - Implementieren Sie responsive Design
+
+3. **Performance**
+   - Importieren Sie nur benötigte Module
+   - Nutzen Sie Lightning CSS für optimierte Styles
+   - Implementieren Sie Lazy Loading wo möglich
+
+4. **Testing**
+   - Testen Sie Komponenten isoliert
+   - Überprüfen Sie responsive Verhalten
+   - Testen Sie Theme-Wechsel
+
+#### Beispiel-Projekt
+
+Ein vollständiges Beispiel-Projekt finden Sie in unserem [GitHub-Repository](https://github.com/your-org/casoon-ui-lib/tree/main/examples/astro). 
+
+## Ressourcen
+
+### Contributing
+
+Wir freuen uns über Beiträge zur Casoon UI Library! Hier finden Sie alle Informationen, die Sie benötigen, um mitzumachen.
+
+#### Erste Schritte
+
+1. **Repository klonen**
+   ```bash
+   git clone https://github.com/your-org/casoon-ui-lib.git
+   cd casoon-ui-lib
+   ```
+
+2. **Abhängigkeiten installieren**
+   ```bash
+   npm install
+   ```
+
+3. **Entwicklungsserver starten**
+   ```bash
+   npm run dev
+   ```
+
+#### Beitragsrichtlinien
+
+1. **Code-Standards**
+   - Verwenden Sie konsistente Einrückung
+   - Folgen Sie den CSS-Namenskonventionen
+   - Dokumentieren Sie neue Features
+
+2. **Pull Requests**
+   - Erstellen Sie einen Feature-Branch
+   - Beschreiben Sie Ihre Änderungen detailliert
+   - Fügen Sie Tests hinzu, wo möglich
+
+3. **Issue Reporting**
+   - Verwenden Sie die Issue-Vorlage
+   - Beschreiben Sie das Problem detailliert
+   - Fügen Sie Reproduktionsschritte hinzu
+
+#### Dokumentation
+
+1. **Komponenten-Dokumentation**
+   ```markdown
+   # Komponentenname
+
+   ## Beschreibung
+   Kurze Beschreibung der Komponente
+
+   ## Verwendung
+   ```astro
+   // Code-Beispiel
+   ```
+
+   ## Props
+   | Name | Typ | Standard | Beschreibung |
+   |------|-----|----------|--------------|
+   | prop1 | string | 'default' | Beschreibung |
+   ```
+
+2. **Theme-Dokumentation**
+   ```markdown
+   # Theme-Name
+
+   ## Farbpalette
+   - Primärfarbe: `--color-primary`
+   - Sekundärfarbe: `--color-secondary`
+
+   ## Verwendung
+   ```astro
+   import 'casoon-ui-lib/themes/theme-name.css';
+   ```
+   ```
+
+#### Testing
+
+1. **Komponenten-Tests**
+   ```js
+   // test/button.test.js
+   describe('Button', () => {
+     it('renders correctly', () => {
+       // Test-Logik
+     });
+   });
+   ```
+
+2. **Theme-Tests**
+   ```js
+   // test/themes.test.js
+   describe('Themes', () => {
+     it('applies correct colors', () => {
+       // Test-Logik
+     });
+   });
+   ```
+
+#### Veröffentlichung
+
+1. **Versionierung**
+   - Folgen Sie Semantic Versioning
+   - Aktualisieren Sie die CHANGELOG.md
+   - Taggen Sie Releases
+
+2. **NPM-Paket**
+   ```bash
+   npm version patch # oder minor/major
+   npm publish
+   ```
+
+#### Community
+
+- **Discord**: Treten Sie unserer [Discord-Community](https://discord.gg/casoon-ui) bei
+- **GitHub Discussions**: Teilen Sie Ideen in unseren [Discussions](https://github.com/your-org/casoon-ui-lib/discussions)
+- **Twitter**: Folgen Sie uns auf [Twitter](https://twitter.com/casoon_ui) für Updates
+
+#### Lizenz
+
+Alle Beiträge unterliegen der [MIT-Lizenz](LICENSE). 

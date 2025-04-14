@@ -1,0 +1,188 @@
+# Button
+
+Die Button-Komponente bietet verschiedene Stile und Varianten für interaktive Elemente. Sie ist als CSS-Modul verfügbar und kann einfach in Ihr Astro-Projekt integriert werden.
+
+## Installation
+
+```bash
+npm install casoon-ui-lib
+```
+
+## Verwendung
+
+### CSS-Import in Astro
+```astro
+---
+import 'casoon-ui-lib/modules/button.module.css';
+---
+
+<button class="btn">Standard Button</button>
+```
+
+### Mit Lightning CSS
+```astro
+---
+import { css } from 'lightningcss';
+import buttonStyles from 'casoon-ui-lib/modules/button.module.css';
+
+const styles = css`
+  .my-button {
+    composes: ${buttonStyles.btn};
+  }
+`;
+---
+
+<button class="my-button">Custom Button</button>
+```
+
+## Varianten
+
+### Größen
+- `btn--sm`: Kleiner Button
+- `btn--md`: Mittlerer Button (Standard)
+- `btn--lg`: Großer Button
+
+### Stile
+- `btn--primary`: Primärer Button
+- `btn--secondary`: Sekundärer Button
+- `btn--outline`: Outline Button
+- `btn--ghost`: Ghost Button
+- `btn--link`: Link-Button
+
+### Zustände
+- `btn--disabled`: Deaktivierter Button
+- `btn--loading`: Lade-Button
+- `btn--success`: Erfolgs-Button
+- `btn--error`: Fehler-Button
+
+## Beispiele
+
+### Standard Buttons
+```astro
+<button class="btn">Standard</button>
+<button class="btn btn--primary">Primär</button>
+<button class="btn btn--secondary">Sekundär</button>
+```
+
+### Outline Buttons
+```astro
+<button class="btn btn--outline">Outline</button>
+<button class="btn btn--outline-primary">Primär Outline</button>
+```
+
+### Größen
+```astro
+<button class="btn btn--sm">Klein</button>
+<button class="btn btn--md">Mittel</button>
+<button class="btn btn--lg">Groß</button>
+```
+
+### Zustände
+```astro
+<button class="btn" disabled>Deaktiviert</button>
+<button class="btn btn--loading">Lädt...</button>
+<button class="btn btn--success">Erfolg</button>
+<button class="btn btn--error">Fehler</button>
+```
+
+## CSS-Variablen
+
+```css
+--btn-padding: var(--spacing-2) var(--spacing-4);
+--btn-border-radius: var(--radius-md);
+--btn-font-size: var(--font-size-base);
+--btn-font-weight: var(--font-weight-medium);
+--btn-transition: all 0.2s ease;
+```
+
+## Barrierefreiheit
+
+- Buttons haben einen ausreichenden Kontrast
+- Deaktivierte Buttons sind visuell erkennbar
+- Buttons haben einen Fokus-Ring
+- Buttons sind mit Screenreadern kompatibel
+
+## Integration mit Astro
+
+### Basis-Button-Komponente
+```astro
+---
+// Button.astro
+const { variant = 'primary', size = 'md', disabled = false } = Astro.props;
+---
+
+<button 
+  class:list={[
+    'btn',
+    `btn--${variant}`,
+    `btn--${size}`,
+    disabled && 'btn--disabled'
+  ]}
+  disabled={disabled}
+>
+  <slot />
+</button>
+```
+
+### Verwendung der Button-Komponente
+```astro
+---
+import Button from '../components/Button.astro';
+---
+
+<Button variant="primary">Primärer Button</Button>
+<Button variant="secondary" size="lg">Großer Sekundärer Button</Button>
+```
+
+### Mit Lightning CSS
+```astro
+---
+import { css } from 'lightningcss';
+import buttonStyles from 'casoon-ui-lib/modules/button.module.css';
+
+const styles = css`
+  .custom-button {
+    composes: ${buttonStyles.btn};
+    background: var(--color-primary);
+    color: white;
+    
+    &:hover {
+      background: var(--color-primary-dark);
+    }
+  }
+`;
+---
+
+<button class="custom-button">Custom Button</button>
+```
+
+## CSS-Klassen-Referenz
+
+| Klasse | Beschreibung |
+|--------|-------------|
+| `btn` | Basis-Button-Klasse |
+| `btn--primary` | Primärer Button |
+| `btn--secondary` | Sekundärer Button |
+| `btn--outline` | Outline Button |
+| `btn--ghost` | Ghost Button |
+| `btn--link` | Link-Button |
+| `btn--sm` | Kleiner Button |
+| `btn--md` | Mittlerer Button |
+| `btn--lg` | Großer Button |
+| `btn--disabled` | Deaktivierter Button |
+| `btn--loading` | Lade-Button |
+| `btn--success` | Erfolgs-Button |
+| `btn--error` | Fehler-Button |
+
+## API-Referenz
+
+<PropsTable
+  props={[
+    { name: 'variant', type: 'string', default: 'primary', description: 'Button-Variante' },
+    { name: 'size', type: 'string', default: 'md', description: 'Button-Größe' },
+    { name: 'disabled', type: 'boolean', default: 'false', description: 'Deaktiviert den Button' },
+    { name: 'loading', type: 'boolean', default: 'false', description: 'Zeigt Ladezustand an' },
+    { name: 'success', type: 'boolean', default: 'false', description: 'Zeigt Erfolgszustand an' },
+    { name: 'error', type: 'boolean', default: 'false', description: 'Zeigt Fehlerzustand an' }
+  ]}
+/> 

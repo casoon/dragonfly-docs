@@ -1,0 +1,81 @@
+# Komponenten
+
+Die Casoon UI Library bietet eine Vielzahl von wiederverwendbaren Komponenten für Ihre Webanwendung.
+
+## Verfügbare Komponenten
+
+### Button
+
+Die Button-Komponente bietet verschiedene Stile und Größen für Aktionen.
+
+[Mehr erfahren](/components/button)
+
+### Card
+
+Die Card-Komponente bietet einen flexiblen Container für Inhalte.
+
+[Mehr erfahren](/components/card)
+
+### Formulare
+
+Die Formulare-Komponente bietet vordefinierte Styles für Formularelemente.
+
+[Mehr erfahren](/components/forms)
+
+### Modal
+
+Die Modal-Komponente bietet einen flexiblen Dialog für wichtige Informationen.
+
+[Mehr erfahren](/components/modal)
+
+### Sidebar
+
+Die Sidebar-Komponente bietet eine flexible Navigationsleiste.
+
+[Mehr erfahren](/components/sidebar)
+
+### Slider
+
+Die Slider-Komponente bietet eine interaktive Möglichkeit, Werte auszuwählen.
+
+[Mehr erfahren](/components/slider)
+
+## Installation
+
+```bash
+npm install casoon-ui-lib
+```
+
+## Verwendung
+
+```astro
+---
+import 'casoon-ui-lib/modules/button.module.css';
+import 'casoon-ui-lib/modules/card.module.css';
+import 'casoon-ui-lib/modules/forms.module.css';
+import 'casoon-ui-lib/modules/modal.module.css';
+import 'casoon-ui-lib/modules/sidebar.module.css';
+import 'casoon-ui-lib/modules/slider.module.css';
+---
+```
+
+## CSS-Variablen
+
+Alle Komponenten können mit CSS-Variablen angepasst werden:
+
+```css
+:root {
+  --color-primary: var(--color-blue-500);
+  --color-secondary: var(--color-gray-500);
+  --border-radius: var(--radius-md);
+  --spacing-unit: var(--spacing-4);
+}
+```
+
+## Zugänglichkeit
+
+Alle Komponenten sind:
+- Mit Tastatur navigierbar
+- Screen Reader freundlich
+- Responsive
+- Anpassbar 

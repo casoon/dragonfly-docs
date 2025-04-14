@@ -1,0 +1,149 @@
+# Tabs
+
+Die Casoon UI Library bietet flexible Tab-Komponenten für die Organisation von Inhalten.
+
+## Standard Tabs
+
+```html
+<div class="tabs">
+  <div class="tabs-nav">
+    <button class="tabs-tab is-active" data-tab="tab1">Tab 1</button>
+    <button class="tabs-tab" data-tab="tab2">Tab 2</button>
+    <button class="tabs-tab" data-tab="tab3">Tab 3</button>
+  </div>
+  <div class="tabs-content">
+    <div class="tabs-pane is-active" id="tab1">
+      <p>Inhalt von Tab 1</p>
+    </div>
+    <div class="tabs-pane" id="tab2">
+      <p>Inhalt von Tab 2</p>
+    </div>
+    <div class="tabs-pane" id="tab3">
+      <p>Inhalt von Tab 3</p>
+    </div>
+  </div>
+</div>
+```
+
+## Tab Varianten
+
+```html
+<!-- Bordered Tabs -->
+<div class="tabs tabs--bordered">
+  <!-- Tab-Inhalt -->
+</div>
+
+<!-- Pills Tabs -->
+<div class="tabs tabs--pills">
+  <!-- Tab-Inhalt -->
+</div>
+
+<!-- Vertical Tabs -->
+<div class="tabs tabs--vertical">
+  <div class="tabs-nav">
+    <!-- Tab-Navigation -->
+  </div>
+  <div class="tabs-content">
+    <!-- Tab-Inhalt -->
+  </div>
+</div>
+```
+
+## Tabs mit Icons
+
+```html
+<div class="tabs">
+  <div class="tabs-nav">
+    <button class="tabs-tab is-active">
+      <span class="tabs-icon">📝</span>
+      <span>Dokumentation</span>
+    </button>
+    <button class="tabs-tab">
+      <span class="tabs-icon">⚙️</span>
+      <span>Einstellungen</span>
+    </button>
+    <button class="tabs-tab">
+      <span class="tabs-icon">📊</span>
+      <span>Statistiken</span>
+    </button>
+  </div>
+  <div class="tabs-content">
+    <!-- Tab-Inhalt -->
+  </div>
+</div>
+```
+
+## Tabs mit Animation
+
+```html
+<!-- Fade Tabs -->
+<div class="tabs tabs--fade">
+  <!-- Tab-Inhalt -->
+</div>
+
+<!-- Slide Tabs -->
+<div class="tabs tabs--slide">
+  <!-- Tab-Inhalt -->
+</div>
+
+<!-- Scale Tabs -->
+<div class="tabs tabs--scale">
+  <!-- Tab-Inhalt -->
+</div>
+```
+
+## CSS Variablen
+
+```css
+:root {
+  /* Tabs */
+  --tabs-border-color: var(--gray-200);
+  --tabs-border-radius: var(--radius);
+  --tabs-spacing: var(--spacing-4);
+  
+  /* Tabs Navigation */
+  --tabs-nav-padding: var(--spacing-2);
+  --tabs-nav-bg: var(--white);
+  
+  /* Tabs Tab */
+  --tabs-tab-padding: var(--spacing-3) var(--spacing-4);
+  --tabs-tab-color: var(--gray-600);
+  --tabs-tab-hover-color: var(--gray-900);
+  --tabs-tab-active-color: var(--primary);
+  --tabs-tab-active-border-color: var(--primary);
+  
+  /* Tabs Content */
+  --tabs-content-padding: var(--spacing-4);
+  --tabs-content-bg: var(--white);
+  
+  /* Tabs Icon */
+  --tabs-icon-size: 1.25rem;
+  --tabs-icon-spacing: var(--spacing-2);
+  
+  /* Tabs Animation */
+  --tabs-transition-duration: 200ms;
+  --tabs-transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+```
+
+## Best Practices
+
+1. **Zugänglichkeit**:
+   - Verwenden Sie semantische HTML-Elemente
+   - Implementieren Sie ARIA-Attribute
+   - Stellen Sie sicher, dass die Tastaturnavigation funktioniert
+
+2. **Responsive**:
+   - Optimieren Sie die Darstellung für mobile Geräte
+   - Verwenden Sie angemessene Abstände
+   - Stellen Sie sicher, dass der Inhalt gut lesbar ist
+
+3. **Performance**:
+   - Vermeiden Sie komplexe Animationen
+   - Optimieren Sie die Rendering-Performance
+   - Lazy-Loaden Sie Tab-Inhalte wenn möglich
+
+4. **UX**:
+   - Bieten Sie klare visuelle Hinweise
+   - Implementieren Sie Hover- und Focus-States
+   - Geben Sie Feedback bei Benutzerinteraktionen 

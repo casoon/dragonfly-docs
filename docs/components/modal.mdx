@@ -1,0 +1,125 @@
+# Modal
+
+Die Modal-Komponente bietet einen flexiblen Dialog für wichtige Informationen oder Aktionen.
+
+## Installation
+
+```bash
+npm install casoon-ui-lib
+```
+
+## Verwendung
+
+```astro
+---
+import 'casoon-ui-lib/modules/modal.module.css';
+---
+
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modal Titel</h3>
+        <button type="button" class="btn-close" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal-Inhalt</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Abbrechen</button>
+        <button type="button" class="btn btn-primary">Speichern</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Varianten
+
+### Standard Modal
+
+```html
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>Standard Modal-Inhalt</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Modal mit Header und Footer
+
+```html
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Titel</h3>
+        <button type="button" class="btn-close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal-Inhalt</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Abbrechen</button>
+        <button type="button" class="btn btn-primary">Speichern</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Größen
+
+```html
+<!-- Kleines Modal -->
+<div class="modal modal-sm">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Inhalt -->
+    </div>
+  </div>
+</div>
+
+<!-- Großes Modal -->
+<div class="modal modal-lg">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Inhalt -->
+    </div>
+  </div>
+</div>
+```
+
+## CSS-Variablen
+
+```css
+:root {
+  --modal-padding: var(--spacing-4);
+  --modal-border-radius: var(--radius-lg);
+  --modal-background: var(--color-white);
+  --modal-shadow: var(--shadow-lg);
+  --modal-z-index: 1050;
+}
+```
+
+## Anpassung
+
+```css
+:root {
+  --modal-padding: 2rem;
+  --modal-border-radius: 1rem;
+  --modal-background: var(--color-gray-50);
+}
+```
+
+## Zugänglichkeit
+
+- Modal ist mit Tastatur navigierbar
+- Fokus wird im Modal gefangen
+- ESC-Taste schließt das Modal
+- Screen Reader werden korrekt informiert
+- Overlay hat ausreichenden Kontrast 

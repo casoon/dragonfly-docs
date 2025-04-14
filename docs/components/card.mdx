@@ -1,0 +1,101 @@
+# Card
+
+Die Card-Komponente bietet einen flexiblen Container für Inhalte mit verschiedenen Stilen und Optionen.
+
+## Installation
+
+```bash
+npm install casoon-ui-lib
+```
+
+## Verwendung
+
+```astro
+---
+import 'casoon-ui-lib/modules/card.module.css';
+---
+
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Titel</h3>
+  </div>
+  <div class="card-body">
+    <p>Card-Inhalt</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary">Aktion</button>
+  </div>
+</div>
+```
+
+## Varianten
+
+### Standard Card
+
+```html
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Standard Card</h3>
+    <p>Dies ist eine Standard-Card mit Titel und Inhalt.</p>
+  </div>
+</div>
+```
+
+### Card mit Header und Footer
+
+```html
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Card mit Header</h3>
+  </div>
+  <div class="card-body">
+    <p>Card-Inhalt</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary">Aktion</button>
+  </div>
+</div>
+```
+
+### Card mit Bild
+
+```html
+<div class="card">
+  <img src="bild.jpg" class="card-img-top" alt="Beschreibung">
+  <div class="card-body">
+    <h3 class="card-title">Card mit Bild</h3>
+    <p>Card-Inhalt mit Bild oben.</p>
+  </div>
+</div>
+```
+
+## CSS-Variablen
+
+```css
+:root {
+  --card-padding: var(--spacing-4);
+  --card-border-radius: var(--radius-lg);
+  --card-background: var(--color-white);
+  --card-border: 1px solid var(--color-gray-200);
+  --card-shadow: var(--shadow-sm);
+}
+```
+
+## Anpassung
+
+Sie können die Card-Komponente mit eigenen CSS-Variablen anpassen:
+
+```css
+:root {
+  --card-padding: 2rem;
+  --card-border-radius: 0.5rem;
+  --card-background: var(--color-gray-50);
+}
+```
+
+## Zugänglichkeit
+
+- Die Card-Komponente verwendet semantische HTML-Elemente
+- Titel werden mit `<h3>` ausgezeichnet
+- Bilder haben immer einen `alt`-Text
+- Die Komponente ist mit Tastatur navigierbar 

@@ -1,0 +1,145 @@
+# Badge
+
+Die Casoon UI Library bietet flexible Badge-Komponenten für Statusanzeigen und Zähler.
+
+## Installation
+
+```bash
+npm install casoon-ui-lib
+```
+
+## Verwendung
+
+```css
+@import 'casoon-ui-lib/modules/badge.module.css';
+```
+
+## Beispiele
+
+### Standard Badge
+
+```html
+<!-- Text Badge -->
+<span class="badge">Neu</span>
+
+<!-- Number Badge -->
+<span class="badge">42</span>
+
+<!-- Icon Badge -->
+<span class="badge">
+  <i class="icon icon--star"></i>
+</span>
+```
+
+### Varianten
+
+```html
+<!-- Primary Badge -->
+<span class="badge badge--primary">Primary</span>
+
+<!-- Secondary Badge -->
+<span class="badge badge--secondary">Secondary</span>
+
+<!-- Success Badge -->
+<span class="badge badge--success">Success</span>
+
+<!-- Warning Badge -->
+<span class="badge badge--warning">Warning</span>
+
+<!-- Error Badge -->
+<span class="badge badge--error">Error</span>
+```
+
+### Positionierung
+
+```html
+<!-- Top Right Badge -->
+<div class="badge-container">
+  <span class="badge badge--top-right">3</span>
+  <button class="button">Benachrichtigungen</button>
+</div>
+
+<!-- Top Left Badge -->
+<div class="badge-container">
+  <span class="badge badge--top-left">Neu</span>
+  <button class="button">Einstellungen</button>
+</div>
+
+<!-- Bottom Right Badge -->
+<div class="badge-container">
+  <span class="badge badge--bottom-right">5</span>
+  <button class="button">Nachrichten</button>
+</div>
+
+<!-- Bottom Left Badge -->
+<div class="badge-container">
+  <span class="badge badge--bottom-left">!</span>
+  <button class="button">Hilfe</button>
+</div>
+```
+
+### Animationen
+
+```html
+<!-- Pulse Badge -->
+<span class="badge badge--pulse">Neu</span>
+
+<!-- Bounce Badge -->
+<span class="badge badge--bounce">3</span>
+
+<!-- Shake Badge -->
+<span class="badge badge--shake">Wichtig</span>
+```
+
+## CSS Variablen
+
+```css
+:root {
+  /* Badge */
+  --badge-padding: var(--spacing-1) var(--spacing-2);
+  --badge-font-size: var(--text-xs);
+  --badge-font-weight: var(--font-medium);
+  --badge-border-radius: var(--radius-full);
+  --badge-color: var(--white);
+  
+  /* Badge Background */
+  --badge-bg: var(--primary);
+  --badge-primary-bg: var(--primary);
+  --badge-secondary-bg: var(--secondary);
+  --badge-success-bg: var(--success);
+  --badge-warning-bg: var(--warning);
+  --badge-error-bg: var(--error);
+  
+  /* Badge Position */
+  --badge-top: -0.5rem;
+  --badge-right: -0.5rem;
+  --badge-bottom: -0.5rem;
+  --badge-left: -0.5rem;
+  
+  /* Badge Animation */
+  --badge-animation-duration: 1s;
+  --badge-animation-timing: ease-in-out;
+}
+```
+
+## Best Practices
+
+1. **Zugänglichkeit**:
+   - Verwenden Sie ARIA-Attribute
+   - Stellen Sie sicher, dass der Badge-Text für Screenreader verfügbar ist
+   - Verwenden Sie ausreichenden Kontrast
+
+2. **Responsive**:
+   - Optimieren Sie die Größe für mobile Geräte
+   - Stellen Sie sicher, dass der Badge auch auf kleinen Bildschirmen lesbar ist
+   - Passen Sie die Positionierung bei Bedarf an
+
+3. **Performance**:
+   - Vermeiden Sie zu viele animierte Badges
+   - Optimieren Sie die Animationen
+   - Verwenden Sie CSS-Transitions statt JavaScript
+
+4. **UX**:
+   - Verwenden Sie Badges sparsam
+   - Stellen Sie sicher, dass der Zweck klar ist
+   - Aktualisieren Sie den Status regelmäßig 

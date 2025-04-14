@@ -1,0 +1,20 @@
+{
+  "name": "casoon-ui-docs",
+  "version": "0.0.3",
+  "description": "Dokumentation für Casoon UI",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.6.3",
+    "vue": "3.5.13"
+  },
+  "dependencies": {
+    "casoon-ui-lib": "^0.1.2-alpha.0"
+  }
+}
