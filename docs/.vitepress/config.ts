@@ -1,21 +1,19 @@
 import { defineConfig } from 'vitepress'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
   title: 'Casoon UI Library',
   description: 'Eine moderne, flexible und zugängliche Komponentenbibliothek',
   
-  // MDX-Unterstützung aktivieren
-  markdown: {
-    config: (md) => {
-      md.use(require('markdown-it-mdx'))
-    }
+  vite: {
+    plugins: [vueJsx()]
   },
   
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started/' },
-      { text: 'Components', link: '/getting-started/components' },
+      { text: 'Components', link: '/components/' },
       { text: 'Foundation', link: '/foundation/colors' }
     ],
     
@@ -26,31 +24,53 @@ export default defineConfig({
           items: [
             { text: 'Einführung', link: '/getting-started/' },
             { text: 'Installation', link: '/getting-started/installation' },
+            { text: 'Design Tokens', link: '/getting-started/tokens' },
+            { text: 'Typografie', link: '/getting-started/typography' },
+            { text: 'Layout', link: '/getting-started/layout' },
+            { text: 'Utilities', link: '/getting-started/utilities' },
             { text: 'Best Practices', link: '/getting-started/#best-practices' },
             { text: 'FAQ', link: '/getting-started/#häufige-fragen-faq' },
             { text: 'Troubleshooting', link: '/getting-started/#troubleshooting' }
           ]
+        }
+      ],
+      '/components/': [
+        {
+          text: 'Grundlegende Komponenten',
+          items: [
+            { text: 'Button', link: '/components/button' },
+            { text: 'Input', link: '/components/forms' },
+            { text: 'Modal', link: '/components/modal' },
+            { text: 'Alert', link: '/components/alert' },
+            { text: 'Toast', link: '/components/toast' },
+            { text: 'Badge', link: '/components/badge' },
+            { text: 'Tooltip', link: '/components/tooltip' },
+            { text: 'Progress', link: '/components/progress' }
+          ]
         },
         {
-          text: 'Components',
+          text: 'Navigationskomponenten',
           items: [
-            { text: 'Button', link: '/getting-started/button' },
-            { text: 'Input', link: '/getting-started/input' },
-            { text: 'Modal', link: '/getting-started/modal' },
-            { text: 'Alert', link: '/getting-started/alert' },
-            { text: 'Toast', link: '/getting-started/toast' },
-            { text: 'Badge', link: '/getting-started/badge' },
-            { text: 'Tooltip', link: '/getting-started/tooltip' },
-            { text: 'Progress', link: '/getting-started/progress' },
-            { text: 'Tabs', link: '/getting-started/tabs' },
-            { text: 'Accordion', link: '/getting-started/accordion' },
-            { text: 'Dropdown', link: '/getting-started/dropdown' },
-            { text: 'Pagination', link: '/getting-started/pagination' },
-            { text: 'Table', link: '/getting-started/table' },
-            { text: 'Navigation', link: '/getting-started/navigation' },
-            { text: 'Card', link: '/getting-started/card' },
-            { text: 'Slider', link: '/getting-started/slider' },
-            { text: 'Sidebar', link: '/getting-started/sidebar' }
+            { text: 'Tabs', link: '/components/tabs' },
+            { text: 'Accordion', link: '/components/accordion' },
+            { text: 'Dropdown', link: '/components/dropdown' },
+            { text: 'Pagination', link: '/components/pagination' },
+            { text: 'Navigation', link: '/components/navigation' },
+            { text: 'Sidebar', link: '/components/sidebar' }
+          ]
+        },
+        {
+          text: 'Datenkomponenten',
+          items: [
+            { text: 'Table', link: '/components/table' },
+            { text: 'Card', link: '/components/card' },
+            { text: 'Slider', link: '/components/slider' }
+          ]
+        },
+        {
+          text: 'Effekte',
+          items: [
+            { text: 'Animationen', link: '/components/effects' }
           ]
         }
       ],
