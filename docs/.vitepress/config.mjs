@@ -1,13 +1,8 @@
 import { defineConfig } from 'vitepress'
-import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
   title: 'Casoon UI Library',
   description: 'Eine moderne, flexible und zugängliche Komponentenbibliothek',
-  
-  vite: {
-    plugins: [vueJsx()]
-  },
   
   themeConfig: {
     nav: [
@@ -88,4 +83,4 @@ export default defineConfig({
       ]
     }
   }
-}) 
+})
