@@ -4,12 +4,12 @@ Eine moderne, flexible und zugängliche Komponentenbibliothek für Webanwendunge
 
 ## Navigation
 
-- [Einführung](/getting-started/index#einführung)
-- [Installation](/getting-started/index#installation)
-- [Komponenten](/getting-started/components)
-- [Design System](/foundation/colors)
-- [Theming](/foundation/theming)
-- [Zugänglichkeit](/foundation/accessibility)
+- [Einführung](/getting-started/index)
+- [Installation](/getting-started/installation)
+- [Komponenten](/components/index)
+- [Design System](/getting-started/tokens)
+- [Theming](/getting-started/typography)
+- [Zugänglichkeit](/getting-started/layout)
 
 ## Installation
 

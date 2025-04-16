@@ -4,14 +4,15 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineConfig({
   title: 'Casoon UI Library',
   description: 'Eine moderne, flexible und zugängliche Komponentenbibliothek',
-  
+  base: "/casoon-ui-docs/",
+
   vite: {
     plugins: [vueJsx()],
     ssr: {
       noExternal: ['vitepress']
     }
   },
-  
+
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -20,16 +21,16 @@ export default defineConfig({
       { text: 'Foundation', link: '/foundation/colors' },
       { text: 'GitHub', link: 'https://github.com/casoon/casoon-ui-lib' }
     ],
-    
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/casoon/casoon-ui-lib' }
     ],
-    
+
     footer: {
       message: 'Version 0.0.3 | MIT License',
       copyright: 'Copyright © 2024 Casoon'
     },
-    
+
     sidebar: {
       '/getting-started/': [
         {
@@ -101,4 +102,4 @@ export default defineConfig({
       ]
     }
   }
-}) 
+})
