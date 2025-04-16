@@ -3,7 +3,7 @@ name: Deploy VitePress to GitHub Pages
 on:
   push:
     branches:
-      - main  # oder dein Hauptbranch
+      - master  # oder dein Hauptbranch
   workflow_dispatch:
 
 jobs:
