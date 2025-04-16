@@ -1,114 +1,102 @@
 # Effekte
 
-Die Casoon UI Library bietet eine Vielzahl von Animationen und visuellen Effekten für moderne Webanwendungen.
+Die Casoon UI Library bietet eine Vielzahl von Animationen und Effekten für Ihre Komponenten.
 
-## Hover Effekte
+## Hover-Effekte
 
 ### Scale
 
 ```html
-<button class="button button--hover-scale">Hover Scale</button>
+<button class="c-button c-effect--scale">Hover mich</button>
 ```
 
 ### Rotate
 
 ```html
-<button class="button button--hover-rotate">Hover Rotate</button>
+<button class="c-button c-effect--rotate">Hover mich</button>
 ```
 
 ### Glow
 
 ```html
-<button class="button button--hover-glow">Hover Glow</button>
+<button class="c-button c-effect--glow">Hover mich</button>
 ```
 
-## Transition Effekte
+## Transition-Effekte
 
 ### Fade
 
 ```html
-<div class="fade">
-  <div class="fade__content">Fade In/Out</div>
+<div class="c-effect--fade">
+  <p>Fade-In Text</p>
 </div>
 ```
 
 ### Slide
 
 ```html
-<div class="slide">
-  <div class="slide__content">Slide In/Out</div>
+<div class="c-effect--slide">
+  <p>Slide-In Text</p>
 </div>
 ```
 
 ### Zoom
 
 ```html
-<div class="zoom">
-  <div class="zoom__content">Zoom In/Out</div>
+<div class="c-effect--zoom">
+  <p>Zoom-In Text</p>
 </div>
 ```
 
-## Animation Effekte
+## Animation-Effekte
 
 ### Pulse
 
 ```html
-<div class="pulse">
-  <div class="pulse__content">Pulsierender Effekt</div>
-</div>
+<button class="c-button c-effect--pulse">Pulsierender Button</button>
 ```
 
 ### Bounce
 
 ```html
-<div class="bounce">
-  <div class="bounce__content">Springender Effekt</div>
-</div>
+<button class="c-button c-effect--bounce">Springender Button</button>
 ```
 
 ### Shake
 
 ```html
-<div class="shake">
-  <div class="shake__content">Schüttelnder Effekt</div>
-</div>
+<button class="c-button c-effect--shake">Schüttelnder Button</button>
 ```
 
 ## CSS Variablen
 
 ```css
 :root {
-  --transition-duration: 300ms;
-  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
-  --scale-factor: 1.05;
-  --rotate-angle: 5deg;
-  --glow-color: rgba(0, 115, 255, 0.5);
-  --glow-spread: 10px;
+  --effect-duration: 0.3s;
+  --effect-timing: ease;
+  --effect-scale: 1.1;
+  --effect-rotate: 5deg;
+  --effect-glow-color: var(--color-primary);
+  --effect-glow-spread: 10px;
 }
 ```
 
 ## Best Practices
 
 ### Performance
-
-- Verwenden Sie CSS-Transitions statt JavaScript
-- Optimieren Sie Animationen für mobile Geräte
-- Vermeiden Sie zu viele gleichzeitige Animationen
-- Nutzen Sie Hardware-Beschleunigung
+- Verwenden Sie Hardware-Beschleunigung
+- Optimieren Sie Animationen
+- Vermeiden Sie zu viele gleichzeitige Effekte
 
 ### Zugänglichkeit
-
-- Bieten Sie Optionen zum Deaktivieren von Animationen
-- Berücksichtigen Sie Benutzer mit Bewegungssensitivität
-- Stellen Sie alternative Darstellungen bereit
-- Testen Sie mit Screenreadern
+- Stellen Sie sicher, dass Effekte nicht störend sind
+- Bieten Sie Optionen zum Deaktivieren
+- Testen Sie mit verschiedenen Geräten
 
 ### Responsive Design
-
-- Passen Sie Animationen an verschiedene Bildschirmgrößen an
-- Optimieren Sie für Touch-Geräte
-- Berücksichtigen Sie die Netzwerkverbindung
-- Testen Sie auf verschiedenen Geräten
+- Passen Sie Effekte an verschiedene Bildschirmgrößen an
+- Optimieren Sie für mobile Geräte
+- Testen Sie auf verschiedenen Browsern
 
 ## Integration
 
@@ -118,80 +106,11 @@ Die Casoon UI Library bietet eine Vielzahl von Animationen und visuellen Effekte
 ---
 import 'casoon-ui-lib/core.css';
 import 'casoon-ui-lib/themes/day.css';
-
-interface Props {
-  effect: 'hover' | 'transition' | 'animation';
-  type: string;
-  duration?: number;
-  timing?: string;
-}
-
-const {
-  effect,
-  type,
-  duration = 300,
-  timing = 'ease'
-} = Astro.props;
 ---
 
-<div 
-  class:list={[
-    effect,
-    `${effect}--${type}`
-  ]}
-  style={`
-    --transition-duration: ${duration}ms;
-    --transition-timing: ${timing};
-  `}
->
-  <slot />
+<button class="c-button c-effect--scale">Hover mich</button>
+<div class="c-effect--fade">
+  <p>Fade-In Text</p>
 </div>
-
-<style>
-  .hover--scale:hover {
-    transform: scale(var(--scale-factor));
-  }
-  
-  .hover--rotate:hover {
-    transform: rotate(var(--rotate-angle));
-  }
-  
-  .hover--glow:hover {
-    box-shadow: 0 0 var(--glow-spread) var(--glow-color);
-  }
-  
-  .transition--fade {
-    transition: opacity var(--transition-duration) var(--transition-timing);
-  }
-  
-  .animation--pulse {
-    animation: pulse 2s infinite;
-  }
-  
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-  }
-</style>
-```
-
-Verwendung in einer Astro-Komponente:
-
-```astro
----
-import Effect from '../components/Effect.astro';
----
-
-<Effect effect="hover" type="scale">
-  <button class="button">Hover Scale</button>
-</Effect>
-
-<Effect effect="transition" type="fade" duration={500}>
-  <div>Fade Transition</div>
-</Effect>
-
-<Effect effect="animation" type="pulse">
-  <div>Pulsierende Animation</div>
-</Effect>
+<button class="c-button c-effect--pulse">Pulsierender Button</button>
 ``` 
