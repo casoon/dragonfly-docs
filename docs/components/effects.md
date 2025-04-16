@@ -116,7 +116,8 @@ Die Casoon UI Library bietet eine Vielzahl von Animationen und visuellen Effekte
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/effects.module.css';
+import 'casoon-ui-lib/core.css';
+import 'casoon-ui-lib/themes/day.css';
 
 interface Props {
   effect: 'hover' | 'transition' | 'animation';

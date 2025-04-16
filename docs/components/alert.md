@@ -1,190 +1,159 @@
 # Alert
 
-Der Alert ist eine Komponente für Benachrichtigungen und Statusmeldungen in der Casoon UI Library.
+Die Alert-Komponente der Casoon UI Library bietet verschiedene Arten von Benachrichtigungen und Warnmeldungen.
 
 ## Verwendung
 
 ```html
-<div class="alert">
-  <div class="alert__content">
-    <p>Standard Alert</p>
-  </div>
-</div>
-
 <div class="alert alert--success">
-  <div class="alert__content">
-    <p>Erfolgsmeldung</p>
-  </div>
+  Erfolgsmeldung
 </div>
-
 <div class="alert alert--error">
-  <div class="alert__content">
-    <p>Fehlermeldung</p>
-  </div>
+  Fehlermeldung
+</div>
+<div class="alert alert--warning">
+  Warnmeldung
+</div>
+<div class="alert alert--info">
+  Informationsmeldung
 </div>
 ```
 
 ## Varianten
 
-### Typen
+### Mit Icon
 
 ```html
-<div class="alert alert--info">
-  <div class="alert__content">
-    <p>Information</p>
-  </div>
-</div>
-
-<div class="alert alert--warning">
-  <div class="alert__content">
-    <p>Warnung</p>
-  </div>
-</div>
-
 <div class="alert alert--success">
-  <div class="alert__content">
-    <p>Erfolg</p>
-  </div>
-</div>
-
-<div class="alert alert--error">
-  <div class="alert__content">
-    <p>Fehler</p>
-  </div>
+  <span class="alert__icon">✓</span>
+  <span class="alert__content">Erfolgsmeldung mit Icon</span>
 </div>
 ```
 
-### Mit Icons
+### Schließbar
 
 ```html
-<div class="alert alert--info">
-  <div class="alert__icon">
-    <svg>...</svg>
-  </div>
-  <div class="alert__content">
-    <p>Information mit Icon</p>
-  </div>
+<div class="alert alert--info alert--dismissible">
+  <span class="alert__content">Schließbare Meldung</span>
+  <button class="alert__close">×</button>
 </div>
 ```
-
-### Mit Schließen-Button
-
-```html
-<div class="alert">
-  <div class="alert__content">
-    <p>Alert mit Schließen-Button</p>
-  </div>
-  <button class="alert__close">&times;</button>
-</div>
-```
-
-## CSS Variablen
-
-```css
-:root {
-  --alert-padding: 1rem;
-  --alert-border-radius: 0.25rem;
-  --alert-margin-bottom: 1rem;
-  --alert-transition: all 0.3s ease;
-}
-```
-
-## Best Practices
-
-### Zugänglichkeit
-
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie aussagekräftige Texte hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
-
-### Responsive Design
-
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Größen an mobile Geräte an
-
-### Performance
-
-- Minimieren Sie CSS
-- Vermeiden Sie unnötige Animationen
-- Optimieren Sie die Ladezeit
 
 ## Integration
 
-### React
+### Astro
 
-```jsx
-import 'casoon-ui-lib/modules/alert.module.css';
+```astro
+---
+import 'casoon-ui-lib/core.css';
+import 'casoon-ui-lib/themes/day.css'; // oder ein anderes Theme
 
-function Alert({ children, type = 'info', onClose }) {
-  return (
-    <div className={`alert alert--${type}`}>
-      <div className="alert__content">
-        {children}
-      </div>
-      {onClose && (
-        <button className="alert__close" onClick={onClose}>&times;</button>
-      )}
-    </div>
-  );
+interface Props {
+  variant?: 'success' | 'error' | 'warning' | 'info';
+  dismissible?: boolean;
+  icon?: boolean;
 }
-```
 
-### Vue
+const {
+  variant = 'info',
+  dismissible = false,
+  icon = false
+} = Astro.props;
+---
 
-```vue
-<template>
-  <div class="alert" :class="`alert--${type}`">
-    <div class="alert__content">
-      <slot />
-    </div>
-    <button v-if="closable" class="alert__close" @click="$emit('close')">&times;</button>
-  </div>
-</template>
-
-<script>
-export default {
-  props: {
-    type: {
-      type: String,
-      default: 'info'
-    },
-    closable: {
-      type: Boolean,
-      default: false
-    }
-  }
-}
-</script>
+<div
+  class:list={[
+    'alert',
+    `alert--${variant}`,
+    dismissible && 'alert--dismissible'
+  ]}
+>
+  {#if icon}
+    <span class="alert__icon">
+      {#if variant === 'success'}✓{/if}
+      {#if variant === 'error'}✕{/if}
+      {#if variant === 'warning'}⚠{/if}
+      {#if variant === 'info'}ℹ{/if}
+    </span>
+  {/if}
+  <span class="alert__content">
+    <slot />
+  </span>
+  {#if dismissible}
+    <button class="alert__close">×</button>
+  {/if}
+</div>
 
 <style>
-@import 'casoon-ui-lib/modules/alert.module.css';
+  .alert {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+  }
+  
+  .alert--success {
+    background-color: var(--color-success-light);
+    color: var(--color-success-dark);
+    border: 1px solid var(--color-success);
+  }
+  
+  .alert--error {
+    background-color: var(--color-error-light);
+    color: var(--color-error-dark);
+    border: 1px solid var(--color-error);
+  }
+  
+  .alert--warning {
+    background-color: var(--color-warning-light);
+    color: var(--color-warning-dark);
+    border: 1px solid var(--color-warning);
+  }
+  
+  .alert--info {
+    background-color: var(--color-info-light);
+    color: var(--color-info-dark);
+    border: 1px solid var(--color-info);
+  }
+  
+  .alert__icon {
+    margin-right: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .alert__content {
+    flex: 1;
+  }
+  
+  .alert__close {
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity var(--transition-duration) var(--transition-timing);
+  }
+  
+  .alert__close:hover {
+    opacity: 1;
+  }
 </style>
 ```
 
-### Angular
+Verwendung in einer Astro-Komponente:
 
-```typescript
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+```astro
+---
+import Alert from '../components/Alert.astro';
+---
 
-@Component({
-  selector: 'app-alert',
-  template: `
-    <div class="alert" [class]="'alert--' + type">
-      <div class="alert__content">
-        <ng-content></ng-content>
-      </div>
-      <button *ngIf="closable" class="alert__close" (click)="close.emit()">&times;</button>
-    </div>
-  `,
-  styles: [`
-    @import 'casoon-ui-lib/modules/alert.module.css';
-  `]
-})
-export class AlertComponent {
-  @Input() type = 'info';
-  @Input() closable = false;
-  @Output() close = new EventEmitter<void>();
-}
+<Alert variant="success" icon>
+  Die Operation war erfolgreich!
+</Alert>
+
+<Alert variant="error" dismissible>
+  Ein Fehler ist aufgetreten.
+</Alert>
 ``` 

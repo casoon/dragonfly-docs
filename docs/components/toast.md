@@ -1,135 +1,43 @@
 # Toast
 
-Der Toast ist eine Komponente für kurzlebige Benachrichtigungen in der Casoon UI Library.
+Die Toast-Komponente der Casoon UI Library bietet temporäre Benachrichtigungen, die nach einer bestimmten Zeit automatisch verschwinden.
 
 ## Verwendung
 
 ```html
-<div class="toast">
-  <div class="toast__content">
-    <p>Standard Toast</p>
-  </div>
-</div>
-
 <div class="toast toast--success">
-  <div class="toast__content">
-    <p>Erfolgsmeldung</p>
-  </div>
+  Erfolgsmeldung
 </div>
-
 <div class="toast toast--error">
-  <div class="toast__content">
-    <p>Fehlermeldung</p>
-  </div>
+  Fehlermeldung
+</div>
+<div class="toast toast--warning">
+  Warnmeldung
+</div>
+<div class="toast toast--info">
+  Informationsmeldung
 </div>
 ```
 
 ## Varianten
 
-### Typen
+### Mit Icon
+
+```html
+<div class="toast toast--success">
+  <span class="toast__icon">✓</span>
+  <span class="toast__content">Erfolgsmeldung mit Icon</span>
+</div>
+```
+
+### Mit Fortschrittsbalken
 
 ```html
 <div class="toast toast--info">
-  <div class="toast__content">
-    <p>Information</p>
-  </div>
-</div>
-
-<div class="toast toast--warning">
-  <div class="toast__content">
-    <p>Warnung</p>
-  </div>
-</div>
-
-<div class="toast toast--success">
-  <div class="toast__content">
-    <p>Erfolg</p>
-  </div>
-</div>
-
-<div class="toast toast--error">
-  <div class="toast__content">
-    <p>Fehler</p>
-  </div>
+  <span class="toast__content">Meldung mit Fortschrittsbalken</span>
+  <div class="toast__progress"></div>
 </div>
 ```
-
-### Positionen
-
-```html
-<div class="toast toast--top-left">
-  <div class="toast__content">
-    <p>Toast oben links</p>
-  </div>
-</div>
-
-<div class="toast toast--top-right">
-  <div class="toast__content">
-    <p>Toast oben rechts</p>
-  </div>
-</div>
-
-<div class="toast toast--bottom-left">
-  <div class="toast__content">
-    <p>Toast unten links</p>
-  </div>
-</div>
-
-<div class="toast toast--bottom-right">
-  <div class="toast__content">
-    <p>Toast unten rechts</p>
-  </div>
-</div>
-```
-
-### Mit Animation
-
-```html
-<div class="toast toast--fade">
-  <div class="toast__content">
-    <p>Toast mit Fade-Animation</p>
-  </div>
-</div>
-
-<div class="toast toast--slide">
-  <div class="toast__content">
-    <p>Toast mit Slide-Animation</p>
-  </div>
-</div>
-```
-
-## CSS Variablen
-
-```css
-:root {
-  --toast-padding: 1rem;
-  --toast-border-radius: 0.25rem;
-  --toast-margin: 0.5rem;
-  --toast-transition: all 0.3s ease;
-  --toast-z-index: 1000;
-}
-```
-
-## Best Practices
-
-### Zugänglichkeit
-
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie aussagekräftige Texte hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
-
-### Responsive Design
-
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Positionen an mobile Geräte an
-
-### Performance
-
-- Minimieren Sie CSS
-- Optimieren Sie Animationen
-- Vermeiden Sie zu viele gleichzeitige Toasts
 
 ## Integration
 
@@ -137,65 +45,118 @@ Der Toast ist eine Komponente für kurzlebige Benachrichtigungen in der Casoon U
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/toast.module.css';
+import 'casoon-ui-lib/core.css';
+import 'casoon-ui-lib/themes/day.css'; // oder ein anderes Theme
 
 interface Props {
-  type?: 'info' | 'success' | 'warning' | 'error';
-  position?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
-  closable?: boolean;
+  variant?: 'success' | 'error' | 'warning' | 'info';
+  duration?: number;
+  showProgress?: boolean;
 }
 
-const { type = 'info', position = 'top-right', closable = false } = Astro.props;
+const {
+  variant = 'info',
+  duration = 3000,
+  showProgress = true
+} = Astro.props;
 ---
 
-<div class:list={[
-  'toast',
-  `toast--${type}`,
-  `toast--${position}`
-]}>
-  <div class="toast__content">
+<div
+  class:list={[
+    'toast',
+    `toast--${variant}`,
+    showProgress && 'toast--progress'
+  ]}
+  style={`--toast-duration: ${duration}ms`}
+>
+  <span class="toast__icon">
+    {#if variant === 'success'}✓{/if}
+    {#if variant === 'error'}✕{/if}
+    {#if variant === 'warning'}⚠{/if}
+    {#if variant === 'info'}ℹ{/if}
+  </span>
+  <span class="toast__content">
     <slot />
-  </div>
-  {closable && (
-    <button class="toast__close" onclick="this.parentElement.remove()">&times;</button>
-  )}
+  </span>
+  {#if showProgress}
+    <div class="toast__progress"></div>
+  {/if}
 </div>
 
 <style>
   .toast {
-    /* Standard-Styles */
-  }
-  
-  .toast--info {
-    /* Info-Styles */
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    animation: slideIn 0.3s ease-out;
+    z-index: var(--z-index-toast);
   }
   
   .toast--success {
-    /* Success-Styles */
-  }
-  
-  .toast--warning {
-    /* Warning-Styles */
+    background-color: var(--color-success-light);
+    color: var(--color-success-dark);
+    border: 1px solid var(--color-success);
   }
   
   .toast--error {
-    /* Error-Styles */
+    background-color: var(--color-error-light);
+    color: var(--color-error-dark);
+    border: 1px solid var(--color-error);
   }
   
-  .toast--top-left {
-    /* Position-Styles */
+  .toast--warning {
+    background-color: var(--color-warning-light);
+    color: var(--color-warning-dark);
+    border: 1px solid var(--color-warning);
   }
   
-  .toast--top-right {
-    /* Position-Styles */
+  .toast--info {
+    background-color: var(--color-info-light);
+    color: var(--color-info-dark);
+    border: 1px solid var(--color-info);
   }
   
-  .toast--bottom-left {
-    /* Position-Styles */
+  .toast__icon {
+    margin-right: 0.5rem;
+    font-weight: bold;
   }
   
-  .toast--bottom-right {
-    /* Position-Styles */
+  .toast__content {
+    flex: 1;
+  }
+  
+  .toast__progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: currentColor;
+    animation: progress var(--toast-duration) linear;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes progress {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
   }
 </style>
 ```
@@ -207,8 +168,12 @@ Verwendung in einer Astro-Komponente:
 import Toast from '../components/Toast.astro';
 ---
 
-<Toast type="success" position="top-right" closable>
-  <p>Erfolgreich gespeichert!</p>
+<Toast variant="success" duration={5000}>
+  Die Operation war erfolgreich!
+</Toast>
+
+<Toast variant="error" showProgress={false}>
+  Ein Fehler ist aufgetreten.
 </Toast>
 ```
 

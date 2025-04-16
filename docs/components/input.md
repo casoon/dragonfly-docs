@@ -1,40 +1,136 @@
 # Input
 
-Der Input ist eine grundlegende Komponente für Benutzereingaben in der Casoon UI Library.
+Die Input-Komponente der Casoon UI Library bietet verschiedene Formulareingabefelder mit einheitlichem Styling.
 
 ## Verwendung
 
 ```html
-<input type="text" class="input" placeholder="Standard Input">
-<input type="text" class="input input--primary" placeholder="Primary Input">
-<input type="text" class="input input--secondary" placeholder="Secondary Input">
+<input class="input" type="text" placeholder="Text eingeben...">
+<textarea class="input input--textarea" placeholder="Mehrzeiliger Text..."></textarea>
 ```
 
 ## Varianten
 
-### Größen
+### Typen
 
 ```html
-<input type="text" class="input input--sm" placeholder="Kleiner Input">
-<input type="text" class="input" placeholder="Normaler Input">
-<input type="text" class="input input--lg" placeholder="Großer Input">
-```
-
-### Styles
-
-```html
-<input type="text" class="input input--outline" placeholder="Outline Input">
-<input type="text" class="input input--ghost" placeholder="Ghost Input">
-<input type="text" class="input input--filled" placeholder="Filled Input">
+<input class="input" type="email" placeholder="E-Mail...">
+<input class="input" type="password" placeholder="Passwort...">
+<input class="input" type="number" placeholder="Zahl...">
 ```
 
 ### Zustände
 
 ```html
-<input type="text" class="input" disabled placeholder="Deaktivierter Input">
-<input type="text" class="input input--error" placeholder="Fehler-Input">
-<input type="text" class="input input--success" placeholder="Erfolgs-Input">
-<input type="text" class="input input--warning" placeholder="Warnungs-Input">
+<input class="input input--disabled" type="text" placeholder="Deaktiviert" disabled>
+<input class="input input--error" type="text" placeholder="Fehler">
+<input class="input input--success" type="text" placeholder="Erfolg">
+```
+
+## Integration
+
+### Astro
+
+```astro
+---
+import 'casoon-ui-lib/core.css';
+import 'casoon-ui-lib/themes/day.css'; // oder ein anderes Theme
+
+interface Props {
+  type?: string;
+  placeholder?: string;
+  disabled?: boolean;
+  error?: boolean;
+  success?: boolean;
+  textarea?: boolean;
+}
+
+const {
+  type = 'text',
+  placeholder = '',
+  disabled = false,
+  error = false,
+  success = false,
+  textarea = false
+} = Astro.props;
+---
+
+{#if textarea}
+  <textarea
+    class:list={[
+      'input',
+      'input--textarea',
+      disabled && 'input--disabled',
+      error && 'input--error',
+      success && 'input--success'
+    ]}
+    placeholder={placeholder}
+    disabled={disabled}
+  >
+    <slot />
+  </textarea>
+{:else}
+  <input
+    class:list={[
+      'input',
+      disabled && 'input--disabled',
+      error && 'input--error',
+      success && 'input--success'
+    ]}
+    type={type}
+    placeholder={placeholder}
+    disabled={disabled}
+  />
+{/if}
+
+<style>
+  .input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: all var(--transition-duration) var(--transition-timing);
+  }
+  
+  .input--textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .input--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .input--error {
+    border-color: var(--color-error);
+  }
+  
+  .input--success {
+    border-color: var(--color-success);
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-light);
+  }
+</style>
+```
+
+Verwendung in einer Astro-Komponente:
+
+```astro
+---
+import Input from '../components/Input.astro';
+---
+
+<Input type="text" placeholder="Name eingeben" />
+
+<Input type="email" placeholder="E-Mail eingeben" error />
+
+<Input textarea placeholder="Nachricht eingeben..." />
 ```
 
 ## CSS Variablen

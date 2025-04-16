@@ -197,7 +197,8 @@ Die Casoon UI Library bietet eine umfangreiche Sammlung von wiederverwendbaren K
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/components.module.css';
+import 'casoon-ui-lib/core.css';
+import 'casoon-ui-lib/themes/day.css';
 
 interface Props {
   component: string;

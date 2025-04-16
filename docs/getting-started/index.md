@@ -12,25 +12,35 @@ npm install casoon-ui-lib
 
 ## Verwendung
 
-### Base Styles
+### Core Styles
 
 ```css
-@import 'casoon-ui-lib/base.css';
-```
-
-### Module
-
-```css
-@import 'casoon-ui-lib/modules/button.module.css';
-@import 'casoon-ui-lib/modules/input.module.css';
-@import 'casoon-ui-lib/modules/modal.module.css';
+@import 'casoon-ui-lib/core.css';
 ```
 
 ### Themes
 
+Die Casoon UI Library bietet verschiedene Theme-Optionen:
+
 ```css
-@import 'casoon-ui-lib/themes/light.css';
-@import 'casoon-ui-lib/themes/dark.css';
+/* Tages- und Nacht-Themes */
+@import 'casoon-ui-lib/themes/day.css';
+@import 'casoon-ui-lib/themes/night.css';
+
+/* Jahreszeiten-Themes */
+@import 'casoon-ui-lib/themes/spring.css';
+@import 'casoon-ui-lib/themes/summer.css';
+@import 'casoon-ui-lib/themes/autumn.css';
+@import 'casoon-ui-lib/themes/winter.css';
+
+/* Spezielle Themes */
+@import 'casoon-ui-lib/themes/ocean.css';
+@import 'casoon-ui-lib/themes/forest.css';
+@import 'casoon-ui-lib/themes/sunset.css';
+@import 'casoon-ui-lib/themes/pastel.css';
+@import 'casoon-ui-lib/themes/retro.css';
+@import 'casoon-ui-lib/themes/monochrome.css';
+@import 'casoon-ui-lib/themes/neon.css';
 ```
 
 ## Komponenten

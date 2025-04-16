@@ -17,12 +17,42 @@ Eine moderne, flexible und zugängliche Komponentenbibliothek für Webanwendunge
 npm install casoon-ui-lib
 ```
 
+## Verfügbare Module
+
+Die Casoon UI Library bietet folgende Module:
+
+### Grundlegende Komponenten
+- `button.module.css` - Button-Komponenten
+- `input.module.css` - Eingabefelder
+- `modal.module.css` - Modale Dialoge
+- `alert.module.css` - Benachrichtigungen
+- `toast.module.css` - Kurze Benachrichtigungen
+- `badge.module.css` - Statusanzeigen
+- `tooltip.module.css` - Hilfetexte
+- `progress.module.css` - Fortschrittsanzeigen
+
+### Navigationskomponenten
+- `tabs.module.css` - Registerkarten
+- `accordion.module.css` - Aufklappbare Bereiche
+- `dropdown.module.css` - Ausklappbare Menüs
+- `pagination.module.css` - Seitennavigation
+- `navigation.module.css` - Navigationsleisten
+- `sidebar.module.css` - Seitenleisten
+
+### Datenkomponenten
+- `table.module.css` - Tabellen
+- `card.module.css` - Karten
+- `slider.module.css` - Bildergalerien
+
+### Effekte
+- `effects.module.css` - Animationen und Übergänge
+
 ## Verwendung
 
-### Base Styles
+### Core Styles
 
 ```css
-@import 'casoon-ui-lib/base.css';
+@import 'casoon-ui-lib/core.css';
 ```
 
 ### Module
@@ -36,8 +66,8 @@ npm install casoon-ui-lib
 ### Themes
 
 ```css
-@import 'casoon-ui-lib/themes/light.css';
-@import 'casoon-ui-lib/themes/dark.css';
+@import 'casoon-ui-lib/themes/day.css';
+@import 'casoon-ui-lib/themes/night.css';
 ```
 
 ## Verfügbare Komponenten
