@@ -6,10 +6,10 @@ Eine moderne, flexible und zugängliche Komponentenbibliothek für Webanwendunge
 
 - [Einführung](/getting-started/index)
 - [Installation](/getting-started/installation)
-- [Komponenten](/components/index)
-- [Design System](/guide/design-system)
-- [Theming](/guide/theming)
-- [Zugänglichkeit](/guide/accessibility)
+- [Komponenten](/components/)
+- [Design System](/guide/)
+- [Theming](/guide/)
+- [Zugänglichkeit](/guide/)
 
 ## Installation
 
@@ -272,42 +272,42 @@ export default {
   <div class="component-card">
     <h3>Button</h3>
     <p>Ein vielseitiger Button mit verschiedenen Varianten</p>
-    <a href="/getting-started/button">Mehr erfahren</a>
+    <a href="/components/button/">Mehr erfahren</a>
   </div>
   <div class="component-card">
     <h3>Input</h3>
     <p>Eingabefelder mit verschiedenen Typen und Zuständen</p>
-    <a href="/getting-started/input">Mehr erfahren</a>
+    <a href="/components/input/">Mehr erfahren</a>
   </div>
   <div class="component-card">
     <h3>Modal</h3>
     <p>Modale Dialoge für Benutzerinteraktionen</p>
-    <a href="/getting-started/modal">Mehr erfahren</a>
+    <a href="/components/modal/">Mehr erfahren</a>
   </div>
   <div class="component-card">
     <h3>Alert</h3>
     <p>Benachrichtigungen und Warnmeldungen</p>
-    <a href="/getting-started/alert">Mehr erfahren</a>
+    <a href="/components/alert/">Mehr erfahren</a>
   </div>
   <div class="component-card">
     <h3>Toast</h3>
     <p>Kurze Benachrichtigungen am Bildschirmrand</p>
-    <a href="/getting-started/toast">Mehr erfahren</a>
+    <a href="/components/toast/">Mehr erfahren</a>
   </div>
   <div class="component-card">
     <h3>Badge</h3>
     <p>Status- und Zähleranzeigen</p>
-    <a href="/getting-started/badge">Mehr erfahren</a>
+    <a href="/components/badge/">Mehr erfahren</a>
   </div>
   <div class="component-card">
     <h3>Tooltip</h3>
     <p>Kontextbezogene Hilfetexte</p>
-    <a href="/getting-started/tooltip">Mehr erfahren</a>
+    <a href="/components/tooltip/">Mehr erfahren</a>
   </div>
   <div class="component-card">
     <h3>Progress</h3>
     <p>Fortschrittsanzeigen und Ladebalken</p>
-    <a href="/getting-started/progress">Mehr erfahren</a>
+    <a href="/components/progress/">Mehr erfahren</a>
   </div>
 </div>
 

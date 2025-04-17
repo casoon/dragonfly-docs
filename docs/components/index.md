@@ -6,71 +6,75 @@ Die Casoon UI Library bietet eine Vielzahl von vorgefertigten CSS-Komponenten, d
 
 ### Grundlegende Komponenten
 
-- [Button](/components/button) - Interaktive Schaltflächen
-- [Input](/components/input) - Eingabefelder
-- [Textarea](/components/textarea) - Mehrzeilige Eingabefelder
-- [Select](/components/select) - Auswahlfelder
-- [Checkbox](/components/checkbox) - Kontrollkästchen
-- [Radio](/components/radio) - Radiobuttons
-- [Switch](/components/switch) - Umschalter
-- [File Input](/components/file) - Datei-Upload
-- [Form](/components/forms) - Formular-Komponenten
-- [Input Group](/components/input-group) - Gruppierte Eingabefelder
+- [Button](./button/) - Interaktive Schaltflächen
+- [Input](./input/) - Eingabefelder
+- Textarea - Mehrzeilige Eingabefelder
+- Select - Auswahlfelder
+- Checkbox - Kontrollkästchen
+- Radio - Radiobuttons
+- Switch - Umschalter
+- [File Input](./file/) - Datei-Upload
+- [Form](./forms/) - Formular-Komponenten
+- Input Group - Gruppierte Eingabefelder
 
 ### Feedback-Komponenten
 
-- [Alert](/components/alert) - Hinweismeldungen
-- [Toast](/components/toast) - Kurze Benachrichtigungen
-- [Notification](/components/notification) - Detaillierte Benachrichtigungen
-- [Modal](/components/modal) - Dialogfenster
-- [Progress](/components/progress) - Fortschrittsbalken
-- [Spinner](/components/spinner) - Ladeanzeigen
-- [Skeleton](/components/skeleton) - Platzhalter während des Ladens
+- [Alert](./alert/) - Hinweismeldungen
+- [Toast](./toast/) - Kurze Benachrichtigungen
+- Notification - Detaillierte Benachrichtigungen
+- [Modal](./modal/) - Dialogfenster
+- [Progress](./progress/) - Fortschrittsbalken
+- Spinner - Ladeanzeigen
+- Skeleton - Platzhalter während des Ladens
 
 ### Navigationskomponenten
 
-- [Header](/components/header) - Kopfzeilen
-- [Sidebar](/components/sidebar) - Seitenleisten
-- [Hamburger](/components/hamburger) - Menü-Schaltflächen
-- [Tabs](/components/tabs) - Registerkarten
+- Header - Kopfzeilen
+- [Sidebar](./sidebar/) - Seitenleisten
+- Hamburger - Menü-Schaltflächen
+- [Tabs](./tabs/) - Registerkarten
+- [Navigation](./navigation/) - Allgemeine Navigation
+- [Dropdown](./dropdown/) - Dropdown-Menüs
+- [Pagination](./pagination/) - Seitennummerierung
 
 ### Datenkomponenten
 
-- [Table](/components/table) - Tabellen
-- [Card](/components/card) - Karten
-- [Slider](/components/slider) - Schieberegler
+- [Table](./table/) - Tabellen
+- [Card](./card/) - Karten
+- [Slider](./slider/) - Schieberegler
+- [Accordion](./accordion/) - Aufklappbare Panels
 
 ### Zusätzliche Komponenten
 
-- [Avatar](/components/avatar) - Benutzeravatare
-- [Badge](/components/badge) - Kennzeichnungen
-- [Chip](/components/chip) - Chips/Tags
-- [Tooltip](/components/tooltip) - Tooltips
-- [Widget](/components/widget) - Widgets
-- [Wizard](/components/wizard) - Mehrschrittassistenten
-- [Blog](/components/blog) - Blog-Layouts
+- [Avatar](./avatar/) - Benutzeravatare
+- [Badge](./badge/) - Kennzeichnungen
+- [Chip](./chip/) - Chips/Tags
+- [Tooltip](./tooltip/) - Tooltips
+- Widget - Widgets
+- Wizard - Mehrschrittassistenten
+- Blog - Blog-Layouts
+- [Effekte](./effects/) - Visuelle Effekte
 
 ## Verwendungsbeispiele
 
 ### Button
 
 ```html
-<button class="button button--primary">Primärer Button</button>
-<button class="button button--secondary">Sekundärer Button</button>
-<button class="button button--outline">Outline Button</button>
+<button class="casoon-button">Klick mich</button>
+<button class="casoon-button casoon-button--primary">Primär</button>
+<button class="casoon-button casoon-button--outline">Outline</button>
 ```
 
-Module: `button.module.css`
+[Zur Button-Dokumentation](/components/button/)
 
 ### Input
 
 ```html
-<input class="input" type="text" placeholder="Text eingeben">
-<input class="input input--error" type="text" placeholder="Fehler">
-<input class="input input--success" type="text" placeholder="Erfolg">
+<input type="text" class="casoon-input" placeholder="Text eingeben">
+<input type="text" class="casoon-input casoon-input--error" value="Fehlerhafte Eingabe">
 ```
 
-Module: `input.module.css`
+[Zur Input-Dokumentation](/components/input/)
 
 ### Input Group
 
@@ -86,43 +90,43 @@ Module: `input-group.module.css`
 ### Textarea
 
 ```html
-<textarea class="textarea" placeholder="Beschreibung eingeben"></textarea>
+<textarea class="casoon-textarea" rows="4" placeholder="Beschreibung eingeben"></textarea>
 ```
 
-Module: `textarea.module.css`
+[Zur Textarea-Dokumentation](/components/textarea/)
 
 ### Select
 
 ```html
-<select class="select">
-  <option value="1">Option 1</option>
-  <option value="2">Option 2</option>
+<select class="casoon-select">
+  <option>Option 1</option>
+  <option>Option 2</option>
 </select>
 ```
 
-Module: `select.module.css`
+[Zur Select-Dokumentation](/components/select/)
 
 ### Checkbox
 
 ```html
-<label class="checkbox">
+<label class="casoon-checkbox">
   <input type="checkbox">
-  <span class="checkbox__label">Checkbox-Label</span>
+  <span>Option auswählen</span>
 </label>
 ```
 
-Module: `checkbox.module.css`
+[Zur Checkbox-Dokumentation](/components/checkbox/)
 
 ### Radio
 
 ```html
-<label class="radio">
-  <input type="radio" name="radio-group">
-  <span class="radio__label">Radio-Label</span>
+<label class="casoon-radio">
+  <input type="radio" name="option">
+  <span>Option A</span>
 </label>
 ```
 
-Module: `radio.module.css`
+[Zur Radio-Dokumentation](/components/radio/)
 
 ### Switch
 
@@ -163,44 +167,37 @@ Module: `modal.module.css`
 ### Alert
 
 ```html
-<div class="alert alert--success">
-  <div class="alert__icon">✓</div>
-  <div class="alert__content">Erfolgreich gespeichert!</div>
-</div>
-
-<div class="alert alert--error">
-  <div class="alert__icon">✕</div>
-  <div class="alert__content">Ein Fehler ist aufgetreten.</div>
+<div class="casoon-alert casoon-alert--info">
+  <span>Wichtige Information</span>
 </div>
 ```
 
-Module: `alert.module.css`
+[Zur Alert-Dokumentation](/components/alert/)
 
 ### Toast
 
 ```html
-<div class="toast toast--success">
-  <div class="toast__content">Erfolgreich gespeichert!</div>
+<div class="casoon-toast casoon-toast--success">
+  <span>Aktion erfolgreich</span>
 </div>
 ```
 
-Module: `toast.module.css`
+[Zur Toast-Dokumentation](/components/toast/)
 
 ### Notification
 
 ```html
-<div class="notification notification--info">
-  <div class="notification__header">
-    <div class="notification__title">Information</div>
-    <button class="notification__close">&times;</button>
-  </div>
-  <div class="notification__body">
-    Das ist eine Information.
+<div class="casoon-notification">
+  <h4>Neue Funktion verfügbar</h4>
+  <p>Entdecken Sie unsere neuesten Features...</p>
+  <div class="casoon-notification__actions">
+    <button class="casoon-button casoon-button--small">Erkunden</button>
+    <button class="casoon-button casoon-button--text casoon-button--small">Später</button>
   </div>
 </div>
 ```
 
-Module: `notification.module.css`
+[Zur Notification-Dokumentation](/components/notification/)
 
 ### Progress
 
@@ -233,37 +230,43 @@ Module: `skeleton.module.css`
 ### Table
 
 ```html
-<table class="table">
+<table class="casoon-table">
   <thead>
     <tr>
       <th>Name</th>
-      <th>Email</th>
+      <th>Alter</th>
+      <th>Stadt</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Max Mustermann</td>
-      <td>max@example.com</td>
+      <td>34</td>
+      <td>Berlin</td>
     </tr>
   </tbody>
 </table>
 ```
 
-Module: `table.module.css`
+[Zur Table-Dokumentation](/components/table/)
 
 ### Card
 
 ```html
-<div class="card">
-  <div class="card__header">Card Titel</div>
-  <div class="card__body">Card Inhalt</div>
-  <div class="card__footer">
-    <button class="button button--primary">Aktion</button>
+<div class="casoon-card">
+  <div class="casoon-card__header">
+    <h3>Produkttitel</h3>
+  </div>
+  <div class="casoon-card__body">
+    <p>Produktbeschreibung und Details...</p>
+  </div>
+  <div class="casoon-card__footer">
+    <button class="casoon-button casoon-button--primary">Kaufen</button>
   </div>
 </div>
 ```
 
-Module: `card.module.css`
+[Zur Card-Dokumentation](/components/card/)
 
 ### Slider
 
@@ -280,10 +283,11 @@ Module: `slider.module.css`
 ### Badge
 
 ```html
-<span class="badge badge--primary">Neu</span>
+<span class="casoon-badge">Neu</span>
+<span class="casoon-badge casoon-badge--warning">10</span>
 ```
 
-Module: `badge.module.css`
+[Zur Badge-Dokumentation](/components/badge/)
 
 ### Avatar
 
@@ -298,13 +302,15 @@ Module: `avatar.module.css`
 ### Chip
 
 ```html
-<div class="chip">
-  <span class="chip__text">Chip Text</span>
-  <button class="chip__close">&times;</button>
-</div>
+<span class="casoon-chip">Standard Chip</span>
+<span class="casoon-chip casoon-chip--primary">Primär</span>
+<span class="casoon-chip casoon-chip--dismissible">
+  Mit Schließen
+  <button class="casoon-chip__close"></button>
+</span>
 ```
 
-Module: `chip.module.css`
+[Zur Chip-Dokumentation](/components/chip/)
 
 ### Tooltip
 

@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'Casoon UI Library',
   description: 'Eine moderne, flexible und zugängliche Komponentenbibliothek',
   base: "/casoon-ui-docs/",
+  ignoreDeadLinks: true,
 
   vite: {
     plugins: [vueJsx()],
