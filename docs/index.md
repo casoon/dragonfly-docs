@@ -7,14 +7,14 @@ Eine moderne, flexible und zugängliche Komponentenbibliothek für Webanwendunge
 - [Einführung](/getting-started/index)
 - [Installation](/getting-started/installation)
 - [Komponenten](/components/index)
-- [Design System](/getting-started/tokens)
-- [Theming](/getting-started/typography)
-- [Zugänglichkeit](/getting-started/layout)
+- [Design System](/guide/design-system)
+- [Theming](/guide/theming)
+- [Zugänglichkeit](/guide/accessibility)
 
 ## Installation
 
 ```bash
-npm install casoon-ui-lib
+npm install casoon-ui-lib@0.2.1
 ```
 
 ## Verfügbare Module
@@ -24,28 +24,43 @@ Die Casoon UI Library bietet folgende Module:
 ### Grundlegende Komponenten
 - `button.module.css` - Button-Komponenten
 - `input.module.css` - Eingabefelder
-- `modal.module.css` - Modale Dialoge
-- `alert.module.css` - Benachrichtigungen
+- `textarea.module.css` - Mehrzeilige Eingabefelder
+- `select.module.css` - Auswahlfelder
+- `checkbox.module.css` - Kontrollkästchen
+- `radio.module.css` - Radiobuttons
+- `switch.module.css` - Umschalter
+- `file.module.css` - Datei-Upload
+- `form.module.css` - Formular-Elemente
+- `input-group.module.css` - Gruppierte Eingabefelder
+
+### Feedback-Komponenten
+- `alert.module.css` - Hinweismeldungen
 - `toast.module.css` - Kurze Benachrichtigungen
-- `badge.module.css` - Statusanzeigen
-- `tooltip.module.css` - Hilfetexte
-- `progress.module.css` - Fortschrittsanzeigen
+- `notification.module.css` - Detaillierte Benachrichtigungen
+- `modal.module.css` - Modale Dialoge
+- `progress.module.css` - Fortschrittsbalken
+- `spinner.module.css` - Ladeanzeigen
+- `skeleton.module.css` - Platzhalter während des Ladens
 
 ### Navigationskomponenten
-- `tabs.module.css` - Registerkarten
-- `accordion.module.css` - Aufklappbare Bereiche
-- `dropdown.module.css` - Ausklappbare Menüs
-- `pagination.module.css` - Seitennavigation
-- `navigation.module.css` - Navigationsleisten
+- `header.module.css` - Kopfzeilen
 - `sidebar.module.css` - Seitenleisten
+- `hamburger.module.css` - Menü-Schaltflächen
+- `tabs.module.css` - Registerkarten
 
 ### Datenkomponenten
 - `table.module.css` - Tabellen
 - `card.module.css` - Karten
-- `slider.module.css` - Bildergalerien
+- `slider.module.css` - Schieberegler
 
-### Effekte
-- `effects.module.css` - Animationen und Übergänge
+### Zusätzliche Komponenten
+- `avatar.module.css` - Benutzeravatare
+- `badge.module.css` - Kennzeichnungen
+- `chip.module.css` - Chips/Tags
+- `tooltip.module.css` - Tooltips
+- `widget.module.css` - Widgets
+- `wizard.module.css` - Mehrschrittassistenten
+- `blog.module.css` - Blog-Layouts
 
 ## Verwendung
 
@@ -55,19 +70,200 @@ Die Casoon UI Library bietet folgende Module:
 @import 'casoon-ui-lib/core.css';
 ```
 
-### Module
+Die `core.css` enthält folgende Layer:
 
 ```css
-@import 'casoon-ui-lib/modules/button.module.css';
-@import 'casoon-ui-lib/modules/input.module.css';
-@import 'casoon-ui-lib/modules/modal.module.css';
+@layer core {
+    @import url("layers/tokens.css");
+    @import url("layers/reset.css");
+    @import url("layers/colors.css");
+    @import url("layers/typography.css");
+    @import url("layers/utilities.css");
+    @import url("layers/layout.css");
+    @import url("layers/smooth-scroll.css");
+}
+
+@layer icons {
+    /* Utility Imports */
+    @import url('icons/base.css');
+}
+
+@layer animations {
+    /* Animations Imports */
+    @import url('layers/animations.css');
+}
+
+@layer effects {
+    /* Effects Imports */
+    @import url('layers/effects.css');
+}
+
+@layer themes {
+    /* Basis-Theme - wird immer geladen */
+    @import url('themes/theme-base.css');
+    
+    /* Feature-spezifische Themes */
+    @import url('themes/accessibility.css');
+    @import url('themes/dark-mode.css');
+    @import url('themes/brands.css');
+    
+    /* Standard Theme Variations */
+    @import url('themes/day.css');
+    @import url('themes/night.css');
+    @import url('themes/spring.css');
+    @import url('themes/summer.css');
+    @import url('themes/autumn.css');
+    @import url('themes/winter.css');
+    @import url('themes/forest.css');
+    @import url('themes/ocean.css');
+    @import url('themes/pastel.css');
+    @import url('themes/neon.css');
+    @import url('themes/retro.css');
+    @import url('themes/monochrome.css');
+    @import url('themes/sunset.css');
+}
 ```
 
 ### Themes
 
 ```css
+/* Standard-Themes */
 @import 'casoon-ui-lib/themes/day.css';
 @import 'casoon-ui-lib/themes/night.css';
+
+/* Jahreszeiten-Themes */
+@import 'casoon-ui-lib/themes/spring.css';
+@import 'casoon-ui-lib/themes/summer.css';
+@import 'casoon-ui-lib/themes/autumn.css';
+@import 'casoon-ui-lib/themes/winter.css';
+
+/* Spezielle Themes */
+@import 'casoon-ui-lib/themes/forest.css';
+@import 'casoon-ui-lib/themes/ocean.css';
+@import 'casoon-ui-lib/themes/pastel.css';
+@import 'casoon-ui-lib/themes/neon.css';
+@import 'casoon-ui-lib/themes/retro.css';
+@import 'casoon-ui-lib/themes/monochrome.css';
+@import 'casoon-ui-lib/themes/sunset.css';
+```
+
+Um ein Theme zu aktivieren, fügen Sie die entsprechende Klasse zum `<html>` oder `<body>` Element hinzu:
+
+```html
+<body class="theme-night">
+  <!-- Ihr Inhalt -->
+</body>
+```
+
+### Beispiel: Button-Komponente
+
+```html
+<button class="button button--primary">Primärer Button</button>
+<button class="button button--secondary">Sekundärer Button</button>
+<button class="button button--outline">Outline Button</button>
+```
+
+### Beispiel: Formular
+
+```html
+<form class="form">
+  <div class="form-group">
+    <label for="name" class="form-label">Name</label>
+    <input id="name" class="input" type="text" placeholder="Name eingeben">
+  </div>
+  
+  <div class="form-group">
+    <label for="email" class="form-label">E-Mail</label>
+    <input id="email" class="input" type="email" placeholder="E-Mail eingeben">
+  </div>
+  
+  <div class="form-group">
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="checkbox__label">AGB akzeptieren</span>
+    </label>
+  </div>
+  
+  <button type="submit" class="button button--primary">Absenden</button>
+</form>
+```
+
+## Schnellstart
+
+1. Installieren Sie die Bibliothek:
+   ```bash
+   npm install casoon-ui-lib@0.2.1
+   ```
+
+2. Importieren Sie die Core-CSS:
+   ```js
+   import 'casoon-ui-lib/core.css';
+   ```
+
+3. Importieren Sie ein Theme:
+   ```js
+   import 'casoon-ui-lib/themes/day.css';
+   ```
+
+4. Fügen Sie die Theme-Klasse zum body-Element hinzu:
+   ```html
+   <body class="theme-day">
+     <!-- Ihr Inhalt -->
+   </body>
+   ```
+
+5. Verwenden Sie die Komponenten in Ihrem HTML:
+   ```html
+   <button class="button button--primary">Klick mich</button>
+   ```
+
+## Framework-Integration
+
+### React
+
+```jsx
+import 'casoon-ui-lib/core.css';
+import 'casoon-ui-lib/themes/day.css';
+import 'casoon-ui-lib/modules/button.module.css';
+
+function App() {
+  return (
+    <div className="app">
+      <button className="button button--primary">Klick mich</button>
+    </div>
+  );
+}
+```
+
+### Vue
+
+```vue
+<template>
+  <div class="app">
+    <button class="button button--primary">Klick mich</button>
+  </div>
+</template>
+
+<script>
+import 'casoon-ui-lib/core.css';
+import 'casoon-ui-lib/themes/day.css';
+import 'casoon-ui-lib/modules/button.module.css';
+
+export default {
+  name: 'App'
+}
+</script>
+```
+
+### Angular
+
+```typescript
+// In angular.json
+"styles": [
+  "node_modules/casoon-ui-lib/core.css",
+  "node_modules/casoon-ui-lib/themes/day.css",
+  "node_modules/casoon-ui-lib/modules/button.module.css"
+]
 ```
 
 ## Verfügbare Komponenten
@@ -198,4 +394,4 @@ Die Casoon UI Library bietet folgende Module:
 
 ## Lizenz
 
-MIT 
+Die Casoon UI Library ist unter der MIT-Lizenz veröffentlicht. 
