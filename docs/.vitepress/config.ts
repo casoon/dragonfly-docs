@@ -6,6 +6,10 @@ export default defineConfig({
   description: 'Eine moderne, flexible und zugängliche Komponentenbibliothek',
   base: "/casoon-ui-docs/",
   ignoreDeadLinks: true,
+  
+  head: [
+    ['link', { rel: 'stylesheet', href: '/casoon-ui-docs/custom.css' }]
+  ],
 
   vite: {
     plugins: [vueJsx()],
