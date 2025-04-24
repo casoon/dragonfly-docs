@@ -1,211 +1,235 @@
-# Typography
+---
+title: Typografie
+category: Getting Started
+---
 
-Die Typography-Komponenten der Casoon UI Library bieten eine konsistente und flexible Textformatierung für moderne Webanwendungen.
+# Typografie-Styles
 
-## Überschriften
+Die Typografie-Styles der Casoon UI Library bieten eine konsistente und skalierbare Textformatierung für moderne Webanwendungen. Diese Styles können unabhängig von Komponenten verwendet werden.
 
-```html
-<h1 class="h1">Überschrift 1</h1>
-<h2 class="h2">Überschrift 2</h2>
-<h3 class="h3">Überschrift 3</h3>
-<h4 class="h4">Überschrift 4</h4>
-<h5 class="h5">Überschrift 5</h5>
-<h6 class="h6">Überschrift 6</h6>
+## Grundlegende Verwendung
+
+Um die Typografie-Styles zu verwenden, importieren Sie die CSS-Datei:
+
+```css
+@import "casoon-ui-lib/dist/index.css";
 ```
 
-## Text
+## Schriftfamilien
 
-```html
-<p class="text">Normaler Text</p>
-<p class="text text--small">Kleiner Text</p>
-<p class="text text--large">Großer Text</p>
-```
-
-## Text Styles
-
-```html
-<p class="text text--bold">Fetter Text</p>
-<p class="text text--italic">Kursiver Text</p>
-<p class="text text--underline">Unterstrichener Text</p>
-<p class="text text--strikethrough">Durchgestrichener Text</p>
-```
-
-## Text Colors
-
-```html
-<p class="text text--primary">Primärer Text</p>
-<p class="text text--secondary">Sekundärer Text</p>
-<p class="text text--success">Erfolgs-Text</p>
-<p class="text text--warning">Warnungs-Text</p>
-<p class="text text--error">Fehler-Text</p>
-```
-
-## Text Alignment
-
-```html
-<p class="text text--left">Links ausgerichteter Text</p>
-<p class="text text--center">Zentrierter Text</p>
-<p class="text text--right">Rechts ausgerichteter Text</p>
-<p class="text text--justify">Blocksatz</p>
-```
-
-## CSS Variablen
+Die Casoon UI Library verwendet ein System von Schriftfamilien, die über CSS-Variablen definiert sind:
 
 ```css
 :root {
-  --font-family-base: system-ui, -apple-system, sans-serif;
-  --font-size-base: 1rem;
-  --font-size-small: 0.875rem;
-  --font-size-large: 1.25rem;
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
-  --line-height-base: 1.5;
-  --line-height-heading: 1.2;
-  --text-color-base: #333333;
-  --text-color-primary: #007bff;
-  --text-color-secondary: #6c757d;
-  --text-color-success: #28a745;
-  --text-color-warning: #ffc107;
-  --text-color-error: #dc3545;
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-family-heading: var(--font-family-base);
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+```
+
+### Anwendungsbeispiel:
+
+```html
+<p class="font-base">Text mit Basis-Schriftart</p>
+<h1 class="font-heading">Überschrift mit Heading-Schriftart</h1>
+<pre class="font-mono">Code mit Monospace-Schriftart</pre>
+```
+
+## Schriftgrößen
+
+Die Schriftgrößen folgen einer konsistenten Skala:
+
+```css
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+  --font-size-7xl: 4.5rem;
+  --font-size-8xl: 6rem;
+  --font-size-9xl: 8rem;
+}
+```
+
+### Anwendungsbeispiel:
+
+```html
+<p class="text-xs">Extra klein</p>
+<p class="text-sm">Klein</p>
+<p class="text-base">Basis</p>
+<p class="text-lg">Groß</p>
+<p class="text-xl">Extra groß</p>
+<p class="text-2xl">2XL</p>
+<p class="text-3xl">3XL</p>
+```
+
+## Zeilenhöhe
+
+Die Zeilenhöhen sind für verschiedene Textgrößen optimiert:
+
+```css
+:root {
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+}
+```
+
+### Anwendungsbeispiel:
+
+```html
+<p class="leading-none">Zeilenhöhe 1</p>
+<p class="leading-tight">Zeilenhöhe 1.25</p>
+<p class="leading-snug">Zeilenhöhe 1.375</p>
+<p class="leading-normal">Zeilenhöhe 1.5</p>
+<p class="leading-relaxed">Zeilenhöhe 1.625</p>
+<p class="leading-loose">Zeilenhöhe 2</p>
+```
+
+## Schriftgewicht
+
+Die verschiedenen Schriftgewichte sind als CSS-Variablen definiert:
+
+```css
+:root {
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+}
+```
+
+### Anwendungsbeispiel:
+
+```html
+<p class="font-thin">Dünn</p>
+<p class="font-extralight">Extra leicht</p>
+<p class="font-light">Leicht</p>
+<p class="font-normal">Normal</p>
+<p class="font-medium">Medium</p>
+<p class="font-semibold">Halbfett</p>
+<p class="font-bold">Fett</p>
+<p class="font-extrabold">Extra fett</p>
+<p class="font-black">Schwarz</p>
+```
+
+## Textausrichtung
+
+Utility-Klassen für Textausrichtung:
+
+```css
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+```
+
+### Anwendungsbeispiel:
+
+```html
+<p class="text-left">Linksbündig</p>
+<p class="text-center">Zentriert</p>
+<p class="text-right">Rechtsbündig</p>
+<p class="text-justify">Blocksatz</p>
+```
+
+## Textdekoration
+
+Utility-Klassen für Textdekoration:
+
+```css
+.underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.no-underline { text-decoration: none; }
+```
+
+### Anwendungsbeispiel:
+
+```html
+<p class="underline">Unterstrichener Text</p>
+<p class="line-through">Durchgestrichener Text</p>
+<p class="no-underline">Text ohne Unterstrich</p>
+```
+
+## Textumwandlung
+
+Utility-Klassen für Textumwandlung:
+
+```css
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.normal-case { text-transform: none; }
+```
+
+### Anwendungsbeispiel:
+
+```html
+<p class="uppercase">Großbuchstaben</p>
+<p class="lowercase">Kleinbuchstaben</p>
+<p class="capitalize">Wortanfänge groß</p>
+<p class="normal-case">Normale Schreibweise</p>
+```
+
+## Textfarben
+
+Die Textfarben nutzen die Design-Token-Farbpalette:
+
+```css
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-error { color: var(--color-error); }
+.text-info { color: var(--color-info); }
+```
+
+### Anwendungsbeispiel:
+
+```html
+<p class="text-primary">Primäre Textfarbe</p>
+<p class="text-secondary">Sekundäre Textfarbe</p>
+<p class="text-success">Erfolgs-Textfarbe</p>
+<p class="text-warning">Warnungs-Textfarbe</p>
+<p class="text-error">Fehler-Textfarbe</p>
+<p class="text-info">Info-Textfarbe</p>
+```
+
+## Responsive Typografie
+
+Alle Typografie-Utilities können mit Breakpoint-Präfixen verwendet werden:
+
+- `sm:` für Bildschirme ≥ 640px
+- `md:` für Bildschirme ≥ 768px
+- `lg:` für Bildschirme ≥ 1024px
+- `xl:` für Bildschirme ≥ 1280px
+- `2xl:` für Bildschirme ≥ 1536px
+
+```html
+<p class="text-base md:text-lg lg:text-xl">
+  Responsive Textgröße - Basis auf Mobilgeräten, größer auf Tablets und noch größer auf Desktop
+</p>
 ```
 
 ## Best Practices
 
-### Zugänglichkeit
-
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie ARIA-Attribute hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
-
-### Responsive Design
-
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Optimieren Sie die Lesbarkeit auf mobilen Geräten
-- Berücksichtigen Sie die Zeilenlänge
-
-### Performance
-
-- Minimieren Sie CSS
-- Optimieren Sie Webfonts
-- Vermeiden Sie unnötige Verschachtelungen
-- Verwenden Sie CSS-Transitions statt JavaScript-Animationen
-
-## Integration
-
-### Astro
-
-```astro
----
-import 'casoon-ui-lib/modules/typography.module.css';
-
-interface Props {
-  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'text';
-  size?: 'small' | 'normal' | 'large';
-  weight?: 'normal' | 'bold';
-  style?: 'normal' | 'italic' | 'underline' | 'strikethrough';
-  color?: 'primary' | 'secondary' | 'success' | 'warning' | 'error';
-  align?: 'left' | 'center' | 'right' | 'justify';
-}
-
-const {
-  variant = 'text',
-  size = 'normal',
-  weight = 'normal',
-  style = 'normal',
-  color,
-  align
-} = Astro.props;
----
-
-{#if variant.startsWith('h')}
-  <{variant} 
-    class:list={[
-      variant,
-      size !== 'normal' && `text--${size}`,
-      weight !== 'normal' && `text--${weight}`,
-      style !== 'normal' && `text--${style}`,
-      color && `text--${color}`,
-      align && `text--${align}`
-    ]}
-  >
-    <slot />
-  </{variant}>
-{:else}
-  <p 
-    class:list={[
-      'text',
-      size !== 'normal' && `text--${size}`,
-      weight !== 'normal' && `text--${weight}`,
-      style !== 'normal' && `text--${style}`,
-      color && `text--${color}`,
-      align && `text--${align}`
-    ]}
-  >
-    <slot />
-  </p>
-{/if}
-
-<style>
-  .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--font-family-base);
-    line-height: var(--line-height-heading);
-    color: var(--text-color-base);
-  }
-  
-  .h1 { font-size: 2.5rem; }
-  .h2 { font-size: 2rem; }
-  .h3 { font-size: 1.75rem; }
-  .h4 { font-size: 1.5rem; }
-  .h5 { font-size: 1.25rem; }
-  .h6 { font-size: 1rem; }
-  
-  .text {
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
-    color: var(--text-color-base);
-  }
-  
-  .text--small { font-size: var(--font-size-small); }
-  .text--large { font-size: var(--font-size-large); }
-  
-  .text--bold { font-weight: var(--font-weight-bold); }
-  .text--italic { font-style: italic; }
-  .text--underline { text-decoration: underline; }
-  .text--strikethrough { text-decoration: line-through; }
-  
-  .text--primary { color: var(--text-color-primary); }
-  .text--secondary { color: var(--text-color-secondary); }
-  .text--success { color: var(--text-color-success); }
-  .text--warning { color: var(--text-color-warning); }
-  .text--error { color: var(--text-color-error); }
-  
-  .text--left { text-align: left; }
-  .text--center { text-align: center; }
-  .text--right { text-align: right; }
-  .text--justify { text-align: justify; }
-</style>
-```
-
-Verwendung in einer Astro-Komponente:
-
-```astro
----
-import Typography from '../components/Typography.astro';
----
-
-<Typography variant="h1" color="primary">
-  Überschrift
-</Typography>
-
-<Typography variant="text" size="large" weight="bold">
-  Wichtiger Text
-</Typography>
-
-<Typography variant="text" style="italic" color="success">
-  Erfolgsmeldung
-</Typography>
-``` 
+- Verwenden Sie konsistente Schriftgrößen aus der Skala
+- Nutzen Sie die vordefinierten Zeilenhöhen für optimale Lesbarkeit
+- Setzen Sie Schriftgewichte gezielt für visuelle Hierarchie ein
+- Kombinieren Sie die Typografie-Utilities für komplexe Textformatierungen
+- Nutzen Sie responsive Präfixe für optimale Lesbarkeit auf allen Geräten
+- Beschränken Sie die Anzahl der verwendeten Schriftfamilien und -gewichte 

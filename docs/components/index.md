@@ -54,6 +54,7 @@ Die Casoon UI Library bietet eine Vielzahl von vorgefertigten CSS-Komponenten, d
 - Wizard - Mehrschrittassistenten
 - Blog - Blog-Layouts
 - [Effekte](./effects/) - Visuelle Effekte
+- [Code](./code/) - Code-Blöcke mit Syntax-Hervorhebung
 
 ## Verwendungsbeispiele
 

@@ -1,213 +1,168 @@
+---
+title: Alert
+category: Components
+---
+
 # Alert
 
-Die Alert-Komponente der Casoon UI Library bietet verschiedene Stile und Varianten für Benachrichtigungen und Warnmeldungen.
+Die Alert-Komponente dient zur Anzeige von wichtigen Nachrichten und Benachrichtigungen.
 
-## Verwendung
+## Beispiel
 
 ```html
-<div class="alert alert--success">
-  <div class="alert__icon">✓</div>
-  <div class="alert__content">Erfolgsmeldung</div>
+<div class="alert alert-info">
+  <div class="alert-title">Information</div>
+  <div class="alert-message">Dies ist eine Informationsmeldung.</div>
 </div>
 ```
 
-## Module importieren
+## Alert-Typen
 
-```css
-@import 'casoon-ui-lib/modules/alert.module.css';
-```
-
-## Varianten
-
-### Typen
+### Standard Alert
 
 ```html
-<div class="alert alert--success">
-  <div class="alert__icon">✓</div>
-  <div class="alert__content">Erfolgsmeldung</div>
-</div>
-
-<div class="alert alert--error">
-  <div class="alert__icon">✕</div>
-  <div class="alert__content">Fehlermeldung</div>
-</div>
-
-<div class="alert alert--warning">
-  <div class="alert__icon">⚠</div>
-  <div class="alert__content">Warnmeldung</div>
-</div>
-
-<div class="alert alert--info">
-  <div class="alert__icon">ℹ</div>
-  <div class="alert__content">Informationsmeldung</div>
+<div class="alert">
+  <div class="alert-title">Standard</div>
+  <div class="alert-message">Dies ist ein Standard-Alert.</div>
 </div>
 ```
 
-### Ohne Icon
+### Info Alert
 
 ```html
-<div class="alert alert--success">
-  <div class="alert__content">Erfolgsmeldung ohne Icon</div>
+<div class="alert alert-info">
+  <div class="alert-title">Information</div>
+  <div class="alert-message">Dies ist eine Informationsmeldung.</div>
 </div>
 ```
 
-### Schließbar
+### Success Alert
 
 ```html
-<div class="alert alert--info alert--dismissible">
-  <div class="alert__icon">ℹ</div>
-  <div class="alert__content">Schließbare Meldung</div>
-  <button class="alert__close" aria-label="Schließen">×</button>
+<div class="alert alert-success">
+  <div class="alert-title">Erfolg</div>
+  <div class="alert-message">Der Vorgang wurde erfolgreich abgeschlossen.</div>
 </div>
 ```
 
-### Mit Titel
+### Warning Alert
 
 ```html
-<div class="alert alert--warning">
-  <div class="alert__icon">⚠</div>
-  <div class="alert__content">
-    <div class="alert__title">Achtung</div>
-    <div>Ihre Sitzung läuft in 5 Minuten ab.</div>
+<div class="alert alert-warning">
+  <div class="alert-title">Warnung</div>
+  <div class="alert-message">Bitte beachten Sie diesen wichtigen Hinweis.</div>
+</div>
+```
+
+### Error Alert
+
+```html
+<div class="alert alert-error">
+  <div class="alert-title">Fehler</div>
+  <div class="alert-message">Ein Fehler ist aufgetreten.</div>
+</div>
+```
+
+## Alerts im Grid-Layout
+
+```vue
+<Grid columns="2">
+  <Card title="Erfolg">
+    <div class="alert alert-success">
+      <div class="alert-title">Erfolg</div>
+      <div class="alert-message">Die Daten wurden gespeichert.</div>
+      <Button>Schließen</Button>
+    </div>
+  </Card>
+  <Card title="Information">
+    <div class="alert alert-info">
+      <div class="alert-title">Information</div>
+      <div class="alert-message">Neue Updates verfügbar.</div>
+      <Button>Jetzt aktualisieren</Button>
+    </div>
+  </Card>
+  <Card title="Warnung">
+    <div class="alert alert-warning">
+      <div class="alert-title">Warnung</div>
+      <div class="alert-message">Batteriestand niedrig.</div>
+      <Button>Ignorieren</Button>
+    </div>
+  </Card>
+  <Card title="Fehler">
+    <div class="alert alert-error">
+      <div class="alert-title">Fehler</div>
+      <div class="alert-message">Netzwerkverbindung unterbrochen.</div>
+      <Button>Erneut versuchen</Button>
+    </div>
+  </Card>
+</Grid>
+```
+
+## Mit Icons
+
+```html
+<div class="alert alert-info">
+  <div class="alert-icon">
+    <span class="icon icon-info"></span>
+  </div>
+  <div class="alert-content">
+    <div class="alert-title">Information</div>
+    <div class="alert-message">Dies ist eine Informationsmeldung mit Icon.</div>
   </div>
 </div>
 ```
 
-### Mit Aktionsbutton
+## Schließbare Alerts
 
 ```html
-<div class="alert alert--info">
-  <div class="alert__icon">ℹ</div>
-  <div class="alert__content">
-    <div>Updates sind verfügbar.</div>
-    <button class="button button--sm button--outline alert__action">Jetzt aktualisieren</button>
+<div class="alert alert-warning">
+  <div class="alert-content">
+    <div class="alert-title">Warnung</div>
+    <div class="alert-message">Dieser Alert kann geschlossen werden.</div>
   </div>
+  <button class="alert-close">
+    <span class="icon icon-close"></span>
+  </button>
 </div>
 ```
+
+## Props
+
+| Name    | Typ     | Standard | Beschreibung                              |
+|---------|---------|----------|-------------------------------------------|
+| type    | String  | 'default'| Alert-Typ: 'info', 'success', 'warning', 'error' |
+| title   | String  | ''       | Titel des Alerts                          |
+| message | String  | ''       | Nachrichtentext des Alerts                |
+| closable| Boolean | false    | Ob der Alert schließbar ist               |
+| icon    | Boolean | true     | Ob ein Icon angezeigt wird                |
 
 ## CSS-Variablen
 
-Die Alert-Komponente verwendet folgende CSS-Variablen:
-
 ```css
 :root {
-  --alert-padding: 1rem;
-  --alert-border-radius: var(--border-radius, 0.25rem);
-  --alert-margin-bottom: 1rem;
-  --alert-border-width: 1px;
+  --alert-border-radius: var(--radius-md);
+  --alert-padding: var(--spacing-4);
+  --alert-margin: var(--spacing-4) 0;
+  --alert-font-size: var(--font-size-base);
   
-  --alert-success-bg: var(--color-success-light, #ecfdf5);
-  --alert-success-color: var(--color-success-dark, #047857);
-  --alert-success-border: var(--color-success, #10b981);
+  --alert-default-bg: var(--color-gray-100);
+  --alert-default-color: var(--color-gray-800);
+  --alert-default-border: var(--color-gray-300);
   
-  --alert-error-bg: var(--color-error-light, #fef2f2);
-  --alert-error-color: var(--color-error-dark, #b91c1c);
-  --alert-error-border: var(--color-error, #ef4444);
+  --alert-info-bg: var(--color-blue-100);
+  --alert-info-color: var(--color-blue-800);
+  --alert-info-border: var(--color-blue-300);
   
-  --alert-warning-bg: var(--color-warning-light, #fffbeb);
-  --alert-warning-color: var(--color-warning-dark, #b45309);
-  --alert-warning-border: var(--color-warning, #f59e0b);
+  --alert-success-bg: var(--color-green-100);
+  --alert-success-color: var(--color-green-800);
+  --alert-success-border: var(--color-green-300);
   
-  --alert-info-bg: var(--color-info-light, #eff6ff);
-  --alert-info-color: var(--color-info-dark, #1e40af);
-  --alert-info-border: var(--color-info, #3b82f6);
+  --alert-warning-bg: var(--color-yellow-100);
+  --alert-warning-color: var(--color-yellow-800);
+  --alert-warning-border: var(--color-yellow-300);
   
-  --alert-icon-margin-right: 0.75rem;
-  --alert-title-font-weight: 600;
-  --alert-title-margin-bottom: 0.25rem;
-  --alert-close-size: 1.5rem;
-  --alert-close-opacity: 0.5;
-  --alert-close-opacity-hover: 1;
+  --alert-error-bg: var(--color-red-100);
+  --alert-error-color: var(--color-red-800);
+  --alert-error-border: var(--color-red-300);
 }
-```
-
-## Best Practices
-
-### Zugänglichkeit
-
-- Verwenden Sie angemessene Kontrastfarben für den Text
-- Fügen Sie ein `aria-label` zu schließbaren Alerts hinzu
-- Verwenden Sie semantische Rollen (`role="alert"`) für wichtige Benachrichtigungen
-- Stellen Sie sicher, dass Benachrichtigungen von Screenreadern korrekt gelesen werden
-
-### Responsive Design
-
-- Stellen Sie sicher, dass die Alerts auf allen Bildschirmgrößen lesbar sind
-- Passen Sie Padding und Textgröße für mobile Geräte an
-- Verwenden Sie Flexbox für flexibles Layout der Alert-Inhalte
-
-### Verwendungszweck
-
-- Erfolg (`alert--success`): Für erfolgreiche Aktionen oder positive Nachrichten
-- Fehler (`alert--error`): Für Fehlermeldungen oder kritische Probleme
-- Warnung (`alert--warning`): Für Warnungen oder Hinweise auf mögliche Probleme
-- Info (`alert--info`): Für neutrale Informationen oder Hinweise
-
-## JavaScript für interaktive Alert-Komponenten
-
-```js
-// alert.js
-document.addEventListener('DOMContentLoaded', function() {
-  // Funktionalität für schließbare Alerts
-  document.querySelectorAll('.alert--dismissible .alert__close').forEach(button => {
-    button.addEventListener('click', function() {
-      const alert = this.closest('.alert');
-      alert.style.opacity = '0';
-      setTimeout(() => {
-        alert.style.display = 'none';
-      }, 300);
-    });
-  });
-  
-  // Automatisch verschwindende Alerts
-  document.querySelectorAll('.alert--auto-dismiss').forEach(alert => {
-    setTimeout(() => {
-      alert.style.opacity = '0';
-      setTimeout(() => {
-        alert.style.display = 'none';
-      }, 300);
-    }, 5000); // verschwindet nach 5 Sekunden
-  });
-});
-```
-
-## HTML-Beispiel
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="output.css">
-  <script src="alert.js"></script>
-</head>
-<body class="theme-day">
-  <!-- Erfolgs-Alert -->
-  <div class="alert alert--success custom-alert">
-    <div class="alert__icon">✓</div>
-    <div class="alert__content">Die Daten wurden erfolgreich gespeichert.</div>
-  </div>
-
-  <!-- Fehler-Alert mit Titel -->
-  <div class="alert alert--error">
-    <div class="alert__icon">✕</div>
-    <div class="alert__content">
-      <div class="alert__title">Fehler</div>
-      <div>Die Verbindung zum Server konnte nicht hergestellt werden.</div>
-    </div>
-  </div>
-
-  <!-- Schließbare Warnmeldung -->
-  <div class="alert alert--warning alert--dismissible">
-    <div class="alert__icon">⚠</div>
-    <div class="alert__content">Ihre Sitzung läuft in 5 Minuten ab.</div>
-    <button class="alert__close" aria-label="Schließen">×</button>
-  </div>
-
-  <!-- Automatisch verschwindende Info-Meldung -->
-  <div class="alert alert--info alert--auto-dismiss">
-    <div class="alert__icon">ℹ</div>
-    <div class="alert__content">Diese Meldung verschwindet automatisch.</div>
-  </div>
-</body>
-</html>
 ``` 

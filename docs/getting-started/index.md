@@ -7,77 +7,52 @@ Die Casoon UI Library ist eine moderne, flexible und zugängliche Komponentenbib
 ## Installation
 
 ```bash
-npm install casoon-ui-lib@0.2.1
+npm install @casoon/ui-lib@latest
 ```
 
 Oder mit Yarn:
 
 ```bash
-yarn add casoon-ui-lib@0.2.1
+yarn add @casoon/ui-lib@latest
+```
+
+Oder mit pnpm:
+
+```bash
+pnpm add @casoon/ui-lib@latest
 ```
 
 ## Verwendung
 
-### Core Styles
+### Core CSS
 
-Die Core CSS-Datei enthält die grundlegenden Styles und Layer:
+Die Core CSS-Datei enthält die grundlegenden Styles und die komplette Layer-Struktur:
 
 ```css
-@import 'casoon-ui-lib/core.css';
+@import '@casoon/ui-lib/core.css';
 ```
 
-Die `core.css` enthält folgende Layer:
+Die `core.css` importiert die Layer-Definitionen aus `layers.css` und alle notwendigen Theme-Dateien. Die Layer-Struktur ist hierarchisch aufgebaut, um eine präzise Steuerung der CSS-Spezifität zu gewährleisten:
 
 ```css
-@layer core {
-    @import url("layers/tokens.css");
-    @import url("layers/reset.css");
-    @import url("layers/colors.css");
-    @import url("layers/typography.css");
-    @import url("layers/utilities.css");
-    @import url("layers/layout.css");
-    @import url("layers/smooth-scroll.css");
-}
-
-@layer icons {
-    /* Utility Imports */
-    @import url('icons/base.css');
-}
-
-@layer animations {
-    /* Animations Imports */
-    @import url('layers/animations.css');
-}
-
-@layer effects {
-    /* Effects Imports */
-    @import url('layers/effects.css');
-}
-
-@layer themes {
-    /* Basis-Theme - wird immer geladen */
-    @import url('themes/theme-base.css');
-    
-    /* Feature-spezifische Themes */
-    @import url('themes/accessibility.css');
-    @import url('themes/dark-mode.css');
-    @import url('themes/brands.css');
-    
-    /* Standard Theme Variations */
-    @import url('themes/day.css');
-    @import url('themes/night.css');
-    @import url('themes/spring.css');
-    @import url('themes/summer.css');
-    @import url('themes/autumn.css');
-    @import url('themes/winter.css');
-    @import url('themes/forest.css');
-    @import url('themes/ocean.css');
-    @import url('themes/pastel.css');
-    @import url('themes/neon.css');
-    @import url('themes/retro.css');
-    @import url('themes/monochrome.css');
-    @import url('themes/sunset.css');
-}
+/* Hierarchische Layer-Struktur */
+@layer reset,                /* Browser-Reset, Normalisierung */
+       tokens,               /* Design-Tokens, Variablen */
+       custom-properties,    /* Registrierte CSS-Eigenschaften */
+       core,                 /* Kernfunktionalitäten */
+       logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
+       colors,               /* Farbsystem */
+       color-mix,            /* Farbmischungen und -variationen */
+       layout,               /* Layout-Grundlagen */
+       typography,           /* Typografie-System */
+       utilities,            /* Utility-Klassen */
+       smooth-scroll,        /* Scroll-Verhalten */
+       accessibility,        /* Barrierefreiheit */
+       icons,                /* Icon-System */
+       animations,           /* Animationen */
+       effects,              /* Visuelle Effekte */
+       themes,               /* Theming-System */
+       components;           /* Komponenten (für benutzerdefinierte Erweiterungen) */
 ```
 
 ### Themes
@@ -86,23 +61,23 @@ Die Casoon UI Library bietet verschiedene Theme-Optionen:
 
 ```css
 /* Standard-Themes */
-@import 'casoon-ui-lib/themes/day.css';
-@import 'casoon-ui-lib/themes/night.css';
+@import '@casoon/ui-lib/themes/day.css';
+@import '@casoon/ui-lib/themes/night.css';
 
 /* Jahreszeiten-Themes */
-@import 'casoon-ui-lib/themes/spring.css';
-@import 'casoon-ui-lib/themes/summer.css';
-@import 'casoon-ui-lib/themes/autumn.css';
-@import 'casoon-ui-lib/themes/winter.css';
+@import '@casoon/ui-lib/themes/spring.css';
+@import '@casoon/ui-lib/themes/summer.css';
+@import '@casoon/ui-lib/themes/autumn.css';
+@import '@casoon/ui-lib/themes/winter.css';
 
 /* Spezielle Themes */
-@import 'casoon-ui-lib/themes/ocean.css';
-@import 'casoon-ui-lib/themes/forest.css';
-@import 'casoon-ui-lib/themes/sunset.css';
-@import 'casoon-ui-lib/themes/pastel.css';
-@import 'casoon-ui-lib/themes/retro.css';
-@import 'casoon-ui-lib/themes/monochrome.css';
-@import 'casoon-ui-lib/themes/neon.css';
+@import '@casoon/ui-lib/themes/forest.css';
+@import '@casoon/ui-lib/themes/ocean.css';
+@import '@casoon/ui-lib/themes/pastel.css';
+@import '@casoon/ui-lib/themes/neon.css';
+@import '@casoon/ui-lib/themes/retro.css';
+@import '@casoon/ui-lib/themes/monochrome.css';
+@import '@casoon/ui-lib/themes/sunset.css';
 ```
 
 Um ein Theme zu aktivieren, fügen Sie die entsprechende Klasse zum `<html>` oder `<body>` Element hinzu:
@@ -113,51 +88,65 @@ Um ein Theme zu aktivieren, fügen Sie die entsprechende Klasse zum `<html>` ode
 </body>
 ```
 
-### Module
+### Module vs. Components
 
-Module können einzeln importiert werden:
+Die Casoon UI Library unterscheidet zwischen Modulen und Komponenten:
+
+#### Module
+
+Module sind fertige, eigenständige UI-Komponenten, die einzeln importiert werden können:
 
 ```css
 /* Grundlegende Komponenten */
-@import 'casoon-ui-lib/modules/button.module.css';
-@import 'casoon-ui-lib/modules/input.module.css';
-@import 'casoon-ui-lib/modules/textarea.module.css';
-@import 'casoon-ui-lib/modules/select.module.css';
-@import 'casoon-ui-lib/modules/checkbox.module.css';
-@import 'casoon-ui-lib/modules/radio.module.css';
-@import 'casoon-ui-lib/modules/switch.module.css';
-@import 'casoon-ui-lib/modules/file.module.css';
-@import 'casoon-ui-lib/modules/form.module.css';
-@import 'casoon-ui-lib/modules/input-group.module.css';
+@import '@casoon/ui-lib/modules/button.module.css';
+@import '@casoon/ui-lib/modules/input.module.css';
+@import '@casoon/ui-lib/modules/textarea.module.css';
+@import '@casoon/ui-lib/modules/select.module.css';
+@import '@casoon/ui-lib/modules/checkbox.module.css';
+@import '@casoon/ui-lib/modules/radio.module.css';
+@import '@casoon/ui-lib/modules/switch.module.css';
+@import '@casoon/ui-lib/modules/file.module.css';
+@import '@casoon/ui-lib/modules/form.module.css';
+@import '@casoon/ui-lib/modules/input-group.module.css';
 
 /* Feedback-Komponenten */
-@import 'casoon-ui-lib/modules/alert.module.css';
-@import 'casoon-ui-lib/modules/toast.module.css';
-@import 'casoon-ui-lib/modules/notification.module.css';
-@import 'casoon-ui-lib/modules/modal.module.css';
-@import 'casoon-ui-lib/modules/progress.module.css';
-@import 'casoon-ui-lib/modules/spinner.module.css';
-@import 'casoon-ui-lib/modules/skeleton.module.css';
+@import '@casoon/ui-lib/modules/alert.module.css';
+@import '@casoon/ui-lib/modules/toast.module.css';
+@import '@casoon/ui-lib/modules/notification.module.css';
+@import '@casoon/ui-lib/modules/modal.module.css';
+@import '@casoon/ui-lib/modules/progress.module.css';
+@import '@casoon/ui-lib/modules/spinner.module.css';
+@import '@casoon/ui-lib/modules/skeleton.module.css';
 
 /* Navigationskomponenten */
-@import 'casoon-ui-lib/modules/header.module.css';
-@import 'casoon-ui-lib/modules/sidebar.module.css';
-@import 'casoon-ui-lib/modules/hamburger.module.css';
-@import 'casoon-ui-lib/modules/tabs.module.css';
+@import '@casoon/ui-lib/modules/header.module.css';
+@import '@casoon/ui-lib/modules/sidebar.module.css';
+@import '@casoon/ui-lib/modules/hamburger.module.css';
+@import '@casoon/ui-lib/modules/tabs.module.css';
 
 /* Datenkomponenten */
-@import 'casoon-ui-lib/modules/table.module.css';
-@import 'casoon-ui-lib/modules/card.module.css';
-@import 'casoon-ui-lib/modules/slider.module.css';
+@import '@casoon/ui-lib/modules/table.module.css';
+@import '@casoon/ui-lib/modules/card.module.css';
+@import '@casoon/ui-lib/modules/slider.module.css';
 
 /* Zusätzliche Komponenten */
-@import 'casoon-ui-lib/modules/avatar.module.css';
-@import 'casoon-ui-lib/modules/badge.module.css';
-@import 'casoon-ui-lib/modules/chip.module.css';
-@import 'casoon-ui-lib/modules/tooltip.module.css';
-@import 'casoon-ui-lib/modules/widget.module.css';
-@import 'casoon-ui-lib/modules/wizard.module.css';
-@import 'casoon-ui-lib/modules/blog.module.css';
+@import '@casoon/ui-lib/modules/avatar.module.css';
+@import '@casoon/ui-lib/modules/badge.module.css';
+@import '@casoon/ui-lib/modules/chip.module.css';
+@import '@casoon/ui-lib/modules/tooltip.module.css';
+@import '@casoon/ui-lib/modules/widget.module.css';
+@import '@casoon/ui-lib/modules/wizard.module.css';
+@import '@casoon/ui-lib/modules/blog.module.css';
+@import '@casoon/ui-lib/modules/code.module.css';
+```
+
+#### Components
+
+Der Components-Bereich befindet sich in der Entwicklung und demonstriert, wie Sie eigene benutzerdefinierte Komponenten mit dem Layer-System erstellen können. Components nutzen fortschrittlichere CSS-Features wie Container-Queries und erweitern sowohl den components- als auch den utilities-Layer.
+
+```css
+/* Benutzerdefinierte Komponenten (in Entwicklung) */
+@import '@casoon/ui-lib/components/example.css';
 ```
 
 ## Komponenten
@@ -204,6 +193,7 @@ Die Casoon UI Library bietet eine Vielzahl von Komponenten:
 - **Widget** - Widgets
 - **Wizard** - Mehrschrittassistenten
 - **Blog** - Blog-Layouts
+- **Code** - Code-Blöcke mit Syntax-Hervorhebung
 
 ## Design System
 
@@ -260,17 +250,17 @@ Das Design System der Casoon UI Library umfasst:
 
 1. Installieren Sie die Bibliothek:
    ```bash
-   npm install casoon-ui-lib@0.2.1
+   npm install @casoon/ui-lib@latest
    ```
 
 2. Importieren Sie die Core-CSS:
    ```js
-   import 'casoon-ui-lib/core.css';
+   import '@casoon/ui-lib/core.css';
    ```
 
 3. Importieren Sie ein Theme:
    ```js
-   import 'casoon-ui-lib/themes/day.css';
+   import '@casoon/ui-lib/themes/day.css';
    ```
 
 4. Fügen Sie die Theme-Klasse zum body-Element hinzu:
@@ -282,7 +272,8 @@ Das Design System der Casoon UI Library umfasst:
 
 5. Verwenden Sie die Komponenten in Ihrem HTML:
    ```html
-   <button class="button button--primary">Klick mich</button>
+   <button class="btn">Klick mich</button>
+   <button class="btn btn--primary">Primärer Button</button>
    ```
 
 ## Häufige Fragen (FAQ)
@@ -290,7 +281,7 @@ Das Design System der Casoon UI Library umfasst:
 ### Wie installiere ich die Bibliothek?
 
 ```bash
-npm install casoon-ui-lib@0.2.1
+npm install @casoon/ui-lib@latest
 ```
 
 ### Welche Browser werden unterstützt?
@@ -344,6 +335,6 @@ npm install casoon-ui-lib@0.2.1
 ## Support
 
 Bei Problemen:
-1. Überprüfen Sie die [Dokumentation](https://github.com/casoon/casoon-ui-lib)
-2. Erstellen Sie ein [Issue](https://github.com/casoon/casoon-ui-lib/issues)
+1. Überprüfen Sie die [Dokumentation](https://github.com/casoon/ui-lib)
+2. Erstellen Sie ein [Issue](https://github.com/casoon/ui-lib/issues)
 3. Kontaktieren Sie das [Support-Team](mailto:support@casoon.com) 

@@ -1,6 +1,11 @@
+---
+title: Chip
+category: Components
+---
+
 # Chip
 
-Die Chip-Komponente der Casoon UI Library wird verwendet, um kompakte Elemente wie Tags, Filter oder Auswahloptionen darzustellen.
+Die Chip-Komponente ist ein kompaktes Element, das Informationen, Attribute oder Aktionen repräsentiert. Chips ermöglichen Benutzern, Informationen zu erfassen, Filter anzuwenden, Auswahlmöglichkeiten zu treffen oder Aktionen auszulösen.
 
 ## Verwendung
 
@@ -306,4 +311,271 @@ document.querySelectorAll('.chip__close').forEach(button => {
     </div>
   </div>
 </div>
-``` 
+```
+
+## Beispiel
+
+```html
+<span class="chip">Basis-Chip</span>
+```
+
+## Chip-Varianten
+
+### Standard-Chip
+
+```html
+<span class="chip">Standard</span>
+```
+
+### Primär-Chip
+
+```html
+<span class="chip chip-primary">Primär</span>
+```
+
+### Sekundär-Chip
+
+```html
+<span class="chip chip-secondary">Sekundär</span>
+```
+
+### Success-Chip
+
+```html
+<span class="chip chip-success">Erfolg</span>
+```
+
+### Warning-Chip
+
+```html
+<span class="chip chip-warning">Warnung</span>
+```
+
+### Error-Chip
+
+```html
+<span class="chip chip-error">Fehler</span>
+```
+
+### Info-Chip
+
+```html
+<span class="chip chip-info">Info</span>
+```
+
+## Chips mit Icons
+
+```html
+<span class="chip">
+  <span class="chip-icon"><span class="icon icon-user"></span></span>
+  Benutzer
+</span>
+
+<span class="chip chip-success">
+  <span class="chip-icon"><span class="icon icon-check"></span></span>
+  Bestätigt
+</span>
+```
+
+## Auswählbare Chips
+
+```html
+<span class="chip chip-selectable">
+  <input type="checkbox" id="chip1" class="chip-input">
+  <label for="chip1" class="chip-label">Auswählbar</label>
+</span>
+```
+
+## Löschbare Chips
+
+```html
+<span class="chip">
+  Löschbar
+  <button class="chip-delete" aria-label="Entfernen">
+    <span class="icon icon-close"></span>
+  </button>
+</span>
+```
+
+## Chips mit Avataren
+
+```html
+<span class="chip">
+  <span class="chip-avatar">JD</span>
+  John Doe
+</span>
+```
+
+## Chips mit Status
+
+```html
+<span class="chip">
+  <span class="chip-status chip-status-online"></span>
+  Online
+</span>
+
+<span class="chip">
+  <span class="chip-status chip-status-offline"></span>
+  Offline
+</span>
+```
+
+## Chip-Gruppen
+
+```html
+<div class="chip-group">
+  <span class="chip">Design</span>
+  <span class="chip">Development</span>
+  <span class="chip">Marketing</span>
+</div>
+```
+
+## Chips im Grid-Layout
+
+```vue
+<Grid columns="3">
+  <Card title="Benutzer-Tags">
+    <div class="chip-group">
+      <span class="chip chip-primary">
+        <span class="chip-avatar">JD</span>
+        John Doe
+        <button class="chip-delete" aria-label="Entfernen">
+          <span class="icon icon-close"></span>
+        </button>
+      </span>
+      <span class="chip chip-primary">
+        <span class="chip-avatar">AS</span>
+        Anna Smith
+        <button class="chip-delete" aria-label="Entfernen">
+          <span class="icon icon-close"></span>
+        </button>
+      </span>
+      <Button size="small">Hinzufügen</Button>
+    </div>
+  </Card>
+  <Card title="Projekt-Tags">
+    <div class="chip-group">
+      <span class="chip chip-secondary">Frontend</span>
+      <span class="chip chip-secondary">Backend</span>
+      <span class="chip chip-secondary">API</span>
+      <Button size="small">Mehr</Button>
+    </div>
+  </Card>
+  <Card title="Status">
+    <div class="chip-group">
+      <span class="chip chip-success">Abgeschlossen</span>
+      <span class="chip chip-warning">In Bearbeitung</span>
+      <span class="chip chip-error">Blockiert</span>
+      <span class="chip chip-info">Geplant</span>
+    </div>
+    <Button>Status ändern</Button>
+  </Card>
+</Grid>
+```
+
+## Anpassbare Chips
+
+```vue
+<Grid columns="2">
+  <Card title="Filter">
+    <div class="chip-group">
+      <span class="chip chip-selectable">
+        <input type="checkbox" id="filter1" class="chip-input" checked>
+        <label for="filter1" class="chip-label">Alle</label>
+      </span>
+      <span class="chip chip-selectable">
+        <input type="checkbox" id="filter2" class="chip-input">
+        <label for="filter2" class="chip-label">Ungelesen</label>
+      </span>
+      <span class="chip chip-selectable">
+        <input type="checkbox" id="filter3" class="chip-input">
+        <label for="filter3" class="chip-label">Favoriten</label>
+      </span>
+    </div>
+    <Button>Filter anwenden</Button>
+  </Card>
+  <Card title="Benachrichtigungen">
+    <div class="chip-group">
+      <span class="chip">
+        <span class="chip-status chip-status-online"></span>
+        System
+        <button class="chip-delete" aria-label="Entfernen">
+          <span class="icon icon-close"></span>
+        </button>
+      </span>
+      <span class="chip">
+        <span class="chip-status chip-status-offline"></span>
+        Updates
+        <button class="chip-delete" aria-label="Entfernen">
+          <span class="icon icon-close"></span>
+        </button>
+      </span>
+    </div>
+    <Button>Einstellungen</Button>
+  </Card>
+</Grid>
+```
+
+## Props
+
+| Name       | Typ     | Standard | Beschreibung                                      |
+|------------|---------|----------|---------------------------------------------------|
+| variant    | String  | 'default'| Chip-Variante: 'primary', 'secondary', etc.       |
+| selectable | Boolean | false    | Ob der Chip auswählbar ist                        |
+| deletable  | Boolean | false    | Ob der Chip löschbar ist                          |
+| disabled   | Boolean | false    | Ob der Chip deaktiviert ist                       |
+| icon       | String  | null     | Name des zu verwendenden Icons                    |
+| avatar     | String  | null     | Text für den Avatar (max. 2 Zeichen)              |
+| status     | String  | null     | Status-Typ: 'online', 'offline', etc.             |
+
+## CSS-Variablen
+
+```css
+:root {
+  --chip-height: 2rem;
+  --chip-border-radius: var(--radius-full);
+  --chip-padding: 0 var(--spacing-3);
+  --chip-margin: var(--spacing-1);
+  --chip-font-size: var(--font-size-sm);
+  --chip-bg: var(--color-gray-100);
+  --chip-color: var(--color-gray-800);
+  --chip-border: 1px solid var(--color-gray-300);
+  
+  --chip-primary-bg: var(--color-primary-light);
+  --chip-primary-color: var(--color-primary-dark);
+  --chip-primary-border: 1px solid var(--color-primary);
+  
+  --chip-secondary-bg: var(--color-secondary-light);
+  --chip-secondary-color: var(--color-secondary-dark);
+  --chip-secondary-border: 1px solid var(--color-secondary);
+  
+  --chip-success-bg: var(--color-success-light);
+  --chip-success-color: var(--color-success-dark);
+  --chip-success-border: 1px solid var(--color-success);
+  
+  --chip-warning-bg: var(--color-warning-light);
+  --chip-warning-color: var(--color-warning-dark);
+  --chip-warning-border: 1px solid var(--color-warning);
+  
+  --chip-error-bg: var(--color-error-light);
+  --chip-error-color: var(--color-error-dark);
+  --chip-error-border: 1px solid var(--color-error);
+  
+  --chip-info-bg: var(--color-info-light);
+  --chip-info-color: var(--color-info-dark);
+  --chip-info-border: 1px solid var(--color-info);
+  
+  --chip-hover-opacity: 0.9;
+  --chip-active-opacity: 0.8;
+  --chip-disabled-opacity: 0.5;
+}
+```
+
+## Best Practices
+
+- Verwenden Sie Chips zur Darstellung von Attributen, Tags oder Filtern
+- Halten Sie den Inhalt von Chips kurz und prägnant
+- Bei löschbaren Chips sollte der Lösch-Button ausreichend groß für einfache Bedienung sein
+- Gruppieren Sie zusammengehörige Chips in Chip-Gruppen
+- Verwenden Sie die verschiedenen Varianten, um Bedeutung zu vermitteln
+- Stellen Sie sicher, dass Chips ausreichenden Kontrast für gute Lesbarkeit bieten 
