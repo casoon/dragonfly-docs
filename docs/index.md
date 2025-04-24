@@ -28,7 +28,7 @@ npm install @casoon/ui-lib@latest
 
 2. Importieren Sie die CSS in Ihr Projekt:
    ```css
-   @import '@casoon/ui-lib/dist/index.css';
+   @import '@casoon/ui-lib/core.css';
    ```
 
 3. Aktivieren Sie ein Theme, indem Sie die entsprechende Klasse hinzufügen:
@@ -49,19 +49,9 @@ Die Casoon UI Library folgt einer modularen, schichtbasierten Architektur:
 
 ```
 @casoon/ui-lib/
-├── dist/
-│   ├── index.css          # Vollständige CSS-Library
-│   ├── core.css           # Kern-Styles
-│   ├── themes/            # Theme-spezifische CSS-Dateien
-│   └── modules/           # Einzelne Komponenten-CSS-Dateien
-└── src/
-    ├── core/              # Kern-Styles
-    │   ├── tokens.css     # Design Tokens
-    │   ├── reset.css      # Normalisierung
-    │   ├── typography.css # Typografie-Regeln
-    │   └── utilities.css  # Utility-Klassen
-    ├── modules/           # Komponenten-Styles
-    └── themes/            # Theme-Definitionen
+├── core.css           # Kern-Styles
+├── themes/            # Theme-spezifische CSS-Dateien
+└── modules/           # Einzelne Komponenten-CSS-Dateien
 ```
 
 ## CSS-Architektur
@@ -94,18 +84,18 @@ Sie können entweder die vollständige Library oder nur bestimmte Module importi
 
 ```css
 /* Vollständige Library */
-@import '@casoon/ui-lib/dist/all.css';
+@import '@casoon/ui-lib/all.css';
 
 /* Nur Kern-Styles */
-@import '@casoon/ui-lib/dist/core.css';
+@import '@casoon/ui-lib/core.css';
 
 /* Einzelne Module */
-@import '@casoon/ui-lib/dist/modules/buttons.css';
-@import '@casoon/ui-lib/dist/modules/forms.css';
+@import '@casoon/ui-lib/modules/button.module.css';
+@import '@casoon/ui-lib/modules/form.module.css';
 
 /* Themes */
-@import '@casoon/ui-lib/dist/themes/day.css';
-@import '@casoon/ui-lib/dist/themes/night.css';
+@import '@casoon/ui-lib/themes/day.css';
+@import '@casoon/ui-lib/themes/night.css';
 ```
 
 ## Styles & Konzepte
