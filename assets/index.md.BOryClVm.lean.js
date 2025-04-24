@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as e,ae as n}from"./chunks/framework.BpLw12bU.js";const E=JSON.parse('{"title":"Casoon UI Library","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),t={name:"index.md"};function l(h,s,p,r,k,d){return e(),a("div",null,s[0]||(s[0]=[n("",63)]))}const g=i(t,[["render",l]]);export{E as __pageData,g as default};
