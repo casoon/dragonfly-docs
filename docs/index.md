@@ -12,6 +12,7 @@ Die Casoon UI Library ist ein umfassendes CSS-Framework, das ein System aus Desi
 - [Installation](/getting-started/installation)
 - [Styles](/getting-started/styles)
 - [Module](/modules/)
+- [Guide](/guide/)
 
 ## Schnellstart
 

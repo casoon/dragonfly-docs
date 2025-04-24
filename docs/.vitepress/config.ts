@@ -24,7 +24,7 @@ export default defineConfig({
       { text: 'Getting Started', link: '/getting-started/' },
       { text: 'Styles', link: '/getting-started/styles' },
       { text: 'Module', link: '/modules/' },
-      { text: 'Foundation', link: '/foundation/colors' },
+      { text: 'Guide', link: '/guide/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
 
@@ -71,79 +71,89 @@ export default defineConfig({
         {
           text: 'Grundlegende Module',
           items: [
-            { text: 'Button', link: '/modules/button' },
-            { text: 'Input', link: '/modules/input' },
-            { text: 'Textarea', link: '/modules/textarea' },
-            { text: 'Select', link: '/modules/select' },
-            { text: 'Checkbox', link: '/modules/checkbox' },
-            { text: 'Radio', link: '/modules/radio' },
-            { text: 'Switch', link: '/modules/switch' },
-            { text: 'File', link: '/modules/file' },
-            { text: 'Forms', link: '/modules/forms' }
+            { text: 'Button', link: '/modules/button/' },
+            { text: 'Input', link: '/modules/input/' },
+            { text: 'Textarea', link: '/modules/textarea/' },
+            { text: 'Select', link: '/modules/select/' },
+            { text: 'Checkbox', link: '/modules/checkbox/' },
+            { text: 'Radio', link: '/modules/radio/' },
+            { text: 'Switch', link: '/modules/switch/' },
+            { text: 'File', link: '/modules/file/' },
+            { text: 'Forms', link: '/modules/forms/' }
           ]
         },
         {
           text: 'Feedback-Module',
           items: [
-            { text: 'Alert', link: '/modules/alert' },
-            { text: 'Toast', link: '/modules/toast' },
-            { text: 'Notification', link: '/modules/notification' },
-            { text: 'Modal', link: '/modules/modal' },
-            { text: 'Progress', link: '/modules/progress' },
-            { text: 'Spinner', link: '/modules/spinner' }
+            { text: 'Alert', link: '/modules/alert/' },
+            { text: 'Toast', link: '/modules/toast/' },
+            { text: 'Notification', link: '/modules/notification/' },
+            { text: 'Modal', link: '/modules/modal/' },
+            { text: 'Progress', link: '/modules/progress/' },
+            { text: 'Spinner', link: '/modules/spinner/' }
           ]
         },
         {
           text: 'Navigationsmodule',
           items: [
-            { text: 'Tabs', link: '/modules/tabs' },
-            { text: 'Accordion', link: '/modules/accordion' },
-            { text: 'Dropdown', link: '/modules/dropdown' },
-            { text: 'Pagination', link: '/modules/pagination' },
-            { text: 'Navigation', link: '/modules/navigation' },
-            { text: 'Sidebar', link: '/modules/sidebar' },
-            { text: 'Header', link: '/modules/header' },
-            { text: 'Hamburger', link: '/modules/hamburger' }
+            { text: 'Tabs', link: '/modules/tabs/' },
+            { text: 'Accordion', link: '/modules/accordion/' },
+            { text: 'Dropdown', link: '/modules/dropdown/' },
+            { text: 'Pagination', link: '/modules/pagination/' },
+            { text: 'Navigation', link: '/modules/navigation/' },
+            { text: 'Sidebar', link: '/modules/sidebar/' },
+            { text: 'Header', link: '/modules/header/' },
+            { text: 'Hamburger', link: '/modules/hamburger/' }
           ]
         },
         {
           text: 'Datenmodule',
           items: [
-            { text: 'Table', link: '/modules/table' },
-            { text: 'Card', link: '/modules/card' },
-            { text: 'Slider', link: '/modules/slider' }
+            { text: 'Table', link: '/modules/table/' },
+            { text: 'Card', link: '/modules/card/' },
+            { text: 'Slider', link: '/modules/slider/' }
           ]
         },
         {
           text: 'Zusätzliche Module',
           items: [
-            { text: 'Avatar', link: '/modules/avatar' },
-            { text: 'Badge', link: '/modules/badge' },
-            { text: 'Chip', link: '/modules/chip' },
-            { text: 'Tooltip', link: '/modules/tooltip' },
-            { text: 'Widget', link: '/modules/widget' },
-            { text: 'Wizard', link: '/modules/wizard' },
-            { text: 'Blog', link: '/modules/blog' },
-            { text: 'Skeleton', link: '/modules/skeleton' }
+            { text: 'Avatar', link: '/modules/avatar/' },
+            { text: 'Badge', link: '/modules/badge/' },
+            { text: 'Chip', link: '/modules/chip/' },
+            { text: 'Tooltip', link: '/modules/tooltip/' },
+            { text: 'Widget', link: '/modules/widget/' },
+            { text: 'Wizard', link: '/modules/wizard/' },
+            { text: 'Blog', link: '/modules/blog/' },
+            { text: 'Skeleton', link: '/modules/skeleton/' }
           ]
         },
         {
           text: 'Effekte & Darstellung',
           items: [
-            { text: 'Animationen', link: '/modules/effects' },
-            { text: 'Code', link: '/modules/code' }
+            { text: 'Animationen', link: '/modules/effects/' },
+            { text: 'Code', link: '/modules/code/' }
           ]
         }
       ],
-      '/foundation/': [
+      '/guide/': [
+        {
+          text: 'Guide',
+          items: [
+            { text: 'Übersicht', link: '/guide/' },
+            { text: 'Layout', link: '/guide/grid-system' },
+            { text: 'Flexbox', link: '/guide/flexbox-system' },
+            { text: 'Container', link: '/guide/container-system' },
+            { text: 'Formulare', link: '/guide/forms-system' }
+          ]
+        },
         {
           text: 'Foundation',
           items: [
-            { text: 'Colors', link: '/foundation/colors' },
-            { text: 'Typography', link: '/foundation/typography' },
-            { text: 'Layout', link: '/foundation/layout' },
-            { text: 'Theming', link: '/foundation/theming' },
-            { text: 'Accessibility', link: '/foundation/accessibility' }
+            { text: 'Farben', link: '/getting-started/tokens#farben' },
+            { text: 'Typografie', link: '/getting-started/typography' },
+            { text: 'Layout', link: '/getting-started/layout' },
+            { text: 'Theming', link: '/getting-started/themes' },
+            { text: 'Barrierefreiheit', link: '/getting-started/#zugänglichkeit' }
           ]
         }
       ]
