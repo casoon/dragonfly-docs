@@ -7,14 +7,6 @@ category: Getting Started
 
 Die Typografie-Styles der Casoon UI Library bieten eine konsistente und skalierbare Textformatierung für moderne Webanwendungen. Diese Styles können unabhängig von Komponenten verwendet werden.
 
-## Grundlegende Verwendung
-
-Um die Typografie-Styles zu verwenden, importieren Sie die CSS-Datei:
-
-```css
-@import "casoon-ui-lib/dist/index.css";
-```
-
 ## Schriftfamilien
 
 Die Casoon UI Library verwendet ein System von Schriftfamilien, die über CSS-Variablen definiert sind:
@@ -225,11 +217,11 @@ Alle Typografie-Utilities können mit Breakpoint-Präfixen verwendet werden:
 </p>
 ```
 
-## Best Practices
+## Best Practices für Typografie
 
-- Verwenden Sie konsistente Schriftgrößen aus der Skala
-- Nutzen Sie die vordefinierten Zeilenhöhen für optimale Lesbarkeit
-- Setzen Sie Schriftgewichte gezielt für visuelle Hierarchie ein
-- Kombinieren Sie die Typografie-Utilities für komplexe Textformatierungen
-- Nutzen Sie responsive Präfixe für optimale Lesbarkeit auf allen Geräten
-- Beschränken Sie die Anzahl der verwendeten Schriftfamilien und -gewichte 
+- **Konsistente Schriftgrößen** - Verwenden Sie die vordefinierten Größen aus der Skala
+- **Optimale Lesbarkeit** - Nutzen Sie die vordefinierten Zeilenhöhen für verschiedene Textgrößen
+- **Visuelle Hierarchie** - Setzen Sie Schriftgewichte gezielt ein, um wichtige Elemente hervorzuheben
+- **Kombinierte Utilities** - Nutzen Sie Kombinationen von Typografie-Utilities für komplexe Formatierungen
+- **Responsive Anpassung** - Verwenden Sie responsive Präfixe für optimale Lesbarkeit auf allen Geräten
+- **Fokus auf wenige Schriftfamilien** - Beschränken Sie sich auf wenige, gut ausgewählte Schriftfamilien 

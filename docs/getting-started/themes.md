@@ -503,12 +503,12 @@ module.exports = {
 };
 ```
 
-## Best Practices
+## Best Practices für Themes
 
-- **Konsistenz bewahren**: Verwenden Sie die Theme-Variablen statt hardcodierter Farbwerte in Ihrem CSS
-- **Semantische Variablen nutzen**: Verwenden Sie `--color-primary` statt spezifischer Farbcodes
-- **Kontrast prüfen**: Testen Sie Farbkombinationen auf ausreichenden Kontrast (mindestens 4.5:1 für normalen Text)
-- **Barrierefreiheit beachten**: Bieten Sie alternative Themes für Benutzer mit besonderen Bedürfnissen an
-- **Theme-Wechsel testen**: Stellen Sie sicher, dass alle Komponenten bei Theme-Wechseln korrekt aktualisiert werden
-- **Dark Mode optimieren**: Reduzieren Sie in dunklen Themes die Helligkeit von Bildern und vermeiden Sie pure weiße Farben
-- **Systemeinstellungen respektieren**: Berücksichtigen Sie `prefers-color-scheme` und `prefers-reduced-motion` 
+- **Semantische Variablen** - Verwenden Sie semantische Theme-Variablen statt hardcodierter Farbwerte
+- **Kontrast prüfen** - Testen Sie Farbkombinationen auf ausreichenden Kontrast (mindestens 4.5:1 für Text)
+- **Zugänglichkeit einplanen** - Bieten Sie alternative Themes für Benutzer mit besonderen Bedürfnissen
+- **Theme-Wechsel testen** - Stellen Sie sicher, dass alle Komponenten korrekt aktualisiert werden
+- **Dark Mode optimieren** - Reduzieren Sie in dunklen Themes die Helligkeit von Bildern
+- **Systemeinstellungen respektieren** - Unterstützen Sie `prefers-color-scheme` und `prefers-reduced-motion`
+- **Konsistente Kontrast-Farben** - Definieren Sie für jede semantische Farbe eine passende Kontrastfarbe 

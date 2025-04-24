@@ -1,6 +1,6 @@
 # Grid-System
 
-Das Grid-System der Casoon UI Library bietet ein flexibles Raster-Layout für die Gestaltung von responsiven Webseiten.
+Das Grid-System der Casoon UI Library bietet eine leistungsstarke Möglichkeit, komplexe, responsive Layouts zu erstellen.
 
 ## Module importieren
 
@@ -9,25 +9,12 @@ Das Grid-System der Casoon UI Library bietet ein flexibles Raster-Layout für di
 ```css
 /* Notwendige Abhängigkeit */
 @import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* oder ein anderes Theme */
 
-/* Grid-System */
+/* Layout-System, enthält Grid */
 @import 'casoon-ui-lib/layers/layout.css';
 ```
 
 Wenn Sie nur das Layout-Layer importieren ohne core.css, können einige Funktionen nicht korrekt funktionieren, da notwendige Definitionen für Variablen, Utility-Klassen und Grundstile fehlen würden.
-
-## Grundlegendes Grid-Layout
-
-Das Grid-System basiert auf CSS Grid und bietet eine einfache, aber leistungsstarke Möglichkeit, Layouts zu erstellen.
-
-```html
-<div class="grid">
-  <div>Element 1</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
-</div>
-```
 
 ## Grid mit Spalten
 
@@ -185,6 +172,18 @@ Der Container passt seine Breite automatisch an verschiedene Bildschirmgrößen 
 - `lg`: maximale Breite von 1024px
 - `xl`: maximale Breite von 1280px
 - `2xl`: maximale Breite von 1536px
+
+## Best Practices
+
+- **12-Spalten-System nutzen**: Verwenden Sie das standardmäßige 12-Spalten-System für maximale Flexibilität bei der Gestaltung von Layouts.
+- **Verschachtelte Grids für komplexe Layouts**: Nutzen Sie verschachtelte Grids, um komplexe UI-Strukturen zu erstellen.
+- **Grid-Bereiche benennen**: Verwenden Sie Grid-Bereichsnamen für komplexe Layouts, um die Lesbarkeit und Wartbarkeit zu verbessern.
+- **Auto-Fill und Auto-Fit für responsive Galerien**: Nutzen Sie `grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))` für dynamische, responsive Galerien.
+- **Gap-Eigenschaft verwenden**: Nutzen Sie die `gap`-Eigenschaft für konsistente Abstände zwischen Grid-Elementen.
+- **Minmax für flexible Zellgrößen**: Verwenden Sie die `minmax()`-Funktion, um minimale und maximale Zellgrößen festzulegen.
+- **Grid mit Flexbox kombinieren**: Nutzen Sie Grid für das gesamte Seitenlayout und Flexbox für Komponenten.
+- **Responsive Grid-Layouts**: Passen Sie Ihre Grid-Struktur an verschiedene Bildschirmgrößen mit Breakpoint-Klassen an.
+- **Implizite Grids für dynamischen Inhalt**: Nutzen Sie `grid-auto-rows` und `grid-auto-columns` für Inhalte mit unbekannter Anzahl von Elementen.
 
 ## Beispiele
 

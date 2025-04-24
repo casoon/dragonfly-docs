@@ -113,6 +113,8 @@ Fügen Sie die entsprechende Theme-Klasse zum `<html>` oder `<body>` Element hin
 </body>
 ```
 
+Weitere Details zum Theming finden Sie in der [Theming-Dokumentation](/getting-started/themes).
+
 ## Nutzung mit Build-Tools
 
 ### Webpack
@@ -184,36 +186,6 @@ Sie können die Casoon UI Library auch direkt über ein CDN einbinden, ohne loka
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@casoon/ui-lib@latest/dist/core.css">
 ```
-
-## CSS-Layer-System
-
-Die Casoon UI Library nutzt CSS Cascade Layers für präzise Spezifitätskontrolle:
-
-```css
-@layer reset,                /* Browser-Reset, Normalisierung */
-       tokens,               /* Design-Tokens, CSS-Variablen */
-       custom-properties,    /* Registrierte CSS-Eigenschaften */
-       core,                 /* Kernfunktionalitäten */
-       logical-properties,   /* Logische Eigenschaften */
-       colors,               /* Farbsystem */
-       color-mix,            /* Farbmischungen */
-       layout,               /* Layout-Grundlagen */
-       typography,           /* Typografie-System */
-       utilities,            /* Utility-Klassen */
-       smooth-scroll,        /* Scroll-Verhalten */
-       accessibility,        /* Barrierefreiheit */
-       icons,                /* Icon-System */
-       animations,           /* Animationen */
-       effects,              /* Visuelle Effekte */
-       themes,               /* Theming-System */
-       components;           /* Komponentendefinitionen */
-```
-
-Diese hierarchische Struktur gewährleistet, dass:
-- Der Reset Browser-Inkonsistenzen normalisiert
-- Design-Tokens durchgängig verfügbar sind
-- Komponenten auf einer soliden Basis aufbauen
-- Utilities höchste Priorität haben
 
 ## Framework-Integration
 

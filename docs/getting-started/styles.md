@@ -17,14 +17,6 @@ Die Styles der casoon-ui-lib sind in mehrere Kategorien unterteilt:
 4. **Utilities**: Hilfsklassen für häufig verwendete Styling-Aufgaben
 5. **Themes**: Anpassbare Farbpaletten und visuelle Erscheinungsbilder
 
-## Grundlegende Verwendung
-
-Um die Styles zu verwenden, importieren Sie die CSS-Datei:
-
-```css
-@import "casoon-ui-lib/dist/index.css";
-```
-
 ## Modularer Aufbau
 
 Die Styles sind modular aufgebaut und verwenden den Layering-Ansatz von CSS:
@@ -97,20 +89,6 @@ Alle Styles und Utilities unterstützen responsives Design durch Breakpoint-Prä
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
   <!-- Grid-Spaltenanzahl ändert sich je nach Bildschirmgröße -->
 </div>
-```
-
-## Themen
-
-Die Styles unterstützen verschiedene Themes, die über CSS-Klassen aktiviert werden:
-
-```html
-<body class="theme-light">
-  <!-- Light-Theme -->
-</body>
-
-<body class="theme-dark">
-  <!-- Dark-Theme -->
-</body>
 ```
 
 ## Detaillierte Dokumentation

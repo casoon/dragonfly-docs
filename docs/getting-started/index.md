@@ -4,38 +4,38 @@
 
 Die Casoon UI Library ist eine moderne, flexible und zugängliche Komponentenbibliothek für Webanwendungen. Sie bietet eine umfangreiche Sammlung von wiederverwendbaren UI-Komponenten, die sich nahtlos in Ihre Projekte integrieren lassen.
 
-## Installation
+## Schnellstart
+
+Die komplette Installationsanleitung mit allen Optionen ist unter [Installation](/getting-started/installation) zu finden. Hier eine kurze Übersicht:
 
 ```bash
 npm install @casoon/ui-lib@latest
 ```
 
-Oder mit Yarn:
+1. Importieren Sie die Core-CSS:
+   ```js
+   import '@casoon/ui-lib/core.css';
+   ```
 
-```bash
-yarn add @casoon/ui-lib@latest
-```
+2. Importieren Sie ein Theme:
+   ```js
+   import '@casoon/ui-lib/themes/day.css';
+   ```
 
-Oder mit pnpm:
+3. Aktivieren Sie das Theme:
+   ```html
+   <body class="theme-day">
+     <!-- Ihr Inhalt -->
+   </body>
+   ```
 
-```bash
-pnpm add @casoon/ui-lib@latest
-```
+## Architektur
 
-## Verwendung
+### CSS-Layer-System
 
-### Core CSS
-
-Die Core CSS-Datei enthält die grundlegenden Styles und die komplette Layer-Struktur:
+Die Casoon UI Library nutzt ein fortschrittliches CSS Cascade Layers-System für präzise Spezifitätskontrolle:
 
 ```css
-@import '@casoon/ui-lib/core.css';
-```
-
-Die `core.css` importiert die Layer-Definitionen aus `layers.css` und alle notwendigen Theme-Dateien. Die Layer-Struktur ist hierarchisch aufgebaut, um eine präzise Steuerung der CSS-Spezifität zu gewährleisten:
-
-```css
-/* Hierarchische Layer-Struktur */
 @layer reset,                /* Browser-Reset, Normalisierung */
        tokens,               /* Design-Tokens, Variablen */
        custom-properties,    /* Registrierte CSS-Eigenschaften */
@@ -55,173 +55,48 @@ Die `core.css` importiert die Layer-Definitionen aus `layers.css` und alle notwe
        components;           /* Komponenten (für benutzerdefinierte Erweiterungen) */
 ```
 
-### Themes
-
-Die Casoon UI Library bietet verschiedene Theme-Optionen:
-
-```css
-/* Standard-Themes */
-@import '@casoon/ui-lib/themes/day.css';
-@import '@casoon/ui-lib/themes/night.css';
-
-/* Jahreszeiten-Themes */
-@import '@casoon/ui-lib/themes/spring.css';
-@import '@casoon/ui-lib/themes/summer.css';
-@import '@casoon/ui-lib/themes/autumn.css';
-@import '@casoon/ui-lib/themes/winter.css';
-
-/* Spezielle Themes */
-@import '@casoon/ui-lib/themes/forest.css';
-@import '@casoon/ui-lib/themes/ocean.css';
-@import '@casoon/ui-lib/themes/pastel.css';
-@import '@casoon/ui-lib/themes/neon.css';
-@import '@casoon/ui-lib/themes/retro.css';
-@import '@casoon/ui-lib/themes/monochrome.css';
-@import '@casoon/ui-lib/themes/sunset.css';
-```
-
-Um ein Theme zu aktivieren, fügen Sie die entsprechende Klasse zum `<html>` oder `<body>` Element hinzu:
-
-```html
-<body class="theme-night">
-  <!-- Ihr Inhalt -->
-</body>
-```
-
 ### Module vs. Components
 
-Die Casoon UI Library unterscheidet zwischen Modulen und Komponenten:
+Die Casoon UI Library unterscheidet zwischen:
 
 #### Module
 
-Module sind fertige, eigenständige UI-Komponenten, die einzeln importiert werden können:
+Fertige, eigenständige UI-Komponenten, die einzeln importiert werden können:
 
 ```css
-/* Grundlegende Komponenten */
+/* Beispiele für importierbare Module */
 @import '@casoon/ui-lib/modules/button.module.css';
-@import '@casoon/ui-lib/modules/input.module.css';
-@import '@casoon/ui-lib/modules/textarea.module.css';
-@import '@casoon/ui-lib/modules/select.module.css';
-@import '@casoon/ui-lib/modules/checkbox.module.css';
-@import '@casoon/ui-lib/modules/radio.module.css';
-@import '@casoon/ui-lib/modules/switch.module.css';
-@import '@casoon/ui-lib/modules/file.module.css';
-@import '@casoon/ui-lib/modules/form.module.css';
-@import '@casoon/ui-lib/modules/input-group.module.css';
-
-/* Feedback-Komponenten */
-@import '@casoon/ui-lib/modules/alert.module.css';
-@import '@casoon/ui-lib/modules/toast.module.css';
-@import '@casoon/ui-lib/modules/notification.module.css';
-@import '@casoon/ui-lib/modules/modal.module.css';
-@import '@casoon/ui-lib/modules/progress.module.css';
-@import '@casoon/ui-lib/modules/spinner.module.css';
-@import '@casoon/ui-lib/modules/skeleton.module.css';
-
-/* Navigationskomponenten */
-@import '@casoon/ui-lib/modules/header.module.css';
-@import '@casoon/ui-lib/modules/sidebar.module.css';
-@import '@casoon/ui-lib/modules/hamburger.module.css';
-@import '@casoon/ui-lib/modules/tabs.module.css';
-
-/* Datenkomponenten */
-@import '@casoon/ui-lib/modules/table.module.css';
 @import '@casoon/ui-lib/modules/card.module.css';
-@import '@casoon/ui-lib/modules/slider.module.css';
-
-/* Zusätzliche Komponenten */
-@import '@casoon/ui-lib/modules/avatar.module.css';
-@import '@casoon/ui-lib/modules/badge.module.css';
-@import '@casoon/ui-lib/modules/chip.module.css';
-@import '@casoon/ui-lib/modules/tooltip.module.css';
-@import '@casoon/ui-lib/modules/widget.module.css';
-@import '@casoon/ui-lib/modules/wizard.module.css';
-@import '@casoon/ui-lib/modules/blog.module.css';
-@import '@casoon/ui-lib/modules/code.module.css';
+@import '@casoon/ui-lib/modules/form.module.css';
 ```
+
+Die vollständige Liste der Module finden Sie in der [Moduldokumentation](/modules/).
 
 #### Components
 
-Der Components-Bereich befindet sich in der Entwicklung und demonstriert, wie Sie eigene benutzerdefinierte Komponenten mit dem Layer-System erstellen können. Components nutzen fortschrittlichere CSS-Features wie Container-Queries und erweitern sowohl den components- als auch den utilities-Layer.
+Der Components-Bereich ist die neuere, React-basierte Implementierung der UI-Bibliothek. Die Components verwenden intern die Module für ihre Styles, bieten aber zusätzlich JavaScript-Funktionalität und erweiterte Interaktivität.
 
-```css
-/* Benutzerdefinierte Komponenten (in Entwicklung) */
-@import '@casoon/ui-lib/components/example.css';
-```
+## Kernfunktionen
 
-## Komponenten
+Die Library besteht aus mehreren Kernbereichen:
 
-Die Casoon UI Library bietet eine Vielzahl von Komponenten:
+### [Layout-System](/getting-started/layout)
+Bietet Container, Grid-System, Flexbox-Utilities und Spacing-System für strukturierte und responsive Layouts.
 
-### Grundlegende Komponenten
-- **Button** - Interaktive Schaltflächen
-- **Input** - Eingabefelder
-- **Textarea** - Mehrzeilige Eingabefelder
-- **Select** - Auswahlfelder
-- **Checkbox** - Kontrollkästchen
-- **Radio** - Radiobuttons
-- **Switch** - Umschalter
-- **File Input** - Datei-Upload
-- **Form** - Formular-Komponenten
-- **Input Group** - Gruppierte Eingabefelder
+### [Design Tokens](/getting-started/tokens)
+Definieren die grundlegenden visuellen Eigenschaften wie Farben, Abstände, Typografie und mehr, implementiert als CSS-Variablen.
 
-### Feedback-Komponenten
-- **Alert** - Hinweismeldungen
-- **Toast** - Kurze Benachrichtigungen
-- **Notification** - Detaillierte Benachrichtigungen
-- **Modal** - Dialogfenster
-- **Progress** - Fortschrittsbalken
-- **Spinner** - Ladeanzeigen
-- **Skeleton** - Platzhalter während des Ladens
+### [Typografie](/getting-started/typography)
+Ein vollständiges Typografie-System mit vordefinierten Schriftgrößen, -gewichten und -stilen.
 
-### Navigationskomponenten
-- **Header** - Kopfzeilen
-- **Sidebar** - Seitenleisten
-- **Hamburger** - Menü-Schaltflächen
-- **Tabs** - Registerkarten
+### [Utility-Klassen](/getting-started/utilities)
+Ermöglichen schnelles Styling ohne Custom-CSS durch vordefinierte Klassen für häufig benötigte Eigenschaften.
 
-### Datenkomponenten
-- **Table** - Tabellen
-- **Card** - Karten
-- **Slider** - Schieberegler
+### [Themes](/getting-started/themes)
+Unterstützung für verschiedene visuelle Themes, die einfach durch CSS-Klassen aktiviert werden können.
 
-### Zusätzliche Komponenten
-- **Avatar** - Benutzeravatare
-- **Badge** - Kennzeichnungen
-- **Chip** - Chips/Tags
-- **Tooltip** - Tooltips
-- **Widget** - Widgets
-- **Wizard** - Mehrschrittassistenten
-- **Blog** - Blog-Layouts
-- **Code** - Code-Blöcke mit Syntax-Hervorhebung
-
-## Design System
-
-Das Design System der Casoon UI Library umfasst:
-
-### Farben
-- Primäre und sekundäre Farben
-- Statusfarben (Erfolg, Warnung, Fehler, Info)
-- Graustufen
-- Farbvariationen für Themes
-
-### Typografie
-- Schriftarten und -familien
-- Schriftgrößen und -gewichte
-- Zeilenabstände und Textausrichtung
-- Textdekoration und -transformation
-
-### Layout
-- Grid-System
-- Flexbox-Utilities
-- Container und Abschnitte
-- Abstände und Ränder
-
-### Utilities
-- Spacing-Klassen
-- Display-Eigenschaften
-- Positionierung
-- Sichtbarkeit und Overflow
+### [Icons](/getting-started/iconsets)
+Eine umfassende Sammlung von SVG-Icons, die über CSS-Klassen eingebunden werden können.
 
 ## Best Practices
 
@@ -246,50 +121,14 @@ Das Design System der Casoon UI Library umfasst:
 - Minimieren Sie CSS-Dateien
 - Vermeiden Sie übermäßige Verschachtelung
 
-## Schnellstart
-
-1. Installieren Sie die Bibliothek:
-   ```bash
-   npm install @casoon/ui-lib@latest
-   ```
-
-2. Importieren Sie die Core-CSS:
-   ```js
-   import '@casoon/ui-lib/core.css';
-   ```
-
-3. Importieren Sie ein Theme:
-   ```js
-   import '@casoon/ui-lib/themes/day.css';
-   ```
-
-4. Fügen Sie die Theme-Klasse zum body-Element hinzu:
-   ```html
-   <body class="theme-day">
-     <!-- Ihr Inhalt -->
-   </body>
-   ```
-
-5. Verwenden Sie die Komponenten in Ihrem HTML:
-   ```html
-   <button class="btn">Klick mich</button>
-   <button class="btn btn--primary">Primärer Button</button>
-   ```
-
-## Häufige Fragen (FAQ)
-
-### Wie installiere ich die Bibliothek?
-
-```bash
-npm install @casoon/ui-lib@latest
-```
-
-### Welche Browser werden unterstützt?
+## Browser-Unterstützung
 
 - Chrome (neueste 2 Versionen)
 - Firefox (neueste 2 Versionen)
 - Safari (neueste 2 Versionen)
 - Edge (neueste 2 Versionen)
+
+## Häufige Fragen (FAQ)
 
 ### Wie kann ich das Theme anpassen?
 
@@ -301,15 +140,17 @@ npm install @casoon/ui-lib@latest
 }
 ```
 
+Weitere Informationen zum Theming finden Sie unter [Themes](/getting-started/themes).
+
 ### Wie aktiviere ich ein bestimmtes Theme?
 
 ```html
-<!-- Day Theme -->
+<!-- Tag Theme -->
 <body class="theme-day">
   <!-- Inhalt -->
 </body>
 
-<!-- Night Theme -->
+<!-- Nacht Theme -->
 <body class="theme-night">
   <!-- Inhalt -->
 </body>

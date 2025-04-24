@@ -528,12 +528,12 @@ Für komponenten-basierte responsive Designs unterstützt das System Container Q
 </footer>
 ```
 
-## Best Practices
+## Best Practices für Layouts
 
-- Verwenden Sie Container für einheitliche Seitenbreiten und -ränder
-- Nutzen Sie das Grid-System für zweidimensionale Layouts
-- Wählen Sie Flexbox für eindimensionale Layouts und komplexe Ausrichtungen
-- Kombinieren Sie responsive Utilities mit Breakpoint-Präfixen
-- Verwenden Sie das Spacing-System für konsistente Abstände
-- Halten Sie sich an die Z-Index-Hierarchie
-- Bevorzugen Sie Container Queries für komponenten-basierte Designs 
+- **Container für Konsistenz** - Verwenden Sie Container für einheitliche Seitenbreiten und -ränder
+- **Grid für komplexe Layouts** - Nutzen Sie das Grid-System für zweidimensionale Layouts
+- **Flexbox für einfache Ausrichtung** - Wählen Sie Flexbox für eindimensionale Layouts und Ausrichtung
+- **Mobile-First Ansatz** - Beginnen Sie mit dem mobilen Design und erweitern Sie für größere Bildschirme
+- **Konsistentes Spacing** - Verwenden Sie das Spacing-System für einheitliche Abstände
+- **Z-Index-Hierarchie** - Halten Sie sich an die definierte Z-Index-Hierarchie
+- **Container Queries für Komponenten** - Bevorzugen Sie Container Queries für komponenten-basierte Designs 

@@ -7,14 +7,6 @@ category: Getting Started
 
 Die Utility-Styles der Casoon UI Library sind eine Sammlung von Hilfsklassen für schnelles und konsistentes Styling ohne die Notwendigkeit, benutzerdefiniertes CSS zu schreiben. Sie folgen dem Utility-First-Ansatz und ermöglichen die direkte Anwendung von Design Tokens auf HTML-Elemente.
 
-## Grundlegende Verwendung
-
-Um die Utility-Styles zu verwenden, importieren Sie die CSS-Datei:
-
-```css
-@import "casoon-ui-lib/dist/index.css";
-```
-
 ## Spacing Utilities
 
 Die Spacing-Utilities bieten Klassen für Margin und Padding basierend auf der Spacing-Skala:
@@ -306,11 +298,12 @@ Alle Utilities können mit Breakpoint-Präfixen verwendet werden:
 </div>
 ```
 
-## Best Practices
+## Best Practices für Utility-Klassen
 
-- **Kombination von Utilities**: Kombinieren Sie mehrere Utility-Klassen für komplexe Styles
-- **Responsive Design**: Verwenden Sie Breakpoint-Präfixe für adaptives Layout
-- **Konsistenz**: Halten Sie sich an die vordefinierten Werte der Design Tokens
-- **Komponentenextraktion**: Extrahieren Sie häufig verwendete Utility-Kombinationen in eigene Komponenten
-- **Modularer Import**: Importieren Sie nur die benötigten Utility-Module für bessere Performance
+- **Utility-Kombination** - Kombinieren Sie mehrere Utility-Klassen für komplexe Styles
+- **Responsive Optimierung** - Nutzen Sie Breakpoint-Präfixe für adaptives Layout
+- **Token-Konsistenz** - Halten Sie sich an die vordefinierten Werte der Design Tokens
+- **Komponenten-Extraktion** - Extrahieren Sie häufig verwendete Kombinationen in eigene Komponenten
+- **Selektiver Import** - Importieren Sie nur die benötigten Utility-Module für bessere Performance
+- **Mobile-First Ansatz** - Beginnen Sie mit der mobilen Ansicht und erweitern Sie für größere Bildschirme
 ``` 

@@ -23,7 +23,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started/' },
       { text: 'Styles', link: '/getting-started/styles' },
-      { text: 'Components', link: '/components/' },
+      { text: 'Module', link: '/modules/' },
       { text: 'Foundation', link: '/foundation/colors' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
@@ -67,71 +67,71 @@ export default defineConfig({
           ]
         }
       ],
-      '/components/': [
+      '/modules/': [
         {
-          text: 'Grundlegende Komponenten',
+          text: 'Grundlegende Module',
           items: [
-            { text: 'Button', link: '/components/button' },
-            { text: 'Input', link: '/components/input' },
-            { text: 'Textarea', link: '/components/textarea' },
-            { text: 'Select', link: '/components/select' },
-            { text: 'Checkbox', link: '/components/checkbox' },
-            { text: 'Radio', link: '/components/radio' },
-            { text: 'Switch', link: '/components/switch' },
-            { text: 'File', link: '/components/file' },
-            { text: 'Forms', link: '/components/forms' }
+            { text: 'Button', link: '/modules/button' },
+            { text: 'Input', link: '/modules/input' },
+            { text: 'Textarea', link: '/modules/textarea' },
+            { text: 'Select', link: '/modules/select' },
+            { text: 'Checkbox', link: '/modules/checkbox' },
+            { text: 'Radio', link: '/modules/radio' },
+            { text: 'Switch', link: '/modules/switch' },
+            { text: 'File', link: '/modules/file' },
+            { text: 'Forms', link: '/modules/forms' }
           ]
         },
         {
-          text: 'Feedback-Komponenten',
+          text: 'Feedback-Module',
           items: [
-            { text: 'Alert', link: '/components/alert' },
-            { text: 'Toast', link: '/components/toast' },
-            { text: 'Notification', link: '/components/notification' },
-            { text: 'Modal', link: '/components/modal' },
-            { text: 'Progress', link: '/components/progress' },
-            { text: 'Spinner', link: '/components/spinner' }
+            { text: 'Alert', link: '/modules/alert' },
+            { text: 'Toast', link: '/modules/toast' },
+            { text: 'Notification', link: '/modules/notification' },
+            { text: 'Modal', link: '/modules/modal' },
+            { text: 'Progress', link: '/modules/progress' },
+            { text: 'Spinner', link: '/modules/spinner' }
           ]
         },
         {
-          text: 'Navigationskomponenten',
+          text: 'Navigationsmodule',
           items: [
-            { text: 'Tabs', link: '/components/tabs' },
-            { text: 'Accordion', link: '/components/accordion' },
-            { text: 'Dropdown', link: '/components/dropdown' },
-            { text: 'Pagination', link: '/components/pagination' },
-            { text: 'Navigation', link: '/components/navigation' },
-            { text: 'Sidebar', link: '/components/sidebar' },
-            { text: 'Header', link: '/components/header' },
-            { text: 'Hamburger', link: '/components/hamburger' }
+            { text: 'Tabs', link: '/modules/tabs' },
+            { text: 'Accordion', link: '/modules/accordion' },
+            { text: 'Dropdown', link: '/modules/dropdown' },
+            { text: 'Pagination', link: '/modules/pagination' },
+            { text: 'Navigation', link: '/modules/navigation' },
+            { text: 'Sidebar', link: '/modules/sidebar' },
+            { text: 'Header', link: '/modules/header' },
+            { text: 'Hamburger', link: '/modules/hamburger' }
           ]
         },
         {
-          text: 'Datenkomponenten',
+          text: 'Datenmodule',
           items: [
-            { text: 'Table', link: '/components/table' },
-            { text: 'Card', link: '/components/card' },
-            { text: 'Slider', link: '/components/slider' }
+            { text: 'Table', link: '/modules/table' },
+            { text: 'Card', link: '/modules/card' },
+            { text: 'Slider', link: '/modules/slider' }
           ]
         },
         {
-          text: 'Zusätzliche Komponenten',
+          text: 'Zusätzliche Module',
           items: [
-            { text: 'Avatar', link: '/components/avatar' },
-            { text: 'Badge', link: '/components/badge' },
-            { text: 'Chip', link: '/components/chip' },
-            { text: 'Tooltip', link: '/components/tooltip' },
-            { text: 'Widget', link: '/components/widget' },
-            { text: 'Wizard', link: '/components/wizard' },
-            { text: 'Blog', link: '/components/blog' },
-            { text: 'Skeleton', link: '/components/skeleton' }
+            { text: 'Avatar', link: '/modules/avatar' },
+            { text: 'Badge', link: '/modules/badge' },
+            { text: 'Chip', link: '/modules/chip' },
+            { text: 'Tooltip', link: '/modules/tooltip' },
+            { text: 'Widget', link: '/modules/widget' },
+            { text: 'Wizard', link: '/modules/wizard' },
+            { text: 'Blog', link: '/modules/blog' },
+            { text: 'Skeleton', link: '/modules/skeleton' }
           ]
         },
         {
           text: 'Effekte & Darstellung',
           items: [
-            { text: 'Animationen', link: '/components/effects' },
-            { text: 'Code', link: '/components/code' }
+            { text: 'Animationen', link: '/modules/effects' },
+            { text: 'Code', link: '/modules/code' }
           ]
         }
       ],

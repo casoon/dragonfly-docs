@@ -7,14 +7,6 @@ category: Getting Started
 
 Design Tokens sind die grundlegenden Bausteine des Casoon UI Design Systems. Sie definieren visuelle Eigenschaften wie Farben, Abstände, Schriftgrößen und mehr. Diese Tokens sind als CSS-Variablen implementiert und ermöglichen eine konsistente Gestaltung über alle Anwendungen hinweg.
 
-## Grundlegende Verwendung
-
-Um die Design Tokens zu verwenden, importieren Sie die CSS-Datei:
-
-```css
-@import "casoon-ui-lib/dist/index.css";
-```
-
 ## Farben
 
 Die Farbpalette besteht aus primären, sekundären, Akzent- und Funktionsfarben sowie einer umfassenden Graupalette.
@@ -250,24 +242,9 @@ Vordefinierte Animationszeiten und Easing-Funktionen:
 </div>
 ```
 
-## Eigene Design Tokens definieren
+## Best Practices für Design Tokens
 
-Sie können die vorhandenen Design Tokens überschreiben oder erweitern:
-
-```css
-:root {
-  /* Überschreiben der Primärfarbe */
-  --color-primary: #3366FF;
-  
-  /* Hinzufügen eines eigenen Tokens */
-  --color-brand: #FF5500;
-}
-```
-
-## Best Practices
-
-- Verwenden Sie Design Tokens anstelle von Hartkodierung von Werten
-- Behalten Sie das Spacing-System konsequent bei
-- Nutzen Sie die Farbpalette für bessere Konsistenz
-- Überschreiben Sie Tokens auf Themeebene, nicht innerhalb von Komponenten
-- Halten Sie eigene Token-Erweiterungen zu vorhandenen kompatibel 
+- **Verwenden Sie Design Tokens statt hartcodierter Werte** - Dies gewährleistet Konsistenz und vereinfacht Änderungen
+- **Nutzen Sie semantische Token-Namen** - Verwenden Sie beschreibende Namen wie `--color-primary` statt `--blue-600`
+- **Nutzen Sie die Vererbung von Tokens** - Definieren Sie Basis-Tokens und leiten Sie daraus spezifischere Tokens ab
+- **Halten Sie Token-Dokumentation aktuell** - Sorgen Sie für eine aktuelle Referenz aller verfügbaren Tokens 

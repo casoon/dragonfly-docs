@@ -373,11 +373,12 @@ Wichtige Icons können für schnellere Ladezeiten vorgeladen werden:
 <link rel="preload" href="/assets/icons/core-icons.svg" as="image" type="image/svg+xml">
 ```
 
-## Best Practices
+## Best Practices für Icons
 
-- Verwenden Sie SVG-Icons statt Icon-Fonts für bessere Barrierefreiheit und Anpassbarkeit
-- Bündeln Sie häufig verwendete Icons in einem Sprite-Sheet
-- Setzen Sie `aria-hidden="true"` für dekorative Icons und `aria-label` für funktionale Icons
-- Nutzen Sie `currentColor` für Icons, die sich an das Farbschema anpassen sollen
-- Optimieren Sie SVG-Icons vor der Verwendung (entfernen Sie unnötige Attribute)
-- Verwenden Sie die passende Icon-Größe für den jeweiligen Kontext
+- **SVG statt Icon-Fonts** - Verwenden Sie SVG-Icons für bessere Barrierefreiheit und Anpassbarkeit
+- **Sprite-Sheet Nutzung** - Bündeln Sie häufig verwendete Icons in einem Sprite-Sheet
+- **Barrierefreie Attribute** - Setzen Sie `aria-hidden="true"` für dekorative Icons und `aria-label` für funktionale Icons
+- **Farbanpassung mit currentColor** - Nutzen Sie `currentColor` für flexible Farbgestaltung
+- **Icon-Optimierung** - Optimieren Sie SVGs vor der Verwendung (unnötige Attribute entfernen)
+- **Angemessene Größen** - Verwenden Sie die passende Icon-Größe für den jeweiligen Kontext
+- **Konsistentes Styling** - Halten Sie Icon-Design und -Farben innerhalb der Anwendung einheitlich
