@@ -7,6 +7,35 @@ category: Getting Started
 
 Das Casoon UI Library Icon-System bietet eine umfassende Lösung für die Integration und Verwendung von Icons in Ihrer Anwendung.
 
+## CSS-Import
+
+Um das komplette Casoon UI Icon-System zu nutzen, importieren Sie einfach die `core.css` Datei:
+
+```css
+@import "@casoon/ui-lib/core.css";
+```
+
+Dadurch wird automatisch das Layer-System geladen, welches auch den `icons`-Layer und alle Icon-Sets über `icons.css` enthält.
+
+## Layer-Struktur
+
+Die Icons sind Teil des zentralen Layer-Systems und werden unter dem `icons`-Layer definiert:
+
+```css
+@layer reset,
+       tokens,
+       custom-properties,
+       ...
+       typography,
+       utilities,
+       smooth-scroll,
+       accessibility,
+       icons,           /* Icon-System */
+       animations,
+       effects,
+       themes;
+```
+
 ## Überblick
 
 Das Icon-System basiert auf SVG-Icons und bietet verschiedene Implementierungsmethoden:
@@ -17,36 +46,64 @@ Das Icon-System basiert auf SVG-Icons und bietet verschiedene Implementierungsme
 
 ## Einrichtung
 
-### Methode 1: Inline SVG-Icons
+### Methode 1: Komplettes Icon-System über core.css
 
-Importieren Sie das core Icon-Modul:
+Die einfachste Methode, alle Icon-Sets zu importieren:
 
-```html
-<link rel="stylesheet" href="node_modules/@casoon/ui-lib/modules/icons/icons.css">
+```css
+@import "@casoon/ui-lib/core.css";
 ```
 
-Oder per JavaScript:
+### Methode 2: Nur bestimmte Icon-Sets importieren
 
-```javascript
-import '@casoon/ui-lib/modules/icons/icons.css';
+Importieren Sie nur die benötigten Icon-Sets:
+
+```css
+/* Basis importieren */
+@import "@casoon/ui-lib/icons/base.css";
+
+/* Gewünschte Icon-Sets hinzufügen */
+@import "@casoon/ui-lib/icons/feather.css";
+@import "@casoon/ui-lib/icons/heroicons.css";
 ```
 
-### Methode 2: SVG-Sprite Sheet
+## Verfügbare Icon-Sets
 
-Integrieren Sie das Sprite-Sheet in Ihr HTML:
+Casoon UI Library bietet eine Vielzahl von Icon-Sets:
 
-```html
-<div style="display:none">
-  <!-- Sprite-Sheet wird meist einmalig am Anfang des <body> eingebunden -->
-  <svg id="icon-sprite">
-    <include src="node_modules/@casoon/ui-lib/assets/icons/sprite.svg"></include>
-  </svg>
-</div>
-```
+| Icon-Set | Beschreibung | Import-Pfad |
+|----------|--------------|-------------|
+| Feather | Einfache, klare Icons | `@casoon/ui-lib/icons/feather.css` |
+| Heroicons | Moderne Icons im Apple-Stil | `@casoon/ui-lib/icons/heroicons.css` |
+| Phosphor | Flexible, konsistente Icons | `@casoon/ui-lib/icons/phosphor.css` |
+| Bootstrap | Icons im Bootstrap-Stil | `@casoon/ui-lib/icons/bootstrap.css` |
+| Remix | Vielseitige Open-Source Icons | `@casoon/ui-lib/icons/remix.css` |
+| MDI (Material) | Google Material Design Icons | `@casoon/ui-lib/icons/mdi.css` |
+| Font Awesome | Beliebte Icon-Sammlung | `@casoon/ui-lib/icons/fontawesome.css` |
+| Lucide | Fortführung der Feather Icons | `@casoon/ui-lib/icons/lucide.css` |
+| Tabler | Über 3000 pixelperfekte Icons | `@casoon/ui-lib/icons/tabler.css` |
 
 ## Icon-Verwendung
 
-### Inline SVG-Icons
+### Standardmethode mit Icon-Klassen
+
+Das neue Icon-System verwendet einheitliche Klassennamen für alle Icon-Sets. Beispiel für Feather Icons:
+
+```html
+<span class="feather-home"></span>
+<span class="feather-settings"></span>
+<span class="feather-user"></span>
+```
+
+Für Heroicons:
+
+```html
+<span class="heroicon-home"></span>
+<span class="heroicon-cog"></span>
+<span class="heroicon-user"></span>
+```
+
+### Inline SVG-Icons (traditionell)
 
 ```html
 <div class="icon">
@@ -183,202 +240,33 @@ Oder bei Icons mit begleitendem Text:
 </button>
 ```
 
-## Verfügbare Icon-Sets
+## Eigene Icon-Sets einbinden
 
-Casoon UI Library bietet verschiedene Icon-Sets:
+Sie können eigene Icon-Sets erstellen und in das Layer-System integrieren:
 
-### Standard-Icons
+```css
+/* Eigene CSS-Datei */
+@import "@casoon/ui-lib/core.css";
 
-Dies sind die Basis-Icons für UI-Elemente wie Navigation, Aktionen und Formulare.
-
-```html
-<div class="icon">
-  <svg><use xlink:href="#icon-home"></use></svg>
-</div>
-
-<div class="icon">
-  <svg><use xlink:href="#icon-settings"></use></svg>
-</div>
-
-<div class="icon">
-  <svg><use xlink:href="#icon-user"></use></svg>
-</div>
-```
-
-### Erweiterte Icons
-
-Zusätzliche Icons für spezifischere Anwendungsfälle:
-
-```html
-<div class="icon">
-  <svg><use xlink:href="#icon-calendar"></use></svg>
-</div>
-
-<div class="icon">
-  <svg><use xlink:href="#icon-chart-bar"></use></svg>
-</div>
-
-<div class="icon">
-  <svg><use xlink:href="#icon-document"></use></svg>
-</div>
-```
-
-### Soziale Medien Icons
-
-Icons für Soziale Medien und externe Dienste:
-
-```html
-<div class="icon">
-  <svg><use xlink:href="#icon-facebook"></use></svg>
-</div>
-
-<div class="icon">
-  <svg><use xlink:href="#icon-twitter"></use></svg>
-</div>
-
-<div class="icon">
-  <svg><use xlink:href="#icon-linkedin"></use></svg>
-</div>
-```
-
-## Icon-Import und -Export
-
-### SVG-Icons importieren
-
-Sie können eigene SVG-Icons zum Sprite-Sheet hinzufügen:
-
-1. Optimieren Sie Ihre SVG-Datei (z.B. mit SVGO)
-2. Fügen Sie die SVG-Datei mit einer eindeutigen ID zum Sprite-Sheet hinzu
-3. Referenzieren Sie das Icon über die ID
-
-### Icons von Drittanbietern
-
-Sie können auch Icon-Sets von Drittanbietern integrieren:
-
-```javascript
-// Beispiel für die Integration von Font Awesome oder ähnlichen Icon-Sets
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import { faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-
-library.add(faHome, faUser);
-dom.watch();
-```
-
-## Framework-spezifische Integration
-
-### React
-
-```jsx
-// Icon-Komponente in React
-import React from 'react';
-
-const Icon = ({ name, size = 'default', className = '' }) => {
-  const sizeClass = size !== 'default' ? `icon--${size}` : '';
+/* Eigenes Icon-Set zum icons-Layer hinzufügen */
+@layer icons {
+  /* Eigene Icon-Definitionen */
+  .custom-icon-home {
+    background-image: url('path/to/home.svg');
+    /* Weitere Stile */
+  }
   
-  return (
-    <div className={`icon ${sizeClass} ${className}`}>
-      <svg>
-        <use xlinkHref={`#icon-${name}`}></use>
-      </svg>
-    </div>
-  );
-};
-
-// Verwendung
-<Icon name="home" size="lg" className="icon--primary" />
-```
-
-### Vue.js
-
-```vue
-<!-- Icon-Komponente in Vue -->
-<template>
-  <div :class="['icon', size ? `icon--${size}` : '', className]">
-    <svg>
-      <use :xlink:href="`#icon-${name}`"></use>
-    </svg>
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'Icon',
-  props: {
-    name: { type: String, required: true },
-    size: { type: String, default: '' },
-    className: { type: String, default: '' }
+  .custom-icon-settings {
+    background-image: url('path/to/settings.svg');
+    /* Weitere Stile */
   }
 }
-</script>
-
-<!-- Verwendung -->
-<Icon name="home" size="lg" class-name="icon--primary" />
-```
-
-### Angular
-
-```typescript
-// Icon-Komponente in Angular
-import { Component, Input } from '@angular/core';
-
-@Component({
-  selector: 'app-icon',
-  template: `
-    <div class="icon" [ngClass]="[size ? 'icon--' + size : '', className]">
-      <svg>
-        <use [attr.xlink:href]="'#icon-' + name"></use>
-      </svg>
-    </div>
-  `
-})
-export class IconComponent {
-  @Input() name: string;
-  @Input() size: string = '';
-  @Input() className: string = '';
-}
-
-// Verwendung
-<app-icon name="home" size="lg" className="icon--primary"></app-icon>
-```
-
-## Performance-Optimierungen
-
-### Lazy Loading
-
-Für große Icon-Sets kann Lazy Loading implementiert werden:
-
-```javascript
-// Beispiel für dynamisches Nachladen von Icons bei Bedarf
-function loadIconSet(setName) {
-  return fetch(`/assets/icons/${setName}.svg`)
-    .then(response => response.text())
-    .then(svgContent => {
-      const div = document.createElement('div');
-      div.innerHTML = svgContent;
-      document.body.appendChild(div.firstChild);
-    });
-}
-
-// Icons bei Bedarf laden
-if (document.querySelector('.needs-commerce-icons')) {
-  loadIconSet('commerce-icons');
-}
-```
-
-### Preloading wichtiger Icons
-
-Wichtige Icons können für schnellere Ladezeiten vorgeladen werden:
-
-```html
-<link rel="preload" href="/assets/icons/core-icons.svg" as="image" type="image/svg+xml">
 ```
 
 ## Best Practices für Icons
 
-- **SVG statt Icon-Fonts** - Verwenden Sie SVG-Icons für bessere Barrierefreiheit und Anpassbarkeit
-- **Sprite-Sheet Nutzung** - Bündeln Sie häufig verwendete Icons in einem Sprite-Sheet
-- **Barrierefreie Attribute** - Setzen Sie `aria-hidden="true"` für dekorative Icons und `aria-label` für funktionale Icons
-- **Farbanpassung mit currentColor** - Nutzen Sie `currentColor` für flexible Farbgestaltung
-- **Icon-Optimierung** - Optimieren Sie SVGs vor der Verwendung (unnötige Attribute entfernen)
-- **Angemessene Größen** - Verwenden Sie die passende Icon-Größe für den jeweiligen Kontext
-- **Konsistentes Styling** - Halten Sie Icon-Design und -Farben innerhalb der Anwendung einheitlich
+- **Verwenden Sie semantische Icons** - Wählen Sie Icons, die intuitiv für ihre Funktion sind
+- **Stellen Sie Barrierefreiheit sicher** - Fügen Sie aria-label für funktionale Icons hinzu
+- **Halten Sie die Größen konsistent** - Verwenden Sie die vordefinierten Größenklassen
+- **Beachten Sie Kontrast und Farbgebung** - Stellen Sie sicher, dass Icons gut sichtbar sind
+- **Kombinieren Sie Text mit Icons** - Bei wichtigen Aktionen Text und Icons zusammen verwenden

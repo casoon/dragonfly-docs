@@ -7,6 +7,28 @@ category: Getting Started
 
 Design Tokens sind die grundlegenden Bausteine des Casoon UI Design Systems. Sie definieren visuelle Eigenschaften wie Farben, Abstände, Schriftgrößen und mehr. Diese Tokens sind als CSS-Variablen implementiert und ermöglichen eine konsistente Gestaltung über alle Anwendungen hinweg.
 
+## CSS-Import
+
+Um alle Design Tokens der Casoon UI Library zu nutzen, importieren Sie einfach die `core.css` Datei:
+
+```css
+@import "@casoon/ui-lib/core.css";
+```
+
+Dadurch wird automatisch das Layer-System geladen, welches den `tokens`-Layer enthält.
+
+## Layer-Struktur
+
+Die Design Tokens sind Teil des zentralen Layer-Systems und werden unter dem `tokens`-Layer definiert. Die Reihenfolge der Layer bestimmt die CSS-Spezifität:
+
+```css
+@layer reset,               /* Browser-Reset */
+       tokens,              /* Design-Tokens, Variablen */
+       custom-properties,   /* CSS-Eigenschaften */
+       core,                /* Kernfunktionalitäten */
+       ...
+```
+
 ## Farben
 
 Die Farbpalette besteht aus primären, sekundären, Akzent- und Funktionsfarben sowie einer umfassenden Graupalette.
@@ -240,6 +262,24 @@ Vordefinierte Animationszeiten und Easing-Funktionen:
 <div class="transition-normal ease-in-out">
   Element mit normaler Übergangszeit und ease-in-out Timing
 </div>
+```
+
+## Anpassung und Erweiterung von Tokens
+
+Sie können die Design Tokens auch mit eigenen Werten überschreiben oder erweitern, indem Sie den entsprechenden Layer verwenden:
+
+```css
+/* Eigene CSS-Datei */
+@import "@casoon/ui-lib/core.css";
+
+/* Eigene Tokens zum Tokens-Layer hinzufügen */
+@layer tokens {
+  :root {
+    --color-brand-primary: #c0ffee;
+    --color-brand-secondary: #facade;
+    --font-family-custom: 'Meine-Marken-Schrift', sans-serif;
+  }
+}
 ```
 
 ## Best Practices für Design Tokens

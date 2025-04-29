@@ -5,7 +5,34 @@ category: Getting Started
 
 # Layout-System
 
-Das Layout-System der Casoon UI Library bietet strukturierte und flexible Werkzeuge zur Gestaltung responsiver Benutzeroberflächen.
+Das Layout-System der Casoon UI Library bietet strukturierte und flexible Werkzeuge zur Gestaltung responsiver Benutzeroberflächen. Die Darstellung basiert auf einem modernen CSS Layer-System.
+
+## CSS-Import
+
+Um das komplette Casoon UI Layout-System zu nutzen, importieren Sie einfach die `core.css` Datei:
+
+```css
+@import "@casoon/ui-lib/core.css";
+```
+
+Dadurch wird automatisch das Layer-System geladen, welches auch den `layout`-Layer enthält.
+
+## Layer-Struktur
+
+Das Layout ist Teil des zentralen Layer-Systems und wird unter dem `layout`-Layer definiert. Die Reihenfolge der Layer bestimmt die CSS-Spezifität.
+
+```css
+@layer reset,               /* Browser-Reset */
+       tokens,              /* Design-Tokens, Variablen */
+       custom-properties,   /* CSS-Eigenschaften */
+       core,                /* Kernfunktionalitäten */
+       logical-properties,  /* Logische Eigenschaften */
+       colors,              /* Farbsystem */
+       color-mix,           /* Farbmischungen */
+       layout,              /* Layout-System */
+       typography,          /* Typografie */
+       ...
+```
 
 ## Container-System
 
@@ -537,3 +564,23 @@ Für komponenten-basierte responsive Designs unterstützt das System Container Q
 - **Konsistentes Spacing** - Verwenden Sie das Spacing-System für einheitliche Abstände
 - **Z-Index-Hierarchie** - Halten Sie sich an die definierte Z-Index-Hierarchie
 - **Container Queries für Komponenten** - Bevorzugen Sie Container Queries für komponenten-basierte Designs 
+
+## Erweiterte Anpassungen
+
+Sie können das Layout-System auch mit eigenen Stilen erweitern, indem Sie den entsprechenden Layer verwenden:
+
+```css
+/* Eigene CSS-Datei */
+@import "@casoon/ui-lib/core.css";
+
+/* Eigene Layouts zum Layout-Layer hinzufügen */
+@layer layout {
+  .my-custom-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-4);
+  }
+}
+```
+
+Diese Änderungen fügen sich nahtlos in die bestehende Layer-Hierarchie ein. 

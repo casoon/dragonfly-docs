@@ -1,6 +1,68 @@
+---
+title: Casoon UI Documentation
+---
+
 # Casoon UI Library
 
-Eine moderne, flexible und zugängliche CSS-Library für konsistente, responsive und barrierefreie Webanwendungen.
+Willkommen zur Dokumentation der Casoon UI Library. Diese Bibliothek bietet ein modernes, konsistentes und modulares Design-System für die Entwicklung von Benutzeroberflächen.
+
+## Aktuelle Version
+
+Die aktuelle Version der Casoon UI Library ist `0.3.11`.
+
+## Neues Layer-System
+
+Mit der Version 0.3.11 wurde ein modernes CSS-Layer-System eingeführt, das die Spezifität und Organisation der Styles erheblich verbessert. Jetzt genügt das Einbinden der `core.css` Datei, um Zugriff auf alle Komponenten, Layer und Themes zu erhalten:
+
+```css
+@import "@casoon/ui-lib/core.css";
+```
+
+Die Layer sind in einer logischen Hierarchie organisiert:
+
+```css
+@layer reset,                /* Browser-Reset, Normalisierung */
+       tokens,               /* Design-Tokens, Variablen */
+       custom-properties,    /* Registrierte CSS-Eigenschaften */
+       core,                 /* Kernfunktionalitäten */
+       logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
+       colors,               /* Farbsystem */
+       color-mix,            /* Farbmischungen und -variationen */
+       layout,               /* Layout-Grundlagen */
+       typography,           /* Typografie-System */
+       utilities,            /* Utility-Klassen */
+       smooth-scroll,        /* Scroll-Verhalten */
+       accessibility,        /* Barrierefreiheit */
+       icons,                /* Icon-System */
+       animations,           /* Animationen */
+       effects,              /* Visuelle Effekte */
+       themes;               /* Theming-System */
+```
+
+## Hauptfunktionen
+
+- **Modulares CSS** - Jede Komponente ist als eigenständiges CSS-Modul implementiert
+- **Responsives Design** - Alle Komponenten sind vollständig responsiv
+- **Barrierefreiheit** - Optimiert für Screenreader und Tastaturnavigation
+- **Anpassbare Themes** - Einfach anpassbare Design-Tokens für verschiedene Markenidentitäten
+- **Klarstrukturierte Layer** - Organisierte CSS-Spezifität durch modernes Layer-System
+- **Umfangreiche Icon-Sets** - Integration mehrerer populärer Icon-Bibliotheken
+
+## Erste Schritte
+
+Um mit Casoon UI zu beginnen:
+
+1. [Installation](/getting-started/installation) - Fügen Sie die Bibliothek zu Ihrem Projekt hinzu
+2. [Layout-System](/getting-started/layout) - Verstehen Sie die Grid- und Flex-Layouts
+3. [Design Tokens](/getting-started/tokens) - Erkunden Sie die grundlegenden Design-Variablen
+4. [Themes](/getting-started/themes) - Passen Sie das Erscheinungsbild an
+5. [Icon-System](/getting-started/iconsets) - Verwenden Sie die integrierten Icon-Sets
+
+## Komponenten
+
+Die Casoon UI Library bietet eine umfangreiche Sammlung von Komponenten für verschiedene UI-Anforderungen. Jede Komponente wird als eigenständiges CSS-Modul implementiert und wird über das Layer-System eingebunden.
+
+Entdecken Sie die [komplette Komponentenbibliothek](/components/).
 
 ## Übersicht
 
@@ -36,87 +98,6 @@ Die Casoon UI Library folgt einer modularen, schichtbasierten Architektur:
 ```
 
 Details zur CSS-Layer-Struktur finden Sie in der [Einführung](/getting-started/index).
-
-## Hauptfunktionen
-
-### Design Tokens
-
-Alle visuellen Eigenschaften werden durch Design Tokens definiert:
-
-```css
-:root {
-  --color-primary: #4361ee;
-  --color-secondary: #3f37c9;
-  /* Weitere Tokens */
-}
-```
-
-[Mehr über Design Tokens](/getting-started/tokens)
-
-### Layout-System
-
-Das Layout-System basiert auf modernen CSS-Technologien:
-
-```html
-<div class="container">
-  <div class="grid grid--cols-3 grid--gap-4">
-    <!-- Inhalt -->
-  </div>
-</div>
-```
-
-[Mehr über Layouts](/getting-started/layout)
-
-### Typografie
-
-Ein vollständiges Typografie-System mit vordefinierten Stilen:
-
-```html
-<h1 class="heading-xl font--bold">Große Überschrift</h1>
-<p class="text-base text--muted">Textabsatz</p>
-```
-
-[Mehr über Typografie](/getting-started/typography)
-
-### Utility-Klassen
-
-Utility-Klassen ermöglichen schnelles Styling:
-
-```html
-<div class="p-4 m-2 bg-primary text-white radius-md shadow-md">
-  Element mit verschiedenen Styling-Utilities
-</div>
-```
-
-[Mehr über Utilities](/getting-started/utilities)
-
-### Themes
-
-Die Library unterstützt verschiedene Themes:
-
-```html
-<body class="theme-day">
-  <!-- Helles Theme -->
-</body>
-```
-
-[Mehr über Themes](/getting-started/themes)
-
-### Icons
-
-Eine umfassende Sammlung von SVG-Icons:
-
-```html
-<div class="icon">
-  <svg><use xlink:href="#icon-home"></use></svg>
-</div>
-```
-
-[Mehr über Icons](/getting-started/iconsets)
-
-## Verfügbare Module
-
-Die Casoon UI Library bietet vordefinierte Module für gängige UI-Elemente. Eine vollständige Übersicht finden Sie in der [Moduldokumentation](/modules/).
 
 ## Best Practices
 

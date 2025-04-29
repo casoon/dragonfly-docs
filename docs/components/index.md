@@ -1,60 +1,116 @@
-# Komponenten
+---
+title: Komponenten
+category: Components
+---
 
-Die Casoon UI Library bietet eine Vielzahl von vorgefertigten CSS-Komponenten, die sich einfach in Ihre Projekte integrieren lassen.
+# Komponenten-Übersicht
 
-## Übersicht
+Die Casoon UI Library bietet eine umfangreiche Sammlung von modularen Komponenten für verschiedene UI-Anforderungen. Jede Komponente ist als eigenständiges CSS-Modul implementiert und wird über das zentrale Layer-System eingebunden.
 
-### Grundlegende Komponenten
+## Verwendung der Komponenten
 
-- [Button](./button/) - Interaktive Schaltflächen
-- [Input](./input/) - Eingabefelder
-- Textarea - Mehrzeilige Eingabefelder
-- Select - Auswahlfelder
-- Checkbox - Kontrollkästchen
-- Radio - Radiobuttons
-- Switch - Umschalter
-- [File Input](./file/) - Datei-Upload
-- [Form](./forms/) - Formular-Komponenten
-- Input Group - Gruppierte Eingabefelder
+Alle Komponenten werden automatisch durch das Einbinden der `core.css` Datei verfügbar:
+
+```css
+@import "@casoon/ui-lib/core.css";
+```
+
+Die Komponenten-Module werden in der `modules.css` Datei organisiert und in eigenständigen Layern definiert:
+
+```css
+/* Alert Modul */
+@import url('./modules/alert.module.css') layer(module-alert);
+
+/* Avatar Modul */
+@import url('./modules/avatar.module.css') layer(module-avatar);
+
+/* Weitere Module... */
+```
+
+## Verfügbare Komponenten
+
+### Basis-Komponenten
+
+Diese grundlegenden Komponenten bilden die Bausteine für komplexere Interfaces:
+
+- [Alert](/components/alert/) - Kontextbezogene Feedback-Nachrichten
+- [Avatar](/components/avatar/) - Benutzerprofilbilder und -darstellungen
+- [Badge](/components/badge/) - Kleine Zähler oder Statusanzeigen
+- [Button](/components/button/) - Interaktive Schaltflächen für Aktionen
+- [Card](/components/card/) - Container für zusammengehörige Informationen
+- [Chip](/components/chip/) - Kompakte, einheitliche Elemente für Informationen
+- [Code](/components/code/) - Darstellung von Code-Blöcken und -Snippets
+- [Spinner](/components/spinner/) - Ladeanimationen
+- [Tooltip](/components/tooltip/) - Zusatzinformationen bei Hover
+
+### Formular-Komponenten
+
+Komponenten für die Erstellung interaktiver Formulare:
+
+- [Checkbox](/components/checkbox/) - Mehrfachauswahl-Elemente
+- [File](/components/file/) - Datei-Upload-Elemente
+- [Form](/components/forms/) - Formular-Container und -Layout
+- [Input](/components/input/) - Texteingabefelder
+- [Input Group](/components/input-group/) - Gruppierte Eingabeelemente mit Add-ons
+- [Radio](/components/radio/) - Einfachauswahl-Elemente
+- [Select](/components/select/) - Auswahlmenüs für Optionen
+- [Slider](/components/slider/) - Schieberegler für numerische Werte
+- [Switch](/components/switch/) - Ein/Aus-Schalter
+- [Textarea](/components/textarea/) - Mehrzeilige Textfelder
+
+### Layout-Komponenten
+
+Komponenten für die strukturelle Organisation von Inhalten:
+
+- [Footer](/components/footer/) - Fußzeilen-Komponente
+- [Header](/components/header/) - Kopfzeilen-Komponente
+- [Sidebar](/components/sidebar/) - Seitenleisten-Navigation
+- [Table](/components/table/) - Tabellendarstellung mit erweiterter Funktionalität
+- [Tabs](/components/tabs/) - Registerkartenbasierte Navigation
 
 ### Feedback-Komponenten
 
-- [Alert](./alert/) - Hinweismeldungen
-- [Toast](./toast/) - Kurze Benachrichtigungen
-- Notification - Detaillierte Benachrichtigungen
-- [Modal](./modal/) - Dialogfenster
-- [Progress](./progress/) - Fortschrittsbalken
-- Spinner - Ladeanzeigen
-- Skeleton - Platzhalter während des Ladens
+Komponenten für Benutzerinteraktion und Feedback:
 
-### Navigationskomponenten
+- [Modal](/components/modal/) - Dialog-Fenster für fokussierte Inhalte
+- [Notification](/components/notification/) - Benachrichtigungen
+- [Progress](/components/progress/) - Fortschrittsanzeigen
+- [Skeleton](/components/skeleton/) - Lade-Platzhalter
+- [Toast](/components/toast/) - Kurzzeitige Benachrichtigungen
 
-- Header - Kopfzeilen
-- [Sidebar](./sidebar/) - Seitenleisten
-- Hamburger - Menü-Schaltflächen
-- [Tabs](./tabs/) - Registerkarten
-- [Navigation](./navigation/) - Allgemeine Navigation
-- [Dropdown](./dropdown/) - Dropdown-Menüs
-- [Pagination](./pagination/) - Seitennummerierung
+### Fortgeschrittene Komponenten
 
-### Datenkomponenten
+Spezialisierte Komponenten für komplexere Anforderungen:
 
-- [Table](./table/) - Tabellen
-- [Card](./card/) - Karten
-- [Slider](./slider/) - Schieberegler
-- [Accordion](./accordion/) - Aufklappbare Panels
+- [Blog](/components/blog/) - Blog-Post-Layout und -Stile
+- [Hamburger](/components/hamburger/) - Mobile Menü-Toggle-Buttons
+- [Widget](/components/widget/) - Wiederverwendbare Content-Container
+- [Wizard](/components/wizard/) - Mehrstufige Prozess-Steuerung
 
-### Zusätzliche Komponenten
+## Komponenten anpassen
 
-- [Avatar](./avatar/) - Benutzeravatare
-- [Badge](./badge/) - Kennzeichnungen
-- [Chip](./chip/) - Chips/Tags
-- [Tooltip](./tooltip/) - Tooltips
-- Widget - Widgets
-- Wizard - Mehrschrittassistenten
-- Blog - Blog-Layouts
-- [Effekte](./effects/) - Visuelle Effekte
-- [Code](./code/) - Code-Blöcke mit Syntax-Hervorhebung
+Alle Komponenten können über CSS-Variablen und das Layer-System angepasst werden:
+
+```css
+/* Eigene CSS-Datei */
+@import "@casoon/ui-lib/core.css";
+
+/* Anpassung einer Komponente */
+@layer module-button {
+  .btn--custom {
+    background-color: var(--color-brand);
+    border-radius: var(--radius-lg);
+  }
+}
+```
+
+## Best Practices
+
+- **Kombinieren Sie Komponenten** - Verwenden Sie Komponenten zusammen für komplexe UIs
+- **Nutzen Sie Design Tokens** - Verwenden Sie die vordefinierten Variablen für konsistentes Design
+- **Berücksichtigen Sie Barrierefreiheit** - Achten Sie auf semantische Nutzung der Komponenten
+- **Mobile-First Ansatz** - Beginnen Sie mit dem mobilen Design und erweitern Sie für größere Bildschirme
+- **Layer-Spezifität beachten** - Bedenken Sie die Hierarchie des Layer-Systems bei Anpassungen
 
 ## Verwendungsbeispiele
 

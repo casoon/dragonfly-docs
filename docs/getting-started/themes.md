@@ -7,6 +7,30 @@ category: Getting Started
 
 Das Theme-System der Casoon UI Library ermöglicht eine flexible Gestaltung des Erscheinungsbilds Ihrer Anwendung mit vordefinierten Themes und anpassbaren Design-Tokens.
 
+## CSS-Import
+
+Um das komplette Casoon UI Theme-System zu nutzen, importieren Sie einfach die `core.css` Datei:
+
+```css
+@import "@casoon/ui-lib/core.css";
+```
+
+Dadurch wird automatisch das Layer-System geladen, welches alle Themes über `themes.css` enthält.
+
+## Layer-Struktur
+
+Die Themes sind Teil des zentralen Layer-Systems und werden unter dem `themes`-Layer definiert. Die Reihenfolge der Layer bestimmt die CSS-Spezifität, und der `themes`-Layer hat eine der höchsten Prioritäten:
+
+```css
+@layer reset,
+       tokens,
+       custom-properties,
+       core,
+       ...
+       effects,
+       themes;
+```
+
 ## Verfügbare Themes
 
 Casoon UI bietet folgende vordefinierte Themes:
@@ -21,7 +45,14 @@ Casoon UI bietet folgende vordefinierte Themes:
 | Winter | Kühles, gedämpftes Theme mit Blautönen | `theme-winter` |
 | Ocean | Ruhiges Theme mit Blautönen und Meeresfarben | `theme-ocean` |
 | Forest | Natürliches Theme mit Grün- und Brauntönen | `theme-forest` |
-| Contrast | Hochkontrast-Theme für bessere Zugänglichkeit | `theme-contrast` |
+| Brand | Anpassbares Theme für Markenidentität | `theme-brand` |
+| Pastel | Sanfte Pastellfarben | `theme-pastel` |
+| Neon | Lebendige, leuchtende Farben | `theme-neon` |
+| Monochrome | Schwarz-Weiß-Palette | `theme-monochrome` |
+| Retro | Vintage-inspiriertes Design | `theme-retro` |
+| Sunset | Warme Abendfarben | `theme-sunset` |
+| Dark Mode | Optimiert für dunkle Umgebungen | `theme-dark-mode` |
+| Accessibility | Optimiert für Barrierefreiheit | `theme-accessibility` |
 
 ## Theme-Aktivierung
 
@@ -45,29 +76,20 @@ oder
 
 ### Importieren der Theme-Dateien
 
-Importieren Sie zuerst die Core-Styles und dann Ihr gewünschtes Theme:
-
-```javascript
-// Core-Styles sind erforderlich
-import '@casoon/ui-lib/dist/core.css';
-
-// Wählen Sie ein oder mehrere Themes
-import '@casoon/ui-lib/dist/themes/day.css';
-import '@casoon/ui-lib/dist/themes/night.css';
-```
-
-Mit CSS:
+Die einfachste Methode ist der Import der core.css, die automatisch alle Themes lädt:
 
 ```css
-@import '@casoon/ui-lib/dist/core.css';
-@import '@casoon/ui-lib/dist/themes/spring.css';
+@import '@casoon/ui-lib/core.css';
 ```
 
-HTML:
+Alternativ können Sie auch gezielt einzelne Themes importieren:
 
-```html
-<link rel="stylesheet" href="node_modules/@casoon/ui-lib/dist/core.css">
-<link rel="stylesheet" href="node_modules/@casoon/ui-lib/dist/themes/summer.css">
+```css
+/* Basis-Styles importieren */
+@import '@casoon/ui-lib/core.css';
+
+/* Spezifisches Theme überschreiben oder hinzufügen */
+@import '@casoon/ui-lib/themes/night.css';
 ```
 
 ## Dynamischer Theme-Wechsel
@@ -512,3 +534,36 @@ module.exports = {
 - **Dark Mode optimieren** - Reduzieren Sie in dunklen Themes die Helligkeit von Bildern
 - **Systemeinstellungen respektieren** - Unterstützen Sie `prefers-color-scheme` und `prefers-reduced-motion`
 - **Konsistente Kontrast-Farben** - Definieren Sie für jede semantische Farbe eine passende Kontrastfarbe 
+
+## Eigene Themes erstellen
+
+Sie können eigene Themes erstellen, indem Sie den themes-Layer verwenden:
+
+```css
+/* Eigene CSS-Datei */
+@import "@casoon/ui-lib/core.css";
+
+/* Eigenes Theme im themes-Layer definieren */
+@layer themes {
+  .theme-custom {
+    --color-primary: #ff6b6b;
+    --color-secondary: #4ecdc4;
+    --color-accent: #ffe66d;
+    
+    --bg-base: #f7fff7;
+    --text-primary: #1a535c;
+    
+    /* Weitere Theme-Tokens definieren */
+  }
+}
+```
+
+Dadurch fügt sich Ihr Custom-Theme nahtlos in die bestehende Theme-Hierarchie ein.
+
+## Best Practices für das Theme-System
+
+- **Verwenden Sie Theme-Tokens in Ihren Komponenten** - Nutzen Sie `var(--color-primary)` statt direkter Farbwerte
+- **Bieten Sie Theme-Switcher an** - Geben Sie Nutzern die Möglichkeit, ihr bevorzugtes Theme zu wählen
+- **Berücksichtigen Sie Systemeinstellungen** - Respektieren Sie `prefers-color-scheme` für dunkel/hell-Präferenzen
+- **Testen Sie Themes auf Kontrast** - Stellen Sie sicher, dass alle Themes ausreichend Kontrast für Lesbarkeit bieten
+- **Konsistente Semantik über Themes hinweg** - Achten Sie darauf, dass semantische Farben wie `success` oder `error` in allen Themes ihre Bedeutung beibehalten 
