@@ -1,46 +1,95 @@
-# Casoon UI Library
+# Casoon UI Library v0.3.21
 
-Ein modernes CSS Design System für Webanwendungen. Die Bibliothek bietet vorgefertigte Komponenten und Styles, die sich einfach in bestehende Projekte integrieren lassen.
+<div align="center">
+    <img src="https://placeholder.pics/svg/200x200/DEDEDE/555555/casoon-ui" alt="Casoon UI Logo" width="200"/>
+    <p>Ein modernes CSS-Framework mit Layer-System, optimiert für Lightning CSS</p>
+</div>
 
-## Installation
+## 🚀 Funktionen
 
-### NPM
+- **Layer-basierte Architektur**: Präzise Kontrolle über CSS-Spezifität
+- **Optimiert für Lightning CSS**: Vollständige Unterstützung für moderne Build-Tools
+- **Einfache Integration**: Ein einziger Import für die gesamte Bibliothek
+- **Modular und erweiterbar**: Über 30 UI-Komponenten 
+- **Themefähig**: Umfangreiche Anpassungsmöglichkeiten
+- **Responsiv**: Container-Queries und flexibles Grid-System
+- **Zugänglich**: WCAG-konforme Komponenten
+
+## 📦 Installation
 
 ```bash
+# npm
 npm install @casoon/ui-lib@latest
-```
 
-### Yarn
-
-```bash
+# yarn
 yarn add @casoon/ui-lib@latest
-```
 
-### pnpm
-
-```bash
+# pnpm
 pnpm add @casoon/ui-lib@latest
 ```
 
-### CDN
+## 🔧 Verwendung
 
-```html
-<!-- Core Styles -->
-<link rel="stylesheet" href="https://unpkg.com/@casoon/ui-lib@latest/core.css">
+### Einfache Integration (empfohlen)
 
-<!-- Theme -->
-<link rel="stylesheet" href="https://unpkg.com/@casoon/ui-lib@latest/themes/day.css">
+Mit der neuen Version reicht ein einziger Import für die gesamte Bibliothek:
 
-<!-- Optionale Module -->
-<link rel="stylesheet" href="https://unpkg.com/@casoon/ui-lib@latest/modules/button.module.css">
-<link rel="stylesheet" href="https://unpkg.com/@casoon/ui-lib@latest/modules/input.module.css">
+```css
+/* Alle nötigen Styles werden durch diesen einen Import geladen */
+@import '@casoon/ui-lib/core.css';
 ```
 
-## Verwendung
+Die `core.css` importiert automatisch alle notwendigen Dateien in der optimalen Reihenfolge:
+- Basis-System (Reset, Tokens, Variablen)
+- Layout-System (Grid, Flexbox, Container)
+- Typografie-System
+- Farbsystem und Color-Mix
+- Animations- und Effekt-System
+- Alle UI-Komponenten
 
-### Core Styles
+### HTML-Beispiel
 
-Die `core.css` Datei enthält die grundlegenden Styles und Layer:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="node_modules/@casoon/ui-lib/core.css">
+    <title>Casoon UI Beispiel</title>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">Willkommen bei Casoon UI</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="card">
+                <div class="card__header">Beispiel-Karte</div>
+                <div class="card__body">
+                    <p>Dies ist eine einfache Karte mit Text.</p>
+                    <button class="button button--primary mt-4">Aktion</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card__header">Formularbeispiel</div>
+                <div class="card__body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input id="name" type="text" class="input" placeholder="Name eingeben">
+                        </div>
+                        <button type="submit" class="button button--primary mt-4">Senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+## 🏗️ Architektur
+
+Casoon UI Library basiert auf einem Layer-System, das die CSS-Spezifität und Kaskadierung präzise steuert:
 
 ```css
 @layer reset,                /* Browser-Reset, Normalisierung */
@@ -62,134 +111,139 @@ Die `core.css` Datei enthält die grundlegenden Styles und Layer:
        components;           /* Komponenten (für benutzerdefinierte Erweiterungen) */
 ```
 
-### Module
+## 🧩 Komponenten-System
 
-Module können einzeln importiert werden:
+Casoon UI bietet mehr als 30 UI-Komponenten, die in vier Hauptkategorien unterteilt sind:
 
-```css
-/* Grundlegende Komponenten */
-@import '@casoon/ui-lib/modules/button.module.css';
-@import '@casoon/ui-lib/modules/input.module.css';
-@import '@casoon/ui-lib/modules/textarea.module.css';
-@import '@casoon/ui-lib/modules/select.module.css';
-@import '@casoon/ui-lib/modules/checkbox.module.css';
-@import '@casoon/ui-lib/modules/radio.module.css';
-@import '@casoon/ui-lib/modules/switch.module.css';
-@import '@casoon/ui-lib/modules/file.module.css';
-@import '@casoon/ui-lib/modules/form.module.css';
-@import '@casoon/ui-lib/modules/input-group.module.css';
-
-/* Feedback-Komponenten */
-@import '@casoon/ui-lib/modules/alert.module.css';
-@import '@casoon/ui-lib/modules/toast.module.css';
-@import '@casoon/ui-lib/modules/notification.module.css';
-@import '@casoon/ui-lib/modules/modal.module.css';
-@import '@casoon/ui-lib/modules/progress.module.css';
-@import '@casoon/ui-lib/modules/spinner.module.css';
-@import '@casoon/ui-lib/modules/skeleton.module.css';
-
-/* Navigationskomponenten */
-@import '@casoon/ui-lib/modules/header.module.css';
-@import '@casoon/ui-lib/modules/sidebar.module.css';
-@import '@casoon/ui-lib/modules/hamburger.module.css';
-@import '@casoon/ui-lib/modules/tabs.module.css';
-
-/* Datenkomponenten */
-@import '@casoon/ui-lib/modules/table.module.css';
-@import '@casoon/ui-lib/modules/card.module.css';
-@import '@casoon/ui-lib/modules/slider.module.css';
-
-/* Zusätzliche Komponenten */
-@import '@casoon/ui-lib/modules/avatar.module.css';
-@import '@casoon/ui-lib/modules/badge.module.css';
-@import '@casoon/ui-lib/modules/chip.module.css';
-@import '@casoon/ui-lib/modules/tooltip.module.css';
-@import '@casoon/ui-lib/modules/widget.module.css';
-@import '@casoon/ui-lib/modules/wizard.module.css';
-@import '@casoon/ui-lib/modules/blog.module.css';
-@import '@casoon/ui-lib/modules/code.module.css';
-```
-
-### Themes
-
-Die Bibliothek bietet verschiedene Themes:
-
-```css
-/* Standard-Themes */
-@import '@casoon/ui-lib/themes/day.css';
-@import '@casoon/ui-lib/themes/night.css';
-
-/* Jahreszeiten-Themes */
-@import '@casoon/ui-lib/themes/spring.css';
-@import '@casoon/ui-lib/themes/summer.css';
-@import '@casoon/ui-lib/themes/autumn.css';
-@import '@casoon/ui-lib/themes/winter.css';
-
-/* Spezielle Themes */
-@import '@casoon/ui-lib/themes/forest.css';
-@import '@casoon/ui-lib/themes/ocean.css';
-@import '@casoon/ui-lib/themes/pastel.css';
-@import '@casoon/ui-lib/themes/neon.css';
-@import '@casoon/ui-lib/themes/retro.css';
-@import '@casoon/ui-lib/themes/monochrome.css';
-@import '@casoon/ui-lib/themes/sunset.css';
-@import '@casoon/ui-lib/themes/contrast.css';
-```
-
-Um ein Theme zu aktivieren, fügen Sie die entsprechende Klasse zum `<html>` oder `<body>` Element hinzu:
+### Eingabe- und Formular-Komponenten
 
 ```html
-<body class="theme-night">
-  <!-- Ihr Inhalt -->
+<button class="button button--primary">Primärer Button</button>
+<input class="input" type="text" placeholder="Text eingeben">
+<div class="checkbox">
+    <input id="check1" type="checkbox" class="checkbox__input">
+    <label for="check1" class="checkbox__label">Option auswählen</label>
+</div>
+```
+
+### Layout-Komponenten
+
+```html
+<div class="card">
+    <div class="card__header">Kartentitel</div>
+    <div class="card__body">Karteninhalt</div>
+    <div class="card__footer">Kartenfußzeile</div>
+</div>
+
+<div class="modal" id="example-modal">
+    <div class="modal__content">
+        <div class="modal__header">Modaltitel</div>
+        <div class="modal__body">Modalinhalt</div>
+        <div class="modal__footer">
+            <button class="button button--secondary modal__close">Schließen</button>
+            <button class="button button--primary">Bestätigen</button>
+        </div>
+    </div>
+</div>
+```
+
+### Feedback-Komponenten
+
+```html
+<div class="alert alert--success">
+    <div class="alert__icon">✓</div>
+    <div class="alert__content">Erfolgreich gespeichert!</div>
+</div>
+
+<div class="progress">
+    <div class="progress__bar" style="width: 75%"></div>
+</div>
+
+<div class="spinner"></div>
+```
+
+### Navigations- und Interaktionskomponenten
+
+```html
+<nav class="tabs">
+    <div class="tab-list" role="tablist">
+        <button class="tab-list__item tab-list__item--active" role="tab">Tab 1</button>
+        <button class="tab-list__item" role="tab">Tab 2</button>
+    </div>
+    <div class="tab-panel" role="tabpanel">Inhalt von Tab 1</div>
+</nav>
+
+<table class="table table--striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Alter</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Max Mustermann</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Anna Beispiel</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## 🎨 Themes
+
+Casoon UI unterstützt ein umfangreiches Theming-System, das einfach zu implementieren ist:
+
+```html
+<!-- Standard-Modus (hell) wird automatisch verwendet -->
+<body>
+    <!-- Inhalte im hellen Modus -->
+</body>
+
+<!-- Dunkler Modus -->
+<body data-theme="dark">
+    <!-- Inhalte im dunklen Modus -->
 </body>
 ```
 
-## CSS Integration
+### Benutzerdefinierte Themes
 
-### Basis-Integration
+Themes lassen sich leicht anpassen:
 
 ```css
-/* 1. Core Styles importieren */
 @import '@casoon/ui-lib/core.css';
 
-/* 2. Theme auswählen */
-@import '@casoon/ui-lib/themes/day.css';
-
-/* 3. Benötigte Module importieren */
-@import '@casoon/ui-lib/modules/button.module.css';
-@import '@casoon/ui-lib/modules/input.module.css';
+/* Eigenes Theme definieren */
+@layer themes {
+  :root {
+    --color-primary: #8e44ad;
+    --color-secondary: #2c3e50;
+    --color-accent: #f39c12;
+  }
+  
+  [data-theme="custom"] {
+    --color-primary: #3498db;
+    --color-secondary: #2ecc71;
+    --color-accent: #e74c3c;
+  }
+}
 ```
 
-### HTML-Beispiel
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="node_modules/@casoon/ui-lib/core.css">
-    <link rel="stylesheet" href="node_modules/@casoon/ui-lib/themes/day.css">
-    <link rel="stylesheet" href="node_modules/@casoon/ui-lib/modules/button.module.css">
-</head>
-<body class="theme-day">
-    <button class="btn btn--primary">Klick mich</button>
-</body>
-</html>
-```
-
-## Framework-Integration
+## 🖥️ Framework-Integration
 
 ### React
 
 ```jsx
-// App.jsx oder index.jsx
+// In index.jsx oder App.jsx
 import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/day.css';
-import '@casoon/ui-lib/modules/button.module.css';
 
 function App() {
   return (
-    <div className="container">
-      <button className="btn btn--primary">Primärer Button</button>
+    <div className="container mx-auto p-4">
+      <button className="button button--primary">Primärer Button</button>
     </div>
   );
 }
@@ -197,97 +251,86 @@ function App() {
 
 ### Vue
 
-```vue
-<!-- In main.js -->
+```js
+// In main.js
 import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/day.css';
-import '@casoon/ui-lib/modules/button.module.css';
+```
 
+```vue
 <!-- In einer Komponente -->
 <template>
-  <div class="container">
-    <button class="btn btn--primary">Primärer Button</button>
+  <div class="container mx-auto p-4">
+    <button class="button button--primary">Primärer Button</button>
   </div>
 </template>
 ```
 
-## Komponenten-Beispiele
+## 🔍 Lightning CSS-Optimierung
 
-### Button
+Casoon UI ist speziell für Lightning CSS optimiert:
 
-```html
-<button class="btn btn--primary">Primärer Button</button>
-<button class="btn btn--secondary">Sekundärer Button</button>
-<button class="btn btn--outline">Outline Button</button>
-```
+1. **Effizientes Layer-System**: Optimale Kompilierung und Minimierung
+2. **Tree-Shaking-Support**: Ungenutzte Styles werden entfernt
+3. **Automatische Präfixierung**: Maximale Browserunterstützung
+4. **Optimierte Variablen**: CSS-Variablen werden effizient verarbeitet
 
-### Input
+## 📊 Responsives Design
 
-```html
-<input class="input" type="text" placeholder="Text eingeben">
-<input class="input input--error" type="text" placeholder="Fehler">
-<input class="input input--success" type="text" placeholder="Erfolg">
-```
-
-### Alert
+Casoon UI setzt auf ein flexibles 12-Spalten-Grid und Container-Queries für moderne Responsivität:
 
 ```html
-<div class="alert alert--success">
-  <div class="alert__icon">✓</div>
-  <div class="alert__content">Erfolgreich gespeichert!</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <div>Spalte 1</div>
+  <div>Spalte 2</div>
+  <div>Spalte 3</div>
+  <div>Spalte 4</div>
+</div>
+
+<div class="container-query">
+  <!-- Dieser Container passt sich basierend auf seine eigene Breite an, nicht auf die des Viewports -->
+  <div class="grid grid-cols-1 @sm:grid-cols-2 @lg:grid-cols-3 gap-4">
+    <div>Spalte 1</div>
+    <div>Spalte 2</div>
+    <div>Spalte 3</div>
+  </div>
 </div>
 ```
 
-### Icon
+## 📐 Utilities
+
+Casoon UI bietet praktische Utility-Klassen für schnelles Styling:
 
 ```html
-<div class="icon">
-  <svg><use xlink:href="#icon-check"></use></svg>
-</div>
+<!-- Margin und Padding -->
+<div class="mt-4 mb-6 px-4 py-2">Abstand-Utilities</div>
 
-<div class="icon icon--primary icon--md">
-  <svg><use xlink:href="#icon-home"></use></svg>
-</div>
+<!-- Flexbox und Ausrichtung -->
+<div class="flex items-center justify-between">Flex-Utilities</div>
+
+<!-- Text und Typografie -->
+<h2 class="text-xl font-bold text-primary">Text-Utilities</h2>
+
+<!-- Farben und Hintergrund -->
+<div class="bg-secondary text-white">Farb-Utilities</div>
 ```
 
-## Best Practices
+## 📱 Best Practices
 
-1. **Core Styles immer zuerst importieren**
-   ```css
-   @import '@casoon/ui-lib/core.css';
-   ```
+1. **Core CSS importieren**: Verwenden Sie immer `@import '@casoon/ui-lib/core.css';`
+2. **Mobile-First-Ansatz**: Beginnen Sie mit der mobilen Ansicht und erweitern Sie für größere Bildschirme
+3. **Layer-System respektieren**: Platzieren Sie eigene Erweiterungen im richtigen Layer
+4. **Semantisches HTML**: Verwenden Sie das passende HTML-Element für jeden Zweck
+5. **Barrierefreiheit beachten**: Sorgen Sie für zugängliche Komponenten und ausreichenden Kontrast
 
-2. **Themes nach Core Styles importieren**
-   ```css
-   @import '@casoon/ui-lib/themes/day.css';
-   ```
+## 📚 Dokumentation
 
-3. **Module nach Bedarf importieren**
-   ```css
-   @import '@casoon/ui-lib/modules/button.module.css';
-   ```
+Umfassende Dokumentation finden Sie unter:
+[https://casoon.github.io/ui-docs/](https://casoon.github.io/ui-docs/)
 
-4. **Mobile-First-Ansatz verwenden**
-   ```html
-   <div class="grid grid--cols-1 md:grid--cols-2 lg:grid--cols-3">
-     <!-- Responsive Grid von 1 Spalte auf Mobilgeräten bis 3 Spalten auf großen Bildschirmen -->
-   </div>
-   ```
+## 🤝 Mitwirken
 
-5. **Barrierefreiheit beachten**
-   ```html
-   <button class="btn btn--primary" aria-label="Speichern">
-     <div class="icon" aria-hidden="true">
-       <svg><use xlink:href="#icon-save"></use></svg>
-     </div>
-     <span>Speichern</span>
-   </button>
-   ```
+Beiträge sind willkommen! Bitte lesen Sie unsere Beitragsrichtlinien, bevor Sie einen Pull Request einreichen.
 
-## Unterstützung und Support
+## 📄 Lizenz
 
-Bei Fragen oder Problemen:
-
-1. [Dokumentation](https://casoon.github.io/ui-docs/)
-2. [GitHub Issues](https://github.com/casoon/ui-lib/issues)
-3. [Support kontaktieren](mailto:support@casoon.com) 
+Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert. 
