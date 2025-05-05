@@ -32,7 +32,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Version 0.3.21 | MIT License',
+      message: 'Version 0.3.25 | MIT License',
       copyright: 'Copyright © 2025 Casoon'
     },
 
