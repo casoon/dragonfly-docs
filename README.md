@@ -37,6 +37,12 @@ Mit der neuen Version reicht ein einziger Import für die gesamte Bibliothek:
 ```css
 /* Alle nötigen Styles werden durch diesen einen Import geladen */
 @import '@casoon/ui-lib/core.css';
+
+/* Effekte müssen jetzt einzeln importiert werden */
+@import '@casoon/ui-lib/effects/blur.css';
+@import '@casoon/ui-lib/effects/shadow.css';
+@import '@casoon/ui-lib/effects/glass.css';
+/* Weitere Effekte nach Bedarf importieren */
 ```
 
 Die `core.css` importiert automatisch alle notwendigen Dateien in der optimalen Reihenfolge:
@@ -44,7 +50,7 @@ Die `core.css` importiert automatisch alle notwendigen Dateien in der optimalen 
 - Layout-System (Grid, Flexbox, Container)
 - Typografie-System
 - Farbsystem und Color-Mix
-- Animations- und Effekt-System
+- Animations-System
 - Alle UI-Komponenten
 
 ### HTML-Beispiel

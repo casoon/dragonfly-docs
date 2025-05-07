@@ -50,7 +50,10 @@ Die Casoon UI Library nutzt ein fortschrittliches CSS Cascade Layers-System für
        accessibility,        /* Barrierefreiheit */
        icons,                /* Icon-System */
        animations,           /* Animationen */
-       effects,              /* Visuelle Effekte */
+       effects-base,         /* Basis-Effekte (Transitions, etc.) */
+       effects-blur,         /* Blur-Effekte */
+       effects-shadow,       /* Schatten-Effekte */
+       effects-glass,        /* Glass-Effekte */
        themes,               /* Theming-System */
        components;           /* Komponenten (für benutzerdefinierte Erweiterungen) */
 ```
@@ -98,6 +101,9 @@ Unterstützung für verschiedene visuelle Themes, die einfach durch CSS-Klassen 
 ### [Icons](/getting-started/iconsets)
 Eine umfassende Sammlung von SVG-Icons, die über CSS-Klassen eingebunden werden können.
 
+### [Effekte](/guide/effects)
+Modulare visuelle Effekte wie Blur, Schatten und Glass, die einzeln importiert und verwendet werden können.
+
 ## Best Practices
 
 ### Zugänglichkeit
@@ -116,6 +122,7 @@ Eine umfassende Sammlung von SVG-Icons, die über CSS-Klassen eingebunden werden
 
 ### Performance
 - Laden Sie nur die benötigten Module
+- Importieren Sie Effekte gezielt nach Bedarf
 - Verwenden Sie Browser-Caching
 - Optimieren Sie Assets für schnelle Ladezeiten
 - Minimieren Sie CSS-Dateien

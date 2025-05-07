@@ -36,26 +36,42 @@ pnpm add @casoon/ui-lib@latest
 
 ### 1. Basisintegration mit Core-Styles
 
-Die Core-Styles enthalten alle grundlegenden CSS-Definitionen, einschließlich Reset-Layer, Design-Tokens und Custom-Properties. Sie bilden die Grundlage für alle weiteren Komponenten.
+Die Core-Styles enthalten alle grundlegenden CSS-Definitionen, einschließlich Reset-Layer, Design-Tokens, Custom-Properties und Basis-Effekte (Animationen und Transitions). Sie bilden die Grundlage für alle weiteren Komponenten.
 
 #### In einer JavaScript-Anwendung
 
 ```javascript
 // In Ihrer Hauptdatei (z.B. index.js, app.js, main.js)
-import '@casoon/ui-lib/dist/core.css';
+import '@casoon/ui-lib/core.css';
+
+// Optional: Spezifische Effekte importieren
+import '@casoon/ui-lib/effects/blur.css';
+import '@casoon/ui-lib/effects/shadow.css';
+import '@casoon/ui-lib/effects/glass.css';
 ```
 
 #### Direkte CSS-Integration
 
 ```css
 /* In Ihrer Haupt-CSS-Datei */
-@import '@casoon/ui-lib/dist/core.css';
+@import '@casoon/ui-lib/core.css';
+
+/* Optional: Spezifische Effekte importieren */
+@import '@casoon/ui-lib/effects/blur.css';
+@import '@casoon/ui-lib/effects/shadow.css';
+@import '@casoon/ui-lib/effects/glass.css';
 ```
 
 #### Mit einem Link-Tag im HTML
 
 ```html
-<link rel="stylesheet" href="node_modules/@casoon/ui-lib/dist/core.css">
+<!-- Core-Styles -->
+<link rel="stylesheet" href="node_modules/@casoon/ui-lib/core.css">
+
+<!-- Optional: Spezifische Effekte -->
+<link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/blur.css">
+<link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/shadow.css">
+<link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/glass.css">
 ```
 
 ### 2. Modulare Integration
@@ -80,6 +96,11 @@ import '@casoon/ui-lib/dist/core.css';
 import '@casoon/ui-lib/dist/modules/buttons.css';
 import '@casoon/ui-lib/dist/modules/cards.css';
 import '@casoon/ui-lib/dist/modules/forms.css';
+
+// Effekte einzeln importieren
+import '@casoon/ui-lib/effects/blur.css';
+import '@casoon/ui-lib/effects/shadow.css';
+import '@casoon/ui-lib/effects/glass.css';
 ```
 
 ### 3. Theme-Aktivierung
@@ -176,6 +197,11 @@ Sie können die Casoon UI Library auch direkt über ein CDN einbinden, ohne loka
 <!-- Einzelne Module -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/modules/buttons.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/modules/cards.css">
+
+<!-- Effekte einzeln -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/effects/blur.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/effects/shadow.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/effects/glass.css">
 
 <!-- Oder die komplette Library -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/all.css">

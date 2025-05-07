@@ -144,7 +144,18 @@ export default defineConfig({
             { text: 'Typografie', link: '/getting-started/typography' },
             { text: 'Layout', link: '/getting-started/layout' },
             { text: 'Theming', link: '/getting-started/themes' },
+            { text: 'Custom Properties', link: '/guide/custom-properties' },
+            { text: 'Effekte', link: '/guide/effects' },
             { text: 'Barrierefreiheit', link: '/getting-started/#zugänglichkeit' }
+          ]
+        }
+      ],
+      '/themes/': [
+        {
+          text: 'Themes',
+          items: [
+            { text: 'Übersicht', link: '/themes/' },
+            { text: 'Custom Properties', link: '/themes/custom-properties' }
           ]
         }
       ]
