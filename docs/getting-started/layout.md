@@ -34,7 +34,6 @@ Das Layout ist Teil des zentralen Layer-Systems und wird unter den Layern `layou
 ```css
 @layer reset,               /* Browser-Reset */
        tokens,              /* Design-Tokens, Variablen */
-       custom-properties,   /* CSS-Eigenschaften */
        core,                /* Kernfunktionalitäten */
        logical-properties,  /* Logische Eigenschaften */
        colors,              /* Farbsystem */
@@ -465,7 +464,7 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
 ```html
 <header class="container flex justify-between items-center p-4">
   <div class="logo">Logo</div>
-  
+
   <nav class="hidden md:block">
     <ul class="flex gap-4">
       <li><a href="#">Home</a></li>
@@ -474,7 +473,7 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
       <li><a href="#">Kontakt</a></li>
     </ul>
   </nav>
-  
+
   <button class="block md:hidden">Menu</button>
 </header>
 ```
@@ -487,7 +486,7 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
     <aside class="md:col-span-3 lg:col-span-2">
       <div class="p-4 bg-light">Sidebar-Inhalt</div>
     </aside>
-    
+
     <main class="md:col-span-9 lg:col-span-10">
       <div class="p-4 bg-white">Hauptinhalt</div>
     </main>
@@ -505,17 +504,17 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
         <h3>Karte 1</h3>
         <p>Beschreibung</p>
       </div>
-      
+
       <div class="p-4">
         <h3>Karte 2</h3>
         <p>Beschreibung</p>
       </div>
-      
+
       <div class="p-4">
         <h3>Karte 3</h3>
         <p>Beschreibung</p>
       </div>
-      
+
       <div class="p-4">
         <h3>Karte 4</h3>
         <p>Beschreibung</p>
@@ -532,7 +531,7 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
   <div class="aspect-ratio aspect-ratio--16-9">
     <img src="hero-image.jpg" alt="Hero" class="w-full h-full object-cover">
   </div>
-  
+
   <div class="position-absolute top-0 bottom-0 left-0 right-0 bg-dark bg-opacity-50 flex items-center justify-center">
     <div class="container text-center text-white p-4">
       <h1 class="text-size-xxl mb-4">Willkommen bei Casoon UI</h1>
@@ -553,7 +552,7 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
         <h4 class="mb-4">Über uns</h4>
         <p>Kurze Beschreibung des Unternehmens oder der Organisation.</p>
       </div>
-      
+
       <div>
         <h4 class="mb-4">Links</h4>
         <ul class="list-none">
@@ -563,7 +562,7 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
           <li class="mb-2"><a href="#" class="text-light">Kontakt</a></li>
         </ul>
       </div>
-      
+
       <div>
         <h4 class="mb-4">Kontakt</h4>
         <address class="not-italic">
@@ -573,7 +572,7 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
           <p>+49 123 456789</p>
         </address>
       </div>
-      
+
       <div>
         <h4 class="mb-4">Newsletter</h4>
         <form>
@@ -584,7 +583,7 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
         </form>
       </div>
     </div>
-    
+
     <div class="border-top border-light-dim mt-6 pt-6 text-center">
       <p>&copy; 2023 Casoon UI. Alle Rechte vorbehalten.</p>
     </div>

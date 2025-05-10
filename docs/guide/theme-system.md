@@ -14,7 +14,6 @@ Die Themes sind Teil des Layer-Systems und werden unter dem `themes`-Layer defin
 ```css
 @layer reset,
        tokens,
-       custom-properties,
        ...
        animations,
        effects,
@@ -146,10 +145,10 @@ function setTheme(themeName) {
     'theme-retro', 'theme-sunset', 'theme-dark-mode',
     'theme-accessibility'
   );
-  
+
   // Füge die neue Theme-Klasse hinzu
   document.documentElement.classList.add(themeName);
-  
+
   // Speichere die Auswahl im localStorage
   localStorage.setItem('preferred-theme', themeName);
 }
@@ -190,10 +189,10 @@ Sie können eigene Themes erstellen, indem Sie den themes-Layer verwenden:
     --color-primary: #ff6b6b;
     --color-secondary: #4ecdc4;
     --color-accent: #ffe66d;
-    
+
     --bg-base: #f7fff7;
     --text-primary: #1a535c;
-    
+
     /* Weitere Theme-Tokens definieren */
   }
 }
@@ -209,28 +208,28 @@ Jedes Theme definiert eine Reihe von Design Tokens als CSS-Variablen:
   --color-primary: #4361ee;
   --color-secondary: #3f37c9;
   --color-accent: #f72585;
-  
+
   /* Funktionale Farben */
   --color-success: #4caf50;
   --color-warning: #ff9800;
   --color-error: #f44336;
   --color-info: #2196f3;
-  
+
   /* Hintergründe */
   --bg-base: #ffffff;
   --bg-muted: #f5f5f5;
   --bg-subtle: #e5e5e5;
-  
+
   /* Text */
   --text-primary: #212121;
   --text-secondary: #4a4e69;
   --text-muted: #6c757d;
-  
+
   /* Kontrast-Farben */
   --color-on-primary: #ffffff;
   --color-on-secondary: #ffffff;
   --color-on-accent: #ffffff;
-  
+
   /* Weitere Theme-spezifische Tokens */
 }
 ```

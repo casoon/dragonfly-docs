@@ -24,7 +24,6 @@ Die Icons sind Teil des zentralen Layer-Systems und werden unter dem `icons`-Lay
 ```css
 @layer reset,
        tokens,
-       custom-properties,
        ...
        typography,
        utilities,
@@ -255,7 +254,7 @@ Sie können eigene Icon-Sets erstellen und in das Layer-System integrieren:
     background-image: url('path/to/home.svg');
     /* Weitere Stile */
   }
-  
+
   .custom-icon-settings {
     background-image: url('path/to/settings.svg');
     /* Weitere Stile */

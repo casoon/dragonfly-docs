@@ -14,7 +14,6 @@ Die Layer sind in `layers.css` in einer klaren Hierarchie definiert:
 ```css
 @layer reset,                /* Browser-Reset, Normalisierung */
        tokens,               /* Design-Tokens, Variablen */
-       custom-properties,    /* Registrierte CSS-Eigenschaften */
        core,                 /* Kernfunktionalitäten */
        logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
        colors,               /* Farbsystem */
@@ -99,7 +98,6 @@ Jeder Layer hat eine spezifische Rolle im Designsystem:
 
 - **reset**: Browser-Standardstile zurücksetzen
 - **tokens**: Design-Token-Variablen (Farben, Abstände, Typografie)
-- **custom-properties**: Mit @property registrierte CSS-Eigenschaften
 - **core**: Allgemeine Grundfunktionen
 - **logical-properties**: Logische Eigenschaften für bidirektionalen Text
 - **colors**: Farbsystem und Farbklassen

@@ -20,7 +20,6 @@ Die Reihenfolge der Layer ist entscheidend, wobei das `colors` Layer nach den gr
 ```css
 @layer reset,
        tokens,              /* Grundlegende Design-Tokens */
-       custom-properties,
        core,
        logical-properties,
        colors,              /* Basisfarben und Farbklassen */
@@ -42,12 +41,12 @@ Die Basisfarben definieren die grundlegende Identität Ihrer Anwendung:
   --color-primary: #4a90e2;
   --color-primary-light: #6ba5e7;
   --color-primary-dark: #3570b2;
-  
+
   /* Sekundärfarbe und Varianten */
   --color-secondary: #6c757d;
   --color-secondary-light: #868e96;
   --color-secondary-dark: #495057;
-  
+
   /* Akzentfarbe und Varianten */
   --color-accent: #f8a100;
   --color-accent-light: #ffc107;
@@ -65,17 +64,17 @@ Für semantische Bedeutungen gibt es spezielle Funktionsfarben:
   --color-success: #28a745;
   --color-success-light: #48c664;
   --color-success-dark: #1e7e34;
-  
+
   /* Warnung */
   --color-warning: #ffc107;
   --color-warning-light: #ffda6a;
   --color-warning-dark: #e0a800;
-  
+
   /* Fehler */
   --color-error: #dc3545;
   --color-error-light: #e4606d;
   --color-error-dark: #bd2130;
-  
+
   /* Information */
   --color-info: #17a2b8;
   --color-info-light: #3dd5f3;
@@ -100,7 +99,7 @@ Eine umfassende Grau-Palette dient als Basis für Text, Hintergründe und Rände
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
   --color-gray-950: #030712;
-  
+
   /* Grundlegende Schwarz/Weiß-Töne */
   --color-white: #ffffff;
   --color-black: #000000;
@@ -124,13 +123,13 @@ Zusätzlich zu den Basisfarben bietet das System eine erweiterte Palette mit 9 S
   --color-blue-700: #1d4ed8;
   --color-blue-800: #1e40af;
   --color-blue-900: #1e3a8a;
-  
+
   /* Rote Palette */
   --color-red-50: #fef2f2;
   --color-red-100: #fee2e2;
   /* ... weitere Rot-Stufen ... */
   --color-red-900: #7f1d1d;
-  
+
   /* Weitere Farbpaletten (Grün, Gelb, Lila, etc.) mit jeweils 9 Stufen */
 }
 ```
@@ -147,14 +146,14 @@ Das Farbsystem erleichtert die semantische Verwendung von Farben für unterschie
   --text-tertiary: var(--color-gray-500);
   --text-disabled: var(--color-gray-400);
   --text-inverse: var(--color-white);
-  
+
   /* Hintergrund-Farben */
   --bg-body: var(--color-white);
   --bg-surface: var(--color-gray-50);
   --bg-elevation-1: var(--color-white);
   --bg-elevation-2: var(--color-gray-50);
   --bg-disabled: var(--color-gray-200);
-  
+
   /* Rand-Farben */
   --border-light: var(--color-gray-200);
   --border-medium: var(--color-gray-300);
@@ -235,7 +234,7 @@ Das Farbsystem unterstützt dynamische Farbberechnungen mit der CSS `color-mix()
   --color-primary-20: color-mix(in srgb, var(--color-primary) 20%, white 80%);
   --color-primary-90: color-mix(in srgb, var(--color-primary) 90%, black 10%);
   --color-primary-95: color-mix(in srgb, var(--color-primary) 95%, black 5%);
-  
+
   /* Mischungen verschiedener Farben */
   --color-primary-accent: color-mix(in srgb, var(--color-primary) 60%, var(--color-accent) 40%);
 }
@@ -251,7 +250,7 @@ Das System nutzt auch moderne CSS-Farbfunktionen für erweiterte Anwendungsfäll
 .card {
   /* Automatische Kontrastfarbe für Text */
   color: color-contrast(var(--color-primary) vs black, white);
-  
+
   /* Transparente Varianten */
   background-color: rgb(from var(--color-primary) r g b / 10%);
   border-color: hsl(from var(--color-primary) h s l / 30%);
@@ -318,7 +317,7 @@ Sie können das Farbsystem an Ihr Branding anpassen, indem Sie die Basisfarben �
     --color-primary: #8e44ad;
     --color-secondary: #2c3e50;
     --color-accent: #f39c12;
-    
+
     /* Andere Farben bleiben unverändert oder können ebenfalls überschrieben werden */
   }
 }
@@ -420,14 +419,14 @@ Für harmonische Designs empfehlen wir folgende Farbrichtlinien:
       <p>Inhalt in Primärfarbe mit weißem Text.</p>
     </div>
   </div>
-  
+
   <div class="card bg-white border border-accent">
     <div class="card__header text-accent">Akzentuierte Karte</div>
     <div class="card__body">
       <p>Weiße Karte mit Akzentfarbe für Rand und Überschrift.</p>
     </div>
   </div>
-  
+
   <div class="card bg-gray-50 border border-gray-200">
     <div class="card__header text-secondary">Neutrale Karte</div>
     <div class="card__body">

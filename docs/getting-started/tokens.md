@@ -24,7 +24,6 @@ Die Design Tokens sind Teil des zentralen Layer-Systems und werden unter dem `to
 ```css
 @layer reset,               /* Browser-Reset */
        tokens,              /* Design-Tokens, Variablen */
-       custom-properties,   /* CSS-Eigenschaften */
        core,                /* Kernfunktionalitäten */
        ...
 ```
@@ -40,11 +39,11 @@ Die Farbpalette besteht aus primären, sekundären, Akzent- und Funktionsfarben 
   --color-primary: var(--color-blue-600);
   --color-primary-light: var(--color-blue-500);
   --color-primary-dark: var(--color-blue-700);
-  
+
   --color-secondary: var(--color-gray-600);
   --color-secondary-light: var(--color-gray-500);
   --color-secondary-dark: var(--color-gray-700);
-  
+
   --color-accent: var(--color-orange-500);
   --color-accent-light: var(--color-orange-400);
   --color-accent-dark: var(--color-orange-600);
@@ -58,15 +57,15 @@ Die Farbpalette besteht aus primären, sekundären, Akzent- und Funktionsfarben 
   --color-success: var(--color-green-600);
   --color-success-light: var(--color-green-500);
   --color-success-dark: var(--color-green-700);
-  
+
   --color-warning: var(--color-yellow-500);
   --color-warning-light: var(--color-yellow-400);
   --color-warning-dark: var(--color-yellow-600);
-  
+
   --color-error: var(--color-red-600);
   --color-error-light: var(--color-red-500);
   --color-error-dark: var(--color-red-700);
-  
+
   --color-info: var(--color-blue-600);
   --color-info-light: var(--color-blue-500);
   --color-info-dark: var(--color-blue-700);
@@ -157,7 +156,7 @@ Basiswerte für die Typografie:
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-family-heading: var(--font-family-base);
   --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  
+
   /* Schriftgrößen */
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -248,7 +247,7 @@ Vordefinierte Animationszeiten und Easing-Funktionen:
   --transition-duration-fast: 150ms;
   --transition-duration-normal: 300ms;
   --transition-duration-slow: 500ms;
-  
+
   --transition-timing-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   --transition-timing-ease-in: cubic-bezier(0.42, 0, 1, 1);
   --transition-timing-ease-out: cubic-bezier(0, 0, 0.58, 1);

@@ -38,7 +38,6 @@ Die Casoon UI Library nutzt ein fortschrittliches CSS Cascade Layers-System für
 ```css
 @layer reset,                /* Browser-Reset, Normalisierung */
        tokens,               /* Design-Tokens, Variablen */
-       custom-properties,    /* Registrierte CSS-Eigenschaften */
        core,                 /* Kernfunktionalitäten */
        logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
        colors,               /* Farbsystem */

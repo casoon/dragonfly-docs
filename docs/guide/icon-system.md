@@ -14,7 +14,6 @@ Die Icons sind Teil des Layer-Systems und werden unter dem `icons`-Layer definie
 ```css
 @layer reset,
        tokens,
-       custom-properties,
        ...
        utilities,
        smooth-scroll,
@@ -200,7 +199,7 @@ Sie können eigene Icons erstellen und in das Layer-System integrieren:
     background-image: url('path/to/home.svg');
     /* Weitere Stile */
   }
-  
+
   .custom-icon-settings {
     background-image: url('path/to/settings.svg');
     /* Weitere Stile */

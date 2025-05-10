@@ -19,6 +19,6 @@
   "dependencies": {
     "@mdx-js/rollup": "3.1.0",
     "@mdx-js/vue": "^3.1.0",
-    "@casoon/ui-lib": "0.4.6"
+    "@casoon/ui-lib": "0.4.7"
   }
 }

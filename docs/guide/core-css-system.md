@@ -67,7 +67,7 @@ Die `base.css` definiert das Fundament des CSS-Systems und importiert grundlegen
 
 /* Tokens und Properties */
 @import url("base/tokens.css") layer(tokens);
-@import url("base/custom-properties.css") layer(custom-properties);
+/* @import url("base/custom-properties.css") layer(custom-properties); -- Removed in current version */
 
 /* Core-Funktionalitäten */
 @import url("base/logical-properties.css") layer(logical-properties);
@@ -287,7 +287,7 @@ Um das System mit eigenen Stilen zu erweitern:
   .custom-animation {
     animation: custom-fade 0.5s ease-in-out;
   }
-  
+
   @keyframes custom-fade {
     from { opacity: 0; }
     to { opacity: 1; }

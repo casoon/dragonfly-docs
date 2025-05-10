@@ -24,7 +24,6 @@ Die Themes sind Teil des zentralen Layer-Systems und werden unter dem `themes`-L
 ```css
 @layer reset,
        tokens,
-       custom-properties,
        core,
        ...
        effects,
@@ -122,10 +121,10 @@ function setTheme(themeName) {
     'theme-summer', 'theme-autumn', 'theme-winter',
     'theme-ocean', 'theme-forest', 'theme-contrast'
   );
-  
+
   // Füge die neue Theme-Klasse hinzu
   document.documentElement.classList.add(themeName);
-  
+
   // Speichere die Auswahl im localStorage
   localStorage.setItem('preferred-theme', themeName);
 }
@@ -164,7 +163,7 @@ import '@casoon/ui-lib/dist/themes/night.css';
 
 function ThemeSwitcher() {
   const [currentTheme, setCurrentTheme] = useState('theme-day');
-  
+
   useEffect(() => {
     // Theme aus localStorage laden
     const savedTheme = localStorage.getItem('preferred-theme');
@@ -173,14 +172,14 @@ function ThemeSwitcher() {
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setCurrentTheme('theme-night');
     }
-    
+
     // Theme auf HTML-Element anwenden
     document.documentElement.className = currentTheme;
-    
+
     // Theme-Änderung speichern
     localStorage.setItem('preferred-theme', currentTheme);
   }, [currentTheme]);
-  
+
   return (
     <div className="theme-switcher flex flex--gap-2">
       <button 
@@ -212,32 +211,32 @@ Jedes Theme definiert eigene Werte für Design-Tokens wie Farben, Abstände, Run
   --color-secondary: #3f37c9;
   --color-accent: #f72585;
   --color-neutral: #4a4e69;
-  
+
   --color-success: #4caf50;
   --color-warning: #ff9800;
   --color-error: #f44336;
   --color-info: #2196f3;
-  
+
   /* Hintergründe */
   --bg-base: #ffffff;
   --bg-muted: #f5f5f5;
   --bg-subtle: #e5e5e5;
-  
+
   /* Text */
   --text-primary: #212121;
   --text-secondary: #4a4e69;
   --text-muted: #6c757d;
-  
+
   /* Kontrast-Farben für die Hauptfarben */
   --color-on-primary: #ffffff;
   --color-on-secondary: #ffffff;
   --color-on-accent: #ffffff;
-  
+
   /* Schatten */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-  
+
   /* Rundungen */
   --radius-sm: 0.25rem;
   --radius-md: 0.375rem;
@@ -250,32 +249,32 @@ Jedes Theme definiert eigene Werte für Design-Tokens wie Farben, Abstände, Run
   --color-secondary: #9ab3f5;
   --color-accent: #ff79c6;
   --color-neutral: #a5b1c2;
-  
+
   --color-success: #50fa7b;
   --color-warning: #ffb86c;
   --color-error: #ff5555;
   --color-info: #8be9fd;
-  
+
   /* Hintergründe */
   --bg-base: #282a36;
   --bg-muted: #44475a;
   --bg-subtle: #373a49;
-  
+
   /* Text */
   --text-primary: #f8f8f2;
   --text-secondary: #d1d1e0;
   --text-muted: #a5b1c2;
-  
+
   /* Kontrast-Farben für die Hauptfarben */
   --color-on-primary: #282a36;
   --color-on-secondary: #282a36;
   --color-on-accent: #282a36;
-  
+
   /* Schatten mit angepasster Sichtbarkeit für dunkle Themes */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
-  
+
   /* Rundungen (gleich wie im Day-Theme) */
   --radius-sm: 0.25rem;
   --radius-md: 0.375rem;
@@ -343,20 +342,20 @@ Sie können die Theme-Variablen in Ihrer eigenen CSS-Datei überschreiben, um da
   --color-secondary: #5f3dc4;
   --color-accent: #f03e3e;
   --color-neutral: #495057;
-  
+
   --color-success: #37b24d;
   --color-warning: #f59f00;
   --color-error: #e03131;
   --color-info: #1c7ed6;
-  
+
   --bg-base: #f8f9fa;
   --bg-muted: #e9ecef;
   --bg-subtle: #dee2e6;
-  
+
   --text-primary: #212529;
   --text-secondary: #343a40;
   --text-muted: #6c757d;
-  
+
   /* ... weitere Anpassungen ... */
 }
 ```
@@ -378,7 +377,7 @@ Das Farbsystem verwendet semantische Variablen für verschiedene Anwendungsfäll
   --color-primary-700: #2f3eb1;
   --color-primary-800: #283590;
   --color-primary-900: #1f2671;
-  
+
   /* ... weitere Farbpaletten ... */
 }
 ```
@@ -437,7 +436,7 @@ Casoon UI Themes können auf Benutzereinstellungen reagieren:
     --transition-speed: 0.1s;
     --animation-duration: 0.3s;
   }
-  
+
   /* Komplexe Animationen deaktivieren */
   .animated {
     animation: none !important;
@@ -463,18 +462,18 @@ Casoon UI Themes sind für Barrierefreiheit optimiert:
   --color-primary: #0000e6;
   --color-secondary: #660099;
   --color-accent: #cc0000;
-  
+
   --bg-base: #ffffff;
   --bg-muted: #f0f0f0;
-  
+
   --text-primary: #000000;
   --text-secondary: #333333;
-  
+
   /* Größere Schrift und Abstände */
   --font-size-base: 1.125rem; /* 18px statt 16px */
   --line-height-base: 1.8;
   --spacing-base: 1.25rem;
-  
+
   /* Stärkere Fokus-Indikatoren */
   --focus-ring-width: 3px;
   --focus-ring-color: #0000e6;
@@ -549,10 +548,10 @@ Sie können eigene Themes erstellen, indem Sie den themes-Layer verwenden:
     --color-primary: #ff6b6b;
     --color-secondary: #4ecdc4;
     --color-accent: #ffe66d;
-    
+
     --bg-base: #f7fff7;
     --text-primary: #1a535c;
-    
+
     /* Weitere Theme-Tokens definieren */
   }
 }

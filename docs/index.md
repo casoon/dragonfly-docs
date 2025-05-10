@@ -8,7 +8,7 @@ Willkommen zur Dokumentation der Casoon UI Library. Diese Bibliothek bietet ein 
 
 ## Aktuelle Version
 
-Die aktuelle Version der Casoon UI Library ist `0.3.11`.
+Die aktuelle Version der Casoon UI Library ist `0.4.7`.
 
 ## Neues Layer-System
 
@@ -23,7 +23,6 @@ Die Layer sind in einer logischen Hierarchie organisiert:
 ```css
 @layer reset,                /* Browser-Reset, Normalisierung */
        tokens,               /* Design-Tokens, Variablen */
-       custom-properties,    /* Registrierte CSS-Eigenschaften */
        core,                 /* Kernfunktionalitäten */
        logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
        colors,               /* Farbsystem */

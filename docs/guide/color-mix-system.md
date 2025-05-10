@@ -20,7 +20,6 @@ Die Reihenfolge der Layer ist wichtig, wobei das `color-mix` Layer nach dem `col
 ```css
 @layer reset,
        tokens,
-       custom-properties,
        core,
        logical-properties,
        colors,              /* Basisfarben */
@@ -207,7 +206,7 @@ Das Color-Mix System arbeitet nahtlos mit dem Theming-System zusammen:
 
 [data-theme="dark"] {
   --color-primary: #2b5797;
-  
+
   /* Diese werden automatisch neu berechnet basierend auf dem neuen Primärwert */
   /* --color-primary-100 bis --color-primary-900 */
 }
@@ -244,12 +243,12 @@ Sie können das Color-Mix System erweitern oder anpassen, indem Sie eigene Misch
     --color-brand-highlight: color-mix(in srgb, var(--color-brand) 70%, var(--color-accent) 30%);
     --color-custom-overlay: color-mix(in srgb, var(--color-primary) 40%, transparent 60%);
   }
-  
+
   /* Eigene Utility-Klassen für Ihre Farbmischungen */
   .bg-brand-highlight {
     background-color: var(--color-brand-highlight);
   }
-  
+
   .text-brand-highlight {
     color: var(--color-brand-highlight);
   }
