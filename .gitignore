@@ -99,6 +99,4 @@ $RECYCLE.BIN/
 *.tsbuildinfo
 
 # Astro-spezifisch
-.astro/types.d.ts 
-
-tasks.md
+.astro/types.d.ts

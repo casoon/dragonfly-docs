@@ -6,7 +6,7 @@ export default defineConfig({
   description: 'Eine moderne, flexible und zugängliche Komponentenbibliothek',
   base: "/ui-docs/",
   ignoreDeadLinks: true,
-  
+
   head: [
     ['link', { rel: 'stylesheet', href: '/casoon-ui-docs/custom.css' }]
   ],
@@ -32,7 +32,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Version 0.3.25 | MIT License',
+      message: 'Version 0.4.9 | MIT License',
       copyright: 'Copyright © 2025 Casoon'
     },
 
@@ -132,7 +132,7 @@ export default defineConfig({
           items: [
             { text: 'Übersicht', link: '/guide/' },
             { text: 'Layer-System', link: '/guide/layer-system' },
-            { text: 'Modul-System', link: '/guide/module-system' },
+            { text: 'Komponenten-System', link: '/guide/component-system' },
             { text: 'Theme-System', link: '/guide/theme-system' },
             { text: 'Icon-System', link: '/guide/icon-system' }
           ]

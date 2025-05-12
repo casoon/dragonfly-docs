@@ -304,9 +304,9 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
 import { useState, useEffect } from 'react';
 
 // Import der benötigten Themes
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/themes/day.css';
-import '@casoon/ui-lib/dist/themes/night.css';
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css';
+import '@casoon/ui-lib/themes/night.css';
 
 function ThemeSwitcher() {
   const [currentTheme, setCurrentTheme] = useState('theme-day');
