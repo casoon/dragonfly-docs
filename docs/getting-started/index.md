@@ -1,6 +1,6 @@
 # Einführung in Casoon UI Library
 
-Die Casoon UI Library ist ein modernes, modulares CSS-Framework und Design-System, das auf fortschrittlichen Web-Technologien basiert und für moderne Webanwendungen optimiert ist. Die aktuelle Version ist 0.5.0.
+Die Casoon UI Library ist ein modernes, modulares CSS-Framework und Design-System, das auf fortschrittlichen Web-Technologien basiert und für moderne Webanwendungen optimiert ist. Die aktuelle Version ist 0.5.1.
 
 ## Hauptmerkmale
 

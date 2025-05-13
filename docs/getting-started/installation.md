@@ -5,7 +5,7 @@ category: Getting Started
 
 # Installation
 
-Die Casoon UI Library lässt sich flexibel in diverse Webprojekte integrieren und bietet verschiedene Installationsmethoden für unterschiedliche Anforderungen. Die aktuelle Version ist 0.5.0.
+Die Casoon UI Library lässt sich flexibel in diverse Webprojekte integrieren und bietet verschiedene Installationsmethoden für unterschiedliche Anforderungen. Die aktuelle Version ist 0.5.1.
 
 ## Voraussetzungen
 

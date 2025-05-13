@@ -7,7 +7,7 @@ category: Guide
 
 Das Animations- und Effekte-System der Casoon UI Library bietet eine umfassende Sammlung von vordefinierten Animationen, Übergängen und visuellen Effekten zur Verbesserung der Benutzeroberfläche.
 
-> **Update in Version 0.5.0:** Das Animationssystem wurde umfassend überarbeitet mit vereinheitlichtem Benennungsschema (`slide-in-*` statt `slide-from-*`), reduzierter Redundanz und verbesserten Custom Properties.
+> **Update in Version 0.5.1:** Das Animationssystem wurde umfassend überarbeitet mit vereinheitlichtem Benennungsschema (`slide-in-*` statt `slide-from-*`), reduzierter Redundanz und verbesserten Custom Properties.
 
 ## CSS-Import
 

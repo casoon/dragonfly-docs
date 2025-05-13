@@ -1,0 +1,451 @@
+/**
+ * Reset CSS
+ * 
+ * Diese Datei setzt alle Browser-spezifischen Standardstile zurück, um eine konsistente
+ * Ausgangsbasis für das Designsystem zu schaffen. Die Implementierung basiert auf modernen
+ * CSS-Reset-Praktiken und berücksichtigt Barrierefreiheit.
+ * 
+ * Alle Styles sind in @layer reset organisiert, um Spezifitätskonflikte zu vermeiden.
+ * 
+ * @wichtig Diese Datei sollte immer als erstes geladen werden, bevor andere Styles angewendet werden.
+ */
+
+@layer reset {
+    /* Box sizing */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* Reset margins and paddings */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Set core body defaults */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.5;
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizespeed;
+        text-size-adjust: 100%;
+    }
+
+    /* Remove list styles */
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    /* Set core root defaults */
+    html:focus-within {
+        scroll-behavior: smooth;
+    }
+
+    /* A elements that don't have a class get default styles */
+    a:not([class]) {
+        text-decoration-skip-ink: auto;
+    }
+
+    /* Make images easier to work with */
+    img,
+    picture {
+        display: block;
+        max-width: 100%;
+    }
+
+    /* Inherit fonts for inputs and buttons */
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    /* Unterstützung für Bewegungsreduzierung */
+    @container root (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            scroll-behavior: auto !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+
+    /* Remove default button styles */
+    button {
+        appearance: auto;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    /* Remove default input styles */
+    input {
+        appearance: auto;
+    }
+
+    /* Remove default textarea styles */
+    textarea {
+        resize: none;
+    }
+
+    /* Remove default select styles */
+    select {
+        appearance: auto;
+    }
+
+    /* Remove default fieldset styles */
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Remove default legend styles */
+    legend {
+        padding: 0;
+    }
+
+    /* Remove default table styles */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* Remove default hr styles */
+    hr {
+        border: none;
+        border-top: 1px solid currentcolor;
+    }
+
+    /* Remove default blockquote styles */
+    blockquote {
+        margin: 0;
+    }
+
+    /* Remove default pre styles */
+    pre {
+        margin: 0;
+    }
+
+    /* Remove default code styles */
+    code {
+        font-family: monospace;
+    }
+
+    /* Remove default kbd styles */
+    kbd {
+        font-family: monospace;
+    }
+
+    /* Remove default samp styles */
+    samp {
+        font-family: monospace;
+    }
+
+    /* Remove default var styles */
+    var {
+        font-style: italic;
+    }
+
+    /* Remove default sub and sup styles */
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    /* Remove default small styles */
+    small {
+        font-size: 80%;
+    }
+
+    /* Remove default strong styles */
+    strong {
+        font-weight: bolder;
+    }
+
+    /* Remove default em styles */
+    em {
+        font-style: italic;
+    }
+
+    /* Remove default mark styles */
+    mark {
+        background-color: transparent;
+        color: inherit;
+    }
+
+    /* Remove default abbr styles */
+    abbr[title] {
+        text-decoration: none;
+    }
+
+    /* Remove default dfn styles */
+    dfn {
+        font-style: italic;
+    }
+
+    /* Remove default cite styles */
+    cite {
+        font-style: italic;
+    }
+
+    /* Remove default q styles */
+    q {
+        quotes: none;
+    }
+
+    q::before,
+    q::after {
+        content: none;
+    }
+
+    /* Remove default ins styles */
+    ins {
+        text-decoration: none;
+    }
+
+    /* Remove default del styles */
+    del {
+        text-decoration: line-through;
+    }
+
+    /* Remove default s styles */
+    s {
+        text-decoration: line-through;
+    }
+
+    /* Remove default u styles */
+    u {
+        text-decoration: underline;
+    }
+
+    /* Remove default bdi styles */
+    bdi {
+        unicode-bidi: isolate;
+    }
+
+    /* Remove default bdo styles */
+    bdo {
+        unicode-bidi: bidi-override;
+    }
+
+    /* Remove default ruby styles */
+    ruby {
+        ruby-position: under;
+    }
+
+    /* Remove default rt styles */
+    rt {
+        line-height: 1;
+    }
+
+    /* Remove default rp styles */
+    rp {
+        display: none;
+    }
+
+    /* Remove default button styles */
+    [type='button'],
+    [type='reset'],
+    [type='submit'] {
+        appearance: auto;
+    }
+
+    /* Remove default input styles */
+    [type='search'] {
+        appearance: textfield;
+    }
+
+    /* Remove default data styles */
+    data {
+        font-variant-numeric: tabular-nums;
+    }
+
+    /* Remove default time styles */
+    time {
+        font-variant-numeric: tabular-nums;
+    }
+
+    /* Remove default meter styles */
+    meter {
+        appearance: none;
+    }
+
+    /* Remove default progress styles */
+    progress {
+        appearance: none;
+    }
+
+    /* Remove default output styles */
+    output {
+        display: inline;
+    }
+
+    /* Remove default canvas styles */
+    canvas {
+        display: inline-block;
+    }
+
+    /* Remove default template styles */
+    template {
+        display: none;
+    }
+
+    /* Remove default details styles */
+    details {
+        display: block;
+    }
+
+    /* Remove default summary styles */
+    summary {
+        display: list-item;
+    }
+
+    /* Remove default dialog styles */
+    dialog {
+        display: block;
+    }
+
+    /* Remove default menu styles */
+    menu {
+        display: block;
+    }
+
+    /* Remove default menuitem styles */
+    menuitem {
+        display: none;
+    }
+
+    /* Remove default keygen styles */
+    keygen {
+        display: none;
+    }
+
+    /* Remove default source styles */
+    source {
+        display: none;
+    }
+
+    /* Remove default track styles */
+    track {
+        display: none;
+    }
+
+    /* Remove default wbr styles */
+    wbr {
+        display: none;
+    }
+
+    /* Remove default embed styles */
+    embed {
+        display: none;
+    }
+
+    /* Remove default object styles */
+    object {
+        display: inline-block;
+    }
+
+    /* Remove default param styles */
+    param {
+        display: none;
+    }
+
+    /* Remove default video styles */
+    video {
+        display: inline-block;
+    }
+
+    /* Remove default audio styles */
+    audio {
+        display: inline-block;
+    }
+
+    /* Remove default iframe styles */
+    iframe {
+        border: none;
+    }
+
+    /* Remove default map styles */
+    map {
+        display: inline;
+    }
+
+    /* Remove default area styles */
+    area {
+        display: none;
+    }
+
+    /* Remove default script styles */
+    script {
+        display: none;
+    }
+
+    /* Remove default noscript styles */
+    noscript {
+        display: block;
+    }
+
+    /* Remove default style styles */
+    style {
+        display: none;
+    }
+
+    /* Remove default link styles */
+    link {
+        display: none;
+    }
+
+    /* Remove default meta styles */
+    meta {
+        display: none;
+    }
+
+    /* Remove default title styles */
+    title {
+        display: none;
+    }
+
+    /* Remove default base styles */
+    base {
+        display: none;
+    }
+
+    /* Remove default head styles */
+    head {
+        display: none;
+    }
+
+    /* Remove default html styles */
+    html {
+        display: block;
+    }
+
+    /* Remove default body styles */
+    body {
+        display: block;
+    }
+
+}

@@ -1,0 +1,274 @@
+/*
+ * Wizard-Komponente
+ *
+ * Schrittweiser Navigationsablauf.
+ */
+
+/**
+ * Wizard-Komponente
+ * 
+ * Schrittweise Navigationskomponenten für mehrstufige Prozesse.
+ * Wizards führen Benutzer durch komplexe Workflows wie Formulare oder Setups.
+ * 
+ * @layer components.wizard
+ * 
+ * Grundlegende Verwendung:
+ * <div class="wizard">
+ *   <div class="steps">
+ *     <div class="step completed">
+ *       <span class="indicator">1</span>
+ *       <span class="title">Schritt 1</span>
+ *     </div>
+ *     <div class="step active">
+ *       <span class="indicator">2</span>
+ *       <span class="title">Schritt 2</span>
+ *     </div>
+ *     <div class="step">
+ *       <span class="indicator">3</span>
+ *       <span class="title">Schritt 3</span>
+ *     </div>
+ *   </div>
+ *   <div class="content">
+ *     <!-- Aktuelle Schrittinhalte -->
+ *   </div>
+ *   <div class="actions">
+ *     <button class="button">Zurück</button>
+ *     <button class="button primary">Weiter</button>
+ *   </div>
+ * </div>
+ * 
+ * Varianten:
+ * <div class="wizard horizontal">...</div>
+ * <div class="wizard vertical">...</div>
+ * 
+ * Stilvarianten:
+ * <div class="wizard numbered">...</div>     <!-- Mit Nummern -->
+ * <div class="wizard with-icons">...</div>        <!-- Mit Icons -->
+ * <div class="wizard with-progress">...</div>     <!-- Mit Fortschrittsbalken -->
+ * 
+ * Zustandsanzeige:
+ * <div class="step completed">...</div>  <!-- Abgeschlossen -->
+ * <div class="step active">...</div>     <!-- Aktiv -->
+ * <div class="step error">...</div>      <!-- Mit Fehler -->
+ * <div class="step disabled">...</div>   <!-- Deaktiviert -->
+ */
+
+@layer wizard {
+  .wizard {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    width: 100%;
+    
+    /* Schrittanzeige im Wizard */
+    .steps {
+      display: flex;
+      gap: var(--space-2);
+      justify-content: space-between;
+      margin-bottom: var(--space-6);
+      position: relative;
+      
+      /* Verbindungslinie zwischen Schritten */
+      &::before {
+        background-color: var(--color-gray-300);
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: calc(var(--step-size) / 2);
+        width: 100%;
+        z-index: 0;
+      }
+    }
+    
+    /* Einzelner Schritt */
+    .step {
+      --step-size: 2rem;
+
+      align-items: center;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding-top: calc(var(--step-size) + var(--space-2));
+      position: relative;
+      text-align: center;
+      z-index: 1;
+      
+      /* Schritt-Indikator (Kreis) */
+      .indicator {
+        align-items: center;
+        background-color: var(--color-white);
+        border: 2px solid var(--color-gray-300);
+        border-radius: 50%;
+        color: var(--color-gray-600);
+        display: flex;
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-medium);
+        height: var(--step-size);
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        width: var(--step-size);
+        z-index: 2;
+      }
+      
+      /* Schritt-Titel */
+      .title {
+        color: var(--color-gray-700);
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-normal);
+        margin-top: var(--space-1);
+      }
+      
+      /* Optionale Beschreibung */
+      .description {
+        color: var(--color-gray-600);
+        font-size: var(--font-size-xs);
+        margin-top: var(--space-1);
+        max-width: 140px;
+      }
+      
+      /* Schritt-Zustände */
+      &.active {
+        .indicator {
+          background-color: var(--color-primary);
+          border-color: var(--color-primary);
+          color: white;
+        }
+        
+        .title {
+          color: var(--color-primary);
+          font-weight: var(--font-weight-medium);
+        }
+      }
+      
+      &.completed {
+        .indicator {
+          background-color: var(--color-success);
+          border-color: var(--color-success);
+          color: white;
+          
+          /* Optional: Häkchen statt Nummer */
+          &::after {
+            content: '✓';
+          }
+        }
+        
+        /* Verbindungslinie nach dem abgeschlossenen Schritt */
+        &::after {
+          background-color: var(--color-success);
+          content: '';
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          top: calc(var(--step-size) / 2);
+          width: 100%;
+          z-index: 0;
+        }
+        
+        &:last-child::after {
+          display: none;
+        }
+      }
+      
+      &.error {
+        .indicator {
+          background-color: var(--color-error);
+          border-color: var(--color-error);
+          color: white;
+        }
+        
+        .title {
+          color: var(--color-error);
+        }
+      }
+      
+      &.disabled {
+        cursor: not-allowed;
+        opacity: 50%;
+      }
+    }
+    
+    /* Inhaltsbereich */
+    .content {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      border-radius: var(--radius-md);
+      padding: var(--space-6);
+    }
+    
+    /* Aktionsbuttons */
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: var(--space-4);
+      
+      /* Wenn nur ein Button (z.B. beim ersten Schritt) */
+      &.end {
+        justify-content: flex-end;
+      }
+    }
+    
+    /* Ausrichtungsvarianten */
+    &.vertical {
+      align-items: flex-start;
+      flex-direction: row;
+      
+      .steps {
+        flex-direction: column;
+        gap: var(--space-6);
+        margin-bottom: 0;
+        margin-right: var(--space-8);
+        width: 240px;
+        
+        &::before {
+          height: 100%;
+          left: calc(var(--step-size) / 2);
+          top: 0;
+          width: 2px;
+        }
+      }
+      
+      .step {
+        align-items: flex-start;
+        flex-direction: row;
+        padding-left: calc(var(--step-size) + var(--space-4));
+        padding-top: 0;
+        text-align: left;
+        
+        .indicator {
+          left: 0;
+          top: 0;
+        }
+        
+        &.completed::after {
+          height: 100%;
+          left: calc(var(--step-size) / 2);
+          top: 50%;
+          width: 2px;
+        }
+      }
+      
+      .content {
+        flex: 1;
+      }
+    }
+    
+    /* Mit Fortschrittsbalken */
+    &.with-progress {
+      .progress-bar {
+        background-color: var(--color-gray-200);
+        border-radius: var(--radius-full);
+        height: 0.5rem;
+        margin-bottom: var(--space-6);
+        overflow: hidden;
+        
+        .fill {
+          background-color: var(--color-primary);
+          height: 100%;
+          transition: width 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

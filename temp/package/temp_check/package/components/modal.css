@@ -1,0 +1,297 @@
+/*
+ * Modal Module
+ *
+ * Zentrale Komponente für modale Dialoge.
+ */
+
+/**
+ * Modal-Komponente
+ * 
+ * Dialogfenster und Overlays für fokussierte Benutzerinteraktionen.
+ * Modals werden verwendet, um wichtige Informationen anzuzeigen oder Benutzerentscheidungen zu erfordern.
+ * 
+ * @layer components.modal
+ * 
+ * Grundlegende Verwendung:
+ * <div class="modal">
+ *   <div class="backdrop"></div>
+ *   <div class="container">
+ *     <div class="header">
+ *       <h3 class="title">Modaltitel</h3>
+ *       <button class="close">&times;</button>
+ *     </div>
+ *     <div class="body">
+ *       Modalinhalt
+ *     </div>
+ *     <div class="footer">
+ *       <button class="button">Abbrechen</button>
+ *       <button class="button primary">Bestätigen</button>
+ *     </div>
+ *   </div>
+ * </div>
+ * 
+ * Größenvarianten:
+ * <div class="modal small">...</div>
+ * <div class="modal medium">...</div>
+ * <div class="modal large">...</div>
+ * <div class="modal fullscreen">...</div>
+ * 
+ * Position:
+ * <div class="modal center">...</div>
+ * <div class="modal top">...</div>
+ * <div class="modal bottom">...</div>
+ * 
+ * Animation (erfordert JS):
+ * <div class="modal fade">...</div>
+ * <div class="modal slide">...</div>
+ * 
+ * Flüssige Größenanpassung mit Schlüsselwörtern:
+ * <div class="modal fluid">...</div>
+ * <div class="modal fluid small">...</div>
+ * <div class="modal fluid medium">...</div>
+ * <div class="modal fluid large">...</div>
+ * 
+ * Container-adaptive Größenanpassung:
+ * <div class="modal adaptive">...</div>
+ */
+
+@layer modal {
+  .modal {
+    align-items: center;
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    position: fixed;
+    z-index: var(--z-index-modal);
+    
+    /* Hintergrund-Overlay */
+    .backdrop {
+      background: rgb(0 0 0 / 50%);
+      inset: 0;
+      position: fixed;
+      z-index: var(--z-index-modal-backdrop);
+    }
+    
+    /* Modal-Container */
+    .container {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      max-width: 32rem;
+      overflow: hidden;
+      padding: var(--space-6);
+      position: relative;
+      width: 100%;
+      z-index: var(--z-index-modal);
+    }
+    
+    /* Modal-Header */
+    .header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      
+      .title {
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-semibold);
+        margin: 0;
+      }
+      
+      .close {
+        background: none;
+        border: none;
+        color: var(--color-gray-500);
+        cursor: pointer;
+        font-size: 1.5rem;
+        line-height: 1;
+        padding: 0.25rem;
+        transition: color var(--transition-fast);
+        
+        &:hover {
+          color: var(--color-gray-800);
+        }
+      }
+    }
+    
+    /* Modal-Inhalt */
+    .body {
+      color: var(--color-gray-800);
+      font-size: var(--font-size-base);
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    
+    /* Modal-Footer */
+    .footer {
+      display: flex;
+      gap: var(--space-3);
+      justify-content: flex-end;
+      margin-top: var(--space-2);
+    }
+    
+    /* Größenvarianten */
+    &.small .container {
+      max-width: 24rem;
+    }
+    
+    &.medium .container {
+      max-width: 32rem;
+    }
+    
+    &.large .container {
+      max-width: 48rem;
+    }
+    
+    &.fullscreen .container {
+      border-radius: 0;
+      height: 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+    
+    /* Flüssige Größenanpassung mit interpolate-size: allow-keywords */
+    &.fluid {
+      /* Nutzt CSS-Schlüsselwörter für Größen - funktioniert mit interpolate-size: allow-keywords */
+      font-size: medium; /* Basis-Größe für Skalierungsfaktor */
+      
+      .container {
+        border-radius: 0.75em;
+        gap: 1em;
+        padding: 1.5em;
+      }
+      
+      .header .title {
+        font-size: 1.25em;
+      }
+      
+      .body {
+        font-size: 1em;
+      }
+      
+      .footer {
+        gap: 0.75em;
+        margin-top: 0.5em;
+      }
+      
+      /* Größenvarianten mit CSS-Schlüsselwörtern */
+      &.small {
+        font-size: small;
+        
+        .container {
+          max-width: 24em;
+        }
+      }
+      
+      &.medium {
+        font-size: medium;
+        
+        .container {
+          max-width: 32em;
+        }
+      }
+      
+      &.large {
+        font-size: large;
+        
+        .container {
+          max-width: 48em;
+        }
+      }
+      
+      &.x-large {
+        font-size: x-large;
+        
+        .container {
+          max-width: 64em;
+        }
+      }
+    }
+    
+    /* Container-adaptive Größenanpassung */
+    &.adaptive {
+      container-type: inline-size;
+      
+      .container {
+        border-radius: clamp(var(--radius-md), 1cqi, var(--radius-xl));
+        gap: clamp(var(--space-2), 1cqi, var(--space-6));
+        max-width: 90cqi;
+        padding: clamp(var(--space-4), 2cqi, var(--space-8));
+      }
+      
+      .header .title {
+        font-size: clamp(var(--font-size-md), 3cqi, var(--font-size-xl));
+      }
+      
+      .body {
+        font-size: clamp(var(--font-size-sm), 2cqi, var(--font-size-lg));
+        max-height: clamp(40vh, 60cqh, 80vh);
+      }
+      
+      @container (min-width: 400px) {
+        .footer {
+          gap: var(--space-4);
+        }
+      }
+      
+      @container (min-width: 600px) {
+        .container {
+          box-shadow: var(--shadow-xl);
+        }
+      }
+    }
+    
+    /* Positionsvarianten */
+    &.center {
+      align-items: center;
+    }
+    
+    &.top {
+      align-items: flex-start;
+      
+      .container {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: 5vh;
+      }
+    }
+    
+    &.bottom {
+      align-items: flex-end;
+      
+      .container {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 0;
+      }
+    }
+    
+    /* Animationen */
+    &.fade {
+      .container {
+        animation: modalFadeIn 0.3s ease-out;
+      }
+    }
+    
+    &.slide {
+      .container {
+        animation: modalSlideUp 0.3s ease-out;
+      }
+    }
+    
+  }
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0%; }
+
+  to { opacity: 100%; }
+}
+
+@keyframes modalSlideUp {
+  from { opacity: 0%; transform: translateY(20px); }
+
+  to { opacity: 100%; transform: translateY(0); }
+}

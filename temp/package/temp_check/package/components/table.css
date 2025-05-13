@@ -1,0 +1,193 @@
+/*
+ * Table-Komponente
+ *
+ * Gestylte Tabellen mit responsivem Verhalten.
+ */
+
+/**
+ * Table-Komponente
+ * 
+ * Tabellen und Datenraster für strukturierte Informationsdarstellung.
+ * Tabellen eignen sich für den Vergleich von Daten und die Darstellung von strukturierten Informationen.
+ * 
+ * @layer components.table
+ * 
+ * Grundlegende Verwendung:
+ * <table class="table">
+ *   <thead>
+ *     <tr>
+ *       <th>Spalte 1</th>
+ *       <th>Spalte 2</th>
+ *     </tr>
+ *   </thead>
+ *   <tbody>
+ *     <tr>
+ *       <td>Zelle 1</td>
+ *       <td>Zelle 2</td>
+ *     </tr>
+ *   </tbody>
+ * </table>
+ * 
+ * Varianten:
+ * <table class="table striped">...</table>  <!-- Abwechselnd gefärbte Zeilen -->
+ * <table class="table bordered">...</table>  <!-- Mit Rahmen -->
+ * <table class="table hoverable">...</table> <!-- Hover-Effekt für Zeilen -->
+ * <table class="table compact">...</table>   <!-- Kompaktes Layout -->
+ * <table class="table responsive">...</table> <!-- Responsives Layout -->
+ * 
+ * Zellenausrichtung:
+ * <td class="left">Links ausgerichtet</td>
+ * <td class="center">Zentriert</td>
+ * <td class="right">Rechts ausgerichtet</td>
+ * 
+ * Statuszeilen:
+ * <tr class="success">...</tr>
+ * <tr class="warning">...</tr>
+ * <tr class="danger">...</tr>
+ * 
+ * Flüssige Größenanpassung mit Schlüsselwörtern:
+ * <table class="table fluid">...</table>
+ * <table class="table fluid small">...</table>
+ * <table class="table fluid medium">...</table>
+ * <table class="table fluid large">...</table>
+ * 
+ * Container-adaptive Tabelle:
+ * <div class="container-query">
+ *   <table class="table adaptive">...</table>
+ * </div>
+ */
+
+@layer table {
+  .table {
+    border-collapse: collapse;
+    font-size: var(--font-size-sm);
+    width: 100%;
+    
+    /* Basiselemente */
+    thead {
+      background-color: var(--color-gray-100);
+    }
+    
+    th,
+    td {
+      border: 1px solid var(--color-gray-300);
+      padding: var(--space-3);
+      text-align: left;
+    }
+    
+    /* Tabellen-Varianten */
+    &.striped tbody tr:nth-child(odd) {
+      background-color: var(--color-gray-50);
+    }
+    
+    &.hoverable tbody tr:hover {
+      background-color: var(--color-gray-100);
+    }
+    
+    &.bordered th,
+    &.bordered td {
+      border: 1px solid var(--color-gray-300);
+    }
+    
+    &.compact th,
+    &.compact td {
+      padding: var(--space-2);
+    }
+    
+    /* Flüssige Größenanpassung mit interpolate-size: allow-keywords */
+    &.fluid {
+      /* Nutzt CSS-Schlüsselwörter für Größen - funktioniert mit interpolate-size: allow-keywords */
+      font-size: medium; /* Basis-Größe für Skalierungsfaktor */
+      
+      th, td {
+        font-size: 0.875em;
+        padding: 0.75em;
+      }
+      
+      thead {
+        font-weight: 600;
+      }
+      
+      /* Größenvarianten mit CSS-Schlüsselwörtern */
+      &.small {
+        font-size: small;
+      }
+      
+      &.medium {
+        font-size: medium;
+      }
+      
+      &.large {
+        font-size: large;
+      }
+      
+      &.x-large {
+        font-size: x-large;
+      }
+    }
+    
+    /* Container-adaptive Größenanpassung */
+    &.adaptive {
+      font-size: clamp(var(--font-size-xs), 2cqi, var(--font-size-base));
+      
+      th, td {
+        padding: clamp(var(--space-1), 1cqi, var(--space-4));
+      }
+      
+      @container (min-width: 300px) {
+        th {
+          font-weight: var(--font-weight-bold);
+        }
+      }
+      
+      @container (min-width: 500px) {
+        thead {
+          position: sticky;
+          top: 0;
+          z-index: 1;
+        }
+      }
+      
+      @container (min-width: 700px) {
+        &.hoverable tbody tr:hover {
+          box-shadow: var(--shadow-sm);
+        }
+      }
+    }
+    
+    &.responsive {
+      @media (width <= 768px) {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+    
+    /* Zellenausrichtungen */
+    .left {
+      text-align: left;
+    }
+    
+    .center {
+      text-align: center;
+    }
+    
+    .right {
+      text-align: right;
+    }
+    
+    /* Statuszeilen */
+    .success {
+      background-color: var(--color-success-100);
+    }
+    
+    .warning {
+      background-color: var(--color-warning-100);
+    }
+    
+    .danger {
+      background-color: var(--color-error-100);
+    }
+  }
+}
+

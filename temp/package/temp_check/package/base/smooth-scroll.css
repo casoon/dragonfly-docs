@@ -1,0 +1,525 @@
+/**
+ * Smooth Scroll CSS-Komponente
+ * ---------------------------
+ * Diese Datei enthält Stile für erweiterte Scroll-Funktionalitäten und -Effekte.
+ *
+ * Eigenschaften:
+ * - Sanftes Scrollen (smooth-scroll) für eine verbesserte Benutzererfahrung
+ * - Scroll-Snap für präzises Positionieren von Elementen beim Scrollen
+ * - Fortschrittsanzeigen für die Visualisierung der Scroll-Position
+ * - Parallax-Effekte für tiefenwirksame Layouts
+ * - Scroll-Animation-Effekte (fade, scale, slide, rotate)
+ * - Gestaffelte Scroll-Animationen für Gruppen von Elementen
+ * - Scroll-zu-Top-Funktionalität
+ * - Scroll-Spy für Navigation
+ * - Barrierefreiheitsanpassungen für reduzierte Bewegung
+ *
+ * Verwendung:
+ * Fügen Sie die entsprechenden Klassen zu Ihren HTML-Elementen hinzu,
+ * um die verschiedenen Scroll-Effekte und -Funktionen zu aktivieren.
+ *
+ * @layer core - Grundlegende Scroll-Funktionalitäten und -Effekte
+ * @layer components - Wiederverwendbare Scroll-Komponenten
+ */
+
+/* Animationen */
+@keyframes scroll-timeline-fade {
+    0% {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@layer smooth-scroll {
+  /* Smooth Scroll Variables */
+  :root {
+    --scroll-behavior: smooth;
+    --scroll-padding-top: 0;
+    --scroll-snap-type: none;
+    --scroll-snap-align: none;
+    --scroll-snap-stop: always;
+    --scroll-margin: 0;
+    --scroll-timeline-name: none;
+    --scroll-timeline-axis: block;
+    --scroll-timeline-view-offset: 0;
+  }
+
+  /* Base Smooth Scroll */
+  html {
+    scroll-behavior: var(--scroll-behavior);
+    scroll-padding-top: var(--scroll-padding-top);
+  }
+
+  /* Scroll Snap */
+  .scroll-snap-container {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: var(--scroll-snap-type);
+  }
+
+  .scroll-snap-item {
+    scroll-margin: var(--scroll-margin);
+    scroll-snap-align: var(--scroll-snap-align);
+    scroll-snap-stop: var(--scroll-snap-stop);
+  }
+
+  /* Scroll Progress */
+  .scroll-progress {
+    background: linear-gradient(to right, var(--color-primary) var(--scroll), transparent 0);
+    height: 4px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-50);
+  }
+
+  /* Scroll Timeline */
+  .scroll-timeline {
+    scroll-timeline-axis: var(--scroll-timeline-axis);
+    scroll-timeline-name: var(--scroll-timeline-name);
+    scroll-timeline-view-offset: var(--scroll-timeline-view-offset);
+  }
+
+  /* Parallax Scrolling */
+  .parallax-container {
+    height: 100vh;
+    overflow: hidden auto;
+    perspective: 1px;
+  }
+
+  .parallax-layer {
+    inset: 0;
+    position: absolute;
+  }
+
+  .parallax-layer-back {
+    transform: translateZ(-1px) scale(2);
+  }
+
+  .parallax-layer-base {
+    transform: translateZ(0);
+  }
+
+  .parallax-layer-front {
+    transform: translateZ(1px) scale(0.5);
+  }
+
+  /* Scroll Reveal */
+  .scroll-reveal {
+    opacity: 0%;
+    transform: translateY(20px);
+    transition: all var(--transition-normal);
+  }
+
+  .scroll-reveal.visible {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+
+  /* Scroll Fade */
+  .scroll-fade {
+    opacity: 0%;
+    transition: opacity var(--transition-normal);
+  }
+
+  .scroll-fade.visible {
+    opacity: 100%;
+  }
+
+  /* Scroll Scale */
+  .scroll-scale {
+    opacity: 0%;
+    transform: scale(0.95);
+    transition: all var(--transition-normal);
+  }
+
+  .scroll-scale.visible {
+    opacity: 100%;
+    transform: scale(1);
+  }
+
+  /* Scroll Slide */
+  .scroll-slide-left {
+    opacity: 0%;
+    transform: translateX(-50px);
+    transition: all var(--transition-normal);
+  }
+
+  .scroll-slide-left.visible {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+
+  .scroll-slide-right {
+    opacity: 0%;
+    transform: translateX(50px);
+    transition: all var(--transition-normal);
+  }
+
+  .scroll-slide-right.visible {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+
+  .scroll-slide-up {
+    opacity: 0%;
+    transform: translateY(50px);
+    transition: all var(--transition-normal);
+  }
+
+  .scroll-slide-up.visible {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+
+  .scroll-slide-down {
+    opacity: 0%;
+    transform: translateY(-50px);
+    transition: all var(--transition-normal);
+  }
+
+  .scroll-slide-down.visible {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+
+  /* Scroll Rotate */
+  .scroll-rotate {
+    opacity: 0%;
+    transform: rotate(-15deg);
+    transition: all var(--transition-normal);
+  }
+
+  .scroll-rotate.visible {
+    opacity: 100%;
+    transform: rotate(0);
+  }
+
+  /* Scroll Stagger */
+  .scroll-stagger > * {
+    opacity: 0%;
+    transform: translateY(20px);
+    transition: all var(--transition-normal);
+  }
+
+  .scroll-stagger > *:nth-child(1) { transition-delay: 0.1s; }
+
+  .scroll-stagger > *:nth-child(2) { transition-delay: 0.2s; }
+
+  .scroll-stagger > *:nth-child(3) { transition-delay: 0.3s; }
+
+  .scroll-stagger > *:nth-child(4) { transition-delay: 0.4s; }
+
+  .scroll-stagger > *:nth-child(5) { transition-delay: 0.5s; }
+
+  .scroll-stagger.visible > * {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+
+  /* Scroll Progress Bar */
+  .scroll-progress-bar {
+    background: var(--slider-track-color);
+    height: 4px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .scroll-progress-bar::before {
+    background: var(--color-primary);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: width var(--transition-normal);
+    width: var(--scroll);
+  }
+
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    align-items: center;
+    background: var(--color-primary);
+    border-radius: 50%;
+    bottom: 20px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    opacity: 0%;
+    position: fixed;
+    right: 20px;
+    transform: translateY(20px);
+    transition: all var(--transition-normal);
+    width: 40px;
+    z-index: var(--z-50);
+  }
+
+  .scroll-to-top.visible {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+
+  .scroll-to-top:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+  }
+
+  /* Scroll Spy Navigation */
+  .scroll-spy-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .scroll-spy-nav a {
+    background: var(--slider-track-color);
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    margin: 10px 0;
+    transition: all var(--transition-normal);
+    width: 10px;
+  }
+
+  .scroll-spy-nav a.active {
+    background: var(--color-primary);
+    transform: scale(1.2);
+  }
+
+  /* Scroll Timeline Animation */
+  .scroll-timeline-animation {
+    animation: scroll-timeline-fade 1s ease-out forwards;
+    animation-range: entry 10% cover 30%;
+    animation-timeline: view();
+  }
+
+  /* Scroll Performance */
+  .scroll-performance {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  /* Respektiere Nutzereinstellung für reduzierte Bewegung */
+  @container root (prefers-reduced-motion: reduce) {
+    /* Deaktiviere alle Scroll-Animationen */
+    html,
+    body,
+    .scroll-smooth,
+    .scroll-behavior-smooth,
+    .scroll-mt,
+    .scroll-mb,
+    .scroll-ms,
+    .scroll-me,
+    .scroll-pt,
+    .scroll-pb,
+    .scroll-ps,
+    .scroll-pe,
+    [data-scroll-trigger],
+    .scroll-snap-container,
+    .scroll-snap-item {
+      animation: none !important;
+      scroll-behavior: auto !important;
+      scroll-padding: 0 !important;
+      scroll-snap-type: none !important;
+      transition: none !important;
+    }
+  }
+
+  /* Responsive Anpassungen */
+  @media (width <= 640px) {
+    .touch-feedback::after {
+        block-size: 150%;
+        inline-size: 150%;
+    }
+    
+    .focus-ring:focus-visible {
+        box-shadow: 0 0 0 1px var(--color-primary);
+    }
+  }
+
+  @media (width >= 640px) {
+    .scroll-fade-staggered > *:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .scroll-fade-staggered > *:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+
+    .scroll-fade-staggered > *:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+  }
+
+  @media (width >= 768px) {
+    .scroll-to-top {
+      bottom: 2rem;
+      right: 2rem;
+    }
+  }
+
+  @media (width >= 1024px) {
+    .scroll-parallax {
+      transform: translateY(calc(var(--scroll-offset) * 0.15));
+    }
+  }
+
+  /* Reduzierte Bewegung für Barrierefreiheit */
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      --scroll-behavior: auto;
+    }
+    
+    .scroll-fade,
+    .scroll-scale,
+    .scroll-slide,
+    .scroll-rotate,
+    .scroll-parallax,
+    .scroll-fade-staggered > * {
+      animation: none;
+      opacity: 100%;
+      transform: none;
+      transition: none;
+    }
+  }
+
+
+@layer components {
+    /* Smooth Scroll */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Scroll Container */
+    .scroll-container {
+        color: var(--color-white);
+        height: var(--position-100);
+        margin: var(--spacing-2);
+        overflow: auto hidden;
+        position: var(--position-relative);
+    }
+
+    /* Scroll Content */
+    .scroll-content {
+        height: var(--position-100);
+        left: var(--position-0);
+        overflow: var(--display-hidden) var(--display-auto);
+        -webkit-overflow-scrolling: touch;
+        position: var(--position-absolute);
+        top: var(--position-0);
+        width: var(--position-100);
+    }
+
+    /* Scroll Track */
+    .scroll-track {
+        background-color: var(--bg-transparent);
+        height: var(--position-100);
+        position: var(--position-absolute);
+        right: var(--position-0);
+        top: var(--position-0);
+        width: var(--spacing-2);
+    }
+
+    /* Scroll Thumb */
+    .scroll-thumb {
+        background-color: var(--bg-gray-300);
+        border-radius: var(--radius-full);
+        cursor: var(--display-pointer);
+        height: var(--spacing-20);
+        position: var(--position-absolute);
+        right: var(--position-0);
+        top: var(--position-0);
+        width: var(--spacing-2);
+    }
+
+    /* Scroll Thumb Hover */
+    .scroll-thumb:hover {
+        background-color: var(--bg-gray-400);
+    }
+
+    /* Scroll Thumb Active */
+    .scroll-thumb:active {
+        background-color: var(--bg-gray-500);
+    }
+
+    /* Scroll Button */
+    .scroll-button {
+        align-items: var(--position-center);
+        background-color: var(--bg-primary-500);
+        border-radius: var(--radius-full);
+        bottom: var(--spacing-5);
+        color: var(--text-white);
+        cursor: var(--display-pointer);
+        display: var(--display-flex);
+        height: var(--spacing-10);
+        justify-content: var(--position-center);
+        opacity: var(--position-0);
+        position: var(--position-fixed);
+        right: var(--spacing-5);
+        transition: var(--transition-all);
+        width: var(--spacing-10);
+    }
+
+    /* Scroll Button Visible */
+    .scroll-button.visible {
+        opacity: var(--position-1);
+    }
+
+    /* Scroll Button Hover */
+    .scroll-button:hover {
+        background-color: var(--bg-primary-600);
+    }
+
+    /* Scroll Button Active */
+    .scroll-button:active {
+        background-color: var(--bg-primary-700);
+    }
+
+    /* Scroll Progress */
+    .scroll-progress {
+        background-color: var(--bg-gray-200);
+        border-radius: var(--radius-full);
+        height: var(--spacing-20);
+        position: var(--position-fixed);
+        right: var(--spacing-5);
+        top: var(--position-50);
+        transform: translateY(var(--position-50));
+        width: var(--spacing-2);
+    }
+
+    /* Scroll Progress Bar */
+    .scroll-progress-bar {
+        background-color: var(--bg-primary-500);
+        border-radius: var(--radius-full);
+        height: var(--position-0);
+        left: var(--position-0);
+        position: var(--position-absolute);
+        top: var(--position-0);
+        transition: var(--transition-all);
+        width: var(--position-100);
+    }
+
+    /* Scroll Progress Text */
+    .scroll-progress-text {
+        color: var(--text-gray-500);
+        font-size: var(--font-size-xs);
+        left: var(--position-50);
+        margin: var(--spacing-2) var(--position-0);
+        position: var(--position-absolute);
+        top: var(--position-50);
+        transform: translate(var(--position-50), var(--position-50));
+    }
+  } 
+} 

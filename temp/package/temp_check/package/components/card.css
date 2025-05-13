@@ -1,0 +1,149 @@
+/*
+ * Cards Module
+ *
+ * Layoutregeln für ein responsives Card-Grid. Nutzt Flexbox und Grid für flexible Layouts.
+ */
+
+/**
+ * Card-Modul
+ * 
+ * Container für Inhaltsblöcke, die zusammengehörende Informationen präsentieren.
+ * Cards bieten eine visuelle Gruppierung von zusammengehörigen Inhalten und Aktionen.
+ * 
+ * @layer: module-card
+ * 
+ * Grundlegende Verwendung:
+ * <div class="card">
+ *   <h3>Kartentitel</h3>
+ *   <p>Karteninhalt</p>
+ * </div>
+ * 
+ * Mit Grid-Layout:
+ * <div class="card-grid">
+ *   <div class="card">Karte 1</div>
+ *   <div class="card">Karte 2</div>
+ *   <div class="card">Karte 3</div>
+ * </div>
+ * 
+ * Varianten (können mit Utility-Klassen kombiniert werden):
+ * <div class="card primary">Primäre Karte</div>
+ * <div class="card surface">Karte mit Hintergrundfarbe</div>
+ * <div class="card border">Karte mit Rahmen</div>
+ * <div class="card shadow-lg">Karte mit stärkerem Schatten</div>
+ * <div class="card p-6">Karte mit mehr Padding</div>
+ *
+ * Flüssig skalierende Karte:
+ * <div class="card fluid">
+ *   <h3>Adaptive Karte</h3>
+ *   <p>Diese Karte skaliert flüssig mit der Container-Größe</p>
+ * </div>
+ */
+
+@layer card {
+  .card-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-4);
+
+    /* Element-Styling */
+    h3 {
+      font-size: var(--font-size-lg);
+      margin: 0;
+    }
+
+    img {
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+      width: 100%;
+    }
+    
+    /* Flüssig skalierende Karte mit interpolate-size */
+    &.fluid {
+      container-name: card;
+      container-type: inline-size;
+      
+      /* Font-Größen mit CSS-Schlüsselwörtern für flüssige Interpolation */
+      h3 {
+        font-size: large; /* Wird durch interpolate-size flüssiger */
+      }
+      
+      p {
+        font-size: medium; /* Wird durch interpolate-size flüssiger */
+      }
+      
+      /* Flüssige Container-basierte Anpassungen */
+      @container card (min-width: 300px) {
+        padding: var(--space-5);
+        
+        h3 {
+          font-size: x-large;
+        }
+        
+        p {
+          font-size: large;
+        }
+      }
+      
+      @container card (min-width: 400px) {
+        padding: var(--space-6);
+        
+        h3 {
+          font-size: xx-large;
+        }
+        
+        p {
+          font-size: x-large;
+        }
+      }
+    }
+
+    /* Varianten */
+    &.primary {
+      background-color: var(--color-primary);
+      color: white;
+    }
+
+    &.surface {
+      background-color: var(--color-surface);
+    }
+
+    &.border {
+      border: 1px solid var(--color-gray-200);
+      box-shadow: none;
+    }
+
+    /* Layout-Varianten */
+    &.horizontal {
+      align-items: center;
+      flex-direction: row;
+
+      img {
+        height: 120px;
+        width: 120px;
+      }
+    }
+
+    /* Interaktive Varianten */
+    &.interactive {
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
+
+

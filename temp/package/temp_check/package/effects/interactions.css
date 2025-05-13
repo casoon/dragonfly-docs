@@ -1,0 +1,518 @@
+/**
+ * Interaktions-Effekte
+ * 
+ * Diese Datei enthält verschiedene Interaktions-Effekte für moderne UIs.
+ * Die Effekte sind performant optimiert und berücksichtigen reduzierte Bewegung.
+ * 
+ * Verwendung:
+ * 
+ * 1. Drag & Drop:
+ * <div class="draggable">Ziehbares Element</div>
+ * <div class="drop-target">Ablageziel</div>
+ * 
+ * 2. Swipe-Gesten:
+ * <div class="swipe-container">
+ *   <div class="swipe-content">Swipe-bare Inhalte</div>
+ * </div>
+ * 
+ * 3. Touch-Feedback:
+ * <button class="touch-feedback">Touch-Button</button>
+ * 
+ * 4. Fokus-Ringe:
+ * <button class="focus-ring">Fokusierbarer Button</button>
+ * 
+ * 5. Deaktivierte Elemente:
+ * <button class="disabled" disabled>Deaktivierter Button</button>
+ * 
+ * 6. Ladezustände:
+ * <div class="loading">Ladeanimation</div>
+ * 
+ * 7. 3D-Transformationen:
+ * <div class="card-flip">
+ *   <div class="card-flip-inner">
+ *     <div class="card-flip-front">Vorderseite</div>
+ *     <div class="card-flip-back">Rückseite</div>
+ *   </div>
+ * </div>
+ * 
+ * 8. Cursor-Effekte:
+ * <div class="cursor-follow">Folgt dem Cursor</div>
+ * 
+ * 9. Touch-Ripple-Effekt:
+ * <button class="touch-ripple">Ripple Button</button>
+ *
+ * Technische Details:
+ * - Verwendet CSS-Variablen für Farben und Größen
+ * - Optimiert mit will-change und transform
+ * - Responsive Anpassungen für mobile Geräte
+ * - Reduzierte Bewegung wird berücksichtigt
+ * 
+ * Performance-Hinweise:
+ * - Interaktionen sind hardware-beschleunigt
+ * - Touch-Feedback wird auf mobilen Geräten optimiert
+ * - Reduzierte Bewegung wird automatisch berücksichtigt
+ */
+
+/* Animationen */
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Basis-Interaktionen */
+.interactive {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interactive:active {
+    transform: scale(0.98);
+}
+
+.interactive:disabled {
+    cursor: not-allowed;
+    opacity: 60%;
+}
+
+/* Klick-Effekte */
+.click-ripple {
+    overflow: hidden;
+    position: relative;
+}
+
+.click-ripple::after {
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: scale(10, 10);
+    transition: transform 0.5s, opacity 1s;
+    width: 100%;
+}
+
+.click-ripple:active::after {
+    opacity: 30%;
+    transform: scale(0, 0);
+    transition: 0s;
+}
+
+/* Drag-Effekte */
+.draggable {
+    cursor: grab;
+    user-select: none;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.drag-feedback {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.drag-feedback:active {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    transform: scale(1.02);
+}
+
+/* Scroll-Effekte */
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+.scroll-snap {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.scroll-snap-item {
+    scroll-snap-align: start;
+}
+
+/* Touch-Effekte */
+.touch-feedback {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.touch-feedback:active {
+    background-color: rgb(0 0 0 / 10%);
+}
+
+/* Hover-Effekte */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    transform: translateY(-2px);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Fokus-Effekte */
+.focus-visible {
+    outline: none;
+}
+
+.focus-visible:focus-visible {
+    box-shadow: 0 0 0 3px rgb(59 130 246 / 50%);
+}
+
+/* Aktive Zustände */
+.active-press {
+    transition: transform 0.1s ease;
+}
+
+.active-press:active {
+    transform: scale(0.95);
+}
+
+.active-feedback {
+    transition: background-color 0.2s ease;
+}
+
+.active-feedback:active {
+    background-color: rgb(0 0 0 / 10%);
+}
+
+/* Deaktivierte Zustände */
+.disabled {
+    cursor: not-allowed;
+    opacity: 60%;
+    pointer-events: none;
+}
+
+.disabled-feedback {
+    filter: grayscale(1);
+    opacity: 70%;
+}
+
+/* Reduzierte Bewegung */
+@media (prefers-reduced-motion: reduce) {
+    .interactive,
+    .click-ripple,
+    .drag-feedback,
+    .scroll-smooth,
+    .hover-lift,
+    .hover-scale,
+    .active-press,
+    .active-feedback {
+        transition: none;
+    }
+
+    .click-ripple::after {
+        transition: none;
+    }
+}
+
+/* Drag & Drop */
+.drop-target {
+    transition: background-color 0.2s ease;
+    will-change: background-color;
+}
+
+.drop-target.drag-over {
+    background-color: var(--color-primary-light);
+}
+
+/* Swipe-Gesten */
+.swipe-container {
+    overflow: hidden;
+    position: relative;
+    will-change: transform;
+}
+
+.swipe-content {
+    touch-action: pan-x pan-y;
+    will-change: transform;
+}
+
+/* Ladezustände */
+.loading {
+    overflow: hidden;
+    position: relative;
+}
+
+.loading::after {
+    animation: loading 1.5s infinite;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgb(255 255 255 / 20%),
+        transparent
+    );
+    block-size: 100%;
+    content: '';
+    inline-size: 100%;
+    inset-block-start: var(--interaction-tooltip-top-start);
+    inset-inline-start: var(--interaction-tooltip-left-start);
+    position: absolute;
+    will-change: transform;
+}
+
+/* Container Queries ersetzen Media Queries */
+@container (width < 640px) {
+    .touch-feedback::after {
+        height: 150%;
+        width: 150%;
+    }
+    
+    .focus-ring:focus-visible {
+        box-shadow: 0 0 0 1px var(--color-primary);
+    }
+}
+
+/* Mobile Anpassungen */
+@container root (width <= 640px) {
+    /* Anpassungen für Touch-Interaktionen auf kleinen Displays */
+    .drag-handle {
+        height: 32px;
+        width: 32px;
+    }
+    
+    .drag-item {
+        padding: 12px;
+    }
+    
+    .swipeable {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .touch-area {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px;
+    }
+    
+    /* Visuelles Feedback für Hover-Effekte deaktivieren */
+    .hover-effect {
+        display: none;
+    }
+}
+
+@layer components {
+    /* Hover Effects */
+    .hover-rotate {
+        transition: var(--transition-transform);
+    }
+    
+    .hover-rotate:hover {
+        transform: rotate(3deg);
+    }
+    
+    .hover-shadow {
+        transition: var(--transition-shadow);
+    }
+    
+    .hover-shadow:hover {
+        box-shadow: var(--shadow-hover);
+    }
+    
+    .hover-text-mask {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .hover-text-mask::before {
+        background: var(--color-gradient);
+        block-size: 100%;
+        content: '';
+        inline-size: 100%;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        position: absolute;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        will-change: transform;
+    }
+    
+    .hover-text-mask:hover::before {
+        transform: translateX(0);
+    }
+    
+    /* 3D-Transformationen */
+    .card-flip {
+        perspective: 1000px;
+    }
+    
+    .card-flip-inner {
+        block-size: 100%;
+        inline-size: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+        will-change: transform;
+    }
+    
+    .card-flip:hover .card-flip-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .card-flip-front, .card-flip-back {
+        backface-visibility: hidden;
+        block-size: 100%;
+        inline-size: 100%;
+        position: absolute;
+    }
+    
+    .card-flip-back {
+        transform: rotateY(180deg);
+    }
+    
+    /* Tiefenschicht-Effekt */
+    .depth-shift {
+        transition: var(--transition-transform);
+    }
+    
+    .depth-shift:hover {
+        transform: translateZ(20px);
+    }
+    
+    /* Cursor-Folge-Effekt */
+    .cursor-follow {
+        transition: transform 0.1s ease-out;
+        will-change: transform;
+    }
+    
+    /* Touch-Ripple-Effekt */
+    .touch-ripple {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .touch-ripple::after {
+        background: var(--color-ripple, rgb(255 255 255 / 30%));
+        block-size: 0;
+        border-radius: 50%;
+        content: '';
+        inline-size: 0;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
+        opacity: 0%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: inline-size 0.5s ease-out, block-size 0.5s ease-out, opacity 0.5s ease-out;
+        will-change: inline-size, block-size, opacity;
+    }
+    
+    .touch-ripple:active::after {
+        block-size: 200%;
+        inline-size: 200%;
+        opacity: 100%;
+    }
+    
+    /* Text-Masken-Effekt */
+    .text-mask {
+        background-clip: text;
+        background-image: linear-gradient(90deg, var(--color-text), var(--color-primary));
+        background-position: 0 0;
+        background-size: 200%;
+        color: transparent;
+        transition: background-position 0.3s ease;
+    }
+    
+    .text-mask:hover {
+        background-position: 100% 0;
+    }
+    
+    /* Fokus-Ring */
+    .focus-ring {
+        outline: none;
+    }
+    
+    .focus-ring:focus-visible {
+        box-shadow: 0 0 0 2px var(--color-primary);
+        outline: none;
+    }
+    
+    /* Falteffekt */
+    .fold-reveal {
+        overflow: hidden;
+        perspective: 1000px;
+    }
+    
+    .fold-reveal-content {
+        height: 0;
+        opacity: 0%;
+        transform: rotateX(-90deg);
+        transform-origin: top;
+        transition: transform 0.3s ease;
+    }
+    
+    .fold-reveal.unfolded .fold-reveal-content {
+        height: auto;
+        opacity: 100%;
+        transform: rotateX(0);
+    }
+}
+
+.feedback-ripple {
+    overflow: hidden;
+    position: relative;
+}
+
+.feedback-ripple::after {
+    background: var(--color-feedback, rgb(var(--color-primary-rgb) / 20%));
+    block-size: 0;
+    border-radius: 50%;
+    content: '';
+    inline-size: 0;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    opacity: 0%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: inline-size 0.4s ease-out, block-size 0.4s ease-out, opacity 0.4s ease-out;
+    will-change: inline-size, block-size, opacity;
+}
+
+.feedback-ripple:active::after {
+    block-size: 150%;
+    inline-size: 150%;
+    opacity: 100%;
+}
+
+@container (pointer: coarse) {
+    .feedback-ripple::after {
+        transition-duration: 0.6s;
+    }
+}
+
+.slider-handle {
+    cursor: grab;
+    transition: transform 0.15s ease;
+    will-change: transform;
+}
+
+.slider-handle:active {
+    cursor: grabbing;
+    transform: scale(1.2);
+}
+
+@container (pointer: coarse) {
+    .slider-handle:active {
+        transform: scale(1.4);
+    }
+} 
+
+
+

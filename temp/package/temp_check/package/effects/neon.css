@@ -1,0 +1,211 @@
+/**
+ * Neon-Effekte
+ * 
+ * Diese Datei enthält verschiedene Neon-Effekte für Text und Rahmen.
+ * Die Effekte sind performant optimiert und berücksichtigen reduzierte Bewegung.
+ * 
+ * Verwendung:
+ * 
+ * 1. Neon-Text:
+ * <div class="neon-text">Standard Neon-Text</div>
+ * <div class="neon-text-secondary">Sekundärer Neon-Text</div>
+ * <div class="neon-text-accent">Akzent Neon-Text</div>
+ * 
+ * 2. Animation-Varianten:
+ * <div class="neon-text-slow">Langsame Animation</div>
+ * <div class="neon-text-fast">Schnelle Animation</div>
+ * <div class="neon-text-flicker">Flackernder Effekt</div>
+ * <div class="neon-text-hover">Effekt nur beim Hover</div>
+ * 
+ * 3. Neon-Rahmen:
+ * <div class="neon-border">Element mit Neon-Rahmen</div>
+ * 
+ * 4. Glow-Effekte:
+ * <div class="glow">Text mit Glow-Effekt in Standard-Farbe</div>
+ * <span class="glow" style="--glow-color: #0ff;">Text mit türkisem Glow</span>
+ * <button class="glow-button">Button mit Glow-Effekt</button>
+ * <button class="glow-button" style="--glow-button-color: #ff00ff;">Button mit pinkem Glow</button>
+ * 
+ * 5. Flacker-Effekte:
+ * <div class="flicker-element">Element mit Flacker-Animation</div>
+ * <div class="flicker-fast">Schnell flackerndes Element</div>
+ * <div class="flicker-slow">Langsam flackerndes Element</div>
+ * 
+ * Technische Details:
+ * - Verwendet CSS-Variablen für Farben
+ * - Optimiert mit will-change
+ * - Responsive Anpassungen für mobile Geräte
+ * - Reduzierte Bewegung wird berücksichtigt
+ * 
+ * Performance-Hinweise:
+ * - Die Effekte sind hardware-beschleunigt
+ * - Animationen werden auf mobilen Geräten reduziert
+ * - Reduzierte Bewegung wird automatisch berücksichtigt
+ */
+
+/* Animationen */
+@keyframes neon-pulse {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 70%;
+    }
+}
+
+@keyframes neon-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: var(--spacing-0) var(--spacing-0) var(--spacing-5) currentcolor,
+                    var(--spacing-0) var(--spacing-0) var(--spacing-10) currentcolor,
+                    var(--spacing-0) var(--spacing-0) var(--spacing-20) currentcolor;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: var(--display-none);
+    }
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 100%; }
+
+    30% { opacity: 70%; }
+
+    50% { opacity: 100%; }
+
+    70% { opacity: 80%; }
+
+    90% { opacity: 50%; }
+}
+
+
+    /* Neon Text */
+    .neon-text {
+        animation: neon-pulse 1.5s ease-in-out infinite alternate;
+        color: var(--theme-primary-500);
+        text-shadow: var(--spacing-0) var(--spacing-0) var(--spacing-5) var(--theme-primary-500),
+                     var(--spacing-0) var(--spacing-0) var(--spacing-10) var(--theme-primary-500),
+                     var(--spacing-0) var(--spacing-0) var(--spacing-20) var(--theme-primary-500);
+    }
+
+    .neon-text-secondary {
+        color: var(--theme-secondary-500);
+        text-shadow: var(--spacing-0) var(--spacing-0) var(--spacing-5) var(--theme-secondary-500),
+                     var(--spacing-0) var(--spacing-0) var(--spacing-10) var(--theme-secondary-500),
+                     var(--spacing-0) var(--spacing-0) var(--spacing-20) var(--theme-secondary-500);
+    }
+
+    .neon-text-accent {
+        color: var(--theme-accent-500);
+        text-shadow: var(--spacing-0) var(--spacing-0) var(--spacing-5) var(--theme-accent-500),
+                     var(--spacing-0) var(--spacing-0) var(--spacing-10) var(--theme-accent-500),
+                     var(--spacing-0) var(--spacing-0) var(--spacing-20) var(--theme-accent-500);
+    }
+
+    /* Neon Border */
+    .neon-border {
+        animation: neon-pulse 1.5s ease-in-out infinite alternate;
+        border: var(--spacing-2) solid var(--theme-primary-500);
+        box-shadow: var(--spacing-0) var(--spacing-0) var(--spacing-5) var(--theme-primary-500),
+                    var(--spacing-0) var(--spacing-0) var(--spacing-10) var(--theme-primary-500),
+                    var(--spacing-0) var(--spacing-0) var(--spacing-20) var(--theme-primary-500);
+    }
+
+    .neon-border-secondary {
+        border: var(--spacing-2) solid var(--theme-secondary-500);
+        box-shadow: var(--spacing-0) var(--spacing-0) var(--spacing-5) var(--theme-secondary-500),
+                    var(--spacing-0) var(--spacing-0) var(--spacing-10) var(--theme-secondary-500),
+                    var(--spacing-0) var(--spacing-0) var(--spacing-20) var(--theme-secondary-500);
+    }
+
+    .neon-border-accent {
+        border: var(--spacing-2) solid var(--theme-accent-500);
+        box-shadow: var(--spacing-0) var(--spacing-0) var(--spacing-5) var(--theme-accent-500),
+                    var(--spacing-0) var(--spacing-0) var(--spacing-10) var(--theme-accent-500),
+                    var(--spacing-0) var(--spacing-0) var(--spacing-20) var(--theme-accent-500);
+    }
+
+    /* Reduced Motion */
+    @container root (prefers-reduced-motion: reduce) {
+        .neon-text,
+        .neon-border,
+        .flicker-element,
+        .flicker-fast,
+        .flicker-slow {
+            animation: none;
+            transition: none;
+        }
+    }
+
+    /* Animation Variants */
+    .neon-text-slow {
+        animation: neon-pulse 4s ease-in-out infinite;
+    }
+
+    .neon-text-fast {
+        animation: neon-pulse 1s ease-in-out infinite;
+    }
+
+    .neon-text-flicker {
+        animation: neon-flicker 2s ease-in-out infinite;
+    }
+
+    .neon-text-hover {
+        transition: var(--transition-shadow);
+    }
+
+    .neon-text-hover:hover {
+        text-shadow: var(--spacing-0) var(--spacing-0) var(--spacing-5) currentcolor,
+                    var(--spacing-0) var(--spacing-0) var(--spacing-10) currentcolor,
+                    var(--spacing-0) var(--spacing-0) var(--spacing-20) currentcolor;
+    }
+
+    /* Zusätzliche Glow-Effekte */
+    .glow {
+        color: var(--glow-color, var(--theme-info-500));
+        text-shadow: 
+            0 0 4px var(--glow-color, var(--theme-info-500)),
+            0 0 8px var(--glow-color, var(--theme-info-500)),
+            0 0 12px var(--glow-color, var(--theme-info-500)),
+            0 0 16px var(--glow-color, var(--theme-info-500));
+    }
+
+    .glow-button {
+        box-shadow: 
+            0 0 8px var(--glow-button-color, var(--theme-accent-500)),
+            0 0 15px var(--glow-button-color, var(--theme-accent-500)),
+            0 0 20px var(--glow-button-color, var(--theme-accent-500)),
+            0 0 30px var(--glow-button-color, var(--theme-accent-500));
+        position: relative;
+        z-index: 1;
+    }
+
+    .flicker-element {
+        animation: flicker 4s infinite;
+    }
+
+    .flicker-fast {
+        animation: flicker 2s infinite;
+    }
+
+    .flicker-slow {
+        animation: flicker 8s infinite;
+    }
+
+    /* Responsive Anpassungen */
+    @media (width <= 640px) {
+        .neon-sign {
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+        }
+        
+        .neon-border {
+            border-width: 2px;
+        }
+        
+        .neon-box {
+            aspect-ratio: 16/9;
+            height: auto;
+            width: 100%;
+        }
+    } 

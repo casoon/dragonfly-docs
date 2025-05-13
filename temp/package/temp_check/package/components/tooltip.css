@@ -1,0 +1,240 @@
+/**
+ * Tooltip-Komponente
+ * 
+ * Informations-Tooltips und Hinweistexte für UI-Elemente.
+ * Tooltips bieten zusätzliche Informationen oder Hilfestellungen zu Elementen.
+ * 
+ * @layer components.tooltip
+ * 
+ * Grundlegende Verwendung:
+ * <div class="tooltip">
+ *   <button class="trigger">Hover mich</button>
+ *   <div class="content">Tooltip-Inhalt</div>
+ * </div>
+ * 
+ * Positionsvarianten:
+ * <div class="tooltip top">Oben</div>
+ * <div class="tooltip right">Rechts</div>
+ * <div class="tooltip bottom">Unten</div>
+ * <div class="tooltip left">Links</div>
+ * 
+ * Größenvarianten:
+ * <div class="tooltip sm">Klein</div>
+ * <div class="tooltip md">Mittel (Standard)</div>
+ * <div class="tooltip lg">Groß</div>
+ * 
+ * Varianten:
+ * <div class="tooltip light">Heller Hintergrund</div>
+ * <div class="tooltip dark">Dunkler Hintergrund (Standard)</div>
+ * <div class="tooltip primary">Primärfarbe</div>
+ * 
+ * Mit Pfeil:
+ * <div class="tooltip arrow">
+ *   <button class="trigger">Mit Pfeil</button>
+ *   <div class="content">Tooltip mit Pfeil</div>
+ * </div>
+ * 
+ * Mit HTML-Inhalt:
+ * <div class="tooltip">
+ *   <button class="trigger">Komplexer Inhalt</button>
+ *   <div class="content">
+ *     <h4>Überschrift</h4>
+ *     <p>Mehrere Zeilen Text sind möglich.</p>
+ *   </div>
+ * </div>
+ * 
+ * Flüssig skalierende Tooltips (nutzt interpolate-size):
+ * <div class="tooltip adaptive">
+ *   <button class="trigger">Adaptiver Tooltip</button>
+ *   <div class="content">Dieser Tooltip skaliert flüssig mit der Container-Größe</div>
+ * </div>
+ * 
+ * Mit Schlüsselwort-Größen:
+ * <div class="tooltip fluid small">Klein</div>
+ * <div class="tooltip fluid medium">Mittel</div>
+ * <div class="tooltip fluid large">Groß</div>
+ */
+
+@layer tooltip {
+  .tooltip {
+    display: inline-block;
+    position: relative;
+    
+    .trigger {
+      cursor: pointer;
+      display: inline-block;
+    }
+    
+    .content {
+      background-color: var(--color-gray-900);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-sm);
+      color: var(--color-white);
+      font-size: var(--font-size-xs);
+      opacity: 0%;
+      padding: var(--space-2) var(--space-3);
+      position: absolute;
+      transition: opacity 0.2s, visibility 0.2s;
+      visibility: hidden;
+      white-space: nowrap;
+      z-index: var(--z-index-tooltip);
+    }
+    
+    /* Trigger-Interaktion */
+    &:hover .content,
+    .trigger:focus + .content {
+      opacity: 100%;
+      visibility: visible;
+    }
+    
+    /* Positionsvarianten */
+    &.top .content {
+      bottom: 100%;
+      left: 50%;
+      margin-bottom: var(--space-1);
+      transform: translateX(-50%) translateY(-8px);
+    }
+    
+    &.right .content {
+      left: 100%;
+      margin-left: var(--space-1);
+      top: 50%;
+      transform: translateY(-50%) translateX(8px);
+    }
+    
+    &.bottom .content {
+      left: 50%;
+      margin-top: var(--space-1);
+      top: 100%;
+      transform: translateX(-50%) translateY(8px);
+    }
+    
+    &.left .content {
+      margin-right: var(--space-1);
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%) translateX(-8px);
+    }
+    
+    /* Größenvarianten */
+    &.sm .content {
+      font-size: var(--font-size-xs);
+      padding: var(--space-1) var(--space-2);
+    }
+    
+    &.lg .content {
+      font-size: var(--font-size-sm);
+      max-width: 250px;
+      padding: var(--space-3) var(--space-4);
+      white-space: normal;
+    }
+    
+    /* Farbvarianten */
+    &.light .content {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      color: var(--color-gray-900);
+    }
+    
+    &.primary .content {
+      background-color: var(--color-primary);
+      color: white;
+    }
+    
+    /* Flüssig skalierende Tooltips mit interpolate-size: allow-keywords */
+    &.fluid {
+      /* Basisgröße verwenden */
+      font-size: medium;
+      
+      .content {
+        border-radius: 0.25em;
+        box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 20%);
+        font-size: 0.8em;
+
+        /* em-Einheiten für flüssige Skalierung basierend auf font-size */
+        padding: 0.5em 0.75em;
+      }
+      
+      /* Größenvarianten mit CSS-Schlüsselwörtern */
+      &.small {
+        font-size: small;
+      }
+      
+      &.medium {
+        font-size: medium;
+      }
+      
+      &.large {
+        font-size: large;
+      }
+      
+      &.x-large {
+        font-size: x-large;
+      }
+    }
+    
+    /* Container-adaptive Tooltips */
+    &.adaptive {
+      container-type: inline-size;
+      
+      .content {
+        border-radius: clamp(var(--radius-sm), 0.5cqi, var(--radius-md));
+        font-size: clamp(var(--font-size-xs), 2cqi, var(--font-size-base));
+        max-width: 90cqi; /* 90% der Container-Breite */
+        padding: clamp(var(--space-1), 1cqi, var(--space-4));
+        white-space: normal;
+      }
+      
+      &.arrow .content::before {
+        height: clamp(6px, 1cqi, 12px);
+        width: clamp(6px, 1cqi, 12px);
+      }
+    }
+    
+    /* Mit Pfeil */
+    &.arrow .content::before {
+      background-color: inherit;
+      border: inherit;
+      border-width: 1px;
+      content: "";
+      height: 8px;
+      position: absolute;
+      transform: rotate(45deg);
+      width: 8px;
+    }
+    
+    &.arrow.top .content::before {
+      border-left: 0;
+      border-top: 0;
+      bottom: -4px;
+      left: 50%;
+      margin-left: -4px;
+    }
+    
+    &.arrow.right .content::before {
+      border-bottom: 0;
+      border-right: 0;
+      left: -4px;
+      margin-top: -4px;
+      top: 50%;
+    }
+    
+    &.arrow.bottom .content::before {
+      border-bottom: 0;
+      border-right: 0;
+      left: 50%;
+      margin-left: -4px;
+      top: -4px;
+    }
+    
+    &.arrow.left .content::before {
+      border-left: 0;
+      border-top: 0;
+      margin-top: -4px;
+      right: -4px;
+      top: 50%;
+    }
+  }
+}
+
+

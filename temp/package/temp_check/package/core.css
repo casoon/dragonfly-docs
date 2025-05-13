@@ -1,0 +1,40 @@
+/**
+ * Core CSS
+ *
+ * Zentrale Datei zur Organisation und Priorisierung aller CSS-Layer und -Module.
+ * Hier werden alle Layer deklariert und die entsprechenden CSS-Dateien importiert.
+ * Die Reihenfolge der Importe bestimmt die Kaskaden-Priorität (spätere haben Vorrang).
+ */
+
+/* 
+ * Basis-System
+ * Enthält Reset, Custom Properties, Tokens und logische Eigenschaften
+ */
+@import url("base.css");
+
+/* 
+ * Layout-System
+ * Container, Grid, Flexbox-Layouts und responsive Anpassungen
+ */
+@import url("layout.css");
+@import url("layout.queries.css");
+
+/* 
+ * Typografie-System
+ * Schriftarten, Größen, Abstände und Text-Formatierungen
+ */
+@import url("typography.css") layer(typography);
+
+/* 
+ * Modul-System
+ * Wiederverwendbare UI-Komponenten in eigenständigen Dateien
+ */
+@import url("components.css");
+
+/* 
+ * Icon-System
+ * SVG-Symbole und Icon-Fonts
+ */
+@import url("icons.css");
+
+
