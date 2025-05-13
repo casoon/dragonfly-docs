@@ -32,7 +32,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Version 0.4.9 | MIT License',
+      message: 'Version 0.5.0 | MIT License',
       copyright: 'Copyright © 2025 Casoon'
     },
 
@@ -144,7 +144,7 @@ export default defineConfig({
             { text: 'Typografie', link: '/getting-started/typography' },
             { text: 'Layout', link: '/getting-started/layout' },
             { text: 'Theming', link: '/getting-started/themes' },
-            { text: 'Custom Properties', link: '/guide/custom-properties' },
+            { text: 'Design-Tokens', link: '/getting-started/tokens' },
             { text: 'Effekte', link: '/guide/effects' },
             { text: 'Barrierefreiheit', link: '/getting-started/#zugänglichkeit' }
           ]

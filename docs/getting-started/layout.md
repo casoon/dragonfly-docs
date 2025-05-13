@@ -32,17 +32,24 @@ Das gesamte CSS-System ist für Lightning CSS (früher Parcel CSS) optimiert und
 Das Layout ist Teil des zentralen Layer-Systems und wird unter den Layern `layout` und `layout-queries` definiert. Die Reihenfolge der Layer bestimmt die CSS-Spezifität:
 
 ```css
-@layer reset,               /* Browser-Reset */
-       tokens,              /* Design-Tokens, Variablen */
-       core,                /* Kernfunktionalitäten */
-       logical-properties,  /* Logische Eigenschaften */
-       colors,              /* Farbsystem */
-       color-mix,           /* Farbmischungen */
-       layout,              /* Layout-Grundlagen */
-       layout-queries,      /* Responsive Anpassungen */
-       typography,          /* Typografie */
-       utilities,           /* Hilfsklassen */
-       /* weitere Layer... */
+@layer reset,                /* Grundlegender Browser-Reset */
+       tokens,               /* Design-Tokens und Variablen */
+       custom-properties,    /* Registrierte CSS-Eigenschaften */
+       core,                 /* Kernfunktionalitäten */
+       logical-properties,   /* Bidirektionale Layouts (RTL/LTR) */
+       colors,               /* Farbsystem */
+       color-mix,            /* Farbmischungen und -varianten */
+       layout,               /* Layout-Grundlagen */
+       layout-queries,       /* Responsive Anpassungen */
+       typography,           /* Typografie-System */
+       utilities,            /* Atomare Utility-Klassen */
+       smooth-scroll,        /* Scrollverhalten */
+       accessibility,        /* Barrierefreiheit */
+       icons,                /* Icon-System */
+       components,           /* UI-Komponenten */
+       animations,           /* Bewegungssystem */
+       effects,              /* Visuelle Effekte */
+       themes;               /* Theming-System */
 ```
 
 Diese hierarchische Schichtung ermöglicht eine klare Trennung und kontrollierte Überschreibung von Stilen. Durch die `@layer`-Direktive wird die Spezifität präzise gesteuert, unabhängig von der Komplexität der Selektoren innerhalb eines Layers.
@@ -61,6 +68,16 @@ Eigene Stile können nahtlos in das bestehende Layer-System integriert werden:
     max-width: 1600px;
     margin-inline: auto;
     padding-inline: var(--space-6);
+  }
+}
+
+/* Eigene Komponenten */
+@layer components {
+  .my-component {
+    /* Komponenten-Styles unter Nutzung der Design-Tokens */
+    padding: var(--space-4);
+    color: var(--color-primary);
+    border-radius: var(--radius-md);
   }
 }
 

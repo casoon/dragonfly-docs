@@ -100,3 +100,5 @@ $RECYCLE.BIN/
 
 # Astro-spezifisch
 .astro/types.d.ts
+
+tasks.md

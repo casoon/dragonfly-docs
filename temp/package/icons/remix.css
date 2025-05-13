@@ -1,0 +1,122 @@
+/**
+ * Remix Icons CSS
+ * 
+ * Diese Datei enthält die CSS-Klassen für die Remix Icons.
+ * Die Styles sind in @layer components organisiert.
+ */
+
+
+    /* Base Icon */
+    .ri {
+        background-color: currentcolor;
+        display: var(--display-inline-block);
+        height: var(--spacing-6);
+        mask-position: var(--position-center);
+        mask-repeat: var(--bg-no-repeat);
+        mask-size: var(--position-100);
+        vertical-align: var(--position-middle);
+        width: var(--spacing-6);
+    }
+
+    .ri-icon {
+        background-color: currentcolor;
+        display: var(--display-inline-block);
+        height: var(--spacing-6);
+        mask-position: var(--position-center);
+        mask-repeat: var(--bg-no-repeat);
+        mask-size: var(--position-100);
+        vertical-align: var(--position-middle);
+        width: var(--spacing-6);
+    }
+
+    /* Remix Icons */
+    .ri-home {
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'/%3E%3C/svg%3E");
+    }
+
+    .ri-menu {
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 6h16M4 12h16M4 18h16'/%3E%3C/svg%3E");
+    }
+
+    .ri-close {
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 18L18 6M6 6l12 12'/%3E%3C/svg%3E");
+    }
+
+    .ri-search {
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E");
+    }
+
+    /* Remix Varianten */
+    .ri-line {
+        fill: none;
+        stroke-width: 2;
+    }
+
+    .ri-fill {
+        fill: currentcolor;
+        stroke-width: 0;
+    }
+
+    .ri-dual {
+        fill: currentcolor;
+        opacity: 50%;
+        stroke-width: 2;
+    }
+
+    /* Icon Sizes */
+    .ri-xs {
+        height: var(--spacing-4);
+        width: var(--spacing-4);
+    }
+
+    .ri-sm {
+        height: var(--spacing-5);
+        width: var(--spacing-5);
+    }
+
+    .ri-lg {
+        height: var(--spacing-7);
+        width: var(--spacing-7);
+    }
+
+    .ri-xl {
+        height: var(--spacing-8);
+        width: var(--spacing-8);
+    }
+
+    .ri-2xl {
+        height: var(--spacing-10);
+        width: var(--spacing-10);
+    }
+
+    /* Icon Alignment */
+    .ri-baseline {
+        vertical-align: var(--position-baseline);
+    }
+
+    .ri-top {
+        vertical-align: var(--position-top);
+    }
+
+    .ri-middle {
+        vertical-align: var(--position-middle);
+    }
+
+    .ri-bottom {
+        vertical-align: var(--position-bottom);
+    }
+
+    /* Icon Animation */
+    .ri-spin {
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }

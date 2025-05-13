@@ -5,7 +5,7 @@ category: Getting Started
 
 # Installation
 
-Die Casoon UI Library lässt sich flexibel in diverse Webprojekte integrieren und bietet verschiedene Installationsmethoden für unterschiedliche Anforderungen.
+Die Casoon UI Library lässt sich flexibel in diverse Webprojekte integrieren und bietet verschiedene Installationsmethoden für unterschiedliche Anforderungen. Die aktuelle Version ist 0.5.0.
 
 ## Voraussetzungen
 
@@ -34,9 +34,9 @@ pnpm add @casoon/ui-lib@latest
 
 ## Integration in Ihr Projekt
 
-### 1. Basisintegration mit Core-Styles
+### 1. Basisintegration mit Core-CSS
 
-Die Core-Styles enthalten alle grundlegenden CSS-Definitionen, einschließlich Reset-Layer, Design-Tokens, Custom-Properties und Basis-Effekte (Animationen und Transitions). Sie bilden die Grundlage für alle weiteren Komponenten.
+Die Core-Styles enthalten alle grundlegenden CSS-Definitionen, einschließlich Reset-Layer, Design-Tokens, Layout, Typografie und alle UI-Komponenten. Sie bilden die Grundlage für alle weiteren Anpassungen.
 
 #### In einer JavaScript-Anwendung
 
@@ -45,9 +45,8 @@ Die Core-Styles enthalten alle grundlegenden CSS-Definitionen, einschließlich R
 import '@casoon/ui-lib/core.css';
 
 // Optional: Spezifische Effekte importieren
-import '@casoon/ui-lib/effects/blur.css';
-import '@casoon/ui-lib/effects/shadow.css';
 import '@casoon/ui-lib/effects/glass.css';
+import '@casoon/ui-lib/effects/animations.css';
 ```
 
 #### Direkte CSS-Integration
@@ -57,9 +56,8 @@ import '@casoon/ui-lib/effects/glass.css';
 @import '@casoon/ui-lib/core.css';
 
 /* Optional: Spezifische Effekte importieren */
-@import '@casoon/ui-lib/effects/blur.css';
-@import '@casoon/ui-lib/effects/shadow.css';
 @import '@casoon/ui-lib/effects/glass.css';
+@import '@casoon/ui-lib/effects/animations.css';
 ```
 
 #### Mit einem Link-Tag im HTML
@@ -69,38 +67,30 @@ import '@casoon/ui-lib/effects/glass.css';
 <link rel="stylesheet" href="node_modules/@casoon/ui-lib/core.css">
 
 <!-- Optional: Spezifische Effekte -->
-<link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/blur.css">
-<link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/shadow.css">
 <link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/glass.css">
+<link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/animations.css">
 ```
 
 ### 2. Modulare Integration
 
 Die Casoon UI Library verwendet einen modularen Ansatz, der Ihnen erlaubt, nur die benötigten Komponenten zu laden und so die Paketgröße zu optimieren.
 
-#### Vollständige Library
-
-Für eine vollständige Integration aller Komponenten und Module:
+#### Einzelne Dateien direkt importieren
 
 ```javascript
-import '@casoon/ui-lib/dist/all.css';
-```
+// Grundlegende Dateien
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/layout.css';
+import '@casoon/ui-lib/typography.css';
 
-#### Einzelne Module
-
-Für präzise Performance-Optimierung können einzelne Module importiert werden:
-
-```javascript
-// Nur die benötigten Module importieren
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/modules/buttons.css';
-import '@casoon/ui-lib/dist/modules/cards.css';
-import '@casoon/ui-lib/dist/modules/forms.css';
+// Komponenten einzeln importieren
+import '@casoon/ui-lib/components/button.css';
+import '@casoon/ui-lib/components/card.css';
+import '@casoon/ui-lib/components/forms.css';
 
 // Effekte einzeln importieren
-import '@casoon/ui-lib/effects/blur.css';
-import '@casoon/ui-lib/effects/shadow.css';
 import '@casoon/ui-lib/effects/glass.css';
+import '@casoon/ui-lib/effects/animations.css';
 ```
 
 ### 3. Theme-Aktivierung
@@ -111,11 +101,11 @@ Die Casoon UI Library bietet ein flexibles Theming-System mit mehreren vordefini
 
 ```javascript
 // Standard-Theme (Day)
-import '@casoon/ui-lib/dist/themes/day.css';
+import '@casoon/ui-lib/themes/day.css';
 
 // Oder ein anderes Theme
-import '@casoon/ui-lib/dist/themes/night.css';
-import '@casoon/ui-lib/dist/themes/ocean.css';
+import '@casoon/ui-lib/themes/night.css';
+import '@casoon/ui-lib/themes/ocean.css';
 ```
 
 #### Theme aktivieren
@@ -154,8 +144,8 @@ module.exports = {
 };
 
 // In Ihrer Anwendungsdatei
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/modules/buttons.css';
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/components/button.css';
 ```
 
 ### Vite
@@ -165,22 +155,62 @@ import '@casoon/ui-lib/dist/modules/buttons.css';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // Keine spezielle Konfiguration erforderlich
+  css: {
+    // Unterstützung für moderne CSS-Features aktivieren
+    postcss: {
+      plugins: [
+        // Für volle Lightning CSS Unterstützung
+      ]
+    }
+  }
 });
 
 // In Ihrer Hauptdatei
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/modules/buttons.css';
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/components/button.css';
 ```
 
-### Parcel
+### Astro
 
-Parcel benötigt keine spezielle Konfiguration:
+```js
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
 
-```javascript
-// In Ihrer Einstiegsdatei
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/modules/buttons.css';
+export default defineConfig({
+  // Casoon UI ist für Astro optimiert
+  // und benötigt keine besondere Konfiguration
+});
+
+// In Ihrer Astro-Komponente
+---
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/night.css';
+---
+
+<html class="theme-night">
+  <!-- Inhalt -->
+</html>
+```
+
+### Lightning CSS Konfiguration (empfohlen)
+
+Für optimale Ergebnisse wird die Verwendung von Lightning CSS (früher Parcel CSS) empfohlen:
+
+```js
+// postcss.config.js
+module.exports = {
+  plugins: [
+    require('lightningcss')({
+      // Lightning CSS Optionen
+      drafts: {
+        customMedia: true,
+        nesting: true,
+        interpolation: true // Für interpolate-size Unterstützung
+      },
+      include: 'standard'
+    })
+  ]
+};
 ```
 
 ## CDN-Integration
@@ -189,306 +219,81 @@ Sie können die Casoon UI Library auch direkt über ein CDN einbinden, ohne loka
 
 ```html
 <!-- Core-Styles -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/core.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/core.css">
 
 <!-- Optionales Theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/themes/night.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/themes/night.css">
 
-<!-- Einzelne Module -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/modules/buttons.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/modules/cards.css">
-
-<!-- Effekte einzeln -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/effects/blur.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/effects/shadow.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/effects/glass.css">
-
-<!-- Oder die komplette Library -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/all.css">
+<!-- Einzelne Komponenten -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/components/button.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/components/card.css">
 ```
 
-### UNPKG-Alternative
+## Besondere Funktionen in Version 0.5.0
 
-```html
-<link rel="stylesheet" href="https://unpkg.com/@casoon/ui-lib@latest/dist/core.css">
-```
-
-## Framework-Integration
-
-### React
-
-```jsx
-// In Ihrer App.jsx oder index.jsx
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/themes/day.css';
-import '@casoon/ui-lib/dist/modules/buttons.css';
-
-function App() {
-  return (
-    <div className="container">
-      <h1 className="heading-xl mb-4">Willkommen</h1>
-      <p className="mb-6">Hier ist ein Beispiel für die Casoon UI Library in React.</p>
-      <button className="btn btn--primary">Primär-Button</button>
-      <button className="btn btn--secondary ml-3">Sekundär-Button</button>
-    </div>
-  );
-}
-```
-
-#### Mit Next.js
-
-```jsx
-// In _app.js oder layout.js (App Router)
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/themes/day.css';
-import '@casoon/ui-lib/dist/modules/buttons.css';
-
-export default function MyApp({ Component, pageProps }) {
-  return (
-    <div className="theme-day">
-      <Component {...pageProps} />
-    </div>
-  );
-}
-```
-
-### Vue.js
-
-```javascript
-// In main.js
-import { createApp } from 'vue';
-import App from './App.vue';
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/themes/day.css';
-import '@casoon/ui-lib/dist/modules/buttons.css';
-
-createApp(App).mount('#app');
-```
-
-```vue
-<!-- In einer Komponente -->
-<template>
-  <div class="container">
-    <h1 class="heading-xl mb-4">Willkommen</h1>
-    <p class="mb-6">Hier ist ein Beispiel für die Casoon UI Library in Vue.</p>
-    <button class="btn btn--primary">Primär-Button</button>
-    <button class="btn btn--secondary ml-3">Sekundär-Button</button>
-  </div>
-</template>
-```
-
-### Angular
-
-```typescript
-// In styles.css oder angular.json
-@import '@casoon/ui-lib/dist/core.css';
-@import '@casoon/ui-lib/dist/themes/day.css';
-@import '@casoon/ui-lib/dist/modules/buttons.css';
-```
-
-```typescript
-// In angular.json
-{
-  "projects": {
-    "your-app": {
-      "architect": {
-        "build": {
-          "options": {
-            "styles": [
-              "node_modules/@casoon/ui-lib/dist/core.css",
-              "node_modules/@casoon/ui-lib/dist/themes/day.css",
-              "node_modules/@casoon/ui-lib/dist/modules/buttons.css",
-              "src/styles.css"
-            ]
-          }
-        }
-      }
-    }
-  }
-}
-```
-
-```html
-<!-- In einer Komponenten-Template -->
-<div class="container">
-  <h1 class="heading-xl mb-4">Willkommen</h1>
-  <p class="mb-6">Hier ist ein Beispiel für die Casoon UI Library in Angular.</p>
-  <button class="btn btn--primary">Primär-Button</button>
-  <button class="btn btn--secondary ml-3">Sekundär-Button</button>
-</div>
-```
-
-### Svelte
-
-```javascript
-// In Ihrer Haupt-JS-Datei
-import '@casoon/ui-lib/dist/core.css';
-import '@casoon/ui-lib/dist/themes/day.css';
-import '@casoon/ui-lib/dist/modules/buttons.css';
-```
-
-```svelte
-<!-- In einer Svelte-Komponente -->
-<div class="container">
-  <h1 class="heading-xl mb-4">Willkommen</h1>
-  <p class="mb-6">Hier ist ein Beispiel für die Casoon UI Library in Svelte.</p>
-  <button class="btn btn--primary">Primär-Button</button>
-  <button class="btn btn--secondary ml-3">Sekundär-Button</button>
-</div>
-```
-
-## CSS-Präprozessoren
-
-### SASS/SCSS
-
-```scss
-// In Ihrer main.scss
-@import '@casoon/ui-lib/src/core.scss';
-@import '@casoon/ui-lib/src/themes/day.scss';
-@import '@casoon/ui-lib/src/modules/buttons.scss';
-
-// Eigene Erweiterungen
-.custom-container {
-  @extend .container;
-  max-width: 1400px;
-}
-
-// Eigene Theme-Varianten
-.theme-custom {
-  --color-primary: #ff6b6b;
-  --color-secondary: #51cf66;
-}
-```
-
-### Less
-
-```less
-// In Ihrer main.less
-@import '@casoon/ui-lib/src/core.less';
-@import '@casoon/ui-lib/src/themes/day.less';
-@import '@casoon/ui-lib/src/modules/buttons.less';
-```
-
-## Nutzung mit verschiedenen Server-Umgebungen
-
-### Statisches HTML
-
-```html
-<!DOCTYPE html>
-<html lang="de" class="theme-day">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casoon UI Demo</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/core.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/themes/day.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/modules/buttons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/modules/cards.css">
-</head>
-<body>
-  <div class="container py-8">
-    <h1 class="heading-xl mb-4">Casoon UI Beispiel</h1>
-    <div class="card p-4 mb-4">
-      <h2 class="heading-lg mb-2">Beispiel-Karte</h2>
-      <p class="mb-4">Dies ist ein Beispiel für die Verwendung der Casoon UI Komponenten.</p>
-      <button class="btn btn--primary">Mehr erfahren</button>
-    </div>
-  </div>
-</body>
-</html>
-```
-
-### PHP
-
-```php
-<!DOCTYPE html>
-<html lang="de" class="theme-day">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casoon UI in PHP</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/core.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/themes/day.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@latest/dist/modules/buttons.css">
-</head>
-<body>
-  <div class="container py-8">
-    <h1 class="heading-xl mb-4">PHP mit Casoon UI</h1>
-    
-    <?php 
-    $items = ['Element 1', 'Element 2', 'Element 3'];
-    
-    echo '<div class="card p-4 mb-4">';
-    echo '<h2 class="heading-lg mb-2">Dynamische Liste</h2>';
-    echo '<ul class="list mb-4">';
-    
-    foreach ($items as $item) {
-      echo '<li class="mb-2">' . htmlspecialchars($item) . '</li>';
-    }
-    
-    echo '</ul>';
-    echo '<button class="btn btn--primary">Aktion</button>';
-    echo '</div>';
-    ?>
-    
-  </div>
-</body>
-</html>
-```
-
-## Fehlerbehebung
-
-### Mögliche Probleme und Lösungen
-
-#### CSS wird nicht geladen
-
-- Überprüfen Sie die Pfade in Ihren Import-Anweisungen
-- Stellen Sie sicher, dass die Node-Module korrekt installiert sind (`node_modules/@casoon/ui-lib` sollte existieren)
-- Prüfen Sie die Netzwerkanfragen in den Browser-Entwicklertools
-- Versuchen Sie, die absoluten Pfade mit dem CDN zu verwenden
-
-#### Konflikte mit anderen CSS-Frameworks
-
-Wenn die Casoon UI Library zusammen mit anderen CSS-Frameworks verwendet wird, können Stilkonflikte auftreten. Verwenden Sie in diesem Fall den spezifischen Casoon-Wrapper:
-
-```html
-<div class="casoon-wrapper">
-  <!-- Casoon UI-Stile haben hier Vorrang -->
-  <button class="btn btn--primary">Primär-Button</button>
-</div>
-```
-
-Oder nutzen Sie die Layer-Spezifizität:
+### Verbesserte Animations-CSS
 
 ```css
-@layer casoon-override {
-  /* Hier definierte Stile überschreiben die Casoon-Standards */
-  .btn--primary {
-    background-color: #ff6b6b;
-  }
+/* Moderne Animationen mit vereinheitlichtem Benennungsschema */
+.element {
+  animation: slide-in-left 0.3s ease-out;
+}
+
+/* Motion-Safe und Motion-Reduce Utilities */
+.motion-safe {
+  /* Animationen, die nur angezeigt werden, wenn keine Einschränkung besteht */
+}
+
+.motion-reduce {
+  /* Alternative für Nutzer mit aktiviertem 'prefers-reduced-motion' */
 }
 ```
 
-#### Theme wird nicht korrekt angewendet
+### Flüssige Interpolation (interpolate-size)
 
-- Stellen Sie sicher, dass die Theme-CSS-Datei importiert ist
-- Überprüfen Sie, ob die Theme-Klasse (`theme-day`, `theme-night`, etc.) korrekt am `<html>` oder `<body>` Element angewendet wird
-- Stellen Sie sicher, dass core.css vor dem Theme importiert wird
+Die neue Version unterstützt `interpolate-size: allow-keywords` für flüssige Übergänge zwischen Größenwerten:
 
-## Browser-Kompatibilität
+```css
+/* Optimiert für Lightning CSS */
+:root {
+  interpolate-size: allow-keywords;
+}
 
-Die Casoon UI Library unterstützt moderne Browser:
+/* Flüssige Typografie */
+.fluid-heading {
+  font-size: medium with-range(small, x-large);
+}
+```
 
-- Chrome (neueste 2 Hauptversionen)
-- Firefox (neueste 2 Hauptversionen)
-- Safari (neueste 2 Hauptversionen)
-- Edge (neueste 2 Hauptversionen)
+### Dialog-Animationen
 
-Für ältere Browser kann ein CSS-Variablen-Polyfill wie [css-vars-ponyfill](https://github.com/jhildenbiddle/css-vars-ponyfill) erforderlich sein.
+```html
+<button id="openDialog">Dialog öffnen</button>
+<dialog id="myDialog" class="dialog dialog-enter">
+  Dialog-Inhalt
+</dialog>
 
-## Nächste Schritte
+<script>
+  document.getElementById('openDialog').addEventListener('click', () => {
+    document.getElementById('myDialog').showModal();
+  });
+</script>
+```
 
-- Entdecken Sie die [Komponenten-Dokumentation](/components) für Details zu verfügbaren UI-Elementen
-- Lesen Sie die [Layout-Anleitung](/getting-started/layout) für Informationen zum Gestaltungssystem
-- Erfahren Sie mehr über das [Theming-System](/getting-started/themes) für individuelle Anpassungen
-- Erkunden Sie das [Icon-System](/getting-started/iconsets) für die Integration von Icons 
+## Kompatibilität
+
+Die Casoon UI Library unterstützt alle modernen Browser. Einige fortschrittliche Features wie `interpolate-size` benötigen neuere Browser oder Lightning CSS zur Kompilierung.
+
+| Feature | Chrome | Firefox | Safari | Edge |
+|---------|--------|---------|--------|------|
+| Core-CSS | 49+ | 31+ | 9.1+ | 15+ |
+| Container-Queries | 105+ | 110+ | 16.4+ | 105+ |
+| interpolate-size | 120+ | 121+ (flag) | 17+ | 120+ |
+| @property | 85+ | 113+ | 15.4+ | 85+ |
+
+## Weitere Informationen
+
+- [Layer-System](/guide/layer-system)
+- [Design-Tokens](/getting-started/tokens)
+- [Layout-System](/getting-started/layout)
+- [Theme-System](/getting-started/themes) 

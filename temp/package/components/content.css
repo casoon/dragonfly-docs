@@ -1,0 +1,267 @@
+/*
+ * Content Module
+ *
+ * Hauptbereich für Inhaltsdarstellung. Flexibles Grid mit Subgrid-Option.
+ */
+
+/**
+ * Content-Komponente
+ * 
+ * Allgemeine Inhaltsformatierung für Textbereiche und Artikelinhalte.
+ * Die Content-Komponente bietet eine konsistente Textdarstellung für umfangreiche Inhaltsbereiche.
+ * 
+ * @layer components.content
+ * 
+ * Grundlegende Verwendung:
+ * <div class="content">
+ *   <h1>Überschrift</h1>
+ *   <p>Absatztext mit <a href="#">Link</a> und <strong>hervorgehobenem Text</strong>.</p>
+ *   <h2>Unterüberschrift</h2>
+ *   <p>Weiterer Text mit <em>betontem Inhalt</em> und <code>Code-Beispiel</code>.</p>
+ *   <blockquote>Zitat oder hervorgehobener Text</blockquote>
+ * </div>
+ * 
+ * Typografische Elemente werden automatisch formatiert:
+ * - Überschriften (h1-h6)
+ * - Absätze
+ * - Listen (ul, ol)
+ * - Blockzitate
+ * - Code-Blöcke
+ * - Tabellen
+ * - Bilder und Medienelemente
+ * 
+ * Varianten:
+ * <div class="content large">Größere Schrift</div>
+ * <div class="content small">Kleinere Schrift</div>
+ * <div class="content tight">Engere Zeilenabstände</div>
+ * <div class="content relaxed">Weitere Zeilenabstände</div>
+ * 
+ * Mit Randmarkierungen:
+ * <div class="content with-sidebar">
+ *   <p>Inhalt mit Randbemerkungen</p>
+ *   <aside class="note">Randbemerkung</aside>
+ * </div>
+ * 
+ * Für Druckausgabe optimiert:
+ * <div class="content print-friendly">
+ *   <h1>Druckfreundlicher Inhalt</h1>
+ *   <p>Dieser Inhalt ist für den Druck optimiert.</p>
+ * </div>
+ */
+
+@layer content {
+  .content {
+    color: var(--color-gray-900);
+    display: grid;
+    font-size: var(--font-size-base);
+    gap: var(--space-4);
+    grid-column: span 9;
+    grid-template-columns: subgrid;
+    line-height: 1.6;
+    
+    /* Überschriften */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-gray-900);
+      font-weight: var(--font-weight-semibold);
+      line-height: 1.2;
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    
+    h1 {
+      font-size: var(--font-size-3xl);
+    }
+    
+    h2 {
+      font-size: var(--font-size-2xl);
+    }
+    
+    h3 {
+      font-size: var(--font-size-xl);
+    }
+    
+    h4 {
+      font-size: var(--font-size-lg);
+    }
+    
+    h5 {
+      font-size: var(--font-size-base);
+    }
+    
+    h6 {
+      font-size: var(--font-size-sm);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    
+    /* Absätze */
+    p {
+      margin-bottom: 1em;
+    }
+    
+    /* Links */
+    a {
+      color: var(--color-primary);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.15em;
+      transition: color var(--transition-fast);
+      
+      &:hover {
+        color: var(--color-primary-dark);
+      }
+    }
+    
+    /* Listen */
+    ul, ol {
+      margin-bottom: 1em;
+      padding-left: 1.5em;
+    }
+    
+    li {
+      margin-bottom: 0.5em;
+    }
+    
+    /* Blockzitate */
+    blockquote {
+      background-color: var(--color-gray-50);
+      border-left: 4px solid var(--color-primary);
+      font-style: italic;
+      margin: 1.5em 0;
+      padding: 1em 1.5em;
+    }
+    
+    /* Code */
+    code {
+      background-color: var(--color-gray-100);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-family-mono);
+      font-size: 0.9em;
+      padding: 0.2em 0.4em;
+    }
+    
+    pre {
+      background-color: var(--color-gray-100);
+      border-radius: var(--radius-md);
+      margin: 1.5em 0;
+      overflow-x: auto;
+      padding: 1em;
+      
+      code {
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+    
+    /* Tabellen */
+    table {
+      border-collapse: collapse;
+      margin-bottom: 1.5em;
+      width: 100%;
+    }
+    
+    th, td {
+      border-bottom: 1px solid var(--color-gray-200);
+      padding: 0.75em 1em;
+      text-align: left;
+    }
+    
+    th {
+      font-weight: var(--font-weight-semibold);
+    }
+    
+    /* Bilder */
+    img {
+      border-radius: var(--radius-md);
+      height: auto;
+      max-width: 100%;
+    }
+    
+    figure {
+      margin: 1.5em 0;
+      
+      figcaption {
+        color: var(--color-gray-600);
+        font-size: var(--font-size-sm);
+        margin-top: 0.5em;
+        text-align: center;
+      }
+    }
+    
+    /* Randmarkierungen */
+    .note {
+      align-self: start;
+      background-color: var(--color-gray-50);
+      border-radius: var(--radius-md);
+      color: var(--color-gray-600);
+      font-size: var(--font-size-sm);
+      grid-column: 10 / span 3;
+      padding: 1em;
+      position: sticky;
+      top: 1rem;
+    }
+    
+    /* Varianten */
+    &.large {
+      font-size: var(--font-size-lg);
+    }
+    
+    &.small {
+      font-size: var(--font-size-sm);
+    }
+    
+    &.tight {
+      line-height: 1.4;
+    }
+    
+    &.relaxed {
+      line-height: 1.8;
+    }
+    
+    &.with-sidebar {
+      position: relative;
+    }
+    
+    &.print-friendly {
+      @media print {
+        color: black;
+        font-size: 12pt;
+        line-height: 1.5;
+        
+        a {
+          color: black;
+          text-decoration: none;
+          
+          &::after {
+            content: " (" attr(href) ")";
+            font-size: 90%;
+          }
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+          page-break-after: avoid;
+        }
+        
+        img {
+          max-height: 3in;
+        }
+      }
+    }
+    
+    /* Responsive Anpassungen */
+    @container layout (max-width: 768px) {
+      grid-column: span 12;
+      order: 1;
+      
+      .note {
+        grid-column: span 12;
+        margin: 1em 0;
+        position: static;
+      }
+    }
+  }
+}

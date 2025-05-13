@@ -9,22 +9,25 @@ Das CSS Layer-System der Casoon UI Library verwendet moderne CSS-Features wie `@
 
 ## Struktur des Layer-Systems
 
-Die Layer sind in `layers.css` in einer klaren Hierarchie definiert:
+Die Layer sind in einer klaren Hierarchie definiert:
 
 ```css
-@layer reset,                /* Browser-Reset, Normalisierung */
-       tokens,               /* Design-Tokens, Variablen */
+@layer reset,                /* Grundlegender Browser-Reset */
+       tokens,               /* Design-Tokens und Variablen */
+       custom-properties,    /* Registrierte CSS-Eigenschaften */
        core,                 /* Kernfunktionalitäten */
-       logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
+       logical-properties,   /* Bidirektionale Layouts (RTL/LTR) */
        colors,               /* Farbsystem */
-       color-mix,            /* Farbmischungen und -variationen */
+       color-mix,            /* Farbmischungen und -varianten */
        layout,               /* Layout-Grundlagen */
+       layout-queries,       /* Responsive Anpassungen */
        typography,           /* Typografie-System */
-       utilities,            /* Utility-Klassen */
-       smooth-scroll,        /* Scroll-Verhalten */
+       utilities,            /* Atomare Utility-Klassen */
+       smooth-scroll,        /* Scrollverhalten */
        accessibility,        /* Barrierefreiheit */
        icons,                /* Icon-System */
-       animations,           /* Animationen */
+       components,           /* UI-Komponenten */
+       animations,           /* Bewegungssystem */
        effects,              /* Visuelle Effekte */
        themes;               /* Theming-System */
 ```
@@ -35,8 +38,8 @@ Die Reihenfolge ist entscheidend: Layer, die früher in der Liste erscheinen, ha
 
 Die Layer-Struktur ist zentralisiert:
 
-1. Die Layer-Definitionen befinden sich in der `layers.css`-Datei
-2. Alle Layer-Imports sind in dieser Datei integriert
+1. Die Layer-Definitionen befinden sich in der `base.css`-Datei
+2. Alle Layer-Imports sind integriert
 3. Diese Datei wird aus der Hauptdatei `core.css` importiert
 
 Dieser Ansatz bietet mehrere Vorteile:
@@ -65,10 +68,13 @@ Wenn Sie eigene Stile hinzufügen möchten, verwenden Sie den entsprechenden Lay
 /* Ihre eigene CSS-Datei */
 @import "@casoon/ui-lib/core.css";
 
-/* Fügen Sie Ihre eigenen Stile zum passenden Layer hinzu */
-@layer utilities {
-  .my-custom-utility {
-    property: value;
+/* Fügen Sie Ihre eigenen Komponenten zum components-Layer hinzu */
+@layer components {
+  .my-component {
+    /* Komponenten-Styles unter Nutzung der Design-Tokens */
+    padding: var(--space-4);
+    color: var(--color-primary);
+    border-radius: var(--radius-md);
   }
 }
 
@@ -86,7 +92,7 @@ Sie können auch nur bestimmte Layer importieren:
 
 ```css
 /* Nur bestimmte Layer verwenden */
-@import "@casoon/ui-lib/layers.css";  /* Die Layer-Struktur */
+@import "@casoon/ui-lib/base.css";  /* Die Layer-Struktur */
 @import "@casoon/ui-lib/layers/reset.css";
 @import "@casoon/ui-lib/layers/tokens.css";
 @import "@casoon/ui-lib/layers/utilities.css";
@@ -98,17 +104,20 @@ Jeder Layer hat eine spezifische Rolle im Designsystem:
 
 - **reset**: Browser-Standardstile zurücksetzen
 - **tokens**: Design-Token-Variablen (Farben, Abstände, Typografie)
+- **custom-properties**: Registrierte CSS-Eigenschaften
 - **core**: Allgemeine Grundfunktionen
-- **logical-properties**: Logische Eigenschaften für bidirektionalen Text
+- **logical-properties**: Logische Eigenschaften für bidirektionalen Text (RTL/LTR)
 - **colors**: Farbsystem und Farbklassen
 - **color-mix**: Farbmischungen und -variationen
 - **layout**: Layout-Grundlagen (Container, Grid, etc.)
+- **layout-queries**: Responsive Anpassungen basierend auf Container Queries
 - **typography**: Typografie-System
-- **utilities**: Utility-Klassen für schnelles Styling
+- **utilities**: Atomare Utility-Klassen für schnelles Styling
 - **smooth-scroll**: Scroll-Verhalten und -Effekte
 - **accessibility**: Barrierefreiheits-Verbesserungen
 - **icons**: Icon-System
-- **animations**: Animationen
+- **components**: UI-Komponenten und Komponentensystem
+- **animations**: Animationen und Bewegungssystem
 - **effects**: Visuelle Effekte
 - **themes**: Theming-System
 

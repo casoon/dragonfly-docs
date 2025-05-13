@@ -3,447 +3,381 @@ title: Animations- und Effekt-System
 category: Guide
 ---
 
-# Animations- und Effekt-System
+# Animations- und Effekte-System
 
-Das Animations- und Effekt-System der Casoon UI Library bietet umfassende Werkzeuge für Bewegung, Übergänge und visuelle Effekte in Ihrer Benutzeroberfläche. Mit modernen CSS-Techniken wie CSS Animations API, Scroll-getriebenen Animationen und interaktiven Effekten können Sie ansprechende und reaktionsschnelle Benutzererlebnisse schaffen.
+Das Animations- und Effekte-System der Casoon UI Library bietet eine umfassende Sammlung von vordefinierten Animationen, Übergängen und visuellen Effekten zur Verbesserung der Benutzeroberfläche.
 
-## Importieren
+> **Update in Version 0.5.0:** Das Animationssystem wurde umfassend überarbeitet mit vereinheitlichtem Benennungsschema (`slide-in-*` statt `slide-from-*`), reduzierter Redundanz und verbesserten Custom Properties.
 
-Die Animation- und Effektsysteme werden automatisch geladen, wenn Sie die `core.css` importieren:
+## CSS-Import
+
+Um das komplette Casoon UI Animations-System zu nutzen, importieren Sie die `core.css` Datei, die automatisch die grundlegenden Animationen enthält:
 
 ```css
-@import '@casoon/ui-lib/core.css';
+@import "@casoon/ui-lib/core.css";
 ```
 
-Alternativ können Sie die Komponenten separat importieren:
+Für spezielle Animationen und Effekte können Sie zusätzliche Module importieren:
 
 ```css
-/* Nur Animationen */
-@import '@casoon/ui-lib/animations.css';
+/* Erweiterte Animationen */
+@import "@casoon/ui-lib/effects/animations.css";
 
-/* Nur Effekte */
-@import '@casoon/ui-lib/effects.css';
+/* Spezielle Effekte */
+@import "@casoon/ui-lib/effects/glass.css";
+@import "@casoon/ui-lib/effects/neon.css";
 ```
 
-## Animationssystem
+## Layer-Struktur
 
-### Variablen und Tokens
-
-Das Animationssystem basiert auf einem umfangreichen Satz von CSS-Variablen, die konsistente Animation in der gesamten Anwendung ermöglichen:
+Die Animationen und Effekte sind Teil des zentralen Layer-Systems und werden unter den Layern `animations` und `effects` definiert:
 
 ```css
-:root {
-  /* Dauer-Variablen */
-  --animation-duration-fastest: 100ms;
-  --animation-duration-fast: 150ms;
-  --animation-duration-normal: 300ms;
-  --animation-duration-slow: 500ms;
-  --animation-duration-slower: 750ms;
-  --animation-duration-slowest: 1000ms;
+@layer reset,
+       tokens,
+       /* ... andere Layer ... */
+       animations,       /* Bewegungssystem */
+       effects,          /* Visuelle Effekte */
+       themes;
+```
 
-  /* Timing-Funktionen */
-  --ease-linear: linear;
-  --ease-in: cubic-bezier(0.4, 0, 1, 1);
-  --ease-out: cubic-bezier(0, 0, 0.2, 1);
-  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-  --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
-  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --ease-spring: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+## Grundlegende Animationen
 
-  /* Bewegungsdistanzen */
-  --move-xs: 4px;
-  --move-sm: 8px;
-  --move-md: 16px;
-  --move-lg: 24px;
-  --move-xl: 36px;
+Das System bietet eine Reihe von vordefinierten Animationen, die leicht angewendet werden können:
 
-  /* Skalierungsfaktoren */
-  --scale-xs: 0.98;
-  --scale-sm: 0.95;
-  --scale-md: 0.9;
-  --scale-lg: 1.05;
-  --scale-xl: 1.1;
+### Fade-Animationen
 
-  /* Verzögerungen */
-  --delay-xs: 50ms;
-  --delay-sm: 100ms;
-  --delay-md: 200ms;
-  --delay-lg: 300ms;
-  --delay-xl: 500ms;
+```css
+.fade-in { animation: fade-in 0.3s ease-out forwards; }
+.fade-out { animation: fade-out 0.3s ease-in forwards; }
+```
 
-  /* Wiederholungen */
-  --iteration-once: 1;
-  --iteration-twice: 2;
-  --iteration-thrice: 3;
-  --iteration-infinite: infinite;
+### Slide-Animationen (Vereinheitlichtes Benennungsschema in v0.5.0)
+
+```css
+.slide-in-top { animation: slide-in-top 0.3s ease-out forwards; }
+.slide-in-right { animation: slide-in-right 0.3s ease-out forwards; }
+.slide-in-bottom { animation: slide-in-bottom 0.3s ease-out forwards; }
+.slide-in-left { animation: slide-in-left 0.3s ease-out forwards; }
+```
+
+### Scale-Animationen
+
+```css
+.scale-in { animation: scale-in 0.3s ease-out forwards; }
+.scale-out { animation: scale-out 0.3s ease-in forwards; }
+```
+
+### Rotation
+
+```css
+.rotate-in { animation: rotate-in 0.3s ease-out forwards; }
+.rotate-out { animation: rotate-out 0.3s ease-in forwards; }
+```
+
+## Timing und Verzögerung
+
+Sie können die Animationsgeschwindigkeit und -verzögerung anpassen:
+
+```css
+/* Geschwindigkeit */
+.animation-fast { animation-duration: 0.15s; }
+.animation-slow { animation-duration: 0.6s; }
+
+/* Verzögerung */
+.animation-delay-1 { animation-delay: 0.1s; }
+.animation-delay-2 { animation-delay: 0.2s; }
+.animation-delay-3 { animation-delay: 0.3s; }
+```
+
+## Barrierefreiheit in Animationen (Neu in v0.5.0)
+
+In Version 0.5.0 wurde der Support für `prefers-reduced-motion` erheblich verbessert:
+
+```css
+/* Motion-Safe und Motion-Reduce Utilities */
+.motion-safe {
+  /* Animationen nur anzeigen, wenn keine Einschränkung besteht */
+  @media (prefers-reduced-motion: no-preference) {
+    animation: fade-in 0.3s ease-out;
+  }
+}
+
+.motion-reduce {
+  /* Alternative für Nutzer mit aktiviertem 'prefers-reduced-motion' */
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    transition: none;
+  }
 }
 ```
 
-### Grundlegende Animationsklassen
+### System-weite Reduzierung
 
-Die Basisklasse `.animate` stellt Standardeinstellungen für Animationen bereit:
-
-```html
-<div class="animate">
-  Diese Element erhält die Basiseinstellungen für Animationen
-</div>
-```
-
-Die Klasse setzt:
-- Animation-Dauer auf `var(--animation-duration-normal)` (300ms)
-- Animation-Fill-Mode auf `both` (Beibehaltung des Endstatus)
-- Timing-Funktion auf `var(--ease-in-out-cubic)`
-
-### Animationssteuerung
-
-#### Richtung
-
-```html
-<div class="animate direction-normal">Normale Richtung</div>
-<div class="animate direction-reverse">Umgekehrte Richtung</div>
-<div class="animate direction-alternate">Wechselnde Richtung</div>
-<div class="animate direction-alternate-reverse">Wechselnd-umgekehrte Richtung</div>
-```
-
-#### Füllmodus
-
-```html
-<div class="animate fill-none">Kein Füllmodus</div>
-<div class="animate fill-forwards">Endstatus beibehalten</div>
-<div class="animate fill-backwards">Startstatus anwenden</div>
-<div class="animate fill-both">Start- und Endstatus anwenden</div>
-```
-
-#### Wiederholung
-
-```html
-<div class="animate iteration-once">Einmal abspielen</div>
-<div class="animate iteration-twice">Zweimal abspielen</div>
-<div class="animate iteration-thrice">Dreimal abspielen</div>
-<div class="animate iteration-infinite">Endlos abspielen</div>
-
-<!-- Alternative Kurzformen -->
-<div class="animate once">Einmal abspielen</div>
-<div class="animate infinite">Endlos abspielen</div>
-```
-
-### Scroll-gesteuerte Animationen
-
-Die Library bietet moderne Scroll-getriebene Animationen, die sich am Scrollverhalten des Benutzers orientieren:
-
-```html
-<div class="scroll-fade-in">
-  Dieses Element blendet sich ein, wenn es ins Sichtfeld scrollt
-</div>
-
-<div class="scroll-slide-up">
-  Dieses Element gleitet von unten herein
-</div>
-
-<div class="scroll-slide-from-left">
-  Dieses Element gleitet von links herein
-</div>
-
-<div class="scroll-slide-from-right">
-  Dieses Element gleitet von rechts herein
-</div>
-```
-
-Diese Klassen verwenden die moderne CSS Animation Timeline API:
-- Animation startet, wenn das Element sichtbar wird (`entry 10%`)
-- Animation ist abgeschlossen, wenn Element komplett sichtbar ist (`cover 30-40%`)
-
-### Interaktionsanimationen
-
-Diese Animationen reagieren auf Benutzerinteraktionen:
-
-```html
-<button class="interaction-scale">
-  Knopf, der sich beim Klicken verkleinert
-</button>
-
-<div class="hover-glow">
-  Element, das bei Hover leuchtet
-</div>
-
-<button class="tap-feedback">
-  Knopf mit visuellem Feedback bei Berührung
-</button>
-```
-
-### Übergangshelfer
-
-Für einfache CSS-Übergänge bietet das System spezifische Helferklassen:
-
-```html
-<div class="transition-opacity">
-  Übergang für Transparenz
-</div>
-
-<div class="transition-transform">
-  Übergang für Transformationen
-</div>
-
-<div class="transition-shadow">
-  Übergang für Schatten
-</div>
-
-<div class="transition-colors">
-  Übergang für Farben (Hintergrund, Text, Rahmen)
-</div>
-```
-
-## Effekt-System
-
-Das Effekt-System erweitert das Animationssystem mit komplexeren visuellen Effekten.
-
-### Neon-Effekte
-
-```html
-<div class="neon-text">Text mit Neon-Leuchteffekt</div>
-<div class="neon-border">Element mit leuchtendem Rahmen</div>
-<div class="neon-shadow">Element mit leuchtendem Schatten</div>
-```
-
-Die Neon-Effekte lassen Elemente durch Textschatten, Boxschatten und Farbverläufe leuchten und können mit unterschiedlichen Farben kombiniert werden:
-
-```html
-<div class="neon-text neon-primary">Primärfarbener Neon-Effekt</div>
-<div class="neon-text neon-accent">Akzentfarbener Neon-Effekt</div>
-```
-
-### Filter-Effekte
-
-```html
-<!-- Unschärfe -->
-<div class="blur-sm">Leichte Unschärfe</div>
-<div class="blur-md">Mittlere Unschärfe</div>
-<div class="blur-lg">Starke Unschärfe</div>
-
-<!-- Helligkeit -->
-<div class="brightness-50">50% Helligkeit</div>
-<div class="brightness-150">150% Helligkeit</div>
-
-<!-- Kontrast -->
-<div class="contrast-50">50% Kontrast</div>
-<div class="contrast-150">150% Kontrast</div>
-
-<!-- Graustufen -->
-<div class="grayscale">Vollständige Graustufen</div>
-<div class="grayscale-50">50% Graustufen</div>
-
-<!-- Sepia -->
-<div class="sepia">Sepia-Effekt</div>
-
-<!-- Kombinierte Filter -->
-<div class="blur-sm brightness-150">Unscharf und heller</div>
-```
-
-### Interaktionseffekte
-
-#### 3D-Effekte
-
-```html
-<div class="card-3d">
-  <div class="card-3d__front">Vorderseite</div>
-  <div class="card-3d__back">Rückseite</div>
-</div>
-
-<div class="tilt-effect">Element mit Neigungseffekt bei Hover</div>
-```
-
-#### Welleneffekte
-
-```html
-<button class="ripple">Klick für Welleneffekt</button>
-```
-
-#### Dynamische Hover-Effekte
-
-```html
-<div class="hover-lift">Element hebt sich bei Hover</div>
-<div class="hover-shadow">Element bekommt Schatten bei Hover</div>
-<div class="hover-grow">Element wird größer bei Hover</div>
-<div class="hover-shrink">Element wird kleiner bei Hover</div>
-```
-
-## Kombinieren von Animationen und Effekten
-
-Das System ist so konzipiert, dass Animationen und Effekte miteinander kombiniert werden können:
-
-```html
-<div class="card scroll-fade-in hover-lift transition-shadow">
-  <h3>Animierte Karte</h3>
-  <p>Diese Karte blendet sich beim Scrollen ein, hebt sich bei Hover und
-     hat einen sanften Schattenübergang.</p>
-</div>
-
-<button class="button button--primary ripple interaction-scale">
-  Animierter Button
-</button>
-```
-
-## Barrierefreiheit
-
-Das Animations- und Effekt-System respektiert die Benutzereinstellung für reduzierte Bewegung (`prefers-reduced-motion`):
+Das System respektiert automatisch die Benutzereinstellung `prefers-reduced-motion`:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
-  /* Reduzierte oder deaktivierte Animationen */
-  .animate {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-  }
-  
-  .scroll-fade-in,
-  .scroll-slide-up,
-  .scroll-slide-from-left,
-  .scroll-slide-from-right {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
+    scroll-behavior: auto !important;
   }
 }
 ```
 
-## Performance-Optimierung
+## Dialog-Animationen (Neu in v0.5.0)
 
-Das System verwendet hardwarebeschleunigte Eigenschaften für optimale Performance:
+Spezielle Animationen für `<dialog>`-Elemente:
 
-- `transform` und `opacity` werden bevorzugt gegenüber `top`, `left`, etc.
-- `will-change` wird selektiv für komplexere Animationen eingesetzt
-- Animationsklassen werden nur bei Bedarf angewendet, um unnötige Repaints zu vermeiden
+```html
+<button id="openDialog">Dialog öffnen</button>
+<dialog id="myDialog" class="dialog dialog-enter">
+  Dialog-Inhalt
+  <button id="closeDialog">Schließen</button>
+</dialog>
 
-## Erweiterung des Animations- und Effekt-Systems
+<script>
+  document.getElementById('openDialog').addEventListener('click', () => {
+    document.getElementById('myDialog').showModal();
+  });
+  
+  document.getElementById('closeDialog').addEventListener('click', () => {
+    const dialog = document.getElementById('myDialog');
+    dialog.classList.remove('dialog-enter');
+    dialog.classList.add('dialog-exit');
+    setTimeout(() => {
+      dialog.close();
+      dialog.classList.remove('dialog-exit');
+      dialog.classList.add('dialog-enter');
+    }, 300);
+  });
+</script>
+```
 
-### Eigene Animationen definieren
+## Gestaffelte Animationen (Neu in v0.5.0)
+
+Sequentielle Animationen für Listen und Gruppen:
+
+```html
+<ul class="staggered-list">
+  <li>Element 1</li>
+  <li>Element 2</li>
+  <li>Element 3</li>
+  <li>Element 4</li>
+</ul>
+
+<style>
+  .staggered-list li {
+    opacity: 0;
+    animation: fade-in 0.3s ease-out forwards;
+  }
+  
+  .staggered-list li:nth-child(1) { animation-delay: 0.1s; }
+  .staggered-list li:nth-child(2) { animation-delay: 0.2s; }
+  .staggered-list li:nth-child(3) { animation-delay: 0.3s; }
+  .staggered-list li:nth-child(4) { animation-delay: 0.4s; }
+</style>
+```
+
+## Animierte Fokus-Indikatoren (Neu in v0.5.0)
+
+Pulsierende Fokus-Ringe für bessere Barrierefreiheit:
 
 ```css
-@import '@casoon/ui-lib/core.css';
+.focus-ring-animated {
+  outline: none;
+}
 
-@layer animations {
-  /* Eigene Animation definieren */
-  @keyframes bounce-in {
-    0% {
-      transform: scale(0.3);
-      opacity: 0;
-    }
-    50% {
-      transform: scale(1.05);
-      opacity: 1;
-    }
-    70% { transform: scale(0.9); }
-    100% { transform: scale(1); }
-  }
-  
-  /* Eigene Animationsklasse */
-  .animate-bounce-in {
-    animation-name: bounce-in;
-    animation-duration: var(--animation-duration-slow);
-    animation-timing-function: var(--ease-out);
-    animation-fill-mode: both;
-  }
+.focus-ring-animated:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-primary);
+  animation: focus-ring-pulse 1.5s infinite;
+}
+
+@keyframes focus-ring-pulse {
+  0% { box-shadow: 0 0 0 2px rgba(var(--color-primary-rgb), 1); }
+  50% { box-shadow: 0 0 0 4px rgba(var(--color-primary-rgb), 0.5); }
+  100% { box-shadow: 0 0 0 2px rgba(var(--color-primary-rgb), 1); }
 }
 ```
 
-### Eigene Effekte hinzufügen
+## Experimentelles Feature: animation-composition (Neu in v0.5.0)
+
+Unterstützung für `animation-composition` zur Kombination mehrerer Animationen:
 
 ```css
-@import '@casoon/ui-lib/core.css';
+/* Mehrere Animationen gleichzeitig anwenden und kombinieren */
+.element-combined {
+  animation: slide-in-top 0.5s ease-out, 
+             fade-in 0.3s ease-out, 
+             scale-in 0.4s ease-out;
+  animation-composition: add;
+}
+```
 
-@layer effects {
-  /* Eigener Filter-Effekt */
-  .mirror {
-    transform: scaleX(-1);
+## Effekte-System
+
+Das Effekte-System bietet visuelle Effekte wie Schatten, Glanzeffekte und Materialien:
+
+### Schatten-Effekte
+
+```css
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-xl { box-shadow: var(--shadow-xl); }
+```
+
+### Glasmorphismus
+
+```css
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+```
+
+### Neon-Effekte
+
+```css
+.neon-text {
+  color: var(--color-primary);
+  text-shadow: 0 0 5px rgba(var(--color-primary-rgb), 0.8),
+               0 0 10px rgba(var(--color-primary-rgb), 0.5),
+               0 0 15px rgba(var(--color-primary-rgb), 0.3);
+}
+
+.neon-border {
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 0 5px rgba(var(--color-primary-rgb), 0.8),
+              0 0 10px rgba(var(--color-primary-rgb), 0.5),
+              inset 0 0 5px rgba(var(--color-primary-rgb), 0.2);
+}
+```
+
+## Dark-Mode Integration (Verbessert in v0.5.0)
+
+Durchgängige Implementierung mit `color-scheme` und `light-dark()` CSS-Funktion:
+
+```css
+:root {
+  color-scheme: light dark;
+}
+
+.element {
+  background-color: light-dark(#ffffff, #121212);
+  color: light-dark(#000000, #ffffff);
+  border-color: light-dark(#e5e5e5, #333333);
+}
+```
+
+## Animation-Komposition mit CSS-Eigenschaften
+
+Animationen können durch CSS-Eigenschaften gesteuert werden:
+
+```css
+:root {
+  --animation-scale: 1;
+  --animation-duration: 0.3s;
+  --animation-delay: 0s;
+}
+
+.custom-animation {
+  animation-name: custom-fade;
+  animation-duration: var(--animation-duration);
+  animation-delay: var(--animation-delay);
+  animation-fill-mode: forwards;
+}
+
+@keyframes custom-fade {
+  0% {
+    opacity: 0;
+    transform: scale(calc(1 - var(--animation-scale) * 0.2));
   }
-  
-  /* Eigener interaktiver Effekt */
-  .hover-rotate {
-    transition: transform var(--animation-duration-normal) var(--ease-out);
-  }
-  
-  .hover-rotate:hover {
-    transform: rotate(5deg);
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 ```
 
-## Optimierung für Lightning CSS
+## Integrierte Übergänge
 
-Das Animations- und Effekt-System ist für Lightning CSS optimiert:
+Standardmäßige Übergänge für interaktive Elemente:
 
-1. **Automatische Präfixierung**: Lightning CSS fügt automatisch Browser-Präfixe für Animationen und Transformationen hinzu
-2. **Optimierung**: Redundanzen in Keyframes und Eigenschaften werden minimiert
-3. **Unterstützung für moderne Funktionen**: Lightning CSS ermöglicht die Verwendung moderner Animationsfunktionen mit Fallbacks für ältere Browser
+```css
+.transition-base {
+  transition: var(--transition-base);
+}
 
-## Beispiele für komplexe Animations-Kombinationen
+.transition-transform {
+  transition: var(--transition-transform);
+}
 
-### Animierte Karten-Einblendung
+.transition-colors {
+  transition: var(--transition-colors);
+}
+```
+
+## Kombinieren mit Utilities
+
+Animationen können mit anderen Utility-Klassen kombiniert werden:
 
 ```html
-<div class="container-query">
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <!-- Karte 1: Verzögerung 0 -->
-    <div class="card scroll-fade-in" style="--delay: 0ms">
-      <div class="card__header">Karte 1</div>
-      <div class="card__body">Inhalt</div>
-    </div>
-    
-    <!-- Karte 2: Verzögerung 100ms -->
-    <div class="card scroll-fade-in" style="--delay: 100ms">
-      <div class="card__header">Karte 2</div>
-      <div class="card__body">Inhalt</div>
-    </div>
-    
-    <!-- Karte 3: Verzögerung 200ms -->
-    <div class="card scroll-fade-in" style="--delay: 200ms">
-      <div class="card__header">Karte 3</div>
-      <div class="card__body">Inhalt</div>
-    </div>
-  </div>
+<div class="fade-in shadow-lg glass p-4 rounded-lg">
+  Ein animiertes Element mit Schatten und Glaseffekt
 </div>
 ```
 
-### Animiertes Helden-Banner
+## Anpassen der Animationen
 
-```html
-<div class="hero">
-  <h1 class="scroll-fade-in" style="--delay: 0ms">Willkommen</h1>
-  <p class="scroll-fade-in" style="--delay: 200ms">Ein modernes CSS-Framework</p>
-  <button class="button button--primary scroll-fade-in ripple" style="--delay: 400ms">
-    Mehr erfahren
-  </button>
-</div>
+Sie können die Animationsparameter über CSS-Variablen anpassen:
+
+```css
+:root {
+  --animation-duration-default: 0.3s;
+  --animation-timing-default: ease-out;
+  --animation-delay-default: 0s;
+}
+
+/* Angepasste Animationsklasse */
+.custom-fade-in {
+  animation: fade-in var(--animation-duration-custom, var(--animation-duration-default))
+             var(--animation-timing-custom, var(--animation-timing-default))
+             var(--animation-delay-custom, var(--animation-delay-default))
+             forwards;
+}
 ```
 
-### Interaktives Dashboard
+## RTL-Support (Verbessert in v0.5.0)
 
-```html
-<div class="dashboard">
-  <div class="widget hover-lift transition-shadow">
-    <div class="widget__header">Benutzer</div>
-    <div class="widget__body">
-      <div class="counter animate" data-animation="count-up" data-value="1248">0</div>
-    </div>
-  </div>
-  
-  <div class="widget hover-lift transition-shadow">
-    <div class="widget__header">Umsatz</div>
-    <div class="widget__body">
-      <div class="chart animate" data-animation="fade-in-up">
-        <!-- Chart-Inhalt -->
-      </div>
-    </div>
-  </div>
-</div>
+Erweiterte bidirektionale Animation-Unterstützung:
+
+```css
+/* Standard LTR Animation */
+.slide-in-start { animation: slide-in-left 0.3s ease-out forwards; }
+
+/* Automatische RTL-Anpassung */
+[dir="rtl"] .slide-in-start { animation: slide-in-right 0.3s ease-out forwards; }
 ```
 
 ## Best Practices
 
-1. **Sparsamkeit**: Nutzen Sie Animationen gezielt und zur Verbesserung der UX, nicht als Selbstzweck
-2. **Performance im Auge behalten**: Vermeiden Sie zu viele gleichzeitige Animationen oder komplexe Animationen auf mobilen Geräten
-3. **Barrierefreiheit**: Respektieren Sie stets die Benutzereinstellung `prefers-reduced-motion`
-4. **Konsistenz**: Verwenden Sie die definierten Variablen für konsistente Animationszeiten und Timingfunktionen
-5. **Flüssigkeit**: Zielen Sie auf 60 FPS (oder höher) für alle Animationen ab
-6. **Bedeutung**: Nutzen Sie Animationen, um Benutzerinteraktionen zu verstärken und Zusammenhänge zu verdeutlichen 
+1. **Maßvoll einsetzen** - Zu viele Animationen können ablenkend wirken
+2. **Barrierefreiheit beachten** - Berücksichtigen Sie die Einstellung `prefers-reduced-motion`
+3. **Performance im Blick behalten** - Animationen nur für Eigenschaften verwenden, die effizient vom Browser animiert werden können (transform, opacity)
+4. **Animation-Layer beachten** - Eigene Animationen im `animations`-Layer definieren
+5. **Timing-Funktionen anpassen** - Passende Easing-Funktionen für natürlichere Bewegungen verwenden
+
+## Browser-Kompatibilität
+
+Das Animations- und Effekte-System ist mit allen modernen Browsern kompatibel. Einige fortgeschrittene Features wie `animation-composition` benötigen möglicherweise einen neueren Browser oder Lightning CSS zur Kompilierung 

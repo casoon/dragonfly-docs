@@ -1,0 +1,139 @@
+/**
+ * Toast-Komponente
+ *
+ * Toast-Benachrichtigungen für temporäre Hinweise.
+ */
+
+/**
+ * Toast-Komponente
+ * 
+ * Temporäre Benachrichtigungen, die automatisch verschwinden.
+ * Toasts eignen sich für Systembenachrichtigungen, die den Benutzerfluss nicht unterbrechen sollen.
+ * 
+ * @layer components.toast
+ * 
+ * Grundlegende Verwendung:
+ * <div class="toast">
+ *   <div class="content">Einfache Benachrichtigung</div>
+ * </div>
+ * 
+ * Varianten:
+ * <div class="toast success">Erfolg</div>
+ * <div class="toast error">Fehler</div>
+ * <div class="toast warning">Warnung</div>
+ * <div class="toast info">Information</div>
+ * 
+ * Mit Icon:
+ * <div class="toast">
+ *   <div class="icon"><!-- Icon hier --></div>
+ *   <div class="content">Benachrichtigung mit Icon</div>
+ * </div>
+ * 
+ * Schließbar:
+ * <div class="toast">
+ *   <div class="content">Schließbare Benachrichtigung</div>
+ *   <button class="close">&times;</button>
+ * </div>
+ */
+
+@layer toast {
+  .toast {
+    align-items: center;
+    animation: toast-slide-in 0.3s ease-out;
+    background-color: var(--color-gray-800);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    color: white;
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+    max-width: 24rem;
+    padding: var(--space-3) var(--space-4);
+    
+    /* Inhaltselemente */
+    .content {
+      flex: 1;
+    }
+    
+    .icon {
+      flex-shrink: 0;
+      font-size: 1.25rem;
+    }
+    
+    .close {
+      background: none;
+      border: none;
+      color: currentcolor;
+      cursor: pointer;
+      flex-shrink: 0;
+      font-size: 1.25rem;
+      opacity: 70%;
+      padding: 0;
+      
+      &:hover {
+        opacity: 100%;
+      }
+    }
+    
+    /* Farbvarianten */
+    &.success {
+      background-color: var(--color-success);
+    }
+    
+    &.error {
+      background-color: var(--color-error);
+    }
+    
+    &.warning {
+      background-color: var(--color-warning);
+      color: black;
+    }
+    
+    &.info {
+      background-color: var(--color-info);
+    }
+    
+    /* Positionen (als zusätzliche Klasse auf einem Container) */
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      padding: var(--space-4);
+      position: fixed;
+      z-index: var(--z-index-toast);
+      
+      &.top-right {
+        right: 0;
+        top: 0;
+      }
+      
+      &.top-left {
+        left: 0;
+        top: 0;
+      }
+      
+      &.bottom-right {
+        bottom: 0;
+        right: 0;
+      }
+      
+      &.bottom-left {
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+/* Animation */
+@keyframes toast-slide-in {
+  from {
+    opacity: 0%;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
