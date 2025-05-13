@@ -20,10 +20,10 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started/' },
-      { text: 'Components', link: '/components/' },
-      { text: 'Guide', link: '/guide/' },
+      { text: 'Startseite', link: '/' },
+      { text: 'Erste Schritte', link: '/getting-started/' },
+      { text: 'Komponenten', link: '/components/' },
+      { text: 'Anleitung', link: '/guide/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
 
@@ -39,21 +39,21 @@ export default defineConfig({
     sidebar: {
       '/getting-started/': [
         {
-          text: 'Getting Started',
+          text: 'Erste Schritte',
           items: [
             { text: 'Einführung', link: '/getting-started/' },
             { text: 'Installation', link: '/getting-started/installation' },
           ]
         },
         {
-          text: 'Styles',
+          text: 'Stile',
           items: [
-            { text: 'Design Tokens', link: '/getting-started/tokens' },
+            { text: 'Design-Tokens', link: '/getting-started/tokens' },
             { text: 'Layout', link: '/getting-started/layout' },
             { text: 'Typografie', link: '/getting-started/typography' },
             { text: 'Themes', link: '/getting-started/themes' },
-            { text: 'Iconsets', link: '/getting-started/iconsets' },
-            { text: 'Utilities', link: '/getting-started/utilities' },
+            { text: 'Icon-Sets', link: '/getting-started/iconsets' },
+            { text: 'Utility-Klassen', link: '/getting-started/utilities' },
           ]
         },
         {
@@ -61,7 +61,7 @@ export default defineConfig({
           items: [
             { text: 'Best Practices', link: '/getting-started/#best-practices' },
             { text: 'FAQ', link: '/getting-started/#häufige-fragen-faq' },
-            { text: 'Troubleshooting', link: '/getting-started/#troubleshooting' }
+            { text: 'Fehlerbehebung', link: '/getting-started/#troubleshooting' }
           ]
         }
       ],
@@ -70,14 +70,14 @@ export default defineConfig({
           text: 'Basis-Komponenten',
           items: [
             { text: 'Übersicht', link: '/components/' },
-            { text: 'Alert', link: '/components/alert/' },
+            { text: 'Hinweis', link: '/components/alert/' },
             { text: 'Avatar', link: '/components/avatar/' },
-            { text: 'Badge', link: '/components/badge/' },
+            { text: 'Abzeichen', link: '/components/badge/' },
             { text: 'Button', link: '/components/button/' },
-            { text: 'Card', link: '/components/card/' },
+            { text: 'Karte', link: '/components/card/' },
             { text: 'Chip', link: '/components/chip/' },
             { text: 'Code', link: '/components/code/' },
-            { text: 'Spinner', link: '/components/spinner/' },
+            { text: 'Ladeindikator', link: '/components/spinner/' },
             { text: 'Tooltip', link: '/components/tooltip/' }
           ]
         },
@@ -85,50 +85,50 @@ export default defineConfig({
           text: 'Formular-Komponenten',
           items: [
             { text: 'Checkbox', link: '/components/checkbox/' },
-            { text: 'File', link: '/components/file/' },
-            { text: 'Form', link: '/components/forms/' },
-            { text: 'Input', link: '/components/input/' },
-            { text: 'Input Group', link: '/components/input-group/' },
+            { text: 'Datei', link: '/components/file/' },
+            { text: 'Formular', link: '/components/forms/' },
+            { text: 'Eingabefeld', link: '/components/input/' },
+            { text: 'Eingabegruppe', link: '/components/input-group/' },
             { text: 'Radio', link: '/components/radio/' },
-            { text: 'Select', link: '/components/select/' },
-            { text: 'Slider', link: '/components/slider/' },
-            { text: 'Switch', link: '/components/switch/' },
-            { text: 'Textarea', link: '/components/textarea/' }
+            { text: 'Auswahl', link: '/components/select/' },
+            { text: 'Schieberegler', link: '/components/slider/' },
+            { text: 'Schalter', link: '/components/switch/' },
+            { text: 'Textbereich', link: '/components/textarea/' }
           ]
         },
         {
           text: 'Layout-Komponenten',
           items: [
-            { text: 'Footer', link: '/components/footer/' },
-            { text: 'Header', link: '/components/header/' },
-            { text: 'Sidebar', link: '/components/sidebar/' },
-            { text: 'Table', link: '/components/table/' },
+            { text: 'Fußzeile', link: '/components/footer/' },
+            { text: 'Kopfzeile', link: '/components/header/' },
+            { text: 'Seitenleiste', link: '/components/sidebar/' },
+            { text: 'Tabelle', link: '/components/table/' },
             { text: 'Tabs', link: '/components/tabs/' }
           ]
         },
         {
           text: 'Feedback-Komponenten',
           items: [
-            { text: 'Modal', link: '/components/modal/' },
-            { text: 'Notification', link: '/components/notification/' },
-            { text: 'Progress', link: '/components/progress/' },
-            { text: 'Skeleton', link: '/components/skeleton/' },
+            { text: 'Dialog', link: '/components/modal/' },
+            { text: 'Benachrichtigung', link: '/components/notification/' },
+            { text: 'Fortschritt', link: '/components/progress/' },
+            { text: 'Platzhalter', link: '/components/skeleton/' },
             { text: 'Toast', link: '/components/toast/' }
           ]
         },
         {
-          text: 'Fortgeschrittene Komponenten',
+          text: 'Erweiterte Komponenten',
           items: [
             { text: 'Blog', link: '/components/blog/' },
-            { text: 'Hamburger', link: '/components/hamburger/' },
+            { text: 'Hamburger-Menü', link: '/components/hamburger/' },
             { text: 'Widget', link: '/components/widget/' },
-            { text: 'Wizard', link: '/components/wizard/' }
+            { text: 'Assistent', link: '/components/wizard/' }
           ]
         }
       ],
       '/guide/': [
         {
-          text: 'Guide',
+          text: 'Anleitung',
           items: [
             { text: 'Übersicht', link: '/guide/' },
             { text: 'Layer-System', link: '/guide/layer-system' },
@@ -138,7 +138,7 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Foundation',
+          text: 'Grundlagen',
           items: [
             { text: 'Farben', link: '/getting-started/tokens#farben' },
             { text: 'Typografie', link: '/getting-started/typography' },
@@ -155,7 +155,7 @@ export default defineConfig({
           text: 'Themes',
           items: [
             { text: 'Übersicht', link: '/themes/' },
-            { text: 'Custom Properties', link: '/themes/custom-properties' }
+            { text: 'CSS-Variablen', link: '/themes/custom-properties' }
           ]
         }
       ]
