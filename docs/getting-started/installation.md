@@ -3,9 +3,13 @@ title: Installation
 category: Getting Started
 ---
 
+<script setup>
+import { UI_LIB_VERSION } from '../.vitepress/data/versions'
+</script>
+
 # Installation
 
-Die Casoon UI Library lässt sich flexibel in diverse Webprojekte integrieren und bietet verschiedene Installationsmethoden für unterschiedliche Anforderungen. Die aktuelle Version ist 0.5.1.
+Die Casoon UI Library lässt sich flexibel in diverse Webprojekte integrieren und bietet verschiedene Installationsmethoden für unterschiedliche Anforderungen. Die aktuelle Version ist {{ UI_LIB_VERSION }}.
 
 ## Voraussetzungen
 
@@ -219,17 +223,17 @@ Sie können die Casoon UI Library auch direkt über ein CDN einbinden, ohne loka
 
 ```html
 <!-- Core-Styles -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/core.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/core.css">
 
 <!-- Optionales Theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/themes/night.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/themes/night.css">
 
 <!-- Einzelne Komponenten -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/components/button.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/components/card.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/components/button.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/components/card.css">
 ```
 
-## Besondere Funktionen in Version 0.5.0
+## Besondere Funktionen der aktuellen Version
 
 ### Verbesserte Animations-CSS
 

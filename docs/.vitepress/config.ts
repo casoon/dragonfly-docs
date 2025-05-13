@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import vueJsx from '@vitejs/plugin-vue-jsx'
+import { UI_LIB_VERSION } from './data/versions'
 
 export default defineConfig({
   title: 'Casoon UI Library',
@@ -15,10 +16,50 @@ export default defineConfig({
     plugins: [vueJsx()],
     ssr: {
       noExternal: ['vitepress']
+    },
+    define: {
+      // Stelle die Version als globale Konstante für Client-Code bereit
+      __UI_LIB_VERSION__: JSON.stringify(UI_LIB_VERSION)
     }
   },
 
   themeConfig: {
+    outlineTitle: 'Auf dieser Seite',
+    darkModeSwitchLabel: 'Erscheinungsbild',
+    sidebarMenuLabel: 'Menü',
+    returnToTopLabel: 'Zurück nach oben',
+    docFooter: {
+      prev: 'Vorherige Seite',
+      next: 'Nächste Seite'
+    },
+    lastUpdatedText: 'Zuletzt aktualisiert',
+    langMenuLabel: 'Sprache ändern',
+    notFound: {
+      title: 'Seite nicht gefunden',
+      quote: 'Es tut uns leid, aber wir konnten die Seite, nach der Sie suchen, nicht finden.',
+      linkText: 'Zur Startseite'
+    },
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: 'Suchen',
+            buttonAriaLabel: 'Suchen'
+          },
+          modal: {
+            noResultsText: 'Keine Ergebnisse für',
+            resetButtonTitle: 'Suchfilter zurücksetzen',
+            footer: {
+              selectText: 'Auswählen',
+              navigateText: 'Navigieren',
+              closeText: 'Schließen'
+            }
+          }
+        }
+      }
+    },
+    
     nav: [
       { text: 'Startseite', link: '/' },
       { text: 'Erste Schritte', link: '/getting-started/' },
@@ -32,7 +73,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Version 0.5.1 | MIT License',
+      message: `Version ${UI_LIB_VERSION} | MIT License`,
       copyright: 'Copyright © 2025 Casoon'
     },
 

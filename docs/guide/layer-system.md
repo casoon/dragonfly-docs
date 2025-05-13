@@ -7,7 +7,7 @@ category: Guide
 
 Das CSS Layer-System der Casoon UI Library verwendet moderne CSS-Features wie `@layer`, um Spezifität und Kaskadierung von Stilen zu kontrollieren. Dies schafft ein vorhersehbares und wartbares Styling-System.
 
-> **Hinweis zur Version 0.5.1:** Der separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, um die Struktur zu vereinfachen und die Wartbarkeit zu verbessern.
+> **Hinweis zur aktuellen Version:** Der separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, um die Struktur zu vereinfachen und die Wartbarkeit zu verbessern.
 
 ## Struktur des Layer-Systems
 

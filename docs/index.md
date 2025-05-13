@@ -2,17 +2,21 @@
 title: Casoon UI Documentation
 ---
 
+<script setup>
+import { UI_LIB_VERSION } from './.vitepress/data/versions'
+</script>
+
 # Casoon UI Library
 
-Willkommen zur Dokumentation der Casoon UI Library. Diese Bibliothek bietet ein modernes, konsistentes und modulares Design-System für die Entwicklung von Benutzeroberflächen.
+Willkommen zur Dokumentation der Casoon UI Library. Diese Bibliothek bietet ein modernes, konsistentes und modulares Design-System für die Entwicklung von benutzerfreundlichen und barrierearmen Benutzeroberflächen.
 
 ## Aktuelle Version
 
-Die aktuelle Version der Casoon UI Library ist `0.4.7`.
+Die aktuelle Version der Casoon UI Library ist `{{ UI_LIB_VERSION }}`.
 
-## Neues Layer-System
+## Modernes Layer-System
 
-Mit der Version 0.3.11 wurde ein modernes CSS-Layer-System eingeführt, das die Spezifität und Organisation der Styles erheblich verbessert. Jetzt genügt das Einbinden der `core.css` Datei, um Zugriff auf alle Komponenten, Layer und Themes zu erhalten:
+Mit der aktuellen Version wurde das CSS-Layer-System weiter optimiert. Der separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, was zu einer übersichtlicheren Struktur führt. Das Einbinden der `core.css` Datei genügt, um Zugriff auf alle Komponenten, Layer und Themes zu erhalten:
 
 ```css
 @import "@casoon/ui-lib/core.css";
@@ -22,18 +26,20 @@ Die Layer sind in einer logischen Hierarchie organisiert:
 
 ```css
 @layer reset,                /* Browser-Reset, Normalisierung */
-       tokens,               /* Design-Tokens, Variablen */
+       tokens,               /* Design-Tokens und Variablen */
        core,                 /* Kernfunktionalitäten */
        logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
        colors,               /* Farbsystem */
        color-mix,            /* Farbmischungen und -variationen */
        layout,               /* Layout-Grundlagen */
+       layout-queries,       /* Responsive Anpassungen */
        typography,           /* Typografie-System */
        utilities,            /* Utility-Klassen */
        smooth-scroll,        /* Scroll-Verhalten */
        accessibility,        /* Barrierefreiheit */
        icons,                /* Icon-System */
-       animations,           /* Animationen */
+       components,           /* UI-Komponenten */
+       animations,           /* Bewegungssystem */
        effects,              /* Visuelle Effekte */
        themes;               /* Theming-System */
 ```
@@ -117,3 +123,36 @@ Bei Problemen:
 ## Lizenz
 
 Die Casoon UI Library ist unter der MIT-Lizenz veröffentlicht. 
+
+## Nutzung in KI-Tools (Model Context Protocol – MCP)
+
+Um die Entwicklung mit der casoon/ui-lib zu vereinfachen, kann dein Editor oder KI-Tool (z. B. Cursor oder Continue) automatisch kontextuelle Informationen über das Projekt laden – inklusive Code, Struktur und Dokumentation.
+
+Dazu wird das Model Context Protocol (MCP) genutzt.
+
+🔧 **Konfiguration (z. B. für Cursor)**
+Füge folgende Konfiguration in die cursor.config.json oder settings.json deines Tools ein:
+
+```json
+{
+  "mcpServers": {
+    "gitmcp-ui-lib": {
+      "url": "https://gitmcp.io/casoon/ui-lib"
+    },
+    "gitmcp-ui-docs": {
+      "url": "https://gitmcp.io/casoon/ui-docs"
+    }
+  }
+}
+```
+
+📌 **Erklärung**
+- **gitmcp-ui-lib**: Liefert strukturelle Infos zur Komponentenbibliothek selbst (Quellcode, Props, Imports, usw.).
+- **gitmcp-ui-docs**: Liefert Informationen aus der begleitenden VitePress-Dokumentation (z. B. Beispiele, Varianten, Slots).
+
+✅ **Vorteil**
+Mit dieser Konfiguration kann ein KI-Assistent dein Projekt besser verstehen und dir gezielter helfen – etwa beim:
+
+- Verwenden von Komponenten mit den richtigen Props
+- Erstellen von Snippets basierend auf echten Beispielen
+- Verstehen der Architektur deines Projekts 

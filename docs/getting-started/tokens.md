@@ -7,7 +7,7 @@ category: Getting Started
 
 Design Tokens sind die grundlegenden Bausteine des visuellen Designs in der Casoon UI Library. Sie definieren alle zentralen Designwerte wie Farben, Abstände, Typografie und mehr, die konsistent im gesamten System verwendet werden.
 
-> **Hinweis:** Ab Version 0.5.1 wurde der separate `custom-properties`-Layer in den `tokens`-Layer integriert. Alle registrierten CSS-Eigenschaften werden nun innerhalb des tokens-Layers definiert.
+> **Hinweis:** Ab der aktuellen Version wurde der separate `custom-properties`-Layer in den `tokens`-Layer integriert. Alle registrierten CSS-Eigenschaften werden nun innerhalb des tokens-Layers definiert.
 
 ## Bedeutung von Design Tokens
 

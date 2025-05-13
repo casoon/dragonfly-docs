@@ -5,7 +5,7 @@ category: Themes
 
 # Custom Properties
 
-> **Wichtiger Hinweis:** Ab Version 0.5.1 wurde der separate `custom-properties`-Layer in das übergreifende Tokensystem integriert. Die grundlegenden Funktionen und Vorteile von CSS Custom Properties (CSS-Variablen) bleiben jedoch erhalten und werden nun zentral im `tokens`-Layer verwaltet.
+> **Wichtiger Hinweis:** Ab der aktuellen Version wurde der separate `custom-properties`-Layer in das übergreifende Tokensystem integriert. Die grundlegenden Funktionen und Vorteile von CSS Custom Properties (CSS-Variablen) bleiben jedoch erhalten und werden nun zentral im `tokens`-Layer verwaltet.
 
 Die Casoon UI Library verwendet CSS Custom Properties (CSS-Variablen) für ein flexibles und konsistentes Theming-System. In der aktuellen Version werden diese Properties direkt im `tokens`-Layer definiert, was eine besser integrierte und wartbare Struktur ermöglicht.
 

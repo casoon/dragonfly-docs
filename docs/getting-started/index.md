@@ -1,6 +1,15 @@
+---
+title: Einführung
+category: Getting Started
+---
+
+<script setup>
+import { UI_LIB_VERSION } from '../.vitepress/data/versions'
+</script>
+
 # Einführung in Casoon UI Library
 
-Die Casoon UI Library ist ein modernes, modulares CSS-Framework und Design-System, das auf fortschrittlichen Web-Technologien basiert und für moderne Webanwendungen optimiert ist. Die aktuelle Version ist 0.5.1.
+Die Casoon UI Library ist ein modernes, modulares CSS-Framework und Design-System, das auf fortschrittlichen Web-Technologien basiert und für moderne Webanwendungen optimiert ist. Die aktuelle Version ist {{ UI_LIB_VERSION }}.
 
 ## Hauptmerkmale
 
@@ -13,9 +22,9 @@ Die Casoon UI Library ist ein modernes, modulares CSS-Framework und Design-Syste
 - **Vollständige Dark Mode-Integration**: Durchgängige Unterstützung mit `color-scheme` und `light-dark()`
 - **Umfassender RTL-Support**: Bidirektionale Layouts mit `[dir="rtl"]` für alle Komponenten
 
-## Neuerungen in Version 0.5.0
+## Neuerungen in der aktuellen Version
 
-Die Version 0.5.0 bringt mehrere wichtige Verbesserungen:
+Die aktuelle Version bringt mehrere wichtige Verbesserungen:
 
 - **Optimierte Animations-CSS**: Vereinheitlichtes Benennungsschema (`slide-in-*` statt `slide-from-*`), reduzierte Redundanz und verbesserte Custom Properties
 - **Erweiterte Barrierefreiheit in Animationen**: Implementierung von `.motion-safe` und `.motion-reduce` Utilities für optimale `prefers-reduced-motion`-Unterstützung
@@ -113,7 +122,7 @@ Die Casoon UI Library kann auf verschiedene Arten in Ihr Projekt integriert werd
 
 ```html
 <!-- Über ein CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.0/core.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/core.css">
 
 <!-- Als npm-Paket -->
 <!-- In Ihrer JavaScript-Datei -->
