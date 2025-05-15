@@ -187,8 +187,50 @@ export default defineConfig({
             { text: 'Theme-System', link: '/guide/theme-system' },
             { text: 'CSS Variablen', link: '/guide/css-variablen' },
             { text: 'Modulares Komponenten-System', link: '/guide/modulare-komponenten-system' },
+            { text: 'Effekt-System', link: '/guide/effects-system' },
             { text: 'Responsive Anpassungen', link: '/guide/responsive-anpassungen' },
             { text: 'Utility-Klassen', link: '/guide/utility-klassen' },
+          ]
+        },
+        {
+          text: 'Effekte',
+          items: [
+            { text: 'Übersicht', link: '/guide/effects-system' },
+            { text: 'Animations-Effekte', link: '/guide/effects/animations' },
+            { text: 'Glas-Effekte', link: '/guide/effects/glass' },
+            { text: 'Neon-Effekte', link: '/guide/effects/neon' }
+          ]
+        },
+        {
+          text: 'Visuelle Effekte',
+          items: [
+            { text: '3D-Effekte', link: '/guide/effects/visual/3d' },
+            { text: 'Filter-Effekte', link: '/guide/effects/visual/filters' },
+            { text: 'Schatten-Effekte', link: '/guide/effects/visual/shadows' },
+            { text: 'Gradient-Effekte', link: '/guide/effects/visual/gradient' },
+            { text: 'Muster & Texturen', link: '/guide/effects/visual/patterns' },
+            { text: 'Partikel-Effekte', link: '/guide/effects/visual/particles' },
+            { text: 'Morphing-Effekte', link: '/guide/effects/visual/morph' }
+          ]
+        },
+        {
+          text: 'Interaktions-Effekte',
+          items: [
+            { text: 'Hover-Effekte', link: '/guide/effects/interaction/hover' },
+            { text: 'Fokus-Effekte', link: '/guide/effects/interaction/focus' },
+            { text: 'Aktiv-Effekte', link: '/guide/effects/interaction/active' },
+            { text: 'Ripple-Effekte', link: '/guide/effects/interaction/ripple' },
+            { text: 'Scroll-Effekte', link: '/guide/effects/interaction/scroll' }
+          ]
+        },
+        {
+          text: 'Status-Effekte',
+          items: [
+            { text: 'Lade-Effekte', link: '/guide/effects/state/loading' },
+            { text: 'Erfolgs-Effekte', link: '/guide/effects/state/success' },
+            { text: 'Fehler-Effekte', link: '/guide/effects/state/error' },
+            { text: 'Warnungs-Effekte', link: '/guide/effects/state/warning' },
+            { text: 'Deaktivierte Zustände', link: '/guide/effects/state/disabled' }
           ]
         }
       ],

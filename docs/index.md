@@ -67,7 +67,30 @@ Um mit Casoon UI zu beginnen:
 
 Die Casoon UI Library bietet eine umfangreiche Sammlung von Komponenten für verschiedene UI-Anforderungen. Jede Komponente wird als eigenständiges CSS-Modul implementiert und wird über das Layer-System eingebunden.
 
+Im `/components` Verzeichnis finden Sie mehr als 35 spezialisierte UI-Komponenten, darunter:
+
+- **Basis-Komponenten**: Button, Card, Avatar, Badge, Chip, Tooltip und mehr
+- **Formular-Komponenten**: Input, Select, Checkbox, Radio, Switch, Textarea
+- **Layout-Komponenten**: Grid, Container, Header, Footer, Sidebar
+- **Feedback-Komponenten**: Alert, Toast, Modal, Notification, Progress
+- **Medien-Komponenten**: Image, Icon, Video, Audio
+
+Alle Komponenten folgen einem konsistenten Designsystem und sind vollständig anpassbar über CSS-Variablen.
+
 Entdecken Sie die [komplette Komponentenbibliothek](/components/).
+
+## Effekte
+
+Die Casoon UI Library enthält ein umfangreiches Effekt-System im `/effects` Verzeichnis mit über 40 spezialisierten visuellen Effekten und Animationen:
+
+- **Visuelle Effekte**: Neon, Glasmorphismus, Schatten, 3D-Transformationen
+- **Animationen**: Fade, Slide, Bounce, Pulse, Spin, Morph
+- **Interaktionen**: Hover, Active, Focus, Drag, Touch-Feedback
+- **Zustände**: Success, Error, Warning, Loading, Disabled
+
+Alle Effekte sind performant optimiert, berücksichtigen Barrierefreiheit (prefers-reduced-motion) und können miteinander kombiniert werden, um einzigartige visuelle Erlebnisse zu schaffen.
+
+Erfahren Sie mehr im [Effekt-System Guide](/guide/effects-system).
 
 ## Übersicht
 
