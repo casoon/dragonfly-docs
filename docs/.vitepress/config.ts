@@ -65,7 +65,6 @@ export default defineConfig({
       { text: 'Erste Schritte', link: '/getting-started/' },
       { text: 'Komponenten', link: '/components/' },
       { text: 'Effekte', link: '/guide/effects-system' },
-      { text: 'Anleitung', link: '/guide/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
 
