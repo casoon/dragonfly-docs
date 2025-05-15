@@ -64,6 +64,7 @@ export default defineConfig({
       { text: 'Startseite', link: '/' },
       { text: 'Erste Schritte', link: '/getting-started/' },
       { text: 'Komponenten', link: '/components/' },
+      { text: 'Effekte', link: '/guide/effects-system' },
       { text: 'Anleitung', link: '/guide/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
@@ -100,8 +101,7 @@ export default defineConfig({
           text: 'Assets & Utilities',
           items: [
             { text: 'Icon-Sets', link: '/getting-started/iconsets' },
-            { text: 'Utility-Klassen', link: '/getting-started/utilities' },
-            { text: 'Effekte', link: '/guide/effects' }
+            { text: 'Utility-Klassen', link: '/getting-started/utilities' }
           ]
         },
         {
@@ -187,18 +187,16 @@ export default defineConfig({
             { text: 'Theme-System', link: '/guide/theme-system' },
             { text: 'CSS Variablen', link: '/guide/css-variablen' },
             { text: 'Modulares Komponenten-System', link: '/guide/modulare-komponenten-system' },
-            { text: 'Effekt-System', link: '/guide/effects-system' },
             { text: 'Responsive Anpassungen', link: '/guide/responsive-anpassungen' },
             { text: 'Utility-Klassen', link: '/guide/utility-klassen' },
           ]
-        },
+        }
+      ],
+      '/guide/effects-system': [
         {
-          text: 'Effekte',
+          text: 'Effekt-System',
           items: [
-            { text: 'Übersicht', link: '/guide/effects-system' },
-            { text: 'Animations-Effekte', link: '/guide/effects/animations' },
-            { text: 'Glas-Effekte', link: '/guide/effects/glass' },
-            { text: 'Neon-Effekte', link: '/guide/effects/neon' }
+            { text: 'Übersicht', link: '/guide/effects-system' }
           ]
         },
         {

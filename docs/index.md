@@ -14,138 +14,80 @@ Willkommen zur Dokumentation der Casoon UI Library. Diese Bibliothek bietet ein 
 
 Die aktuelle Version der Casoon UI Library ist `{{ UI_LIB_VERSION }}`.
 
-## Modernes Layer-System
+## Überblick
 
-Mit der aktuellen Version wurde das CSS-Layer-System weiter optimiert. Der separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, was zu einer übersichtlicheren Struktur führt. Das Einbinden der `core.css` Datei genügt, um Zugriff auf alle Komponenten, Layer und Themes zu erhalten:
+Die Casoon UI Library ist ein umfassendes CSS-Framework, das ein strukturiertes System aus Design-Tokens, Komponenten, Effekten und Utility-Klassen bietet. Die Library ist framework-agnostisch und kann in jeder modernen Webanwendung verwendet werden.
 
-```css
-@import "@casoon/ui-lib/core.css";
-```
+Die wichtigsten Bereiche der Library sind:
 
-Die Layer sind in einer logischen Hierarchie organisiert:
+- **[Komponenten](/components/)** - Über 35 wiederverwendbare UI-Elemente für verschiedene Anwendungsfälle
+- **[Effekte](/guide/effects-system)** - Visuelle Effekte, Animationen und Zustandsdarstellungen
+- **[Design-System](/guide/)** - Ein durchdachtes System für konsistentes Design
 
-```css
-@layer reset,                /* Browser-Reset, Normalisierung */
-       tokens,               /* Design-Tokens und Variablen */
-       core,                 /* Kernfunktionalitäten */
-       logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
-       colors,               /* Farbsystem */
-       color-mix,            /* Farbmischungen und -variationen */
-       layout,               /* Layout-Grundlagen */
-       layout-queries,       /* Responsive Anpassungen */
-       typography,           /* Typografie-System */
-       utilities,            /* Utility-Klassen */
-       smooth-scroll,        /* Scroll-Verhalten */
-       accessibility,        /* Barrierefreiheit */
-       icons,                /* Icon-System */
-       components,           /* UI-Komponenten */
-       animations,           /* Bewegungssystem */
-       effects,              /* Visuelle Effekte */
-       themes;               /* Theming-System */
-```
-
-## Hauptfunktionen
+## Hauptmerkmale
 
 - **Modulares CSS** - Jede Komponente ist als eigenständiges CSS-Modul implementiert
 - **Responsives Design** - Alle Komponenten sind vollständig responsiv
 - **Barrierefreiheit** - Optimiert für Screenreader und Tastaturnavigation
 - **Anpassbare Themes** - Einfach anpassbare Design-Tokens für verschiedene Markenidentitäten
-- **Klarstrukturierte Layer** - Organisierte CSS-Spezifität durch modernes Layer-System
-- **Umfangreiche Icon-Sets** - Integration mehrerer populärer Icon-Bibliotheken
+- **Strukturierte Layer** - Organisierte CSS-Spezifität durch modernes Layer-System
 
 ## Erste Schritte
 
-Um mit Casoon UI zu beginnen:
-
-1. [Installation](/getting-started/installation) - Fügen Sie die Bibliothek zu Ihrem Projekt hinzu
-2. [Layout-System](/getting-started/layout) - Verstehen Sie die Grid- und Flex-Layouts
-3. [Design Tokens](/getting-started/tokens) - Erkunden Sie die grundlegenden Design-Variablen
-4. [Themes](/getting-started/themes) - Passen Sie das Erscheinungsbild an
-5. [Icon-System](/getting-started/iconsets) - Verwenden Sie die integrierten Icon-Sets
-
-## Komponenten
-
-Die Casoon UI Library bietet eine umfangreiche Sammlung von Komponenten für verschiedene UI-Anforderungen. Jede Komponente wird als eigenständiges CSS-Modul implementiert und wird über das Layer-System eingebunden.
-
-Im `/components` Verzeichnis finden Sie mehr als 35 spezialisierte UI-Komponenten, darunter:
-
-- **Basis-Komponenten**: Button, Card, Avatar, Badge, Chip, Tooltip und mehr
-- **Formular-Komponenten**: Input, Select, Checkbox, Radio, Switch, Textarea
-- **Layout-Komponenten**: Grid, Container, Header, Footer, Sidebar
-- **Feedback-Komponenten**: Alert, Toast, Modal, Notification, Progress
-- **Medien-Komponenten**: Image, Icon, Video, Audio
-
-Alle Komponenten folgen einem konsistenten Designsystem und sind vollständig anpassbar über CSS-Variablen.
-
-Entdecken Sie die [komplette Komponentenbibliothek](/components/).
-
-## Effekte
-
-Die Casoon UI Library enthält ein umfangreiches Effekt-System im `/effects` Verzeichnis mit über 40 spezialisierten visuellen Effekten und Animationen:
-
-- **Visuelle Effekte**: Neon, Glasmorphismus, Schatten, 3D-Transformationen
-- **Animationen**: Fade, Slide, Bounce, Pulse, Spin, Morph
-- **Interaktionen**: Hover, Active, Focus, Drag, Touch-Feedback
-- **Zustände**: Success, Error, Warning, Loading, Disabled
-
-Alle Effekte sind performant optimiert, berücksichtigen Barrierefreiheit (prefers-reduced-motion) und können miteinander kombiniert werden, um einzigartige visuelle Erlebnisse zu schaffen.
-
-Erfahren Sie mehr im [Effekt-System Guide](/guide/effects-system).
-
-## Übersicht
-
-Die Casoon UI Library ist ein umfassendes CSS-Framework, das ein System aus Design Tokens, Utility-Klassen und flexiblen Layout-Komponenten bietet. Die Library ist framework-agnostisch und kann in jeder modernen Webanwendung verwendet werden.
-
-## Navigation
-
-- [Einführung](/getting-started/index)
-- [Installation](/getting-started/installation)
-- [Styles](/getting-started/styles)
-- [Module](/modules/)
-- [Guide](/guide/)
-
-## Schnellstart
-
-Für eine schnelle Installation und Einrichtung:
+Der schnellste Weg, mit Casoon UI zu beginnen:
 
 ```bash
 npm install @casoon/ui-lib@latest
 ```
 
-Detaillierte Installationsanweisungen finden Sie in der [Installationsanleitung](/getting-started/installation).
-
-## Architektur der Library
-
-Die Casoon UI Library folgt einer modularen, schichtbasierten Architektur:
-
-```
-@casoon/ui-lib/
-├── core.css           # Kern-Styles
-├── themes/            # Theme-spezifische CSS-Dateien
-└── modules/           # Einzelne Modul-CSS-Dateien
+```css
+@import "@casoon/ui-lib/core.css";
 ```
 
-Details zur CSS-Layer-Struktur finden Sie in der [Einführung](/getting-started/index).
+Für detaillierte Installationsanweisungen besuchen Sie die [Installationsanleitung](/getting-started/installation).
 
-## Best Practices
+## Inhaltsübersicht
 
-- **Konsistente Verwendung von Tokens**: Nutzen Sie die Design Tokens statt Hartkodierung
-- **Utility-First-Ansatz**: Kombinieren Sie Utility-Klassen für effizientes Styling
-- **Modulare Imports**: Importieren Sie nur die benötigten Module
-- **Semantisches HTML**: Verwenden Sie semantisch korrektes HTML
-- **Barrierefreiheit**: Achten Sie auf zugängliche Farben und ARIA-Attribute
-- **Mobile First**: Gestalten Sie Layouts zuerst für mobile Geräte
+### Komponenten
 
-## Support
+Die Casoon UI Library bietet eine umfangreiche Sammlung von Komponenten für verschiedene UI-Anforderungen:
 
-Bei Problemen:
-1. Überprüfen Sie die [Dokumentation](https://github.com/casoon/ui-lib)
-2. Erstellen Sie ein [Issue](https://github.com/casoon/ui-lib/issues)
-3. Kontaktieren Sie das [Support-Team](mailto:support@casoon.com)
+- **Basis-Komponenten**: Button, Card, Avatar, Badge, Chip, Tooltip
+- **Formular-Komponenten**: Input, Select, Checkbox, Radio, Switch
+- **Layout-Komponenten**: Grid, Container, Header, Footer, Sidebar
+- **Feedback-Komponenten**: Alert, Toast, Modal, Notification, Progress
+
+Entdecken Sie die [komplette Komponentenbibliothek](/components/).
+
+### Effekte
+
+Das Effekt-System umfasst spezialisierte visuelle Effekte und Animationen:
+
+- **Visuelle Effekte**: Neon, Glasmorphismus, Schatten, 3D-Transformationen
+- **Interaktionen**: Hover, Focus, Active, Ripple
+- **Zustände**: Success, Error, Warning, Loading, Disabled
+
+Erfahren Sie mehr im [Effekt-System Guide](/guide/effects-system).
+
+### Design-System
+
+Das Design-System basiert auf einem strukturierten Ansatz mit:
+
+- **Layer-System**: Kontrollierte CSS-Spezifität und Organisation
+- **Design-Tokens**: Konsistente Designvariablen für Farben, Abstände, etc.
+- **Theming**: Flexible Anpassungsmöglichkeiten für verschiedene visuelle Stile
+
+Mehr dazu in der [Anleitung](/guide/).
+
+## Support und Ressourcen
+
+- [GitHub Repository](https://github.com/casoon/ui-lib)
+- [Fehlerbehebung](/getting-started/#troubleshooting)
+- [FAQs](/getting-started/#häufige-fragen-faq)
 
 ## Lizenz
 
-Die Casoon UI Library ist unter der MIT-Lizenz veröffentlicht. 
+Die Casoon UI Library ist unter der MIT-Lizenz veröffentlicht.
 
 ## Nutzung in KI-Tools (Model Context Protocol – MCP)
 

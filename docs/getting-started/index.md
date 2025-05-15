@@ -7,64 +7,22 @@ category: Getting Started
 import { UI_LIB_VERSION } from '../.vitepress/data/versions'
 </script>
 
-# Einführung in Casoon UI Library
+# Erste Schritte mit Casoon UI
 
-Die Casoon UI Library ist ein modernes, modulares CSS-Framework und Design-System, das auf fortschrittlichen Web-Technologien basiert und für moderne Webanwendungen optimiert ist. Die aktuelle Version ist {{ UI_LIB_VERSION }}.
+Willkommen bei der Casoon UI Library. Diese Seite bietet eine detaillierte Einführung und alle Informationen, die Sie für den Einstieg benötigen. Die aktuelle Version ist {{ UI_LIB_VERSION }}.
 
-## Hauptmerkmale
+## Technische Grundlagen
+
+Die Casoon UI Library basiert auf fortschrittlichen Web-Technologien und bietet einen modernen Ansatz für UI-Entwicklung:
 
 - **CSS Layer-basierte Architektur**: Präzise Steuerung der Spezifität und saubere Organisation des Codes
-- **Container Queries**: Komponentenbasierte Responsivität statt ausschließlich viewport-basierter Ansätze
-- **Integrierte Barrierefreiheit**: Umfassende Unterstützung für Screenreader, Tastaturnavigation und reduzierte Bewegung
+- **Container Queries**: Komponentenbasierte Responsivität für flexiblere Layouts
 - **Lightning CSS Optimierung**: Effiziente Verarbeitung moderner CSS-Features
-- **Flüssige Interpolation**: Unterstützung für `interpolate-size` zur flüssigen Animation zwischen Größenwerten
-- **Fortschrittliche Animationen**: Vereinheitlichtes Animationssystem mit verbesserter Barrierefreiheit
-- **Vollständige Dark Mode-Integration**: Durchgängige Unterstützung mit `color-scheme` und `light-dark()`
-- **Umfassender RTL-Support**: Bidirektionale Layouts mit `[dir="rtl"]` für alle Komponenten
+- **Barrierefreiheit**: Ganzheitliche Unterstützung für assistive Technologien
 
-## Neuerungen in der aktuellen Version
+## CSS-Layer-System im Detail
 
-Die aktuelle Version bringt mehrere wichtige Verbesserungen:
-
-- **Optimierte Animations-CSS**: Vereinheitlichtes Benennungsschema (`slide-in-*` statt `slide-from-*`), reduzierte Redundanz und verbesserte Custom Properties
-- **Erweiterte Barrierefreiheit in Animationen**: Implementierung von `.motion-safe` und `.motion-reduce` Utilities für optimale `prefers-reduced-motion`-Unterstützung
-- **Dialog-Animationen**: Spezielle Animationen für modale Fenster und `<dialog>`-Elemente mit `.dialog-enter`/`.dialog-exit`
-- **Animierte Fokus-Indikatoren**: Pulsierende Fokus-Ringe für bessere Barrierefreiheit
-- **Gestaffelte Animationen**: Sequentielle Animationen für Listen und Gruppen
-- **Vollständige Dark Mode-Integration**: Durchgängige Implementierung mit `color-scheme: light dark` und `light-dark()` CSS-Funktion
-- **Umfassender RTL-Support**: Erweiterte bidirektionale Layouts mit `[dir="rtl"]` Selektoren
-- **Moderne CSS-Validierung**: Implementierung der `:has()`-Selektor-Validierung mit visuellen Indikatoren
-- **Verbesserte Formular-Layouts**: Neue Klassen für flexiblere Formular-Strukturen
-- **Integration von custom-properties in tokens-Layer**: Vereinfachte Layer-Struktur durch Zusammenführung
-
-## Schnelleinstieg
-
-Die einfachste Methode, mit der Casoon UI Library zu starten, ist die Installation über npm:
-
-```bash
-npm install @casoon/ui-lib@latest
-```
-
-Und dann in Ihrem Projekt importieren:
-
-```js
-// In Ihrer JavaScript-Datei
-import '@casoon/ui-lib/core.css';
-```
-
-## Philosophie und Ansatz
-
-Die Casoon UI Library folgt diesen Kernprinzipien:
-
-1. **Progressive Enhancement**: Grundfunktionalität für alle, erweiterte Features für moderne Browser
-2. **Modulare Architektur**: Selektives Importieren nur der benötigten Komponenten
-3. **Wartbarkeit**: Klares Layer-System für bessere Lesbarkeit und Kollaborierung
-4. **Performance**: Optimiert für Geschwindigkeit und Ressourceneffizienz
-5. **Barrierefreiheit**: Von Grund auf für universelle Nutzbarkeit konzipiert
-
-## Layer-System
-
-Die CSS-Layer-Architektur ist das Herzstück der Casoon UI Library und bietet eine elegante Lösung für Spezifitätskonflikte und Modularität:
+Das Herzstück der Casoon UI Library ist das präzise strukturierte Layer-System:
 
 ```css
 @layer reset,                /* Grundlegender Browser-Reset */
@@ -86,9 +44,49 @@ Die CSS-Layer-Architektur ist das Herzstück der Casoon UI Library und bietet ei
        themes;               /* Theming-System */
 ```
 
-## Container Queries
+Dieses Layer-System bietet mehrere Vorteile:
+- Vermeidung von Spezifitätskonflikten
+- Bessere Organisation des Codes
+- Möglichkeit zur selektiven Überschreibung
 
-Statt ausschließlich auf Media Queries zu setzen, verwendet die Casoon UI Library Container Queries für eine komponentenbasierte Responsivität:
+## Detaillierte Installationsanleitung
+
+### Installation über npm
+
+```bash
+npm install @casoon/ui-lib@latest
+```
+
+### Import in Ihr Projekt
+
+Sie können die gesamte Library oder einzelne Module importieren:
+
+```js
+// Gesamte Library
+import '@casoon/ui-lib/core.css';
+
+// Nur bestimmte Module
+import '@casoon/ui-lib/modules/button.module.css';
+import '@casoon/ui-lib/modules/card.module.css';
+```
+
+### Themes aktivieren
+
+1. Importieren Sie ein Theme:
+   ```js
+   import '@casoon/ui-lib/themes/day.css';
+   ```
+
+2. Aktivieren Sie das Theme über eine CSS-Klasse:
+   ```html
+   <body class="theme-day">
+     <!-- Ihr Inhalt -->
+   </body>
+   ```
+
+## Container Queries in der Praxis
+
+Die Casoon UI Library nutzt Container Queries für komponentenbasierte Responsivität:
 
 ```html
 <div class="container-query">
@@ -98,9 +96,11 @@ Statt ausschließlich auf Media Queries zu setzen, verwendet die Casoon UI Libra
 </div>
 ```
 
-## Design Tokens
+Dies ermöglicht eine flexiblere Layout-Gestaltung als klassische Media Queries, da Komponenten basierend auf dem verfügbaren Platz ihres Containers reagieren können.
 
-Design Tokens bilden die Grundlage für ein konsistentes Erscheinungsbild:
+## Arbeiten mit Design Tokens
+
+Design Tokens sind die Grundbausteine des visuellen Systems:
 
 ```css
 :root {
@@ -116,213 +116,98 @@ Design Tokens bilden die Grundlage für ein konsistentes Erscheinungsbild:
 }
 ```
 
-## Integration in Ihr Projekt
+Die Verwendung von Design Tokens anstelle von hartkodierten Werten sorgt für:
+- Konsistentes Design
+- Einfachere Wartbarkeit
+- Flexiblere Theming-Möglichkeiten
 
-Die Casoon UI Library kann auf verschiedene Arten in Ihr Projekt integriert werden:
+## Erste Schritte für Entwickler
 
-```html
-<!-- Über ein CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/core.css">
+Um schnell mit der Casoon UI Library zu arbeiten, empfehlen wir folgende ersten Schritte:
 
-<!-- Als npm-Paket -->
-<!-- In Ihrer JavaScript-Datei -->
+1. **Verstehen Sie die Struktur**: Machen Sie sich mit dem Layer-System und der Modulorganisation vertraut
+2. **Erkunden Sie die Komponenten**: Sehen Sie sich die verfügbaren [Komponenten](/components/) an
+3. **Lernen Sie die Utility-Klassen**: Nutzen Sie die [Utility-Klassen](/getting-started/utilities) für schnelles Styling
+4. **Verstehen Sie die Themes**: Erfahren Sie, wie Sie [Themes](/getting-started/themes) anpassen können
+
+## Framework-Integration
+
+Die Casoon UI Library funktioniert mit allen modernen JavaScript-Frameworks:
+
+### React
+
+```jsx
+// In Ihrer App.jsx oder index.jsx
 import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css';
 
-<!-- Mit Astro.js -->
----
-import '@casoon/ui-lib/core.css';
----
-```
-
-## Nächste Schritte
-
-- [Installation und Konfiguration](/getting-started/installation)
-- [Layout-System kennenlernen](/getting-started/layout)
-- [Komponenten erkunden](/components/)
-- [Themes und Anpassungen](/getting-started/themes)
-
-## Einführung
-
-Die Casoon UI Library ist eine moderne, flexible und zugängliche Komponentenbibliothek für Webanwendungen. Sie bietet eine umfangreiche Sammlung von wiederverwendbaren UI-Komponenten, die sich nahtlos in Ihre Projekte integrieren lassen.
-
-## Schnellstart
-
-Die komplette Installationsanleitung mit allen Optionen ist unter [Installation](/getting-started/installation) zu finden. Hier eine kurze Übersicht:
-
-```bash
-npm install @casoon/ui-lib@latest
-```
-
-1. Importieren Sie die Core-CSS:
-   ```js
-   import '@casoon/ui-lib/core.css';
-   ```
-
-2. Importieren Sie ein Theme:
-   ```js
-   import '@casoon/ui-lib/themes/day.css';
-   ```
-
-3. Aktivieren Sie das Theme:
-   ```html
-   <body class="theme-day">
-     <!-- Ihr Inhalt -->
-   </body>
-   ```
-
-## Architektur
-
-### CSS-Layer-System
-
-Die Casoon UI Library nutzt ein fortschrittliches CSS Cascade Layers-System für präzise Spezifitätskontrolle:
-
-```css
-@layer reset,                /* Browser-Reset, Normalisierung */
-       tokens,               /* Design-Tokens, Variablen */
-       core,                 /* Kernfunktionalitäten */
-       logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
-       colors,               /* Farbsystem */
-       color-mix,            /* Farbmischungen und -variationen */
-       layout,               /* Layout-Grundlagen */
-       typography,           /* Typografie-System */
-       utilities,            /* Utility-Klassen */
-       smooth-scroll,        /* Scroll-Verhalten */
-       accessibility,        /* Barrierefreiheit */
-       icons,                /* Icon-System */
-       animations,           /* Animationen */
-       effects-base,         /* Basis-Effekte (Transitions, etc.) */
-       effects-blur,         /* Blur-Effekte */
-       effects-shadow,       /* Schatten-Effekte */
-       effects-glass,        /* Glass-Effekte */
-       themes,               /* Theming-System */
-       components;           /* Komponenten (für benutzerdefinierte Erweiterungen) */
-```
-
-### Module vs. Components
-
-Die Casoon UI Library unterscheidet zwischen:
-
-#### Module
-
-Fertige, eigenständige UI-Komponenten, die einzeln importiert werden können:
-
-```css
-/* Beispiele für importierbare Module */
-@import '@casoon/ui-lib/modules/button.module.css';
-@import '@casoon/ui-lib/modules/card.module.css';
-@import '@casoon/ui-lib/modules/form.module.css';
-```
-
-Die vollständige Liste der Module finden Sie in der [Moduldokumentation](/modules/).
-
-#### Components
-
-Der Components-Bereich ist die neuere, React-basierte Implementierung der UI-Bibliothek. Die Components verwenden intern die Module für ihre Styles, bieten aber zusätzlich JavaScript-Funktionalität und erweiterte Interaktivität.
-
-## Kernfunktionen
-
-Die Library besteht aus mehreren Kernbereichen:
-
-### [Layout-System](/getting-started/layout)
-Bietet Container, Grid-System, Flexbox-Utilities und Spacing-System für strukturierte und responsive Layouts.
-
-### [Design Tokens](/getting-started/tokens)
-Definieren die grundlegenden visuellen Eigenschaften wie Farben, Abstände, Typografie und mehr, implementiert als CSS-Variablen.
-
-### [Typografie](/getting-started/typography)
-Ein vollständiges Typografie-System mit vordefinierten Schriftgrößen, -gewichten und -stilen.
-
-### [Utility-Klassen](/getting-started/utilities)
-Ermöglichen schnelles Styling ohne Custom-CSS durch vordefinierte Klassen für häufig benötigte Eigenschaften.
-
-### [Themes](/getting-started/themes)
-Unterstützung für verschiedene visuelle Themes, die einfach durch CSS-Klassen aktiviert werden können.
-
-### [Icons](/getting-started/iconsets)
-Eine umfassende Sammlung von SVG-Icons, die über CSS-Klassen eingebunden werden können.
-
-### [Effekte](/guide/effects)
-Modulare visuelle Effekte wie Blur, Schatten und Glass, die einzeln importiert und verwendet werden können.
-
-## Best Practices
-
-### Zugänglichkeit
-- Verwenden Sie semantische HTML-Elemente
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
-- Fügen Sie ARIA-Attribute hinzu
-- Testen Sie mit Screenreadern
-
-### Responsive Design
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie Komponenten an mobile Geräte an
-- Nutzen Sie Flexbox für flexible Layouts
-- Setzen Sie Media Queries für spezifische Anpassungen
-
-### Performance
-- Laden Sie nur die benötigten Module
-- Importieren Sie Effekte gezielt nach Bedarf
-- Verwenden Sie Browser-Caching
-- Optimieren Sie Assets für schnelle Ladezeiten
-- Minimieren Sie CSS-Dateien
-- Vermeiden Sie übermäßige Verschachtelung
-
-## Browser-Unterstützung
-
-- Chrome (neueste 2 Versionen)
-- Firefox (neueste 2 Versionen)
-- Safari (neueste 2 Versionen)
-- Edge (neueste 2 Versionen)
-
-## Häufige Fragen (FAQ)
-
-### Wie kann ich das Theme anpassen?
-
-```css
-:root {
-  --color-primary: #007bff;
-  --color-secondary: #6c757d;
-  --font-family: 'Inter', sans-serif;
+function App() {
+  return (
+    <div className="theme-day">
+      <button className="button primary">Klick mich</button>
+    </div>
+  );
 }
 ```
 
-Weitere Informationen zum Theming finden Sie unter [Themes](/getting-started/themes).
+### Vue.js
 
-### Wie aktiviere ich ein bestimmtes Theme?
-
-```html
-<!-- Tag Theme -->
-<body class="theme-day">
-  <!-- Inhalt -->
-</body>
-
-<!-- Nacht Theme -->
-<body class="theme-night">
-  <!-- Inhalt -->
-</body>
+```js
+// In Ihrer main.js
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css';
 ```
+
+```vue
+<template>
+  <div class="theme-day">
+    <button class="button primary">Klick mich</button>
+  </div>
+</template>
+```
+
+### Astro
+
+```astro
+---
+// In Ihrer .astro Datei
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css';
+---
+
+<div class="theme-day">
+  <button class="button primary">Klick mich</button>
+</div>
+```
+
+## Häufige Fragen (FAQ)
+
+### Kann ich die Library mit React/Vue/Angular verwenden?
+Ja, die Casoon UI Library ist framework-agnostisch und funktioniert mit allen modernen Frontend-Frameworks.
+
+### Kann ich nur bestimmte Komponenten verwenden?
+Ja, Sie können einzelne Module importieren, um die Dateigröße zu reduzieren.
+
+### Unterstützt die Library Dark Mode?
+Ja, die Library bietet vollständige Dark Mode-Unterstützung über Themes.
+
+### Wie kann ich das Design an meine Marke anpassen?
+Sie können Design Tokens über CSS-Variablen überschreiben oder eigene Themes erstellen.
 
 ## Troubleshooting
 
-### CSS wird nicht geladen
-- Überprüfen Sie die Pfade zu den CSS-Dateien
-- Stellen Sie sicher, dass die Dateien existieren
-- Überprüfen Sie die Netzwerkanfragen
+### Komponenten werden nicht korrekt dargestellt
+Stellen Sie sicher, dass Sie die `core.css` und ein Theme importiert haben und die Theme-Klasse im HTML vorhanden ist.
 
-### Theme wird nicht angewendet
-- Stellen Sie sicher, dass core.css importiert ist
-- Überprüfen Sie, ob die Theme-Klasse gesetzt ist
-- Überprüfen Sie die Theme-Datei
+### CSS-Konflikte mit anderen Bibliotheken
+Verwenden Sie die spezifischen Layer-Namen, um die Priorität der Casoon-Stile anzupassen.
 
-### Komponenten werden nicht angezeigt
-- Überprüfen Sie die HTML-Struktur
-- Stellen Sie sicher, dass die richtigen CSS-Klassen verwendet werden
-- Importieren Sie das entsprechende Modul
+### Responsive Layouts funktionieren nicht wie erwartet
+Überprüfen Sie, ob Sie Container Queries korrekt einsetzen und die entsprechenden Klassen verwenden.
 
-## Support
+## Nächste Schritte
 
-Bei Problemen:
-1. Überprüfen Sie die [Dokumentation](https://github.com/casoon/ui-lib)
-2. Erstellen Sie ein [Issue](https://github.com/casoon/ui-lib/issues)
-3. Kontaktieren Sie das [Support-Team](mailto:support@casoon.com) 
+- [Installation und Konfiguration](/getting-started/installation) - Detaillierte Installationsanleitungen
+- [Layout-System kennenlernen](/getting-started/layout) - Erfahren Sie mehr über das Layout-System
+- [Komponenten erkunden](/components/) - Entdecken Sie die verfügbaren Komponenten
+- [Effekte](/guide/effects-system) - Erkunden Sie die visuellen Effekte und Animationen
