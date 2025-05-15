@@ -24,7 +24,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    outlineTitle: 'Auf dieser Seite',
+    outlineTitle: 'Übersicht',
     darkModeSwitchLabel: 'Erscheinungsbild',
     sidebarMenuLabel: 'Menü',
     returnToTopLabel: 'Zurück nach oben',
@@ -87,14 +87,21 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Stile',
+          text: 'Grundlegende Konzepte',
           items: [
             { text: 'Design-Tokens', link: '/getting-started/tokens' },
+            { text: 'Layer-System', link: '/guide/layer-system' },
             { text: 'Layout', link: '/getting-started/layout' },
             { text: 'Typografie', link: '/getting-started/typography' },
-            { text: 'Themes', link: '/getting-started/themes' },
+            { text: 'Themes', link: '/getting-started/themes' }
+          ]
+        },
+        {
+          text: 'Assets & Utilities',
+          items: [
             { text: 'Icon-Sets', link: '/getting-started/iconsets' },
             { text: 'Utility-Klassen', link: '/getting-started/utilities' },
+            { text: 'Effekte', link: '/guide/effects' }
           ]
         },
         {
@@ -169,25 +176,19 @@ export default defineConfig({
       ],
       '/guide/': [
         {
-          text: 'Anleitung',
+          text: 'Guide',
           items: [
-            { text: 'Übersicht', link: '/guide/' },
+            { text: 'Einführung', link: '/guide/' },
+            { text: 'Installation', link: '/guide/installation' },
             { text: 'Layer-System', link: '/guide/layer-system' },
-            { text: 'Komponenten-System', link: '/guide/component-system' },
+            { text: 'Core CSS System', link: '/guide/core-css-system' },
+            { text: 'Farbsystem', link: '/guide/colors-system' },
+            { text: 'Color-Mix System', link: '/guide/color-mix-system' },
             { text: 'Theme-System', link: '/guide/theme-system' },
-            { text: 'Icon-System', link: '/guide/icon-system' }
-          ]
-        },
-        {
-          text: 'Grundlagen',
-          items: [
-            { text: 'Farben', link: '/getting-started/tokens#farben' },
-            { text: 'Typografie', link: '/getting-started/typography' },
-            { text: 'Layout', link: '/getting-started/layout' },
-            { text: 'Theming', link: '/getting-started/themes' },
-            { text: 'Design-Tokens', link: '/getting-started/tokens' },
-            { text: 'Effekte', link: '/guide/effects' },
-            { text: 'Barrierefreiheit', link: '/getting-started/#zugänglichkeit' }
+            { text: 'CSS Variablen', link: '/guide/css-variablen' },
+            { text: 'Modulares Komponenten-System', link: '/guide/modulare-komponenten-system' },
+            { text: 'Responsive Anpassungen', link: '/guide/responsive-anpassungen' },
+            { text: 'Utility-Klassen', link: '/guide/utility-klassen' },
           ]
         }
       ],

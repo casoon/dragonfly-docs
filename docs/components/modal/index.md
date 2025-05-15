@@ -155,24 +155,31 @@ function Modal({ isOpen, onClose, children, variant = 'primary', size = 'md' }) 
 
 ```vue
 <template>
-  <div
-    v-if="isOpen"
-    class="modal"
-    :class="[
-      `modal--${variant}`,
-      `modal--${size}`
-    ]"
-  >
-    <div class="modal__content">
-      <div class="modal__header">
-        <h3>{{ title }}</h3>
-        <button class="modal__close" @click="$emit('close')">&times;</button>
-      </div>
-      <div class="modal__body">
-        <slot />
-      </div>
-      <div class="modal__footer">
-        <button class="button" @click="$emit('close')">Schließen</button>
+  <div>
+    <div 
+      v-if="isOpen" 
+      class="modal-overlay"
+      @click="closeOnOverlayClick && close()"
+    ></div>
+    
+    <div class="modal" :class="{ 'modal--open': isOpen }">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h2 class="modal__title">{{ title }}</h2>
+          <button 
+            v-if="closable" 
+            class="modal__close"
+            @click="close"
+          >&times;</button>
+        </div>
+        
+        <div class="modal__body">
+          <slot></slot>
+        </div>
+        
+        <div v-if="$slots.footer" class="modal__footer">
+          <slot name="footer"></slot>
+        </div>
       </div>
     </div>
   </div>
@@ -180,68 +187,85 @@ function Modal({ isOpen, onClose, children, variant = 'primary', size = 'md' }) 
 
 <script>
 export default {
+  name: 'Modal',
   props: {
+    title: {
+      type: String,
+      default: ''
+    },
     isOpen: {
       type: Boolean,
       default: false
     },
-    title: {
-      type: String,
-      required: true
+    closable: {
+      type: Boolean,
+      default: true
     },
-    variant: {
-      type: String,
-      default: 'primary'
-    },
-    size: {
-      type: String,
-      default: 'md'
+    closeOnOverlayClick: {
+      type: Boolean,
+      default: true
+    }
+  },
+  methods: {
+    close() {
+      this.$emit('close');
     }
   }
 }
 </script>
 
-<style>
-@import 'casoon-ui-lib/modules/modal.module.css';
-</style>
-```
+### HTML
 
-### Angular
-
-```typescript
-import { Component, Input } from '@angular/core';
-
-@Component({
-  selector: 'app-modal',
-  template: `
-    <div
-      *ngIf="isOpen"
-      class="modal"
-      [class]="'modal--' + variant + ' modal--' + size"
-    >
-      <div class="modal__content">
-        <div class="modal__header">
-          <h3>{{ title }}</h3>
-          <button class="modal__close" (click)="close.emit()">&times;</button>
-        </div>
-        <div class="modal__body">
-          <ng-content></ng-content>
-        </div>
-        <div class="modal__footer">
-          <button class="button" (click)="close.emit()">Schließen</button>
-        </div>
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="path/to/casoon-ui-lib/core.css">
+  <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/modal.module.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="openModalBtn">Modal öffnen</button>
+  
+  <div id="myModal" class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 class="modal__title">Modal Beispiel</h2>
+        <button class="modal__close">&times;</button>
+      </div>
+      <div class="modal__body">
+        <p>Dies ist der Inhalt des Modals.</p>
+      </div>
+      <div class="modal__footer">
+        <button class="button primary">Bestätigen</button>
+        <button class="button">Abbrechen</button>
       </div>
     </div>
-  `,
-  styles: [`
-    @import 'casoon-ui-lib/modules/modal.module.css';
-  `]
-})
-export class ModalComponent {
-  @Input() isOpen = false;
-  @Input() title = '';
-  @Input() variant = 'primary';
-  @Input() size = 'md';
-  @Output() close = new EventEmitter<void>();
-}
-``` 
+  </div>
+  
+  <script>
+    const modal = document.getElementById('myModal');
+    const openBtn = document.getElementById('openModalBtn');
+    const closeBtn = modal.querySelector('.modal__close');
+    const overlay = modal.querySelector('.modal__overlay');
+    const cancelBtn = modal.querySelector('.button:not(.primary)');
+    
+    // Modal öffnen
+    openBtn.addEventListener('click', () => {
+      modal.classList.add('modal--open');
+    });
+    
+    // Modal schließen
+    [closeBtn, overlay, cancelBtn].forEach(el => {
+      el.addEventListener('click', () => {
+        modal.classList.remove('modal--open');
+      });
+    });
+  </script>
+</body>
+</html> 

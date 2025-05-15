@@ -34,7 +34,6 @@ Das Layout ist Teil des zentralen Layer-Systems und wird unter den Layern `layou
 ```css
 @layer reset,                /* Grundlegender Browser-Reset */
        tokens,               /* Design-Tokens und Variablen */
-       custom-properties,    /* Registrierte CSS-Eigenschaften */
        core,                 /* Kernfunktionalitäten */
        logical-properties,   /* Bidirektionale Layouts (RTL/LTR) */
        colors,               /* Farbsystem */

@@ -97,7 +97,7 @@ Alle Komponenten können über CSS-Variablen und das Layer-System angepasst werd
 
 /* Anpassung einer Komponente */
 @layer module-button {
-  .btn--custom {
+  .btn.custom {
     background-color: var(--color-brand);
     border-radius: var(--radius-lg);
   }
@@ -117,9 +117,9 @@ Alle Komponenten können über CSS-Variablen und das Layer-System angepasst werd
 ### Button
 
 ```html
-<button class="casoon-button">Klick mich</button>
-<button class="casoon-button casoon-button--primary">Primär</button>
-<button class="casoon-button casoon-button--outline">Outline</button>
+<button class="button">Klick mich</button>
+<button class="button primary">Primär</button>
+<button class="button outline">Outline</button>
 ```
 
 [Zur Button-Dokumentation](/components/button/)
@@ -127,8 +127,8 @@ Alle Komponenten können über CSS-Variablen und das Layer-System angepasst werd
 ### Input
 
 ```html
-<input type="text" class="casoon-input" placeholder="Text eingeben">
-<input type="text" class="casoon-input casoon-input--error" value="Fehlerhafte Eingabe">
+<input type="text" class="input" placeholder="Text eingeben">
+<input type="text" class="input error" value="Fehlerhafte Eingabe">
 ```
 
 [Zur Input-Dokumentation](/components/input/)
@@ -214,7 +214,7 @@ Module: `file.module.css`
   <div class="modal__content">
     <h2 class="modal__title">Modal Titel</h2>
     <p class="modal__body">Modal Inhalt</p>
-    <button class="button button--primary">Schließen</button>
+    <button class="button primary">Schließen</button>
   </div>
 </div>
 ```
@@ -224,7 +224,7 @@ Module: `modal.module.css`
 ### Alert
 
 ```html
-<div class="casoon-alert casoon-alert--info">
+<div class="alert info">
   <span>Wichtige Information</span>
 </div>
 ```
@@ -234,7 +234,7 @@ Module: `modal.module.css`
 ### Toast
 
 ```html
-<div class="casoon-toast casoon-toast--success">
+<div class="toast success">
   <span>Aktion erfolgreich</span>
 </div>
 ```
@@ -244,10 +244,10 @@ Module: `modal.module.css`
 ### Notification
 
 ```html
-<div class="casoon-notification">
+<div class="notification">
   <h4>Neue Funktion verfügbar</h4>
   <p>Entdecken Sie unsere neuesten Features...</p>
-  <div class="casoon-notification__actions">
+  <div class="notification__actions">
     <button class="casoon-button casoon-button--small">Erkunden</button>
     <button class="casoon-button casoon-button--text casoon-button--small">Später</button>
   </div>
@@ -473,7 +473,7 @@ import 'casoon-ui-lib/modules/button.module.css';
 
 function App() {
   return (
-    <button className="button button--primary">
+    <button className="button primary">
       Primärer Button
     </button>
   );
@@ -484,7 +484,7 @@ function App() {
 
 ```vue
 <template>
-  <button class="button button--primary">
+  <button class="button primary">
     Primärer Button
   </button>
 </template>
@@ -500,22 +500,6 @@ export default {
 </script>
 ```
 
-### Angular
-
-```typescript
-// In angular.json
-"styles": [
-  "node_modules/casoon-ui-lib/core.css",
-  "node_modules/casoon-ui-lib/themes/day.css",
-  "node_modules/casoon-ui-lib/modules/button.module.css"
-]
-
-// In component.html
-<button class="button button--primary">
-  Primärer Button
-</button>
-```
-
 ### HTML
 
 ```html
@@ -527,7 +511,7 @@ export default {
   <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/button.module.css">
 </head>
 <body class="theme-day">
-  <button class="button button--primary">
+  <button class="button primary">
     Primärer Button
   </button>
 </body>

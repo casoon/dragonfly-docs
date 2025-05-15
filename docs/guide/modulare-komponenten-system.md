@@ -45,7 +45,7 @@ Diese Komponenten bieten interaktive Elemente für Benutzereingaben:
 
 | Komponente | Beschreibung | CSS-Klassen |
 |------------|--------------|-------------|
-| Button | Schaltflächen in verschiedenen Stilen | `.button`, `.button--primary`, `.button--secondary` |
+| Button | Schaltflächen in verschiedenen Stilen | `.button`, `.button.primary`, `.button.secondary` |
 | Checkbox | Auswahlboxen für mehrere Optionen | `.checkbox`, `.checkbox__input`, `.checkbox__label` |
 | Input | Textfelder und andere Eingabetypen | `.input`, `.input--large`, `.input--rounded` |
 | Radio | Optionsfelder für gegenseitig ausschließende Auswahl | `.radio`, `.radio__input`, `.radio__label` |
@@ -164,27 +164,22 @@ Die Komponenten sind für Barrierefreiheit optimiert:
 ### Einfache Button-Komponente
 
 ```html
-<button class="button">Standard-Button</button>
-<button class="button button--primary">Primär-Button</button>
-<button class="button button--secondary">Sekundär-Button</button>
-<button class="button button--large">Großer Button</button>
-<button class="button button--primary button--rounded">Abgerundeter Primär-Button</button>
+<button class="button primary">Primär-Button</button>
+<button class="button secondary">Sekundär-Button</button>
+<button class="button large">Großer Button</button>
+<button class="button primary rounded">Abgerundeter Primär-Button</button>
 ```
 
 ### Card-Komponente mit Inhalt
 
 ```html
 <div class="card">
-  <div class="card__header">
-    <h3 class="card__title">Kartentitel</h3>
-  </div>
+  <div class="card__header">Karten-Titel</div>
   <div class="card__body">
-    <p>Karteninhalt mit Text und anderen Elementen.</p>
-    <button class="button button--primary">Aktion</button>
+    <p>Inhalt der Karte...</p>
+    <button class="button primary">Aktion</button>
   </div>
-  <div class="card__footer">
-    <small>Zusätzliche Informationen</small>
-  </div>
+  <div class="card__footer">Footer der Karte</div>
 </div>
 ```
 
@@ -193,32 +188,16 @@ Die Komponenten sind für Barrierefreiheit optimiert:
 ```html
 <form class="form">
   <div class="form-group">
-    <label for="name" class="form-label">Name</label>
-    <input id="name" type="text" class="input" placeholder="Ihren Namen eingeben">
+    <label for="name">Name</label>
+    <input type="text" id="name" class="input" placeholder="Namen eingeben">
   </div>
   
   <div class="form-group">
-    <label for="email" class="form-label">E-Mail</label>
-    <input id="email" type="email" class="input" placeholder="Ihre E-Mail-Adresse">
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" class="input" placeholder="E-Mail eingeben">
   </div>
   
-  <div class="form-group">
-    <label for="category" class="form-label">Kategorie</label>
-    <select id="category" class="select">
-      <option value="">Bitte wählen</option>
-      <option value="1">Kategorie 1</option>
-      <option value="2">Kategorie 2</option>
-    </select>
-  </div>
-  
-  <div class="form-group">
-    <div class="checkbox">
-      <input id="terms" type="checkbox" class="checkbox__input">
-      <label for="terms" class="checkbox__label">Ich akzeptiere die AGB</label>
-    </div>
-  </div>
-  
-  <button type="submit" class="button button--primary">Absenden</button>
+  <button type="submit" class="button primary">Absenden</button>
 </form>
 ```
 
@@ -399,3 +378,26 @@ Das modulare Komponenten-System ist für Lightning CSS optimiert:
 3. **Mobile-First**: Beginnen Sie mit der mobilen Ansicht und erweitern Sie für größere Screens
 4. **Semantisches HTML**: Verwenden Sie das passende HTML-Element für jeden Zweck
 5. **CSS-Variablen nutzen**: Verwenden Sie vorhandene CSS-Variablen statt fester Werte 
+
+```css
+/* Button-Modul */
+@layer components {
+  .button {
+    /* Basis-Stile für alle Buttons */
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .button.primary {
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid var(--color-primary);
+  }
+  
+  /* Weitere Varianten... */
+} 

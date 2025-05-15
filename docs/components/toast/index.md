@@ -260,28 +260,47 @@ function Toast({ children, type = 'info', position = 'top-right', onClose }) {
 
 ```vue
 <template>
-  <div class="toast" :class="[`toast--${type}`, `toast--${position}`]">
+  <div 
+    class="toast"
+    :class="[
+      type,
+      { 'toast--closable': closable },
+      { 'toast--visible': visible }
+    ]"
+  >
     <div class="toast__content">
-      <slot />
+      {{ message }}
     </div>
-    <button v-if="closable" class="toast__close" @click="$emit('close')">&times;</button>
+    <button 
+      v-if="closable" 
+      class="toast__close"
+      @click="$emit('close')"
+    >
+      &times;
+    </button>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'Toast',
   props: {
+    message: {
+      type: String,
+      required: true
+    },
     type: {
       type: String,
-      default: 'info'
-    },
-    position: {
-      type: String,
-      default: 'top-right'
+      default: 'info',
+      validator: value => ['success', 'error', 'warning', 'info'].includes(value)
     },
     closable: {
       type: Boolean,
-      default: false
+      default: true
+    },
+    visible: {
+      type: Boolean,
+      default: true
     }
   }
 }
@@ -292,29 +311,34 @@ export default {
 </style>
 ```
 
-### Angular
+### HTML
 
-```typescript
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-
-@Component({
-  selector: 'app-toast',
-  template: `
-    <div class="toast" [class]="'toast--' + type + ' toast--' + position">
-      <div class="toast__content">
-        <ng-content></ng-content>
-      </div>
-      <button *ngIf="closable" class="toast__close" (click)="close.emit()">&times;</button>
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="path/to/casoon-ui-lib/core.css">
+  <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/toast.module.css">
+</head>
+<body>
+  <div class="toast success toast--visible">
+    <div class="toast__content">
+      Aktion erfolgreich ausgeführt!
     </div>
-  `,
-  styles: [`
-    @import 'casoon-ui-lib/modules/toast.module.css';
-  `]
-})
-export class ToastComponent {
-  @Input() type = 'info';
-  @Input() position = 'top-right';
-  @Input() closable = false;
-  @Output() close = new EventEmitter<void>();
-}
+    <button class="toast__close">&times;</button>
+  </div>
+  
+  <script>
+    // Toast nach 3 Sekunden ausblenden
+    setTimeout(() => {
+      document.querySelector('.toast').classList.remove('toast--visible');
+    }, 3000);
+    
+    // Close-Button Funktionalität
+    document.querySelector('.toast__close').addEventListener('click', () => {
+      document.querySelector('.toast').classList.remove('toast--visible');
+    });
+  </script>
+</body>
+</html>
 ``` 

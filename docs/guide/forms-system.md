@@ -53,7 +53,7 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
     <label for="email" class="form-label">E-Mail</label>
     <input type="email" id="email" class="form-input">
   </div>
-  <button type="submit" class="button button--primary">Absenden</button>
+  <button type="submit" class="button primary">Absenden</button>
 </form>
 ```
 
@@ -69,7 +69,7 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
     <label for="inline-email" class="form-label">E-Mail</label>
     <input type="email" id="inline-email" class="form-input">
   </div>
-  <button type="submit" class="button button--primary">Absenden</button>
+  <button type="submit" class="button primary">Absenden</button>
 </form>
 ```
 
@@ -91,7 +91,7 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
   </div>
   <div class="form-group">
     <div class="form-control form-control--offset">
-      <button type="submit" class="button button--primary">Absenden</button>
+      <button type="submit" class="button primary">Absenden</button>
     </div>
   </div>
 </form>
@@ -354,7 +354,7 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
   <label for="input-button" class="form-label">Mit Button</label>
   <div class="form-input-group">
     <input type="text" id="input-button" class="form-input" placeholder="Suchen">
-    <button type="button" class="button button--primary">Suchen</button>
+    <button type="button" class="button primary">Suchen</button>
   </div>
 </div>
 ```
@@ -431,7 +431,7 @@ Für responsive Formulare können Sie Grid und Form-Komponenten kombinieren:
     </div>
   </div>
   
-  <button type="submit" class="button button--primary">Absenden</button>
+  <button type="submit" class="button primary">Absenden</button>
 </form>
 ```
 
@@ -585,7 +585,7 @@ Das Formularsystem verwendet folgende CSS-Variablen, die Sie anpassen können:
   </div>
   
   <div class="form-group">
-    <button type="submit" class="button button--primary button--lg button--block">Registrieren</button>
+    <button type="submit" class="button primary lg block">Registrieren</button>
   </div>
 </form>
 ```

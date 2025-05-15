@@ -5,9 +5,9 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
 ## Verwendung
 
 ```html
-<button class="button button--primary">Primärer Button</button>
-<button class="button button--secondary">Sekundärer Button</button>
-<button class="button button--outline">Outline Button</button>
+<button class="button primary">Primärer Button</button>
+<button class="button secondary">Sekundärer Button</button>
+<button class="button outline">Outline Button</button>
 ```
 
 ## Module importieren
@@ -21,16 +21,16 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
 ### Größen
 
 ```html
-<button class="button button--sm">Kleiner Button</button>
+<button class="button sm">Kleiner Button</button>
 <button class="button">Standard Button</button>
-<button class="button button--lg">Großer Button</button>
+<button class="button lg">Großer Button</button>
 ```
 
 ### Zustände
 
 ```html
 <button class="button" disabled>Deaktivierter Button</button>
-<button class="button button--loading">
+<button class="button loading">
   <span class="button__text">Ladender Button</span>
   <span class="button__loader"></span>
 </button>
@@ -39,18 +39,18 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
 ### Farben
 
 ```html
-<button class="button button--primary">Primär</button>
-<button class="button button--secondary">Sekundär</button>
-<button class="button button--success">Erfolg</button>
-<button class="button button--danger">Gefahr</button>
-<button class="button button--warning">Warnung</button>
-<button class="button button--info">Info</button>
+<button class="button primary">Primär</button>
+<button class="button secondary">Sekundär</button>
+<button class="button success">Erfolg</button>
+<button class="button danger">Gefahr</button>
+<button class="button warning">Warnung</button>
+<button class="button info">Info</button>
 ```
 
 ### Mit Icon
 
 ```html
-<button class="button button--primary">
+<button class="button primary">
   <span class="button__icon">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M5 12h14"></path>
@@ -64,7 +64,7 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
 ### Icon-Button
 
 ```html
-<button class="button button--icon button--primary">
+<button class="button icon primary">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M12 5v14"></path>
     <path d="M5 12h14"></path>
@@ -75,7 +75,7 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
 ### Block-Button
 
 ```html
-<button class="button button--primary button--block">Volle Breite</button>
+<button class="button primary block">Volle Breite</button>
 ```
 
 ## CSS-Variablen
@@ -140,7 +140,7 @@ Die Button-Komponente verwendet folgende CSS-Variablen:
 
 - Verwenden Sie relative Einheiten (rem, em) für Größenangaben
 - Passen Sie Padding und Schriftgröße für verschiedene Bildschirmgrößen an
-- Verwenden Sie `button--block` auf mobilen Geräten für bessere Touch-Targets
+- Verwenden Sie `block` auf mobilen Geräten für bessere Touch-Targets
 
 ### Performance
 
@@ -166,7 +166,7 @@ function Button({
 }) {
   return (
     <button
-      className={`button ${variant ? `button--${variant}` : ''} ${size ? `button--${size}` : ''} ${block ? 'button--block' : ''} ${isLoading ? 'button--loading' : ''}`}
+      className={`button ${variant || ''} ${size || ''} ${block ? 'block' : ''} ${isLoading ? 'loading' : ''}`}
       {...props}
     >
       {isLoading && <span className="button__loader"></span>}
@@ -185,10 +185,10 @@ export default Button;
   <button
     class="button"
     :class="[
-      variant ? `button--${variant}` : '',
-      size ? `button--${size}` : '',
-      { 'button--block': block },
-      { 'button--loading': loading }
+      variant || '',
+      size || '',
+      { 'block': block },
+      { 'loading': loading }
     ]"
     v-bind="$attrs"
   >
@@ -228,49 +228,6 @@ export default {
 </script>
 ```
 
-### Angular
-
-```typescript
-// button.component.ts
-import { Component, Input } from '@angular/core';
-
-@Component({
-  selector: 'app-button',
-  template: `
-    <button
-      class="button"
-      [class.button--primary]="variant === 'primary'"
-      [class.button--secondary]="variant === 'secondary'"
-      [class.button--outline]="variant === 'outline'"
-      [class.button--success]="variant === 'success'"
-      [class.button--danger]="variant === 'danger'"
-      [class.button--warning]="variant === 'warning'"
-      [class.button--info]="variant === 'info'"
-      [class.button--sm]="size === 'sm'"
-      [class.button--lg]="size === 'lg'"
-      [class.button--block]="block"
-      [class.button--loading]="loading"
-    >
-      <span *ngIf="loading" class="button__loader"></span>
-      <span class="button__text">
-        <ng-content></ng-content>
-      </span>
-    </button>
-  `
-})
-export class ButtonComponent {
-  @Input() variant: 'primary' | 'secondary' | 'outline' | 'success' | 'danger' | 'warning' | 'info' = 'primary';
-  @Input() size: 'sm' | 'lg' | '' = '';
-  @Input() block = false;
-  @Input() loading = false;
-}
-
-// In der styles.css oder angular.json
-// @import 'casoon-ui-lib/core.css';
-// @import 'casoon-ui-lib/themes/day.css';
-// @import 'casoon-ui-lib/modules/button.module.css';
-```
-
 ### HTML
 
 ```html
@@ -282,15 +239,15 @@ export class ButtonComponent {
   <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/button.module.css">
 </head>
 <body class="theme-day">
-  <button class="button button--primary">
+  <button class="button primary">
     Primärer Button
   </button>
   
-  <button class="button button--outline button--lg">
+  <button class="button outline lg">
     Großer Outline Button
   </button>
   
-  <button class="button button--success button--block">
+  <button class="button success block">
     Erfolgs-Button mit voller Breite
   </button>
 </body>

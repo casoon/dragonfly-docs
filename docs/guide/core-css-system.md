@@ -9,310 +9,614 @@ Das Kern-CSS-System der Casoon UI Library besteht aus mehreren zentralen Dateien
 
 ## Core.css
 
-Die `core.css` ist die zentrale Hauptdatei der Casoon UI Library, die alle notwendigen CSS-Komponenten in der richtigen Reihenfolge importiert.
+Die `core.css` ist das zentrale Organisationssystem der Casoon UI Library. Sie definiert die Struktur der CSS-Layer und koordiniert deren Import in der richtigen Reihenfolge, um ein präzises und wartbares Styling-System zu gewährleisten.
 
-### Importieren
+## Übersicht der Core-Datei
 
-Um die gesamte CSS-Funktionalität der Library zu nutzen, reicht es, diese eine Datei zu importieren:
-
-```css
-@import '@casoon/ui-lib/core.css';
-```
-
-### Struktur und Aufbau
-
-Die `core.css` organisiert Importe in thematisch gruppierte Bereiche:
+Die `core.css` Datei organisiert das gesamte CSS-Framework durch eine strukturierte Reihe von Imports:
 
 ```css
-/* Basis-System: Reset, Custom Properties, Tokens und logische Eigenschaften */
-@import url("base.css") layer(base);
+/**
+ * Core CSS
+ *
+ * Zentrale Datei zur Organisation und Priorisierung aller CSS-Layer und -Module.
+ * Hier werden alle Layer deklariert und die entsprechenden CSS-Dateien importiert.
+ * Die Reihenfolge der Importe bestimmt die Kaskaden-Priorität (spätere haben Vorrang).
+ */
 
-/* Layout-System: Container, Grid, Flexbox */
-@import url("layout.css") layer(layout);
-@import url("layout.queries.css") layer(layout);
+/* 
+ * Basis-System
+ * Enthält Reset, Custom Properties, Tokens und logische Eigenschaften
+ */
+@import url("base.css");
 
-/* Typografie-System */
+/* 
+ * Layout-System
+ * Container, Grid, Flexbox-Layouts und responsive Anpassungen
+ */
+@import url("layout.css");
+@import url("layout.queries.css");
+
+/* 
+ * Typografie-System
+ * Schriftarten, Größen, Abstände und Text-Formatierungen
+ */
 @import url("typography.css") layer(typography);
 
-/* Modul-System für UI-Komponenten */
-@import url("modules.css") layer(modules);
+/* 
+ * Modul-System
+ * Wiederverwendbare UI-Komponenten in eigenständigen Dateien
+ */
+@import url("components.css");
 
-/* Animations-System */
-@import url("animations.css") layer(animations);
-
-/* Effekt-System */
-@import url("effects.css") layer(effects);
-
-/* Theme-System */
-@import url("themes.css") layer(themes);
-
-/* Icon-System */
-@import url("icons.css") layer(icons);
+/* 
+ * Icon-System
+ * SVG-Symbole und Icon-Fonts
+ */
+@import url("icons.css");
 ```
 
-Diese Struktur gewährleistet, dass:
-- Die Grundlagen (Tokens, Reset, etc.) zuerst geladen werden
-- Die Layer in einer sorgfältig durchdachten Reihenfolge für korrekte Spezifität definiert sind
-- Spätere Importe höhere Priorität in der CSS-Kaskade haben
+## Layer-Hierarchie
 
-## Base.css
-
-Die `base.css` definiert das Fundament des CSS-Systems und importiert grundlegende Stilkomponenten.
-
-### Struktur
+Die gesamte Layer-Struktur ist in der `base.css` definiert und folgt einer klaren Hierarchie:
 
 ```css
-/* Reset und Grundlagen */
-@import url("base/reset.css") layer(reset);
-
-/* Tokens und Properties */
-@import url("base/tokens.css") layer(tokens);
-/* @import url("base/custom-properties.css") layer(custom-properties); -- Removed in current version */
-
-/* Core-Funktionalitäten */
-@import url("base/logical-properties.css") layer(logical-properties);
-@import url("base/colors.css") layer(colors);
-@import url("base/color-mix.css") layer(color-mix);
-
-/* Utilities und Accessibility */
-@import url("base/utilities.css") layer(utilities);
-@import url("base/smooth-scroll.css") layer(smooth-scroll);
-@import url("base/accessibility.css") layer(accessibility);
+@layer reset,                /* Browser-Reset, Normalisierung */
+       tokens,               /* Design-Tokens und Variablen */
+       core,                 /* Kernfunktionalitäten */
+       logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
+       colors,               /* Farbsystem */
+       color-mix,            /* Farbmischungen und -variationen */
+       layout,               /* Layout-Grundlagen */
+       layout-queries,       /* Responsive Anpassungen */
+       typography,           /* Typografie-System */
+       utilities,            /* Utility-Klassen */
+       smooth-scroll,        /* Scroll-Verhalten */
+       accessibility,        /* Barrierefreiheit */
+       icons,                /* Icon-System */
+       components,           /* UI-Komponenten */
+       animations,           /* Bewegungssystem */
+       effects,              /* Visuelle Effekte */
+       themes;               /* Theming-System */
 ```
 
-Die Datei importiert:
-- Ein CSS-Reset, das Browser-Inkonsistenzen ausgleicht
-- Design-Tokens für Farben, Abstände, Typografie, etc.
-- Logische Eigenschaften für bidirektionale Layouts
-- Farbdefinitionen und Color-Mix-Funktionalitäten
-- Utility-Klassen und Barrierefreiheits-Verbesserungen
+**Hinweis:** Der ursprünglich separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, um die Struktur zu vereinfachen und die Wartbarkeit zu verbessern.
 
-## Animations.css
+## Detaillierte Layer-Beschreibungen
 
-Die `animations.css` implementiert ein umfassendes System für Bewegung und Übergänge in der Benutzeroberfläche.
+### 1. reset
 
-### Variablen
-
-Die Datei definiert viele nützliche CSS-Variablen für Animation:
+Der `reset` Layer normalisiert Browser-Standardstile und stellt eine konsistente Basis für alle Styling-Operationen bereit.
 
 ```css
-:root {
-    /* Durations */
-    --animation-duration-fastest: 100ms;
-    --animation-duration-fast: 150ms;
-    --animation-duration-normal: 300ms;
-    --animation-duration-slow: 500ms;
-    --animation-duration-slower: 750ms;
-    --animation-duration-slowest: 1000ms;
-
-    /* Timing Functions */
-    --ease-linear: linear;
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
-    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --ease-spring: cubic-bezier(0.68, -0.6, 0.32, 1.6);
-
-    /* Movement */
-    --move-xs: 4px;
-    --move-sm: 8px;
-    --move-md: 16px;
-    --move-lg: 24px;
-    --move-xl: 36px;
-
-    /* Scale */
-    --scale-xs: 0.98;
-    --scale-sm: 0.95;
-    --scale-md: 0.9;
-    --scale-lg: 1.05;
-    --scale-xl: 1.1;
+@layer reset {
+  /* Browser-Standardstile zurücksetzen */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Weitere Reset-Styles... */
 }
 ```
 
-### Funktionalitäten
+Dieser Layer hat die niedrigste Priorität in der Kaskade und wird von allen nachfolgenden Layern überschrieben.
 
-Die `animations.css` bietet:
+### 2. tokens
 
-1. **Basis-Animationsklassen**:
-   ```html
-   <div class="animate">Animiertes Element mit Standard-Eigenschaften</div>
-   ```
-
-2. **Steuerungsklassen**:
-   - Richtung: `.direction-normal`, `.direction-reverse`, etc.
-   - Füllmodus: `.fill-forwards`, `.fill-backwards`, etc.
-   - Wiederholungen: `.iteration-once`, `.infinite`, etc.
-
-3. **Scroll-gesteuerte Animationen**:
-   ```html
-   <div class="scroll-fade-in">Erscheint beim Scrollen</div>
-   <div class="scroll-slide-up">Gleitet nach oben beim Scrollen</div>
-   <div class="scroll-slide-from-left">Gleitet von links beim Scrollen</div>
-   ```
-
-4. **Interaktionseffekte**:
-   ```html
-   <button class="interaction-scale">Skaliert bei Klick</button>
-   <div class="hover-glow">Leuchtet bei Hover</div>
-   <button class="tap-feedback">Visuelles Feedback bei Klick</button>
-   ```
-
-5. **Übergangs-Helfer**:
-   ```html
-   <div class="transition-opacity">Sanfter Übergang der Transparenz</div>
-   <div class="transition-transform">Sanfter Übergang bei Transformation</div>
-   <div class="transition-colors">Sanfter Übergang bei Farbänderungen</div>
-   ```
-
-Alle Animationen berücksichtigen die Barrierefreiheit und respektieren die Benutzereinstellung `prefers-reduced-motion`.
-
-## Effects.css
-
-Die `effects.css` bietet visuelle Effekte und Interaktionselemente für die Benutzeroberfläche.
-
-### Struktur
+Der `tokens` Layer definiert die grundlegenden Design-Tokens und CSS-Variablen, die im gesamten System verwendet werden.
 
 ```css
-@import url('effects/base.css') layer(base);
-@import url('effects/neon.css') layer(neon);
-@import url('effects/filters.css') layer(filters);
-@import url('effects/interactions.css') layer(interactions);
-```
-
-### Funktionalitäten
-
-Die Datei importiert verschiedene Effekt-Kategorien:
-
-1. **Neon-Effekte**:
-   ```html
-   <div class="neon-text">Leuchtender Text</div>
-   <div class="neon-border">Element mit leuchtendem Rand</div>
-   ```
-
-2. **Filter-Effekte**:
-   ```html
-   <img class="blur-sm" src="bild.jpg" alt="Leicht unscharf">
-   <div class="brightness-up">Helleres Element</div>
-   <div class="grayscale">Schwarz-Weiß-Element</div>
-   ```
-
-3. **Interaktionseffekte**:
-   ```html
-   <div class="card-flip">3D-Karten-Flip-Effekt</div>
-   <div class="touch-ripple">Welleneffekt bei Berührung</div>
-   <div class="draggable">Ziehbares Element</div>
-   ```
-
-Alle Effekte sind optimiert für:
-- Responsive Design
-- Barrierefreiheit (reduzierte Bewegung wird berücksichtigt)
-- Performance (hardwarebeschleunigte Eigenschaften werden bevorzugt)
-
-## Modules.css
-
-Die `modules.css` ist die zentrale Import-Datei für alle UI-Komponenten-Module.
-
-### Struktur
-
-```css
-/* Alert Modul */
-@import url('./modules/alert.module.css') layer(alert);
-
-/* Avatar Modul */
-@import url('./modules/avatar.module.css') layer(avatar);
-
-/* Button Modul */
-@import url('./modules/button.module.css') layer(button);
-
-/* Card Modul */
-@import url('./modules/card.module.css') layer(card);
-
-/* ... weitere Module ... */
-```
-
-Die Datei importiert mehr als 30 spezialisierte UI-Komponentenmodule, darunter:
-
-- Formulare und Eingabefelder (Input, Select, Checkbox, Radio, etc.)
-- Layout-Komponenten (Card, Modal, Sidebar, etc.)
-- Feedback-Elemente (Alert, Notification, Toast, etc.)
-- Navigation (Tabs, Wizard, etc.)
-- Indikatoren (Badge, Progress, Spinner, etc.)
-
-### Modulares System
-
-Jedes Modul wird in seinem eigenen CSS-Layer definiert, was mehrere Vorteile bietet:
-
-1. **Isolation**: Module interagieren nicht ungewollt miteinander
-2. **Spezifität**: Klare Kontrolle über die Spezifitätsreihenfolge
-3. **Wartbarkeit**: Jedes Modul kann unabhängig aktualisiert werden
-4. **Performance**: Selektive Nutzung nur der benötigten Module ist möglich
-
-## Verwendung des Kern-CSS-Systems
-
-### Komplette Import
-
-Der einfachste Weg, das gesamte CSS-System zu nutzen:
-
-```css
-@import '@casoon/ui-lib/core.css';
-```
-
-Diese einzeilige Integration lädt automatisch alle notwendigen CSS-Komponenten in der richtigen Reihenfolge.
-
-### Selektiver Import
-
-Bei Bedarf können Sie auch gezielt nur bestimmte Teile importieren:
-
-```css
-/* Nur Basis und Layout */
-@import '@casoon/ui-lib/base.css';
-@import '@casoon/ui-lib/layout.css';
-
-/* Spezifische Module */
-@import '@casoon/ui-lib/modules/button.module.css';
-@import '@casoon/ui-lib/modules/form.module.css';
-```
-
-### Anpassung und Erweiterung
-
-Um das System mit eigenen Stilen zu erweitern:
-
-```css
-/* Importieren des Kernsystems */
-@import '@casoon/ui-lib/core.css';
-
-/* Eigene Erweiterungen in den entsprechenden Layern */
-@layer animations {
-  .custom-animation {
-    animation: custom-fade 0.5s ease-in-out;
+@layer tokens {
+  :root {
+    /* Abstände */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    
+    /* Farben */
+    --color-primary: #3b82f6;
+    --color-secondary: #6b7280;
+    --color-accent: #f59e0b;
+    
+    /* Radien */
+    --radius-sm: 0.125rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    
+    /* Weitere Design-Tokens... */
   }
+}
+```
 
-  @keyframes custom-fade {
+Dieser Layer enthält auch registrierte CSS-Eigenschaften (früher im `custom-properties`-Layer):
+
+```css
+@layer tokens {
+  @property --color-mix {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: transparent;
+  }
+  
+  /* Weitere registrierte Eigenschaften... */
+}
+```
+
+### 3. core
+
+Der `core` Layer enthält grundlegende Funktionalitäten und Styles, die das Fundament der Anwendung bilden.
+
+```css
+@layer core {
+  /* Grundlegende Styling für Elemente */
+  html {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+  
+  body {
+    line-height: var(--line-height-normal);
+  }
+  
+  /* Weitere Core-Styles... */
+}
+```
+
+### 4. logical-properties
+
+Der `logical-properties` Layer implementiert bidirektionales Layout mit logischen Eigenschaften für internationale Anwendungen.
+
+```css
+@layer logical-properties {
+  /* Bidirektionale Margin-Utilities */
+  .mx-auto {
+    margin-inline: auto;
+  }
+  
+  .ms-4 {
+    margin-inline-start: var(--space-4);
+  }
+  
+  .me-4 {
+    margin-inline-end: var(--space-4);
+  }
+  
+  /* Bidirektionale Padding-Utilities */
+  .px-4 {
+    padding-inline: var(--space-4);
+  }
+  
+  /* Weitere logische Eigenschaften... */
+}
+```
+
+### 5. colors
+
+Der `colors` Layer definiert das Farbsystem und farbbasierte Klassen für Text, Hintergründe und Ränder.
+
+```css
+@layer colors {
+  /* Hintergrundfarben */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  
+  /* Textfarben */
+  .text-primary {
+    color: var(--color-primary);
+  }
+  
+  /* Randfarben */
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+  
+  /* Weitere farbbasierte Klassen... */
+}
+```
+
+### 6. color-mix
+
+Der `color-mix` Layer implementiert dynamische Farbberechnungen und -mischungen.
+
+```css
+@layer color-mix {
+  /* Farbvarianten erzeugen */
+  .color-mix-overlay {
+    background-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+  }
+  
+  /* Kontrastfarben */
+  .color-contrast {
+    color: color-contrast(var(--color-primary) vs white, black);
+  }
+  
+  /* Weitere Farbmischungen... */
+}
+```
+
+### 7. layout
+
+Der `layout` Layer definiert die grundlegenden Layout-Komponenten und -Strukturen.
+
+```css
+@layer layout {
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+  
+  /* Grid-System */
+  .grid {
+    display: grid;
+    gap: var(--grid-gap);
+  }
+  
+  /* Flexbox-Layout */
+  .flex {
+    display: flex;
+  }
+  
+  /* Weitere Layout-Komponenten... */
+}
+```
+
+### 8. layout-queries
+
+Der `layout-queries` Layer implementiert responsive Anpassungen basierend auf Container-Queries.
+
+```css
+@layer layout-queries {
+  /* Container-Anker für Container-Queries */
+  .container-query {
+    container-type: inline-size;
+    container-name: layout;
+  }
+  
+  /* Responsive Breakpoints basierend auf Container-Größe */
+  @container layout (min-width: 30rem) {
+    .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sm\:flex-row {
+      flex-direction: row;
+    }
+  }
+  
+  @container layout (min-width: 48rem) {
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Weitere responsive Anpassungen... */
+}
+```
+
+### 9. typography
+
+Der `typography` Layer definiert das Typografie-System mit Schriftarten, Größen und Text-Formatierungen.
+
+```css
+@layer typography {
+  /* Schriftfamilien */
+  .font-sans {
+    font-family: var(--font-family-sans);
+  }
+  
+  /* Schriftgrößen */
+  .text-sm {
+    font-size: var(--font-size-sm);
+  }
+  
+  .text-base {
+    font-size: var(--font-size-base);
+  }
+  
+  /* Schriftstärken */
+  .font-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  
+  /* Text-Ausrichtung */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Weitere typografische Styles... */
+}
+```
+
+### 10. utilities
+
+Der `utilities` Layer bietet atomare Utility-Klassen für schnelles Styling.
+
+```css
+@layer utilities {
+  /* Flexbox-Utilities */
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  /* Abstand-Utilities */
+  .gap-4 {
+    gap: var(--space-4);
+  }
+  
+  /* Größen-Utilities */
+  .w-full {
+    width: 100%;
+  }
+  
+  /* Weitere Utility-Klassen... */
+}
+```
+
+### 11. smooth-scroll
+
+Der `smooth-scroll` Layer definiert das Scrollverhalten für eine bessere Benutzererfahrung.
+
+```css
+@layer smooth-scroll {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Anker-Verhalten */
+  .scroll-mt-4 {
+    scroll-margin-top: var(--space-4);
+  }
+  
+  /* Weitere Scroll-Styles... */
+}
+```
+
+### 12. accessibility
+
+Der `accessibility` Layer enthält Verbesserungen für die Barrierefreiheit.
+
+```css
+@layer accessibility {
+  /* Focus-Stile */
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+  
+  /* Unterstützung für reduzierte Bewegung */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  
+  /* Screen-Reader-Only Elemente */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  /* Weitere Accessibility-Verbesserungen... */
+}
+```
+
+### 13. icons
+
+Der `icons` Layer definiert das Icon-System und die dazugehörigen Styles.
+
+```css
+@layer icons {
+  /* Icon-Basis */
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+  }
+  
+  /* Icon-Größen */
+  .icon-sm {
+    font-size: var(--icon-size-sm);
+  }
+  
+  .icon-md {
+    font-size: var(--icon-size-md);
+  }
+  
+  /* Weitere Icon-Stile... */
+}
+```
+
+### 14. components
+
+Der `components` Layer enthält alle UI-Komponenten des Design-Systems.
+
+```css
+@layer components {
+  /* Button-Komponente */
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    font-weight: var(--button-font-weight);
+    transition: var(--button-transition);
+  }
+  
+  .button.primary {
+    background-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
+  }
+  
+  /* Card-Komponente */
+  .card {
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    background-color: var(--card-bg);
+  }
+  
+  /* Weitere Komponenten... */
+}
+```
+
+### 15. animations
+
+Der `animations` Layer definiert das Animations- und Bewegungssystem.
+
+```css
+@layer animations {
+  /* Fade-Animation */
+  @keyframes fade {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+  
+  .animate-fade {
+    animation: fade var(--animation-duration) var(--animation-easing);
+  }
+  
+  /* Slide-Animation */
+  @keyframes slide-in {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .animate-slide {
+    animation: slide-in var(--animation-duration) var(--animation-easing);
+  }
+  
+  /* Weitere Animationen... */
+}
+```
+
+### 16. effects
+
+Der `effects` Layer enthält visuelle Effekte wie Schatten, Glaseffekte und Hintergründe.
+
+```css
+@layer effects {
+  /* Schatten */
+  .shadow-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  /* Glaseffekt */
+  .glass {
+    backdrop-filter: blur(var(--glass-blur));
+    background-color: var(--glass-bg);
+  }
+  
+  /* Weitere Effekte... */
+}
+```
+
+### 17. themes
+
+Der `themes` Layer definiert das Theming-System für verschiedene Farbschemata.
+
+```css
+@layer themes {
+  /* Helles Theme (Standard) */
+  .theme-day {
+    --color-background: var(--color-white);
+    --color-text: var(--color-gray-900);
+    /* Weitere Theme-Variablen... */
+  }
+  
+  /* Dunkles Theme */
+  .theme-night {
+    --color-background: var(--color-gray-900);
+    --color-text: var(--color-gray-100);
+    /* Weitere Theme-Variablen... */
+  }
+  
+  /* Weitere Themes... */
+}
+```
+
+## Vorteile des Layer-Systems
+
+Das Layer-System der Casoon UI Library bietet mehrere Vorteile:
+
+1. **Präzise Kontrolle der Spezifität**: Die Reihenfolge der Layer bestimmt die Priorität, unabhängig von der Komplexität der Selektoren.
+2. **Verbesserte Wartbarkeit**: Klare Trennung von Zuständigkeiten erleichtert das Debugging und die Weiterentwicklung.
+3. **Skalierbarkeit**: Einfaches Hinzufügen neuer Funktionen ohne Beeinträchtigung bestehender Styles.
+4. **Vermeidung von !important**: Die Layer-Struktur reduziert die Notwendigkeit von !important-Deklarationen.
+5. **Performance-Optimierung**: Modern CSS-Engines können Layer-basierte Styles effizienter verarbeiten.
+
+## Best Practices
+
+Bei der Arbeit mit dem Layer-System sollten folgende Best Practices beachtet werden:
+
+1. **Respektieren der Layer-Grenzen**: Platzieren Sie Styles im passenden Layer basierend auf ihrer Funktion.
+2. **Keine übergreifenden Abhängigkeiten**: Vermeiden Sie, dass ein Layer direkt von einem anderen abhängig ist.
+3. **Minimale Spezifität innerhalb von Layern**: Verwenden Sie die einfachsten möglichen Selektoren innerhalb eines Layers.
+4. **Konsistente Naming-Konventionen**: Folgen Sie den etablierten Konventionen für Klassen- und Variablennamen.
+5. **Dokumentieren von Anpassungen**: Beim Überschreiben von Styles in benutzerdefinierten Themes dokumentieren Sie den Zweck.
+
+## Integration in eigene Projekte
+
+Um das Layer-System in Ihrem Projekt zu nutzen, importieren Sie einfach die `core.css`:
+
+```css
+@import "@casoon/ui-lib/core.css";
+```
+
+Wenn Sie eigene Anpassungen vornehmen möchten, respektieren Sie die Layer-Struktur:
+
+```css
+/* Eigene CSS-Datei nach dem Import der core.css */
+@import "@casoon/ui-lib/core.css";
+
+/* Eigene Komponenten dem entsprechenden Layer zuordnen */
+@layer components {
+  .custom-component {
+    /* Eigene Styles... */
+  }
 }
 
-@layer modules {
-  .custom-component {
-    /* Eigener Komponentenstil */
+/* Eigene Utilities dem utilities-Layer zuordnen */
+@layer utilities {
+  .custom-utility {
+    /* Eigene Styles... */
+  }
+}
+
+/* Eigenes Theme dem themes-Layer zuordnen */
+@layer themes {
+  .theme-custom {
+    /* Eigene Theme-Variablen... */
   }
 }
 ```
 
-## Optimierung für Lightning CSS
+## Technische Details
 
-Das gesamte Kern-CSS-System ist für Lightning CSS optimiert:
+Das Core CSS System ist für moderne Browser optimiert und nutzt folgende Technologien:
 
-1. **Effiziente Import-Struktur**: Die verschachtelte Import-Struktur wird von Lightning CSS effizient verarbeitet
+1. **CSS Layers**: Haupt-Organisationsprinzip für die Kaskade
 2. **Layer-System**: Die `@layer`-Deklarationen werden optimal kompiliert
-3. **Browserkompatibilität**: Automatische Generierung von Fallbacks für nicht unterstützte Features
-4. **Optimierte Ausgabe**: Minimierte und optimierte CSS-Dateien
+3. **CSS Custom Properties**: Für dynamische Anpassungen und Themefähigkeit
+4. **Container Queries**: Für komponenten-basierte Responsivität
+5. **Modern Color Functions**: Für dynamische Farbberechnungen und Kontraste
+6. **Logical Properties**: Für internationalisierte und bidirektionale Layouts
 
-## Best Practices
-
-1. **Einfach durch core.css starten**: Für die meisten Projekte reicht der Import von `core.css`
-2. **Layer-Struktur respektieren**: Platzieren Sie eigene Stile in den passenden Layern
-3. **Variablen nutzen**: Verwenden Sie die definierten CSS-Variablen statt hartcodierter Werte
-4. **Modulare Erweiterung**: Erweitern Sie das System mit eigenen Modulen in separaten Dateien 
+Das gesamte System ist für Lightning CSS (ehemals Parcel CSS) optimiert, was eine effiziente Verarbeitung und Minimierung ermöglicht.

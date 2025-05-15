@@ -16,7 +16,6 @@ Die Layer sind in einer klaren Hierarchie definiert:
 ```css
 @layer reset,                /* Grundlegender Browser-Reset */
        tokens,               /* Design-Tokens und Variablen */
-       custom-properties,    /* Registrierte CSS-Eigenschaften */
        core,                 /* Kernfunktionalitäten */
        logical-properties,   /* Bidirektionale Layouts (RTL/LTR) */
        colors,               /* Farbsystem */
@@ -105,8 +104,7 @@ Sie können auch nur bestimmte Layer importieren:
 Jeder Layer hat eine spezifische Rolle im Designsystem:
 
 - **reset**: Browser-Standardstile zurücksetzen
-- **tokens**: Design-Token-Variablen (Farben, Abstände, Typografie)
-- **custom-properties**: Registrierte CSS-Eigenschaften
+- **tokens**: Design-Token-Variablen (Farben, Abstände, Typografie) und registrierte CSS-Eigenschaften
 - **core**: Allgemeine Grundfunktionen
 - **logical-properties**: Logische Eigenschaften für bidirektionalen Text (RTL/LTR)
 - **colors**: Farbsystem und Farbklassen

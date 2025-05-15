@@ -297,9 +297,8 @@ Das Farbsystem berücksichtigt die Barrierefreiheit, indem es sicherstellt, dass
 Diese Kontrastfarben werden automatisch in Komponenten wie Buttons verwendet:
 
 ```html
-<button class="button button--primary">
-  <!-- Verwendet automatisch var(--color-primary-contrast) als Textfarbe -->
-  Primärer Button
+<button class="button primary">
+  Bestätigen
 </button>
 ```
 
@@ -344,9 +343,9 @@ Für harmonische Designs empfehlen wir folgende Farbrichtlinien:
 ### Call-to-Action Buttons
 
 ```html
-<button class="button button--primary">Hauptaktion</button>
-<button class="button button--secondary">Sekundäre Aktion</button>
-<button class="button button--accent">Hervorgehobene Aktion</button>
+<button class="button primary">Hauptaktion</button>
+<button class="button secondary">Sekundäre Aktion</button>
+<button class="button accent">Hervorgehobene Aktion</button>
 ```
 
 ### Benachrichtigungen und Alerts

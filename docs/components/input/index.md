@@ -166,32 +166,50 @@ Die Input-Komponente verwendet folgende CSS-Variablen:
 ### React
 
 ```jsx
+import React from 'react';
 import 'casoon-ui-lib/core.css';
-import 'casoon-ui-lib/themes/day.css';
 import 'casoon-ui-lib/modules/input.module.css';
-import 'casoon-ui-lib/modules/form.module.css';
 
 function Input({
-  id,
-  label,
   type = 'text',
-  status,
-  size,
-  hint,
-  error,
+  id,
+  name,
+  value,
+  placeholder,
+  onChange,
+  disabled = false,
+  readOnly = false,
+  error = false,
+  success = false,
+  size = '',
+  icon = '',
+  className = '',
   ...props
 }) {
+  const inputClasses = [
+    'input',
+    error ? 'error' : '',
+    success ? 'success' : '',
+    size ? size : '',
+    icon ? 'with-icon' : '',
+    className
+  ].filter(Boolean).join(' ');
+
   return (
-    <div className="form-group">
-      {label && <label htmlFor={id} className="form-label">{label}</label>}
+    <div className="input-wrapper">
+      {icon && <span className={`input-icon ${icon}`}></span>}
       <input
-        id={id}
         type={type}
-        className={`input ${status ? `input--${status}` : ''} ${size ? `input--${size}` : ''}`}
+        id={id}
+        name={name}
+        value={value}
+        placeholder={placeholder}
+        onChange={onChange}
+        disabled={disabled}
+        readOnly={readOnly}
+        className={inputClasses}
         {...props}
       />
-      {hint && <div className="form-hint">{hint}</div>}
-      {error && <div className="form-error">{error}</div>}
     </div>
   );
 }
@@ -203,108 +221,55 @@ export default Input;
 
 ```vue
 <template>
-  <div class="form-group">
-    <label v-if="label" :for="id" class="form-label">{{ label }}</label>
+  <div class="input-wrapper">
+    <span 
+      v-if="icon" 
+      class="input-icon"
+      :class="icon"
+    ></span>
     <input
-      :id="id"
       :type="type"
+      :id="id"
+      :name="name"
+      :value="modelValue"
+      :placeholder="placeholder"
+      :disabled="disabled"
+      :readonly="readonly"
       class="input"
       :class="[
-        status ? `input--${status}` : '',
-        size ? `input--${size}` : ''
+        error ? 'error' : '',
+        success ? 'success' : '',
+        size,
+        icon ? 'with-icon' : '',
       ]"
+      @input="$emit('update:modelValue', $event.target.value)"
       v-bind="$attrs"
     />
-    <div v-if="hint" class="form-hint">{{ hint }}</div>
-    <div v-if="error" class="form-error">{{ error }}</div>
   </div>
 </template>
 
 <script>
-import 'casoon-ui-lib/core.css';
-import 'casoon-ui-lib/themes/day.css';
-import 'casoon-ui-lib/modules/input.module.css';
-import 'casoon-ui-lib/modules/form.module.css';
-
 export default {
-  name: 'Input',
+  name: 'InputComponent',
   props: {
-    id: {
-      type: String,
-      required: true
-    },
-    label: {
-      type: String,
-      default: ''
-    },
+    modelValue: String,
     type: {
       type: String,
       default: 'text'
     },
-    status: {
-      type: String,
-      default: ''
-    },
-    size: {
-      type: String,
-      default: ''
-    },
-    hint: {
-      type: String,
-      default: ''
-    },
-    error: {
-      type: String,
-      default: ''
-    }
-  }
+    id: String,
+    name: String,
+    placeholder: String,
+    disabled: Boolean,
+    readonly: Boolean,
+    error: Boolean,
+    success: Boolean,
+    size: String,
+    icon: String
+  },
+  emits: ['update:modelValue']
 }
 </script>
-```
-
-### Angular
-
-```typescript
-// input.component.ts
-import { Component, Input } from '@angular/core';
-
-@Component({
-  selector: 'app-input',
-  template: `
-    <div class="form-group">
-      <label *ngIf="label" [for]="id" class="form-label">{{ label }}</label>
-      <input
-        [id]="id"
-        [type]="type"
-        class="input"
-        [class.input--error]="status === 'error'"
-        [class.input--success]="status === 'success'"
-        [class.input--warning]="status === 'warning'"
-        [class.input--sm]="size === 'sm'"
-        [class.input--lg]="size === 'lg'"
-        [ngClass]="customClass"
-      />
-      <div *ngIf="hint" class="form-hint">{{ hint }}</div>
-      <div *ngIf="error" class="form-error">{{ error }}</div>
-    </div>
-  `
-})
-export class InputComponent {
-  @Input() id: string = '';
-  @Input() label: string = '';
-  @Input() type: string = 'text';
-  @Input() status: 'error' | 'success' | 'warning' | '' = '';
-  @Input() size: 'sm' | 'lg' | '' = '';
-  @Input() hint: string = '';
-  @Input() error: string = '';
-  @Input() customClass: string = '';
-}
-
-// In der styles.css oder angular.json
-// @import 'casoon-ui-lib/core.css';
-// @import 'casoon-ui-lib/themes/day.css';
-// @import 'casoon-ui-lib/modules/input.module.css';
-// @import 'casoon-ui-lib/modules/form.module.css';
 ```
 
 ### HTML
@@ -314,27 +279,36 @@ export class InputComponent {
 <html>
 <head>
   <link rel="stylesheet" href="path/to/casoon-ui-lib/core.css">
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/themes/day.css">
   <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/input.module.css">
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/form.module.css">
 </head>
-<body class="theme-day">
+<body>
+  <!-- Standard Input -->
   <div class="form-group">
-    <label for="username" class="form-label">Benutzername</label>
-    <input id="username" class="input" type="text" placeholder="Benutzername eingeben">
-    <div class="form-hint">Benutzername muss einzigartig sein.</div>
+    <label for="name" class="form-label">Name</label>
+    <input type="text" id="name" class="input" placeholder="Name eingeben">
   </div>
   
+  <!-- Input mit Icon -->
+  <div class="form-group">
+    <label for="email" class="form-label">E-Mail</label>
+    <div class="input-wrapper">
+      <span class="input-icon icon-mail"></span>
+      <input type="email" id="email" class="input with-icon" placeholder="E-Mail eingeben">
+    </div>
+  </div>
+  
+  <!-- Fehlerstatus -->
   <div class="form-group">
     <label for="password" class="form-label">Passwort</label>
-    <input id="password" class="input input--error" type="password">
-    <div class="form-error">Passwort muss mindestens 8 Zeichen enthalten.</div>
+    <input type="password" id="password" class="input error" placeholder="Passwort eingeben">
+    <div class="input-feedback error">Passwort muss mindestens 8 Zeichen enthalten</div>
   </div>
   
-  <div class="input-group">
-    <span class="input-group__prefix">https://</span>
-    <input class="input" type="text" placeholder="example.com">
+  <!-- Erfolgsstatus -->
+  <div class="form-group">
+    <label for="username" class="form-label">Benutzername</label>
+    <input type="text" id="username" class="input success" value="validuser">
+    <div class="input-feedback success">Benutzername ist verfügbar</div>
   </div>
 </body>
-</html>
-``` 
+</html> 
