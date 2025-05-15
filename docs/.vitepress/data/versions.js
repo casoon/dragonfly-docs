@@ -1,2 +1,2 @@
 // Zentrale Definition der UI-Lib-Version
-export const UI_LIB_VERSION = '0.5.2' 
+export const UI_LIB_VERSION = '0.3.21' 

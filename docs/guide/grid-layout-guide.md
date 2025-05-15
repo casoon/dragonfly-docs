@@ -19,7 +19,30 @@ Die gesamte Grid-Funktionalität ist in der core.css enthalten, die für Lightni
 @import '@casoon/ui-lib/core.css';
 ```
 
-Diese Datei lädt automatisch alle benötigten Layer in der richtigen Reihenfolge, einschließlich des Layout-Layers mit dem Grid-System.
+Dieser Import lädt alle grundlegenden Layout- und Grid-Features. Beachten Sie jedoch, dass Komponenten und Effekte separat importiert werden müssen:
+
+```css
+/* Core-System für Layout und Grid */
+@import '@casoon/ui-lib/core.css';
+
+/* Komponenten müssen einzeln importiert werden */
+@import '@casoon/ui-lib/components/button.css';
+@import '@casoon/ui-lib/components/card.css';
+
+/* Effekte müssen ebenfalls einzeln importiert werden */
+@import '@casoon/ui-lib/effects/hover.css';
+```
+
+Das CSS-Layer-System sorgt dafür, dass alle Importe in der korrekten Reihenfolge geladen werden.
+
+### Vorteile des Layer-Systems für Grid-Layouts
+
+Das CSS-Layer-System der Casoon UI Library ermöglicht eine präzise Steuerung der CSS-Spezifität und verhindert Konflikte zwischen verschiedenen Styling-Regeln. Die Grid-Komponenten profitieren von dieser Struktur, da sie:
+
+- Leicht anpassbar sind, ohne die Grundfunktionalität zu gefährden
+- Konsistente Abstände und Layoutmuster gewährleisten
+- Nahtlos mit anderen Komponenten zusammenarbeiten
+- Eine klare Hierarchie in der Styling-Kaskade haben
 
 ## Grundlegende Grid-Layouts
 
@@ -446,7 +469,12 @@ Dieses E-Commerce-Layout zeigt ein responsives Produktraster mit Filtern und Pag
 
 ## Best Practices für Grid-Layouts
 
-1. **Mobile-First-Ansatz**: Beginnen Sie mit dem Layout für kleine Bildschirme und erweitern Sie es dann für größere Bildschirme.
+1. **Mobile-First-Ansatz**: Beginnen Sie mit dem Layout für kleine Bildschirme und erweitern Sie es dann für größere Bildschirme. Diese Strategie sorgt für bessere Performance auf mobilen Geräten und vereinfacht die progressive Enhancement des Layouts. Beispiel:
+   ```html
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+     <!-- Elemente starten als einspaltiges Layout und erweitern sich stufenweise -->
+   </div>
+   ```
 
 2. **Konsistente Abstände**: Verwenden Sie das Spacing-System mit den vordefinierten gap-* Klassen für konsistente Abstände.
 
@@ -465,3 +493,26 @@ Dieses E-Commerce-Layout zeigt ein responsives Produktraster mit Filtern und Pag
 9. **Achten Sie auf Browser-Kompatibilität**: CSS Grid wird von allen modernen Browsern unterstützt, kann aber in älteren Browsern Probleme verursachen.
 
 10. **Performance-Optimierung**: Vermeiden Sie zu viele dynamische Änderungen am Grid-Layout, da dies die Performance beeinträchtigen kann. 
+
+## Integration des Spacing-Systems mit Container-Queries
+
+Die Kombination aus Container-Queries und dem Spacing-System der Casoon UI Library ermöglicht hochgradig anpassungsfähige Layouts, die auf intelligente Weise auf verfügbaren Platz reagieren:
+
+```html
+<div class="container-query">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 md:gap-6">
+    <!-- Die Abstände zwischen den Grid-Elementen wachsen mit der Container-Größe -->
+    <div class="p-2 sm:p-4 bg-light">
+      <!-- Auch Innenabstände können responsiv angepasst werden -->
+      <h3 class="mb-1 sm:mb-2">Überschrift</h3>
+      <p>Inhalt, der mehr Platz bekommt, wenn der Container wächst</p>
+    </div>
+    <div class="p-2 sm:p-4 bg-light">
+      <h3 class="mb-1 sm:mb-2">Überschrift</h3>
+      <p>Inhalt, der mehr Platz bekommt, wenn der Container wächst</p>
+    </div>
+  </div>
+</div>
+```
+
+Dieses Beispiel zeigt, wie sowohl Grid-Abstände (gaps) als auch Innenabstände (padding) und Außenabstände (margin) basierend auf der Container-Größe skaliert werden können. Diese Technik ist besonders nützlich für wiederverwendbare Komponenten, die in verschiedenen Layout-Kontexten funktionieren müssen. 

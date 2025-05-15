@@ -9,13 +9,27 @@ Das Layout-System der Casoon UI Library bietet strukturierte und flexible Werkze
 
 ## CSS-Import
 
-Um das komplette Casoon UI Layout-System zu nutzen, reicht es aus, die `core.css` Datei zu importieren:
+Um das Casoon UI Layout-System zu nutzen, importieren Sie die `core.css` Datei:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Dieser einzelne Import lädt automatisch alle benötigten Komponenten und Layer in der richtigen Reihenfolge, einschließlich der Layout-Dateien. Eine manuelle Einbindung einzelner Dateien ist nicht notwendig.
+Dieser Import stellt die grundlegenden Layout-Funktionen und das Grid-System bereit. Beachten Sie jedoch, dass Komponenten und Effekte einzeln importiert werden müssen:
+
+```css
+/* Core-System für Layout und Grid */
+@import "@casoon/ui-lib/core.css";
+
+/* Komponenten müssen einzeln importiert werden */
+@import "@casoon/ui-lib/components/button.css";
+@import "@casoon/ui-lib/components/card.css";
+
+/* Effekte müssen ebenfalls einzeln importiert werden */
+@import "@casoon/ui-lib/effects/hover.css";
+```
+
+Das Layer-System sorgt automatisch für die korrekte Ladereihenfolge aller CSS-Dateien.
 
 ### Optimiert für Lightning CSS
 
@@ -605,4 +619,6 @@ Das Framework bietet auch Klassen für Positionierung und Sichtbarkeitssteuerung
     </div>
   </div>
 </footer>
+``` 
+
 ``` 
