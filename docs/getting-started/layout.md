@@ -27,6 +27,7 @@ Dieser Import stellt die grundlegenden Layout-Funktionen und das Grid-System ber
 
 /* Effekte müssen ebenfalls einzeln importiert werden */
 @import "@casoon/ui-lib/effects/hover.css";
+@import "@casoon/ui-lib/effects/transitions.css";
 ```
 
 Das Layer-System sorgt automatisch für die korrekte Ladereihenfolge aller CSS-Dateien.

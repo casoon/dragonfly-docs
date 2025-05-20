@@ -65,6 +65,7 @@ export default defineConfig({
       { text: 'Erste Schritte', link: '/getting-started/' },
       { text: 'Komponenten', link: '/components/' },
       { text: 'Effekte', link: '/guide/effects-system' },
+      { text: 'Storybook', link: '/storybook/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
 
@@ -217,7 +218,8 @@ export default defineConfig({
             { text: 'Fokus-Effekte', link: '/guide/effects/interaction/focus' },
             { text: 'Aktiv-Effekte', link: '/guide/effects/interaction/active' },
             { text: 'Ripple-Effekte', link: '/guide/effects/interaction/ripple' },
-            { text: 'Scroll-Effekte', link: '/guide/effects/interaction/scroll' }
+            { text: 'Scroll-Effekte', link: '/guide/effects/interaction/scroll' },
+            { text: 'Transitions', link: '/guide/effects/transitions' }
           ]
         },
         {
@@ -237,6 +239,24 @@ export default defineConfig({
           items: [
             { text: 'Übersicht', link: '/themes/' },
             { text: 'CSS-Variablen', link: '/themes/custom-properties' }
+          ]
+        }
+      ],
+      '/storybook/': [
+        {
+          text: 'Storybook',
+          items: [
+            { text: 'Übersicht', link: '/storybook/' },
+            { text: 'Integration', link: '/storybook/integration' },
+            { text: 'Komponenten-Beispiele', link: '/storybook/component-examples' }
+          ]
+        },
+        {
+          text: 'Verwendung',
+          items: [
+            { text: 'Einbetten von Stories', link: '/storybook/embedding' },
+            { text: 'Code-Beispiele', link: '/storybook/code-examples' },
+            { text: 'Interaktive Demos', link: '/storybook/interactive-demos' }
           ]
         }
       ]
