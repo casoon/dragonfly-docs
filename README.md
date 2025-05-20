@@ -20,13 +20,13 @@
 
 ```bash
 # npm
-npm install @casoon/ui-lib@latest
+npm install @casoon/ui-lib@0.5.5
 
 # yarn
-yarn add @casoon/ui-lib@latest
+yarn add @casoon/ui-lib@0.5.5
 
 # pnpm
-pnpm add @casoon/ui-lib@latest
+pnpm add @casoon/ui-lib@0.5.5
 ```
 
 ## 🔧 Verwendung
@@ -37,7 +37,7 @@ Mit der aktuellen Version reicht ein einziger Import für die gesamte Bibliothek
 
 ```css
 /* Alle nötigen Styles werden durch diesen einen Import geladen */
-@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib@0.5.5/core.css';
 
 /* Effekte müssen einzeln importiert werden */
 @import '@casoon/ui-lib/effects/glass.css';
@@ -306,3 +306,7 @@ Ausführliche Dokumentation unter: [Casoon UI Docs](https://casoon.github.io/ui-
 ## 📜 Lizenz
 
 MIT 
+
+## Hinweis zu Version 0.5.5
+
+Die Version 0.5.5 bringt kleinere Optimierungen und Bugfixes. Bitte prüfe die Release Notes für Details zu Änderungen an Layer-Struktur, Animationen und Utilities. 

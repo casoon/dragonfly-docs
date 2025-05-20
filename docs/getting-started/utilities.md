@@ -3,13 +3,13 @@ title: Utilities
 category: Getting Started
 ---
 
-# Utility-Styles
+# Utility Styles
 
-Die Utility-Styles der Casoon UI Library sind eine Sammlung von Hilfsklassen für schnelles und konsistentes Styling ohne die Notwendigkeit, benutzerdefiniertes CSS zu schreiben. Sie folgen dem Utility-First-Ansatz und ermöglichen die direkte Anwendung von Design Tokens auf HTML-Elemente.
+The Utility Styles of the Casoon UI Library are a collection of helper classes for fast and consistent styling without the need to write custom CSS. They follow the utility-first approach and enable the direct application of design tokens to HTML elements.
 
 ## Spacing Utilities
 
-Die Spacing-Utilities bieten Klassen für Margin und Padding basierend auf der Spacing-Skala:
+The spacing utilities offer classes for margin and padding based on the spacing scale:
 
 ### Margin
 
@@ -32,7 +32,7 @@ Die Spacing-Utilities bieten Klassen für Margin und Padding basierend auf der S
 .mt-4 { margin-top: var(--spacing-4); }
 .mt-5 { margin-top: var(--spacing-5); }
 
-/* Ähnlich für mr, mb, ml */
+/* Similarly for mr, mb, ml */
 ```
 
 ### Padding
@@ -56,18 +56,18 @@ Die Spacing-Utilities bieten Klassen für Margin und Padding basierend auf der S
 .pt-4 { padding-top: var(--spacing-4); }
 .pt-5 { padding-top: var(--spacing-5); }
 
-/* Ähnlich für pr, pb, pl */
+/* Similarly for pr, pb, pl */
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
 <div class="m-4 p-2">
-  Element mit Margin 1.5rem und Padding 0.5rem
+  Element with margin 1.5rem and padding 0.5rem
 </div>
 
 <div class="mt-3 mb-2 px-4">
-  Element mit Margin-Top 0.75rem, Margin-Bottom 0.5rem, und horizontalem Padding 1rem
+  Element with margin-top 0.75rem, margin-bottom 0.5rem, and horizontal padding 1rem
 </div>
 ```
 
@@ -84,12 +84,12 @@ Die Spacing-Utilities bieten Klassen für Margin und Padding basierend auf der S
 .hidden { display: none; }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
 <div class="flex">
-  <div class="block">Block-Element in einem Flex-Container</div>
-  <span class="inline-block">Inline-Block-Element</span>
+  <div class="block">Block element in a flex container</div>
+  <span class="inline-block">Inline-block element</span>
 </div>
 ```
 
@@ -109,25 +109,25 @@ Die Spacing-Utilities bieten Klassen für Margin und Padding basierend auf der S
 
 .top-1 { top: var(--spacing-1); }
 .top-2 { top: var(--spacing-2); }
-/* usw. für right, bottom, left */
+/* etc. for right, bottom, left */
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
 <div class="relative">
   <div class="absolute top-0 right-0">
-    Absolut positioniert, oben rechts
+    Absolutely positioned, top right
   </div>
 </div>
 ```
 
 ## Flexbox Utilities
 
-Die Flexbox-Utilities ermöglichen die schnelle Erstellung von flexiblen Layouts:
+The flexbox utilities enable the quick creation of flexible layouts:
 
 ```css
-/* Flex-Richtung */
+/* Flex direction */
 .flex-row { flex-direction: row; }
 .flex-row-reverse { flex-direction: row-reverse; }
 .flex-col { flex-direction: column; }
@@ -153,20 +153,20 @@ Die Flexbox-Utilities ermöglichen die schnelle Erstellung von flexiblen Layouts
 .flex-nowrap { flex-wrap: nowrap; }
 .flex-wrap-reverse { flex-wrap: wrap-reverse; }
 
-/* Flex (Grow und Shrink) */
+/* Flex (Grow and Shrink) */
 .flex-1 { flex: 1 1 0%; }
 .flex-auto { flex: 1 1 auto; }
 .flex-initial { flex: 0 1 auto; }
 .flex-none { flex: none; }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
 <div class="flex flex-col md:flex-row justify-between items-center">
-  <div>Links ausgerichtet (mobil: oben)</div>
-  <div>Zentriert vertikal</div>
-  <div>Rechts ausgerichtet (mobil: unten)</div>
+  <div>Left-aligned (mobile: top)</div>
+  <div>Vertically centered</div>
+  <div>Right-aligned (mobile: bottom)</div>
 </div>
 ```
 
@@ -190,28 +190,28 @@ Die Flexbox-Utilities ermöglichen die schnelle Erstellung von flexiblen Layouts
 .col-span-1 { grid-column: span 1 / span 1; }
 .col-span-2 { grid-column: span 2 / span 2; }
 .col-span-3 { grid-column: span 3 / span 3; }
-/* usw. bis col-span-12 */
+/* etc. up to col-span-12 */
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
 <div class="grid grid-cols-3 gap-4">
-  <div class="col-span-2">Nimmt 2/3 der Breite ein</div>
-  <div>Nimmt 1/3 der Breite ein</div>
+  <div class="col-span-2">Takes up 2/3 of the width</div>
+  <div>Takes up 1/3 of the width</div>
 </div>
 ```
 
 ## Text Utilities
 
 ```css
-/* Textausrichtung */
+/* Text alignment */
 .text-left { text-align: left; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-justify { text-align: justify; }
 
-/* Schriftgewicht */
+/* Font weight */
 .font-thin { font-weight: 100; }
 .font-extralight { font-weight: 200; }
 .font-light { font-weight: 300; }
@@ -222,30 +222,30 @@ Die Flexbox-Utilities ermöglichen die schnelle Erstellung von flexiblen Layouts
 .font-extrabold { font-weight: 800; }
 .font-black { font-weight: 900; }
 
-/* Textumwandlung */
+/* Text transform */
 .uppercase { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
 .normal-case { text-transform: none; }
 
-/* Text-Dekoration */
+/* Text decoration */
 .underline { text-decoration: underline; }
 .line-through { text-decoration: line-through; }
 .no-underline { text-decoration: none; }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
 <h1 class="text-center font-bold uppercase">
-  Zentrierte, fette Überschrift in Großbuchstaben
+  Centered, bold heading in uppercase
 </h1>
 ```
 
-## Farbsystem Utilities
+## Color System Utilities
 
 ```css
-/* Textfarben */
+/* Text colors */
 .text-primary { color: var(--color-primary); }
 .text-secondary { color: var(--color-secondary); }
 .text-success { color: var(--color-success); }
@@ -253,7 +253,7 @@ Die Flexbox-Utilities ermöglichen die schnelle Erstellung von flexiblen Layouts
 .text-error { color: var(--color-error); }
 .text-info { color: var(--color-info); }
 
-/* Hintergrundfarben */
+/* Background colors */
 .bg-primary { background-color: var(--color-primary); }
 .bg-secondary { background-color: var(--color-secondary); }
 .bg-success { background-color: var(--color-success); }
@@ -261,7 +261,7 @@ Die Flexbox-Utilities ermöglichen die schnelle Erstellung von flexiblen Layouts
 .bg-error { background-color: var(--color-error); }
 .bg-info { background-color: var(--color-info); }
 
-/* Rahmenfarben */
+/* Border colors */
 .border-primary { border-color: var(--color-primary); }
 .border-secondary { border-color: var(--color-secondary); }
 .border-success { border-color: var(--color-success); }
@@ -270,40 +270,40 @@ Die Flexbox-Utilities ermöglichen die schnelle Erstellung von flexiblen Layouts
 .border-info { border-color: var(--color-info); }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
 <div class="bg-success-light text-success p-3 border border-success">
-  Erfolgsbox mit heller Hintergrundfarbe, passender Textfarbe und Rahmen
+  Success box with light background color, matching text color and border
 </div>
 ```
 
 ## Responsive Utilities
 
-Alle Utilities können mit Breakpoint-Präfixen verwendet werden:
+All utilities can be used with breakpoint prefixes:
 
-- `sm:` für Bildschirme ≥ 640px
-- `md:` für Bildschirme ≥ 768px
-- `lg:` für Bildschirme ≥ 1024px
-- `xl:` für Bildschirme ≥ 1280px
-- `2xl:` für Bildschirme ≥ 1536px
+- `sm:` for screens ≥ 640px
+- `md:` for screens ≥ 768px
+- `lg:` for screens ≥ 1024px
+- `xl:` for screens ≥ 1280px
+- `2xl:` for screens ≥ 1536px
 
 ```html
 <div class="hidden md:block">
-  Wird nur auf Tablets und größeren Bildschirmen angezeigt
+  Only displayed on tablets and larger screens
 </div>
 
 <div class="flex-col md:flex-row">
-  Vertikal auf mobilen Geräten, horizontal auf größeren Bildschirmen
+  Vertical on mobile devices, horizontal on larger screens
 </div>
 ```
 
-## Best Practices für Utility-Klassen
+## Best Practices for Utility Classes
 
-- **Utility-Kombination** - Kombinieren Sie mehrere Utility-Klassen für komplexe Styles
-- **Responsive Optimierung** - Nutzen Sie Breakpoint-Präfixe für adaptives Layout
-- **Token-Konsistenz** - Halten Sie sich an die vordefinierten Werte der Design Tokens
-- **Komponenten-Extraktion** - Extrahieren Sie häufig verwendete Kombinationen in eigene Komponenten
-- **Selektiver Import** - Importieren Sie nur die benötigten Utility-Module für bessere Performance
-- **Mobile-First Ansatz** - Beginnen Sie mit der mobilen Ansicht und erweitern Sie für größere Bildschirme
+- **Utility Combination** - Combine multiple utility classes for complex styles
+- **Responsive Optimization** - Use breakpoint prefixes for adaptive layout
+- **Token Consistency** - Stick to the predefined values of the design tokens
+- **Component Extraction** - Extract frequently used combinations into their own components
+- **Selective Import** - Import only the utility modules you need for better performance
+- **Mobile-First Approach** - Start with the mobile view and expand for larger screens
 ``` 

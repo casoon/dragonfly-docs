@@ -1,287 +1,99 @@
 ---
-title: Übersetzungsleitfaden
-category: Storybook
+title: Übersetzungsleitfaden: Deutsch → Englisch
+category: Projekt
 ---
 
-# Übersetzungsleitfaden: Deutsch nach Englisch
+# Übersetzungsleitfaden: Deutsch → Englisch
 
-Dieser Leitfaden beschreibt den Prozess zur Übersetzung der Casoon UI Library Dokumentation von Deutsch nach Englisch. Er bietet strukturierte Anweisungen, um eine konsistente und qualitativ hochwertige Übersetzung sicherzustellen.
+Dieser Leitfaden beschreibt den Workflow zur Übersetzung der Casoon UI Library Dokumentation ins Englische. Ziel ist eine konsistente, qualitativ hochwertige und wartbare englische Version der gesamten Dokumentation.
 
-## Übersetzungsstrategie
+## 1. Zielsetzung
 
-Die Übersetzung erfolgt in mehreren Phasen:
+- **Vollständige Übersetzung** aller relevanten Markdown-Dateien, Komponentenbeispiele, Metadaten und der VitePress-Konfiguration.
+- **Synchronität**: Die englische Version soll stets mit der deutschen Hauptdokumentation aktuell gehalten werden.
+- **Konsistenz**: Einheitliche Terminologie und Übersetzungsstil durch Glossar und Review-Prozess.
 
-1. **Vorbereitung**: Identifizierung aller zu übersetzenden Dateien und Erstellung einer Übersetzungsmatrix
-2. **Übersetzung**: Systematische Übersetzung der Inhalte nach Priorität
-3. **Review**: Prüfung der Übersetzungen auf Genauigkeit und Konsistenz
-4. **Integration**: Einbindung der übersetzten Inhalte in die Dokumentation
-5. **Veröffentlichung**: Deployment der mehrsprachigen Dokumentation
+## 2. Zu übersetzende Inhalte
 
-## Zu übersetzende Inhalte
+- **Alle Markdown-Dateien** im Verzeichnis `docs/` und Unterverzeichnissen
+- **VitePress-Konfiguration**: Navigation, Sidebar, Metadaten (`docs/.vitepress/config.ts`)
+- **Komponentenbeispiele** und **Storybook-Stories**
+- **Front-Matter** (Titel, Kategorien etc.)
 
-Folgende Komponenten müssen übersetzt werden:
+## 3. Verzeichnisstruktur für Mehrsprachigkeit
 
-### 1. Markdown-Dateien
-
-Alle Markdown-Dateien im `docs`-Verzeichnis und Unterverzeichnissen:
-
-```bash
-find docs -name "*.md" -type f | sort
-```
-
-### 2. VitePress-Konfiguration
-
-Die Navigation, Seitenleisten und andere UI-Elemente in `docs/.vitepress/config.ts`:
-
-```js
-// Beispiel für Übersetzung der Navigation
-nav: [
-  { text: 'Home', link: '/' },              // Aus "Startseite"
-  { text: 'Getting Started', link: '/getting-started/' },  // Aus "Erste Schritte"
-  { text: 'Components', link: '/components/' },  // Aus "Komponenten"
-  { text: 'Effects', link: '/guide/effects-system' },  // Aus "Effekte"
-  { text: 'Storybook', link: '/storybook/' },
-  { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
-]
-```
-
-### 3. Komponenten-Beispiele und Code-Snippets
-
-Alle Beispiel-Code und deren Kommentare, besonders in den Storybook-Beispielen.
-
-### 4. Seiten-Metadaten
-
-Front-Matter in Markdown-Dateien:
-
-```markdown
----
-title: "Getting Started"  # Aus "Erste Schritte"
-category: "Documentation"  # Aus "Dokumentation"
----
-```
-
-## Einrichten der Mehrsprachigkeit
-
-### Sprachumschaltung in VitePress
-
-1. Erstellen Sie eine Verzeichnisstruktur für mehrere Sprachen:
+Empfohlene Struktur:
 
 ```
 docs/
 ├── .vitepress/
-├── de/          # Deutsche Inhalte (Original)
+├── de/          # Deutsche Originale
 │   ├── index.md
-│   ├── getting-started/
 │   └── ...
-└── en/          # Englische Inhalte (Übersetzung)
+└── en/          # Englische Übersetzungen
     ├── index.md
-    ├── getting-started/
     └── ...
 ```
 
-2. Aktualisieren Sie die VitePress-Konfiguration für Mehrsprachigkeit:
+## 4. Übersetzungsworkflow
 
-```js
-// docs/.vitepress/config.ts
-export default defineConfig({
-  // ...
-  locales: {
-    root: {
-      label: 'English',
-      lang: 'en',
-      // Englische Konfiguration
-      themeConfig: {
-        // Englische Theme-Konfiguration
-      }
-    },
-    de: {
-      label: 'Deutsch',
-      lang: 'de',
-      link: '/de/',
-      // Deutsche Konfiguration (aktuell)
-      themeConfig: {
-        // Deutsche Theme-Konfiguration
-      }
+1. **Inventarisierung**: Liste aller zu übersetzenden Dateien anlegen (z.B. als Tabelle oder Spreadsheet).
+2. **Glossar**: Technische Begriffe und UI-spezifische Termini in einer Tabelle Deutsch ↔ Englisch festlegen.
+3. **Übersetzung**: 
+   - Zuerst Hauptseiten (Start, Getting Started, Komponentenübersicht, Layout, Grid, Spacing, Utilities, Themes, Layer, Tokens, Forms, Colors, Color-Mix, Guides).
+   - Anschließend erweiterte Guides, Beispiele, API-Referenzen.
+   - Code-Kommentare und Storybook-Beschreibungen nicht vergessen!
+4. **Review**: 
+   - Technische Prüfung (Entwickler)
+   - Sprachliche Prüfung (Übersetzer)
+   - UX-Prüfung (Lesbarkeit, Verständlichkeit)
+5. **Integration**: Übersetzte Dateien in `docs/en/` einpflegen, Navigation und Sidebar in der VitePress-Konfiguration anpassen.
+6. **Test & Deployment**: 
+   - Navigation, Links und Sprachumschaltung prüfen
+   - Rendering und Formatierung kontrollieren
+   - Deployment der englischen Version
+
+## 5. Technische Hinweise
+
+- **VitePress Mehrsprachigkeit**: In `docs/.vitepress/config.ts` die `locales`-Option nutzen, z.B.:
+  ```js
+  export default defineConfig({
+    locales: {
+      root: { label: 'English', lang: 'en', ... },
+      de:   { label: 'Deutsch', lang: 'de', link: '/de/', ... }
     }
-  }
-})
-```
+  })
+  ```
+- **Sprachumschalter**: In die Navigation einbauen, z.B. als Dropdown oder Link.
+- **Front-Matter**: Titel, Kategorien etc. übersetzen.
 
-## Übersetzungsworkflow
+## 6. Übersetzungsrichtlinien
 
-### 1. Erstellen Sie ein Übersetzungsinventar
+- **Fachbegriffe**: Wenn im Englischen üblich, beibehalten (z.B. "Component", "Token", "Layer").
+- **Konsistenz**: Wiederkehrende Begriffe immer gleich übersetzen (siehe Glossar).
+- **Code-Kommentare**: Übersetzen, Variablennamen bleiben erhalten.
+- **Beispiele**: Auch Beispieltexte und Storybook-Titel übersetzen.
 
-Erstellen Sie eine Tabelle mit allen zu übersetzenden Dateien, ihrem Status und Verantwortlichen:
+## 7. Tools & Empfehlungen
 
-| Datei | Status | Verantwortlich | Überprüft |
-|-------|--------|----------------|-----------|
-| docs/index.md | Ausstehend | | |
-| docs/getting-started/index.md | Ausstehend | | |
-| ... | | | |
+- **CAT-Tools**: Für größere Projekte Crowdin, Lokalise, POEditor etc.
+- **Glossar**: Gemeinsames Spreadsheet für Terminologie.
+- **Qualitätsprüfung**: Tools wie textlint für Stil und Konsistenz.
+- **Automatisierung**: Skripte für Inventarisierung und Status-Tracking.
 
-### 2. Übersetzungsrichtlinien
+## 8. Qualitätssicherung & Wartung
 
-#### Allgemeine Richtlinien
+- **Review-Prozess** etablieren (technisch, sprachlich, UX)
+- **Synchronisation**: Änderungen in der deutschen Doku regelmäßig in die englische Version übernehmen
+- **Feedback** von englischsprachigen Nutzern einholen
 
-- Behalten Sie Fachbegriffe in ihrer ursprünglichen Form bei, wenn sie in der Zielsprache üblich sind
-- Verwenden Sie konsistente Übersetzungen für wiederkehrende Begriffe
-- Respektieren Sie Markup und Formatierungen im Original
+## 9. Nächste Schritte
 
-#### Technische Terminologie
+1. Inventarisierung aller zu übersetzenden Dateien
+2. Glossar anlegen und freigeben
+3. Pilotseite übersetzen und Review durchführen
+4. Übersetzungsprozess für das gesamte Projekt starten
 
-| Deutsch | Englisch |
-|---------|----------|
-| Komponente | Component |
-| Schaltfläche | Button |
-| Eingabefeld | Input field |
-| Seitenleiste | Sidebar |
-| Kopfzeile | Header |
-| Fußzeile | Footer |
-| Hinweis | Alert |
-| Benachrichtigung | Notification |
-| Bestätigungsdialog | Confirmation dialog |
-| ... | ... |
+---
 
-#### Code-Kommentare
-
-Übersetzen Sie Kommentare im Code, behalten Sie aber Variablennamen und Funktionen bei:
-
-```js
-// Vor der Übersetzung
-// Diese Funktion berechnet die Summe von a und b
-function summe(a, b) {
-  return a + b; // Gibt die Summe zurück
-}
-
-// Nach der Übersetzung
-// This function calculates the sum of a and b
-function summe(a, b) {
-  return a + b; // Returns the sum
-}
-```
-
-### 3. Übersetzungstools
-
-Für eine effiziente Übersetzung empfehlen wir:
-
-- **CAT-Tools** (Computer-Aided Translation): Werkzeuge wie [Crowdin](https://crowdin.com/), [Lokalise](https://lokalise.com/) oder [POEditor](https://poeditor.com/)
-- **Terminologie-Management**: Erstellen Sie ein Glossar für konsistente Übersetzungen
-- **Qualitätsprüfung**: Verwenden Sie Tools wie [textlint](https://textlint.github.io/) für Stilprüfungen
-
-Alternativ für kleinere Projekte:
-- Eine Kombination aus DeepL für Erstentwürfe und manuelle Nachbearbeitung
-- Ein geteiltes Spreadsheet zur Terminologieverwaltung
-
-## Integration der übersetzten Inhalte
-
-### Schrittweise Integration
-
-1. Beginnen Sie mit den wichtigsten Seiten:
-   - Startseite
-   - Installationsanleitung
-   - Hauptkomponentendokumentation
-
-2. Setzen Sie dann mit weniger kritischen Inhalten fort:
-   - Erweiterte Guides
-   - Beispiele
-   - API-Referenzen
-
-### Routing und Sprachumschaltung
-
-Implementieren Sie einen Sprachschalter in der Navigation:
-
-```html
-<div class="language-switcher">
-  <a href="/" class="language-option">English</a>
-  <a href="/de/" class="language-option">Deutsch</a>
-</div>
-```
-
-## Übersetzung der Storybook-Integration
-
-### 1. Stories und Dokumentation
-
-- Übersetzen Sie die Story-Beschreibungen und Parameter
-- Behalten Sie die technischen Parameter und Komponentennamen bei
-
-### 2. iframes für Stories
-
-Aktualisieren Sie die iframes für Storybook:
-
-```html
-<!-- Vor der Übersetzung -->
-<iframe
-  src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-button--primary&viewMode=story"
-  title="Primärer Button"
-></iframe>
-
-<!-- Nach der Übersetzung -->
-<iframe
-  src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-button--primary&viewMode=story"
-  title="Primary Button"
-></iframe>
-```
-
-## Deployment und Veröffentlichung
-
-### 1. Testen der übersetzten Version
-
-Überprüfen Sie vor dem Deployment:
-- Links und Navigation funktionieren korrekt
-- Alle Inhalte sind übersetzt
-- Das Rendering erfolgt korrekt
-
-### 2. Konfiguration der Standardsprache
-
-Konfigurieren Sie die Standardsprache in der VitePress-Konfiguration:
-
-```js
-export default defineConfig({
-  // ...
-  locales: {
-    root: {
-      label: 'English',
-      lang: 'en'
-      // Englisch als Root/Standard
-    },
-    de: {
-      // ...
-    }
-  }
-})
-```
-
-### 3. Redirects einrichten
-
-Richten Sie Weiterleitungen ein, basierend auf den Spracheinstellungen des Browsers:
-
-```js
-// Beispiel für eine serverseitige Weiterleitung (Netlify _redirects)
-/*  /de/:splat  302  Language=de
-/*  /en/:splat  302
-```
-
-## Qualitätssicherung und Wartung
-
-### Übersetzungs-Review
-
-Etablieren Sie einen Review-Prozess:
-- Technische Genauigkeit (Entwickler-Review)
-- Sprachqualität (Übersetzer-Review)
-- Benutzerfreundlichkeit (UX-Review)
-
-### Kontinuierliche Aktualisierung
-
-- Halten Sie die Übersetzungen synchron mit der Hauptdokumentation
-- Aktualisieren Sie die Terminologiedatenbank regelmäßig
-- Sammeln Sie Feedback von nicht-deutschsprachigen Nutzern
-
-## Nächste Schritte
-
-1. **Inventarisierung**: Erstellen Sie eine vollständige Liste aller zu übersetzenden Dateien
-2. **Glossar**: Entwickeln Sie ein umfassendes Glossar technischer Begriffe
-3. **Projektplan**: Definieren Sie Meilensteine und Verantwortlichkeiten
-4. **Infrastruktur**: Richten Sie die Verzeichnisstruktur für mehrere Sprachen ein
-5. **Beginnen Sie mit einer Pilotseite**: Übersetzen Sie eine repräsentative Seite als Proof of Concept
-
-Durch die systematische Umsetzung dieses Leitfadens kann die Casoon UI Library Dokumentation erfolgreich internationalisiert werden, um ein breiteres, englischsprachiges Publikum zu erreichen. 
+Mit diesem Leitfaden kann die Internationalisierung der Casoon UI Library Dokumentation systematisch und effizient umgesetzt werden. 

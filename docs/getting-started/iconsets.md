@@ -1,25 +1,25 @@
 ---
-title: Icon-System
+title: Icon System
 category: Getting Started
 ---
 
-# Icon-System
+# Icon System
 
-Das Casoon UI Library Icon-System bietet eine umfassende Lösung für die Integration und Verwendung von Icons in Ihrer Anwendung.
+The Casoon UI Library Icon System provides a comprehensive solution for integrating and using icons in your application.
 
-## CSS-Import
+## CSS Import
 
-Um das komplette Casoon UI Icon-System zu nutzen, importieren Sie einfach die `core.css` Datei:
+To use the complete Casoon UI Icon System, simply import the `core.css` file:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Dadurch wird automatisch das Layer-System geladen, welches auch den `icons`-Layer und alle Icon-Sets über `icons.css` enthält.
+This automatically loads the layer system, which also includes the `icons` layer and all icon sets via `icons.css`.
 
-## Layer-Struktur
+## Layer Structure
 
-Die Icons sind Teil des zentralen Layer-Systems und werden unter dem `icons`-Layer definiert:
+The icons are part of the central layer system and are defined under the `icons` layer:
 
 ```css
 @layer reset,
@@ -29,64 +29,64 @@ Die Icons sind Teil des zentralen Layer-Systems und werden unter dem `icons`-Lay
        utilities,
        smooth-scroll,
        accessibility,
-       icons,           /* Icon-System */
+       icons,           /* Icon System */
        animations,
        effects,
        themes;
 ```
 
-## Überblick
+## Overview
 
-Das Icon-System basiert auf SVG-Icons und bietet verschiedene Implementierungsmethoden:
+The icon system is based on SVG icons and offers various implementation methods:
 
-1. **Inline SVG-Icons** - die empfohlene Methode mit der besten Leistung und Anpassbarkeit
-2. **Sprite-basierte Icons** - für effiziente Wiederverwendung über ein zentrales Sprite-Sheet
-3. **Icon-Komponenten** - für einfache Integration in Framework-Projekte
+1. **Inline SVG icons** - the recommended method with the best performance and customizability
+2. **Sprite-based icons** - for efficient reuse via a central sprite sheet
+3. **Icon components** - for easy integration into framework projects
 
-## Einrichtung
+## Setup
 
-### Methode 1: Komplettes Icon-System über core.css
+### Method 1: Complete Icon System via core.css
 
-Die einfachste Methode, alle Icon-Sets zu importieren:
+The simplest method to import all icon sets:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-### Methode 2: Nur bestimmte Icon-Sets importieren
+### Method 2: Import Only Specific Icon Sets
 
-Importieren Sie nur die benötigten Icon-Sets:
+Import only the icon sets you need:
 
 ```css
-/* Basis importieren */
+/* Import base */
 @import "@casoon/ui-lib/icons/base.css";
 
-/* Gewünschte Icon-Sets hinzufügen */
+/* Add desired icon sets */
 @import "@casoon/ui-lib/icons/feather.css";
 @import "@casoon/ui-lib/icons/heroicons.css";
 ```
 
-## Verfügbare Icon-Sets
+## Available Icon Sets
 
-Casoon UI Library bietet eine Vielzahl von Icon-Sets:
+Casoon UI Library offers a variety of icon sets:
 
-| Icon-Set | Beschreibung | Import-Pfad |
+| Icon Set | Description | Import Path |
 |----------|--------------|-------------|
-| Feather | Einfache, klare Icons | `@casoon/ui-lib/icons/feather.css` |
-| Heroicons | Moderne Icons im Apple-Stil | `@casoon/ui-lib/icons/heroicons.css` |
-| Phosphor | Flexible, konsistente Icons | `@casoon/ui-lib/icons/phosphor.css` |
-| Bootstrap | Icons im Bootstrap-Stil | `@casoon/ui-lib/icons/bootstrap.css` |
-| Remix | Vielseitige Open-Source Icons | `@casoon/ui-lib/icons/remix.css` |
+| Feather | Simple, clear icons | `@casoon/ui-lib/icons/feather.css` |
+| Heroicons | Modern icons in Apple style | `@casoon/ui-lib/icons/heroicons.css` |
+| Phosphor | Flexible, consistent icons | `@casoon/ui-lib/icons/phosphor.css` |
+| Bootstrap | Icons in Bootstrap style | `@casoon/ui-lib/icons/bootstrap.css` |
+| Remix | Versatile open-source icons | `@casoon/ui-lib/icons/remix.css` |
 | MDI (Material) | Google Material Design Icons | `@casoon/ui-lib/icons/mdi.css` |
-| Font Awesome | Beliebte Icon-Sammlung | `@casoon/ui-lib/icons/fontawesome.css` |
-| Lucide | Fortführung der Feather Icons | `@casoon/ui-lib/icons/lucide.css` |
-| Tabler | Über 3000 pixelperfekte Icons | `@casoon/ui-lib/icons/tabler.css` |
+| Font Awesome | Popular icon collection | `@casoon/ui-lib/icons/fontawesome.css` |
+| Lucide | Continuation of Feather Icons | `@casoon/ui-lib/icons/lucide.css` |
+| Tabler | Over 3000 pixel-perfect icons | `@casoon/ui-lib/icons/tabler.css` |
 
-## Icon-Verwendung
+## Icon Usage
 
-### Standardmethode mit Icon-Klassen
+### Standard Method with Icon Classes
 
-Das neue Icon-System verwendet einheitliche Klassennamen für alle Icon-Sets. Beispiel für Feather Icons:
+The new icon system uses uniform class names for all icon sets. Example for Feather Icons:
 
 ```html
 <span class="feather-home"></span>
@@ -94,7 +94,7 @@ Das neue Icon-System verwendet einheitliche Klassennamen für alle Icon-Sets. Be
 <span class="feather-user"></span>
 ```
 
-Für Heroicons:
+For Heroicons:
 
 ```html
 <span class="heroicon-home"></span>
@@ -102,7 +102,7 @@ Für Heroicons:
 <span class="heroicon-user"></span>
 ```
 
-### Inline SVG-Icons (traditionell)
+### Inline SVG Icons (Traditional)
 
 ```html
 <div class="icon">
@@ -113,7 +113,7 @@ Für Heroicons:
 </div>
 ```
 
-### SVG-Sprite Referenzierung
+### SVG Sprite Reference
 
 ```html
 <div class="icon">
@@ -123,149 +123,149 @@ Für Heroicons:
 </div>
 ```
 
-### Icon-Größen
+### Icon Sizes
 
-Das Icon-System bietet vordefinierte Größen:
+The icon system offers predefined sizes:
 
 ```html
-<div class="icon icon--xs"><!-- Extra klein (16px) --></div>
-<div class="icon icon--sm"><!-- Klein (20px) --></div>
+<div class="icon icon--xs"><!-- Extra small (16px) --></div>
+<div class="icon icon--sm"><!-- Small (20px) --></div>
 <div class="icon"><!-- Standard (24px) --></div>
-<div class="icon icon--md"><!-- Mittel (32px) --></div>
-<div class="icon icon--lg"><!-- Groß (40px) --></div>
-<div class="icon icon--xl"><!-- Extra groß (48px) --></div>
+<div class="icon icon--md"><!-- Medium (32px) --></div>
+<div class="icon icon--lg"><!-- Large (40px) --></div>
+<div class="icon icon--xl"><!-- Extra large (48px) --></div>
 ```
 
-### Icon-Farben
+### Icon Colors
 
-Icons erben standardmäßig die Textfarbe ihres Elternelements (`currentColor`):
+Icons inherit the text color of their parent element by default (`currentColor`):
 
 ```html
 <div class="text-primary">
-  <div class="icon"><!-- Icon übernimmt die primäre Textfarbe --></div>
+  <div class="icon"><!-- Icon takes on the primary text color --></div>
 </div>
 
 <div class="icon" style="color: var(--color-accent)">
-  <!-- Direktes Setzen einer Farbe -->
+  <!-- Direct color setting -->
 </div>
 ```
 
-### Farbvariationen über CSS-Klassen
+### Color Variations via CSS Classes
 
 ```html
-<div class="icon icon--primary"><!-- Primärfarbe --></div>
-<div class="icon icon--secondary"><!-- Sekundärfarbe --></div>
-<div class="icon icon--accent"><!-- Akzentfarbe --></div>
-<div class="icon icon--success"><!-- Erfolgsfarbe --></div>
-<div class="icon icon--warning"><!-- Warnfarbe --></div>
-<div class="icon icon--error"><!-- Fehlerfarbe --></div>
-<div class="icon icon--info"><!-- Infofarbe --></div>
-<div class="icon icon--light"><!-- Helle Farbe --></div>
-<div class="icon icon--dark"><!-- Dunkle Farbe --></div>
+<div class="icon icon--primary"><!-- Primary color --></div>
+<div class="icon icon--secondary"><!-- Secondary color --></div>
+<div class="icon icon--accent"><!-- Accent color --></div>
+<div class="icon icon--success"><!-- Success color --></div>
+<div class="icon icon--warning"><!-- Warning color --></div>
+<div class="icon icon--error"><!-- Error color --></div>
+<div class="icon icon--info"><!-- Info color --></div>
+<div class="icon icon--light"><!-- Light color --></div>
+<div class="icon icon--dark"><!-- Dark color --></div>
 ```
 
-## Icon mit Text kombinieren
+## Combining Icon with Text
 
-### Horizontale Anordnung
+### Horizontal Arrangement
 
 ```html
 <div class="flex flex--items-center flex--gap-2">
   <div class="icon">
-    <svg><!-- Icon-Inhalt --></svg>
+    <svg><!-- Icon content --></svg>
   </div>
-  <span>Beschreibungstext</span>
+  <span>Description text</span>
 </div>
 ```
 
-### Icon-Button
+### Icon Button
 
 ```html
 <button class="btn btn--primary">
   <span class="flex flex--items-center flex--gap-2">
     <div class="icon">
-      <svg><!-- Icon-Inhalt --></svg>
+      <svg><!-- Icon content --></svg>
     </div>
-    <span>Button mit Icon</span>
+    <span>Button with icon</span>
   </span>
 </button>
 ```
 
-## Icon-Anpassungen
+## Icon Customizations
 
-### Icon-Ausrichtung
+### Icon Alignment
 
 ```html
 <div class="flex flex--items-center flex--justify-center" style="height: 100px;">
-  <div class="icon"><!-- Zentriertes Icon --></div>
+  <div class="icon"><!-- Centered icon --></div>
 </div>
 ```
 
-### Rotation und Spiegelung
+### Rotation and Flipping
 
 ```html
-<div class="icon icon--rotate-90"><!-- 90° im Uhrzeigersinn gedreht --></div>
-<div class="icon icon--rotate-180"><!-- 180° gedreht --></div>
-<div class="icon icon--rotate-270"><!-- 270° im Uhrzeigersinn gedreht --></div>
-<div class="icon icon--flip-h"><!-- Horizontal gespiegelt --></div>
-<div class="icon icon--flip-v"><!-- Vertikal gespiegelt --></div>
+<div class="icon icon--rotate-90"><!-- Rotated 90° clockwise --></div>
+<div class="icon icon--rotate-180"><!-- Rotated 180° --></div>
+<div class="icon icon--rotate-270"><!-- Rotated 270° clockwise --></div>
+<div class="icon icon--flip-h"><!-- Flipped horizontally --></div>
+<div class="icon icon--flip-v"><!-- Flipped vertically --></div>
 ```
 
-### Animationen
+### Animations
 
 ```html
-<div class="icon icon--pulse"><!-- Pulsierendes Icon --></div>
-<div class="icon icon--spin"><!-- Rotierendes Icon --></div>
-<div class="icon icon--bounce"><!-- Hüpfendes Icon --></div>
+<div class="icon icon--pulse"><!-- Pulsing icon --></div>
+<div class="icon icon--spin"><!-- Rotating icon --></div>
+<div class="icon icon--bounce"><!-- Bouncing icon --></div>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für bessere Barrierefreiheit sollten Icons, die funktionale Bedeutung haben, entsprechende Beschreibungen enthalten:
+For better accessibility, icons that have functional meaning should include appropriate descriptions:
 
 ```html
-<button class="btn btn--icon" aria-label="Löschen">
+<button class="btn btn--icon" aria-label="Delete">
   <div class="icon">
-    <svg aria-hidden="true"><!-- Lösch-Icon --></svg>
+    <svg aria-hidden="true"><!-- Delete icon --></svg>
   </div>
 </button>
 ```
 
-Oder bei Icons mit begleitendem Text:
+Or for icons with accompanying text:
 
 ```html
 <button class="btn">
-  <div class="icon" aria-hidden="true"><!-- Icon ist dekorativ --></div>
-  <span>Speichern</span>
+  <div class="icon" aria-hidden="true"><!-- Icon is decorative --></div>
+  <span>Save</span>
 </button>
 ```
 
-## Eigene Icon-Sets einbinden
+## Integrating Custom Icon Sets
 
-Sie können eigene Icon-Sets erstellen und in das Layer-System integrieren:
+You can create your own icon sets and integrate them into the layer system:
 
 ```css
-/* Eigene CSS-Datei */
+/* Your own CSS file */
 @import "@casoon/ui-lib/core.css";
 
-/* Eigenes Icon-Set zum icons-Layer hinzufügen */
+/* Add custom icon set to the icons layer */
 @layer icons {
-  /* Eigene Icon-Definitionen */
+  /* Custom icon definitions */
   .custom-icon-home {
     background-image: url('path/to/home.svg');
-    /* Weitere Stile */
+    /* Additional styles */
   }
 
   .custom-icon-settings {
     background-image: url('path/to/settings.svg');
-    /* Weitere Stile */
+    /* Additional styles */
   }
 }
 ```
 
-## Best Practices für Icons
+## Best Practices for Icons
 
-- **Verwenden Sie semantische Icons** - Wählen Sie Icons, die intuitiv für ihre Funktion sind
-- **Stellen Sie Barrierefreiheit sicher** - Fügen Sie aria-label für funktionale Icons hinzu
-- **Halten Sie die Größen konsistent** - Verwenden Sie die vordefinierten Größenklassen
-- **Beachten Sie Kontrast und Farbgebung** - Stellen Sie sicher, dass Icons gut sichtbar sind
-- **Kombinieren Sie Text mit Icons** - Bei wichtigen Aktionen Text und Icons zusammen verwenden
+- **Use semantic icons** - Choose icons that are intuitive for their function
+- **Ensure accessibility** - Add aria-label for functional icons
+- **Keep sizes consistent** - Use the predefined size classes
+- **Consider contrast and coloring** - Make sure icons are clearly visible
+- **Combine text with icons** - Use text and icons together for important actions

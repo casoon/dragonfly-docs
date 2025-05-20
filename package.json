@@ -6,19 +6,23 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o docs/public/storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/vue3": "^8.6.14",
     "@vitejs/plugin-vue-jsx": "^4.1.2",
     "vitepress": "1.6.3",
     "vue": "3.5.13"
   },
   "dependencies": {
+    "@casoon/ui-lib": "^0.5.5",
     "@mdx-js/rollup": "3.1.0",
-    "@mdx-js/vue": "^3.1.0",
-    "@casoon/ui-lib": "^0.5.3"
+    "@mdx-js/vue": "^3.1.0"
   }
 }

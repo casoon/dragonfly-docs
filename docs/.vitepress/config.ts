@@ -4,7 +4,7 @@ import { UI_LIB_VERSION } from './data/versions'
 
 export default defineConfig({
   title: 'Casoon UI Library',
-  description: 'Eine moderne, flexible und zugängliche Komponentenbibliothek',
+  description: 'A modern, flexible and accessible component library',
   base: "/ui-docs/",
   ignoreDeadLinks: true,
 
@@ -24,36 +24,36 @@ export default defineConfig({
   },
 
   themeConfig: {
-    outlineTitle: 'Übersicht',
-    darkModeSwitchLabel: 'Erscheinungsbild',
-    sidebarMenuLabel: 'Menü',
-    returnToTopLabel: 'Zurück nach oben',
+    outlineTitle: 'On this page',
+    darkModeSwitchLabel: 'Appearance',
+    sidebarMenuLabel: 'Menu',
+    returnToTopLabel: 'Back to top',
     docFooter: {
-      prev: 'Vorherige Seite',
-      next: 'Nächste Seite'
+      prev: 'Previous page',
+      next: 'Next page'
     },
-    lastUpdatedText: 'Zuletzt aktualisiert',
-    langMenuLabel: 'Sprache ändern',
+    lastUpdatedText: 'Last updated',
+    langMenuLabel: 'Change language',
     notFound: {
-      title: 'Seite nicht gefunden',
-      quote: 'Es tut uns leid, aber wir konnten die Seite, nach der Sie suchen, nicht finden.',
-      linkText: 'Zur Startseite'
+      title: 'Page not found',
+      quote: 'Sorry, we could not find the page you are looking for.',
+      linkText: 'Go to homepage'
     },
     search: {
       provider: 'local',
       options: {
         translations: {
           button: {
-            buttonText: 'Suchen',
-            buttonAriaLabel: 'Suchen'
+            buttonText: 'Search',
+            buttonAriaLabel: 'Search'
           },
           modal: {
-            noResultsText: 'Keine Ergebnisse für',
-            resetButtonTitle: 'Suchfilter zurücksetzen',
+            noResultsText: 'No results for',
+            resetButtonTitle: 'Reset search filters',
             footer: {
-              selectText: 'Auswählen',
-              navigateText: 'Navigieren',
-              closeText: 'Schließen'
+              selectText: 'Select',
+              navigateText: 'Navigate',
+              closeText: 'Close'
             }
           }
         }
@@ -61,10 +61,10 @@ export default defineConfig({
     },
     
     nav: [
-      { text: 'Startseite', link: '/' },
-      { text: 'Erste Schritte', link: '/getting-started/' },
-      { text: 'Komponenten', link: '/components/' },
-      { text: 'Effekte', link: '/guide/effects-system' },
+      { text: 'Home', link: '/' },
+      { text: 'Getting Started', link: '/getting-started/' },
+      { text: 'Components', link: '/components/' },
+      { text: 'Effects', link: '/guide/effects-system' },
       { text: 'Storybook', link: '/storybook/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
@@ -81,96 +81,96 @@ export default defineConfig({
     sidebar: {
       '/getting-started/': [
         {
-          text: 'Erste Schritte',
+          text: 'Getting Started',
           items: [
-            { text: 'Einführung', link: '/getting-started/' },
+            { text: 'Introduction', link: '/getting-started/' },
             { text: 'Installation', link: '/getting-started/installation' },
           ]
         },
         {
-          text: 'Grundlegende Konzepte',
+          text: 'Core Concepts',
           items: [
-            { text: 'Design-Tokens', link: '/getting-started/tokens' },
-            { text: 'Layer-System', link: '/guide/layer-system' },
+            { text: 'Design Tokens', link: '/getting-started/tokens' },
+            { text: 'Layer System', link: '/guide/layer-system' },
             { text: 'Layout', link: '/getting-started/layout' },
-            { text: 'Typografie', link: '/getting-started/typography' },
+            { text: 'Typography', link: '/getting-started/typography' },
             { text: 'Themes', link: '/getting-started/themes' }
           ]
         },
         {
           text: 'Assets & Utilities',
           items: [
-            { text: 'Icon-Sets', link: '/getting-started/iconsets' },
-            { text: 'Utility-Klassen', link: '/getting-started/utilities' }
+            { text: 'Icon Sets', link: '/getting-started/iconsets' },
+            { text: 'Utility Classes', link: '/getting-started/utilities' }
           ]
         },
         {
-          text: 'Hilfe',
+          text: 'Help',
           items: [
             { text: 'Best Practices', link: '/getting-started/#best-practices' },
-            { text: 'FAQ', link: '/getting-started/#häufige-fragen-faq' },
-            { text: 'Fehlerbehebung', link: '/getting-started/#troubleshooting' }
+            { text: 'FAQ', link: '/getting-started/#faq' },
+            { text: 'Troubleshooting', link: '/getting-started/#troubleshooting' }
           ]
         }
       ],
       '/components/': [
         {
-          text: 'Basis-Komponenten',
+          text: 'Base Components',
           items: [
-            { text: 'Übersicht', link: '/components/' },
-            { text: 'Hinweis', link: '/components/alert/' },
+            { text: 'Overview', link: '/components/' },
+            { text: 'Alert', link: '/components/alert/' },
             { text: 'Avatar', link: '/components/avatar/' },
-            { text: 'Abzeichen', link: '/components/badge/' },
+            { text: 'Badge', link: '/components/badge/' },
             { text: 'Button', link: '/components/button/' },
-            { text: 'Karte', link: '/components/card/' },
+            { text: 'Card', link: '/components/card/' },
             { text: 'Chip', link: '/components/chip/' },
             { text: 'Code', link: '/components/code/' },
-            { text: 'Ladeindikator', link: '/components/spinner/' },
+            { text: 'Spinner', link: '/components/spinner/' },
             { text: 'Tooltip', link: '/components/tooltip/' }
           ]
         },
         {
-          text: 'Formular-Komponenten',
+          text: 'Form Components',
           items: [
             { text: 'Checkbox', link: '/components/checkbox/' },
-            { text: 'Datei', link: '/components/file/' },
-            { text: 'Formular', link: '/components/forms/' },
-            { text: 'Eingabefeld', link: '/components/input/' },
-            { text: 'Eingabegruppe', link: '/components/input-group/' },
+            { text: 'File', link: '/components/file/' },
+            { text: 'Form', link: '/components/forms/' },
+            { text: 'Input', link: '/components/input/' },
+            { text: 'Input Group', link: '/components/input-group/' },
             { text: 'Radio', link: '/components/radio/' },
-            { text: 'Auswahl', link: '/components/select/' },
-            { text: 'Schieberegler', link: '/components/slider/' },
-            { text: 'Schalter', link: '/components/switch/' },
-            { text: 'Textbereich', link: '/components/textarea/' }
+            { text: 'Select', link: '/components/select/' },
+            { text: 'Slider', link: '/components/slider/' },
+            { text: 'Switch', link: '/components/switch/' },
+            { text: 'Textarea', link: '/components/textarea/' }
           ]
         },
         {
-          text: 'Layout-Komponenten',
+          text: 'Layout Components',
           items: [
-            { text: 'Fußzeile', link: '/components/footer/' },
-            { text: 'Kopfzeile', link: '/components/header/' },
-            { text: 'Seitenleiste', link: '/components/sidebar/' },
-            { text: 'Tabelle', link: '/components/table/' },
+            { text: 'Footer', link: '/components/footer/' },
+            { text: 'Header', link: '/components/header/' },
+            { text: 'Sidebar', link: '/components/sidebar/' },
+            { text: 'Table', link: '/components/table/' },
             { text: 'Tabs', link: '/components/tabs/' }
           ]
         },
         {
-          text: 'Feedback-Komponenten',
+          text: 'Feedback Components',
           items: [
-            { text: 'Dialog', link: '/components/modal/' },
-            { text: 'Benachrichtigung', link: '/components/notification/' },
-            { text: 'Fortschritt', link: '/components/progress/' },
-            { text: 'Platzhalter', link: '/components/skeleton/' },
+            { text: 'Modal', link: '/components/modal/' },
+            { text: 'Notification', link: '/components/notification/' },
+            { text: 'Progress', link: '/components/progress/' },
+            { text: 'Skeleton', link: '/components/skeleton/' },
             { text: 'Toast', link: '/components/toast/' }
           ]
         },
         {
-          text: 'Erweiterte Komponenten',
+          text: 'Advanced Components',
           items: [
             { text: 'Blog', link: '/components/blog/' },
-            { text: 'Hamburger-Menü', link: '/components/hamburger/' },
+            { text: 'Hamburger Menu', link: '/components/hamburger/' },
             { text: 'Widget', link: '/components/widget/' },
-            { text: 'Assistent', link: '/components/wizard/' }
+            { text: 'Wizard', link: '/components/wizard/' }
           ]
         }
       ],
@@ -178,58 +178,58 @@ export default defineConfig({
         {
           text: 'Guide',
           items: [
-            { text: 'Einführung', link: '/guide/' },
+            { text: 'Introduction', link: '/guide/' },
             { text: 'Installation', link: '/guide/installation' },
-            { text: 'Layer-System', link: '/guide/layer-system' },
+            { text: 'Layer System', link: '/guide/layer-system' },
             { text: 'Core CSS System', link: '/guide/core-css-system' },
-            { text: 'Farbsystem', link: '/guide/colors-system' },
+            { text: 'Color System', link: '/guide/colors-system' },
             { text: 'Color-Mix System', link: '/guide/color-mix-system' },
-            { text: 'Theme-System', link: '/guide/theme-system' },
-            { text: 'CSS Variablen', link: '/guide/css-variablen' },
-            { text: 'Modulares Komponenten-System', link: '/guide/modulare-komponenten-system' },
-            { text: 'Responsive Anpassungen', link: '/guide/responsive-anpassungen' },
-            { text: 'Utility-Klassen', link: '/guide/utility-klassen' },
+            { text: 'Theme System', link: '/guide/theme-system' },
+            { text: 'CSS Variables', link: '/guide/css-variablen' },
+            { text: 'Modular Component System', link: '/guide/modulare-komponenten-system' },
+            { text: 'Responsive Adaptation', link: '/guide/responsive-anpassungen' },
+            { text: 'Utility Classes', link: '/guide/utility-klassen' },
           ]
         }
       ],
       '/guide/effects-system': [
         {
-          text: 'Effekt-System',
+          text: 'Effects System',
           items: [
-            { text: 'Übersicht', link: '/guide/effects-system' }
+            { text: 'Overview', link: '/guide/effects-system' }
           ]
         },
         {
-          text: 'Visuelle Effekte',
+          text: 'Visual Effects',
           items: [
-            { text: '3D-Effekte', link: '/guide/effects/visual/3d' },
-            { text: 'Filter-Effekte', link: '/guide/effects/visual/filters' },
-            { text: 'Schatten-Effekte', link: '/guide/effects/visual/shadows' },
-            { text: 'Gradient-Effekte', link: '/guide/effects/visual/gradient' },
-            { text: 'Muster & Texturen', link: '/guide/effects/visual/patterns' },
-            { text: 'Partikel-Effekte', link: '/guide/effects/visual/particles' },
-            { text: 'Morphing-Effekte', link: '/guide/effects/visual/morph' }
+            { text: '3D Effects', link: '/guide/effects/visual/3d' },
+            { text: 'Filter Effects', link: '/guide/effects/visual/filters' },
+            { text: 'Shadow Effects', link: '/guide/effects/visual/shadows' },
+            { text: 'Gradient Effects', link: '/guide/effects/visual/gradient' },
+            { text: 'Patterns & Textures', link: '/guide/effects/visual/patterns' },
+            { text: 'Particle Effects', link: '/guide/effects/visual/particles' },
+            { text: 'Morphing Effects', link: '/guide/effects/visual/morph' }
           ]
         },
         {
-          text: 'Interaktions-Effekte',
+          text: 'Interaction Effects',
           items: [
-            { text: 'Hover-Effekte', link: '/guide/effects/interaction/hover' },
-            { text: 'Fokus-Effekte', link: '/guide/effects/interaction/focus' },
-            { text: 'Aktiv-Effekte', link: '/guide/effects/interaction/active' },
-            { text: 'Ripple-Effekte', link: '/guide/effects/interaction/ripple' },
-            { text: 'Scroll-Effekte', link: '/guide/effects/interaction/scroll' },
+            { text: 'Hover Effects', link: '/guide/effects/interaction/hover' },
+            { text: 'Focus Effects', link: '/guide/effects/interaction/focus' },
+            { text: 'Active Effects', link: '/guide/effects/interaction/active' },
+            { text: 'Ripple Effects', link: '/guide/effects/interaction/ripple' },
+            { text: 'Scroll Effects', link: '/guide/effects/interaction/scroll' },
             { text: 'Transitions', link: '/guide/effects/transitions' }
           ]
         },
         {
-          text: 'Status-Effekte',
+          text: 'State Effects',
           items: [
-            { text: 'Lade-Effekte', link: '/guide/effects/state/loading' },
-            { text: 'Erfolgs-Effekte', link: '/guide/effects/state/success' },
-            { text: 'Fehler-Effekte', link: '/guide/effects/state/error' },
-            { text: 'Warnungs-Effekte', link: '/guide/effects/state/warning' },
-            { text: 'Deaktivierte Zustände', link: '/guide/effects/state/disabled' }
+            { text: 'Loading Effects', link: '/guide/effects/state/loading' },
+            { text: 'Success Effects', link: '/guide/effects/state/success' },
+            { text: 'Error Effects', link: '/guide/effects/state/error' },
+            { text: 'Warning Effects', link: '/guide/effects/state/warning' },
+            { text: 'Disabled States', link: '/guide/effects/state/disabled' }
           ]
         }
       ],
@@ -237,8 +237,8 @@ export default defineConfig({
         {
           text: 'Themes',
           items: [
-            { text: 'Übersicht', link: '/themes/' },
-            { text: 'CSS-Variablen', link: '/themes/custom-properties' }
+            { text: 'Overview', link: '/themes/' },
+            { text: 'CSS Variables', link: '/themes/custom-properties' }
           ]
         }
       ],
@@ -246,17 +246,8 @@ export default defineConfig({
         {
           text: 'Storybook',
           items: [
-            { text: 'Übersicht', link: '/storybook/' },
+            { text: 'Overview', link: '/storybook/' },
             { text: 'Integration', link: '/storybook/integration' },
-            { text: 'Komponenten-Beispiele', link: '/storybook/component-examples' }
-          ]
-        },
-        {
-          text: 'Verwendung',
-          items: [
-            { text: 'Einbetten von Stories', link: '/storybook/embedding' },
-            { text: 'Code-Beispiele', link: '/storybook/code-examples' },
-            { text: 'Interaktive Demos', link: '/storybook/interactive-demos' }
           ]
         }
       ]

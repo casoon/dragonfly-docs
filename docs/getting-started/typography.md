@@ -1,15 +1,15 @@
 ---
-title: Typografie
+title: Typography
 category: Getting Started
 ---
 
-# Typografie-Styles
+# Typography Styles
 
-Die Typografie-Styles der Casoon UI Library bieten eine konsistente und skalierbare Textformatierung für moderne Webanwendungen. Diese Styles können unabhängig von Komponenten verwendet werden.
+The Typography Styles of the Casoon UI Library provide consistent and scalable text formatting for modern web applications. These styles can be used independently of components.
 
-## Schriftfamilien
+## Font Families
 
-Die Casoon UI Library verwendet ein System von Schriftfamilien, die über CSS-Variablen definiert sind:
+The Casoon UI Library uses a system of font families defined via CSS variables:
 
 ```css
 :root {
@@ -19,17 +19,17 @@ Die Casoon UI Library verwendet ein System von Schriftfamilien, die über CSS-Va
 }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
-<p class="font-base">Text mit Basis-Schriftart</p>
-<h1 class="font-heading">Überschrift mit Heading-Schriftart</h1>
-<pre class="font-mono">Code mit Monospace-Schriftart</pre>
+<p class="font-base">Text with base font</p>
+<h1 class="font-heading">Heading with heading font</h1>
+<pre class="font-mono">Code with monospace font</pre>
 ```
 
-## Schriftgrößen
+## Font Sizes
 
-Die Schriftgrößen folgen einer konsistenten Skala:
+The font sizes follow a consistent scale:
 
 ```css
 :root {
@@ -49,21 +49,21 @@ Die Schriftgrößen folgen einer konsistenten Skala:
 }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
-<p class="text-xs">Extra klein</p>
-<p class="text-sm">Klein</p>
-<p class="text-base">Basis</p>
-<p class="text-lg">Groß</p>
-<p class="text-xl">Extra groß</p>
+<p class="text-xs">Extra small</p>
+<p class="text-sm">Small</p>
+<p class="text-base">Base</p>
+<p class="text-lg">Large</p>
+<p class="text-xl">Extra large</p>
 <p class="text-2xl">2XL</p>
 <p class="text-3xl">3XL</p>
 ```
 
-## Zeilenhöhe
+## Line Height
 
-Die Zeilenhöhen sind für verschiedene Textgrößen optimiert:
+The line heights are optimized for different text sizes:
 
 ```css
 :root {
@@ -76,20 +76,20 @@ Die Zeilenhöhen sind für verschiedene Textgrößen optimiert:
 }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
-<p class="leading-none">Zeilenhöhe 1</p>
-<p class="leading-tight">Zeilenhöhe 1.25</p>
-<p class="leading-snug">Zeilenhöhe 1.375</p>
-<p class="leading-normal">Zeilenhöhe 1.5</p>
-<p class="leading-relaxed">Zeilenhöhe 1.625</p>
-<p class="leading-loose">Zeilenhöhe 2</p>
+<p class="leading-none">Line height 1</p>
+<p class="leading-tight">Line height 1.25</p>
+<p class="leading-snug">Line height 1.375</p>
+<p class="leading-normal">Line height 1.5</p>
+<p class="leading-relaxed">Line height 1.625</p>
+<p class="leading-loose">Line height 2</p>
 ```
 
-## Schriftgewicht
+## Font Weight
 
-Die verschiedenen Schriftgewichte sind als CSS-Variablen definiert:
+The various font weights are defined as CSS variables:
 
 ```css
 :root {
@@ -105,23 +105,23 @@ Die verschiedenen Schriftgewichte sind als CSS-Variablen definiert:
 }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
-<p class="font-thin">Dünn</p>
-<p class="font-extralight">Extra leicht</p>
-<p class="font-light">Leicht</p>
+<p class="font-thin">Thin</p>
+<p class="font-extralight">Extra light</p>
+<p class="font-light">Light</p>
 <p class="font-normal">Normal</p>
 <p class="font-medium">Medium</p>
-<p class="font-semibold">Halbfett</p>
-<p class="font-bold">Fett</p>
-<p class="font-extrabold">Extra fett</p>
-<p class="font-black">Schwarz</p>
+<p class="font-semibold">Semibold</p>
+<p class="font-bold">Bold</p>
+<p class="font-extrabold">Extra bold</p>
+<p class="font-black">Black</p>
 ```
 
-## Textausrichtung
+## Text Alignment
 
-Utility-Klassen für Textausrichtung:
+Utility classes for text alignment:
 
 ```css
 .text-left { text-align: left; }
@@ -130,18 +130,18 @@ Utility-Klassen für Textausrichtung:
 .text-justify { text-align: justify; }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
-<p class="text-left">Linksbündig</p>
-<p class="text-center">Zentriert</p>
-<p class="text-right">Rechtsbündig</p>
-<p class="text-justify">Blocksatz</p>
+<p class="text-left">Left-aligned</p>
+<p class="text-center">Centered</p>
+<p class="text-right">Right-aligned</p>
+<p class="text-justify">Justified</p>
 ```
 
-## Textdekoration
+## Text Decoration
 
-Utility-Klassen für Textdekoration:
+Utility classes for text decoration:
 
 ```css
 .underline { text-decoration: underline; }
@@ -149,17 +149,17 @@ Utility-Klassen für Textdekoration:
 .no-underline { text-decoration: none; }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
-<p class="underline">Unterstrichener Text</p>
-<p class="line-through">Durchgestrichener Text</p>
-<p class="no-underline">Text ohne Unterstrich</p>
+<p class="underline">Underlined text</p>
+<p class="line-through">Strikethrough text</p>
+<p class="no-underline">Text without underline</p>
 ```
 
-## Textumwandlung
+## Text Transform
 
-Utility-Klassen für Textumwandlung:
+Utility classes for text transformation:
 
 ```css
 .uppercase { text-transform: uppercase; }
@@ -168,18 +168,18 @@ Utility-Klassen für Textumwandlung:
 .normal-case { text-transform: none; }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
-<p class="uppercase">Großbuchstaben</p>
-<p class="lowercase">Kleinbuchstaben</p>
-<p class="capitalize">Wortanfänge groß</p>
-<p class="normal-case">Normale Schreibweise</p>
+<p class="uppercase">Uppercase</p>
+<p class="lowercase">Lowercase</p>
+<p class="capitalize">Capitalized</p>
+<p class="normal-case">Normal case</p>
 ```
 
-## Textfarben
+## Text Colors
 
-Die Textfarben nutzen die Design-Token-Farbpalette:
+The text colors use the design token color palette:
 
 ```css
 .text-primary { color: var(--color-primary); }
@@ -190,38 +190,38 @@ Die Textfarben nutzen die Design-Token-Farbpalette:
 .text-info { color: var(--color-info); }
 ```
 
-### Anwendungsbeispiel:
+### Usage Example:
 
 ```html
-<p class="text-primary">Primäre Textfarbe</p>
-<p class="text-secondary">Sekundäre Textfarbe</p>
-<p class="text-success">Erfolgs-Textfarbe</p>
-<p class="text-warning">Warnungs-Textfarbe</p>
-<p class="text-error">Fehler-Textfarbe</p>
-<p class="text-info">Info-Textfarbe</p>
+<p class="text-primary">Primary text color</p>
+<p class="text-secondary">Secondary text color</p>
+<p class="text-success">Success text color</p>
+<p class="text-warning">Warning text color</p>
+<p class="text-error">Error text color</p>
+<p class="text-info">Info text color</p>
 ```
 
-## Responsive Typografie
+## Responsive Typography
 
-Alle Typografie-Utilities können mit Breakpoint-Präfixen verwendet werden:
+All typography utilities can be used with breakpoint prefixes:
 
-- `sm:` für Bildschirme ≥ 640px
-- `md:` für Bildschirme ≥ 768px
-- `lg:` für Bildschirme ≥ 1024px
-- `xl:` für Bildschirme ≥ 1280px
-- `2xl:` für Bildschirme ≥ 1536px
+- `sm:` for screens ≥ 640px
+- `md:` for screens ≥ 768px
+- `lg:` for screens ≥ 1024px
+- `xl:` for screens ≥ 1280px
+- `2xl:` for screens ≥ 1536px
 
 ```html
 <p class="text-base md:text-lg lg:text-xl">
-  Responsive Textgröße - Basis auf Mobilgeräten, größer auf Tablets und noch größer auf Desktop
+  Responsive text size - base on mobile devices, larger on tablets, and even larger on desktop
 </p>
 ```
 
-## Best Practices für Typografie
+## Best Practices for Typography
 
-- **Konsistente Schriftgrößen** - Verwenden Sie die vordefinierten Größen aus der Skala
-- **Optimale Lesbarkeit** - Nutzen Sie die vordefinierten Zeilenhöhen für verschiedene Textgrößen
-- **Visuelle Hierarchie** - Setzen Sie Schriftgewichte gezielt ein, um wichtige Elemente hervorzuheben
-- **Kombinierte Utilities** - Nutzen Sie Kombinationen von Typografie-Utilities für komplexe Formatierungen
-- **Responsive Anpassung** - Verwenden Sie responsive Präfixe für optimale Lesbarkeit auf allen Geräten
-- **Fokus auf wenige Schriftfamilien** - Beschränken Sie sich auf wenige, gut ausgewählte Schriftfamilien 
+- **Consistent Font Sizes** - Use the predefined sizes from the scale
+- **Optimal Readability** - Use the predefined line heights for different text sizes
+- **Visual Hierarchy** - Use font weights strategically to highlight important elements
+- **Combined Utilities** - Use combinations of typography utilities for complex formatting
+- **Responsive Adjustment** - Use responsive prefixes for optimal readability on all devices
+- **Focus on Few Font Families** - Limit yourself to a few, well-chosen font families 

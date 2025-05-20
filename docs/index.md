@@ -8,33 +8,37 @@ import { UI_LIB_VERSION } from './.vitepress/data/versions'
 
 # Casoon UI Library
 
-Willkommen zur Dokumentation der Casoon UI Library. Diese Bibliothek bietet ein modernes, konsistentes und modulares Design-System für die Entwicklung von benutzerfreundlichen und barrierearmen Benutzeroberflächen.
+Welcome to the Casoon UI Library documentation. This library provides a modern, consistent, and modular design system for developing user-friendly and accessible interfaces.
 
-## Aktuelle Version
+## Current Version
 
-Die aktuelle Version der Casoon UI Library ist `{{ UI_LIB_VERSION }}`.
+The current version of the Casoon UI Library is `{{ UI_LIB_VERSION }}`.
 
-## Überblick
+## Note on Version 0.5.5
 
-Die Casoon UI Library ist ein umfassendes CSS-Framework, das ein strukturiertes System aus Design-Tokens, Komponenten, Effekten und Utility-Klassen bietet. Die Library ist framework-agnostisch und kann in jeder modernen Webanwendung verwendet werden.
+Version 0.5.5 includes minor optimizations and bug fixes. Please check the Release Notes for details on changes to the layer structure, animations, and utilities.
 
-Die wichtigsten Bereiche der Library sind:
+## Overview
 
-- **[Komponenten](/components/)** - Über 35 wiederverwendbare UI-Elemente für verschiedene Anwendungsfälle
-- **[Effekte](/guide/effects-system)** - Visuelle Effekte, Animationen und Zustandsdarstellungen
-- **[Design-System](/guide/)** - Ein durchdachtes System für konsistentes Design
+The Casoon UI Library is a comprehensive CSS framework that offers a structured system of design tokens, components, effects, and utility classes. The library is framework-agnostic and can be used in any modern web application.
 
-## Hauptmerkmale
+The main areas of the library are:
 
-- **Modulares CSS** - Jede Komponente ist als eigenständiges CSS-Modul implementiert
-- **Responsives Design** - Alle Komponenten sind vollständig responsiv
-- **Barrierefreiheit** - Optimiert für Screenreader und Tastaturnavigation
-- **Anpassbare Themes** - Einfach anpassbare Design-Tokens für verschiedene Markenidentitäten
-- **Strukturierte Layer** - Organisierte CSS-Spezifität durch modernes Layer-System
+- **[Components](/components/)** - Over 35 reusable UI elements for various use cases
+- **[Effects](/guide/effects-system)** - Visual effects, animations, and state representations
+- **[Design System](/guide/)** - A well-thought-out system for consistent design
 
-## Erste Schritte
+## Key Features
 
-Der schnellste Weg, mit Casoon UI zu beginnen:
+- **Modular CSS** - Each component is implemented as a standalone CSS module
+- **Responsive Design** - All components are fully responsive
+- **Accessibility** - Optimized for screen readers and keyboard navigation
+- **Customizable Themes** - Easily customizable design tokens for different brand identities
+- **Structured Layers** - Organized CSS specificity through a modern layer system
+
+## Getting Started
+
+The quickest way to get started with Casoon UI:
 
 ```bash
 npm install @casoon/ui-lib@latest
@@ -44,59 +48,59 @@ npm install @casoon/ui-lib@latest
 @import "@casoon/ui-lib/core.css";
 ```
 
-Für detaillierte Installationsanweisungen besuchen Sie die [Installationsanleitung](/getting-started/installation).
+For detailed installation instructions, visit the [Installation Guide](/getting-started/installation).
 
-## Inhaltsübersicht
+## Content Overview
 
-### Komponenten
+### Components
 
-Die Casoon UI Library bietet eine umfangreiche Sammlung von Komponenten für verschiedene UI-Anforderungen:
+The Casoon UI Library offers an extensive collection of components for various UI requirements:
 
-- **Basis-Komponenten**: Button, Card, Avatar, Badge, Chip, Tooltip
-- **Formular-Komponenten**: Input, Select, Checkbox, Radio, Switch
-- **Layout-Komponenten**: Grid, Container, Header, Footer, Sidebar
-- **Feedback-Komponenten**: Alert, Toast, Modal, Notification, Progress
+- **Base Components**: Button, Card, Avatar, Badge, Chip, Tooltip
+- **Form Components**: Input, Select, Checkbox, Radio, Switch
+- **Layout Components**: Grid, Container, Header, Footer, Sidebar
+- **Feedback Components**: Alert, Toast, Modal, Notification, Progress
 
-Entdecken Sie die [komplette Komponentenbibliothek](/components/).
+Explore the [complete component library](/components/).
 
-### Effekte
+### Effects
 
-Das Effekt-System umfasst spezialisierte visuelle Effekte und Animationen:
+The effect system includes specialized visual effects and animations:
 
-- **Visuelle Effekte**: Neon, Glasmorphismus, Schatten, 3D-Transformationen
-- **Interaktionen**: Hover, Focus, Active, Ripple
-- **Zustände**: Success, Error, Warning, Loading, Disabled
+- **Visual Effects**: Neon, Glassmorphism, Shadows, 3D Transformations
+- **Interactions**: Hover, Focus, Active, Ripple
+- **States**: Success, Error, Warning, Loading, Disabled
 
-Erfahren Sie mehr im [Effekt-System Guide](/guide/effects-system).
+Learn more in the [Effects System Guide](/guide/effects-system).
 
-### Design-System
+### Design System
 
-Das Design-System basiert auf einem strukturierten Ansatz mit:
+The design system is based on a structured approach with:
 
-- **Layer-System**: Kontrollierte CSS-Spezifität und Organisation
-- **Design-Tokens**: Konsistente Designvariablen für Farben, Abstände, etc.
-- **Theming**: Flexible Anpassungsmöglichkeiten für verschiedene visuelle Stile
+- **Layer System**: Controlled CSS specificity and organization
+- **Design Tokens**: Consistent design variables for colors, spacing, etc.
+- **Theming**: Flexible customization options for different visual styles
 
-Mehr dazu in der [Anleitung](/guide/).
+More details in the [Guide](/guide/).
 
-## Support und Ressourcen
+## Support and Resources
 
 - [GitHub Repository](https://github.com/casoon/ui-lib)
-- [Fehlerbehebung](/getting-started/#troubleshooting)
-- [FAQs](/getting-started/#häufige-fragen-faq)
+- [Troubleshooting](/getting-started/#troubleshooting)
+- [FAQs](/getting-started/#faq)
 
-## Lizenz
+## License
 
-Die Casoon UI Library ist unter der MIT-Lizenz veröffentlicht.
+The Casoon UI Library is released under the MIT License.
 
-## Nutzung in KI-Tools (Model Context Protocol – MCP)
+## Using with AI Tools (Model Context Protocol – MCP)
 
-Um die Entwicklung mit der casoon/ui-lib zu vereinfachen, kann dein Editor oder KI-Tool (z. B. Cursor oder Continue) automatisch kontextuelle Informationen über das Projekt laden – inklusive Code, Struktur und Dokumentation.
+To simplify development with casoon/ui-lib, your editor or AI tool (e.g., Cursor or Continue) can automatically load contextual information about the project – including code, structure, and documentation.
 
-Dazu wird das Model Context Protocol (MCP) genutzt.
+This uses the Model Context Protocol (MCP).
 
-🔧 **Konfiguration (z. B. für Cursor)**
-Füge folgende Konfiguration in die cursor.config.json oder settings.json deines Tools ein:
+🔧 **Configuration (e.g., for Cursor)**
+Add the following configuration to your cursor.config.json or settings.json:
 
 ```json
 {
@@ -111,13 +115,13 @@ Füge folgende Konfiguration in die cursor.config.json oder settings.json deines
 }
 ```
 
-📌 **Erklärung**
-- **gitmcp-ui-lib**: Liefert strukturelle Infos zur Komponentenbibliothek selbst (Quellcode, Props, Imports, usw.).
-- **gitmcp-ui-docs**: Liefert Informationen aus der begleitenden VitePress-Dokumentation (z. B. Beispiele, Varianten, Slots).
+📌 **Explanation**
+- **gitmcp-ui-lib**: Provides structural information about the component library itself (source code, props, imports, etc.).
+- **gitmcp-ui-docs**: Provides information from the accompanying VitePress documentation (e.g., examples, variants, slots).
 
-✅ **Vorteil**
-Mit dieser Konfiguration kann ein KI-Assistent dein Projekt besser verstehen und dir gezielter helfen – etwa beim:
+✅ **Advantage**
+With this configuration, an AI assistant can better understand your project and help more effectively with:
 
-- Verwenden von Komponenten mit den richtigen Props
-- Erstellen von Snippets basierend auf echten Beispielen
-- Verstehen der Architektur deines Projekts 
+- Using components with the correct props
+- Creating snippets based on real examples
+- Understanding the architecture of your project

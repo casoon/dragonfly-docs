@@ -9,128 +9,128 @@ import { UI_LIB_VERSION } from '../.vitepress/data/versions'
 
 # Installation
 
-Die Casoon UI Library lässt sich flexibel in diverse Webprojekte integrieren und bietet verschiedene Installationsmethoden für unterschiedliche Anforderungen. Die aktuelle Version ist {{ UI_LIB_VERSION }}.
+The Casoon UI Library can be flexibly integrated into various web projects and offers different installation methods for different requirements. The current version is {{ UI_LIB_VERSION }}.
 
-## Voraussetzungen
+## Prerequisites
 
-- Node.js (Version 16 oder höher)
-- npm, yarn oder pnpm als Paketmanager
+- Node.js (Version 16 or higher)
+- npm, yarn, or pnpm as package manager
 
-## Installation über Paketmanager
+## Installation via Package Manager
 
-### Mit npm
-
-```bash
-npm install @casoon/ui-lib@latest
-```
-
-### Mit yarn
+### With npm
 
 ```bash
-yarn add @casoon/ui-lib@latest
+npm install @casoon/ui-lib@0.5.5
 ```
 
-### Mit pnpm
+### With yarn
 
 ```bash
-pnpm add @casoon/ui-lib@latest
+yarn add @casoon/ui-lib@0.5.5
 ```
 
-## Integration in Ihr Projekt
+### With pnpm
 
-### 1. Basisintegration mit Core-CSS
+```bash
+pnpm add @casoon/ui-lib@0.5.5
+```
 
-Die Core-Styles enthalten alle grundlegenden CSS-Definitionen, einschließlich Reset-Layer, Design-Tokens, Layout, Typografie und alle UI-Komponenten. Sie bilden die Grundlage für alle weiteren Anpassungen.
+## Integration into Your Project
 
-#### In einer JavaScript-Anwendung
+### 1. Basic Integration with Core CSS
+
+The core styles contain all basic CSS definitions, including reset layer, design tokens, layout, typography, and all UI components. They form the foundation for all further customizations.
+
+#### In a JavaScript Application
 
 ```javascript
-// In Ihrer Hauptdatei (z.B. index.js, app.js, main.js)
+// In your main file (e.g., index.js, app.js, main.js)
 import '@casoon/ui-lib/core.css';
 
-// Optional: Spezifische Effekte importieren
+// Optional: Import specific effects
 import '@casoon/ui-lib/effects/glass.css';
 import '@casoon/ui-lib/effects/animations.css';
 ```
 
-#### Direkte CSS-Integration
+#### Direct CSS Integration
 
 ```css
-/* In Ihrer Haupt-CSS-Datei */
+/* In your main CSS file */
 @import '@casoon/ui-lib/core.css';
 
-/* Optional: Spezifische Effekte importieren */
+/* Optional: Import specific effects */
 @import '@casoon/ui-lib/effects/glass.css';
 @import '@casoon/ui-lib/effects/animations.css';
 ```
 
-#### Mit einem Link-Tag im HTML
+#### With a Link Tag in HTML
 
 ```html
-<!-- Core-Styles -->
+<!-- Core styles -->
 <link rel="stylesheet" href="node_modules/@casoon/ui-lib/core.css">
 
-<!-- Optional: Spezifische Effekte -->
+<!-- Optional: Specific effects -->
 <link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/glass.css">
 <link rel="stylesheet" href="node_modules/@casoon/ui-lib/effects/animations.css">
 ```
 
-### 2. Modulare Integration
+### 2. Modular Integration
 
-Die Casoon UI Library verwendet einen modularen Ansatz, der Ihnen erlaubt, nur die benötigten Komponenten zu laden und so die Paketgröße zu optimieren.
+The Casoon UI Library uses a modular approach that allows you to load only the components you need, thus optimizing package size.
 
-#### Einzelne Dateien direkt importieren
+#### Import Individual Files Directly
 
 ```javascript
-// Grundlegende Dateien
+// Basic files
 import '@casoon/ui-lib/core.css';
 import '@casoon/ui-lib/layout.css';
 import '@casoon/ui-lib/typography.css';
 
-// Komponenten einzeln importieren
+// Import components individually
 import '@casoon/ui-lib/components/button.css';
 import '@casoon/ui-lib/components/card.css';
 import '@casoon/ui-lib/components/forms.css';
 
-// Effekte einzeln importieren
+// Import effects individually
 import '@casoon/ui-lib/effects/glass.css';
 import '@casoon/ui-lib/effects/animations.css';
 ```
 
-### 3. Theme-Aktivierung
+### 3. Theme Activation
 
-Die Casoon UI Library bietet ein flexibles Theming-System mit mehreren vordefinierten Themes.
+The Casoon UI Library offers a flexible theming system with multiple predefined themes.
 
-#### Theme importieren
+#### Import a Theme
 
 ```javascript
-// Standard-Theme (Day)
+// Standard theme (Day)
 import '@casoon/ui-lib/themes/day.css';
 
-// Oder ein anderes Theme
+// Or another theme
 import '@casoon/ui-lib/themes/night.css';
 import '@casoon/ui-lib/themes/ocean.css';
 ```
 
-#### Theme aktivieren
+#### Activate a Theme
 
-Fügen Sie die entsprechende Theme-Klasse zum `<html>` oder `<body>` Element hinzu:
+Add the corresponding theme class to the `<html>` or `<body>` element:
 
 ```html
-<!-- Für das Night-Theme -->
+<!-- For the Night theme -->
 <html class="theme-night">
-  <!-- Seiteninhalt -->
+  <!-- Page content -->
 </html>
 
-<!-- Oder am Body-Element -->
+<!-- Or on the body element -->
 <body class="theme-ocean">
-  <!-- Seiteninhalt -->
+  <!-- Page content -->
 </body>
 ```
 
-Weitere Details zum Theming finden Sie in der [Theming-Dokumentation](/getting-started/themes).
+For more details on theming, see the [Theming Documentation](/getting-started/themes).
 
-## Nutzung mit Build-Tools
+## Usage with Build Tools
 
 ### Webpack
 
@@ -147,7 +147,7 @@ module.exports = {
   },
 };
 
-// In Ihrer Anwendungsdatei
+// In your application file
 import '@casoon/ui-lib/core.css';
 import '@casoon/ui-lib/components/button.css';
 ```
@@ -160,16 +160,16 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   css: {
-    // Unterstützung für moderne CSS-Features aktivieren
+    // Enable support for modern CSS features
     postcss: {
       plugins: [
-        // Für volle Lightning CSS Unterstützung
+        // For full Lightning CSS support
       ]
     }
   }
 });
 
-// In Ihrer Hauptdatei
+// In your main file
 import '@casoon/ui-lib/core.css';
 import '@casoon/ui-lib/components/button.css';
 ```
@@ -181,35 +181,35 @@ import '@casoon/ui-lib/components/button.css';
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  // Casoon UI ist für Astro optimiert
-  // und benötigt keine besondere Konfiguration
+  // Casoon UI is optimized for Astro
+  // and requires no special configuration
 });
 
-// In Ihrer Astro-Komponente
+// In your Astro component
 ---
 import '@casoon/ui-lib/core.css';
 import '@casoon/ui-lib/themes/night.css';
 ---
 
 <html class="theme-night">
-  <!-- Inhalt -->
+  <!-- Content -->
 </html>
 ```
 
-### Lightning CSS Konfiguration (empfohlen)
+### Lightning CSS Configuration (recommended)
 
-Für optimale Ergebnisse wird die Verwendung von Lightning CSS (früher Parcel CSS) empfohlen:
+For optimal results, using Lightning CSS (formerly Parcel CSS) is recommended:
 
 ```js
 // postcss.config.js
 module.exports = {
   plugins: [
     require('lightningcss')({
-      // Lightning CSS Optionen
+      // Lightning CSS options
       drafts: {
         customMedia: true,
         nesting: true,
-        interpolation: true // Für interpolate-size Unterstützung
+        interpolation: true // For interpolate-size support
       },
       include: 'standard'
     })
@@ -217,64 +217,68 @@ module.exports = {
 };
 ```
 
-## CDN-Integration
+## CDN Integration
 
-Sie können die Casoon UI Library auch direkt über ein CDN einbinden, ohne lokale Installation:
+You can also integrate the Casoon UI Library directly via a CDN, without local installation:
 
 ```html
-<!-- Core-Styles -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/core.css">
+<!-- Core styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.5/core.css">
 
-<!-- Optionales Theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/themes/night.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.5/themes/night.css">
 
-<!-- Einzelne Komponenten -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/components/button.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@{{ UI_LIB_VERSION }}/components/card.css">
+<!-- Individual components -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.5/components/button.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@casoon/ui-lib@0.5.5/components/card.css">
 ```
 
-## Besondere Funktionen der aktuellen Version
+## Note on Version 0.5.5
 
-### Verbesserte Animations-CSS
+Version 0.5.5 includes minor optimizations and bug fixes. Please check the Release Notes for details on changes to layer structure, animations, and utilities.
+
+## Special Features of the Current Version
+
+### Improved Animation CSS
 
 ```css
-/* Moderne Animationen mit vereinheitlichtem Benennungsschema */
+/* Modern animations with unified naming scheme */
 .element {
   animation: slide-in-left 0.3s ease-out;
 }
 
-/* Motion-Safe und Motion-Reduce Utilities */
+/* Motion-safe and motion-reduce utilities */
 .motion-safe {
-  /* Animationen, die nur angezeigt werden, wenn keine Einschränkung besteht */
+  /* Animations that are only displayed when there is no restriction */
 }
 
 .motion-reduce {
-  /* Alternative für Nutzer mit aktiviertem 'prefers-reduced-motion' */
+  /* Alternative for users with 'prefers-reduced-motion' enabled */
 }
 ```
 
-### Flüssige Interpolation (interpolate-size)
+### Fluid Interpolation (interpolate-size)
 
-Die neue Version unterstützt `interpolate-size: allow-keywords` für flüssige Übergänge zwischen Größenwerten:
+The new version supports `interpolate-size: allow-keywords` for fluid transitions between size values:
 
 ```css
-/* Optimiert für Lightning CSS */
+/* Optimized for Lightning CSS */
 :root {
   interpolate-size: allow-keywords;
 }
 
-/* Flüssige Typografie */
+/* Fluid typography */
 .fluid-heading {
   font-size: medium with-range(small, x-large);
 }
 ```
 
-### Dialog-Animationen
+### Dialog Animations
 
 ```html
-<button id="openDialog">Dialog öffnen</button>
+<button id="openDialog">Open Dialog</button>
 <dialog id="myDialog" class="dialog dialog-enter">
-  Dialog-Inhalt
+  Dialog Content
 </dialog>
 
 <script>
@@ -284,20 +288,20 @@ Die neue Version unterstützt `interpolate-size: allow-keywords` für flüssige 
 </script>
 ```
 
-## Kompatibilität
+## Compatibility
 
-Die Casoon UI Library unterstützt alle modernen Browser. Einige fortschrittliche Features wie `interpolate-size` benötigen neuere Browser oder Lightning CSS zur Kompilierung.
+The Casoon UI Library supports all modern browsers. Some advanced features like `interpolate-size` require newer browsers or Lightning CSS for compilation.
 
 | Feature | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|
-| Core-CSS | 49+ | 31+ | 9.1+ | 15+ |
-| Container-Queries | 105+ | 110+ | 16.4+ | 105+ |
+| Core CSS | 49+ | 31+ | 9.1+ | 15+ |
+| Container Queries | 105+ | 110+ | 16.4+ | 105+ |
 | interpolate-size | 120+ | 121+ (flag) | 17+ | 120+ |
 | @property | 85+ | 113+ | 15.4+ | 85+ |
 
-## Weitere Informationen
+## Further Information
 
-- [Layer-System](/guide/layer-system)
-- [Design-Tokens](/getting-started/tokens)
-- [Layout-System](/getting-started/layout)
-- [Theme-System](/getting-started/themes) 
+- [Layer System](/guide/layer-system)
+- [Design Tokens](/getting-started/tokens)
+- [Layout System](/getting-started/layout)
+- [Theme System](/getting-started/themes) 
