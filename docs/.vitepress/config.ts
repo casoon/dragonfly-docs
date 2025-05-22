@@ -202,34 +202,24 @@ export default defineConfig({
         {
           text: 'Visual Effects',
           items: [
-            { text: '3D Effects', link: '/guide/effects/visual/3d' },
-            { text: 'Filter Effects', link: '/guide/effects/visual/filters' },
-            { text: 'Shadow Effects', link: '/guide/effects/visual/shadows' },
-            { text: 'Gradient Effects', link: '/guide/effects/visual/gradient' },
-            { text: 'Patterns & Textures', link: '/guide/effects/visual/patterns' },
-            { text: 'Particle Effects', link: '/guide/effects/visual/particles' },
-            { text: 'Morphing Effects', link: '/guide/effects/visual/morph' }
+            { text: '3D Effects', link: '/guide/effects/3d' },
+            { text: 'Filter Effects', link: '/guide/effects/filters' },
+            { text: 'Shadow Effects', link: '/guide/effects/shadows' },
+            { text: 'Gradient Effects', link: '/guide/effects/gradient' },
+            { text: 'Patterns & Textures', link: '/guide/effects/patterns' }
           ]
         },
         {
           text: 'Interaction Effects',
           items: [
             { text: 'Hover Effects', link: '/guide/effects/interaction/hover' },
-            { text: 'Focus Effects', link: '/guide/effects/interaction/focus' },
-            { text: 'Active Effects', link: '/guide/effects/interaction/active' },
-            { text: 'Ripple Effects', link: '/guide/effects/interaction/ripple' },
-            { text: 'Scroll Effects', link: '/guide/effects/interaction/scroll' },
-            { text: 'Transitions', link: '/guide/effects/transitions' }
+            { text: 'Focus Effects', link: '/guide/effects/interaction/focus' }
           ]
         },
         {
           text: 'State Effects',
           items: [
-            { text: 'Loading Effects', link: '/guide/effects/state/loading' },
-            { text: 'Success Effects', link: '/guide/effects/state/success' },
-            { text: 'Error Effects', link: '/guide/effects/state/error' },
-            { text: 'Warning Effects', link: '/guide/effects/state/warning' },
-            { text: 'Disabled States', link: '/guide/effects/state/disabled' }
+            { text: 'Loading Effects', link: '/guide/effects/state/loading' }
           ]
         }
       ],
