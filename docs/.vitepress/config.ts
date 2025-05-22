@@ -9,7 +9,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   head: [
-    ['link', { rel: 'stylesheet', href: '/casoon-ui-docs/custom.css' }]
+    ['link', { rel: 'stylesheet', href: '/ui-docs/custom.css' }]
   ],
 
   vite: {

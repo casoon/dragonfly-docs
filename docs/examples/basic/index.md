@@ -7,6 +7,8 @@ category: Examples
 
 This page showcases the basic UI components available in the Casoon UI Library. These components form the foundation of the design system and are used to build more complex interfaces.
 
+> **Note:** The component styles may not be displayed correctly in this documentation. The Casoon UI Library needs to be properly imported in your project to see the actual styling.
+
 ## Buttons
 
 Buttons are interactive elements that allow users to trigger actions.
