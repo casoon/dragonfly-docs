@@ -1,101 +1,101 @@
 ---
-title: Komponenten
+title: Components
 category: Components
 ---
 
-# Komponenten-Übersicht
+# Components Overview
 
-Die Casoon UI Library bietet eine umfangreiche Sammlung von modularen Komponenten für verschiedene UI-Anforderungen. Jede Komponente ist als eigenständiges CSS-Modul implementiert und wird über das zentrale Layer-System eingebunden.
+The Casoon UI Library provides an extensive collection of modular components for various UI requirements. Each component is implemented as a standalone CSS module and is integrated through the central layer system.
 
-## Verwendung der Komponenten
+## Using the Components
 
-Alle Komponenten werden automatisch durch das Einbinden der `core.css` Datei verfügbar:
+All components become available automatically by including the `core.css` file:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Die Komponenten-Module werden in der `modules.css` Datei organisiert und in eigenständigen Layern definiert:
+The component modules are organized in the `modules.css` file and defined in separate layers:
 
 ```css
-/* Alert Modul */
+/* Alert Module */
 @import url('./modules/alert.module.css') layer(module-alert);
 
-/* Avatar Modul */
+/* Avatar Module */
 @import url('./modules/avatar.module.css') layer(module-avatar);
 
-/* Weitere Module... */
+/* Additional modules... */
 ```
 
-## Verfügbare Komponenten
+## Available Components
 
-### Basis-Komponenten
+### Base Components
 
-Diese grundlegenden Komponenten bilden die Bausteine für komplexere Interfaces:
+These fundamental components serve as building blocks for more complex interfaces:
 
-- [Alert](/components/alert/) - Kontextbezogene Feedback-Nachrichten
-- [Avatar](/components/avatar/) - Benutzerprofilbilder und -darstellungen
-- [Badge](/components/badge/) - Kleine Zähler oder Statusanzeigen
-- [Button](/components/button/) - Interaktive Schaltflächen für Aktionen
-- [Card](/components/card/) - Container für zusammengehörige Informationen
-- [Chip](/components/chip/) - Kompakte, einheitliche Elemente für Informationen
-- [Code](/components/code/) - Darstellung von Code-Blöcken und -Snippets
-- [Spinner](/components/spinner/) - Ladeanimationen
-- [Tooltip](/components/tooltip/) - Zusatzinformationen bei Hover
+- [Alert](/components/alert/) - Context-sensitive feedback messages
+- [Avatar](/components/avatar/) - User profile images and representations
+- [Badge](/components/badge/) - Small counters or status indicators
+- [Button](/components/button/) - Interactive buttons for actions
+- [Card](/components/card/) - Containers for related information
+- [Chip](/components/chip/) - Compact, uniform elements for information
+- [Code](/components/code/) - Display of code blocks and snippets
+- [Spinner](/components/spinner/) - Loading animations
+- [Tooltip](/components/tooltip/) - Additional information on hover
 
-### Formular-Komponenten
+### Form Components
 
-Komponenten für die Erstellung interaktiver Formulare:
+Components for creating interactive forms:
 
-- [Checkbox](/components/checkbox/) - Mehrfachauswahl-Elemente
-- [File](/components/file/) - Datei-Upload-Elemente
-- [Form](/components/forms/) - Formular-Container und -Layout
-- [Input](/components/input/) - Texteingabefelder
-- [Input Group](/components/input-group/) - Gruppierte Eingabeelemente mit Add-ons
-- [Radio](/components/radio/) - Einfachauswahl-Elemente
-- [Select](/components/select/) - Auswahlmenüs für Optionen
-- [Slider](/components/slider/) - Schieberegler für numerische Werte
-- [Switch](/components/switch/) - Ein/Aus-Schalter
-- [Textarea](/components/textarea/) - Mehrzeilige Textfelder
+- [Checkbox](/components/checkbox/) - Multiple selection elements
+- [File](/components/file/) - File upload elements
+- [Form](/components/forms/) - Form containers and layout
+- [Input](/components/input/) - Text input fields
+- [Input Group](/components/input-group/) - Grouped input elements with add-ons
+- [Radio](/components/radio/) - Single selection elements
+- [Select](/components/select/) - Selection menus for options
+- [Slider](/components/slider/) - Sliders for numeric values
+- [Switch](/components/switch/) - On/off switches
+- [Textarea](/components/textarea/) - Multi-line text fields
 
-### Layout-Komponenten
+### Layout Components
 
-Komponenten für die strukturelle Organisation von Inhalten:
+Components for structural organization of content:
 
-- [Footer](/components/footer/) - Fußzeilen-Komponente
-- [Header](/components/header/) - Kopfzeilen-Komponente
-- [Sidebar](/components/sidebar/) - Seitenleisten-Navigation
-- [Table](/components/table/) - Tabellendarstellung mit erweiterter Funktionalität
-- [Tabs](/components/tabs/) - Registerkartenbasierte Navigation
+- [Footer](/components/footer/) - Footer component
+- [Header](/components/header/) - Header component
+- [Sidebar](/components/sidebar/) - Sidebar navigation
+- [Table](/components/table/) - Table representation with enhanced functionality
+- [Tabs](/components/tabs/) - Tab-based navigation
 
-### Feedback-Komponenten
+### Feedback Components
 
-Komponenten für Benutzerinteraktion und Feedback:
+Components for user interaction and feedback:
 
-- [Modal](/components/modal/) - Dialog-Fenster für fokussierte Inhalte
-- [Notification](/components/notification/) - Benachrichtigungen
-- [Progress](/components/progress/) - Fortschrittsanzeigen
-- [Skeleton](/components/skeleton/) - Lade-Platzhalter
-- [Toast](/components/toast/) - Kurzzeitige Benachrichtigungen
+- [Modal](/components/modal/) - Dialog windows for focused content
+- [Notification](/components/notification/) - Notifications
+- [Progress](/components/progress/) - Progress indicators
+- [Skeleton](/components/skeleton/) - Loading placeholders
+- [Toast](/components/toast/) - Temporary notifications
 
-### Fortgeschrittene Komponenten
+### Advanced Components
 
-Spezialisierte Komponenten für komplexere Anforderungen:
+Specialized components for more complex requirements:
 
-- [Blog](/components/blog/) - Blog-Post-Layout und -Stile
-- [Hamburger](/components/hamburger/) - Mobile Menü-Toggle-Buttons
-- [Widget](/components/widget/) - Wiederverwendbare Content-Container
-- [Wizard](/components/wizard/) - Mehrstufige Prozess-Steuerung
+- [Blog](/components/blog/) - Blog post layout and styles
+- [Hamburger](/components/hamburger/) - Mobile menu toggle buttons
+- [Widget](/components/widget/) - Reusable content containers
+- [Wizard](/components/wizard/) - Multi-step process control
 
-## Komponenten anpassen
+## Customizing Components
 
-Alle Komponenten können über CSS-Variablen und das Layer-System angepasst werden:
+All components can be customized via CSS variables and the layer system:
 
 ```css
-/* Eigene CSS-Datei */
+/* Custom CSS file */
 @import "@casoon/ui-lib/core.css";
 
-/* Anpassung einer Komponente */
+/* Component customization */
 @layer module-button {
   .btn.custom {
     background-color: var(--color-brand);
@@ -106,39 +106,39 @@ Alle Komponenten können über CSS-Variablen und das Layer-System angepasst werd
 
 ## Best Practices
 
-- **Kombinieren Sie Komponenten** - Verwenden Sie Komponenten zusammen für komplexe UIs
-- **Nutzen Sie Design Tokens** - Verwenden Sie die vordefinierten Variablen für konsistentes Design
-- **Berücksichtigen Sie Barrierefreiheit** - Achten Sie auf semantische Nutzung der Komponenten
-- **Mobile-First Ansatz** - Beginnen Sie mit dem mobilen Design und erweitern Sie für größere Bildschirme
-- **Layer-Spezifität beachten** - Bedenken Sie die Hierarchie des Layer-Systems bei Anpassungen
+- **Combine components** - Use components together for complex UIs
+- **Utilize design tokens** - Use predefined variables for consistent design
+- **Consider accessibility** - Pay attention to semantic use of components
+- **Mobile-first approach** - Start with mobile design and expand for larger screens
+- **Mind layer specificity** - Consider the hierarchy of the layer system when making customizations
 
-## Verwendungsbeispiele
+## Usage Examples
 
 ### Button
 
 ```html
-<button class="button">Klick mich</button>
-<button class="button primary">Primär</button>
+<button class="button">Click me</button>
+<button class="button primary">Primary</button>
 <button class="button outline">Outline</button>
 ```
 
-[Zur Button-Dokumentation](/components/button/)
+[Go to Button documentation](/components/button/)
 
 ### Input
 
 ```html
-<input type="text" class="input" placeholder="Text eingeben">
-<input type="text" class="input error" value="Fehlerhafte Eingabe">
+<input type="text" class="input" placeholder="Enter text">
+<input type="text" class="input error" value="Error input">
 ```
 
-[Zur Input-Dokumentation](/components/input/)
+[Go to Input documentation](/components/input/)
 
 ### Input Group
 
 ```html
 <div class="input-group">
   <span class="input-group__prefix">@</span>
-  <input class="input" type="text" placeholder="Benutzername">
+  <input class="input" type="text" placeholder="Username">
 </div>
 ```
 
@@ -147,10 +147,10 @@ Module: `input-group.module.css`
 ### Textarea
 
 ```html
-<textarea class="casoon-textarea" rows="4" placeholder="Beschreibung eingeben"></textarea>
+<textarea class="casoon-textarea" rows="4" placeholder="Enter description"></textarea>
 ```
 
-[Zur Textarea-Dokumentation](/components/textarea/)
+[Go to Textarea documentation](/components/textarea/)
 
 ### Select
 
@@ -161,18 +161,18 @@ Module: `input-group.module.css`
 </select>
 ```
 
-[Zur Select-Dokumentation](/components/select/)
+[Go to Select documentation](/components/select/)
 
 ### Checkbox
 
 ```html
 <label class="casoon-checkbox">
   <input type="checkbox">
-  <span>Option auswählen</span>
+  <span>Select option</span>
 </label>
 ```
 
-[Zur Checkbox-Dokumentation](/components/checkbox/)
+[Go to Checkbox documentation](/components/checkbox/)
 
 ### Radio
 
@@ -183,7 +183,7 @@ Module: `input-group.module.css`
 </label>
 ```
 
-[Zur Radio-Dokumentation](/components/radio/)
+[Go to Radio documentation](/components/radio/)
 
 ### Switch
 
@@ -201,7 +201,7 @@ Module: `switch.module.css`
 ```html
 <label class="file">
   <input type="file">
-  <span class="file__label">Datei auswählen</span>
+  <span class="file__label">Select file</span>
 </label>
 ```
 
@@ -212,9 +212,9 @@ Module: `file.module.css`
 ```html
 <div class="modal">
   <div class="modal__content">
-    <h2 class="modal__title">Modal Titel</h2>
-    <p class="modal__body">Modal Inhalt</p>
-    <button class="button primary">Schließen</button>
+    <h2 class="modal__title">Modal Title</h2>
+    <p class="modal__body">Modal Content</p>
+    <button class="button primary">Close</button>
   </div>
 </div>
 ```
@@ -225,36 +225,36 @@ Module: `modal.module.css`
 
 ```html
 <div class="alert info">
-  <span>Wichtige Information</span>
+  <span>Important Information</span>
 </div>
 ```
 
-[Zur Alert-Dokumentation](/components/alert/)
+[Go to Alert documentation](/components/alert/)
 
 ### Toast
 
 ```html
 <div class="toast success">
-  <span>Aktion erfolgreich</span>
+  <span>Action successful</span>
 </div>
 ```
 
-[Zur Toast-Dokumentation](/components/toast/)
+[Go to Toast documentation](/components/toast/)
 
 ### Notification
 
 ```html
 <div class="notification">
-  <h4>Neue Funktion verfügbar</h4>
-  <p>Entdecken Sie unsere neuesten Features...</p>
+  <h4>New feature available</h4>
+  <p>Discover our latest features...</p>
   <div class="notification__actions">
-    <button class="casoon-button casoon-button--small">Erkunden</button>
-    <button class="casoon-button casoon-button--text casoon-button--small">Später</button>
+    <button class="casoon-button casoon-button--small">Explore</button>
+    <button class="casoon-button casoon-button--text casoon-button--small">Later</button>
   </div>
 </div>
 ```
 
-[Zur Notification-Dokumentation](/components/notification/)
+[Go to Notification documentation](/components/notification/)
 
 ### Progress
 
@@ -291,39 +291,39 @@ Module: `skeleton.module.css`
   <thead>
     <tr>
       <th>Name</th>
-      <th>Alter</th>
-      <th>Stadt</th>
+      <th>Age</th>
+      <th>City</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Max Mustermann</td>
+      <td>John Doe</td>
       <td>34</td>
-      <td>Berlin</td>
+      <td>London</td>
     </tr>
   </tbody>
 </table>
 ```
 
-[Zur Table-Dokumentation](/components/table/)
+[Go to Table documentation](/components/table/)
 
 ### Card
 
 ```html
 <div class="casoon-card">
   <div class="casoon-card__header">
-    <h3>Produkttitel</h3>
+    <h3>Product Title</h3>
   </div>
   <div class="casoon-card__body">
-    <p>Produktbeschreibung und Details...</p>
+    <p>Product description and details...</p>
   </div>
   <div class="casoon-card__footer">
-    <button class="casoon-button casoon-button--primary">Kaufen</button>
+    <button class="casoon-button casoon-button--primary">Buy</button>
   </div>
 </div>
 ```
 
-[Zur Card-Dokumentation](/components/card/)
+[Go to Card documentation](/components/card/)
 
 ### Slider
 
@@ -340,11 +340,11 @@ Module: `slider.module.css`
 ### Badge
 
 ```html
-<span class="casoon-badge">Neu</span>
+<span class="casoon-badge">New</span>
 <span class="casoon-badge casoon-badge--warning">10</span>
 ```
 
-[Zur Badge-Dokumentation](/components/badge/)
+[Go to Badge documentation](/components/badge/)
 
 ### Avatar
 
@@ -360,20 +360,20 @@ Module: `avatar.module.css`
 
 ```html
 <span class="casoon-chip">Standard Chip</span>
-<span class="casoon-chip casoon-chip--primary">Primär</span>
+<span class="casoon-chip casoon-chip--primary">Primary</span>
 <span class="casoon-chip casoon-chip--dismissible">
-  Mit Schließen
+  With Close
   <button class="casoon-chip__close"></button>
 </span>
 ```
 
-[Zur Chip-Dokumentation](/components/chip/)
+[Go to Chip documentation](/components/chip/)
 
 ### Tooltip
 
 ```html
 <div class="tooltip">
-  Hover mich
+  Hover me
   <span class="tooltip__content">Tooltip Text</span>
 </div>
 ```
@@ -384,8 +384,8 @@ Module: `tooltip.module.css`
 
 ```html
 <div class="widget">
-  <div class="widget__header">Widget Titel</div>
-  <div class="widget__body">Widget Inhalt</div>
+  <div class="widget__header">Widget Title</div>
+  <div class="widget__body">Widget Content</div>
 </div>
 ```
 
@@ -397,15 +397,15 @@ Module: `widget.module.css`
 <div class="wizard">
   <div class="wizard__step wizard__step--active">
     <div class="wizard__indicator">1</div>
-    <div class="wizard__label">Schritt 1</div>
+    <div class="wizard__label">Step 1</div>
   </div>
   <div class="wizard__step">
     <div class="wizard__indicator">2</div>
-    <div class="wizard__label">Schritt 2</div>
+    <div class="wizard__label">Step 2</div>
   </div>
   <div class="wizard__step">
     <div class="wizard__indicator">3</div>
-    <div class="wizard__label">Schritt 3</div>
+    <div class="wizard__label">Step 3</div>
   </div>
 </div>
 ```
@@ -417,11 +417,11 @@ Module: `wizard.module.css`
 ```html
 <article class="blog">
   <header class="blog__header">
-    <h2 class="blog__title">Blog Titel</h2>
-    <div class="blog__meta">Veröffentlicht am 01.01.2023</div>
+    <h2 class="blog__title">Blog Title</h2>
+    <div class="blog__meta">Published on 01/01/2023</div>
   </header>
   <div class="blog__body">
-    <p>Blog Inhalt</p>
+    <p>Blog Content</p>
   </div>
   <footer class="blog__footer">
     <div class="blog__tags">
@@ -436,33 +436,33 @@ Module: `blog.module.css`
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
-- Fügen Sie ARIA-Attribute hinzu
-- Testen Sie mit Screenreadern
+- Use semantic HTML elements
+- Ensure sufficient contrast
+- Implement keyboard navigation
+- Add ARIA attributes
+- Test with screen readers
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie Komponenten an mobile Geräte an
-- Nutzen Sie Flexbox für flexible Layouts
-- Setzen Sie Media Queries für spezifische Anpassungen
+- Use relative units
+- Test on different screen sizes
+- Adapt components for mobile devices
+- Use Flexbox for flexible layouts
+- Apply Media Queries for specific adjustments
 
 ### Performance
 
-- Laden Sie nur die benötigten Module
-- Verwenden Sie Browser-Caching
-- Optimieren Sie Assets für schnelle Ladezeiten
-- Minimieren Sie CSS-Dateien
-- Vermeiden Sie übermäßige Verschachtelung
+- Load only required modules
+- Use browser caching
+- Optimize assets for fast loading times
+- Minify CSS files
+- Avoid excessive nesting
 
 ## Integration
 
-Die Casoon UI Library lässt sich leicht in verschiedene Frameworks integrieren:
+The Casoon UI Library can be easily integrated into various frameworks:
 
 ### React
 
@@ -474,7 +474,7 @@ import 'casoon-ui-lib/modules/button.module.css';
 function App() {
   return (
     <button className="button primary">
-      Primärer Button
+      Primary Button
     </button>
   );
 }
@@ -485,7 +485,7 @@ function App() {
 ```vue
 <template>
   <button class="button primary">
-    Primärer Button
+    Primary Button
   </button>
 </template>
 
@@ -512,7 +512,7 @@ export default {
 </head>
 <body class="theme-day">
   <button class="button primary">
-    Primärer Button
+    Primary Button
   </button>
 </body>
 </html>
@@ -520,25 +520,25 @@ export default {
 
 ## Theme-Aktivierung
 
-Um ein Theme zu aktivieren, fügen Sie die entsprechende Klasse zum `<html>` oder `<body>` Element hinzu:
+To activate a theme, add the corresponding class to the `<html>` or `<body>` element:
 
 ```html
 <body class="theme-night">
-  <!-- Ihr Inhalt -->
+  <!-- Your content -->
 </body>
 ```
 
-Verfügbare Themes:
-- `theme-day` - Helles Theme
-- `theme-night` - Dunkles Theme
-- `theme-spring` - Frühlings-Theme
-- `theme-summer` - Sommer-Theme
-- `theme-autumn` - Herbst-Theme
-- `theme-winter` - Winter-Theme
-- `theme-forest` - Wald-Theme
-- `theme-ocean` - Ozean-Theme
-- `theme-pastel` - Pastell-Theme
-- `theme-neon` - Neon-Theme
-- `theme-retro` - Retro-Theme
-- `theme-monochrome` - Monochrom-Theme
-- `theme-sunset` - Sonnenuntergang-Theme 
+Available Themes:
+- `theme-day` - Light Theme
+- `theme-night` - Dark Theme
+- `theme-spring` - Spring Theme
+- `theme-summer` - Summer Theme
+- `theme-autumn` - Autumn Theme
+- `theme-winter` - Winter Theme
+- `theme-forest` - Forest Theme
+- `theme-ocean` - Ocean Theme
+- `theme-pastel` - Pastel Theme
+- `theme-neon` - Neon Theme
+- `theme-retro` - Retro Theme
+- `theme-monochrome` - Monochrome Theme
+- `theme-sunset` - Sunset Theme 

@@ -1,37 +1,37 @@
 ---
-title: Storybook-Integration einrichten
+title: Setting Up Storybook Integration
 category: Storybook
 ---
 
-# Storybook-Integration einrichten
+# Setting Up Storybook Integration
 
-Diese Anleitung erklärt Schritt für Schritt, wie Sie Storybook in Ihre VitePress-Dokumentation integrieren können. Diese Integration ermöglicht es, interaktive Beispiele direkt in Ihrer Dokumentation zu präsentieren.
+This guide explains step by step how to integrate Storybook into your VitePress documentation. This integration allows you to present interactive examples directly in your documentation.
 
-## Voraussetzungen
+## Prerequisites
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie folgende Voraussetzungen erfüllen:
+Before you begin, make sure you meet the following prerequisites:
 
-- Node.js (v14 oder höher)
-- Ein bestehendes VitePress-Projekt
-- Zugriff auf eine Storybook-Installation (entweder lokal oder remote)
+- Node.js (v14 or higher)
+- An existing VitePress project
+- Access to a Storybook installation (either local or remote)
 
-## 1. Storybook einrichten
+## 1. Set Up Storybook
 
-Falls Sie noch kein Storybook in Ihrem Projekt haben, können Sie es wie folgt installieren:
+If you don't already have Storybook in your project, you can install it as follows:
 
 ```bash
-# Navigation zum Projektverzeichnis
-cd mein-projekt
+# Navigate to your project directory
+cd my-project
 
-# Storybook-Installation
+# Install Storybook
 npx storybook@latest init
 ```
 
-Dieser Befehl richtet Storybook in Ihrem Projekt ein und erstellt eine Basis-Konfiguration.
+This command sets up Storybook in your project and creates a basic configuration.
 
-## 2. Storybook-Komponenten erstellen
+## 2. Create Storybook Components
 
-Erstellen Sie Stories für Ihre Komponenten. Hier ist ein einfaches Beispiel für eine Button-Komponente:
+Create stories for your components. Here's a simple example for a Button component:
 
 ```js
 // button.stories.js
@@ -59,29 +59,29 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   variant: 'primary',
-  label: 'Primärer Button'
+  label: 'Primary Button'
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   variant: 'secondary',
-  label: 'Sekundärer Button'
+  label: 'Secondary Button'
 };
 ```
 
-## 3. Storybook deployen
+## 3. Deploy Storybook
 
-Damit Ihre Stories in VitePress eingebettet werden können, müssen sie öffentlich zugänglich sein. Deployen Sie Storybook mit einem statischen Website-Hosting-Dienst:
+For your stories to be embedded in VitePress, they need to be publicly accessible. Deploy Storybook using a static website hosting service:
 
 ```bash
-# Storybook als statische Website bauen
+# Build Storybook as a static website
 npm run build-storybook
 
-# Die erzeugte Anwendung liegt im storybook-static Verzeichnis
-# Dieses Verzeichnis können Sie auf einem Hosting-Dienst Ihrer Wahl deployen
+# The generated application is in the storybook-static directory
+# You can deploy this directory to a hosting service of your choice
 ```
 
-Falls Sie GitHub Pages verwenden, können Sie das Deployment automatisieren:
+If you use GitHub Pages, you can automate the deployment:
 
 ```yaml
 # .github/workflows/storybook.yml
@@ -111,17 +111,17 @@ jobs:
           target-folder: storybook
 ```
 
-## 4. VitePress-Konfiguration anpassen
+## 4. Customize VitePress Configuration
 
-### Erstellen Sie eine benutzerdefinierte Komponente
+### Create a Custom Component
 
-Erstellen Sie eine Vue-Komponente zum Einbetten von Storybook in VitePress:
+Create a Vue component to embed Storybook in VitePress:
 
 ```
 mkdir -p docs/.vitepress/theme/components
 ```
 
-Erstellen Sie die Datei `docs/.vitepress/theme/components/StoryEmbed.vue`:
+Create the file `docs/.vitepress/theme/components/StoryEmbed.vue`:
 
 ```vue
 <template>
@@ -136,7 +136,7 @@ Erstellen Sie die Datei `docs/.vitepress/theme/components/StoryEmbed.vue`:
     ></iframe>
     <div class="story-controls" v-if="showControls">
       <a :href="fullStoryUrl" target="_blank" rel="noopener noreferrer">
-        In Storybook öffnen
+        Open in Storybook
       </a>
     </div>
   </div>
@@ -164,7 +164,7 @@ export default {
   },
   computed: {
     storyUrl() {
-      // Passen Sie die URL an Ihre Storybook-Domain an
+      // Adjust the URL to your Storybook domain
       return `https://casoon.github.io/ui-lib/storybook/iframe.html?id=${this.id}&viewMode=story`;
     },
     fullStoryUrl() {
@@ -202,25 +202,12 @@ export default {
 .story-controls a:hover {
   text-decoration: underline;
 }
-
-/* Dark mode support */
-.dark .story-embed {
-  border-color: #333;
-}
-
-.dark .story-controls {
-  background-color: #333;
-}
-
-.dark .story-controls a {
-  color: #58a6ff;
-}
 </style>
 ```
 
-### Komponente im Theme registrieren
+### Register the Component in VitePress
 
-Erstellen oder bearbeiten Sie die Datei `docs/.vitepress/theme/index.js`:
+Update your `docs/.vitepress/theme/index.js` file to register the component:
 
 ```js
 import DefaultTheme from 'vitepress/theme';
@@ -234,89 +221,107 @@ export default {
 };
 ```
 
-## 5. Komponente in Markdown-Dokumenten verwenden
+## 5. Use the Component in Markdown
 
-Jetzt können Sie die Komponente in Ihren Markdown-Dokumenten verwenden:
+Now you can use the component in your Markdown files:
 
 ```md
-# Button-Komponente
+# Button Component
 
-Die Button-Komponente ist ein grundlegendes UI-Element für Benutzerinteraktionen.
+This is a button component with various styles:
 
-## Primärer Button
+<StoryEmbed id="components-button--primary" height="200" />
 
-<StoryEmbed id="components-button--primary" height="200" title="Primärer Button" />
+## Button Variants
 
-## Sekundärer Button
-
-<StoryEmbed id="components-button--secondary" height="200" title="Sekundärer Button" />
+<StoryEmbed id="components-button--variants" height="300" />
 ```
 
-## 6. Erweiterte Integration
+## 6. Advanced: Custom Theme Integration
 
-### Automatisierung der Integration
+To ensure that your embedded Storybook stories match your VitePress theme, you can customize the Storybook theme:
 
-Um die Integration noch nahtloser zu gestalten, können Sie ein VitePress-Plugin erstellen, das automatisch Stories basierend auf den Komponenten einfügt:
-
-```js
-// .vitepress/plugins/storybook-integrator.js
-export default function storybookIntegrator() {
-  return {
-    name: 'vitepress-storybook-integrator',
-    // Plugin-Logik hier implementieren
-  };
-}
-```
-
-### Kommunikation zwischen VitePress und Storybook
-
-Für fortgeschrittene Anwendungsfälle können Sie eine Kommunikation zwischen VitePress und den eingebetteten Storybook-iframes einrichten:
+1. Create a custom theme in `.storybook/manager.js`:
 
 ```js
-// Senden von Nachrichten an das iframe
-const iframe = document.querySelector('iframe');
-iframe.contentWindow.postMessage(
-  {
-    type: 'UPDATE_ARGS',
-    args: { variant: 'primary' }
+import { addons } from '@storybook/addons';
+import { themes } from '@storybook/theming';
+
+addons.setConfig({
+  theme: {
+    ...themes.light, // or themes.dark
+    brandTitle: 'Casoon UI Library',
+    brandUrl: 'https://casoon.github.io/ui-lib',
+    brandImage: './logo.png',
+    colorPrimary: '#3451b2',
+    colorSecondary: '#585C6D',
   },
-  '*'
-);
-
-// Empfangen von Nachrichten vom iframe
-window.addEventListener('message', (event) => {
-  if (event.data.type === 'STORY_RENDERED') {
-    console.log('Story wurde gerendert:', event.data);
-  }
 });
 ```
 
-## Fehlerbehebung
-
-### CORS-Probleme
-
-Falls Sie auf CORS-Probleme stoßen, stellen Sie sicher, dass Ihre Storybook-Domain in der Content-Security-Policy (CSP) Ihrer VitePress-Seite erlaubt ist:
+2. Update `.storybook/preview.js` to match styles:
 
 ```js
-// .vitepress/config.js
-export default {
-  head: [
-    ['meta', {
-      'http-equiv': 'Content-Security-Policy',
-      content: `frame-src https://casoon.github.io/;`
-    }]
-  ]
+export const parameters = {
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'light',
+        value: '#ffffff',
+      },
+      {
+        name: 'dark',
+        value: '#1e1e1e',
+      },
+    ],
+  },
+  docs: {
+    theme: themes.light, // Match with your VitePress theme
+  },
 };
 ```
 
-### iframes werden nicht geladen
+## 7. Troubleshooting
 
-Überprüfen Sie die folgenden Punkte:
+### CORS Issues
 
-1. Ist die Story-ID korrekt?
-2. Ist die Storybook-URL erreichbar?
-3. Werden iframes von Ihrem Browser oder einer Erweiterung blockiert?
+If you encounter Cross-Origin Resource Sharing (CORS) issues:
 
-## Zusammenfassung
+1. Make sure your Storybook is served with appropriate CORS headers
+2. You might need to add the following to your `.storybook/main.js`:
 
-Die Integration von Storybook in VitePress bietet eine leistungsstarke Möglichkeit, interaktive Komponentenbeispiele direkt in Ihrer Dokumentation zu präsentieren. Durch die Kombination von detaillierten Erklärungen und interaktiven Demos wird Ihre Dokumentation benutzerfreundlicher und effektiver. 
+```js
+module.exports = {
+  // ...other configurations
+  staticDirs: ['../public'],
+  webpackFinal: async (config) => {
+    // Add CORS headers
+    config.devServer = {
+      ...(config.devServer || {}),
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      },
+    };
+    return config;
+  },
+};
+```
+
+### Story Not Loading
+
+If a story doesn't load correctly:
+
+1. Check the console for errors
+2. Verify that the story ID is correct
+3. Ensure that the Storybook URL is accessible
+
+## 8. Best Practices
+
+- **Keep stories focused**: Each story should demonstrate one specific aspect or variant
+- **Use consistent naming**: Use a consistent naming convention for your stories
+- **Document interaction**: Make it clear how users can interact with the embedded stories
+- **Test across devices**: Ensure that embedded stories work well on all device sizes
+- **Optimize performance**: Be mindful of how many stories you embed on a single page
+
+By following this guide, you'll be able to enhance your VitePress documentation with interactive Storybook examples, making it easier for developers to understand your components. 

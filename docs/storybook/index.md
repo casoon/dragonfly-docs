@@ -5,50 +5,50 @@ category: Storybook
 
 # Storybook Integration
 
-Die Casoon UI Library bietet eine nahtlose Integration mit Storybook, einem leistungsstarken Werkzeug für die Entwicklung und Dokumentation von UI-Komponenten. Diese Integration ermöglicht es, interaktive Beispiele direkt in der VitePress-Dokumentation einzubetten und ein umfassendes Entwicklungserlebnis zu schaffen.
+The Casoon UI Library offers seamless integration with Storybook, a powerful tool for developing and documenting UI components. This integration allows embedding interactive examples directly into the VitePress documentation, creating a comprehensive development experience.
 
-## Was ist Storybook?
+## What is Storybook?
 
-Storybook ist eine Open-Source-Umgebung zum Entwickeln UI-Komponenten in Isolation. Es ermöglicht Entwicklern, Komponenten unabhängig von ihrer Anwendung zu erstellen, zu testen und zu dokumentieren. Die Hauptvorteile sind:
+Storybook is an open-source environment for developing UI components in isolation. It enables developers to create, test, and document components independently of their application. The main advantages are:
 
-- **Isolierte Komponentenentwicklung**: Erstellen und testen Sie Komponenten unabhängig von Ihrer Anwendungslogik
-- **Interaktive Dokumentation**: Zeigen Sie die Komponenten in verschiedenen Zuständen und mit verschiedenen Parametern
-- **Visuelle Tests**: Erkennen Sie visuell, wenn Änderungen unbeabsichtigte Auswirkungen haben
-- **Zentraler Sammelplatz**: Fungiert als zentrale Anlaufstelle für Designer und Entwickler
+- **Isolated Component Development**: Create and test components independently of your application logic
+- **Interactive Documentation**: Display components in various states and with different parameters
+- **Visual Testing**: Visually detect when changes have unintended effects
+- **Central Hub**: Serves as a central point of reference for designers and developers
 
-## Storybook in der Casoon UI Library
+## Storybook in the Casoon UI Library
 
-In der Casoon UI Library wird Storybook verwendet, um:
+In the Casoon UI Library, Storybook is used to:
 
-1. **Alle Komponenten zu dokumentieren**: Jede Komponente verfügt über ihre eigene Story, die ihre verschiedenen Zustände und Verwendungsmöglichkeiten zeigt
-2. **Design-Tokens zu visualisieren**: Farben, Typografie, Abstände und andere Designvariablen werden anschaulich dargestellt
-3. **Interaktive Beispiele zu bieten**: Nutzer können mit Komponenten interagieren und Eigenschaften in Echtzeit ändern
-4. **Best Practices zu demonstrieren**: Die Stories zeigen empfohlene Verwendungsmuster
+1. **Document All Components**: Each component has its own story showcasing its various states and usage possibilities
+2. **Visualize Design Tokens**: Colors, typography, spacing, and other design variables are visually represented
+3. **Provide Interactive Examples**: Users can interact with components and change properties in real-time
+4. **Demonstrate Best Practices**: The stories showcase recommended usage patterns
 
-## Zugriff auf das Storybook
+## Accessing the Storybook
 
-Das Storybook der Casoon UI Library ist an den folgenden Stellen verfügbar:
+The Storybook for the Casoon UI Library is available at the following locations:
 
 - **Online**: [https://casoon.github.io/ui-lib/storybook](https://casoon.github.io/ui-lib/storybook)
-- **Lokal**: Nach der Installation der Bibliothek kann das Storybook lokal ausgeführt werden mit:
+- **Locally**: After installing the library, you can run Storybook locally with:
 
 ```bash
 npx storybook@latest dev -p 6006 -c node_modules/@casoon/ui-lib/.storybook
 ```
 
-## VitePress und Storybook: Eine leistungsstarke Kombination
+## VitePress and Storybook: A Powerful Combination
 
-Die Integration von VitePress (diese Dokumentation) und Storybook bietet einen umfassenden Ansatz für die Dokumentation:
+The integration of VitePress (this documentation) and Storybook provides a comprehensive approach to documentation:
 
-- **VitePress** bietet detaillierte Erklärungen, Konzepte und Anleitungen
-- **Storybook** zeigt interaktive Beispiele, Variationen und praktische Anwendungsfälle
+- **VitePress** offers detailed explanations, concepts, and guides
+- **Storybook** shows interactive examples, variations, and practical use cases
 
-Gemeinsam bilden sie ein leistungsstarkes Referenzsystem für Entwickler, die mit der Casoon UI Library arbeiten.
+Together, they form a powerful reference system for developers working with the Casoon UI Library.
 
-## Nächste Schritte
+## Next Steps
 
-Entdecken Sie die Integration von Storybook in dieser Dokumentation:
+Explore the integration of Storybook in this documentation:
 
-- [Integration einrichten](/storybook/integration) - Erfahren Sie, wie Sie Storybook in Ihren eigenen Projekten einrichten
-- [Komponenten-Beispiele](/storybook/component-examples) - Sehen Sie sich die Beispiele für alle UI-Komponenten an
-- [Einbetten von Stories](/storybook/embedding) - Lernen Sie, wie Sie Storybook-Beispiele in Ihre eigene Dokumentation einbetten können 
+- [Setup Integration](/storybook/integration) - Learn how to set up Storybook in your own projects
+- [Component Examples](/storybook/component-examples) - See examples for all UI components
+- [Embedding Stories](/storybook/embedding) - Learn how to embed Storybook examples in your own documentation 

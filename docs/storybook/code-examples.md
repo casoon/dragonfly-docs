@@ -1,31 +1,31 @@
 ---
-title: Code-Beispiele
+title: Code Examples
 category: Storybook
 ---
 
-# Code-Beispiele für Storybook-Integration
+# Code Examples for Storybook Integration
 
-Diese Seite zeigt, wie Sie Code aus Storybook-Stories in Ihre VitePress-Dokumentation einbinden können. Durch die Kombination von Code-Beispielen und interaktiven Demos erhalten Entwickler ein besseres Verständnis der Komponenten.
+This page shows how to include code from Storybook stories in your VitePress documentation. By combining code examples and interactive demos, developers gain a better understanding of the components.
 
-## Grundlegende Code-Extraktion
+## Basic Code Extraction
 
-Storybook speichert den Code jeder Story. Sie können diesen Code direkt in Ihre Dokumentation einbinden:
+Storybook stores the code for each story. You can include this code directly in your documentation:
 
 ```jsx
-// Beispiel einer Button-Story
+// Example of a Button story
 export const Primary = () => ({
   components: { Button },
-  template: '<Button variant="primary">Primärer Button</Button>'
+  template: '<Button variant="primary">Primary Button</Button>'
 });
 ```
 
-Mit dem entsprechenden HTML-Code:
+With the corresponding HTML code:
 
 ```html
-<button class="btn btn--primary">Primärer Button</button>
+<button class="btn btn--primary">Primary Button</button>
 ```
 
-Und hier sehen Sie das Ergebnis:
+And here you can see the result:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-button--primary&viewMode=story"
@@ -34,9 +34,9 @@ Und hier sehen Sie das Ergebnis:
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-## Code und Demo nebeneinander
+## Code and Demo Side by Side
 
-Eine effektive Methode zur Dokumentation ist die Darstellung von Code und Demo nebeneinander:
+An effective method of documentation is to display code and demo side by side:
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px;">
   <div>
@@ -45,19 +45,19 @@ Eine effektive Methode zur Dokumentation ist die Darstellung von Code und Demo n
 ```html
 <div class="card">
   <div class="card-header">
-    <h3 class="card-title">Kartentitel</h3>
+    <h3 class="card-title">Card Title</h3>
   </div>
   <div class="card-body">
-    <p>Karteninhalt mit Text.</p>
+    <p>Card content with text.</p>
   </div>
   <div class="card-footer">
-    <button class="btn btn--primary">Aktion</button>
+    <button class="btn btn--primary">Action</button>
   </div>
 </div>
 ```
   </div>
   <div>
-    <h3>Ergebnis</h3>
+    <h3>Result</h3>
     <iframe
       src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-card--basic&viewMode=story"
       width="100%"
@@ -67,14 +67,14 @@ Eine effektive Methode zur Dokumentation ist die Darstellung von Code und Demo n
   </div>
 </div>
 
-## Varianten und ihre Code-Implementierung
+## Variants and Their Code Implementation
 
-Mit Storybook können Sie verschiedene Varianten einer Komponente demonstrieren und den entsprechenden Code anzeigen:
+With Storybook, you can demonstrate different variants of a component and show the corresponding code:
 
-### Standard-Button
+### Standard Button
 
 ```html
-<button class="btn">Standard-Button</button>
+<button class="btn">Standard Button</button>
 ```
 
 <iframe
@@ -84,10 +84,10 @@ Mit Storybook können Sie verschiedene Varianten einer Komponente demonstrieren 
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-### Primärer Button
+### Primary Button
 
 ```html
-<button class="btn btn--primary">Primärer Button</button>
+<button class="btn btn--primary">Primary Button</button>
 ```
 
 <iframe
@@ -97,10 +97,10 @@ Mit Storybook können Sie verschiedene Varianten einer Komponente demonstrieren 
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-### Sekundärer Button
+### Secondary Button
 
 ```html
-<button class="btn btn--secondary">Sekundärer Button</button>
+<button class="btn btn--secondary">Secondary Button</button>
 ```
 
 <iframe
@@ -110,11 +110,11 @@ Mit Storybook können Sie verschiedene Varianten einer Komponente demonstrieren 
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-## Code für komplexe Komponenten
+## Code for Complex Components
 
-Bei komplexeren Komponenten ist es wichtig, alle relevanten Code-Teile zu zeigen:
+For more complex components, it's important to show all relevant code parts:
 
-### Tabelle mit Sortierung
+### Sortable Table
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-table--sortable&viewMode=story"
@@ -130,25 +130,25 @@ Bei komplexeren Komponenten ist es wichtig, alle relevanten Code-Teile zu zeigen
   <thead>
     <tr>
       <th class="sortable" data-sort="name">Name</th>
-      <th class="sortable" data-sort="age">Alter</th>
-      <th class="sortable" data-sort="city">Stadt</th>
+      <th class="sortable" data-sort="age">Age</th>
+      <th class="sortable" data-sort="city">City</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Max Mustermann</td>
+      <td>John Doe</td>
       <td>32</td>
       <td>Berlin</td>
     </tr>
     <tr>
-      <td>Erika Musterfrau</td>
+      <td>Jane Smith</td>
       <td>28</td>
       <td>Hamburg</td>
     </tr>
     <tr>
-      <td>John Doe</td>
+      <td>Bob Johnson</td>
       <td>45</td>
-      <td>München</td>
+      <td>Munich</td>
     </tr>
   </tbody>
 </table>
@@ -157,7 +157,7 @@ Bei komplexeren Komponenten ist es wichtig, alle relevanten Code-Teile zu zeigen
 **JavaScript:**
 
 ```js
-// Sortierlogik für Tabellen
+// Sorting logic for tables
 document.querySelectorAll('.sortable').forEach(header => {
   header.addEventListener('click', () => {
     const table = header.closest('table');
@@ -165,15 +165,15 @@ document.querySelectorAll('.sortable').forEach(header => {
     const column = header.dataset.sort;
     const direction = header.classList.contains('asc') ? 'desc' : 'asc';
     
-    // Setze alle Header-Klassen zurück
+    // Reset all header classes
     header.closest('tr').querySelectorAll('th').forEach(th => {
       th.classList.remove('asc', 'desc');
     });
     
-    // Setze Sortierrichtung
+    // Set sort direction
     header.classList.add(direction);
     
-    // Sortiere Zeilen
+    // Sort rows
     const rows = Array.from(tbody.querySelectorAll('tr'));
     rows.sort((a, b) => {
       const aValue = a.children[Array.from(header.parentNode.children).indexOf(header)].textContent;
@@ -182,15 +182,15 @@ document.querySelectorAll('.sortable').forEach(header => {
       return direction === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
     });
     
-    // Tabelle neu aufbauen
+    // Rebuild table
     rows.forEach(row => tbody.appendChild(row));
   });
 });
 ```
 
-## Responsiver Code
+## Responsive Code
 
-Zeigen Sie, wie responsiver Code implementiert wird:
+Show how responsive code is implemented:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=layout-responsive-grid--default&viewMode=story"
@@ -199,138 +199,100 @@ Zeigen Sie, wie responsiver Code implementiert wird:
   style="border: 1px solid #ddd; border-radius: 4px; resize: horizontal; overflow: auto;"
 ></iframe>
 
+## Using Slots and Composition
+
+This example shows how to use slots for flexible content composition:
+
 ```html
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-  <div class="p-4 bg-light">Element 1</div>
-  <div class="p-4 bg-light">Element 2</div>
-  <div class="p-4 bg-light">Element 3</div>
-  <div class="p-4 bg-light">Element 4</div>
-  <div class="p-4 bg-light">Element 5</div>
-  <div class="p-4 bg-light">Element 6</div>
-  <div class="p-4 bg-light">Element 7</div>
-  <div class="p-4 bg-light">Element 8</div>
-</div>
+<!-- Card with slots -->
+<ui-card>
+  <template #header>
+    <h3>Custom Header</h3>
+  </template>
+  <template #default>
+    <p>This is the main content of the card.</p>
+    <img src="example.jpg" alt="Example image">
+  </template>
+  <template #footer>
+    <button class="btn btn--primary">Primary Action</button>
+    <button class="btn btn--outline">Secondary Action</button>
+  </template>
+</ui-card>
 ```
 
-**Tipp:** Sie können die Größe dieses Beispiels verändern, um zu sehen, wie sich das Grid anpasst.
-
-## Komponentenübergreifende Implementierung
-
-Für komplexere Funktionen können mehrere Komponenten zusammenarbeiten:
-
 <iframe
-  src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=forms-search-filter--default&viewMode=story"
+  src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-card--with-slots&viewMode=story"
   width="100%"
   height="400px"
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-**Implementierung:**
+## Using the Component API
 
-```html
-<div class="search-and-filter">
-  <div class="search-bar">
-    <input type="text" class="input" placeholder="Suchen..." id="search-input">
-    <button class="btn btn--primary">Suchen</button>
-  </div>
-  
-  <div class="filters mt-4">
-    <div class="filter-group">
-      <label>Kategorie</label>
-      <select class="select" id="category-filter">
-        <option value="">Alle</option>
-        <option value="technology">Technologie</option>
-        <option value="books">Bücher</option>
-        <option value="clothing">Kleidung</option>
-      </select>
-    </div>
-    
-    <div class="filter-group">
-      <label>Preis</label>
-      <div class="range-slider">
-        <input type="range" min="0" max="100" value="50" class="slider" id="price-slider">
-        <span class="slider-value">50€</span>
-      </div>
-    </div>
-    
-    <div class="filter-group">
-      <label>Verfügbarkeit</label>
-      <div class="checkbox-group">
-        <label class="checkbox">
-          <input type="checkbox" checked> Auf Lager
-        </label>
-        <label class="checkbox">
-          <input type="checkbox"> Reduziert
-        </label>
-      </div>
-    </div>
-  </div>
-  
-  <div class="results mt-4">
-    <p class="results-count">8 Ergebnisse gefunden</p>
-    <!-- Ergebnisliste hier -->
-  </div>
-</div>
-```
-
-**JavaScript:**
+When using components, it's important to understand their API:
 
 ```js
-// Vereinfachter Code für die Suchfunktionalität
-document.getElementById('search-input').addEventListener('input', updateResults);
-document.getElementById('category-filter').addEventListener('change', updateResults);
-document.getElementById('price-slider').addEventListener('input', function() {
-  document.querySelector('.slider-value').textContent = this.value + '€';
-  updateResults();
-});
-
-document.querySelectorAll('.checkbox input').forEach(checkbox => {
-  checkbox.addEventListener('change', updateResults);
-});
-
-function updateResults() {
-  // In einer realen Anwendung würde hier eine Filterfunktion implementiert
-  const resultCount = Math.floor(Math.random() * 20);
-  document.querySelector('.results-count').textContent = `${resultCount} Ergebnisse gefunden`;
+// Button component API
+export default {
+  name: 'Button',
+  props: {
+    variant: {
+      type: String,
+      default: 'default',
+      validator: (value) => ['default', 'primary', 'secondary', 'outline', 'danger'].includes(value)
+    },
+    size: {
+      type: String,
+      default: 'md',
+      validator: (value) => ['sm', 'md', 'lg'].includes(value)
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    loading: {
+      type: Boolean,
+      default: false
+    },
+    icon: {
+      type: String,
+      default: ''
+    }
+  },
+  // ... component implementation
 }
 ```
 
-## Zusammenspiel mit CSS-Framework
+## Documenting Component States
 
-Zeigen Sie, wie Ihre Komponenten mit dem CSS-Framework der Casoon UI Library interagieren:
+Show how components behave in different states:
 
 ```html
-<div class="card shadow-md rounded-lg overflow-hidden">
-  <div class="card-header bg-primary text-white">
-    <h3 class="card-title">Erweiterte Karte</h3>
-  </div>
-  <div class="card-body p-4">
-    <p class="mb-4">Dieser Text verwendet Utility-Klassen für Abstände.</p>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="bg-light p-2 rounded">Linke Spalte</div>
-      <div class="bg-light p-2 rounded">Rechte Spalte</div>
-    </div>
-  </div>
-  <div class="card-footer bg-light border-top p-3 flex justify-end">
-    <button class="btn btn--secondary me-2">Abbrechen</button>
-    <button class="btn btn--primary">Speichern</button>
-  </div>
-</div>
+<!-- Button States -->
+<button class="btn">Default</button>
+<button class="btn hover">Hover</button>
+<button class="btn active">Active</button>
+<button class="btn focus">Focus</button>
+<button class="btn disabled">Disabled</button>
+<button class="btn loading">Loading</button>
 ```
 
 <iframe
-  src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=examples-advanced-card--default&viewMode=story"
+  src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-button--states&viewMode=story"
   width="100%"
-  height="300px"
+  height="150px"
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-## Best Practices für Code-Beispiele
+## Best Practices for Code Examples
 
-1. **Vollständigkeit**: Zeigen Sie den vollständigen Code, der benötigt wird, um ein Beispiel zu implementieren.
-2. **Kontext**: Bieten Sie ausreichend Kontext, damit Entwickler verstehen, wie der Code funktioniert.
-3. **Konsistenz**: Verwenden Sie konsistente Formatierung und Benennungskonventionen.
-4. **Minimale Beispiele**: Halten Sie die Beispiele so einfach wie möglich, während sie dennoch das gewünschte Konzept demonstrieren.
-5. **Interaktivität**: Ermöglichen Sie es Benutzern, mit dem Code zu interagieren, indem Sie Storybook-Demos einbinden.
+When documenting code examples:
 
-Indem Sie diese Prinzipien befolgen, können Sie hochwertige Code-Beispiele erstellen, die Entwicklern helfen, Ihre Komponenten effektiv zu nutzen. 
+1. **Keep examples concise**: Show only the relevant code
+2. **Include context**: Explain what the code does
+3. **Be consistent**: Use consistent naming and conventions
+4. **Show variations**: Include examples of different use cases
+5. **Include error handling**: Show how to handle edge cases
+6. **Provide responsive examples**: Demonstrate responsive behavior
+7. **Comment key points**: Use comments to highlight important aspects
+8. **Update regularly**: Keep examples in sync with the latest component versions 

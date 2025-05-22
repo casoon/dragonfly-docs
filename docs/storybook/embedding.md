@@ -1,19 +1,19 @@
 ---
-title: Einbetten von Storybook Stories
+title: Embedding Storybook Stories
 category: Storybook
 ---
 
-# Einbetten von Storybook Stories
+# Embedding Storybook Stories
 
-Diese Anleitung erklärt, wie Sie Storybook-Stories direkt in Ihre VitePress-Dokumentation einbetten können. Durch die Einbettung von interaktiven Beispielen wird Ihre Dokumentation dynamischer und hilfreicher für Benutzer.
+This guide explains how to embed Storybook stories directly in your VitePress documentation. By embedding interactive examples, your documentation becomes more dynamic and helpful for users.
 
-## Methoden zum Einbetten von Stories
+## Methods for Embedding Stories
 
-Es gibt mehrere Möglichkeiten, Storybook-Stories in VitePress einzubetten:
+There are several ways to embed Storybook stories in VitePress:
 
-### 1. Iframe-Integration
+### 1. Iframe Integration
 
-Die einfachste Methode ist die Verwendung eines iframes, der auf die veröffentlichte Storybook-URL verweist:
+The simplest method is to use an iframe that links to the published Storybook URL:
 
 ```html
 <iframe
@@ -24,7 +24,7 @@ Die einfachste Methode ist die Verwendung eines iframes, der auf die veröffentl
 ></iframe>
 ```
 
-**Ergebnis:**
+**Result:**
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-button--primary&viewMode=story"
@@ -33,11 +33,11 @@ Die einfachste Methode ist die Verwendung eines iframes, der auf die veröffentl
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-### 2. Benutzerdefinierte Vue-Komponente
+### 2. Custom Vue Component
 
-Für eine bessere Integration können Sie eine benutzerdefinierte Vue-Komponente erstellen:
+For better integration, you can create a custom Vue component:
 
-Erstellen Sie eine `StoryEmbed.vue` Komponente in Ihrem `.vitepress/theme/components` Verzeichnis:
+Create a `StoryEmbed.vue` component in your `.vitepress/theme/components` directory:
 
 ```vue
 <template>
@@ -52,7 +52,7 @@ Erstellen Sie eine `StoryEmbed.vue` Komponente in Ihrem `.vitepress/theme/compon
     ></iframe>
     <div class="story-controls" v-if="showControls">
       <a :href="fullStoryUrl" target="_blank" rel="noopener noreferrer">
-        In Storybook öffnen
+        Open in Storybook
       </a>
     </div>
   </div>
@@ -120,7 +120,7 @@ export default {
 </style>
 ```
 
-Registrieren Sie diese Komponente in Ihrer `.vitepress/theme/index.js` Datei:
+Register this component in your `.vitepress/theme/index.js` file:
 
 ```js
 import DefaultTheme from 'vitepress/theme';
@@ -134,27 +134,27 @@ export default {
 };
 ```
 
-Dann können Sie die Komponente in Ihrer Markdown-Datei verwenden:
+Then you can use the component in your Markdown file:
 
 ```md
-<StoryEmbed id="components-button--primary" height="200" title="Primärer Button" />
+<StoryEmbed id="components-button--primary" height="200" title="Primary Button" />
 ```
 
-### 3. Storybook Addon für Docs
+### 3. Storybook Addon for Docs
 
-Für eine noch tiefere Integration können Sie das offizielle [Storybook Addon für VitePress](https://github.com/storybookjs/addon-docs) verwenden. Diese Methode erfordert zusätzliche Konfiguration, bietet aber die beste Integration.
+For even deeper integration, you can use the official [Storybook Addon for VitePress](https://github.com/storybookjs/addon-docs). This method requires additional configuration but offers the best integration.
 
-## Story-IDs finden
+## Finding Story IDs
 
-Um die richtige Story-ID für das Einbetten zu finden:
+To find the correct story ID for embedding:
 
-1. Öffnen Sie die gewünschte Story in Storybook
-2. Schauen Sie in die URL: `https://casoon.github.io/ui-lib/storybook/?path=/story/components-button--primary`
-3. Der Teil nach `/story/` ist die Story-ID: `components-button--primary`
+1. Open the desired story in Storybook
+2. Look at the URL: `https://casoon.github.io/ui-lib/storybook/?path=/story/components-button--primary`
+3. The part after `/story/` is the story ID: `components-button--primary`
 
-## Beispiele für eingebettete Stories
+## Examples of Embedded Stories
 
-### Button-Komponente
+### Button Component
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-button--variants&viewMode=story"
@@ -163,7 +163,7 @@ Um die richtige Story-ID für das Einbetten zu finden:
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-### Card-Komponente
+### Card Component
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-card--basic&viewMode=story"
@@ -172,31 +172,36 @@ Um die richtige Story-ID für das Einbetten zu finden:
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-## Responsivität und Größenanpassung
+## Responsiveness and Size Adjustment
 
-Bei der Einbettung von Stories ist es wichtig, die Responsivität zu berücksichtigen:
+When embedding stories, it's important to consider responsiveness:
 
-- Verwenden Sie relative Breiten (`width="100%"`) für das iframe
-- Passen Sie die Höhe je nach Inhalt an
-- Berücksichtigen Sie das Verhalten auf mobilen Geräten
+- Use relative widths (`width="100%"`) for the iframe
+- Adjust the height according to the content
+- Consider behavior on mobile devices
 
 ## Best Practices
 
-- **Kombinieren Sie Code und Story**: Zeigen Sie den Code zusammen mit der eingebetteten Story, um den Kontext zu verdeutlichen
-- **Minimieren Sie die Anzahl**: Betten Sie nur relevante Stories ein, zu viele eingebetteten iframes können die Ladezeit verlangsamen
-- **Bieten Sie Alternativen**: Fügen Sie immer einen Link zur vollständigen Storybook-Ansicht hinzu für Benutzer, die mehr Interaktivität wünschen
-- **Testen Sie auf verschiedenen Geräten**: Stellen Sie sicher, dass Ihre eingebetteten Stories auf verschiedenen Bildschirmgrößen gut aussehen
+- **Combine code and story**: Show the code along with the embedded story to clarify context
+- **Minimize the number**: Embed only relevant stories, too many embedded iframes can slow down loading time
+- **Provide alternatives**: Always add a link to the full Storybook view for users who want more interactivity
+- **Test on different devices**: Make sure your embedded stories look good on different screen sizes
 
-## Fehlerbehebung
+## Troubleshooting
 
-### Story wird nicht geladen
+### Story Not Loading
 
-- Überprüfen Sie die Story-ID
-- Stellen Sie sicher, dass Storybook öffentlich zugänglich ist
-- Prüfen Sie, ob Content Security Policies (CSP) die Einbettung blockieren
+- Check the story ID
+- Make sure Storybook is publicly accessible
+- Check if Content Security Policies (CSP) are blocking the embedding
 
-### Layoutprobleme
+### Layout Issues
 
-- Passen Sie die Höhe des iframes an den Inhalt an
-- Verwenden Sie CSS, um Overflow-Probleme zu beheben
-- Berücksichtigen Sie das Thema der VitePress-Dokumentation (dunkel/hell) 
+- Adjust the height of the iframe to match the content
+- Use responsive design principles for embedding
+
+### Performance Considerations
+
+- Limit the number of embedded stories per page
+- Consider using lazy loading for iframes
+- Optimize the embedded Storybook build 

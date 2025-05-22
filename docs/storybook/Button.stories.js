@@ -5,9 +5,9 @@ export default {
 };
 
 export const Primary = () => ({
-  template: `<button class="button primary">Primärer Button</button>`
+  template: `<button class="button primary">Primary Button</button>`
 });
 
 export const Secondary = () => ({
-  template: `<button class="button secondary">Sekundärer Button</button>`
+  template: `<button class="button secondary">Secondary Button</button>`
 }); 

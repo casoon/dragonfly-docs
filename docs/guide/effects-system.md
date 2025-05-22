@@ -1,113 +1,113 @@
 ---
-title: Effekt-System
+title: Effects System
 category: Guide
 ---
 
-# Effekt-System
+# Effects System
 
-Das Effekt-System der Casoon UI Library bietet eine umfangreiche Sammlung von visuellen Effekten, Animationen und Interaktionen, um moderne und ansprechende Benutzeroberflächen zu gestalten.
+The Effects System of the Casoon UI Library provides a comprehensive collection of visual effects, animations, and interactions to create modern and engaging user interfaces.
 
-## Übersicht
+## Overview
 
-Die Effekte sind in verschiedene Kategorien unterteilt und können einzeln oder kombiniert eingesetzt werden, um einzigartige visuelle Erlebnisse zu schaffen. Alle Effekte sind performant optimiert, berücksichtigen Barrierefreiheit und funktionieren responsiv auf allen Geräten.
+The effects are divided into different categories and can be used individually or combined to create unique visual experiences. All effects are optimized for performance, consider accessibility, and work responsively on all devices.
 
-## Effekt-Kategorien
+## Effect Categories
 
-Die UI-Lib bietet über 40 spezialisierte Effekt-Module für verschiedene Anwendungsfälle:
+The UI-Lib offers over 40 specialized effect modules for various use cases:
 
-### Visuelle Effekte
+### Visual Effects
 
-- **Glaseffekte (`glass.css`)**: Moderne Glasmorphismus-Effekte mit verschiedenen Transparenz- und Unschärfe-Stufen
-- **Neon-Effekte (`neon.css`)**: Leuchtende Texte und Rahmen mit Glow-Effekten
-- **Schatten-Effekte (`shadows.css`)**: Realistische und stilisierte Schatten für räumliche Tiefe
-- **Filter-Effekte (`filters.css`)**: Grafische Filter wie Unschärfe, Helligkeit und Kontrast
-- **3D-Effekte (`3d.css`)**: Perspektivische Transformationen und räumliche Effekte
-- **Gradient-Effekte (`gradient.css`)**: Fließende Farbverläufe und dynamische Übergänge
-- **Muster und Texturen (`patterns.css`, `textures.css`)**: Hintergrundmuster und Oberflächentexturen
-- **Vignetten (`vignette.css`)**: Abgedunkelte Ränder für fokussierte Darstellung
-- **Blendmodi (`blends.css`)**: Erweiterte CSS-Blendmodi für komplexe visuelle Effekte
+- **Glass Effects (`glass.css`)**: Modern glassmorphism effects with various transparency and blur levels
+- **Neon Effects (`neon.css`)**: Glowing texts and borders with glow effects
+- **Shadow Effects (`shadows.css`)**: Realistic and stylized shadows for spatial depth
+- **Filter Effects (`filters.css`)**: Graphic filters like blur, brightness, and contrast
+- **3D Effects (`3d.css`)**: Perspective transformations and spatial effects
+- **Gradient Effects (`gradient.css`)**: Flowing color gradients and dynamic transitions
+- **Patterns and Textures (`patterns.css`, `textures.css`)**: Background patterns and surface textures
+- **Vignettes (`vignette.css`)**: Darkened edges for focused display
+- **Blend Modes (`blends.css`)**: Advanced CSS blend modes for complex visual effects
 
-### Animationen und Bewegungen
+### Animations and Movements
 
-- **Grundlegende Animationen (`animations.css`)**: Umfassende Sammlung von Bewegungs- und Übergangsanimationen
-- **Morph-Effekte (`morph.css`)**: Formveränderungen und Übergänge
-- **Partikel-Effekte (`particles.css`)**: Dynamische Partikel-Animationen
-- **Typing-Animationen (`typing.css`)**: Schreibmaschinen-Effekte und Text-Animationen
-- **Ripple-Effekte (`ripple.css`)**: Welleneffekte für Interaktionsfeedback
-- **Glanzeffekte (`shine.css`, `sparkle.css`)**: Dynamische Glanzlichter und Funkeln
-- **Scroll-Effekte (`scroll.css`)**: Animationen bei Scrollvorgängen
+- **Basic Animations (`animations.css`)**: Comprehensive collection of motion and transition animations
+- **Morph Effects (`morph.css`)**: Shape changes and transitions
+- **Particle Effects (`particles.css`)**: Dynamic particle animations
+- **Typing Animations (`typing.css`)**: Typewriter effects and text animations
+- **Ripple Effects (`ripple.css`)**: Wave effects for interaction feedback
+- **Shine Effects (`shine.css`, `sparkle.css`)**: Dynamic highlights and sparkles
+- **Scroll Effects (`scroll.css`)**: Animations during scrolling
 
-### Interaktionen und Zustände
+### Interactions and States
 
-- **Hover-Effekte (`hover.css`)**: Visuelle Feedbacks bei Mausberührung
-- **Aktive Zustände (`active.css`)**: Effekte beim Klicken oder Aktivieren
-- **Fokus-Stile (`focus.css`)**: Barrierefreie Fokus-Indikatoren
-- **Lade-Zustände (`loading.css`)**: Animierte Ladeindikatoren
-- **Cursor-Effekte (`cursors.css`)**: Spezialisierte Mauszeiger für verschiedene Interaktionen
-- **Interaktions-Feedback (`interactions.css`)**: Umfassende Sammlung von Interaktionseffekten
+- **Hover Effects (`hover.css`)**: Visual feedback on mouse contact
+- **Active States (`active.css`)**: Effects when clicking or activating
+- **Focus Styles (`focus.css`)**: Accessible focus indicators
+- **Loading States (`loading.css`)**: Animated loading indicators
+- **Cursor Effects (`cursors.css`)**: Specialized mouse pointers for various interactions
+- **Interaction Feedback (`interactions.css`)**: Comprehensive collection of interaction effects
 
-### Zustandseffekte
+### State Effects
 
-- **Erfolgs-Zustände (`success.css`)**: Positive Rückmeldungen visuell darstellen
-- **Fehler-Zustände (`error.css`)**: Fehlermeldungen effektiv visualisieren
-- **Warnungs-Zustände (`warning.css`)**: Warnhinweise hervorheben
-- **Deaktivierte Zustände (`disabled.css`)**: Visuelles Feedback für nicht verfügbare Elemente
+- **Success States (`success.css`)**: Visually represent positive feedback
+- **Error States (`error.css`)**: Effectively visualize error messages
+- **Warning States (`warning.css`)**: Highlight warning notices
+- **Disabled States (`disabled.css`)**: Visual feedback for unavailable elements
 
-## Verwendung
+## Usage
 
-Die Effekte können über CSS-Klassen direkt auf HTML-Elemente angewendet werden:
+The effects can be applied directly to HTML elements via CSS classes:
 
 ```html
-<!-- Glaseffekt -->
-<div class="glass">Glaseffekt-Container</div>
+<!-- Glass effect -->
+<div class="glass">Glass effect container</div>
 
-<!-- Neon-Effekt für Text -->
-<h2 class="neon-text">Leuchtender Neon-Text</h2>
+<!-- Neon effect for text -->
+<h2 class="neon-text">Glowing neon text</h2>
 
-<!-- Kombinierte Effekte -->
+<!-- Combined effects -->
 <button class="hover-lift active-scale glass-hover">
-  Interaktiver Button mit mehreren Effekten
+  Interactive button with multiple effects
 </button>
 ```
 
-### Effekt-Module importieren
+### Importing Effect Modules
 
-Sie können die benötigten Effekt-Module selektiv importieren:
+You can selectively import the required effect modules:
 
 ```css
-/* Basis-Effekte */
+/* Base effects */
 @import '@casoon/ui-lib/effects/animations.css';
 @import '@casoon/ui-lib/effects/filters.css';
 @import '@casoon/ui-lib/effects/interactions.css';
 
-/* Spezifische Effekte nach Bedarf */
+/* Specific effects as needed */
 @import '@casoon/ui-lib/effects/glass.css';
 @import '@casoon/ui-lib/effects/neon.css';
 ```
 
-## Detaillierte Effekt-Beschreibungen
+## Detailed Effect Descriptions
 
-### Glaseffekte (`glass.css`)
+### Glass Effects (`glass.css`)
 
-Der moderne Glasmorphismus-Stil ermöglicht halbtransparente Elemente mit Unschärfeeffekt.
+The modern glassmorphism style enables semi-transparent elements with blur effect.
 
 ```html
-<!-- Standard-Glaseffekt -->
-<div class="glass">Standard-Glaseffekt</div>
+<!-- Standard glass effect -->
+<div class="glass">Standard glass effect</div>
 
-<!-- Glaseffekt-Varianten -->
-<div class="glass-sm">Subtiler Glaseffekt</div>
-<div class="glass-lg">Starker Glaseffekt</div>
+<!-- Glass effect variants -->
+<div class="glass-sm">Subtle glass effect</div>
+<div class="glass-lg">Strong glass effect</div>
 
-<!-- Farbige Glaseffekte -->
-<div class="glass glass-color-primary">Primärfarben-Glaseffekt</div>
-<div class="glass glass-color-success">Erfolgs-Glaseffekt</div>
+<!-- Colored glass effects -->
+<div class="glass glass-color-primary">Primary color glass effect</div>
+<div class="glass glass-color-success">Success glass effect</div>
 
-<!-- Interaktiver Glaseffekt -->
-<div class="glass-hover">Hover-aktivierter Glaseffekt</div>
+<!-- Interactive glass effect -->
+<div class="glass-hover">Hover-activated glass effect</div>
 ```
 
-CSS-Variablen zur Anpassung:
+CSS variables for customization:
 
 ```css
 :root {
@@ -118,54 +118,54 @@ CSS-Variablen zur Anpassung:
 }
 ```
 
-### Neon-Effekte (`neon.css`)
+### Neon Effects (`neon.css`)
 
-Leuchtende Text- und Rahmeneffekte im Neon-Stil.
-
-```html
-<!-- Neon-Text in verschiedenen Farben -->
-<div class="neon-text">Standard Neon-Text</div>
-<div class="neon-text-secondary">Sekundärer Neon-Text</div>
-<div class="neon-text-accent">Akzent Neon-Text</div>
-
-<!-- Neon-Rahmen -->
-<div class="neon-border">Element mit Neon-Rahmen</div>
-
-<!-- Animation-Varianten -->
-<div class="neon-text-slow">Langsam pulsierende Animation</div>
-<div class="neon-text-fast">Schnell pulsierende Animation</div>
-<div class="neon-text-flicker">Flackernder Neon-Effekt</div>
-<div class="neon-text-hover">Nur bei Hover aktivierter Neon-Effekt</div>
-
-<!-- Glow-Effekte -->
-<div class="glow">Text mit Glow-Effekt</div>
-<span class="glow" style="--glow-color: #0ff;">Individuelle Glow-Farbe</span>
-```
-
-### Animationen (`animations.css`)
-
-Umfangreiche Sammlung von Animationen für verschiedene Anwendungsfälle.
+Glowing text and border effects in neon style.
 
 ```html
-<!-- Basis-Animationen -->
-<div class="animate-fade-in">Einblenden</div>
-<div class="animate-slide-up">Von unten einfahren</div>
-<div class="animate-bounce">Hüpfen</div>
-<div class="animate-pulse">Pulsieren</div>
-<div class="animate-spin">Rotieren</div>
+<!-- Neon text in various colors -->
+<div class="neon-text">Standard neon text</div>
+<div class="neon-text-secondary">Secondary neon text</div>
+<div class="neon-text-accent">Accent neon text</div>
 
-<!-- Scroll-aktivierte Animationen -->
-<div class="scroll-fade-in">Einblenden beim Scrollen</div>
-<div class="scroll-slide-up">Hochfahren beim Scrollen</div>
-<div class="scroll-scale">Größe ändern beim Scrollen</div>
+<!-- Neon borders -->
+<div class="neon-border">Element with neon border</div>
 
-<!-- Interaktions-Animationen -->
-<div class="hover-bounce">Hüpfen bei Hover</div>
-<div class="hover-pulse">Pulsieren bei Hover</div>
-<div class="hover-spin">Rotieren bei Hover</div>
+<!-- Animation variants -->
+<div class="neon-text-slow">Slowly pulsating animation</div>
+<div class="neon-text-fast">Rapidly pulsating animation</div>
+<div class="neon-text-flicker">Flickering neon effect</div>
+<div class="neon-text-hover">Neon effect activated only on hover</div>
+
+<!-- Glow effects -->
+<div class="glow">Text with glow effect</div>
+<span class="glow" style="--glow-color: #0ff;">Custom glow color</span>
 ```
 
-Anpassungen über CSS-Variablen:
+### Animations (`animations.css`)
+
+Extensive collection of animations for various applications.
+
+```html
+<!-- Basic animations -->
+<div class="animate-fade-in">Fade in</div>
+<div class="animate-slide-up">Slide up</div>
+<div class="animate-bounce">Bounce</div>
+<div class="animate-pulse">Pulse</div>
+<div class="animate-spin">Rotate</div>
+
+<!-- Scroll-activated animations -->
+<div class="scroll-fade-in">Fade in on scroll</div>
+<div class="scroll-slide-up">Slide up on scroll</div>
+<div class="scroll-scale">Change size on scroll</div>
+
+<!-- Interaction animations -->
+<div class="hover-bounce">Bounce on hover</div>
+<div class="hover-pulse">Pulse on hover</div>
+<div class="hover-spin">Rotate on hover</div>
+```
+
+Customization via CSS variables:
 
 ```css
 :root {
@@ -177,56 +177,56 @@ Anpassungen über CSS-Variablen:
 }
 ```
 
-### Interaktionseffekte (`interactions.css`)
+### Interaction Effects (`interactions.css`)
 
-Interaktive Effekte für verbesserte Benutzererfahrung.
+Interactive effects for enhanced user experience.
 
 ```html
-<!-- Basis-Interaktionen -->
-<button class="hover-lift">Anhebendes Element bei Hover</button>
-<button class="hover-scale">Skalierendes Element bei Hover</button>
-<button class="active-scale">Bei Klick/Aktivierung schrumpfendes Element</button>
+<!-- Basic interactions -->
+<button class="hover-lift">Element that lifts on hover</button>
+<button class="hover-scale">Element that scales on hover</button>
+<button class="active-scale">Element that shrinks when clicked/activated</button>
 
-<!-- Touch-Effekte -->
-<button class="touch-feedback">Feedback bei Touch/Klick</button>
-<button class="touch-ripple">Welleneffekt bei Touch/Klick</button>
+<!-- Touch effects -->
+<button class="touch-feedback">Feedback on touch/click</button>
+<button class="touch-ripple">Wave effect on touch/click</button>
 
-<!-- Drag-Interaktionen -->
-<div class="draggable">Ziehbares Element</div>
+<!-- Drag interactions -->
+<div class="draggable">Draggable element</div>
 
-<!-- Kombinierte Interaktionen -->
+<!-- Combined interactions -->
 <button class="interactive hover-lift active-scale">
-  Vollständig interaktiver Button
+  Fully interactive button
 </button>
 ```
 
-## Effekt-Kombinationen
+## Effect Combinations
 
-Effekte können miteinander kombiniert werden, um komplexere visuelle Erlebnisse zu erzeugen:
+Effects can be combined to create more complex visual experiences:
 
 ```html
-<!-- Neon-Glaseffekt -->
+<!-- Neon-Glass effect -->
 <div class="glass neon-border">
-  <h3 class="neon-text">Glas mit Neon</h3>
+  <h3 class="neon-text">Glass with Neon</h3>
 </div>
 
-<!-- Interaktive 3D-Karte -->
+<!-- Interactive 3D map -->
 <div class="card glass hover-lift active-scale">
   <div class="card__content">
-    <h3 class="neon-text-hover">Interaktive Karte</h3>
-    <p>Inhalt mit kombinierten Effekten</p>
+    <h3 class="neon-text-hover">Interactive Map</h3>
+    <p>Content with combined effects</p>
   </div>
 </div>
 
-<!-- Animierter Button mit mehreren Effekten -->
+<!-- Animated button with multiple effects -->
 <button class="button primary hover-lift active-scale neon-border">
-  <span class="glow">Komplexer Button</span>
+  <span class="glow">Complex Button</span>
 </button>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Alle Effekte berücksichtigen Barrierefreiheit und respektieren die Benutzereinstellung `prefers-reduced-motion`:
+All effects consider accessibility and respect the user setting `prefers-reduced-motion`:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -241,110 +241,110 @@ Alle Effekte berücksichtigen Barrierefreiheit und respektieren die Benutzereins
 }
 ```
 
-## Performance-Optimierung
+## Performance Optimization
 
-Die Effekte sind für optimale Performance entwickelt:
+The effects are designed for optimal performance:
 
-1. **Hardware-Beschleunigung**: Nutzung von CSS-Eigenschaften, die GPU-Beschleunigung unterstützen
-2. **Selektiver Einsatz**: Kombinieren Sie Effekte mit Bedacht, um Performance-Engpässe zu vermeiden
-3. **Mobile-Optimierung**: Reduzierte Effekte auf mobilen Geräten für bessere Performance
-4. **will-change-Eigenschaft**: Sparsamer Einsatz für kritische Animationen
+1. **Hardware Acceleration**: Utilization of CSS properties that support GPU acceleration
+2. **Selective Use**: Combine effects judiciously to avoid performance bottlenecks
+3. **Mobile Optimization**: Reduced effects on mobile devices for better performance
+4. **will-change Property**: Sparsely used for critical animations
 
 ## Best Practices
 
-1. **Subtile Effekte bevorzugen**: Weniger ist oft mehr, besonders bei Animationen und Interaktionen
-2. **Konsistenter Einsatz**: Verwenden Sie ähnliche Effekte für ähnliche Interaktionen
-3. **Barrierefreiheit beachten**: Stellen Sie alternative Darstellungen für Nutzer mit reduzierter Bewegung bereit
-4. **Vermeiden Sie Konflikte**: Kombinieren Sie Effekte so, dass sie sich nicht gegenseitig stören
-5. **Testen auf verschiedenen Geräten**: Stellen Sie sicher, dass Effekte auf allen Zielplattformen gut funktionieren
+1. **Subtle Effects Preferred**: Less is often more, especially with animations and interactions
+2. **Consistent Use**: Use similar effects for similar interactions
+3. **Accessibility Consideration**: Provide alternative representations for users with reduced motion
+4. **Avoid Conflicts**: Combine effects so they do not interfere with each other
+5. **Testing on Various Devices**: Ensure effects work well on all target platforms
 
-## Weiterführende Beispiele
+## Further Examples
 
-### Komplexe Karten-UI
+### Complex Card UI
 
 ```html
 <div class="card glass hover-lift active-scale">
   <div class="card__header">
-    <h3 class="glow">Karten-Titel</h3>
-    <span class="badge neon-text-small">Neu</span>
+    <h3 class="glow">Card Title</h3>
+    <span class="badge neon-text-small">New</span>
   </div>
   <div class="card__body">
-    <p>Karteninhalt mit komplexen Effekten</p>
+    <p>Card content with complex effects</p>
     <div class="progress glass-sm">
       <div class="progress__bar" style="width: 75%"></div>
     </div>
   </div>
   <div class="card__footer">
     <button class="button primary hover-scale active-scale neon-border-sm">
-      Aktion
+      Action
     </button>
   </div>
 </div>
 ```
 
-### Animierte Produktansicht
+### Animated Product View
 
 ```html
 <div class="product-card glass scroll-fade-in">
   <div class="product-image hover-scale">
-    <img src="product.jpg" alt="Produkt" class="filter-brightness" />
+    <img src="product.jpg" alt="Product" class="filter-brightness" />
     <div class="badge neon-text-sm">-20%</div>
   </div>
   <div class="product-info">
-    <h3 class="glow-hover">Produktname</h3>
+    <h3 class="glow-hover">Product Name</h3>
     <p class="scroll-slide-up" style="--animation-delay: 0.2s">
-      Produktbeschreibung
+      Product Description
     </p>
     <div class="price neon-text-secondary">29,99 €</div>
     <button class="button primary hover-lift active-scale ripple">
-      In den Warenkorb
+      Add to Cart
     </button>
   </div>
 </div>
 ```
 
-## Verfügbare Effekt-Module
+## Available Effect Modules
 
-Die Casoon UI Library bietet über 40 spezialisierte Effekt-Module:
+The Casoon UI Library offers over 40 specialized effect modules:
 
-- `3d.css` - 3D-Transformationen und Perspektiven
-- `active.css` - Effekte für aktive Zustände
-- `animations.css` - Allgemeine Animations-Bibliothek
-- `backdrops.css` - Hintergrund-Effekte
-- `blends.css` - CSS-Blendmodi-Effekte
-- `clip-path.css` - Formschneide-Effekte
-- `cursors.css` - Spezialisierte Cursor-Stile
-- `disabled.css` - Effekte für deaktivierte Elemente
-- `error.css` - Visualisierung von Fehlerzuständen
-- `filters.css` - CSS-Filter-Effekte
-- `focus.css` - Fokus-Zustandseffekte
-- `glass.css` - Glasmorphismus-Effekte
-- `glow.css` - Leuchteffekte
-- `gradient.css` - Farbverlauf-Effekte
-- `hover.css` - Hover-Zustandseffekte
-- `interactions.css` - Interaktionseffekte
-- `light.css` - Lichteffekte
-- `loading.css` - Ladeanimationen
-- `masks.css` - CSS-Masken-Effekte
-- `morph.css` - Formveränderungs-Effekte
-- `neon.css` - Neon-Lichteffekte
-- `noise.css` - Rauscheffekte
-- `outlines.css` - Umriss-Effekte
-- `overlays.css` - Überlagerungseffekte
-- `particles.css` - Partikeleffekte
-- `patterns.css` - Musterhintergründe
-- `reflections.css` - Spiegelungseffekte
-- `ripple.css` - Welleneffekte
-- `scroll.css` - Scroll-basierte Effekte
-- `shadows.css` - Schatteneffekte
-- `shine.css` - Glanzeffekte
-- `skeleton.css` - Lade-Platzhalter-Effekte
-- `sparkle.css` - Funkeleffekte
-- `success.css` - Erfolgszustands-Effekte
-- `textures.css` - Textur-Effekte
-- `transforms.css` - CSS-Transformationseffekte
-- `transitions.css` - Übergangseffekte
-- `typing.css` - Schreibmaschinen-Effekte
-- `typography.css` - Text-Effekte
-- `vignette.css` - Vignetten-Effekte
-- `warning.css` - Warnzustands-Effekte 
+- `3d.css` - 3D Transformations and Perspectives
+- `active.css` - Effects for active states
+- `animations.css` - General Animation Library
+- `backdrops.css` - Background Effects
+- `blends.css` - CSS Blend Mode Effects
+- `clip-path.css` - Shape Cutout Effects
+- `cursors.css` - Specialized Cursor Styles
+- `disabled.css` - Effects for disabled elements
+- `error.css` - Visualization of error states
+- `filters.css` - CSS Filter Effects
+- `focus.css` - Focus State Effects
+- `glass.css` - Glassmorphism Effects
+- `glow.css` - Glow Effects
+- `gradient.css` - Color Gradient Effects
+- `hover.css` - Hover State Effects
+- `interactions.css` - Interaction Effects
+- `light.css` - Light Effects
+- `loading.css` - Loading Animations
+- `masks.css` - CSS Mask Effects
+- `morph.css` - Shape Change Effects
+- `neon.css` - Neon Light Effects
+- `noise.css` - Noise Effects
+- `outlines.css` - Outline Effects
+- `overlays.css` - Overlay Effects
+- `particles.css` - Particle Effects
+- `patterns.css` - Pattern Backgrounds
+- `reflections.css` - Reflection Effects
+- `ripple.css` - Wave Effects
+- `scroll.css` - Scroll-based Effects
+- `shadows.css` - Shadow Effects
+- `shine.css` - Shine Effects
+- `skeleton.css` - Loading Placeholder Effects
+- `sparkle.css` - Sparkle Effects
+- `success.css` - Success State Effects
+- `textures.css` - Texture Effects
+- `transforms.css` - CSS Transformation Effects
+- `transitions.css` - Transition Effects
+- `typing.css` - Typewriter Effects
+- `typography.css` - Text Effects
+- `vignette.css` - Vignette Effects
+- `warning.css` - Warning State Effects 

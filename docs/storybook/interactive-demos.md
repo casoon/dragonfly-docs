@@ -1,15 +1,15 @@
 ---
-title: Interaktive Demos
+title: Interactive Demos
 category: Storybook
 ---
 
-# Interaktive Demos
+# Interactive Demos
 
-Diese Seite enthält interaktive Demonstrationen, die zeigen, wie Storybook-Komponenten in VitePress verwendet werden können. Sie können mit diesen Demos interagieren, um die verschiedenen Funktionen und Varianten der Komponenten zu erkunden.
+This page contains interactive demonstrations showing how Storybook components can be used in VitePress. You can interact with these demos to explore the various features and variants of the components.
 
-## Interaktiver Button-Playground
+## Interactive Button Playground
 
-Der folgende Button-Playground ermöglicht es, verschiedene Eigenschaften der Button-Komponente zu erkunden:
+The following Button playground allows you to explore different properties of the Button component:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=components-button--playground&viewMode=story"
@@ -18,15 +18,15 @@ Der folgende Button-Playground ermöglicht es, verschiedene Eigenschaften der Bu
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-Im Playground können Sie:
-- Die Button-Variante ändern
-- Die Größe anpassen
-- Sehen, wie der Button in verschiedenen Zuständen aussieht (normal, hover, aktiv, deaktiviert)
-- Icons hinzufügen oder entfernen
+In the playground, you can:
+- Change the button variant
+- Adjust the size
+- See how the button looks in different states (normal, hover, active, disabled)
+- Add or remove icons
 
-## Interaktives Formular
+## Interactive Form
 
-Dieses Formular zeigt, wie verschiedene Eingabekomponenten zusammenarbeiten:
+This form shows how different input components work together:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=forms-complete-form--default&viewMode=story"
@@ -35,15 +35,15 @@ Dieses Formular zeigt, wie verschiedene Eingabekomponenten zusammenarbeiten:
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-Das Formular demonstriert:
-- Verschiedene Eingabetypen
-- Validierungsregeln
-- Fehler-Feedback
-- Formular-Struktur und -Layout
+The form demonstrates:
+- Various input types
+- Validation rules
+- Error feedback
+- Form structure and layout
 
-## Farbpalette-Explorer
+## Color Palette Explorer
 
-Erkunden Sie die Farbpaletten der Casoon UI Library:
+Explore the color palettes of the Casoon UI Library:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=design-tokens-colors--color-palette&viewMode=story"
@@ -52,15 +52,15 @@ Erkunden Sie die Farbpaletten der Casoon UI Library:
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-Mit diesem Explorer können Sie:
-- Alle verfügbaren Farben sehen
-- Die Farben im Licht- und Dunkelmodus vergleichen
-- Die verschiedenen Schattierungen jeder Farbe erkunden
-- Die CSS-Variablen für jede Farbe einsehen
+With this explorer, you can:
+- See all available colors
+- Compare colors in light and dark mode
+- Explore the different shades of each color
+- View the CSS variables for each color
 
-## Theme-Wechsler
+## Theme Switcher
 
-Testen Sie, wie Komponenten in verschiedenen Themes aussehen:
+Test how components look in different themes:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=themes-theme-switcher--default&viewMode=story"
@@ -69,14 +69,14 @@ Testen Sie, wie Komponenten in verschiedenen Themes aussehen:
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-Mit diesem Theme-Wechsler können Sie:
-- Zwischen Hell- und Dunkelthemen umschalten
-- Die Auswirkungen des Themes auf verschiedene Komponenten sehen
-- Benutzerdefinierte Themes testen
+With this theme switcher, you can:
+- Switch between light and dark themes
+- See the effects of the theme on various components
+- Test custom themes
 
-## Responsive Layout-Demo
+## Responsive Layout Demo
 
-Testen Sie, wie die Layout-Komponenten auf verschiedene Bildschirmgrößen reagieren:
+Test how the layout components respond to different screen sizes:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=layout-responsive-container--default&viewMode=story"
@@ -85,14 +85,14 @@ Testen Sie, wie die Layout-Komponenten auf verschiedene Bildschirmgrößen reagi
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-Diese Demo zeigt:
-- Wie Container sich an verschiedene Bildschirmgrößen anpassen
-- Wie Grid-Layouts responsiv werden
-- Breakpoints und deren Auswirkungen
+This demo shows:
+- How containers adapt to different screen sizes
+- How grid layouts become responsive
+- Breakpoints and their effects
 
-## Integration mit Markdown
+## Integration with Markdown
 
-VitePress und Storybook arbeiten nahtlos zusammen. Sie können Markdown und interaktive Demos kombinieren:
+VitePress and Storybook work seamlessly together. You can combine Markdown and interactive demos:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=documentation-markdown-integration--default&viewMode=story"
@@ -101,14 +101,14 @@ VitePress und Storybook arbeiten nahtlos zusammen. Sie können Markdown und inte
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-Diese Integration zeigt:
-- Wie man Markdown in Storybook-Stories verwendet
-- Wie man Code-Beispiele mit interaktiven Demos kombiniert
-- Wie man eine einheitliche Dokumentation erstellt
+This integration shows:
+- How to use Markdown in Storybook stories
+- How to combine code examples with interactive demos
+- How to create unified documentation
 
-## Komponentenübergreifende Interaktion
+## Cross-Component Interaction
 
-In diesem Beispiel interagieren mehrere Komponenten miteinander:
+In this example, multiple components interact with each other:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=examples-shopping-cart--default&viewMode=story"
@@ -117,14 +117,14 @@ In diesem Beispiel interagieren mehrere Komponenten miteinander:
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-Diese Demo zeigt:
-- Wie Komponenten Daten austauschen
-- Wie Benutzerinteraktionen über mehrere Komponenten hinweg funktionieren
-- Wie ein reales Feature mit den UI-Komponenten erstellt werden kann
+This demo shows:
+- How components exchange data
+- How user interactions work across multiple components
+- How a real feature can be created with the UI components
 
-## Zugänglichkeits-Tests
+## Accessibility Tests
 
-Testen Sie die Zugänglichkeit der Komponenten:
+Test the accessibility of the components:
 
 <iframe
   src="https://casoon.github.io/ui-lib/storybook/iframe.html?id=a11y-accessibility-checker--default&viewMode=story"
@@ -133,18 +133,18 @@ Testen Sie die Zugänglichkeit der Komponenten:
   style="border: 1px solid #ddd; border-radius: 4px;"
 ></iframe>
 
-Diese Demo zeigt:
-- Wie Komponenten auf Zugänglichkeit geprüft werden können
-- Probleme und Lösungen für häufige Zugänglichkeitsprobleme
-- Best Practices für barrierefreie UI-Komponenten
+This demo shows:
+- How components can be tested for accessibility
+- Issues and solutions for common accessibility problems
+- Best practices for accessible UI components
 
-## Eigene Demos erstellen
+## Creating Your Own Demos
 
-Sie können ähnliche interaktive Demos für Ihre eigenen Komponenten erstellen:
+You can create similar interactive demos for your own components:
 
-1. Erstellen Sie eine Story mit interaktiven Kontrollen
-2. Stellen Sie sicher, dass die Story öffentlich zugänglich ist
-3. Betten Sie die Story mit einem iframe oder der benutzerdefinierten `StoryEmbed`-Komponente ein
-4. Fügen Sie erklärenden Text hinzu, um den Kontext zu verdeutlichen
+1. Create a story with interactive controls
+2. Make sure the story is publicly accessible
+3. Embed the story using an iframe or the custom `StoryEmbed` component
+4. Add explanatory text to clarify the context
 
-Diese Art der dokumentationsgesteuerten Entwicklung hilft Entwicklern, Komponenten schneller zu verstehen und effektiver zu nutzen. 
+This type of documentation-driven development helps developers understand components faster and use them more effectively. 
