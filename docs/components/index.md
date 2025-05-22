@@ -518,7 +518,7 @@ export default {
 </html>
 ```
 
-## Theme-Aktivierung
+## Theme Activation
 
 To activate a theme, add the corresponding class to the `<html>` or `<body>` element:
 
