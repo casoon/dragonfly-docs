@@ -65,7 +65,7 @@ export default defineConfig({
       { text: 'Getting Started', link: '/getting-started/' },
       { text: 'Components', link: '/components/' },
       { text: 'Effects', link: '/guide/effects-system' },
-      { text: 'Storybook', link: '/storybook/' },
+      { text: 'Examples', link: '/examples/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
 
@@ -242,12 +242,20 @@ export default defineConfig({
           ]
         }
       ],
-      '/storybook/': [
+      '/examples/': [
         {
-          text: 'Storybook',
+          text: 'Examples',
           items: [
-            { text: 'Overview', link: '/storybook/' },
-            { text: 'Integration', link: '/storybook/integration' },
+            { text: 'Overview', link: '/examples/' }
+          ]
+        },
+        {
+          text: 'Component Examples',
+          items: [
+            { text: 'Basic Components', link: '/examples/basic/' },
+            { text: 'Form Components', link: '/examples/form/' },
+            { text: 'Layout Components', link: '/examples/layout/' },
+            { text: 'Advanced Components', link: '/examples/advanced/' }
           ]
         }
       ]
