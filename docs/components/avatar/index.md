@@ -1,75 +1,75 @@
 # Avatar
 
-Die Avatar-Komponente der Casoon UI Library dient zur Darstellung von Benutzerbildern oder Profilbildern.
+The Avatar component of the Casoon UI Library is used to display user images or profile pictures.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="avatar">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 ```
 
-## Module importieren
+## Importing Modules
 
 ```css
-/* Notwendige Abhängigkeit */
+/* Required dependency */
 @import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* oder ein anderes Theme */
+@import 'casoon-ui-lib/themes/day.css'; /* or another theme */
 
-/* Avatar-Modul */
+/* Avatar module */
 @import 'casoon-ui-lib/modules/avatar.module.css';
 ```
 
-## Varianten
+## Variants
 
-### Größen
+### Sizes
 
 ```html
 <div class="avatar avatar--xs">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 
 <div class="avatar avatar--sm">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 
 <div class="avatar">
-  <!-- Standardgröße -->
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <!-- Standard size -->
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 
 <div class="avatar avatar--lg">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 
 <div class="avatar avatar--xl">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 ```
 
-### Formen
+### Shapes
 
 ```html
-<!-- Standardform: Kreis -->
+<!-- Default shape: Circle -->
 <div class="avatar">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 
-<!-- Quadratisch -->
+<!-- Square -->
 <div class="avatar avatar--square">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 
-<!-- Abgerundetes Quadrat -->
+<!-- Rounded square -->
 <div class="avatar avatar--rounded">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
 </div>
 ```
 
-### Mit Initials
+### With Initials
 
-Wenn kein Bild verfügbar ist, können Initialen angezeigt werden:
+When no image is available, initials can be displayed:
 
 ```html
 <div class="avatar">
@@ -77,42 +77,42 @@ Wenn kein Bild verfügbar ist, können Initialen angezeigt werden:
 </div>
 ```
 
-### Mit Status
+### With Status
 
 ```html
 <div class="avatar">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
   <span class="avatar__status avatar__status--online"></span>
 </div>
 
 <div class="avatar">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
   <span class="avatar__status avatar__status--offline"></span>
 </div>
 
 <div class="avatar">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
   <span class="avatar__status avatar__status--away"></span>
 </div>
 
 <div class="avatar">
-  <img src="path/to/image.jpg" alt="Benutzername">
+  <img src="path/to/image.jpg" alt="Username">
   <span class="avatar__status avatar__status--busy"></span>
 </div>
 ```
 
-### Avatar-Gruppe
+### Avatar Group
 
 ```html
 <div class="avatar-group">
   <div class="avatar">
-    <img src="path/to/image1.jpg" alt="Benutzer 1">
+    <img src="path/to/image1.jpg" alt="User 1">
   </div>
   <div class="avatar">
-    <img src="path/to/image2.jpg" alt="Benutzer 2">
+    <img src="path/to/image2.jpg" alt="User 2">
   </div>
   <div class="avatar">
-    <img src="path/to/image3.jpg" alt="Benutzer 3">
+    <img src="path/to/image3.jpg" alt="User 3">
   </div>
   <div class="avatar">
     <div class="avatar__initials">+5</div>
@@ -120,9 +120,9 @@ Wenn kein Bild verfügbar ist, können Initialen angezeigt werden:
 </div>
 ```
 
-## CSS-Variablen
+## CSS Variables
 
-Die Avatar-Komponente verwendet folgende CSS-Variablen, die Sie anpassen können:
+The Avatar component uses the following CSS variables that you can customize:
 
 ```css
 :root {
@@ -155,51 +155,51 @@ Die Avatar-Komponente verwendet folgende CSS-Variablen, die Sie anpassen können
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Stellen Sie sicher, dass alle Bilder ein sinnvolles `alt`-Attribut haben
-- Verwenden Sie ausreichenden Kontrast zwischen dem Hintergrund und dem Text der Initialen
-- Verwenden Sie `aria-label` oder andere ARIA-Attribute, um zusätzliche Informationen für Screenreader bereitzustellen
+- Ensure all images have a meaningful `alt` attribute
+- Use sufficient contrast between the background and the text of the initials
+- Use `aria-label` or other ARIA attributes to provide additional information for screen readers
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten (rem, em) für die Größe des Avatars
-- Passen Sie die Größe des Avatars an verschiedene Bildschirmgrößen an
-- Stellen Sie sicher, dass die Avatar-Gruppe auf kleinen Bildschirmen korrekt dargestellt wird
+- Use relative units (rem, em) for the size of the avatar
+- Adjust the size of the avatar for different screen sizes
+- Ensure the avatar group is displayed correctly on small screens
 
-## Integration mit anderen Komponenten
+## Integration with Other Components
 
-Die Avatar-Komponente lässt sich gut mit anderen Komponenten kombinieren:
+The Avatar component can be well combined with other components:
 
-### Mit Card
+### With Card
 
 ```html
 <div class="card">
   <div class="card__header">
     <div class="avatar">
-      <img src="path/to/image.jpg" alt="Benutzername">
+      <img src="path/to/image.jpg" alt="Username">
     </div>
-    <div class="card__title">Max Mustermann</div>
+    <div class="card__title">John Doe</div>
   </div>
   <div class="card__body">
-    Inhalt der Karte
+    Card content
   </div>
 </div>
 ```
 
-### Mit Kommentar
+### With Comment
 
 ```html
 <div class="comment">
   <div class="comment__avatar">
     <div class="avatar">
-      <img src="path/to/image.jpg" alt="Benutzername">
+      <img src="path/to/image.jpg" alt="Username">
     </div>
   </div>
   <div class="comment__content">
-    <div class="comment__author">Max Mustermann</div>
-    <div class="comment__text">Das ist ein Kommentar.</div>
-    <div class="comment__date">Vor 2 Stunden</div>
+    <div class="comment__author">John Doe</div>
+    <div class="comment__text">This is a comment.</div>
+    <div class="comment__date">2 hours ago</div>
   </div>
 </div>
 ``` 

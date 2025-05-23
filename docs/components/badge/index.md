@@ -1,8 +1,8 @@
 # Badge
 
-Der Badge ist eine Komponente für kleine Statusindikatoren und Zähler in der Casoon UI Library.
+The Badge is a component for small status indicators and counters in the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ```html
 <span class="badge">Standard Badge</span>
@@ -10,9 +10,9 @@ Der Badge ist eine Komponente für kleine Statusindikatoren und Zähler in der C
 <span class="badge badge--secondary">Secondary Badge</span>
 ```
 
-## Varianten
+## Variants
 
-### Typen
+### Types
 
 ```html
 <span class="badge badge--info">Info</span>
@@ -21,31 +21,31 @@ Der Badge ist eine Komponente für kleine Statusindikatoren und Zähler in der C
 <span class="badge badge--error">Error</span>
 ```
 
-### Größen
+### Sizes
 
 ```html
-<span class="badge badge--sm">Kleiner Badge</span>
-<span class="badge">Normaler Badge</span>
-<span class="badge badge--lg">Großer Badge</span>
+<span class="badge badge--sm">Small Badge</span>
+<span class="badge">Normal Badge</span>
+<span class="badge badge--lg">Large Badge</span>
 ```
 
-### Mit Icons
+### With Icons
 
 ```html
 <span class="badge">
   <span class="badge__icon">🔔</span>
-  <span class="badge__text">Benachrichtigungen</span>
+  <span class="badge__text">Notifications</span>
 </span>
 ```
 
-### Mit Zähler
+### With Counter
 
 ```html
 <span class="badge badge--counter">5</span>
 <span class="badge badge--counter badge--primary">12</span>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -59,24 +59,24 @@ Der Badge ist eine Komponente für kleine Statusindikatoren und Zähler in der C
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie aussagekräftige Texte hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add meaningful text
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Größen an mobile Geräte an
+- Use relative units
+- Test on different screen sizes
+- Adapt sizes for mobile devices
 
 ### Performance
 
-- Minimieren Sie CSS
-- Vermeiden Sie unnötige Animationen
-- Optimieren Sie die Ladezeit
+- Minimize CSS
+- Avoid unnecessary animations
+- Optimize loading time
 
 ## Integration
 
@@ -144,7 +144,7 @@ const { type = 'primary', size = 'md', counter = false, icon } = Astro.props;
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
@@ -152,7 +152,7 @@ import Badge from '../components/Badge.astro';
 ---
 
 <Badge type="success" size="lg">
-  Neu
+  New
 </Badge>
 
 <Badge type="error" counter>
@@ -160,11 +160,11 @@ import Badge from '../components/Badge.astro';
 </Badge>
 
 <Badge icon="🔔">
-  Benachrichtigungen
+  Notifications
 </Badge>
 ```
 
-### Badge mit Animation
+### Badge with Animation
 
 ```astro
 ---
