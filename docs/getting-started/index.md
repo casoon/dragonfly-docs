@@ -9,7 +9,7 @@ import { UI_LIB_VERSION } from '../.vitepress/data/versions'
 
 # Getting Started with Casoon UI
 
-Welcome to the Casoon UI Library. This page provides a detailed introduction and all the information you need to get started. The current version is {{ UI_LIB_VERSION }}.
+Welcome to the Casoon UI Library. This page provides a comprehensive introduction to the library and its core concepts. The current version is {{ UI_LIB_VERSION }}.
 
 ## Technical Foundations
 
@@ -48,53 +48,6 @@ This layer system offers several advantages:
 - Avoidance of specificity conflicts
 - Better code organization
 - Possibility for selective overrides
-
-## Detailed Installation Guide
-
-### Installation via npm
-
-```bash
-npm install @casoon/ui-lib@0.5.5
-```
-
-### Installation via yarn
-
-```bash
-yarn add @casoon/ui-lib@0.5.5
-```
-
-### Installation via pnpm
-
-```bash
-pnpm add @casoon/ui-lib@0.5.5
-```
-
-### Import into Your Project
-
-You can import the entire library or individual modules:
-
-```js
-// Entire library
-import '@casoon/ui-lib/core.css';
-
-// Only specific modules
-import '@casoon/ui-lib/modules/button.module.css';
-import '@casoon/ui-lib/modules/card.module.css';
-```
-
-### Activating Themes
-
-1. Import a theme:
-   ```js
-   import '@casoon/ui-lib/themes/day.css';
-   ```
-
-2. Activate the theme using a CSS class:
-   ```html
-   <body class="theme-day">
-     <!-- Your content -->
-   </body>
-   ```
 
 ## Container Queries in Practice
 
@@ -137,7 +90,7 @@ Using design tokens instead of hardcoded values ensures:
 
 To quickly work with the Casoon UI Library, we recommend the following first steps:
 
-1. **Understand the structure**: Familiarize yourself with the layer system and module organization
+1. **Installation**: Follow our [detailed installation guide](/getting-started/installation)
 2. **Explore the components**: Check out the available [components](/components/)
 3. **Learn the utility classes**: Use the [utility classes](/getting-started/utilities) for quick styling
 4. **Understand the themes**: Learn how to customize [themes](/getting-started/themes)

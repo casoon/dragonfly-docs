@@ -103,6 +103,7 @@ export default defineConfig({
             { text: 'Layer System', link: '/guide/layer-system' },
             { text: 'Layout', link: '/getting-started/layout' },
             { text: 'Typography', link: '/getting-started/typography' },
+            { text: 'Styles', link: '/getting-started/styles' },
             { text: 'Themes', link: '/getting-started/themes' }
           ]
         },
