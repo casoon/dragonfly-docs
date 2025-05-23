@@ -212,24 +212,24 @@ export default defineConfig({
         {
           text: 'Visual Effects',
           items: [
-            { text: '3D Effects', link: '/guide/effects/3d' },
-            { text: 'Filter Effects', link: '/guide/effects/filters' },
-            { text: 'Shadow Effects', link: '/guide/effects/shadows' },
-            { text: 'Gradient Effects', link: '/guide/effects/gradient' },
-            { text: 'Patterns & Textures', link: '/guide/effects/patterns' }
+            { text: '3D Effects', link: '/effects/3d' },
+            { text: 'Filter Effects', link: '/effects/filters' },
+            { text: 'Shadow Effects', link: '/effects/shadows' },
+            { text: 'Gradient Effects', link: '/effects/gradient' },
+            { text: 'Patterns & Textures', link: '/effects/patterns' }
           ]
         },
         {
           text: 'Interaction Effects',
           items: [
-            { text: 'Hover Effects', link: '/guide/effects/interaction/hover' },
-            { text: 'Focus Effects', link: '/guide/effects/interaction/focus' }
+            { text: 'Hover Effects', link: '/effects/interaction/hover' },
+            { text: 'Focus Effects', link: '/effects/interaction/focus' }
           ]
         },
         {
           text: 'State Effects',
           items: [
-            { text: 'Loading Effects', link: '/guide/effects/state/loading' }
+            { text: 'Loading Effects', link: '/effects/state/loading' }
           ]
         }
       ],

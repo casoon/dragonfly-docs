@@ -1,124 +1,232 @@
 ---
-title: Animations- und Effekt-System
+title: Animation and Effects System
 category: Guide
 ---
 
-# Animations- und Effekte-System
+# Animation and Effects System
 
-Das Animations- und Effekte-System der Casoon UI Library bietet eine umfassende Sammlung von vordefinierten Animationen, Übergängen und visuellen Effekten zur Verbesserung der Benutzeroberfläche.
+The Animation and Effects System of the Casoon UI Library provides a comprehensive collection of predefined animations, transitions, and visual effects to enhance the user interface.
 
-> **Update in Version 0.5.1:** Das Animationssystem wurde umfassend überarbeitet mit vereinheitlichtem Benennungsschema (`slide-in-*` statt `slide-from-*`), reduzierter Redundanz und verbesserten Custom Properties.
+> **Update in Version 0.5.1:** The animation system has been extensively revised with a unified naming scheme (`slide-in-*` instead of `slide-from-*`), reduced redundancy, and improved custom properties.
 
-## CSS-Import
+## CSS Import
 
-Um das komplette Casoon UI Animations-System zu nutzen, importieren Sie die `core.css` Datei, die automatisch die grundlegenden Animationen enthält:
+To use the complete Casoon UI Animation System, import the `core.css` file, which automatically includes the basic animations:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Für spezielle Animationen und Effekte können Sie zusätzliche Module importieren:
+For special animations and effects, you can import additional modules:
 
 ```css
-/* Erweiterte Animationen */
-@import "@casoon/ui-lib/effects/animations.css";
+/* Advanced animations */
+@import "@casoon/ui-lib/animations/advanced.css";
 
-/* Spezielle Effekte */
+/* Specific effect modules */
+@import "@casoon/ui-lib/effects/shadows.css";
 @import "@casoon/ui-lib/effects/glass.css";
-@import "@casoon/ui-lib/effects/neon.css";
 ```
 
-## Layer-Struktur
+## Animation Categories
 
-Die Animationen und Effekte sind Teil des zentralen Layer-Systems und werden unter den Layern `animations` und `effects` definiert:
+The Animation System is divided into the following categories:
 
-```css
-@layer reset,
-       tokens,
-       /* ... andere Layer ... */
-       animations,       /* Bewegungssystem */
-       effects,          /* Visuelle Effekte */
-       themes;
-```
+### 1. Transitions
 
-## Grundlegende Animationen
-
-Das System bietet eine Reihe von vordefinierten Animationen, die leicht angewendet werden können:
-
-### Fade-Animationen
+Smooth transitions between states:
 
 ```css
-.fade-in { animation: fade-in 0.3s ease-out forwards; }
-.fade-out { animation: fade-out 0.3s ease-in forwards; }
-```
-
-### Slide-Animationen (Vereinheitlichtes Benennungsschema in v0.5.0)
-
-```css
-.slide-in-top { animation: slide-in-top 0.3s ease-out forwards; }
-.slide-in-right { animation: slide-in-right 0.3s ease-out forwards; }
-.slide-in-bottom { animation: slide-in-bottom 0.3s ease-out forwards; }
-.slide-in-left { animation: slide-in-left 0.3s ease-out forwards; }
-```
-
-### Scale-Animationen
-
-```css
-.scale-in { animation: scale-in 0.3s ease-out forwards; }
-.scale-out { animation: scale-out 0.3s ease-in forwards; }
-```
-
-### Rotation
-
-```css
-.rotate-in { animation: rotate-in 0.3s ease-out forwards; }
-.rotate-out { animation: rotate-out 0.3s ease-in forwards; }
-```
-
-## Timing und Verzögerung
-
-Sie können die Animationsgeschwindigkeit und -verzögerung anpassen:
-
-```css
-/* Geschwindigkeit */
-.animation-fast { animation-duration: 0.15s; }
-.animation-slow { animation-duration: 0.6s; }
-
-/* Verzögerung */
-.animation-delay-1 { animation-delay: 0.1s; }
-.animation-delay-2 { animation-delay: 0.2s; }
-.animation-delay-3 { animation-delay: 0.3s; }
-```
-
-## Barrierefreiheit in Animationen (Neu in v0.5.0)
-
-In Version 0.5.0 wurde der Support für `prefers-reduced-motion` erheblich verbessert:
-
-```css
-/* Motion-Safe und Motion-Reduce Utilities */
-.motion-safe {
-  /* Animationen nur anzeigen, wenn keine Einschränkung besteht */
-  @media (prefers-reduced-motion: no-preference) {
-    animation: fade-in 0.3s ease-out;
-  }
+/* Basic transition */
+.transition {
+  transition: all 0.3s ease;
 }
 
-.motion-reduce {
-  /* Alternative für Nutzer mit aktiviertem 'prefers-reduced-motion' */
-  @media (prefers-reduced-motion: reduce) {
-    animation: none;
-    transition: none;
-  }
+/* Quick transition */
+.transition-fast {
+  transition: all 0.15s ease;
+}
+
+/* Slow transition */
+.transition-slow {
+  transition: all 0.5s ease;
+}
+
+/* Property-specific transitions */
+.transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 ```
 
-### System-weite Reduzierung
+### 2. Fade Animations
 
-Das System respektiert automatisch die Benutzereinstellung `prefers-reduced-motion`:
+For elements that should appear or disappear with a fade effect:
+
+```css
+/* Fade in */
+.fade-in {
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+/* Fade out */
+.fade-out {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+```
+
+### 3. Slide Animations
+
+For elements that should slide into or out of view:
+
+```css
+/* Slide in from different directions */
+.slide-in-top {
+  animation: slideInTop 0.3s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.3s ease-out forwards;
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 0.3s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.3s ease-out forwards;
+}
+
+/* Slide out in different directions */
+.slide-out-top {
+  animation: slideOutTop 0.3s ease-in forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight 0.3s ease-in forwards;
+}
+
+.slide-out-bottom {
+  animation: slideOutBottom 0.3s ease-in forwards;
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.3s ease-in forwards;
+}
+```
+
+### 4. Scale Animations
+
+For elements that should grow or shrink:
+
+```css
+/* Zoom in */
+.zoom-in {
+  animation: zoomIn 0.3s ease-out forwards;
+}
+
+/* Zoom out */
+.zoom-out {
+  animation: zoomOut 0.3s ease-in forwards;
+}
+```
+
+### 5. Special Animations
+
+For specific effects:
+
+```css
+/* Pulse animation */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Bounce animation */
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Shake animation */
+.shake {
+  animation: shake 0.5s;
+}
+
+/* Spin animation */
+.spin {
+  animation: spin 2s linear infinite;
+}
+```
+
+## Combined Animations
+
+Animations can be combined with each other and with transitions:
+
+```html
+<div class="fade-in slide-in-bottom transition">
+  <!-- This element fades in, slides from bottom, and has smooth transitions -->
+</div>
+```
+
+## Animation Configuration
+
+The Animation System can be configured via CSS variables:
+
+```css
+:root {
+  /* Animation durations */
+  --animation-duration-fast: 0.15s;
+  --animation-duration-medium: 0.3s;
+  --animation-duration-slow: 0.5s;
+
+  /* Animation timing functions */
+  --animation-easing-standard: ease;
+  --animation-easing-in: ease-in;
+  --animation-easing-out: ease-out;
+  --animation-easing-in-out: ease-in-out;
+
+  /* Animation delays */
+  --animation-delay-none: 0s;
+  --animation-delay-short: 0.1s;
+  --animation-delay-medium: 0.3s;
+}
+```
+
+## Performance Optimization
+
+For better performance:
+
+1. Use the GPU-accelerated properties for animations:
+   - `transform`
+   - `opacity`
+   - `filter`
+
+2. Avoid animating layout properties when possible:
+   - `width`, `height`
+   - `margin`, `padding`
+   - `top`, `left`, `right`, `bottom`
+
+3. Use the `will-change` property for complex animations:
+
+```css
+.complex-animation {
+  will-change: transform, opacity;
+}
+```
+
+## Responsive Considerations
+
+The Animation System respects user preferences:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *, ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -127,257 +235,59 @@ Das System respektiert automatisch die Benutzereinstellung `prefers-reduced-moti
 }
 ```
 
-## Dialog-Animationen (Neu in v0.5.0)
+## Examples
 
-Spezielle Animationen für `<dialog>`-Elemente:
-
-```html
-<button id="openDialog">Dialog öffnen</button>
-<dialog id="myDialog" class="dialog dialog-enter">
-  Dialog-Inhalt
-  <button id="closeDialog">Schließen</button>
-</dialog>
-
-<script>
-  document.getElementById('openDialog').addEventListener('click', () => {
-    document.getElementById('myDialog').showModal();
-  });
-  
-  document.getElementById('closeDialog').addEventListener('click', () => {
-    const dialog = document.getElementById('myDialog');
-    dialog.classList.remove('dialog-enter');
-    dialog.classList.add('dialog-exit');
-    setTimeout(() => {
-      dialog.close();
-      dialog.classList.remove('dialog-exit');
-      dialog.classList.add('dialog-enter');
-    }, 300);
-  });
-</script>
-```
-
-## Gestaffelte Animationen (Neu in v0.5.0)
-
-Sequentielle Animationen für Listen und Gruppen:
+### Button with Hover Effect
 
 ```html
-<ul class="staggered-list">
-  <li>Element 1</li>
-  <li>Element 2</li>
-  <li>Element 3</li>
-  <li>Element 4</li>
-</ul>
+<button class="button transition">
+  Hover Me
+</button>
 
 <style>
-  .staggered-list li {
-    opacity: 0;
-    animation: fade-in 0.3s ease-out forwards;
+  .button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    transition: transform var(--animation-duration-medium) var(--animation-easing-out);
   }
   
-  .staggered-list li:nth-child(1) { animation-delay: 0.1s; }
-  .staggered-list li:nth-child(2) { animation-delay: 0.2s; }
-  .staggered-list li:nth-child(3) { animation-delay: 0.3s; }
-  .staggered-list li:nth-child(4) { animation-delay: 0.4s; }
+  .button:hover {
+    transform: translateY(-2px);
+  }
 </style>
 ```
 
-## Animierte Fokus-Indikatoren (Neu in v0.5.0)
-
-Pulsierende Fokus-Ringe für bessere Barrierefreiheit:
-
-```css
-.focus-ring-animated {
-  outline: none;
-}
-
-.focus-ring-animated:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px var(--color-primary);
-  animation: focus-ring-pulse 1.5s infinite;
-}
-
-@keyframes focus-ring-pulse {
-  0% { box-shadow: 0 0 0 2px rgba(var(--color-primary-rgb), 1); }
-  50% { box-shadow: 0 0 0 4px rgba(var(--color-primary-rgb), 0.5); }
-  100% { box-shadow: 0 0 0 2px rgba(var(--color-primary-rgb), 1); }
-}
-```
-
-## Experimentelles Feature: animation-composition (Neu in v0.5.0)
-
-Unterstützung für `animation-composition` zur Kombination mehrerer Animationen:
-
-```css
-/* Mehrere Animationen gleichzeitig anwenden und kombinieren */
-.element-combined {
-  animation: slide-in-top 0.5s ease-out, 
-             fade-in 0.3s ease-out, 
-             scale-in 0.4s ease-out;
-  animation-composition: add;
-}
-```
-
-## Effekte-System
-
-Das Effekte-System bietet visuelle Effekte wie Schatten, Glanzeffekte und Materialien:
-
-### Schatten-Effekte
-
-```css
-.shadow-sm { box-shadow: var(--shadow-sm); }
-.shadow-md { box-shadow: var(--shadow-md); }
-.shadow-lg { box-shadow: var(--shadow-lg); }
-.shadow-xl { box-shadow: var(--shadow-xl); }
-```
-
-### Glasmorphismus
-
-```css
-.glass {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.glass-dark {
-  background: rgba(15, 15, 15, 0.8);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-```
-
-### Neon-Effekte
-
-```css
-.neon-text {
-  color: var(--color-primary);
-  text-shadow: 0 0 5px rgba(var(--color-primary-rgb), 0.8),
-               0 0 10px rgba(var(--color-primary-rgb), 0.5),
-               0 0 15px rgba(var(--color-primary-rgb), 0.3);
-}
-
-.neon-border {
-  border: 2px solid var(--color-primary);
-  box-shadow: 0 0 5px rgba(var(--color-primary-rgb), 0.8),
-              0 0 10px rgba(var(--color-primary-rgb), 0.5),
-              inset 0 0 5px rgba(var(--color-primary-rgb), 0.2);
-}
-```
-
-## Dark-Mode Integration (Verbessert in v0.5.0)
-
-Durchgängige Implementierung mit `color-scheme` und `light-dark()` CSS-Funktion:
-
-```css
-:root {
-  color-scheme: light dark;
-}
-
-.element {
-  background-color: light-dark(#ffffff, #121212);
-  color: light-dark(#000000, #ffffff);
-  border-color: light-dark(#e5e5e5, #333333);
-}
-```
-
-## Animation-Komposition mit CSS-Eigenschaften
-
-Animationen können durch CSS-Eigenschaften gesteuert werden:
-
-```css
-:root {
-  --animation-scale: 1;
-  --animation-duration: 0.3s;
-  --animation-delay: 0s;
-}
-
-.custom-animation {
-  animation-name: custom-fade;
-  animation-duration: var(--animation-duration);
-  animation-delay: var(--animation-delay);
-  animation-fill-mode: forwards;
-}
-
-@keyframes custom-fade {
-  0% {
-    opacity: 0;
-    transform: scale(calc(1 - var(--animation-scale) * 0.2));
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-```
-
-## Integrierte Übergänge
-
-Standardmäßige Übergänge für interaktive Elemente:
-
-```css
-.transition-base {
-  transition: var(--transition-base);
-}
-
-.transition-transform {
-  transition: var(--transition-transform);
-}
-
-.transition-colors {
-  transition: var(--transition-colors);
-}
-```
-
-## Kombinieren mit Utilities
-
-Animationen können mit anderen Utility-Klassen kombiniert werden:
+### Modal with Entrance Animation
 
 ```html
-<div class="fade-in shadow-lg glass p-4 rounded-lg">
-  Ein animiertes Element mit Schatten und Glaseffekt
+<div class="modal fade-in slide-in-top">
+  <div class="modal-content">
+    <h2>Welcome!</h2>
+    <p>This modal appears with a nice animation.</p>
+    <button class="close-button transition">Close</button>
+  </div>
 </div>
 ```
 
-## Anpassen der Animationen
+### Notification with Exit Animation
 
-Sie können die Animationsparameter über CSS-Variablen anpassen:
+```html
+<div class="notification slide-in-right" id="notification">
+  <p>New message received!</p>
+  <button onclick="dismiss()">Dismiss</button>
+</div>
 
-```css
-:root {
-  --animation-duration-default: 0.3s;
-  --animation-timing-default: ease-out;
-  --animation-delay-default: 0s;
-}
-
-/* Angepasste Animationsklasse */
-.custom-fade-in {
-  animation: fade-in var(--animation-duration-custom, var(--animation-duration-default))
-             var(--animation-timing-custom, var(--animation-timing-default))
-             var(--animation-delay-custom, var(--animation-delay-default))
-             forwards;
-}
-```
-
-## RTL-Support (Verbessert in v0.5.0)
-
-Erweiterte bidirektionale Animation-Unterstützung:
-
-```css
-/* Standard LTR Animation */
-.slide-in-start { animation: slide-in-left 0.3s ease-out forwards; }
-
-/* Automatische RTL-Anpassung */
-[dir="rtl"] .slide-in-start { animation: slide-in-right 0.3s ease-out forwards; }
-```
-
-## Best Practices
-
-1. **Maßvoll einsetzen** - Zu viele Animationen können ablenkend wirken
-2. **Barrierefreiheit beachten** - Berücksichtigen Sie die Einstellung `prefers-reduced-motion`
-3. **Performance im Blick behalten** - Animationen nur für Eigenschaften verwenden, die effizient vom Browser animiert werden können (transform, opacity)
-4. **Animation-Layer beachten** - Eigene Animationen im `animations`-Layer definieren
-5. **Timing-Funktionen anpassen** - Passende Easing-Funktionen für natürlichere Bewegungen verwenden
-
-## Browser-Kompatibilität
-
-Das Animations- und Effekte-System ist mit allen modernen Browsern kompatibel. Einige fortgeschrittene Features wie `animation-composition` benötigen möglicherweise einen neueren Browser oder Lightning CSS zur Kompilierung 
+<script>
+  function dismiss() {
+    const notification = document.getElementById('notification');
+    notification.classList.remove('slide-in-right');
+    notification.classList.add('slide-out-right');
+    // Remove element after animation completes
+    notification.addEventListener('animationend', () => {
+      notification.remove();
+    });
+  }
+</script>
+``` 

@@ -25,7 +25,7 @@ The Casoon UI Library is a comprehensive CSS framework that offers a structured 
 The main areas of the library are:
 
 - **[Components](/components/)** - Over 35 reusable UI elements for various use cases
-- **[Effects](/guide/effects-system)** - Visual effects, animations, and state representations
+- **[Effects](/effects-system)** - Visual effects, animations, and state representations
 - **[Design System](/guide/)** - A well-thought-out system for consistent design
 
 ## Key Features
@@ -71,7 +71,7 @@ The effect system includes specialized visual effects and animations:
 - **Interactions**: Hover, Focus, Active, Ripple
 - **States**: Success, Error, Warning, Loading, Disabled
 
-Learn more in the [Effects System Guide](/guide/effects-system).
+Learn more in the [Effects System Guide](/effects-system).
 
 ### Design System
 

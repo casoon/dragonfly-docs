@@ -17,24 +17,24 @@ The Effects System is modularly structured and divided into different categories
 
 Visual effects enhance the appearance of UI elements through various graphic techniques:
 
-- [3D Effects](./effects/3d.md) - Transformations and perspective effects
-- [Filter Effects](./effects/filters.md) - Blur, brightness, contrast, and other visual filters
-- [Shadow Effects](./effects/shadows.md) - Realistic and stylized shadows for depth
-- [Gradient Effects](./effects/gradient.md) - Color gradients and transitions
-- [Patterns & Textures](./effects/patterns.md) - Background patterns and surface textures
+- [3D Effects](/effects/3d.md) - Transformations and perspective effects
+- [Filter Effects](/effects/filters.md) - Blur, brightness, contrast, and other visual filters
+- [Shadow Effects](/effects/shadows.md) - Realistic and stylized shadows for depth
+- [Gradient Effects](/effects/gradient.md) - Color gradients and transitions
+- [Patterns & Textures](/effects/patterns.md) - Background patterns and surface textures
 
 ### Interaction Effects
 
 Interaction effects enhance the user experience through visual feedback during user interactions:
 
-- [Hover Effects](./effects/interaction/hover.md) - Effects when hovering with the mouse
-- [Focus Effects](./effects/interaction/focus.md) - Effects for focused elements
+- [Hover Effects](/effects/interaction/hover.md) - Effects when hovering with the mouse
+- [Focus Effects](/effects/interaction/focus.md) - Effects for focused elements
 
 ### State Effects
 
 State effects visualize various states of UI components:
 
-- [Loading Effects](./effects/state/loading.md) - Animations for loading states
+- [Loading Effects](/effects/state/loading.md) - Animations for loading states
 
 ## Installation and Usage
 
@@ -160,11 +160,11 @@ The Effects System supports all modern browsers. For older browsers, fallback st
 
 Explore the individual effect modules for detailed information on available classes and customization options:
 
-- [3D Effects](./effects/3d.md)
-- [Filter Effects](./effects/filters.md)
-- [Shadow Effects](./effects/shadows.md)
-- [Gradient Effects](./effects/gradient.md)
-- [Patterns & Textures](./effects/patterns.md)
-- [Hover Effects](./effects/interaction/hover.md)
-- [Focus Effects](./effects/interaction/focus.md)
-- [Loading Effects](./effects/state/loading.md) 
+- [3D Effects](/effects/3d.md)
+- [Filter Effects](/effects/filters.md)
+- [Shadow Effects](/effects/shadows.md)
+- [Gradient Effects](/effects/gradient.md)
+- [Patterns & Textures](/effects/patterns.md)
+- [Hover Effects](/effects/interaction/hover.md)
+- [Focus Effects](/effects/interaction/focus.md)
+- [Loading Effects](/effects/state/loading.md) 

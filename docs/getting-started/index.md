@@ -167,7 +167,7 @@ Check if you are using Container Queries correctly and using the appropriate cla
 - [Installation and Configuration](/getting-started/installation) - Detailed installation instructions
 - [Learning the Layout System](/getting-started/layout) - Learn more about the layout system
 - [Exploring Components](/components/) - Discover the available components
-- [Effects](/guide/effects-system) - Explore the visual effects and animations
+- [Effects](/effects-system) - Explore the visual effects and animations
 
 ## Note on Version 0.5.5
 
