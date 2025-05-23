@@ -1,119 +1,119 @@
 ---
-title: Transitions-Effekte
-category: Effekte
+title: Transition Effects
+category: Effects
 ---
 
-# Transitions-Effekte
+# Transition Effects
 
-Die Casoon UI Library bietet ein umfassendes System für Übergangseffekte (Transitions), das nahtlose und ansprechende Animationen zwischen verschiedenen Zuständen von UI-Elementen ermöglicht.
+The Casoon UI Library provides a comprehensive system for transition effects that enables seamless and engaging animations between different states of UI elements.
 
-## Einbindung der Transitions
+## Incorporating Transitions
 
-Um die Transitions-Effekte zu nutzen, müssen Sie die entsprechende CSS-Datei explizit importieren:
+To use the transition effects, you need to explicitly import the corresponding CSS file:
 
 ```css
 @import "@casoon/ui-lib/effects/transitions.css";
 ```
 
-Diese Datei enthält alle Transition-Effekte, die vom Layer-System im `effects`-Layer organisiert werden.
+This file contains all transition effects, which are organized by the layer system in the `effects` layer.
 
-## Grundlegende Transitions
+## Basic Transitions
 
-Die Library bietet eine Reihe vordefinierter Transition-Klassen, die auf beliebige Elemente angewendet werden können:
+The library offers a series of predefined transition classes that can be applied to any element:
 
 ```html
-<button class="transition-all">Alle Eigenschaften animieren</button>
-<div class="transition-opacity">Nur Transparenz animieren</div>
-<a class="transition-transform">Nur Transformationen animieren</a>
+<button class="transition-all">Animate all properties</button>
+<div class="transition-opacity">Animate only transparency</div>
+<a class="transition-transform">Animate only transformations</a>
 ```
 
-### Verfügbare Transition-Typen
+### Available Transition Types
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `transition-all` | Animiert alle sich ändernden Eigenschaften |
-| `transition-opacity` | Animiert nur Änderungen der Transparenz |
-| `transition-transform` | Animiert nur Transformationen (Skalierung, Rotation, Verschiebung) |
-| `transition-colors` | Animiert nur Farbänderungen |
-| `transition-shadow` | Animiert nur Schatten-Änderungen |
-| `transition-size` | Animiert nur Größenänderungen (Breite und Höhe) |
+| `transition-all` | Animates all changing properties |
+| `transition-opacity` | Animates only transparency changes |
+| `transition-transform` | Animates only transformations (scaling, rotation, translation) |
+| `transition-colors` | Animates only color changes |
+| `transition-shadow` | Animates only shadow changes |
+| `transition-size` | Animates only size changes (width and height) |
 
-## Anpassung der Transition-Dauer
+## Adjusting Transition Duration
 
-Die Dauer der Transitions kann mit zusätzlichen Klassen gesteuert werden:
+The duration of transitions can be controlled with additional classes:
 
 ```html
 <button class="transition-all duration-300">Standard (300ms)</button>
-<button class="transition-all duration-150">Schnell (150ms)</button>
-<button class="transition-all duration-500">Langsam (500ms)</button>
-<button class="transition-all duration-1000">Sehr langsam (1000ms)</button>
+<button class="transition-all duration-150">Fast (150ms)</button>
+<button class="transition-all duration-500">Slow (500ms)</button>
+<button class="transition-all duration-1000">Very slow (1000ms)</button>
 ```
 
-## Timing-Funktionen
+## Timing Functions
 
-Das Timing-Verhalten der Transitions kann ebenfalls angepasst werden:
+The timing behavior of transitions can also be customized:
 
 ```html
 <div class="transition-all ease-linear">Linear</div>
-<div class="transition-all ease-in">Ease-In (langsam beginnen)</div>
-<div class="transition-all ease-out">Ease-Out (langsam enden)</div>
-<div class="transition-all ease-in-out">Ease-In-Out (langsam beginnen und enden)</div>
-<div class="transition-all ease-bounce">Bounce-Effekt</div>
+<div class="transition-all ease-in">Ease-In (start slowly)</div>
+<div class="transition-all ease-out">Ease-Out (end slowly)</div>
+<div class="transition-all ease-in-out">Ease-In-Out (start and end slowly)</div>
+<div class="transition-all ease-bounce">Bounce effect</div>
 ```
 
-## Verzögerung von Transitions
+## Delaying Transitions
 
-Für gestaffelte Animationen können Verzögerungen eingesetzt werden:
+For staggered animations, delays can be used:
 
 ```html
-<div class="transition-all delay-0">Keine Verzögerung</div>
-<div class="transition-all delay-150">Kurze Verzögerung (150ms)</div>
-<div class="transition-all delay-300">Mittlere Verzögerung (300ms)</div>
-<div class="transition-all delay-500">Lange Verzögerung (500ms)</div>
+<div class="transition-all delay-0">No delay</div>
+<div class="transition-all delay-150">Short delay (150ms)</div>
+<div class="transition-all delay-300">Medium delay (300ms)</div>
+<div class="transition-all delay-500">Long delay (500ms)</div>
 ```
 
-## Praktische Anwendungsbeispiele
+## Practical Application Examples
 
-### Hover-Effekt mit Transition
+### Hover Effect with Transition
 
 ```html
 <button class="bg-primary text-white px-4 py-2 transition-all hover:bg-primary-dark hover:scale-105">
-  Schwebender Button
+  Hovering Button
 </button>
 ```
 
-### Accordion-Element mit Animation
+### Accordion Element with Animation
 
 ```html
 <div class="border rounded-md overflow-hidden">
   <button class="w-full p-4 text-left border-b flex justify-between items-center transition-all" 
           onclick="this.nextElementSibling.classList.toggle('hidden'); this.classList.toggle('bg-light');">
-    Accordion-Titel
+    Accordion Title
     <span class="transition-transform duration-300" 
           style="transform: rotate(0deg)">↓</span>
   </button>
   <div class="p-4 hidden transition-all duration-300">
-    Accordion-Inhalt, der ein- und ausgeblendet wird.
+    Accordion content that shows and hides.
   </div>
 </div>
 ```
 
-### Gestaffelte Listen-Animation
+### Staggered List Animation
 
 ```html
 <ul class="space-y-2">
   <li class="opacity-0 transform translate-y-4 transition-all duration-300 delay-0">
-    Element 1
+    Item 1
   </li>
   <li class="opacity-0 transform translate-y-4 transition-all duration-300 delay-150">
-    Element 2
+    Item 2
   </li>
   <li class="opacity-0 transform translate-y-4 transition-all duration-300 delay-300">
-    Element 3
+    Item 3
   </li>
 </ul>
 <script>
-  // Die Elemente nach dem Laden der Seite einblenden
+  // Fade in the elements after the page loads
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('li').forEach(item => {
       item.classList.remove('opacity-0', 'translate-y-4');
@@ -122,35 +122,35 @@ Für gestaffelte Animationen können Verzögerungen eingesetzt werden:
 </script>
 ```
 
-## Kombinationen mit anderen Effekten
+## Combinations with Other Effects
 
-Die Transitions-Effekte können nahtlos mit anderen Effekten der Casoon UI Library kombiniert werden:
+The transition effects can be seamlessly combined with other effects from the Casoon UI Library:
 
 ```html
-<!-- Kombination mit Hover-Effekten -->
+<!-- Combination with hover effects -->
 <div class="transition-all duration-300 hover:scale-105 hover:shadow-lg">
-  Dieses Element reagiert sanft auf Hover
+  This element responds smoothly to hover
 </div>
 
-<!-- Kombination mit Focus-Effekten -->
+<!-- Combination with focus effects -->
 <input class="transition-all duration-200 focus:ring-2 focus:ring-primary">
 
-<!-- Kombination mit State-Effekten -->
+<!-- Combination with state effects -->
 <button class="transition-colors duration-300 active:bg-primary-dark">
-  Farbübergang bei Aktivierung
+  Color transition on activation
 </button>
 ```
 
 ## Best Practices
 
-1. **Maßvoller Einsatz** - Zu viele Animationen können ablenkend wirken und die Benutzererfahrung beeinträchtigen.
-2. **Konsistente Dauer** - Verwenden Sie ähnliche Übergangszeiten für ähnliche Aktionen, um ein kohärentes Erlebnis zu schaffen.
-3. **Zugänglichkeit beachten** - Bieten Sie Alternativen für Benutzer, die reduzierte Bewegung bevorzugen, mit der `prefers-reduced-motion` Media Query.
-4. **Performance im Blick behalten** - Animieren Sie bevorzugt `transform` und `opacity`, die GPU-beschleunigt sind und besser performen als andere Eigenschaften.
+1. **Moderate use** - Too many animations can be distracting and impact the user experience.
+2. **Consistent duration** - Use similar transition times for similar actions to create a coherent experience.
+3. **Consider accessibility** - Provide alternatives for users who prefer reduced motion with the `prefers-reduced-motion` media query.
+4. **Keep performance in mind** - Preferably animate `transform` and `opacity`, which are GPU-accelerated and perform better than other properties.
 
-## Reduzierte Bewegung unterstützen
+## Supporting Reduced Motion
 
-Die Library berücksichtigt automatisch die Systemeinstellungen für reduzierte Bewegung:
+The library automatically considers system settings for reduced motion:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -166,4 +166,4 @@ Die Library berücksichtigt automatisch die Systemeinstellungen für reduzierte 
 }
 ```
 
-Diese Einstellung respektiert die Benutzerpräferenzen und deaktiviert Transitions für Personen, die empfindlich auf Bewegung reagieren oder Zugänglichkeitseinstellungen aktiviert haben. 
+This setting respects user preferences and disables transitions for people who are sensitive to motion or have enabled accessibility settings. 

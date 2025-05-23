@@ -1,158 +1,158 @@
 ---
-title: Glas-Effekte
+title: Glass Effects
 category: Guide
 ---
 
-# Glas-Effekte (Glass)
+# Glass Effects
 
-Die `glass.css` Datei bietet moderne Glasmorphismus-Effekte für Ihre Benutzeroberfläche. Diese Effekte erzeugen halbtransparente, verschwommene Oberflächen mit subtilen Rahmen und Schattierungen, die den aktuellen Design-Trends entsprechen.
+The `glass.css` file provides modern glassmorphism effects for your user interface. These effects create semi-transparent, blurred surfaces with subtle borders and shading that align with current design trends.
 
-## Übersicht
+## Overview
 
-Glasmorphismus ist ein Designstil, der halbtransparente Elemente mit Hintergrundunschärfe und subtilen Grenzen verwendet, um einen "durch Glas schauenden" Effekt zu erzeugen. Die Casoon UI Library bietet eine umfassende Sammlung von Glaseffekten für verschiedene UI-Komponenten.
+Glassmorphism is a design style that uses semi-transparent elements with background blur and subtle borders to create a "looking through glass" effect. The Casoon UI Library offers a comprehensive collection of glass effects for various UI components.
 
-## Basis-Glaseffekte
+## Basic Glass Effects
 
 ```html
-<!-- Standard-Glaseffekt -->
-<div class="glass">Standard-Glaseffekt</div>
+<!-- Standard glass effect -->
+<div class="glass">Standard glass effect</div>
 
-<!-- Glaseffekt-Varianten (Intensität) -->
-<div class="glass-sm">Subtiler Glaseffekt</div>
-<div class="glass-md">Standard-Glaseffekt</div>
-<div class="glass-lg">Starker Glaseffekt</div>
+<!-- Glass effect variants (intensity) -->
+<div class="glass-sm">Subtle glass effect</div>
+<div class="glass-md">Standard glass effect</div>
+<div class="glass-lg">Strong glass effect</div>
 ```
 
-## Farbvarianten
+## Color Variants
 
-Die Glaseffekte können mit verschiedenen Farbakzenten kombiniert werden:
+The glass effects can be combined with various color accents:
 
 ```html
-<!-- Farbige Glaseffekte -->
-<div class="glass glass-primary">Primärfarben-Glaseffekt</div>
-<div class="glass glass-secondary">Sekundärfarben-Glaseffekt</div>
-<div class="glass glass-accent">Akzentfarben-Glaseffekt</div>
-<div class="glass glass-success">Erfolgs-Glaseffekt</div>
-<div class="glass glass-warning">Warnungs-Glaseffekt</div>
-<div class="glass glass-error">Fehler-Glaseffekt</div>
-<div class="glass glass-info">Info-Glaseffekt</div>
+<!-- Colored glass effects -->
+<div class="glass glass-primary">Primary color glass effect</div>
+<div class="glass glass-secondary">Secondary color glass effect</div>
+<div class="glass glass-accent">Accent color glass effect</div>
+<div class="glass glass-success">Success glass effect</div>
+<div class="glass glass-warning">Warning glass effect</div>
+<div class="glass glass-error">Error glass effect</div>
+<div class="glass glass-info">Info glass effect</div>
 ```
 
-## Interaktive Glaseffekte
+## Interactive Glass Effects
 
-Glaseffekte können auch auf interaktive Elemente und basierend auf Zuständen angewendet werden:
+Glass effects can also be applied to interactive elements and based on states:
 
 ```html
-<!-- Hover-aktivierter Glaseffekt -->
-<div class="glass-hover">Wird beim Hover zu Glas</div>
+<!-- Hover-activated glass effect -->
+<div class="glass-hover">Becomes glass on hover</div>
 
-<!-- Fokus-aktivierter Glaseffekt -->
-<div class="glass-focus">Wird beim Fokus zu Glas</div>
+<!-- Focus-activated glass effect -->
+<div class="glass-focus">Becomes glass on focus</div>
 
-<!-- Aktiv-Zustand Glaseffekt -->
-<button class="glass-active">Wird bei Aktivierung zu Glas</button>
+<!-- Active state glass effect -->
+<button class="glass-active">Becomes glass when activated</button>
 
-<!-- Kombinierte Zustände -->
-<button class="glass-interactive">Reagiert auf alle Interaktionen</button>
+<!-- Combined states -->
+<button class="glass-interactive">Responds to all interactions</button>
 ```
 
-## Komponenten-spezifische Glaseffekte
+## Component-specific Glass Effects
 
-Für häufig verwendete UI-Komponenten gibt es spezialisierte Glaseffekt-Klassen:
+For commonly used UI components, there are specialized glass effect classes:
 
 ```html
-<!-- Glas-Karte -->
+<!-- Glass card -->
 <div class="card glass-card">
-  <div class="card-header">Glas-Karten-Header</div>
-  <div class="card-body">Glas-Karten-Inhalt</div>
-  <div class="card-footer">Glas-Karten-Footer</div>
+  <div class="card-header">Glass card header</div>
+  <div class="card-body">Glass card content</div>
+  <div class="card-footer">Glass card footer</div>
 </div>
 
-<!-- Glas-Navigation -->
+<!-- Glass navigation -->
 <nav class="nav glass-nav">
   <a href="#" class="nav-item">Home</a>
-  <a href="#" class="nav-item">Über uns</a>
-  <a href="#" class="nav-item">Kontakt</a>
+  <a href="#" class="nav-item">About us</a>
+  <a href="#" class="nav-item">Contact</a>
 </nav>
 
-<!-- Glas-Formularelemente -->
-<input type="text" class="glass-input" placeholder="Glas-Eingabefeld">
-<button class="glass-button">Glas-Button</button>
+<!-- Glass form elements -->
+<input type="text" class="glass-input" placeholder="Glass input field">
+<button class="glass-button">Glass button</button>
 ```
 
-## Positionierungsvarianten
+## Positioning Variants
 
-Für verschiedene Layout-Anforderungen:
+For various layout requirements:
 
 ```html
-<!-- Fixierte Glas-Header -->
+<!-- Fixed glass header -->
 <header class="glass-header">
-  Bleibt beim Scrollen oben fixiert mit Glaseffekt
+  Stays fixed at the top when scrolling with glass effect
 </header>
 
-<!-- Fixierte Glas-Sidebar -->
+<!-- Fixed glass sidebar -->
 <aside class="glass-sidebar">
-  Seitliche Navigation mit Glaseffekt
+  Side navigation with glass effect
 </aside>
 
-<!-- Overlay mit Glaseffekt -->
+<!-- Overlay with glass effect -->
 <div class="glass-overlay">
-  Vollständiger Bildschirm-Overlay mit Glaseffekt
+  Full-screen overlay with glass effect
 </div>
 ```
 
-## Kombinationen mit anderen Effekten
+## Combinations with Other Effects
 
-Glaseffekte können mit anderen Effekten kombiniert werden, um komplexere visuelle Erlebnisse zu schaffen:
+Glass effects can be combined with other effects to create more complex visual experiences:
 
 ```html
-<!-- Glas mit Neon-Rahmen -->
+<!-- Glass with neon border -->
 <div class="glass neon-border">
-  Glaseffekt mit Neon-Umrandung
+  Glass effect with neon border
 </div>
 
-<!-- Glas mit Schatten-Verstärkung -->
+<!-- Glass with enhanced shadow -->
 <div class="glass shadow-lg">
-  Glaseffekt mit verstärktem Schatten
+  Glass effect with enhanced shadow
 </div>
 
-<!-- Animiertes Glas -->
+<!-- Animated glass -->
 <div class="glass fade-in">
-  Einblendendes Glas-Element
+  Fading in glass element
 </div>
 
-<!-- Interaktives Glas mit Hover-Effekt -->
+<!-- Interactive glass with hover effect -->
 <div class="glass hover-lift">
-  Glaseffekt, der sich bei Hover anhebt
+  Glass effect that lifts on hover
 </div>
 ```
 
-## Anpassung über CSS-Variablen
+## Customization via CSS Variables
 
-Der Glaseffekt kann über CSS-Variablen angepasst werden:
+The glass effect can be customized via CSS variables:
 
 ```css
 :root {
-  /* Basis-Glaseffekt */
+  /* Basic glass effect */
   --glass-opacity: 0.1;
   --glass-blur: 10px;
   --glass-saturation: 180%;
   --glass-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation));
   
-  /* Glas-Hintergrund */
+  /* Glass background */
   --glass-background: rgb(255 255 255 / var(--glass-opacity));
   
-  /* Glas-Rahmen */
+  /* Glass border */
   --glass-border-width: 1px;
   --glass-border-style: solid;
   --glass-border-color: rgb(255 255 255 / 0.2);
   --glass-border-radius: var(--radius-md, 8px);
   
-  /* Glas-Schatten */
+  /* Glass shadow */
   --glass-shadow-color: rgb(0 0 0 / 0.05);
   --glass-shadow: 0 8px 32px 0 var(--glass-shadow-color);
   
-  /* Farbige Glas-Varianten */
+  /* Colored glass variants */
   --glass-color-primary: color-mix(in srgb, var(--color-primary) 15%, transparent);
   --glass-color-secondary: color-mix(in srgb, var(--color-secondary) 15%, transparent);
   --glass-color-accent: color-mix(in srgb, var(--color-accent) 15%, transparent);
@@ -163,10 +163,10 @@ Der Glaseffekt kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Varianten-spezifische Anpassungen
+## Variant-specific Customizations
 
 ```css
-/* Intensitäts-Varianten */
+/* Intensity variants */
 .glass-sm {
   --glass-opacity: 0.05;
   --glass-blur: 5px;
@@ -180,9 +180,9 @@ Der Glaseffekt kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Dunkelmodus-Anpassung
+## Dark Mode Adaptation
 
-Die Glaseffekte passen sich automatisch an den Dunkelmodus an:
+The glass effects automatically adapt to dark mode:
 
 ```css
 @media (prefers-color-scheme: dark) {
@@ -194,9 +194,9 @@ Die Glaseffekte passen sich automatisch an den Dunkelmodus an:
 }
 ```
 
-## Fallback für Browser ohne Backdrop-Filter
+## Fallback for Browsers Without Backdrop-Filter
 
-Für Browser, die `backdrop-filter` nicht unterstützen, wird ein Fallback bereitgestellt:
+For browsers that don't support `backdrop-filter`, a fallback is provided:
 
 ```css
 @supports not (backdrop-filter: blur(1px)) {
@@ -219,13 +219,13 @@ Für Browser, die `backdrop-filter` nicht unterstützen, wird ein Fallback berei
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Der Glaseffekt kann die Lesbarkeit beeinträchtigen. Beachten Sie folgende Aspekte:
+The glass effect can affect readability. Consider the following aspects:
 
-1. **Ausreichender Kontrast**: Stellen Sie sicher, dass Text auf Glaseffekten einen ausreichenden Kontrast hat
-2. **Hoher Kontrast-Modus**: Passen Sie den Effekt an den hohen Kontrast-Modus an
-3. **Reduzierte Transparenz**: Berücksichtigen Sie die Systemeinstellung für reduzierte Transparenz
+1. **Sufficient contrast**: Ensure that text on glass effects has sufficient contrast
+2. **High contrast mode**: Adapt the effect to high contrast mode
+3. **Reduced transparency**: Consider the system setting for reduced transparency
 
 ```css
 @media (prefers-contrast: more) {
@@ -251,78 +251,64 @@ Der Glaseffekt kann die Lesbarkeit beeinträchtigen. Beachten Sie folgende Aspek
 }
 ```
 
-## Performance-Überlegungen
+## Example Applications
 
-Glaseffekte können die Rendering-Performance beeinträchtigen, insbesondere auf mobilen Geräten:
-
-1. **Vermeiden Sie zu viele Glaselemente** auf einem Bildschirm
-2. **Reduzieren Sie den Blur-Radius** für bessere Performance
-3. **Animieren Sie Glaseffekte mit Vorsicht** – insbesondere das Ändern von `backdrop-filter`
-4. **Verwenden Sie `will-change: backdrop-filter`** für wichtige Animationen, aber mit Vorsicht
-5. **Testen Sie auf älteren Geräten** für eine gute User Experience
-
-## Praktische Beispiele
-
-### Moderne UI-Card mit Glaseffekt
+### Glass Card Component
 
 ```html
-<div class="card glass">
-  <div class="card-header">
-    <h3>Glaseffekt-Karte</h3>
-  </div>
+<div class="card glass-card">
+  <div class="card-header">Glass Card</div>
   <div class="card-body">
-    <p>Diese Karte verwendet den modernen Glasmorphismus-Stil für eine elegante, halbtransparente Erscheinung.</p>
-    <div class="button-group">
-      <button class="button glass-sm">Details</button>
-      <button class="button glass-primary">Kaufen</button>
+    <p>This card uses the glass effect to create a modern, translucent appearance.</p>
+    <button class="button glass-button">Learn More</button>
+  </div>
+</div>
+```
+
+### Glass Navigation Bar
+
+```html
+<nav class="navbar glass-nav">
+  <div class="navbar-brand">Logo</div>
+  <div class="navbar-menu">
+    <a href="#" class="navbar-item">Home</a>
+    <a href="#" class="navbar-item">Features</a>
+    <a href="#" class="navbar-item">Pricing</a>
+    <a href="#" class="navbar-item">About</a>
+  </div>
+  <div class="navbar-end">
+    <button class="button glass-button">Sign Up</button>
+  </div>
+</nav>
+```
+
+### Modal with Glass Effect
+
+```html
+<div class="modal-overlay">
+  <div class="modal glass-modal">
+    <div class="modal-header">
+      <h2>Welcome</h2>
+      <button class="modal-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>This modal uses the glass effect to blend with the background.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="button glass-button primary">Accept</button>
+      <button class="button glass-button">Cancel</button>
     </div>
   </div>
 </div>
 ```
 
-### Moderne Navigationsleiste mit Glaseffekt
+## Browser Support
 
-```html
-<header class="glass-header">
-  <div class="container">
-    <div class="logo">Logo</div>
-    <nav class="nav glass-nav">
-      <a href="#" class="nav-item active">Home</a>
-      <a href="#" class="nav-item">Produkte</a>
-      <a href="#" class="nav-item">Dienstleistungen</a>
-      <a href="#" class="nav-item">Über uns</a>
-      <a href="#" class="nav-item">Kontakt</a>
-    </nav>
-    <div class="actions">
-      <button class="button glass-sm">Login</button>
-    </div>
-  </div>
-</header>
-```
+The glassmorphism effect is supported in all modern browsers that support the CSS `backdrop-filter` property:
 
-### Modales Popup mit Glaseffekt
+- Chrome 76+
+- Firefox 70+ (enabled via flag)
+- Safari 9+
+- Edge 17+
 
-```html
-<dialog class="modal glass">
-  <div class="modal-content">
-    <header class="modal-header">
-      <h2>Wichtige Mitteilung</h2>
-      <button class="modal-close">&times;</button>
-    </header>
-    <div class="modal-body glass-sm">
-      <p>Diese Mitteilung wird mit einem eleganten Glaseffekt angezeigt, der den Inhalt hervorhebt und gleichzeitig den Kontext beibehält.</p>
-    </div>
-    <footer class="modal-footer">
-      <button class="button glass-primary">Bestätigen</button>
-      <button class="button glass-sm">Abbrechen</button>
-    </footer>
-  </div>
-</dialog>
-```
-
-## Best Practices
-
-1. **Maßvoll einsetzen**: Verwenden Sie Glaseffekte strategisch für besondere Elemente, nicht für alles
-2. **Hintergrund beachten**: Glaseffekte funktionieren am besten mit strukturierten oder farbigen Hintergründen
-3. **Lesbarkeit priorisieren**: Stellen Sie sicher, dass Text und wichtige Inhalte auf Glasoberflächen gut lesbar bleiben
-4. **Testen Sie auf verschiedenen Geräten**: Performance und Darstellung können variieren 
+For older browsers, the fallback styles ensure a degraded but still functional appearance. 
