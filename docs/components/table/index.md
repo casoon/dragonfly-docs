@@ -1,114 +1,114 @@
 # Table
 
-Die Table-Komponente bietet eine flexible und anpassbare Möglichkeit, tabellarische Daten in der Casoon UI Library darzustellen.
+The Table component provides a flexible and customizable way to display tabular data in the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ```html
 <table class="table">
   <thead>
     <tr>
       <th>Name</th>
-      <th>E-Mail</th>
-      <th>Rolle</th>
+      <th>Email</th>
+      <th>Role</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Max Mustermann</td>
-      <td>max@example.com</td>
+      <td>John Doe</td>
+      <td>john@example.com</td>
       <td>Administrator</td>
     </tr>
     <tr>
-      <td>Erika Musterfrau</td>
-      <td>erika@example.com</td>
-      <td>Benutzer</td>
+      <td>Jane Doe</td>
+      <td>jane@example.com</td>
+      <td>User</td>
     </tr>
   </tbody>
 </table>
 ```
 
-## Varianten
+## Variants
 
-### Mit Stripes
+### With Stripes
 
 ```html
 <table class="table table--striped">
   <thead>
     <tr>
       <th>Name</th>
-      <th>E-Mail</th>
-      <th>Rolle</th>
+      <th>Email</th>
+      <th>Role</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Max Mustermann</td>
-      <td>max@example.com</td>
+      <td>John Doe</td>
+      <td>john@example.com</td>
       <td>Administrator</td>
     </tr>
     <tr>
-      <td>Erika Musterfrau</td>
-      <td>erika@example.com</td>
-      <td>Benutzer</td>
+      <td>Jane Doe</td>
+      <td>jane@example.com</td>
+      <td>User</td>
     </tr>
   </tbody>
 </table>
 ```
 
-### Mit Hover-Effekt
+### With Hover Effect
 
 ```html
 <table class="table table--hover">
   <thead>
     <tr>
       <th>Name</th>
-      <th>E-Mail</th>
-      <th>Rolle</th>
+      <th>Email</th>
+      <th>Role</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Max Mustermann</td>
-      <td>max@example.com</td>
+      <td>John Doe</td>
+      <td>john@example.com</td>
       <td>Administrator</td>
     </tr>
     <tr>
-      <td>Erika Musterfrau</td>
-      <td>erika@example.com</td>
-      <td>Benutzer</td>
+      <td>Jane Doe</td>
+      <td>jane@example.com</td>
+      <td>User</td>
     </tr>
   </tbody>
 </table>
 ```
 
-### Mit Animation
+### With Animation
 
 ```html
 <table class="table table--animated">
   <thead>
     <tr>
       <th>Name</th>
-      <th>E-Mail</th>
-      <th>Rolle</th>
+      <th>Email</th>
+      <th>Role</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Max Mustermann</td>
-      <td>max@example.com</td>
+      <td>John Doe</td>
+      <td>john@example.com</td>
       <td>Administrator</td>
     </tr>
     <tr>
-      <td>Erika Musterfrau</td>
-      <td>erika@example.com</td>
-      <td>Benutzer</td>
+      <td>Jane Doe</td>
+      <td>jane@example.com</td>
+      <td>User</td>
     </tr>
   </tbody>
 </table>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -127,26 +127,26 @@ Die Table-Komponente bietet eine flexible und anpassbare Möglichkeit, tabellari
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie ARIA-Attribute hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add ARIA attributes
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Optimieren Sie die Darstellung auf mobilen Geräten
-- Berücksichtigen Sie Touch-Targets
+- Use relative units
+- Test on different screen sizes
+- Optimize display on mobile devices
+- Consider touch targets
 
 ### Performance
 
-- Minimieren Sie CSS
-- Optimieren Sie JavaScript-Events
-- Vermeiden Sie unnötige Verschachtelungen
-- Verwenden Sie CSS-Transitions statt JavaScript-Animationen
+- Minimize CSS
+- Optimize JavaScript events
+- Avoid unnecessary nesting
+- Use CSS transitions instead of JavaScript animations
 
 ## Integration
 
@@ -181,8 +181,8 @@ const { striped = false, hover = false, animated = false, data } = Astro.props;
   <thead>
     <tr>
       <th>Name</th>
-      <th>E-Mail</th>
-      <th>Rolle</th>
+      <th>Email</th>
+      <th>Role</th>
     </tr>
   </thead>
   <tbody>
@@ -236,7 +236,7 @@ const { striped = false, hover = false, animated = false, data } = Astro.props;
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
@@ -244,14 +244,19 @@ import Table from '../components/Table.astro';
 
 const tableData = [
   {
-    name: 'Max Mustermann',
-    email: 'max@example.com',
+    name: 'John Doe',
+    email: 'john@example.com',
     role: 'Administrator'
   },
   {
-    name: 'Erika Musterfrau',
-    email: 'erika@example.com',
-    role: 'Benutzer'
+    name: 'Jane Doe',
+    email: 'jane@example.com',
+    role: 'User'
+  },
+  {
+    name: 'Alice Smith',
+    email: 'alice@example.com',
+    role: 'Editor'
   }
 ];
 ---
@@ -262,4 +267,43 @@ const tableData = [
   hover
   animated
 />
+```
+
+### React
+
+```jsx
+import React from 'react';
+import 'casoon-ui-lib/modules/table.module.css';
+
+function Table({ data, striped, hover, animated }) {
+  const tableClasses = [
+    'table',
+    striped ? 'table--striped' : '',
+    hover ? 'table--hover' : '',
+    animated ? 'table--animated' : ''
+  ].filter(Boolean).join(' ');
+  
+  return (
+    <table className={tableClasses}>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((item, index) => (
+          <tr key={index}>
+            <td>{item.name}</td>
+            <td>{item.email}</td>
+            <td>{item.role}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+export default Table;
 ``` 
