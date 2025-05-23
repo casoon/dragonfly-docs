@@ -1,8 +1,8 @@
 # Progress
 
-Der Progress ist eine Komponente für Fortschrittsbalken in der Casoon UI Library.
+The Progress is a component for progress bars in the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="progress">
@@ -10,9 +10,9 @@ Der Progress ist eine Komponente für Fortschrittsbalken in der Casoon UI Librar
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Mit Label
+### With Label
 
 ```html
 <div class="progress">
@@ -22,7 +22,7 @@ Der Progress ist eine Komponente für Fortschrittsbalken in der Casoon UI Librar
 </div>
 ```
 
-### Mit Farben
+### With Colors
 
 ```html
 <div class="progress">
@@ -42,7 +42,7 @@ Der Progress ist eine Komponente für Fortschrittsbalken in der Casoon UI Librar
 </div>
 ```
 
-### Mit Animation
+### With Animation
 
 ```html
 <div class="progress">
@@ -50,7 +50,7 @@ Der Progress ist eine Komponente für Fortschrittsbalken in der Casoon UI Librar
 </div>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -64,26 +64,26 @@ Der Progress ist eine Komponente für Fortschrittsbalken in der Casoon UI Librar
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie ARIA-Attribute hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add ARIA attributes
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Größe an mobile Geräte an
-- Optimieren Sie die Darstellung auf kleinen Bildschirmen
+- Use relative units
+- Test on different screen sizes
+- Adapt size for mobile devices
+- Optimize display on small screens
 
 ### Performance
 
-- Minimieren Sie CSS
-- Optimieren Sie die Ladezeit
-- Vermeiden Sie unnötige Verschachtelungen
-- Verwenden Sie CSS-Transitions statt JavaScript-Animationen
+- Minimize CSS
+- Optimize loading time
+- Avoid unnecessary nesting
+- Use CSS transitions instead of JavaScript animations
 
 ## Integration
 
@@ -161,7 +161,7 @@ const percentage = Math.min(100, Math.max(0, (value / max) * 100));
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---

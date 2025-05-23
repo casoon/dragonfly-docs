@@ -1,128 +1,128 @@
 ---
-title: Effekte-System
+title: Effects System
 category: Guide
 ---
 
-# Effekte-System
+# Effects System
 
-Das Casoon UI Effekte-System bietet eine umfassende Sammlung von CSS-Effekten, die Ihre Benutzeroberfläche verbessern und ihr Tiefe, Bewegung und visuelle Attraktivität verleihen.
+The Casoon UI Effects System provides a comprehensive collection of CSS effects that enhance your user interface, giving it depth, movement, and visual appeal.
 
-## Überblick
+## Overview
 
-Das Effekte-System ist modular aufgebaut und in verschiedene Kategorien unterteilt, die jeweils einen bestimmten Aspekt des visuellen Designs abdecken. Jedes Modul kann unabhängig importiert werden, um nur die benötigten Effekte in Ihr Projekt einzubinden.
+The Effects System is modularly structured and divided into different categories, each covering a specific aspect of visual design. Each module can be imported independently to include only the effects needed in your project.
 
-## Effekt-Kategorien
+## Effect Categories
 
-### Visuelle Effekte
+### Visual Effects
 
-Visuelle Effekte verbessern das Aussehen von UI-Elementen durch verschiedene grafische Techniken:
+Visual effects enhance the appearance of UI elements through various graphic techniques:
 
-- [3D-Effekte](./effects/3d.md) - Transformationen und perspektivische Effekte
-- [Filter-Effekte](./effects/filters.md) - Unschärfe, Helligkeit, Kontrast und andere visuelle Filter
-- [Schatten-Effekte](./effects/shadows.md) - Realistische und stilisierte Schatten für Tiefe
-- [Gradienten-Effekte](./effects/gradient.md) - Farbverläufe und Übergänge
-- [Muster & Texturen](./effects/patterns.md) - Hintergrundmuster und Oberflächentexturen
+- [3D Effects](./effects/3d.md) - Transformations and perspective effects
+- [Filter Effects](./effects/filters.md) - Blur, brightness, contrast, and other visual filters
+- [Shadow Effects](./effects/shadows.md) - Realistic and stylized shadows for depth
+- [Gradient Effects](./effects/gradient.md) - Color gradients and transitions
+- [Patterns & Textures](./effects/patterns.md) - Background patterns and surface textures
 
-### Interaktions-Effekte
+### Interaction Effects
 
-Interaktions-Effekte verbessern das Nutzererlebnis durch visuelle Rückmeldungen bei Benutzerinteraktionen:
+Interaction effects enhance the user experience through visual feedback during user interactions:
 
-- [Hover-Effekte](./effects/interaction/hover.md) - Effekte beim Überfahren mit der Maus
-- [Fokus-Effekte](./effects/interaction/focus.md) - Effekte für fokussierte Elemente
+- [Hover Effects](./effects/interaction/hover.md) - Effects when hovering with the mouse
+- [Focus Effects](./effects/interaction/focus.md) - Effects for focused elements
 
-### Status-Effekte
+### State Effects
 
-Status-Effekte visualisieren verschiedene Zustände von UI-Komponenten:
+State effects visualize various states of UI components:
 
-- [Lade-Effekte](./effects/state/loading.md) - Animationen für Ladezustände
+- [Loading Effects](./effects/state/loading.md) - Animations for loading states
 
-## Installation und Verwendung
+## Installation and Usage
 
-Sie können das gesamte Effekte-System oder einzelne Module importieren:
+You can import the entire Effects System or individual modules:
 
-### Gesamtes Effekte-System
+### Complete Effects System
 
 ```css
 @import '@casoon/ui-lib/effects/index.css';
 ```
 
-### Einzelne Module
+### Individual Modules
 
 ```css
-/* Nur 3D-Effekte importieren */
+/* Import only 3D effects */
 @import '@casoon/ui-lib/effects/3d.css';
 
-/* Nur Schatten-Effekte importieren */
+/* Import only shadow effects */
 @import '@casoon/ui-lib/effects/shadows.css';
 
-/* Nur Hover-Effekte importieren */
+/* Import only hover effects */
 @import '@casoon/ui-lib/effects/interaction/hover.css';
 ```
 
-## Leistungsoptimierung
+## Performance Optimization
 
-Das Effekte-System ist für optimale Leistung konzipiert:
+The Effects System is designed for optimal performance:
 
-1. **Modularer Aufbau**: Importieren Sie nur die benötigten Effekte
-2. **CSS-Variablen**: Einfache Anpassung ohne zusätzlichen Code
-3. **Reduzierte Bewegung**: Respektiert die Benutzereinstellung `prefers-reduced-motion`
-4. **Hardware-Beschleunigung**: Verwendet `will-change` und `transform` für optimierte Animationen
+1. **Modular Structure**: Import only the effects you need
+2. **CSS Variables**: Easy customization without additional code
+3. **Reduced Motion**: Respects the user setting `prefers-reduced-motion`
+4. **Hardware Acceleration**: Uses `will-change` and `transform` for optimized animations
 
-## Barrierefreiheit
+## Accessibility
 
-Das Effekte-System berücksichtigt Barrierefreiheit durch:
+The Effects System considers accessibility through:
 
-1. **Reduzierte Bewegung**: Alternative Stile für Benutzer, die reduzierte Bewegung bevorzugen
-2. **Ausreichender Kontrast**: Sicherstellung, dass Effekte den Kontrast nicht beeinträchtigen
-3. **Fokus-Indikatoren**: Deutliche visuelle Hinweise für Tastatur-Navigation
+1. **Reduced Motion**: Alternative styles for users who prefer reduced motion
+2. **Sufficient Contrast**: Ensuring that effects do not compromise contrast
+3. **Focus Indicators**: Clear visual cues for keyboard navigation
 
-## Anpassung
+## Customization
 
-Alle Effekte können über CSS-Variablen angepasst werden:
+All effects can be customized via CSS variables:
 
 ```css
 :root {
-  /* Schatten-Variablen */
+  /* Shadow variables */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   
-  /* 3D-Effekt-Variablen */
+  /* 3D effect variables */
   --perspective-depth: 1000px;
   --rotate-x-deg: 45deg;
   
-  /* Filter-Variablen */
+  /* Filter variables */
   --filter-blur: 4px;
   --filter-brightness: 1.2;
   
-  /* Gradienten-Variablen */
+  /* Gradient variables */
   --gradient-angle: 180deg;
   --gradient-start: var(--color-primary-300);
   --gradient-end: var(--color-primary-700);
 }
 ```
 
-## Browserunterstützung
+## Browser Support
 
-Das Effekte-System unterstützt alle modernen Browser. Für ältere Browser werden Fallback-Stile bereitgestellt, die ein konsistentes Erscheinungsbild gewährleisten.
+The Effects System supports all modern browsers. For older browsers, fallback styles are provided to ensure a consistent appearance.
 
-## Beispiele
+## Examples
 
-### Kombination verschiedener Effekte
+### Combining Different Effects
 
 ```html
 <div class="card shadow-lg">
   <div class="card-header gradient gradient-color-primary">
-    <h3 class="gradient-text">Effekte-Beispiel</h3>
+    <h3 class="gradient-text">Effects Example</h3>
   </div>
   <div class="card-body">
-    <p>Dieses Beispiel kombiniert verschiedene Effekte:</p>
+    <p>This example combines different effects:</p>
     <ul>
-      <li>Schatten-Effekte für die Karte</li>
-      <li>Gradienten-Effekte für den Header</li>
-      <li>Text-Gradienten für die Überschrift</li>
+      <li>Shadow effects for the card</li>
+      <li>Gradient effects for the header</li>
+      <li>Text gradients for the heading</li>
     </ul>
     <button class="button shadow-hover filter-hover">
-      Interaktiver Button
+      Interactive Button
     </button>
   </div>
 </div>
@@ -156,15 +156,15 @@ Das Effekte-System unterstützt alle modernen Browser. Für ältere Browser werd
 </style>
 ```
 
-## Nächste Schritte
+## Next Steps
 
-Erkunden Sie die einzelnen Effekt-Module für detaillierte Informationen zu den verfügbaren Klassen und Anpassungsmöglichkeiten:
+Explore the individual effect modules for detailed information on available classes and customization options:
 
-- [3D-Effekte](./effects/3d.md)
-- [Filter-Effekte](./effects/filters.md)
-- [Schatten-Effekte](./effects/shadows.md)
-- [Gradienten-Effekte](./effects/gradient.md)
-- [Muster & Texturen](./effects/patterns.md)
-- [Hover-Effekte](./effects/interaction/hover.md)
-- [Fokus-Effekte](./effects/interaction/focus.md)
-- [Lade-Effekte](./effects/state/loading.md) 
+- [3D Effects](./effects/3d.md)
+- [Filter Effects](./effects/filters.md)
+- [Shadow Effects](./effects/shadows.md)
+- [Gradient Effects](./effects/gradient.md)
+- [Patterns & Textures](./effects/patterns.md)
+- [Hover Effects](./effects/interaction/hover.md)
+- [Focus Effects](./effects/interaction/focus.md)
+- [Loading Effects](./effects/state/loading.md) 

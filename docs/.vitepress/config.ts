@@ -117,9 +117,9 @@ export default defineConfig({
         {
           text: 'Help',
           items: [
-            { text: 'Best Practices', link: '/getting-started/#best-practices' },
-            { text: 'FAQ', link: '/getting-started/#faq' },
-            { text: 'Troubleshooting', link: '/getting-started/#troubleshooting' }
+            { text: 'Best Practices', link: '/getting-started/best-practices' },
+            { text: 'FAQ', link: '/getting-started/faq' },
+            { text: 'Troubleshooting', link: '/getting-started/troubleshooting' }
           ]
         }
       ],

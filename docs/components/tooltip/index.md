@@ -1,44 +1,44 @@
 # Tooltip
 
-Der Tooltip ist eine Komponente für kontextbezogene Hilfetexte in der Casoon UI Library.
+The Tooltip is a component for contextual help text in the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ```html
 <button class="tooltip-trigger" data-tooltip="Standard Tooltip">
-  Hover mich
+  Hover me
 </button>
 
 <div class="tooltip">
   <div class="tooltip__content">
-    Tooltip Inhalt
+    Tooltip content
   </div>
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Positionen
+### Positions
 
 ```html
 <button class="tooltip-trigger" data-tooltip-position="top">
-  Tooltip oben
+  Tooltip top
 </button>
 
 <button class="tooltip-trigger" data-tooltip-position="right">
-  Tooltip rechts
+  Tooltip right
 </button>
 
 <button class="tooltip-trigger" data-tooltip-position="bottom">
-  Tooltip unten
+  Tooltip bottom
 </button>
 
 <button class="tooltip-trigger" data-tooltip-position="left">
-  Tooltip links
+  Tooltip left
 </button>
 ```
 
-### Typen
+### Types
 
 ```html
 <button class="tooltip-trigger tooltip--info">
@@ -58,7 +58,7 @@ Der Tooltip ist eine Komponente für kontextbezogene Hilfetexte in der Casoon UI
 </button>
 ```
 
-### Mit Animation
+### With Animation
 
 ```html
 <button class="tooltip-trigger tooltip--fade">
@@ -70,7 +70,7 @@ Der Tooltip ist eine Komponente für kontextbezogene Hilfetexte in der Casoon UI
 </button>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -85,24 +85,24 @@ Der Tooltip ist eine Komponente für kontextbezogene Hilfetexte in der Casoon UI
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie aussagekräftige Texte hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add meaningful text
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Positionen an mobile Geräte an
+- Use relative units
+- Test on different screen sizes
+- Adapt positions for mobile devices
 
 ### Performance
 
-- Minimieren Sie CSS
-- Optimieren Sie Animationen
-- Vermeiden Sie zu viele gleichzeitige Tooltips
+- Minimize CSS
+- Optimize animations
+- Avoid too many simultaneous tooltips
 
 ## Integration
 
@@ -176,23 +176,23 @@ const { text, position = 'top', type, animation } = Astro.props;
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
 import Tooltip from '../components/Tooltip.astro';
 ---
 
-<Tooltip text="Dies ist ein Tooltip" position="top" type="info">
-  Hover mich
+<Tooltip text="This is a tooltip" position="top" type="info">
+  Hover me
 </Tooltip>
 
-<Tooltip text="Erfolg!" position="right" type="success" animation="fade">
-  Erfolgs-Tooltip
+<Tooltip text="Success!" position="right" type="success" animation="fade">
+  Success Tooltip
 </Tooltip>
 ```
 
-### Tooltip mit HTML-Inhalt
+### Tooltip with HTML content
 
 ```astro
 ---
@@ -236,7 +236,7 @@ const { position = 'top', type } = Astro.props;
 </style>
 ```
 
-Verwendung mit HTML-Inhalt:
+Usage with HTML content:
 
 ```astro
 ---
@@ -244,11 +244,11 @@ import Tooltip from '../components/Tooltip.astro';
 ---
 
 <Tooltip position="top" type="info">
-  <span slot="trigger">Hover mich</span>
+  <span slot="trigger">Hover me</span>
   <div slot="content">
-    <h3>Titel</h3>
-    <p>Beschreibung</p>
-    <button>Action</button>
+    <h3>Title</h3>
+    <p>Description</p>
+    <a href="#">Learn more</a>
   </div>
 </Tooltip>
 ``` 

@@ -1,8 +1,8 @@
 # Sidebar
 
-Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken oder rechten Rand einer Anwendung platziert wird.
+The Sidebar is a vertical navigation bar that is typically placed on the left or right edge of an application.
 
-## Verwendung
+## Usage
 
 ```html
 <aside class="sidebar">
@@ -11,7 +11,7 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
       <li class="sidebar__item">
         <a href="#" class="sidebar__link">
           <span class="sidebar__icon">🏠</span>
-          <span class="sidebar__text">Startseite</span>
+          <span class="sidebar__text">Home</span>
         </a>
       </li>
       <li class="sidebar__item">
@@ -23,7 +23,7 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
       <li class="sidebar__item">
         <a href="#" class="sidebar__link">
           <span class="sidebar__icon">⚙️</span>
-          <span class="sidebar__text">Einstellungen</span>
+          <span class="sidebar__text">Settings</span>
         </a>
       </li>
     </ul>
@@ -31,9 +31,9 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
 </aside>
 ```
 
-## Varianten
+## Variants
 
-### Mit Untermenüs
+### With Submenus
 
 ```html
 <aside class="sidebar">
@@ -42,7 +42,7 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
       <li class="sidebar__item">
         <a href="#" class="sidebar__link">
           <span class="sidebar__icon">🏠</span>
-          <span class="sidebar__text">Startseite</span>
+          <span class="sidebar__text">Home</span>
         </a>
       </li>
       <li class="sidebar__item">
@@ -53,10 +53,10 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
         </button>
         <ul class="sidebar__submenu">
           <li class="sidebar__item">
-            <a href="#" class="sidebar__link">Übersicht</a>
+            <a href="#" class="sidebar__link">Overview</a>
           </li>
           <li class="sidebar__item">
-            <a href="#" class="sidebar__link">Statistiken</a>
+            <a href="#" class="sidebar__link">Statistics</a>
           </li>
         </ul>
       </li>
@@ -65,7 +65,7 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
 </aside>
 ```
 
-### Mit Animation
+### With Animation
 
 ```html
 <aside class="sidebar sidebar--animated">
@@ -74,7 +74,7 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
       <li class="sidebar__item">
         <a href="#" class="sidebar__link">
           <span class="sidebar__icon">🏠</span>
-          <span class="sidebar__text">Startseite</span>
+          <span class="sidebar__text">Home</span>
         </a>
       </li>
     </ul>
@@ -82,7 +82,7 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
 </aside>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -98,26 +98,26 @@ Die Sidebar ist eine vertikale Navigationsleiste, die typischerweise am linken o
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie ARIA-Attribute hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add ARIA attributes
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Optimieren Sie die Darstellung auf mobilen Geräten
-- Berücksichtigen Sie Touch-Targets
+- Use relative units
+- Test on different screen sizes
+- Optimize display on mobile devices
+- Consider touch targets
 
 ### Performance
 
-- Minimieren Sie CSS
-- Optimieren Sie JavaScript
-- Vermeiden Sie unnötige Verschachtelungen
-- Verwenden Sie CSS-Transitions statt JavaScript-Animationen
+- Minimize CSS
+- Optimize JavaScript
+- Avoid unnecessary nesting
+- Use CSS transitions instead of JavaScript animations
 
 ## Integration
 
@@ -257,16 +257,16 @@ const { items, animated = false } = Astro.props;
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
 import Sidebar from '../components/Sidebar.astro';
 
-const items = [
+const navigationItems = [
   {
     icon: '🏠',
-    text: 'Startseite',
+    text: 'Home',
     href: '/'
   },
   {
@@ -274,17 +274,22 @@ const items = [
     text: 'Dashboard',
     submenu: [
       {
-        text: 'Übersicht',
-        href: '/dashboard/overview'
+        text: 'Overview',
+        href: '/dashboard'
       },
       {
-        text: 'Statistiken',
-        href: '/dashboard/stats'
+        text: 'Statistics',
+        href: '/dashboard/statistics'
       }
     ]
+  },
+  {
+    icon: '⚙️',
+    text: 'Settings',
+    href: '/settings'
   }
 ];
 ---
 
-<Sidebar items={items} animated />
+<Sidebar items={navigationItems} animated={true} />
 ``` 

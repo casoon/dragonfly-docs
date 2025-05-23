@@ -1,15 +1,15 @@
 # Forms
 
-Die Forms-Komponenten bieten eine Sammlung von Formularelementen in der Casoon UI Library.
+The Forms components provide a collection of form elements in the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ### Text Input
 
 ```html
 <div class="form-group">
   <label for="name" class="form-label">Name</label>
-  <input type="text" id="name" class="form-input" placeholder="Ihr Name">
+  <input type="text" id="name" class="form-input" placeholder="Your name">
 </div>
 ```
 
@@ -17,8 +17,8 @@ Die Forms-Komponenten bieten eine Sammlung von Formularelementen in der Casoon U
 
 ```html
 <div class="form-group">
-  <label for="message" class="form-label">Nachricht</label>
-  <textarea id="message" class="form-textarea" placeholder="Ihre Nachricht"></textarea>
+  <label for="message" class="form-label">Message</label>
+  <textarea id="message" class="form-textarea" placeholder="Your message"></textarea>
 </div>
 ```
 
@@ -26,12 +26,12 @@ Die Forms-Komponenten bieten eine Sammlung von Formularelementen in der Casoon U
 
 ```html
 <div class="form-group">
-  <label for="country" class="form-label">Land</label>
+  <label for="country" class="form-label">Country</label>
   <select id="country" class="form-select">
-    <option value="">Bitte wählen</option>
-    <option value="de">Deutschland</option>
-    <option value="at">Österreich</option>
-    <option value="ch">Schweiz</option>
+    <option value="">Please select</option>
+    <option value="de">Germany</option>
+    <option value="at">Austria</option>
+    <option value="ch">Switzerland</option>
   </select>
 </div>
 ```
@@ -42,7 +42,7 @@ Die Forms-Komponenten bieten eine Sammlung von Formularelementen in der Casoon U
 <div class="form-group">
   <label class="form-checkbox">
     <input type="checkbox">
-    <span>Ich stimme den AGB zu</span>
+    <span>I agree to the terms and conditions</span>
   </label>
 </div>
 ```
@@ -53,24 +53,24 @@ Die Forms-Komponenten bieten eine Sammlung von Formularelementen in der Casoon U
 <div class="form-group">
   <label class="form-radio">
     <input type="radio" name="gender" value="male">
-    <span>Männlich</span>
+    <span>Male</span>
   </label>
   <label class="form-radio">
     <input type="radio" name="gender" value="female">
-    <span>Weiblich</span>
+    <span>Female</span>
   </label>
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Größen
+### Sizes
 
 ```html
 <div class="form-group">
-  <input type="text" class="form-input form-input--sm" placeholder="Klein">
+  <input type="text" class="form-input form-input--sm" placeholder="Small">
   <input type="text" class="form-input" placeholder="Normal">
-  <input type="text" class="form-input form-input--lg" placeholder="Groß">
+  <input type="text" class="form-input form-input--lg" placeholder="Large">
 </div>
 ```
 
@@ -78,24 +78,24 @@ Die Forms-Komponenten bieten eine Sammlung von Formularelementen in der Casoon U
 
 ```html
 <div class="form-group">
-  <input type="text" class="form-input form-input--success" placeholder="Erfolg">
-  <input type="text" class="form-input form-input--warning" placeholder="Warnung">
-  <input type="text" class="form-input form-input--error" placeholder="Fehler">
+  <input type="text" class="form-input form-input--success" placeholder="Success">
+  <input type="text" class="form-input form-input--warning" placeholder="Warning">
+  <input type="text" class="form-input form-input--error" placeholder="Error">
 </div>
 ```
 
-### Mit Icons
+### With Icons
 
 ```html
 <div class="form-group">
   <div class="form-input-with-icon">
     <i class="icon-search"></i>
-    <input type="text" class="form-input" placeholder="Suchen">
+    <input type="text" class="form-input" placeholder="Search">
   </div>
 </div>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -112,26 +112,26 @@ Die Forms-Komponenten bieten eine Sammlung von Formularelementen in der Casoon U
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie ARIA-Attribute hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add ARIA attributes
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Formulare an mobile Geräte an
-- Optimieren Sie die Touch-Interaktion
+- Use relative units
+- Test on different screen sizes
+- Adapt forms for mobile devices
+- Optimize touch interaction
 
 ### Performance
 
-- Minimieren Sie CSS
-- Optimieren Sie die Ladezeit
-- Vermeiden Sie unnötige Verschachtelungen
-- Verwenden Sie CSS-Transitions statt JavaScript-Animationen
+- Minimize CSS
+- Optimize loading time
+- Avoid unnecessary nesting
+- Use CSS transitions instead of JavaScript animations
 
 ## Integration
 
@@ -237,7 +237,7 @@ const {
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
@@ -247,9 +247,15 @@ import FormInput from '../components/FormInput.astro';
 <FormInput
   type="text"
   label="Name"
-  placeholder="Ihr Name"
+  placeholder="Your name"
   required
-  size="lg"
-  icon="icon-user"
+/>
+
+<FormInput
+  type="email"
+  label="Email"
+  placeholder="Your email address"
+  status="success"
+  icon="icon-mail"
 />
 ``` 

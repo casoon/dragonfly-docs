@@ -1,85 +1,85 @@
 ---
-title: Layer-System
+title: Layer System
 category: Guide
 ---
 
-# Layer-System
+# Layer System
 
-Das CSS Layer-System der Casoon UI Library verwendet moderne CSS-Features wie `@layer`, um Spezifität und Kaskadierung von Stilen zu kontrollieren. Dies schafft ein vorhersehbares und wartbares Styling-System.
+The CSS Layer System of the Casoon UI Library uses modern CSS features like `@layer` to control the specificity and cascading of styles. This creates a predictable and maintainable styling system.
 
-> **Hinweis zur aktuellen Version:** Der separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, um die Struktur zu vereinfachen und die Wartbarkeit zu verbessern.
+> **Note on the current version:** The separate `custom-properties` layer has been integrated into the `tokens` layer to simplify the structure and improve maintainability.
 
-## Struktur des Layer-Systems
+## Structure of the Layer System
 
-Die Layer sind in einer klaren Hierarchie definiert:
+The layers are defined in a clear hierarchy:
 
 ```css
-@layer reset,                /* Grundlegender Browser-Reset */
-       tokens,               /* Design-Tokens und Variablen */
-       core,                 /* Kernfunktionalitäten */
-       logical-properties,   /* Bidirektionale Layouts (RTL/LTR) */
-       colors,               /* Farbsystem */
-       color-mix,            /* Farbmischungen und -varianten */
-       layout,               /* Layout-Grundlagen */
-       layout-queries,       /* Responsive Anpassungen */
-       typography,           /* Typografie-System */
-       utilities,            /* Atomare Utility-Klassen */
-       smooth-scroll,        /* Scrollverhalten */
-       accessibility,        /* Barrierefreiheit */
-       icons,                /* Icon-System */
-       components,           /* UI-Komponenten */
-       animations,           /* Bewegungssystem */
-       effects,              /* Visuelle Effekte */
-       themes;               /* Theming-System */
+@layer reset,                /* Basic browser reset */
+       tokens,               /* Design tokens and variables */
+       core,                 /* Core functionalities */
+       logical-properties,   /* Bidirectional layouts (RTL/LTR) */
+       colors,               /* Color system */
+       color-mix,            /* Color mixtures and variants */
+       layout,               /* Layout basics */
+       layout-queries,       /* Responsive adjustments */
+       typography,           /* Typography system */
+       utilities,            /* Atomic utility classes */
+       smooth-scroll,        /* Scroll behavior */
+       accessibility,        /* Accessibility */
+       icons,                /* Icon system */
+       components,           /* UI components */
+       animations,           /* Motion system */
+       effects,              /* Visual effects */
+       themes;               /* Theming system */
 ```
 
-Die Reihenfolge ist entscheidend: Layer, die früher in der Liste erscheinen, haben eine niedrigere Spezifität als spätere Layer.
+The order is crucial: Layers that appear earlier in the list have a lower specificity than later layers.
 
-## Zentralisierte Layer-Verwaltung
+## Centralized Layer Management
 
-Die Layer-Struktur ist zentralisiert:
+The layer structure is centralized:
 
-1. Die Layer-Definitionen befinden sich in der `base.css`-Datei
-2. Alle Layer-Imports sind integriert
-3. Diese Datei wird aus der Hauptdatei `core.css` importiert
+1. The layer definitions are in the `base.css` file
+2. All layer imports are integrated
+3. This file is imported from the main `core.css` file
 
-Dieser Ansatz bietet mehrere Vorteile:
-- Klare Trennung von Zuständigkeiten
-- Einfacheres Debugging von Spezifitätsproblemen
-- Leichtere Erweiterbarkeit durch neue Layer
-- Bessere Dokumentation der Layer-Struktur
+This approach offers several advantages:
+- Clear separation of responsibilities
+- Easier debugging of specificity issues
+- Easier extensibility through new layers
+- Better documentation of the layer structure
 
-## Layer-Verwendung in eigenen Projekten
+## Layer Usage in Your Own Projects
 
-Um in Ihrem Projekt von der Layer-Struktur zu profitieren:
+To benefit from the layer structure in your project:
 
-### 1. Standard-Verwendung
+### 1. Standard Usage
 
-Importieren Sie einfach die `core.css`-Datei, die automatisch das komplette Layer-System lädt:
+Simply import the `core.css` file, which automatically loads the complete layer system:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-### 2. Erweiterte Verwendung mit eigenen Stilen
+### 2. Advanced Usage with Custom Styles
 
-Wenn Sie eigene Stile hinzufügen möchten, verwenden Sie den entsprechenden Layer:
+If you want to add your own styles, use the appropriate layer:
 
 ```css
-/* Ihre eigene CSS-Datei */
+/* Your own CSS file */
 @import "@casoon/ui-lib/core.css";
 
-/* Fügen Sie Ihre eigenen Komponenten zum components-Layer hinzu */
+/* Add your own components to the components layer */
 @layer components {
   .my-component {
-    /* Komponenten-Styles unter Nutzung der Design-Tokens */
+    /* Component styles using design tokens */
     padding: var(--space-4);
     color: var(--color-primary);
     border-radius: var(--radius-md);
   }
 }
 
-/* Oder erstellen Sie einen neuen Layer mit höherer Spezifität */
+/* Or create a new layer with higher specificity */
 @layer my-custom-layer {
   .my-custom-class {
     property: value;
@@ -87,61 +87,61 @@ Wenn Sie eigene Stile hinzufügen möchten, verwenden Sie den entsprechenden Lay
 }
 ```
 
-### 3. Selektive Nutzung von Layern
+### 3. Selective Use of Layers
 
-Sie können auch nur bestimmte Layer importieren:
+You can also import only specific layers:
 
 ```css
-/* Nur bestimmte Layer verwenden */
-@import "@casoon/ui-lib/base.css";  /* Die Layer-Struktur */
+/* Use only specific layers */
+@import "@casoon/ui-lib/base.css";  /* The layer structure */
 @import "@casoon/ui-lib/layers/reset.css";
 @import "@casoon/ui-lib/layers/tokens.css";
 @import "@casoon/ui-lib/layers/utilities.css";
 ```
 
-## Layer-Beschreibungen
+## Layer Descriptions
 
-Jeder Layer hat eine spezifische Rolle im Designsystem:
+Each layer has a specific role in the design system:
 
-- **reset**: Browser-Standardstile zurücksetzen
-- **tokens**: Design-Token-Variablen (Farben, Abstände, Typografie) und registrierte CSS-Eigenschaften
-- **core**: Allgemeine Grundfunktionen
-- **logical-properties**: Logische Eigenschaften für bidirektionalen Text (RTL/LTR)
-- **colors**: Farbsystem und Farbklassen
-- **color-mix**: Farbmischungen und -variationen
-- **layout**: Layout-Grundlagen (Container, Grid, etc.)
-- **layout-queries**: Responsive Anpassungen basierend auf Container Queries
-- **typography**: Typografie-System
-- **utilities**: Atomare Utility-Klassen für schnelles Styling
-- **smooth-scroll**: Scroll-Verhalten und -Effekte
-- **accessibility**: Barrierefreiheits-Verbesserungen
-- **icons**: Icon-System
-- **components**: UI-Komponenten und Komponentensystem
-- **animations**: Animationen und Bewegungssystem
-- **effects**: Visuelle Effekte
-- **themes**: Theming-System
+- **reset**: Reset browser default styles
+- **tokens**: Design token variables (colors, spacing, typography) and registered CSS properties
+- **core**: General basic functions
+- **logical-properties**: Logical properties for bidirectional text (RTL/LTR)
+- **colors**: Color system and color classes
+- **color-mix**: Color mixtures and variations
+- **layout**: Layout basics (container, grid, etc.)
+- **layout-queries**: Responsive adjustments based on container queries
+- **typography**: Typography system
+- **utilities**: Atomic utility classes for quick styling
+- **smooth-scroll**: Scroll behavior and effects
+- **accessibility**: Accessibility improvements
+- **icons**: Icon system
+- **components**: UI components and component system
+- **animations**: Animations and motion system
+- **effects**: Visual effects
+- **themes**: Theming system
 
 ## Best Practices
 
-1. **Verwenden Sie die passenden Layer**: Ordnen Sie Stile dem semantisch korrekten Layer zu.
-2. **Beachten Sie die Spezifität**: Je weiter unten in der Liste, desto höher die Spezifität.
-3. **Minimieren Sie !important**: Das Layer-System sollte die Notwendigkeit von !important reduzieren.
-4. **Dokumentieren Sie Layer-Nutzung**: Machen Sie klar, welche Layer Sie in Ihrem Projekt verwenden.
+1. **Use the appropriate layers**: Assign styles to the semantically correct layer.
+2. **Pay attention to specificity**: The lower in the list, the higher the specificity.
+3. **Minimize !important**: The layer system should reduce the need for !important.
+4. **Document layer usage**: Make it clear which layers you use in your project.
 
 ## Debugging
 
-Wenn Stile nicht wie erwartet angewendet werden:
+If styles are not applied as expected:
 
-1. Überprüfen Sie die Browserkonsole (DevTools) auf Fehler
-2. Verwenden Sie den Inspector, um zu sehen, welche Stile angewendet werden und aus welchem Layer
-3. Prüfen Sie, ob Ihre Stile im richtigen Layer definiert sind
-4. Beachten Sie, dass Stile in später definierten Layern Vorrang haben
+1. Check the browser console (DevTools) for errors
+2. Use the inspector to see which styles are applied and from which layer
+3. Check if your styles are defined in the correct layer
+4. Note that styles in later defined layers take precedence
 
-## Migration von älteren Versionen
+## Migration from Older Versions
 
-Wenn Sie von einer älteren Version des UI-Systems aktualisieren:
+If you are upgrading from an older version of the UI system:
 
-1. Ersetzen Sie Importe von älteren CSS-Dateien durch den Import von `core.css`
-2. Prüfen Sie, ob Ihre benutzerdefinierten Stile mit der neuen Layer-Struktur kompatibel sind
-3. Ordnen Sie Ihre benutzerdefinierten Stile den entsprechenden Layern zu
-4. Testen Sie gründlich auf Styling-Probleme 
+1. Replace imports of older CSS files with the import of `core.css`
+2. Check if your custom styles are compatible with the new layer structure
+3. Assign your custom styles to the appropriate layers
+4. Thoroughly test for styling issues 
