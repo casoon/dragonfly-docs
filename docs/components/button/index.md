@@ -13,7 +13,10 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
 ## Module importieren
 
 ```css
-@import 'casoon-ui-lib/modules/button.module.css';
+/* Importiere die benötigten Module */
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/themes/day.css'; /* oder ein anderes Theme */
+@import '@casoon/ui-lib/components/button.css';
 ```
 
 ## Varianten
@@ -152,9 +155,9 @@ Die Button-Komponente verwendet folgende CSS-Variablen:
 ### React
 
 ```jsx
-import 'casoon-ui-lib/core.css';
-import 'casoon-ui-lib/themes/day.css';
-import 'casoon-ui-lib/modules/button.module.css';
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css';
+import '@casoon/ui-lib/components/button.css';
 
 function Button({ 
   children, 
@@ -200,9 +203,9 @@ export default Button;
 </template>
 
 <script>
-import 'casoon-ui-lib/core.css';
-import 'casoon-ui-lib/themes/day.css';
-import 'casoon-ui-lib/modules/button.module.css';
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css';
+import '@casoon/ui-lib/components/button.css';
 
 export default {
   name: 'Button',
@@ -234,9 +237,9 @@ export default {
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/core.css">
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/themes/day.css">
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/button.module.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/core.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/themes/day.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/components/button.css">
 </head>
 <body class="theme-day">
   <button class="button primary">
@@ -248,8 +251,7 @@ export default {
   </button>
   
   <button class="button success block">
-    Erfolgs-Button mit voller Breite
+    Voller Breite Success Button
   </button>
 </body>
-</html>
-``` 
+</html> 

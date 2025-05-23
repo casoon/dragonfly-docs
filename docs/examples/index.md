@@ -7,8 +7,6 @@ category: Examples
 
 This page shows visual examples of the UI components from the Casoon UI Library. The examples showcase how the CSS classes are rendered in different contexts and configurations.
 
-> **Note:** The button styles may not be displayed correctly in this documentation. The Casoon UI Library needs to be properly imported in your project to see the actual styling.
-
 ## Overview
 
 The Casoon UI Library provides a comprehensive set of CSS components that can be used to build modern, responsive user interfaces. This section contains examples of these components in action, showing how they can be used and customized.

@@ -9,7 +9,16 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   head: [
-    ['link', { rel: 'stylesheet', href: '/ui-docs/custom.css' }]
+    ['link', { rel: 'stylesheet', href: '/ui-docs/custom.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/core.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/themes/day.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/components/button.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/components/badge.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/components/alert.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/components/card.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/components/chip.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/components/tooltip.css' }],
+    ['link', { rel: 'stylesheet', href: '/node_modules/@casoon/ui-lib/components/spinner.css' }]
   ],
 
   vite: {
