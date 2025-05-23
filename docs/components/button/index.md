@@ -1,56 +1,56 @@
 # Button
 
-Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varianten für interaktive Elemente.
+The Button component of the Casoon UI Library offers various styles and variants for interactive elements.
 
-## Verwendung
+## Usage
 
 ```html
-<button class="button primary">Primärer Button</button>
-<button class="button secondary">Sekundärer Button</button>
+<button class="button primary">Primary Button</button>
+<button class="button secondary">Secondary Button</button>
 <button class="button outline">Outline Button</button>
 ```
 
-## Module importieren
+## Importing Modules
 
 ```css
-/* Importiere die benötigten Module */
+/* Import the required modules */
 @import '@casoon/ui-lib/core.css';
-@import '@casoon/ui-lib/themes/day.css'; /* oder ein anderes Theme */
+@import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 @import '@casoon/ui-lib/components/button.css';
 ```
 
-## Varianten
+## Variants
 
-### Größen
+### Sizes
 
 ```html
-<button class="button sm">Kleiner Button</button>
+<button class="button sm">Small Button</button>
 <button class="button">Standard Button</button>
-<button class="button lg">Großer Button</button>
+<button class="button lg">Large Button</button>
 ```
 
-### Zustände
+### States
 
 ```html
-<button class="button" disabled>Deaktivierter Button</button>
+<button class="button" disabled>Disabled Button</button>
 <button class="button loading">
-  <span class="button__text">Ladender Button</span>
+  <span class="button__text">Loading Button</span>
   <span class="button__loader"></span>
 </button>
 ```
 
-### Farben
+### Colors
 
 ```html
-<button class="button primary">Primär</button>
-<button class="button secondary">Sekundär</button>
-<button class="button success">Erfolg</button>
-<button class="button danger">Gefahr</button>
-<button class="button warning">Warnung</button>
+<button class="button primary">Primary</button>
+<button class="button secondary">Secondary</button>
+<button class="button success">Success</button>
+<button class="button danger">Danger</button>
+<button class="button warning">Warning</button>
 <button class="button info">Info</button>
 ```
 
-### Mit Icon
+### With Icon
 
 ```html
 <button class="button primary">
@@ -60,11 +60,11 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
       <path d="M12 5l7 7-7 7"></path>
     </svg>
   </span>
-  <span class="button__text">Mit Icon</span>
+  <span class="button__text">With Icon</span>
 </button>
 ```
 
-### Icon-Button
+### Icon Button
 
 ```html
 <button class="button icon primary">
@@ -75,15 +75,15 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
 </button>
 ```
 
-### Block-Button
+### Block Button
 
 ```html
-<button class="button primary block">Volle Breite</button>
+<button class="button primary block">Full Width</button>
 ```
 
-## CSS-Variablen
+## CSS Variables
 
-Die Button-Komponente verwendet folgende CSS-Variablen:
+The Button component uses the following CSS variables:
 
 ```css
 :root {
@@ -131,26 +131,26 @@ Die Button-Komponente verwendet folgende CSS-Variablen:
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische Button-Elemente (`<button>`) für interaktive Aktionen
-- Verwenden Sie Links (`<a>`) für Navigation zu anderen Seiten
-- Stellen Sie ausreichenden Kontrast zwischen Text und Hintergrund sicher
-- Setzen Sie das `disabled`-Attribut für deaktivierte Buttons
-- Vermeiden Sie zu kleine Buttons (mindestens 44x44px Touch-Target)
+- Use semantic button elements (`<button>`) for interactive actions
+- Use links (`<a>`) for navigation to other pages
+- Ensure sufficient contrast between text and background
+- Set the `disabled` attribute for disabled buttons
+- Avoid buttons that are too small (at least 44x44px touch target)
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten (rem, em) für Größenangaben
-- Passen Sie Padding und Schriftgröße für verschiedene Bildschirmgrößen an
-- Verwenden Sie `block` auf mobilen Geräten für bessere Touch-Targets
+- Use relative units (rem, em) for sizing
+- Adjust padding and font size for different screen sizes
+- Use `block` on mobile devices for better touch targets
 
 ### Performance
 
-- Laden Sie nur die benötigten Button-Varianten
-- Vermeiden Sie zu komplexe Schatten oder Animationen auf Buttons
+- Only load the required button variants
+- Avoid overly complex shadows or animations on buttons
 
-## Integration in Frameworks
+## Framework Integration
 
 ### React
 
@@ -243,15 +243,15 @@ export default {
 </head>
 <body class="theme-day">
   <button class="button primary">
-    Primärer Button
+    Primary Button
   </button>
   
   <button class="button outline lg">
-    Großer Outline Button
+    Large Outline Button
   </button>
   
   <button class="button success block">
-    Voller Breite Success Button
+    Full Width Success Button
   </button>
 </body>
 </html> 

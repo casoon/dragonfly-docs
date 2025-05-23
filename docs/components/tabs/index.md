@@ -1,8 +1,8 @@
 # Tabs
 
-Die Tabs sind eine Komponente für Registerkarten in der Casoon UI Library.
+The Tabs are a component for tabbed content in the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="tabs">
@@ -13,46 +13,46 @@ Die Tabs sind eine Komponente für Registerkarten in der Casoon UI Library.
   </div>
   <div class="tabs__content">
     <div class="tabs__pane tabs__pane--active">
-      Inhalt von Tab 1
+      Content of Tab 1
     </div>
     <div class="tabs__pane">
-      Inhalt von Tab 2
+      Content of Tab 2
     </div>
     <div class="tabs__pane">
-      Inhalt von Tab 3
+      Content of Tab 3
     </div>
   </div>
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Mit Icons
+### With Icons
 
 ```html
 <div class="tabs">
   <div class="tabs__nav">
     <button class="tabs__button tabs__button--active">
       <i class="icon-home"></i>
-      <span>Startseite</span>
+      <span>Home</span>
     </button>
     <button class="tabs__button">
       <i class="icon-settings"></i>
-      <span>Einstellungen</span>
+      <span>Settings</span>
     </button>
   </div>
   <div class="tabs__content">
     <div class="tabs__pane tabs__pane--active">
-      Inhalt der Startseite
+      Home content
     </div>
     <div class="tabs__pane">
-      Inhalt der Einstellungen
+      Settings content
     </div>
   </div>
 </div>
 ```
 
-### Mit Farben
+### With Colors
 
 ```html
 <div class="tabs tabs--primary">
@@ -62,16 +62,16 @@ Die Tabs sind eine Komponente für Registerkarten in der Casoon UI Library.
   </div>
   <div class="tabs__content">
     <div class="tabs__pane tabs__pane--active">
-      Inhalt von Tab 1
+      Content of Tab 1
     </div>
     <div class="tabs__pane">
-      Inhalt von Tab 2
+      Content of Tab 2
     </div>
   </div>
 </div>
 ```
 
-### Mit Animation
+### With Animation
 
 ```html
 <div class="tabs tabs--animated">
@@ -81,16 +81,16 @@ Die Tabs sind eine Komponente für Registerkarten in der Casoon UI Library.
   </div>
   <div class="tabs__content">
     <div class="tabs__pane tabs__pane--active">
-      Inhalt von Tab 1
+      Content of Tab 1
     </div>
     <div class="tabs__pane">
-      Inhalt von Tab 2
+      Content of Tab 2
     </div>
   </div>
 </div>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -104,26 +104,26 @@ Die Tabs sind eine Komponente für Registerkarten in der Casoon UI Library.
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie ARIA-Attribute hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add ARIA attributes
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Tabs an mobile Geräte an
-- Optimieren Sie die Darstellung auf kleinen Bildschirmen
+- Use relative units
+- Test on different screen sizes
+- Adapt tabs for mobile devices
+- Optimize display on small screens
 
 ### Performance
 
-- Minimieren Sie CSS
-- Optimieren Sie die Ladezeit
-- Vermeiden Sie unnötige Verschachtelungen
-- Verwenden Sie CSS-Transitions statt JavaScript-Animationen
+- Minimize CSS
+- Optimize loading time
+- Avoid unnecessary nesting
+- Use CSS transitions instead of JavaScript animations
 
 ## Integration
 
@@ -219,7 +219,7 @@ const { tabs, color, animated = false } = Astro.props;
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
@@ -227,14 +227,14 @@ import Tabs from '../components/Tabs.astro';
 
 const tabs = [
   {
-    label: 'Startseite',
+    label: 'Home',
     icon: 'icon-home',
-    content: 'Willkommen auf der Startseite'
+    content: 'Welcome to the home page'
   },
   {
-    label: 'Einstellungen',
+    label: 'Settings',
     icon: 'icon-settings',
-    content: 'Hier können Sie die Einstellungen anpassen'
+    content: 'Here you can adjust the settings'
   }
 ];
 ---

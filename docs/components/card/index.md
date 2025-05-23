@@ -1,53 +1,53 @@
 # Card
 
-Die Card-Komponente bietet eine flexible und anpassbare Kartenkomponente für die Casoon UI Library.
+The Card component provides a flexible and customizable card component for the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="card">
   <div class="card__header">
-    <h3 class="card__title">Kartentitel</h3>
+    <h3 class="card__title">Card Title</h3>
   </div>
   <div class="card__body">
-    <p>Karteninhalt</p>
+    <p>Card Content</p>
   </div>
   <div class="card__footer">
-    <button class="button">Aktion</button>
+    <button class="button">Action</button>
   </div>
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Mit Bild
+### With Image
 
 ```html
 <div class="card">
   <div class="card__image">
-    <img src="bild.jpg" alt="Beschreibung">
+    <img src="image.jpg" alt="Description">
   </div>
   <div class="card__body">
-    <h3 class="card__title">Kartentitel</h3>
-    <p>Karteninhalt</p>
+    <h3 class="card__title">Card Title</h3>
+    <p>Card Content</p>
   </div>
 </div>
 ```
 
-### Mit Animation
+### With Animation
 
 ```html
 <div class="card card--animated">
   <div class="card__header">
-    <h3 class="card__title">Kartentitel</h3>
+    <h3 class="card__title">Card Title</h3>
   </div>
   <div class="card__body">
-    <p>Karteninhalt</p>
+    <p>Card Content</p>
   </div>
 </div>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -63,26 +63,26 @@ Die Card-Komponente bietet eine flexible und anpassbare Kartenkomponente für di
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie ARIA-Attribute hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add ARIA attributes
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Optimieren Sie die Darstellung auf mobilen Geräten
-- Berücksichtigen Sie Touch-Targets
+- Use relative units
+- Test on different screen sizes
+- Optimize display on mobile devices
+- Consider touch targets
 
 ### Performance
 
-- Minimieren Sie CSS
-- Optimieren Sie Bilder
-- Vermeiden Sie unnötige Verschachtelungen
-- Verwenden Sie CSS-Transitions statt JavaScript-Animationen
+- Minimize CSS
+- Optimize images
+- Avoid unnecessary nesting
+- Use CSS transitions instead of JavaScript animations
 
 ## Integration
 
@@ -150,7 +150,7 @@ const { title, image, animated = false } = Astro.props;
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
@@ -158,11 +158,11 @@ import Card from '../components/Card.astro';
 ---
 
 <Card 
-  title="Produktname"
-  image="/images/produkt.jpg"
+  title="Product Name"
+  image="/images/product.jpg"
   animated
 >
-  <p>Produktbeschreibung</p>
-  <button class="button">Kaufen</button>
+  <p>Product description</p>
+  <button class="button">Buy</button>
 </Card>
 ``` 
