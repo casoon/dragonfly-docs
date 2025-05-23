@@ -1,41 +1,41 @@
-# Effekte-System
+# Effects System
 
-Das Effekte-System in Casoon UI wurde überarbeitet, um eine bessere Modularität und Flexibilität zu bieten. Es besteht aus Basis-Effekten (wie Animationen und Transitions) und spezifischen visuellen Effekten, die einzeln importiert und verwendet werden können.
+The Effects System in Casoon UI has been revised to provide better modularity and flexibility. It consists of basic effects (such as animations and transitions) and specific visual effects that can be imported and used individually.
 
-## Basis-Effekte
+## Basic Effects
 
-Die Basis-Effekte sind in der Core-CSS enthalten und bieten grundlegende Animationen und Übergänge:
+The basic effects are included in the Core CSS and provide fundamental animations and transitions:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 ```
 
-### Verfügbare Basis-Effekte
+### Available Basic Effects
 
 #### Transitions
 ```css
-/* Standard-Transition */
+/* Standard transition */
 .transition {
   transition: all 0.3s ease;
 }
 
-/* Schnelle Transition */
+/* Fast transition */
 .transition-fast {
   transition: all 0.15s ease;
 }
 
-/* Langsame Transition */
+/* Slow transition */
 .transition-slow {
   transition: all 0.5s ease;
 }
 
-/* Spezifische Transition */
+/* Specific transition */
 .transition-transform {
   transition: transform 0.3s ease;
 }
 ```
 
-#### Animationen
+#### Animations
 ```css
 /* Fade-In */
 .animate-fade-in {
@@ -58,102 +58,102 @@ Die Basis-Effekte sind in der Core-CSS enthalten und bieten grundlegende Animati
 }
 ```
 
-## Spezifische Effekte
+## Specific Effects
 
-Die spezifischen Effekte müssen einzeln importiert werden, um die Bundle-Größe zu optimieren.
+The specific effects must be imported individually to optimize bundle size.
 
-### Blur-Effekt
+### Blur Effect
 ```css
 @import '@casoon/ui-lib/effects/blur.css';
 ```
 
-Verfügbare Klassen:
-- `.blur-sm`: Leichter Blur-Effekt (4px)
-- `.blur-md`: Mittlerer Blur-Effekt (8px)
-- `.blur-lg`: Starker Blur-Effekt (16px)
-- `.blur-xl`: Extra starker Blur-Effekt (24px)
+Available classes:
+- `.blur-sm`: Light blur effect (4px)
+- `.blur-md`: Medium blur effect (8px)
+- `.blur-lg`: Strong blur effect (16px)
+- `.blur-xl`: Extra strong blur effect (24px)
 
-Beispiel mit Transition:
+Example with transition:
 ```html
 <div class="blur-sm transition">
-  <!-- Inhalt wird sanft verschwommen -->
+  <!-- Content becomes softly blurred -->
 </div>
 ```
 
-### Schatten-Effekt
+### Shadow Effect
 ```css
 @import '@casoon/ui-lib/effects/shadow.css';
 ```
 
-Verfügbare Klassen:
-- `.shadow-sm`: Leichter Schatten (2px)
-- `.shadow-md`: Mittlerer Schatten (4px)
-- `.shadow-lg`: Starker Schatten (8px)
-- `.shadow-xl`: Extra starker Schatten (16px)
-- `.shadow-inner`: Innerer Schatten
-- `.shadow-none`: Kein Schatten
+Available classes:
+- `.shadow-sm`: Light shadow (2px)
+- `.shadow-md`: Medium shadow (4px)
+- `.shadow-lg`: Strong shadow (8px)
+- `.shadow-xl`: Extra strong shadow (16px)
+- `.shadow-inner`: Inner shadow
+- `.shadow-none`: No shadow
 
-Beispiel mit Hover-Effekt:
+Example with hover effect:
 ```html
 <div class="shadow-md transition hover:shadow-lg">
-  <!-- Schatten wird beim Hover verstärkt -->
+  <!-- Shadow intensifies on hover -->
 </div>
 ```
 
-### Glass-Effekt
+### Glass Effect
 ```css
 @import '@casoon/ui-lib/effects/glass.css';
 ```
 
-Verfügbare Klassen:
-- `.glass`: Standard Glass-Effekt
-- `.glass-dark`: Dunkler Glass-Effekt
-- `.glass-light`: Heller Glass-Effekt
-- `.glass-blur`: Glass-Effekt mit Blur
-- `.glass-border`: Glass-Effekt mit Rahmen
+Available classes:
+- `.glass`: Standard glass effect
+- `.glass-dark`: Dark glass effect
+- `.glass-light`: Light glass effect
+- `.glass-blur`: Glass effect with blur
+- `.glass-border`: Glass effect with border
 
-Beispiel mit Animation:
+Example with animation:
 ```html
 <div class="glass animate-fade-in">
-  <!-- Glass-Effekt wird eingeblendet -->
+  <!-- Glass effect fades in -->
 </div>
 ```
 
-## Kombinierte Effekte
+## Combined Effects
 
-Effekte können kombiniert werden, um komplexere visuelle Erscheinungen zu erzeugen:
+Effects can be combined to create more complex visual appearances:
 
 ```html
-<!-- Glass-Karte mit Schatten und Blur -->
+<!-- Glass card with shadow and blur -->
 <div class="glass shadow-lg blur-sm transition hover:shadow-xl">
-  <h2 class="text-xl font-bold">Glaskarte</h2>
-  <p>Eine Karte mit kombinierten Effekten</p>
+  <h2 class="text-xl font-bold">Glass Card</h2>
+  <p>A card with combined effects</p>
 </div>
 
-<!-- Animierter Container mit Blur -->
+<!-- Animated container with blur -->
 <div class="blur-md animate-fade-in">
   <div class="glass-light shadow-md">
-    <p>Animierter Inhalt mit Blur und Glass</p>
+    <p>Animated content with blur and glass</p>
   </div>
 </div>
 ```
 
-## Performance-Optimierung
+## Performance Optimization
 
-1. **Selektive Imports**
+1. **Selective Imports**
    ```css
-   /* Nur die benötigten Effekte importieren */
+   /* Import only the required effects */
    @import '@casoon/ui-lib/effects/shadow.css';
    @import '@casoon/ui-lib/effects/glass.css';
    ```
 
-2. **Effekte zusammenfassen**
+2. **Consolidate Effects**
    ```css
-   /* In Ihrer eigenen CSS-Datei */
+   /* In your own CSS file */
    @import '@casoon/ui-lib/effects/shadow.css';
    @import '@casoon/ui-lib/effects/glass.css';
    
-   /* Eigene Kombinationen definieren */
+   /* Define your own combinations */
    .card-glass {
      @apply glass shadow-lg transition;
    }
@@ -161,39 +161,39 @@ Effekte können kombiniert werden, um komplexere visuelle Erscheinungen zu erzeu
 
 ## Best Practices
 
-1. **Zugänglichkeit**
-   - Verwenden Sie Blur-Effekte sparsam
-   - Stellen Sie sicher, dass Text mit Blur-Effekt noch lesbar ist
-   - Bieten Sie Alternativen für Nutzer, die Animationen deaktiviert haben
+1. **Accessibility**
+   - Use blur effects sparingly
+   - Ensure text with blur effect is still readable
+   - Provide alternatives for users who have disabled animations
 
 2. **Performance**
-   - Importieren Sie nur die benötigten Effekte
-   - Vermeiden Sie zu viele kombinierte Effekte
-   - Nutzen Sie Hardware-Beschleunigung wo möglich
+   - Import only the needed effects
+   - Avoid too many combined effects
+   - Use hardware acceleration where possible
 
 3. **Responsive Design**
-   - Testen Sie Effekte auf verschiedenen Geräten
-   - Reduzieren Sie Effekte auf mobilen Geräten
-   - Berücksichtigen Sie die Performance auf schwächeren Geräten
+   - Test effects on different devices
+   - Reduce effects on mobile devices
+   - Consider performance on weaker devices
 
-4. **Browser-Kompatibilität**
-   - Testen Sie Effekte in verschiedenen Browsern
-   - Bieten Sie Fallbacks für ältere Browser
-   - Nutzen Sie Feature-Detection für progressive Enhancement
+4. **Browser Compatibility**
+   - Test effects in different browsers
+   - Provide fallbacks for older browsers
+   - Use feature detection for progressive enhancement
 
 ## Troubleshooting
 
-### Effekte werden nicht angezeigt
-- Überprüfen Sie die Import-Pfade
-- Stellen Sie sicher, dass die Layer-Reihenfolge korrekt ist
-- Prüfen Sie auf CSS-Konflikte
+### Effects are not displayed
+- Check the import paths
+- Ensure the layer order is correct
+- Check for CSS conflicts
 
-### Performance-Probleme
-- Reduzieren Sie die Anzahl der Effekte
-- Optimieren Sie Animationen mit `will-change`
-- Nutzen Sie `transform` statt `top/left` für Animationen
+### Performance issues
+- Reduce the number of effects
+- Optimize animations with `will-change`
+- Use `transform` instead of `top/left` for animations
 
-### Browser-spezifische Probleme
-- Verwenden Sie Vendor-Prefixes wo nötig
-- Testen Sie in verschiedenen Browsern
-- Bieten Sie Fallbacks für ältere Browser 
+### Browser-specific issues
+- Use vendor prefixes where necessary
+- Test in different browsers
+- Provide fallbacks for older browsers 

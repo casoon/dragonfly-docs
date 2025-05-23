@@ -1,176 +1,176 @@
 ---
-title: Ausführlicher Grid-Layout Leitfaden
+title: Comprehensive Grid Layout Guide
 category: Guide
 ---
 
-# Ausführlicher Grid-Layout Leitfaden
+# Comprehensive Grid Layout Guide
 
-Dieser Leitfaden bietet umfassende Anleitungen zur Erstellung effektiver Grid-Layouts mit der Casoon UI Library. Er enthält praktische Beispiele, Best Practices und Lösungen für häufige Layoutmuster.
+This guide provides comprehensive instructions for creating effective grid layouts with the Casoon UI Library. It includes practical examples, best practices, and solutions for common layout patterns.
 
-## Grundlegendes Verständnis des Grid-Systems
+## Basic Understanding of the Grid System
 
-Das Grid-System der Casoon UI Library basiert auf CSS Grid und bietet flexible Möglichkeiten für komplexe Layouts. Es ist vollständig responsiv und folgt dem Mobile-First-Ansatz.
+The Grid System of the Casoon UI Library is based on CSS Grid and offers flexible options for complex layouts. It is fully responsive and follows the mobile-first approach.
 
-### Core-CSS importieren
+### Importing Core CSS
 
-Die gesamte Grid-Funktionalität ist in der core.css enthalten, die für Lightning CSS optimiert ist:
+All grid functionality is included in the core.css, which is optimized for Lightning CSS:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 ```
 
-Dieser Import lädt alle grundlegenden Layout- und Grid-Features. Beachten Sie jedoch, dass Komponenten und Effekte separat importiert werden müssen:
+This import loads all basic layout and grid features. Note, however, that components and effects must be imported separately:
 
 ```css
-/* Core-System für Layout und Grid */
+/* Core system for layout and grid */
 @import '@casoon/ui-lib/core.css';
 
-/* Komponenten müssen einzeln importiert werden */
+/* Components must be imported individually */
 @import '@casoon/ui-lib/components/button.css';
 @import '@casoon/ui-lib/components/card.css';
 
-/* Effekte müssen ebenfalls einzeln importiert werden */
+/* Effects must also be imported individually */
 @import '@casoon/ui-lib/effects/hover.css';
 @import '@casoon/ui-lib/effects/transitions.css';
 ```
 
-Das CSS-Layer-System sorgt dafür, dass alle Importe in der korrekten Reihenfolge geladen werden.
+The CSS layer system ensures that all imports are loaded in the correct order.
 
-### Vorteile des Layer-Systems für Grid-Layouts
+### Benefits of the Layer System for Grid Layouts
 
-Das CSS-Layer-System der Casoon UI Library ermöglicht eine präzise Steuerung der CSS-Spezifität und verhindert Konflikte zwischen verschiedenen Styling-Regeln. Die Grid-Komponenten profitieren von dieser Struktur, da sie:
+The CSS layer system of the Casoon UI Library allows precise control of CSS specificity and prevents conflicts between different styling rules. The grid components benefit from this structure because they:
 
-- Leicht anpassbar sind, ohne die Grundfunktionalität zu gefährden
-- Konsistente Abstände und Layoutmuster gewährleisten
-- Nahtlos mit anderen Komponenten zusammenarbeiten
-- Eine klare Hierarchie in der Styling-Kaskade haben
+- Are easily customizable without compromising basic functionality
+- Ensure consistent spacing and layout patterns
+- Work seamlessly with other components
+- Have a clear hierarchy in the styling cascade
 
-## Grundlegende Grid-Layouts
+## Basic Grid Layouts
 
-### Einfaches Grid mit gleichen Spalten
+### Simple Grid with Equal Columns
 
 ```html
 <div class="grid grid-cols-3 gap-4">
-  <div class="p-4 bg-light">Spalte 1</div>
-  <div class="p-4 bg-light">Spalte 2</div>
-  <div class="p-4 bg-light">Spalte 3</div>
+  <div class="p-4 bg-light">Column 1</div>
+  <div class="p-4 bg-light">Column 2</div>
+  <div class="p-4 bg-light">Column 3</div>
 </div>
 ```
 
-Dieses Beispiel erzeugt ein dreispaltiges Grid mit gleichmäßigen Spaltenbreiten und einem Abstand von 1rem (16px) zwischen den Elementen.
+This example creates a three-column grid with equal column widths and a spacing of 1rem (16px) between elements.
 
-### Responsives Grid mit Breakpoints
+### Responsive Grid with Breakpoints
 
 ```html
 <div class="container-query">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-    <div class="p-4 bg-light">Element 1</div>
-    <div class="p-4 bg-light">Element 2</div>
-    <div class="p-4 bg-light">Element 3</div>
-    <div class="p-4 bg-light">Element 4</div>
+    <div class="p-4 bg-light">Item 1</div>
+    <div class="p-4 bg-light">Item 2</div>
+    <div class="p-4 bg-light">Item 3</div>
+    <div class="p-4 bg-light">Item 4</div>
   </div>
 </div>
 ```
 
-Dieses Beispiel zeigt ein Grid, das seine Spaltenanzahl basierend auf der Container-Größe anpasst:
-- Standard (klein): 1 Spalte
-- Ab 30rem (480px): 2 Spalten
-- Ab 48rem (768px): 3 Spalten
-- Ab 62rem (992px): 4 Spalten
+This example shows a grid that adjusts its column count based on container size:
+- Default (small): 1 column
+- From 30rem (480px): 2 columns
+- From 48rem (768px): 3 columns
+- From 62rem (992px): 4 columns
 
-## Fortgeschrittene Grid-Layouts
+## Advanced Grid Layouts
 
-### Asymmetrisches Layout
+### Asymmetric Layout
 
 ```html
 <div class="grid grid-cols-12 gap-4">
-  <div class="col-span-8 p-4 bg-light">Hauptinhalt (8/12)</div>
-  <div class="col-span-4 p-4 bg-light">Seitenleiste (4/12)</div>
+  <div class="col-span-8 p-4 bg-light">Main content (8/12)</div>
+  <div class="col-span-4 p-4 bg-light">Sidebar (4/12)</div>
 </div>
 ```
 
-Mit dem 12-Spalten-System können Sie problemlos asymmetrische Layouts erstellen. Im obigen Beispiel nimmt der Hauptinhalt 2/3 der verfügbaren Breite ein, während die Seitenleiste 1/3 einnimmt.
+With the 12-column system, you can easily create asymmetric layouts. In the example above, the main content takes up 2/3 of the available width, while the sidebar takes up 1/3.
 
-### Responsives asymmetrisches Layout
+### Responsive Asymmetric Layout
 
 ```html
 <div class="container-query">
   <div class="grid grid-cols-12 gap-4">
     <div class="col-span-12 md:col-span-8 p-4 bg-light">
-      Hauptinhalt (volle Breite auf mobil, 8/12 auf Tablet+)
+      Main content (full width on mobile, 8/12 on tablet+)
     </div>
     <div class="col-span-12 md:col-span-4 p-4 bg-light">
-      Seitenleiste (volle Breite auf mobil, 4/12 auf Tablet+)
+      Sidebar (full width on mobile, 4/12 on tablet+)
     </div>
   </div>
 </div>
 ```
 
-Dieses Layout stapelt die Elemente auf mobilen Geräten (eine Spalte) und wechselt zu einem asymmetrischen Layout auf größeren Bildschirmen.
+This layout stacks the elements on mobile devices (one column) and switches to an asymmetric layout on larger screens.
 
-### Verschachteltes Grid
+### Nested Grid
 
 ```html
 <div class="grid grid-cols-12 gap-4">
   <div class="col-span-8 p-4 bg-light">
-    <h2>Hauptinhalt</h2>
+    <h2>Main content</h2>
     <div class="grid grid-cols-2 gap-4 mt-4">
-      <div class="p-4 bg-white">Unterinhalt 1</div>
-      <div class="p-4 bg-white">Unterinhalt 2</div>
+      <div class="p-4 bg-white">Subcontent 1</div>
+      <div class="p-4 bg-white">Subcontent 2</div>
     </div>
   </div>
-  <div class="col-span-4 p-4 bg-light">Seitenleiste</div>
+  <div class="col-span-4 p-4 bg-light">Sidebar</div>
 </div>
 ```
 
-Grids können verschachtelt werden, um komplexere Layouts zu erstellen. In diesem Beispiel hat der Hauptinhalt selbst ein zweispaltiges Grid.
+Grids can be nested to create more complex layouts. In this example, the main content itself has a two-column grid.
 
-## Praktische Layoutmuster
+## Practical Layout Patterns
 
-### Kartenraster (Card Grid)
+### Card Grid
 
 ```html
 <div class="container-query">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-    <!-- Karte 1 -->
+    <!-- Card 1 -->
     <div class="p-4 rounded-lg shadow-md bg-white">
-      <img src="image1.jpg" alt="Bild 1" class="w-full h-48 object-cover rounded-md mb-4">
-      <h3 class="text-xl font-semibold mb-2">Titel 1</h3>
-      <p class="text-gray-600">Beschreibung für Karte 1...</p>
+      <img src="image1.jpg" alt="Image 1" class="w-full h-48 object-cover rounded-md mb-4">
+      <h3 class="text-xl font-semibold mb-2">Title 1</h3>
+      <p class="text-gray-600">Description for card 1...</p>
       <button class="mt-4 bg-primary text-white px-4 py-2 rounded-md">Details</button>
     </div>
     
-    <!-- Weitere Karten im gleichen Format -->
+    <!-- More cards in the same format -->
     <div class="p-4 rounded-lg shadow-md bg-white">
-      <img src="image2.jpg" alt="Bild 2" class="w-full h-48 object-cover rounded-md mb-4">
-      <h3 class="text-xl font-semibold mb-2">Titel 2</h3>
-      <p class="text-gray-600">Beschreibung für Karte 2...</p>
+      <img src="image2.jpg" alt="Image 2" class="w-full h-48 object-cover rounded-md mb-4">
+      <h3 class="text-xl font-semibold mb-2">Title 2</h3>
+      <p class="text-gray-600">Description for card 2...</p>
       <button class="mt-4 bg-primary text-white px-4 py-2 rounded-md">Details</button>
     </div>
     
-    <!-- Weitere Karten hier -->
+    <!-- More cards here -->
   </div>
 </div>
 ```
 
-Dieses Muster ist ideal für Produkt-Galerien, Blog-Beiträge oder andere Inhalte, die als Karten dargestellt werden sollen.
+This pattern is ideal for product galleries, blog posts, or other content that should be displayed as cards.
 
-### Masonry-ähnliches Layout
+### Masonry-like Layout
 
 ```html
 <div class="container-query">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="p-4 bg-light" style="grid-row: span 2;">Großes Element</div>
-    <div class="p-4 bg-light">Normales Element</div>
-    <div class="p-4 bg-light">Normales Element</div>
-    <div class="p-4 bg-light" style="grid-row: span 2;">Großes Element</div>
-    <div class="p-4 bg-light">Normales Element</div>
-    <div class="p-4 bg-light">Normales Element</div>
+    <div class="p-4 bg-light" style="grid-row: span 2;">Large item</div>
+    <div class="p-4 bg-light">Normal item</div>
+    <div class="p-4 bg-light">Normal item</div>
+    <div class="p-4 bg-light" style="grid-row: span 2;">Large item</div>
+    <div class="p-4 bg-light">Normal item</div>
+    <div class="p-4 bg-light">Normal item</div>
   </div>
 </div>
 ```
 
-Mit `grid-row: span X` können Sie ein Masonry-ähnliches Layout erstellen, bei dem einige Elemente mehr vertikalen Raum einnehmen als andere.
+With `grid-row: span X` you can create a Masonry-like layout where some elements take up more vertical space than others.
 
 ### Holy Grail Layout (Header, Footer, Sidebar, Content)
 
@@ -181,19 +181,19 @@ Mit `grid-row: span X` können Sie ein Masonry-ähnliches Layout erstellen, bei 
     Header
   </header>
   
-  <!-- Linke Seitenleiste -->
+  <!-- Left Sidebar -->
   <aside class="col-span-12 md:col-span-3 p-4 bg-light">
-    Linke Seitenleiste
+    Left Sidebar
   </aside>
   
-  <!-- Hauptinhalt -->
+  <!-- Main Content -->
   <main class="col-span-12 md:col-span-6 p-4 bg-white">
-    Hauptinhalt
+    Main Content
   </main>
   
-  <!-- Rechte Seitenleiste -->
+  <!-- Right Sidebar -->
   <aside class="col-span-12 md:col-span-3 p-4 bg-light">
-    Rechte Seitenleiste
+    Right Sidebar
   </aside>
   
   <!-- Footer -->
@@ -203,317 +203,223 @@ Mit `grid-row: span X` können Sie ein Masonry-ähnliches Layout erstellen, bei 
 </div>
 ```
 
-Dieses klassische "Holy Grail" Layout bietet einen Header, Footer, zwei Seitenleisten und einen Hauptinhalt. Auf mobilen Geräten stapeln sich alle Elemente, während auf größeren Bildschirmen die Seitenleisten neben dem Hauptinhalt angezeigt werden.
+This classic "Holy Grail" layout provides a header, footer, two sidebars, and main content. On mobile devices, all elements stack, while on larger screens the sidebars are displayed next to the main content.
 
-### Auto-Fit Grid für dynamische Inhalte
+### Auto-Fit Grid for Dynamic Content
 
 ```html
 <div class="container-query">
   <div class="grid grid-auto-fit gap-4">
-    <div class="p-4 bg-light">Element 1</div>
-    <div class="p-4 bg-light">Element 2</div>
-    <div class="p-4 bg-light">Element 3</div>
-    <div class="p-4 bg-light">Element 4</div>
-    <div class="p-4 bg-light">Element 5</div>
-    <div class="p-4 bg-light">Element 6</div>
+    <div class="p-4 bg-light">Item 1</div>
+    <div class="p-4 bg-light">Item 2</div>
+    <div class="p-4 bg-light">Item 3</div>
+    <div class="p-4 bg-light">Item 4</div>
+    <div class="p-4 bg-light">Item 5</div>
+    <div class="p-4 bg-light">Item 6</div>
   </div>
 </div>
 ```
 
-Die `grid-auto-fit` Klasse verwendet `grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))`, wodurch die Elemente automatisch in Zeilen umgebrochen werden, wenn der verfügbare Platz nicht ausreicht. Jedes Element hat eine Mindestbreite von 250px.
+The `grid-auto-fit` class uses `grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))`, which causes the elements to automatically wrap to new rows when the available space is insufficient. Each element has a minimum width of 250px.
 
-## Container + Grid Kombinationen
+## Container + Grid Combinations
 
-### Zentriertes Container-Grid
+### Centered Container Grid
 
 ```html
 <div class="container mx-auto px-4">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="p-4 bg-light">Spalte 1</div>
-    <div class="p-4 bg-light">Spalte 2</div>
-    <div class="p-4 bg-light">Spalte 3</div>
+    <div class="p-4 bg-light">Column 1</div>
+    <div class="p-4 bg-light">Column 2</div>
+    <div class="p-4 bg-light">Column 3</div>
   </div>
 </div>
 ```
 
-Die Kombination von `container` und `mx-auto` erzeugt ein zentriertes Grid mit einer maximalen Breite.
+The combination of `container` and `mx-auto` creates a centered grid with a maximum width.
 
-### Container mit verschiedenen Größen
+### Container with Different Sizes
 
 ```html
 <div class="container-sm mx-auto px-4">
-  <h2 class="text-xl mb-4">Schmaler Container (max 640px)</h2>
+  <h2 class="text-xl mb-4">Narrow container (max 640px)</h2>
   <div class="grid grid-cols-2 gap-4">
-    <div class="p-4 bg-light">Spalte 1</div>
-    <div class="p-4 bg-light">Spalte 2</div>
-  </div>
-</div>
-
-<div class="container-lg mx-auto px-4 mt-8">
-  <h2 class="text-xl mb-4">Breiter Container (max 1200px)</h2>
-  <div class="grid grid-cols-4 gap-4">
-    <div class="p-4 bg-light">Spalte 1</div>
-    <div class="p-4 bg-light">Spalte 2</div>
-    <div class="p-4 bg-light">Spalte 3</div>
-    <div class="p-4 bg-light">Spalte 4</div>
+    <div class="p-4 bg-light">Column 1</div>
+    <div class="p-4 bg-light">Column 2</div>
   </div>
 </div>
 ```
 
-Verwenden Sie verschiedene Container-Größen für unterschiedliche Inhaltsabschnitte.
+You can use container variants for different maximum widths:
+- `container-sm`: 640px
+- `container-md`: 768px
+- `container-lg`: 1024px
+- `container-xl`: 1280px
+- `container-2xl`: 1536px
 
-## Abstände und Ausrichtung im Grid
-
-### Verschiedene Abstände
-
-```html
-<h3 class="mb-2">Kleiner Abstand (gap-2)</h3>
-<div class="grid grid-cols-3 gap-2 mb-6">
-  <div class="p-2 bg-light">1</div>
-  <div class="p-2 bg-light">2</div>
-  <div class="p-2 bg-light">3</div>
-</div>
-
-<h3 class="mb-2">Mittlerer Abstand (gap-4)</h3>
-<div class="grid grid-cols-3 gap-4 mb-6">
-  <div class="p-2 bg-light">1</div>
-  <div class="p-2 bg-light">2</div>
-  <div class="p-2 bg-light">3</div>
-</div>
-
-<h3 class="mb-2">Großer Abstand (gap-8)</h3>
-<div class="grid grid-cols-3 gap-8">
-  <div class="p-2 bg-light">1</div>
-  <div class="p-2 bg-light">2</div>
-  <div class="p-2 bg-light">3</div>
-</div>
-```
-
-Experimentieren Sie mit verschiedenen Gap-Größen, um die beste visuelle Balance zu finden.
-
-### Unterschiedliche horizontale und vertikale Abstände
+### Container Query Layout
 
 ```html
-<div class="grid grid-cols-3 gap-x-4 gap-y-8">
-  <div class="p-4 bg-light">1</div>
-  <div class="p-4 bg-light">2</div>
-  <div class="p-4 bg-light">3</div>
-  <div class="p-4 bg-light">4</div>
-  <div class="p-4 bg-light">5</div>
-  <div class="p-4 bg-light">6</div>
-</div>
-```
-
-Mit `gap-x-*` und `gap-y-*` können Sie unterschiedliche Abstände horizontal und vertikal definieren.
-
-### Ausrichtung von Grid-Elementen
-
-```html
-<div class="grid grid-cols-3 gap-4 justify-items-center">
-  <div class="p-4 bg-light w-3/4">Zentriert (justify-items-center)</div>
-  <div class="p-4 bg-light w-3/4">Zentriert</div>
-  <div class="p-4 bg-light w-3/4">Zentriert</div>
-</div>
-
-<div class="grid grid-cols-3 gap-4 justify-items-end mt-6">
-  <div class="p-4 bg-light w-3/4">Rechts (justify-items-end)</div>
-  <div class="p-4 bg-light w-3/4">Rechts</div>
-  <div class="p-4 bg-light w-3/4">Rechts</div>
-</div>
-```
-
-Mit den Ausrichtungsklassen können Sie die Position der Grid-Elemente innerhalb ihrer Zellen steuern.
-
-## Praktische Anwendungsfälle
-
-### Blog-Layout
-
-```html
-<div class="container mx-auto px-4">
-  <header class="mb-8">
-    <h1 class="text-3xl font-bold">Mein Blog</h1>
-  </header>
-  
-  <div class="grid grid-cols-12 gap-8">
-    <!-- Hauptinhalt -->
-    <main class="col-span-12 lg:col-span-8">
-      <!-- Featured Post -->
-      <article class="mb-12 p-6 bg-white rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold mb-4">Featured Post Titel</h2>
-        <p class="text-gray-600 mb-4">Veröffentlicht am 01.01.2023</p>
-        <img src="featured.jpg" alt="Featured" class="w-full h-64 object-cover rounded-md mb-4">
-        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#" class="text-primary">Weiterlesen →</a>
-      </article>
-      
-      <!-- Reguläre Posts -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Post 1 -->
-        <article class="p-6 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-2">Post Titel 1</h3>
-          <p class="text-gray-600 mb-4">Veröffentlicht am 02.01.2023</p>
-          <img src="post1.jpg" alt="Post 1" class="w-full h-48 object-cover rounded-md mb-4">
-          <p class="mb-4">Kurze Beschreibung des Posts...</p>
-          <a href="#" class="text-primary">Weiterlesen →</a>
-        </article>
-        
-        <!-- Post 2 -->
-        <article class="p-6 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-2">Post Titel 2</h3>
-          <p class="text-gray-600 mb-4">Veröffentlicht am 03.01.2023</p>
-          <img src="post2.jpg" alt="Post 2" class="w-full h-48 object-cover rounded-md mb-4">
-          <p class="mb-4">Kurze Beschreibung des Posts...</p>
-          <a href="#" class="text-primary">Weiterlesen →</a>
-        </article>
-      </div>
-    </main>
-    
-    <!-- Seitenleiste -->
-    <aside class="col-span-12 lg:col-span-4">
-      <!-- Über mich -->
-      <div class="p-6 bg-white rounded-lg shadow-md mb-8">
-        <h3 class="text-xl font-bold mb-4">Über mich</h3>
-        <img src="profile.jpg" alt="Profilbild" class="w-24 h-24 rounded-full mx-auto mb-4">
-        <p>Kurze Beschreibung über den Autor...</p>
-      </div>
-      
-      <!-- Kategorien -->
-      <div class="p-6 bg-white rounded-lg shadow-md mb-8">
-        <h3 class="text-xl font-bold mb-4">Kategorien</h3>
-        <ul>
-          <li class="mb-2"><a href="#" class="text-primary">Technologie</a></li>
-          <li class="mb-2"><a href="#" class="text-primary">Reisen</a></li>
-          <li class="mb-2"><a href="#" class="text-primary">Kochen</a></li>
-          <li><a href="#" class="text-primary">Lifestyle</a></li>
-        </ul>
-      </div>
-      
-      <!-- Newsletter -->
-      <div class="p-6 bg-white rounded-lg shadow-md">
-        <h3 class="text-xl font-bold mb-4">Newsletter</h3>
-        <p class="mb-4">Abonnieren Sie meinen Newsletter für Updates.</p>
-        <form>
-          <input type="email" placeholder="Ihre E-Mail-Adresse" class="w-full p-2 mb-2 border rounded">
-          <button type="submit" class="w-full bg-primary text-white p-2 rounded">Abonnieren</button>
-        </form>
-      </div>
-    </aside>
+<div class="container-query mx-auto px-4">
+  <div class="grid grid-cols-1 @md:grid-cols-2 @lg:grid-cols-4 gap-4">
+    <div class="p-4 bg-light">Item 1</div>
+    <div class="p-4 bg-light">Item 2</div>
+    <div class="p-4 bg-light">Item 3</div>
+    <div class="p-4 bg-light">Item 4</div>
   </div>
 </div>
 ```
 
-Dieses komplexe Blog-Layout demonstriert die Kombination verschiedener Grid-Techniken für ein ansprechendes Design.
+The `container-query` class uses Container Queries to create responsive layouts based on the container size rather than the viewport size. This enables more flexible component-based responsiveness.
 
-### E-Commerce Produktraster
+## Grid with CSS Variables
+
+The Casoon UI grid system uses CSS variables for easy customization:
+
+```css
+:root {
+  --grid-columns: 12;              /* Default column count */
+  --grid-gap: 1rem;                /* Default gap */
+  --container-max-width: 1280px;   /* Maximum container width */
+  --container-padding: 1rem;       /* Container padding */
+}
+```
+
+These variables can be customized to adjust the grid system to your needs:
+
+```css
+/* In your custom CSS */
+:root {
+  --grid-columns: 24;              /* Increasing grid precision */
+  --grid-gap: 1.5rem;              /* Larger gaps between elements */
+  --container-max-width: 1440px;   /* Wider container */
+}
+```
+
+## Responsive Design Strategies
+
+### Mobile-First Approach
+
+The Casoon UI grid system follows the mobile-first principle. Start with the smallest device and enhance for larger screens:
 
 ```html
-<div class="container mx-auto px-4">
-  <h1 class="text-3xl font-bold mb-8">Unsere Produkte</h1>
-  
-  <!-- Filter- und Sortierleiste -->
-  <div class="flex flex-wrap items-center justify-between mb-6 p-4 bg-light rounded-lg">
-    <div class="flex items-center gap-4 mb-4 md:mb-0">
-      <span>Filter:</span>
-      <select class="p-2 border rounded">
-        <option>Alle Kategorien</option>
-        <option>Kategorie 1</option>
-        <option>Kategorie 2</option>
-      </select>
-    </div>
-    
-    <div class="flex items-center gap-4">
-      <span>Sortieren nach:</span>
-      <select class="p-2 border rounded">
-        <option>Beliebtheit</option>
-        <option>Preis: Niedrig zu Hoch</option>
-        <option>Preis: Hoch zu Niedrig</option>
-      </select>
-    </div>
-  </div>
-  
-  <!-- Produktraster -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-    <!-- Produkt 1 -->
-    <div class="p-4 bg-white rounded-lg shadow-md">
-      <div class="relative mb-4">
-        <span class="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-sm">Neu</span>
-        <img src="product1.jpg" alt="Produkt 1" class="w-full h-48 object-cover rounded-md">
-      </div>
-      <h3 class="text-lg font-semibold mb-2">Produkt 1</h3>
-      <div class="flex justify-between items-center mb-4">
-        <span class="text-lg font-bold">€99,99</span>
-        <div class="flex">
-          <span class="text-yellow-500">★★★★</span><span class="text-gray-300">★</span>
-        </div>
-      </div>
-      <button class="w-full bg-primary text-white p-2 rounded">In den Warenkorb</button>
-    </div>
-    
-    <!-- Weitere Produkte im gleichen Format -->
-    <!-- Produkt 2-8 (gleiche Struktur) -->
-  </div>
-  
-  <!-- Paginierung -->
-  <div class="flex justify-center mt-8">
-    <nav class="flex gap-2">
-      <a href="#" class="p-2 border rounded">Zurück</a>
-      <a href="#" class="p-2 border rounded bg-primary text-white">1</a>
-      <a href="#" class="p-2 border rounded">2</a>
-      <a href="#" class="p-2 border rounded">3</a>
-      <a href="#" class="p-2 border rounded">Weiter</a>
-    </nav>
-  </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  <!-- Grid starts with one column and expands to more as screen size increases -->
 </div>
 ```
 
-Dieses E-Commerce-Layout zeigt ein responsives Produktraster mit Filtern und Paginierung.
+### Breakpoints System
 
-## Best Practices für Grid-Layouts
+Standard breakpoints:
+- `sm`: 30rem (480px)
+- `md`: 48rem (768px)
+- `lg`: 62rem (992px)
+- `xl`: 80rem (1280px)
+- `2xl`: 96rem (1536px)
 
-1. **Mobile-First-Ansatz**: Beginnen Sie mit dem Layout für kleine Bildschirme und erweitern Sie es dann für größere Bildschirme. Diese Strategie sorgt für bessere Performance auf mobilen Geräten und vereinfacht die progressive Enhancement des Layouts. Beispiel:
-   ```html
-   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-     <!-- Elemente starten als einspaltiges Layout und erweitern sich stufenweise -->
-   </div>
-   ```
+### Container Queries vs. Media Queries
 
-2. **Konsistente Abstände**: Verwenden Sie das Spacing-System mit den vordefinierten gap-* Klassen für konsistente Abstände.
-
-3. **Container-Queries nutzen**: Bevorzugen Sie Container-Queries für responsive Layouts, die auf die Container-Größe reagieren statt auf die Viewport-Größe.
-
-4. **12-Spalten-System für komplexe Layouts**: Das 12-Spalten-System bietet mehr Flexibilität für komplexe Layouts als einfache 2-, 3- oder 4-spaltige Raster.
-
-5. **Vermeiden Sie zu viele verschachtelte Grids**: Zu viele verschachtelte Grids können die Performance beeinträchtigen und die Wartbarkeit erschweren.
-
-6. **Semantisches HTML verwenden**: Nutzen Sie semantische HTML-Elemente wie `<header>`, `<main>`, `<aside>` und `<footer>` in Ihren Grid-Layouts.
-
-7. **Grid mit Flexbox kombinieren**: Verwenden Sie Grid für das übergeordnete Layout und Flexbox für die Ausrichtung innerhalb der einzelnen Grid-Zellen.
-
-8. **Grid-Bereiche für komplexe Layouts**: Für sehr komplexe Layouts können Grid-Bereiche mit `grid-template-areas` hilfreicher sein als `col-span` und `row-span`.
-
-9. **Achten Sie auf Browser-Kompatibilität**: CSS Grid wird von allen modernen Browsern unterstützt, kann aber in älteren Browsern Probleme verursachen.
-
-10. **Performance-Optimierung**: Vermeiden Sie zu viele dynamische Änderungen am Grid-Layout, da dies die Performance beeinträchtigen kann. 
-
-## Integration des Spacing-Systems mit Container-Queries
-
-Die Kombination aus Container-Queries und dem Spacing-System der Casoon UI Library ermöglicht hochgradig anpassungsfähige Layouts, die auf intelligente Weise auf verfügbaren Platz reagieren:
+Container Queries allow for more flexible, component-based responsive design:
 
 ```html
+<!-- Container Query based grid -->
 <div class="container-query">
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 md:gap-6">
-    <!-- Die Abstände zwischen den Grid-Elementen wachsen mit der Container-Größe -->
-    <div class="p-2 sm:p-4 bg-light">
-      <!-- Auch Innenabstände können responsiv angepasst werden -->
-      <h3 class="mb-1 sm:mb-2">Überschrift</h3>
-      <p>Inhalt, der mehr Platz bekommt, wenn der Container wächst</p>
-    </div>
-    <div class="p-2 sm:p-4 bg-light">
-      <h3 class="mb-1 sm:mb-2">Überschrift</h3>
-      <p>Inhalt, der mehr Platz bekommt, wenn der Container wächst</p>
-    </div>
+  <div class="grid grid-cols-1 @md:grid-cols-2 @lg:grid-cols-3">
+    <!-- Responds to container size -->
   </div>
+</div>
+
+<!-- Media Query based grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+  <!-- Responds to viewport size -->
 </div>
 ```
 
-Dieses Beispiel zeigt, wie sowohl Grid-Abstände (gaps) als auch Innenabstände (padding) und Außenabstände (margin) basierend auf der Container-Größe skaliert werden können. Diese Technik ist besonders nützlich für wiederverwendbare Komponenten, die in verschiedenen Layout-Kontexten funktionieren müssen. 
+Use Container Queries for components that are used in different contexts, and Media Queries for global layout.
+
+## Best Practices
+
+### Performance
+
+- Avoid overly complex nested grids
+- Utilize the dense grid placement algorithm when appropriate
+- Use `will-change` sparingly for animations
+- Consider using the `content-visibility` property for large grids that extend beyond the viewport
+
+### Accessibility
+
+- Ensure logical tab order for keyboard navigation
+- Maintain proper heading hierarchy in grid layouts
+- Test grid layouts with screen readers
+- Ensure sufficient color contrast
+
+### Responsive Behavior
+
+- Test layouts on real devices
+- Don't rely solely on the 12-column grid - use auto-fit for more flexible layouts
+- Consider the differences between viewport sizes and device capabilities
+- Use fluid typography that scales with the layout
+
+### Maintainability
+
+- Use semantic class names
+- Create reusable grid patterns with CSS variables
+- Document your grid structure
+- Create component libraries based on the grid system
+
+## Advanced Techniques
+
+### Subgrid (for browsers that support it)
+
+```html
+<div class="grid grid-cols-3">
+  <div class="col-span-2 grid grid-cols-subgrid">
+    <!-- Subgrid inherits columns from parent -->
+    <div>Item in subgrid column 1</div>
+    <div>Item in subgrid column 2</div>
+  </div>
+  <div>Third column</div>
+</div>
+```
+
+### Grid Areas
+
+```html
+<div class="grid grid-areas-layout gap-4">
+  <header class="grid-area-header p-4 bg-primary text-white">Header</header>
+  <nav class="grid-area-sidebar p-4 bg-light">Sidebar</nav>
+  <main class="grid-area-content p-4 bg-white">Content</main>
+  <footer class="grid-area-footer p-4 bg-dark text-white">Footer</footer>
+</div>
+
+<style>
+  .grid-areas-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    min-height: 100vh;
+  }
+  
+  .grid-area-header { grid-area: header; }
+  .grid-area-sidebar { grid-area: sidebar; }
+  .grid-area-content { grid-area: content; }
+  .grid-area-footer { grid-area: footer; }
+  
+  @media (max-width: 768px) {
+    .grid-areas-layout {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    }
+  }
+</style>
+```
+
+This approach uses named grid areas for more readable and maintainable layouts. 
