@@ -5,9 +5,9 @@ category: Components
 
 # Chip
 
-Die Chip-Komponente ist ein kompaktes Element, das Informationen, Attribute oder Aktionen repräsentiert. Chips ermöglichen Benutzern, Informationen zu erfassen, Filter anzuwenden, Auswahlmöglichkeiten zu treffen oder Aktionen auszulösen.
+The Chip component is a compact element that represents information, attributes, or actions. Chips enable users to capture information, apply filters, make selections, or trigger actions.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="chip">
@@ -15,76 +15,76 @@ Die Chip-Komponente ist ein kompaktes Element, das Informationen, Attribute oder
 </div>
 ```
 
-## Module importieren
+## Importing Modules
 
 ```css
-/* Notwendige Abhängigkeit */
+/* Required dependency */
 @import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* oder ein anderes Theme */
+@import 'casoon-ui-lib/themes/day.css'; /* or another theme */
 
-/* Chip-Modul */
+/* Chip module */
 @import 'casoon-ui-lib/modules/chip.module.css';
 ```
 
-## Varianten
+## Variants
 
-### Standard-Chip
-
-```html
-<div class="chip">
-  <span class="chip__text">Standard-Chip</span>
-</div>
-```
-
-### Chip mit Schließen-Button
+### Standard Chip
 
 ```html
 <div class="chip">
-  <span class="chip__text">Schließbar</span>
-  <button class="chip__close" aria-label="Entfernen">×</button>
+  <span class="chip__text">Standard Chip</span>
 </div>
 ```
 
-### Chip mit Icon
+### Chip with Close Button
 
 ```html
 <div class="chip">
-  <span class="chip__icon">🏷️</span>
-  <span class="chip__text">Mit Icon</span>
+  <span class="chip__text">Closable</span>
+  <button class="chip__close" aria-label="Remove">×</button>
 </div>
 ```
 
-### Chip mit Icon und Schließen-Button
+### Chip with Icon
 
 ```html
 <div class="chip">
   <span class="chip__icon">🏷️</span>
-  <span class="chip__text">Vollständig</span>
-  <button class="chip__close" aria-label="Entfernen">×</button>
+  <span class="chip__text">With Icon</span>
 </div>
 ```
 
-### Chip-Farben
+### Chip with Icon and Close Button
+
+```html
+<div class="chip">
+  <span class="chip__icon">🏷️</span>
+  <span class="chip__text">Complete</span>
+  <button class="chip__close" aria-label="Remove">×</button>
+</div>
+```
+
+### Chip Colors
 
 ```html
 <div class="chip chip--primary">
-  <span class="chip__text">Primär</span>
+  <span class="chip__text">Primary</span>
 </div>
 
 <div class="chip chip--secondary">
-  <span class="chip__text">Sekundär</span>
+  <span class="chip__text">Secondary</span>
 </div>
 
 <div class="chip chip--success">
-  <span class="chip__text">Erfolg</span>
+  <span class="chip__text">Success</span>
 </div>
 
 <div class="chip chip--warning">
-  <span class="chip__text">Warnung</span>
+  <span class="chip__text">Warning</span>
 </div>
 
 <div class="chip chip--error">
-  <span class="chip__text">Fehler</span>
+  <span class="chip__text">Error</span>
 </div>
 
 <div class="chip chip--info">
@@ -92,23 +92,23 @@ Die Chip-Komponente ist ein kompaktes Element, das Informationen, Attribute oder
 </div>
 ```
 
-### Outline-Chips
+### Outline Chips
 
 ```html
 <div class="chip chip--outline chip--primary">
-  <span class="chip__text">Primär Outline</span>
+  <span class="chip__text">Primary Outline</span>
 </div>
 
 <div class="chip chip--outline chip--secondary">
-  <span class="chip__text">Sekundär Outline</span>
+  <span class="chip__text">Secondary Outline</span>
 </div>
 ```
 
-### Größen
+### Sizes
 
 ```html
 <div class="chip chip--sm">
-  <span class="chip__text">Klein</span>
+  <span class="chip__text">Small</span>
 </div>
 
 <div class="chip">
@@ -116,23 +116,23 @@ Die Chip-Komponente ist ein kompaktes Element, das Informationen, Attribute oder
 </div>
 
 <div class="chip chip--lg">
-  <span class="chip__text">Groß</span>
+  <span class="chip__text">Large</span>
 </div>
 ```
 
-### Abgerundete oder Pill-Form
+### Rounded or Pill Shape
 
 ```html
 <div class="chip chip--rounded">
-  <span class="chip__text">Abgerundet</span>
+  <span class="chip__text">Rounded</span>
 </div>
 
 <div class="chip chip--pill">
-  <span class="chip__text">Pill-Form</span>
+  <span class="chip__text">Pill Shape</span>
 </div>
 ```
 
-## Chip-Gruppe
+## Chip Group
 
 ```html
 <div class="chip-group">
@@ -148,19 +148,19 @@ Die Chip-Komponente ist ein kompaktes Element, das Informationen, Attribute oder
 </div>
 ```
 
-## Interaktive Chips
+## Interactive Chips
 
-Für interaktive Chips können Sie eines der folgenden Muster verwenden:
+For interactive chips, you can use one of the following patterns:
 
-### Als Button
+### As Button
 
 ```html
 <button class="chip chip--interactive">
-  <span class="chip__text">Klickbar</span>
+  <span class="chip__text">Clickable</span>
 </button>
 ```
 
-### Als Link
+### As Link
 
 ```html
 <a href="#" class="chip chip--interactive">
@@ -168,16 +168,16 @@ Für interaktive Chips können Sie eines der folgenden Muster verwenden:
 </a>
 ```
 
-### Als Checkbox
+### As Checkbox
 
 ```html
 <label class="chip chip--checkbox">
   <input type="checkbox" class="chip__input">
-  <span class="chip__text">Option auswählen</span>
+  <span class="chip__text">Select Option</span>
 </label>
 ```
 
-### Als Radio-Button
+### As Radio Button
 
 ```html
 <div class="chip-group chip-group--radio">
@@ -192,9 +192,9 @@ Für interaktive Chips können Sie eines der folgenden Muster verwenden:
 </div>
 ```
 
-## CSS-Variablen
+## CSS Variables
 
-Die Chip-Komponente verwendet folgende CSS-Variablen, die Sie anpassen können:
+The Chip component uses the following CSS variables that you can customize:
 
 ```css
 :root {
@@ -240,11 +240,11 @@ Die Chip-Komponente verwendet folgende CSS-Variablen, die Sie anpassen können:
 }
 ```
 
-## JavaScript-Funktionalität
+## JavaScript Functionality
 
-### Schließbare Chips
+### Closable Chips
 
-Fügen Sie JavaScript hinzu, um schließbare Chips zu implementieren:
+Add JavaScript to implement closable chips:
 
 ```js
 document.querySelectorAll('.chip__close').forEach(button => {
@@ -257,41 +257,41 @@ document.querySelectorAll('.chip__close').forEach(button => {
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie `aria-label` für Buttons ohne sichtbaren Text
-- Stellen Sie sicher, dass interaktive Chips ausreichenden Kontrast haben
-- Bieten Sie alternative Interaktionsmöglichkeiten für Tastaturbenutzer
-- Fügen Sie Focus-Styles für Tastaturbedienung hinzu
+- Use `aria-label` for buttons without visible text
+- Ensure interactive chips have sufficient contrast
+- Offer alternative interaction options for keyboard users
+- Add Focus-Styles for keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten für Größen
-- Stellen Sie sicher, dass Chip-Gruppen auf kleinen Bildschirmen gut funktionieren
-- Erwägen Sie das Umbrechen von Chip-Gruppen auf mobilen Geräten
+- Use relative units for sizes
+- Ensure chip groups work well on small screens
+- Consider wrapping chip groups on mobile devices
 
-## Anwendungsbeispiele
+## Application Examples
 
-### Filter-Chips
+### Filter Chips
 
 ```html
 <div class="filter">
   <label class="filter__label">Filter:</label>
   <div class="chip-group">
     <div class="chip chip--interactive chip--active">
-      <span class="chip__text">Alle</span>
+      <span class="chip__text">All</span>
     </div>
     <div class="chip chip--interactive">
-      <span class="chip__text">Verfügbar</span>
+      <span class="chip__text">Available</span>
     </div>
     <div class="chip chip--interactive">
-      <span class="chip__text">Ausverkauft</span>
+      <span class="chip__text">Sold Out</span>
     </div>
   </div>
 </div>
 ```
 
-### Tag-Liste
+### Tag List
 
 ```html
 <div class="tags">
@@ -299,105 +299,105 @@ document.querySelectorAll('.chip__close').forEach(button => {
   <div class="chip-group">
     <div class="chip">
       <span class="chip__text">JavaScript</span>
-      <button class="chip__close" aria-label="JavaScript entfernen">×</button>
+      <button class="chip__close" aria-label="Remove JavaScript">×</button>
     </div>
     <div class="chip">
       <span class="chip__text">CSS</span>
-      <button class="chip__close" aria-label="CSS entfernen">×</button>
+      <button class="chip__close" aria-label="Remove CSS">×</button>
     </div>
     <div class="chip">
       <span class="chip__text">HTML</span>
-      <button class="chip__close" aria-label="HTML entfernen">×</button>
+      <button class="chip__close" aria-label="Remove HTML">×</button>
     </div>
   </div>
 </div>
 ```
 
-## Beispiel
+## Example
 
 ```html
-<span class="chip">Basis-Chip</span>
+<span class="chip">Basic Chip</span>
 ```
 
-## Chip-Varianten
+## Chip Variants
 
-### Standard-Chip
+### Standard Chip
 
 ```html
 <span class="chip">Standard</span>
 ```
 
-### Primär-Chip
+### Primary Chip
 
 ```html
-<span class="chip chip-primary">Primär</span>
+<span class="chip chip-primary">Primary</span>
 ```
 
-### Sekundär-Chip
+### Secondary Chip
 
 ```html
-<span class="chip chip-secondary">Sekundär</span>
+<span class="chip chip-secondary">Secondary</span>
 ```
 
-### Success-Chip
+### Success Chip
 
 ```html
-<span class="chip chip-success">Erfolg</span>
+<span class="chip chip-success">Success</span>
 ```
 
-### Warning-Chip
+### Warning Chip
 
 ```html
-<span class="chip chip-warning">Warnung</span>
+<span class="chip chip-warning">Warning</span>
 ```
 
-### Error-Chip
+### Error Chip
 
 ```html
-<span class="chip chip-error">Fehler</span>
+<span class="chip chip-error">Error</span>
 ```
 
-### Info-Chip
+### Info Chip
 
 ```html
 <span class="chip chip-info">Info</span>
 ```
 
-## Chips mit Icons
+## Chips with Icons
 
 ```html
 <span class="chip">
   <span class="chip-icon"><span class="icon icon-user"></span></span>
-  Benutzer
+  User
 </span>
 
 <span class="chip chip-success">
   <span class="chip-icon"><span class="icon icon-check"></span></span>
-  Bestätigt
+  Approved
 </span>
 ```
 
-## Auswählbare Chips
+## Selectable Chips
 
 ```html
 <span class="chip chip-selectable">
   <input type="checkbox" id="chip1" class="chip-input">
-  <label for="chip1" class="chip-label">Auswählbar</label>
+  <label for="chip1" class="chip-label">Selectable</label>
 </span>
 ```
 
-## Löschbare Chips
+## Deletable Chips
 
 ```html
 <span class="chip">
-  Löschbar
-  <button class="chip-delete" aria-label="Entfernen">
+  Deletable
+  <button class="chip-delete" aria-label="Remove">
     <span class="icon icon-close"></span>
   </button>
 </span>
 ```
 
-## Chips mit Avataren
+## Chips with Avatars
 
 ```html
 <span class="chip">
@@ -406,7 +406,7 @@ document.querySelectorAll('.chip__close').forEach(button => {
 </span>
 ```
 
-## Chips mit Status
+## Chips with Status
 
 ```html
 <span class="chip">
@@ -420,7 +420,7 @@ document.querySelectorAll('.chip__close').forEach(button => {
 </span>
 ```
 
-## Chip-Gruppen
+## Chip Groups
 
 ```html
 <div class="chip-group">
@@ -430,50 +430,50 @@ document.querySelectorAll('.chip__close').forEach(button => {
 </div>
 ```
 
-## Chips im Grid-Layout
+## Chips in Grid Layout
 
 ```vue
 <Grid columns="3">
-  <Card title="Benutzer-Tags">
+  <Card title="User Tags">
     <div class="chip-group">
       <span class="chip chip-primary">
         <span class="chip-avatar">JD</span>
         John Doe
-        <button class="chip-delete" aria-label="Entfernen">
+        <button class="chip-delete" aria-label="Remove">
           <span class="icon icon-close"></span>
         </button>
       </span>
       <span class="chip chip-primary">
         <span class="chip-avatar">AS</span>
         Anna Smith
-        <button class="chip-delete" aria-label="Entfernen">
+        <button class="chip-delete" aria-label="Remove">
           <span class="icon icon-close"></span>
         </button>
       </span>
-      <Button size="small">Hinzufügen</Button>
+      <Button size="small">Add</Button>
     </div>
   </Card>
-  <Card title="Projekt-Tags">
+  <Card title="Project Tags">
     <div class="chip-group">
       <span class="chip chip-secondary">Frontend</span>
       <span class="chip chip-secondary">Backend</span>
       <span class="chip chip-secondary">API</span>
-      <Button size="small">Mehr</Button>
+      <Button size="small">More</Button>
     </div>
   </Card>
   <Card title="Status">
     <div class="chip-group">
-      <span class="chip chip-success">Abgeschlossen</span>
-      <span class="chip chip-warning">In Bearbeitung</span>
-      <span class="chip chip-error">Blockiert</span>
-      <span class="chip chip-info">Geplant</span>
+      <span class="chip chip-success">Completed</span>
+      <span class="chip chip-warning">In Progress</span>
+      <span class="chip chip-error">Blocked</span>
+      <span class="chip chip-info">Planned</span>
     </div>
-    <Button>Status ändern</Button>
+    <Button>Change Status</Button>
   </Card>
 </Grid>
 ```
 
-## Anpassbare Chips
+## Customizable Chips
 
 ```vue
 <Grid columns="2">
@@ -481,54 +481,54 @@ document.querySelectorAll('.chip__close').forEach(button => {
     <div class="chip-group">
       <span class="chip chip-selectable">
         <input type="checkbox" id="filter1" class="chip-input" checked>
-        <label for="filter1" class="chip-label">Alle</label>
+        <label for="filter1" class="chip-label">All</label>
       </span>
       <span class="chip chip-selectable">
         <input type="checkbox" id="filter2" class="chip-input">
-        <label for="filter2" class="chip-label">Ungelesen</label>
+        <label for="filter2" class="chip-label">Unread</label>
       </span>
       <span class="chip chip-selectable">
         <input type="checkbox" id="filter3" class="chip-input">
-        <label for="filter3" class="chip-label">Favoriten</label>
+        <label for="filter3" class="chip-label">Favorites</label>
       </span>
     </div>
-    <Button>Filter anwenden</Button>
+    <Button>Apply Filter</Button>
   </Card>
-  <Card title="Benachrichtigungen">
+  <Card title="Notifications">
     <div class="chip-group">
       <span class="chip">
         <span class="chip-status chip-status-online"></span>
         System
-        <button class="chip-delete" aria-label="Entfernen">
+        <button class="chip-delete" aria-label="Remove">
           <span class="icon icon-close"></span>
         </button>
       </span>
       <span class="chip">
         <span class="chip-status chip-status-offline"></span>
         Updates
-        <button class="chip-delete" aria-label="Entfernen">
+        <button class="chip-delete" aria-label="Remove">
           <span class="icon icon-close"></span>
         </button>
       </span>
     </div>
-    <Button>Einstellungen</Button>
+    <Button>Settings</Button>
   </Card>
 </Grid>
 ```
 
 ## Props
 
-| Name       | Typ     | Standard | Beschreibung                                      |
+| Name       | Type    | Default  | Description                                       |
 |------------|---------|----------|---------------------------------------------------|
-| variant    | String  | 'default'| Chip-Variante: 'primary', 'secondary', etc.       |
-| selectable | Boolean | false    | Ob der Chip auswählbar ist                        |
-| deletable  | Boolean | false    | Ob der Chip löschbar ist                          |
-| disabled   | Boolean | false    | Ob der Chip deaktiviert ist                       |
-| icon       | String  | null     | Name des zu verwendenden Icons                    |
-| avatar     | String  | null     | Text für den Avatar (max. 2 Zeichen)              |
-| status     | String  | null     | Status-Typ: 'online', 'offline', etc.             |
+| variant    | String  | 'default'| Chip variant: 'primary', 'secondary', etc.       |
+| selectable | Boolean | false    | Whether the chip is selectable                      |
+| deletable  | Boolean | false    | Whether the chip is deletable                        |
+| disabled   | Boolean | false    | Whether the chip is disabled                         |
+| icon       | String  | null     | Name of the icon to use                              |
+| avatar     | String  | null     | Text for the avatar (max. 2 characters)              |
+| status     | String  | null     | Status type: 'online', 'offline', etc.              |
 
-## CSS-Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -573,9 +573,9 @@ document.querySelectorAll('.chip__close').forEach(button => {
 
 ## Best Practices
 
-- Verwenden Sie Chips zur Darstellung von Attributen, Tags oder Filtern
-- Halten Sie den Inhalt von Chips kurz und prägnant
-- Bei löschbaren Chips sollte der Lösch-Button ausreichend groß für einfache Bedienung sein
-- Gruppieren Sie zusammengehörige Chips in Chip-Gruppen
-- Verwenden Sie die verschiedenen Varianten, um Bedeutung zu vermitteln
-- Stellen Sie sicher, dass Chips ausreichenden Kontrast für gute Lesbarkeit bieten 
+- Use Chips to represent attributes, tags, or filters
+- Keep chip content short and concise
+- For deletable chips, the delete button should be large enough for easy use
+- Group related chips in chip groups
+- Use different variants to convey meaning
+- Ensure chips have sufficient contrast for good readability 

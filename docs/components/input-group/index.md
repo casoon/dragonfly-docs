@@ -1,47 +1,47 @@
 ---
 title: Input Group
-category: Komponenten
+category: Components
 ---
 
 # Input Group
 
-Die Input Group-Komponente ermöglicht die Kombination von Eingabefeldern mit zusätzlichen Elementen wie Präfixen, Suffixen, Labels oder Buttons.
+The Input Group component allows combining input fields with additional elements such as prefixes, suffixes, labels, or buttons.
 
-## CSS-Import
+## CSS Import
 
-Die Input Group-Komponente wird automatisch mit der `core.css` importiert:
+The Input Group component is automatically imported with the `core.css`:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Alternativ können Sie die Komponente auch direkt importieren:
+Alternatively, you can import the component directly:
 
 ```css
 @import "@casoon/ui-lib/modules/input-group.module.css" layer(module-input-group);
 ```
 
-## Basis-Verwendung
+## Basic Usage
 
-### Input mit Präfix
+### Input with Prefix
 
 ```html
 <div class="input-group">
   <span class="input-group__prefix">@</span>
-  <input type="text" class="input" placeholder="Benutzername">
+  <input type="text" class="input" placeholder="Username">
 </div>
 ```
 
-### Input mit Suffix
+### Input with Suffix
 
 ```html
 <div class="input-group">
-  <input type="text" class="input" placeholder="Preis">
+  <input type="text" class="input" placeholder="Price">
   <span class="input-group__suffix">€</span>
 </div>
 ```
 
-### Input mit Präfix und Suffix
+### Input with Prefix and Suffix
 
 ```html
 <div class="input-group">
@@ -51,33 +51,33 @@ Alternativ können Sie die Komponente auch direkt importieren:
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Mit Button
+### With Button
 
 ```html
 <div class="input-group">
-  <input type="text" class="input" placeholder="Suche...">
-  <button class="btn btn--primary input-group__button">Suchen</button>
+  <input type="text" class="input" placeholder="Search...">
+  <button class="btn btn--primary input-group__button">Search</button>
 </div>
 ```
 
-### Mit Icon
+### With Icon
 
 ```html
 <div class="input-group">
   <span class="input-group__prefix">
     <span class="feather-search"></span>
   </span>
-  <input type="text" class="input" placeholder="Suche...">
+  <input type="text" class="input" placeholder="Search...">
 </div>
 ```
 
-### Mit Select
+### With Select
 
 ```html
 <div class="input-group">
-  <input type="text" class="input" placeholder="Betrag">
+  <input type="text" class="input" placeholder="Amount">
   <select class="select input-group__select">
     <option>EUR</option>
     <option>USD</option>
@@ -86,14 +86,14 @@ Alternativ können Sie die Komponente auch direkt importieren:
 </div>
 ```
 
-## Größenvarianten
+## Size Variants
 
-### Klein
+### Small
 
 ```html
 <div class="input-group input-group--sm">
   <span class="input-group__prefix">@</span>
-  <input type="text" class="input input--sm" placeholder="Benutzername">
+  <input type="text" class="input input--sm" placeholder="Username">
 </div>
 ```
 
@@ -102,56 +102,56 @@ Alternativ können Sie die Komponente auch direkt importieren:
 ```html
 <div class="input-group">
   <span class="input-group__prefix">@</span>
-  <input type="text" class="input" placeholder="Benutzername">
+  <input type="text" class="input" placeholder="Username">
 </div>
 ```
 
-### Groß
+### Large
 
 ```html
 <div class="input-group input-group--lg">
   <span class="input-group__prefix">@</span>
-  <input type="text" class="input input--lg" placeholder="Benutzername">
+  <input type="text" class="input input--lg" placeholder="Username">
 </div>
 ```
 
-## Zustände
+## States
 
-### Fehler
+### Error
 
 ```html
 <div class="input-group input-group--error">
-  <input type="email" class="input input--error" value="ungültige-email">
+  <input type="email" class="input input--error" value="invalid-email">
   <span class="input-group__suffix input-group__suffix--error">
     <span class="feather-alert-circle"></span>
   </span>
 </div>
-<div class="input-error-message">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+<div class="input-error-message">Please enter a valid email address.</div>
 ```
 
-### Erfolgreich
+### Success
 
 ```html
 <div class="input-group input-group--success">
-  <input type="email" class="input input--success" value="name@beispiel.de">
+  <input type="email" class="input input--success" value="name@example.com">
   <span class="input-group__suffix input-group__suffix--success">
     <span class="feather-check"></span>
   </span>
 </div>
 ```
 
-### Deaktiviert
+### Disabled
 
 ```html
 <div class="input-group input-group--disabled">
   <span class="input-group__prefix">@</span>
-  <input type="text" class="input" placeholder="Benutzername" disabled>
+  <input type="text" class="input" placeholder="Username" disabled>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Input Group-Komponente kann über CSS-Variablen angepasst werden:
+The Input Group component can be customized using CSS variables:
 
 ```css
 @layer module-input-group {
@@ -164,19 +164,19 @@ Die Input Group-Komponente kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für bessere Zugänglichkeit:
+For better accessibility:
 
-- Verbinden Sie immer ein Label mit dem Eingabefeld (via `for`-Attribut)
-- Verwenden Sie `aria-describedby` für Fehlermeldungen oder Hinweise
-- Stellen Sie sicher, dass der Kontrast zwischen Text und Hintergrund ausreichend ist
-- Geben Sie bei Fehleingaben klare Anleitungen zur Korrektur
+- Always connect a label to the input field (via `for` attribute)
+- Use `aria-describedby` for error messages or hints
+- Ensure sufficient contrast between text and background
+- Provide clear guidance for error correction
 
 ## Best Practices
 
-- Verwenden Sie Input Groups für zusammengehörige Eingabeelemente
-- Halten Sie Präfixe und Suffixe kurz und klar
-- Nutzen Sie Icons zur visuellen Unterstützung
-- Stellen Sie sicher, dass alle Elemente einer Input Group visuell zusammengehörig wirken
-- Vermeiden Sie zu viele Elemente in einer einzelnen Input Group 
+- Use Input Groups for related input elements
+- Keep prefixes and suffixes short and clear
+- Use icons for visual support
+- Ensure all elements of an Input Group appear visually connected
+- Avoid too many elements in a single Input Group 

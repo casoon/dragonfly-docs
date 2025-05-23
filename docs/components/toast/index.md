@@ -1,40 +1,40 @@
 # Toast
 
-Die Toast-Komponente der Casoon UI Library bietet temporäre Benachrichtigungen, die nach einer bestimmten Zeit automatisch verschwinden.
+The Toast component of the Casoon UI Library provides temporary notifications that automatically disappear after a certain time.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="toast toast--success">
-  Erfolgsmeldung
+  Success message
 </div>
 <div class="toast toast--error">
-  Fehlermeldung
+  Error message
 </div>
 <div class="toast toast--warning">
-  Warnmeldung
+  Warning message
 </div>
 <div class="toast toast--info">
-  Informationsmeldung
+  Information message
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Mit Icon
+### With Icon
 
 ```html
 <div class="toast toast--success">
   <span class="toast__icon">✓</span>
-  <span class="toast__content">Erfolgsmeldung mit Icon</span>
+  <span class="toast__content">Success message with icon</span>
 </div>
 ```
 
-### Mit Fortschrittsbalken
+### With Progress Bar
 
 ```html
 <div class="toast toast--info">
-  <span class="toast__content">Meldung mit Fortschrittsbalken</span>
+  <span class="toast__content">Message with progress bar</span>
   <div class="toast__progress"></div>
 </div>
 ```
@@ -46,7 +46,7 @@ Die Toast-Komponente der Casoon UI Library bietet temporäre Benachrichtigungen,
 ```astro
 ---
 import 'casoon-ui-lib/core.css';
-import 'casoon-ui-lib/themes/day.css'; // oder ein anderes Theme
+import 'casoon-ui-lib/themes/day.css'; // or another theme
 
 interface Props {
   variant?: 'success' | 'error' | 'warning' | 'info';
@@ -161,7 +161,7 @@ const {
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
@@ -169,17 +169,17 @@ import Toast from '../components/Toast.astro';
 ---
 
 <Toast variant="success" duration={5000}>
-  Die Operation war erfolgreich!
+  The operation was successful!
 </Toast>
 
 <Toast variant="error" showProgress={false}>
-  Ein Fehler ist aufgetreten.
+  An error occurred.
 </Toast>
 ```
 
-### Toast Manager für Astro
+### Toast Manager for Astro
 
-Für eine bessere Verwaltung mehrerer Toasts können Sie einen Toast Manager erstellen:
+For better management of multiple toasts, you can create a Toast Manager:
 
 ```astro
 ---
@@ -197,7 +197,7 @@ const toasts: Toast[] = [
   {
     id: '1',
     type: 'success',
-    message: 'Erfolgreich gespeichert!',
+    message: 'Successfully saved!',
     position: 'top-right',
     duration: 3000
   }
@@ -233,112 +233,115 @@ const toasts: Toast[] = [
     z-index: 1000;
   }
   
-  /* Weitere Styles wie oben */
+  /* Additional styles as above */
 </style>
 ```
 
 ### React
 
 ```jsx
+import React, { useState, useEffect } from 'react';
 import 'casoon-ui-lib/modules/toast.module.css';
 
-function Toast({ children, type = 'info', position = 'top-right', onClose }) {
+function Toast({ children, type = 'info', position = 'top-right', duration = 3000, onClose }) {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(false);
+      if (onClose) {
+        onClose();
+      }
+    }, duration);
+
+    return () => clearTimeout(timer);
+  }, [duration, onClose]);
+
+  if (!visible) return null;
+
   return (
     <div className={`toast toast--${type} toast--${position}`}>
       <div className="toast__content">
         {children}
       </div>
-      {onClose && (
-        <button className="toast__close" onClick={onClose}>&times;</button>
-      )}
+      <button className="toast__close" onClick={() => setVisible(false)}>
+        &times;
+      </button>
+      <div className="toast__progress"></div>
     </div>
+  );
+}
+
+export default Toast;
+```
+
+### Toast Context for React
+
+```jsx
+import React, { createContext, useContext, useState } from 'react';
+import Toast from './Toast';
+
+const ToastContext = createContext();
+
+export function ToastProvider({ children }) {
+  const [toasts, setToasts] = useState([]);
+
+  const addToast = (message, type = 'info', duration = 3000) => {
+    const id = Math.random().toString(36).substr(2, 9);
+    setToasts([...toasts, { id, message, type, duration }]);
+  };
+
+  const removeToast = (id) => {
+    setToasts(toasts.filter(toast => toast.id !== id));
+  };
+
+  return (
+    <ToastContext.Provider value={{ addToast }}>
+      {children}
+      <div className="toast-container">
+        {toasts.map((toast) => (
+          <Toast
+            key={toast.id}
+            type={toast.type}
+            duration={toast.duration}
+            onClose={() => removeToast(toast.id)}
+          >
+            {toast.message}
+          </Toast>
+        ))}
+      </div>
+    </ToastContext.Provider>
+  );
+}
+
+export function useToast() {
+  return useContext(ToastContext);
+}
+```
+
+Usage with React Context:
+
+```jsx
+import { useToast } from './ToastContext';
+
+function LoginForm() {
+  const { addToast } = useToast();
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Login logic...
+    addToast('Login successful!', 'success', 5000);
+  };
+  
+  return (
+    <form onSubmit={handleSubmit}>
+      {/* Form fields */}
+      <button type="submit">Login</button>
+    </form>
   );
 }
 ```
 
 ### Vue
 
-```vue
-<template>
-  <div 
-    class="toast"
-    :class="[
-      type,
-      { 'toast--closable': closable },
-      { 'toast--visible': visible }
-    ]"
-  >
-    <div class="toast__content">
-      {{ message }}
-    </div>
-    <button 
-      v-if="closable" 
-      class="toast__close"
-      @click="$emit('close')"
-    >
-      &times;
-    </button>
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'Toast',
-  props: {
-    message: {
-      type: String,
-      required: true
-    },
-    type: {
-      type: String,
-      default: 'info',
-      validator: value => ['success', 'error', 'warning', 'info'].includes(value)
-    },
-    closable: {
-      type: Boolean,
-      default: true
-    },
-    visible: {
-      type: Boolean,
-      default: true
-    }
-  }
-}
-</script>
-
-<style>
-@import 'casoon-ui-lib/modules/toast.module.css';
-</style>
 ```
-
-### HTML
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/core.css">
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/toast.module.css">
-</head>
-<body>
-  <div class="toast success toast--visible">
-    <div class="toast__content">
-      Aktion erfolgreich ausgeführt!
-    </div>
-    <button class="toast__close">&times;</button>
-  </div>
-  
-  <script>
-    // Toast nach 3 Sekunden ausblenden
-    setTimeout(() => {
-      document.querySelector('.toast').classList.remove('toast--visible');
-    }, 3000);
-    
-    // Close-Button Funktionalität
-    document.querySelector('.toast__close').addEventListener('click', () => {
-      document.querySelector('.toast').classList.remove('toast--visible');
-    });
-  </script>
-</body>
-</html>
-``` 

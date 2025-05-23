@@ -5,14 +5,14 @@ category: Components
 
 # Code
 
-Die Code-Komponente ermöglicht es Ihnen, Quellcode mit Syntax-Hervorhebung und anpassbarem Styling anzuzeigen.
+The Code component allows you to display source code with syntax highlighting and customizable styling.
 
-## Beispiel
+## Example
 
 ```html
 <pre class="casoon-code">
   <code>
-    // Beispielcode
+    // Example code
     function helloWorld() {
       console.log("Hello, World!");
     }
@@ -20,30 +20,30 @@ Die Code-Komponente ermöglicht es Ihnen, Quellcode mit Syntax-Hervorhebung und 
 </pre>
 ```
 
-## Varianten
+## Variants
 
 ### Standard
 
-Die Standard-Code-Komponente mit neutralem Hintergrund:
+The standard code component with a neutral background:
 
 ```html
 <pre class="casoon-code">
   <code>
-    // Standardcode
-    const greeting = "Hallo";
+    // Standard code
+    const greeting = "Hello";
     console.log(greeting);
   </code>
 </pre>
 ```
 
-### Mit Rahmen
+### With Border
 
-Code-Block mit Rahmen für bessere visuelle Abgrenzung:
+Code block with border for better visual separation:
 
 ```html
 <pre class="casoon-code casoon-code--bordered">
   <code>
-    // Code mit Rahmen
+    // Code with border
     import { useState } from 'react';
     
     function Counter() {
@@ -54,50 +54,50 @@ Code-Block mit Rahmen für bessere visuelle Abgrenzung:
 </pre>
 ```
 
-### Mit Hintergrund
+### With Background
 
-Code-Block mit farbigem Hintergrund:
+Code block with colored background:
 
 ```html
 <pre class="casoon-code casoon-code--background">
   <code>
-    // Code mit Hintergrund
-    const colors = ["rot", "grün", "blau"];
+    // Code with background
+    const colors = ["red", "green", "blue"];
     colors.forEach(color => console.log(color));
   </code>
 </pre>
 ```
 
-### Inline-Code
+### Inline Code
 
-Für Code innerhalb von Textabschnitten:
+For code within text sections:
 
 ```html
-<p>Verwenden Sie <code class="casoon-code-inline">console.log()</code> für die Ausgabe in der Konsole.</p>
+<p>Use <code class="casoon-code-inline">console.log()</code> for console output.</p>
 ```
 
-## Zeilennummern
+## Line Numbers
 
-Mit Zeilennummern für bessere Referenzierung:
+With line numbers for better reference:
 
 ```html
 <pre class="casoon-code casoon-code--numbered">
   <code>
-    // Erste Zeile
+    // First line
     function add(a, b) {
-      // Zweite Zeile
+      // Second line
       return a + b;
-      // Dritte Zeile
+      // Third line
     }
   </code>
 </pre>
 ```
 
-## Syntax-Hervorhebung
+## Syntax Highlighting
 
-Die Code-Komponente unterstützt grundlegende Syntax-Hervorhebung. Für fortgeschrittene Syntax-Hervorhebung empfehlen wir die Integration mit einer Bibliothek wie Prism.js oder Highlight.js.
+The Code component supports basic syntax highlighting. For advanced syntax highlighting, we recommend integrating with a library like Prism.js or Highlight.js.
 
-## In einem Grid-Layout
+## In a Grid Layout
 
 ```vue
 <Grid columns="2">
@@ -105,7 +105,7 @@ Die Code-Komponente unterstützt grundlegende Syntax-Hervorhebung. Für fortgesc
     <pre class="casoon-code">
       <code>
         function greeting(name) {
-          return `Hallo ${name}!`;
+          return `Hello ${name}!`;
         }
       </code>
     </pre>
@@ -126,16 +126,16 @@ Die Code-Komponente unterstützt grundlegende Syntax-Hervorhebung. Für fortgesc
 
 ## Props
 
-| Name       | Typ      | Standard | Beschreibung                                     |
+| Name       | Type     | Default | Description                                     |
 |------------|----------|----------|-------------------------------------------------|
-| bordered   | Boolean  | false    | Zeigt einen Rahmen um den Code-Block an          |
-| background | Boolean  | false    | Fügt einen Hintergrund zum Code-Block hinzu      |
-| numbered   | Boolean  | false    | Zeigt Zeilennummern im Code-Block an             |
-| inline     | Boolean  | false    | Stellt den Code inline dar                       |
+| bordered   | Boolean  | false    | Displays a border around the code block          |
+| background | Boolean  | false    | Adds a background to the code block              |
+| numbered   | Boolean  | false    | Displays line numbers in the code block          |
+| inline     | Boolean  | false    | Displays the code inline                         |
 
-## Anpassung
+## Customization
 
-Die Code-Komponente kann über CSS-Variablen angepasst werden:
+The Code component can be customized using CSS variables:
 
 ```css
 :root {
@@ -152,7 +152,7 @@ Die Code-Komponente kann über CSS-Variablen angepasst werden:
 
 ## Best Practices
 
-- Verwenden Sie die Code-Komponente für alle Arten von Codebeispielen in Ihrer Dokumentation oder Anwendung
-- Für längere Codebeispiele nutzen Sie die Variante mit Zeilennummern
-- Bei der Integration in Texten verwenden Sie die Inline-Variante
-- Achten Sie auf ausreichenden Kontrast zwischen Text- und Hintergrundfarbe, besonders bei angepassten Themes 
+- Use the Code component for all types of code examples in your documentation or application
+- For longer code examples, use the version with line numbers
+- When integrating into text, use the inline variant
+- Ensure sufficient contrast between text and background color, especially with custom themes 

@@ -1,112 +1,112 @@
 # File Input
 
-Die File-Input-Komponente der Casoon UI Library ermöglicht es Benutzern, Dateien hochzuladen und bietet verschiedene Stile und Funktionalitäten für Dateiauswahl-Elemente.
+The File Input component of the Casoon UI Library allows users to upload files and offers various styles and functionalities for file selection elements.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="file-input">
   <input type="file" id="file" class="file-input__input">
   <label for="file" class="file-input__label">
-    <span class="file-input__text">Datei auswählen</span>
+    <span class="file-input__text">Select file</span>
   </label>
 </div>
 ```
 
-## Module importieren
+## Importing Modules
 
 ```css
-/* Notwendige Abhängigkeit */
+/* Required dependency */
 @import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* oder ein anderes Theme */
+@import 'casoon-ui-lib/themes/day.css'; /* or another theme */
 
-/* File-Input-Modul */
+/* File Input module */
 @import 'casoon-ui-lib/modules/file.module.css';
 ```
 
-## Varianten
+## Variants
 
-### Standard File-Input
+### Standard File Input
 
 ```html
 <div class="file-input">
   <input type="file" id="file1" class="file-input__input">
   <label for="file1" class="file-input__label">
-    <span class="file-input__text">Datei auswählen</span>
+    <span class="file-input__text">Select file</span>
   </label>
 </div>
 ```
 
-### File-Input mit Icon
+### File Input with Icon
 
 ```html
 <div class="file-input">
   <input type="file" id="file2" class="file-input__input">
   <label for="file2" class="file-input__label">
     <span class="file-input__icon">📎</span>
-    <span class="file-input__text">Datei auswählen</span>
+    <span class="file-input__text">Select file</span>
   </label>
 </div>
 ```
 
-### File-Input mit Button-Stil
+### File Input with Button Style
 
 ```html
 <div class="file-input file-input--button">
   <input type="file" id="file3" class="file-input__input">
   <label for="file3" class="file-input__label">
-    <span class="file-input__text">Datei hochladen</span>
+    <span class="file-input__text">Upload file</span>
   </label>
 </div>
 ```
 
-### File-Input mit Drag & Drop-Bereich
+### File Input with Drag & Drop Area
 
 ```html
 <div class="file-input file-input--drop-zone">
   <input type="file" id="file4" class="file-input__input" multiple>
   <label for="file4" class="file-input__label">
     <span class="file-input__icon">📥</span>
-    <span class="file-input__text">Dateien hierher ziehen oder klicken zum Hochladen</span>
+    <span class="file-input__text">Drag files here or click to upload</span>
   </label>
 </div>
 ```
 
-### File-Input mit Vorschau
+### File Input with Preview
 
 ```html
 <div class="file-input file-input--with-preview">
   <input type="file" id="file5" class="file-input__input" accept="image/*">
   <label for="file5" class="file-input__label">
-    <span class="file-input__text">Bild auswählen</span>
+    <span class="file-input__text">Select image</span>
   </label>
   <div class="file-input__preview">
-    <!-- Vorschaubild wird hier per JavaScript eingefügt -->
+    <!-- Preview image will be inserted here via JavaScript -->
   </div>
 </div>
 ```
 
-### File-Input mit Dateilistenansicht
+### File Input with File List View
 
 ```html
 <div class="file-input file-input--with-list">
   <input type="file" id="file6" class="file-input__input" multiple>
   <label for="file6" class="file-input__label">
-    <span class="file-input__text">Dateien auswählen</span>
+    <span class="file-input__text">Select files</span>
   </label>
   <ul class="file-input__list">
-    <!-- Dateiliste wird hier per JavaScript eingefügt -->
+    <!-- File list will be inserted here via JavaScript -->
   </ul>
 </div>
 ```
 
-### File-Input Größenoptionen
+### File Input Size Options
 
 ```html
 <div class="file-input file-input--sm">
   <input type="file" id="file7" class="file-input__input">
   <label for="file7" class="file-input__label">
-    <span class="file-input__text">Klein</span>
+    <span class="file-input__text">Small</span>
   </label>
 </div>
 
@@ -120,50 +120,50 @@ Die File-Input-Komponente der Casoon UI Library ermöglicht es Benutzern, Dateie
 <div class="file-input file-input--lg">
   <input type="file" id="file9" class="file-input__input">
   <label for="file9" class="file-input__label">
-    <span class="file-input__text">Groß</span>
+    <span class="file-input__text">Large</span>
   </label>
 </div>
 ```
 
-### Farbvarianten
+### Color Variants
 
 ```html
 <div class="file-input file-input--primary">
   <input type="file" id="file10" class="file-input__input">
   <label for="file10" class="file-input__label">
-    <span class="file-input__text">Primär</span>
+    <span class="file-input__text">Primary</span>
   </label>
 </div>
 
 <div class="file-input file-input--secondary">
   <input type="file" id="file11" class="file-input__input">
   <label for="file11" class="file-input__label">
-    <span class="file-input__text">Sekundär</span>
+    <span class="file-input__text">Secondary</span>
   </label>
 </div>
 
 <div class="file-input file-input--success">
   <input type="file" id="file12" class="file-input__input">
   <label for="file12" class="file-input__label">
-    <span class="file-input__text">Erfolg</span>
+    <span class="file-input__text">Success</span>
   </label>
 </div>
 ```
 
-### Deaktivierter File-Input
+### Disabled File Input
 
 ```html
 <div class="file-input file-input--disabled">
   <input type="file" id="file13" class="file-input__input" disabled>
   <label for="file13" class="file-input__label">
-    <span class="file-input__text">Deaktiviert</span>
+    <span class="file-input__text">Disabled</span>
   </label>
 </div>
 ```
 
-## JavaScript-Funktionalität
+## JavaScript Functionality
 
-### Einfache Dateienanzeige
+### Simple File Display
 
 ```js
 document.querySelectorAll('.file-input__input').forEach(input => {
@@ -172,13 +172,13 @@ document.querySelectorAll('.file-input__input').forEach(input => {
     if (this.files.length > 0) {
       fileNameElement.textContent = this.files[0].name;
     } else {
-      fileNameElement.textContent = 'Datei auswählen';
+      fileNameElement.textContent = 'Select file';
     }
   });
 });
 ```
 
-### Bildvorschau
+### Image Preview
 
 ```js
 document.querySelectorAll('.file-input--with-preview .file-input__input').forEach(input => {
@@ -198,7 +198,7 @@ document.querySelectorAll('.file-input--with-preview .file-input__input').forEac
 });
 ```
 
-### Dateiliste mit mehreren Dateien
+### File List with Multiple Files
 
 ```js
 document.querySelectorAll('.file-input--with-list .file-input__input').forEach(input => {
@@ -213,7 +213,7 @@ document.querySelectorAll('.file-input--with-list .file-input__input').forEach(i
         li.innerHTML = `
           <span class="file-input__file-name">${file.name}</span>
           <span class="file-input__file-size">${formatFileSize(file.size)}</span>
-          <button type="button" class="file-input__remove" aria-label="Datei entfernen">×</button>
+          <button type="button" class="file-input__remove" aria-label="Remove file">×</button>
         `;
         list.appendChild(li);
       });
@@ -230,7 +230,7 @@ function formatFileSize(bytes) {
 }
 ```
 
-### Drag & Drop-Funktionalität
+### Drag & Drop Functionality
 
 ```js
 document.querySelectorAll('.file-input--drop-zone').forEach(dropZone => {
@@ -248,132 +248,156 @@ document.querySelectorAll('.file-input--drop-zone').forEach(dropZone => {
   
   ['dragenter', 'dragover'].forEach(eventName => {
     label.addEventListener(eventName, () => {
-      label.classList.add('file-input__label--dragover');
-    }, false);
+      label.classList.add('file-input__label--active');
+    });
   });
   
   ['dragleave', 'drop'].forEach(eventName => {
     label.addEventListener(eventName, () => {
-      label.classList.remove('file-input__label--dragover');
-    }, false);
+      label.classList.remove('file-input__label--active');
+    });
   });
   
-  label.addEventListener('drop', function(e) {
+  label.addEventListener('drop', e => {
     input.files = e.dataTransfer.files;
-    
-    // Löst das change-Event aus
-    const event = new Event('change', { bubbles: true });
-    input.dispatchEvent(event);
-  }, false);
+    const changeEvent = new Event('change');
+    input.dispatchEvent(changeEvent);
+  });
 });
 ```
 
-## CSS-Variablen
+## CSS Variables
 
-Die File-Input-Komponente verwendet folgende CSS-Variablen, die Sie anpassen können:
+The File Input component uses the following CSS variables:
 
 ```css
 :root {
-  --file-input-height: 2.5rem;
-  --file-input-height-sm: 2rem;
-  --file-input-height-lg: 3rem;
-  
   --file-input-padding: 0.5rem 1rem;
-  --file-input-padding-sm: 0.25rem 0.75rem;
-  --file-input-padding-lg: 0.75rem 1.25rem;
-  
-  --file-input-font-size: 0.875rem;
-  --file-input-font-size-sm: 0.75rem;
-  --file-input-font-size-lg: 1rem;
-  
+  --file-input-border: 1px dashed var(--color-gray-300);
   --file-input-border-radius: 0.25rem;
-  --file-input-border-width: 1px;
-  --file-input-border-color: var(--color-gray-300);
-  
   --file-input-bg: var(--color-white);
-  --file-input-color: var(--color-gray-800);
-  
-  --file-input-hover-bg: var(--color-gray-100);
-  --file-input-hover-border-color: var(--color-gray-400);
-  
-  --file-input-focus-border-color: var(--color-primary);
-  --file-input-focus-ring: 0 0 0 0.2rem rgba(var(--color-primary-rgb), 0.25);
-  
-  --file-input-disabled-bg: var(--color-gray-100);
-  --file-input-disabled-color: var(--color-gray-500);
+  --file-input-color: var(--color-gray-700);
   
   --file-input-drop-zone-height: 8rem;
-  --file-input-drop-zone-border-style: dashed;
+  --file-input-drop-zone-active-bg: var(--color-primary-50);
+  --file-input-drop-zone-active-border: 1px dashed var(--color-primary);
   
-  --file-input-preview-height: 10rem;
-  --file-input-preview-border-radius: 0.25rem;
+  --file-input-sm-padding: 0.25rem 0.5rem;
+  --file-input-lg-padding: 0.75rem 1.5rem;
   
-  --file-input-list-item-padding: 0.5rem;
-  --file-input-list-item-margin: 0.25rem 0;
-  --file-input-list-item-border-radius: 0.25rem;
-  --file-input-list-item-bg: var(--color-gray-100);
+  --file-input-primary-border: 1px dashed var(--color-primary);
+  --file-input-primary-color: var(--color-primary);
+  
+  --file-input-secondary-border: 1px dashed var(--color-secondary);
+  --file-input-secondary-color: var(--color-secondary);
+  
+  --file-input-success-border: 1px dashed var(--color-success);
+  --file-input-success-color: var(--color-success);
+  
+  --file-input-disabled-bg: var(--color-gray-100);
+  --file-input-disabled-color: var(--color-gray-400);
+  --file-input-disabled-border: 1px dashed var(--color-gray-300);
 }
 ```
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie immer ein `<label>` mit einer korrekten `for`-Attribut-Verknüpfung
-- Fügen Sie beschreibende Texte für Screenreader hinzu, wenn nötig
-- Stellen Sie sicher, dass Fehlermeldungen zur Dateigröße oder unzulässige Dateitypen zugänglich sind
-- Verwenden Sie `aria-live`-Regionen für dynamische Änderungen wie Dateivorschauen oder Listen
+- Always use labels associated with input elements
+- Provide clear instructions for the file upload
+- Use ARIA attributes to improve screen reader support
+- Ensure sufficient contrast for text and borders
+- Offer keyboard navigation options
 
-### Benutzerfreundlichkeit
+### Responsive Design
 
-- Geben Sie klare Anweisungen zu akzeptierten Dateitypen und -größen
-- Zeigen Sie Feedback während des Uploads an
-- Erlauben Sie das Entfernen ausgewählter Dateien
-- Bieten Sie Fortschrittsanzeigen für große Dateien
+- Test on different devices and screen sizes
+- Adjust the size of the drop zone for mobile devices
+- Ensure the file input is large enough for touch interaction
 
-### Responsives Design
+### Performance
 
-- Stellen Sie sicher, dass die Drop-Zone-Größe auf mobilen Geräten angemessen ist
-- Passen Sie die Größe der Vorschaubilder an verschiedene Bildschirmgrößen an
-- Verwenden Sie relative Einheiten für alle Größen
+- Limit file sizes when possible
+- Consider using file type restrictions (accept attribute)
+- Implement file validation on both client and server side
+- Optimize image previews for better performance
 
-## Beispiel: Vollständiges Formular mit File-Upload
+## Framework Integration Examples
 
-```html
-<form class="form">
-  <div class="form__group">
-    <label class="form__label" for="username">Benutzername</label>
-    <input type="text" id="username" class="input" required>
-  </div>
+### React
+
+```jsx
+import React, { useState, useRef } from 'react';
+import 'casoon-ui-lib/modules/file.module.css';
+
+function FileInput({
+  accept = '',
+  multiple = false,
+  onFilesSelected,
+  variant = '',
+  size = '',
+  withPreview = false,
+  withDropZone = false,
+  disabled = false
+}) {
+  const [fileNames, setFileNames] = useState('Select file');
+  const [previewUrl, setPreviewUrl] = useState('');
+  const inputRef = useRef(null);
   
-  <div class="form__group">
-    <label class="form__label" for="profile-pic">Profilbild</label>
-    <div class="file-input file-input--with-preview">
-      <input type="file" id="profile-pic" class="file-input__input" accept="image/*">
-      <label for="profile-pic" class="file-input__label">
-        <span class="file-input__icon">📷</span>
-        <span class="file-input__text">Bild auswählen</span>
+  const handleChange = (e) => {
+    const files = e.target.files;
+    if (files.length > 0) {
+      const names = Array.from(files).map(file => file.name).join(', ');
+      setFileNames(names);
+      
+      if (withPreview && files[0].type.startsWith('image/')) {
+        const url = URL.createObjectURL(files[0]);
+        setPreviewUrl(url);
+      }
+      
+      if (onFilesSelected) {
+        onFilesSelected(files);
+      }
+    } else {
+      setFileNames('Select file');
+      setPreviewUrl('');
+    }
+  };
+  
+  const fileInputClasses = [
+    'file-input',
+    variant && `file-input--${variant}`,
+    size && `file-input--${size}`,
+    withDropZone && 'file-input--drop-zone',
+    withPreview && 'file-input--with-preview',
+    disabled && 'file-input--disabled'
+  ].filter(Boolean).join(' ');
+  
+  return (
+    <div className={fileInputClasses}>
+      <input
+        type="file"
+        className="file-input__input"
+        accept={accept}
+        multiple={multiple}
+        onChange={handleChange}
+        disabled={disabled}
+        ref={inputRef}
+        id="file-input"
+      />
+      <label htmlFor="file-input" className="file-input__label">
+        {withDropZone && <span className="file-input__icon">📥</span>}
+        <span className="file-input__text">{fileNames}</span>
       </label>
-      <div class="file-input__preview"></div>
-      <small class="file-input__help">Akzeptierte Formate: JPG, PNG, GIF. Max. 2MB.</small>
+      {withPreview && previewUrl && (
+        <div className="file-input__preview">
+          <img src={previewUrl} alt="Preview" />
+        </div>
+      )}
     </div>
-  </div>
-  
-  <div class="form__group">
-    <label class="form__label" for="documents">Dokumente</label>
-    <div class="file-input file-input--with-list file-input--drop-zone">
-      <input type="file" id="documents" class="file-input__input" multiple accept=".pdf,.doc,.docx">
-      <label for="documents" class="file-input__label">
-        <span class="file-input__icon">📄</span>
-        <span class="file-input__text">Dokumente hierher ziehen oder klicken</span>
-      </label>
-      <ul class="file-input__list"></ul>
-      <small class="file-input__help">Akzeptierte Formate: PDF, DOC, DOCX. Max. 5 Dateien.</small>
-    </div>
-  </div>
-  
-  <div class="form__group">
-    <button type="submit" class="button button--primary">Absenden</button>
-  </div>
-</form>
+  );
+}
+
+export default FileInput;
 ``` 

@@ -5,25 +5,25 @@ category: Components
 
 # Alert
 
-Die Alert-Komponente dient zur Anzeige von wichtigen Nachrichten und Benachrichtigungen.
+The Alert component is used to display important messages and notifications.
 
-## Beispiel
+## Example
 
 ```html
 <div class="alert alert-info">
   <div class="alert-title">Information</div>
-  <div class="alert-message">Dies ist eine Informationsmeldung.</div>
+  <div class="alert-message">This is an information message.</div>
 </div>
 ```
 
-## Alert-Typen
+## Alert Types
 
 ### Standard Alert
 
 ```html
 <div class="alert">
   <div class="alert-title">Standard</div>
-  <div class="alert-message">Dies ist ein Standard-Alert.</div>
+  <div class="alert-message">This is a standard alert.</div>
 </div>
 ```
 
@@ -32,7 +32,7 @@ Die Alert-Komponente dient zur Anzeige von wichtigen Nachrichten und Benachricht
 ```html
 <div class="alert alert-info">
   <div class="alert-title">Information</div>
-  <div class="alert-message">Dies ist eine Informationsmeldung.</div>
+  <div class="alert-message">This is an information message.</div>
 </div>
 ```
 
@@ -40,8 +40,8 @@ Die Alert-Komponente dient zur Anzeige von wichtigen Nachrichten und Benachricht
 
 ```html
 <div class="alert alert-success">
-  <div class="alert-title">Erfolg</div>
-  <div class="alert-message">Der Vorgang wurde erfolgreich abgeschlossen.</div>
+  <div class="alert-title">Success</div>
+  <div class="alert-message">The operation was completed successfully.</div>
 </div>
 ```
 
@@ -49,8 +49,8 @@ Die Alert-Komponente dient zur Anzeige von wichtigen Nachrichten und Benachricht
 
 ```html
 <div class="alert alert-warning">
-  <div class="alert-title">Warnung</div>
-  <div class="alert-message">Bitte beachten Sie diesen wichtigen Hinweis.</div>
+  <div class="alert-title">Warning</div>
+  <div class="alert-message">Please note this important notice.</div>
 </div>
 ```
 
@@ -58,47 +58,47 @@ Die Alert-Komponente dient zur Anzeige von wichtigen Nachrichten und Benachricht
 
 ```html
 <div class="alert alert-error">
-  <div class="alert-title">Fehler</div>
-  <div class="alert-message">Ein Fehler ist aufgetreten.</div>
+  <div class="alert-title">Error</div>
+  <div class="alert-message">An error has occurred.</div>
 </div>
 ```
 
-## Alerts im Grid-Layout
+## Alerts in Grid Layout
 
 ```vue
 <Grid columns="2">
-  <Card title="Erfolg">
+  <Card title="Success">
     <div class="alert alert-success">
-      <div class="alert-title">Erfolg</div>
-      <div class="alert-message">Die Daten wurden gespeichert.</div>
-      <Button>Schließen</Button>
+      <div class="alert-title">Success</div>
+      <div class="alert-message">The data has been saved.</div>
+      <Button>Close</Button>
     </div>
   </Card>
   <Card title="Information">
     <div class="alert alert-info">
       <div class="alert-title">Information</div>
-      <div class="alert-message">Neue Updates verfügbar.</div>
-      <Button>Jetzt aktualisieren</Button>
+      <div class="alert-message">New updates available.</div>
+      <Button>Update now</Button>
     </div>
   </Card>
-  <Card title="Warnung">
+  <Card title="Warning">
     <div class="alert alert-warning">
-      <div class="alert-title">Warnung</div>
-      <div class="alert-message">Batteriestand niedrig.</div>
-      <Button>Ignorieren</Button>
+      <div class="alert-title">Warning</div>
+      <div class="alert-message">Battery level low.</div>
+      <Button>Ignore</Button>
     </div>
   </Card>
-  <Card title="Fehler">
+  <Card title="Error">
     <div class="alert alert-error">
-      <div class="alert-title">Fehler</div>
-      <div class="alert-message">Netzwerkverbindung unterbrochen.</div>
-      <Button>Erneut versuchen</Button>
+      <div class="alert-title">Error</div>
+      <div class="alert-message">Network connection lost.</div>
+      <Button>Try again</Button>
     </div>
   </Card>
 </Grid>
 ```
 
-## Mit Icons
+## With Icons
 
 ```html
 <div class="alert alert-info">
@@ -107,18 +107,18 @@ Die Alert-Komponente dient zur Anzeige von wichtigen Nachrichten und Benachricht
   </div>
   <div class="alert-content">
     <div class="alert-title">Information</div>
-    <div class="alert-message">Dies ist eine Informationsmeldung mit Icon.</div>
+    <div class="alert-message">This is an information message with an icon.</div>
   </div>
 </div>
 ```
 
-## Schließbare Alerts
+## Closable Alerts
 
 ```html
 <div class="alert alert-warning">
   <div class="alert-content">
-    <div class="alert-title">Warnung</div>
-    <div class="alert-message">Dieser Alert kann geschlossen werden.</div>
+    <div class="alert-title">Warning</div>
+    <div class="alert-message">This alert can be closed.</div>
   </div>
   <button class="alert-close">
     <span class="icon icon-close"></span>
@@ -128,15 +128,15 @@ Die Alert-Komponente dient zur Anzeige von wichtigen Nachrichten und Benachricht
 
 ## Props
 
-| Name    | Typ     | Standard | Beschreibung                              |
-|---------|---------|----------|-------------------------------------------|
-| type    | String  | 'default'| Alert-Typ: 'info', 'success', 'warning', 'error' |
-| title   | String  | ''       | Titel des Alerts                          |
-| message | String  | ''       | Nachrichtentext des Alerts                |
-| closable| Boolean | false    | Ob der Alert schließbar ist               |
-| icon    | Boolean | true     | Ob ein Icon angezeigt wird                |
+| Name    | Type    | Default  | Description                              |
+|---------|---------|----------|------------------------------------------|
+| type    | String  | 'default'| Alert type: 'info', 'success', 'warning', 'error' |
+| title   | String  | ''       | Title of the alert                       |
+| message | String  | ''       | Message text of the alert                |
+| closable| Boolean | false    | Whether the alert is closable            |
+| icon    | Boolean | true     | Whether an icon is displayed             |
 
-## CSS-Variablen
+## CSS Variables
 
 ```css
 :root {

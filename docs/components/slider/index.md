@@ -1,8 +1,8 @@
 # Slider
 
-Die Slider-Komponente ist ein interaktives Steuerelement für die Auswahl von Werten in der Casoon UI Library.
+The Slider component is an interactive control for selecting values in the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="slider">
@@ -14,9 +14,9 @@ Die Slider-Komponente ist ein interaktives Steuerelement für die Auswahl von We
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Mit Labels
+### With Labels
 
 ```html
 <div class="slider">
@@ -33,7 +33,7 @@ Die Slider-Komponente ist ein interaktives Steuerelement für die Auswahl von We
 </div>
 ```
 
-### Mit Stufen
+### With Steps
 
 ```html
 <div class="slider">
@@ -52,7 +52,7 @@ Die Slider-Komponente ist ein interaktives Steuerelement für die Auswahl von We
 </div>
 ```
 
-### Mit Animation
+### With Animation
 
 ```html
 <div class="slider slider--animated">
@@ -64,7 +64,7 @@ Die Slider-Komponente ist ein interaktives Steuerelement für die Auswahl von We
 </div>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -81,26 +81,26 @@ Die Slider-Komponente ist ein interaktives Steuerelement für die Auswahl von We
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie ARIA-Attribute hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add ARIA attributes
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Slider-Größe an den Inhalt an
-- Optimieren Sie die Darstellung auf mobilen Geräten
+- Use relative units
+- Test on different screen sizes
+- Adjust slider size to content
+- Optimize display on mobile devices
 
 ### Performance
 
-- Minimieren Sie CSS
-- Optimieren Sie JavaScript-Events
-- Vermeiden Sie unnötige Verschachtelungen
-- Verwenden Sie CSS-Transitions statt JavaScript-Animationen
+- Minimize CSS
+- Optimize JavaScript events
+- Avoid unnecessary nesting
+- Use CSS transitions instead of JavaScript animations
 
 ## Integration
 
@@ -243,7 +243,7 @@ const {
 </style>
 ```
 
-Verwendung in einer Astro-Komponente:
+Usage in an Astro component:
 
 ```astro
 ---
@@ -253,10 +253,117 @@ import Slider from '../components/Slider.astro';
 <Slider
   min={0}
   max={100}
-  value={50}
-  step={10}
+  value={25}
+  step={5}
   showLabels
   showSteps
   animated
 />
-``` 
+```
+
+### Vue
+
+```vue
+<template>
+  <div 
+    class="slider" 
+    :class="{ 'slider--animated': animated }"
+  >
+    <div v-if="showLabels" class="slider__labels">
+      <span>{{ min }}</span>
+      <span>{{ max }}</span>
+    </div>
+    
+    <input
+      type="range"
+      class="slider__input"
+      :min="min"
+      :max="max"
+      :step="step"
+      v-model="sliderValue"
+      @input="updateValue"
+    />
+    
+    <div class="slider__track">
+      <div 
+        class="slider__progress" 
+        :style="{ width: progressWidth + '%' }"
+      ></div>
+      <div v-if="showSteps" class="slider__steps">
+        <span v-for="n in stepCount" :key="n"></span>
+      </div>
+    </div>
+    
+    <div 
+      class="slider__thumb" 
+      :style="{ left: progressWidth + '%' }"
+    ></div>
+    
+    <div v-if="showValue" class="slider__value">
+      {{ sliderValue }}
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Slider',
+  props: {
+    min: {
+      type: Number,
+      default: 0
+    },
+    max: {
+      type: Number,
+      default: 100
+    },
+    value: {
+      type: Number,
+      default: 50
+    },
+    step: {
+      type: Number,
+      default: 1
+    },
+    showLabels: {
+      type: Boolean,
+      default: false
+    },
+    showSteps: {
+      type: Boolean,
+      default: false
+    },
+    showValue: {
+      type: Boolean,
+      default: false
+    },
+    animated: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data() {
+    return {
+      sliderValue: this.value
+    };
+  },
+  computed: {
+    progressWidth() {
+      return ((this.sliderValue - this.min) / (this.max - this.min)) * 100;
+    },
+    stepCount() {
+      return Math.floor((this.max - this.min) / this.step) + 1;
+    }
+  },
+  methods: {
+    updateValue() {
+      this.$emit('input', Number(this.sliderValue));
+    }
+  },
+  watch: {
+    value(newValue) {
+      this.sliderValue = newValue;
+    }
+  }
+}
+</script> 
