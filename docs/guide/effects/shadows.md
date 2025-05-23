@@ -1,151 +1,151 @@
 ---
-title: Schatten-Effekte
+title: Shadow Effects
 category: Effects
 ---
 
-# Schatten-Effekte
+# Shadow Effects
 
-Die Schatten-Effekte der Casoon UI Library bieten eine umfassende Sammlung von realistischen und stilisierten Schatten, die Ihren UI-Elementen räumliche Tiefe verleihen.
+The shadow effects of the Casoon UI Library offer a comprehensive collection of realistic and stylized shadows that give spatial depth to your UI elements.
 
-## Überblick
+## Overview
 
-Die Schatten-Effekte sind leistungsoptimiert und in verschiedenen Größen und Stilen verfügbar. Sie können verwendet werden, um Elemente hervorzuheben, Hierarchien zu verdeutlichen und visuelle Tiefe zu schaffen.
+The shadow effects are performance-optimized and available in various sizes and styles. They can be used to highlight elements, clarify hierarchies, and create visual depth.
 
 ## Installation
 
-Importieren Sie das Schatten-Effekte-Modul über CSS:
+Import the shadow effects module via CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/shadows.css';
 ```
 
-## Grundlegende Schatten
+## Basic Shadows
 
-Die Library bietet eine Reihe von vordefinierten Schatten mit unterschiedlicher Intensität:
+The library provides a range of predefined shadows with varying intensity:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-sm` | Kleiner, subtiler Schatten |
-| `.shadow` | Standard-Schatten |
-| `.shadow-md` | Mittlerer Schatten |
-| `.shadow-lg` | Großer Schatten |
-| `.shadow-xl` | Extra großer Schatten |
-| `.shadow-2xl` | Doppelt extra großer Schatten |
+| `.shadow-sm` | Small, subtle shadow |
+| `.shadow` | Standard shadow |
+| `.shadow-md` | Medium shadow |
+| `.shadow-lg` | Large shadow |
+| `.shadow-xl` | Extra large shadow |
+| `.shadow-2xl` | Double extra large shadow |
 
 ```html
-<div class="card shadow-sm">Karte mit kleinem Schatten</div>
-<div class="card shadow">Karte mit Standard-Schatten</div>
-<div class="card shadow-lg">Karte mit großem Schatten</div>
+<div class="card shadow-sm">Card with small shadow</div>
+<div class="card shadow">Card with standard shadow</div>
+<div class="card shadow-lg">Card with large shadow</div>
 ```
 
-## Spezielle Schatten-Stile
+## Special Shadow Styles
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-inner` | Innerer Schatten (erscheint eingedrückt) |
-| `.shadow-none` | Kein Schatten (nützlich zum Überschreiben) |
+| `.shadow-inner` | Inner shadow (appears indented) |
+| `.shadow-none` | No shadow (useful for overriding) |
 
 ```html
-<div class="card shadow-inner">Karte mit innerem Schatten</div>
+<div class="card shadow-inner">Card with inner shadow</div>
 ```
 
-## Gerichtete Schatten
+## Directional Shadows
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-top` | Schatten nur an der Oberseite |
-| `.shadow-right` | Schatten nur an der rechten Seite |
-| `.shadow-bottom` | Schatten nur an der Unterseite |
-| `.shadow-left` | Schatten nur an der linken Seite |
+| `.shadow-top` | Shadow only on the top side |
+| `.shadow-right` | Shadow only on the right side |
+| `.shadow-bottom` | Shadow only on the bottom side |
+| `.shadow-left` | Shadow only on the left side |
 
 ```html
-<div class="card shadow-top">Karte mit oberem Schatten</div>
-<div class="card shadow-bottom">Karte mit unterem Schatten</div>
+<div class="card shadow-top">Card with top shadow</div>
+<div class="card shadow-bottom">Card with bottom shadow</div>
 ```
 
-## Scharfe Schatten
+## Sharp Shadows
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-sharp` | Scharfer Schatten mit minimaler Unschärfe |
-| `.shadow-sharp-sm` | Kleiner scharfer Schatten |
-| `.shadow-sharp-lg` | Großer scharfer Schatten |
+| `.shadow-sharp` | Sharp shadow with minimal blur |
+| `.shadow-sharp-sm` | Small sharp shadow |
+| `.shadow-sharp-lg` | Large sharp shadow |
 
 ```html
-<div class="card shadow-sharp">Karte mit scharfem Schatten</div>
+<div class="card shadow-sharp">Card with sharp shadow</div>
 ```
 
-## Weiche Schatten
+## Soft Shadows
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-soft` | Weicher, diffuser Schatten |
-| `.shadow-soft-sm` | Kleiner weicher Schatten |
-| `.shadow-soft-lg` | Großer weicher Schatten |
+| `.shadow-soft` | Soft, diffuse shadow |
+| `.shadow-soft-sm` | Small soft shadow |
+| `.shadow-soft-lg` | Large soft shadow |
 
 ```html
-<div class="card shadow-soft">Karte mit weichem Schatten</div>
+<div class="card shadow-soft">Card with soft shadow</div>
 ```
 
-## Farbige Schatten
+## Colored Shadows
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-primary` | Schatten in der primären Farbe |
-| `.shadow-secondary` | Schatten in der sekundären Farbe |
-| `.shadow-accent` | Schatten in der Akzentfarbe |
-| `.shadow-success` | Schatten in der Erfolgsfarbe |
-| `.shadow-error` | Schatten in der Fehlerfarbe |
-| `.shadow-warning` | Schatten in der Warnfarbe |
-| `.shadow-info` | Schatten in der Infofarbe |
+| `.shadow-primary` | Shadow in the primary color |
+| `.shadow-secondary` | Shadow in the secondary color |
+| `.shadow-accent` | Shadow in the accent color |
+| `.shadow-success` | Shadow in the success color |
+| `.shadow-error` | Shadow in the error color |
+| `.shadow-warning` | Shadow in the warning color |
+| `.shadow-info` | Shadow in the info color |
 
 ```html
-<div class="card shadow-primary">Karte mit primärfarbigem Schatten</div>
-<div class="card shadow-error">Karte mit Fehlerfarben-Schatten</div>
+<div class="card shadow-primary">Card with primary colored shadow</div>
+<div class="card shadow-error">Card with error colored shadow</div>
 ```
 
-## Mehrfache Schatten
+## Multiple Shadows
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-double` | Doppelter Schatten (nah und fern) |
-| `.shadow-layered` | Mehrschichtiger Schatten für realistischen Look |
-| `.shadow-inset-outline` | Kombiniert inneren Schatten mit Umriss |
+| `.shadow-double` | Double shadow (near and far) |
+| `.shadow-layered` | Multi-layered shadow for realistic look |
+| `.shadow-inset-outline` | Combines inner shadow with outline |
 
 ```html
-<div class="card shadow-double">Karte mit doppeltem Schatten</div>
-<div class="card shadow-layered">Karte mit mehrschichtigem Schatten</div>
+<div class="card shadow-double">Card with double shadow</div>
+<div class="card shadow-layered">Card with multi-layered shadow</div>
 ```
 
-## Interaktive Schatten
+## Interactive Shadows
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-hover` | Schatten erscheint bei Hover |
-| `.shadow-hover-lg` | Großer Schatten erscheint bei Hover |
-| `.shadow-active` | Schatten ändert sich bei aktivem Zustand |
+| `.shadow-hover` | Shadow appears on hover |
+| `.shadow-hover-lg` | Large shadow appears on hover |
+| `.shadow-active` | Shadow changes in active state |
 
 ```html
-<div class="card shadow-hover">Karte mit Hover-Schatten</div>
-<button class="button shadow-active">Button mit aktivem Schatten</button>
+<div class="card shadow-hover">Card with hover shadow</div>
+<button class="button shadow-active">Button with active shadow</button>
 ```
 
-## Neomorphismus-Schatten
+## Neomorphism Shadows
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-neo` | Neomorphismus-Schatten (erhaben) |
-| `.shadow-neo-inset` | Neomorphismus-Schatten (eingedrückt) |
-| `.shadow-neo-flat` | Flacher Neomorphismus-Schatten |
+| `.shadow-neo` | Neomorphism shadow (raised) |
+| `.shadow-neo-inset` | Neomorphism shadow (indented) |
+| `.shadow-neo-flat` | Flat neomorphism shadow |
 
 ```html
-<div class="card shadow-neo">Neomorphismus-Karte</div>
-<div class="card shadow-neo-inset">Eingedrückte Neomorphismus-Karte</div>
+<div class="card shadow-neo">Neomorphism card</div>
+<div class="card shadow-neo-inset">Indented neomorphism card</div>
 ```
 
-## Anpassung
+## Customization
 
-Die Schatten-Effekte können über CSS-Variablen angepasst werden:
+The shadow effects can be customized via CSS variables:
 
 ```css
 :root {
@@ -176,25 +176,25 @@ Die Schatten-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Beispiele
+## Examples
 
-### Karten mit verschiedenen Schatten
+### Cards with Various Shadows
 
 ```html
 <div class="card-container">
   <div class="card shadow-sm">
-    <h3>Basis-Karte</h3>
-    <p>Mit kleinem Schatten</p>
+    <h3>Basic Card</h3>
+    <p>With small shadow</p>
   </div>
   
   <div class="card shadow-lg">
-    <h3>Hervorgehobene Karte</h3>
-    <p>Mit großem Schatten</p>
+    <h3>Highlighted Card</h3>
+    <p>With large shadow</p>
   </div>
   
   <div class="card shadow-neo">
-    <h3>Neomorphismus-Karte</h3>
-    <p>Mit Neo-Schatten</p>
+    <h3>Neomorphism Card</h3>
+    <p>With neo shadow</p>
   </div>
 </div>
 
@@ -214,11 +214,11 @@ Die Schatten-Effekte können über CSS-Variablen angepasst werden:
 </style>
 ```
 
-### Interaktive Schaltfläche mit Schatten
+### Interactive Button with Shadow
 
 ```html
 <button class="button shadow-hover shadow-active">
-  Interaktive Schaltfläche
+  Interactive Button
 </button>
 
 <style>
@@ -233,14 +233,14 @@ Die Schatten-Effekte können über CSS-Variablen angepasst werden:
 </style>
 ```
 
-## Leistungsoptimierung
+## Performance Optimization
 
-Die Schatten-Effekte sind für optimale Leistung konzipiert:
+The shadow effects are designed for optimal performance:
 
-1. Verwendung von `box-shadow` anstelle von mehreren DOM-Elementen
-2. Vermeidung von zu komplexen Schatten auf mobilen Geräten
-3. Selektive Verwendung von `will-change` für kritische Animationen
+1. Using `box-shadow` instead of multiple DOM elements
+2. Avoiding overly complex shadows on mobile devices
+3. Selective use of `will-change` for critical animations
 
-## Browserunterstützung
+## Browser Support
 
-Die Schatten-Effekte werden von allen modernen Browsern unterstützt. Für ältere Browser wird ein Fallback mit einfacheren Schatten bereitgestellt. 
+The shadow effects are supported by all modern browsers. For older browsers, a fallback with simpler shadows is provided. 

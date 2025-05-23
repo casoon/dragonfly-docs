@@ -1,177 +1,177 @@
 ---
-title: Filter-Effekte
+title: Filter Effects
 category: Effects
 ---
 
-# Filter-Effekte
+# Filter Effects
 
-Die Filter-Effekte der Casoon UI Library bieten eine umfassende Sammlung von CSS-Filtern, mit denen Sie visuelle Effekte auf Ihre UI-Elemente anwenden können.
+The filter effects of the Casoon UI Library offer a comprehensive collection of CSS filters that allow you to apply visual effects to your UI elements.
 
-## Überblick
+## Overview
 
-Die Filter-Effekte sind leistungsoptimiert und respektieren die Präferenzen der Benutzer für reduzierte Bewegung. Sie können verwendet werden, um Unschärfe, Helligkeit, Kontrast und andere visuelle Effekte auf Ihre Elemente anzuwenden.
+The filter effects are performance-optimized and respect user preferences for reduced motion. They can be used to apply blur, brightness, contrast, and other visual effects to your elements.
 
 ## Installation
 
-Importieren Sie das Filter-Effekte-Modul über CSS:
+Import the filter effects module via CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/filters.css';
 ```
 
-## Grundlegende Filter
+## Basic Filters
 
-### Blur-Filter
+### Blur Filters
 
-Fügt einen Unschärfeeffekt hinzu.
+Adds a blurring effect.
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-blur` | Standard-Unschärfeeffekt |
-| `.filter-blur-sm` | Leichte Unschärfe |
-| `.filter-blur-md` | Mittlere Unschärfe |
-| `.filter-blur-lg` | Starke Unschärfe |
+| `.filter-blur` | Standard blur effect |
+| `.filter-blur-sm` | Light blur |
+| `.filter-blur-md` | Medium blur |
+| `.filter-blur-lg` | Strong blur |
 
 ```html
-<img src="image.jpg" class="filter-blur" alt="Verschwommenes Bild">
-<img src="image.jpg" class="filter-blur-sm" alt="Leicht verschwommenes Bild">
+<img src="image.jpg" class="filter-blur" alt="Blurred image">
+<img src="image.jpg" class="filter-blur-sm" alt="Slightly blurred image">
 ```
 
-### Helligkeit-Filter
+### Brightness Filters
 
-Passt die Helligkeit eines Elements an.
+Adjusts the brightness of an element.
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-brightness` | Standard-Helligkeitseffekt (120%) |
-| `.filter-brightness-sm` | Leicht erhöhte Helligkeit (110%) |
-| `.filter-brightness-lg` | Stark erhöhte Helligkeit (150%) |
-| `.filter-brightness-dim` | Verringerte Helligkeit (80%) |
-| `.filter-brightness-dark` | Stark verringerte Helligkeit (50%) |
+| `.filter-brightness` | Standard brightness effect (120%) |
+| `.filter-brightness-sm` | Slightly increased brightness (110%) |
+| `.filter-brightness-lg` | Strongly increased brightness (150%) |
+| `.filter-brightness-dim` | Reduced brightness (80%) |
+| `.filter-brightness-dark` | Strongly reduced brightness (50%) |
 
 ```html
-<img src="image.jpg" class="filter-brightness" alt="Helleres Bild">
-<img src="image.jpg" class="filter-brightness-dim" alt="Dunkleres Bild">
+<img src="image.jpg" class="filter-brightness" alt="Brighter image">
+<img src="image.jpg" class="filter-brightness-dim" alt="Dimmer image">
 ```
 
-### Kontrast-Filter
+### Contrast Filters
 
-Passt den Kontrast eines Elements an.
+Adjusts the contrast of an element.
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-contrast` | Standard-Kontrasteffekt (120%) |
-| `.filter-contrast-sm` | Leicht erhöhter Kontrast (110%) |
-| `.filter-contrast-lg` | Stark erhöhter Kontrast (150%) |
-| `.filter-contrast-low` | Verringerter Kontrast (80%) |
+| `.filter-contrast` | Standard contrast effect (120%) |
+| `.filter-contrast-sm` | Slightly increased contrast (110%) |
+| `.filter-contrast-lg` | Strongly increased contrast (150%) |
+| `.filter-contrast-low` | Reduced contrast (80%) |
 
 ```html
-<img src="image.jpg" class="filter-contrast" alt="Kontrastreicheres Bild">
+<img src="image.jpg" class="filter-contrast" alt="Higher contrast image">
 ```
 
-### Graustufen-Filter
+### Grayscale Filters
 
-Konvertiert ein Element in Graustufen.
+Converts an element to grayscale.
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-grayscale` | Vollständige Graustufen (100%) |
-| `.filter-grayscale-50` | Teilweise Graustufen (50%) |
+| `.filter-grayscale` | Complete grayscale (100%) |
+| `.filter-grayscale-50` | Partial grayscale (50%) |
 
 ```html
-<img src="image.jpg" class="filter-grayscale" alt="Schwarz-Weiß-Bild">
-<img src="image.jpg" class="filter-grayscale-50" alt="Teilweise entsättigtes Bild">
+<img src="image.jpg" class="filter-grayscale" alt="Black and white image">
+<img src="image.jpg" class="filter-grayscale-50" alt="Partially desaturated image">
 ```
 
-### Farbton-Rotation
+### Hue Rotation
 
-Rotiert die Farben eines Elements.
+Rotates the colors of an element.
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-hue-rotate` | Standard-Farbtonrotation (180deg) |
-| `.filter-hue-rotate-90` | 90-Grad-Farbtonrotation |
-| `.filter-hue-rotate-270` | 270-Grad-Farbtonrotation |
+| `.filter-hue-rotate` | Standard hue rotation (180deg) |
+| `.filter-hue-rotate-90` | 90-degree hue rotation |
+| `.filter-hue-rotate-270` | 270-degree hue rotation |
 
 ```html
-<img src="image.jpg" class="filter-hue-rotate" alt="Farbton rotiert">
+<img src="image.jpg" class="filter-hue-rotate" alt="Hue rotated image">
 ```
 
-### Invertierung
+### Invert
 
-Invertiert die Farben eines Elements.
+Inverts the colors of an element.
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-invert` | Vollständige Farbinvertierung (100%) |
-| `.filter-invert-50` | Teilweise Farbinvertierung (50%) |
+| `.filter-invert` | Complete color inversion (100%) |
+| `.filter-invert-50` | Partial color inversion (50%) |
 
 ```html
-<img src="image.jpg" class="filter-invert" alt="Invertiertes Bild">
+<img src="image.jpg" class="filter-invert" alt="Inverted image">
 ```
 
-### Sättigung
+### Saturation
 
-Passt die Farbsättigung eines Elements an.
+Adjusts the color saturation of an element.
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-saturate` | Erhöhte Sättigung (150%) |
-| `.filter-saturate-high` | Stark erhöhte Sättigung (200%) |
-| `.filter-saturate-low` | Verringerte Sättigung (50%) |
+| `.filter-saturate` | Increased saturation (150%) |
+| `.filter-saturate-high` | Strongly increased saturation (200%) |
+| `.filter-saturate-low` | Reduced saturation (50%) |
 
 ```html
-<img src="image.jpg" class="filter-saturate" alt="Gesättigteres Bild">
-<img src="image.jpg" class="filter-saturate-low" alt="Weniger gesättigtes Bild">
+<img src="image.jpg" class="filter-saturate" alt="More saturated image">
+<img src="image.jpg" class="filter-saturate-low" alt="Less saturated image">
 ```
 
 ### Sepia
 
-Wendet einen Sepia-Effekt an.
+Applies a sepia effect.
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-sepia` | Vollständiger Sepia-Effekt (100%) |
-| `.filter-sepia-50` | Teilweiser Sepia-Effekt (50%) |
+| `.filter-sepia` | Complete sepia effect (100%) |
+| `.filter-sepia-50` | Partial sepia effect (50%) |
 
 ```html
-<img src="image.jpg" class="filter-sepia" alt="Sepia-getöntes Bild">
+<img src="image.jpg" class="filter-sepia" alt="Sepia-toned image">
 ```
 
-## Kombinierte Filter-Effekte
+## Combined Filter Effects
 
-Die Casoon UI Library bietet auch vordefinierte kombinierte Filter-Effekte für häufig verwendete Looks:
+The Casoon UI Library also provides predefined combined filter effects for commonly used looks:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-vintage` | Vintage-Look (Sepia + Kontrast + Helligkeit) |
-| `.filter-cool` | Kühler Look (Bläuliche Tönung) |
-| `.filter-warm` | Warmer Look (Gelbliche Tönung) |
-| `.filter-dramatic` | Dramatischer Look (Hoher Kontrast + Sättigung) |
-| `.filter-soft` | Weicher Look (Leichte Unschärfe + Helligkeit) |
+| `.filter-vintage` | Vintage look (sepia + contrast + brightness) |
+| `.filter-cool` | Cool look (bluish tones) |
+| `.filter-warm` | Warm look (yellowish tones) |
+| `.filter-dramatic` | Dramatic look (high contrast + saturation) |
+| `.filter-soft` | Soft look (light blur + brightness) |
 
 ```html
-<img src="image.jpg" class="filter-vintage" alt="Vintage-Look">
-<img src="image.jpg" class="filter-cool" alt="Kühler Look">
+<img src="image.jpg" class="filter-vintage" alt="Vintage look">
+<img src="image.jpg" class="filter-cool" alt="Cool look">
 ```
 
-## Hover-Filter-Effekte
+## Hover Filter Effects
 
-Die Library bietet auch Filter-Effekte, die nur bei Hover aktiviert werden:
+The library also provides filter effects that are only activated on hover:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-hover` | Standard-Filter-Effekt bei Hover |
-| `.filter-hover-sm` | Leichter Filter-Effekt bei Hover |
-| `.filter-hover-lg` | Starker Filter-Effekt bei Hover |
+| `.filter-hover` | Standard filter effect on hover |
+| `.filter-hover-sm` | Light filter effect on hover |
+| `.filter-hover-lg` | Strong filter effect on hover |
 
 ```html
-<img src="image.jpg" class="filter-hover" alt="Bild mit Hover-Effekt">
+<img src="image.jpg" class="filter-hover" alt="Image with hover effect">
 ```
 
-## Anpassung
+## Customization
 
-Die Filter-Effekte können über CSS-Variablen angepasst werden:
+The filter effects can be customized via CSS variables:
 
 ```css
 :root {
@@ -210,9 +210,9 @@ Die Filter-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Um die Barrierefreiheit zu verbessern, respektieren die Filter-Effekte die Benutzereinstellung `prefers-reduced-motion`:
+To improve accessibility, the filter effects respect the user setting `prefers-reduced-motion`:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -224,6 +224,6 @@ Um die Barrierefreiheit zu verbessern, respektieren die Filter-Effekte die Benut
 }
 ```
 
-## Browserunterstützung
+## Browser Support
 
-Die Filter-Effekte werden von allen modernen Browsern unterstützt. Für ältere Browser, die CSS-Filter nicht unterstützen, wird ein Fallback bereitgestellt. 
+The filter effects are supported by all modern browsers. For older browsers that don't support CSS filters, a fallback is provided. 
