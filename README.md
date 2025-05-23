@@ -1,4 +1,4 @@
-# Casoon UI Library v0.5.1
+# Casoon UI Library v0.5.5
 
 <div align="center">
     <img src="https://placeholder.pics/svg/200x200/DEDEDE/555555/casoon-ui" alt="Casoon UI Logo" width="200"/>
