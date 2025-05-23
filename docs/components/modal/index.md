@@ -1,46 +1,46 @@
 # Modal
 
-Der Modal ist eine Komponente für modale Dialoge in der Casoon UI Library.
+The Modal is a component for modal dialogs in the Casoon UI Library.
 
-## Verwendung
+## Usage
 
 ```html
 <div class="modal">
   <div class="modal__content">
     <div class="modal__header">
-      <h3>Modal Titel</h3>
+      <h3>Modal Title</h3>
       <button class="modal__close">&times;</button>
     </div>
     <div class="modal__body">
-      <p>Modal Inhalt</p>
+      <p>Modal Content</p>
     </div>
     <div class="modal__footer">
-      <button class="button">Schließen</button>
+      <button class="button">Close</button>
     </div>
   </div>
 </div>
 ```
 
-## Varianten
+## Variants
 
-### Größen
+### Sizes
 
 ```html
 <div class="modal modal--sm">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 
 <div class="modal">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 
 <div class="modal modal--lg">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 ```
@@ -50,46 +50,46 @@ Der Modal ist eine Komponente für modale Dialoge in der Casoon UI Library.
 ```html
 <div class="modal modal--primary">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 
 <div class="modal modal--secondary">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 
 <div class="modal modal--dark">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 ```
 
-### Positionen
+### Positions
 
 ```html
 <div class="modal modal--top">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 
 <div class="modal modal--center">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 
 <div class="modal modal--bottom">
   <div class="modal__content">
-    <!-- Modal Inhalt -->
+    <!-- Modal Content -->
   </div>
 </div>
 ```
 
-## CSS Variablen
+## CSS Variables
 
 ```css
 :root {
@@ -103,24 +103,24 @@ Der Modal ist eine Komponente für modale Dialoge in der Casoon UI Library.
 
 ## Best Practices
 
-### Zugänglichkeit
+### Accessibility
 
-- Verwenden Sie semantische HTML-Elemente
-- Fügen Sie aussagekräftige Titel hinzu
-- Stellen Sie ausreichenden Kontrast sicher
-- Implementieren Sie Tastaturnavigation
+- Use semantic HTML elements
+- Add meaningful titles
+- Ensure sufficient contrast
+- Implement keyboard navigation
 
 ### Responsive Design
 
-- Verwenden Sie relative Einheiten
-- Testen Sie auf verschiedenen Bildschirmgrößen
-- Passen Sie die Größen an mobile Geräte an
+- Use relative units
+- Test on different screen sizes
+- Adapt sizes for mobile devices
 
 ### Performance
 
-- Minimieren Sie CSS
-- Vermeiden Sie unnötige Animationen
-- Optimieren Sie die Ladezeit
+- Minimize CSS
+- Avoid unnecessary animations
+- Optimize loading time
 
 ## Integration
 
@@ -136,14 +136,14 @@ function Modal({ isOpen, onClose, children, variant = 'primary', size = 'md' }) 
     <div className={`modal modal--${variant} modal--${size}`}>
       <div className="modal__content">
         <div className="modal__header">
-          <h3>Modal Titel</h3>
+          <h3>Modal Title</h3>
           <button className="modal__close" onClick={onClose}>&times;</button>
         </div>
         <div className="modal__body">
           {children}
         </div>
         <div className="modal__footer">
-          <button className="button" onClick={onClose}>Schließen</button>
+          <button className="button" onClick={onClose}>Close</button>
         </div>
       </div>
     </div>
@@ -213,6 +213,7 @@ export default {
   }
 }
 </script>
+```
 
 ### HTML
 
@@ -229,21 +230,21 @@ export default {
   </style>
 </head>
 <body>
-  <button id="openModalBtn">Modal öffnen</button>
+  <button id="openModalBtn">Open Modal</button>
   
   <div id="myModal" class="modal">
     <div class="modal__overlay"></div>
     <div class="modal__content">
       <div class="modal__header">
-        <h2 class="modal__title">Modal Beispiel</h2>
+        <h2 class="modal__title">Modal Example</h2>
         <button class="modal__close">&times;</button>
       </div>
       <div class="modal__body">
-        <p>Dies ist der Inhalt des Modals.</p>
+        <p>This is the content of the modal.</p>
       </div>
       <div class="modal__footer">
-        <button class="button primary">Bestätigen</button>
-        <button class="button">Abbrechen</button>
+        <button class="button primary">Confirm</button>
+        <button class="button">Cancel</button>
       </div>
     </div>
   </div>
@@ -252,19 +253,18 @@ export default {
     const modal = document.getElementById('myModal');
     const openBtn = document.getElementById('openModalBtn');
     const closeBtn = modal.querySelector('.modal__close');
-    const overlay = modal.querySelector('.modal__overlay');
-    const cancelBtn = modal.querySelector('.button:not(.primary)');
     
-    // Modal öffnen
     openBtn.addEventListener('click', () => {
       modal.classList.add('modal--open');
     });
     
-    // Modal schließen
-    [closeBtn, overlay, cancelBtn].forEach(el => {
-      el.addEventListener('click', () => {
-        modal.classList.remove('modal--open');
-      });
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('modal--open');
+    });
+    
+    // Close modal when clicking on overlay
+    modal.querySelector('.modal__overlay').addEventListener('click', () => {
+      modal.classList.remove('modal--open');
     });
   </script>
 </body>
