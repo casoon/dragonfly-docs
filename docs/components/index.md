@@ -5,24 +5,24 @@ category: Components
 
 # Components Overview
 
-Die Casoon UI Library bietet eine umfangreiche Sammlung modularer Komponenten für verschiedene UI-Anforderungen. Jede Komponente ist als eigenständiges CSS-Modul implementiert und wird über das zentrale Layer-System integriert.
+The Casoon UI Library provides an extensive collection of modular components for various UI requirements. Each component is implemented as a standalone CSS module and is integrated through the central layer system.
 
 ## Using the Components
 
-Alle Komponenten werden automatisch verfügbar, indem die `core.css`-Datei eingebunden wird:
+All components become available automatically by including the `core.css` file:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Alternativ können Sie auch einzelne Komponenten importieren:
+Alternatively, you can import individual components:
 
 ```css
-/* Import der erforderlichen Basis-Dateien */
+/* Import the required base files */
 @import "@casoon/ui-lib/core.css";
 @import "@casoon/ui-lib/themes/day.css";
 
-/* Import einzelner Komponenten nach Bedarf */
+/* Import individual components as needed */
 @import "@casoon/ui-lib/components/button.css";
 @import "@casoon/ui-lib/components/card.css";
 @import "@casoon/ui-lib/components/alert.css";
@@ -32,86 +32,173 @@ Alternativ können Sie auch einzelne Komponenten importieren:
 
 ### Base Components
 
-Diese grundlegenden Komponenten dienen als Bausteine für komplexere Schnittstellen:
+These fundamental components serve as building blocks for more complex interfaces:
 
-- [Alert](/components/alert/) - Kontextsensitive Feedback-Nachrichten
-- [Avatar](/components/avatar/) - Benutzerprofilbilder und -darstellungen
-- [Badge](/components/badge/) - Kleine Zähler oder Statusindikatoren
-- [Button](/components/button/) - Interaktive Schaltflächen für Aktionen
-- [Card](/components/card/) - Container für zusammengehörige Informationen
-- [Chip](/components/chip/) - Kompakte, einheitliche Elemente für Informationen
-- [Code](/components/code/) - Anzeige von Codeblöcken und Snippets
-- [Spinner](/components/spinner/) - Lade-Animationen
-- [Tooltip](/components/tooltip/) - Zusätzliche Informationen beim Hover
+- [Alert](/components/alert/) - Context-sensitive feedback messages
+- [Avatar](/components/avatar/) - User profile images and representations
+- [Badge](/components/badge/) - Small counters or status indicators
+- [Button](/components/button/) - Interactive buttons for actions
+- [Card](/components/card/) - Containers for related information
+- [Chip](/components/chip/) - Compact, uniform elements for information
+- [Code](/components/code/) - Display of code blocks and snippets
+- [Spinner](/components/spinner/) - Loading animations
+- [Tooltip](/components/tooltip/) - Additional information on hover
 
 ### Form Components
 
-Komponenten zum Erstellen interaktiver Formulare:
+Components for creating interactive forms:
 
-- [Checkbox](/components/checkbox/) - Elemente für Mehrfachauswahl
-- [File](/components/file/) - Elemente für Datei-Upload
-- [Form](/components/forms/) - Formular-Container und Layout
-- [Input](/components/input/) - Texteingabefelder
-- [Input Group](/components/input-group/) - Gruppierte Eingabeelemente mit Add-ons
-- [Radio](/components/radio/) - Elemente für Einfachauswahl
-- [Select](/components/select/) - Auswahlmenüs für Optionen
-- [Slider](/components/slider/) - Schieberegler für numerische Werte
-- [Switch](/components/switch/) - Ein/Aus-Schalter
-- [Textarea](/components/textarea/) - Mehrzeilige Textfelder
+- [Checkbox](/components/checkbox/) - Multiple selection elements
+- [File](/components/file/) - File upload elements
+- [Form](/components/forms/) - Form containers and layout
+- [Input](/components/input/) - Text input fields
+- [Input Group](/components/input-group/) - Grouped input elements with add-ons
+- [Radio](/components/radio/) - Single selection elements
+- [Select](/components/select/) - Selection menus for options
+- [Slider](/components/slider/) - Sliders for numeric values
+- [Switch](/components/switch/) - On/off switches
+- [Textarea](/components/textarea/) - Multi-line text fields
 
 ### Layout Components
 
-Komponenten für die strukturelle Organisation von Inhalten:
+Components for structural organization of content:
 
-- [Footer](/components/footer/) - Fußzeilen-Komponente
-- [Header](/components/header/) - Kopfzeilen-Komponente
-- [Sidebar](/components/sidebar/) - Seitenleisten-Navigation
-- [Table](/components/table/) - Tabellenansicht mit erweiterter Funktionalität
-- [Tabs](/components/tabs/) - Tab-basierte Navigation
+- [Footer](/components/footer/) - Footer component
+- [Header](/components/header/) - Header component
+- [Sidebar](/components/sidebar/) - Sidebar navigation
+- [Table](/components/table/) - Table representation with enhanced functionality
+- [Tabs](/components/tabs/) - Tab-based navigation
 
 ### Feedback Components
 
-Komponenten für Benutzerinteraktion und Feedback:
+Components for user interaction and feedback:
 
-- [Modal](/components/modal/) - Dialogfenster für fokussierte Inhalte
-- [Notification](/components/notification/) - Benachrichtigungen
-- [Progress](/components/progress/) - Fortschrittsanzeigen
-- [Skeleton](/components/skeleton/) - Lade-Platzhalter
-- [Toast](/components/toast/) - Temporäre Benachrichtigungen
+- [Modal](/components/modal/) - Dialog windows for focused content
+- [Notification](/components/notification/) - Notifications
+- [Progress](/components/progress/) - Progress indicators
+- [Skeleton](/components/skeleton/) - Loading placeholders
+- [Toast](/components/toast/) - Temporary notifications
 
 ### Advanced Components
 
-Spezialisierte Komponenten für komplexere Anforderungen:
+Specialized components for more complex requirements:
 
-- [Blog](/components/blog/) - Blog-Post-Layout und -Stile
-- [Hamburger](/components/hamburger/) - Mobile Menü-Toggle-Buttons
-- [Widget](/components/widget/) - Wiederverwendbare Inhalts-Container
-- [Wizard](/components/wizard/) - Steuerung mehrstufiger Prozesse
+- [Blog](/components/blog/) - Blog post layout and styles
+- [Hamburger](/components/hamburger/) - Mobile menu toggle buttons
+- [Widget](/components/widget/) - Reusable content containers
+- [Wizard](/components/wizard/) - Multi-step process control
 
 ## Customizing Components
 
-Alle Komponenten können über CSS-Variablen und das Layer-System angepasst werden:
+The Casoon UI Library is designed for easy customization. There are several ways to adapt components to your specific design needs:
+
+### Using CSS Variables
+
+The most straightforward way to customize components is by overriding CSS variables:
 
 ```css
-/* Benutzerdefinierte CSS-Datei */
+:root {
+  /* Colors */
+  --color-primary: #4f46e5;
+  --color-secondary: #64748b;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  /* Typography */
+  --font-family-base: 'Inter', sans-serif;
+  --font-size-base: 1rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-8: 2rem;
+  
+  /* Component-specific */
+  --button-border-radius: 0.375rem;
+  --card-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+```
+
+### Using the Layer System
+
+For more advanced customizations, you can use the CSS Cascade Layer system:
+
+```css
 @import "@casoon/ui-lib/core.css";
 
-/* Anpassung der Komponenten */
+/* Customize specific components */
 @layer components {
+  /* Custom button variant */
   .button.custom {
-    background-color: var(--color-brand);
-    border-radius: var(--radius-lg);
+    background-color: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.5);
+  }
+  
+  /* Custom card variant */
+  .card.custom {
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
 }
 ```
 
+### Creating Component Variants
+
+You can extend existing components by creating custom variants:
+
+```css
+@layer components {
+  /* Ghost button with hover effect */
+  .button.ghost {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--color-primary);
+  }
+  
+  .button.ghost:hover {
+    background-color: rgba(var(--color-primary-rgb), 0.1);
+    border-color: var(--color-primary);
+  }
+  
+  /* Floating card */
+  .card.floating {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card.floating:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+}
+```
+
+### Theme Integration
+
+Components automatically adapt to the active theme:
+
+```html
+<body class="theme-night">
+  <!-- Components will use the night theme colors -->
+</body>
+```
+
 ## Best Practices
 
-- **Kombinieren Sie Komponenten** - Verwenden Sie Komponenten zusammen für komplexe UIs
-- **Nutzen Sie Design-Tokens** - Verwenden Sie vordefinierte Variablen für ein konsistentes Design
-- **Berücksichtigen Sie Barrierefreiheit** - Achten Sie auf semantische Verwendung von Komponenten
-- **Mobile-First-Ansatz** - Beginnen Sie mit dem mobilen Design und erweitern Sie für größere Bildschirme
-- **Beachten Sie die Layer-Spezifität** - Berücksichtigen Sie die Hierarchie des Layer-Systems bei Anpassungen
+- **Combine components** - Use components together for complex UIs
+- **Utilize design tokens** - Use predefined variables for consistent design
+- **Consider accessibility** - Pay attention to semantic use of components
+- **Mobile-first approach** - Start with mobile design and expand for larger screens
+- **Mind layer specificity** - Consider the hierarchy of the layer system when making customizations
 
 ## Usage Examples
 
@@ -451,7 +538,7 @@ Alle Komponenten können über CSS-Variablen und das Layer-System angepasst werd
 
 ## Integration
 
-Die Casoon UI Library kann einfach in verschiedene Frameworks integriert werden:
+The Casoon UI Library can be easily integrated into various frameworks:
 
 ### React
 
@@ -495,9 +582,9 @@ export default {
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/core.css">
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/themes/day.css">
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/components/button.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/core.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/themes/day.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/components/button.css">
 </head>
 <body class="theme-day">
   <button class="button primary">
