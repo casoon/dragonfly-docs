@@ -27,12 +27,9 @@ The simplest way to use the entire component system:
 Or for selective use of specific components:
 
 ```css
-/* Only modules.css for the structure */
-@import '@casoon/ui-lib/modules.css';
-
-/* Targeted individual components */
-@import '@casoon/ui-lib/modules/button.module.css';
-@import '@casoon/ui-lib/modules/card.module.css';
+/* Nur die Komponenten importieren, die Sie wirklich benötigen */
+@import '@casoon/ui-lib/components/button.css';
+@import '@casoon/ui-lib/components/card.css';
 ```
 
 ## Available Components

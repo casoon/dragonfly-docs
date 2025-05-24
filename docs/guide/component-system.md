@@ -20,13 +20,13 @@ Die Module sind in der `modules.css` Datei organisiert:
  */
 
 /* Alert Modul */
-@import url('./modules/alert.module.css') layer(module-alert);
+@import '@casoon/ui-lib/components/alert.css';
 
 /* Avatar Modul */
-@import url('./modules/avatar.module.css') layer(module-avatar);
+@import '@casoon/ui-lib/components/avatar.css';
 
 /* Badge Modul */
-@import url('./modules/badge.module.css') layer(module-badge);
+@import '@casoon/ui-lib/components/badge.css';
 
 /* Weitere Module... */
 ```
@@ -96,9 +96,9 @@ Sie können auch nur ausgewählte Module importieren:
 @import "@casoon/ui-lib/layers.css";
 
 /* Nur benötigte Module importieren */
-@import "@casoon/ui-lib/modules/button.module.css" layer(module-button);
-@import "@casoon/ui-lib/modules/input.module.css" layer(module-input);
-@import "@casoon/ui-lib/modules/card.module.css" layer(module-card);
+@import "@casoon/ui-lib/components/button.css";
+@import "@casoon/ui-lib/components/input.css";
+@import "@casoon/ui-lib/components/card.css";
 ```
 
 ## Anpassung von Modulen

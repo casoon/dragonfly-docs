@@ -12,13 +12,18 @@ The Footer component provides a structured area at the bottom of a web page for 
 The Footer component is automatically imported with the `core.css`:
 
 ```css
-@import "@casoon/ui-lib/core.css";
+/* Required dependency */
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/themes/day.css'; /* or another theme */
+
+/* Footer module */
+@import '@casoon/ui-lib/components/footer.css';
 ```
 
 Alternatively, you can import the component directly:
 
 ```css
-@import "@casoon/ui-lib/modules/footer.module.css" layer(module-footer);
+@import "@casoon/ui-lib/components/footer.css";
 ```
 
 ## Basic Usage
