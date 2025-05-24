@@ -18,6 +18,20 @@ The Card component provides a flexible and customizable card component for the C
 </div>
 ```
 
+<div class="example-wrapper">
+  <div class="card">
+    <div class="card__header">
+      <h3 class="card__title">Card Title</h3>
+    </div>
+    <div class="card__body">
+      <p>Card Content</p>
+    </div>
+    <div class="card__footer">
+      <button class="button">Action</button>
+    </div>
+  </div>
+</div>
+
 ## Variants
 
 ### With Image
@@ -34,6 +48,18 @@ The Card component provides a flexible and customizable card component for the C
 </div>
 ```
 
+<div class="example-wrapper">
+  <div class="card">
+    <div class="card__image">
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder Image">
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">Card Title</h3>
+      <p>Card Content</p>
+    </div>
+  </div>
+</div>
+
 ### With Animation
 
 ```html
@@ -46,6 +72,17 @@ The Card component provides a flexible and customizable card component for the C
   </div>
 </div>
 ```
+
+<div class="example-wrapper">
+  <div class="card card--animated">
+    <div class="card__header">
+      <h3 class="card__title">Animated Card</h3>
+    </div>
+    <div class="card__body">
+      <p>Hover over this card to see the animation effect</p>
+    </div>
+  </div>
+</div>
 
 ## Importing Modules
 
