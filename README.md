@@ -2,19 +2,19 @@
 
 <div align="center">
     <img src="https://placeholder.pics/svg/200x200/DEDEDE/555555/casoon-ui" alt="Casoon UI Logo" width="200"/>
-    <p>Ein modernes CSS-Framework mit Layer-System, optimiert für Lightning CSS</p>
+    <p>A modern CSS framework with a layer system, optimized for Lightning CSS</p>
 </div>
 
-## 🚀 Funktionen
+## 🚀 Features
 
-- **Layer-basierte Architektur**: Präzise Kontrolle über CSS-Spezifität
-- **Optimiert für Lightning CSS**: Vollständige Unterstützung für moderne Build-Tools
-- **Container Queries**: Komponentenbasierte Responsivität für moderne Layouts
-- **Flüssige Typografie**: Unterstützung für `interpolate-size` für flexible Größenanpassungen
-- **Einfache Integration**: Ein einziger Import für die gesamte Bibliothek
-- **Modular und erweiterbar**: Über 30 UI-Komponenten 
-- **Umfangreiche Themes**: Anpassbare Light/Dark-Modi und Farbschemen
-- **Barrierefreiheit**: Optimierte Komponenten mit Unterstützung für `prefers-reduced-motion`
+- **Layer-based architecture**: Precise control over CSS specificity
+- **Optimized for Lightning CSS**: Full support for modern build tools
+- **Container Queries**: Component-based responsiveness for modern layouts
+- **Fluid Typography**: Support for `interpolate-size` for flexible sizing
+- **Simple Integration**: A single import for the entire library
+- **Modular and extensible**: Over 30 UI components
+- **Comprehensive Themes**: Customizable Light/Dark modes and color schemes
+- **Accessibility**: Optimized components with support for `prefers-reduced-motion`
 
 ## 📦 Installation
 
@@ -29,55 +29,55 @@ yarn add @casoon/ui-lib@0.5.5
 pnpm add @casoon/ui-lib@0.5.5
 ```
 
-## 🔧 Verwendung
+## 🔧 Usage
 
-### Einfache Integration (empfohlen)
+### Simple Integration (recommended)
 
-Mit der aktuellen Version reicht ein einziger Import für die gesamte Bibliothek:
+With the current version, a single import is sufficient for the entire library:
 
 ```css
-/* Alle nötigen Styles werden durch diesen einen Import geladen */
+/* All necessary styles are loaded through this single import */
 @import '@casoon/ui-lib@0.5.5/core.css';
 
-/* Effekte müssen einzeln importiert werden */
+/* Effects must be imported individually */
 @import '@casoon/ui-lib/effects/glass.css';
 @import '@casoon/ui-lib/effects/animations.css';
-/* Weitere Effekte nach Bedarf importieren */
+/* Import additional effects as needed */
 ```
 
-Die `core.css` importiert automatisch alle notwendigen Dateien in der optimalen Reihenfolge.
+The `core.css` automatically imports all necessary files in the optimal order.
 
-### HTML-Beispiel
+### HTML Example
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="node_modules/@casoon/ui-lib/core.css">
-    <title>Casoon UI Beispiel</title>
+    <title>Casoon UI Example</title>
 </head>
 <body>
     <div class="container mx-auto p-4">
-        <h1 class="text-2xl font-bold mb-4">Willkommen bei Casoon UI</h1>
+        <h1 class="text-2xl font-bold mb-4">Welcome to Casoon UI</h1>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="card">
-                <div class="card__header">Beispiel-Karte</div>
+                <div class="card__header">Example Card</div>
                 <div class="card__body">
-                    <p>Dies ist eine einfache Karte mit Text.</p>
-                    <button class="button primary mt-4">Aktion</button>
+                    <p>This is a simple card with text.</p>
+                    <button class="button primary mt-4">Action</button>
                 </div>
             </div>
             
             <div class="card">
-                <div class="card__header">Formularbeispiel</div>
+                <div class="card__header">Form Example</div>
                 <div class="card__body">
                     <form class="form">
                         <div class="form-group">
                             <label for="name" class="form-label">Name</label>
-                            <input id="name" type="text" class="input" placeholder="Name eingeben">
+                            <input id="name" type="text" class="input" placeholder="Enter name">
                         </div>
-                        <button type="submit" class="button primary mt-4">Senden</button>
+                        <button type="submit" class="button primary mt-4">Submit</button>
                     </form>
                 </div>
             </div>
@@ -87,76 +87,76 @@ Die `core.css` importiert automatisch alle notwendigen Dateien in der optimalen 
 </html>
 ```
 
-## 🏗️ Architektur
+## 🏗️ Architecture
 
-Casoon UI Library basiert auf einem Layer-System, das die CSS-Spezifität und Kaskadierung präzise steuert:
+Casoon UI Library is based on a layer system that precisely controls CSS specificity and cascading:
 
 ```css
-@layer reset,                /* Browser-Reset, Normalisierung */
-       tokens,               /* Design-Tokens und Variablen */
-       core,                 /* Kernfunktionalitäten */
-       logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
-       colors,               /* Farbsystem */
-       color-mix,            /* Farbmischungen und -variationen */
-       layout,               /* Layout-Grundlagen */
-       layout-queries,       /* Responsive Anpassungen */
-       typography,           /* Typografie-System */
-       utilities,            /* Utility-Klassen */
-       smooth-scroll,        /* Scroll-Verhalten */
-       accessibility,        /* Barrierefreiheit */
-       icons,                /* Icon-System */
-       components,           /* UI-Komponenten */
-       animations,           /* Bewegungssystem */
-       effects,              /* Visuelle Effekte */
-       themes;               /* Theming-System */
+@layer reset,                /* Browser reset, normalization */
+       tokens,               /* Design tokens and variables */
+       core,                 /* Core functionalities */
+       logical-properties,   /* Logical properties for bidirectionality */
+       colors,               /* Color system */
+       color-mix,            /* Color mixes and variations */
+       layout,               /* Layout basics */
+       layout-queries,       /* Responsive adaptations */
+       typography,           /* Typography system */
+       utilities,            /* Utility classes */
+       smooth-scroll,        /* Scroll behavior */
+       accessibility,        /* Accessibility */
+       icons,                /* Icon system */
+       components,           /* UI components */
+       animations,           /* Motion system */
+       effects,              /* Visual effects */
+       themes;               /* Theming system */
 ```
 
-## 🧩 Komponenten-System
+## 🧩 Component System
 
-Casoon UI bietet eine umfangreiche Sammlung von UI-Komponenten, die für verschiedene Anwendungsfälle konzipiert sind:
+Casoon UI offers a comprehensive collection of UI components designed for various use cases:
 
-### Verfügbare Komponenten
+### Available Components
 
-Hier eine Auswahl der wichtigsten Komponenten:
+Here's a selection of the most important components:
 
 ```html
-<!-- Button-Komponente -->
-<button class="button primary">Primärer Button</button>
-<button class="button secondary">Sekundärer Button</button>
+<!-- Button component -->
+<button class="button primary">Primary Button</button>
+<button class="button secondary">Secondary Button</button>
 
-<!-- Karten-Komponente -->
+<!-- Card component -->
 <div class="card">
-    <div class="card__header">Kartentitel</div>
-    <div class="card__body">Karteninhalt</div>
-    <div class="card__footer">Kartenfußzeile</div>
+    <div class="card__header">Card Title</div>
+    <div class="card__body">Card Content</div>
+    <div class="card__footer">Card Footer</div>
 </div>
 
-<!-- Formular-Elemente -->
-<input class="input" type="text" placeholder="Text eingeben">
-<textarea class="textarea" placeholder="Mehrzeiliger Text"></textarea>
+<!-- Form elements -->
+<input class="input" type="text" placeholder="Enter text">
+<textarea class="textarea" placeholder="Multi-line text"></textarea>
 <select class="select">
     <option>Option 1</option>
     <option>Option 2</option>
 </select>
 
-<!-- Alert/Hinweis -->
+<!-- Alert -->
 <div class="alert success">
     <div class="alert__icon">✓</div>
-    <div class="alert__content">Erfolgreich gespeichert!</div>
+    <div class="alert__content">Successfully saved!</div>
 </div>
 
-<!-- Fortschrittsanzeige -->
+<!-- Progress indicator -->
 <div class="progress">
     <div class="progress__bar" style="width: 75%"></div>
 </div>
 ```
 
-### Modularer Import
+### Modular Import
 
-Komponenten können einzeln importiert werden, wenn nur bestimmte benötigt werden:
+Components can be imported individually if only specific ones are needed:
 
 ```css
-/* Nur bestimmte Komponenten laden */
+/* Load only specific components */
 @import '@casoon/ui-lib/components/button.css';
 @import '@casoon/ui-lib/components/card.css';
 @import '@casoon/ui-lib/components/input.css';
@@ -164,52 +164,52 @@ Komponenten können einzeln importiert werden, wenn nur bestimmte benötigt werd
 
 ## 🎨 Themes
 
-Casoon UI unterstützt ein umfangreiches Theming-System mit vordefinierten Themes:
+Casoon UI supports a comprehensive theming system with predefined themes:
 
 ```html
-<!-- Standard Theme (hell) -->
+<!-- Standard theme (light) -->
 <body class="theme-day">
-    <!-- Inhalte im hellen Modus -->
+    <!-- Content in light mode -->
 </body>
 
-<!-- Dunkles Theme -->
+<!-- Dark theme -->
 <body class="theme-night">
-    <!-- Inhalte im dunklen Modus -->
+    <!-- Content in dark mode -->
 </body>
 
-<!-- Andere Themes -->
+<!-- Other themes -->
 <body class="theme-ocean">
-    <!-- Ozean-Theme -->
+    <!-- Ocean theme -->
 </body>
 ```
 
-### Benutzerdefinierte Themes
+### Custom Themes
 
-Themes lassen sich leicht anpassen:
+Themes can be easily customized:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 
-/* Eigenes Theme definieren */
+/* Define your own theme */
 @layer themes {
   .theme-custom {
     --color-primary: #8e44ad;
     --color-secondary: #2c3e50;
     --color-accent: #f39c12;
     
-    /* Hintergrund- und Textfarben */
+    /* Background and text colors */
     --color-background: #ffffff;
     --color-text: #333333;
   }
 }
 ```
 
-## 🖥️ Framework-Integration
+## 🖥️ Framework Integration
 
 ### React
 
 ```jsx
-// In index.jsx oder App.jsx
+// In index.jsx or App.jsx
 import '@casoon/ui-lib/core.css';
 import '@casoon/ui-lib/themes/night.css';
 
@@ -218,7 +218,7 @@ function App() {
     <div className="theme-night">
       <div className="container mx-auto p-4">
         <h1 className="text-2xl font-bold mb-4">Casoon UI in React</h1>
-        <button className="button primary">Klick mich</button>
+        <button className="button primary">Click me</button>
       </div>
     </div>
   );
@@ -228,12 +228,12 @@ function App() {
 ### Vue.js
 
 ```vue
-<!-- Im App.vue -->
+<!-- In App.vue -->
 <template>
   <div class="theme-day">
     <div class="container mx-auto p-4">
       <h1 class="text-2xl font-bold mb-4">Casoon UI in Vue</h1>
-      <button class="button primary">Klick mich</button>
+      <button class="button primary">Click me</button>
     </div>
   </div>
 </template>
@@ -248,7 +248,7 @@ import '@casoon/ui-lib/themes/day.css';
 
 ```astro
 ---
-// In einer .astro Datei
+// In a .astro file
 import '@casoon/ui-lib/core.css';
 import '@casoon/ui-lib/themes/ocean.css';
 ---
@@ -257,21 +257,21 @@ import '@casoon/ui-lib/themes/ocean.css';
   <body class="theme-ocean">
     <div class="container mx-auto p-4">
       <h1 class="text-2xl font-bold mb-4">Casoon UI in Astro</h1>
-      <button class="button primary">Klick mich</button>
+      <button class="button primary">Click me</button>
     </div>
   </body>
 </html>
 ```
 
-## 🧰 Nutzung in KI-Tools (Model Context Protocol – MCP)
+## 🧰 Usage with AI Tools (Model Context Protocol – MCP)
 
-Um die Entwicklung mit der casoon/ui-lib zu vereinfachen, kann dein Editor oder KI-Tool (z. B. Cursor oder Continue) automatisch kontextuelle Informationen über das Projekt laden – inklusive Code, Struktur und Dokumentation.
+To simplify development with casoon/ui-lib, your editor or AI tool (e.g., Cursor or Continue) can automatically load contextual information about the project – including code, structure, and documentation.
 
-Dazu wird das Model Context Protocol (MCP) genutzt.
+This is done using the Model Context Protocol (MCP).
 
-### Konfiguration (z. B. für Cursor)
+### Configuration (e.g., for Cursor)
 
-Füge folgende Konfiguration in die cursor.config.json oder settings.json deines Tools ein:
+Add the following configuration to your tool's cursor.config.json or settings.json:
 
 ```json
 {
@@ -286,43 +286,47 @@ Füge folgende Konfiguration in die cursor.config.json oder settings.json deines
 }
 ```
 
-### Erklärung
+### Explanation
 
-- **gitmcp-ui-lib**: Liefert strukturelle Infos zur Komponentenbibliothek selbst (Quellcode, Props, Imports, usw.).
-- **gitmcp-ui-docs**: Liefert Informationen aus der begleitenden VitePress-Dokumentation (z. B. Beispiele, Varianten, Slots).
+- **gitmcp-ui-lib**: Provides structural information about the component library itself (source code, props, imports, etc.).
+- **gitmcp-ui-docs**: Provides information from the accompanying VitePress documentation (e.g., examples, variants, slots).
 
-### Vorteil
+### Advantage
 
-Mit dieser Konfiguration kann ein KI-Assistent dein Projekt besser verstehen und dir gezielter helfen – etwa beim:
+With this configuration, an AI assistant can better understand your project and help you more specifically – such as:
 
-- Verwenden von Komponenten mit den richtigen Props
-- Erstellen von Snippets basierend auf echten Beispielen
-- Verstehen der Architektur deines Projekts
+- Using components with the correct props
+- Creating snippets based on real examples
+- Understanding the architecture of your project
 
-## 📚 Dokumentation
+## 📚 Documentation
 
-Die Dokumentation für die Casoon UI Library ist unter [https://casoon.github.io/ui-docs/](https://casoon.github.io/ui-docs/) verfügbar.
+The documentation for the Casoon UI Library is available at [https://casoon.github.io/ui-docs/](https://casoon.github.io/ui-docs/).
 
-### Dokumentationsstruktur
+### Documentation Structure
 
-Die Dokumentation ist in folgende Hauptbereiche gegliedert:
+The documentation is divided into the following main sections:
 
-- **Getting Started**: Einführung, Installation und grundlegende Konzepte
-- **Components**: Ausführliche Dokumentation aller UI-Komponenten mit interaktiven Beispielen
-- **Effects**: Visuelle Effekte und deren Anwendung
-- **Examples**: Komplexe Beispiele, die die Verwendung mehrerer Komponenten demonstrieren
+- **Getting Started**: Introduction, installation, and basic concepts
+- **Components**: Detailed documentation of all UI components with interactive examples
+- **Effects**: Visual effects and their application, organized into categories:
+  - Visual Effects (3D, Filters, Shadows, Gradients, Glass Morphism, Patterns)
+  - Animation Effects (Transitions, Animations)
+  - Interaction Effects (Hover, Focus)
+  - State Effects (Loading)
+- **Examples**: Complex examples demonstrating the use of multiple components
 
-Jede Komponentenseite bietet:
-- Grundlegende Verwendung mit HTML-Beispielen
-- Varianten und Anpassungsmöglichkeiten
-- Interaktive Demos
-- Best Practices für Barrierefreiheit und responsive Design
-- Framework-Integration (React, Vue)
+Each component page provides:
+- Basic usage with HTML examples
+- Variants and customization options
+- Interactive demos
+- Best practices for accessibility and responsive design
+- Framework integration (React, Vue)
 
-## 📜 Lizenz
+## 📜 License
 
 MIT 
 
-## Hinweis zu Version 0.5.5
+## Note on Version 0.5.5
 
-Die Version 0.5.5 bringt kleinere Optimierungen und Bugfixes. Bitte prüfe die Release Notes für Details zu Änderungen an Layer-Struktur, Animationen und Utilities. 
+Version 0.5.5 brings minor optimizations and bug fixes. Please check the release notes for details on changes to the layer structure, animations, and utilities. 
