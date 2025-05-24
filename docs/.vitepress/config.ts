@@ -224,6 +224,46 @@ export default defineConfig({
           ]
         }
       ],
+      '/effects/': [
+        {
+          text: 'Effects System',
+          items: [
+            { text: 'Overview', link: '/effects-system' }
+          ]
+        },
+        {
+          text: 'Visual Effects',
+          items: [
+            { text: '3D Effects', link: '/effects/3d' },
+            { text: 'Filter Effects', link: '/effects/filters' },
+            { text: 'Shadow Effects', link: '/effects/shadows' },
+            { text: 'Gradient Effects', link: '/effects/gradient' },
+            { text: 'Glass Morphism', link: '/effects/glass' },
+            { text: 'Patterns & Textures', link: '/effects/patterns' },
+            { text: 'Neon Effects', link: '/effects/neon' }
+          ]
+        },
+        {
+          text: 'Animation Effects',
+          items: [
+            { text: 'Transitions', link: '/effects/transitions' },
+            { text: 'Animations', link: '/effects/animations' }
+          ]
+        },
+        {
+          text: 'Interaction Effects',
+          items: [
+            { text: 'Hover Effects', link: '/effects/interaction/hover' },
+            { text: 'Focus Effects', link: '/effects/interaction/focus' }
+          ]
+        },
+        {
+          text: 'State Effects',
+          items: [
+            { text: 'Loading Effects', link: '/effects/state/loading' }
+          ]
+        }
+      ],
       '/themes/': [
         {
           text: 'Themes',
