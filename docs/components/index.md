@@ -9,16 +9,10 @@ The Casoon UI Library provides an extensive collection of modular components for
 
 ## Using the Components
 
-All components become available automatically by including the `core.css` file:
+To use components from the Casoon UI Library, you need to import the core file, a theme, and each component you want to use individually:
 
 ```css
-@import "@casoon/ui-lib/core.css";
-```
-
-Alternatively, you can import individual components:
-
-```css
-/* Import the required base files */
+/* Required base files */
 @import "@casoon/ui-lib/core.css";
 @import "@casoon/ui-lib/themes/day.css";
 
@@ -27,6 +21,8 @@ Alternatively, you can import individual components:
 @import "@casoon/ui-lib/components/card.css";
 @import "@casoon/ui-lib/components/alert.css";
 ```
+
+The `core.css` file provides the foundation and base styles, but each component must be explicitly imported to be available in your project.
 
 ## Available Components
 
