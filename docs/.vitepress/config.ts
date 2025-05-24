@@ -189,16 +189,15 @@ export default defineConfig({
           text: 'Guide',
           items: [
             { text: 'Introduction', link: '/guide/' },
-            { text: 'Installation', link: '/guide/installation' },
             { text: 'Layer System', link: '/guide/layer-system' },
             { text: 'Core CSS System', link: '/guide/core-css-system' },
             { text: 'Color System', link: '/guide/colors-system' },
             { text: 'Color-Mix System', link: '/guide/color-mix-system' },
             { text: 'Theme System', link: '/guide/theme-system' },
-            { text: 'CSS Variables', link: '/guide/css-variablen' },
-            { text: 'Modular Component System', link: '/guide/modulare-komponenten-system' },
-            { text: 'Responsive Adaptation', link: '/guide/responsive-anpassungen' },
-            { text: 'Utility Classes', link: '/guide/utility-klassen' },
+            { text: 'CSS Variables', link: '/guide/custom-properties' },
+            { text: 'Modular Component System', link: '/guide/modular-component-system' },
+            { text: 'Responsive Adaptation', link: '/guide/grid-system' },
+            { text: 'Utility Classes', link: '/guide/component-system' },
           ]
         }
       ],
