@@ -127,7 +127,7 @@ The Modal is a component for modal dialogs in the Casoon UI Library.
 ### React
 
 ```jsx
-import 'casoon-ui-lib/modules/modal.module.css';
+import '@casoon/ui-lib/components/modal.css';
 
 function Modal({ isOpen, onClose, children, variant = 'primary', size = 'md' }) {
   if (!isOpen) return null;
@@ -221,8 +221,8 @@ export default {
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/core.css">
-  <link rel="stylesheet" href="path/to/casoon-ui-lib/modules/modal.module.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/core.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/components/modal.css">
   <style>
     .hidden {
       display: none;

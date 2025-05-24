@@ -73,7 +73,7 @@ export default defineConfig({
       { text: 'Home', link: '/', activeMatch: '^/$' },
       { text: 'Getting Started', link: '/getting-started/', activeMatch: '^/getting-started' },
       { text: 'Components', link: '/components/', activeMatch: '^/components' },
-      { text: 'Effects', link: '/effects-system', activeMatch: '^/effects' },
+      { text: 'Effects', link: '/effects/', activeMatch: '^/effects' },
       { text: 'Examples', link: '/examples/', activeMatch: '^/examples' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
@@ -197,7 +197,7 @@ export default defineConfig({
         {
           text: 'Effects System',
           items: [
-            { text: 'Overview', link: '/guide/effects-system' }
+            { text: 'Overview', link: '/effects/' }
           ]
         },
         {
@@ -228,7 +228,7 @@ export default defineConfig({
         {
           text: 'Effects System',
           items: [
-            { text: 'Overview', link: '/effects-system' }
+            { text: 'Overview', link: '/effects/' }
           ]
         },
         {

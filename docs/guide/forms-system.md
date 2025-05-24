@@ -8,20 +8,20 @@ Das Formularsystem der Casoon UI Library bietet eine umfassende Sammlung von Kom
 
 ```css
 /* Grundlegende Abhängigkeiten zuerst */
-@import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* oder ein anderes Theme */
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/themes/day.css'; /* oder ein anderes Theme */
 
 /* Allgemeines Formular-Layer */
-@import 'casoon-ui-lib/layers/forms.css';
+@import '@casoon/ui-lib/forms.css';
 
 /* Dann die spezifischen Form-Module nach Bedarf */
-@import 'casoon-ui-lib/modules/form.module.css';
-@import 'casoon-ui-lib/modules/input.module.css';
-@import 'casoon-ui-lib/modules/textarea.module.css';
-@import 'casoon-ui-lib/modules/select.module.css';
-@import 'casoon-ui-lib/modules/checkbox.module.css';
-@import 'casoon-ui-lib/modules/radio.module.css';
-@import 'casoon-ui-lib/modules/switch.module.css';
+@import '@casoon/ui-lib/components/form.css';
+@import '@casoon/ui-lib/components/input.css';
+@import '@casoon/ui-lib/components/textarea.css';
+@import '@casoon/ui-lib/components/select.css';
+@import '@casoon/ui-lib/components/checkbox.css';
+@import '@casoon/ui-lib/components/radio.css';
+@import '@casoon/ui-lib/components/switch.css';
 ```
 
 Die korrekte Ladereihenfolge ist entscheidend, da die spezifischen Formularmodule Variablen, Utility-Klassen und Grundstile verwenden, die in `core.css` und `forms.css` definiert sind. Ohne diese Abhängigkeiten werden die Formularelemente nicht korrekt dargestellt.

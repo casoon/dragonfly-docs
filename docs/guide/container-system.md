@@ -8,10 +8,10 @@ Das Container-System der Casoon UI Library bietet eine konsistente Methode zur V
 
 ```css
 /* Notwendige Abhängigkeit */
-@import 'casoon-ui-lib/core.css';
+@import '@casoon/ui-lib/core.css';
 
 /* Layout-System, enthält Container */
-@import 'casoon-ui-lib/layers/layout.css';
+@import '@casoon/ui-lib/layout.css';
 ```
 
 ## Best Practices

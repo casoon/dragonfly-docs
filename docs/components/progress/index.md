@@ -91,7 +91,7 @@ The Progress is a component for progress bars in the Casoon UI Library.
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/progress.module.css';
+import '@casoon/ui-lib/components/progress.css';
 
 interface Props {
   value: number;

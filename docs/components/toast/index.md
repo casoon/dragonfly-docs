@@ -45,8 +45,8 @@ The Toast component of the Casoon UI Library provides temporary notifications th
 
 ```astro
 ---
-import 'casoon-ui-lib/core.css';
-import 'casoon-ui-lib/themes/day.css'; // or another theme
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css'; // or another theme
 
 interface Props {
   variant?: 'success' | 'error' | 'warning' | 'info';
@@ -183,7 +183,7 @@ For better management of multiple toasts, you can create a Toast Manager:
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/toast.module.css';
+import '@casoon/ui-lib/components/toast.css';
 
 interface Toast {
   id: string;
@@ -241,7 +241,7 @@ const toasts: Toast[] = [
 
 ```jsx
 import React, { useState, useEffect } from 'react';
-import 'casoon-ui-lib/modules/toast.module.css';
+import '@casoon/ui-lib/components/toast.css';
 
 function Toast({ children, type = 'info', position = 'top-right', duration = 3000, onClose }) {
   const [visible, setVisible] = useState(true);

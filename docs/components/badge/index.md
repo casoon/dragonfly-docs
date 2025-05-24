@@ -84,7 +84,7 @@ The Badge is a component for small status indicators and counters in the Casoon 
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/badge.module.css';
+import '@casoon/ui-lib/components/badge.css';
 
 interface Props {
   type?: 'info' | 'success' | 'warning' | 'error' | 'primary' | 'secondary';
@@ -168,7 +168,7 @@ import Badge from '../components/Badge.astro';
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/badge.module.css';
+import '@casoon/ui-lib/components/badge.css';
 
 interface Props {
   type?: 'info' | 'success' | 'warning' | 'error' | 'primary' | 'secondary';

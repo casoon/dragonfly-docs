@@ -17,11 +17,11 @@ The File Input component of the Casoon UI Library allows users to upload files a
 
 ```css
 /* Required dependency */
-@import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* or another theme */
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
 /* File Input module */
-@import 'casoon-ui-lib/modules/file.module.css';
+@import '@casoon/ui-lib/components/file.css';
 ```
 
 ## Variants
@@ -329,7 +329,7 @@ The File Input component uses the following CSS variables:
 
 ```jsx
 import React, { useState, useRef } from 'react';
-import 'casoon-ui-lib/modules/file.module.css';
+import '@casoon/ui-lib/components/file.css';
 
 function FileInput({
   accept = '',

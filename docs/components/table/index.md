@@ -154,7 +154,7 @@ The Table component provides a flexible and customizable way to display tabular 
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/table.module.css';
+import '@casoon/ui-lib/components/table.css';
 
 interface Props {
   striped?: boolean;
@@ -273,7 +273,7 @@ const tableData = [
 
 ```jsx
 import React from 'react';
-import 'casoon-ui-lib/modules/table.module.css';
+import '@casoon/ui-lib/components/table.css';
 
 function Table({ data, striped, hover, animated }) {
   const tableClasses = [

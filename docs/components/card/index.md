@@ -47,6 +47,17 @@ The Card component provides a flexible and customizable card component for the C
 </div>
 ```
 
+## Importing Modules
+
+```css
+/* Required dependency */
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/themes/day.css'; /* or another theme */
+
+/* Card module */
+@import '@casoon/ui-lib/components/card.css';
+```
+
 ## CSS Variables
 
 ```css
@@ -90,7 +101,7 @@ The Card component provides a flexible and customizable card component for the C
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/card.module.css';
+import '@casoon/ui-lib/components/card.css';
 
 interface Props {
   title: string;

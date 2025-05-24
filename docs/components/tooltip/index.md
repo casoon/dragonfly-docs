@@ -110,7 +110,7 @@ The Tooltip is a component for contextual help text in the Casoon UI Library.
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/tooltip.module.css';
+import '@casoon/ui-lib/components/tooltip.css';
 
 interface Props {
   text: string;
@@ -196,7 +196,7 @@ import Tooltip from '../components/Tooltip.astro';
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/tooltip.module.css';
+import '@casoon/ui-lib/components/tooltip.css';
 
 interface Props {
   position?: 'top' | 'right' | 'bottom' | 'left';

@@ -108,7 +108,7 @@ The Slider component is an interactive control for selecting values in the Casoo
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/slider.module.css';
+import '@casoon/ui-lib/components/slider.css';
 
 interface Props {
   min?: number;

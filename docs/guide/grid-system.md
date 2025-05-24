@@ -8,10 +8,10 @@ Das Grid-System der Casoon UI Library bietet eine leistungsstarke Möglichkeit, 
 
 ```css
 /* Notwendige Abhängigkeit */
-@import 'casoon-ui-lib/core.css';
+@import '@casoon/ui-lib/core.css';
 
 /* Layout-System, enthält Grid */
-@import 'casoon-ui-lib/layers/layout.css';
+@import '@casoon/ui-lib/layout.css';
 ```
 
 Wenn Sie nur das Layout-Layer importieren ohne core.css, können einige Funktionen nicht korrekt funktionieren, da notwendige Definitionen für Variablen, Utility-Klassen und Grundstile fehlen würden.

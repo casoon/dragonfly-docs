@@ -131,7 +131,7 @@ The Tabs are a component for tabbed content in the Casoon UI Library.
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/tabs.module.css';
+import '@casoon/ui-lib/components/tabs.css';
 
 interface Props {
   tabs: Array<{

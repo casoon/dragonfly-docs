@@ -139,7 +139,7 @@ The Forms components provide a collection of form elements in the Casoon UI Libr
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/forms.module.css';
+import '@casoon/ui-lib/components/forms.css';
 
 interface Props {
   type?: 'text' | 'email' | 'password' | 'number';

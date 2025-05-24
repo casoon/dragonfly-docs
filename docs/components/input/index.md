@@ -11,7 +11,7 @@ The Input component of the Casoon UI Library offers various styles and variants 
 ## Importing Modules
 
 ```css
-@import 'casoon-ui-lib/modules/input.module.css';
+@import '@casoon/ui-lib/components/input.css';
 ```
 
 ## Variants
@@ -167,8 +167,8 @@ The Input component uses the following CSS variables:
 
 ```jsx
 import React from 'react';
-import 'casoon-ui-lib/core.css';
-import 'casoon-ui-lib/modules/input.module.css';
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/components/input.css';
 
 function Input({
   type = 'text',
@@ -249,8 +249,8 @@ export default Input;
 </template>
 
 <script>
-import 'casoon-ui-lib/core.css';
-import 'casoon-ui-lib/modules/input.module.css';
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/components/input.css';
 
 export default {
   name: 'InputComponent',
@@ -278,8 +278,8 @@ export default {
 
 ```svelte
 <script>
-  import 'casoon-ui-lib/core.css';
-  import 'casoon-ui-lib/modules/input.module.css';
+  import '@casoon/ui-lib/core.css';
+  import '@casoon/ui-lib/components/input.css';
   
   export let type = 'text';
   export let id = '';

@@ -17,13 +17,13 @@ Die Casoon UI Library bietet eine umfangreiche Sammlung von Modulen, die Sie je 
 
 ```css
 /* Immer zuerst core.css laden */
-@import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* Ein Theme wird empfohlen */
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/themes/day.css'; /* Ein Theme wird empfohlen */
 
 /* Erst danach spezifische Module */
-@import 'casoon-ui-lib/layers/layout.css';
-@import 'casoon-ui-lib/layers/forms.css';
-@import 'casoon-ui-lib/modules/button.module.css';
+@import '@casoon/ui-lib/layout.css';
+@import '@casoon/ui-lib/forms.css';
+@import '@casoon/ui-lib/components/button.css';
 /* usw. */
 ```
 
@@ -33,25 +33,25 @@ Die folgende Reihenfolge wird für Imports empfohlen:
 
 1. **Core**: Enthält grundlegende Layer und wird immer zuerst geladen
    ```css
-   @import 'casoon-ui-lib/core.css';
+   @import '@casoon/ui-lib/core.css';
    ```
 
 2. **Theme**: Mindestens ein Theme sollte geladen werden
    ```css
-   @import 'casoon-ui-lib/themes/day.css';
+   @import '@casoon/ui-lib/themes/day.css';
    ```
 
 3. **Optionale Layer**: Erweitern die Core-Funktionalität
    ```css
-   @import 'casoon-ui-lib/layers/forms.css';
-   @import 'casoon-ui-lib/layers/layout.css';
+   @import '@casoon/ui-lib/forms.css';
+   @import '@casoon/ui-lib/layout.css';
    /* weitere Layer nach Bedarf */
    ```
 
 4. **Module**: Spezifische Komponenten nach Bedarf
    ```css
-   @import 'casoon-ui-lib/modules/button.module.css';
-   @import 'casoon-ui-lib/modules/input.module.css';
+   @import '@casoon/ui-lib/components/button.css';
+   @import '@casoon/ui-lib/components/input.css';
    /* weitere Module nach Bedarf */
    ```
 
@@ -61,7 +61,7 @@ Diese Reihenfolge stellt sicher, dass alle Abhängigkeiten korrekt aufgelöst we
 
 | Modul | Beschreibung | Import | Abhängigkeiten |
 |-------|-------------|--------|---------------|
-| Layout | Grundlegende Layout-Strukturen und Container | `@import 'casoon-ui-lib/layers/layout.css';` | core.css |
+| Layout | Grundlegende Layout-Strukturen und Container | `@import '@casoon/ui-lib/layout.css';` | core.css |
 | Grid | Flexibles Grid-System für responsive Layouts | Enthalten in layout.css | core.css, layout.css |
 | Container | Vordefinierte Container mit responsiven Breiten | Enthalten in layout.css | core.css, layout.css |
 
@@ -69,14 +69,14 @@ Diese Reihenfolge stellt sicher, dass alle Abhängigkeiten korrekt aufgelöst we
 
 | Modul | Beschreibung | Import | Abhängigkeiten |
 |-------|-------------|--------|---------------|
-| Forms | Allgemeine Formular-Styles | `@import 'casoon-ui-lib/layers/forms.css';` | core.css |
-| Input | Text-Eingabefelder | `@import 'casoon-ui-lib/modules/input.module.css';` | core.css, forms.css |
-| Textarea | Mehrzeilige Textfelder | `@import 'casoon-ui-lib/modules/textarea.module.css';` | core.css, forms.css |
-| Select | Auswahlfelder und Dropdowns | `@import 'casoon-ui-lib/modules/select.module.css';` | core.css, forms.css |
-| Checkbox | Checkboxen und Auswahloptionen | `@import 'casoon-ui-lib/modules/checkbox.module.css';` | core.css, forms.css |
-| Radio | Radio-Buttons | `@import 'casoon-ui-lib/modules/radio.module.css';` | core.css, forms.css |
-| Switch | Toggle-Schalter | `@import 'casoon-ui-lib/modules/switch.module.css';` | core.css, forms.css |
-| File | Datei-Upload-Elemente | `@import 'casoon-ui-lib/modules/file.module.css';` | core.css, forms.css |
+| Forms | Allgemeine Formular-Styles | `@import '@casoon/ui-lib/forms.css';` | core.css |
+| Input | Text-Eingabefelder | `@import '@casoon/ui-lib/components/input.css';` | core.css, forms.css |
+| Textarea | Mehrzeilige Textfelder | `@import '@casoon/ui-lib/components/textarea.css';` | core.css, forms.css |
+| Select | Auswahlfelder und Dropdowns | `@import '@casoon/ui-lib/components/select.css';` | core.css, forms.css |
+| Checkbox | Checkboxen und Auswahloptionen | `@import '@casoon/ui-lib/components/checkbox.css';` | core.css, forms.css |
+| Radio | Radio-Buttons | `@import '@casoon/ui-lib/components/radio.css';` | core.css, forms.css |
+| Switch | Toggle-Schalter | `@import '@casoon/ui-lib/components/switch.css';` | core.css, forms.css |
+| File | Datei-Upload-Elemente | `@import '@casoon/ui-lib/components/file.css';` | core.css, forms.css |
 
 ### Integration mit dem Design-System
 
@@ -166,8 +166,8 @@ Wenn die CSS-Dateien nicht in der korrekten Reihenfolge geladen werden, können 
 **Beispiel für ein Problem:**
 ```css
 /* FALSCH: Module vor core.css laden */
-@import 'casoon-ui-lib/modules/button.module.css';
-@import 'casoon-ui-lib/core.css';
+@import '@casoon/ui-lib/components/button.css';
+@import '@casoon/ui-lib/core.css';
 ```
 
 Hier würde der Button Module vielleicht Referenzen auf Variablen oder Utility-Klassen enthalten, die erst in core.css definiert werden, was zu fehlerhafter Darstellung führt.
@@ -175,8 +175,8 @@ Hier würde der Button Module vielleicht Referenzen auf Variablen oder Utility-K
 **Richtige Lösung:**
 ```css
 /* RICHTIG: core.css zuerst laden */
-@import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/modules/button.module.css';
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/components/button.css';
 ```
 
 ### Kann ich einzelne Komponenten ohne core.css verwenden?

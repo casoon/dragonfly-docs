@@ -19,11 +19,11 @@ The Chip component is a compact element that represents information, attributes,
 
 ```css
 /* Required dependency */
-@import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* or another theme */
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
 /* Chip module */
-@import 'casoon-ui-lib/modules/chip.module.css';
+@import '@casoon/ui-lib/components/chip.css';
 ```
 
 ## Variants

@@ -125,7 +125,7 @@ The Sidebar is a vertical navigation bar that is typically placed on the left or
 
 ```astro
 ---
-import 'casoon-ui-lib/modules/sidebar.module.css';
+import '@casoon/ui-lib/components/sidebar.css';
 
 interface Props {
   items: Array<{

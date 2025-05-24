@@ -8,10 +8,10 @@ Das Flexbox-System der Casoon UI Library ermöglicht flexible und responsive Lay
 
 ```css
 /* Notwendige Abhängigkeit */
-@import 'casoon-ui-lib/core.css';
+@import '@casoon/ui-lib/core.css';
 
 /* Layout-System, enthält Flexbox */
-@import 'casoon-ui-lib/layers/layout.css';
+@import '@casoon/ui-lib/layout.css';
 ```
 
 ## Best Practices

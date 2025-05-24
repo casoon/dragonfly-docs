@@ -14,11 +14,11 @@ The Avatar component of the Casoon UI Library is used to display user images or 
 
 ```css
 /* Required dependency */
-@import 'casoon-ui-lib/core.css';
-@import 'casoon-ui-lib/themes/day.css'; /* or another theme */
+@import '@casoon/ui-lib/core.css';
+@import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
 /* Avatar module */
-@import 'casoon-ui-lib/modules/avatar.module.css';
+@import '@casoon/ui-lib/components/avatar.css';
 ```
 
 ## Variants
