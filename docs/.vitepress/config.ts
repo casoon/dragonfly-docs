@@ -73,7 +73,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started/' },
       { text: 'Components', link: '/components/' },
-      { text: 'Effects', link: '/guide/effects-system' },
+      { text: 'Effects', link: '/effects-system' },
       { text: 'Examples', link: '/examples/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
@@ -255,7 +255,8 @@ export default defineConfig({
             { text: 'Basic Components', link: '/examples/basic/' },
             { text: 'Form Components', link: '/examples/form/' },
             { text: 'Layout Components', link: '/examples/layout/' },
-            { text: 'Advanced Components', link: '/examples/advanced/' }
+            { text: 'Advanced Components', link: '/examples/advanced/' },
+            { text: 'Effects Examples', link: '/examples/effects/' }
           ]
         }
       ]
