@@ -70,11 +70,11 @@ export default defineConfig({
     },
     
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started/' },
-      { text: 'Components', link: '/components/' },
-      { text: 'Effects', link: '/effects-system' },
-      { text: 'Examples', link: '/examples/' },
+      { text: 'Home', link: '/', activeMatch: '^/$' },
+      { text: 'Getting Started', link: '/getting-started/', activeMatch: '^/getting-started/' },
+      { text: 'Components', link: '/components/', activeMatch: '^/components/' },
+      { text: 'Effects', link: '/effects-system', activeMatch: '^/effects' },
+      { text: 'Examples', link: '/examples/', activeMatch: '^/examples/' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
 
@@ -135,7 +135,7 @@ export default defineConfig({
             { text: 'Card', link: '/components/card/' },
             { text: 'Chip', link: '/components/chip/' },
             { text: 'Code', link: '/components/code/' },
-            { text: 'Spinner', link: '/components/spinner/' },
+            { text: 'Spinner', link: '/components/spinner' },
             { text: 'Tooltip', link: '/components/tooltip/' }
           ]
         },
