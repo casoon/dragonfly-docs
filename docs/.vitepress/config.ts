@@ -10,16 +10,16 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'stylesheet', href: '/ui-docs/custom.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/core.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/day.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/button.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/badge.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/alert.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/card.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/chip.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/tooltip.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/spinner.css' }],
-    ['link', { rel: 'stylesheet', href: '/ui-docs/assets/avatar.css' }]
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/core.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/themes/day.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/button.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/badge.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/alert.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/card.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/chip.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/tooltip.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/spinner.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/avatar.css' }]
   ],
 
   vite: {
