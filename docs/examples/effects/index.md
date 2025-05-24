@@ -5,39 +5,39 @@ category: Examples
 
 # Effects Examples
 
-Diese Seite zeigt praktische Beispiele für die Verwendung der Casoon UI Library Effects in realen Anwendungsfällen.
+This page shows practical examples for using the Casoon UI Library Effects in real-world applications.
 
-## Übersicht
+## Overview
 
-Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effekten und Animation, die Ihre Benutzeroberfläche aufwerten können. Hier finden Sie konkrete Implementierungsbeispiele, die zeigen, wie diese Effekte in verschiedenen Szenarien eingesetzt werden können.
+The Effects modules of the Casoon UI Library offer a variety of visual effects and animations that can enhance your user interface. Here you'll find concrete implementation examples that show how these effects can be used in different scenarios.
 
-## 3D-Transformationen
+## 3D Transformations
 
-### Interaktive Karte mit 3D-Flip-Effekt
+### Interactive Card with 3D Flip Effect
 
 ```html
 <div class="card-container transform-3d perspective preserve-3d">
   <div class="card flip-3d">
     <div class="card-front">
       <div class="card-header">
-        <h3>Produktinformationen</h3>
+        <h3>Product Information</h3>
       </div>
       <div class="card-body">
-        <p>Hier stehen die grundlegenden Informationen zum Produkt.</p>
-        <button class="button primary">Mehr Details</button>
+        <p>Here are the basic information about the product.</p>
+        <button class="button primary">More Details</button>
       </div>
     </div>
     <div class="card-back">
       <div class="card-header accent">
-        <h3>Detaillierte Spezifikationen</h3>
+        <h3>Detailed Specifications</h3>
       </div>
       <div class="card-body">
         <ul>
-          <li>Technische Details</li>
-          <li>Maße und Gewicht</li>
-          <li>Materialien</li>
+          <li>Technical Details</li>
+          <li>Dimensions and Weight</li>
+          <li>Materials</li>
         </ul>
-        <button class="button">Zurück</button>
+        <button class="button">Back</button>
       </div>
     </div>
   </div>
@@ -94,9 +94,9 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
 </style>
 ```
 
-## Neon-Effekte
+## Neon Effects
 
-### Interactive Dashboard mit Neon-Akzenten
+### Interactive Dashboard with Neon Accents
 
 ```html
 <div class="dashboard theme-night">
@@ -110,7 +110,7 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
   
   <div class="dashboard-grid">
     <div class="dashboard-card">
-      <h3>CPU Auslastung</h3>
+      <h3>CPU Usage</h3>
       <div class="metric">
         <div class="metric-value neon-text-blue">42%</div>
         <div class="metric-bar">
@@ -130,7 +130,7 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
     </div>
     
     <div class="dashboard-card">
-      <h3>Netzwerk</h3>
+      <h3>Network</h3>
       <div class="metric">
         <div class="metric-value neon-text-teal">63%</div>
         <div class="metric-bar">
@@ -207,13 +207,13 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
 </style>
 ```
 
-## Loading-Animationen
+## Loading Animations
 
-### Mehrstufiger Ladeprozess mit visueller Fortschrittsanzeige
+### Multi-stage Loading Process with Visual Progress Indicator
 
 ```html
 <div class="upload-process">
-  <h3>Dateien hochladen</h3>
+  <h3>Upload Files</h3>
   
   <div class="progress-steps">
     <div class="progress-step completed">
@@ -222,8 +222,8 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
         <div class="step-check">✓</div>
       </div>
       <div class="step-details">
-        <div class="step-name">Dateien auswählen</div>
-        <div class="step-info">3 Dateien ausgewählt</div>
+        <div class="step-name">Select Files</div>
+        <div class="step-info">3 files selected</div>
       </div>
     </div>
     
@@ -232,8 +232,8 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
         <div class="spinner-dots"></div>
       </div>
       <div class="step-details">
-        <div class="step-name">Komprimierung</div>
-        <div class="step-info">Optimiere Dateien...</div>
+        <div class="step-name">Compression</div>
+        <div class="step-info">Optimizing files...</div>
         <div class="progress">
           <div class="progress-bar progress-bar-animated" style="width: 65%">65%</div>
         </div>
@@ -246,7 +246,7 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
       </div>
       <div class="step-details">
         <div class="step-name">Upload</div>
-        <div class="step-info">Warte auf Komprimierung...</div>
+        <div class="step-info">Waiting for compression...</div>
       </div>
     </div>
     
@@ -255,15 +255,15 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
         <div class="step-number">4</div>
       </div>
       <div class="step-details">
-        <div class="step-name">Verarbeitung</div>
-        <div class="step-info">Warte auf Upload...</div>
+        <div class="step-name">Processing</div>
+        <div class="step-info">Waiting for upload...</div>
       </div>
     </div>
   </div>
   
   <div class="upload-actions">
-    <button class="button outline">Abbrechen</button>
-    <button class="button primary" disabled>Weiter</button>
+    <button class="button outline">Cancel</button>
+    <button class="button primary" disabled>Continue</button>
   </div>
 </div>
 
@@ -384,14 +384,14 @@ Die Effects-Module der Casoon UI Library bieten eine Vielzahl von visuellen Effe
 </style>
 ```
 
-## Mehr Beispiele
+## More Examples
 
-Entdecken Sie weitere Effekte in den individuellen Dokumentationsseiten:
+Discover more effects in the individual documentation pages:
 
-- [3D-Effekte](/effects/3d)
-- [Gradient-Effekte](/effects/gradient)
-- [Neon-Effekte](/effects/neon)
-- [Muster & Texturen](/effects/patterns)
-- [Glaseffekte](/effects/glass)
-- [Schatten-Effekte](/effects/shadows)
-- [Ladeeffekte](/effects/state/loading) 
+- [3D Effects](/effects/3d)
+- [Gradient Effects](/effects/gradient)
+- [Neon Effects](/effects/neon)
+- [Patterns & Textures](/effects/patterns)
+- [Glass Effects](/effects/glass)
+- [Shadow Effects](/effects/shadows)
+- [Loading Effects](/effects/state/loading) 

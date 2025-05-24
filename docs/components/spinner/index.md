@@ -1,124 +1,158 @@
 ---
-title: Spinner Komponente
+title: Spinner Component
 category: Components
 ---
 
-# Spinner Komponente
+# Spinner Component
 
-Die Spinner-Komponente wird verwendet, um Lade- und Verarbeitungszustände in der Benutzeroberfläche anzuzeigen. Sie signalisiert dem Benutzer, dass eine Aktion im Hintergrund ausgeführt wird.
+The Spinner component provides loading indicators and animations for asynchronous processes. Spinners inform users that an operation is being performed in the background.
 
-## Einfacher Spinner
-
-Der Standard-Spinner ist ein rotierendes Element, das anzeigt, dass ein Prozess läuft.
+## Basic Usage
 
 ```html
 <div class="spinner"></div>
 ```
 
-## Spinner-Varianten
+## Size Variants
 
-### Kreisförmiger Spinner
-
-```html
-<div class="spinner-circle"></div>
-```
-
-### Punktbasierter Spinner
+### Extra Small
 
 ```html
-<div class="spinner-dots"></div>
+<div class="spinner spinner--xs"></div>
 ```
 
-### Pulsierender Spinner
+### Small
 
 ```html
-<div class="spinner-pulse"></div>
+<div class="spinner spinner--sm"></div>
 ```
 
-## Größenvarianten
-
-Der Spinner kann in verschiedenen Größen dargestellt werden.
+### Medium (Default)
 
 ```html
-<div class="spinner spinner-sm"></div>
-<div class="spinner"></div>
-<div class="spinner spinner-lg"></div>
-<div class="spinner spinner-xl"></div>
+<div class="spinner spinner--md"></div>
 ```
 
-## Farbvarianten
+### Large
 
 ```html
-<div class="spinner spinner-primary"></div>
-<div class="spinner spinner-secondary"></div>
-<div class="spinner spinner-accent"></div>
-<div class="spinner spinner-success"></div>
-<div class="spinner spinner-warning"></div>
-<div class="spinner spinner-error"></div>
+<div class="spinner spinner--lg"></div>
 ```
 
-## Spinner mit Text
+### Extra Large
+
+```html
+<div class="spinner spinner--xl"></div>
+```
+
+## Style Variants
+
+### Ring (Default)
+
+```html
+<div class="spinner spinner--ring"></div>
+```
+
+### Dots
+
+```html
+<div class="spinner spinner--dots"></div>
+```
+
+### Pulse
+
+```html
+<div class="spinner spinner--pulse"></div>
+```
+
+### Bounce
+
+```html
+<div class="spinner spinner--bounce"></div>
+```
+
+## Color Variants
+
+### Primary
+
+```html
+<div class="spinner spinner--primary"></div>
+```
+
+### Secondary
+
+```html
+<div class="spinner spinner--secondary"></div>
+```
+
+### Light
+
+```html
+<div class="spinner spinner--light"></div>
+```
+
+### Dark
+
+```html
+<div class="spinner spinner--dark"></div>
+```
+
+## With Text
 
 ```html
 <div class="spinner-container">
   <div class="spinner"></div>
-  <div class="spinner-text">Lädt...</div>
+  <span class="spinner-text">Loading...</span>
 </div>
 ```
 
-```css
-.spinner-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
+## Fullscreen Overlay
 
-.spinner-text {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-}
-```
-
-## Spinner in Buttons
-
-Der Spinner kann auch in Buttons verwendet werden, um anzuzeigen, dass eine Aktion ausgeführt wird.
+Use this to indicate a loading state for an entire page or section.
 
 ```html
-<button class="button primary">
-  <span class="spinner-inline"></span>
-  Lädt...
-</button>
+<div class="spinner-overlay">
+  <div class="spinner spinner--lg"></div>
+</div>
 ```
 
-## Anpassung
+## Customization
 
-Der Spinner kann über CSS-Variablen angepasst werden:
+The Spinner component can be customized using CSS variables:
 
 ```css
-.spinner {
-  --spinner-size: 1.5rem;
-  --spinner-border-width: 0.2rem;
-  --spinner-border-color: var(--color-primary);
-  --spinner-duration: 1.5s;
+:root {
+  --color-primary: #3b82f6;     /* Primary color for spinner */
+  --color-gray-300: #d1d5db;    /* Base spinner track color */
 }
+```
+
+## Accessibility
+
+For better accessibility, please consider these points:
+
+- Include appropriate ARIA attributes to announce the loading state to screen readers
+- Consider adding text that describes what is loading (unless it's obvious from context)
+- Ensure there is sufficient contrast between the spinner and its background
+- Add a descriptive label using `aria-label` or `aria-labelledby`
+
+```html
+<div class="spinner" role="status" aria-label="Loading content"></div>
+
+<!-- Or with visible text -->
+<div class="spinner-container" role="status">
+  <div class="spinner"></div>
+  <span class="spinner-text">Loading user data...</span>
+  <span class="sr-only">Please wait while we load your content</span>
+</div>
 ```
 
 ## Best Practices
 
-- Verwenden Sie Spinner, um Benutzern anzuzeigen, dass eine Aktion im Hintergrund ausgeführt wird
-- Setzen Sie den Spinner an geeigneten Stellen ein, z.B. beim Laden von Daten oder beim Absenden von Formularen
-- Fügen Sie bei längeren Ladezeiten eine Textnachricht hinzu, um den Benutzer zu informieren
-- Verwenden Sie die gleiche Spinner-Art in Ihrer gesamten Anwendung für ein konsistentes Erlebnis
-- Achten Sie auf ausreichenden Kontrast, damit der Spinner gut sichtbar ist
-
-## Barrierefreiheit
-
-Für eine verbesserte Barrierefreiheit sollten Sie die folgenden Attribute verwenden:
-
-```html
-<div class="spinner" role="status" aria-label="Laden...">
-  <span class="visually-hidden">Laden...</span>
-</div>
-```
-
-Dies teilt Screenreadern mit, dass es sich um einen Ladeindikator handelt und stellt einen beschreibenden Text bereit. 
+- Use spinners to indicate that content is loading or an action is processing
+- Keep animations subtle and not distracting
+- For longer operations, consider showing progress indicators instead of indeterminate spinners
+- Place spinners in a logical location (where the content will appear)
+- For page-level loading, use a fullscreen overlay spinner
+- Consider adding a timeout message for long-running operations
+- Avoid using multiple spinners simultaneously in the same view 

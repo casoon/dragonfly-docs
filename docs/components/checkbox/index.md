@@ -1,144 +1,130 @@
 ---
-title: Checkbox Komponente
+title: Checkbox Component
 category: Components
 ---
 
-# Checkbox Komponente
+# Checkbox Component
 
-Die Checkbox-Komponente ermöglicht Benutzern, ein oder mehrere Optionen aus einer Liste auszuwählen.
+The Checkbox component allows users to select one or more options from a list.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
-<div class="checkbox-container">
-  <input type="checkbox" id="checkbox1" class="checkbox">
-  <label for="checkbox1">Option auswählen</label>
-</div>
+<label class="checkbox">
+  <input type="checkbox">
+  <span>Select option</span>
+</label>
 ```
 
-## Varianten
+## Variants
 
 ### Standard Checkbox
 
 ```html
-<div class="checkbox-container">
-  <input type="checkbox" id="checkbox-standard" class="checkbox">
-  <label for="checkbox-standard">Standard Checkbox</label>
-</div>
+<label class="checkbox">
+  <input type="checkbox">
+  <span>Standard Checkbox</span>
+</label>
 ```
 
-### Checked (Aktiviert)
+### Checked
 
 ```html
-<div class="checkbox-container">
-  <input type="checkbox" id="checkbox-checked" class="checkbox" checked>
-  <label for="checkbox-checked">Ausgewählte Option</label>
-</div>
+<label class="checkbox">
+  <input type="checkbox" checked>
+  <span>Selected option</span>
+</label>
 ```
 
-### Indeterminate (Unbestimmt)
+### Disabled
 
 ```html
-<script>
-  document.getElementById('checkbox-indeterminate').indeterminate = true;
-</script>
-
-<div class="checkbox-container">
-  <input type="checkbox" id="checkbox-indeterminate" class="checkbox">
-  <label for="checkbox-indeterminate">Teilweise ausgewählt</label>
-</div>
+<label class="checkbox">
+  <input type="checkbox" disabled>
+  <span>Disabled option</span>
+</label>
 ```
 
-### Disabled (Deaktiviert)
+## Size Variants
+
+### Small
 
 ```html
-<div class="checkbox-container">
-  <input type="checkbox" id="checkbox-disabled" class="checkbox" disabled>
-  <label for="checkbox-disabled">Deaktivierte Option</label>
-</div>
-```
-
-## Größenvarianten
-
-### Klein
-
-```html
-<div class="checkbox-container">
-  <input type="checkbox" id="checkbox-small" class="checkbox checkbox--sm">
-  <label for="checkbox-small">Kleine Checkbox</label>
-</div>
+<label class="checkbox small">
+  <input type="checkbox">
+  <span>Small checkbox</span>
+</label>
 ```
 
 ### Standard
 
 ```html
-<div class="checkbox-container">
-  <input type="checkbox" id="checkbox-medium" class="checkbox">
-  <label for="checkbox-medium">Standard Checkbox</label>
+<label class="checkbox">
+  <input type="checkbox">
+  <span>Standard checkbox</span>
+</label>
+```
+
+### Large
+
+```html
+<label class="checkbox large">
+  <input type="checkbox">
+  <span>Large checkbox</span>
+</label>
+```
+
+## Checkbox Group
+
+```html
+<div class="checkbox-group">
+  <label class="checkbox">
+    <input type="checkbox">
+    <span>Option 1</span>
+  </label>
+  
+  <label class="checkbox">
+    <input type="checkbox">
+    <span>Option 2</span>
+  </label>
+  
+  <label class="checkbox">
+    <input type="checkbox">
+    <span>Option 3</span>
+  </label>
 </div>
 ```
 
-### Groß
+## Customization
 
-```html
-<div class="checkbox-container">
-  <input type="checkbox" id="checkbox-large" class="checkbox checkbox--lg">
-  <label for="checkbox-large">Große Checkbox</label>
-</div>
-```
-
-## Checkbox-Gruppe
-
-```html
-<fieldset class="checkbox-group">
-  <legend>Verfügbare Optionen:</legend>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="option1" class="checkbox" name="options">
-    <label for="option1">Option 1</label>
-  </div>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="option2" class="checkbox" name="options">
-    <label for="option2">Option 2</label>
-  </div>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="option3" class="checkbox" name="options">
-    <label for="option3">Option 3</label>
-  </div>
-</fieldset>
-```
-
-## Anpassung
-
-Die Checkbox-Komponente kann über CSS-Variablen angepasst werden:
+The Checkbox component can be customized using CSS variables:
 
 ```css
-.checkbox {
-  --checkbox-size: 1.25rem;
-  --checkbox-border-color: var(--color-gray-400);
-  --checkbox-border-radius: 0.25rem;
-  --checkbox-checked-bg: var(--color-primary);
-  --checkbox-checked-border: var(--color-primary);
-  --checkbox-focus-ring-color: var(--color-primary-100);
+:root {
+  --color-primary: #3b82f6; /* Primary color for checked state */
+  --color-gray-100: #f3f4f6; /* Background for disabled state */
+  --color-gray-400: #9ca3af; /* Border color for unchecked state */
+  --radius-sm: 0.125rem;    /* Border radius for checkbox */
+  --transition-fast: 0.15s ease-in-out; /* Transition speed */
+  --space-2: 0.5rem;        /* Gap between checkbox and label */
+  --space-3: 0.75rem;       /* Gap between checkbox items in a group */
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+For better accessibility, please consider these points:
 
-- Verwenden Sie immer ein `<label>`-Element, das mit der Checkbox über die `for`-Attribut verknüpft ist
-- Gruppieren Sie zusammengehörige Checkboxen mit `<fieldset>` und `<legend>`
-- Sorgen Sie für ausreichenden Kontrast zwischen Hintergrund und Checkbox
-- Stellen Sie sicher, dass die Checkbox über die Tastatur bedienbar ist (Tab-Navigation und Leertaste)
-- Fügen Sie bei Bedarf `aria-describedby` hinzu, um zusätzliche Informationen bereitzustellen
+- Always use a `<label>` element that wraps the checkbox input
+- Group related checkboxes using the `checkbox-group` class
+- Ensure sufficient contrast between background and checkbox
+- Make sure the checkbox is keyboard accessible (tab navigation and space key)
+- Add `aria-describedby` when needed to provide additional information
 
 ## Best Practices
 
-- Verwenden Sie Checkboxen für binäre Auswahlmöglichkeiten oder Mehrfachauswahl
-- Formulieren Sie Labels klar und präzise
-- Ordnen Sie Checkboxen in logischen Gruppen an
-- Vermeiden Sie zu viele Checkboxen in einer Gruppe
-- Verwenden Sie für "Entweder-Oder"-Entscheidungen Radio Buttons statt Checkboxen 
+- Use checkboxes for binary choices or multiple selections
+- Formulate labels clearly and concisely
+- Arrange checkboxes in logical groups
+- Avoid too many checkboxes in one group
+- Use radio buttons for "either/or" decisions instead of checkboxes 

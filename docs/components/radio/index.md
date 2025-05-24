@@ -1,172 +1,168 @@
 ---
-title: Radio Komponente
+title: Radio Component
 category: Components
 ---
 
-# Radio Komponente
+# Radio Component
 
-Die Radio-Komponente ermöglicht Benutzern, eine einzelne Option aus einer Liste von Alternativen auszuwählen.
+The Radio component allows users to select a single option from a list of alternatives.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
-<div class="radio-container">
-  <input type="radio" id="radio1" name="radioGroup" class="radio">
-  <label for="radio1">Option 1</label>
-</div>
-<div class="radio-container">
-  <input type="radio" id="radio2" name="radioGroup" class="radio">
-  <label for="radio2">Option 2</label>
-</div>
+<label class="radio">
+  <input type="radio" name="radioGroup">
+  <span class="label">Option 1</span>
+</label>
+<label class="radio">
+  <input type="radio" name="radioGroup">
+  <span class="label">Option 2</span>
+</label>
 ```
 
-## Varianten
+## Variants
 
 ### Standard Radio
 
 ```html
-<div class="radio-container">
-  <input type="radio" id="radio-standard" name="demoRadio1" class="radio">
-  <label for="radio-standard">Standard Radio</label>
-</div>
+<label class="radio">
+  <input type="radio" name="demoRadio1">
+  <span class="label">Standard Radio</span>
+</label>
 ```
 
-### Checked (Aktiviert)
+### Checked
 
 ```html
-<div class="radio-container">
-  <input type="radio" id="radio-checked" name="demoRadio2" class="radio" checked>
-  <label for="radio-checked">Ausgewählte Option</label>
-</div>
+<label class="radio">
+  <input type="radio" name="demoRadio2" checked>
+  <span class="label">Selected option</span>
+</label>
 ```
 
-### Disabled (Deaktiviert)
+### Disabled
 
 ```html
-<div class="radio-container">
-  <input type="radio" id="radio-disabled" name="demoRadio3" class="radio" disabled>
-  <label for="radio-disabled">Deaktivierte Option</label>
-</div>
+<label class="radio">
+  <input type="radio" name="demoRadio3" disabled>
+  <span class="label">Disabled option</span>
+</label>
 ```
 
-### Disabled Checked (Deaktiviert und Ausgewählt)
+### Disabled Checked
 
 ```html
-<div class="radio-container">
-  <input type="radio" id="radio-disabled-checked" name="demoRadio3" class="radio" disabled checked>
-  <label for="radio-disabled-checked">Deaktivierte ausgewählte Option</label>
-</div>
+<label class="radio">
+  <input type="radio" name="demoRadio3" disabled checked>
+  <span class="label">Disabled selected option</span>
+</label>
 ```
 
-## Größenvarianten
+## Size Variants
 
-### Klein
+### Small
 
 ```html
-<div class="radio-container">
-  <input type="radio" id="radio-small" name="demoRadioSize" class="radio radio--sm">
-  <label for="radio-small">Kleiner Radio Button</label>
-</div>
+<label class="radio sm">
+  <input type="radio" name="demoRadioSize">
+  <span class="label">Small radio button</span>
+</label>
 ```
 
 ### Standard
 
 ```html
-<div class="radio-container">
-  <input type="radio" id="radio-medium" name="demoRadioSize" class="radio">
-  <label for="radio-medium">Standard Radio Button</label>
+<label class="radio">
+  <input type="radio" name="demoRadioSize">
+  <span class="label">Standard radio button</span>
+</label>
+```
+
+### Large
+
+```html
+<label class="radio lg">
+  <input type="radio" name="demoRadioSize">
+  <span class="label">Large radio button</span>
+</label>
+```
+
+## Radio Group
+
+```html
+<div class="radio-group">
+  <label class="radio">
+    <input type="radio" name="options" value="option1">
+    <span class="label">Option 1</span>
+  </label>
+  
+  <label class="radio">
+    <input type="radio" name="options" value="option2">
+    <span class="label">Option 2</span>
+  </label>
+  
+  <label class="radio">
+    <input type="radio" name="options" value="option3">
+    <span class="label">Option 3</span>
+  </label>
 </div>
 ```
 
-### Groß
+## Horizontal Radio Buttons
 
 ```html
-<div class="radio-container">
-  <input type="radio" id="radio-large" name="demoRadioSize" class="radio radio--lg">
-  <label for="radio-large">Großer Radio Button</label>
+<div class="radio-group horizontal">
+  <label class="radio">
+    <input type="radio" name="horizontalOptions" value="inline1">
+    <span class="label">Option 1</span>
+  </label>
+  
+  <label class="radio">
+    <input type="radio" name="horizontalOptions" value="inline2">
+    <span class="label">Option 2</span>
+  </label>
+  
+  <label class="radio">
+    <input type="radio" name="horizontalOptions" value="inline3">
+    <span class="label">Option 3</span>
+  </label>
 </div>
 ```
 
-## Radio-Gruppe
+## Customization
 
-```html
-<fieldset class="radio-group">
-  <legend>Wählen Sie eine Option:</legend>
-  
-  <div class="radio-container">
-    <input type="radio" id="option1" class="radio" name="options" value="option1">
-    <label for="option1">Option 1</label>
-  </div>
-  
-  <div class="radio-container">
-    <input type="radio" id="option2" class="radio" name="options" value="option2">
-    <label for="option2">Option 2</label>
-  </div>
-  
-  <div class="radio-container">
-    <input type="radio" id="option3" class="radio" name="options" value="option3">
-    <label for="option3">Option 3</label>
-  </div>
-</fieldset>
-```
-
-## Inline Radio Buttons
-
-```html
-<div class="radio-group-inline">
-  <div class="radio-container">
-    <input type="radio" id="inline1" class="radio" name="inlineOptions" value="inline1">
-    <label for="inline1">Option 1</label>
-  </div>
-  
-  <div class="radio-container">
-    <input type="radio" id="inline2" class="radio" name="inlineOptions" value="inline2">
-    <label for="inline2">Option 2</label>
-  </div>
-  
-  <div class="radio-container">
-    <input type="radio" id="inline3" class="radio" name="inlineOptions" value="inline3">
-    <label for="inline3">Option 3</label>
-  </div>
-</div>
-
-<style>
-  .radio-group-inline {
-    display: flex;
-    gap: 1.5rem;
-  }
-</style>
-```
-
-## Anpassung
-
-Die Radio-Komponente kann über CSS-Variablen angepasst werden:
+The Radio component can be customized using CSS variables:
 
 ```css
-.radio {
-  --radio-size: 1.25rem;
-  --radio-border-color: var(--color-gray-400);
-  --radio-checked-bg: var(--color-primary);
-  --radio-checked-border: var(--color-primary);
-  --radio-focus-ring-color: var(--color-primary-100);
+:root {
+  --color-primary: #3b82f6;     /* Primary color for checked state */
+  --color-white: #ffffff;       /* Background for radio button */
+  --color-gray-100: #f3f4f6;    /* Background for disabled state */
+  --color-gray-300: #d1d5db;    /* Border for disabled state */
+  --color-gray-400: #9ca3af;    /* Border color for unchecked state */
+  --font-size-xs: 0.75rem;      /* Small text size */
+  --font-size-sm: 0.875rem;     /* Medium text size (default) */
+  --font-size-base: 1rem;       /* Large text size */
+  --space-2: 0.5rem;            /* Gap between elements */
+  --transition-fast: 0.15s ease-in-out; /* Transition speed */
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+For better accessibility, please consider these points:
 
-- Verwenden Sie immer ein `<label>`-Element, das mit dem Radio-Button über das `for`-Attribut verknüpft ist
-- Gruppieren Sie zusammengehörige Radio-Buttons mit `<fieldset>` und `<legend>`
-- Sorgen Sie für ausreichenden Kontrast zwischen Hintergrund und Radio-Button
-- Stellen Sie sicher, dass die Radio-Buttons über die Tastatur bedienbar sind (Tab-Navigation und Pfeiltasten)
-- Verwenden Sie für Gruppen von Radio-Buttons immer den gleichen `name`-Attributwert, damit nur eine Option ausgewählt werden kann
+- Always use a `<label>` element that wraps the radio input
+- Group related radio buttons using the `radio-group` class
+- Ensure sufficient contrast between background and radio button
+- Make sure the radio buttons are keyboard accessible (tab navigation and arrow keys)
+- Always use the same `name` attribute value for a group of radio buttons to ensure only one option can be selected
 
 ## Best Practices
 
-- Verwenden Sie Radio-Buttons wenn nur eine einzige Option aus einer Liste ausgewählt werden kann
-- Ordnen Sie Radio-Buttons vertikal an, um die Lesbarkeit zu verbessern
-- Fügen Sie stets eine Standardauswahl hinzu, wenn alle Optionen gleichwertig sind
-- Beschränken Sie die Anzahl der Optionen auf eine überschaubare Menge
-- Verwenden Sie für mehr als 5-7 Optionen besser eine Select-Box
-- Platzieren Sie die häufigste oder empfohlene Option an erster Stelle 
+- Use radio buttons when only a single option from a list can be selected
+- Arrange radio buttons vertically to improve readability
+- Add a default selection if all options are equally valid
+- Limit the number of options to a manageable amount
+- Use a select box instead for more than 5-7 options
+- Place the most common or recommended option first 

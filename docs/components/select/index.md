@@ -1,176 +1,181 @@
 ---
-title: Select Komponente
+title: Select Component
 category: Components
 ---
 
-# Select Komponente
+# Select Component
 
-Die Select-Komponente ermöglicht Benutzern, eine Option aus einer Dropdown-Liste auszuwählen.
+The Select component allows users to choose an option from a predefined list of choices.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
-<div class="select-container">
-  <select class="select" id="basic-select">
-    <option value="" disabled selected>Bitte auswählen</option>
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-</div>
+<select class="select">
+  <option>Option 1</option>
+  <option>Option 2</option>
+  <option>Option 3</option>
+</select>
 ```
 
-## Varianten
+## Variants
 
 ### Standard Select
 
 ```html
-<div class="select-container">
-  <select class="select" id="standard-select">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-</div>
+<select class="select">
+  <option>Select an option</option>
+  <option>Option 1</option>
+  <option>Option 2</option>
+  <option>Option 3</option>
+</select>
 ```
 
-### Mit Label
+### Disabled
 
 ```html
-<div class="select-container">
-  <label for="labeled-select" class="select-label">Auswahl:</label>
-  <select class="select" id="labeled-select">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-</div>
+<select class="select" disabled>
+  <option>Disabled select</option>
+  <option>Option 1</option>
+  <option>Option 2</option>
+</select>
 ```
 
-### Mit ausgewählter Option
+### Error State
 
 ```html
-<div class="select-container">
-  <select class="select" id="preselected-select">
-    <option value="option1">Option 1</option>
-    <option value="option2" selected>Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-</div>
+<select class="select error">
+  <option>Error state</option>
+  <option>Option 1</option>
+  <option>Option 2</option>
+</select>
 ```
 
-### Disabled (Deaktiviert)
+### Success State
 
 ```html
-<div class="select-container">
-  <select class="select" id="disabled-select" disabled>
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-</div>
+<select class="select success">
+  <option>Success state</option>
+  <option>Option 1</option>
+  <option>Option 2</option>
+</select>
 ```
 
-## Größenvarianten
+## Size Variants
 
-### Klein
+### Small
 
 ```html
-<div class="select-container">
-  <select class="select select--sm" id="small-select">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-</div>
+<select class="select sm">
+  <option>Small select</option>
+  <option>Option 1</option>
+  <option>Option 2</option>
+</select>
 ```
 
 ### Standard
 
 ```html
-<div class="select-container">
-  <select class="select" id="medium-select">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-</div>
+<select class="select">
+  <option>Standard select</option>
+  <option>Option 1</option>
+  <option>Option 2</option>
+</select>
 ```
 
-### Groß
+### Large
 
 ```html
-<div class="select-container">
-  <select class="select select--lg" id="large-select">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-</div>
+<select class="select lg">
+  <option>Large select</option>
+  <option>Option 1</option>
+  <option>Option 2</option>
+</select>
 ```
 
-## Mit Optionsgruppen
+## Multiple Selection
 
 ```html
-<div class="select-container">
-  <select class="select" id="grouped-select">
-    <optgroup label="Gruppe 1">
-      <option value="option1">Option 1</option>
-      <option value="option2">Option 2</option>
-    </optgroup>
-    <optgroup label="Gruppe 2">
-      <option value="option3">Option 3</option>
-      <option value="option4">Option 4</option>
-    </optgroup>
-  </select>
-</div>
+<select class="select" multiple>
+  <option>Option 1</option>
+  <option>Option 2</option>
+  <option>Option 3</option>
+  <option>Option 4</option>
+</select>
 ```
 
-## Mehrfachauswahl (Multiple)
+## With Option Groups
 
 ```html
-<div class="select-container">
-  <select class="select select--multiple" id="multiple-select" multiple size="4">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-    <option value="option4">Option 4</option>
-    <option value="option5">Option 5</option>
+<select class="select">
+  <optgroup label="Group 1">
+    <option>Option 1.1</option>
+    <option>Option 1.2</option>
+  </optgroup>
+  <optgroup label="Group 2">
+    <option>Option 2.1</option>
+    <option>Option 2.2</option>
+  </optgroup>
+</select>
+```
+
+## With Form Label
+
+```html
+<div class="form-group">
+  <label class="form-label" for="country">Country</label>
+  <select class="select" id="country">
+    <option>Germany</option>
+    <option>Austria</option>
+    <option>Switzerland</option>
   </select>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Select-Komponente kann über CSS-Variablen angepasst werden:
+The Select component can be customized using CSS variables:
 
 ```css
-.select {
-  --select-height: 2.5rem;
-  --select-padding: 0.5rem 1rem;
-  --select-border-color: var(--color-gray-300);
-  --select-border-radius: var(--radius-md);
-  --select-bg: var(--color-white);
-  --select-focus-ring-color: var(--color-primary-100);
-  --select-arrow-color: var(--color-gray-600);
+:root {
+  --color-white: #ffffff;        /* Background color */
+  --color-gray-100: #f3f4f6;     /* Disabled background */
+  --color-gray-300: #d1d5db;     /* Border color */
+  --color-gray-500: #6b7280;     /* Disabled text color */
+  --color-gray-700: #374151;     /* Optgroup text color */
+  --color-gray-900: #111827;     /* Text color */
+  --color-primary: #3b82f6;      /* Focus border & highlight */
+  --color-error: #ef4444;        /* Error state color */
+  --color-success: #10b981;      /* Success state color */
+  --font-size-sm: 0.875rem;      /* Small text size */
+  --font-size-base: 1rem;        /* Default text size */
+  --font-size-lg: 1.125rem;      /* Large text size */
+  --font-weight-medium: 500;     /* Optgroup font weight */
+  --radius-sm: 0.125rem;         /* Multiple options radius */
+  --radius-md: 0.375rem;         /* Select border radius */
+  --space-1: 0.25rem;            /* Smallest padding */
+  --space-2: 0.5rem;             /* Small padding */
+  --space-3: 0.75rem;            /* Medium padding */
+  --space-4: 1rem;               /* Large padding */
+  --transition-fast: 0.15s ease; /* Transition speed */
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+For better accessibility, please consider these points:
 
-- Verwenden Sie immer ein `<label>`-Element, das mit dem Select-Element über das `for`-Attribut verknüpft ist
-- Fügen Sie bei Bedarf `aria-describedby` hinzu, um zusätzliche Informationen bereitzustellen
-- Verwenden Sie bei einer erforderlichen Auswahl das Attribut `required`
-- Sorgen Sie für ausreichenden Kontrast zwischen Text und Hintergrund
-- Testen Sie die Komponente mit Tastaturnavigation
+- Always use a visible label (using `<label>` element) associated with the select
+- Ensure sufficient color contrast for text and borders
+- Provide clear instructions for multiple select inputs
+- Use optgroups to organize related options in long lists
+- Include a default or placeholder option when appropriate
+- Make sure the component is keyboard accessible
 
 ## Best Practices
 
-- Verwenden Sie eine Select-Box, wenn mehr als 5-7 Optionen zur Auswahl stehen
-- Ordnen Sie die Optionen in einer logischen Reihenfolge an (z.B. alphabetisch oder nach Häufigkeit)
-- Fügen Sie eine Platzhalter-Option hinzu, wenn keine Option vorausgewählt sein soll
-- Geben Sie klare, aussagekräftige Bezeichnungen für jede Option
-- Verwenden Sie `<optgroup>`, um lange Listen von Optionen zu kategorisieren
-- Vermeiden Sie zu lange Optionsbezeichnungen, die möglicherweise abgeschnitten werden 
+- Use select for choosing one (or multiple) options from a list
+- Keep option text concise and clear
+- Order options in a logical manner (alphabetical, numerical, or by frequency of use)
+- Group related options using optgroups for long lists
+- Use radio buttons instead when there are fewer than 5 options
+- Consider using a custom select component for more complex use cases with search functionality 

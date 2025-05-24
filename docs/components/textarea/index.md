@@ -1,228 +1,140 @@
 ---
-title: Textarea Komponente
+title: Textarea Component
 category: Components
 ---
 
-# Textarea Komponente
+# Textarea Component
 
-Die Textarea-Komponente ermöglicht Benutzern die Eingabe von mehrzeiligem Text in einem Formular.
+The Textarea component provides a multi-line text input field for longer text content such as comments or descriptions.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
-<div class="textarea-container">
-  <label for="basic-textarea" class="textarea-label">Nachricht:</label>
-  <textarea id="basic-textarea" class="textarea" placeholder="Geben Sie Ihre Nachricht ein"></textarea>
-</div>
+<textarea class="textarea" placeholder="Enter your text here..."></textarea>
 ```
 
-## Varianten
+## Variants
 
 ### Standard Textarea
 
 ```html
-<div class="textarea-container">
-  <textarea id="standard-textarea" class="textarea" placeholder="Standard Textarea"></textarea>
-</div>
+<textarea class="textarea" placeholder="Standard textarea"></textarea>
 ```
 
-### Mit Label
+### Disabled
 
 ```html
-<div class="textarea-container">
-  <label for="labeled-textarea" class="textarea-label">Beschreibung:</label>
-  <textarea id="labeled-textarea" class="textarea" placeholder="Geben Sie eine Beschreibung ein"></textarea>
-</div>
+<textarea class="textarea" disabled placeholder="Disabled textarea"></textarea>
 ```
 
-### Mit vorausgefülltem Text
+### Read-only
 
 ```html
-<div class="textarea-container">
-  <label for="prefilled-textarea" class="textarea-label">Feedback:</label>
-  <textarea id="prefilled-textarea" class="textarea">Dies ist ein vorausgefüllter Text in der Textarea.</textarea>
-</div>
+<textarea class="textarea readonly" readonly placeholder="Read-only textarea"></textarea>
 ```
 
-### Disabled (Deaktiviert)
+### Error State
 
 ```html
-<div class="textarea-container">
-  <label for="disabled-textarea" class="textarea-label">Deaktiviert:</label>
-  <textarea id="disabled-textarea" class="textarea" disabled>Dieser Textbereich kann nicht bearbeitet werden.</textarea>
-</div>
+<textarea class="textarea error" placeholder="Error state"></textarea>
 ```
 
-### Readonly (Schreibgeschützt)
+### Success State
 
 ```html
-<div class="textarea-container">
-  <label for="readonly-textarea" class="textarea-label">Schreibgeschützt:</label>
-  <textarea id="readonly-textarea" class="textarea" readonly>Dieser Textbereich ist schreibgeschützt.</textarea>
-</div>
+<textarea class="textarea success" placeholder="Success state"></textarea>
 ```
 
-## Größenvarianten
+## Size Variants
 
-### Klein
+### Small
 
 ```html
-<div class="textarea-container">
-  <textarea id="small-textarea" class="textarea textarea--sm" placeholder="Kleine Textarea"></textarea>
-</div>
+<textarea class="textarea sm" placeholder="Small textarea"></textarea>
 ```
 
 ### Standard
 
 ```html
-<div class="textarea-container">
-  <textarea id="medium-textarea" class="textarea" placeholder="Standard Textarea"></textarea>
-</div>
+<textarea class="textarea" placeholder="Standard textarea"></textarea>
 ```
 
-### Groß
+### Large
+
+```html
+<textarea class="textarea lg" placeholder="Large textarea"></textarea>
+```
+
+## With Character Counter
 
 ```html
 <div class="textarea-container">
-  <textarea id="large-textarea" class="textarea textarea--lg" placeholder="Große Textarea"></textarea>
+  <textarea class="textarea" placeholder="Text with character counter"></textarea>
+  <div class="counter">0/100</div>
 </div>
 ```
 
-## Höhenvarianten
-
-### Mit fester Höhe
+## With Form Label and Helper Text
 
 ```html
-<div class="textarea-container">
-  <textarea id="fixed-height-textarea" class="textarea" rows="5" placeholder="Textarea mit 5 Zeilen"></textarea>
+<div class="form-group">
+  <label class="form-label" for="description">Description</label>
+  <textarea class="textarea" id="description"></textarea>
+  <div class="form-helper">Maximum 500 characters</div>
 </div>
 ```
 
-### Mit Auto-Resize (wachsend)
+## Auto-resize Textarea
+
+This variant automatically adjusts its height based on content (requires JavaScript).
 
 ```html
-<div class="textarea-container">
-  <textarea id="auto-resize-textarea" class="textarea textarea--auto-resize" placeholder="Diese Textarea wächst automatisch mit dem Inhalt"></textarea>
-</div>
-
-<script>
-  document.getElementById('auto-resize-textarea').addEventListener('input', function() {
-    this.style.height = 'auto';
-    this.style.height = this.scrollHeight + 'px';
-  });
-</script>
+<textarea class="textarea auto-resize" placeholder="This textarea will auto-resize as you type..."></textarea>
 ```
 
-## Statusvarianten
+## Customization
 
-### Mit Validierungsfehler
-
-```html
-<div class="textarea-container">
-  <label for="error-textarea" class="textarea-label">Beschreibung:</label>
-  <textarea id="error-textarea" class="textarea textarea--error" placeholder="Fehlerhafte Eingabe"></textarea>
-  <div class="textarea-error-message">Bitte geben Sie eine gültige Beschreibung ein.</div>
-</div>
-
-<style>
-  .textarea--error {
-    border-color: var(--color-error);
-  }
-  
-  .textarea-error-message {
-    font-size: 0.875rem;
-    color: var(--color-error);
-    margin-top: 0.25rem;
-  }
-</style>
-```
-
-### Mit Erfolgsvalidierung
-
-```html
-<div class="textarea-container">
-  <label for="success-textarea" class="textarea-label">Beschreibung:</label>
-  <textarea id="success-textarea" class="textarea textarea--success">Gültige Eingabe</textarea>
-  <div class="textarea-success-message">Ihre Eingabe wurde akzeptiert.</div>
-</div>
-
-<style>
-  .textarea--success {
-    border-color: var(--color-success);
-  }
-  
-  .textarea-success-message {
-    font-size: 0.875rem;
-    color: var(--color-success);
-    margin-top: 0.25rem;
-  }
-</style>
-```
-
-## Mit Zeichenzähler
-
-```html
-<div class="textarea-container">
-  <label for="counter-textarea" class="textarea-label">Feedback (maximal 200 Zeichen):</label>
-  <textarea id="counter-textarea" class="textarea" maxlength="200" placeholder="Geben Sie Ihr Feedback ein"></textarea>
-  <div class="textarea-counter">
-    <span id="char-count">0</span>/200 Zeichen
-  </div>
-</div>
-
-<script>
-  const textarea = document.getElementById('counter-textarea');
-  const charCount = document.getElementById('char-count');
-  
-  textarea.addEventListener('input', function() {
-    charCount.textContent = this.value.length;
-  });
-</script>
-
-<style>
-  .textarea-counter {
-    font-size: 0.875rem;
-    color: var(--color-gray-600);
-    margin-top: 0.25rem;
-    text-align: right;
-  }
-</style>
-```
-
-## Anpassung
-
-Die Textarea-Komponente kann über CSS-Variablen angepasst werden:
+The Textarea component can be customized using CSS variables:
 
 ```css
-.textarea {
-  --textarea-padding: 0.75rem 1rem;
-  --textarea-border-color: var(--color-gray-300);
-  --textarea-border-radius: var(--radius-md);
-  --textarea-bg: var(--color-white);
-  --textarea-focus-ring-color: var(--color-primary-100);
-  --textarea-focus-border-color: var(--color-primary);
-  --textarea-min-height: 6rem;
-  --textarea-font-family: inherit;
-  --textarea-font-size: 1rem;
+:root {
+  --color-white: #ffffff;        /* Background color */
+  --color-gray-50: #f9fafb;      /* Read-only background color */
+  --color-gray-100: #f3f4f6;     /* Disabled background */
+  --color-gray-300: #d1d5db;     /* Border color */
+  --color-gray-500: #6b7280;     /* Counter text color */
+  --color-gray-900: #111827;     /* Text color */
+  --color-primary: #3b82f6;      /* Focus border color */
+  --color-error: #ef4444;        /* Error state color */
+  --color-success: #10b981;      /* Success state color */
+  --font-size-xs: 0.75rem;       /* Counter text size */
+  --font-size-sm: 0.875rem;      /* Small textarea text */
+  --font-size-base: 1rem;        /* Standard textarea text */
+  --font-size-lg: 1.125rem;      /* Large textarea text */
+  --radius-md: 0.375rem;         /* Border radius */
+  --space-2: 0.5rem;             /* Small padding */
+  --space-3: 0.75rem;            /* Standard padding */
+  --space-4: 1rem;               /* Large padding */
+  --transition-fast: 0.15s ease; /* Transition speed */
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+For better accessibility, please consider these points:
 
-- Verwenden Sie immer ein `<label>`-Element, das mit der Textarea über das `for`-Attribut verknüpft ist
-- Verwenden Sie bei Bedarf `aria-describedby`, um zusätzliche Informationen bereitzustellen
-- Stellen Sie sicher, dass Fehler- und Erfolgsmeldungen programmatisch mit der Textarea verknüpft sind
-- Sorgen Sie für ausreichenden Kontrast zwischen Text und Hintergrund
-- Vermeiden Sie automatische Größenänderungen, die Benutzer verwirren könnten
-- Verwenden Sie das Attribut `required`, wenn eine Eingabe erforderlich ist
+- Always associate a visible label with the textarea using the `<label>` element
+- Provide clear instructions or placeholder text
+- Use helper text to communicate requirements
+- Ensure error messages are descriptive and helpful
+- Maintain sufficient color contrast for text and borders
+- Test keyboard navigation and screen reader compatibility
 
 ## Best Practices
 
-- Verwenden Sie Textareas für längere Texteingaben oder Kommentare
-- Geben Sie eine angemessene Größe vor, die der erwarteten Eingabelänge entspricht
-- Bieten Sie Platzhaltertext an, der die erwartete Art der Eingabe beschreibt
-- Zeigen Sie Validierungsfehler klar und verständlich an
-- Setzen Sie einen angemessenen `maxlength`-Wert, wenn die Eingabe begrenzt werden soll
-- Erwägen Sie die Verwendung eines Zeichenzählers bei Längenbeschränkungen 
+- Use textareas for multi-line inputs rather than single-line text fields
+- Set an appropriate initial size using rows and columns, or CSS height
+- Consider using a character counter for inputs with length limitations
+- Provide clear validation feedback for required fields
+- Use the auto-resize feature for better user experience with varying content lengths
+- Set appropriate max-length attributes when there are character limits 
