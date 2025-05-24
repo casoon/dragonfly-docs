@@ -1,6 +1,13 @@
 import { defineConfig } from 'vitepress'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { UI_LIB_VERSION } from './data/versions'
+import { resolve } from 'path'
+import fs from 'fs'
+
+// Function to read CSS content directly
+function readCssFile(path) {
+  return fs.readFileSync(resolve(process.cwd(), path), 'utf-8')
+}
 
 export default defineConfig({
   title: 'Casoon UI Library',
@@ -10,16 +17,6 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'stylesheet', href: '/ui-docs/custom.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/core.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/themes/day.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/button.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/badge.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/alert.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/card.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/chip.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/tooltip.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/spinner.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/avatar.css' }]
   ],
 
   vite: {
@@ -28,8 +25,26 @@ export default defineConfig({
       noExternal: ['vitepress']
     },
     define: {
-      // Stelle die Version als globale Konstante für Client-Code bereit
       __UI_LIB_VERSION__: JSON.stringify(UI_LIB_VERSION)
+    },
+    // Add css to the site
+    css: {
+      preprocessorOptions: {
+        css: {
+          additionalData: `
+            ${readCssFile('node_modules/@casoon/ui-lib/core.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/themes/day.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/components/button.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/components/badge.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/components/alert.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/components/card.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/components/chip.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/components/tooltip.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/components/spinner.css')}
+            ${readCssFile('node_modules/@casoon/ui-lib/components/avatar.css')}
+          `
+        }
+      }
     }
   },
 

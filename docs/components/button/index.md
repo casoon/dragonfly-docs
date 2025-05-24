@@ -1,3 +1,12 @@
+---
+title: Button Component
+outline: false
+head:
+  - - link
+    - rel: stylesheet
+      href: /node_modules/@casoon/ui-lib/components/button.css
+---
+
 # Button
 
 The Button component of the Casoon UI Library offers various styles and variants for interactive elements. Buttons are one of the most fundamental UI elements and are used for actions, form submissions, and navigation interactions.
