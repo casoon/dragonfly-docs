@@ -71,10 +71,10 @@ export default defineConfig({
     
     nav: [
       { text: 'Home', link: '/', activeMatch: '^/$' },
-      { text: 'Getting Started', link: '/getting-started/', activeMatch: '^/getting-started/' },
-      { text: 'Components', link: '/components/', activeMatch: '^/components/' },
+      { text: 'Getting Started', link: '/getting-started/', activeMatch: '^/getting-started' },
+      { text: 'Components', link: '/components/', activeMatch: '^/components' },
       { text: 'Effects', link: '/effects-system', activeMatch: '^/effects' },
-      { text: 'Examples', link: '/examples/', activeMatch: '^/examples/' },
+      { text: 'Examples', link: '/examples/', activeMatch: '^/examples' },
       { text: 'GitHub', link: 'https://github.com/casoon/ui-lib' }
     ],
 
