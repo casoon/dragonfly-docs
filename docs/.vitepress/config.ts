@@ -142,23 +142,23 @@ export default defineConfig({
         {
           text: 'Form Components',
           items: [
-            { text: 'Checkbox', link: '/components/checkbox/' },
+            { text: 'Checkbox', link: '/components/checkbox' },
             { text: 'File', link: '/components/file/' },
             { text: 'Form', link: '/components/forms/' },
             { text: 'Input', link: '/components/input/' },
             { text: 'Input Group', link: '/components/input-group/' },
-            { text: 'Radio', link: '/components/radio/' },
-            { text: 'Select', link: '/components/select/' },
+            { text: 'Radio', link: '/components/radio' },
+            { text: 'Select', link: '/components/select' },
             { text: 'Slider', link: '/components/slider/' },
-            { text: 'Switch', link: '/components/switch/' },
-            { text: 'Textarea', link: '/components/textarea/' }
+            { text: 'Switch', link: '/components/switch' },
+            { text: 'Textarea', link: '/components/textarea' }
           ]
         },
         {
           text: 'Layout Components',
           items: [
             { text: 'Footer', link: '/components/footer/' },
-            { text: 'Header', link: '/components/header/' },
+            { text: 'Header', link: '/components/header' },
             { text: 'Sidebar', link: '/components/sidebar/' },
             { text: 'Table', link: '/components/table/' },
             { text: 'Tabs', link: '/components/tabs/' }
@@ -168,19 +168,19 @@ export default defineConfig({
           text: 'Feedback Components',
           items: [
             { text: 'Modal', link: '/components/modal/' },
-            { text: 'Notification', link: '/components/notification/' },
+            { text: 'Notification', link: '/components/notification' },
             { text: 'Progress', link: '/components/progress/' },
-            { text: 'Skeleton', link: '/components/skeleton/' },
+            { text: 'Skeleton', link: '/components/skeleton' },
             { text: 'Toast', link: '/components/toast/' }
           ]
         },
         {
           text: 'Advanced Components',
           items: [
-            { text: 'Blog', link: '/components/blog/' },
-            { text: 'Hamburger Menu', link: '/components/hamburger/' },
-            { text: 'Widget', link: '/components/widget/' },
-            { text: 'Wizard', link: '/components/wizard/' }
+            { text: 'Blog', link: '/components/blog' },
+            { text: 'Hamburger Menu', link: '/components/hamburger' },
+            { text: 'Widget', link: '/components/widget' },
+            { text: 'Wizard', link: '/components/wizard' }
           ]
         }
       ],
