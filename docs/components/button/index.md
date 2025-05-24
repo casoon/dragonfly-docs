@@ -1,10 +1,6 @@
 ---
 title: Button Component
 outline: false
-head:
-  - - link
-    - rel: stylesheet
-      href: /node_modules/@casoon/ui-lib/components/button.css
 ---
 
 # Button
