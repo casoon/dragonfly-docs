@@ -86,7 +86,7 @@ Casoon UI Library offers a variety of icon sets:
 
 ### Standard Method with Icon Classes
 
-The new icon system uses uniform class names for all icon sets. Example for Feather Icons:
+The icon system uses uniform class names for all icon sets. Example for Feather Icons:
 
 ```html
 <span class="feather-home"></span>
@@ -125,15 +125,15 @@ For Heroicons:
 
 ### Icon Sizes
 
-The icon system offers predefined sizes:
+The icon system offers predefined sizes based on the actual implementation:
 
 ```html
-<div class="icon icon--xs"><!-- Extra small (16px) --></div>
-<div class="icon icon--sm"><!-- Small (20px) --></div>
-<div class="icon"><!-- Standard (24px) --></div>
-<div class="icon icon--md"><!-- Medium (32px) --></div>
-<div class="icon icon--lg"><!-- Large (40px) --></div>
-<div class="icon icon--xl"><!-- Extra large (48px) --></div>
+<div class="icon-xs"><!-- Extra small (0.5em) --></div>
+<div class="icon-sm"><!-- Small (0.75em) --></div>
+<div class="icon"><!-- Standard (1em) --></div>
+<div class="icon-lg"><!-- Large (1.25em) --></div>
+<div class="icon-xl"><!-- Extra large (1.5em) --></div>
+<div class="icon-2xl"><!-- Extra extra large (2em) --></div>
 ```
 
 ### Icon Colors
@@ -194,10 +194,13 @@ Icons inherit the text color of their parent element by default (`currentColor`)
 
 ### Icon Alignment
 
+Based on the actual implementation, the icon system supports the following alignment options:
+
 ```html
-<div class="flex flex--items-center flex--justify-center" style="height: 100px;">
-  <div class="icon"><!-- Centered icon --></div>
-</div>
+<div class="icon-baseline"><!-- Baseline alignment --></div>
+<div class="icon-top"><!-- Top alignment --></div>
+<div class="icon-middle"><!-- Middle alignment (default) --></div>
+<div class="icon-bottom"><!-- Bottom alignment --></div>
 ```
 
 ### Rotation and Flipping
@@ -212,10 +215,10 @@ Icons inherit the text color of their parent element by default (`currentColor`)
 
 ### Animations
 
+Based on the actual implementation, the icon system supports the following animation:
+
 ```html
-<div class="icon icon--pulse"><!-- Pulsing icon --></div>
-<div class="icon icon--spin"><!-- Rotating icon --></div>
-<div class="icon icon--bounce"><!-- Bouncing icon --></div>
+<div class="icon-spin"><!-- Rotating icon animation --></div>
 ```
 
 ## Accessibility
