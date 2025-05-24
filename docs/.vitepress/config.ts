@@ -113,14 +113,6 @@ export default defineConfig({
             { text: 'Icon Sets', link: '/getting-started/iconsets' },
             { text: 'Utility Classes', link: '/getting-started/utilities' }
           ]
-        },
-        {
-          text: 'Help',
-          items: [
-            { text: 'Best Practices', link: '/getting-started/best-practices' },
-            { text: 'FAQ', link: '/getting-started/faq' },
-            { text: 'Troubleshooting', link: '/getting-started/troubleshooting' }
-          ]
         }
       ],
       '/components/': [
