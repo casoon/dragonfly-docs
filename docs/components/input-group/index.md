@@ -7,20 +7,6 @@ category: Components
 
 The Input Group component allows combining input fields with additional elements such as prefixes, suffixes, labels, or buttons.
 
-## CSS Import
-
-The Input Group component is automatically imported with the `core.css`:
-
-```css
-@import "@casoon/ui-lib/core.css";
-```
-
-Alternatively, you can import the component directly:
-
-```css
-@import "@casoon/ui-lib/modules/input-group.module.css" layer(module-input-group);
-```
-
 ## Basic Usage
 
 ### Input with Prefix
