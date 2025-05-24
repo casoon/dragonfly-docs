@@ -10,16 +10,16 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'stylesheet', href: '/ui-docs/custom.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/core.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/themes/day.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/button.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/badge.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/alert.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/card.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/chip.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/tooltip.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/spinner.css' }],
-    ['link', { rel: 'stylesheet', href: '/@fs/Users/jseidel/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/ui-docs/node_modules/@casoon/ui-lib/components/avatar.css' }]
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/core.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/themes/day.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/button.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/badge.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/alert.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/card.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/chip.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/tooltip.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/spinner.css' }],
+    ['link', { rel: 'stylesheet', href: '/@fs/node_modules/@casoon/ui-lib/components/avatar.css' }]
   ],
 
   vite: {
