@@ -1,27 +1,27 @@
 ---
-title: Komplexe UI Beispiele
+title: Complex UI Examples
 category: Examples
 outline: false
 ---
 
-# Komplexe UI Beispiele
+# Complex UI Examples
 
-Diese Seite zeigt fortgeschrittene Beispiele, wie die Komponenten der Casoon UI Library zusammen verwendet werden können, um komplexe Benutzeroberflächenelemente zu erstellen.
+This page shows advanced examples of how the components of the Casoon UI Library can be used together to create complex user interface elements.
 
-## Übersicht
+## Overview
 
-Die Beispiele in diesem Bereich zeigen, wie verschiedene Komponenten der Casoon UI Library kombiniert werden können, um komplexe Benutzeroberflächen zu erstellen. Diese Beispiele gehen über die Grundlagen hinaus und konzentrieren sich auf praktische Anwendungsfälle und fortgeschrittene Techniken.
+The examples in this section demonstrate how different components of the Casoon UI Library can be combined to create complex user interfaces. These examples go beyond the basics and focus on practical use cases and advanced techniques.
 
-### Beispiel-Kategorien
+### Example Categories
 
-- **[Komplexe Layouts](/examples/layout/)** - Responsive Dashboard-Layouts, Split-Screen-Designs und gestapelte Komponenten
-- **[Formularmuster](/examples/form/)** - Mehrstufige Formulare, Validierungsmuster und dynamische Formulare
-- **[Fortgeschrittene Komponenten](/examples/advanced/)** - Komplexe Komponenten-Kombinationen und interaktive Elemente
-- **[Visuelle Effekte](/examples/effects/)** - Kombinationen von Effekten für ansprechende visuelle Darstellungen
+- **[Complex Layouts](/examples/layout/)** - Responsive dashboard layouts, split-screen designs, and stacked components
+- **[Form Patterns](/examples/form/)** - Multi-step forms, validation patterns, and dynamic forms
+- **[Advanced Components](/examples/advanced/)** - Complex component combinations and interactive elements
+- **[Visual Effects](/examples/effects/)** - Combinations of effects for appealing visual presentations
 
-## Dashboard-Beispiel
+## Dashboard Example
 
-Ein Dashboard mit verschiedenen Widget-Typen, responsivem Layout und interaktiven Elementen.
+A dashboard with different widget types, responsive layout, and interactive elements.
 
 ```html
 <div class="dashboard">
@@ -37,7 +37,7 @@ Ein Dashboard mit verschiedenen Widget-Typen, responsivem Layout und interaktive
   
   <div class="dashboard-grid">
     <div class="widget primary">
-      <div class="widget-header">Besucher</div>
+      <div class="widget-header">Visitors</div>
       <div class="widget-body">
         <div class="metric">12,345</div>
         <div class="change up">+15%</div>
@@ -45,9 +45,9 @@ Ein Dashboard mit verschiedenen Widget-Typen, responsivem Layout und interaktive
     </div>
     
     <div class="widget secondary">
-      <div class="widget-header">Umsatz</div>
+      <div class="widget-header">Revenue</div>
       <div class="widget-body">
-        <div class="metric">€54,321</div>
+        <div class="metric">$54,321</div>
         <div class="change up">+8%</div>
       </div>
     </div>
@@ -62,14 +62,14 @@ Ein Dashboard mit verschiedenen Widget-Typen, responsivem Layout und interaktive
     
     <div class="widget full">
       <div class="widget-header">
-        <h3>Monatliche Besucher</h3>
+        <h3>Monthly Visitors</h3>
         <div class="widget-actions">
           <button class="button small outline">Filter</button>
           <button class="button small outline">Export</button>
         </div>
       </div>
       <div class="widget-body">
-        <!-- Hier würde ein Chart stehen -->
+        <!-- A chart would be placed here -->
         <div class="chart-placeholder"></div>
       </div>
     </div>
@@ -159,9 +159,9 @@ Ein Dashboard mit verschiedenen Widget-Typen, responsivem Layout und interaktive
 }
 </style>
 
-## Mehrstufiges Formular
+## Multi-Step Form
 
-Ein komplexes mehrstufiges Formular mit Validierung und Fortschrittsanzeige.
+A complex multi-step form with validation and progress indicator.
 
 ```html
 <div class="wizard">
@@ -172,57 +172,57 @@ Ein komplexes mehrstufiges Formular mit Validierung und Fortschrittsanzeige.
   <div class="steps">
     <div class="step completed">
       <span class="indicator">1</span>
-      <span class="title">Persönliche Informationen</span>
+      <span class="title">Personal Information</span>
     </div>
     <div class="step active">
       <span class="indicator">2</span>
-      <span class="title">Kontaktdetails</span>
+      <span class="title">Contact Details</span>
     </div>
     <div class="step">
       <span class="indicator">3</span>
-      <span class="title">Bestätigung</span>
+      <span class="title">Confirmation</span>
     </div>
   </div>
   
   <div class="wizard-content">
-    <h2>Kontaktdetails</h2>
+    <h2>Contact Details</h2>
     
     <div class="form-group">
-      <label for="email">E-Mail-Adresse</label>
-      <input type="email" id="email" class="input" placeholder="email@beispiel.de">
-      <div class="helper">Wir werden Ihre E-Mail-Adresse nicht an Dritte weitergeben.</div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" class="input" placeholder="email@example.com">
+      <div class="helper">We will not share your email address with third parties.</div>
     </div>
     
     <div class="form-group">
-      <label for="phone">Telefonnummer</label>
-      <input type="tel" id="phone" class="input" placeholder="+49 123 4567890">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" class="input" placeholder="+1 234 567 8900">
     </div>
     
     <div class="form-group">
-      <label for="address">Adresse</label>
-      <textarea id="address" class="textarea" rows="3" placeholder="Straße, Hausnummer, PLZ, Stadt"></textarea>
+      <label for="address">Address</label>
+      <textarea id="address" class="textarea" rows="3" placeholder="Street, Number, ZIP, City"></textarea>
     </div>
     
     <div class="form-group">
       <label class="checkbox">
         <input type="checkbox" id="newsletter">
-        <span>Newsletter abonnieren</span>
+        <span>Subscribe to newsletter</span>
       </label>
     </div>
   </div>
   
   <div class="wizard-actions">
-    <button class="button outline">Zurück</button>
-    <button class="button primary">Weiter</button>
+    <button class="button outline">Back</button>
+    <button class="button primary">Next</button>
   </div>
 </div>
 ```
 
-## Erkunden Sie weitere komplexe Beispiele
+## Explore More Complex Examples
 
-Für weitere detaillierte Beispiele und Variationen besuchen Sie die spezifischen Beispielkategorien:
+For more detailed examples and variations, visit the specific example categories:
 
-- [Komplexe Layouts](/examples/layout/) - Dashboard-Layouts, Split-Screen-Designs und mehr
-- [Formularmuster](/examples/form/) - Mehrstufige Formulare, dynamische Formulare und Validierungsmuster
-- [Fortgeschrittene Komponenten](/examples/advanced/) - Komplexe Komponenten-Kombinationen
-- [Visuelle Effekte](/examples/effects/) - Kombinationen von Effekten für visuelle Darstellungen 
+- [Complex Layouts](/examples/layout/) - Dashboard layouts, split-screen designs, and more
+- [Form Patterns](/examples/form/) - Multi-step forms, dynamic forms, and validation patterns
+- [Advanced Components](/examples/advanced/) - Complex component combinations
+- [Visual Effects](/examples/effects/) - Combinations of effects for visual presentations 

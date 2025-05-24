@@ -1,8 +1,8 @@
 # Button
 
-Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varianten für interaktive Elemente. Buttons sind eines der grundlegendsten UI-Elemente und werden für Aktionen, Formulareinsendungen und Navigationsinteraktionen verwendet.
+The Button component of the Casoon UI Library offers various styles and variants for interactive elements. Buttons are one of the most fundamental UI elements and are used for actions, form submissions, and navigation interactions.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <button class="button primary">Primary Button</button>
@@ -16,11 +16,11 @@ Die Button-Komponente der Casoon UI Library bietet verschiedene Stile und Varian
   <button class="button outline">Outline Button</button>
 </div>
 
-## Varianten
+## Variants
 
-### Größen
+### Sizes
 
-Buttons können in verschiedenen Größen dargestellt werden, um sich an unterschiedliche Kontexte anzupassen.
+Buttons can be displayed in different sizes to adapt to different contexts.
 
 ```html
 <button class="button sm">Small Button</button>
@@ -34,9 +34,9 @@ Buttons können in verschiedenen Größen dargestellt werden, um sich an untersc
   <button class="button primary lg">Large Button</button>
 </div>
 
-### Zustände
+### States
 
-Buttons können verschiedene Zustände haben, um dem Benutzer Feedback zu geben.
+Buttons can have different states to provide feedback to the user.
 
 ```html
 <button class="button primary">Normal</button>
@@ -60,9 +60,9 @@ Buttons können verschiedene Zustände haben, um dem Benutzer Feedback zu geben.
   </button>
 </div>
 
-### Farben und Stile
+### Colors and Styles
 
-Die Button-Komponente bietet verschiedene vordefinierte Farben und Stile, die auf verschiedene Aktionstypen hinweisen.
+The Button component offers various predefined colors and styles that indicate different types of actions.
 
 ```html
 <button class="button primary">Primary</button>
@@ -88,9 +88,9 @@ Die Button-Komponente bietet verschiedene vordefinierte Farben und Stile, die au
   <button class="button link">Link</button>
 </div>
 
-### Mit Icon
+### With Icon
 
-Buttons können Icons enthalten, um die visuellen Hinweise zu verbessern.
+Buttons can contain icons to enhance visual cues.
 
 ```html
 <button class="button primary">
@@ -100,7 +100,7 @@ Buttons können Icons enthalten, um die visuellen Hinweise zu verbessern.
       <path d="M12 5l7 7-7 7"></path>
     </svg>
   </span>
-  <span class="button__text">Mit Icon</span>
+  <span class="button__text">With Icon</span>
 </button>
 
 <button class="button outline">
@@ -110,7 +110,7 @@ Buttons können Icons enthalten, um die visuellen Hinweise zu verbessern.
       <circle cx="12" cy="7" r="4"></circle>
     </svg>
   </span>
-  <span class="button__text">Profil</span>
+  <span class="button__text">Profile</span>
 </button>
 ```
 
@@ -122,7 +122,7 @@ Buttons können Icons enthalten, um die visuellen Hinweise zu verbessern.
         <path d="M12 5l7 7-7 7"></path>
       </svg>
     </span>
-    <span class="button__text">Mit Icon</span>
+    <span class="button__text">With Icon</span>
   </button>
   <button class="button outline">
     <span class="button__icon">
@@ -131,11 +131,11 @@ Buttons können Icons enthalten, um die visuellen Hinweise zu verbessern.
         <circle cx="12" cy="7" r="4"></circle>
       </svg>
     </span>
-    <span class="button__text">Profil</span>
+    <span class="button__text">Profile</span>
   </button>
 </div>
 
-### Icon-Button
+### Icon Button
 
 ```html
 <button class="button icon primary">
@@ -166,155 +166,194 @@ Buttons können Icons enthalten, um die visuellen Hinweise zu verbessern.
   </button>
 </div>
 
-### Block-Button
+### Block Button
 
-Block-Buttons nehmen die volle Breite ihres Containers ein, ideal für mobile Ansichten oder wenn der Button besonders hervorgehoben werden soll.
+Block buttons take up the full width of their container, ideal for mobile views or when the button needs to be prominently displayed.
 
 ```html
-<button class="button primary block">Volle Breite</button>
+<button class="button primary block">Full Width</button>
 ```
 
 <div class="example-wrapper">
-  <button class="button primary block">Volle Breite</button>
+  <button class="button primary block">Full Width</button>
 </div>
 
-## Anwendungsbeispiele
+## Usage Examples
 
-### Button-Gruppe
+### Button Group
 
-Button-Gruppen können verwendet werden, um zusammengehörige Aktionen zu gruppieren.
+Button groups can be used to group related actions.
 
 ```html
 <div class="button-group">
-  <button class="button">Zurück</button>
-  <button class="button primary">Weiter</button>
+  <button class="button">Back</button>
+  <button class="button primary">Next</button>
 </div>
 ```
 
 <div class="example-wrapper">
   <div class="button-group">
-    <button class="button">Zurück</button>
-    <button class="button primary">Weiter</button>
+    <button class="button">Back</button>
+    <button class="button primary">Next</button>
   </div>
 </div>
 
-### Buttons in Formularen
-
-```html
-<form class="form">
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" class="input" placeholder="Ihr Name">
-  </div>
-  <div class="form-group">
-    <label for="email">E-Mail</label>
-    <input type="email" id="email" class="input" placeholder="ihre-email@beispiel.de">
-  </div>
-  <div class="button-group right">
-    <button type="reset" class="button outline">Zurücksetzen</button>
-    <button type="submit" class="button primary">Absenden</button>
-  </div>
-</form>
-```
-
-<div class="example-wrapper">
-  <form class="form">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" class="input" placeholder="Ihr Name">
-    </div>
-    <div class="form-group">
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" class="input" placeholder="ihre-email@beispiel.de">
-    </div>
-    <div class="button-group right">
-      <button type="reset" class="button outline">Zurücksetzen</button>
-      <button type="submit" class="button primary">Absenden</button>
-    </div>
-  </form>
-</div>
-
-## Module importieren
+## Importing Modules
 
 ```css
-/* Die erforderlichen Module importieren */
+/* Required dependency */
 @import '@casoon/ui-lib/core.css';
-@import '@casoon/ui-lib/themes/day.css'; /* oder ein anderes Theme */
+@import '@casoon/ui-lib/themes/day.css'; /* or another theme */
+
+/* Button module */
 @import '@casoon/ui-lib/components/button.css';
 ```
 
-## CSS-Variablen
+## CSS Variables
 
-Die Button-Komponente verwendet die folgenden CSS-Variablen:
+The Button component can be customized using CSS variables:
 
 ```css
 :root {
-  --button-padding: 0.5rem 1rem;
+  /* Basic button styles */
+  --button-font-family: var(--font-family-base);
+  --button-font-weight: var(--font-weight-medium);
   --button-border-radius: 0.25rem;
-  --button-font-size: 1rem;
-  --button-font-weight: 500;
-  --button-transition: all 0.2s ease;
+  --button-transition: all 0.2s ease-in-out;
+  --button-focus-ring-width: 3px;
+  --button-focus-ring-color: rgba(var(--color-primary-rgb), 0.25);
   
-  --button-sm-padding: 0.25rem 0.5rem;
-  --button-sm-font-size: 0.875rem;
+  /* Padding for different sizes */
+  --button-padding-y-sm: 0.25rem;
+  --button-padding-x-sm: 0.5rem;
+  --button-padding-y: 0.5rem;
+  --button-padding-x: 1rem;
+  --button-padding-y-lg: 0.75rem;
+  --button-padding-x-lg: 1.5rem;
   
-  --button-lg-padding: 0.75rem 1.5rem;
-  --button-lg-font-size: 1.125rem;
+  /* Font sizes for different sizes */
+  --button-font-size-sm: 0.75rem;
+  --button-font-size: 0.875rem;
+  --button-font-size-lg: 1rem;
   
+  /* Primary button */
   --button-primary-bg: var(--color-primary);
-  --button-primary-text: var(--color-white);
-  --button-primary-border: var(--color-primary);
+  --button-primary-color: white;
+  --button-primary-border-color: var(--color-primary);
+  --button-primary-hover-bg: var(--color-primary-600);
+  --button-primary-hover-color: white;
+  --button-primary-hover-border-color: var(--color-primary-600);
+  --button-primary-active-bg: var(--color-primary-700);
+  --button-primary-active-color: white;
+  --button-primary-active-border-color: var(--color-primary-700);
   
+  /* Secondary button */
   --button-secondary-bg: var(--color-secondary);
-  --button-secondary-text: var(--color-white);
-  --button-secondary-border: var(--color-secondary);
+  --button-secondary-color: white;
+  --button-secondary-border-color: var(--color-secondary);
   
+  /* Outline button */
   --button-outline-bg: transparent;
-  --button-outline-text: var(--color-primary);
-  --button-outline-border: var(--color-primary);
+  --button-outline-color: var(--color-primary);
+  --button-outline-border-color: var(--color-primary);
   
-  --button-success-bg: var(--color-success);
-  --button-success-text: var(--color-white);
-  --button-success-border: var(--color-success);
+  /* Ghost button */
+  --button-ghost-bg: transparent;
+  --button-ghost-color: var(--color-gray-700);
+  --button-ghost-border-color: transparent;
   
-  --button-danger-bg: var(--color-danger);
-  --button-danger-text: var(--color-white);
-  --button-danger-border: var(--color-danger);
+  /* Link button */
+  --button-link-padding-y: 0;
+  --button-link-padding-x: 0;
+  --button-link-bg: transparent;
+  --button-link-color: var(--color-primary);
+  --button-link-border-color: transparent;
+  --button-link-hover-text-decoration: underline;
   
-  --button-warning-bg: var(--color-warning);
-  --button-warning-text: var(--color-white);
-  --button-warning-border: var(--color-warning);
-  
-  --button-info-bg: var(--color-info);
-  --button-info-text: var(--color-white);
-  --button-info-border: var(--color-info);
+  /* Disabled state */
+  --button-disabled-opacity: 0.65;
+  --button-disabled-cursor: not-allowed;
 }
 ```
 
 ## Best Practices
 
-### Barrierefreiheit
+### Accessibility
 
-- Verwenden Sie semantische Button-Elemente (`<button>`) für interaktive Aktionen
-- Verwenden Sie Links (`<a>`) für die Navigation zu anderen Seiten
-- Stellen Sie sicheren ausreichenden Kontrast zwischen Text und Hintergrund
-- Setzen Sie das `disabled`-Attribut für deaktivierte Buttons
-- Vermeiden Sie zu kleine Buttons (Mindestgröße 44x44px für Touch-Ziele)
-- Stellen Sie sicher, dass Buttons mit Tastatur fokussierbar sind
-- Nutzen Sie ARIA-Attribute für komplexe Button-Funktionen
+- Use semantic HTML elements (`<button>` for actions, `<a>` for navigation)
+- Ensure buttons have sufficient contrast
+- Provide clear, descriptive labels
+- Use `aria-label` for icon-only buttons
+- Ensure keyboard accessibility (focus states, tab order)
 
-### Responsive Design
+### Implementation Guidelines
 
-- Verwenden Sie relative Einheiten (rem, em) für die Größenanpassung
-- Passen Sie Padding und Schriftgröße für verschiedene Bildschirmgrößen an
-- Verwenden Sie `block` auf mobilen Geräten für bessere Touch-Ziele
-- Gruppieren Sie zusammengehörige Buttons in Button-Gruppen
-- Beachten Sie ausreichend Abstand zwischen mehreren Buttons
+- Use appropriate button types (primary for main actions, secondary for less important actions)
+- Be consistent with button styling across your application
+- Group related buttons together
+- Use appropriate sizes based on context and importance
+- Limit the number of primary buttons on a page to avoid confusion
 
-### Performance
+### Common Patterns
 
-- Laden Sie nur die benötigten Button-Varianten
-- Vermeiden Sie übermäßig komplexe Schatten oder Animationen bei Buttons
+- **Form submission**: Use a primary button for submit and an outline button for cancel
+- **Confirmation dialogs**: Use a primary button for confirm and a secondary or outline button for cancel
+- **Icon buttons**: Use for common actions with universally recognized icons
+- **Button groups**: Use for related actions or options
+
+## Integration
+
+### React
+
+```jsx
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css';
+import '@casoon/ui-lib/components/button.css';
+
+function MyComponent() {
+  return (
+    <button className="button primary">
+      Primary Button
+    </button>
+  );
+}
+```
+
+### Vue
+
+```vue
+<template>
+  <button class="button primary">
+    Primary Button
+  </button>
+</template>
+
+<script>
+import '@casoon/ui-lib/core.css';
+import '@casoon/ui-lib/themes/day.css';
+import '@casoon/ui-lib/components/button.css';
+
+export default {
+  name: 'MyComponent'
+}
+</script>
+```
+
+### HTML
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/core.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/themes/day.css">
+  <link rel="stylesheet" href="path/to/@casoon/ui-lib/components/button.css">
+</head>
+<body>
+  <button class="button primary">Primary Button</button>
+</body>
+</html>
+```
 
 <style>
 .example-wrapper {
@@ -361,105 +400,3 @@ Die Button-Komponente verwendet die folgenden CSS-Variablen:
   border-radius: 0.25rem;
 }
 </style>
-
-## Framework-Integration
-
-### React
-
-```jsx
-import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/day.css';
-import '@casoon/ui-lib/components/button.css';
-
-function Button({ 
-  children, 
-  variant = 'primary',
-  size = '',
-  block = false,
-  isLoading = false,
-  ...props 
-}) {
-  return (
-    <button
-      className={`button ${variant || ''} ${size || ''} ${block ? 'block' : ''} ${isLoading ? 'loading' : ''}`}
-      {...props}
-    >
-      {isLoading && <span className="button__loader"></span>}
-      <span className="button__text">{children}</span>
-    </button>
-  );
-}
-
-export default Button;
-```
-
-### Vue
-
-```vue
-<template>
-  <button
-    class="button"
-    :class="[
-      variant || '',
-      size || '',
-      { 'block': block },
-      { 'loading': loading }
-    ]"
-    v-bind="$attrs"
-  >
-    <span v-if="loading" class="button__loader"></span>
-    <span class="button__text">
-      <slot></slot>
-    </span>
-  </button>
-</template>
-
-<script>
-import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/day.css';
-import '@casoon/ui-lib/components/button.css';
-
-export default {
-  name: 'Button',
-  props: {
-    variant: {
-      type: String,
-      default: 'primary'
-    },
-    size: {
-      type: String,
-      default: ''
-    },
-    block: {
-      type: Boolean,
-      default: false
-    },
-    loading: {
-      type: Boolean,
-      default: false
-    }
-  }
-}
-</script>
-```
-
-### HTML
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="path/to/@casoon/ui-lib/core.css">
-  <link rel="stylesheet" href="path/to/@casoon/ui-lib/themes/day.css">
-  <link rel="stylesheet" href="path/to/@casoon/ui-lib/components/button.css">
-</head>
-<body class="theme-day">
-  <button class="button primary">
-    Primary Button
-  </button>
-  
-  <button class="button outline lg">
-    Large Outline Button
-  </button>
-</body>
-</html> 
