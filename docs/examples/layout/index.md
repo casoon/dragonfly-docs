@@ -1,9 +1,10 @@
 ---
-title: Layout Components
+title: Layout Examples
 category: Examples
+outline: false
 ---
 
-# Layout Components
+# Layout Examples
 
 This page showcases the layout components available in the Casoon UI Library. These components help structure and organize content on your pages.
 

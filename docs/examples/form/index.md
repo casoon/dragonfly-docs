@@ -1,9 +1,10 @@
 ---
-title: Form Components
+title: Form Examples
 category: Examples
+outline: false
 ---
 
-# Form Components
+# Form Examples
 
 This page showcases the form components available in the Casoon UI Library. These components are used to create interactive forms for user input.
 

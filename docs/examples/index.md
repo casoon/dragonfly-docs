@@ -1,6 +1,7 @@
 ---
 title: Komplexe UI Beispiele
 category: Examples
+outline: false
 ---
 
 # Komplexe UI Beispiele

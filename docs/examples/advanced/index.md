@@ -1,9 +1,10 @@
 ---
-title: Advanced Component Examples
+title: Advanced Examples
 category: Examples
+outline: false
 ---
 
-# Advanced Component Examples
+# Advanced Examples
 
 This page showcases advanced component combinations and patterns from the Casoon UI Library. These examples demonstrate how to build more complex interfaces by combining multiple components.
 

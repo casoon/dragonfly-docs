@@ -1,6 +1,7 @@
 ---
 title: Effects Examples
 category: Examples
+outline: false
 ---
 
 # Effects Examples
