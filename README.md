@@ -299,9 +299,25 @@ Mit dieser Konfiguration kann ein KI-Assistent dein Projekt besser verstehen und
 - Erstellen von Snippets basierend auf echten Beispielen
 - Verstehen der Architektur deines Projekts
 
-## 📝 Dokumentation
+## 📚 Dokumentation
 
-Ausführliche Dokumentation unter: [Casoon UI Docs](https://casoon.github.io/ui-docs/)
+Die Dokumentation für die Casoon UI Library ist unter [https://casoon.github.io/ui-docs/](https://casoon.github.io/ui-docs/) verfügbar.
+
+### Dokumentationsstruktur
+
+Die Dokumentation ist in folgende Hauptbereiche gegliedert:
+
+- **Getting Started**: Einführung, Installation und grundlegende Konzepte
+- **Components**: Ausführliche Dokumentation aller UI-Komponenten mit interaktiven Beispielen
+- **Effects**: Visuelle Effekte und deren Anwendung
+- **Examples**: Komplexe Beispiele, die die Verwendung mehrerer Komponenten demonstrieren
+
+Jede Komponentenseite bietet:
+- Grundlegende Verwendung mit HTML-Beispielen
+- Varianten und Anpassungsmöglichkeiten
+- Interaktive Demos
+- Best Practices für Barrierefreiheit und responsive Design
+- Framework-Integration (React, Vue)
 
 ## 📜 Lizenz
 

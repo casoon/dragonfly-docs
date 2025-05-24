@@ -241,13 +241,12 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Component Examples',
+          text: 'Komplexe Beispiele',
           items: [
-            { text: 'Basic Components', link: '/examples/basic/' },
-            { text: 'Form Components', link: '/examples/form/' },
-            { text: 'Layout Components', link: '/examples/layout/' },
-            { text: 'Advanced Components', link: '/examples/advanced/' },
-            { text: 'Effects Examples', link: '/examples/effects/' }
+            { text: 'Layout-Beispiele', link: '/examples/layout/' },
+            { text: 'Formular-Beispiele', link: '/examples/form/' },
+            { text: 'Fortgeschrittene Komponenten', link: '/examples/advanced/' },
+            { text: 'Effekt-Beispiele', link: '/examples/effects/' }
           ]
         }
       ]

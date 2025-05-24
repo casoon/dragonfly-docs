@@ -1,129 +1,227 @@
 ---
-title: UI Component Examples
+title: Komplexe UI Beispiele
 category: Examples
 ---
 
-# UI Component Examples
+# Komplexe UI Beispiele
 
-This page shows visual examples of the UI components from the Casoon UI Library. The examples showcase how the CSS classes are rendered in different contexts and configurations.
+Diese Seite zeigt fortgeschrittene Beispiele, wie die Komponenten der Casoon UI Library zusammen verwendet werden können, um komplexe Benutzeroberflächenelemente zu erstellen.
 
-## Overview
+## Übersicht
 
-The Casoon UI Library provides a comprehensive set of CSS components that can be used to build modern, responsive user interfaces. This section contains examples of these components in action, showing how they can be used and customized.
+Die Beispiele in diesem Bereich zeigen, wie verschiedene Komponenten der Casoon UI Library kombiniert werden können, um komplexe Benutzeroberflächen zu erstellen. Diese Beispiele gehen über die Grundlagen hinaus und konzentrieren sich auf praktische Anwendungsfälle und fortgeschrittene Techniken.
 
-### Example Categories
+### Beispiel-Kategorien
 
-- **[Basic Components](/examples/basic/)** - Fundamental UI elements like buttons, badges, alerts, and cards
-- **[Form Components](/examples/form/)** - Input fields, checkboxes, radio buttons, and other form controls
-- **[Layout Components](/examples/layout/)** - Components for structuring page layouts
-- **[Advanced Components](/examples/advanced/)** - Complex components and component combinations
+- **[Komplexe Layouts](/examples/layout/)** - Responsive Dashboard-Layouts, Split-Screen-Designs und gestapelte Komponenten
+- **[Formularmuster](/examples/form/)** - Mehrstufige Formulare, Validierungsmuster und dynamische Formulare
+- **[Fortgeschrittene Komponenten](/examples/advanced/)** - Komplexe Komponenten-Kombinationen und interaktive Elemente
+- **[Visuelle Effekte](/examples/effects/)** - Kombinationen von Effekten für ansprechende visuelle Darstellungen
 
-## Featured Examples
+## Dashboard-Beispiel
 
-### Button Variations
-
-Buttons are one of the most common interface elements. The Casoon UI Library offers various button styles to match your design needs.
+Ein Dashboard mit verschiedenen Widget-Typen, responsivem Layout und interaktiven Elementen.
 
 ```html
-<button class="button">Default Button</button>
-<button class="button primary">Primary Button</button>
-<button class="button secondary">Secondary Button</button>
-<button class="button outline">Outline Button</button>
-```
-
-<div class="example-wrapper">
-  <button class="button">Default Button</button>
-  <button class="button primary">Primary Button</button>
-  <button class="button secondary">Secondary Button</button>
-  <button class="button outline">Outline Button</button>
-</div>
-
-### Alert Components
-
-Alerts provide contextual feedback messages for typical user actions.
-
-```html
-<div class="alert info">Info alert</div>
-<div class="alert success">Success alert</div>
-<div class="alert warning">Warning alert</div>
-<div class="alert error">Error alert</div>
-```
-
-<div class="example-wrapper">
-  <div class="alert info" style="margin-bottom: 10px;">Info alert</div>
-  <div class="alert success" style="margin-bottom: 10px;">Success alert</div>
-  <div class="alert warning" style="margin-bottom: 10px;">Warning alert</div>
-  <div class="alert error" style="margin-bottom: 10px;">Error alert</div>
-</div>
-
-### Form Controls
-
-Form controls allow users to input data and make selections.
-
-```html
-<input type="text" class="input" placeholder="Text input">
-<select class="select">
-  <option>Select option 1</option>
-  <option>Select option 2</option>
-</select>
-<label class="checkbox">
-  <input type="checkbox">
-  <span>Checkbox option</span>
-</label>
-```
-
-<div class="example-wrapper">
-  <input type="text" class="input" placeholder="Text input" style="margin-bottom: 10px; display: block;">
-  <select class="select" style="margin-bottom: 10px; display: block;">
-    <option>Select option 1</option>
-    <option>Select option 2</option>
-  </select>
-  <label class="checkbox">
-    <input type="checkbox">
-    <span>Checkbox option</span>
-  </label>
-</div>
-
-## Using Components Together
-
-Components can be combined to create more complex interfaces. Visit the specific example sections to see more advanced combinations and use cases.
-
-<div class="example-wrapper">
-  <div class="card" style="max-width: 300px;">
-    <div class="card-header">
-      <h3 class="card-title">Card with Components</h3>
+<div class="dashboard">
+  <header class="header">
+    <h1>Analytics Dashboard</h1>
+    <div class="user-info">
+      <span class="avatar">JS</span>
+      <div class="dropdown">
+        <button class="button ghost">Admin <span class="icon">▼</span></button>
+      </div>
     </div>
-    <div class="card-body">
-      <input type="text" class="input" placeholder="Enter name" style="margin-bottom: 10px; display: block;">
-      <div class="alert info" style="margin-bottom: 10px;">Please fill all fields</div>
+  </header>
+  
+  <div class="dashboard-grid">
+    <div class="widget primary">
+      <div class="widget-header">Besucher</div>
+      <div class="widget-body">
+        <div class="metric">12,345</div>
+        <div class="change up">+15%</div>
+      </div>
     </div>
-    <div class="card-footer">
-      <button class="button primary">Submit</button>
-      <button class="button outline">Cancel</button>
+    
+    <div class="widget secondary">
+      <div class="widget-header">Umsatz</div>
+      <div class="widget-body">
+        <div class="metric">€54,321</div>
+        <div class="change up">+8%</div>
+      </div>
+    </div>
+    
+    <div class="widget">
+      <div class="widget-header">Conversion Rate</div>
+      <div class="widget-body">
+        <div class="metric">3.8%</div>
+        <div class="change down">-2%</div>
+      </div>
+    </div>
+    
+    <div class="widget full">
+      <div class="widget-header">
+        <h3>Monatliche Besucher</h3>
+        <div class="widget-actions">
+          <button class="button small outline">Filter</button>
+          <button class="button small outline">Export</button>
+        </div>
+      </div>
+      <div class="widget-body">
+        <!-- Hier würde ein Chart stehen -->
+        <div class="chart-placeholder"></div>
+      </div>
     </div>
   </div>
 </div>
 
 <style>
-.example-wrapper {
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin: 20px 0;
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.example-wrapper > * {
-  margin-right: 10px;
-  margin-bottom: 10px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #3b82f6;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.widget.full {
+  grid-column: 1 / -1;
+}
+
+.metric {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.change {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.change.up {
+  color: #10b981;
+}
+
+.change.down {
+  color: #ef4444;
+}
+
+.chart-placeholder {
+  height: 200px;
+  background-color: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 0.375rem;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget-actions {
+  display: flex;
+  gap: 0.5rem;
 }
 </style>
 
-## Explore More Examples
+## Mehrstufiges Formular
 
-For more detailed examples and variations, explore the specific example categories:
+Ein komplexes mehrstufiges Formular mit Validierung und Fortschrittsanzeige.
 
-- [Basic Components](/examples/basic/) - Buttons, badges, alerts, cards, etc.
-- [Form Components](/examples/form/) - Inputs, selects, checkboxes, radio buttons, etc.
-- [Layout Components](/examples/layout/) - Grid, containers, headers, footers, etc.
-- [Advanced Components](/examples/advanced/) - Complex component combinations and patterns 
+```html
+<div class="wizard">
+  <div class="progress-bar">
+    <div class="fill" style="width: 66%;"></div>
+  </div>
+  
+  <div class="steps">
+    <div class="step completed">
+      <span class="indicator">1</span>
+      <span class="title">Persönliche Informationen</span>
+    </div>
+    <div class="step active">
+      <span class="indicator">2</span>
+      <span class="title">Kontaktdetails</span>
+    </div>
+    <div class="step">
+      <span class="indicator">3</span>
+      <span class="title">Bestätigung</span>
+    </div>
+  </div>
+  
+  <div class="wizard-content">
+    <h2>Kontaktdetails</h2>
+    
+    <div class="form-group">
+      <label for="email">E-Mail-Adresse</label>
+      <input type="email" id="email" class="input" placeholder="email@beispiel.de">
+      <div class="helper">Wir werden Ihre E-Mail-Adresse nicht an Dritte weitergeben.</div>
+    </div>
+    
+    <div class="form-group">
+      <label for="phone">Telefonnummer</label>
+      <input type="tel" id="phone" class="input" placeholder="+49 123 4567890">
+    </div>
+    
+    <div class="form-group">
+      <label for="address">Adresse</label>
+      <textarea id="address" class="textarea" rows="3" placeholder="Straße, Hausnummer, PLZ, Stadt"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label class="checkbox">
+        <input type="checkbox" id="newsletter">
+        <span>Newsletter abonnieren</span>
+      </label>
+    </div>
+  </div>
+  
+  <div class="wizard-actions">
+    <button class="button outline">Zurück</button>
+    <button class="button primary">Weiter</button>
+  </div>
+</div>
+```
+
+## Erkunden Sie weitere komplexe Beispiele
+
+Für weitere detaillierte Beispiele und Variationen besuchen Sie die spezifischen Beispielkategorien:
+
+- [Komplexe Layouts](/examples/layout/) - Dashboard-Layouts, Split-Screen-Designs und mehr
+- [Formularmuster](/examples/form/) - Mehrstufige Formulare, dynamische Formulare und Validierungsmuster
+- [Fortgeschrittene Komponenten](/examples/advanced/) - Komplexe Komponenten-Kombinationen
+- [Visuelle Effekte](/examples/effects/) - Kombinationen von Effekten für visuelle Darstellungen 
