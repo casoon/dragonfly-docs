@@ -2,6 +2,36 @@ import { defineConfig } from 'vitepress'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { UI_LIB_VERSION } from './data/versions'
 
+// Benutzerdefiniertes Plugin für CSS-Imports aus Node-Modulen
+function cssImportPlugin() {
+  const nodeModulesDir = '../../node_modules/';
+  
+  return {
+    name: 'css-transform',
+    transform(code, id) {
+      // Ignoriere Nicht-CSS-Dateien
+      if (!id.endsWith('.css')) return null;
+      
+      // Wenn es ein direkter Import aus node_modules ist
+      if (id.includes('@casoon/ui-lib')) {
+        console.log(`Transformiere CSS-Import: ${id}`);
+        
+        // Tatsächlichen CSS-Inhalt laden
+        try {
+          const actualPath = id.replace('@casoon/ui-lib', nodeModulesDir + '@casoon/ui-lib');
+          console.log(`Versuch, Datei zu laden: ${actualPath}`);
+          return null; // Lasse Vite die Datei laden
+        } catch (error) {
+          console.error(`Fehler beim Laden von ${id}:`, error);
+          return null;
+        }
+      }
+      
+      return null;
+    }
+  };
+}
+
 export default defineConfig({
   title: 'Casoon UI Library',
   description: 'A modern, flexible and accessible component library',
@@ -13,17 +43,36 @@ export default defineConfig({
   ],
 
   vite: {
-    plugins: [vueJsx()],
+    plugins: [
+      vueJsx(),
+      cssImportPlugin()
+    ],
     ssr: {
       noExternal: ['vitepress']
     },
     define: {
       __UI_LIB_VERSION__: JSON.stringify(UI_LIB_VERSION)
     },
-    resolve: {
-      alias: {
-        // Allow directly importing from @casoon/ui-lib
-        '@casoon/ui-lib': 'node_modules/@casoon/ui-lib'
+    optimizeDeps: {
+      exclude: ['@casoon/ui-lib'],
+    },
+    build: {
+      cssCodeSplit: true,
+      rollupOptions: {
+        external: [],
+        preserveEntrySignatures: 'strict'
+      }
+    },
+    server: {
+      fs: {
+        // Erlaube den Zugriff auf Node-Module außerhalb des Projekts
+        allow: ['..', '../../node_modules']
+      }
+    },
+    css: {
+      // CSS-Modulunterstützung aktivieren
+      modules: {
+        localsConvention: 'camelCaseOnly'
       }
     }
   },

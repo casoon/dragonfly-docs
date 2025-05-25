@@ -306,6 +306,14 @@ The Button component can be customized using CSS variables:
 - **Icon buttons**: Use for common actions with universally recognized icons
 - **Button groups**: Use for related actions or options
 
+### Best Practices für sauberes CSS
+
+- **Selektoren kurz & sprechend halten**: Verwende klare, semantische Klassennamen
+- **Tiefe Verschachtelung vermeiden**: Maximiere die CSS-Spezifität nur wenn nötig
+- **Wiederholbare Styles mit Utility-Klassen lösen**: Nutze gemeinsame Stilelemente für Konsistenz
+- **Komplexe Selektoren kommentieren**: Erkläre den Zweck komplizierter CSS-Regeln
+- **Kompatibilität in verschiedenen Browsern prüfen**: Stelle sicher, dass deine Styles in allen unterstützten Browsern korrekt dargestellt werden
+
 ## Integration
 
 ### React

@@ -3,6 +3,9 @@ import { UI_LIB_VERSION } from '../data/versions'
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 
+// Import custom components
+import CustomNav from './components/CustomNav.vue'
+
 // Import CSS files from @casoon/ui-lib
 import '@casoon/ui-lib/core.css'
 import '@casoon/ui-lib/themes/day.css'
@@ -29,5 +32,11 @@ export default {
     if (typeof document !== 'undefined') {
       document.body.classList.add('theme-day')
     }
+  },
+  // Ersetze die Standardnavigation mit unserer benutzerdefinierten Navigation
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'nav-bar-content-before': () => h(CustomNav)
+    })
   }
 } as Theme 

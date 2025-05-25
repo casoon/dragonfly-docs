@@ -9,6 +9,19 @@
   --vp-font-family-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
+/* Hover Menu und Navigation Anpassungen */
+.VPNavBar {
+  border-bottom: 1px solid rgba(60, 60, 60, 0.12);
+}
+
+.VPNavBar .VPNavBarTitle {
+  height: 56px;
+}
+
+.VPNavBar .VPNavBarMenu {
+  display: none;
+}
+
 /* Example wrapper styles */
 .example-wrapper {
   padding: 20px;
