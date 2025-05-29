@@ -10,7 +10,9 @@
            @mouseenter="showUISystemMenu = true" 
            @mouseleave="showUISystemMenu = false">
         <a href="/ui-docs/ui/" class="nav-item">UI System</a>
-        <NavHoverMenu v-if="showUISystemMenu" />
+        <div v-if="showUISystemMenu" class="nav-menu-container">
+          <NavHoverMenu />
+        </div>
       </div>
       
       <a href="/ui-docs/effects/" class="nav-item">Effects</a>
@@ -18,16 +20,14 @@
       <a href="https://github.com/casoon/dragonfly" class="nav-item" target="_blank">GitHub</a>
     </div>
     
-    <!-- Debug-Steuerung ausblenden, da jetzt Hover verwendet wird -->
-    <!--
+    <!-- Debug-Controls for development -->
     <div class="debug-controls">
-      <button @click="toggleComponentsMenu" class="debug-button">
-        {{ showComponentsMenu ? 'Hide Menu' : 'Show Menu' }}
+      <button @click="toggleUIMenu" class="debug-button">
+        {{ showUISystemMenu ? 'Hide UI Menu' : 'Show UI Menu' }}
       </button>
     </div>
-    -->
     
-    <!-- Alte Komponenten-Übersicht auskommentieren -->
+    <!-- Old components menu (commented out) -->
     <!-- <ComponentsMenu :is-visible="showComponentsMenu" /> -->
   </div>
 </template>
@@ -37,7 +37,7 @@ import { ref } from 'vue'
 import ComponentsMenu from './ComponentsMenu.vue'
 import NavHoverMenu from './NavHoverMenu.vue'
 
-// Altes Click-Menü (auskommentiert)
+// Legacy click menu (commented out)
 const showComponentsMenu = ref(false)
 
 function toggleComponentsMenu() {
@@ -45,8 +45,13 @@ function toggleComponentsMenu() {
   console.log('Toggle Components Menu:', showComponentsMenu.value)
 }
 
-// Neues Hover-Menü
+// New hover menu
 const showUISystemMenu = ref(false)
+
+function toggleUIMenu() {
+  showUISystemMenu.value = !showUISystemMenu.value
+  console.log('Toggle UI Menu:', showUISystemMenu.value)
+}
 </script>
 
 <style>
@@ -93,7 +98,15 @@ const showUISystemMenu = ref(false)
   cursor: pointer;
 }
 
-/* Debug-Steuerung */
+.nav-menu-container {
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  z-index: 9999;
+  min-width: 800px;
+}
+
+/* Debug controls */
 .debug-controls {
   position: fixed;
   bottom: 20px;
