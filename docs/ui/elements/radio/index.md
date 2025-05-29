@@ -1,29 +1,29 @@
 ---
-title: Radio Element
+title: Radio element
 outline: deep
 ---
 
 
 # Radio
 
-Das Radio-Element dient zur Auswahl einer einzelnen Option aus einer Gruppe von Alternativen. Radio-Buttons werden verwendet, wenn Benutzer nur eine Option aus mehreren Möglichkeiten auswählen können sollen.
+the Radio-element dient zur selection einer einzelnen Option aus einer Gruppe from Alternativen. Radio-buttons become verwendet, if user only a Option aus mehreren Moglichkeiten selections can should.
 
 ## Installation
 
-Das Radio-Element ist Teil der Casoon UI Library.
+the Radio-element ist Teil the Casoon UI Library.
 
 ```bash
-# Installation der gesamten Bibliothek
+# Installation the gesamten Bibliothek
 npm install @casoon/ui-lib
 ```
 
 ## Import
 
 ```css
-/* Import aller UI-Elemente */
+/* Import aller UI-elements */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Radio-Komponente */
+/* or only the Radio-Component */
 @import '@casoon/ui-lib/components/radio.css';
 ```
 
@@ -40,7 +40,7 @@ npm install @casoon/ui-lib
 </label>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="margin-bottom: 10px;">
     <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.875rem; gap: 0.5rem;">
       <input type="radio" name="radioGroup" style="appearance: none; background-color: white; border: 2px solid #9ca3af; border-radius: 9999px; height: 1rem; position: relative; transition: all 0.15s ease-in-out; width: 1rem;">
@@ -59,7 +59,7 @@ npm install @casoon/ui-lib
 
 ### Standard Radio
 
-Der grundlegende Radio-Button ohne spezielle States.
+the grundlegende Radio-button without spezielle States.
 
 ```html
 <label class="radio">
@@ -68,34 +68,34 @@ Der grundlegende Radio-Button ohne spezielle States.
 </label>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.875rem; gap: 0.5rem;">
     <input type="radio" name="demoRadio1" style="appearance: none; background-color: white; border: 2px solid #9ca3af; border-radius: 9999px; height: 1rem; position: relative; transition: all 0.15s ease-in-out; width: 1rem;">
     <span>Standard Radio</span>
   </label>
 </div>
 
-### Ausgewählt (Checked)
+### Ausgewahlt (Checked)
 
-Ein Radio-Button im ausgewählten Zustand.
+a Radio-button im ausgewahlten state.
 
 ```html
 <label class="radio">
   <input type="radio" name="demoRadio2" checked>
-  <span class="label">Ausgewählte Option</span>
+  <span class="label">Ausgewahlte Option</span>
 </label>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.875rem; gap: 0.5rem;">
     <input type="radio" name="demoRadio2" checked style="appearance: none; background-color: #3b82f6; border: 2px solid #3b82f6; border-radius: 9999px; height: 1rem; position: relative; transition: all 0.15s ease-in-out; width: 1rem;">
-    <span>Ausgewählte Option</span>
+    <span>Ausgewahlte Option</span>
   </label>
 </div>
 
 ### Deaktiviert (Disabled)
 
-Ein Radio-Button im deaktivierten Zustand.
+a Radio-button im deaktivierten state.
 
 ```html
 <label class="radio">
@@ -104,46 +104,46 @@ Ein Radio-Button im deaktivierten Zustand.
 </label>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.875rem; gap: 0.5rem;">
     <input type="radio" name="demoRadio3" disabled style="appearance: none; background-color: #f3f4f6; border: 2px solid #d1d5db; border-radius: 9999px; cursor: not-allowed; height: 1rem; position: relative; transition: all 0.15s ease-in-out; width: 1rem;">
     <span style="color: #9ca3af; cursor: not-allowed;">Deaktivierte Option</span>
   </label>
 </div>
 
-### Deaktiviert und Ausgewählt
+### Deaktiviert and Ausgewahlt
 
-Ein Radio-Button, der sowohl deaktiviert als auch ausgewählt ist.
+a Radio-button, the sowohl deaktiviert as also ausgewahlt ist.
 
 ```html
 <label class="radio">
   <input type="radio" name="demoRadio3" disabled checked>
-  <span class="label">Deaktivierte ausgewählte Option</span>
+  <span class="label">Deaktivierte ausgewahlte Option</span>
 </label>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.875rem; gap: 0.5rem;">
     <input type="radio" name="demoRadio3" disabled checked style="appearance: none; background-color: #f3f4f6; border: 2px solid #d1d5db; border-radius: 9999px; cursor: not-allowed; height: 1rem; position: relative; transition: all 0.15s ease-in-out; width: 1rem;">
-    <span style="color: #9ca3af; cursor: not-allowed;">Deaktivierte ausgewählte Option</span>
+    <span style="color: #9ca3af; cursor: not-allowed;">Deaktivierte ausgewahlte Option</span>
   </label>
 </div>
 
 ## Sizesvarianten
 
-### Klein (Small)
+### small (Small)
 
 ```html
 <label class="radio sm">
   <input type="radio" name="demoRadioSize">
-  <span class="label">Kleiner Radio-Button</span>
+  <span class="label">smaller Radio-button</span>
 </label>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.75rem; gap: 0.5rem;">
     <input type="radio" name="demoRadioSize" style="appearance: none; background-color: white; border: 2px solid #9ca3af; border-radius: 9999px; height: 0.875rem; position: relative; transition: all 0.15s ease-in-out; width: 0.875rem;">
-    <span>Kleiner Radio-Button</span>
+    <span>smaller Radio-button</span>
   </label>
 </div>
 
@@ -152,36 +152,36 @@ Ein Radio-Button, der sowohl deaktiviert als auch ausgewählt ist.
 ```html
 <label class="radio">
   <input type="radio" name="demoRadioSize">
-  <span class="label">Standard Radio-Button</span>
+  <span class="label">Standard Radio-button</span>
 </label>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.875rem; gap: 0.5rem;">
     <input type="radio" name="demoRadioSize" style="appearance: none; background-color: white; border: 2px solid #9ca3af; border-radius: 9999px; height: 1rem; position: relative; transition: all 0.15s ease-in-out; width: 1rem;">
-    <span>Standard Radio-Button</span>
+    <span>Standard Radio-button</span>
   </label>
 </div>
 
-### Groß (Large)
+### Gross (Large)
 
 ```html
 <label class="radio lg">
   <input type="radio" name="demoRadioSize">
-  <span class="label">Großer Radio-Button</span>
+  <span class="label">Grosser Radio-button</span>
 </label>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 1rem; gap: 0.5rem;">
     <input type="radio" name="demoRadioSize" style="appearance: none; background-color: white; border: 2px solid #9ca3af; border-radius: 9999px; height: 1.25rem; position: relative; transition: all 0.15s ease-in-out; width: 1.25rem;">
-    <span>Großer Radio-Button</span>
+    <span>Grosser Radio-button</span>
   </label>
 </div>
 
 ## Radio-Gruppen
 
-Radio-Buttons können in Gruppen organisiert werden, um zusammengehörige Optionen darzustellen.
+Radio-buttons can in Gruppen organisiert become, um zusammengehorige Optionen darzustellen.
 
 ```html
 <div class="radio-group">
@@ -202,7 +202,7 @@ Radio-Buttons können in Gruppen organisiert werden, um zusammengehörige Option
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="display: flex; flex-direction: column; gap: 0.5rem;">
     <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.875rem; gap: 0.5rem;">
       <input type="radio" name="options" value="option1" style="appearance: none; background-color: white; border: 2px solid #9ca3af; border-radius: 9999px; height: 1rem; position: relative; transition: all 0.15s ease-in-out; width: 1rem;">
@@ -221,9 +221,9 @@ Radio-Buttons können in Gruppen organisiert werden, um zusammengehörige Option
   </div>
 </div>
 
-## Horizontale Radio-Buttons
+## Horizontale Radio-buttons
 
-Radio-Buttons können auch horizontal angeordnet werden.
+Radio-buttons can also horizontal angeordnet become.
 
 ```html
 <div class="radio-group horizontal">
@@ -244,7 +244,7 @@ Radio-Buttons können auch horizontal angeordnet werden.
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="display: flex; align-items: center; flex-flow: row wrap; gap: 0.5rem;">
     <label style="align-items: center; cursor: pointer; display: inline-flex; font-size: 0.875rem; gap: 0.5rem;">
       <input type="radio" name="horizontalOptions" value="inline1" style="appearance: none; background-color: white; border: 2px solid #9ca3af; border-radius: 9999px; height: 1rem; position: relative; transition: all 0.15s ease-in-out; width: 1rem;">
@@ -263,49 +263,49 @@ Radio-Buttons können auch horizontal angeordnet werden.
   </div>
 </div>
 
-## Anpassung
+## Customization
 
-Die Radio-Komponente kann über CSS Variables angepasst werden:
+the Radio-Component kann over CSS Variables angepasst become:
 
 ```css
 :root {
-  --color-primary: #3b82f6;     /* Primärfarbe für den ausgewählten Zustand */
-  --color-white: #ffffff;       /* Hintergrund für Radio-Button */
-  --color-gray-100: #f3f4f6;    /* Hintergrund für deaktivierten Zustand */
-  --color-gray-300: #d1d5db;    /* Rahmen für deaktivierten Zustand */
-  --color-gray-400: #9ca3af;    /* Rahmenfarbe für nicht ausgewählten Zustand */
-  --font-size-xs: 0.75rem;      /* Kleine Textgröße */
-  --font-size-sm: 0.875rem;     /* Mittlere Textgröße (Standard) */
-  --font-size-base: 1rem;       /* Große Textgröße */
-  --space-2: 0.5rem;            /* Abstand zwischen Elementen */
-  --transition-fast: 0.15s ease-in-out; /* Übergangsgeschwindigkeit */
+  --color-primary: #3b82f6;     /* Primarfarbe for den ausgewahlten state */
+  --color-white: #ffffff;       /* background for Radio-button */
+  --color-gray-100: #f3f4f6;    /* background for deaktivierten state */
+  --color-gray-300: #d1d5db;    /* border for deaktivierten state */
+  --color-gray-400: #9ca3af;    /* Rahmenfarbe for not ausgewahlten state */
+  --font-size-xs: 0.75rem;      /* Kleine Textgrosse */
+  --font-size-sm: 0.875rem;     /* Mittlere Textgrosse (Standard) */
+  --font-size-base: 1rem;       /* size Textgrosse */
+  --space-2: 0.5rem;            /* spacing between Elementen */
+  --transition-fast: 0.15s ease-in-out; /* Ubergangsgeschwindigkeit */
 }
 ```
 
 ## Accessibility
 
-Für eine bessere Accessibility beachten Sie bitte folgende Punkte:
+for a bessere Accessibility note please folgende Punkte:
 
-- Verwenden Sie immer ein `<label>`-Element, das das Radio-Input umschließt
-- Gruppieren Sie zusammengehörige Radio-Buttons mit der Klasse `radio-group`
-- Stellen Sie einen ausreichenden Kontrast zwischen Hintergrund und Radio-Button sicher
-- Achten Sie darauf, dass die Radio-Buttons mit der Tastatur bedienbar sind (Tab-Navigation und Pfeiltasten)
-- Verwenden Sie immer denselben `name`-Attributwert für eine Gruppe von Radio-Buttons, um sicherzustellen, dass nur eine Option ausgewählt werden kann
+- use them immer a `<label>`-element, the the Radio-Input umschliesst
+- Gruppieren them zusammengehorige Radio-buttons with the Class `radio-group`
+- Stellen them einen ausreichenden Kontrast between background and Radio-button sicher
+- make sure, that the Radio-buttons with the Tastatur bedienbar sind (Tab-navigation and Pfeiltasten)
+- use them immer denselben `name`-Attributwert for a Gruppe from Radio-buttons, um sicherzustellen, that only a Option ausgewahlt become kann
 
-## Bewährte Praktiken
+## Bewahrte Praktiken
 
-- Verwenden Sie Radio-Buttons, wenn nur eine Option aus einer Liste ausgewählt werden kann
-- Ordnen Sie Radio-Buttons vertikal an, um die Lesbarkeit zu verbessern
-- Fügen Sie eine Standardauswahl hinzu, wenn alle Optionen gleichermaßen gültig sind
-- Begrenzen Sie die Anzahl der Optionen auf eine überschaubare Menge
+- use them Radio-buttons, if only a Option aus einer list ausgewahlt become kann
+- Ordnen them Radio-buttons vertikal on, um the Lesbarkeit to verbessern
+- Fugen them a Standardauswahl hinzu, if all Optionen gleichermassen gultig sind
+- Begrenzen them the Anzahl the Optionen on a uberschaubare Menge
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Das Radio-Element ist mit allen modernen Browsern kompatibel.
+the Radio-element ist with allen modernen Browsern kompatibel.
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| Function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
+| Grundlegende Funktionalitat | ✅ | ✅ | ✅ | ✅ |
 | Anpassbares Styling | ✅ | ✅ | ✅ | ✅ |
 | Sizesvarianten | ✅ | ✅ | ✅ | ✅ |
 | CSS Variables | 49+ | 31+ | 9.1+ | 15+ | 

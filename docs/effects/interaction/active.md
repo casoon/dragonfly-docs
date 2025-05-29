@@ -1,151 +1,151 @@
-# Active Effekte
+# Active effects
 
-Active-Effekte werden verwendet, um dem Benutzer Feedback zu geben, wenn ein Element aktiv ist oder gerade aktiviert wurde. Dies kann durch einen Klick, Tap oder andere Interaktionen geschehen. Die `@casoon/ui-lib` bietet verschiedene Active-Effekte, die dazu beitragen, die Benutzererfahrung zu verbessern und klares visuelles Feedback zu liefern.
+Active-effects become verwendet, um dem user Feedback to geben, if a element aktiv ist or gerade aktiviert wurde. Dies kann through einen Klick, Tap or others interactions geschehen. the `@casoon/ui-lib` bietet verschiedene Active-effects, the for that beitragen, the Benutzererfahrung to verbessern and klares visuelles Feedback to liefern.
 
 ## Basic Usage
 
-Der grundlegende Active-Effekt kann auf jedes interaktive Element angewendet werden:
+the grundlegende Active-effect kann on jedes interaktive element angewendet become:
 
 ```html
-<button class="active-effect">Klick mich</button>
+<button class="active-effect">Klick me</button>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Active-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Active-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.active-effect` | Basisklasse für Active-Effekte |
-| `.active-scale` | Skalierungseffekt beim Aktivieren |
-| `.active-push` | Eindrückeffekt beim Aktivieren |
-| `.active-highlight` | Hervorhebungseffekt beim Aktivieren |
-| `.active-glow` | Glüheffekt beim Aktivieren |
-| `.active-ripple` | Welleneffekt beim Aktivieren (Material Design inspiriert) |
-| `.active-color` | Farbwechseleffekt beim Aktivieren |
+| `.active-effect` | Basisklasse for Active-effects |
+| `.active-scale` | Skalierungseffekt beim activate |
+| `.active-push` | Eindruckeffekt beim activate |
+| `.active-highlight` | Hervorhebungseffekt beim activate |
+| `.active-glow` | Gluheffekt beim activate |
+| `.active-ripple` | Welleneffekt beim activate (Material design inspiriert) |
+| `.active-color` | Farbwechseleffekt beim activate |
 
 ## Variants
 
-### Scale-Effekt
+### Scale-effect
 
-Der Scale-Effekt verkleinert ein Element leicht, wenn es aktiviert wird, um einen physischen Druckeffekt zu simulieren:
-
-```html
-<button class="active-scale">Scale-Effekt</button>
-```
-
-### Push-Effekt
-
-Der Push-Effekt gibt dem Benutzer das Gefühl, dass das Element nach innen gedrückt wird:
+the Scale-effect verkleinert a element leicht, if it aktiviert wird, um einen physischen Druckeffekt to simulieren:
 
 ```html
-<button class="active-push">Push-Effekt</button>
+<button class="active-scale">Scale-effect</button>
 ```
 
-### Highlight-Effekt
+### Push-effect
 
-Der Highlight-Effekt hebt das Element kurzzeitig durch eine Farbänderung hervor:
+the Push-effect gibt dem user the Gefuhl, that the element after innen gedruckt wird:
 
 ```html
-<button class="active-highlight">Highlight-Effekt</button>
+<button class="active-push">Push-effect</button>
 ```
 
-### Glow-Effekt
+### Highlight-effect
 
-Der Glow-Effekt fügt einen kurzen Leuchteffekt hinzu, wenn das Element aktiviert wird:
+the Highlight-effect hebt the element kurzzeitig through a Farbanderung hervor:
 
 ```html
-<button class="active-glow">Glow-Effekt</button>
+<button class="active-highlight">Highlight-effect</button>
 ```
 
-### Ripple-Effekt
+### Glow-effect
 
-Der Ripple-Effekt erzeugt eine nach außen verlaufende Wellenbewegung vom Klickpunkt aus:
+the Glow-effect fugt einen kurzen Leuchteffekt hinzu, if the element aktiviert wird:
 
 ```html
-<button class="active-ripple">Ripple-Effekt</button>
+<button class="active-glow">Glow-effect</button>
 ```
 
-### Color-Effekt
+### Ripple-effect
 
-Der Color-Effekt ändert die Farbe des Elements vorübergehend, wenn es aktiviert wird:
+the Ripple-effect erzeugt a after aussen verlaufende Wellenbewegung vom Klickpunkt aus:
 
 ```html
-<button class="active-color">Color-Effekt</button>
+<button class="active-ripple">Ripple-effect</button>
 ```
 
-## Kombination mit anderen Elementen
+### Color-effect
 
-Active-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
-
-### Buttons mit Active-Effekten
+the Color-effect andert the color des Elements vorubergehend, if it aktiviert wird:
 
 ```html
-<button class="btn btn-primary active-scale">Primärer Button</button>
-<button class="btn btn-secondary active-ripple">Sekundärer Button</button>
-<button class="btn btn-outline active-push">Outline Button</button>
+<button class="active-color">Color-effect</button>
 ```
 
-### Links mit Active-Effekten
+## Kombination with anderen Elementen
+
+Active-effects can with verschiedenen UI-Elementen kombiniert become:
+
+### buttons with Active-Effekten
 
 ```html
-<a href="#" class="active-highlight">Link mit Highlight-Effekt</a>
+<button class="btn btn-primary active-scale">Primarer button</button>
+<button class="btn btn-secondary active-ripple">Sekundarer button</button>
+<button class="btn btn-outline active-push">Outline button</button>
 ```
 
-### Cardn mit Active-Effekten
+### links with Active-Effekten
+
+```html
+<a href="#" class="active-highlight">link with Highlight-effect</a>
+```
+
+### Cardn with Active-Effekten
 
 ```html
 <div class="card active-push">
-  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-header">Cardnuberschrift</div>
   <div class="card-body">Cardninhalt</div>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Active-Effekte können über CSS Variables angepasst werden:
+the Active-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  --active-scale-factor: 0.97; /* Skalierungsfaktor für active-scale */
-  --active-push-distance: 2px; /* Eindrückdistanz für active-push */
+  --active-scale-factor: 0.97; /* Skalierungsfaktor for active-scale */
+  --active-push-distance: 2px; /* Eindruckdistanz for active-push */
   --active-highlight-color: rgba(255, 255, 255, 0.3); /* Hervorhebungsfarbe */
-  --active-glow-color: rgba(255, 165, 0, 0.6); /* Glühfarbe */
-  --active-glow-radius: 10px; /* Glühradius */
+  --active-glow-color: rgba(255, 165, 0, 0.6); /* Gluhfarbe */
+  --active-glow-radius: 10px; /* Gluhradius */
   --active-ripple-color: rgba(0, 0, 0, 0.1); /* Wellenfarbe */
   --active-ripple-duration: 0.6s; /* Wellendauer */
-  --active-color-from: currentColor; /* Ausgangsfarbe für Farbwechsel */
-  --active-color-to: #ff5722; /* Zielfarbe für Farbwechsel */
-  --active-transition-duration: 0.15s; /* Übergangsdauer */
+  --active-color-from: currentColor; /* Ausgangsfarbe for Farbwechsel */
+  --active-color-to: #ff5722; /* Zielfarbe for Farbwechsel */
+  --active-transition-duration: 0.15s; /* Ubergangsdauer */
 }
 ```
 
 ## Accessibility
 
-Bei der Usage von Active-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Active-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass der Active-Zustand einen ausreichenden Kontrast zum inaktiven Zustand bietet
-2. **Bewegung**: Vermeiden Sie übermäßige Bewegung, da dies für Benutzer mit vestibulären Störungen problematisch sein kann
-3. **Fokusindikatoren**: Active-Effekte sollten Fokusindikatoren nicht ersetzen, sondern ergänzen
-4. **Eingabemethoden**: Effekte sollten für alle Eingabemethoden (Maus, Tastatur, Touch) konsistent sein
+1. **Kontrast**: ensure, that the Active-state einen ausreichenden Kontrast zum inaktiven state bietet
+2. **Bewegung**: Vermeiden them ubermassige Bewegung, da dies for user with vestibularen Storungen problematisch be kann
+3. **Fokusindikatoren**: Active-effects should Fokusindikatoren not ersetzen, but rather erganzen
+4. **Eingabemethoden**: effects should for all Eingabemethoden (Maus, Tastatur, Touch) konsistent be
 
 ```html
-<!-- Barrierefreier Button mit Active-Effekt -->
+<!-- Barrierefreier button with Active-effect -->
 <button 
   class="btn active-scale" 
   aria-pressed="false" 
   onclick="this.setAttribute('aria-pressed', this.getAttribute('aria-pressed') === 'true' ? 'false' : 'true')"
 >
-  Barrierefreier Button
+  Barrierefreier button
 </button>
 ```
 
 ## JavaScript-Integration
 
-Für komplexere Active-Effekte, insbesondere den Ripple-Effekt, kann JavaScript verwendet werden:
+for komplexere Active-effects, insbesondere den Ripple-effect, kann JavaScript verwendet become:
 
 ```javascript
-// Ripple-Effekt JavaScript
+// Ripple-effect JavaScript
 document.querySelectorAll('.active-ripple').forEach(button => {
   button.addEventListener('mousedown', function(e) {
     const rect = button.getBoundingClientRect();
@@ -166,14 +166,14 @@ document.querySelectorAll('.active-ripple').forEach(button => {
 });
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Active-Effekte können die Leistung beeinträchtigen, insbesondere auf mobilen Geräten. Beachten Sie folgende Optimierungen:
+Active-effects can the Leistung beeintrachtigen, insbesondere on mobilen Geraten. note folgende Optimierungen:
 
-1. Verwenden Sie `transform` und `opacity` für Animationen, da diese gut von der GPU beschleunigt werden
-2. Vermeiden Sie aufwändige Schatten- oder Filteränderungen während der Animation
-3. Für den Ripple-Effekt sollten Sie `will-change` verwenden, um den Browser auf die Animation vorzubereiten
-4. Begrenzen Sie die Anzahl der gleichzeitigen Animationen
+1. use them `transform` and `opacity` for animations, da these good from the GPU beschleunigt become
+2. Vermeiden them aufwandige shadow- or Filteranderungen wahrend the animation
+3. for den Ripple-effect should them `will-change` use, um den Browser on the animation vorzubereiten
+4. Begrenzen them the Anzahl the gleichzeitigen animations
 
 ```css
 .active-ripple {
@@ -199,20 +199,20 @@ Active-Effekte können die Leistung beeinträchtigen, insbesondere auf mobilen G
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Active-Effekte sind mit allen modernen Browsern kompatibel. Der Ripple-Effekt kann in älteren Browsern Probleme verursachen und erfordert möglicherweise Fallback-Lösungen.
+the meisten Active-effects sind with allen modernen Browsern kompatibel. the Ripple-effect kann in alteren Browsern Probleme verursachen and erfordert moglicherweise Fallback-Losungen.
 
-| Browser | Kompatibilität |
+| Browser | Kompatibilitat |
 |---------|---------------|
-| Chrome | Vollständig unterstützt |
-| Firefox | Vollständig unterstützt |
-| Safari | Vollständig unterstützt |
-| Edge | Vollständig unterstützt |
-| IE11 | Eingeschränkte Unterstützung für Ripple-Effekt |
+| Chrome | Vollstandig unterstutzt |
+| Firefox | Vollstandig unterstutzt |
+| Safari | Vollstandig unterstutzt |
+| Edge | Vollstandig unterstutzt |
+| IE11 | Eingeschrankte Unterstutzung for Ripple-effect |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Hover-Effekte](/docs/effects/interaction/hover.md) - Effekte beim Überfahren mit der Maus
-- [Focus-Effekte](/docs/effects/interaction/focus.md) - Effekte beim Fokussieren von Elementen
-- [Transitions](/docs/effects/transitions.md) - Übergänge zwischen Statesn 
+- [Hover-effects](/docs/effects/interaction/hover.md) - effects beim Uberfahren with the Maus
+- [Focus-effects](/docs/effects/interaction/focus.md) - effects beim Fokussieren from Elementen
+- [Transitions](/docs/effects/transitions.md) - Ubergange between Statesn 

@@ -49,7 +49,7 @@ The Casoon UI Library offers the following UI Components:
 #### Feedback Components
 
 - [Modal](/ui/components/modal/): Modal window for important interactions
-- [Notification](/ui/components/notification/): System notifications
+- [Notification](/ui/components/notification/): system notifications
 - [Progress](/ui/components/progress/): Progress indicator
 - [Skeleton](/ui/components/skeleton/): Loading placeholder
 - [Toast](/ui/components/toast/): Temporary notifications

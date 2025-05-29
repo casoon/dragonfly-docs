@@ -1,18 +1,18 @@
 ---
-title: Switch Komponente
+title: Switch component
 category: Components
 ---
 
-# Switch Komponente
+# Switch component
 
-Die Switch-Komponente ist ein spezieller Toggle-Switch, der für binäre Ein/Aus-Entscheidungen verwendet wird.
+the Switch-component ist a spezieller Toggle-Switch, the for binare a/Aus-Entscheidungen verwendet wird.
 
 ## Basic Usage
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch1" class="switch">
-  <label for="switch1">Option aktivieren</label>
+  <label for="switch1">Option activate</label>
 </div>
 ```
 
@@ -21,7 +21,7 @@ Die Switch-Komponente ist ein spezieller Toggle-Switch, der für binäre Ein/Aus
 ### Standard Switch
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-standard" class="switch">
   <label for="switch-standard">Standard Switch</label>
 </div>
@@ -30,7 +30,7 @@ Die Switch-Komponente ist ein spezieller Toggle-Switch, der für binäre Ein/Aus
 ### Checked (Aktiviert)
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-checked" class="switch" checked>
   <label for="switch-checked">Aktivierte Option</label>
 </div>
@@ -39,16 +39,16 @@ Die Switch-Komponente ist ein spezieller Toggle-Switch, der für binäre Ein/Aus
 ### Disabled (Deaktiviert)
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-disabled" class="switch" disabled>
   <label for="switch-disabled">Deaktivierte Option</label>
 </div>
 ```
 
-### Disabled Checked (Deaktiviert und Aktiviert)
+### Disabled Checked (Deaktiviert and Aktiviert)
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-disabled-checked" class="switch" disabled checked>
   <label for="switch-disabled-checked">Deaktivierte aktivierte Option</label>
 </div>
@@ -56,65 +56,65 @@ Die Switch-Komponente ist ein spezieller Toggle-Switch, der für binäre Ein/Aus
 
 ## Sizesvarianten
 
-### Klein
+### small
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-small" class="switch switch--sm">
-  <label for="switch-small">Kleiner Switch</label>
+  <label for="switch-small">smaller Switch</label>
 </div>
 ```
 
 ### Standard
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-medium" class="switch">
   <label for="switch-medium">Standard Switch</label>
 </div>
 ```
 
-### Groß
+### Gross
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-large" class="switch switch--lg">
-  <label for="switch-large">Großer Switch</label>
+  <label for="switch-large">Grosser Switch</label>
 </div>
 ```
 
 ## Farbvarianten
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-primary" class="switch switch--primary" checked>
-  <label for="switch-primary">Primärfarbe</label>
+  <label for="switch-primary">Primarfarbe</label>
 </div>
 
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-success" class="switch switch--success" checked>
   <label for="switch-success">Erfolgsfarbe</label>
 </div>
 
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-warning" class="switch switch--warning" checked>
   <label for="switch-warning">Warnfarbe</label>
 </div>
 
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-error" class="switch switch--error" checked>
   <label for="switch-error">Fehlerfarbe</label>
 </div>
 ```
 
-## Mit Beschreibungstext
+## with Beschreibungstext
 
 ```html
-<div class="switch-container">
+<div class="switch-containers">
   <input type="checkbox" id="switch-with-description" class="switch">
   <div>
-    <label for="switch-with-description">Benachrichtigungen aktivieren</label>
-    <p class="switch-description">Erhalten Sie Updates per E-Mail, wenn neue Inhalte verfügbar sind.</p>
+    <label for="switch-with-description">notifications activate</label>
+    <p class="switch-description">Erhalten them Updates per E-Mail, if neue contents verfugbar sind.</p>
   </div>
 </div>
 
@@ -130,13 +130,13 @@ Die Switch-Komponente ist ein spezieller Toggle-Switch, der für binäre Ein/Aus
 ## Rechtsseitiger Text
 
 ```html
-<div class="switch-container switch-container--right">
-  <label for="switch-right">Text auf der rechten Seite</label>
+<div class="switch-containers switch-containers--right">
+  <label for="switch-right">Text on the rechten Seite</label>
   <input type="checkbox" id="switch-right" class="switch">
 </div>
 
 <style>
-  .switch-container--right {
+  .switch-containers--right {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -147,7 +147,7 @@ Die Switch-Komponente ist ein spezieller Toggle-Switch, der für binäre Ein/Aus
 
 ## Anpassung
 
-Die Switch-Komponente kann über CSS Variables angepasst werden:
+the Switch-component kann over CSS Variables angepasst become:
 
 ```css
 .switch {
@@ -164,19 +164,19 @@ Die Switch-Komponente kann über CSS Variables angepasst werden:
 
 ## Accessibility
 
-Für eine bessere Accessibility beachten Sie bitte folgende Punkte:
+for a bessere Accessibility Please note please folgende Punkte:
 
-- Verwenden Sie immer ein `<label>`-Element, das mit dem Switch über das `for`-Attribut verknüpft ist
-- Stellen Sie sicher, dass der Switch über die Tastatur bedienbar ist (Tab-Navigation und Leertaste)
-- Sorgen Sie für ausreichenden Kontrast zwischen dem Switch und dem Hintergrund
-- Geben Sie dem Switch gegebenenfalls ein `aria-label` oder `aria-labelledby`, wenn kein sichtbares Label vorhanden ist
-- Verwenden Sie bei Bedarf `aria-describedby`, um zusätzliche Informationen bereitzustellen
+- use them immer a `<label>`-element, the with dem Switch over the `for`-attribute verknupft ist
+- Stellen them sicher, that the Switch over the Tastatur bedienbar ist (Tab-navigation and Leertaste)
+- Sorgen them for ausreichenden Kontrast between dem Switch and dem background
+- Geben them dem Switch gegebenenfalls a `aria-label` or `aria-labelledby`, if no sichtbares Label vorhanden ist
+- use them at Bedarf `aria-describedby`, um zusatzliche Informationen bereitzustellen
 
 ## Best Practices
 
-- Verwenden Sie Switches für binäre Ein/Aus-Entscheidungen oder Einstellungen
-- Formulieren Sie Labels als positive Aussagen, die dem aktuellen Status entsprechen
-- Verwenden Sie Switches anstelle von Checkboxen, wenn eine sofortige Änderung erfolgen soll
-- Zeigen Sie den aktuellen Status des Switches deutlich an (durch Farbe, Position und Label)
-- Vermeiden Sie die Usage mehrerer Switches für miteinander zusammenhängende Optionen
-- Gruppieren Sie zusammengehörige Switches in logischen Abschnitten 
+- use them Switches for binare a/Aus-Entscheidungen or Einstellungen
+- Formulieren them Labels as positive Aussagen, the dem aktuellen Status entsprechen
+- use them Switches anstelle from checkboxes, if a sofortige Anderung erfolgen soll
+- Zeigen them den aktuellen Status des Switches deutlich on (through color, position and Label)
+- Vermeiden them the Usage mehrerer Switches for miteinander zusammenhangende Optionen
+- Gruppieren them zusammengehorige Switches in logischen Abschnitten 

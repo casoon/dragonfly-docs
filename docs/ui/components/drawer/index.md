@@ -471,7 +471,7 @@ Drawers can be used to hold filter controls for a list or grid of items.
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Component module */
+/* Component modules */
 @import '@casoon/ui-lib/ui/components/drawer.css';
 ```
 
@@ -518,7 +518,7 @@ The Drawer component can be customized using CSS variables:
 
 ### Available Variables
 
-| Variable | Default | Description |
+| variable | Default | Description |
 |----------|---------|-------------|
 | `--drawer-background` | `var(--color-background)` | Background color of the drawer |
 | `--drawer-border` | `1px solid var(--color-border)` | Border of the drawer |

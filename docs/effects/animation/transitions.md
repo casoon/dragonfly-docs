@@ -1,134 +1,134 @@
-# Transitions-Effekte
+# Transitions-effects
 
-Transitions-Effekte werden verwendet, um Übergänge zwischen verschiedenen Statesn eines Elements zu animieren. Die `@casoon/ui-lib` bietet verschiedene Transitions-Effekte, die dazu beitragen, flüssige und ansprechende Zustandsänderungen zu gestalten.
+Transitions-effects become verwendet, um Ubergange between verschiedenen Statesn eines Elements to animieren. the `@casoon/ui-lib` bietet verschiedene Transitions-effects, the for that beitragen, flussige and ansprechende Zustandsanderungen to gestalten.
 
 ## Basic Usage
 
-Der grundlegende Transitions-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Transitions-effect kann on jedes element angewendet become:
 
 ```html
-<button class="transition">Klick mich</button>
+<button class="transition">Klick me</button>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Transitions-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Transitions-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.transition` | Basisklasse für Transitions-Effekte |
-| `.transition-fast` | Schnelle Transition |
-| `.transition-slow` | Langsame Transition |
-| `.transition-ease` | Transition mit Ease-Timing |
-| `.transition-linear` | Transition mit linearem Timing |
-| `.transition-bounce` | Transition mit Bounce-Effekt |
-| `.transition-elastic` | Transition mit Elastic-Effekt |
-| `.transition-fade` | Fade-Transition |
-| `.transition-slide` | Slide-Transition |
-| `.transition-scale` | Skalierungs-Transition |
-| `.transition-rotate` | Rotations-Transition |
-| `.transition-color` | Farb-Transition |
-| `.transition-bg` | Hintergrund-Transition |
-| `.transition-shadow` | Schatten-Transition |
-| `.transition-transform` | Transform-Transition |
-| `.transition-property-all` | Transition für alle Eigenschaften |
-| `.transition-delay` | Verzögerte Transition |
-| `.transition-group` | Gruppierte Transition |
-| `.transition-stagger` | Gestaffelte Transition |
+| `.transition` | Basisklasse for Transitions-effects |
+| `.transition-fast` | Schnelle transition |
+| `.transition-slow` | Langsame transition |
+| `.transition-ease` | transition with Ease-Timing |
+| `.transition-linear` | transition with linearem Timing |
+| `.transition-bounce` | transition with Bounce-effect |
+| `.transition-elastic` | transition with Elastic-effect |
+| `.transition-fade` | Fade-transition |
+| `.transition-slide` | Slide-transition |
+| `.transition-scale` | Skalierungs-transition |
+| `.transition-rotate` | Rotations-transition |
+| `.transition-color` | Farb-transition |
+| `.transition-bg` | background-transition |
+| `.transition-shadow` | shadow-transition |
+| `.transition-transform` | Transform-transition |
+| `.transition-property-all` | transition for all properties |
+| `.transition-delay` | Verzogerte transition |
+| `.transition-group` | Gruppierte transition |
+| `.transition-stagger` | Gestaffelte transition |
 
 ## Variants
 
 ### Timing-Variants
 
-Verschiedene Timings für Transitions:
+Verschiedene Timings for Transitions:
 
 ```html
-<button class="transition-fast">Schnelle Transition</button>
-<button class="transition-slow">Langsame Transition</button>
-<button class="transition-ease">Ease-Transition</button>
-<button class="transition-linear">Lineare Transition</button>
-<button class="transition-bounce">Bounce-Transition</button>
-<button class="transition-elastic">Elastische Transition</button>
+<button class="transition-fast">Schnelle transition</button>
+<button class="transition-slow">Langsame transition</button>
+<button class="transition-ease">Ease-transition</button>
+<button class="transition-linear">Lineare transition</button>
+<button class="transition-bounce">Bounce-transition</button>
+<button class="transition-elastic">Elastische transition</button>
 ```
 
-### Effekt-Variants
+### effect-Variants
 
-Verschiedene Arten von Transitions-Effekten:
+Verschiedene Arten from Transitions-Effekten:
 
 ```html
-<div class="transition-fade">Fade-Transition</div>
-<div class="transition-slide">Slide-Transition</div>
-<div class="transition-scale">Skalierungs-Transition</div>
-<div class="transition-rotate">Rotations-Transition</div>
-<div class="transition-color">Farb-Transition</div>
-<div class="transition-bg">Hintergrund-Transition</div>
-<div class="transition-shadow">Schatten-Transition</div>
-<div class="transition-transform">Transform-Transition</div>
+<div class="transition-fade">Fade-transition</div>
+<div class="transition-slide">Slide-transition</div>
+<div class="transition-scale">Skalierungs-transition</div>
+<div class="transition-rotate">Rotations-transition</div>
+<div class="transition-color">Farb-transition</div>
+<div class="transition-bg">background-transition</div>
+<div class="transition-shadow">shadow-transition</div>
+<div class="transition-transform">Transform-transition</div>
 ```
 
 ### Richtungs-Variants
 
-Verschiedene Richtungen für Transitions:
+Verschiedene Richtungen for Transitions:
 
 ```html
-<div class="transition-slide-up">Nach oben gleiten</div>
-<div class="transition-slide-down">Nach unten gleiten</div>
-<div class="transition-slide-left">Nach links gleiten</div>
-<div class="transition-slide-right">Nach rechts gleiten</div>
+<div class="transition-slide-up">after oben gleiten</div>
+<div class="transition-slide-down">after unten gleiten</div>
+<div class="transition-slide-left">after links gleiten</div>
+<div class="transition-slide-right">after rechts gleiten</div>
 <div class="transition-rotate-x">Um X-Achse rotieren</div>
 <div class="transition-rotate-y">Um Y-Achse rotieren</div>
 <div class="transition-rotate-z">Um Z-Achse rotieren</div>
 ```
 
-### Verzögerungs-Variants
+### Verzogerungs-Variants
 
-Transitions mit verschiedenen Verzögerungen:
+Transitions with verschiedenen Verzogerungen:
 
 ```html
-<div class="transition-delay-xs">Extra kurze Verzögerung</div>
-<div class="transition-delay-sm">Kurze Verzögerung</div>
-<div class="transition-delay-md">Mittlere Verzögerung</div>
-<div class="transition-delay-lg">Lange Verzögerung</div>
-<div class="transition-delay-xl">Extra lange Verzögerung</div>
+<div class="transition-delay-xs">Extra kurze Verzogerung</div>
+<div class="transition-delay-sm">Kurze Verzogerung</div>
+<div class="transition-delay-md">Mittlere Verzogerung</div>
+<div class="transition-delay-lg">length Verzogerung</div>
+<div class="transition-delay-xl">Extra length Verzogerung</div>
 ```
 
 ### Gruppierte Transitions
 
-Transitions für mehrere Elemente in einer Gruppe:
+Transitions for several elements in einer Gruppe:
 
 ```html
 <div class="transition-group">
-  <div class="transition-item">Element 1</div>
-  <div class="transition-item">Element 2</div>
-  <div class="transition-item">Element 3</div>
+  <div class="transition-item">element 1</div>
+  <div class="transition-item">element 2</div>
+  <div class="transition-item">element 3</div>
 </div>
 ```
 
 ### Gestaffelte Transitions
 
-Transitions mit gestaffelten Verzögerungen:
+Transitions with gestaffelten Verzogerungen:
 
 ```html
 <div class="transition-stagger">
-  <div class="transition-stagger-item">Element 1</div>
-  <div class="transition-stagger-item">Element 2</div>
-  <div class="transition-stagger-item">Element 3</div>
+  <div class="transition-stagger-item">element 1</div>
+  <div class="transition-stagger-item">element 2</div>
+  <div class="transition-stagger-item">element 3</div>
 </div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Transitions-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Transitions-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Buttons mit Transitions
+### buttons with Transitions
 
 ```html
 <button class="btn btn-primary transition-bg">
-  Hover für Farbübergang
+  Hover for Farbubergang
 </button>
 
 <button class="btn btn-outline transition-transform">
-  Hover für Transform-Effekt
+  Hover for Transform-effect
 </button>
 
 <button class="btn btn-icon transition-rotate">
@@ -136,44 +136,44 @@ Transitions-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </button>
 ```
 
-### Links mit Transitions
+### links with Transitions
 
 ```html
 <a href="#" class="link transition-color">
-  Link mit Farbübergang
+  link with Farbubergang
 </a>
 
 <a href="#" class="link transition-border">
-  Link mit Border-Transition
+  link with Border-transition
 </a>
 
 <a href="#" class="link transition-underline">
-  Link mit Underline-Transition
+  link with Underline-transition
 </a>
 ```
 
-### Cardn mit Transitions
+### Cardn with Transitions
 
 ```html
 <div class="card transition-shadow">
   <div class="card-body">
-    <h3>Card mit Shadow-Transition</h3>
-    <p>Hover für Schatten-Effekt</p>
+    <h3>Card with Shadow-transition</h3>
+    <p>Hover for shadow-effect</p>
   </div>
 </div>
 
 <div class="card transition-scale">
   <div class="card-body">
-    <h3>Card mit Scale-Transition</h3>
-    <p>Hover für Zoom-Effekt</p>
+    <h3>Card with Scale-transition</h3>
+    <p>Hover for Zoom-effect</p>
   </div>
 </div>
 ```
 
-### Formelemente mit Transitions
+### form elements with Transitions
 
 ```html
-<input type="text" class="input transition-border" placeholder="Input mit Border-Transition">
+<input type="text" class="input transition-border" placeholder="Input with Border-transition">
 
 <select class="select transition-bg">
   <option>Option 1</option>
@@ -182,99 +182,99 @@ Transitions-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 <div class="checkbox transition-scale">
   <input type="checkbox" id="check1">
-  <label for="check1">Checkbox mit Scale-Transition</label>
+  <label for="check1">checkbox with Scale-transition</label>
 </div>
 ```
 
-### Navigation mit Transitions
+### navigation with Transitions
 
 ```html
 <nav class="navbar">
   <a href="#" class="nav-link transition-border-bottom">Home</a>
-  <a href="#" class="nav-link transition-border-bottom">Über uns</a>
+  <a href="#" class="nav-link transition-border-bottom">over us</a>
   <a href="#" class="nav-link transition-border-bottom">Kontakt</a>
 </nav>
 ```
 
-## Zustandsübergänge
+## Zustandsubergange
 
-Transitions für verschiedene States:
+Transitions for verschiedene States:
 
 ```html
 <!-- Hover-Transitions -->
-<div class="transition-hover-scale">Hover für Skalierung</div>
-<div class="transition-hover-rotate">Hover für Rotation</div>
-<div class="transition-hover-color">Hover für Farbänderung</div>
+<div class="transition-hover-scale">Hover for Skalierung</div>
+<div class="transition-hover-rotate">Hover for Rotation</div>
+<div class="transition-hover-color">Hover for Farbanderung</div>
 
 <!-- Focus-Transitions -->
-<input class="transition-focus-border" type="text" placeholder="Focus für Border-Effekt">
-<button class="transition-focus-shadow">Fokussieren für Schatten</button>
+<input class="transition-focus-border" type="text" placeholder="Focus for Border-effect">
+<button class="transition-focus-shadow">Fokussieren for shadow</button>
 
 <!-- Active-Transitions -->
-<button class="transition-active-scale">Klicken für Skalierung</button>
-<button class="transition-active-bg">Klicken für Hintergrundänderung</button>
+<button class="transition-active-scale">Click for Skalierung</button>
+<button class="transition-active-bg">Click for Hintergrundanderung</button>
 
 <!-- Toggle-Transitions -->
 <div class="toggle transition-toggle-rotate">
   <input type="checkbox" id="toggle1">
-  <label for="toggle1">Toggle mit Rotation</label>
+  <label for="toggle1">Toggle with Rotation</label>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Transitions-Effekte können über CSS Variables angepasst werden:
+the Transitions-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Allgemeine Transitions-Parameter */
+  /* Allgemeine Transitions-parameter */
   --transition-duration: 0.3s;
   --transition-timing-function: ease;
   --transition-delay: 0s;
   
-  /* Variants-Parameter */
+  /* Variants-parameter */
   --transition-duration-fast: 0.15s;
   --transition-duration-slow: 0.6s;
   --transition-timing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   --transition-timing-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   
-  /* Fade-Parameter */
+  /* Fade-parameter */
   --transition-fade-opacity-start: 0;
   --transition-fade-opacity-end: 1;
   
-  /* Slide-Parameter */
+  /* Slide-parameter */
   --transition-slide-distance: 20px;
   
-  /* Scale-Parameter */
+  /* Scale-parameter */
   --transition-scale-start: 0.9;
   --transition-scale-end: 1;
   --transition-scale-hover: 1.05;
   
-  /* Rotate-Parameter */
+  /* Rotate-parameter */
   --transition-rotate-angle: 180deg;
   
-  /* Color-Parameter */
+  /* Color-parameter */
   --transition-color-start: inherit;
   --transition-color-end: var(--color-primary);
   
-  /* Verzögerungs-Parameter */
+  /* Verzogerungs-parameter */
   --transition-delay-xs: 0.05s;
   --transition-delay-sm: 0.1s;
   --transition-delay-md: 0.2s;
   --transition-delay-lg: 0.3s;
   --transition-delay-xl: 0.5s;
   
-  /* Stagger-Parameter */
+  /* Stagger-parameter */
   --transition-stagger-delay-item: 0.05s;
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Examples für die CSS-Implementierung der Transitions-Effekte:
+Examples for the CSS-Implementation the Transitions-effects:
 
 ```css
-/* Basis-Transition */
+/* Base-transition */
 .transition {
   transition-property: all;
   transition-duration: var(--transition-duration);
@@ -307,7 +307,7 @@ Examples für die CSS-Implementierung der Transitions-Effekte:
   transition-timing-function: var(--transition-timing-elastic);
 }
 
-/* Effekt-Variants */
+/* effect-Variants */
 .transition-fade {
   transition-property: opacity;
 }
@@ -344,7 +344,7 @@ Examples für die CSS-Implementierung der Transitions-Effekte:
   transition-property: all;
 }
 
-/* Hover-Effekte */
+/* Hover-effects */
 .transition-hover-scale {
   transition-property: transform;
 }
@@ -392,9 +392,9 @@ Examples für die CSS-Implementierung der Transitions-Effekte:
   opacity: 1;
 }
 
-/* ähnliche Definitionen für links und rechts */
+/* ahnliche Definitionen for links and rechts */
 
-/* Verzögerungs-Variants */
+/* Verzogerungs-Variants */
 .transition-delay-xs {
   transition-delay: var(--transition-delay-xs);
 }
@@ -441,12 +441,12 @@ Examples für die CSS-Implementierung der Transitions-Effekte:
   transition-delay: calc(var(--transition-stagger-delay-item) * 2);
 }
 
-/* und so weiter für weitere Elemente */
+/* and so on for additional elements */
 ```
 
 ## JavaScript-Integration
 
-Für dynamische Transitions-Effekte wird JavaScript verwendet:
+for dynamische Transitions-effects wird JavaScript verwendet:
 
 ```javascript
 class TransitionController {
@@ -465,7 +465,7 @@ class TransitionController {
   }
   
   init() {
-    // Initialisiere Trigger-Elemente
+    // Initialisiere Trigger-elements
     document.querySelectorAll('[data-toggle-transition]').forEach(trigger => {
       trigger.addEventListener('click', (e) => {
         e.preventDefault();
@@ -479,8 +479,8 @@ class TransitionController {
     });
     
     // Initialisiere gestaffelte Transitions
-    document.querySelectorAll('.transition-stagger').forEach(container => {
-      const items = container.querySelectorAll('.transition-stagger-item');
+    document.querySelectorAll('.transition-stagger').forEach(containers => {
+      const items = containers.querySelectorAll('.transition-stagger-item');
       const baseDelay = parseFloat(getComputedStyle(document.documentElement)
         .getPropertyValue('--transition-stagger-delay-item')) * 1000 || 50;
       
@@ -499,20 +499,20 @@ class TransitionController {
   }
   
   show(element) {
-    // FLIP-Animation (First, Last, Invert, Play)
+    // FLIP-animation (First, Last, Invert, Play)
     // First: Messen des Ausgangszustands (optional)
     
-    // Transition vorbereiten
+    // transition vorbereiten
     element.classList.add(this.options.enterClass);
     
     // Force Reflow
     void element.offsetWidth;
     
-    // Transition starten
+    // transition starten
     element.classList.add(this.options.enterActiveClass);
     element.classList.add('show');
     
-    // Transition abschließen
+    // transition abschliessen
     const onTransitionEnd = () => {
       element.classList.remove(this.options.enterClass);
       element.classList.remove(this.options.enterActiveClass);
@@ -525,17 +525,17 @@ class TransitionController {
   }
   
   hide(element) {
-    // Transition vorbereiten
+    // transition vorbereiten
     element.classList.add(this.options.leaveClass);
     
     // Force Reflow
     void element.offsetWidth;
     
-    // Transition starten
+    // transition starten
     element.classList.add(this.options.leaveActiveClass);
     element.classList.remove('show');
     
-    // Transition abschließen
+    // transition abschliessen
     const onTransitionEnd = () => {
       element.classList.remove(this.options.leaveClass);
       element.classList.remove(this.options.leaveActiveClass);
@@ -548,7 +548,7 @@ class TransitionController {
   }
 }
 
-// Initialisierung der Transitions
+// Initialisierung the Transitions
 document.addEventListener('DOMContentLoaded', () => {
   new TransitionController();
 });
@@ -556,7 +556,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## Vue.js-Integration
 
-Die Transitions können auch in Vue.js verwendet werden:
+the Transitions can also in Vue.js verwendet become:
 
 ```vue
 <template>
@@ -570,7 +570,7 @@ Die Transitions können auch in Vue.js verwendet werden:
     @leave="leave"
     @after-leave="afterLeave">
     <div v-if="show" class="content">
-      Inhalt mit Transition
+      content with transition
     </div>
   </transition>
 </template>
@@ -592,11 +592,11 @@ export default {
       el.style.transition = `opacity ${duration} ease-out`;
       el.style.opacity = 1;
       
-      // Warten bis Transition abgeschlossen ist
+      // Warten until transition abgeschlossen ist
       setTimeout(done, parseFloat(duration) * 1000);
     },
     afterEnter(el) {
-      // Bereinigung, falls nötig
+      // Bereinigung, if notig
     },
     beforeLeave(el) {
       el.style.opacity = 1;
@@ -607,11 +607,11 @@ export default {
       el.style.transition = `opacity ${duration} ease-out`;
       el.style.opacity = 0;
       
-      // Warten bis Transition abgeschlossen ist
+      // Warten until transition abgeschlossen ist
       setTimeout(done, parseFloat(duration) * 1000);
     },
     afterLeave(el) {
-      // Bereinigung, falls nötig
+      // Bereinigung, if notig
     }
   }
 }
@@ -619,10 +619,10 @@ export default {
 
 <style scoped>
 .content {
-  /* Styles für den Inhalt */
+  /* Styles for den content */
 }
 
-/* Vordefinierte Transition-Klassen für Vue */
+/* Vordefinierte transition-classes for Vue */
 .fade-enter-active, .fade-leave-active {
   transition: opacity var(--transition-duration) ease;
 }
@@ -630,7 +630,7 @@ export default {
   opacity: 0;
 }
 
-/* Slide-Transition */
+/* Slide-transition */
 .slide-enter-active, .slide-leave-active {
   transition: transform var(--transition-duration) ease;
 }
@@ -642,15 +642,15 @@ export default {
 
 ## Accessibility
 
-Bei der Usage von Transitions-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Transitions-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
-2. **Kontrast**: Stellen Sie sicher, dass Farbübergänge ausreichend Kontrast behalten
-3. **Keine reinen visuellen Hinweise**: Stellen Sie sicher, dass Zustandsänderungen nicht nur durch Animationen vermittelt werden
-4. **Tastaturzugänglichkeit**: Stellen Sie sicher, dass alle Transitions auch bei Tastaturinteraktionen funktionieren
+1. **Animationspraferenzen**: Respektieren them the Setting `prefers-reduced-motion`
+2. **Kontrast**: ensure, that Farbubergange ausreichend Kontrast behalten
+3. **no reinen visuellen Notee**: ensure, that Zustandsanderungen not only through animations vermittelt become
+4. **Tastaturzuganglichkeit**: ensure, that all Transitions also at Tastaturinteraktionen funktionieren
 
 ```css
-/* Reduzierte Animation für Benutzer, die dies bevorzugen */
+/* Reduzierte animation for user, the dies bevorzugen */
 @media (prefers-reduced-motion: reduce) {
   .transition,
   .transition-fade,
@@ -675,7 +675,7 @@ function setupAccessibleTransitions() {
   // Tastaturinteraktionen
   document.querySelectorAll('.transition-hover-scale, .transition-hover-rotate, .transition-hover-color').forEach(element => {
     element.addEventListener('focus', () => {
-      // Aktiviere den Hover-Effekt auch bei Tastatur-Fokus
+      // Aktiviere den Hover-effect also at Tastatur-Fokus
       if (element.classList.contains('transition-hover-scale')) {
         element.style.transform = `scale(var(--transition-scale-hover))`;
       } else if (element.classList.contains('transition-hover-rotate')) {
@@ -686,7 +686,7 @@ function setupAccessibleTransitions() {
     });
     
     element.addEventListener('blur', () => {
-      // Zurücksetzen beim Verlassen des Fokus
+      // Zurucksetzen beim Verlassen des Fokus
       element.style.transform = '';
       element.style.color = '';
     });
@@ -696,25 +696,25 @@ function setupAccessibleTransitions() {
 document.addEventListener('DOMContentLoaded', setupAccessibleTransitions);
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Transitions-Effekte können die Leistung beeinflussen:
+Transitions-effects can the Leistung beeinflussen:
 
-1. **Compositor-Eigenschaften**: Bevorzugen Sie `transform` und `opacity` für die besten Leistungsergebnisse
-2. **GPU-Beschleunigung**: Nutzen Sie `will-change` für wichtige Transitions
-3. **Vermeiden von Layout-Thrashing**: Vermeiden Sie Transitions, die das Layout wiederholt neu berechnen
-4. **Batching**: Fassen Sie mehrere Änderungen zusammen, um Reflows zu minimieren
+1. **Compositor-properties**: Bevorzugen them `transform` and `opacity` for the besten Leistungsergebnisse
+2. **GPU-Beschleunigung**: use them `will-change` for wichtige Transitions
+3. **Vermeiden from layout-Thrashing**: Vermeiden them Transitions, the the layout wiederholt neu berechnen
+4. **Batching**: Fassen them several Anderungen zusammen, um Reflows to minimieren
 
 ```css
 /* Leistungsoptimierte Transitions */
 .transition-gpu {
   will-change: transform, opacity;
-  transform: translateZ(0); /* GPU-Beschleunigung aktivieren */
+  transform: translateZ(0); /* GPU-Beschleunigung activate */
 }
 
 .transition-composite-only {
   transition-property: transform, opacity;
-  /* Vermeiden Sie Transitions für layout-intensive Eigenschaften wie width, height, top, left, etc. */
+  /* Vermeiden them Transitions for layout-intensive properties how width, height, top, left, etc. */
 }
 ```
 
@@ -724,7 +724,7 @@ function optimizeTransitions() {
   const elements = document.querySelectorAll('.transition-performance-critical');
   
   elements.forEach(element => {
-    // will-change nur bei Bedarf hinzufügen
+    // will-change only at Bedarf add
     element.addEventListener('mouseenter', () => {
       element.style.willChange = 'transform, opacity';
     });
@@ -738,20 +738,20 @@ function optimizeTransitions() {
 document.addEventListener('DOMContentLoaded', optimizeTransitions);
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Transitions-Effekte werden von allen modernen Browsern unterstützt.
+the Transitions-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| Basis-Transitions | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Base-Transitions | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Transformationen | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Easing-Funktionen | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Easing-functions | ✓ | ✓ | ✓ | ✓ | ✓ |
 | will-change | ✓ | ✓ | ✓ | ✓ | Nein |
-| Variablen für Transitions | ✓ | ✓ | ✓ | ✓ | Nein |
+| variables for Transitions | ✓ | ✓ | ✓ | ✓ | Nein |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Ripple-Effekte](/docs/effects/animation/ripple.md) - Wellenförmige Klick-Animationen
-- [Hover-Effekte](/docs/effects/interaction/hover.md) - Effekte bei Mauszeiger-Hover 
+- [Animations-effects](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
+- [Ripple-effects](/docs/effects/animation/ripple.md) - Wellenformige Klick-animations
+- [Hover-effects](/docs/effects/interaction/hover.md) - effects at Mauszeiger-Hover 

@@ -3,59 +3,59 @@ title: Vignette Effects
 category: Effects
 ---
 
-# Vignette-Effekte
+# Vignette-effects
 
-Die Vignette-Effekte der Casoon UI Library bieten eine Sammlung von Abdunkelungs- und Aufhellungseffekten an den Rändern von UI-Elementen. Diese Effekte können verwendet werden, um den Fokus auf den zentralen Inhalt zu lenken, eine dramatische Atmosphäre zu schaffen oder ein stilvolles, fotografisches Aussehen zu verleihen.
+the Vignette-effects the Casoon UI Library bieten a Sammlung from Abdunkelungs- and Aufhellungseffekten on den Randern from UI-Elementen. these effects can verwendet become, um den Fokus on den zentralen content to lenken, a dramatische Atmosphare to schaffen or a stilvolles, fotografisches Aussehen to verleihen.
 
-## Überblick
+## Uberblick
 
-Vignette-Effekte stammen aus der Fotografie und beschreiben die Abdunkelung der Ränder eines Bildes. In der UI können sie verwendet werden, um Tiefe zu erzeugen, Aufmerksamkeit zu lenken oder bestimmte ästhetische Styles zu vermitteln. Die Casoon UI Library bietet verschiedene Arten von Vignette-Effekten, die einfach anzuwenden und anzupassen sind.
+Vignette-effects stammen aus the Fotografie and beschreiben the Abdunkelung the Rander eines Bildes. in the UI can them verwendet become, um Tiefe to erzeugen, Aufmerksamkeit to lenken or bestimmte asthetische Styles to vermitteln. the Casoon UI Library bietet verschiedene Arten from Vignette-Effekten, the einfach anzuwenden and anzupassen sind.
 
 ## Installation
 
-Importieren Sie das Vignette-Effekte-Modul über CSS:
+import them the Vignette-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/vignette.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
-### Grundlegende Vignette-Effekte
+### Grundlegende Vignette-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.vignette` | Standardmäßiger Vignette-Effekt |
-| `.vignette-subtle` | Subtiler Vignette-Effekt |
-| `.vignette-medium` | Mittlerer Vignette-Effekt (Standard) |
-| `.vignette-strong` | Starker, deutlicher Vignette-Effekt |
-| `.vignette-intense` | Intensiver, dramatischer Vignette-Effekt |
+| `.vignette` | Standardmassiger Vignette-effect |
+| `.vignette-subtle` | Subtiler Vignette-effect |
+| `.vignette-medium` | Mittlerer Vignette-effect (Standard) |
+| `.vignette-strong` | Starker, deutlicher Vignette-effect |
+| `.vignette-intense` | Intensiver, dramatischer Vignette-effect |
 
 ### Vignette-Typen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
 | `.vignette-dark` | Dunkle Vignette (Standardtyp) |
-| `.vignette-light` | Helle Vignette für dunkle Hintergründe |
-| `.vignette-color` | Farbige Vignette, die die aktuelle Farbe verwendet |
-| `.vignette-blur` | Vignette mit Unschärfeeffekt an den Rändern |
-| `.vignette-grain` | Vignette mit Körnungseffekt |
-| `.vignette-gradient` | Glatter Verlaufseffekt für die Vignette |
+| `.vignette-light` | Helle Vignette for dunkle Hintergrunde |
+| `.vignette-color` | Farbige Vignette, the the aktuelle color verwendet |
+| `.vignette-blur` | Vignette with Unscharfeeffekt on den Randern |
+| `.vignette-grain` | Vignette with Kornungseffekt |
+| `.vignette-gradient` | Glatter Verlaufseffekt for the Vignette |
 
 ### Vignette-Formen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.vignette-circular` | Kreisförmige Vignette (Standard) |
+| `.vignette-circular` | Kreisformige Vignette (Standard) |
 | `.vignette-oval` | Ovale Vignette |
 | `.vignette-square` | Quadratische Vignette |
 | `.vignette-rectangular` | Rechteckige Vignette |
-| `.vignette-corners` | Vignette nur in den Ecken |
-| `.vignette-sides` | Vignette nur an den Seiten |
+| `.vignette-corners` | Vignette only in den Ecken |
+| `.vignette-sides` | Vignette only on den Seiten |
 
 ## Examples
 
-### Grundlegende Vignette-Effekte
+### Grundlegende Vignette-effects
 
 ```html
 <div class="vignette-examples">
@@ -68,7 +68,7 @@ Importieren Sie das Vignette-Effekte-Modul über CSS:
   </div>
   
   <div class="vignette-example vignette vignette-strong">
-    <span>Starke Vignette</span>
+    <span>strength Vignette</span>
   </div>
   
   <div class="vignette-example vignette vignette-intense">
@@ -94,24 +94,24 @@ Importieren Sie das Vignette-Effekte-Modul über CSS:
   </div>
   
   <div class="type-example vignette vignette-blur">
-    <span>Vignette mit Unschärfe</span>
+    <span>Vignette with Unscharfe</span>
   </div>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Vignette-Effekte können über CSS Variables angepasst werden:
+the Vignette-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Vignette-Parameter */
+  /* Grundlegende Vignette-parameter */
   --vignette-opacity: 0.5;
   --vignette-spread: 40%;
   --vignette-color: rgba(0, 0, 0, 0.8);
   --vignette-light-color: rgba(255, 255, 255, 0.8);
   
-  /* Intensitätsstufen */
+  /* Intensitatsstufen */
   --vignette-subtle-opacity: 0.2;
   --vignette-medium-opacity: 0.5;
   --vignette-strong-opacity: 0.7;
@@ -124,12 +124,12 @@ Die Vignette-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Die Vignette-Effekte werden hauptsächlich durch radiale Gradienten und pseudo-Elemente implementiert:
+the Vignette-effects become hauptsachlich through radiale Gradienten and pseudo-elements implementiert:
 
 ```css
-/* Basis-Vignette */
+/* Base-Vignette */
 .vignette {
   position: relative;
   overflow: hidden;
@@ -181,7 +181,7 @@ Die Vignette-Effekte werden hauptsächlich durch radiale Gradienten und pseudo-E
   opacity: var(--vignette-opacity, 0.5);
 }
 
-/* Vignette mit Unschärfe */
+/* Vignette with Unscharfe */
 .vignette.vignette-blur::after {
   backdrop-filter: blur(var(--vignette-blur-amount, 10px));
   background: radial-gradient(
@@ -193,7 +193,7 @@ Die Vignette-Effekte werden hauptsächlich durch radiale Gradienten und pseudo-E
   opacity: var(--vignette-opacity, 0.5);
 }
 
-/* Intensitätsstufen */
+/* Intensitatsstufen */
 .vignette.vignette-subtle::after {
   opacity: var(--vignette-subtle-opacity, 0.2);
 }
@@ -270,43 +270,43 @@ Die Vignette-Effekte werden hauptsächlich durch radiale Gradienten und pseudo-E
 }
 ```
 
-## Vignette in Bilder und Cardn
+## Vignette in images and Cardn
 
-Vignette-Effekte eignen sich besonders gut für Bilder und Card-Components:
+Vignette-effects eignen oneself besonders good for images and Card-Components:
 
 ```html
 <div class="card vignette vignette-medium">
-  <img src="path/to/image.jpg" alt="Bild mit Vignette">
+  <img src="path/to/image.jpg" alt="image with Vignette">
   <div class="content">
-    <h3>Card mit Vignette</h3>
-    <p>Der Vignette-Effekt lenkt die Aufmerksamkeit auf den Inhalt.</p>
+    <h3>Card with Vignette</h3>
+    <p>the Vignette-effect lenkt the Aufmerksamkeit on den content.</p>
   </div>
 </div>
 
 <div class="hero-image vignette vignette-strong vignette-dark">
-  <img src="path/to/hero.jpg" alt="Hero-Bild">
+  <img src="path/to/hero.jpg" alt="Hero-image">
   <div class="hero-content">
-    <h1>Dramatischer Effekt</h1>
-    <p>Die starke Vignette schafft eine dramatische Atmosphäre.</p>
+    <h1>Dramatischer effect</h1>
+    <p>the strength Vignette schafft a dramatische Atmosphare.</p>
   </div>
 </div>
 ```
 
 ## Accessibility
 
-Bei der Usage von Vignette-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Vignette-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass die Vignette den Kontrast zwischen Text und Hintergrund nicht zu stark beeinträchtigt
-2. **Lesbarkeit**: Vermeiden Sie zu intensive Vignetten, die die Lesbarkeit des Inhalts erschweren könnten
-3. **Wahrnehmbarkeit**: Achten Sie darauf, dass wichtige UI-Elemente nicht durch die Vignette verdeckt werden
+1. **Kontrast**: ensure, that the Vignette den Kontrast between Text and background not to stark beeintrachtigt
+2. **Lesbarkeit**: Vermeiden them to intensive Vignetten, the the Lesbarkeit des Inhalts erschweren konnten
+3. **Wahrnehmbarkeit**: make sure, that wichtige UI-elements not through the Vignette verdeckt become
 
 ```css
-/* Verbesserte Lesbarkeit für Text mit Vignette */
+/* Verbesserte Lesbarkeit for Text with Vignette */
 .vignette-with-text::after {
   opacity: 0.3;
 }
 
-/* Reduzierte Vignette für bevorzugte reduzierte Transparenz */
+/* Reduzierte Vignette for bevorzugte reduzierte transparency */
 @media (prefers-reduced-transparency: reduce) {
   .vignette::after {
     opacity: 0.2;
@@ -314,15 +314,15 @@ Bei der Usage von Vignette-Effekten sollten folgende Accessibilitysaspekte berü
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Vignette-Effekte werden von allen modernen Browsern unterstützt.
+the Vignette-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | Radiale Gradienten | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Mehrfache Hintergründe | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Mehrfache Hintergrunde | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Backdrop-Filter | ✓ | ✓ | ✓ | ✓ | ✗ |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
+for altere Browser, the some functions not vollstandig unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 

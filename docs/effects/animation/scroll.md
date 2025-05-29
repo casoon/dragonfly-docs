@@ -1,78 +1,78 @@
-# Scroll-Effekte
+# Scroll-effects
 
-Scroll-Effekte werden verwendet, um das Benutzererlebnis beim Scrollen auf einer Webseite zu verbessern. Die `@casoon/ui-lib` bietet verschiedene Scroll-Effekte, die Interaktionen beim Scrollen dynamischer und ansprechender gestalten.
+Scroll-effects become verwendet, um the Benutzererlebnis beim Scrollen on einer Webseite to verbessern. the `@casoon/ui-lib` bietet verschiedene Scroll-effects, the interactions beim Scrollen dynamischer and ansprechender gestalten.
 
 ## Basic Usage
 
-Der grundlegende Scroll-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Scroll-effect kann on jedes element angewendet become:
 
 ```html
 <div class="scroll-effect">
-  Dieser Inhalt wird beim Scrollen animiert
+  this content wird beim Scrollen animiert
 </div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Scroll-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Scroll-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.scroll-effect` | Basisklasse für Scroll-Effekte |
+| `.scroll-effect` | Basisklasse for Scroll-effects |
 | `.scroll-fade` | Einblenden beim Scrollen |
 | `.scroll-slide` | Hereingleiten beim Scrollen |
-| `.scroll-zoom` | Zoom-Effekt beim Scrollen |
+| `.scroll-zoom` | Zoom-effect beim Scrollen |
 | `.scroll-rotate` | Rotationseffekt beim Scrollen |
-| `.scroll-parallax` | Parallax-Effekt beim Scrollen |
-| `.scroll-sticky` | Element bleibt beim Scrollen haften |
-| `.scroll-reveal` | Element wird beim Scrollen aufgedeckt |
+| `.scroll-parallax` | Parallax-effect beim Scrollen |
+| `.scroll-sticky` | element bleibt beim Scrollen haften |
+| `.scroll-reveal` | element wird beim Scrollen aufgedeckt |
 | `.scroll-transform` | Transformation beim Scrollen |
 | `.scroll-progress` | Fortschrittsanzeige beim Scrollen |
-| `.scroll-snap` | Snap-Scrolling zu bestimmten Punkten |
-| `.scroll-animate` | Allgemeine Animation beim Scrollen |
-| `.scroll-lazy` | Verzögertes Laden beim Scrollen |
+| `.scroll-snap` | Snap-Scrolling to bestimmten Punkten |
+| `.scroll-animate` | Allgemeine animation beim Scrollen |
+| `.scroll-lazy` | Verzogertes load beim Scrollen |
 | `.scroll-infinite` | Unendliches Scrollen |
 | `.scroll-smooth` | Sanftes Scrollen |
 
 ## Variants
 
-### Fade-Effekte
+### Fade-effects
 
-Elemente werden beim Scrollen ein- oder ausgeblendet:
+elements become beim Scrollen a- or ausgeblendet:
 
 ```html
 <div class="scroll-fade-in">Beim Scrollen einblenden</div>
 <div class="scroll-fade-out">Beim Scrollen ausblenden</div>
-<div class="scroll-fade-up">Von unten einblenden</div>
-<div class="scroll-fade-down">Von oben einblenden</div>
-<div class="scroll-fade-left">Von links einblenden</div>
-<div class="scroll-fade-right">Von rechts einblenden</div>
+<div class="scroll-fade-up">from unten einblenden</div>
+<div class="scroll-fade-down">from oben einblenden</div>
+<div class="scroll-fade-left">from links einblenden</div>
+<div class="scroll-fade-right">from rechts einblenden</div>
 ```
 
-### Slide-Effekte
+### Slide-effects
 
-Elemente gleiten beim Scrollen in die Ansicht:
+elements gleiten beim Scrollen in the Ansicht:
 
 ```html
-<div class="scroll-slide-up">Von unten hereingleiten</div>
-<div class="scroll-slide-down">Von oben hereingleiten</div>
-<div class="scroll-slide-left">Von links hereingleiten</div>
-<div class="scroll-slide-right">Von rechts hereingleiten</div>
+<div class="scroll-slide-up">from unten hereingleiten</div>
+<div class="scroll-slide-down">from oben hereingleiten</div>
+<div class="scroll-slide-left">from links hereingleiten</div>
+<div class="scroll-slide-right">from rechts hereingleiten</div>
 ```
 
-### Zoom-Effekte
+### Zoom-effects
 
-Elemente werden beim Scrollen vergrößert oder verkleinert:
+elements become beim Scrollen vergrossert or verkleinert:
 
 ```html
-<div class="scroll-zoom-in">Beim Scrollen vergrößern</div>
-<div class="scroll-zoom-out">Beim Scrollen verkleinern</div>
+<div class="scroll-zoom-in">Beim Scrollen enlarge</div>
+<div class="scroll-zoom-out">Beim Scrollen reduce</div>
 <div class="scroll-zoom-focus">Beim Scrollen fokussieren</div>
 ```
 
-### Rotate-Effekte
+### Rotate-effects
 
-Elemente rotieren beim Scrollen:
+elements rotieren beim Scrollen:
 
 ```html
 <div class="scroll-rotate-x">Um X-Achse rotieren</div>
@@ -80,94 +80,94 @@ Elemente rotieren beim Scrollen:
 <div class="scroll-rotate-z">Um Z-Achse rotieren</div>
 ```
 
-### Parallax-Effekte
+### Parallax-effects
 
-Elemente bewegen sich mit unterschiedlichen Geschwindigkeiten beim Scrollen:
+elements bewegen oneself with unterschiedlichen Geschwindigkeiten beim Scrollen:
 
 ```html
-<div class="scroll-parallax-bg">Parallax-Hintergrund</div>
+<div class="scroll-parallax-bg">Parallax-background</div>
 <div class="scroll-parallax-slow">Langsame Parallax-Bewegung</div>
 <div class="scroll-parallax-fast">Schnelle Parallax-Bewegung</div>
 <div class="scroll-parallax-reverse">Umgekehrte Parallax-Bewegung</div>
 ```
 
-### Sticky-Effekte
+### Sticky-effects
 
-Elemente bleiben beim Scrollen an einer Position haften:
+elements bleiben beim Scrollen on einer position haften:
 
 ```html
-<div class="scroll-sticky-top">Am oberen Rand haften</div>
-<div class="scroll-sticky-bottom">Am unteren Rand haften</div>
-<div class="scroll-sticky-header">Header bleibt haften</div>
+<div class="scroll-sticky-top">Am oberen margin haften</div>
+<div class="scroll-sticky-bottom">Am unteren margin haften</div>
+<div class="scroll-sticky-header">header bleibt haften</div>
 <div class="scroll-sticky-sidebar">Seitenleiste bleibt haften</div>
 ```
 
-### Reveal-Effekte
+### Reveal-effects
 
-Elemente werden beim Scrollen aufgedeckt:
+elements become beim Scrollen aufgedeckt:
 
 ```html
-<div class="scroll-reveal-mask">Mit Maske aufdecken</div>
-<div class="scroll-reveal-curtain">Wie ein Vorhang aufdecken</div>
+<div class="scroll-reveal-mask">with Maske aufdecken</div>
+<div class="scroll-reveal-curtain">how a Vorhang aufdecken</div>
 <div class="scroll-reveal-wipe">Wischeffekt beim Aufdecken</div>
 ```
 
-### Transform-Effekte
+### Transform-effects
 
-Elemente werden beim Scrollen transformiert:
+elements become beim Scrollen transformiert:
 
 ```html
 <div class="scroll-transform-skew">Verzerren beim Scrollen</div>
-<div class="scroll-transform-perspective">Perspektive ändern beim Scrollen</div>
+<div class="scroll-transform-perspective">Perspektive change beim Scrollen</div>
 <div class="scroll-transform-tilt">Neigen beim Scrollen</div>
 ```
 
-### Progress-Effekte
+### Progress-effects
 
-Fortschrittsanzeigen basierend auf der Scroll-Position:
+Fortschrittsanzeigen basierend on the Scroll-position:
 
 ```html
 <div class="scroll-progress-bar">Fortschrittsbalken beim Scrollen</div>
-<div class="scroll-progress-circle">Kreisförmiger Fortschritt beim Scrollen</div>
-<div class="scroll-progress-counter">Numerischer Fortschritt beim Scrollen</div>
+<div class="scroll-progress-circle">Kreisformiger progress beim Scrollen</div>
+<div class="scroll-progress-counter">Numerischer progress beim Scrollen</div>
 ```
 
-### Snap-Effekte
+### Snap-effects
 
-Scroll-Snap zu bestimmten Punkten:
+Scroll-Snap to bestimmten Punkten:
 
 ```html
-<div class="scroll-snap-container">
+<div class="scroll-snap-containers">
   <div class="scroll-snap-item">Abschnitt 1</div>
   <div class="scroll-snap-item">Abschnitt 2</div>
   <div class="scroll-snap-item">Abschnitt 3</div>
 </div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Scroll-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Scroll-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Bilder mit Scroll-Effekten
+### images with Scroll-Effekten
 
 ```html
-<img class="scroll-parallax" src="bild.jpg" alt="Parallax-Bild">
+<img class="scroll-parallax" src="image.jpg" alt="Parallax-image">
 <div class="image-gallery">
-  <img class="scroll-fade-in" src="bild1.jpg" alt="Bild 1">
-  <img class="scroll-fade-in" src="bild2.jpg" alt="Bild 2">
-  <img class="scroll-fade-in" src="bild3.jpg" alt="Bild 3">
+  <img class="scroll-fade-in" src="bild1.jpg" alt="image 1">
+  <img class="scroll-fade-in" src="bild2.jpg" alt="image 2">
+  <img class="scroll-fade-in" src="bild3.jpg" alt="image 3">
 </div>
 ```
 
-### Texte mit Scroll-Effekten
+### Texte with Scroll-Effekten
 
 ```html
-<h2 class="scroll-slide-up">Überschrift mit Slide-Effekt</h2>
-<p class="scroll-fade-in">Absatz mit Fade-Effekt</p>
-<blockquote class="scroll-zoom-in">Zitat mit Zoom-Effekt</blockquote>
+<h2 class="scroll-slide-up">heading with Slide-effect</h2>
+<p class="scroll-fade-in">Absatz with Fade-effect</p>
+<blockquote class="scroll-zoom-in">Zitat with Zoom-effect</blockquote>
 ```
 
-### Cardn mit Scroll-Effekten
+### Cardn with Scroll-Effekten
 
 ```html
 <div class="card-grid">
@@ -183,71 +183,71 @@ Scroll-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-### Navigation mit Scroll-Effekten
+### navigation with Scroll-Effekten
 
 ```html
 <nav class="navbar scroll-sticky-top">
   <a href="#" class="nav-link">Home</a>
-  <a href="#" class="nav-link">Über uns</a>
+  <a href="#" class="nav-link">over us</a>
   <a href="#" class="nav-link">Kontakt</a>
 </nav>
 
 <div class="scroll-progress-bar"></div>
 ```
 
-## Anpassung
+## Customization
 
-Die Scroll-Effekte können über CSS Variables angepasst werden:
+the Scroll-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Allgemeine Scroll-Parameter */
+  /* Allgemeine Scroll-parameter */
   --scroll-duration: 0.5s;
   --scroll-timing-function: ease-out;
   --scroll-delay: 0s;
-  --scroll-threshold: 0.2; /* Prozentsatz des Elements im Viewport */
+  --scroll-threshold: 0.2; /* Prozentsatz des Elements im viewport */
   
-  /* Fade-Parameter */
+  /* Fade-parameter */
   --scroll-fade-distance: 50px;
   --scroll-fade-opacity-start: 0;
   --scroll-fade-opacity-end: 1;
   
-  /* Slide-Parameter */
+  /* Slide-parameter */
   --scroll-slide-distance: 100px;
   
-  /* Zoom-Parameter */
+  /* Zoom-parameter */
   --scroll-zoom-scale-start: 0.8;
   --scroll-zoom-scale-end: 1;
   
-  /* Rotate-Parameter */
+  /* Rotate-parameter */
   --scroll-rotate-angle: 15deg;
   
-  /* Parallax-Parameter */
+  /* Parallax-parameter */
   --scroll-parallax-ratio: 0.5;
   --scroll-parallax-perspective: 1000px;
   
-  /* Sticky-Parameter */
+  /* Sticky-parameter */
   --scroll-sticky-offset: 0px;
   --scroll-sticky-z-index: 100;
   
-  /* Progress-Parameter */
+  /* Progress-parameter */
   --scroll-progress-color: var(--color-primary);
   --scroll-progress-height: 4px;
   --scroll-progress-z-index: 1000;
   
-  /* Snap-Parameter */
+  /* Snap-parameter */
   --scroll-snap-type: y mandatory;
   --scroll-snap-align: start;
   --scroll-snap-stop: always;
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Examples für die CSS-Implementierung der Scroll-Effekte:
+Examples for the CSS-Implementation the Scroll-effects:
 
 ```css
-/* Basis-Scroll-Effekt */
+/* Base-Scroll-effect */
 .scroll-effect {
   transition-property: transform, opacity;
   transition-duration: var(--scroll-duration);
@@ -255,7 +255,7 @@ Examples für die CSS-Implementierung der Scroll-Effekte:
   transition-delay: var(--scroll-delay);
 }
 
-/* Fade-Effekte */
+/* Fade-effects */
 .scroll-fade-in {
   opacity: var(--scroll-fade-opacity-start);
 }
@@ -274,9 +274,9 @@ Examples für die CSS-Implementierung der Scroll-Effekte:
   transform: translateY(0);
 }
 
-/* ähnliche Definitionen für andere Richtungen */
+/* ahnliche Definitionen for others Richtungen */
 
-/* Slide-Effekte */
+/* Slide-effects */
 .scroll-slide-up {
   transform: translateY(var(--scroll-slide-distance));
 }
@@ -285,9 +285,9 @@ Examples für die CSS-Implementierung der Scroll-Effekte:
   transform: translateY(0);
 }
 
-/* ähnliche Definitionen für andere Richtungen */
+/* ahnliche Definitionen for others Richtungen */
 
-/* Zoom-Effekte */
+/* Zoom-effects */
 .scroll-zoom-in {
   transform: scale(var(--scroll-zoom-scale-start));
 }
@@ -296,7 +296,7 @@ Examples für die CSS-Implementierung der Scroll-Effekte:
   transform: scale(var(--scroll-zoom-scale-end));
 }
 
-/* Rotate-Effekte */
+/* Rotate-effects */
 .scroll-rotate-z {
   transform: rotate(calc(-1 * var(--scroll-rotate-angle)));
 }
@@ -305,7 +305,7 @@ Examples für die CSS-Implementierung der Scroll-Effekte:
   transform: rotate(0);
 }
 
-/* Parallax-Effekte */
+/* Parallax-effects */
 .scroll-parallax {
   position: relative;
   will-change: transform;
@@ -325,26 +325,26 @@ Examples für die CSS-Implementierung der Scroll-Effekte:
   will-change: transform;
 }
 
-/* Sticky-Effekte */
+/* Sticky-effects */
 .scroll-sticky-top {
   position: sticky;
   top: var(--scroll-sticky-offset);
   z-index: var(--scroll-sticky-z-index);
 }
 
-/* Progress-Effekte */
+/* Progress-effects */
 .scroll-progress-bar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 0; /* wird mit JavaScript aktualisiert */
+  width: 0; /* wird with JavaScript aktualisiert */
   height: var(--scroll-progress-height);
   background-color: var(--scroll-progress-color);
   z-index: var(--scroll-progress-z-index);
 }
 
-/* Snap-Effekte */
-.scroll-snap-container {
+/* Snap-effects */
+.scroll-snap-containers {
   scroll-snap-type: var(--scroll-snap-type);
   overflow-y: scroll;
   height: 100vh;
@@ -364,7 +364,7 @@ Examples für die CSS-Implementierung der Scroll-Effekte:
 
 ## JavaScript-Integration
 
-Für dynamische Scroll-Effekte wird JavaScript verwendet:
+for dynamische Scroll-effects wird JavaScript verwendet:
 
 ```javascript
 class ScrollEffects {
@@ -381,18 +381,18 @@ class ScrollEffects {
   }
   
   init() {
-    // Intersection Observer für Scroll-Effekte
+    // Intersection Observer for Scroll-effects
     this.observer = new IntersectionObserver(this.handleIntersect.bind(this), {
       threshold: this.options.threshold,
       root: this.options.root,
       rootMargin: this.options.rootMargin
     });
     
-    // Alle Elemente mit Scroll-Effekten beobachten
+    // Observe all elements with scroll effects
     document.querySelectorAll('[class*="scroll-"]').forEach(element => {
       if (!element.classList.contains('scroll-progress-bar') && 
           !element.classList.contains('scroll-sticky-top') &&
-          !element.classList.contains('scroll-snap-container')) {
+          !element.classList.contains('scroll-snap-containers')) {
         this.observer.observe(element);
       }
     });
@@ -400,22 +400,22 @@ class ScrollEffects {
     // Fortschrittsbalken initialisieren
     this.initProgressBar();
     
-    // Smooth Scroll für Anker-Links
+    // Smooth Scroll for Anker-links
     this.initSmoothScroll();
   }
   
   handleIntersect(entries, observer) {
     entries.forEach(entry => {
-      // Wenn Element sichtbar wird
+      // if element sichtbar wird
       if (entry.isIntersecting) {
         entry.target.classList.add('scroll-active');
         
-        // Bei triggerOnce Option: Beobachtung beenden
+        // at triggerOnce Option: Beobachtung beenden
         if (this.options.triggerOnce) {
           observer.unobserve(entry.target);
         }
       } else if (!this.options.triggerOnce) {
-        // Wenn Element nicht mehr sichtbar ist und nicht triggerOnce
+        // if element not more sichtbar ist and not triggerOnce
         entry.target.classList.remove('scroll-active');
       }
     });
@@ -440,7 +440,7 @@ class ScrollEffects {
         const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrollProgress = (scrollTop / scrollHeight) * 100;
         
-        const circumference = 2 * Math.PI * 40; // Kreis mit Radius 40px
+        const circumference = 2 * Math.PI * 40; // Kreis with Radius 40px
         const offset = circumference - (scrollProgress / 100) * circumference;
         
         progressCircle.style.strokeDashoffset = `${offset}px`;
@@ -464,14 +464,14 @@ class ScrollEffects {
   }
 }
 
-// Initialisierung der Scroll-Effekte
+// Initialisierung the Scroll-effects
 document.addEventListener('DOMContentLoaded', () => {
   new ScrollEffects({
     threshold: 0.2,
     triggerOnce: false
   });
   
-  // Parallax-Effekte
+  // Parallax-effects
   const parallaxElements = document.querySelectorAll('.scroll-parallax-bg');
   if (parallaxElements.length > 0) {
     window.addEventListener('scroll', () => {
@@ -486,9 +486,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-## Fortgeschrittene Parallax-Effekte
+## Fortgeschrittene Parallax-effects
 
-Für komplexere Parallax-Effekte kann ein spezieller Ansatz verwendet werden:
+for komplexere Parallax-effects kann a spezieller Ansatz verwendet become:
 
 ```javascript
 class ParallaxEffect {
@@ -518,12 +518,12 @@ class ParallaxEffect {
       const elementHeight = element.offsetHeight;
       const viewportHeight = window.innerHeight;
       
-      // Überprüfen, ob Element im sichtbaren Bereich ist
+      // Uberprufen, whether element im sichtbaren area ist
       if (scrollTop + viewportHeight > elementTop && scrollTop < elementTop + elementHeight) {
-        // Berechnen der relativen Position
+        // Berechnen the relativen position
         const relativePos = (scrollTop + viewportHeight - elementTop) / (viewportHeight + elementHeight);
         
-        // Transformationswert basierend auf der Achse
+        // Transformationswert basierend on the Achse
         let transform = '';
         if (this.options.axis === 'y' || this.options.axis === 'both') {
           const yOffset = (relativePos - 0.5) * this.options.speed * 100;
@@ -546,7 +546,7 @@ class ParallaxEffect {
   }
 }
 
-// Initialisierung für Parallax-Elemente
+// Initialisierung for Parallax-elements
 document.addEventListener('DOMContentLoaded', () => {
   const parallaxImages = document.querySelectorAll('.scroll-parallax-advanced');
   new ParallaxEffect(parallaxImages, {
@@ -559,15 +559,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## Accessibility
 
-Bei der Usage von Scroll-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Scroll-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
-2. **Leserlichkeit**: Stellen Sie sicher, dass Text während Scroll-Effekten lesbar bleibt
-3. **Keine reinen visuellen Hinweise**: Stellen Sie sicher, dass wichtige Informationen nicht nur durch Scroll-Effekte vermittelt werden
-4. **Keyboard-Navigation**: Stellen Sie sicher, dass alle Inhalte auch ohne Scroll-Effekte zugänglich sind
+1. **Animationspraferenzen**: Respektieren them the Setting `prefers-reduced-motion`
+2. **Leserlichkeit**: ensure, that Text wahrend Scroll-Effekten lesbar bleibt
+3. **no reinen visuellen Notee**: ensure, that wichtige Informationen not only through Scroll-effects vermittelt become
+4. **Keyboard-navigation**: ensure, that all contents also without Scroll-effects zuganglich sind
 
 ```css
-/* Reduzierte Animation für Benutzer, die dies bevorzugen */
+/* Reduzierte animation for user, the dies bevorzugen */
 @media (prefers-reduced-motion: reduce) {
   .scroll-effect,
   .scroll-fade-in,
@@ -581,7 +581,7 @@ Bei der Usage von Scroll-Effekten sollten folgende Accessibilitysaspekte berück
     opacity: 1 !important;
   }
   
-  .scroll-snap-container {
+  .scroll-snap-containers {
     scroll-snap-type: none;
   }
   
@@ -592,17 +592,17 @@ Bei der Usage von Scroll-Effekten sollten folgende Accessibilitysaspekte berück
 ```
 
 ```javascript
-// Barrierefreie Scroll-Navigation
+// Barrierefreie Scroll-navigation
 function setupAccessibleScrolling() {
-  // Skip-Link zu Hauptinhalt
+  // Skip-link to Hauptinhalt
   const skipLink = document.createElement('a');
   skipLink.href = '#main-content';
   skipLink.className = 'skip-link';
   skipLink.textContent = 'Zum Hauptinhalt springen';
   document.body.insertBefore(skipLink, document.body.firstChild);
   
-  // Tastaturnavigation für Snap-Scrolling
-  const snapContainer = document.querySelector('.scroll-snap-container');
+  // Tastaturnavigation for Snap-Scrolling
+  const snapContainer = document.querySelector('.scroll-snap-containers');
   if (snapContainer) {
     const snapItems = snapContainer.querySelectorAll('.scroll-snap-item');
     
@@ -637,14 +637,14 @@ function setupAccessibleScrolling() {
 document.addEventListener('DOMContentLoaded', setupAccessibleScrolling);
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Scroll-Effekte können die Leistung beeinflussen:
+Scroll-effects can the Leistung beeinflussen:
 
-1. **Scroll-Throttling**: Limitieren Sie die Häufigkeit von Scroll-Event-Callbacks
-2. **Paint-freundliche Eigenschaften**: Verwenden Sie `transform` und `opacity` für Animationen
-3. **GPU-Beschleunigung**: Nutzen Sie `will-change` und `transform: translateZ(0)` für performante Animationen
-4. **Intersection Observer**: Verwenden Sie den Intersection Observer statt Scroll-Events, wenn möglich
+1. **Scroll-Throttling**: Limitieren them the Haufigkeit from Scroll-Event-Callbacks
+2. **Paint-freundliche properties**: use them `transform` and `opacity` for animations
+3. **GPU-Beschleunigung**: use them `will-change` and `transform: translateZ(0)` for performante animations
+4. **Intersection Observer**: use them den Intersection Observer instead of Scroll-Events, if moglich
 
 ```javascript
 // Leistungsoptimierte Scroll-Handler
@@ -674,7 +674,7 @@ const optimizedScroll = throttle(() => {
   // Scroll-Berechnungen hier
   const scrollTop = window.pageYOffset;
   
-  // Parallax-Elemente aktualisieren
+  // Parallax-elements aktualisieren
   document.querySelectorAll('.scroll-parallax-bg').forEach(element => {
     const speed = element.dataset.parallaxSpeed || 0.5;
     element.style.transform = `translateY(${scrollTop * speed}px)`;
@@ -692,22 +692,22 @@ const optimizedScroll = throttle(() => {
 window.addEventListener('scroll', optimizedScroll);
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Scroll-Effekte werden von allen modernen Browsern unterstützt.
+the Scroll-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| Basis-Scroll-Effekte | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Base-Scroll-effects | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Intersection Observer | ✓ | ✓ | ✓ | ✓ | Nein |
 | Scroll-Snap | ✓ | ✓ | ✓ | ✓ | Nein |
 | Sticky-Positionierung | ✓ | ✓ | ✓ | ✓ | Nein |
 | Smooth Scroll | ✓ | ✓ | ✓ | ✓ | Nein |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Transitions-Effekte](/docs/effects/animation/transitions.md) - Übergangseffekte zwischen Statesn
-- [Transform-Effekte](/docs/effects/layout/transforms.md) - Transformationseffekte für Elemente
+- [Animations-effects](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
+- [Transitions-effects](/docs/effects/animation/transitions.md) - Ubergangseffekte between Statesn
+- [Transform-effects](/docs/effects/layout/transforms.md) - Transformationseffekte for elements
 ``` 
 </rewritten_file>

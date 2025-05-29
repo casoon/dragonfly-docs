@@ -1,79 +1,79 @@
-# Loading-Effekte
+# Loading-effects
 
-Loading-Effekte werden verwendet, um dem Benutzer anzuzeigen, dass ein Prozess oder eine Operation im Hintergrund ausgeführt wird. Die `@casoon/ui-lib` bietet verschiedene Loading-Effekte, die dazu beitragen, das Benutzererlebnis während Ladezeiten zu verbessern.
+Loading-effects become verwendet, um dem user anzuzeigen, that a Prozess or a Operation im background ausgefuhrt wird. the `@casoon/ui-lib` bietet verschiedene Loading-effects, the for that beitragen, the Benutzererlebnis wahrend Ladezeiten to verbessern.
 
 ## Basic Usage
 
-Der grundlegende Loading-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Loading-effect kann on jedes element angewendet become:
 
 ```html
 <div class="loading">Wird geladen...</div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Loading-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Loading-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.loading` | Basisklasse für Loading-Effekte |
-| `.loading-spinner` | Drehendes Spinner-Element |
+| `.loading` | Basisklasse for Loading-effects |
+| `.loading-spinners` | Drehendes spinners-element |
 | `.loading-dots` | Punktanimation |
-| `.loading-pulse` | Pulsierender Effekt |
+| `.loading-pulse` | Pulsierender effect |
 | `.loading-bar` | Fortschrittsbalken |
-| `.loading-skeleton` | Skeleton-Loading-Effekt |
-| `.loading-shimmer` | Schimmer-Effekt über Platzhaltern |
+| `.loading-skeleton` | Skeleton-Loading-effect |
+| `.loading-shimmer` | Schimmer-effect over Platzhaltern |
 | `.loading-wave` | Wellenanimation |
-| `.loading-circle` | Kreisförmige Ladeanimation |
-| `.loading-ellipsis` | Ellipsis-Animation (drei Punkte) |
-| `.loading-blur` | Ein- und Ausblendeffekt |
-| `.loading-bounce` | Hüpfende Elemente |
-| `.loading-fade` | Ein- und Ausblendeeffekt |
-| `.loading-overlay` | Vollständiger Overlay mit Ladeindikator |
+| `.loading-circle` | Kreisformige Ladeanimation |
+| `.loading-ellipsis` | Ellipsis-animation (drei Punkte) |
+| `.loading-blur` | a- and Ausblendeffekt |
+| `.loading-bounce` | Hupfende elements |
+| `.loading-fade` | a- and Ausblendeeffekt |
+| `.loading-overlay` | Vollstandiger Overlay with Ladeindikator |
 | `.loading-fullscreen` | Vollbild-Ladeindikator |
 
 ## Variants
 
-### Spinner
+### spinners
 
-Der Spinner ist ein rotierendes Element, das ein laufendes Laden anzeigt:
+the spinners ist a rotierendes element, the a laufendes load anzeigt:
 
 ```html
-<div class="loading-spinner"></div>
+<div class="loading-spinners"></div>
 ```
 
-Verfügbare Sizesvarianten:
+Verfugbare Sizesvarianten:
 
 ```html
-<div class="loading-spinner-xs">Extra klein</div>
-<div class="loading-spinner-sm">Klein</div>
-<div class="loading-spinner-md">Mittel</div>
-<div class="loading-spinner-lg">Groß</div>
-<div class="loading-spinner-xl">Extra groß</div>
+<div class="loading-spinners-xs">Extra small</div>
+<div class="loading-spinners-sm">small</div>
+<div class="loading-spinners-md">Mittel</div>
+<div class="loading-spinners-lg">Gross</div>
+<div class="loading-spinners-xl">Extra gross</div>
 ```
 
 Stilisierte Variants:
 
 ```html
-<div class="loading-spinner-border">Rahmen-Spinner</div>
-<div class="loading-spinner-grow">Wachsender Spinner</div>
-<div class="loading-spinner-dual">Dualer Spinner</div>
-<div class="loading-spinner-triple">Dreifach-Spinner</div>
+<div class="loading-spinners-border">border-spinners</div>
+<div class="loading-spinners-grow">Wachsender spinners</div>
+<div class="loading-spinners-dual">Dualer spinners</div>
+<div class="loading-spinners-triple">Dreifach-spinners</div>
 ```
 
 ### Dots
 
-Die Dots-Animation zeigt eine Reihe von Punkten, die nacheinander animiert werden:
+the Dots-animation zeigt a Reihe from Punkten, the nacheinander animiert become:
 
 ```html
 <div class="loading-dots"></div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
 <div class="loading-dots-pulse">Pulsierende Punkte</div>
-<div class="loading-dots-bounce">Hüpfende Punkte</div>
+<div class="loading-dots-bounce">Hupfende Punkte</div>
 <div class="loading-dots-fade">Verblassende Punkte</div>
 <div class="loading-dots-wave">Wellenpunkte</div>
 <div class="loading-dots-elastic">Elastische Punkte</div>
@@ -81,34 +81,34 @@ Verfügbare Variants:
 
 ### Pulse
 
-Der Pulse-Effekt zeigt einen pulsierenden Kreis oder ein anderes Element:
+the Pulse-effect zeigt einen pulsierenden Kreis or a anderes element:
 
 ```html
 <div class="loading-pulse"></div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
-<div class="loading-pulse-circle">Kreisförmiger Puls</div>
+<div class="loading-pulse-circle">Kreisformiger Puls</div>
 <div class="loading-pulse-double">Doppelter Puls</div>
-<div class="loading-pulse-ripple">Wellenförmiger Puls</div>
-<div class="loading-pulse-shadow">Puls mit Schatten</div>
+<div class="loading-pulse-ripple">Wellenformiger Puls</div>
+<div class="loading-pulse-shadow">Puls with shadow</div>
 ```
 
 ### Bar
 
-Der Bar-Effekt zeigt einen Fortschrittsbalken:
+the Bar-effect zeigt einen Fortschrittsbalken:
 
 ```html
 <div class="loading-bar"></div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
-<div class="loading-bar-indeterminate">Unbestimmter Fortschritt</div>
-<div class="loading-bar-determinate" style="--progress: 75%">Bestimmter Fortschritt (75%)</div>
+<div class="loading-bar-indeterminate">Unbestimmter progress</div>
+<div class="loading-bar-determinate" style="--progress: 75%">Bestimmter progress (75%)</div>
 <div class="loading-bar-striped">Gestreifter Fortschrittsbalken</div>
 <div class="loading-bar-animated">Animierter Fortschrittsbalken</div>
 <div class="loading-bar-gradient">Verlaufsfortschrittsbalken</div>
@@ -116,7 +116,7 @@ Verfügbare Variants:
 
 ### Skeleton
 
-Der Skeleton-Effekt erstellt Platzhalter für Inhalte, die geladen werden:
+the Skeleton-effect erstellt Platzhalter for contents, the geladen become:
 
 ```html
 <div class="loading-skeleton">
@@ -126,20 +126,20 @@ Der Skeleton-Effekt erstellt Platzhalter für Inhalte, die geladen werden:
 </div>
 ```
 
-Verfügbare Components:
+Verfugbare Components:
 
 ```html
-<div class="loading-skeleton-avatar">Avatar-Platzhalter</div>
-<div class="loading-skeleton-image">Bild-Platzhalter</div>
-<div class="loading-skeleton-heading">Überschriften-Platzhalter</div>
+<div class="loading-skeleton-avatar">avatar-Platzhalter</div>
+<div class="loading-skeleton-image">image-Platzhalter</div>
+<div class="loading-skeleton-heading">Uberschriften-Platzhalter</div>
 <div class="loading-skeleton-text">Text-Platzhalter</div>
-<div class="loading-skeleton-button">Button-Platzhalter</div>
+<div class="loading-skeleton-button">button-Platzhalter</div>
 <div class="loading-skeleton-card">Cardn-Platzhalter</div>
 ```
 
 ### Shimmer
 
-Der Shimmer-Effekt fügt einen animierten Glanzeffekt zu Skeleton-Elementen hinzu:
+the Shimmer-effect fugt einen animierten Glanzeffekt to Skeleton-Elementen hinzu:
 
 ```html
 <div class="loading-skeleton loading-shimmer">
@@ -148,7 +148,7 @@ Der Shimmer-Effekt fügt einen animierten Glanzeffekt zu Skeleton-Elementen hinz
 </div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
 <div class="loading-shimmer-light">Heller Schimmereffekt</div>
@@ -159,30 +159,30 @@ Verfügbare Variants:
 
 ### Wave
 
-Der Wave-Effekt zeigt eine wellenförmige Animation:
+the Wave-effect zeigt a wellenformige animation:
 
 ```html
 <div class="loading-wave"></div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
 <div class="loading-wave-bars">Wellenbalken</div>
 <div class="loading-wave-circle">Wellenkreis</div>
 <div class="loading-wave-dots">Wellenpunkte</div>
-<div class="loading-wave-liquid">Flüssigkeitswelle</div>
+<div class="loading-wave-liquid">Flussigkeitswelle</div>
 ```
 
 ### Circle
 
-Der Circle-Effekt zeigt einen kreisförmigen Fortschrittsindikator:
+the Circle-effect zeigt einen kreisformigen Fortschrittsindikator:
 
 ```html
 <div class="loading-circle"></div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
 <div class="loading-circle-indeterminate">Unbestimmter Kreisfortschritt</div>
@@ -194,7 +194,7 @@ Verfügbare Variants:
 
 ### Ellipsis
 
-Der Ellipsis-Effekt zeigt drei Punkte, die nach und nach erscheinen:
+the Ellipsis-effect zeigt drei Punkte, the after and after erscheinen:
 
 ```html
 <div class="loading-ellipsis">Wird geladen<span>...</span></div>
@@ -202,15 +202,15 @@ Der Ellipsis-Effekt zeigt drei Punkte, die nach und nach erscheinen:
 
 ### Overlay
 
-Der Overlay-Effekt zeigt einen halbtransparenten Überzug mit einem Ladeindikator:
+the Overlay-effect zeigt einen halbtransparenten Uberzug with einem Ladeindikator:
 
 ```html
 <div class="loading-overlay">
-  <div class="loading-spinner"></div>
+  <div class="loading-spinners"></div>
 </div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
 <div class="loading-overlay-light">Heller Overlay</div>
@@ -219,15 +219,15 @@ Verfügbare Variants:
 <div class="loading-overlay-gradient">Verlaufsoverlay</div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Loading-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Loading-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Buttons mit Loading-Status
+### buttons with Loading-Status
 
 ```html
 <button class="btn btn-primary btn-loading">
-  <span class="loading-spinner-sm"></span>
+  <span class="loading-spinners-sm"></span>
   Wird geladen...
 </button>
 
@@ -236,12 +236,12 @@ Loading-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </button>
 ```
 
-### Cardn mit Loading-Status
+### Cardn with Loading-Status
 
 ```html
 <div class="card card-loading">
   <div class="loading-overlay">
-    <div class="loading-spinner"></div>
+    <div class="loading-spinners"></div>
   </div>
   <div class="card-body">
     Cardninhalt
@@ -249,73 +249,73 @@ Loading-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-### Formelemente mit Loading-Status
+### form elements with Loading-Status
 
 ```html
 <div class="form-group">
   <label>Benutzername</label>
   <div class="input-loading">
     <input type="text" class="form-control" disabled>
-    <span class="loading-spinner-sm"></span>
+    <span class="loading-spinners-sm"></span>
   </div>
 </div>
 ```
 
-### Seiten mit Loading-Status
+### Seiten with Loading-Status
 
 ```html
 <div class="loading-fullscreen">
-  <div class="loading-spinner-lg"></div>
+  <div class="loading-spinners-lg"></div>
   <p>Seite wird geladen...</p>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Loading-Effekte können über CSS Variables angepasst werden:
+the Loading-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Allgemeine Loading-Parameter */
+  /* Allgemeine Loading-parameter */
   --loading-color: var(--color-primary);
   --loading-background: rgba(255, 255, 255, 0.7);
   --loading-z-index: 1000;
   
-  /* Spinner-Parameter */
-  --loading-spinner-size: 2rem;
-  --loading-spinner-border-width: 0.25rem;
-  --loading-spinner-animation-duration: 1s;
+  /* spinners-parameter */
+  --loading-spinners-size: 2rem;
+  --loading-spinners-border-width: 0.25rem;
+  --loading-spinners-animation-duration: 1s;
   
-  /* Dots-Parameter */
+  /* Dots-parameter */
   --loading-dots-size: 0.5rem;
   --loading-dots-gap: 0.25rem;
   --loading-dots-color: var(--color-primary);
   --loading-dots-animation-duration: 1.5s;
   
-  /* Pulse-Parameter */
+  /* Pulse-parameter */
   --loading-pulse-size: 1rem;
   --loading-pulse-animation-duration: 2s;
   --loading-pulse-color: var(--color-primary);
   
-  /* Bar-Parameter */
+  /* Bar-parameter */
   --loading-bar-height: 4px;
   --loading-bar-background: #f0f0f0;
   --loading-bar-animation-duration: 2s;
   
-  /* Skeleton-Parameter */
+  /* Skeleton-parameter */
   --loading-skeleton-background: #f0f0f0;
   --loading-skeleton-border-radius: 4px;
   
-  /* Shimmer-Parameter */
+  /* Shimmer-parameter */
   --loading-shimmer-color: rgba(255, 255, 255, 0.2);
   --loading-shimmer-animation-duration: 1.5s;
   
-  /* Overlay-Parameter */
+  /* Overlay-parameter */
   --loading-overlay-background: rgba(255, 255, 255, 0.7);
   --loading-overlay-blur: 2px;
 }
 
-/* Dunkles Theme */
+/* Dunkles theme */
 .dark-theme {
   --loading-background: rgba(0, 0, 0, 0.7);
   --loading-skeleton-background: #2a2a2a;
@@ -325,28 +325,28 @@ Die Loading-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Examples für die CSS-Implementierung der Loading-Effekte:
+Examples for the CSS-Implementation the Loading-effects:
 
 ```css
-/* Basis-Loading */
+/* Base-Loading */
 .loading {
   position: relative;
 }
 
-/* Spinner */
-.loading-spinner {
+/* spinners */
+.loading-spinners {
   display: inline-block;
-  width: var(--loading-spinner-size);
-  height: var(--loading-spinner-size);
-  border: var(--loading-spinner-border-width) solid var(--loading-color);
+  width: var(--loading-spinners-size);
+  height: var(--loading-spinners-size);
+  border: var(--loading-spinners-border-width) solid var(--loading-color);
   border-radius: 50%;
   border-right-color: transparent;
-  animation: spinner var(--loading-spinner-animation-duration) linear infinite;
+  animation: spinners var(--loading-spinners-animation-duration) linear infinite;
 }
 
-@keyframes spinner {
+@keyframes spinners {
   to { transform: rotate(360deg); }
 }
 
@@ -480,20 +480,20 @@ Examples für die CSS-Implementierung der Loading-Effekte:
 
 ## JavaScript-Integration
 
-Für dynamische Loading-Steuerung kann JavaScript verwendet werden:
+for dynamische Loading-Steuerung kann JavaScript verwendet become:
 
 ```javascript
-function showLoading(elementId, type = 'spinner') {
+function showLoading(elementId, type = 'spinners') {
   const element = document.getElementById(elementId);
   
-  // Bestehenden Inhalt speichern
+  // Bestehenden content save
   const originalContent = element.innerHTML;
   element.setAttribute('data-original-content', originalContent);
   
-  // Loading-Element je nach Typ einfügen
+  // Loading-element je after Typ einfugen
   switch (type) {
-    case 'spinner':
-      element.innerHTML = '<div class="loading-spinner"></div>';
+    case 'spinners':
+      element.innerHTML = '<div class="loading-spinners"></div>';
       break;
     case 'dots':
       element.innerHTML = '<div class="loading-dots"></div>';
@@ -502,39 +502,39 @@ function showLoading(elementId, type = 'spinner') {
       element.innerHTML = originalContent;
       const overlay = document.createElement('div');
       overlay.className = 'loading-overlay';
-      overlay.innerHTML = '<div class="loading-spinner"></div>';
+      overlay.innerHTML = '<div class="loading-spinners"></div>';
       element.appendChild(overlay);
       break;
-    // Weitere Typen hier...
+    // additional Typen hier...
   }
   
-  // Loading-Klasse hinzufügen
+  // Loading-Class add
   element.classList.add('loading');
 }
 
 function hideLoading(elementId) {
   const element = document.getElementById(elementId);
   
-  // Original-Inhalt wiederherstellen, falls vorhanden
+  // Original-content wiederherstellen, if vorhanden
   const originalContent = element.getAttribute('data-original-content');
   if (originalContent) {
     element.innerHTML = originalContent;
     element.removeAttribute('data-original-content');
   }
   
-  // Overlay entfernen, falls vorhanden
+  // Overlay remove, if vorhanden
   const overlay = element.querySelector('.loading-overlay');
   if (overlay) {
     element.removeChild(overlay);
   }
   
-  // Loading-Klasse entfernen
+  // Loading-Class remove
   element.classList.remove('loading');
 }
 
-// Example für eine asynchrone Funktion mit Loading-Indikator
+// Example for a asynchrone Function with Loading-Indikator
 async function fetchData(url, containerId) {
-  const container = document.getElementById(containerId);
+  const containers = document.getElementById(containerId);
   
   try {
     showLoading(containerId, 'overlay');
@@ -548,10 +548,10 @@ async function fetchData(url, containerId) {
     return data;
   } catch (error) {
     hideLoading(containerId);
-    console.error('Fehler beim Laden der Daten:', error);
+    console.error('errors beim load the Daten:', error);
     
     // Fehlermeldung anzeigen
-    container.innerHTML = '<div class="error">Fehler beim Laden der Daten.</div>';
+    containers.innerHTML = '<div class="error">errors beim load the Daten.</div>';
     throw error;
   }
 }
@@ -559,22 +559,22 @@ async function fetchData(url, containerId) {
 
 ## Accessibility
 
-Bei der Usage von Loading-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Loading-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **ARIA-Attribute**: Verwenden Sie geeignete ARIA-Attribute, um anzuzeigen, dass Inhalte geladen werden
-2. **Status-Updates**: Informieren Sie Screenreader über den Ladezustand
-3. **Keine reinen visuellen Indikatoren**: Stellen Sie sicher, dass Ladezustände nicht nur visuell angezeigt werden
-4. **Animation**: Respektieren Sie die Einstellung `prefers-reduced-motion`
+1. **ARIA-attributes**: use them geeignete ARIA-attributes, um anzuzeigen, that contents geladen become
+2. **Status-Updates**: Informieren them Screenreader over den Ladezustand
+3. **no reinen visuellen Indikatoren**: ensure, that Ladezustande not only visuell angezeigt become
+4. **animation**: Respektieren them the Setting `prefers-reduced-motion`
 
 ```html
 <!-- Barrierefreier Loading-Indikator -->
 <div 
-  class="loading-spinner" 
+  class="loading-spinners" 
   role="status" 
   aria-live="polite" 
   aria-busy="true"
 >
-  <span class="visually-hidden">Inhalte werden geladen, bitte warten</span>
+  <span class="visually-hidden">contents become geladen, please warten</span>
 </div>
 
 <!-- Barrierefreier Fortschrittsbalken -->
@@ -591,9 +591,9 @@ Bei der Usage von Loading-Effekten sollten folgende Accessibilitysaspekte berüc
 ```
 
 ```css
-/* Reduzierte Animation für Benutzer, die dies bevorzugen */
+/* Reduzierte animation for user, the dies bevorzugen */
 @media (prefers-reduced-motion: reduce) {
-  .loading-spinner,
+  .loading-spinners,
   .loading-dots,
   .loading-pulse,
   .loading-bar-indeterminate,
@@ -605,13 +605,13 @@ Bei der Usage von Loading-Effekten sollten folgende Accessibilitysaspekte berüc
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Loading-Effekte werden von allen modernen Browsern unterstützt.
+the meisten Loading-effects become from allen modernen Browsern unterstutzt.
 
-| Effekt | Chrome | Firefox | Safari | Edge | IE11 |
+| effect | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| Spinner | ✓ | ✓ | ✓ | ✓ | ✓ |
+| spinners | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Dots | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Pulse | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Bar | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -619,8 +619,8 @@ Die meisten Loading-Effekte werden von allen modernen Browsern unterstützt.
 | Shimmer | ✓ | ✓ | ✓ | ✓ | Begrenzt |
 | Overlay Blur | ✓ | ✓ | ✓ | ✓ | Nein |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Skeleton-Effekte](/docs/effects/layout/skeleton.md) - Platzhalter für Inhalte
-- [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Transitions-Effekte](/docs/effects/transitions.md) - Übergangseffekte zwischen Statesn 
+- [Skeleton-effects](/docs/effects/layout/skeleton.md) - Platzhalter for contents
+- [Animations-effects](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
+- [Transitions-effects](/docs/effects/transitions.md) - Ubergangseffekte between Statesn 

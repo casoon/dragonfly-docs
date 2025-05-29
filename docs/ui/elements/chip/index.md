@@ -22,7 +22,7 @@ The Chip component is a compact element that represents information, attributes,
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Chip module */
+/* Chip modules */
 @import '@casoon/ui-lib/components/chip.css';
 ```
 
@@ -498,7 +498,7 @@ document.querySelectorAll('.chip__close').forEach(button => {
     <div class="chip-group">
       <span class="chip">
         <span class="chip-status chip-status-online"></span>
-        System
+        system
         <button class="chip-delete" aria-label="Remove">
           <span class="icon icon-close"></span>
         </button>

@@ -1,76 +1,76 @@
-# Positionierungs-Effekte
+# Positionierungs-effects
 
-Positionierungs-Effekte werden verwendet, um Elemente präzise auf der Seite zu platzieren und das Layout zu steuern. Die `@casoon/ui-lib` bietet verschiedene Positionierungs-Effekte, die dazu beitragen, flexible und ansprechende Layouts zu erstellen.
+Positionierungs-effects become verwendet, um elements prazise on the Seite to platzieren and the layout to steuern. the `@casoon/ui-lib` bietet verschiedene Positionierungs-effects, the for that beitragen, flexible and ansprechende layouts to create.
 
 ## Basic Usage
 
-Die grundlegenden Positionierungs-Effekte können auf jedes Element angewendet werden:
+the grundlegenden Positionierungs-effects can on jedes element angewendet become:
 
 ```html
 <div class="position-relative">
   <div class="position-absolute top-0 right-0">
-    Absolut positioniertes Element
+    Absolut positioniertes element
   </div>
 </div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Positionierungs-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Positionierungs-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
 | `.position-static` | Statische Positionierung (Standard) |
 | `.position-relative` | Relative Positionierung |
 | `.position-absolute` | Absolute Positionierung |
 | `.position-fixed` | Fixierte Positionierung |
 | `.position-sticky` | Klebende Positionierung |
-| `.top-0` | Am oberen Rand ausrichten |
-| `.right-0` | Am rechten Rand ausrichten |
-| `.bottom-0` | Am unteren Rand ausrichten |
-| `.left-0` | Am linken Rand ausrichten |
-| `.top-50` | Auf 50% von oben positionieren |
-| `.right-50` | Auf 50% von rechts positionieren |
-| `.bottom-50` | Auf 50% von unten positionieren |
-| `.left-50` | Auf 50% von links positionieren |
-| `.top-100` | Auf 100% von oben positionieren |
-| `.right-100` | Auf 100% von rechts positionieren |
-| `.bottom-100` | Auf 100% von unten positionieren |
-| `.left-100` | Auf 100% von links positionieren |
-| `.translate-middle` | Element zentrieren (mit Transform) |
-| `.translate-middle-x` | Element horizontal zentrieren |
-| `.translate-middle-y` | Element vertikal zentrieren |
-| `.z-index-low` | Niedrige Z-Index-Ebene |
-| `.z-index-normal` | Normale Z-Index-Ebene |
-| `.z-index-high` | Hohe Z-Index-Ebene |
-| `.z-index-top` | Höchste Z-Index-Ebene |
-| `.inset-0` | An allen Seiten auf 0 setzen |
+| `.top-0` | Am oberen margin align |
+| `.right-0` | Am rechten margin align |
+| `.bottom-0` | Am unteren margin align |
+| `.left-0` | Am linken margin align |
+| `.top-50` | on 50% from oben position |
+| `.right-50` | on 50% from rechts position |
+| `.bottom-50` | on 50% from unten position |
+| `.left-50` | on 50% from links position |
+| `.top-100` | on 100% from oben position |
+| `.right-100` | on 100% from rechts position |
+| `.bottom-100` | on 100% from unten position |
+| `.left-100` | on 100% from links position |
+| `.translate-middle` | element center (with Transform) |
+| `.translate-middle-x` | element horizontal center |
+| `.translate-middle-y` | element vertikal center |
+| `.z-index-low` | Niedrige Z-Index-layer |
+| `.z-index-normal` | Normale Z-Index-layer |
+| `.z-index-high` | height Z-Index-layer |
+| `.z-index-top` | Hochste Z-Index-layer |
+| `.inset-0` | on allen Seiten on 0 setzen |
 
 ## Positionierungstypen
 
 ### Statische Positionierung
 
-Die statische Positionierung ist die Standardpositionierung für Elemente:
+the statische Positionierung ist the Standardpositionierung for elements:
 
 ```html
 <div class="position-static">
-  Statisch positioniertes Element
+  Statisch positioniertes element
 </div>
 ```
 
 ### Relative Positionierung
 
-Die relative Positionierung ermöglicht eine Verschiebung relativ zur normalen Position:
+the relative Positionierung ermoglicht a Verschiebung relativ zur normalen position:
 
 ```html
 <div class="position-relative" style="top: 20px; left: 20px;">
-  Relativ positioniertes Element
+  Relativ positioniertes element
 </div>
 ```
 
 ### Absolute Positionierung
 
-Die absolute Positionierung positioniert ein Element relativ zum nächsten positionierten Vorfahren:
+the absolute Positionierung positioniert a element relativ zum nachsten positionierten Vorfahren:
 
 ```html
 <div class="position-relative">
@@ -91,25 +91,25 @@ Die absolute Positionierung positioniert ein Element relativ zum nächsten posit
 
 ### Fixierte Positionierung
 
-Die fixierte Positionierung positioniert ein Element relativ zum Viewport:
+the fixierte Positionierung positioniert a element relativ zum viewport:
 
 ```html
 <div class="position-fixed top-0 left-0">
-  Fixiert oben links im Viewport
+  Fixiert oben links im viewport
 </div>
 
 <div class="position-fixed bottom-0 right-0">
-  Fixiert unten rechts im Viewport
+  Fixiert unten rechts im viewport
 </div>
 ```
 
 ### Klebende (Sticky) Positionierung
 
-Die klebende Positionierung lässt ein Element "kleben", wenn es einen bestimmten Offset zum Viewport erreicht:
+the klebende Positionierung lasst a element "kleben", if it einen bestimmten Offset zum viewport erreicht:
 
 ```html
 <div class="position-sticky top-0">
-  Klebt am oberen Rand beim Scrollen
+  Klebt am oberen margin beim Scrollen
 </div>
 ```
 
@@ -117,7 +117,7 @@ Die klebende Positionierung lässt ein Element "kleben", wenn es einen bestimmte
 
 ### Zentrale Positionierung
 
-Elemente können zentriert positioniert werden:
+elements can zentriert positioniert become:
 
 ```html
 <div class="position-relative">
@@ -127,23 +127,23 @@ Elemente können zentriert positioniert werden:
 </div>
 ```
 
-Horizontale oder vertikale Zentrierung:
+Horizontale or vertikale centering:
 
 ```html
 <div class="position-relative">
   <div class="position-absolute top-50 translate-middle-y">
-    Vertikal zentriert am linken Rand
+    Vertikal zentriert am linken margin
   </div>
   
   <div class="position-absolute left-50 translate-middle-x">
-    Horizontal zentriert am oberen Rand
+    Horizontal zentriert am oberen margin
   </div>
 </div>
 ```
 
 ### Eckenpositionierung
 
-Elemente können in den Ecken positioniert werden:
+elements can in den Ecken positioniert become:
 
 ```html
 <div class="position-relative">
@@ -167,7 +167,7 @@ Elemente können in den Ecken positioniert werden:
 
 ### Seitenpositionierung
 
-Elemente können an den Seiten zentriert positioniert werden:
+elements can on den Seiten zentriert positioniert become:
 
 ```html
 <div class="position-relative">
@@ -191,97 +191,97 @@ Elemente können an den Seiten zentriert positioniert werden:
 
 ### Inset-Positionierung
 
-Die Inset-Positionierung setzt alle Seiten gleichzeitig:
+the Inset-Positionierung setzt all Seiten gleichzeitig:
 
 ```html
 <div class="position-relative">
   <div class="position-absolute inset-0">
-    Füllt den gesamten Container
+    Fullt den gesamten containers
   </div>
 </div>
 ```
 
 ## Z-Index-Steuerung
 
-Die Z-Index-Klassen steuern die Stapelreihenfolge von Elementen:
+the Z-Index-classes steuern the Stapelreihenfolge from Elementen:
 
 ```html
 <div class="position-relative">
   <div class="position-absolute z-index-low">
-    Untere Ebene
+    Untere layer
   </div>
   
   <div class="position-absolute z-index-normal">
-    Mittlere Ebene
+    Mittlere layer
   </div>
   
   <div class="position-absolute z-index-high">
-    Hohe Ebene
+    height layer
   </div>
   
   <div class="position-absolute z-index-top">
-    Oberste Ebene
+    Oberste layer
   </div>
 </div>
 ```
 
 ## Use Cases
 
-### Header und Navigation
+### header and navigation
 
-Fixierte und klebende Header:
+Fixierte and klebende header:
 
 ```html
 <header class="position-fixed top-0 left-0 right-0">
-  Fixierter Header
+  Fixierter header
 </header>
 
 <nav class="position-sticky top-0">
-  Klebende Navigation
+  Klebende navigation
 </nav>
 ```
 
-### Overlay-Elemente
+### Overlay-elements
 
-Vollständige Overlays über der Seite:
+Vollstandige Overlays over the Seite:
 
 ```html
 <div class="position-fixed inset-0 z-index-high bg-overlay">
   <div class="position-absolute top-50 left-50 translate-middle">
-    Zentrierter Overlay-Inhalt
+    Zentrierter Overlay-content
   </div>
 </div>
 ```
 
-### Badges und Indikatoren
+### badges and Indikatoren
 
-Kleine Indikatoren an anderen Elementen:
+Kleine Indikatoren on anderen Elementen:
 
 ```html
 <button class="position-relative">
-  Benachrichtigungen
+  notifications
   <span class="position-absolute top-0 right-0 badge">42</span>
 </button>
 ```
 
-### Tooltips und Popups
+### tooltips and popups
 
-Tooltips um Elemente herum:
+tooltips um elements herum:
 
 ```html
 <div class="position-relative">
-  <button>Hover mich</button>
+  <button>Hover me</button>
   
   <div class="tooltip position-absolute bottom-100 left-50 translate-middle-x">
-    Tooltip-Inhalt
+    tooltip-content
     <div class="tooltip-arrow position-absolute top-100 left-50 translate-middle-x"></div>
   </div>
 </div>
 ```
 
-### Cardn mit überlagernden Elementen
+### Cardn with uberlagernden Elementen
 
-Komplexe Layouts mit mehreren Ebenen:
+Komplexe layouts with mehreren Ebenen:
 
 ```html
 <div class="card position-relative">
@@ -292,18 +292,18 @@ Komplexe Layouts mit mehreren Ebenen:
   </div>
   
   <div class="position-absolute bottom-0 left-0 right-0 p-3 bg-gradient-bottom">
-    <h3 class="card-title">Cardnüberschrift</h3>
+    <h3 class="card-title">Cardnuberschrift</h3>
   </div>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Positionierungs-Effekte können über CSS Variables angepasst werden:
+the Positionierungs-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Z-Index-Werte */
+  /* Z-Index-values */
   --z-index-dropdown: 1000;
   --z-index-sticky: 1020;
   --z-index-fixed: 1030;
@@ -312,23 +312,23 @@ Die Positionierungs-Effekte können über CSS Variables angepasst werden:
   --z-index-popover: 1060;
   --z-index-tooltip: 1070;
   
-  /* Offset-Werte */
+  /* Offset-values */
   --position-offset-sm: 0.25rem;
   --position-offset-md: 0.5rem;
   --position-offset-lg: 1rem;
   --position-offset-xl: 2rem;
   
-  /* Sticky-Header-Höhe */
+  /* Sticky-header-height */
   --sticky-header-height: 60px;
   
-  /* Abstand zur Viewport-Kante für fixierte Elemente */
+  /* spacing zur viewport-Kante for fixierte elements */
   --fixed-element-margin: 1rem;
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Examples für die CSS-Implementierung der Positionierungs-Effekte:
+Examples for the CSS-Implementation the Positionierungs-effects:
 
 ```css
 /* Grundlegende Positionierungsklassen */
@@ -443,38 +443,38 @@ Examples für die CSS-Implementierung der Positionierungs-Effekte:
 
 ## Accessibility
 
-Bei der Usage von Positionierungs-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Positionierungs-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Tastaturbedienung**: Sicherstellen, dass fixierte und absolute Elemente per Tastatur zugänglich sind
-2. **Fokus-Management**: Bei der Usage von Overlays und Modals den Fokus richtig verwalten
-3. **Sichtbarkeit**: Sicherstellen, dass wichtige Inhalte nicht durch fixierte Elemente verdeckt werden
-4. **Lesbarkeit**: Ausreichenden Kontrast für überlagerte Texte gewährleisten
+1. **Tastaturbedienung**: Sicherstellen, that fixierte and absolute elements per Tastatur zuganglich sind
+2. **Fokus-Management**: at the Usage from Overlays and modals den Fokus richtig verwalten
+3. **visibility**: Sicherstellen, that wichtige contents not through fixierte elements verdeckt become
+4. **Lesbarkeit**: Ausreichenden Kontrast for uberlagerte Texte gewahrleisten
 
 ```html
-<!-- Barrierefreies fixiertes Menü -->
+<!-- Barrierefreies fixiertes Menu -->
 <nav class="position-fixed top-0 left-0 right-0" aria-label="Hauptnavigation">
   <button class="skip-link" tabindex="0">Zum Hauptinhalt springen</button>
   <!-- Navigationsinhalt -->
 </nav>
 
 <main id="main-content" tabindex="-1">
-  <!-- Hauptinhalt mit ausreichendem Abstand zum fixierten Menü -->
+  <!-- Hauptinhalt with ausreichendem spacing zum fixierten Menu -->
 </main>
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Positionierungs-Effekte werden von allen modernen Browsern unterstützt.
+the meisten Positionierungs-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | position: static/relative/absolute/fixed | ✓ | ✓ | ✓ | ✓ | ✓ |
 | position: sticky | ✓ | ✓ | ✓ | ✓ | Nein |
-| transform für Zentrierung | ✓ | ✓ | ✓ | ✓ | ✓ |
+| transform for centering | ✓ | ✓ | ✓ | ✓ | ✓ |
 | z-index-Ebenen | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Transform-Effekte](/docs/effects/layout/transforms.md) - Transformationseffekte für Elemente
-- [Flex-Layout](/docs/effects/layout/flex.md) - Flexible Box-Layout-Effekte
-- [Grid-Layout](/docs/effects/layout/grid.md) - Grid-Layout-Effekte 
+- [Transform-effects](/docs/effects/layout/transforms.md) - Transformationseffekte for elements
+- [Flex-layout](/docs/effects/layout/flex.md) - Flexible box-layout-effects
+- [grid-layout](/docs/effects/layout/grid.md) - grid-layout-effects 

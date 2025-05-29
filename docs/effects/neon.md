@@ -3,89 +3,89 @@ title: Neon Effects
 category: Effects
 ---
 
-# Neon-Effekte
+# Neon-effects
 
-Die Neon-Effekte der Casoon UI Library bieten eine Sammlung von leuchtenden, kräftigen visuellen Effekten, die an klassische Neonröhren erinnern. Diese Effekte verleihen Ihrer Benutzeroberfläche einen energiegeladenen, modernen Look mit hohem visuellen Kontrast.
+the Neon-effects the Casoon UI Library bieten a Sammlung from leuchtenden, kraftigen visuellen Effekten, the on klassische Neonrohren erinnern. these effects verleihen Ihrer Benutzeroberflache einen energiegeladenen, modernen Look with hohem visuellen Kontrast.
 
-## Überblick
+## Uberblick
 
-Neon-Effekte kombinieren leuchtende Colors mit einem charakteristischen Glühen, um ein Erscheinungsbild zu erzeugen, das an klassische Neonlichter erinnert. Sie sind ideal für Akzente, Hervorhebungen und Elemente, die Aufmerksamkeit erregen sollen. Die Neon-Effekte der Casoon UI Library sind vollständig anpassbar und für verschiedene UI-Elemente optimiert.
+Neon-effects combine leuchtende Colors with einem charakteristischen Gluhen, um a Erscheinungsbild to erzeugen, the on klassische Neonlichter erinnert. them sind ideal for Akzente, Hervorhebungen and elements, the Aufmerksamkeit erregen should. the Neon-effects the Casoon UI Library sind vollstandig anpassbar and for verschiedene UI-elements optimiert.
 
 ## Installation
 
-Importieren Sie das Neon-Effekte-Modul über CSS:
+import them the Neon-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/neon.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
-### Grundlegende Neon-Effekte
+### Grundlegende Neon-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.neon` | Standardmäßiger Neon-Effekt |
-| `.neon-sm` | Kleiner Neon-Effekt mit schmalerem Glühen |
-| `.neon-md` | Mittlerer Neon-Effekt (Standard) |
-| `.neon-lg` | Großer Neon-Effekt mit breiterem Glühen |
-| `.neon-xl` | Extra großer Neon-Effekt mit sehr breitem Glühen |
-| `.neon-text` | Neon-Effekt speziell für Textelemente optimiert |
-| `.neon-border` | Neon-Effekt nur für Ränder |
-| `.neon-box` | Neon-Effekt für Boxen und Container |
-| `.neon-outline` | Neon-Effekt als Outline um Elemente |
-| `.neon-inner` | Nach innen gerichteter Neon-Effekt |
-| `.neon-inset` | Kombination aus innerem und äußerem Neon-Effekt |
+| `.neon` | Standardmassiger Neon-effect |
+| `.neon-sm` | smaller Neon-effect with schmalerem Gluhen |
+| `.neon-md` | Mittlerer Neon-effect (Standard) |
+| `.neon-lg` | Grosser Neon-effect with breiterem Gluhen |
+| `.neon-xl` | Extra grosser Neon-effect with very breitem Gluhen |
+| `.neon-text` | Neon-effect speziell for Textelemente optimiert |
+| `.neon-border` | Neon-effect only for Rander |
+| `.neon-box` | Neon-effect for boxes and containers |
+| `.neon-outline` | Neon-effect as Outline um elements |
+| `.neon-inner` | after innen gerichteter Neon-effect |
+| `.neon-inset` | Kombination aus innerem and ausserem Neon-effect |
 
 ### Neon-Farbvarianten
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.neon-blue` | Blauer Neon-Effekt (#00f2ff) |
-| `.neon-red` | Roter Neon-Effekt (#ff003c) |
-| `.neon-green` | Grüner Neon-Effekt (#00ff66) |
-| `.neon-pink` | Rosa Neon-Effekt (#ff00ff) |
-| `.neon-purple` | Violetter Neon-Effekt (#9d00ff) |
-| `.neon-yellow` | Gelber Neon-Effekt (#fffc00) |
-| `.neon-orange` | Oranger Neon-Effekt (#ff9900) |
-| `.neon-cyan` | Cyan-farbener Neon-Effekt (#00ffff) |
-| `.neon-lime` | Limetten-grüner Neon-Effekt (#b3ff00) |
-| `.neon-magenta` | Magenta-farbener Neon-Effekt (#ff00b3) |
-| `.neon-white` | Weißer Neon-Effekt (#ffffff) |
-| `.neon-primary` | Neon-Effekt in Primärfarbe |
-| `.neon-secondary` | Neon-Effekt in Sekundärfarbe |
-| `.neon-info` | Neon-Effekt in Informationsfarbe |
-| `.neon-success` | Neon-Effekt in Erfolgsfarbe |
-| `.neon-warning` | Neon-Effekt in Warnfarbe |
-| `.neon-danger` | Neon-Effekt in Gefahrenfarbe |
+| `.neon-blue` | Blauer Neon-effect (#00f2ff) |
+| `.neon-red` | Roter Neon-effect (#ff003c) |
+| `.neon-green` | Gruner Neon-effect (#00ff66) |
+| `.neon-pink` | Rosa Neon-effect (#ff00ff) |
+| `.neon-purple` | Violetter Neon-effect (#9d00ff) |
+| `.neon-yellow` | Gelber Neon-effect (#fffc00) |
+| `.neon-orange` | Oranger Neon-effect (#ff9900) |
+| `.neon-cyan` | Cyan-farbener Neon-effect (#00ffff) |
+| `.neon-lime` | Limetten-gruner Neon-effect (#b3ff00) |
+| `.neon-magenta` | Magenta-farbener Neon-effect (#ff00b3) |
+| `.neon-white` | Weisser Neon-effect (#ffffff) |
+| `.neon-primary` | Neon-effect in Primarfarbe |
+| `.neon-secondary` | Neon-effect in Sekundarfarbe |
+| `.neon-info` | Neon-effect in Informationsfarbe |
+| `.neon-success` | Neon-effect in Erfolgsfarbe |
+| `.neon-warning` | Neon-effect in Warnfarbe |
+| `.neon-danger` | Neon-effect in Gefahrenfarbe |
 
-### Interaktive Neon-Effekte
+### Interaktive Neon-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.neon-hover` | Zeigt Neon-Effekt bei Hover an |
-| `.neon-active` | Zeigt Neon-Effekt im aktiven Zustand an |
-| `.neon-focus` | Zeigt Neon-Effekt bei Fokus an |
-| `.neon-flash` | Aufblitzender Neon-Effekt |
-| `.neon-pulse` | Pulsierender Neon-Effekt |
-| `.neon-flicker` | Flackernder Neon-Effekt wie bei echten Neonröhren |
-| `.neon-breathe` | Sanft pulsierender Neon-Effekt |
-| `.neon-gradient` | Neon-Effekt mit Farbverlauf |
-| `.neon-rainbow` | Neon-Effekt mit Regenbogenfarben |
+| `.neon-hover` | Zeigt Neon-effect at Hover on |
+| `.neon-active` | Zeigt Neon-effect im aktiven state on |
+| `.neon-focus` | Zeigt Neon-effect at Fokus on |
+| `.neon-flash` | Aufblitzender Neon-effect |
+| `.neon-pulse` | Pulsierender Neon-effect |
+| `.neon-flicker` | Flackernder Neon-effect how at echten Neonrohren |
+| `.neon-breathe` | Sanft pulsierender Neon-effect |
+| `.neon-gradient` | Neon-effect with gradient |
+| `.neon-rainbow` | Neon-effect with Regenbogenfarben |
 
-### Element-spezifische Neon-Effekte
+### element-spezifische Neon-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.neon-button` | Neon-Effekt für Buttons |
-| `.neon-card` | Neon-Effekt für Cardn |
-| `.neon-icon` | Neon-Effekt für Icons |
-| `.neon-link` | Neon-Effekt für Links |
-| `.neon-input` | Neon-Effekt für Inputer |
-| `.neon-heading` | Neon-Effekt für Überschriften |
-| `.neon-badge` | Neon-Effekt für Badges |
-| `.neon-nav` | Neon-Effekt für Navigationselemente |
-| `.neon-loader` | Neon-Effekt für Ladeanimationen |
+| `.neon-button` | Neon-effect for buttons |
+| `.neon-card` | Neon-effect for Cardn |
+| `.neon-icon` | Neon-effect for icons |
+| `.neon-link` | Neon-effect for links |
+| `.neon-input` | Neon-effect for Inputer |
+| `.neon-heading` | Neon-effect for Uberschriften |
+| `.neon-badge` | Neon-effect for badges |
+| `.neon-nav` | Neon-effect for Navigationselemente |
+| `.neon-loader` | Neon-effect for Ladeanimationen |
 
 ## Examples
 
@@ -123,14 +123,14 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
 </style>
 ```
 
-### Neon-Buttons
+### Neon-buttons
 
 ```html
 <div class="neon-button-examples">
-  <button class="neon-button neon-border neon-blue">BLUE BUTTON</button>
-  <button class="neon-button neon-border neon-red">RED BUTTON</button>
-  <button class="neon-button neon-border neon-green">GREEN BUTTON</button>
-  <button class="neon-button neon-border neon-pink">PINK BUTTON</button>
+  <button class="neon-button neon-border neon-blue">BLUE button</button>
+  <button class="neon-button neon-border neon-red">RED button</button>
+  <button class="neon-button neon-border neon-green">GREEN button</button>
+  <button class="neon-button neon-border neon-pink">PINK button</button>
   <button class="neon-button neon-border neon-hover neon-purple">HOVER ME</button>
   <button class="neon-button neon-border neon-pulse neon-cyan">PULSING</button>
 </div>
@@ -167,22 +167,22 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
 <div class="neon-card-examples">
   <div class="neon-card neon-border neon-blue">
     <h3>Neon Blue Card</h3>
-    <p>Eine Card mit blauem Neon-Effekt an den Rändern.</p>
+    <p>a Card with blauem Neon-effect on den Randern.</p>
   </div>
   
   <div class="neon-card neon-border neon-red">
     <h3>Neon Red Card</h3>
-    <p>Eine Card mit rotem Neon-Effekt an den Rändern.</p>
+    <p>a Card with rotem Neon-effect on den Randern.</p>
   </div>
   
   <div class="neon-card neon-box neon-green">
-    <h3>Neon Green Box</h3>
-    <p>Eine Card mit grünem Neon-Effekt für die gesamte Box.</p>
+    <h3>Neon Green box</h3>
+    <p>a Card with grunem Neon-effect for the gesamte box.</p>
   </div>
   
   <div class="neon-card neon-border neon-hover neon-pink">
     <h3>Hover Card</h3>
-    <p>Bewegen Sie den Mauszeiger über diese Card für einen Neon-Effekt.</p>
+    <p>Bewegen them den Mauszeiger over these Card for einen Neon-effect.</p>
   </div>
 </div>
 
@@ -217,7 +217,7 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
 </style>
 ```
 
-### Animierte Neon-Effekte
+### Animierte Neon-effects
 
 ```html
 <div class="neon-animation-examples">
@@ -282,7 +282,7 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
 </style>
 ```
 
-### Neon-Navigationsmenü
+### Neon-Navigationsmenu
 
 ```html
 <div class="neon-nav-example">
@@ -290,7 +290,7 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
     <a href="#" class="neon-nav-item neon-border neon-blue active">Home</a>
     <a href="#" class="neon-nav-item neon-border neon-hover neon-red">Produkte</a>
     <a href="#" class="neon-nav-item neon-border neon-hover neon-green">Dienstleistungen</a>
-    <a href="#" class="neon-nav-item neon-border neon-hover neon-pink">Über uns</a>
+    <a href="#" class="neon-nav-item neon-border neon-hover neon-pink">over us</a>
     <a href="#" class="neon-nav-item neon-border neon-hover neon-purple">Kontakt</a>
   </nav>
 </div>
@@ -326,13 +326,13 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Neon-Effekte können über CSS Variables angepasst werden:
+the Neon-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Neon-Parameter */
+  /* Grundlegende Neon-parameter */
   --neon-blur-radius: 5px;
   --neon-spread-radius: 3px;
   --neon-opacity: 0.8;
@@ -369,12 +369,12 @@ Die Neon-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert:
+the grundlegende Neon-effect wird through CSS-shadow and Farbwerte implementiert:
 
 ```css
-/* Grundlegender Neon-Text-Effekt */
+/* Grundlegender Neon-Text-effect */
 .neon-text {
   color: #fff;
   text-shadow:
@@ -382,7 +382,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
     0 0 var(--neon-spread-radius) var(--neon-color);
 }
 
-/* Neon-Border-Effekt */
+/* Neon-Border-effect */
 .neon-border {
   border: 2px solid var(--neon-color);
   box-shadow:
@@ -391,7 +391,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
   color: var(--neon-color);
 }
 
-/* Neon-Box-Effekt */
+/* Neon-box-effect */
 .neon-box {
   box-shadow:
     0 0 var(--neon-blur-radius) var(--neon-color),
@@ -401,7 +401,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
   color: #fff;
 }
 
-/* Neon-Outline-Effekt */
+/* Neon-Outline-effect */
 .neon-outline {
   outline: 2px solid var(--neon-color);
   outline-offset: 2px;
@@ -418,7 +418,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
   --neon-color: var(--neon-red-color);
 }
 
-/* Weitere Farbvarianten... */
+/* additional Farbvarianten... */
 
 /* Neon-Sizesvarianten */
 .neon-sm {
@@ -431,7 +431,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
   --neon-spread-radius: var(--neon-lg-spread);
 }
 
-/* Neon-Animationen */
+/* Neon-animations */
 .neon-pulse {
   animation: neon-pulse var(--neon-pulse-duration) infinite alternate;
 }
@@ -467,7 +467,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
   }
 }
 
-/* Weitere Animationen... */
+/* additional animations... */
 
 /* Interaktive States */
 .neon-hover {
@@ -485,9 +485,9 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
 }
 ```
 
-## Fortgeschrittene Neon-Effekte
+## Fortgeschrittene Neon-effects
 
-### Neon-Regenbogen-Effekt
+### Neon-Regenbogen-effect
 
 ```css
 .neon-rainbow {
@@ -506,7 +506,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
 }
 ```
 
-### Neon-Gradient-Effekt
+### Neon-Gradient-effect
 
 ```css
 .neon-gradient {
@@ -525,7 +525,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
 }
 ```
 
-### Neon-Text mit Animation
+### Neon-Text with animation
 
 ```css
 .neon-text-animated {
@@ -569,14 +569,14 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
 
 ## Accessibility
 
-Bei der Usage von Neon-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Neon-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass Text trotz Neon-Effekt ausreichend lesbar bleibt
-2. **Flackernde Effekte**: Bieten Sie eine Möglichkeit, stark flackernde Effekte zu deaktivieren, da diese Anfälle bei empfindlichen Personen auslösen können
-3. **Farbblindheit**: Verlassen Sie sich nicht nur auf Colors, um Informationen zu vermitteln
+1. **Kontrast**: ensure, that Text despite Neon-effect ausreichend lesbar bleibt
+2. **Flackernde effects**: Bieten them a Moglichkeit, stark flackernde effects to deactivate, da these Anfalle at empfindlichen Personen auslosen can
+3. **Farbblindheit**: Verlassen them oneself not only on Colors, um Informationen to vermitteln
 
 ```css
-/* Verbesserte Lesbarkeit für Neon-Text */
+/* Verbesserte Lesbarkeit for Neon-Text */
 .neon-text-accessible {
   color: var(--neon-color);
   text-shadow:
@@ -585,7 +585,7 @@ Bei der Usage von Neon-Effekten sollten folgende Accessibilitysaspekte berücksi
   font-weight: bold;
 }
 
-/* Reduzierte Animation für Benutzer mit Empfindlichkeiten */
+/* Reduzierte animation for user with Empfindlichkeiten */
 @media (prefers-reduced-motion: reduce) {
   .neon-flicker,
   .neon-flash,
@@ -599,20 +599,20 @@ Bei der Usage von Neon-Effekten sollten folgende Accessibilitysaspekte berücksi
 
 ## Performance-Optimierung
 
-Neon-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Neon-effects can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Anzahl begrenzen**: Verwenden Sie Neon-Effekte sparsam und nur für wichtige Elemente
-2. **Animations-Performance**: Verwenden Sie für Animationen Eigenschaften, die weniger Repaints erfordern (transform, opacity)
-3. **GPU-Beschleunigung**: Nutzen Sie `will-change` oder `transform: translateZ(0)` für Hardware-Beschleunigung
+1. **Anzahl begrenzen**: use them Neon-effects sparsam and only for wichtige elements
+2. **Animations-Performance**: use them for animations properties, the less Repaints erfordern (transform, opacity)
+3. **GPU-Beschleunigung**: use them `will-change` or `transform: translateZ(0)` for Hardware-Beschleunigung
 
 ```css
-/* Performance-Optimierung für Neon-Effekte */
+/* Performance-Optimierung for Neon-effects */
 .neon-optimized {
   will-change: box-shadow, text-shadow;
   transform: translateZ(0);
 }
 
-/* Reduzierte Komplexität für ältere Geräte */
+/* Reduzierte Komplexitat for altere Gerate */
 @media (prefers-reduced-motion: reduce) {
   .neon-text,
   .neon-border,
@@ -623,17 +623,17 @@ Neon-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese 
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Neon-Effekte werden von allen modernen Browsern unterstützt.
+the Neon-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | text-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
 | box-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
-| Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| animations | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | Gradient Text | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Effekte nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
-Neon-Effekte werden von allen modernen Browsern unterstützt. Für ältere Browser werden Fallbacks mit einfacheren Hervorhebungen bereitgestellt. 
+for altere Browser, the some effects not vollstandig unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 
+Neon-effects become from allen modernen Browsern unterstutzt. for altere Browser become Fallbacks with einfacheren Hervorhebungen bereitgestellt. 

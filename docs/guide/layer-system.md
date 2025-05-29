@@ -1,15 +1,15 @@
 ---
-title: Layer System
+title: Layer system
 category: Guide
 ---
 
-# Layer System
+# Layer system
 
-The CSS Layer System of the Casoon UI Library uses modern CSS features like `@layer` to control the specificity and cascading of styles. This creates a predictable and maintainable styling system.
+The CSS Layer system of the Casoon UI Library uses modern CSS features like `@layer` to control the specificity and cascading of styles. This creates a predictable and maintainable styling system.
 
 > **Note on the current version:** The separate `custom-properties` layer has been integrated into the `tokens` layer to simplify the structure and improve maintainability.
 
-## Structure of the Layer System
+## Structure of the Layer system
 
 The layers are defined in a clear hierarchy:
 

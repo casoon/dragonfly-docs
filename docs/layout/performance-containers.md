@@ -1,42 +1,42 @@
 ---
 title: Performance Containers
-category: Layout
+category: layout
 ---
 
 # Performance Containers
 
-Die Casoon UI Library bietet spezielle Performance-Container, die auf Leistungsoptimierung ausgerichtet sind. Diese Dokumentation erklärt, wie Sie diese speziellen Container verwenden können, um die Rendering-Leistung und Ladezeiten Ihrer Anwendung zu verbessern.
+The Casoon UI Library offers special performance containers that are designed for performance optimization. This documentation explains how you can use these special containers to improve the rendering performance and load times of your application.
 
 ## Overview
 
-Performance-Container optimieren die Anwendungsleistung durch folgende Mechanismen:
+Performance containers optimize application performance through the following mechanisms:
 
-1. **Virtualisierung** - Effizientes Rendering großer Datensätze
-2. **Lazy Loading** - Verzögertes Laden von Inhalten
-3. **Lazy Rendering** - Verzögertes Rendern von Components
-4. **Content-Slicing** - Aufteilung großer Inhaltsblöcke
-5. **Optimized Media** - Optimierte Darstellung von Medieninhalten
+1. **Virtualization** - Efficient rendering of large datasets
+2. **Lazy Loading** - Delayed loading of content
+3. **Lazy Rendering** - Delayed rendering of components
+4. **Content-Slicing** - Dividing large content blocks
+5. **Optimized Media** - Optimized display of media content
 
-## Virtualized Container
+## Virtualized containers
 
-Container für die effiziente Darstellung langer Listen oder Tablen:
+containers for efficient display of long lists or tables:
 
 ```html
-<div class="virtualized-container" data-height="500" data-item-height="50">
-  <!-- Platzhalter für virtualisierte Elemente -->
+<div class="virtualized-containers" data-height="500" data-item-height="50">
+  <!-- Placeholder for virtualized elements -->
   <template id="item-template">
     <div class="list-item">
-      <h3>Element-Titel</h3>
-      <p>Element-Beschreibung</p>
+      <h3>element-Title</h3>
+      <p>element-Description</p>
     </div>
   </template>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.virtualized-container {
+.virtualized-containers {
   position: relative;
   overflow: auto;
   width: 100%;
@@ -52,21 +52,21 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for functionality:
 
 ```javascript
 class VirtualizedContainer {
-  constructor(container, options = {}) {
-    this.container = container;
+  constructor(containers, options = {}) {
+    this.containers = containers;
     this.options = {
-      itemHeight: options.itemHeight || parseInt(container.dataset.itemHeight) || 50,
+      itemHeight: options.itemHeight || parseInt(containers.dataset.itemHeight) || 50,
       bufferSize: options.bufferSize || 5,
       data: options.data || []
     };
     
     this.visibleItems = [];
     this.totalHeight = this.options.data.length * this.options.itemHeight;
-    this.template = document.getElementById(container.dataset.template || 'item-template');
+    this.template = document.getElementById(containers.dataset.template || 'item-template');
     
     this.initContainer();
     this.bindEvents();
@@ -74,15 +74,15 @@ class VirtualizedContainer {
   }
   
   initContainer() {
-    // Virtualisierte Content-Wrapper erstellen
+    // Virtualized Content-wrappers create
     this.contentWrapper = document.createElement('div');
     this.contentWrapper.className = 'virtualized-content';
     this.contentWrapper.style.height = `${this.totalHeight}px`;
-    this.container.appendChild(this.contentWrapper);
+    this.containers.appendChild(this.contentWrapper);
   }
   
   bindEvents() {
-    this.container.addEventListener('scroll', () => {
+    this.containers.addEventListener('scroll', () => {
       requestAnimationFrame(() => this.render());
     });
     
@@ -92,17 +92,17 @@ class VirtualizedContainer {
   }
   
   render() {
-    const scrollTop = this.container.scrollTop;
-    const containerHeight = this.container.clientHeight;
+    const scrollTop = this.containers.scrollTop;
+    const containerHeight = this.containers.clientHeight;
     
-    // Berechnen, welche Items sichtbar sind
+    // Calculate which items are visible
     const startIndex = Math.max(0, Math.floor(scrollTop / this.options.itemHeight) - this.options.bufferSize);
     const endIndex = Math.min(
       this.options.data.length - 1,
       Math.ceil((scrollTop + containerHeight) / this.options.itemHeight) + this.options.bufferSize
     );
     
-    // Aktuell sichtbare Items erstellen/aktualisieren
+    // Current visible items create/update
     const itemsToRender = [];
     for (let i = startIndex; i <= endIndex; i++) {
       itemsToRender.push({
@@ -112,12 +112,12 @@ class VirtualizedContainer {
       });
     }
     
-    // DOM-Aktualisierung
+    // DOM update
     this.updateDOM(itemsToRender);
   }
   
   updateDOM(itemsToRender) {
-    // Aktuelle Items entfernen, die nicht mehr sichtbar sind
+    // Remove current items that are no longer visible
     const currentItems = Array.from(this.contentWrapper.children);
     const newIndexes = itemsToRender.map(item => item.index);
     
@@ -128,7 +128,7 @@ class VirtualizedContainer {
       }
     });
     
-    // Neue Items hinzufügen, die jetzt sichtbar sind
+    // Add new items that are now visible
     itemsToRender.forEach(item => {
       if (!this.contentWrapper.querySelector(`[data-index="${item.index}"]`)) {
         const element = this.createItemElement(item);
@@ -145,14 +145,14 @@ class VirtualizedContainer {
     element.style.width = '100%';
     element.style.height = `${this.options.itemHeight}px`;
     
-    // Daten in das Template einfügen
+    // Populate template with data
     this.populateTemplate(element, item.data);
     
     return element;
   }
   
   populateTemplate(element, data) {
-    // Implementierung je nach Datenstruktur
+    // Implementation based on data structure
     // Example:
     const title = element.querySelector('h3');
     const description = element.querySelector('p');
@@ -170,22 +170,22 @@ class VirtualizedContainer {
   }
 }
 
-// Initialisierung
-document.querySelectorAll('.virtualized-container').forEach(container => {
-  new VirtualizedContainer(container);
+// Initialization
+document.querySelectorAll('.virtualized-containers').forEach(containers => {
+  new VirtualizedContainer(containers);
 });
 ```
 
-## Lazy Load Container
+## Lazy Load containers
 
-Container für verzögertes Laden von Inhalten beim Scrollen:
+containers for delayed loading of content when scrolling:
 
 ```html
-<div class="lazy-load-container">
+<div class="lazy-load-containers">
   <img class="lazy-image" data-src="large-image.jpg" src="placeholder.jpg" alt="Lazy-loaded image">
   <div class="lazy-content" data-src="/api/content">
     <div class="skeleton-content">
-      <!-- Skeleton-Platzhalter während des Ladens -->
+      <!-- Skeleton placeholder during loading -->
       <div class="skeleton-line"></div>
       <div class="skeleton-line"></div>
       <div class="skeleton-line"></div>
@@ -194,10 +194,10 @@ Container für verzögertes Laden von Inhalten beim Scrollen:
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.lazy-load-container {
+.lazy-load-containers {
   width: 100%;
 }
 
@@ -229,10 +229,10 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for functionality:
 
 ```javascript
-// Intersection Observer für Lazy Loading
+// Intersection Observer for Lazy Loading
 const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -262,50 +262,50 @@ const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
               element.classList.add('loaded');
             })
             .catch(error => {
-              console.error('Fehler beim Laden des Inhalts:', error);
+              console.error('Error loading content:', error);
             });
         }
       }
       
-      // Element nicht mehr beobachten, nachdem es geladen wurde
+      // No longer observe element after it has been loaded
       observer.unobserve(element);
     }
   });
 }, {
-  rootMargin: '100px 0px' // 100px Buffer vor dem Element wird sichtbar
+  rootMargin: '100px 0px' // 100px buffer before element becomes visible
 });
 
-// Alle Lazy-Load-Elemente beobachten
+// Observe all lazy-load elements
 document.querySelectorAll('.lazy-image, .lazy-content').forEach(element => {
   lazyLoadObserver.observe(element);
 });
 ```
 
-## Deferred Render Container
+## Deferred Render containers
 
-Container für das verzögerte Rendern von nicht-kritischen UI-Elementen:
+containers for delayed rendering of non-critical UI elements:
 
 ```html
-<div class="deferred-render-container" data-priority="low" data-render-delay="1000">
+<div class="deferred-render-containers" data-priority="low" data-render-delay="1000">
   <template>
-    <!-- Komplexe UI-Komponente, die verzögert gerendert werden soll -->
+    <!-- Complex UI component that should be rendered with delay -->
     <div class="complex-component">
-      <h3>Komplexe Komponente</h3>
-      <div class="chart"><!-- Komplexes Chart --></div>
-      <div class="data-table"><!-- Komplexe Table --></div>
+      <h3>Complex Component</h3>
+      <div class="chart"><!-- Complex chart --></div>
+      <div class="data-table"><!-- Complex table --></div>
     </div>
   </template>
   <div class="placeholder">
-    <!-- Platzhalter während des verzögerten Renderings -->
-    <p>Lade Komponente...</p>
+    <!-- Placeholder during delayed rendering -->
+    <p>Loading component...</p>
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.deferred-render-container {
+.deferred-render-containers {
   width: 100%;
 }
 
@@ -317,14 +317,14 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for functionality:
 
 ```javascript
-// Verzögertes Rendering von Components
+// Delayed rendering of components
 function initDeferredRendering() {
-  const containers = document.querySelectorAll('.deferred-render-container');
+  const containers = document.querySelectorAll('.deferred-render-containers');
   
-  // Nach Priorität sortieren (high -> medium -> low)
+  // Sort by priority (high -> medium -> low)
   const priorityOrder = { high: 0, medium: 1, low: 2 };
   const sortedContainers = Array.from(containers).sort((a, b) => {
     const priorityA = priorityOrder[a.dataset.priority || 'medium'] || 1;
@@ -332,58 +332,58 @@ function initDeferredRendering() {
     return priorityA - priorityB;
   });
   
-  // Gestaffelte Renderzeiten basierend auf Priorität
+  // Staggered render times based on priority
   let renderQueue = Promise.resolve();
   
-  sortedContainers.forEach(container => {
-    const template = container.querySelector('template');
-    const placeholder = container.querySelector('.placeholder');
-    const delay = parseInt(container.dataset.renderDelay) || 0;
+  sortedContainers.forEach(containers => {
+    const template = containers.querySelector('template');
+    const placeholder = containers.querySelector('.placeholder');
+    const delay = parseInt(containers.dataset.renderDelay) || 0;
     
     if (!template || !placeholder) return;
     
     renderQueue = renderQueue.then(() => {
       return new Promise(resolve => {
         setTimeout(() => {
-          // Template rendern
+          // Render template
           const content = document.importNode(template.content, true);
           placeholder.replaceWith(content);
           
-          // Event auslösen, dass Komponente gerendert wurde
-          container.dispatchEvent(new CustomEvent('componentRendered'));
+          // Trigger event that component what rendered
+          containers.dispatchEvent(new CustomEvent('componentRendered'));
           
-          // Kurze Pause zwischen Rendervorgängen
-          setTimeout(resolve, 16); // ~1 Frame bei 60fps
+          // Short pause between render operations
+          setTimeout(resolve, 16); // ~1 frame at 60fps
         }, delay);
       });
     });
   });
 }
 
-// Verzögertes Rendering starten, nachdem die Seite geladen ist
+// Start delayed rendering after page is loaded
 window.addEventListener('load', () => {
-  // Kritische Inhalte zuerst rendern lassen
+  // Let critical content render first
   setTimeout(initDeferredRendering, 200);
 });
 ```
 
-## Chunk Container
+## Chunk containers
 
-Container für die Aufteilung großer Inhaltslisten in kleinere Chunks:
+containers for dividing large content lists into smaller chunks:
 
 ```html
-<div class="chunk-container" data-chunk-size="10" data-total-items="100">
+<div class="chunk-containers" data-chunk-size="10" data-total-items="100">
   <div class="chunk-content">
-    <!-- Hier werden die ersten Chunks gerendert -->
+    <!-- Here the first chunks will be rendered -->
   </div>
-  <button class="chunk-load-more">Mehr laden</button>
+  <button class="chunk-load-more">Load more</button>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.chunk-container {
+.chunk-containers {
   width: 100%;
 }
 
@@ -404,20 +404,20 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for functionality:
 
 ```javascript
 class ChunkContainer {
-  constructor(container) {
-    this.container = container;
-    this.chunkSize = parseInt(container.dataset.chunkSize) || 10;
-    this.totalItems = parseInt(container.dataset.totalItems) || 100;
+  constructor(containers) {
+    this.containers = containers;
+    this.chunkSize = parseInt(containers.dataset.chunkSize) || 10;
+    this.totalItems = parseInt(containers.dataset.totalItems) || 100;
     this.currentChunk = 0;
-    this.contentContainer = container.querySelector('.chunk-content');
-    this.loadMoreButton = container.querySelector('.chunk-load-more');
+    this.contentContainer = containers.querySelector('.chunk-content');
+    this.loadMoreButton = containers.querySelector('.chunk-load-more');
     
     this.initEvents();
-    this.loadNextChunk(); // Ersten Chunk automatisch laden
+    this.loadNextChunk(); // Automatically load first chunk
   }
   
   initEvents() {
@@ -433,30 +433,30 @@ class ChunkContainer {
     const endIndex = Math.min(startIndex + this.chunkSize, this.totalItems);
     
     if (startIndex >= this.totalItems) {
-      // Alle Items wurden geladen
+      // All items have been loaded
       if (this.loadMoreButton) {
         this.loadMoreButton.disabled = true;
-        this.loadMoreButton.textContent = 'Alle Inhalte geladen';
+        this.loadMoreButton.textContent = 'All content loaded';
       }
       return;
     }
     
-    // Hier würde normalerweise ein API-Aufruf stattfinden
-    // In diesem Example generieren wir Dummy-Inhalte
+    // Normally on API call would happen here
+    // in this example we generate dummy content
     this.fetchChunkData(startIndex, endIndex).then(items => {
       this.renderChunk(items);
       this.currentChunk++;
       
-      // Prüfen, ob wir das Ende erreicht haben
+      // Check if we've reached the end
       if (endIndex >= this.totalItems && this.loadMoreButton) {
         this.loadMoreButton.disabled = true;
-        this.loadMoreButton.textContent = 'Alle Inhalte geladen';
+        this.loadMoreButton.textContent = 'All content loaded';
       }
     });
   }
   
   fetchChunkData(startIndex, endIndex) {
-    // Simulation eines API-Aufrufs
+    // Simulation of on API call
     return new Promise(resolve => {
       setTimeout(() => {
         const items = [];
@@ -464,11 +464,11 @@ class ChunkContainer {
           items.push({
             id: i,
             title: `Item ${i + 1}`,
-            description: `Beschreibung für Item ${i + 1}`
+            description: `Description for Item ${i + 1}`
           });
         }
         resolve(items);
-      }, 500); // Simulierte Netzwerklatenz
+      }, 500); // Simulated network latency
     });
   }
   
@@ -485,43 +485,43 @@ class ChunkContainer {
   }
 }
 
-// Initialisierung
-document.querySelectorAll('.chunk-container').forEach(container => {
-  new ChunkContainer(container);
+// Initialization
+document.querySelectorAll('.chunk-containers').forEach(containers => {
+  new ChunkContainer(containers);
 });
 ```
 
-## Media Optimization Container
+## Media Optimization containers
 
-Container für die optimierte Darstellung von Bildern und Videos:
+containers for optimized display of images and videos:
 
 ```html
-<div class="media-optimization-container">
-  <!-- Responsive Bilder mit verschiedenen Auflösungen -->
+<div class="media-optimization-containers">
+  <!-- responsive images with different resolutions -->
   <picture class="optimized-image">
     <source srcset="image-large.webp" media="(min-width: 1200px)" type="image/webp">
     <source srcset="image-large.jpg" media="(min-width: 1200px)">
     <source srcset="image-medium.webp" media="(min-width: 768px)" type="image/webp">
     <source srcset="image-medium.jpg" media="(min-width: 768px)">
     <source srcset="image-small.webp" type="image/webp">
-    <img src="image-small.jpg" alt="Optimiertes Bild" loading="lazy">
+    <img src="image-small.jpg" alt="Optimized image" loading="lazy">
   </picture>
   
-  <!-- Video mit Lazy Loading -->
+  <!-- Video with Lazy Loading -->
   <div class="optimized-video" data-src="video.mp4" data-poster="poster.jpg">
-    <!-- Platzhalter bis zum Laden -->
+    <!-- Placeholder until load -->
     <div class="video-placeholder">
-      <img src="poster.jpg" alt="Video-Vorschau">
+      <img src="poster.jpg" alt="Video preview">
       <button class="video-play-button">▶️</button>
     </div>
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.media-optimization-container {
+.media-optimization-containers {
   width: 100%;
 }
 
@@ -576,35 +576,35 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for functionality:
 
 ```javascript
-// Optimierte Video-Behandlung
-document.querySelectorAll('.optimized-video').forEach(container => {
-  const placeholder = container.querySelector('.video-placeholder');
-  const videoSrc = container.dataset.src;
-  const posterSrc = container.dataset.poster;
+// Optimized video handling
+document.querySelectorAll('.optimized-video').forEach(containers => {
+  const placeholder = containers.querySelector('.video-placeholder');
+  const videoSrc = containers.dataset.src;
+  const posterSrc = containers.dataset.poster;
   
   if (!placeholder || !videoSrc) return;
   
-  // Nur beim Klicken laden
+  // Only load on click
   placeholder.addEventListener('click', () => {
-    // Video-Element erstellen
+    // Video element create
     const video = document.createElement('video');
     video.controls = true;
     video.autoplay = true;
     if (posterSrc) video.poster = posterSrc;
     
-    // Quellen hinzufügen
+    // Sources add
     const source = document.createElement('source');
     source.src = videoSrc;
     source.type = videoSrc.endsWith('.mp4') ? 'video/mp4' : 'video/webm';
     video.appendChild(source);
     
-    // Platzhalter ersetzen
+    // Placeholder replace
     placeholder.replaceWith(video);
     
-    // Videostatistik für Analysen
+    // Video statistics for analysis
     video.addEventListener('play', () => {
       console.log('Video playback started');
     });
@@ -615,13 +615,13 @@ document.querySelectorAll('.optimized-video').forEach(container => {
   });
 });
 
-// Bildoptimierung - Intersection Observer für verzögertes Laden
+// Image optimization - Intersection Observer for delayed loading
 const imageObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const img = entry.target.querySelector('img');
       if (img && img.loading === 'lazy') {
-        // High-Quality-Vorschau aktivieren
+        // High-Quality preview activate
         img.setAttribute('fetchpriority', 'high');
       }
       imageObserver.unobserve(entry.target);
@@ -636,56 +636,56 @@ document.querySelectorAll('.optimized-image').forEach(image => {
 
 ## Best Practices
 
-1. **Messbare Leistungsziele setzen** - Definieren Sie klare Leistungsziele für Ihre Anwendung, wie z.B. First Contentful Paint unter 1,5 Sekunden.
-2. **Virtualisierung für große Listen verwenden** - Verwenden Sie Virtualisierung, wenn Listen mehr als 50-100 Elemente enthalten.
-3. **Progressive Loading implementieren** - Laden Sie zuerst den wichtigsten Inhalt und verzögern Sie nicht-kritische Elemente.
-4. **Bildoptimierung priorisieren** - Verwenden Sie moderne Bildformate (WebP), responsive Bilder und Lazy Loading.
-5. **DOM-Größe begrenzen** - Halten Sie die Anzahl der DOM-Elemente unter 1500, um die Renderleistung zu optimieren.
-6. **JavaScript sparsam einsetzen** - Vermeiden Sie unnötige JavaScript-Berechnungen während des Scrollens.
-7. **Netzwerkanfragen minimieren** - Bündeln Sie Inhaltsanfragen und vermeiden Sie zu viele einzelne API-Aufrufe.
-8. **Rendering-Prioritäten setzen** - Priorisieren Sie das Rendering basierend auf der Sichtbarkeit und Wichtigkeit der Components.
+1. **Set measurable performance goals** - Define clear performance goals for your application, such as First Contentful Paint under 1.5 seconds.
+2. **Virtualization for size lists** - Use virtualization when lists contain more than 50-100 elements.
+3. **Progressive Loading implement** - Load the most important content first and delay rendering non-critical elements.
+4. **Image optimization prioritize** - Use modern image formats (WebP), responsive images, and Lazy Loading.
+5. **DOM-size limit** - Keep the number of DOM elements under 1500 to optimize render performance.
+6. **JavaScript sparingly use** - Avoid unnecessary JavaScript calculations during scrolling.
+7. **Network requests minimize** - Bundle content requests and avoid too many single API calls.
+8. **Rendering-Priorities set** - Prioritize rendering based on visibility and importance of components.
 
-## Leistungsmessung
+## Performance Measurement
 
-### Leistungsmetriken
+### Performance Metrics
 
-Wichtige Metriken zur Überwachung:
+Important metrics for monitoring:
 
-- **Time to First Byte (TTFB)** - Zeit bis zum ersten Byte der Antwort
-- **First Contentful Paint (FCP)** - Zeit bis zur ersten Inhaltsanzeige
-- **Largest Contentful Paint (LCP)** - Zeit bis zur Anzeige des größten Inhaltselements
-- **First Input Delay (FID)** - Verzögerung bei der ersten Benutzereingabe
-- **Cumulative Layout Shift (CLS)** - Maß für visuelle Stabilität
+- **Time to First Byte (TTFB)** - Time until first byte of response
+- **First Contentful Paint (FCP)** - Time until first content display
+- **Largest Contentful Paint (LCP)** - Time until largest content element display
+- **First Input Delay (FID)** - Delay on first user input
+- **Cumulative layout Shift (CLS)** - Metric for visual stability
 
-### Leistungsmessung in der Praxis
+### Performance Measurement in practice
 
 ```javascript
-// Performance-Messung mit der Performance API
+// Performance measurement with the Performance API
 function measurePerformance() {
-  // Navigationstiming-Metriken
+  // navigation timing metrics
   const navTiming = performance.getEntriesByType('navigation')[0];
   const pageLoadTime = navTiming.loadEventEnd - navTiming.startTime;
   
-  // Rendering-Metriken
+  // Rendering metrics
   const paintMetrics = performance.getEntriesByType('paint');
   const fcp = paintMetrics.find(entry => entry.name === 'first-contentful-paint')?.startTime;
   
-  // Benutzerdefinierte Marken und Messungen
+  // User-defined markers and measurements
   performance.mark('component-rendered');
   
-  // Leistungsdaten an Analysesystem senden
+  // Performance data send to analysis system
   sendPerformanceData({
     pageLoadTime,
     firstContentfulPaint: fcp,
-    // Weitere Metriken...
+    // additional metrics...
   });
 }
 
-// Benutzerdefinierte Leistungsmessung für Container
+// User-defined performance measurement for containers
 function measureContainerPerformance(containerId) {
   performance.mark(`${containerId}-start`);
   
-  // Nach Abschluss der Aktion
+  // After action completion
   setTimeout(() => {
     performance.mark(`${containerId}-end`);
     performance.measure(
@@ -695,29 +695,29 @@ function measureContainerPerformance(containerId) {
     );
     
     const measure = performance.getEntriesByName(`${containerId}-duration`)[0];
-    console.log(`${containerId} Renderzeit: ${measure.duration.toFixed(2)}ms`);
+    console.log(`${containerId} Render time: ${measure.duration.toFixed(2)}ms`);
   }, 0);
 }
 ```
 
 ## Use Cases
 
-### Produkt-Listenansicht mit Virtualisierung
+### Product List View with Virtualization
 
 ```html
-<div class="container">
-  <h1>Produkte</h1>
+<div class="containers">
+  <h1>Products</h1>
   
-  <div class="virtualized-container" data-height="600" data-item-height="100" data-template="product-template">
-    <!-- Virtualisierte Produktliste -->
+  <div class="virtualized-containers" data-height="600" data-item-height="100" data-template="product-template">
+    <!-- Virtualized Product List -->
   </div>
   
   <template id="product-template">
     <div class="product-card">
-      <img src="placeholder.jpg" alt="Produkt">
+      <img src="placeholder.jpg" alt="Product">
       <div class="product-info">
-        <h3>Produktname</h3>
-        <p>Produktbeschreibung</p>
+        <h3>Product Name</h3>
+        <p>Product Description</p>
         <span class="price">€99.99</span>
       </div>
     </div>
@@ -725,12 +725,12 @@ function measureContainerPerformance(containerId) {
 </div>
 
 <script>
-  // Produktdaten laden
+  // Product data load
   fetch('/api/products')
     .then(response => response.json())
     .then(products => {
-      const container = document.querySelector('.virtualized-container');
-      new VirtualizedContainer(container, {
+      const containers = document.querySelector('.virtualized-containers');
+      new VirtualizedContainer(containers, {
         data: products,
         itemHeight: 100
       });
@@ -738,86 +738,86 @@ function measureContainerPerformance(containerId) {
 </script>
 ```
 
-### Dashboard mit verzögertem Rendering
+### Dashboard with Delayed Rendering
 
 ```html
-<div class="dashboard-container">
-  <!-- Kritische Informationen sofort rendern -->
+<div class="dashboard-containers">
+  <!-- Critical information render immediately -->
   <div class="dashboard-header">
     <h1>Dashboard</h1>
     <div class="user-info">
-      <span>Willkommen, Max</span>
+      <span>Welcome, Max</span>
     </div>
   </div>
   
-  <!-- Wichtige Statistiken mit hoher Priorität -->
-  <div class="deferred-render-container" data-priority="high" data-render-delay="0">
+  <!-- Important statistics with high priority -->
+  <div class="deferred-render-containers" data-priority="high" data-render-delay="0">
     <template>
       <div class="stats-overview">
-        <!-- Wichtige Statistiken -->
+        <!-- Important statistics -->
       </div>
     </template>
-    <div class="placeholder">Lade Statistiken...</div>
+    <div class="placeholder">Loading statistics...</div>
   </div>
   
-  <!-- Weniger wichtige Diagramme mit mittlerer Priorität -->
-  <div class="deferred-render-container" data-priority="medium" data-render-delay="500">
+  <!-- Less important charts with medium priority -->
+  <div class="deferred-render-containers" data-priority="medium" data-render-delay="500">
     <template>
-      <div class="charts-container">
-        <!-- Komplexe Diagramme -->
+      <div class="charts-containers">
+        <!-- Complex charts -->
       </div>
     </template>
-    <div class="placeholder">Lade Diagramme...</div>
+    <div class="placeholder">Loading charts...</div>
   </div>
   
-  <!-- Aktivitätshistorie mit niedriger Priorität -->
-  <div class="deferred-render-container" data-priority="low" data-render-delay="1000">
+  <!-- Activity history with low priority -->
+  <div class="deferred-render-containers" data-priority="low" data-render-delay="1000">
     <template>
       <div class="activity-history">
-        <!-- Aktivitätshistorie -->
+        <!-- Activity history -->
       </div>
     </template>
-    <div class="placeholder">Lade Aktivitätshistorie...</div>
+    <div class="placeholder">Loading activity history...</div>
   </div>
 </div>
 ```
 
-### Medienintensive Seite mit optimierten Bildern
+### Media-Intensive Page with Optimized Images
 
 ```html
 <div class="media-gallery">
-  <h2>Unsere Projekte</h2>
+  <h2>Our Projects</h2>
   
-  <div class="media-optimization-container">
+  <div class="media-optimization-containers">
     <div class="gallery-grid">
-      <!-- Optimierte Bilder -->
+      <!-- Optimized images -->
       <picture class="optimized-image">
         <source srcset="project1-large.webp" media="(min-width: 1200px)" type="image/webp">
         <source srcset="project1-large.jpg" media="(min-width: 1200px)">
         <source srcset="project1-medium.webp" media="(min-width: 768px)" type="image/webp">
         <source srcset="project1-medium.jpg" media="(min-width: 768px)">
         <source srcset="project1-small.webp" type="image/webp">
-        <img src="project1-small.jpg" alt="Projekt 1" loading="lazy">
+        <img src="project1-small.jpg" alt="Project 1" loading="lazy">
       </picture>
       
-      <!-- Weitere optimierte Bilder... -->
+      <!-- additional optimized images... -->
     </div>
   </div>
 </div>
 ```
 
-## Browser-Kompatibilität
+## Browser Compatibility
 
 | Feature | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|
 | Intersection Observer | 51+ | 55+ | 12.1+ | 15+ |
-| Virtual DOM Techniken | Alle | Alle | Alle | Alle |
+| Virtual DOM Techniques | All | All | All | All |
 | requestAnimationFrame | 24+ | 23+ | 6.1+ | 12+ |
-| Picture Element | 38+ | 38+ | 9.1+ | 17+ |
+| Picture element | 38+ | 38+ | 9.1+ | 17+ |
 | Performance API | 43+ | 41+ | 11+ | 12+ |
 
-Für ältere Browser bietet die Bibliothek Fallbacks an, die grundlegende Funktionalität gewährleisten.
+For older browsers, the library offers Fallbacks to ensure basic functionality.
 
-## Zusammenfassung
+## Summary
 
-Performance-Container der Casoon UI Library bieten leistungsstarke Lösungen zur Optimierung der Renderleistung und Ladezeiten Ihrer Anwendung. Durch Techniken wie Virtualisierung, verzögertes Laden, gestaffeltes Rendering und Inhalts-Chunking können Sie auch bei komplexen Anwendungen mit großen Datenmengen eine flüssige Benutzererfahrung gewährleisten. Diese Container sind besonders nützlich für datenintensive Anwendungen, Dashboards, E-Commerce-Websites und medienreiche Anwendungen. 
+Performance containers of the Casoon UI Library offer powerful solutions for optimizing render performance and load times of your application. Through techniques like virtualization, delayed loading, staggered rendering, and content chunking can you also ensure a smooth user experience even with complex applications and large data sets. These containers are particularly useful for data-intensive applications, dashboards, E-Commerce websites, and media-rich applications. 

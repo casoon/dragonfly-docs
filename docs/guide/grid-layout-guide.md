@@ -7,9 +7,9 @@ category: Guide
 
 This guide provides comprehensive instructions for creating effective grid layouts with the Casoon UI Library. It includes practical examples, best practices, and solutions for common layout patterns.
 
-## Basic Understanding of the Grid System
+## Basic Understanding of the Grid system
 
-The Grid System of the Casoon UI Library is based on CSS Grid and offers flexible options for complex layouts. It is fully responsive and follows the mobile-first approach.
+The Grid system of the Casoon UI Library is based on CSS Grid and offers flexible options for complex layouts. It is fully responsive and follows the mobile-first approach.
 
 ### Importing Core CSS
 
@@ -36,7 +36,7 @@ This import loads all basic layout and grid features. Note, however, that compon
 
 The CSS layer system ensures that all imports are loaded in the correct order.
 
-### Benefits of the Layer System for Grid Layouts
+### Benefits of the Layer system for Grid Layouts
 
 The CSS layer system of the Casoon UI Library allows precise control of CSS specificity and prevents conflicts between different styling rules. The grid components benefit from this structure because they:
 
@@ -308,7 +308,7 @@ The Casoon UI grid system follows the mobile-first principle. Start with the sma
 </div>
 ```
 
-### Breakpoints System
+### Breakpoints system
 
 Standard breakpoints:
 - `sm`: 30rem (480px)

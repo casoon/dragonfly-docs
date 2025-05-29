@@ -1,123 +1,123 @@
-# Tags
+# tags
 
-Tags sind kompakte UI-Elemente, die verwendet werden, um Inhalte zu kategorisieren, zu filtern oder zu kennzeichnen. Die `@casoon/ui-lib` bietet verschiedene Tag-Variants für unterschiedliche Use Cases.
+tags sind kompakte UI-elements, the verwendet become, um contents to kategorisieren, to filtern or to kennzeichnen. the `@casoon/ui-lib` bietet verschiedene tag-Variants for unterschiedliche Use Cases.
 
 ## Usage
 
-Tags werden als einfache HTML-Elemente mit CSS-Klassen implementiert:
+tags become as einfache HTML-elements with CSS-classes implementiert:
 
 ```html
-<span class="tag">Standard Tag</span>
+<span class="tag">Standard tag</span>
 ```
 
 ## Variants
 
 ### Sizes
 
-Tags sind in drei Sizes verfügbar:
+tags sind in drei Sizes verfugbar:
 
-- **Klein** (`.tag-sm`): Kompakte Tags für platzsparende Layouts
-- **Standard**: Mittlere Größe (Standard)
-- **Groß** (`.tag-lg`): Größere Tags für bessere Sichtbarkeit
+- **small** (`.tag-sm`): Kompakte tags for platzsparende layouts
+- **Standard**: Mittlere size (Standard)
+- **Gross** (`.tag-lg`): Grossere tags for bessere visibility
 
 ```html
-<!-- Kleines Tag -->
-<span class="tag tag-sm">Klein</span>
+<!-- Kleines tag -->
+<span class="tag tag-sm">small</span>
 
-<!-- Standard Tag -->
+<!-- Standard tag -->
 <span class="tag">Standard</span>
 
-<!-- Großes Tag -->
-<span class="tag tag-lg">Groß</span>
+<!-- Grosses tag -->
+<span class="tag tag-lg">Gross</span>
 ```
 
 ### Colors
 
-Tags unterstützen verschiedene Farbvarianten:
+tags unterstutzen verschiedene Farbvarianten:
 
 - **Primary** (Standard): `.tag-primary`
 - **Secondary**: `.tag-secondary`
 - **Success**: `.tag-success`
 - **Warning**: `.tag-warning`
 - **Error**: `.tag-error`
-- **Info**: `.tag-info`
+- **info**: `.tag-info`
 
 ```html
-<!-- Primary Tag (Standard) -->
+<!-- Primary tag (Standard) -->
 <span class="tag tag-primary">Primary</span>
 
-<!-- Secondary Tag -->
+<!-- Secondary tag -->
 <span class="tag tag-secondary">Secondary</span>
 
-<!-- Success Tag -->
+<!-- Success tag -->
 <span class="tag tag-success">Success</span>
 
-<!-- Warning Tag -->
+<!-- Warning tag -->
 <span class="tag tag-warning">Warning</span>
 
-<!-- Error Tag -->
+<!-- Error tag -->
 <span class="tag tag-error">Error</span>
 
-<!-- Info Tag -->
-<span class="tag tag-info">Info</span>
+<!-- info tag -->
+<span class="tag tag-info">info</span>
 ```
 
 ### Variants
 
-#### Abgerundete Tags
+#### Abgerundete tags
 
-Für weichere Ecken können abgerundete Tags verwendet werden:
+for weichere Ecken can abgerundete tags verwendet become:
 
 ```html
 <span class="tag tag-rounded">Abgerundet</span>
 ```
 
-#### Outline Tags
+#### Outline tags
 
-Tags mit nur Umriss für subtilere Darstellung:
+tags with only Umriss for subtilere Display:
 
 ```html
 <span class="tag tag-outline">Outline</span>
 ```
 
-#### Tags mit Icons
+#### tags with icons
 
-Tags können mit Icons kombiniert werden:
+tags can with icons kombiniert become:
 
 ```html
 <span class="tag">
   <i class="icon icon-star"></i>
-  With Icon
+  With icon
 </span>
 ```
 
-#### Entfernbare Tags
+#### Entfernbare tags
 
-Tags, die vom Benutzer entfernt werden können:
+tags, the vom user entfernt become can:
 
 ```html
 <span class="tag tag-removable">
   Entfernbar
-  <button class="tag-remove" aria-label="Tag entfernen">×</button>
+  <button class="tag-remove" aria-label="tag remove">×</button>
 </span>
 ```
 
-## Anpassung
+## Customization
 
-Die Darstellung von Tags kann mithilfe von CSS Variables angepasst werden:
+the Display from tags kann mithilfe from CSS Variables angepasst become:
 
 ```css
 .custom-tag {
   --tag-background: #6a0dad; /* Benutzerdefinierte Hintergrundfarbe */
   --tag-color: #ffffff; /* Benutzerdefinierte Textfarbe */
   --tag-border-radius: 12px; /* Benutzerdefinierte Abrundung */
-  --tag-padding: 6px 12px; /* Benutzerdefinierter Innenabstand */
+  --tag-padding: 6px 12px; /* Benutzerdefinierter padding */
 }
 ```
 
-## Interaktive Tags
+## Interaktive tags
 
-Tags können interaktiv gestaltet werden, um als Filter oder Auswahlmöglichkeiten zu dienen:
+tags can interaktiv gestaltet become, um as Filter or Auswahlmoglichkeiten to dienen:
 
 ```html
 <div class="tag-group">
@@ -136,47 +136,47 @@ Tags können interaktiv gestaltet werden, um als Filter oder Auswahlmöglichkeit
 </div>
 ```
 
-## Tag-Gruppen
+## tag-Gruppen
 
-Mehrere zusammengehörige Tags können in Gruppen organisiert werden:
+several zusammengehorige tags can in Gruppen organisiert become:
 
 ```html
 <div class="tag-group">
-  <span class="tag">Tag 1</span>
-  <span class="tag">Tag 2</span>
-  <span class="tag">Tag 3</span>
+  <span class="tag">tag 1</span>
+  <span class="tag">tag 2</span>
+  <span class="tag">tag 3</span>
 </div>
 ```
 
 ## Accessibility
 
-Für eine optimale Accessibility:
+for a optimale Accessibility:
 
-- Verwenden Sie ausreichenden Farbkontrast zwischen Tag-Hintergrund und Text
-- Stellen Sie sicher, dass interaktive Tags über die Tastatur bedienbar sind
-- Fügen Sie geeignete aria-Attribute hinzu, besonders für interaktive oder entfernbare Tags
-- Vermeiden Sie die alleinige Usage von Farbe zur Unterscheidung von Bedeutungen
+- use them ausreichenden Farbkontrast between tag-background and Text
+- ensure, that interaktive tags over the Tastatur bedienbar sind
+- Fugen them geeignete aria-attributes hinzu, besonders for interaktive or entfernbare tags
+- Vermeiden them the alleinige Usage from color zur Unterscheidung from Bedeutungen
 
 ```html
-<!-- Barrierefreies interaktives Tag -->
+<!-- Barrierefreies interaktives tag -->
 <label class="tag tag-interactive" role="checkbox" tabindex="0" aria-checked="false">
   <input type="checkbox" hidden>
-  <span class="tag-text">Barrierefreies Tag</span>
+  <span class="tag-text">Barrierefreies tag</span>
 </label>
 
-<!-- Barrierefreies entfernbares Tag -->
+<!-- Barrierefreies entfernbares tag -->
 <span class="tag tag-removable" role="listitem">
-  Entfernbares Tag
-  <button class="tag-remove" aria-label="Tag entfernen" tabindex="0">×</button>
+  Entfernbares tag
+  <button class="tag-remove" aria-label="tag remove" tabindex="0">×</button>
 </span>
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Tag-Components sind mit allen modernen Browsern kompatibel und verwenden standardkonforme HTML- und CSS-Eigenschaften.
+the tag-Components sind with allen modernen Browsern kompatibel and use standardkonforme HTML- and CSS-properties.
 
 ## Verwandte Components
 
-- [Badge](/components/elements/badge.md) - Für numerische oder Status-Anzeigen
-- [Chip](/components/elements/chip.md) - Für komplexere interaktive Elemente
-- [Button](/components/elements/button.md) - Für primäre Aktionen 
+- [badge](/components/elements/badge.md) - for numerische or Status-Anzeigen
+- [chip](/components/elements/chip.md) - for komplexere interaktive elements
+- [button](/components/elements/button.md) - for primare Aktionen 

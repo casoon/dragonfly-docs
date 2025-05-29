@@ -1,27 +1,27 @@
 ---
-title: Filter-Effekte
+title: Filter-effects
 category: Guide
 ---
 
-# Filter-Effekte
+# Filter-effects
 
-Die `filters.css` Datei bietet eine umfangreiche Sammlung von visuellen Filtereffekten, die zur Manipulation von Bildern, Hintergründen und anderen UI-Elementen eingesetzt werden können. Diese Filter basieren auf den CSS-Filterfunktionen und ermöglichen zahlreiche visuelle Customizations ohne den Einsatz von Grafikprogrammen.
+the `filters.css` file bietet a umfangreiche Sammlung from visuellen Filtereffekten, the zur Manipulation from Bildern, Hintergrunden and anderen UI-Elementen eingesetzt become can. these Filter basieren on den CSS-Filterfunktionen and ermoglichen zahlreiche visuelle customizations without den Einsatz from Grafikprogrammen.
 
 ## Overview
 
-Mit CSS-Filtern können Sie Colors anpassen, Helligkeits- und Kontraständerungen vornehmen, Unschärfeeffekte hinzufügen und vieles mehr. Die Casoon UI Library bietet eine Sammlung vorgefertigter Filter sowie kombinierte Effekte für typische Use Cases.
+with CSS-Filtern can them Colors customize, Helligkeits- and Kontrastanderungen vornehmen, Unscharfeeffekte add and much more. the Casoon UI Library bietet a Sammlung vorgefertigter Filter sowie kombinierte effects for typische Use Cases.
 
-## Basis-Filter
+## Base-Filter
 
 ```html
-<!-- Unschärfe-Filter -->
-<img class="filter-blur-sm" src="image.jpg" alt="Leicht unscharfes Bild">
-<img class="filter-blur" src="image.jpg" alt="Unscharfes Bild">
-<img class="filter-blur-lg" src="image.jpg" alt="Stark unscharfes Bild">
+<!-- Unscharfe-Filter -->
+<img class="filter-blur-sm" src="image.jpg" alt="Leicht unscharfes image">
+<img class="filter-blur" src="image.jpg" alt="Unscharfes image">
+<img class="filter-blur-lg" src="image.jpg" alt="Stark unscharfes image">
 
 <!-- Helligkeit-Filter -->
-<img class="filter-brightness-50" src="image.jpg" alt="Dunkleres Bild (50%)">
-<img class="filter-brightness-150" src="image.jpg" alt="Helleres Bild (150%)">
+<img class="filter-brightness-50" src="image.jpg" alt="Dunkleres image (50%)">
+<img class="filter-brightness-150" src="image.jpg" alt="Helleres image (150%)">
 
 <!-- Kontrast-Filter -->
 <img class="filter-contrast-50" src="image.jpg" alt="Niedriger Kontrast (50%)">
@@ -32,7 +32,7 @@ Mit CSS-Filtern können Sie Colors anpassen, Helligkeits- und Kontraständerunge
 <img class="filter-grayscale-50" src="image.jpg" alt="Teilweise Graustufen (50%)">
 
 <!-- Sepia-Filter -->
-<img class="filter-sepia" src="image.jpg" alt="Sepia-Effekt">
+<img class="filter-sepia" src="image.jpg" alt="Sepia-effect">
 <img class="filter-sepia-50" src="image.jpg" alt="Teilweise Sepia (50%)">
 
 <!-- Farbton-Rotation -->
@@ -41,107 +41,107 @@ Mit CSS-Filtern können Sie Colors anpassen, Helligkeits- und Kontraständerunge
 <img class="filter-hue-rotate-270" src="image.jpg" alt="Farbton um 270° rotiert">
 
 <!-- Invertierung -->
-<img class="filter-invert" src="image.jpg" alt="Invertiertes Bild">
+<img class="filter-invert" src="image.jpg" alt="Invertiertes image">
 <img class="filter-invert-50" src="image.jpg" alt="Teilweise invertiert (50%)">
 
-<!-- Sättigung -->
-<img class="filter-saturate-0" src="image.jpg" alt="Keine Sättigung (Graustufen)">
-<img class="filter-saturate-50" src="image.jpg" alt="Niedrige Sättigung (50%)">
-<img class="filter-saturate-150" src="image.jpg" alt="Hohe Sättigung (150%)">
-<img class="filter-saturate-200" src="image.jpg" alt="Sehr hohe Sättigung (200%)">
+<!-- Sattigung -->
+<img class="filter-saturate-0" src="image.jpg" alt="no Sattigung (Graustufen)">
+<img class="filter-saturate-50" src="image.jpg" alt="Niedrige Sattigung (50%)">
+<img class="filter-saturate-150" src="image.jpg" alt="height Sattigung (150%)">
+<img class="filter-saturate-200" src="image.jpg" alt="very height Sattigung (200%)">
 
-<!-- Transparenz (Opacity) -->
+<!-- transparency (Opacity) -->
 <img class="filter-opacity-25" src="image.jpg" alt="25% Deckkraft">
 <img class="filter-opacity-50" src="image.jpg" alt="50% Deckkraft">
 <img class="filter-opacity-75" src="image.jpg" alt="75% Deckkraft">
 
 <!-- Schattierung (Drop Shadow) -->
-<img class="filter-drop-shadow" src="image.jpg" alt="Bild mit Schatten">
-<img class="filter-drop-shadow-sm" src="image.jpg" alt="Bild mit kleinem Schatten">
-<img class="filter-drop-shadow-lg" src="image.jpg" alt="Bild mit großem Schatten">
+<img class="filter-drop-shadow" src="image.jpg" alt="image with shadow">
+<img class="filter-drop-shadow-sm" src="image.jpg" alt="image with kleinem shadow">
+<img class="filter-drop-shadow-lg" src="image.jpg" alt="image with grossem shadow">
 ```
 
-## Kombinierte Filter-Effekte
+## Kombinierte Filter-effects
 
-Voreingestellte Kombinationen für gängige Bildeffekte:
+Voreingestellte Kombinationen for gangige Bildeffekte:
 
 ```html
-<!-- Vintage-Effekt -->
-<img class="filter-vintage" src="image.jpg" alt="Vintage-Foto-Effekt">
+<!-- Vintage-effect -->
+<img class="filter-vintage" src="image.jpg" alt="Vintage-Foto-effect">
 
-<!-- Schwarz-Weiß mit hohem Kontrast -->
-<img class="filter-bw-high-contrast" src="image.jpg" alt="Kontrastreiches Schwarz-Weiß-Bild">
+<!-- Schwarz-Weiss with hohem Kontrast -->
+<img class="filter-bw-high-contrast" src="image.jpg" alt="Kontrastreiches Schwarz-Weiss-image">
 
 <!-- Warmer Farbton -->
 <img class="filter-warm" src="image.jpg" alt="Warmer Farbeffekt">
 
-<!-- Kühler Farbton -->
-<img class="filter-cool" src="image.jpg" alt="Kühler Farbeffekt">
+<!-- Kuhler Farbton -->
+<img class="filter-cool" src="image.jpg" alt="Kuhler Farbeffekt">
 
-<!-- Dramatischer Effekt -->
+<!-- Dramatischer effect -->
 <img class="filter-dramatic" src="image.jpg" alt="Dramatischer Bildeffekt">
 
-<!-- Nostalgischer Effekt -->
+<!-- Nostalgischer effect -->
 <img class="filter-nostalgic" src="image.jpg" alt="Nostalgischer Bildeffekt">
 
 <!-- Filmisches Look -->
 <img class="filter-cinematic" src="image.jpg" alt="Filmischer Bildeffekt">
 
-<!-- Weichzeichnung für Porträts -->
-<img class="filter-soft-portrait" src="image.jpg" alt="Weichgezeichnetes Porträt">
+<!-- Weichzeichnung for Portrats -->
+<img class="filter-soft-portrait" src="image.jpg" alt="Weichgezeichnetes Portrat">
 
-<!-- Duotone-Effekt (Zwei Colors) -->
+<!-- Duotone-effect (Zwei Colors) -->
 <img class="filter-duotone-blue-red" src="image.jpg" alt="Blau-Rot Duotone">
 <img class="filter-duotone-purple-yellow" src="image.jpg" alt="Lila-Gelb Duotone">
 ```
 
 ## Text-Filter
 
-Filter für Text-Elemente:
+Filter for Text-elements:
 
 ```html
 <!-- Weichgezeichneter Text -->
 <h2 class="filter-text-blur">Verschwommener Text</h2>
 
-<!-- Text mit Schatten -->
-<h2 class="filter-text-shadow">Text mit Schatten</h2>
+<!-- Text with shadow -->
+<h2 class="filter-text-shadow">Text with shadow</h2>
 
 <!-- Leuchtender Text (Glow) -->
 <h2 class="filter-text-glow">Leuchtender Text</h2>
 
-<!-- Invertierter Text (gut für Dark Mode) -->
+<!-- Invertierter Text (good for Dark Mode) -->
 <h2 class="filter-text-invert">Invertierter Text</h2>
 ```
 
-## Hintergrund-Filter
+## background-Filter
 
-Für Hintergründe und Container:
+for Hintergrunde and containers:
 
 ```html
-<!-- Unscharfer Hintergrund (gut für Overlays) -->
+<!-- Unscharfer background (good for Overlays) -->
 <div class="filter-bg-blur">
-  <p>Inhalt auf unscharfem Hintergrund</p>
+  <p>content on unscharfem background</p>
 </div>
 
-<!-- Abgedunkelter Hintergrund -->
+<!-- Abgedunkelter background -->
 <div class="filter-bg-dim">
-  <p>Inhalt auf abgedunkeltem Hintergrund</p>
+  <p>content on abgedunkeltem background</p>
 </div>
 
-<!-- Heller Hintergrund -->
+<!-- Heller background -->
 <div class="filter-bg-brighten">
-  <p>Inhalt auf aufgehelltem Hintergrund</p>
+  <p>content on aufgehelltem background</p>
 </div>
 
-<!-- Kontrasterhöhter Hintergrund -->
+<!-- Kontrasterhohter background -->
 <div class="filter-bg-contrast">
-  <p>Inhalt auf kontrastreicherem Hintergrund</p>
+  <p>content on kontrastreicherem background</p>
 </div>
 ```
 
 ## SVG-Filter
 
-Spezielle Filter für SVG-Elemente:
+Spezielle Filter for SVG-elements:
 
 ```html
 <!-- SVG-Farbanpassung -->
@@ -150,7 +150,7 @@ Spezielle Filter für SVG-Elemente:
 <!-- SVG-Schatteneffekt -->
 <svg class="filter-svg-shadow">...</svg>
 
-<!-- SVG-Glüheffekt -->
+<!-- SVG-Gluheffekt -->
 <svg class="filter-svg-glow">...</svg>
 
 <!-- SVG-Textureffekt -->
@@ -159,43 +159,43 @@ Spezielle Filter für SVG-Elemente:
 
 ## Interaktive Filter
 
-Filter, die auf Interaktionen reagieren:
+Filter, the on interactions reagieren:
 
 ```html
 <!-- Hover-Filter -->
-<img class="filter-hover-blur" src="image.jpg" alt="Wird bei Hover unscharf">
-<img class="filter-hover-brighten" src="image.jpg" alt="Wird bei Hover heller">
-<img class="filter-hover-contrast" src="image.jpg" alt="Erhöht Kontrast bei Hover">
-<img class="filter-hover-grayscale" src="image.jpg" alt="Wird bei Hover zu Graustufen">
-<img class="filter-hover-sepia" src="image.jpg" alt="Wird bei Hover zu Sepia">
+<img class="filter-hover-blur" src="image.jpg" alt="Wird at Hover unscharf">
+<img class="filter-hover-brighten" src="image.jpg" alt="Wird at Hover heller">
+<img class="filter-hover-contrast" src="image.jpg" alt="Erhoht Kontrast at Hover">
+<img class="filter-hover-grayscale" src="image.jpg" alt="Wird at Hover to Graustufen">
+<img class="filter-hover-sepia" src="image.jpg" alt="Wird at Hover to Sepia">
 
-<!-- Fokus-Filter (für interaktive Elemente) -->
-<button class="filter-focus-glow">Button mit Glow-Effekt bei Fokus</button>
+<!-- Fokus-Filter (for interaktive elements) -->
+<button class="filter-focus-glow">button with Glow-effect at Fokus</button>
 
 <!-- Aktive Filter -->
-<button class="filter-active-dim">Button wird bei Aktivierung abgedunkelt</button>
+<button class="filter-active-dim">button wird at Aktivierung abgedunkelt</button>
 ```
 
-## Transition-Effekte für Filter
+## transition-effects for Filter
 
-Sanfte Übergänge zwischen Filterzuständen:
+Sanfte Ubergange between Filterzustanden:
 
 ```html
-<!-- Basis-Filtertransition -->
-<img class="filter-transition" src="image.jpg" alt="Sanfter Übergang bei Filteränderung">
+<!-- Base-Filtertransition -->
+<img class="filter-transition" src="image.jpg" alt="Sanfter transition at Filteranderung">
 
-<!-- Kombiniert mit Hover -->
+<!-- Kombiniert with Hover -->
 <img class="filter-grayscale filter-hover-color filter-transition" src="image.jpg" 
-     alt="Wechselt sanft von Graustufen zu Farbe bei Hover">
+     alt="Wechselt sanft from Graustufen to color at Hover">
 ```
 
-## Anpassung über CSS Variables
+## Customization over CSS Variables
 
-Die Filter können über CSS Variables angepasst werden:
+the Filter can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Basis-Filter-Parameter */
+  /* Base-Filter-parameter */
   --filter-blur-sm: 2px;
   --filter-blur-md: 5px;
   --filter-blur-lg: 10px;
@@ -230,7 +230,7 @@ Die Filter können über CSS Variables angepasst werden:
 }
 ```
 
-## Medienbedingungen für Filter
+## Medienbedingungen for Filter
 
 ```css
 /* Reduzierte Filtereffekte im Dunkelmodus */
@@ -252,7 +252,7 @@ Die Filter können über CSS Variables angepasst werden:
   }
 }
 
-/* Reduzierte Filter für Nutzer, die reduzierte Bewegung bevorzugen */
+/* Reduzierte Filter for Nutzer, the reduzierte Bewegung bevorzugen */
 @media (prefers-reduced-motion: reduce) {
   .filter-transition {
     transition: none !important;
@@ -274,17 +274,17 @@ Die Filter können über CSS Variables angepasst werden:
 }
 ```
 
-## Accessibility-Überlegungen
+## Accessibility-Uberlegungen
 
-Bei Filtern sind mehrere Aspekte der Accessibility zu beachten:
+at Filtern sind several Aspekte the Accessibility to note:
 
-1. **Kontrast und Lesbarkeit**: Stellen Sie sicher, dass Filter die Lesbarkeit von Text nicht beeinträchtigen
-2. **Farbfehlsichtigkeit**: Berücksichtigen Sie, dass manche Filter problematisch für Menschen mit Farbfehlsichtigkeit sein können
-3. **Bewegungsempfindlichkeit**: Filter-Transitionen können für manche Nutzer problematisch sein
-4. **Hoher Kontrast**: Respektieren Sie Systemeinstellungen für hohen Kontrast
+1. **Kontrast and Lesbarkeit**: ensure, that Filter the Lesbarkeit from Text not beeintrachtigen
+2. **Farbfehlsichtigkeit**: Berucksichtigen them, that some Filter problematisch for Menschen with Farbfehlsichtigkeit be can
+3. **Bewegungsempfindlichkeit**: Filter-transitions can for some Nutzer problematisch be
+4. **Hoher Kontrast**: Respektieren them Systemeinstellungen for hohen Kontrast
 
 ```css
-/* Example für barrierefreie Filteranwendung */
+/* Example for barrierefreie Filteranwendung */
 .accessible-filter {
   filter: var(--filter-accessible);
 }
@@ -302,18 +302,18 @@ Bei Filtern sind mehrere Aspekte der Accessibility zu beachten:
 }
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Filter können rechenintensiv sein:
+Filter can rechenintensiv be:
 
-1. **Verwenden Sie `will-change: filter`** für wichtige animierte Filter
-2. **Vermeide Filter auf großen Elementen**, besonders auf mobilen Geräten
-3. **Kombinieren Sie Filter** statt mehrere filterbehaftete Elemente zu stapeln
-4. **Testen Sie auf mobilen Geräten**, um die Leistung zu überprüfen
+1. **use them `will-change: filter`** for wichtige animierte Filter
+2. **Vermeide Filter on sizes Elementen**, besonders on mobilen Geraten
+3. **combine them Filter** instead of several filterbehaftete elements to stapeln
+4. **Testen them on mobilen Geraten**, um the Leistung to uberprufen
 
 ## Praktische Examples
 
-### Bildergalerie mit verschiedenen Filtern
+### Bildergalerie with verschiedenen Filtern
 
 ```html
 <div class="image-gallery">
@@ -322,33 +322,33 @@ Filter können rechenintensiv sein:
     <figcaption>Original</figcaption>
   </figure>
   <figure>
-    <img class="filter-vintage" src="image1.jpg" alt="Vintage-Effekt">
+    <img class="filter-vintage" src="image1.jpg" alt="Vintage-effect">
     <figcaption>Vintage</figcaption>
   </figure>
   <figure>
-    <img class="filter-cool" src="image1.jpg" alt="Kühler Effekt">
-    <figcaption>Kühl</figcaption>
+    <img class="filter-cool" src="image1.jpg" alt="Kuhler effect">
+    <figcaption>Kuhl</figcaption>
   </figure>
   <figure>
-    <img class="filter-bw-high-contrast" src="image1.jpg" alt="Schwarz-Weiß">
-    <figcaption>Schwarz-Weiß</figcaption>
+    <img class="filter-bw-high-contrast" src="image1.jpg" alt="Schwarz-Weiss">
+    <figcaption>Schwarz-Weiss</figcaption>
   </figure>
 </div>
 ```
 
-### Hero-Bereich mit gefilterten Hintergrund
+### Hero-area with gefilterten background
 
 ```html
 <section class="hero">
   <div class="hero-background filter-blur-lg filter-brightness-50"></div>
   <div class="hero-content">
     <h1>Willkommen</h1>
-    <p>Text auf einem unscharfen, abgedunkelten Hintergrund</p>
+    <p>Text on einem unscharfen, abgedunkelten background</p>
   </div>
 </section>
 ```
 
-### Interaktive Card mit Hover-Effekt
+### Interaktive Card with Hover-effect
 
 ```html
 <div class="card filter-grayscale filter-hover-color filter-transition">
@@ -363,8 +363,8 @@ Filter können rechenintensiv sein:
 
 ## Best Practices
 
-1. **Sparsam einsetzen**: Filter sollten die Nutzererfahrung verbessern, nicht ablenken
-2. **Zustand kommunizieren**: Verwenden Sie Filter, um interaktive States zu verdeutlichen
-3. **Performance beachten**: Beschränken Sie die Anzahl der gefilterten Elemente
-4. **Barrierefrei gestalten**: Stellen Sie sicher, dass gefilterte Inhalte für alle zugänglich bleiben
-5. **Responsive anpassen**: Reduzieren Sie die Intensität von Filtern auf mobilen Geräten 
+1. **Sparsam einsetzen**: Filter should the Nutzererfahrung verbessern, not ablenken
+2. **state kommunizieren**: use them Filter, um interaktive States to verdeutlichen
+3. **Performance note**: Beschranken them the Anzahl the gefilterten elements
+4. **Barrierefrei gestalten**: ensure, that gefilterte contents for all zuganglich bleiben
+5. **responsive customize**: Reduzieren them the Intensitat from Filtern on mobilen Geraten 

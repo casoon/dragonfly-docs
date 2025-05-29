@@ -1,9 +1,9 @@
 ---
-title: Flexbox Layout System
+title: Flexbox Layout system
 category: Layout
 ---
 
-# Flexbox Layout System
+# Flexbox Layout system
 
 The Casoon UI Library provides a comprehensive flexbox layout system that makes it easy to create flexible and responsive layouts. This document outlines the flexbox utilities, components, and best practices for building layouts with the library.
 
@@ -275,18 +275,18 @@ Control properties of individual flex items:
 </div>
 ```
 
-### Flex Basis
+### Flex base
 
 ```html
 <div class="flex">
-  <!-- Auto basis (uses the item's content size) -->
-  <div class="flex-basis-auto">Auto basis</div>
+  <!-- Auto base (uses the item's content size) -->
+  <div class="flex-base-auto">Auto base</div>
   
-  <!-- Specific basis width -->
-  <div class="flex-basis-1/4">25% basis</div>
-  <div class="flex-basis-1/3">33% basis</div>
-  <div class="flex-basis-1/2">50% basis</div>
-  <div class="flex-basis-full">100% basis</div>
+  <!-- Specific base width -->
+  <div class="flex-base-1/4">25% base</div>
+  <div class="flex-base-1/3">33% base</div>
+  <div class="flex-base-1/2">50% base</div>
+  <div class="flex-base-full">100% base</div>
 </div>
 ```
 
@@ -295,10 +295,10 @@ Control properties of individual flex items:
 ```html
 <div class="flex">
   <!-- flex: 1 1 0% -->
-  <div class="flex-1">Grows and shrinks, with 0 basis</div>
+  <div class="flex-1">Grows and shrinks, with 0 base</div>
   
   <!-- flex: 1 1 auto -->
-  <div class="flex-auto">Grows and shrinks, with auto basis</div>
+  <div class="flex-auto">Grows and shrinks, with auto base</div>
   
   <!-- flex: 0 1 auto -->
   <div class="flex-initial">Default behavior</div>
@@ -382,13 +382,13 @@ Available breakpoint prefixes:
 ```html
 <div class="flex flex-wrap gap-4">
   <!-- Cards that wrap to new lines, taking up different amounts of space -->
-  <div class="flex-basis-full flex-md-basis-1/2 flex-lg-basis-1/3">
+  <div class="flex-base-full flex-md-base-1/2 flex-lg-base-1/3">
     <div class="card">Card 1</div>
   </div>
-  <div class="flex-basis-full flex-md-basis-1/2 flex-lg-basis-1/3">
+  <div class="flex-base-full flex-md-base-1/2 flex-lg-base-1/3">
     <div class="card">Card 2</div>
   </div>
-  <div class="flex-basis-full flex-md-basis-1/2 flex-lg-basis-1/3">
+  <div class="flex-base-full flex-md-base-1/2 flex-lg-base-1/3">
     <div class="card">Card 3</div>
   </div>
   <!-- More cards -->
@@ -407,7 +407,7 @@ Available breakpoint prefixes:
   <!-- Main content area with sidebar -->
   <div class="flex flex-grow flex-col flex-md-row">
     <!-- Sidebar -->
-    <nav class="flex-basis-full flex-md-basis-1/4 flex-shrink-0 bg-light p-4">
+    <nav class="flex-base-full flex-md-base-1/4 flex-shrink-0 bg-light p-4">
       Sidebar
     </nav>
     
@@ -417,7 +417,7 @@ Available breakpoint prefixes:
     </main>
     
     <!-- Optional secondary sidebar -->
-    <aside class="flex-basis-full flex-md-basis-1/5 flex-shrink-0 bg-light p-4">
+    <aside class="flex-base-full flex-md-base-1/5 flex-shrink-0 bg-light p-4">
       Secondary Sidebar
     </aside>
   </div>
@@ -489,7 +489,7 @@ Available breakpoint prefixes:
 ```html
 <div class="flex flex-col flex-md-row min-h-screen">
   <!-- Left half -->
-  <div class="flex-basis-full flex-md-basis-1/2 bg-primary text-white p-8 flex justify-center align-center">
+  <div class="flex-base-full flex-md-base-1/2 bg-primary text-white p-8 flex justify-center align-center">
     <div>
       <h1>Welcome</h1>
       <p>Left side content</p>
@@ -497,7 +497,7 @@ Available breakpoint prefixes:
   </div>
   
   <!-- Right half -->
-  <div class="flex-basis-full flex-md-basis-1/2 p-8 flex justify-center align-center">
+  <div class="flex-base-full flex-md-base-1/2 p-8 flex justify-center align-center">
     <div>
       <h2>Sign In</h2>
       <form>

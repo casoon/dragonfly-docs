@@ -1,54 +1,54 @@
-# Disabled-Effekte
+# Disabled-effects
 
-Disabled-Effekte werden verwendet, um dem Benutzer visuell zu signalisieren, dass ein Element nicht interaktiv oder verfügbar ist. Die `@casoon/ui-lib` bietet verschiedene Disabled-Effekte, die auf konsistente Weise zeigen, dass ein Element deaktiviert ist.
+Disabled-effects become verwendet, um dem user visuell to signalisieren, that a element not interaktiv or verfugbar ist. the `@casoon/ui-lib` bietet verschiedene Disabled-effects, the on konsistente Weise zeigen, that a element deaktiviert ist.
 
 ## Basic Usage
 
-Der grundlegende Disabled-Effekt kann auf jedes interaktive Element angewendet werden:
+the grundlegende Disabled-effect kann on jedes interaktive element angewendet become:
 
 ```html
-<button class="btn disabled">Deaktivierter Button</button>
+<button class="btn disabled">Deaktivierter button</button>
 ```
 
-Oder mit dem HTML-Attribut `disabled`:
+or with dem HTML-attributes `disabled`:
 
 ```html
-<button class="btn" disabled>Deaktivierter Button</button>
+<button class="btn" disabled>Deaktivierter button</button>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Disabled-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Disabled-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.disabled` | Basisklasse für deaktivierte Elemente |
-| `.disabled-opacity` | Deaktivierung durch reduzierte Deckkraft |
-| `.disabled-grayscale` | Deaktivierung durch Umwandlung in Graustufen |
-| `.disabled-blur` | Deaktivierung durch leichtes Weichzeichnen |
-| `.disabled-muted` | Deaktivierung durch gedämpfte Colors |
-| `.disabled-striped` | Deaktivierung durch diagonale Streifen |
-| `.disabled-overlay` | Deaktivierung durch Überlagerung |
+| `.disabled` | Basisklasse for deaktivierte elements |
+| `.disabled-opacity` | Deaktivierung through reduzierte Deckkraft |
+| `.disabled-grayscale` | Deaktivierung through Umwandlung in Graustufen |
+| `.disabled-blur` | Deaktivierung through leichtes Weichzeichnen |
+| `.disabled-muted` | Deaktivierung through gedampfte Colors |
+| `.disabled-striped` | Deaktivierung through diagonale Streifen |
+| `.disabled-overlay` | Deaktivierung through Uberlagerung |
 
 ## Variants
 
-### Opacity-Effekt
+### Opacity-effect
 
-Die einfachste Form der visuellen Deaktivierung ist die Reduzierung der Deckkraft:
+the einfachste Form the visuellen Deaktivierung ist the Reduzierung the Deckkraft:
 
 ```html
 <button class="btn disabled-opacity">Reduzierte Deckkraft</button>
 ```
 
-### Grayscale-Effekt
+### Grayscale-effect
 
-Umwandlung in Graustufen für eine deutlichere Deaktivierung:
+Umwandlung in Graustufen for a deutlichere Deaktivierung:
 
 ```html
 <button class="btn disabled-grayscale">Graustufen</button>
 ```
 
-### Blur-Effekt
+### Blur-effect
 
 Leichtes Weichzeichnen des Elements:
 
@@ -56,58 +56,58 @@ Leichtes Weichzeichnen des Elements:
 <button class="btn disabled-blur">Weichgezeichnet</button>
 ```
 
-### Muted-Effekt
+### Muted-effect
 
-Reduzierung der Farbsättigung und Anpassung der Helligkeit:
+Reduzierung the Farbsattigung and Customization the Helligkeit:
 
 ```html
-<button class="btn disabled-muted">Gedämpfte Colors</button>
+<button class="btn disabled-muted">Gedampfte Colors</button>
 ```
 
-### Striped-Effekt
+### Striped-effect
 
-Diagonale Streifen über dem Element:
+Diagonale Streifen over dem element:
 
 ```html
-<button class="btn disabled-striped">Mit Streifen</button>
+<button class="btn disabled-striped">with Streifen</button>
 ```
 
-### Overlay-Effekt
+### Overlay-effect
 
-Ein halbtransparentes Overlay über dem Element:
+a halbtransparentes Overlay over dem element:
 
 ```html
-<button class="btn disabled-overlay">Mit Overlay</button>
+<button class="btn disabled-overlay">with Overlay</button>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Disabled-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Disabled-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Formelemente
+### form elements
 
 ```html
-<!-- Standard HTML disabled Attribut -->
-<input type="text" disabled placeholder="Deaktiviertes Textfeld">
+<!-- Standard HTML disabled attributes -->
+<input type="text" disabled placeholder="Deaktiviertes text field">
 <select disabled>
   <option>Option 1</option>
   <option>Option 2</option>
 </select>
 
-<!-- Mit CSS-Klassen -->
-<input type="text" class="disabled-opacity" placeholder="Deaktiviertes Textfeld">
+<!-- with CSS-classes -->
+<input type="text" class="disabled-opacity" placeholder="Deaktiviertes text field">
 <select class="disabled-grayscale">
   <option>Option 1</option>
   <option>Option 2</option>
 </select>
 ```
 
-### Buttons und Links
+### buttons and links
 
 ```html
-<button class="btn btn-primary disabled">Deaktivierter Primär-Button</button>
-<button class="btn btn-secondary disabled-grayscale">Deaktivierter Sekundär-Button</button>
-<a href="#" class="btn disabled-muted">Deaktivierter Link-Button</a>
+<button class="btn btn-primary disabled">Deaktivierter Primar-button</button>
+<button class="btn btn-secondary disabled-grayscale">Deaktivierter Sekundar-button</button>
+<a href="#" class="btn disabled-muted">Deaktivierter link-button</a>
 ```
 
 ### Interaktive Components
@@ -115,7 +115,7 @@ Disabled-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 ```html
 <div class="card disabled-opacity">
   <div class="card-header">Deaktivierte Card</div>
-  <div class="card-body">Inhalt nicht verfügbar</div>
+  <div class="card-body">content not verfugbar</div>
 </div>
 
 <div class="dropdown disabled">
@@ -127,111 +127,111 @@ Disabled-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Disabled-Effekte können über CSS Variables angepasst werden:
+the Disabled-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  --disabled-opacity: 0.5; /* Deckkraft für disabled-opacity */
-  --disabled-grayscale: 100%; /* Graustufen-Wert für disabled-grayscale */
-  --disabled-blur: 1px; /* Weichzeichnungs-Radius für disabled-blur */
-  --disabled-saturation: 40%; /* Sättigungswert für disabled-muted */
-  --disabled-brightness: 90%; /* Helligkeitswert für disabled-muted */
+  --disabled-opacity: 0.5; /* Deckkraft for disabled-opacity */
+  --disabled-grayscale: 100%; /* Graustufen-Value for disabled-grayscale */
+  --disabled-blur: 1px; /* Weichzeichnungs-Radius for disabled-blur */
+  --disabled-saturation: 40%; /* Sattigungswert for disabled-muted */
+  --disabled-brightness: 90%; /* Helligkeitswert for disabled-muted */
   --disabled-stripe-color: rgba(255, 255, 255, 0.3); /* Streifenfarbe */
   --disabled-stripe-angle: 45deg; /* Streifenwinkel */
   --disabled-stripe-size: 10px; /* Streifenbreite */
-  --disabled-overlay-color: rgba(240, 240, 240, 0.6); /* Overlay-Farbe */
-  --disabled-cursor: not-allowed; /* Cursor für deaktivierte Elemente */
+  --disabled-overlay-color: rgba(240, 240, 240, 0.6); /* Overlay-color */
+  --disabled-cursor: not-allowed; /* Cursor for deaktivierte elements */
 }
 ```
 
 ## Accessibility
 
-Bei der Usage von Disabled-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Disabled-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Semantik**: Verwenden Sie immer das native `disabled`-Attribut für Formelemente
-2. **ARIA**: Für nicht-native Elemente verwenden Sie `aria-disabled="true"`
-3. **Kontrast**: Achten Sie auf ausreichenden Kontrast, auch im deaktivierten Zustand
-4. **Feedback**: Geben Sie zusätzliches Feedback bei Interaktionsversuchen
-5. **Text**: Erklären Sie, warum ein Element deaktiviert ist
+1. **Semantik**: use them immer the native `disabled`-attributes for form elements
+2. **ARIA**: for not-native elements use them `aria-disabled="true"`
+3. **Kontrast**: ensure them on ausreichenden Kontrast, also im deaktivierten state
+4. **Feedback**: Geben them zusatzliches Feedback at Interaktionsversuchen
+5. **Text**: Erklaren them, why a element deaktiviert ist
 
 ```html
-<!-- Barrierefreier deaktivierter Button -->
+<!-- Barrierefreier deaktivierter button -->
 <button 
   class="btn disabled" 
   disabled 
   aria-disabled="true" 
-  aria-label="Button deaktiviert: Bitte zuerst ein Form ausfüllen"
+  aria-label="button deaktiviert: please zuerst a Form ausfullen"
 >
   Form absenden
 </button>
 
-<!-- Barrierefreies deaktiviertes benutzerdefiniertes Element -->
+<!-- Barrierefreies deaktiviertes benutzerdefiniertes element -->
 <div 
   class="custom-control disabled-opacity" 
   aria-disabled="true" 
   tabindex="-1" 
   role="button"
 >
-  Nicht verfügbar
-  <span class="sr-only">Diese Funktion ist derzeit nicht verfügbar</span>
+  not verfugbar
+  <span class="sr-only">these Function ist derzeit not verfugbar</span>
 </div>
 ```
 
 ## JavaScript-Integration
 
-Für fortgeschrittene Disabled-States kann JavaScript verwendet werden:
+for fortgeschrittene Disabled-States kann JavaScript verwendet become:
 
 ```javascript
-// Dynamische Deaktivierung/Aktivierung von Elementen
+// Dynamische Deaktivierung/Aktivierung from Elementen
 function setElementDisabled(element, isDisabled, reason = '') {
   if (isDisabled) {
-    // Visuell deaktivieren
+    // Visuell deactivate
     element.classList.add('disabled');
     
-    // Semantisch deaktivieren
-    if (element.tagName === 'BUTTON' || element.tagName === 'INPUT' || 
+    // Semantisch deactivate
+    if (element.tagName === 'button' || element.tagName === 'INPUT' || 
         element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
       element.setAttribute('disabled', 'disabled');
     }
     
-    // ARIA-Attribute setzen
+    // ARIA-attributes setzen
     element.setAttribute('aria-disabled', 'true');
     
-    // Tooltip für Grund der Deaktivierung
+    // tooltip for Grund the Deaktivierung
     if (reason) {
       element.setAttribute('title', reason);
       element.setAttribute('data-disabled-reason', reason);
     }
     
-    // Cursor ändern
+    // Cursor change
     element.style.cursor = 'not-allowed';
     
-    // Event-Listener hinzufügen für zusätzliches Feedback
+    // Event-Listener add for zusatzliches Feedback
     element.addEventListener('click', preventInteraction);
   } else {
-    // Visuell aktivieren
+    // Visuell activate
     element.classList.remove('disabled');
     
-    // Semantisch aktivieren
+    // Semantisch activate
     if (element.hasAttribute('disabled')) {
       element.removeAttribute('disabled');
     }
     
-    // ARIA-Attribute zurücksetzen
+    // ARIA-attributes zurucksetzen
     element.setAttribute('aria-disabled', 'false');
     
-    // Tooltip entfernen
+    // tooltip remove
     if (element.hasAttribute('data-disabled-reason')) {
       element.removeAttribute('title');
       element.removeAttribute('data-disabled-reason');
     }
     
-    // Cursor zurücksetzen
+    // Cursor zurucksetzen
     element.style.cursor = '';
     
-    // Event-Listener entfernen
+    // Event-Listener remove
     element.removeEventListener('click', preventInteraction);
   }
 }
@@ -243,22 +243,22 @@ function preventInteraction(event) {
   // Optionales Feedback
   const reason = this.getAttribute('data-disabled-reason');
   if (reason) {
-    // Toast oder andere Benachrichtigung anzeigen
+    // Toast or others notification anzeigen
     showToast(reason);
   }
 }
 
 // Usage
 const submitButton = document.getElementById('submit-button');
-setElementDisabled(submitButton, true, 'Bitte füllen Sie zuerst alle Pflichtfelder aus');
+setElementDisabled(submitButton, true, 'please fullen them zuerst all Pflichtfelder aus');
 
-// Später aktivieren
+// Spater activate
 setElementDisabled(submitButton, false);
 ```
 
-## Formvalidierung und Disabled-States
+## Formvalidierung and Disabled-States
 
-Disabled-States können mit Formvalidierung kombiniert werden:
+Disabled-States can with Formvalidierung kombiniert become:
 
 ```html
 <form id="example-form">
@@ -279,12 +279,12 @@ Disabled-States können mit Formvalidierung kombiniert werden:
 ```
 
 ```javascript
-// Formvalidierung und Disabled-Zustand
+// Formvalidierung and Disabled-state
 const form = document.getElementById('example-form');
 const requiredInputs = form.querySelectorAll('[required]');
 const submitButton = document.getElementById('submit-button');
 
-// Prüfen, ob alle Pflichtfelder ausgefüllt sind
+// Prufen, whether all Pflichtfelder ausgefullt sind
 function validateForm() {
   let isValid = true;
   
@@ -294,11 +294,11 @@ function validateForm() {
     }
   });
   
-  // Button aktivieren/deaktivieren
-  setElementDisabled(submitButton, !isValid, 'Bitte füllen Sie alle Pflichtfelder aus');
+  // button activate/deactivate
+  setElementDisabled(submitButton, !isValid, 'please fullen them all Pflichtfelder aus');
 }
 
-// Event-Listener für Eingabeänderungen
+// Event-Listener for Eingabeanderungen
 requiredInputs.forEach(input => {
   input.addEventListener('input', validateForm);
 });
@@ -307,28 +307,28 @@ requiredInputs.forEach(input => {
 validateForm();
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Disabled-Effekte können die Leistung beeinflussen, insbesondere bei komplexen Effekten:
+Disabled-effects can the Leistung beeinflussen, insbesondere at komplexen Effekten:
 
-1. Verwenden Sie wenn möglich den einfachen `opacity`-Effekt
-2. Vermeiden Sie aufwändige Effekte wie `blur` bei vielen Elementen
-3. Bei Usage von Streifen oder Overlays, vermeiden Sie unnötige Neuberechnungen des Layouts
+1. use them if moglich den einfachen `opacity`-effect
+2. Vermeiden them aufwandige effects how `blur` at vielen Elementen
+3. at Usage from Streifen or Overlays, vermeiden them unnotige Neuberechnungen des layouts
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Disabled-Effekte sind mit allen modernen Browsern kompatibel. Einige visuelle Effekte wie Graustufenfilter haben jedoch Einschränkungen in älteren Browsern.
+the meisten Disabled-effects sind with allen modernen Browsern kompatibel. some visuelle effects how Graustufenfilter have however Einschrankungen in alteren Browsern.
 
-| Browser | Kompatibilität |
+| Browser | Kompatibilitat |
 |---------|---------------|
-| Chrome | Vollständige Unterstützung |
-| Firefox | Vollständige Unterstützung |
-| Safari | Vollständige Unterstützung |
-| Edge | Vollständige Unterstützung |
-| IE11 | Eingeschränkte Unterstützung für Filter-Effekte |
+| Chrome | Vollstandige Unterstutzung |
+| Firefox | Vollstandige Unterstutzung |
+| Safari | Vollstandige Unterstutzung |
+| Edge | Vollstandige Unterstutzung |
+| IE11 | Eingeschrankte Unterstutzung for Filter-effects |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Hover-Effekte](/docs/effects/interaction/hover.md) - Effekte beim Überfahren mit der Maus
-- [Focus-Effekte](/docs/effects/interaction/focus.md) - Effekte beim Fokussieren von Elementen
-- [Cursor-Effekte](/docs/effects/interaction/cursors.md) - Anpassen des Mauszeigers 
+- [Hover-effects](/docs/effects/interaction/hover.md) - effects beim Uberfahren with the Maus
+- [Focus-effects](/docs/effects/interaction/focus.md) - effects beim Fokussieren from Elementen
+- [Cursor-effects](/docs/effects/interaction/cursors.md) - customize des Mauszeigers 

@@ -444,7 +444,7 @@ Dialogs can contain forms for collecting user input.
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Component module */
+/* Component modules */
 @import '@casoon/ui-lib/ui/components/dialog.css';
 ```
 
@@ -489,7 +489,7 @@ The Dialog component can be customized using CSS variables:
 
 ### Available Variables
 
-| Variable | Default | Description |
+| variable | Default | Description |
 |----------|---------|-------------|
 | `--dialog-background` | `var(--color-background)` | Background color of the dialog |
 | `--dialog-border-radius` | `var(--radius-md)` | Border radius of the dialog |

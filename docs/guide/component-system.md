@@ -1,118 +1,118 @@
 ---
-title: Modul-System
+title: modules system
 category: Guide
 ---
 
-# Modul-System
+# modules system
 
-Das Casoon UI Library Modul-System organisiert Components in eigenständige, unabhängige CSS-Module, die über eine zentrale Steuerung geladen werden.
+The Casoon UI Library modules system organizes components into independent, standalone CSS modules that are loaded through a central control.
 
-## Struktur des Modul-Systems
+## Structure of the modules system
 
-Die Module sind in der `modules.css` Datei organisiert:
+The modules are organized in the `modules.css` file:
 
 ```css
 /**
  * Modules CSS
  *
- * Zentrale Datei zur Organisation und Einbindung aller Module.
- * Jedes Modul wird in einem eigenen Layer definiert, um Konflikte zu vermeiden.
+ * Central file for organizing and including all modules.
+ * Each modules is defined in its own layer to avoid conflicts.
  */
 
-/* Alert Modul */
+/* Alert modules */
 @import '@casoon/ui-lib/components/alert.css';
 
-/* Avatar Modul */
+/* avatar modules */
 @import '@casoon/ui-lib/components/avatar.css';
 
-/* Badge Modul */
+/* badge modules */
 @import '@casoon/ui-lib/components/badge.css';
 
-/* Weitere Module... */
+/* Additional modules... */
 ```
 
-Jedes Modul wird in einem eigenen Layer importiert, was folgende Vorteile bietet:
-- Vermeidung von Namenskonflikten
-- Klare Abgrenzung von Zuständigkeiten
-- Unabhängige Modifikation einzelner Module
-- Verbesserte Maintainability durch Modularity
+Each modules is imported in its own layer, which offers the following advantages:
+- Avoiding name conflicts
+- Clear separation of responsibilities
+- Independent modification of individual modules
+- Improved maintainability through modularity
 
-## Verfügbare Module
+## Available Modules
 
-Die Casoon UI Library enthält folgende Module:
+The Casoon UI Library includes the following modules:
 
-- **alert** - Feedback- und Hinweismeldungen
-- **avatar** - Benutzerbilder und -darstellungen
-- **badge** - Statusanzeigen und kleine Kennzeichnungen
-- **blog** - Layoutelemente für Blogbeiträge
-- **button** - Interaktive Buttonn
-- **card** - Container für zusammengehörige Inhalte
-- **checkbox** - Mehrfachauswahl-Elemente
-- **chip** - Kompakte Informationselemente
-- **code** - Darstellung von Codeblöcken
-- **file** - Datei-Upload-Components
-- **footer** - Seitenfußbereich
-- **form** - Formelemente und -layouts
-- **hamburger** - Mobile Menüsteuerung
-- **header** - Seitenkopfbereich
-- **input** - Texteingabefelder
-- **input-group** - Gruppierte Inputer
-- **modal** - Dialoge und Overlays
-- **notification** - Benachrichtigungssystem
-- **progress** - Fortschrittsanzeigen
-- **radio** - Einfachauswahl-Elemente
+- **alert** - Feedback and notification messages
+- **avatar** - User images and representations
+- **badge** - Status indicators and small labels
+- **blog** - layout elements for blog posts
+- **button** - Interactive buttons
+- **card** - Containers for related content
+- **checkbox** - Multiple-choice elements
+- **chip** - Compact information elements
+- **code** - Display of code blocks
+- **file** - File upload components
+- **footer** - Page footer area
+- **form** - Form elements and layouts
+- **hamburger** - Mobile menu control
+- **header** - Page header area
+- **input** - Text input fields
+- **input-group** - Grouped inputs
+- **modal** - Dialogs and overlays
+- **notification** - Notification system
+- **progress** - Progress indicators
+- **radio** - Single-choice elements
 - **select** - Selects
-- **sidebar** - Seitennavigation
-- **skeleton** - Ladeplatzhalter
-- **slider** - Werteregler
-- **spinner** - Ladeanimationen
-- **switch** - Ein/Aus-Switch
-- **table** - Tablenkomponenten
-- **tabs** - Tabsnavigation
-- **textarea** - Mehrzeilige Textfelder
-- **toast** - Temporäre Benachrichtigungen
-- **tooltip** - Hinweistexte
-- **widget** - Flexible Inhaltscontainer
-- **wizard** - Mehrstufige Prozesse
+- **sidebar** - Side navigation
+- **skeleton** - Loading placeholders
+- **slider** - Value sliders
+- **spinners** - Loading animations
+- **switch** - On/Off switches
+- **table** - Table components
+- **tabs** - Tab navigation
+- **textarea** - Multi-line text fields
+- **toast** - Temporary notifications
+- **tooltip** - Help texts
+- **widget** - Flexible content containers
+- **wizard** - Multi-step processes
 
-## Modul-Usage in eigenen Projekten
+## modules Usage in Your Own Projects
 
-Um Module in Ihrem Projekt zu nutzen:
+To use modules in your project:
 
-### 1. Vollständige Einbindung aller Module
+### 1. Complete Integration of All Modules
 
-Importieren Sie die core.css, die automatisch alle Module lädt:
+Import the core.css, which automatically loads all modules:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-### 2. Selektive Einbindung einzelner Module
+### 2. Selective Integration of Individual Modules
 
-Sie können auch nur ausgewählte Importing Modules:
+You can also import only selected modules:
 
 ```css
-/* Basis-Layer System importieren */
+/* Import Base Layer system */
 @import "@casoon/ui-lib/layers.css";
 
-/* Nur benötigte Importing Modules */
+/* Only import needed modules */
 @import "@casoon/ui-lib/components/button.css";
 @import "@casoon/ui-lib/components/input.css";
 @import "@casoon/ui-lib/components/card.css";
 ```
 
-## Anpassung von Modulen
+## Customization of Modules
 
-### Überschreiben von Modul-Stylesn
+### Overriding modules Styles
 
-Sie können Modul-Styles anpassen, indem Sie den entsprechenden Layer verwenden:
+You can customize modules styles by using the corresponding layer:
 
 ```css
-/* Eigene CSS-Datei */
+/* Your own CSS file */
 @import "@casoon/ui-lib/core.css";
 
-/* Anpassung der Button-Komponente */
-@layer module-button {
+/* Customization of the button component */
+@layer modules-button {
   .btn--primary {
     background-color: var(--color-brand);
     border-radius: var(--radius-lg);
@@ -120,16 +120,16 @@ Sie können Modul-Styles anpassen, indem Sie den entsprechenden Layer verwenden:
 }
 ```
 
-### Erweiterung von Modulen
+### Extending Modules
 
-Bestehende Module können erweitert werden:
+Existing modules can be extended:
 
 ```css
-/* Eigene CSS-Datei */
+/* Your own CSS file */
 @import "@casoon/ui-lib/core.css";
 
-/* Erweiterung der Card-Komponente */
-@layer module-card {
+/* Extension of the Card component */
+@layer modules-card {
   .card--gradient {
     background: linear-gradient(to right, var(--color-primary), var(--color-accent));
     color: var(--color-on-primary);
@@ -137,20 +137,20 @@ Bestehende Module können erweitert werden:
 }
 ```
 
-## Modul-Architektur
+## modules Architecture
 
-Jedes Modul folgt einer konsistenten Architektur:
+Each modules follows a consistent architecture:
 
-1. **Basisklasse** - Grundlegende Funktionalität (`.btn`, `.card`, etc.)
-2. **Variants** - Funktionale Variants (`.btn--primary`, `.card--interactive`)
-3. **Sizes** - Sizesvarianten (`.btn--sm`, `.btn--lg`)
-4. **States** - Statusklassen (`.btn--disabled`, `.card--active`)
-5. **Modifikatoren** - Zusätzliche Customizations (`.btn--rounded`, `.card--shadow`)
+1. **Base class** - Basic functionality (`.btn`, `.card`, etc.)
+2. **Variants** - Functional variants (`.btn--primary`, `.card--interactive`)
+3. **Sizes** - Size variants (`.btn--sm`, `.btn--lg`)
+4. **States** - Status classes (`.btn--disabled`, `.card--active`)
+5. **Modifiers** - Additional customizations (`.btn--rounded`, `.card--shadow`)
 
 ## Best Practices
 
-- **Modularisierung nutzen** - Verwenden Sie nur die Module, die Sie benötigen
-- **Konsistente Namenskonventionen** - Folgen Sie dem Format `[basisklasse]--[modifikator]`
-- **Layer respektieren** - Customizations innerhalb des entsprechenden Modul-Layers vornehmen
-- **Modul-Kombination** - Mehrere Module gemeinsam für komplexe UI-Elemente verwenden
-- **Themability beachten** - Tokens verwenden, um Module theming-freundlich zu gestalten 
+- **Use Modularization** - Only use the modules you need
+- **Consistent Naming Conventions** - Follow the format `[base-class]--[modifier]`
+- **Respect Layers** - Make customizations within the corresponding modules layer
+- **modules Combination** - Use multiple modules together for complex UI elements
+- **Consider Themability** - Use tokens to make modules theme-friendly 

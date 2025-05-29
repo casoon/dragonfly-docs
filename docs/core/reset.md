@@ -1,41 +1,41 @@
 ---
-title: Reset System
+title: Reset system
 category: Core
 ---
 
-# Reset System
+# Reset system
 
-Das Reset System der Casoon UI Library bildet die Grundlage für konsistentes Styling über verschiedene Browser hinweg. Es neutralisiert Browser-spezifische Standardstile und stellt eine solide Basis für die Implementierung eigener Designs bereit.
+the Reset system the Casoon UI Library bildet the Base for konsistentes Styling over verschiedene Browser hinweg. it neutralisiert Browser-spezifische Standardstile and stellt a solide Base for the Implementation eigener designs bereit.
 
-## Überblick
+## Uberblick
 
-Browser wenden standardmäßig eigene Styles auf HTML-Elemente an, was zu Inkonsistenzen in der Darstellung führen kann. Das Reset System der Casoon UI Library löst dieses Problem, indem es:
+Browser wenden by default own Styles on HTML-elements on, what to Inkonsistenzen in the Display fuhren kann. the Reset system the Casoon UI Library lost this Problem, indem it:
 
 - Browser-spezifische Standardstile normalisiert
-- Eine konsistente Basis für alle Components schafft
+- a konsistente Base for all Components schafft
 - Typografische Inkonsistenzen beseitigt
-- Box-Modell-Verhalten vereinheitlicht
+- box-Modell-behavior vereinheitlicht
 - Darstellungsprobleme in verschiedenen Browsern minimiert
 
 ## Installation
 
-Das Reset System wird automatisch geladen, wenn Sie die Hauptdatei der Casoon UI Library importieren:
+the Reset system wird automatisch geladen, If you the Hauptdatei the Casoon UI Library import:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 ```
 
-Sie können das Reset System auch separat importieren:
+You can the Reset system also separat import:
 
 ```css
 @import '@casoon/ui-lib/core/reset.css';
 ```
 
-## Funktionen
+## functions
 
-### Box-Sizing Reset
+### box-Sizing Reset
 
-Das Reset System setzt `box-sizing: border-box` für alle Elemente, um ein konsistentes Box-Modell zu gewährleisten:
+the Reset system setzt `box-sizing: border-box` for all elements, um a konsistentes box-Modell to gewahrleisten:
 
 ```css
 *, *::before, *::after {
@@ -43,11 +43,11 @@ Das Reset System setzt `box-sizing: border-box` für alle Elemente, um ein konsi
 }
 ```
 
-Dies bewirkt, dass Padding und Border in die Gesamtbreite/-höhe des Elements einbezogen werden, was das Layout vorhersehbarer macht.
+Dies bewirkt, that Padding and Border in the Gesamtbreite/-height des Elements einbezogen become, what the layout vorhersehbarer macht.
 
-### Margin und Padding Reset
+### Margin and Padding Reset
 
-Alle Margin- und Padding-Werte werden auf 0 gesetzt, um ein konsistentes Ausgangsniveau zu schaffen:
+all Margin- and Padding-values become on 0 gesetzt, um a konsistentes Ausgangsniveau to schaffen:
 
 ```css
 * {
@@ -58,11 +58,11 @@ Alle Margin- und Padding-Werte werden auf 0 gesetzt, um ein konsistentes Ausgang
 
 ### Typography-Normalisierung
 
-Schriftgrößen und Zeilenhöhen werden normalisiert, um eine solide Basis für die Typography zu schaffen:
+Schriftgrossen and Zeilenhohen become normalisiert, um a solide Base for the Typography to schaffen:
 
 ```css
 html {
-  /* Basis für rem-Werte */
+  /* Base for rem-values */
   font-size: 16px;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -75,9 +75,9 @@ body {
 }
 ```
 
-### Listen-Reset
+### lists-Reset
 
-Listenstile werden zurückgesetzt, um individuelle Customizations zu erleichtern:
+Listenstile become zuruckgesetzt, um individuelle customizations to erleichtern:
 
 ```css
 ul, ol {
@@ -85,9 +85,9 @@ ul, ol {
 }
 ```
 
-### Form-Elemente
+### Form-elements
 
-Form-Elemente werden normalisiert, um plattformübergreifende Consistency zu gewährleisten:
+Form-elements become normalisiert, um plattformubergreifende Consistency to gewahrleisten:
 
 ```css
 button, input, select, textarea {
@@ -102,9 +102,9 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 ```
 
-### Bilder und Medien
+### images and Medien
 
-Bilder und andere Medien werden als Block-Elemente definiert und skalieren responsive:
+images and others Medien become as Block-elements definiert and skalieren responsive:
 
 ```css
 img, svg, video, canvas, audio, iframe, embed, object {
@@ -116,7 +116,7 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 ### Tablen
 
-Tablen werden mit zusammengefassten Rahmen und standardmäßiger Zellabstand-Konfiguration dargestellt:
+Tablen become with zusammengefassten border and standardmassiger Zellabstand-Configuration dargestellt:
 
 ```css
 table {
@@ -125,18 +125,18 @@ table {
 }
 ```
 
-### Accessibility und Usability
+### Accessibility and Usability
 
-Das Reset System berücksichtigt auch Accessibility und User-friendliness:
+the Reset system berucksichtigt also Accessibility and User-friendliness:
 
 ```css
-/* Verbesserte Fokusdarstellung für Tastaturnavigation */
+/* Verbesserte Fokusdarstellung for Tastaturnavigation */
 :focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 
-/* Unterstützung für verringerte Bewegung */
+/* Unterstutzung for verringerte Bewegung */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -147,29 +147,29 @@ Das Reset System berücksichtigt auch Accessibility und User-friendliness:
 }
 ```
 
-## Unterschied zu anderen Reset-Systemen
+## Unterschied to anderen Reset-Systemen
 
-Im Vergleich zu bekannten Reset-Systemen wie normalize.css oder CSS Reset verfolgt die Casoon UI Library einen ausgewogenen Ansatz:
+Im Vergleich to bekannten Reset-Systemen how normalize.css or CSS Reset verfolgt the Casoon UI Library einen ausgewogenen Ansatz:
 
-- **Moderne Browserunterstützung**: Fokus auf aktuelle Browser ohne Legacy-Fixes
-- **Sanfter Reset**: Bewahrt nützliche Browser-Defaults, wo sinnvoll
-- **Designsystem-Integration**: Optimiert für die Zusammenarbeit mit anderen Casoon UI Library-Components
-- **CSS Variables**: Verwendet CSS Variables für einfache Customizations
-- **Accessibility-First**: Accessibility ist von Anfang an integriert
+- **Moderne Browserunterstutzung**: Fokus on aktuelle Browser without Legacy-Fixes
+- **Sanfter Reset**: Bewahrt nutzliche Browser-Defaults, where sinnvoll
+- **design system-Integration**: Optimiert for the Zusammenarbeit with anderen Casoon UI Library-Components
+- **CSS Variables**: Verwendet CSS Variables for einfache customizations
+- **Accessibility-First**: Accessibility ist from Anfang on integriert
 
-## Vollständiger Reset-Code
+## Vollstandiger Reset-Code
 
-Hier ist der vollständige CSS-Code des Reset-Systems:
+Hier ist the vollstandige CSS-Code des Reset-Systems:
 
 ```css
 /* 
  * Casoon UI Library Reset
  * 
- * Ein modernes Reset-System, das Browser-Inkonsistenzen beseitigt
- * und eine solide Grundlage für die Casoon UI Library bietet.
+ * a modernes Reset-system, the Browser-Inkonsistenzen beseitigt
+ * and a solide Base for the Casoon UI Library bietet.
  */
 
-/* Box-Sizing Reset */
+/* box-Sizing Reset */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -195,7 +195,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Überschriften-Reset */
+/* Uberschriften-Reset */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -209,7 +209,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Listen-Reset */
+/* lists-Reset */
 ol, ul, dl {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -223,7 +223,7 @@ table {
   width: 100%;
 }
 
-/* Links-Reset */
+/* links-Reset */
 a {
   color: var(--color-link, #0066cc);
   text-decoration: none;
@@ -235,7 +235,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Bild-Reset */
+/* image-Reset */
 img, svg, video, canvas, audio, iframe, embed, object {
   display: block;
   max-width: 100%;
@@ -273,7 +273,7 @@ fieldset {
   border: 0;
 }
 
-/* Accessibility und Usability */
+/* Accessibility and Usability */
 :focus-visible {
   outline: 2px solid var(--color-focus, #4d90fe);
   outline-offset: 2px;
@@ -293,7 +293,7 @@ hr {
   border-top: 1px solid var(--color-border, rgba(0, 0, 0, 0.1));
 }
 
-/* Reduzierte Bewegung für Accessibility */
+/* Reduzierte Bewegung for Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -323,9 +323,9 @@ hr {
 }
 ```
 
-## Anpassung
+## Customization
 
-Das Reset-System kann über CSS Variables angepasst werden:
+the Reset-system kann over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -346,14 +346,14 @@ Das Reset-System kann über CSS Variables angepasst werden:
 
 ## Best Practices
 
-- Importieren Sie das Reset-System immer vor anderen CSS-Dateien
-- Überschreiben Sie Reset-Styles nur bei Bedarf
-- Nutzen Sie die bereitgestellten CSS Variables für Customizations
-- Beachten Sie, dass einige Browser-spezifische Eigenschaften (wie Scrollbars) möglicherweise nicht überall unterstützt werden
+- import them the Reset-system immer before anderen CSS-Dateien
+- overwrite them Reset-Styles only at Bedarf
+- use them the bereitgestellten CSS Variables for customizations
+- note, that some Browser-spezifische properties (how Scrollbars) moglicherweise not uberall unterstutzt become
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Das Reset-System ist mit allen modernen Browsern kompatibel:
+the Reset-system ist with allen modernen Browsern kompatibel:
 
 | Feature | Chrome | Firefox | Safari | Edge | IE |
 |---------|--------|---------|--------|------|-----|
@@ -362,15 +362,15 @@ Das Reset-System ist mit allen modernen Browsern kompatibel:
 | :focus-visible | ✓ | ✓ | ✓ | ✓ | Nein |
 | Scrollbar-Styling | ✓ | Teilweise | ✓ | ✓ | Nein |
 
-## Integration mit anderen Systemen
+## Integration with anderen Systemen
 
-Das Reset-System bildet die Grundlage für alle anderen Casoon UI Library-Components und -Systeme. Es wird automatisch von folgenden Systemen verwendet:
+the Reset-system bildet the Base for all anderen Casoon UI Library-Components and -Systeme. it wird automatisch from folgenden Systemen verwendet:
 
-- Color System
-- Typography System
-- Layout System
-- Component System
+- Color system
+- Typography system
+- layout system
+- Component system
 
 ## Zusammenfassung
 
-Das Reset-System der Casoon UI Library bietet eine solide Grundlage für die Entwicklung konsistenter Benutzeroberflächen. Es beseitigt Browser-Inkonsistenzen und schafft eine neutrale Basis für die Implementierung Ihres eigenen Designs. Durch die Usage moderner CSS-Praktiken und die Berücksichtigung von Accessibility stellt es sicher, dass Ihre Anwendungen auf verschiedenen Plattformen konsistent und zugänglich sind. 
+the Reset-system the Casoon UI Library bietet a solide Base for the Entwicklung konsistenter user interfaces. it beseitigt Browser-Inkonsistenzen and schafft a neutrale Base for the Implementation Ihres eigenen designs. through the Usage moderner CSS-Praktiken and the Berucksichtigung from Accessibility stellt it sicher, that Ihre Anwendungen on verschiedenen Plattformen konsistent and zuganglich sind. 

@@ -1,25 +1,25 @@
 ---
-title: Theme-System
-category: Themes
+title: theme-system
+category: themes
 ---
 
-# Theme-System
+# theme-system
 
-Das Theme-System der Casoon UI Library ermöglicht eine flexible Gestaltung des Erscheinungsbilds Ihrer Anwendung mit vordefinierten Themes und anpassbaren Design Tokens.
+the theme-system the Casoon UI Library ermoglicht a flexible Gestaltung des Erscheinungsbilds Ihrer Application with vordefinierten themes and anpassbaren design Tokens.
 
 ## CSS-Import
 
-Um das komplette Casoon UI Theme-System zu nutzen, importieren Sie einfach die `core.css` Datei:
+Um the komplette Casoon UI theme-system to use, import them einfach the `core.css` file:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Dadurch wird automatisch das Layer System geladen, welches alle Themes über `themes.css` enthält.
+by doing so wird automatisch the Layer system geladen, welches all themes over `themes.css` enthalt.
 
-## Layer-Struktur
+## Layer-Structure
 
-Die Themes sind Teil des zentralen Layer Systems und werden unter dem `themes`-Layer definiert. Die Reihenfolge der Layer bestimmt die CSS-Spezifität, und der `themes`-Layer hat eine der höchsten Prioritäten:
+the themes sind Teil des zentralen Layer Systems and become under dem `themes`-Layer definiert. the Reihenfolge the Layer bestimmt the CSS-Spezifitat, and the `themes`-Layer hat a the hochsten Prioritaten:
 
 ```css
 @layer reset,
@@ -30,111 +30,111 @@ Die Themes sind Teil des zentralen Layer Systems und werden unter dem `themes`-L
        themes;
 ```
 
-## Verfügbare Themes
+## Verfugbare themes
 
-Casoon UI bietet folgende vordefinierte Themes:
+Casoon UI bietet folgende vordefinierte themes:
 
-| Theme | Beschreibung | Aktivierungs-Klasse |
+| theme | Description | Aktivierungs-Class |
 |-------|-------------|---------------------|
-| Day (Standard) | Helles Theme mit neutralen Colors | `theme-day` |
-| Night | Dunkles Theme für reduzierte Augenbelastung | `theme-night` |
-| Spring | Frisches, helles Theme mit Grüntönen | `theme-spring` |
-| Summer | Warmes Theme mit lebendigen Colors | `theme-summer` |
-| Autumn | Warmes Theme mit Erdtönen | `theme-autumn` |
-| Winter | Kühles, gedämpftes Theme mit Blautönen | `theme-winter` |
-| Ocean | Ruhiges Theme mit Blautönen und Meeresfarben | `theme-ocean` |
-| Forest | Natürliches Theme mit Grün- und Brauntönen | `theme-forest` |
-| Brand | Anpassbares Theme für Markenidentität | `theme-brand` |
+| Day (Standard) | Helles theme with neutralen Colors | `theme-day` |
+| Night | Dunkles theme for reduzierte Augenbelastung | `theme-night` |
+| Spring | Frisches, helles theme with Gruntonen | `theme-spring` |
+| Summer | Warmes theme with lebendigen Colors | `theme-summer` |
+| Autumn | Warmes theme with Erdtonen | `theme-autumn` |
+| Winter | Kuhles, gedampftes theme with Blautonen | `theme-winter` |
+| Ocean | Ruhiges theme with Blautonen and Meeresfarben | `theme-ocean` |
+| Forest | Naturliches theme with Grun- and Brauntonen | `theme-forest` |
+| Brand | Anpassbares theme for Markenidentitat | `theme-brand` |
 | Pastel | Sanfte Pastellfarben | `theme-pastel` |
 | Neon | Lebendige, leuchtende Colors | `theme-neon` |
-| Monochrome | Schwarz-Weiß-Palette | `theme-monochrome` |
-| Retro | Vintage-inspiriertes Design | `theme-retro` |
+| Monochrome | Schwarz-Weiss-Palette | `theme-monochrome` |
+| Retro | Vintage-inspiriertes design | `theme-retro` |
 | Sunset | Warme Abendfarben | `theme-sunset` |
-| Dark Mode | Optimiert für dunkle Umgebungen | `theme-dark-mode` |
-| Accessibility | Optimiert für Accessibility | `theme-accessibility` |
+| Dark Mode | Optimiert for dunkle Umgebungen | `theme-dark-mode` |
+| Accessibility | Optimiert for Accessibility | `theme-accessibility` |
 
-## Theme-Aktivierung
+## theme-Aktivierung
 
-Um ein Theme zu aktivieren, fügen Sie die entsprechende Klasse zum `<html>` oder `<body>` Element hinzu:
+Um a theme to activate, fugen them the entsprechende Class zum `<html>` or `<body>` element hinzu:
 
 ```html
 <html class="theme-night">
-  <!-- Der gesamte Inhalt wird im Night-Theme dargestellt -->
+  <!-- the gesamte content wird im Night-theme dargestellt -->
 </html>
 ```
 
-oder
+or
 
 ```html
 <body class="theme-summer">
-  <!-- Der Seiteninhalt wird im Summer-Theme dargestellt -->
+  <!-- the Seiteninhalt wird im Summer-theme dargestellt -->
 </body>
 ```
 
-## Theme-Integration
+## theme-Integration
 
-### Importieren der Theme-Dateien
+### import the theme-Dateien
 
-Die einfachste Methode ist der Import der core.css, die automatisch alle Themes lädt:
+the einfachste Method ist the Import the core.css, the automatisch all themes ladt:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 ```
 
-Alternativ können Sie auch gezielt einzelne Themes importieren:
+Alternativ can them also gezielt einzelne themes import:
 
 ```css
-/* Basis-Styles importieren */
+/* Base-Styles import */
 @import '@casoon/ui-lib/core.css';
 
-/* Spezifisches Theme überschreiben oder hinzufügen */
+/* Spezifisches theme overwrite or add */
 @import '@casoon/ui-lib/themes/night.css';
 ```
 
-## Dynamischer Theme-Wechsel
+## Dynamischer theme-Wechsel
 
-Sie können Themes dynamisch wechseln, indem Sie die Theme-Klasse mit JavaScript ändern:
+You can themes dynamisch wechseln, indem them the theme-Class with JavaScript change:
 
 ```js
-// Theme auf Night umstellen
+// theme on Night umstellen
 document.documentElement.className = 'theme-night';
 
-// Oder bei Beibehaltung anderer Klassen
+// or at Beibehaltung anderer classes
 document.documentElement.classList.add('theme-night');
 document.documentElement.classList.remove('theme-day');
 ```
 
-### Example für einen Theme-Switcher
+### Example for einen theme-Switcher
 
 ```html
 <div class="theme-switcher">
-  <button onclick="setTheme('theme-day')">Tag</button>
+  <button onclick="setTheme('theme-day')">tag</button>
   <button onclick="setTheme('theme-night')">Nacht</button>
   <button onclick="setTheme('theme-ocean')">Ozean</button>
 </div>
 
 <script>
 function setTheme(themeName) {
-  // Entferne alle Theme-Klassen
+  // Entferne all theme-classes
   document.documentElement.classList.remove(
     'theme-day', 'theme-night', 'theme-spring', 
     'theme-summer', 'theme-autumn', 'theme-winter',
     'theme-ocean', 'theme-forest', 'theme-contrast'
   );
 
-  // Füge die neue Theme-Klasse hinzu
+  // Fuge the neue theme-Class hinzu
   document.documentElement.classList.add(themeName);
 
-  // Speichere die Auswahl im localStorage
+  // Speichere the selection im localStorage
   localStorage.setItem('preferred-theme', themeName);
 }
 
-// Theme aus localStorage wiederherstellen
+// theme aus localStorage wiederherstellen
 const savedTheme = localStorage.getItem('preferred-theme');
 if (savedTheme) {
   setTheme(savedTheme);
 } else {
-  // Prüfe auf Betriebssystem-Präferenz
+  // Prufe on Betriebssystem-Praferenz
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     setTheme('theme-night');
   } else {
@@ -142,7 +142,7 @@ if (savedTheme) {
   }
 }
 
-// Reagiere auf Änderungen der Systempräferenz
+// Reagiere on Anderungen the Systempraferenz
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
   if (!localStorage.getItem('preferred-theme')) {
     setTheme(event.matches ? 'theme-night' : 'theme-day');
@@ -151,12 +151,12 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
 </script>
 ```
 
-### React-Implementation eines Theme-Switchers
+### React-Implementation eines theme-Switchers
 
 ```jsx
 import { useState, useEffect } from 'react';
 
-// Import der benötigten Themes
+// Import the benotigten themes
 import '@casoon/ui-lib/dist/core.css';
 import '@casoon/ui-lib/dist/themes/day.css';
 import '@casoon/ui-lib/dist/themes/night.css';
@@ -165,7 +165,7 @@ function ThemeSwitcher() {
   const [currentTheme, setCurrentTheme] = useState('theme-day');
 
   useEffect(() => {
-    // Theme aus localStorage laden
+    // theme aus localStorage load
     const savedTheme = localStorage.getItem('preferred-theme');
     if (savedTheme) {
       setCurrentTheme(savedTheme);
@@ -173,10 +173,10 @@ function ThemeSwitcher() {
       setCurrentTheme('theme-night');
     }
 
-    // Theme auf HTML-Element anwenden
+    // theme on HTML-element anwenden
     document.documentElement.className = currentTheme;
 
-    // Theme-Änderung speichern
+    // theme-Anderung save
     localStorage.setItem('preferred-theme', currentTheme);
   }, [currentTheme]);
 
@@ -186,7 +186,7 @@ function ThemeSwitcher() {
         className={`btn ${currentTheme === 'theme-day' ? 'btn--primary' : 'btn--secondary'}`}
         onClick={() => setCurrentTheme('theme-day')}
       >
-        Tag
+        tag
       </button>
       <button 
         className={`btn ${currentTheme === 'theme-night' ? 'btn--primary' : 'btn--secondary'}`}
@@ -201,9 +201,9 @@ function ThemeSwitcher() {
 export default ThemeSwitcher;
 ```
 
-## Theme-Struktur
+## theme-Structure
 
-Jedes Theme definiert eigene Werte für Design Tokens wie Colors, Abstände, Rundungen und Schattierungen. Diese werden als CSS Variables implementiert:
+Jedes theme definiert own values for design Tokens how Colors, Abstande, Rundungen and Schattierungen. these become as CSS Variables implementiert:
 
 ```css
 .theme-day {
@@ -217,7 +217,7 @@ Jedes Theme definiert eigene Werte für Design Tokens wie Colors, Abstände, Run
   --color-error: #f44336;
   --color-info: #2196f3;
 
-  /* Hintergründe */
+  /* Hintergrunde */
   --bg-base: #ffffff;
   --bg-muted: #f5f5f5;
   --bg-subtle: #e5e5e5;
@@ -227,12 +227,12 @@ Jedes Theme definiert eigene Werte für Design Tokens wie Colors, Abstände, Run
   --text-secondary: #4a4e69;
   --text-muted: #6c757d;
 
-  /* Kontrast-Colors für die Hauptfarben */
+  /* Kontrast-Colors for the Hauptfarben */
   --color-on-primary: #ffffff;
   --color-on-secondary: #ffffff;
   --color-on-accent: #ffffff;
 
-  /* Schatten */
+  /* shadow */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -255,7 +255,7 @@ Jedes Theme definiert eigene Werte für Design Tokens wie Colors, Abstände, Run
   --color-error: #ff5555;
   --color-info: #8be9fd;
 
-  /* Hintergründe */
+  /* Hintergrunde */
   --bg-base: #282a36;
   --bg-muted: #44475a;
   --bg-subtle: #373a49;
@@ -265,17 +265,17 @@ Jedes Theme definiert eigene Werte für Design Tokens wie Colors, Abstände, Run
   --text-secondary: #d1d1e0;
   --text-muted: #a5b1c2;
 
-  /* Kontrast-Colors für die Hauptfarben */
+  /* Kontrast-Colors for the Hauptfarben */
   --color-on-primary: #282a36;
   --color-on-secondary: #282a36;
   --color-on-accent: #282a36;
 
-  /* Schatten mit angepasster Sichtbarkeit für dunkle Themes */
+  /* shadow with angepasster visibility for dunkle themes */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
 
-  /* Rundungen (gleich wie im Day-Theme) */
+  /* Rundungen (gleich how im Day-theme) */
   --radius-sm: 0.25rem;
   --radius-md: 0.375rem;
   --radius-lg: 0.5rem;
@@ -283,12 +283,12 @@ Jedes Theme definiert eigene Werte für Design Tokens wie Colors, Abstände, Run
 }
 ```
 
-## Components mit Theme-Unterstützung
+## Components with theme-Unterstutzung
 
-Alle Components nutzen automatisch die Theme-Variablen, wodurch ein konsistentes Erscheinungsbild in der gesamten Anwendung gewährleistet wird:
+all Components use automatisch the theme-variables, by what a konsistentes Erscheinungsbild in the gesamten Application gewahrleistet wird:
 
 ```css
-/* Button-Komponente mit Theme-Variablen */
+/* button-Component with theme-variables */
 .btn {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
@@ -307,7 +307,7 @@ Alle Components nutzen automatisch die Theme-Variablen, wodurch ein konsistentes
   color: var(--color-on-secondary);
 }
 
-/* Card-Komponente mit Theme-Variablen */
+/* Card-Component with theme-variables */
 .card {
   background-color: var(--bg-base);
   color: var(--text-primary);
@@ -315,29 +315,29 @@ Alle Components nutzen automatisch die Theme-Variablen, wodurch ein konsistentes
   box-shadow: var(--shadow-md);
 }
 
-/* ... weitere Components ... */
+/* ... additional Components ... */
 ```
 
-## Theme-Anpassung
+## theme-Customization
 
-Sie können die Theme-Variablen in Ihrer eigenen CSS-Datei überschreiben, um das Erscheinungsbild anzupassen:
+You can the theme-variables in Ihrer eigenen CSS-file overwrite, um the Erscheinungsbild anzupassen:
 
-### Einfache Customizations
+### Einfache customizations
 
 ```css
-/* Anpassen des Day-Themes mit Ihrer Markenfarbe */
+/* customize des Day-themes with Ihrer Markenfarbe */
 .theme-day {
   --color-primary: #ff6b6b; /* Ihre Markenfarbe */
-  --color-secondary: #51cf66; /* Ihre sekundäre Farbe */
+  --color-secondary: #51cf66; /* Ihre sekundare color */
 }
 ```
 
-### Eigenes Theme erstellen
+### Eigenes theme create
 
 ```css
-/* Eigenes benutzerdefiniertes Theme */
+/* Eigenes benutzerdefiniertes theme */
 .theme-custom {
-  /* Basis vom Day-Theme kopieren und anpassen */
+  /* Base vom Day-theme kopieren and customize */
   --color-primary: #7048e8;
   --color-secondary: #5f3dc4;
   --color-accent: #f03e3e;
@@ -356,17 +356,17 @@ Sie können die Theme-Variablen in Ihrer eigenen CSS-Datei überschreiben, um da
   --text-secondary: #343a40;
   --text-muted: #6c757d;
 
-  /* ... weitere Customizations ... */
+  /* ... additional customizations ... */
 }
 ```
 
-## Farbpaletten für Themes
+## Farbpaletten for themes
 
-Das Color System verwendet semantische Variablen für verschiedene Use Cases. Jedes Theme definiert diese Variablen mit spezifischen Werten:
+the Color system verwendet semantische variables for verschiedene Use Cases. Jedes theme definiert these variables with spezifischen Werten:
 
 ```css
 :root {
-  /* Primärfarbe mit Schattierungen */
+  /* Primarfarbe with Schattierungen */
   --color-primary-50: #eef2ff;
   --color-primary-100: #d8e3fe;
   --color-primary-200: #b6c9fc;
@@ -378,7 +378,7 @@ Das Color System verwendet semantische Variablen für verschiedene Use Cases. Je
   --color-primary-800: #283590;
   --color-primary-900: #1f2671;
 
-  /* ... weitere Farbpaletten ... */
+  /* ... additional Farbpaletten ... */
 }
 ```
 
@@ -386,37 +386,37 @@ Das Color System verwendet semantische Variablen für verschiedene Use Cases. Je
 
 ```html
 <div class="bg-primary-100 text-primary-900 p-4">
-  Primärfarbe: Heller Hintergrund mit dunkler Schrift
+  Primarfarbe: Heller background with dunkler font
 </div>
 
 <div class="bg-primary-900 text-primary-100 p-4">
-  Primärfarbe: Dunkler Hintergrund mit heller Schrift
+  Primarfarbe: Dunkler background with heller font
 </div>
 ```
 
-## Unterstützung für Benutzereinstellungen
+## Unterstutzung for Benutzereinstellungen
 
-Casoon UI Themes können auf Benutzereinstellungen reagieren:
+Casoon UI themes can on Benutzereinstellungen reagieren:
 
-### System-Farbschema (Hell/Dunkel)
+### system-color scheme (Hell/Dunkel)
 
 ```css
-/* Automatische Anpassung an Betriebssystem-Einstellung */
+/* Automatische Customization on Betriebssystem-Setting */
 @media (prefers-color-scheme: dark) {
   :root:not([class*="theme-"]) {
-    /* Dark Mode als Standard, wenn keine Theme-Klasse gesetzt ist */
+    /* Dark Mode as Standard, if no theme-Class gesetzt ist */
     --color-primary: var(--night-color-primary);
     --color-secondary: var(--night-color-secondary);
-    /* ... weitere Variablen ... */
+    /* ... additional variables ... */
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root:not([class*="theme-"]) {
-    /* Light Mode als Standard, wenn keine Theme-Klasse gesetzt ist */
+    /* Light Mode as Standard, if no theme-Class gesetzt ist */
     --color-primary: var(--day-color-primary);
     --color-secondary: var(--day-color-secondary);
-    /* ... weitere Variablen ... */
+    /* ... additional variables ... */
   }
 }
 ```
@@ -430,14 +430,14 @@ Casoon UI Themes können auf Benutzereinstellungen reagieren:
   --animation-duration: 1s;
 }
 
-/* Reduzierte Animationen für Benutzer, die reduzierte Bewegung bevorzugen */
+/* Reduzierte animations for user, the reduzierte Bewegung bevorzugen */
 @media (prefers-reduced-motion: reduce) {
   :root {
     --transition-speed: 0.1s;
     --animation-duration: 0.3s;
   }
 
-  /* Komplexe Animationen deaktivieren */
+  /* Komplexe animations deactivate */
   .animated {
     animation: none !important;
     transition: none !important;
@@ -447,18 +447,18 @@ Casoon UI Themes können auf Benutzereinstellungen reagieren:
 
 ## Accessibility
 
-Casoon UI Themes sind für Accessibility optimiert:
+Casoon UI themes sind for Accessibility optimiert:
 
-- Alle Themes erreichen mindestens ein Kontrastverhältnis von AA nach WCAG 2.1
-- Das Contrast-Theme bietet höhere Kontrastverhältnisse (AAA nach WCAG 2.1)
-- Farbkombinationen werden auf Lesbarkeit geprüft
-- Themes unterstützen die Benutzereinstellung `prefers-color-scheme`
+- all themes erreichen mindestens a Kontrastverhaltnis from AA after WCAG 2.1
+- the Contrast-theme bietet hohere Kontrastverhaltnisse (AAA after WCAG 2.1)
+- Farbkombinationen become on Lesbarkeit gepruft
+- themes unterstutzen the Benutzereinstellung `prefers-color-scheme`
 
-### Contrast-Theme für höhere Accessibility
+### Contrast-theme for hohere Accessibility
 
 ```css
 .theme-contrast {
-  /* Maximale Kontraste für bessere Lesbarkeit */
+  /* Maximale Kontraste for bessere Lesbarkeit */
   --color-primary: #0000e6;
   --color-secondary: #660099;
   --color-accent: #cc0000;
@@ -469,12 +469,12 @@ Casoon UI Themes sind für Accessibility optimiert:
   --text-primary: #000000;
   --text-secondary: #333333;
 
-  /* Größere Schrift und Abstände */
-  --font-size-base: 1.125rem; /* 18px statt 16px */
+  /* Grossere font and Abstande */
+  --font-size-base: 1.125rem; /* 18px instead of 16px */
   --line-height-base: 1.8;
   --spacing-base: 1.25rem;
 
-  /* Stärkere Fokus-Indikatoren */
+  /* Starkere Fokus-Indikatoren */
   --focus-ring-width: 3px;
   --focus-ring-color: #0000e6;
 }
@@ -482,7 +482,7 @@ Casoon UI Themes sind für Accessibility optimiert:
 
 ## Integration in Build-Prozesse
 
-### Vite-Konfiguration
+### Vite-Configuration
 
 ```js
 // vite.config.js
@@ -499,12 +499,12 @@ export default defineConfig({
 });
 ```
 
-### Webpack-Konfiguration
+### Webpack-Configuration
 
 ```js
 // webpack.config.js
-module.exports = {
-  module: {
+modules.exports = {
+  modules: {
     rules: [
       {
         test: /\.scss$/,
@@ -524,25 +524,25 @@ module.exports = {
 };
 ```
 
-## Best Practices für Themes
+## Best Practices for themes
 
-- **Semantische Variablen** - Verwenden Sie semantische Theme-Variablen statt hardcodierter Farbwerte
-- **Kontrast prüfen** - Testen Sie Farbkombinationen auf ausreichenden Kontrast (mindestens 4.5:1 für Text)
-- **Accessibility einplanen** - Bieten Sie alternative Themes für Benutzer mit besonderen Bedürfnissen
-- **Theme-Wechsel testen** - Stellen Sie sicher, dass alle Components korrekt aktualisiert werden
-- **Dark Mode optimieren** - Reduzieren Sie in dunklen Themes die Helligkeit von Bildern
-- **Systemeinstellungen respektieren** - Unterstützen Sie `prefers-color-scheme` und `prefers-reduced-motion`
-- **Konsistente Kontrast-Colors** - Definieren Sie für jede semantische Farbe eine passende Kontrastfarbe 
+- **Semantische variables** - use them semantische theme-variables instead of hardcodierter Farbwerte
+- **Kontrast prufen** - Testen them Farbkombinationen on ausreichenden Kontrast (mindestens 4.5:1 for Text)
+- **Accessibility einplanen** - Bieten them alternative themes for user with besonderen Bedurfnissen
+- **theme-Wechsel testen** - ensure, that all Components korrekt aktualisiert become
+- **Dark Mode optimieren** - Reduzieren them in dunklen themes the Helligkeit from Bildern
+- **Systemeinstellungen respektieren** - Unterstutzen them `prefers-color-scheme` and `prefers-reduced-motion`
+- **Konsistente Kontrast-Colors** - define them for jede semantische color a passende Kontrastfarbe 
 
-## Eigene Themes erstellen
+## own themes create
 
-Sie können eigene Themes erstellen, indem Sie den themes-Layer verwenden:
+You can own themes create, indem them den themes-Layer use:
 
 ```css
-/* Eigene CSS-Datei */
+/* own CSS-file */
 @import "@casoon/ui-lib/core.css";
 
-/* Eigenes Theme im themes-Layer definieren */
+/* Eigenes theme im themes-Layer define */
 @layer themes {
   .theme-custom {
     --color-primary: #ff6b6b;
@@ -552,17 +552,17 @@ Sie können eigene Themes erstellen, indem Sie den themes-Layer verwenden:
     --bg-base: #f7fff7;
     --text-primary: #1a535c;
 
-    /* Weitere Theme-Tokens definieren */
+    /* additional theme-Tokens define */
   }
 }
 ```
 
-Dadurch fügt sich Ihr Custom-Theme nahtlos in die bestehende Theme-Hierarchie ein.
+by doing so fugt oneself her Custom-theme nahtlos in the bestehende theme-Hierarchie a.
 
-## Best Practices für das Theme-System
+## Best Practices for the theme-system
 
-- **Verwenden Sie Theme-Tokens in Ihren Components** - Nutzen Sie `var(--color-primary)` statt direkter Farbwerte
-- **Bieten Sie Theme-Switcher an** - Geben Sie Nutzern die Möglichkeit, ihr bevorzugtes Theme zu wählen
-- **Berücksichtigen Sie Systemeinstellungen** - Respektieren Sie `prefers-color-scheme` für dunkel/hell-Präferenzen
-- **Testen Sie Themes auf Kontrast** - Stellen Sie sicher, dass alle Themes ausreichend Kontrast für Lesbarkeit bieten
-- **Konsistente Semantik über Themes hinweg** - Achten Sie darauf, dass semantische Colors wie `success` oder `error` in allen Themes ihre Bedeutung beibehalten 
+- **use them theme-Tokens in Ihren Components** - use them `var(--color-primary)` instead of direkter Farbwerte
+- **Bieten them theme-Switcher on** - Geben them Nutzern the Moglichkeit, her bevorzugtes theme to wahlen
+- **Berucksichtigen them Systemeinstellungen** - Respektieren them `prefers-color-scheme` for dunkel/hell-Praferenzen
+- **Testen them themes on Kontrast** - ensure, that all themes ausreichend Kontrast for Lesbarkeit bieten
+- **Konsistente Semantik over themes hinweg** - make sure, that semantische Colors how `success` or `error` in allen themes ihre Bedeutung beibehalten 

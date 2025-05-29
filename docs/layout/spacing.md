@@ -1,9 +1,9 @@
 ---
-title: Spacing System
+title: Spacing system
 category: Layout
 ---
 
-# Spacing System
+# Spacing system
 
 The Casoon UI Library implements a consistent spacing system that ensures harmonious proportions and relationships between elements. This document outlines the spacing scales, utility classes, and best practices for maintaining visual rhythm in your interfaces.
 
@@ -368,7 +368,7 @@ Implementation:
 /* ...and so on for other sizes */
 ```
 
-## Customizing the Spacing System
+## Customizing the Spacing system
 
 The spacing system can be customized by overriding the CSS variables:
 

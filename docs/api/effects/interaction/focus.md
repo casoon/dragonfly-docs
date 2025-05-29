@@ -6,31 +6,31 @@ outline: deep
 
 # Focus Effects
 
-Die Casoon UI Library bietet eine Sammlung von Focus-Effekten, die die Accessibility und Benutzererfahrung verbessern. Diese Effekte werden aktiviert, wenn Elemente fokussiert werden, sei es durch Tastaturnavigation oder Mausklicks.
+the Casoon UI Library bietet a Sammlung from Focus-Effekten, the the Accessibility and Benutzererfahrung verbessern. these effects become aktiviert, if elements fokussiert become, sei it through Tastaturnavigation or Mausklicks.
 
 ## Overview
 
-Focus-Effekte sind ein wichtiger Bestandteil der Accessibility, da sie visuelles Feedback geben, welches Element aktuell fokussiert ist. Dies ist besonders wichtig für Tastaturbenutzer und Screenreader-Benutzer.
+Focus-effects sind a wichtiger Bestandteil the Accessibility, da them visuelles Feedback geben, welches element aktuell fokussiert ist. Dies ist besonders important for Tastaturbenutzer and Screenreader-user.
 
 ## Import
 
 ```css
-/* Entweder alle Interaktionseffekte importieren */
+/* Entweder all Interaktionseffekte import */
 @import '@casoon/ui-lib/effects/interaction/index.css';
 
-/* Oder spezifisch nur die Focus-Effekte */
+/* or spezifisch only the Focus-effects */
 @import '@casoon/ui-lib/effects/interaction/focus.css';
 ```
 
-## Focus-Ring-Effekte
+## Focus-Ring-effects
 
-Focus-Ring-Effekte fügen einen Schattenring um fokussierte Elemente hinzu:
+Focus-Ring-effects fugen einen Schattenring um fokussierte elements hinzu:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|--------------|
-| `.focus-ring` | Standard-Focus-Ring (3px) bei Fokussierung |
-| `.focus-ring-sm` | Kleinerer Focus-Ring (2px) bei Fokussierung |
-| `.focus-ring-lg` | Größerer Focus-Ring (4px) bei Fokussierung |
+| `.focus-ring` | Standard-Focus-Ring (3px) at Fokussierung |
+| `.focus-ring-sm` | Kleinerer Focus-Ring (2px) at Fokussierung |
+| `.focus-ring-lg` | Grosserer Focus-Ring (4px) at Fokussierung |
 
 ### Example
 
@@ -39,22 +39,22 @@ Focus-Ring-Effekte fügen einen Schattenring um fokussierte Elemente hinzu:
   Standard Focus-Ring
 </button>
 
-<input type="text" class="focus-ring-sm" placeholder="Kleiner Focus-Ring">
+<input type="text" class="focus-ring-sm" placeholder="smaller Focus-Ring">
 
 <select class="focus-ring-lg">
-  <option>Großer Focus-Ring</option>
+  <option>Grosser Focus-Ring</option>
 </select>
 ```
 
-## Outline-Effekte
+## Outline-effects
 
-Outline-Effekte fügen einen Umriss um fokussierte Elemente hinzu:
+Outline-effects fugen einen Umriss um fokussierte elements hinzu:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|--------------|
-| `.focus-outline` | Standard-Outline (2px) mit Abstand bei Fokussierung |
-| `.focus-outline-sm` | Dünne Outline (1px) mit kleinem Abstand bei Fokussierung |
-| `.focus-outline-lg` | Dicke Outline (3px) mit größerem Abstand bei Fokussierung |
+| `.focus-outline` | Standard-Outline (2px) with spacing at Fokussierung |
+| `.focus-outline-sm` | Dunne Outline (1px) with kleinem spacing at Fokussierung |
+| `.focus-outline-lg` | Dicke Outline (3px) with grosserem spacing at Fokussierung |
 
 ### Example
 
@@ -63,7 +63,7 @@ Outline-Effekte fügen einen Umriss um fokussierte Elemente hinzu:
   Standard Outline
 </button>
 
-<input type="text" class="focus-outline focus-outline-sm" placeholder="Dünne Outline">
+<input type="text" class="focus-outline focus-outline-sm" placeholder="Dunne Outline">
 
 <select class="focus-outline focus-outline-lg">
   <option>Dicke Outline</option>
@@ -72,84 +72,84 @@ Outline-Effekte fügen einen Umriss um fokussierte Elemente hinzu:
 
 ## Hintergrundeffekte
 
-Hintergrundeffekte ändern die Hintergrundfarbe beim Fokussieren:
+Hintergrundeffekte change the Hintergrundfarbe beim Fokussieren:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|--------------|
-| `.focus-bg` | Standard-Hintergrundfarbe bei Fokussierung |
-| `.focus-bg-sm` | Leichte Hintergrundfarbe bei Fokussierung |
-| `.focus-bg-lg` | Intensive Hintergrundfarbe bei Fokussierung |
+| `.focus-bg` | Standard-Hintergrundfarbe at Fokussierung |
+| `.focus-bg-sm` | Leichte Hintergrundfarbe at Fokussierung |
+| `.focus-bg-lg` | Intensive Hintergrundfarbe at Fokussierung |
 
 ### Example
 
 ```html
 <button class="focus-bg">
-  Standard Hintergrund
+  Standard background
 </button>
 
-<input type="text" class="focus-bg-sm" placeholder="Leichter Hintergrund">
+<input type="text" class="focus-bg-sm" placeholder="Leichter background">
 
 <select class="focus-bg-lg">
-  <option>Intensiver Hintergrund</option>
+  <option>Intensiver background</option>
 </select>
 ```
 
 ## Farbvarianten
 
-Sie können die Farbe der Focus-Effekte mit diesen Klassen anpassen:
+You can the color the Focus-effects with diesen classes customize:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|--------------|
-| `.focus-color-primary` | Primärfarbe für Focus-Effekte |
-| `.focus-color-secondary` | Sekundärfarbe für Focus-Effekte |
-| `.focus-color-success` | Erfolgsfarbe für Focus-Effekte |
-| `.focus-color-error` | Fehlerfarbe für Focus-Effekte |
-| `.focus-color-warning` | Warnfarbe für Focus-Effekte |
-| `.focus-color-info` | Infofarbe für Focus-Effekte |
+| `.focus-color-primary` | Primarfarbe for Focus-effects |
+| `.focus-color-secondary` | Sekundarfarbe for Focus-effects |
+| `.focus-color-success` | Erfolgsfarbe for Focus-effects |
+| `.focus-color-error` | Fehlerfarbe for Focus-effects |
+| `.focus-color-warning` | Warnfarbe for Focus-effects |
+| `.focus-color-info` | Infofarbe for Focus-effects |
 
 ### Example
 
 ```html
 <button class="focus-ring focus-color-primary">
-  Primärfarbener Focus-Ring
+  Primarfarbener Focus-Ring
 </button>
 
 <input type="text" class="focus-outline focus-color-success" placeholder="Erfolgsfarben-Outline">
 
 <select class="focus-bg focus-color-warning">
-  <option>Warnfarben-Hintergrund</option>
+  <option>Warnfarben-background</option>
 </select>
 ```
 
 ## Effektkombinationen
 
-Focus-Effekte können miteinander und mit anderen Effekten kombiniert werden:
+Focus-effects can miteinander and with anderen Effekten kombiniert become:
 
 ```html
-<!-- Focus-Ring mit Hover-Effekt -->
+<!-- Focus-Ring with Hover-effect -->
 <button class="focus-ring focus-color-primary hover-scale">
-  Fokusring mit Hover-Skalierung
+  Fokusring with Hover-Skalierung
 </button>
 
-<!-- Verschiedene States mit konsistenten Colors -->
+<!-- Verschiedene States with konsistenten Colors -->
 <input type="text" 
        class="focus-outline focus-color-info hover-border hover-color-info" 
-       placeholder="Konsistente Effekte">
+       placeholder="Konsistente effects">
 
 <!-- Kombinierte Interaktionseffekte -->
 <a href="#" class="focus-bg focus-color-success hover-bg hover-color-success">
-  Link mit passenden Hover- und Focus-Effekten
+  link with passenden Hover- and Focus-Effekten
 </a>
 ```
 
 ## Accessibility
 
-Alle Focus-Effekte sind so konzipiert, dass sie die Accessibility verbessern:
+all Focus-effects sind so konzipiert, that them the Accessibility verbessern:
 
-1. **Hoher Kontrast**: Die Standardfarben bieten einen guten Kontrast zum Hintergrund.
-2. **Deutliche Unterscheidung**: Focus-Effekte sind deutlich sichtbar und heben sich von normalen Statesn ab.
-3. **Keine Abhängigkeit von Farbe allein**: Die Effekte verwenden sowohl Farbe als auch andere visuelle Hinweise.
-4. **Respektieren von Bewegungseinschränkungen**: Alle Transitionen werden deaktiviert, wenn der Benutzer reduzierte Bewegung bevorzugt.
+1. **Hoher Kontrast**: the Standardfarben bieten einen guten Kontrast zum background.
+2. **Deutliche Unterscheidung**: Focus-effects sind deutlich sichtbar and heben oneself from normalen Statesn ab.
+3. **no Abhangigkeit from color allein**: the effects use sowohl color as also others visuelle Notee.
+4. **Respektieren from Bewegungseinschrankungen**: all transitions become deaktiviert, if the user reduzierte Bewegung bevorzugt.
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -163,13 +163,13 @@ Alle Focus-Effekte sind so konzipiert, dass sie die Accessibility verbessern:
 }
 ```
 
-## Anpassung
+## Customization
 
-Sie können die Focus-Effekte mit CSS Variables anpassen:
+You can the Focus-effects with CSS Variables customize:
 
 ```css
 :root {
-  /* Colors für Focus-Effekte */
+  /* Colors for Focus-effects */
   --focus-primary: rgb(59 130 246 / 50%);
   --focus-primary-bg: rgb(59 130 246 / 10%);
   --focus-secondary: rgb(107 114 128 / 50%);
@@ -187,24 +187,24 @@ Sie können die Focus-Effekte mit CSS Variables anpassen:
 
 ## Empfohlene Anwendungen
 
-- **Focus-Ring**: Ideal für Buttons, Links, Formelemente und andere interaktive Elemente.
-- **Outline**: Gut für größere Elemente oder wenn Sie einen traditionelleren Focus-Stil bevorzugen.
-- **Hintergrund**: Nützlich für Menüelemente, Navigationslinks und interaktive Listeneinträge.
+- **Focus-Ring**: Ideal for buttons, links, form elements and others interaktive elements.
+- **Outline**: good for grossere elements or If you einen traditionelleren Focus-Style bevorzugen.
+- **background**: Nutzlich for Menuelemente, Navigationslinks and interaktive Listeneintrage.
 
 ## Best Practices
 
-1. **Niemals Focus-Styles entfernen**: Entfernen Sie niemals `outline: none` ohne einen alternativen Focus-Stil hinzuzufügen.
-2. **Consistency bewahren**: Verwenden Sie dieselben Focus-Effekte für ähnliche Elemente in Ihrer Anwendung.
-3. **Sicherstellung der Sichtbarkeit**: Stellen Sie sicher, dass Focus-Effekte auf verschiedenen Hintergründen sichtbar sind.
-4. **Kombination mit anderen Statesn**: Stellen Sie sicher, dass Focus-Effekte auch sichtbar sind, wenn sie mit Hover oder Active-Statesn kombiniert werden.
-5. **Ausreichender Kontrast**: Verwenden Sie Focus-Colors mit ausreichendem Kontrast zum Hintergrund (mindestens 3:1).
+1. **Niemals Focus-Styles remove**: remove them niemals `outline: none` without einen alternativen Focus-Style hinzuzufugen.
+2. **Consistency bewahren**: use them the same Focus-effects for ahnliche elements in Ihrer Application.
+3. **Sicherstellung the visibility**: ensure, that Focus-effects on verschiedenen Hintergrunden sichtbar sind.
+4. **Kombination with anderen Statesn**: ensure, that Focus-effects also sichtbar sind, If you with Hover or Active-Statesn kombiniert become.
+5. **Ausreichender Kontrast**: use them Focus-Colors with ausreichendem Kontrast zum background (mindestens 3:1).
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| Function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Focus-Effekte | 26+ | 16+ | 9+ | 12+ |
+| Focus-effects | 26+ | 16+ | 9+ | 12+ |
 | CSS-Transitions | 26+ | 16+ | 9+ | 12+ |
-| Box-Shadow | 10+ | 4+ | 5.1+ | 12+ |
+| box-Shadow | 10+ | 4+ | 5.1+ | 12+ |
 | Outline-Offset | 15+ | 3.5+ | 3+ | 12+ |
 | prefers-reduced-motion | 74+ | 63+ | 10.1+ | 79+ | 

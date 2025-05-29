@@ -1,54 +1,54 @@
-# Cursor-Effekte
+# Cursor-effects
 
-Cursor-Effekte ändern das Erscheinungsbild des Mauszeigers, um dem Benutzer zusätzliches Feedback über die Interaktionsmöglichkeiten zu geben. Die `@casoon/ui-lib` bietet eine umfangreiche Sammlung von Cursor-Effekten, die dazu beitragen, die Benutzererfahrung zu verbessern und die Interaktivität von Elementen zu verdeutlichen.
+Cursor-effects change the Erscheinungsbild des Mauszeigers, um dem user zusatzliches Feedback over the Interaktionsmoglichkeiten to geben. the `@casoon/ui-lib` bietet a umfangreiche Sammlung from Cursor-Effekten, the for that beitragen, the Benutzererfahrung to verbessern and the Interaktivitat from Elementen to verdeutlichen.
 
 ## Basic Usage
 
-Cursor-Effekte können auf jedes HTML-Element angewendet werden:
+Cursor-effects can on jedes HTML-element angewendet become:
 
 ```html
-<div class="cursor-pointer">Interaktives Element</div>
+<div class="cursor-pointer">Interaktives element</div>
 ```
 
 ## Standard-Cursor-Typen
 
-Die folgenden Klassen sind für die gängigsten Cursor-Typen verfügbar:
+the folgenden classes sind for the gangigsten Cursor-Typen verfugbar:
 
-| Klasse | Beschreibung | Usage |
+| Class | Description | Usage |
 |--------|-------------|------------|
-| `.cursor-auto` | Standard-Cursor | Für normale Inhalte |
-| `.cursor-default` | Standardpfeil | Für normale UI-Elemente |
-| `.cursor-pointer` | Zeigefinger | Für klickbare Elemente |
-| `.cursor-text` | I-Balken | Für Text-Selektion |
-| `.cursor-move` | Kreuzpfeil | Für bewegbare Elemente |
-| `.cursor-not-allowed` | Verbotssymbol | Für deaktivierte Elemente |
-| `.cursor-wait` | Sanduhr/Uhr | Für Ladezustände |
-| `.cursor-help` | Fragezeichen | Für Hilfselemente |
-| `.cursor-crosshair` | Fadenkreuz | Für präzise Auswahl |
-| `.cursor-grab` | Offene Hand | Für ziehbare Elemente (inaktiv) |
-| `.cursor-grabbing` | Geschlossene Hand | Für ziehbare Elemente (aktiv) |
-| `.cursor-zoom-in` | Lupe mit Plus | Für Vergrößerung |
-| `.cursor-zoom-out` | Lupe mit Minus | Für Verkleinerung |
+| `.cursor-auto` | Standard-Cursor | for normale contents |
+| `.cursor-default` | Standardpfeil | for normale UI-elements |
+| `.cursor-pointer` | Zeigefinger | for klickbare elements |
+| `.cursor-text` | I-Balken | for Text-Selektion |
+| `.cursor-move` | Kreuzpfeil | for bewegbare elements |
+| `.cursor-not-allowed` | Verbotssymbol | for deaktivierte elements |
+| `.cursor-wait` | Sanduhr/Uhr | for Ladezustande |
+| `.cursor-help` | Fragezeichen | for Hilfselemente |
+| `.cursor-crosshair` | Fadenkreuz | for prazise selection |
+| `.cursor-grab` | Offene Hand | for ziehbare elements (inaktiv) |
+| `.cursor-grabbing` | Geschlossene Hand | for ziehbare elements (aktiv) |
+| `.cursor-zoom-in` | Lupe with Plus | for Vergrosserung |
+| `.cursor-zoom-out` | Lupe with Minus | for Verkleinerung |
 
-## Spezielle Cursor-Effekte
+## Spezielle Cursor-effects
 
-Neben den Standard-Cursorn bietet `@casoon/ui-lib` auch erweiterte Cursor-Effekte:
+next to den Standard-Cursorn bietet `@casoon/ui-lib` also erweiterte Cursor-effects:
 
 ### Richtungs-Cursor
 
 ```html
 <div class="cursor-n-resize">Nord-Resize</div>
 <div class="cursor-e-resize">Ost-Resize</div>
-<div class="cursor-s-resize">Süd-Resize</div>
+<div class="cursor-s-resize">Sud-Resize</div>
 <div class="cursor-w-resize">West-Resize</div>
 <div class="cursor-ne-resize">Nordost-Resize</div>
 <div class="cursor-nw-resize">Nordwest-Resize</div>
-<div class="cursor-se-resize">Südost-Resize</div>
-<div class="cursor-sw-resize">Südwest-Resize</div>
+<div class="cursor-se-resize">Sudost-Resize</div>
+<div class="cursor-sw-resize">Sudwest-Resize</div>
 <div class="cursor-ew-resize">Ost-West-Resize</div>
-<div class="cursor-ns-resize">Nord-Süd-Resize</div>
-<div class="cursor-nesw-resize">Nordost-Südwest-Resize</div>
-<div class="cursor-nwse-resize">Nordwest-Südost-Resize</div>
+<div class="cursor-ns-resize">Nord-Sud-Resize</div>
+<div class="cursor-nesw-resize">Nordost-Sudwest-Resize</div>
+<div class="cursor-nwse-resize">Nordwest-Sudost-Resize</div>
 ```
 
 ### Kontext-Cursor
@@ -56,17 +56,17 @@ Neben den Standard-Cursorn bietet `@casoon/ui-lib` auch erweiterte Cursor-Effekt
 ```html
 <div class="cursor-copy">Kopieren-Aktion</div>
 <div class="cursor-alias">Aliasing-Aktion</div>
-<div class="cursor-progress">In Bearbeitung</div>
-<div class="cursor-context-menu">Kontextmenü verfügbar</div>
+<div class="cursor-progress">in Bearbeitung</div>
+<div class="cursor-context-menu">Kontextmenu verfugbar</div>
 <div class="cursor-cell">Zellenselektion</div>
-<div class="cursor-col-resize">Spaltenbreite anpassen</div>
-<div class="cursor-row-resize">Zeilenhöhe anpassen</div>
-<div class="cursor-all-scroll">In alle Richtungen scrollbar</div>
+<div class="cursor-col-resize">Spaltenbreite customize</div>
+<div class="cursor-row-resize">line height customize</div>
+<div class="cursor-all-scroll">in all Richtungen scrollbar</div>
 ```
 
 ### Benutzerdefinierte Cursor
 
-Mit der `cursor-custom` Klasse können Sie benutzerdefinierte Cursor-Bilder verwenden:
+with the `cursor-custom` Class can them benutzerdefinierte Cursor-images use:
 
 ```html
 <div class="cursor-custom" style="--cursor-url: url('/path/to/cursor.png')">
@@ -76,27 +76,27 @@ Mit der `cursor-custom` Klasse können Sie benutzerdefinierte Cursor-Bilder verw
 
 ## Animierte Cursor
 
-Die Bibliothek unterstützt auch animierte Cursor:
+the Bibliothek unterstutzt also animierte Cursor:
 
 ```html
 <div class="cursor-pulse">Pulsierender Cursor</div>
-<div class="cursor-ping">Ping-Effekt Cursor</div>
-<div class="cursor-follow">Folgender Cursor-Effekt</div>
+<div class="cursor-ping">Ping-effect Cursor</div>
+<div class="cursor-follow">Folgender Cursor-effect</div>
 ```
 
 ## Usage in Kombinationen
 
-Cursor-Effekte können mit anderen Elementen kombiniert werden, um das Benutzererlebnis zu verbessern:
+Cursor-effects can with anderen Elementen kombiniert become, um the Benutzererlebnis to verbessern:
 
-### Interaktive Elemente
+### Interaktive elements
 
 ```html
-<button class="btn cursor-pointer">Klickbarer Button</button>
+<button class="btn cursor-pointer">Klickbarer button</button>
 <div class="drag-handle cursor-grab">Drag-Handler (inaktiv)</div>
 <div class="drag-handle cursor-grabbing">Drag-Handler (aktiv)</div>
 ```
 
-### Formelemente
+### form elements
 
 ```html
 <input type="text" class="cursor-text">
@@ -107,26 +107,26 @@ Cursor-Effekte können mit anderen Elementen kombiniert werden, um das Benutzere
 <input type="range" class="cursor-ew-resize">
 ```
 
-### Status-abhängige Cursor
+### Status-abhangige Cursor
 
 ```html
-<button class="btn" disabled class="cursor-not-allowed">Deaktivierter Button</button>
-<div class="loading-area cursor-wait">Ladender Inhalt</div>
-<div class="draggable cursor-grab active-cursor-grabbing">Ziehbares Element</div>
+<button class="btn" disabled class="cursor-not-allowed">Deaktivierter button</button>
+<div class="loading-area cursor-wait">Ladender content</div>
+<div class="draggable cursor-grab active-cursor-grabbing">Ziehbares element</div>
 ```
 
 ## Kontextbezogene Cursor
 
-Je nach Kontext können unterschiedliche Cursor verwendet werden:
+Je after Kontext can unterschiedliche Cursor verwendet become:
 
 ```html
 <div class="image-editor">
   <div class="toolbar">
-    <button class="tool-select cursor-default">Auswahl</button>
+    <button class="tool-select cursor-default">selection</button>
     <button class="tool-move cursor-move">Verschieben</button>
     <button class="tool-crop cursor-crosshair">Zuschneiden</button>
-    <button class="tool-zoom-in cursor-zoom-in">Vergrößern</button>
-    <button class="tool-zoom-out cursor-zoom-out">Verkleinern</button>
+    <button class="tool-zoom-in cursor-zoom-in">enlarge</button>
+    <button class="tool-zoom-out cursor-zoom-out">reduce</button>
   </div>
   <div class="canvas cursor-crosshair">
     <!-- Bearbeitungsbereich -->
@@ -136,44 +136,44 @@ Je nach Kontext können unterschiedliche Cursor verwendet werden:
 
 ## CSS Variables
 
-Die Cursor-Effekte können über CSS Variables angepasst werden:
+the Cursor-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  --cursor-custom-size: 32px; /* Größe des benutzerdefinierten Cursors */
-  --cursor-custom-offset-x: 0; /* X-Versatz für den benutzerdefinierten Cursor */
-  --cursor-custom-offset-y: 0; /* Y-Versatz für den benutzerdefinierten Cursor */
-  --cursor-animation-duration: 0.3s; /* Dauer für Cursor-Animationen */
-  --cursor-animation-timing: ease-in-out; /* Timing-Funktion für Cursor-Animationen */
+  --cursor-custom-size: 32px; /* size des benutzerdefinierten Cursors */
+  --cursor-custom-offset-x: 0; /* X-Versatz for den benutzerdefinierten Cursor */
+  --cursor-custom-offset-y: 0; /* Y-Versatz for den benutzerdefinierten Cursor */
+  --cursor-animation-duration: 0.3s; /* Dauer for Cursor-animations */
+  --cursor-animation-timing: ease-in-out; /* Timing-Function for Cursor-animations */
 }
 ```
 
 ## Accessibility
 
-Bei der Usage von Cursor-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Cursor-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Consistency**: Verwenden Sie konsistente Cursor für ähnliche Aktionen im gesamten Interface
-2. **Verständlichkeit**: Der Cursor sollte die mögliche Interaktion eindeutig vermitteln
-3. **Alternative Eingabe**: Stellen Sie sicher, dass alle Funktionen auch mit der Tastatur zugänglich sind
-4. **Kontrast**: Benutzerdefinierte Cursor sollten ausreichend Kontrast zum Hintergrund haben
+1. **Consistency**: use them konsistente Cursor for ahnliche Aktionen im gesamten Interface
+2. **Verstandlichkeit**: the Cursor sollte the mogliche interaction eindeutig vermitteln
+3. **Alternative input**: ensure, that all functions also with the Tastatur zuganglich sind
+4. **Kontrast**: Benutzerdefinierte Cursor should ausreichend Kontrast zum background have
 
 ```html
-<!-- Barrierefreier Button mit passendem Cursor -->
+<!-- Barrierefreier button with passendem Cursor -->
 <button 
   class="btn cursor-pointer" 
   role="button"
   tabindex="0"
 >
-  Barrierefreier Button
+  Barrierefreier button
 </button>
 ```
 
 ## JavaScript-Integration
 
-Für dynamische Cursor-Änderungen kann JavaScript verwendet werden:
+for dynamische Cursor-Anderungen kann JavaScript verwendet become:
 
 ```javascript
-// Dynamische Cursor-Änderung
+// Dynamische Cursor-Anderung
 document.querySelectorAll('.draggable').forEach(element => {
   element.addEventListener('mousedown', function() {
     this.classList.remove('cursor-grab');
@@ -192,37 +192,37 @@ document.querySelectorAll('.draggable').forEach(element => {
 });
 ```
 
-## Cursor-Kontext System
+## Cursor-Kontext system
 
-Das Cursor-Kontext-System ermöglicht die automatische Änderung des Cursors basierend auf dem aktuellen Kontext:
+the Cursor-Kontext-system ermoglicht the automatische Anderung des Cursors basierend on dem aktuellen Kontext:
 
 ```html
 <div class="cursor-context" data-context="editor">
   <div class="cursor-context__tool" data-tool="select">
     <div class="cursor-context__canvas">
-      <!-- Inhalt -->
+      <!-- content -->
     </div>
   </div>
 </div>
 ```
 
 ```javascript
-// Cursor-Kontext-System
+// Cursor-Kontext-system
 document.querySelectorAll('.cursor-context__tool').forEach(tool => {
   tool.addEventListener('click', function() {
     const context = this.closest('.cursor-context');
     const canvas = context.querySelector('.cursor-context__canvas');
     const toolType = this.getAttribute('data-tool');
     
-    // Alle Tool-Buttons zurücksetzen
+    // all Tool-buttons zurucksetzen
     context.querySelectorAll('.cursor-context__tool').forEach(t => {
       t.classList.remove('active');
     });
     
-    // Aktuelles Tool aktivieren
+    // Aktuelles Tool activate
     this.classList.add('active');
     
-    // Cursor auf Canvas setzen
+    // Cursor on Canvas setzen
     canvas.className = 'cursor-context__canvas';
     
     switch(toolType) {
@@ -241,26 +241,26 @@ document.querySelectorAll('.cursor-context__tool').forEach(tool => {
       case 'zoom-out':
         canvas.classList.add('cursor-zoom-out');
         break;
-      // Weitere Tools...
+      // additional Tools...
     }
   });
 });
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Cursor-Typen werden von allen modernen Browsern unterstützt. Benutzerdefinierte Cursor haben jedoch einige Einschränkungen:
+the meisten Cursor-Typen become from allen modernen Browsern unterstutzt. Benutzerdefinierte Cursor have however some Einschrankungen:
 
-| Browser | Unterstützung |
+| Browser | Unterstutzung |
 |---------|--------------|
-| Chrome | Vollständige Unterstützung für alle Cursor-Typen |
-| Firefox | Vollständige Unterstützung für alle Cursor-Typen |
-| Safari | Unterstützt die meisten Cursor-Typen, einige animierte Cursor können Probleme haben |
-| Edge | Vollständige Unterstützung für alle Cursor-Typen |
-| IE11 | Eingeschränkte Unterstützung für benutzerdefinierte und animierte Cursor |
+| Chrome | Vollstandige Unterstutzung for all Cursor-Typen |
+| Firefox | Vollstandige Unterstutzung for all Cursor-Typen |
+| Safari | Unterstutzt the meisten Cursor-Typen, some animierte Cursor can Probleme have |
+| Edge | Vollstandige Unterstutzung for all Cursor-Typen |
+| IE11 | Eingeschrankte Unterstutzung for benutzerdefinierte and animierte Cursor |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Hover-Effekte](/docs/effects/interaction/hover.md) - Effekte beim Überfahren mit der Maus
-- [Active-Effekte](/docs/effects/interaction/active.md) - Effekte beim Aktivieren von Elementen
-- [Focus-Effekte](/docs/effects/interaction/focus.md) - Effekte beim Fokussieren von Elementen 
+- [Hover-effects](/docs/effects/interaction/hover.md) - effects beim Uberfahren with the Maus
+- [Active-effects](/docs/effects/interaction/active.md) - effects beim activate from Elementen
+- [Focus-effects](/docs/effects/interaction/focus.md) - effects beim Fokussieren from Elementen 

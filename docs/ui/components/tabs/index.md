@@ -5,14 +5,14 @@ outline: deep
 
 # Tabs
 
-Die Tabs-Komponente ermöglicht die Organisation von Inhalten in separate, leicht zugängliche Abschnitte. Sie ist besonders nützlich, um Platz zu sparen und verwandte Inhalte übersichtlich zu gruppieren.
+the Tabs-Component ermoglicht the Organisation from Inhalten in separate, leicht zugangliche Abschnitte. them ist besonders nutzlich, um Platz to sparen and verwandte contents ubersichtlich to gruppieren.
 
 ## Installation
 
-Die Tabs-Komponente ist Teil der Casoon UI Library.
+the Tabs-Component ist Teil the Casoon UI Library.
 
 ```bash
-# Installation der gesamten Bibliothek
+# Installation the gesamten Bibliothek
 npm install @casoon/ui-lib
 ```
 
@@ -22,7 +22,7 @@ npm install @casoon/ui-lib
 /* Import aller UI-Components */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Tabs-Komponente */
+/* or only the Tabs-Component */
 @import '@casoon/ui-lib/ui/components/tabs.css';
 ```
 
@@ -43,19 +43,19 @@ npm install @casoon/ui-lib
   </div>
   <div class="tabs__panels">
     <div class="tabs__panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
-      Inhalt für Tab 1
+      content for Tab 1
     </div>
     <div class="tabs__panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
-      Inhalt für Tab 2
+      content for Tab 2
     </div>
     <div class="tabs__panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
-      Inhalt für Tab 3
+      content for Tab 3
     </div>
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; width: 100%; max-width: 600px;">
     <div style="display: flex; border-bottom: 1px solid #e5e7eb;">
       <button style="padding: 0.75rem 1rem; border: none; background: none; font-weight: 500; color: #3b82f6; border-bottom: 2px solid #3b82f6; cursor: pointer;">Tab 1</button>
@@ -63,15 +63,15 @@ npm install @casoon/ui-lib
       <button style="padding: 0.75rem 1rem; border: none; background: none; font-weight: 500; color: #6b7280; cursor: pointer;">Tab 3</button>
     </div>
     <div style="padding: 1rem;">
-      <p>Inhalt für Tab 1</p>
-      <p>Hier ist ein Exampletext für den ersten Tab. Diese Inhalte werden angezeigt, wenn Tab 1 aktiv ist.</p>
+      <p>content for Tab 1</p>
+      <p>Hier ist a Exampletext for den ersten Tab. these contents become angezeigt, if Tab 1 aktiv ist.</p>
     </div>
   </div>
 </div>
 
 ## Variants
 
-### Tabs mit Icons
+### Tabs with icons
 
 ```html
 <div class="tabs">
@@ -103,12 +103,12 @@ npm install @casoon/ui-lib
     </button>
   </div>
   <div class="tabs__panels">
-    <!-- Panels hier -->
+    <!-- panels hier -->
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; width: 100%; max-width: 600px;">
     <div style="display: flex; border-bottom: 1px solid #e5e7eb;">
       <button style="padding: 0.75rem 1rem; border: none; background: none; font-weight: 500; color: #3b82f6; border-bottom: 2px solid #3b82f6; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
@@ -138,8 +138,8 @@ npm install @casoon/ui-lib
       </button>
     </div>
     <div style="padding: 1rem;">
-      <p>Home-Inhalte</p>
-      <p>Willkommen auf der Startseite deiner Anwendung.</p>
+      <p>Home-contents</p>
+      <p>Willkommen on the Startseite deiner Application.</p>
     </div>
   </div>
 </div>
@@ -161,19 +161,19 @@ npm install @casoon/ui-lib
   </div>
   <div class="tabs__panels">
     <div class="tabs__panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
-      Inhalt für Tab 1
+      content for Tab 1
     </div>
     <div class="tabs__panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
-      Inhalt für Tab 2
+      content for Tab 2
     </div>
     <div class="tabs__panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
-      Inhalt für Tab 3
+      content for Tab 3
     </div>
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; width: 100%; max-width: 600px; display: flex;">
     <div style="display: flex; flex-direction: column; border-right: 1px solid #e5e7eb; min-width: 150px;">
       <button style="padding: 0.75rem 1rem; border: none; text-align: left; background: #f3f4f6; font-weight: 500; color: #3b82f6; border-left: 3px solid #3b82f6; cursor: pointer;">Tab 1</button>
@@ -181,13 +181,13 @@ npm install @casoon/ui-lib
       <button style="padding: 0.75rem 1rem; border: none; text-align: left; background: none; font-weight: 500; color: #6b7280; cursor: pointer;">Tab 3</button>
     </div>
     <div style="padding: 1rem; flex: 1;">
-      <p>Inhalt für Tab 1</p>
-      <p>Vertikale Tabs eignen sich besonders für komplexe Forme oder umfangreiche Einstellungen.</p>
+      <p>content for Tab 1</p>
+      <p>Vertikale Tabs eignen oneself besonders for komplexe Forme or umfangreiche Einstellungen.</p>
     </div>
   </div>
 </div>
 
-### Pills-Stil
+### Pills-Style
 
 ```html
 <div class="tabs tabs--pills">
@@ -203,12 +203,12 @@ npm install @casoon/ui-lib
     </button>
   </div>
   <div class="tabs__panels">
-    <!-- Panels hier -->
+    <!-- panels hier -->
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; width: 100%; max-width: 600px;">
     <div style="display: flex; gap: 0.5rem; padding: 0.75rem; background-color: #f9fafb; border-bottom: 1px solid #e5e7eb;">
       <button style="padding: 0.5rem 1rem; border: none; background: #3b82f6; color: white; font-weight: 500; border-radius: 9999px; cursor: pointer;">Tab 1</button>
@@ -216,8 +216,8 @@ npm install @casoon/ui-lib
       <button style="padding: 0.5rem 1rem; border: none; background: #f3f4f6; color: #6b7280; font-weight: 500; border-radius: 9999px; cursor: pointer;">Tab 3</button>
     </div>
     <div style="padding: 1rem;">
-      <p>Inhalt für Tab 1</p>
-      <p>Pills-Tabs bieten ein modernes Design und eignen sich für Anwendungen mit einem leichten, freundlichen Erscheinungsbild.</p>
+      <p>content for Tab 1</p>
+      <p>Pills-Tabs bieten a modernes design and eignen oneself for Anwendungen with einem leichten, freundlichen Erscheinungsbild.</p>
     </div>
   </div>
 </div>
@@ -243,12 +243,12 @@ npm install @casoon/ui-lib
     <div class="tabs__panels">
       <div class="tabs__panel active" role="tabpanel" id="details-panel" aria-labelledby="details-tab">
         <h3>Produktbeschreibung</h3>
-        <p>Ausführliche Beschreibung des Produkts...</p>
+        <p>Ausfuhrliche Description des Produkts...</p>
       </div>
       <div class="tabs__panel" role="tabpanel" id="specs-panel" aria-labelledby="specs-tab" hidden>
         <h3>Technische Daten</h3>
         <ul>
-          <li>Maße: 10 x 15 x 5 cm</li>
+          <li>Masse: 10 x 15 x 5 cm</li>
           <li>Gewicht: 250g</li>
           <li>Material: Aluminium</li>
         </ul>
@@ -264,7 +264,7 @@ npm install @casoon/ui-lib
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; width: 100%; max-width: 600px;">
     <div style="display: flex; border-bottom: 1px solid #e5e7eb;">
       <button style="padding: 0.75rem 1rem; border: none; background: none; font-weight: 500; color: #3b82f6; border-bottom: 2px solid #3b82f6; cursor: pointer;">Details</button>
@@ -273,13 +273,13 @@ npm install @casoon/ui-lib
     </div>
     <div style="padding: 1rem;">
       <h3 style="margin-top: 0; font-size: 1.25rem; color: #111827;">Produktbeschreibung</h3>
-      <p>Dieses hochwertige Produkt wurde für maximale Leistung und Langlebigkeit entwickelt. Es verfügt über eine ergonomische Form und ein modernes Design, das sich nahtlos in jede Umgebung einfügt.</p>
-      <p>Die intuitive Bedienung und die vielseitigen Funktionen machen es zur idealen Wahl für anspruchsvolle Anwender.</p>
+      <p>this hochwertige Produkt wurde for maximale Leistung and Langlebigkeit entwickelt. it verfugt over a ergonomische Form and a modernes design, the oneself nahtlos in jede Umgebung einfugt.</p>
+      <p>the intuitive Bedienung and the vielseitigen functions machen it zur idealen Wahl for anspruchsvolle Anwender.</p>
     </div>
   </div>
 </div>
 
-### Einstellungen-Panel
+### Einstellungen-panel
 
 ```html
 <div class="settings-panel">
@@ -287,19 +287,19 @@ npm install @casoon/ui-lib
   <div class="tabs tabs--vertical">
     <div class="tabs__list" role="tablist">
       <button class="tabs__tab active" role="tab" aria-selected="true" id="profile-tab" aria-controls="profile-panel">
-        <svg><!-- Profil-Icon --></svg>
+        <svg><!-- Profil-icon --></svg>
         Profil
       </button>
       <button class="tabs__tab" role="tab" aria-selected="false" id="security-tab" aria-controls="security-panel">
-        <svg><!-- Sicherheits-Icon --></svg>
+        <svg><!-- Sicherheits-icon --></svg>
         Sicherheit
       </button>
       <button class="tabs__tab" role="tab" aria-selected="false" id="notifications-tab" aria-controls="notifications-panel">
-        <svg><!-- Benachrichtigungs-Icon --></svg>
-        Benachrichtigungen
+        <svg><!-- Benachrichtigungs-icon --></svg>
+        notifications
       </button>
       <button class="tabs__tab" role="tab" aria-selected="false" id="billing-tab" aria-controls="billing-panel">
-        <svg><!-- Zahlungs-Icon --></svg>
+        <svg><!-- Zahlungs-icon --></svg>
         Zahlungen
       </button>
     </div>
@@ -314,16 +314,16 @@ npm install @casoon/ui-lib
             <label for="email">E-Mail</label>
             <input type="email" id="email" value="max@example.com">
           </div>
-          <button type="submit" class="button button--primary">Speichern</button>
+          <button type="submit" class="button button--primary">save</button>
         </form>
       </div>
-      <!-- Weitere Panels -->
+      <!-- additional panels -->
     </div>
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; width: 100%; max-width: 700px;">
     <h2 style="margin: 0; padding: 1rem; font-size: 1.5rem; border-bottom: 1px solid #e5e7eb; background-color: #f9fafb;">Kontoeinstellungen</h2>
     <div style="display: flex;">
@@ -347,7 +347,7 @@ npm install @casoon/ui-lib
             <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
             <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
           </svg>
-          Benachrichtigungen
+          notifications
         </button>
         <button style="padding: 0.75rem 1rem; border: none; text-align: left; background: none; font-weight: 500; color: #6b7280; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -368,7 +368,7 @@ npm install @casoon/ui-lib
             <input type="email" value="max@example.com" style="width: 100%; padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 0.375rem;">
           </div>
           <div>
-            <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Speichern</button>
+            <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">save</button>
           </div>
         </div>
       </div>
@@ -376,9 +376,9 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-## Anpassung
+## Customization
 
-Die Tabs-Komponente kann mit CSS Variables angepasst werden:
+the Tabs-Component kann with CSS Variables angepasst become:
 
 ```css
 :root {
@@ -411,16 +411,16 @@ Die Tabs-Komponente kann mit CSS Variables angepasst werden:
 
 ## Accessibility
 
-- Verwende korrekte ARIA-Attribute (`role="tablist"`, `role="tab"`, `role="tabpanel"`)
-- Stelle sicher, dass Tabs mit der Tastatur bedient werden können (Pfeiltasten zum Navigieren)
-- Behalte den Fokus im aktiven Tab, wenn zwischen Tabs gewechselt wird
-- Verwende `aria-selected="true"` für den aktiven Tab
-- Setze `hidden` auf inaktive Panels, um sie von Screenreadern auszuschließen
-- Verwende `aria-controls` und `aria-labelledby` zur Verknüpfung von Tabs und Panels
+- Verwende korrekte ARIA-attributes (`role="tablist"`, `role="tab"`, `role="tabpanel"`)
+- Stelle sicher, that Tabs with the Tastatur bedient become can (Pfeiltasten zum Navigieren)
+- Behalte den Fokus im aktiven Tab, if between Tabs gewechselt wird
+- Verwende `aria-selected="true"` for den aktiven Tab
+- Setze `hidden` on inaktive panels, um them from Screenreadern auszuschliessen
+- Verwende `aria-controls` and `aria-labelledby` zur Verknupfung from Tabs and panels
 
 ## JavaScript-Example
 
-Hier ist ein einfaches JavaScript-Example, um die Tabs funktionsfähig zu machen:
+Hier ist a einfaches JavaScript-Example, um the Tabs funktionsfahig to machen:
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     tabs.forEach((tab, index) => {
       tab.addEventListener('click', () => {
-        // Alle Tabs und Panels deaktivieren
+        // all Tabs and panels deactivate
         tabs.forEach(t => {
           t.classList.remove('active');
           t.setAttribute('aria-selected', 'false');
@@ -443,7 +443,7 @@ document.addEventListener('DOMContentLoaded', function() {
           panel.hidden = true;
         });
         
-        // Aktuellen Tab und Panel aktivieren
+        // Aktuellen Tab and panel activate
         tab.classList.add('active');
         tab.setAttribute('aria-selected', 'true');
         panels[index].classList.add('active');
@@ -474,12 +474,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Tabs-Komponente ist mit allen modernen Browsern kompatibel.
+the Tabs-Component ist with allen modernen Browsern kompatibel.
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| Function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
-| Flexbox-Layout | 29+ | 28+ | 9+ | 16+ |
+| Grundlegende Funktionalitat | ✅ | ✅ | ✅ | ✅ |
+| flexbox-layout | 29+ | 28+ | 9+ | 16+ |
 | CSS Variables | 49+ | 31+ | 9.1+ | 15+ |

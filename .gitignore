@@ -73,7 +73,7 @@ docs/public/
 # Temporäre Dateien
 *.tmp
 *.temp
-*.bak
+*.bak*
 *.swp
 *~
 

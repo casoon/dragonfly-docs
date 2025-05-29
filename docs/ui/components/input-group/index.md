@@ -140,7 +140,7 @@ The Input Group component allows combining input fields with additional elements
 The Input Group component can be customized using CSS variables:
 
 ```css
-@layer module-input-group {
+@layer modules-input-group {
   .input-group {
     --input-group-bg: var(--bg-subtle);
     --input-group-border-color: var(--color-gray-300);

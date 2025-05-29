@@ -25,7 +25,7 @@ The library follows these key contrast standards:
 
 ## Implementation in the Library
 
-### Contrast-Safe Color System
+### Contrast-Safe Color system
 
 The Casoon UI Library's color system is designed with contrast in mind:
 
@@ -205,7 +205,7 @@ The library provides high-contrast focus indicators:
 
 ### Automated Testing
 
-The library includes a contrast testing module for automated verification:
+The library includes a contrast testing modules for automated verification:
 
 ```javascript
 // Example of automated contrast testing

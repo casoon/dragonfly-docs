@@ -45,7 +45,7 @@ The reset styles in Casoon UI Library are compatible with all modern browsers an
 
 No specific fallbacks are required for reset styles as they use basic CSS properties supported in all browsers.
 
-## CSS Layer System
+## CSS Layer system
 
 The `@layer` directive is used to manage style specificity in Casoon UI Library.
 

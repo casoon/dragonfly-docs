@@ -392,7 +392,7 @@ The library provides utilities for managing content visibility to screen readers
 
 The library is tested with these screen readers:
 
-| Screen Reader | Browser | Operating System |
+| Screen Reader | Browser | Operating system |
 |---------------|---------|------------------|
 | NVDA          | Firefox, Chrome | Windows |
 | JAWS          | Chrome, Edge    | Windows |

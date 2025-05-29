@@ -3,103 +3,103 @@ title: Shadow Effects
 category: Effects
 ---
 
-# Schatten-Effekte
+# shadow-effects
 
-Die Schatten-Effekte der Casoon UI Library bieten eine Sammlung von Schatten und Tiefeneffekten, die Ihren UI-Elementen Dimension, Tiefe und visuelle Hierarchie verleihen können. Diese Effekte sind grundlegend für moderne Benutzeroberflächen und helfen dabei, Elemente vom Hintergrund abzuheben.
+the shadow-effects the Casoon UI Library bieten a Sammlung from shadow and Tiefeneffekten, the Ihren UI-Elementen Dimension, Tiefe and visuelle Hierarchie verleihen can. these effects sind grundlegend for moderne user interfaces and helfen in doing so, elements vom background abzuheben.
 
-## Überblick
+## Uberblick
 
-Schatten-Effekte simulieren das natürliche Verhalten von Licht und Schatten in der realen Welt. Sie können verwendet werden, um die Höhe eines Elements über der Oberfläche anzuzeigen, Hierarchie zu verdeutlichen und Interaktivität zu signalisieren. Die Casoon UI Library bietet verschiedene Arten von Schatten, die einfach anzuwenden und anzupassen sind.
+shadow-effects simulieren the naturliche behavior from Licht and shadow in the realen Welt. You can verwendet become, um the height eines Elements over the Oberflache anzuzeigen, Hierarchie to verdeutlichen and Interaktivitat to signalisieren. the Casoon UI Library bietet verschiedene Arten from shadow, the einfach anzuwenden and anzupassen sind.
 
 ## Installation
 
-Importieren Sie das Schatten-Effekte-Modul über CSS:
+import them the shadow-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/shadows.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
-### Grundlegende Schatten
+### Grundlegende shadow
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow` | Standardmäßiger Schatten-Effekt |
-| `.shadow-sm` | Kleiner, subtiler Schatten |
-| `.shadow-md` | Mittlerer Schatten (Standard) |
-| `.shadow-lg` | Großer, deutlicher Schatten |
-| `.shadow-xl` | Extra großer Schatten |
-| `.shadow-2xl` | Doppelt großer Schatten für maximale Tiefe |
-| `.shadow-inner` | Innerer Schatten, der einen eingeprägten Effekt erzeugt |
-| `.shadow-none` | Entfernt jeden Schatten |
+| `.shadow` | Standardmassiger shadow-effect |
+| `.shadow-sm` | smaller, subtiler shadow |
+| `.shadow-md` | Mittlerer shadow (Standard) |
+| `.shadow-lg` | Grosser, deutlicher shadow |
+| `.shadow-xl` | Extra grosser shadow |
+| `.shadow-2xl` | Doppelt grosser shadow for maximale Tiefe |
+| `.shadow-inner` | Innerer shadow, the einen eingepragten effect erzeugt |
+| `.shadow-none` | Entfernt jeden shadow |
 
-### Schatten-Typen
+### shadow-Typen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-sharp` | Scharfer, klar definierter Schatten |
-| `.shadow-soft` | Weicher, diffuser Schatten |
-| `.shadow-layered` | Mehrschichtiger Schatten für mehr Tiefe |
-| `.shadow-ambient` | Gleichmäßiger, ambientartiger Schatten |
-| `.shadow-directional` | Gerichteter Schatten, der eine spezifische Lichtquelle simuliert |
-| `.shadow-gradient` | Verlaufender Schatten mit Farbübergang |
-| `.shadow-multiple` | Kombination aus mehreren Schatten für komplexe Effekte |
+| `.shadow-sharp` | Scharfer, klar definierter shadow |
+| `.shadow-soft` | Weicher, diffuser shadow |
+| `.shadow-layered` | Mehrschichtiger shadow for more Tiefe |
+| `.shadow-ambient` | Gleichmassiger, ambientartiger shadow |
+| `.shadow-directional` | Gerichteter shadow, the a spezifische Lichtquelle simuliert |
+| `.shadow-gradient` | Verlaufender shadow with Farbubergang |
+| `.shadow-multiple` | Kombination aus mehreren shadow for komplexe effects |
 
-### Schatten-Colors
+### shadow-Colors
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-dark` | Dunkler Schatten (Standard) |
-| `.shadow-light` | Heller Schatten für dunkle Hintergründe |
-| `.shadow-primary` | Schatten in der primären Themenfarbe |
-| `.shadow-secondary` | Schatten in der sekundären Themenfarbe |
-| `.shadow-accent` | Schatten in der Akzentfarbe |
-| `.shadow-info` | Schatten in der Info-Farbe |
-| `.shadow-success` | Schatten in der Erfolgsfarbe |
-| `.shadow-warning` | Schatten in der Warnfarbe |
-| `.shadow-error` | Schatten in der Fehlerfarbe |
+| `.shadow-dark` | Dunkler shadow (Standard) |
+| `.shadow-light` | Heller shadow for dunkle Hintergrunde |
+| `.shadow-primary` | shadow in the primaren Themenfarbe |
+| `.shadow-secondary` | shadow in the sekundaren Themenfarbe |
+| `.shadow-accent` | shadow in the Akzentfarbe |
+| `.shadow-info` | shadow in the info-color |
+| `.shadow-success` | shadow in the Erfolgsfarbe |
+| `.shadow-warning` | shadow in the Warnfarbe |
+| `.shadow-error` | shadow in the Fehlerfarbe |
 
-### Interaktive Schatten
+### Interaktive shadow
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shadow-hover` | Zeigt Schatten bei Hover an |
-| `.shadow-focus` | Zeigt Schatten im Fokus-Zustand an |
-| `.shadow-active` | Zeigt Schatten im aktiven Zustand an |
-| `.shadow-animated` | Animierter Schatten |
-| `.shadow-elevate` | Schatten, der beim Hover größer wird und mehr Elevation simuliert |
-| `.shadow-pulse` | Pulsierender Schatten-Effekt |
-| `.shadow-float` | Schwebeeffekt mit Schatten, der Bewegung simuliert |
+| `.shadow-hover` | Zeigt shadow at Hover on |
+| `.shadow-focus` | Zeigt shadow im Fokus-state on |
+| `.shadow-active` | Zeigt shadow im aktiven state on |
+| `.shadow-animated` | Animierter shadow |
+| `.shadow-elevate` | shadow, the beim Hover grosser wird and more Elevation simuliert |
+| `.shadow-pulse` | Pulsierender shadow-effect |
+| `.shadow-float` | Schwebeeffekt with shadow, the Bewegung simuliert |
 
 ## Examples
 
-### Grundlegende Schatten
+### Grundlegende shadow
 
 ```html
 <div class="shadow-examples">
   <div class="shadow-example shadow-sm">
-    <div class="content">Kleiner Schatten</div>
+    <div class="content">smaller shadow</div>
   </div>
   
   <div class="shadow-example shadow-md">
-    <div class="content">Mittlerer Schatten</div>
+    <div class="content">Mittlerer shadow</div>
   </div>
   
   <div class="shadow-example shadow-lg">
-    <div class="content">Großer Schatten</div>
+    <div class="content">Grosser shadow</div>
   </div>
   
   <div class="shadow-example shadow-xl">
-    <div class="content">Extra großer Schatten</div>
+    <div class="content">Extra grosser shadow</div>
   </div>
   
   <div class="shadow-example shadow-2xl">
-    <div class="content">Doppelt großer Schatten</div>
+    <div class="content">Doppelt grosser shadow</div>
   </div>
   
   <div class="shadow-example shadow-inner">
-    <div class="content">Innerer Schatten</div>
+    <div class="content">Innerer shadow</div>
   </div>
 </div>
 
@@ -128,32 +128,32 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
 </style>
 ```
 
-### Schatten-Typen
+### shadow-Typen
 
 ```html
 <div class="shadow-types">
   <div class="type-example shadow-sharp">
-    <span>Scharfer Schatten</span>
+    <span>Scharfer shadow</span>
   </div>
   
   <div class="type-example shadow-soft">
-    <span>Weicher Schatten</span>
+    <span>Weicher shadow</span>
   </div>
   
   <div class="type-example shadow-layered">
-    <span>Mehrschichtiger Schatten</span>
+    <span>Mehrschichtiger shadow</span>
   </div>
   
   <div class="type-example shadow-ambient">
-    <span>Ambienter Schatten</span>
+    <span>Ambienter shadow</span>
   </div>
   
   <div class="type-example shadow-directional">
-    <span>Gerichteter Schatten</span>
+    <span>Gerichteter shadow</span>
   </div>
   
   <div class="type-example shadow-gradient">
-    <span>Verlaufender Schatten</span>
+    <span>Verlaufender shadow</span>
   </div>
 </div>
 
@@ -184,32 +184,32 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
 </style>
 ```
 
-### Interaktive Schatten
+### Interaktive shadow
 
 ```html
 <div class="interactive-shadows">
   <button class="shadow-btn shadow-hover">
-    Hover-Schatten
+    Hover-shadow
   </button>
   
   <button class="shadow-btn shadow-focus">
-    Fokus-Schatten
+    Fokus-shadow
   </button>
   
   <button class="shadow-btn shadow-active">
-    Aktiv-Schatten
+    Aktiv-shadow
   </button>
   
   <button class="shadow-btn shadow-animated">
-    Animierter Schatten
+    Animierter shadow
   </button>
   
   <button class="shadow-btn shadow-elevate">
-    Elevate-Schatten
+    Elevate-shadow
   </button>
   
   <button class="shadow-btn shadow-float">
-    Float-Schatten
+    Float-shadow
   </button>
 </div>
 
@@ -234,38 +234,38 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
 </style>
 ```
 
-### Schatten in UI-Components
+### shadow in UI-Components
 
 ```html
 <div class="ui-shadows">
   <div class="card shadow-md">
     <div class="card-content">
-      <h3>Card mit Schatten</h3>
-      <p>Diese Card verwendet einen mittleren Schatten-Effekt.</p>
-      <button class="shadow-sm">Mehr erfahren</button>
+      <h3>Card with shadow</h3>
+      <p>these Card verwendet einen mittleren shadow-effect.</p>
+      <button class="shadow-sm">more erfahren</button>
     </div>
   </div>
   
   <div class="modal-example shadow-lg">
     <div class="modal-header">
-      <h4>Modaler Dialog</h4>
+      <h4>Modaler dialog</h4>
       <button class="close-btn shadow-sm">×</button>
     </div>
     <div class="modal-body">
-      <p>Dieser modale Dialog verwendet einen großen Schatten, um seine Wichtigkeit zu betonen.</p>
+      <p>this modale dialog verwendet einen sizes shadow, um seine importance to betonen.</p>
     </div>
     <div class="modal-footer">
       <button class="shadow-hover">Abbrechen</button>
-      <button class="primary shadow-hover">Bestätigen</button>
+      <button class="primary shadow-hover">Bestatigen</button>
     </div>
   </div>
   
   <div class="form-control shadow-inner">
-    <input type="text" placeholder="Input mit innerem Schatten">
+    <input type="text" placeholder="Input with innerem shadow">
   </div>
   
   <div class="dropdown shadow-directional">
-    <div class="dropdown-header">Dropdown-Menü</div>
+    <div class="dropdown-header">Dropdown-Menu</div>
     <div class="dropdown-content shadow-layered">
       <a href="#">Option 1</a>
       <a href="#">Option 2</a>
@@ -412,32 +412,32 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Schatten-Effekte können über CSS Variables angepasst werden:
+the shadow-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Schatten-Parameter */
+  /* Grundlegende shadow-parameter */
   --shadow-color: rgba(0, 0, 0, 0.1);
   --shadow-offset-x: 0px;
   --shadow-offset-y: 4px;
   --shadow-blur: 8px;
   --shadow-spread: 0px;
   
-  /* Schatten-Sizes */
+  /* shadow-Sizes */
   --shadow-sm-blur: 4px;
   --shadow-md-blur: 8px;
   --shadow-lg-blur: 16px;
   --shadow-xl-blur: 24px;
   --shadow-2xl-blur: 40px;
   
-  /* Schatten-Typen */
+  /* shadow-Typen */
   --shadow-sharp-blur: 2px;
   --shadow-soft-blur: 20px;
   --shadow-layered-blur: 12px;
   
-  /* Schatten-Colors */
+  /* shadow-Colors */
   --shadow-dark-color: rgba(0, 0, 0, 0.2);
   --shadow-light-color: rgba(255, 255, 255, 0.2);
   --shadow-primary-color: rgba(33, 150, 243, 0.3);
@@ -445,23 +445,23 @@ Die Schatten-Effekte können über CSS Variables angepasst werden:
   --shadow-warning-color: rgba(255, 152, 0, 0.3);
   --shadow-error-color: rgba(244, 67, 54, 0.3);
   
-  /* Animation */
+  /* animation */
   --shadow-animation-duration: 2s;
   --shadow-animation-timing: ease-in-out;
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Die Schatten-Effekte werden hauptsächlich durch die `box-shadow`-Eigenschaft implementiert:
+the shadow-effects become hauptsachlich through the `box-shadow`-Property implementiert:
 
 ```css
-/* Basis-Schatten */
+/* Base-shadow */
 .shadow {
   box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
 }
 
-/* Schatten-Sizes */
+/* shadow-Sizes */
 .shadow-sm {
   box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-sm-blur) var(--shadow-spread) var(--shadow-color);
 }
@@ -482,12 +482,12 @@ Die Schatten-Effekte werden hauptsächlich durch die `box-shadow`-Eigenschaft im
   box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-2xl-blur) var(--shadow-spread) var(--shadow-color);
 }
 
-/* Innerer Schatten */
+/* Innerer shadow */
 .shadow-inner {
   box-shadow: inset var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
 }
 
-/* Schatten-Typen */
+/* shadow-Typen */
 .shadow-sharp {
   box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-sharp-blur) var(--shadow-spread) var(--shadow-color);
 }
@@ -530,7 +530,7 @@ Die Schatten-Effekte werden hauptsächlich durch die `box-shadow`-Eigenschaft im
   z-index: -1;
 }
 
-/* Schatten-Colors */
+/* shadow-Colors */
 .shadow-dark {
   --shadow-color: var(--shadow-dark-color);
 }
@@ -555,7 +555,7 @@ Die Schatten-Effekte werden hauptsächlich durch die `box-shadow`-Eigenschaft im
   --shadow-color: var(--shadow-error-color);
 }
 
-/* Interaktive Schatten */
+/* Interaktive shadow */
 .shadow-hover {
   transition: box-shadow 0.3s ease;
 }
@@ -580,7 +580,7 @@ Die Schatten-Effekte werden hauptsächlich durch die `box-shadow`-Eigenschaft im
   box-shadow: var(--shadow-offset-x) calc(var(--shadow-offset-y) * 0.5) calc(var(--shadow-blur) * 0.5) var(--shadow-spread) var(--shadow-color);
 }
 
-/* Animierte Schatten */
+/* Animierte shadow */
 .shadow-animated {
   animation: shadow-pulse var(--shadow-animation-duration) var(--shadow-animation-timing) infinite;
 }
@@ -620,40 +620,40 @@ Die Schatten-Effekte werden hauptsächlich durch die `box-shadow`-Eigenschaft im
 }
 ```
 
-## JavaScript-Unterstützung
+## JavaScript-Unterstutzung
 
-Für dynamische Schatten-Effekte, die auf Mausbewegungen reagieren, kann folgendes JavaScript verwendet werden:
+for dynamische shadow-effects, the on Mausbewegungen reagieren, kann folgendes JavaScript verwendet become:
 
 ```javascript
-// Dynamische Schatten, die auf Mausbewegungen reagieren
+// Dynamische shadow, the on Mausbewegungen reagieren
 document.querySelectorAll('.shadow-dynamic').forEach(element => {
   element.addEventListener('mousemove', (e) => {
     const rect = element.getBoundingClientRect();
-    const x = e.clientX - rect.left; // X-Position innerhalb des Elements
-    const y = e.clientY - rect.top;  // Y-Position innerhalb des Elements
+    const x = e.clientX - rect.left; // X-position within des Elements
+    const y = e.clientY - rect.top;  // Y-position within des Elements
     
-    // Position relativ zum Element (0-1)
+    // position relativ zum element (0-1)
     const relX = x / rect.width;
     const relY = y / rect.height;
     
-    // Schatten-Versatz basierend auf der Mausposition berechnen
+    // shadow-Versatz basierend on the Mausposition berechnen
     const offsetX = (relX - 0.5) * 10;
     const offsetY = (relY - 0.5) * 10;
     
-    // Schatten aktualisieren
+    // shadow aktualisieren
     element.style.boxShadow = `${offsetX}px ${offsetY}px 15px rgba(0, 0, 0, 0.1)`;
   });
   
   element.addEventListener('mouseleave', () => {
-    // Schatten zurücksetzen
+    // shadow zurucksetzen
     element.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
   });
 });
 ```
 
-## Fortgeschrittene Schatten-Techniken
+## Fortgeschrittene shadow-Techniken
 
-### Mehrfarbige Schatten
+### Mehrfarbige shadow
 
 ```css
 .shadow-multicolor {
@@ -664,10 +664,10 @@ document.querySelectorAll('.shadow-dynamic').forEach(element => {
 }
 ```
 
-### 3D-Schatten mit CSS-Perspektive
+### 3D-shadow with CSS-Perspektive
 
 ```css
-.shadow-3d-container {
+.shadow-3d-containers {
   perspective: 800px;
 }
 
@@ -690,14 +690,14 @@ document.querySelectorAll('.shadow-dynamic').forEach(element => {
 
 ## Accessibility
 
-Bei der Usage von Schatten-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from shadow-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Elementen auch ohne Schatten ausreichend ist
-2. **Animationen**: Vermeiden Sie übermäßig animierte Schatten, die für Nutzer mit vestibulären Störungen problematisch sein können
-3. **Alternative visuelle Hinweise**: Verlassen Sie sich nicht nur auf Schatten, um Interaktivität oder Hierarchie anzuzeigen
+1. **Kontrast**: ensure, that the Kontrast between Elementen also without shadow ausreichend ist
+2. **animations**: Vermeiden them ubermassig animierte shadow, the for Nutzer with vestibularen Storungen problematisch be can
+3. **Alternative visuelle Notee**: Verlassen them oneself not only on shadow, um Interaktivitat or Hierarchie anzuzeigen
 
 ```css
-/* Reduzierte Bewegung für animierte Schatten */
+/* Reduzierte Bewegung for animierte shadow */
 @media (prefers-reduced-motion: reduce) {
   .shadow-animated,
   .shadow-float,
@@ -711,7 +711,7 @@ Bei der Usage von Schatten-Effekten sollten folgende Accessibilitysaspekte berü
   }
 }
 
-/* Verbesserte Fokus-Anzeige für bessere Accessibility */
+/* Verbesserte Fokus-Display for bessere Accessibility */
 .shadow-focus:focus {
   box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.5);
   outline: 2px solid transparent; /* Beibehaltung des Fokus-Rings */
@@ -720,14 +720,14 @@ Bei der Usage von Schatten-Effekten sollten folgende Accessibilitysaspekte berü
 
 ## Performance-Optimierung
 
-Schatten-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+shadow-effects can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Komplexität reduzieren**: Vermeiden Sie mehrere komplexe Schatten auf einer Seite
-2. **Hardware-Beschleunigung**: Nutzen Sie `will-change` für animierte Schatten
-3. **Schatten-Sizes limitieren**: Sehr große Schatten können die Performance beeinträchtigen
+1. **Komplexitat reduzieren**: Vermeiden them several komplexe shadow on einer Seite
+2. **Hardware-Beschleunigung**: use them `will-change` for animierte shadow
+3. **shadow-Sizes limitieren**: very size shadow can the Performance beeintrachtigen
 
 ```css
-/* Performance-Optimierung für Schatten-Effekte */
+/* Performance-Optimierung for shadow-effects */
 .shadow-optimized {
   will-change: box-shadow;
 }
@@ -746,17 +746,17 @@ Schatten-Effekte können die Rendering-Performance beeinflussen. Beachten Sie di
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Schatten-Effekte werden von allen modernen Browsern unterstützt.
+the shadow-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | box-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Mehrfache Schatten | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Inset-Schatten | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| Mehrfache shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Inset-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CSS-animations | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 | filter | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
+for altere Browser, the some functions not vollstandig unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 

@@ -119,7 +119,7 @@ This example shows a complete dashboard layout with header, sidebar, and content
               </div>
               <div class="card-body">
                 <div class="notification">
-                  <div class="notification-header">System Update</div>
+                  <div class="notification-header">system Update</div>
                   <div class="notification-body">
                     The system will be updated on June 20th.
                   </div>
@@ -247,7 +247,7 @@ This example shows a complete dashboard layout with header, sidebar, and content
                 </div>
                 <div class="card-body" style="padding: 15px;">
                   <div class="notification" style="border: 1px solid #dee2e6; border-radius: 4px; margin-bottom: 10px;">
-                    <div class="notification-header" style="padding: 10px; border-bottom: 1px solid #dee2e6; font-weight: bold;">System Update</div>
+                    <div class="notification-header" style="padding: 10px; border-bottom: 1px solid #dee2e6; font-weight: bold;">system Update</div>
                     <div class="notification-body" style="padding: 10px;">
                       The system will be updated on June 20th.
                     </div>

@@ -3,29 +3,29 @@ title: Reflection Effects
 category: Effects
 ---
 
-# Reflections-Effekte
+# Reflections-effects
 
-Die Reflections-Effekte der Casoon UI Library bieten eine Sammlung von Spiegelungs- und Reflexionseffekten, die Ihren UI-Elementen Tiefe, Realismus und eine moderne visuelle Qualität verleihen können. Diese Effekte sind ideal, um hochwertige, polierte Benutzeroberflächen zu schaffen.
+the Reflections-effects the Casoon UI Library bieten a Sammlung from Spiegelungs- and Reflexionseffekten, the Ihren UI-Elementen Tiefe, Realismus and a moderne visuelle Qualitat verleihen can. these effects sind ideal, um hochwertige, polierte user interfaces to schaffen.
 
-## Überblick
+## Uberblick
 
-Reflections-Effekte simulieren die natürliche Spiegelung von Licht auf verschiedenen Oberflächen. Sie können verwendet werden, um digitale Oberflächen wie Glas, Metall, Wasser oder andere reflektierende Materialien nachzuahmen. Die Casoon UI Library bietet verschiedene Arten von Reflexionseffekten, die einfach anzuwenden und anzupassen sind.
+Reflections-effects simulieren the naturliche Spiegelung from Licht on verschiedenen Oberflachen. You can verwendet become, um digitale Oberflachen how Glas, Metall, Wasser or others reflektierende Materialien nachzuahmen. the Casoon UI Library bietet verschiedene Arten from Reflexionseffekten, the einfach anzuwenden and anzupassen sind.
 
 ## Installation
 
-Importieren Sie das Reflections-Effekte-Modul über CSS:
+import them the Reflections-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/reflections.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
 ### Grundlegende Reflexionseffekte
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.reflection` | Standardmäßiger Reflexionseffekt |
+| `.reflection` | Standardmassiger Reflexionseffekt |
 | `.reflection-subtle` | Subtiler Reflexionseffekt |
 | `.reflection-medium` | Mittlerer Reflexionseffekt (Standard) |
 | `.reflection-strong` | Starker, deutlicher Reflexionseffekt |
@@ -34,33 +34,33 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
 
 ### Reflexionstypen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
 | `.reflection-mirror` | Spiegelartige Reflexion |
-| `.reflection-water` | Wasserähnliche Reflexion mit leichter Wellenverzerrung |
-| `.reflection-glass` | Glasartige Reflexion mit hoher Transparenz |
-| `.reflection-metal` | Metallische Reflexion mit starkem Kontrast |
+| `.reflection-water` | Wasserahnliche Reflexion with leichter Wellenverzerrung |
+| `.reflection-glass` | Glasartige Reflexion with hoher transparency |
+| `.reflection-metal` | Metallische Reflexion with starkem Kontrast |
 | `.reflection-gradient` | Verlaufende Reflexion |
-| `.reflection-prism` | Prismatische Reflexion mit Farbaufspaltung |
+| `.reflection-prism` | Prismatische Reflexion with Farbaufspaltung |
 
-### Richtungen der Reflexionen
+### Richtungen the Reflexionen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.reflection-bottom` | Reflexion am unteren Rand (Standard) |
-| `.reflection-top` | Reflexion am oberen Rand |
-| `.reflection-left` | Reflexion am linken Rand |
-| `.reflection-right` | Reflexion am rechten Rand |
-| `.reflection-all` | Reflexion an allen Seiten |
+| `.reflection-bottom` | Reflexion am unteren margin (Standard) |
+| `.reflection-top` | Reflexion am oberen margin |
+| `.reflection-left` | Reflexion am linken margin |
+| `.reflection-right` | Reflexion am rechten margin |
+| `.reflection-all` | Reflexion on allen Seiten |
 | `.reflection-diagonal` | Diagonale Reflexion |
 
 ### Interaktive Reflexionen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.reflection-hover` | Zeigt Reflexion bei Hover an |
-| `.reflection-active` | Zeigt Reflexion im aktiven Zustand an |
-| `.reflection-reactive` | Reflexion reagiert auf Mausbewegungen |
+| `.reflection-hover` | Zeigt Reflexion at Hover on |
+| `.reflection-active` | Zeigt Reflexion im aktiven state on |
+| `.reflection-reactive` | Reflexion reagiert on Mausbewegungen |
 | `.reflection-animated` | Animierte Reflexion |
 | `.reflection-pulse` | Pulsierende Reflexion |
 | `.reflection-flicker` | Flackernde Reflexion |
@@ -114,7 +114,7 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
 </style>
 ```
 
-### Richtungen der Reflexionen
+### Richtungen the Reflexionen
 
 ```html
 <div class="reflection-directions">
@@ -127,7 +127,7 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
   </div>
   
   <div class="direction-example reflection reflection-left">
-    <span>Links</span>
+    <span>links</span>
   </div>
   
   <div class="direction-example reflection reflection-right">
@@ -135,7 +135,7 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
   </div>
   
   <div class="direction-example reflection reflection-all">
-    <span>Alle Seiten</span>
+    <span>all Seiten</span>
   </div>
 </div>
 
@@ -216,26 +216,26 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
 </style>
 ```
 
-### Reflexionen in Cardn und UI-Components
+### Reflexionen in Cardn and UI-Components
 
 ```html
 <div class="ui-reflections">
   <div class="card reflection reflection-bottom">
     <div class="card-content">
-      <h3>Card mit Reflexion</h3>
-      <p>Diese Card verwendet einen Reflexionseffekt am unteren Rand.</p>
-      <button>Mehr erfahren</button>
+      <h3>Card with Reflexion</h3>
+      <p>these Card verwendet einen Reflexionseffekt am unteren margin.</p>
+      <button>more erfahren</button>
     </div>
   </div>
   
   <div class="image-card reflection reflection-glass">
     <img src="path/to/image.jpg" alt="Examplebild">
-    <div class="image-caption">Bildunterschrift mit Glasreflexion</div>
+    <div class="image-caption">Bildunterschrift with Glasreflexion</div>
   </div>
   
-  <div class="avatar-container">
+  <div class="avatar-containers">
     <div class="avatar reflection reflection-mirror">
-      <img src="path/to/avatar.jpg" alt="Avatar">
+      <img src="path/to/avatar.jpg" alt="avatar">
     </div>
     <span class="username">Benutzername</span>
   </div>
@@ -294,7 +294,7 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
     text-align: center;
   }
   
-  .avatar-container {
+  .avatar-containers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,9 +320,9 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Reflexionseffekte können über CSS Variables angepasst werden:
+the Reflexionseffekte can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -338,24 +338,24 @@ Die Reflexionseffekte können über CSS Variables angepasst werden:
   --reflection-glass-opacity: 0.2;
   --reflection-metal-opacity: 0.7;
   
-  /* Richtungsspezifische Parameter */
+  /* Richtungsspezifische parameter */
   --reflection-bottom-height: 40%;
   --reflection-top-height: 40%;
   --reflection-left-width: 40%;
   --reflection-right-width: 40%;
   
-  /* Animation */
+  /* animation */
   --reflection-animation-duration: 3s;
   --reflection-animation-timing: ease-in-out;
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Die Reflexionseffekte werden hauptsächlich durch pseudo-Elemente und CSS-Eigenschaften implementiert:
+the Reflexionseffekte become hauptsachlich through pseudo-elements and CSS-properties implementiert:
 
 ```css
-/* Basis-Reflexion */
+/* Base-Reflexion */
 .reflection {
   position: relative;
   overflow: hidden;
@@ -384,7 +384,7 @@ Die Reflexionseffekte werden hauptsächlich durch pseudo-Elemente und CSS-Eigens
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
 }
 
-/* Wasserreflexion mit Wellenanimation */
+/* Wasserreflexion with Wellenanimation */
 .reflection.reflection-water::after {
   opacity: var(--reflection-water-opacity, 0.3);
   animation: water-reflection var(--reflection-animation-duration, 3s) infinite ease-in-out;
@@ -410,25 +410,25 @@ Die Reflexionseffekte werden hauptsächlich durch pseudo-Elemente und CSS-Eigens
 }
 ```
 
-## JavaScript-Unterstützung
+## JavaScript-Unterstutzung
 
-Für reaktive Reflexionen, die auf Mausbewegungen reagieren, wird ein einfaches JavaScript benötigt:
+for reaktive Reflexionen, the on Mausbewegungen reagieren, wird a einfaches JavaScript benotigt:
 
 ```javascript
-// Reaktive Reflexionen, die auf Mausbewegungen reagieren
+// Reaktive Reflexionen, the on Mausbewegungen reagieren
 document.querySelectorAll('.reflection-reactive').forEach(element => {
   element.addEventListener('mousemove', (e) => {
     const rect = element.getBoundingClientRect();
-    const x = e.clientX - rect.left; // X-Position innerhalb des Elements
-    const y = e.clientY - rect.top;  // Y-Position innerhalb des Elements
+    const x = e.clientX - rect.left; // X-position within des Elements
+    const y = e.clientY - rect.top;  // Y-position within des Elements
     
-    // CSS Variables für die Mausposition setzen
+    // CSS Variables for the Mausposition setzen
     element.style.setProperty('--mouse-x', (x / rect.width));
     element.style.setProperty('--mouse-y', (y / rect.height));
   });
   
   element.addEventListener('mouseleave', () => {
-    // CSS Variables zurücksetzen
+    // CSS Variables zurucksetzen
     element.style.setProperty('--mouse-x', '0.5');
     element.style.setProperty('--mouse-y', '0.5');
   });
@@ -467,7 +467,7 @@ document.querySelectorAll('.reflection-reactive').forEach(element => {
 }
 ```
 
-### Moderne 3D-Reflexionen mit CSS-Perspektive
+### Moderne 3D-Reflexionen with CSS-Perspektive
 
 ```css
 .reflection-3d {
@@ -502,19 +502,19 @@ document.querySelectorAll('.reflection-reactive').forEach(element => {
 
 ## Accessibility
 
-Bei der Usage von Reflexionseffekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Reflexionseffekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass Textelemente mit Reflexionen ausreichenden Kontrast für gute Lesbarkeit bieten
-2. **Ablenkung**: Verwenden Sie subtile Reflexionen, die nicht vom Inhalt ablenken oder die Lesbarkeit beeinträchtigen
-3. **Animation**: Bieten Sie eine Option zum Deaktivieren von animierten Reflexionen für Nutzer mit Bewegungsempfindlichkeiten
+1. **Kontrast**: ensure, that Textelemente with Reflexionen ausreichenden Kontrast for gute Lesbarkeit bieten
+2. **Ablenkung**: use them subtile Reflexionen, the not vom content ablenken or the Lesbarkeit beeintrachtigen
+3. **animation**: Bieten them a Option zum deactivate from animierten Reflexionen for Nutzer with Bewegungsempfindlichkeiten
 
 ```css
-/* Verbesserte Lesbarkeit für Text mit Reflexionen */
+/* Verbesserte Lesbarkeit for Text with Reflexionen */
 .reflection-with-text {
   --reflection-opacity: 0.2;
 }
 
-/* Reduzierte Bewegung für animierte Reflexionen */
+/* Reduzierte Bewegung for animierte Reflexionen */
 @media (prefers-reduced-motion: reduce) {
   .reflection-animated::after,
   .reflection-water::after,
@@ -527,19 +527,19 @@ Bei der Usage von Reflexionseffekten sollten folgende Accessibilitysaspekte ber�
 
 ## Performance-Optimierung
 
-Reflexionseffekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Reflexionseffekte can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Nutzung von Hardware-Beschleunigung**: Verwenden Sie Eigenschaften wie `transform` und `opacity` für bessere Performance
-2. **Reduzierte Komplexität**: Begrenzen Sie die Anzahl der Elemente mit Reflexionseffekten auf einer Seite
-3. **Layer-Promotion**: Nutzen Sie `will-change` für animierte Reflexionseffekte
+1. **Nutzung from Hardware-Beschleunigung**: use them properties how `transform` and `opacity` for bessere Performance
+2. **Reduzierte Komplexitat**: Begrenzen them the Anzahl the elements with Reflexionseffekten on einer Seite
+3. **Layer-Promotion**: use them `will-change` for animierte Reflexionseffekte
 
 ```css
-/* Performance-Optimierung für Reflexionseffekte */
+/* Performance-Optimierung for Reflexionseffekte */
 .reflection-optimized::after {
   will-change: transform, opacity;
 }
 
-/* Reduzierte Komplexität für mobile Geräte */
+/* Reduzierte Komplexitat for mobile Gerate */
 @media (max-width: 768px) {
   :root {
     --reflection-opacity: 0.2;
@@ -552,16 +552,16 @@ Reflexionseffekte können die Rendering-Performance beeinflussen. Beachten Sie d
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Reflexionseffekte werden von allen modernen Browsern unterstützt.
+the Reflexionseffekte become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| Basis-Reflexionen | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| Base-Reflexionen | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | CSS-Filter | ✓ | ✓ | ✓ | ✓ | ✗ |
-| CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| CSS-animations | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | 3D-Transformationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
+for altere Browser, the some functions not vollstandig unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 

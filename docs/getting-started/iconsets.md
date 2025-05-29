@@ -1,15 +1,15 @@
 ---
-title: Icon System
+title: Icon system
 category: Getting Started
 ---
 
-# Icon System
+# Icon system
 
-The Casoon UI Library Icon System provides a comprehensive solution for integrating and using icons in your application.
+The Casoon UI Library Icon system provides a comprehensive solution for integrating and using icons in your application.
 
 ## CSS Import
 
-To use the complete Casoon UI Icon System, simply import the `core.css` file:
+To use the complete Casoon UI Icon system, simply import the `core.css` file:
 
 ```css
 @import "@casoon/ui-lib/core.css";
@@ -29,7 +29,7 @@ The icons are part of the central layer system and are defined under the `icons`
        utilities,
        smooth-scroll,
        accessibility,
-       icons,           /* Icon System */
+       icons,           /* Icon system */
        animations,
        effects,
        themes;
@@ -45,7 +45,7 @@ The icon system is based on SVG icons and offers various implementation methods:
 
 ## Setup
 
-### Method 1: Complete Icon System via core.css
+### Method 1: Complete Icon system via core.css
 
 The simplest method to import all icon sets:
 
@@ -190,7 +190,7 @@ Icons inherit the text color of their parent element by default (`currentColor`)
 </button>
 ```
 
-## Icon Customizations
+## Icon customizations
 
 ### Icon Alignment
 

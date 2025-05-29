@@ -1,10 +1,10 @@
-# Morph-Effekte
+# Morph-effects
 
-Morph-Effekte werden verwendet, um fließende Übergänge zwischen verschiedenen Formen und Statesn zu erzeugen. Die `@casoon/ui-lib` bietet verschiedene Morph-Effekte, die dazu beitragen, dynamische und interaktive Benutzeroberflächen zu gestalten.
+Morph-effects become verwendet, um fliessende Ubergange between verschiedenen Formen and Statesn to erzeugen. the `@casoon/ui-lib` bietet verschiedene Morph-effects, the for that beitragen, dynamische and interaktive user interfaces to gestalten.
 
 ## Basic Usage
 
-Der grundlegende Morph-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Morph-effect kann on jedes element angewendet become:
 
 ```html
 <div class="morph" data-morph-target="#target-element">
@@ -15,32 +15,32 @@ Der grundlegende Morph-Effekt kann auf jedes Element angewendet werden:
 </div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Morph-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Morph-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.morph` | Basisklasse für Morph-Effekte |
-| `.morph-shape` | Formübergangseffekt |
-| `.morph-size` | Sizesübergangseffekt |
-| `.morph-color` | Farbübergangseffekt |
-| `.morph-text` | Textübergangseffekt |
-| `.morph-opacity` | Transparenzübergangseffekt |
-| `.morph-position` | Positionsübergangseffekt |
-| `.morph-content` | Inhaltsübergangseffekt |
-| `.morph-path` | SVG-Pfadübergangseffekt |
-| `.morph-hover` | Morph-Effekt bei Hover |
-| `.morph-click` | Morph-Effekt bei Klick |
-| `.morph-focus` | Morph-Effekt bei Fokus |
-| `.morph-auto` | Automatischer Morph-Effekt |
-| `.morph-loop` | Sich wiederholender Morph-Effekt |
+| `.morph` | Basisklasse for Morph-effects |
+| `.morph-shape` | Formubergangseffekt |
+| `.morph-size` | Sizesubergangseffekt |
+| `.morph-color` | Farbubergangseffekt |
+| `.morph-text` | Textubergangseffekt |
+| `.morph-opacity` | Transparenzubergangseffekt |
+| `.morph-position` | Positionsubergangseffekt |
+| `.morph-content` | Inhaltsubergangseffekt |
+| `.morph-path` | SVG-Pfadubergangseffekt |
+| `.morph-hover` | Morph-effect at Hover |
+| `.morph-click` | Morph-effect at Klick |
+| `.morph-focus` | Morph-effect at Fokus |
+| `.morph-auto` | Automatischer Morph-effect |
+| `.morph-loop` | oneself wiederholender Morph-effect |
 
 ## Variants
 
 ### Shape-Morph
 
-Der Shape-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Formen:
+the Shape-Morph-effect ermoglicht Ubergange between verschiedenen Formen:
 
 ```html
 <div class="morph-shape" data-morph-from="circle" data-morph-to="square">
@@ -48,17 +48,17 @@ Der Shape-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Formen:
 </div>
 ```
 
-Verfügbare Formübergänge:
+Verfugbare Formubergange:
 
 ```html
-<div class="morph-shape-circle-to-square">Von Kreis zu Quadrat</div>
-<div class="morph-shape-square-to-triangle">Von Quadrat zu Dreieck</div>
-<div class="morph-shape-rectangle-to-oval">Von Rechteck zu Oval</div>
-<div class="morph-shape-star-to-circle">Von Stern zu Kreis</div>
-<div class="morph-shape-hexagon-to-circle">Von Sechseck zu Kreis</div>
+<div class="morph-shape-circle-to-square">from Kreis to Quadrat</div>
+<div class="morph-shape-square-to-triangle">from Quadrat to Dreieck</div>
+<div class="morph-shape-rectangle-to-oval">from Rechteck to Oval</div>
+<div class="morph-shape-star-to-circle">from Stern to Kreis</div>
+<div class="morph-shape-hexagon-to-circle">from Sechseck to Kreis</div>
 ```
 
-Benutzerdefinierte Formübergänge mit clip-path:
+Benutzerdefinierte Formubergange with clip-path:
 
 ```html
 <div class="morph-shape-custom" 
@@ -70,7 +70,7 @@ Benutzerdefinierte Formübergänge mit clip-path:
 
 ### Size-Morph
 
-Der Size-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Sizes:
+the Size-Morph-effect ermoglicht Ubergange between verschiedenen Sizes:
 
 ```html
 <div class="morph-size" data-morph-from-size="100px" data-morph-to-size="200px">
@@ -78,20 +78,20 @@ Der Size-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Sizes:
 </div>
 ```
 
-Verfügbare Sizesübergänge:
+Verfugbare Sizesubergange:
 
 ```html
-<div class="morph-size-small-to-large">Von klein zu groß</div>
-<div class="morph-size-large-to-small">Von groß zu klein</div>
-<div class="morph-size-wide-to-narrow">Von breit zu schmal</div>
-<div class="morph-size-tall-to-short">Von hoch zu niedrig</div>
+<div class="morph-size-small-to-large">from small to gross</div>
+<div class="morph-size-large-to-small">from gross to small</div>
+<div class="morph-size-wide-to-narrow">from breit to schmal</div>
+<div class="morph-size-tall-to-short">from hoch to niedrig</div>
 <div class="morph-size-expand">Expandieren</div>
 <div class="morph-size-collapse">Kollabieren</div>
 ```
 
 ### Color-Morph
 
-Der Color-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Colors:
+the Color-Morph-effect ermoglicht Ubergange between verschiedenen Colors:
 
 ```html
 <div class="morph-color" data-morph-from-color="#ff0000" data-morph-to-color="#0000ff">
@@ -99,19 +99,19 @@ Der Color-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Colors:
 </div>
 ```
 
-Verfügbare Farbübergänge:
+Verfugbare Farbubergange:
 
 ```html
-<div class="morph-color-primary-to-secondary">Von Primär- zu Sekundärfarbe</div>
-<div class="morph-color-light-to-dark">Von hell zu dunkel</div>
-<div class="morph-color-warm-to-cool">Von warm zu kühl</div>
-<div class="morph-color-gradient">Farbverlaufsübergang</div>
-<div class="morph-color-rainbow">Regenbogenfarbübergang</div>
+<div class="morph-color-primary-to-secondary">from Primar- to Sekundarfarbe</div>
+<div class="morph-color-light-to-dark">from hell to dunkel</div>
+<div class="morph-color-warm-to-cool">from warm to kuhl</div>
+<div class="morph-color-gradient">Farbverlaufsubergang</div>
+<div class="morph-color-rainbow">Regenbogenfarbubergang</div>
 ```
 
 ### Text-Morph
 
-Der Text-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Texten:
+the Text-Morph-effect ermoglicht Ubergange between verschiedenen Texten:
 
 ```html
 <div class="morph-text" data-morph-from-text="Hallo" data-morph-to-text="Welt">
@@ -119,29 +119,29 @@ Der Text-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Texten:
 </div>
 ```
 
-Verfügbare Textübergänge:
+Verfugbare Textubergange:
 
 ```html
-<div class="morph-text-fade">Ausblenden/Einblenden-Übergang</div>
-<div class="morph-text-slide">Slide-Übergang</div>
+<div class="morph-text-fade">Ausblenden/Einblenden-transition</div>
+<div class="morph-text-slide">Slide-transition</div>
 <div class="morph-text-shuffle">Buchstaben-Shuffle</div>
 <div class="morph-text-typewriter">Schreibmaschineneffekt</div>
-<div class="morph-text-scramble">Textscramble-Effekt</div>
+<div class="morph-text-scramble">Textscramble-effect</div>
 ```
 
 ### Opacity-Morph
 
-Der Opacity-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Transparenzstufen:
+the Opacity-Morph-effect ermoglicht Ubergange between verschiedenen Transparenzstufen:
 
 ```html
 <div class="morph-opacity" data-morph-from-opacity="1" data-morph-to-opacity="0.5">
-  Transparenz-Morph
+  transparency-Morph
 </div>
 ```
 
-### Position-Morph
+### position-Morph
 
-Der Position-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Positionen:
+the position-Morph-effect ermoglicht Ubergange between verschiedenen positions:
 
 ```html
 <div class="morph-position" data-morph-from-position="top: 0; left: 0;" data-morph-to-position="top: 100px; left: 100px;">
@@ -151,20 +151,20 @@ Der Position-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Positio
 
 ### Content-Morph
 
-Der Content-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Inhalten:
+the Content-Morph-effect ermoglicht Ubergange between verschiedenen Inhalten:
 
 ```html
 <div class="morph-content" data-morph-target="#target-content">
   Ausgangsinhalt
 </div>
 <div id="target-content" style="display: none;">
-  Zielinhalt mit komplett anderem HTML
+  Zielinhalt with komplett anderem HTML
 </div>
 ```
 
 ### Path-Morph
 
-Der Path-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen SVG-Pfaden:
+the Path-Morph-effect ermoglicht Ubergange between verschiedenen SVG-Pfaden:
 
 ```html
 <svg width="200" height="200" viewBox="0 0 200 200">
@@ -175,35 +175,35 @@ Der Path-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen SVG-Pfaden:
 </svg>
 ```
 
-## Interaktive Morph-Effekte
+## Interaktive Morph-effects
 
-Morph-Effekte können mit Interaktionen kombiniert werden:
+Morph-effects can with interactions kombiniert become:
 
 ```html
 <div class="morph-hover" data-morph-to="...">
-  Hover für Morph-Effekt
+  Hover for Morph-effect
 </div>
 
 <button class="morph-click" data-morph-to="...">
-  Klicken für Morph-Effekt
+  Click for Morph-effect
 </button>
 
 <input class="morph-focus" data-morph-to="...">
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Morph-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Morph-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Buttons mit Morph-Effekt
+### buttons with Morph-effect
 
 ```html
 <button class="btn morph-shape-rectangle-to-pill morph-hover">
-  Button mit Hover-Morph
+  button with Hover-Morph
 </button>
 ```
 
-### Icons mit Morph-Effekt
+### icons with Morph-effect
 
 ```html
 <svg class="icon morph-path-hover" viewBox="0 0 24 24">
@@ -214,30 +214,30 @@ Morph-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </svg>
 ```
 
-### Cardn mit Morph-Effekt
+### Cardn with Morph-effect
 
 ```html
 <div class="card morph-size-hover" data-morph-to-size="scale(1.05)">
   <div class="card-body">
-    Card mit Hover-Zoom
+    Card with Hover-Zoom
   </div>
 </div>
 ```
 
-### Navigation mit Morph-Effekt
+### navigation with Morph-effect
 
 ```html
 <nav class="navbar">
   <div class="nav-indicator morph-position"></div>
   <a href="#" class="nav-link" data-morph-target=".nav-indicator" data-morph-to-position="left: 0;">Home</a>
-  <a href="#" class="nav-link" data-morph-target=".nav-indicator" data-morph-to-position="left: 100px;">Über uns</a>
+  <a href="#" class="nav-link" data-morph-target=".nav-indicator" data-morph-to-position="left: 100px;">over us</a>
   <a href="#" class="nav-link" data-morph-target=".nav-indicator" data-morph-to-position="left: 200px;">Kontakt</a>
 </nav>
 ```
 
 ## Animierte Morph-Sequenzen
 
-Morph-Effekte können zu komplexen Animationssequenzen kombiniert werden:
+Morph-effects can to komplexen Animationssequenzen kombiniert become:
 
 ```html
 <div class="morph-sequence">
@@ -247,49 +247,49 @@ Morph-Effekte können zu komplexen Animationssequenzen kombiniert werden:
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Morph-Effekte können über CSS Variables angepasst werden:
+the Morph-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Allgemeine Morph-Parameter */
+  /* Allgemeine Morph-parameter */
   --morph-duration: 0.5s;
   --morph-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   --morph-delay: 0s;
   
-  /* Form-Parameter */
+  /* Form-parameter */
   --morph-circle: circle(50% at 50% 50%);
   --morph-square: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   --morph-triangle: polygon(50% 0%, 100% 100%, 0% 100%);
   --morph-pill: inset(0 0 0 0 round 50px);
   
-  /* Sizes-Parameter */
+  /* Sizes-parameter */
   --morph-size-small: 50px;
   --morph-size-medium: 100px;
   --morph-size-large: 200px;
   
-  /* Farb-Parameter */
+  /* Farb-parameter */
   --morph-color-primary: var(--color-primary);
   --morph-color-secondary: var(--color-secondary);
   --morph-color-light: var(--color-light);
   --morph-color-dark: var(--color-dark);
   
-  /* Text-Parameter */
+  /* Text-parameter */
   --morph-text-duration: 0.3s;
   --morph-text-delay: 0.1s;
   
-  /* Positions-Parameter */
+  /* Positions-parameter */
   --morph-position-offset: 20px;
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Examples für die CSS-Implementierung der Morph-Effekte:
+Examples for the CSS-Implementation the Morph-effects:
 
 ```css
-/* Basis-Morph */
+/* Base-Morph */
 .morph {
   transition-property: transform, background-color, color, opacity, clip-path;
   transition-duration: var(--morph-duration);
@@ -373,7 +373,7 @@ Examples für die CSS-Implementierung der Morph-Effekte:
 
 ## JavaScript-Integration
 
-Für komplexere Morph-Effekte wird JavaScript verwendet:
+for komplexere Morph-effects wird JavaScript verwendet:
 
 ```javascript
 class MorphEffect {
@@ -398,7 +398,7 @@ class MorphEffect {
       borderRadius: style.borderRadius,
       transform: style.transform,
       opacity: style.opacity,
-      // Weitere Eigenschaften je nach Bedarf
+      // additional properties je after Bedarf
     };
   }
   
@@ -420,10 +420,10 @@ class MorphEffect {
     const startState = toTarget ? this.fromState : this.toState;
     const endState = toTarget ? this.toState : this.fromState;
     
-    // FLIP-Technik (First, Last, Invert, Play) für performante Animationen
-    // Weitere Implementation Details...
+    // FLIP-Technik (First, Last, Invert, Play) for performante animations
+    // additional Implementation Details...
     
-    // Example für einfache Transition mit Web Animations API
+    // Example for einfache transition with Web Animations API
     this.element.animate([
       startState,
       endState
@@ -436,14 +436,14 @@ class MorphEffect {
   }
 }
 
-// Initialisierung aller Morph-Elemente
+// Initialisierung aller Morph-elements
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[class*="morph-"]').forEach(element => {
     new MorphEffect(element);
   });
 });
 
-// SVG-Pfad-Morph mit GSAP (erfordert externe Bibliothek)
+// SVG-Pfad-Morph with GSAP (erfordert externe Bibliothek)
 function setupSVGMorph() {
   document.querySelectorAll('.morph-path').forEach(path => {
     const fromPath = path.getAttribute('data-morph-from-path');
@@ -475,11 +475,11 @@ function setupSVGMorph() {
 }
 
 function morphPath(pathElement, targetPath) {
-  // Mit Web Animations API (einfache Version)
+  // with Web Animations API (einfache version)
   const currentPath = pathElement.getAttribute('d');
   
-  // Für komplexe Pfad-Morphs wird eine externe Bibliothek wie GSAP empfohlen
-  // Hier ist eine vereinfachte Version
+  // for komplexe Pfad-Morphs wird a externe Bibliothek how GSAP empfohlen
+  // Hier ist a vereinfachte version
   pathElement.animate([
     { d: currentPath },
     { d: targetPath }
@@ -489,7 +489,7 @@ function morphPath(pathElement, targetPath) {
     easing: 'cubic-bezier(0.25, 0.1, 0.25, 1)'
   });
   
-  // Nach der Animation den Pfad aktualisieren
+  // after the animation den Pfad aktualisieren
   setTimeout(() => {
     pathElement.setAttribute('d', targetPath);
   }, 500);
@@ -500,15 +500,15 @@ setupSVGMorph();
 
 ## Accessibility
 
-Bei der Usage von Morph-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Morph-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
-2. **Lesbarkeit**: Stellen Sie sicher, dass Text während des Morphs lesbar bleibt
-3. **Konsistente Benutzererfahrung**: Bieten Sie alternative Methoden für Benutzer, die keine Animationen sehen können
-4. **Informationskonsistenz**: Stellen Sie sicher, dass keine wichtigen Informationen nur durch Morph-Effekte vermittelt werden
+1. **Animationspraferenzen**: Respektieren them the Setting `prefers-reduced-motion`
+2. **Lesbarkeit**: ensure, that Text wahrend des Morphs lesbar bleibt
+3. **Konsistente Benutzererfahrung**: Bieten them alternative methods for user, the no animations sehen can
+4. **Informationskonsistenz**: ensure, that no wichtigen Informationen only through Morph-effects vermittelt become
 
 ```css
-/* Reduzierte Animation für Benutzer, die dies bevorzugen */
+/* Reduzierte animation for user, the dies bevorzugen */
 @media (prefers-reduced-motion: reduce) {
   .morph,
   .morph-shape,
@@ -532,27 +532,27 @@ Bei der Usage von Morph-Effekten sollten folgende Accessibilitysaspekte berücks
 }
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Morph-Effekte können die Leistung beeinflussen:
+Morph-effects can the Leistung beeinflussen:
 
-1. **Compositor-Eigenschaften**: Bevorzugen Sie `transform` und `opacity` für die besten Leistungsergebnisse
-2. **Layout-Thrashing**: Vermeiden Sie Eigenschaften, die das Layout auslösen (wie Sizesänderungen)
-3. **FLIP-Technik**: Verwenden Sie die FLIP-Technik (First, Last, Invert, Play) für performante Animationen
-4. **Komplexe Pfade**: Seien Sie vorsichtig mit komplexen SVG-Pfad-Morphs, die rechenintensiv sein können
+1. **Compositor-properties**: Bevorzugen them `transform` and `opacity` for the besten Leistungsergebnisse
+2. **layout-Thrashing**: Vermeiden them properties, the the layout auslosen (how Sizesanderungen)
+3. **FLIP-Technik**: use them the FLIP-Technik (First, Last, Invert, Play) for performante animations
+4. **Komplexe Pfade**: Seien them vorsichtig with komplexen SVG-Pfad-Morphs, the rechenintensiv be can
 
 ```javascript
-// Performance-Optimierung mit FLIP-Technik
+// Performance-Optimierung with FLIP-Technik
 function performantMorph(element, targetElement) {
   // First: Ausgangszustand aufzeichnen
   const first = element.getBoundingClientRect();
   
-  // Last: Zielzustand aufzeichnen (temporär)
+  // Last: Zielzustand aufzeichnen (temporar)
   element.classList.add('morphed');
   const last = element.getBoundingClientRect();
   element.classList.remove('morphed');
   
-  // Invert: Transformation berechnen und anwenden
+  // Invert: Transformation berechnen and anwenden
   const deltaX = first.left - last.left;
   const deltaY = first.top - last.top;
   const deltaW = first.width / last.width;
@@ -564,7 +564,7 @@ function performantMorph(element, targetElement) {
     scale(${deltaW}, ${deltaH})
   `;
   
-  // Play: Animation abspielen
+  // Play: animation abspielen
   requestAnimationFrame(() => {
     element.classList.add('morph-transition');
     element.classList.add('morphed');
@@ -577,19 +577,19 @@ function performantMorph(element, targetElement) {
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Morph-Effekte werden von allen modernen Browsern unterstützt.
+the meisten Morph-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | CSS Transitions | ✓ | ✓ | ✓ | ✓ | ✓ |
 | clip-path | ✓ | ✓ | ✓ | ✓ | Nein |
 | SVG-Pfad-Morphing | ✓ | ✓ | ✓ | ✓ | Nein |
 | Web Animations API | ✓ | ✓ | ✓ | ✓ | Nein |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Transitions-Effekte](/docs/effects/transitions.md) - Übergangseffekte zwischen Statesn
-- [Transform-Effekte](/docs/effects/layout/transforms.md) - Transformationseffekte für Elemente 
+- [Animations-effects](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
+- [Transitions-effects](/docs/effects/transitions.md) - Ubergangseffekte between Statesn
+- [Transform-effects](/docs/effects/layout/transforms.md) - Transformationseffekte for elements 

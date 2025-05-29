@@ -1,15 +1,15 @@
 ---
-title: Icon-System
+title: icon-system
 category: Guide
 ---
 
-# Icon-System
+# icon-system
 
-Das Icon-System der Casoon UI Library bietet eine umfassende Lösung für die Integration und Usage von Icons in Webanwendungen durch eine strukturierte Sammlung verschiedener Icon-Sets.
+the icon-system the Casoon UI Library bietet a umfassende Losung for the Integration and Usage from icons in Webanwendungen through a strukturierte Sammlung verschiedener icon-Sets.
 
-## Struktur des Icon-Systems
+## Structure des icon-Systems
 
-Die Icons sind Teil des Layer Systems und werden unter dem `icons`-Layer definiert:
+the icons sind Teil des Layer Systems and become under dem `icons`-Layer definiert:
 
 ```css
 @layer reset,
@@ -18,25 +18,25 @@ Die Icons sind Teil des Layer Systems und werden unter dem `icons`-Layer definie
        utilities,
        smooth-scroll,
        accessibility,
-       icons,           /* Icon-System */
+       icons,           /* icon-system */
        animations,
        effects,
        themes;
 ```
 
-Die Icons werden in der `icons.css` Datei organisiert:
+the icons become in the `icons.css` file organisiert:
 
 ```css
 /**
- * Icons CSS
+ * icons CSS
  *
- * Zentrale Datei zur Organisation und Einbindung aller Icon-Sets.
+ * Zentrale file zur Organisation and Einbindung aller icon-Sets.
  */
 
-/* Icon-Basis */
+/* icon-Base */
 @import url('./icons/base.css');
 
-/* Icon-Sets */
+/* icon-Sets */
 @import url('./icons/bootstrap.css');
 @import url('./icons/feather.css');
 @import url('./icons/fontawesome.css');
@@ -48,58 +48,58 @@ Die Icons werden in der `icons.css` Datei organisiert:
 @import url('./icons/tabler.css');
 ```
 
-## Verfügbare Icon-Sets
+## Verfugbare icon-Sets
 
-Die Casoon UI Library integriert mehrere populäre Icon-Bibliotheken:
+the Casoon UI Library integriert several populare icon-Bibliotheken:
 
-| Icon-Set | Beschreibung | Präfix |
+| icon-Set | Description | Prafix |
 |----------|--------------|--------|
-| Feather | Einfache, klare Icons | `feather-` |
-| Heroicons | Moderne Icons im Apple-Stil | `heroicon-` |
-| Phosphor | Flexible, konsistente Icons | `phosphor-` |
-| Bootstrap | Icons im Bootstrap-Stil | `bs-` |
-| Remix | Vielseitige Open-Source Icons | `remix-` |
-| MDI (Material) | Google Material Design Icons | `mdi-` |
-| Font Awesome | Beliebte Icon-Sammlung | `fa-` |
-| Lucide | Fortführung der Feather Icons | `lucide-` |
-| Tabler | Über 3000 pixelperfekte Icons | `tabler-` |
+| Feather | Einfache, klare icons | `feather-` |
+| Heroicons | Moderne icons im Apple-Style | `heroicon-` |
+| Phosphor | Flexible, konsistente icons | `phosphor-` |
+| Bootstrap | icons im Bootstrap-Style | `bs-` |
+| Remix | Vielseitige Open-Source icons | `remix-` |
+| MDI (Material) | Google Material design icons | `mdi-` |
+| Font Awesome | Beliebte icon-Sammlung | `fa-` |
+| Lucide | Fortfuhrung the Feather icons | `lucide-` |
+| Tabler | over 3000 pixelperfekte icons | `tabler-` |
 
-## Icon-Usage in eigenen Projekten
+## icon-Usage in eigenen Projekten
 
-Um Icons in Ihrem Projekt zu nutzen:
+Um icons in Ihrem Projekt to use:
 
-### 1. Vollständige Einbindung aller Icon-Sets
+### 1. Vollstandige Einbindung aller icon-Sets
 
-Importieren Sie die core.css, die automatisch alle Icon-Sets lädt:
+import them the core.css, the automatisch all icon-Sets ladt:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-### 2. Selektive Einbindung einzelner Icon-Sets
+### 2. Selektive Einbindung einzelner icon-Sets
 
-Sie können auch nur ausgewählte Icon-Sets importieren:
+You can also only ausgewahlte icon-Sets import:
 
 ```css
-/* Basis-Layer System importieren */
+/* Base-Layer system import */
 @import "@casoon/ui-lib/layers.css";
 
-/* Icon-Basis importieren */
+/* icon-Base import */
 @import "@casoon/ui-lib/icons/base.css";
 
-/* Nur benötigte Icon-Sets importieren */
+/* only benotigte icon-Sets import */
 @import "@casoon/ui-lib/icons/feather.css";
 @import "@casoon/ui-lib/icons/heroicons.css";
 ```
 
-## Icon-Usage
+## icon-Usage
 
-### Standardmethode mit Icon-Klassen
+### Standardmethode with icon-classes
 
-Das Icon-System verwendet einheitliche Klassennamen für alle Icon-Sets mit dem entsprechenden Präfix:
+the icon-system verwendet einheitliche Klassennamen for all icon-Sets with dem entsprechenden Prafix:
 
 ```html
-<!-- Feather Icons -->
+<!-- Feather icons -->
 <span class="feather-home"></span>
 <span class="feather-settings"></span>
 <span class="feather-user"></span>
@@ -109,36 +109,36 @@ Das Icon-System verwendet einheitliche Klassennamen für alle Icon-Sets mit dem 
 <span class="heroicon-cog"></span>
 <span class="heroicon-user"></span>
 
-<!-- Material Design Icons -->
+<!-- Material design icons -->
 <span class="mdi-home"></span>
 <span class="mdi-cog"></span>
 <span class="mdi-account"></span>
 ```
 
-### Icon-Sizes
+### icon-Sizes
 
-Sie können die Größe der Icons anpassen:
+You can the size the icons customize:
 
 ```html
-<span class="feather-home icon--xs"></span> <!-- Extra klein -->
-<span class="feather-home icon--sm"></span> <!-- Klein -->
+<span class="feather-home icon--xs"></span> <!-- Extra small -->
+<span class="feather-home icon--sm"></span> <!-- small -->
 <span class="feather-home"></span> <!-- Standard (24px) -->
 <span class="feather-home icon--md"></span> <!-- Mittel -->
-<span class="feather-home icon--lg"></span> <!-- Groß -->
-<span class="feather-home icon--xl"></span> <!-- Extra groß -->
+<span class="feather-home icon--lg"></span> <!-- Gross -->
+<span class="feather-home icon--xl"></span> <!-- Extra gross -->
 ```
 
-### Icon-Colors
+### icon-Colors
 
-Icons erben standardmäßig die Textfarbe ihres Elternelements (`currentColor`):
+icons erben by default the Textfarbe ihres Elternelements (`currentColor`):
 
 ```html
 <div class="text-primary">
-  <span class="feather-info"></span> <!-- Icon in Primärfarbe -->
+  <span class="feather-info"></span> <!-- icon in Primarfarbe -->
 </div>
 ```
 
-Sie können auch direkte Farbklassen verwenden:
+You can also direkte Farbklassen use:
 
 ```html
 <span class="heroicon-check icon--success"></span> <!-- Erfolgsfarbe -->
@@ -146,9 +146,9 @@ Sie können auch direkte Farbklassen verwenden:
 <span class="heroicon-x-circle icon--error"></span> <!-- Fehlerfarbe -->
 ```
 
-## Icon-Customizations
+## icon-customizations
 
-### Icon-Rotation und Spiegelung
+### icon-Rotation and Spiegelung
 
 ```html
 <span class="mdi-arrow-right icon--rotate-90"></span> <!-- 90° gedreht -->
@@ -158,60 +158,60 @@ Sie können auch direkte Farbklassen verwenden:
 <span class="mdi-arrow-right icon--flip-v"></span> <!-- Vertikal gespiegelt -->
 ```
 
-### Icon-Animationen
+### icon-animations
 
 ```html
-<span class="feather-refresh icon--spin"></span> <!-- Rotierendes Icon -->
-<span class="feather-alert-circle icon--pulse"></span> <!-- Pulsierendes Icon -->
-<span class="feather-arrow-down icon--bounce"></span> <!-- Hüpfendes Icon -->
+<span class="feather-refresh icon--spin"></span> <!-- Rotierendes icon -->
+<span class="feather-alert-circle icon--pulse"></span> <!-- Pulsierendes icon -->
+<span class="feather-arrow-down icon--bounce"></span> <!-- Hupfendes icon -->
 ```
 
 ## Accessibility
 
-Für bessere Accessibility sollten Icons, die funktionale Bedeutung haben, entsprechende Beschreibungen enthalten:
+for bessere Accessibility should icons, the funktionale Bedeutung have, entsprechende Beschreibungen enthalten:
 
 ```html
-<button class="btn btn--icon" aria-label="Löschen">
+<button class="btn btn--icon" aria-label="delete">
   <span class="feather-trash" aria-hidden="true"></span>
 </button>
 ```
 
-Bei Icons mit begleitendem Text:
+at icons with begleitendem Text:
 
 ```html
 <button class="btn">
   <span class="feather-save" aria-hidden="true"></span>
-  <span>Speichern</span>
+  <span>save</span>
 </button>
 ```
 
-## Eigene Icons einbinden
+## own icons integrate
 
-Sie können eigene Icons erstellen und in das Layer System integrieren:
+You can own icons create and in the Layer system integrieren:
 
 ```css
-/* Eigene CSS-Datei */
+/* own CSS-file */
 @import "@casoon/ui-lib/core.css";
 
-/* Eigene Icons zum icons-Layer hinzufügen */
+/* own icons zum icons-Layer add */
 @layer icons {
   .custom-icon-home {
     background-image: url('path/to/home.svg');
-    /* Weitere Styles */
+    /* additional Styles */
   }
 
   .custom-icon-settings {
     background-image: url('path/to/settings.svg');
-    /* Weitere Styles */
+    /* additional Styles */
   }
 }
 ```
 
 ## Best Practices
 
-- **Wählen Sie konsistente Icons** - Verwenden Sie Icons aus demselben Set für ein einheitliches Erscheinungsbild
-- **Semantische Icons nutzen** - Wählen Sie Icons, die intuitiv für ihre Funktion sind
-- **Accessibility beachten** - Fügen Sie aria-label für funktionale Icons hinzu
-- **Sizeskonsistenz gewährleisten** - Halten Sie Icongrößen innerhalb von Funktionsgruppen konsistent
-- **Colors sinnvoll einsetzen** - Verwenden Sie Farbakzente sparsam und bedeutungsvoll
-- **Text mit Icons kombinieren** - Bei wichtigen Aktionen Text und Icons zusammen verwenden 
+- **Wahlen them konsistente icons** - use them icons aus demselben Set for a einheitliches Erscheinungsbild
+- **Semantische icons use** - Wahlen them icons, the intuitiv for ihre Function sind
+- **Accessibility note** - Fugen them aria-label for funktionale icons hinzu
+- **Sizeskonsistenz gewahrleisten** - Halten them Icongrossen within from Funktionsgruppen konsistent
+- **Colors sinnvoll einsetzen** - use them Farbakzente sparsam and bedeutungsvoll
+- **Text with icons combine** - at wichtigen Aktionen Text and icons zusammen use 

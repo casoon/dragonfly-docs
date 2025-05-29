@@ -1,22 +1,22 @@
 ---
-title: UI System
+title: UI system
 category: UI
 ---
 
-# UI System
+# UI system
 
-The UI System of the Casoon UI Library offers a comprehensive collection of elements and components for creating modern, accessible and appealing user interfaces.
+The UI system of the Casoon UI Library offers a comprehensive collection of elements and components for creating modern, accessible and appealing user interfaces.
 
 ## Overview
 
-The UI System is divided into two main categories:
+The UI system is divided into two main categories:
 
 - **Elements**: Basic UI building blocks like buttons, inputs, avatars and badges
 - **Components**: More complex components consisting of multiple elements, such as cards, dialogs, forms and navigation
 
 ## Philosophy
 
-The UI System of the Casoon UI Library is based on the following principles:
+The UI system of the Casoon UI Library is based on the following principles:
 
 1. **Modularity**: Independent, reusable building blocks
 2. **Consistency**: Unified appearance
@@ -67,10 +67,10 @@ Components are more complex UI structures that consist of multiple elements and 
 
 ## Usage
 
-The UI System can be integrated as a whole or modularly:
+The UI system can be integrated as a whole or modularly:
 
 ```css
-/* Entire UI System */
+/* Entire UI system */
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/ui.css';
 

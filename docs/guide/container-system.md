@@ -1,9 +1,9 @@
 ---
-title: Container System
+title: Container system
 category: Guide
 ---
 
-# Container System
+# Container system
 
 The Casoon UI Library implements a flexible container system that serves as the foundation for consistent layouts and content widths. This guide explains how to use and customize the container system effectively.
 
@@ -17,7 +17,7 @@ The container system is based on these core principles:
 4. **Flexible Padding** - Configurable inner spacing for optimal content flow
 5. **Standardized Sizes** - Predefined size classes for different use cases
 
-## Importing the Container System
+## Importing the Container system
 
 The container system is part of the `layout.css` layer, which depends on `core.css`. Make sure to import them in the correct order:
 
@@ -279,7 +279,7 @@ Containers with visual enhancements:
 </div>
 ```
 
-## Customizing the Container System
+## Customizing the Container system
 
 The container system is based on CSS variables that can be easily customized:
 
@@ -380,4 +380,4 @@ The container system is compatible with all modern browsers:
 
 ## Summary
 
-The Casoon UI Library's container system provides a flexible and powerful foundation for consistent layouts. By using containers, you can structure content, set a consistent maximum width, and ensure a uniform appearance across all pages. Containers form an important basis for responsive designs and work seamlessly with other layout systems like grid and flexbox. 
+The Casoon UI Library's container system provides a flexible and powerful foundation for consistent layouts. By using containers, you can structure content, set a consistent maximum width, and ensure a uniform appearance across all pages. Containers form an important base for responsive designs and work seamlessly with other layout systems like grid and flexbox. 

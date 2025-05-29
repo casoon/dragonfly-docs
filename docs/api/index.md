@@ -12,7 +12,7 @@ This comprehensive API reference documents all features, components, and utiliti
 
 The Casoon UI Library is organized into several key systems and modules, each with its own set of components, variables, and utility classes. The library uses a layered approach to CSS, with a clear hierarchy to manage specificity and ensure consistent behavior.
 
-### Layer System
+### Layer system
 
 The library organizes CSS into layers using the `@layer` directive for precise control over specificity. The layers are ordered from lowest to highest priority:
 
@@ -41,11 +41,11 @@ The library organizes CSS into layers using the `@layer` directive for precise c
        themes;               /* Theming system */
 ```
 
-For more details on the layer system, see the [Layer System Guide](/guide/layer-system).
+For more details on the layer system, see the [Layer system Guide](/guide/layer-system).
 
 ## Core Systems
 
-### Core Module
+### Core modules
 
 - [Core Variables](/api/core/variables) - Base CSS variables
 - [Reset](/api/core/reset) - Browser reset and normalization
@@ -56,20 +56,20 @@ For more details on the layer system, see the [Layer System Guide](/guide/layer-
 
 - [Color Variables](/api/colors/variables) - Color tokens and variables
 - [Color Utilities](/api/colors/utilities) - Classes for applying colors
-- [Color Mix System](/api/colors/color-mix) - Color blending and transformation utilities
+- [Color Mix system](/api/colors/color-mix) - Color blending and transformation utilities
 
 ### Typography
 
 - [Typography Variables](/api/typography/variables) - Font sizing, spacing, and scaling
 - [Typography Classes](/api/typography/classes) - Text formatting utilities
-- [Font System](/api/typography/fonts) - Available fonts and font families
+- [Font system](/api/typography/fonts) - Available fonts and font families
 
 ### Layout
 
 - [Layout Variables](/api/layout/variables) - Spacing, sizing, and breakpoints
-- [Grid System](/api/layout/grid) - Grid-based layout utilities
+- [Grid system](/api/layout/grid) - Grid-based layout utilities
 - [Flexbox](/api/layout/flexbox) - Flexbox layout utilities
-- [Container System](/api/layout/containers) - Container components and classes
+- [Container system](/api/layout/containers) - Container components and classes
 - [Spacing](/api/layout/spacing) - Margin and padding utilities
 - [Position](/api/layout/position) - Positioning utilities
 
@@ -121,7 +121,7 @@ For more details on the layer system, see the [Layer System Guide](/guide/layer-
 
 ## Icons
 
-- [Icon System](/api/icons/system) - Icon implementation
+- [Icon system](/api/icons/system) - Icon implementation
 - [Available Icons](/api/icons/available) - Catalog of available icons
 - [Icon Utilities](/api/icons/utilities) - Icon sizing and positioning
 
@@ -148,6 +148,6 @@ Each API documentation page includes:
 - **Browser Support** - Information about browser compatibility
 - **Related Features** - Links to related components and utilities
 
-### Version Information
+### version Information
 
 This API reference documents version 0.6.9 of the Casoon UI Library. Check the [changelog](/changelog) for updates and changes between versions. 

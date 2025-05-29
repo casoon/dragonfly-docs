@@ -1,36 +1,36 @@
-# Overlay-Effekte
+# Overlay-effects
 
-Overlay-Effekte werden verwendet, um eine Ebene über Elementen zu platzieren, um zusätzliche visuelle Effekte oder Interaktionen zu ermöglichen. Die `@casoon/ui-lib` bietet verschiedene Overlay-Effekte, die dazu beitragen, dynamische und interaktive Benutzeroberflächen zu gestalten.
+Overlay-effects become verwendet, um a layer over Elementen to platzieren, um zusatzliche visuelle effects or interactions to ermoglichen. the `@casoon/ui-lib` bietet verschiedene Overlay-effects, the for that beitragen, dynamische and interaktive user interfaces to gestalten.
 
 ## Basic Usage
 
-Der grundlegende Overlay-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Overlay-effect kann on jedes element angewendet become:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
-  <div class="overlay">Overlay-Inhalt</div>
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
+  <div class="overlay">Overlay-content</div>
 </div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Overlay-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Overlay-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.overlay-container` | Container für Overlay-Elemente |
-| `.overlay` | Basisklasse für Overlays |
+| `.overlay-containers` | containers for Overlay-elements |
+| `.overlay` | Basisklasse for Overlays |
 | `.overlay-light` | Helles Overlay |
 | `.overlay-dark` | Dunkles Overlay |
 | `.overlay-color` | Farbiges Overlay |
 | `.overlay-gradient` | Verlaufs-Overlay |
-| `.overlay-pattern` | Overlay mit Muster |
-| `.overlay-blur` | Overlay mit Unschärfeeffekt |
-| `.overlay-text` | Overlay für Text |
-| `.overlay-icon` | Overlay für Icons |
-| `.overlay-image` | Overlay für Bilder |
-| `.overlay-hover` | Overlay bei Hover |
+| `.overlay-pattern` | Overlay with pattern |
+| `.overlay-blur` | Overlay with Unscharfeeffekt |
+| `.overlay-text` | Overlay for Text |
+| `.overlay-icon` | Overlay for icons |
+| `.overlay-image` | Overlay for images |
+| `.overlay-hover` | Overlay at Hover |
 | `.overlay-fade` | Einblendendes Overlay |
 | `.overlay-slide` | Einschiebendes Overlay |
 | `.overlay-zoom` | Zoomeffekt-Overlay |
@@ -40,27 +40,27 @@ Die folgenden CSS-Klassen stehen für Overlay-Effekte zur Verfügung:
 
 ### Light-Overlay
 
-Das Light-Overlay erstellt einen hellen halbtransparenten Überzug:
+the Light-Overlay erstellt einen hellen halbtransparenten Uberzug:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-light">Helles Overlay</div>
 </div>
 ```
 
 ### Dark-Overlay
 
-Das Dark-Overlay erstellt einen dunklen halbtransparenten Überzug:
+the Dark-Overlay erstellt einen dunklen halbtransparenten Uberzug:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-dark">Dunkles Overlay</div>
 </div>
 ```
 
-Verfügbare Intensitäten:
+Verfugbare Intensitaten:
 
 ```html
 <div class="overlay-dark-light">Leicht dunkles Overlay</div>
@@ -70,20 +70,20 @@ Verfügbare Intensitäten:
 
 ### Color-Overlay
 
-Das Color-Overlay erstellt einen farbigen halbtransparenten Überzug:
+the Color-Overlay erstellt einen farbigen halbtransparenten Uberzug:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-color">Farbiges Overlay</div>
 </div>
 ```
 
-Verfügbare Farbvarianten:
+Verfugbare Farbvarianten:
 
 ```html
-<div class="overlay-primary">Overlay in Primärfarbe</div>
-<div class="overlay-secondary">Overlay in Sekundärfarbe</div>
+<div class="overlay-primary">Overlay in Primarfarbe</div>
+<div class="overlay-secondary">Overlay in Sekundarfarbe</div>
 <div class="overlay-accent">Overlay in Akzentfarbe</div>
 <div class="overlay-success">Overlay in Erfolgsfarbe</div>
 <div class="overlay-warning">Overlay in Warnfarbe</div>
@@ -93,80 +93,80 @@ Verfügbare Farbvarianten:
 
 ### Gradient-Overlay
 
-Das Gradient-Overlay erstellt einen Verlaufsüberzug:
+the Gradient-Overlay erstellt einen Verlaufsuberzug:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-gradient">Verlaufs-Overlay</div>
 </div>
 ```
 
-Verfügbare Verlaufsrichtungen:
+Verfugbare Verlaufsrichtungen:
 
 ```html
-<div class="overlay-gradient-to-top">Verlauf nach oben</div>
-<div class="overlay-gradient-to-right">Verlauf nach rechts</div>
-<div class="overlay-gradient-to-bottom">Verlauf nach unten</div>
-<div class="overlay-gradient-to-left">Verlauf nach links</div>
-<div class="overlay-gradient-to-tr">Verlauf nach oben rechts</div>
-<div class="overlay-gradient-to-bl">Verlauf nach unten links</div>
+<div class="overlay-gradient-to-top">Verlauf after oben</div>
+<div class="overlay-gradient-to-right">Verlauf after rechts</div>
+<div class="overlay-gradient-to-bottom">Verlauf after unten</div>
+<div class="overlay-gradient-to-left">Verlauf after links</div>
+<div class="overlay-gradient-to-tr">Verlauf after oben rechts</div>
+<div class="overlay-gradient-to-bl">Verlauf after unten links</div>
 <div class="overlay-gradient-radial">Radialer Verlauf</div>
 ```
 
 ### Pattern-Overlay
 
-Das Pattern-Overlay erstellt einen Überzug mit Muster:
+the Pattern-Overlay erstellt einen Uberzug with pattern:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
-  <div class="overlay-pattern">Overlay mit Muster</div>
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
+  <div class="overlay-pattern">Overlay with pattern</div>
 </div>
 ```
 
-Verfügbare Muster:
+Verfugbare pattern:
 
 ```html
 <div class="overlay-pattern-dots">Punktmuster</div>
 <div class="overlay-pattern-lines">Linienmuster</div>
 <div class="overlay-pattern-grid">Gittermuster</div>
-<div class="overlay-pattern-diagonal">Diagonales Muster</div>
+<div class="overlay-pattern-diagonal">Diagonales pattern</div>
 <div class="overlay-pattern-checker">Schachbrettmuster</div>
 ```
 
 ### Blur-Overlay
 
-Das Blur-Overlay erstellt einen Überzug mit Unschärfeeffekt:
+the Blur-Overlay erstellt einen Uberzug with Unscharfeeffekt:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-blur">Unscharfes Overlay</div>
 </div>
 ```
 
 ### Text-Overlay
 
-Das Text-Overlay optimiert die Darstellung von Text über Bildern:
+the Text-Overlay optimiert the Display from Text over Bildern:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-text">
-    <h3>Überschrift</h3>
+    <h3>heading</h3>
     <p>Beschreibungstext</p>
   </div>
 </div>
 ```
 
-### Icon-Overlay
+### icon-Overlay
 
-Das Icon-Overlay ist für die Darstellung von Icons über Elementen optimiert:
+the icon-Overlay ist for the Display from icons over Elementen optimiert:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-icon">
     <span class="icon">★</span>
   </div>
@@ -175,26 +175,26 @@ Das Icon-Overlay ist für die Darstellung von Icons über Elementen optimiert:
 
 ### Image-Overlay
 
-Das Image-Overlay ermöglicht das Überlagern mit einem weiteren Bild:
+the Image-Overlay ermoglicht the Uberlagern with einem weiteren image:
 
 ```html
-<div class="overlay-container">
+<div class="overlay-containers">
   <img src="background.jpg" alt="Hintergrundbild">
   <div class="overlay-image">
-    <img src="overlay.png" alt="Overlay-Bild">
+    <img src="overlay.png" alt="Overlay-image">
   </div>
 </div>
 ```
 
-## Positionierung von Overlays
+## Positionierung from Overlays
 
-Overlays können an verschiedenen Positionen platziert werden:
+Overlays can on verschiedenen positions platziert become:
 
 ```html
-<div class="overlay-top">Am oberen Rand</div>
-<div class="overlay-right">Am rechten Rand</div>
-<div class="overlay-bottom">Am unteren Rand</div>
-<div class="overlay-left">Am linken Rand</div>
+<div class="overlay-top">Am oberen margin</div>
+<div class="overlay-right">Am rechten margin</div>
+<div class="overlay-bottom">Am unteren margin</div>
+<div class="overlay-left">Am linken margin</div>
 <div class="overlay-center">Zentriert</div>
 <div class="overlay-top-left">Oben links</div>
 <div class="overlay-top-right">Oben rechts</div>
@@ -204,110 +204,110 @@ Overlays können an verschiedenen Positionen platziert werden:
 
 ## Interaktive Overlays
 
-Overlays können mit Interaktionen kombiniert werden:
+Overlays can with interactions kombiniert become:
 
 ### Hover-Overlay
 
-Das Hover-Overlay wird nur angezeigt, wenn der Benutzer mit dem Mauszeiger über das Element fährt:
+the Hover-Overlay wird only angezeigt, if the user with dem Mauszeiger over the element fahrt:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
-  <div class="overlay-hover">Erscheint bei Hover</div>
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
+  <div class="overlay-hover">Erscheint at Hover</div>
 </div>
 ```
 
 ### Fade-Overlay
 
-Das Fade-Overlay blendet sich sanft ein:
+the Fade-Overlay blendet oneself sanft a:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-fade">Sanft eingeblendet</div>
 </div>
 ```
 
 ### Slide-Overlay
 
-Das Slide-Overlay schiebt sich von einer Seite ein:
+the Slide-Overlay schiebt oneself from einer Seite a:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
-  <div class="overlay-slide-in-bottom">Von unten eingeschoben</div>
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
+  <div class="overlay-slide-in-bottom">from unten eingeschoben</div>
 </div>
 ```
 
-Verfügbare Richtungen:
+Verfugbare Richtungen:
 
 ```html
-<div class="overlay-slide-in-top">Von oben eingeschoben</div>
-<div class="overlay-slide-in-right">Von rechts eingeschoben</div>
-<div class="overlay-slide-in-bottom">Von unten eingeschoben</div>
-<div class="overlay-slide-in-left">Von links eingeschoben</div>
+<div class="overlay-slide-in-top">from oben eingeschoben</div>
+<div class="overlay-slide-in-right">from rechts eingeschoben</div>
+<div class="overlay-slide-in-bottom">from unten eingeschoben</div>
+<div class="overlay-slide-in-left">from links eingeschoben</div>
 ```
 
 ### Zoom-Overlay
 
-Das Zoom-Overlay vergrößert oder verkleinert sich:
+the Zoom-Overlay vergrossert or verkleinert oneself:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
-  <div class="overlay-zoom-in">Vergrößert sich</div>
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
+  <div class="overlay-zoom-in">Vergrossert oneself</div>
 </div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
-<div class="overlay-zoom-in">Vergrößert sich</div>
-<div class="overlay-zoom-out">Verkleinert sich</div>
+<div class="overlay-zoom-in">Vergrossert oneself</div>
+<div class="overlay-zoom-out">Verkleinert oneself</div>
 ```
 
 ### Interactive-Overlay
 
-Das Interactive-Overlay bietet interaktive Elemente:
+the Interactive-Overlay bietet interaktive elements:
 
 ```html
-<div class="overlay-container">
-  <img src="image.jpg" alt="Bild">
+<div class="overlay-containers">
+  <img src="image.jpg" alt="image">
   <div class="overlay-interactive">
-    <button class="btn">Mehr erfahren</button>
+    <button class="btn">more erfahren</button>
     <button class="btn">Teilen</button>
   </div>
 </div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Overlay-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Overlay-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Cardn mit Overlays
+### Cardn with Overlays
 
 ```html
-<div class="card overlay-container">
+<div class="card overlay-containers">
   <img src="image.jpg" alt="Cardnillustration" class="card-img-top">
   <div class="overlay-hover overlay-gradient-to-top">
     <div class="overlay-content">
-      <h3>Cardnüberschrift</h3>
+      <h3>Cardnuberschrift</h3>
       <p>Cardnbeschreibung</p>
     </div>
   </div>
   <div class="card-body">
-    <h5 class="card-title">Cardnüberschrift</h5>
+    <h5 class="card-title">Cardnuberschrift</h5>
     <p class="card-text">Cardninhalt</p>
   </div>
 </div>
 ```
 
-### Bilder mit Overlays
+### images with Overlays
 
 ```html
 <div class="image-gallery">
-  <div class="overlay-container">
-    <img src="image1.jpg" alt="Bild 1">
+  <div class="overlay-containers">
+    <img src="image1.jpg" alt="image 1">
     <div class="overlay-hover overlay-dark">
       <div class="overlay-icon">
         <span class="icon icon-zoom"></span>
@@ -315,8 +315,8 @@ Overlay-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
     </div>
   </div>
   
-  <div class="overlay-container">
-    <img src="image2.jpg" alt="Bild 2">
+  <div class="overlay-containers">
+    <img src="image2.jpg" alt="image 2">
     <div class="overlay-hover overlay-dark">
       <div class="overlay-icon">
         <span class="icon icon-zoom"></span>
@@ -326,28 +326,28 @@ Overlay-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-### Hero-Sektionen mit Overlays
+### Hero-sections with Overlays
 
 ```html
-<section class="hero overlay-container">
-  <img src="hero-bg.jpg" alt="Hero-Hintergrund" class="hero-background">
+<section class="hero overlay-containers">
+  <img src="hero-bg.jpg" alt="Hero-background" class="hero-background">
   <div class="overlay-dark-medium">
     <div class="hero-content">
       <h1>Willkommen</h1>
-      <p>Entdecken Sie unsere Dienstleistungen</p>
-      <button class="btn">Mehr erfahren</button>
+      <p>Entdecken them unsere Dienstleistungen</p>
+      <button class="btn">more erfahren</button>
     </div>
   </div>
 </section>
 ```
 
-## Anpassung
+## Customization
 
-Die Overlay-Effekte können über CSS Variables angepasst werden:
+the Overlay-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Overlay-Parameter */
+  /* Grundlegende Overlay-parameter */
   --overlay-opacity: 0.7;
   --overlay-transition-duration: 0.3s;
   --overlay-transition-timing: ease;
@@ -369,11 +369,11 @@ Die Overlay-Effekte können über CSS Variables angepasst werden:
   --overlay-gradient-end: rgba(0, 0, 0, 0.8);
   --overlay-gradient-angle: 0deg;
   
-  /* Muster-Overlays */
+  /* pattern-Overlays */
   --overlay-pattern-color: rgba(255, 255, 255, 0.1);
   --overlay-pattern-size: 20px;
   
-  /* Unschärfe-Overlay */
+  /* Unscharfe-Overlay */
   --overlay-blur-amount: 5px;
   
   /* Interaktive Overlays */
@@ -385,16 +385,16 @@ Die Overlay-Effekte können über CSS Variables angepasst werden:
 
 ## Accessibility
 
-Bei der Usage von Overlay-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Overlay-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass Text auf Overlays ausreichenden Kontrast hat
-2. **Tastaturbedienung**: Stellen Sie sicher, dass interaktive Overlays auch per Tastatur zugänglich sind
-3. **Screenreader**: Stellen Sie sicher, dass Overlay-Inhalte für Screenreader zugänglich sind
-4. **Fokus-Management**: Achten Sie auf korrektes Fokus-Management bei Overlays, die über die gesamte Seite gelegt werden
+1. **Kontrast**: ensure, that Text on Overlays ausreichenden Kontrast hat
+2. **Tastaturbedienung**: ensure, that interaktive Overlays also per Tastatur zuganglich sind
+3. **Screenreader**: ensure, that Overlay-contents for Screenreader zuganglich sind
+4. **Fokus-Management**: ensure them on korrektes Fokus-Management at Overlays, the over the gesamte Seite gelegt become
 
 ```html
-<!-- Barrierefreies Overlay mit Fokus-Management -->
-<div class="overlay-container">
+<!-- Barrierefreies Overlay with Fokus-Management -->
+<div class="overlay-containers">
   <img src="image.jpg" alt="Produktbild">
   <div 
     class="overlay-hover overlay-dark" 
@@ -417,13 +417,13 @@ Bei der Usage von Overlay-Effekten sollten folgende Accessibilitysaspekte berüc
 
 ## JavaScript-Integration
 
-Für dynamische Overlay-Steuerung kann JavaScript verwendet werden:
+for dynamische Overlay-Steuerung kann JavaScript verwendet become:
 
 ```javascript
 // Overlay dynamisch anzeigen/ausblenden
 function toggleOverlay(containerId) {
-  const container = document.getElementById(containerId);
-  const overlay = container.querySelector('.overlay');
+  const containers = document.getElementById(containerId);
+  const overlay = containers.querySelector('.overlay');
   
   if (overlay.classList.contains('overlay-visible')) {
     hideOverlay(overlay);
@@ -436,13 +436,13 @@ function showOverlay(overlay) {
   // Overlay einblenden
   overlay.classList.add('overlay-visible');
   
-  // Fokus auf das erste fokussierbare Element setzen
+  // Fokus on the erste fokussierbare element setzen
   const focusableElements = overlay.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
   if (focusableElements.length > 0) {
     focusableElements[0].focus();
   }
   
-  // Aria-Attribute setzen
+  // Aria-attributes setzen
   overlay.setAttribute('aria-hidden', 'false');
 }
 
@@ -450,41 +450,41 @@ function hideOverlay(overlay) {
   // Overlay ausblenden
   overlay.classList.remove('overlay-visible');
   
-  // Aria-Attribute zurücksetzen
+  // Aria-attributes zurucksetzen
   overlay.setAttribute('aria-hidden', 'true');
 }
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Overlay-Effekte können die Leistung beeinflussen:
+Overlay-effects can the Leistung beeinflussen:
 
-1. **Anzahl**: Viele Overlays gleichzeitig können die Leistung beeinträchtigen
-2. **Unschärfe**: Blur-Effekte sind rechenintensiv und sollten sparsam eingesetzt werden
-3. **Animationen**: Animierte Overlays sollten optimiert werden
-4. **DOM-Tiefe**: Tiefe DOM-Strukturen mit Overlays können zu Leistungsproblemen führen
+1. **Anzahl**: many Overlays gleichzeitig can the Leistung beeintrachtigen
+2. **Unscharfe**: Blur-effects sind rechenintensiv and should sparsam eingesetzt become
+3. **animations**: Animierte Overlays should optimiert become
+4. **DOM-Tiefe**: Tiefe DOM-Strukturen with Overlays can to Leistungsproblemen fuhren
 
 ```css
-/* Performance-Optimierung für animierte Overlays */
+/* Performance-Optimierung for animierte Overlays */
 .overlay-animated {
   will-change: opacity, transform;
   transform: translateZ(0);
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Overlay-Effekte sind mit allen modernen Browsern kompatibel. Einige Effekte haben jedoch Einschränkungen in älteren Browsern.
+the meisten Overlay-effects sind with allen modernen Browsern kompatibel. some effects have however Einschrankungen in alteren Browsern.
 
-| Effekt | Chrome | Firefox | Safari | Edge | IE11 |
+| effect | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | Grundlegende Overlays | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Verlaufs-Overlays | ✓ | ✓ | ✓ | ✓ | Begrenzt |
 | Blur-Overlays | ✓ | ✓ | ✓ | ✓ | Nein |
 | Animierte Overlays | ✓ | ✓ | ✓ | ✓ | Begrenzt |
 
-## Verwandte Effekte
+## Verwandte effects
 
 - [Backdrops](/docs/effects/layout/backdrops.md) - Hintergrundeffekte
-- [Masken-Effekte](/docs/effects/layout/masks.md) - Maskeneffekte für Elemente
-- [Glaseffekte](/docs/effects/visual/glass.md) - Glaseffekte für Elemente 
+- [Masken-effects](/docs/effects/layout/masks.md) - Maskeneffekte for elements
+- [Glaseffekte](/docs/effects/visual/glass.md) - Glaseffekte for elements 

@@ -1,132 +1,132 @@
-# Ripple-Effekte
+# Ripple Effects
 
-Ripple-Effekte sind wellenartige Animationen, die von einem Punkt ausgehen und sich kreisförmig ausbreiten. Die `@casoon/ui-lib` bietet verschiedene Ripple-Effekte, die dazu beitragen, interaktive und ansprechende Benutzeroberflächen zu gestalten.
+Ripple effects are wave-like animations that originate from a point and spread out in a circular pattern. The `@casoon/ui-lib` offers various ripple effects that help create interactive and appealing user interfaces.
 
 ## Basic Usage
 
-Der grundlegende Ripple-Effekt kann auf jedes Element angewendet werden:
+The basic ripple effect can be applied to any element:
 
 ```html
-<button class="ripple">Klick mich</button>
+<button class="ripple">Click me</button>
 ```
 
-## CSS-Klassen
+## CSS Classes
 
-Die folgenden CSS-Klassen stehen für Ripple-Effekte zur Verfügung:
+The following CSS classes are available for ripple effects:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.ripple` | Basisklasse für Ripple-Effekte |
-| `.ripple-light` | Heller Ripple-Effekt |
-| `.ripple-dark` | Dunkler Ripple-Effekt |
-| `.ripple-primary` | Ripple-Effekt in Primärfarbe |
-| `.ripple-secondary` | Ripple-Effekt in Sekundärfarbe |
-| `.ripple-accent` | Ripple-Effekt in Akzentfarbe |
-| `.ripple-success` | Ripple-Effekt in Erfolgsfarbe |
-| `.ripple-warning` | Ripple-Effekt in Warnfarbe |
-| `.ripple-error` | Ripple-Effekt in Fehlerfarbe |
-| `.ripple-info` | Ripple-Effekt in Infofarbe |
-| `.ripple-center` | Zentrierter Ripple-Effekt |
-| `.ripple-unbounded` | Unbegrenzter Ripple-Effekt |
-| `.ripple-fixed` | Fixer Ripple-Effekt |
-| `.ripple-persistent` | Dauerhafter Ripple-Effekt |
-| `.ripple-slow` | Langsamer Ripple-Effekt |
-| `.ripple-fast` | Schneller Ripple-Effekt |
+| `.ripple` | Base class for ripple effects |
+| `.ripple-light` | Light ripple effect |
+| `.ripple-dark` | Dark ripple effect |
+| `.ripple-primary` | Ripple effect in primary color |
+| `.ripple-secondary` | Ripple effect in secondary color |
+| `.ripple-accent` | Ripple effect in accent color |
+| `.ripple-success` | Ripple effect in success color |
+| `.ripple-warning` | Ripple effect in warning color |
+| `.ripple-error` | Ripple effect in error color |
+| `.ripple-info` | Ripple effect in info color |
+| `.ripple-center` | Centered ripple effect |
+| `.ripple-unbounded` | Unbounded ripple effect |
+| `.ripple-fixed` | Fixed ripple effect |
+| `.ripple-persistent` | Persistent ripple effect |
+| `.ripple-slow` | Slow ripple effect |
+| `.ripple-fast` | Fast ripple effect |
 
 ## Variants
 
-### Farbvarianten
+### Color Variants
 
-Ripple-Effekte in verschiedenen Colors:
-
-```html
-<button class="ripple-light">Heller Ripple</button>
-<button class="ripple-dark">Dunkler Ripple</button>
-<button class="ripple-primary">Primärfarbener Ripple</button>
-<button class="ripple-secondary">Sekundärfarbener Ripple</button>
-<button class="ripple-accent">Akzentfarbener Ripple</button>
-<button class="ripple-success">Erfolgsripple</button>
-<button class="ripple-warning">Warnripple</button>
-<button class="ripple-error">Fehlerripple</button>
-<button class="ripple-info">Inforipple</button>
-```
-
-### Positionierungsvarianten
-
-Verschiedene Positionierungen für Ripple-Effekte:
+Ripple effects in different colors:
 
 ```html
-<button class="ripple-center">Zentrierter Ripple</button>
-<div class="ripple-unbounded">Unbegrenzter Ripple</div>
-<div class="ripple-fixed">Fixer Ripple</div>
+<button class="ripple-light">Light ripple</button>
+<button class="ripple-dark">Dark ripple</button>
+<button class="ripple-primary">Primary color ripple</button>
+<button class="ripple-secondary">Secondary color ripple</button>
+<button class="ripple-accent">Accent color ripple</button>
+<button class="ripple-success">Success ripple</button>
+<button class="ripple-warning">Warning ripple</button>
+<button class="ripple-error">Error ripple</button>
+<button class="ripple-info">Info ripple</button>
 ```
 
-### Verhaltensvarinaten
+### Positioning Variants
 
-Verschiedene Verhaltensweisen für Ripple-Effekte:
+Various positionings for ripple effects:
 
 ```html
-<button class="ripple-persistent">Dauerhafter Ripple</button>
-<button class="ripple-slow">Langsamer Ripple</button>
-<button class="ripple-fast">Schneller Ripple</button>
+<button class="ripple-center">Centered ripple</button>
+<div class="ripple-unbounded">Unbounded ripple</div>
+<div class="ripple-fixed">Fixed ripple</div>
 ```
 
-### Spezialeffekte
+### Behavior Variants
 
-Spezielle Ripple-Effekte für besondere Use Cases:
+Various behaviors for ripple effects:
 
 ```html
-<button class="ripple-multiple">Mehrfacher Ripple</button>
-<button class="ripple-pulse">Pulsierender Ripple</button>
-<button class="ripple-gradient">Verlaufsripple</button>
-<button class="ripple-radial">Radialer Ripple</button>
-<button class="ripple-concentric">Konzentrischer Ripple</button>
+<button class="ripple-persistent">Persistent ripple</button>
+<button class="ripple-slow">Slow ripple</button>
+<button class="ripple-fast">Fast ripple</button>
 ```
 
-## Kombination mit anderen Elementen
+### Special Effects
 
-Ripple-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
-
-### Buttons mit Ripple-Effekt
+Special ripple effects for particular use cases:
 
 ```html
-<button class="btn btn-primary ripple">Primärbutton mit Ripple</button>
-<button class="btn btn-secondary ripple-light">Sekundärbutton mit hellem Ripple</button>
-<button class="btn btn-accent ripple-dark">Akzentbutton mit dunklem Ripple</button>
+<button class="ripple-multiple">Multiple ripple</button>
+<button class="ripple-pulse">Pulsating ripple</button>
+<button class="ripple-gradient">Gradient ripple</button>
+<button class="ripple-radial">Radial ripple</button>
+<button class="ripple-concentric">Concentric ripple</button>
 ```
 
-### Cardn mit Ripple-Effekt
+## Combination with Other Elements
+
+Ripple effects can be combined with various UI elements:
+
+### Buttons with Ripple Effect
+
+```html
+<button class="btn btn-primary ripple">Primary button with ripple</button>
+<button class="btn btn-secondary ripple-light">Secondary button with light ripple</button>
+<button class="btn btn-accent ripple-dark">Accent button with dark ripple</button>
+```
+
+### Cards with Ripple Effect
 
 ```html
 <div class="card ripple">
   <div class="card-body">
-    <h3>Card mit Ripple-Effekt</h3>
-    <p>Klicken Sie irgendwo auf die Card, um den Ripple-Effekt zu sehen.</p>
+    <h3>Card with ripple effect</h3>
+    <p>Click anywhere on the card to see the ripple effect.</p>
   </div>
 </div>
 ```
 
-### Listen mit Ripple-Effekt
+### Lists with Ripple Effect
 
 ```html
 <ul class="list">
-  <li class="list-item ripple">Listenelement mit Ripple</li>
-  <li class="list-item ripple">Listenelement mit Ripple</li>
-  <li class="list-item ripple">Listenelement mit Ripple</li>
+  <li class="list-item ripple">List item with ripple</li>
+  <li class="list-item ripple">List item with ripple</li>
+  <li class="list-item ripple">List item with ripple</li>
 </ul>
 ```
 
-### Navigationslinks mit Ripple-Effekt
+### Navigation Links with Ripple Effect
 
 ```html
 <nav class="navbar">
   <a href="#" class="nav-link ripple">Home</a>
-  <a href="#" class="nav-link ripple">Über uns</a>
-  <a href="#" class="nav-link ripple">Kontakt</a>
+  <a href="#" class="nav-link ripple">About us</a>
+  <a href="#" class="nav-link ripple">Contact</a>
 </nav>
 ```
 
-### Tabs mit Ripple-Effekt
+### Tabs with Ripple Effect
 
 ```html
 <div class="tabs">
@@ -136,18 +136,18 @@ Ripple-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Ripple-Effekte können über CSS Variables angepasst werden:
+The ripple effects can be customized using CSS variables:
 
 ```css
 :root {
-  /* Allgemeine Ripple-Parameter */
+  /* General ripple parameters */
   --ripple-color: rgba(0, 0, 0, 0.1);
   --ripple-duration: 0.6s;
   --ripple-timing-function: ease-out;
   
-  /* Farbvarianten */
+  /* Color variants */
   --ripple-light-color: rgba(255, 255, 255, 0.3);
   --ripple-dark-color: rgba(0, 0, 0, 0.2);
   --ripple-primary-color: rgba(var(--color-primary-rgb), 0.2);
@@ -158,18 +158,18 @@ Die Ripple-Effekte können über CSS Variables angepasst werden:
   --ripple-error-color: rgba(var(--color-error-rgb), 0.2);
   --ripple-info-color: rgba(var(--color-info-rgb), 0.2);
   
-  /* Geschwindigkeitsvarianten */
+  /* Speed variants */
   --ripple-slow-duration: 1s;
   --ripple-fast-duration: 0.3s;
   
-  /* Sizesparameter */
+  /* Size parameters */
   --ripple-scale: 4;
   --ripple-initial-scale: 0.2;
   --ripple-opacity-start: 0.5;
   --ripple-opacity-end: 0;
 }
 
-/* Dunkles Theme */
+/* Dark theme */
 .dark-theme {
   --ripple-color: rgba(255, 255, 255, 0.15);
   --ripple-light-color: rgba(255, 255, 255, 0.2);
@@ -177,12 +177,12 @@ Die Ripple-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS Implementation
 
-Examples für die CSS-Implementierung der Ripple-Effekte:
+Examples for the CSS implementation of ripple effects:
 
 ```css
-/* Basis-Ripple */
+/* Base ripple */
 .ripple {
   position: relative;
   overflow: hidden;
@@ -210,14 +210,14 @@ Examples für die CSS-Implementierung der Ripple-Effekte:
 
 @keyframes ripple {
   to {
-    width: 250%; /* Dynamisch anhand des Elements berechnet */
-    height: 250%; /* Dynamisch anhand des Elements berechnet */
+    width: 250%; /* Dynamically calculated based on the element */
+    height: 250%; /* Dynamically calculated based on the element */
     opacity: var(--ripple-opacity-end);
     transform: scale(var(--ripple-scale));
   }
 }
 
-/* Farbvarianten */
+/* Color variants */
 .ripple-light::after {
   background-color: var(--ripple-light-color);
 }
@@ -234,9 +234,9 @@ Examples für die CSS-Implementierung der Ripple-Effekte:
   background-color: var(--ripple-secondary-color);
 }
 
-/* und so weiter für die anderen Farbvarianten */
+/* and so on for the other color variants */
 
-/* Positionierungsvarianten */
+/* Positioning variants */
 .ripple-center::after {
   top: 50%;
   left: 50%;
@@ -260,7 +260,7 @@ Examples für die CSS-Implementierung der Ripple-Effekte:
   overflow: visible;
 }
 
-/* Geschwindigkeitsvarianten */
+/* Speed variants */
 .ripple-slow::after {
   animation-duration: var(--ripple-slow-duration);
 }
@@ -269,7 +269,7 @@ Examples für die CSS-Implementierung der Ripple-Effekte:
   animation-duration: var(--ripple-fast-duration);
 }
 
-/* Verhaltensvarianten */
+/* Behavior variants */
 .ripple-persistent::after {
   animation-fill-mode: forwards;
   opacity: var(--ripple-opacity-start);
@@ -285,7 +285,7 @@ Examples für die CSS-Implementierung der Ripple-Effekte:
   }
 }
 
-/* Spezialeffekte */
+/* Special effects */
 .ripple-multiple::after {
   animation: ripple-multiple var(--ripple-duration) var(--ripple-timing-function) infinite;
 }
@@ -306,9 +306,9 @@ Examples für die CSS-Implementierung der Ripple-Effekte:
 }
 ```
 
-## JavaScript-Integration
+## JavaScript Integration
 
-Für dynamische Ripple-Effekte wird JavaScript verwendet:
+For dynamic ripple effects, JavaScript is used:
 
 ```javascript
 class RippleEffect {
@@ -336,7 +336,7 @@ class RippleEffect {
   createRipple(event) {
     const element = event.currentTarget;
     
-    // Entferne alte Ripple-Elemente
+    // Remove old ripple elements
     const oldRipples = element.querySelectorAll('.js-ripple');
     oldRipples.forEach(ripple => {
       if (ripple.parentNode === element) {
@@ -344,17 +344,17 @@ class RippleEffect {
       }
     });
     
-    // Erstelle neues Ripple-Element
+    // Create new ripple element
     const ripple = document.createElement('span');
     ripple.className = 'js-ripple';
     
-    // Setze Ripple-Stil
+    // Set ripple style
     this.setRippleStyles(ripple, element, event);
     
-    // Füge Ripple zum Element hinzu
+    // Add ripple to element
     element.appendChild(ripple);
     
-    // Starte Animation
+    // Start animation
     setTimeout(() => {
       ripple.style.transform = this.options.centered 
         ? `translate(-50%, -50%) scale(${this.getScale(element)})`
@@ -362,7 +362,7 @@ class RippleEffect {
       ripple.style.opacity = '0';
     }, 20);
     
-    // Entferne Ripple nach Animation
+    // Remove ripple after animation
     setTimeout(() => {
       if (ripple.parentNode === element) {
         element.removeChild(ripple);
@@ -374,7 +374,7 @@ class RippleEffect {
     const rect = element.getBoundingClientRect();
     const size = Math.max(rect.width, rect.height);
     
-    // Grundstil
+    // Basic style
     ripple.style.position = 'absolute';
     ripple.style.borderRadius = '50%';
     ripple.style.pointerEvents = 'none';
@@ -407,17 +407,17 @@ class RippleEffect {
   }
 }
 
-// Initialisierung für alle Ripple-Elemente
+// Initialization for all ripple elements
 document.addEventListener('DOMContentLoaded', () => {
-  // Basis-Ripple
+  // Base ripple
   const rippleElements = document.querySelectorAll('.ripple:not(.ripple-center):not(.ripple-fixed):not(.ripple-persistent)');
   new RippleEffect(rippleElements);
   
-  // Zentrierter Ripple
+  // Centered ripple
   const centeredRippleElements = document.querySelectorAll('.ripple-center');
   new RippleEffect(centeredRippleElements, { centered: true });
   
-  // Farbige Ripples
+  // Colored ripples
   const colorClasses = ['light', 'dark', 'primary', 'secondary', 'accent', 'success', 'warning', 'error', 'info'];
   colorClasses.forEach(color => {
     const elements = document.querySelectorAll(`.ripple-${color}`);
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  // Geschwindigkeitsvarianten
+  // Speed variants
   const slowRippleElements = document.querySelectorAll('.ripple-slow');
   new RippleEffect(slowRippleElements, { 
     duration: parseInt(getComputedStyle(document.documentElement).getPropertyValue('--ripple-slow-duration')) || 1000 
@@ -438,7 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Alternativ: Einfachere Implementierung mit CSS-Klassen
+// Alternative: Simpler implementation with CSS classes
 function addRippleEffect() {
   const buttons = document.querySelectorAll('.ripple');
   
@@ -464,7 +464,7 @@ document.addEventListener('DOMContentLoaded', addRippleEffect);
 
 ## Material Design Ripple
 
-Für einen standardkonformen Material Design Ripple-Effekt kann auch die offizielle Material-Implementierung verwendet werden:
+For a standard-compliant Material Design ripple effect, the official Material implementation can also be used:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
@@ -475,7 +475,7 @@ Für einen standardkonformen Material Design Ripple-Effekt kann auch die offizie
 </button>
 
 <script>
-  // Initialisierung des Material Design Ripple-Effekts
+  // Initialization of the Material Design ripple effect
   document.querySelectorAll('.mdc-ripple-surface').forEach(element => {
     mdc.ripple.MDCRipple.attachTo(element);
   });
@@ -484,15 +484,15 @@ Für einen standardkonformen Material Design Ripple-Effekt kann auch die offizie
 
 ## Accessibility
 
-Bei der Usage von Ripple-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+When using ripple effects, the following accessibility aspects should be considered:
 
-1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
-2. **Fokussierbarkeit**: Stellen Sie sicher, dass interaktive Elemente mit Ripple-Effekten auch per Tastatur zugänglich sind
-3. **Farbkontrast**: Stellen Sie sicher, dass der Ripple-Effekt ausreichend Kontrast zum Hintergrund bietet
-4. **Keine reinen visuellen Hinweise**: Stellen Sie sicher, dass Interaktionsmöglichkeiten nicht nur durch den Ripple-Effekt erkennbar sind
+1. **Animation preferences**: Respect the `prefers-reduced-motion` setting
+2. **Keyboard focus**: Ensure that interactive elements with ripple effects are also accessible via keyboard
+3. **Color contrast**: Ensure that the ripple effect provides sufficient contrast with the background
+4. **No pure visual cues**: Ensure that interaction possibilities are not only recognizable through the ripple effect
 
 ```css
-/* Reduzierte Animation für Benutzer, die dies bevorzugen */
+/* Reduced animation for users who prefer this */
 @media (prefers-reduced-motion: reduce) {
   .ripple::after,
   .ripple-center::after,
@@ -504,9 +504,9 @@ Bei der Usage von Ripple-Effekten sollten folgende Accessibilitysaspekte berück
   }
 }
 
-/* Tastaturfreundliche Ripple-Effekte */
+/* Keyboard-friendly ripple effects */
 .ripple:focus-visible::after {
-  /* Ripple-Effekt bei Tastaturfokus auslösen */
+  /* Trigger ripple effect on keyboard focus */
   width: 250%;
   height: 250%;
   opacity: var(--ripple-opacity-end);
@@ -516,11 +516,11 @@ Bei der Usage von Ripple-Effekten sollten folgende Accessibilitysaspekte berück
 ```
 
 ```javascript
-// Ripple-Effekt auch bei Tastaturbedienung
+// Ripple effect also for keyboard operation
 document.querySelectorAll('.ripple').forEach(element => {
   element.addEventListener('keydown', function(e) {
     if (e.key === 'Enter' || e.key === ' ') {
-      // Simuliere einen Klick in der Mitte des Elements
+      // Simulate a click in the center of the element
       const rect = element.getBoundingClientRect();
       const event = new PointerEvent('pointerdown', {
         clientX: rect.left + rect.width / 2,
@@ -532,17 +532,17 @@ document.querySelectorAll('.ripple').forEach(element => {
 });
 ```
 
-## Performance-Überlegungen
+## Performance Considerations
 
-Ripple-Effekte können die Leistung beeinflussen:
+Ripple effects can affect performance:
 
-1. **DOM-Operationen**: Minimieren Sie DOM-Manipulationen bei der Erzeugung von Ripple-Elementen
-2. **GPU-Beschleunigung**: Verwenden Sie `transform` und `opacity` für die Animation, um die GPU zu nutzen
-3. **Recycling**: Wiederverwenden Sie Ripple-Elemente, anstatt bei jedem Klick neue zu erstellen
-4. **Cleanup**: Entfernen Sie Ripple-Elemente nach Abschluss der Animation
+1. **DOM operations**: Minimize DOM manipulations when creating ripple elements
+2. **GPU acceleration**: Use `transform` and `opacity` for animations to utilize the GPU
+3. **Recycling**: Reuse ripple elements instead of creating new ones on each click
+4. **Cleanup**: Remove ripple elements after animation completion
 
 ```javascript
-// Leistungsoptimierte Ripple-Implementierung
+// Performance-optimized ripple implementation
 class OptimizedRipple {
   constructor(elements) {
     this.elements = elements instanceof NodeList ? elements : [elements];
@@ -553,7 +553,7 @@ class OptimizedRipple {
   }
   
   createRipplePool() {
-    // Erstelle einen Pool von wiederverwendbaren Ripple-Elementen
+    // Create a pool of reusable ripple elements
     for (let i = 0; i < this.ripplePoolSize; i++) {
       const ripple = document.createElement('span');
       ripple.className = 'js-ripple';
@@ -577,7 +577,7 @@ class OptimizedRipple {
   }
   
   getRippleFromPool() {
-    // Suche nach einem inaktiven Ripple im Pool
+    // Look for an inactive ripple in the pool
     const inactiveRipple = this.ripplePool.find(ripple => !ripple.isActive);
     
     if (inactiveRipple) {
@@ -585,7 +585,7 @@ class OptimizedRipple {
       return inactiveRipple;
     }
     
-    // Wenn kein inaktives Ripple verfügbar ist, erstelle ein neues
+    // If no inactive ripple is available, create a new one
     const ripple = document.createElement('span');
     ripple.className = 'js-ripple';
     ripple.style.position = 'absolute';
@@ -605,24 +605,24 @@ class OptimizedRipple {
   }
   
   createRipple(event) {
-    // Rest der Implementierung...
+    // Rest of the implementation...
   }
 }
 ```
 
-## Browser-Kompatibilität
+## Browser Compatibility
 
-Die Ripple-Effekte werden von allen modernen Browsern unterstützt.
+The ripple effects are supported by all modern browsers.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| Basis-Ripple | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CSS-Animationen | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JS-Ripple | ✓ | ✓ | ✓ | ✓ | Begrenzt |
-| Touch-Events | ✓ | ✓ | ✓ | ✓ | Begrenzt |
+| Base ripple | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CSS animations | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JS ripple | ✓ | ✓ | ✓ | ✓ | Limited |
+| Touch events | ✓ | ✓ | ✓ | ✓ | Limited |
 
-## Verwandte Effekte
+## Related Effects
 
-- [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Hover-Effekte](/docs/effects/interaction/hover.md) - Effekte bei Mauszeiger-Hover
-- [Active-Effekte](/docs/effects/interaction/active.md) - Effekte bei Aktivierung eines Elements 
+- [Animation effects](/docs/effects/animation/animations.md) - General animation effects
+- [Hover effects](/docs/effects/interaction/hover.md) - Effects on mouse pointer hover
+- [Active effects](/docs/effects/interaction/active.md) - Effects when activating an element 

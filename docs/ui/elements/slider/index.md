@@ -1,29 +1,29 @@
 ---
-title: Slider Element
+title: Slider element
 outline: deep
 ---
 
 
 # Slider
 
-Das Slider-Element bietet einen Slider für die Auswahl von Werten innerhalb eines bestimmten Bereichs. Slider sind intuitive Bedienelemente für die Eingabe numerischer Werte und bieten eine visuelle Darstellung des ausgewählten Wertes.
+the Slider-element bietet einen Slider for the selection from Werten within eines bestimmten Bereichs. Slider sind intuitive Bedienelemente for the input numerischer values and bieten a visuelle display des ausgewahlten Wertes.
 
 ## Installation
 
-Das Slider-Element ist Teil der Casoon UI Library.
+the Slider-element ist Teil the Casoon UI Library.
 
 ```bash
-# Installation der gesamten Bibliothek
+# Installation the gesamten Bibliothek
 npm install @casoon/ui-lib
 ```
 
 ## Import
 
 ```css
-/* Import aller UI-Elemente */
+/* Import aller UI-elements */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Slider-Komponente */
+/* or only the Slider-component */
 @import '@casoon/ui-lib/components/slider.css';
 ```
 
@@ -33,16 +33,16 @@ npm install @casoon/ui-lib
 <input type="range" class="slider" min="0" max="100" value="50">
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <input type="range" style="appearance: none; background-color: #d1d5db; border-radius: 9999px; cursor: pointer; height: 0.25rem; margin: 0.75rem 0; width: 100%;" min="0" max="100" value="50">
 </div>
 
 ## Variants
 
-### Mit Wertebereichsanzeige
+### with Wertebereichsanzeige
 
 ```html
-<div class="slider-container">
+<div class="slider-containers">
   <input type="range" class="slider" min="0" max="100" value="50">
   <div class="labels">
     <span>0</span>
@@ -52,7 +52,7 @@ npm install @casoon/ui-lib
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="display: flex; flex-direction: column; margin: 0.75rem 0; width: 100%;">
     <input type="range" style="appearance: none; background-color: #d1d5db; border-radius: 9999px; cursor: pointer; height: 0.25rem; margin: 0.5rem 0; width: 100%;" min="0" max="100" value="50">
     <div style="color: #4b5563; display: flex; font-size: 0.75rem; justify-content: space-between; margin-top: 0.25rem;">
@@ -63,23 +63,23 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-### Mit aktuellem Wert
+### with aktuellem value
 
 ```html
-<div class="slider-container">
+<div class="slider-containers">
   <input type="range" class="slider" min="0" max="100" value="50">
   <output class="value">50</output>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="display: flex; flex-direction: column; margin: 0.75rem 0; width: 100%;">
     <input type="range" style="appearance: none; background-color: #d1d5db; border-radius: 9999px; cursor: pointer; height: 0.25rem; margin: 0.5rem 0; width: 100%;" min="0" max="100" value="50">
     <output style="align-self: flex-end; color: #1f2937; font-size: 0.875rem; font-weight: 500; margin-top: 0.25rem;">50</output>
   </div>
 </div>
 
-### Variants nach Farbe
+### Variants after color
 
 ```html
 <input type="range" class="slider primary" min="0" max="100" value="50">
@@ -88,7 +88,7 @@ npm install @casoon/ui-lib
 <input type="range" class="slider danger" min="0" max="100" value="50">
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="margin-bottom: 1rem;">
     <input type="range" style="appearance: none; background-color: #d1d5db; border-radius: 9999px; cursor: pointer; height: 0.25rem; margin: 0.75rem 0; width: 100%;" min="0" max="100" value="50">
   </div>
@@ -111,7 +111,7 @@ npm install @casoon/ui-lib
 <input type="range" class="slider lg" min="0" max="100" value="50">
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="margin-bottom: 1rem;">
     <input type="range" style="appearance: none; background-color: #d1d5db; border-radius: 9999px; cursor: pointer; height: 0.125rem; margin: 0.75rem 0; width: 100%;" min="0" max="100" value="50">
   </div>
@@ -133,7 +133,7 @@ npm install @casoon/ui-lib
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="height: 2rem; margin: 0.75rem 0; position: relative; width: 100%;">
     <input type="range" style="appearance: none; background: none; cursor: pointer; margin: 0.75rem 0; position: absolute; top: 0; width: 100%; z-index: 1;" min="0" max="100" value="30">
     <input type="range" style="appearance: none; background: none; cursor: pointer; margin: 0.75rem 0; position: absolute; top: 0; width: 100%; z-index: 1;" min="0" max="100" value="70">
@@ -145,70 +145,70 @@ npm install @casoon/ui-lib
 
 ## Anpassung
 
-Das Slider-Element kann über CSS Variables angepasst werden:
+the Slider-element kann over CSS Variables angepasst become:
 
 ```css
 :root {
-  --color-primary: #3b82f6;        /* Primärfarbe für den Thumb */
-  --color-secondary: #6b7280;      /* Sekundärfarbe Variante */
+  --color-primary: #3b82f6;        /* Primarfarbe for den Thumb */
+  --color-secondary: #6b7280;      /* Sekundarfarbe Variante */
   --color-success: #10b981;        /* Erfolgs-Variante */
-  --color-error: #ef4444;          /* Fehler-Variante */
-  --color-gray-300: #d1d5db;       /* Slider-Track-Farbe */
+  --color-error: #ef4444;          /* errors-Variante */
+  --color-gray-300: #d1d5db;       /* Slider-Track-color */
   --color-gray-600: #4b5563;       /* Label-Textfarbe */
-  --color-gray-800: #1f2937;       /* Wert-Textfarbe */
-  --radius-full: 9999px;           /* Border-Radius für Slider */
-  --font-size-xs: 0.75rem;         /* Labels-Textgröße */
-  --font-size-sm: 0.875rem;        /* Wert-Textgröße */
-  --font-weight-medium: 500;       /* Wert-Textgewicht */
-  --space-1: 0.25rem;              /* Kleiner Abstand */
-  --space-2: 0.5rem;               /* Mittlerer Abstand */
-  --space-3: 0.75rem;              /* Großer Abstand */
-  --transition-fast: 0.15s ease;   /* Übergangsgeschwindigkeit */
+  --color-gray-800: #1f2937;       /* value-Textfarbe */
+  --radius-full: 9999px;           /* Border-Radius for Slider */
+  --font-size-xs: 0.75rem;         /* Labels-Textgrosse */
+  --font-size-sm: 0.875rem;        /* value-Textgrosse */
+  --font-weight-medium: 500;       /* value-Textgewicht */
+  --space-1: 0.25rem;              /* smaller spacing */
+  --space-2: 0.5rem;               /* Mittlerer spacing */
+  --space-3: 0.75rem;              /* Grosser spacing */
+  --transition-fast: 0.15s ease;   /* Ubergangsgeschwindigkeit */
 }
 ```
 
 ## Accessibility
 
-Für eine bessere Accessibility beachten Sie bitte folgende Punkte:
+for a bessere Accessibility Please note please folgende Punkte:
 
-- Verwenden Sie immer ein Label, das mit dem Slider-Element verknüpft ist
-- Fügen Sie aussagekräftige Attributwerte für `min`, `max` und `step` hinzu
-- Stellen Sie einen ausreichenden Kontrast zwischen Thumb und Track sicher
-- Implementieren Sie eine Tastaturnavigation
-- Fügen Sie bei Bedarf ARIA-Attribute hinzu, besonders für komplexere Slider-Implementierungen
+- use them immer a Label, the with dem Slider-element verknupft ist
+- Fugen them aussagekraftige Attributwerte for `min`, `max` and `step` hinzu
+- Stellen them einen ausreichenden Kontrast between Thumb and Track sicher
+- implement them a Tastaturnavigation
+- Fugen them at Bedarf ARIA-attributes hinzu, besonders for komplexere Slider-Implementierungen
 
-## Bewährte Praktiken
+## Bewahrte Praktiken
 
-- Verwenden Sie Slider für kontinuierliche Wertebereiche, bei denen die genaue Auswahl weniger wichtig ist
-- Zeigen Sie den aktuellen Wert an, wenn eine präzise Eingabe wichtig ist
-- Verwenden Sie angemessene Schrittgrößen (step-Attribut) für die Genauigkeit der Auswahl
-- Passen Sie die Größe des Sliders an den Kontext und die Wichtigkeit an
-- Berücksichtigen Sie die Touch-Bedienung bei der Gestaltung von Slidern für mobile Geräte
+- use them Slider for kontinuierliche Wertebereiche, at denen the genaue selection less important ist
+- Zeigen them den aktuellen value on, if a prazise input important ist
+- use them angemessene Schrittgrossen (step-attribute) for the Genauigkeit the selection
+- Passen them the size des Sliders on den Kontext and the importance on
+- Berucksichtigen them the Touch-Bedienung at the Gestaltung from Slidern for mobile Gerate
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Das Slider-Element ist mit allen modernen Browsern kompatibel, jedoch kann die Darstellung zwischen verschiedenen Browsern leicht variieren.
+the Slider-element ist with allen modernen Browsern kompatibel, however kann the display between verschiedenen Browsern leicht variieren.
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
+| Grundlegende Funktionalitat | ✅ | ✅ | ✅ | ✅ |
 | Anpassung des Thumbs | ✅ | ✅ | ✅ | ✅ |
 | Anpassung des Tracks | ✅ | ✅ | ✅ | ✅ |
 | CSS Variables | 49+ | 31+ | 9.1+ | 15+ |
 
 ## JavaScript-Integration
 
-Für eine vollständige Implementierung mit dynamischer Wertanzeige kann JavaScript verwendet werden:
+for a vollstandige Implementierung with dynamischer Wertanzeige kann JavaScript verwendet become:
 
 ```javascript
-// Slider mit Wertanzeige
+// Slider with Wertanzeige
 const slider = document.querySelector('.slider');
 const output = document.querySelector('.value');
 
-// Initialen Wert setzen
+// Initialen value setzen
 output.textContent = slider.value;
 
-// Wert bei Änderung aktualisieren
+// value at Anderung aktualisieren
 slider.addEventListener('input', function() {
   output.textContent = this.value;
 });
@@ -216,17 +216,17 @@ slider.addEventListener('input', function() {
 
 ## Komplexe Use Cases
 
-### Doppelter Bereichsslider mit JavaScript
+### Doppelter Bereichsslider with JavaScript
 
 ```javascript
-// Bereichsslider mit zwei Thumbs
+// Bereichsslider with zwei Thumbs
 const lowerSlider = document.querySelector('.slider.lower');
 const upperSlider = document.querySelector('.slider.upper');
 const track = document.querySelector('.track');
 
-// Event-Listener für den unteren Slider
+// Event-Listener for den unteren Slider
 lowerSlider.addEventListener('input', function() {
-  // Sicherstellen, dass der untere Wert nicht größer als der obere ist
+  // Sicherstellen, that the untere value not grosser as the obere ist
   if (parseInt(this.value) >= parseInt(upperSlider.value)) {
     this.value = parseInt(upperSlider.value) - 1;
   }
@@ -235,9 +235,9 @@ lowerSlider.addEventListener('input', function() {
   updateTrack();
 });
 
-// Event-Listener für den oberen Slider
+// Event-Listener for den oberen Slider
 upperSlider.addEventListener('input', function() {
-  // Sicherstellen, dass der obere Wert nicht kleiner als der untere ist
+  // Sicherstellen, that the obere value not smaller as the untere ist
   if (parseInt(this.value) <= parseInt(lowerSlider.value)) {
     this.value = parseInt(lowerSlider.value) + 1;
   }
@@ -246,17 +246,17 @@ upperSlider.addEventListener('input', function() {
   updateTrack();
 });
 
-// Funktion zur Aktualisierung des farbigen Tracks
+// function zur Aktualisierung des farbigen Tracks
 function updateTrack() {
   const lowerVal = parseInt(lowerSlider.value);
   const upperVal = parseInt(upperSlider.value);
   const max = parseInt(lowerSlider.max);
   
-  // Berechnung der prozentualen Positionen
+  // Berechnung the prozentualen positions
   const lowerPercent = (lowerVal / max) * 100;
   const upperPercent = 100 - (upperVal / max) * 100;
   
-  // Anwendung auf den farbigen Track
+  // Anwendung on den farbigen Track
   track.style.background = `linear-gradient(
     to right,
     #d1d5db 0%,

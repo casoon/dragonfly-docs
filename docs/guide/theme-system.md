@@ -1,13 +1,13 @@
 ---
-title: Theme System
+title: Theme system
 category: Guide
 ---
 
-# Theme System
+# Theme system
 
-The Theme System of the Casoon UI Library enables flexible customization of your application's visual appearance through predefined themes and customizable design tokens.
+The Theme system of the Casoon UI Library enables flexible customization of your application's visual appearance through predefined themes and customizable design tokens.
 
-## Structure of the Theme System
+## Structure of the Theme system
 
 The themes are part of the layer system and are defined under the `themes` layer. This gives them a high priority in the cascade:
 

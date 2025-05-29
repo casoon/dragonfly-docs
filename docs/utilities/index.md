@@ -5,101 +5,101 @@ category: Utilities
 
 # Utility Classes
 
-Das Utility-System der Casoon UI Library bietet eine umfassende Sammlung von CSS-Dienstprogrammklassen für schnelle Styling-Customizations ohne die Notwendigkeit, benutzerdefiniertes CSS zu schreiben.
+the Utility-system the Casoon UI Library bietet a umfassende Sammlung from CSS-Dienstprogrammklassen for schnelle Styling-customizations without the Notwendigkeit, benutzerdefiniertes CSS to schreiben.
 
 ## Overview
 
-Das Utility-System umfasst Klassen für:
+the Utility-system umfasst classes for:
 
-- **Colors**: Text-, Hintergrund- und Rahmenfarben
-- **Spacing**: Abstände, Ränder und Polsterung
-- **Typography**: Schriftarten, -größen, -gewichte und Textausrichtung
-- **Display**: Anzeigeeigenschaften und Sichtbarkeit
-- **Flexbox**: Flexible Box-Layout-Steuerung
-- **Grid**: CSS-Grid-Layout-Steuerung
-- **Position**: Elementpositionierung
-- **Size**: Breiten- und Höhenkontrolle
+- **Colors**: Text-, background- and Rahmenfarben
+- **Spacing**: Abstande, Rander and Polsterung
+- **Typography**: Schriftarten, -sizes, -gewichte and Textausrichtung
+- **Display**: Anzeigeeigenschaften and visibility
+- **flexbox**: Flexible box-layout-Steuerung
+- **grid**: CSS-grid-layout-Steuerung
+- **position**: Elementpositionierung
+- **Size**: Breiten- and Hohenkontrolle
 
 ## Prinzipien
 
-Das Utility-System basiert auf folgenden Prinzipien:
+the Utility-system basiert on folgenden Prinzipien:
 
-1. **Atomarität**: Jede Klasse tut genau eine Sache
-2. **Vorhersehbarkeit**: Konsistente Namenskonventionen und Verhaltensweisen
-3. **Responsivität**: Breakpoint-Präfixe für responsives Verhalten
-4. **Effizienz**: Minimale Dateigröße durch optimierte Selektoren
+1. **Atomaritat**: Jede Class tut genau a Sache
+2. **Vorhersehbarkeit**: Konsistente Namenskonventionen and Verhaltensweisen
+3. **Responsivitat**: breakpoint-Prafixe for responsives behavior
+4. **Effizienz**: Minimale Dateigrosse through optimierte Selektoren
 
 ## Namenskonventionen
 
-Utility-Klassen folgen einem konsistenten Benennungsmuster:
+Utility-classes folgen einem konsistenten Benennungsmuster:
 
-```.[Eigenschaft]-[Variante]-[Wert]
+```.[Property]-[Variante]-[Value]
 ```
 
 Examples:
-- `.color-primary-500`: Textfarbe auf Primary-500 setzen
-- `.bg-neutral-100`: Hintergrundfarbe auf Neutral-100 setzen
-- `.m-m`: Margin auf mittleren Wert setzen
-- `.p-l`: Padding auf großen Wert setzen
-- `.flex-center`: Flex-Items zentrieren
+- `.color-primary-500`: Textfarbe on Primary-500 setzen
+- `.bg-neutral-100`: Hintergrundfarbe on Neutral-100 setzen
+- `.m-m`: Margin on mittleren Value setzen
+- `.p-l`: Padding on sizes Value setzen
+- `.flex-center`: Flex-Items center
 
-## Responsive Utilities
+## responsive Utilities
 
-Durch Präfixe können Utilities responsive angewendet werden:
+through Prafixe can Utilities responsive angewendet become:
 
 ```html
 <div class="display-block sm:display-none lg:display-flex">
-  <!-- Standardmäßig als Block angezeigt, auf kleinen Bildschirmen ausgeblendet, auf großen als Flex angezeigt -->
+  <!-- by default as Block angezeigt, on kleinen Bildschirmen ausgeblendet, on sizes as Flex angezeigt -->
 </div>
 ```
 
-## Kategorien von Utilities
+## Kategorien from Utilities
 
 ### Color Utilities
 
 ```html
 <!-- Textfarben -->
-<p class="color-primary-500">Primärfarbe</p>
+<p class="color-primary-500">Primarfarbe</p>
 <p class="color-danger-400">Warnfarbe</p>
 
 <!-- Hintergrundfarben -->
-<div class="bg-neutral-100">Neutraler Hintergrund</div>
-<div class="bg-success-200">Erfolgs-Hintergrund</div>
+<div class="bg-neutral-100">Neutraler background</div>
+<div class="bg-success-200">Erfolgs-background</div>
 ```
 
 ### Spacing Utilities
 
 ```html
 <!-- Margin -->
-<div class="m-s">Kleiner Abstand rundum</div>
-<div class="mt-m mb-l">Mittlerer Abstand oben, großer unten</div>
+<div class="m-s">smaller spacing rundum</div>
+<div class="mt-m mb-l">Mittlerer spacing oben, grosser unten</div>
 
 <!-- Padding -->
 <div class="p-m">Mittlere Polsterung rundum</div>
-<div class="px-l py-m">Große horizontale, mittlere vertikale Polsterung</div>
+<div class="px-l py-m">size horizontale, mittlere vertikale Polsterung</div>
 ```
 
 ### Typography Utilities
 
 ```html
-<!-- Schriftgröße und -gewicht -->
-<p class="text-s">Kleiner Text</p>
-<p class="text-l font-bold">Großer, fetter Text</p>
+<!-- font size and -gewicht -->
+<p class="text-s">smaller Text</p>
+<p class="text-l font-bold">Grosser, fetter Text</p>
 
 <!-- Textausrichtung -->
 <p class="text-center">Zentrierter Text</p>
-<p class="text-right">Rechtsbündiger Text</p>
+<p class="text-right">Rechtsbundiger Text</p>
 ```
 
 ## Usage
 
-Das Utility-System kann als Ganzes oder modular eingebunden werden:
+the Utility-system kann as Ganzes or modular eingebunden become:
 
 ```css
-/* Gesamtes Utility-System */
+/* Gesamtes Utility-system */
 @import '@casoon/ui-lib/utilities.css';
 
-/* Oder nur einzelne Utility-Kategorien */
+/* or only einzelne Utility-Kategorien */
 @import '@casoon/ui-lib/utilities/spacing.css';
 @import '@casoon/ui-lib/utilities/colors.css';
 ```
@@ -111,6 +111,6 @@ Das Utility-System kann als Ganzes oder modular eingebunden werden:
 - [Typography Utilities](/utilities/typography)
 - [Display Utilities](/utilities/display)
 - [Flex Utilities](/utilities/flex)
-- [Grid Utilities](/utilities/grid)
-- [Position Utilities](/utilities/position)
+- [grid Utilities](/utilities/grid)
+- [position Utilities](/utilities/position)
 - [Size Utilities](/utilities/size) 

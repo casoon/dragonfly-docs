@@ -13,7 +13,7 @@ This guide explains how to install and set up the Casoon UI Library (Dragonfly) 
 
 ## Requirements
 
-- **Node.js**: Version 16.0.0 or higher
+- **Node.js**: version 16.0.0 or higher
 - **npm**, **yarn**, or **pnpm**: For package management
 
 ## Installation Methods
@@ -138,5 +138,5 @@ import '@casoon/dragonfly/themes/day.css';
 ## Next Steps
 
 - [Browse Components](/ui/)
-- [Explore the Design System](/core/)
+- [Explore the Design system](/core/)
 - [Learn About Themes](/themes/) 

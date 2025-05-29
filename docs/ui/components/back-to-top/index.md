@@ -268,7 +268,7 @@ Add a circular progress indicator to show how far the user has scrolled.
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Component module */
+/* Component modules */
 @import '@casoon/ui-lib/ui/components/back-to-top.css';
 ```
 
@@ -303,7 +303,7 @@ The Back to Top component can be customized using CSS variables:
 
 ### Available Variables
 
-| Variable | Default | Description |
+| variable | Default | Description |
 |----------|---------|-------------|
 | `--back-to-top-size` | `40px` | Size of the button (width and height) |
 | `--back-to-top-size-sm` | `32px` | Size of the small button variant |

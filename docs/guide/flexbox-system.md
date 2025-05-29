@@ -1,9 +1,9 @@
 ---
-title: Flexbox System
+title: Flexbox system
 category: Guide
 ---
 
-# Flexbox System
+# Flexbox system
 
 The Casoon UI Library provides a comprehensive flexbox layout system that makes it easy to create flexible and responsive layouts. This guide explains how to use the flexbox utilities, components, and best practices for building layouts with the library.
 
@@ -17,7 +17,7 @@ The flexbox system is built on these core principles:
 4. **Semantic naming** - Class names that clearly communicate their purpose
 5. **Browser compatibility** - Support for all modern browsers
 
-## Importing the Flexbox System
+## Importing the Flexbox system
 
 The flexbox system is part of the `layout.css` layer, which depends on `core.css`. Make sure to import them in the correct order:
 
@@ -287,18 +287,18 @@ Control properties of individual flex items:
 </div>
 ```
 
-### Flex Basis
+### Flex base
 
 ```html
 <div class="flex">
-  <!-- Auto basis (uses the item's content size) -->
-  <div class="flex-basis-auto">Auto basis</div>
+  <!-- Auto base (uses the item's content size) -->
+  <div class="flex-base-auto">Auto base</div>
   
-  <!-- Specific basis width -->
-  <div class="flex-basis-1/4">25% basis</div>
-  <div class="flex-basis-1/3">33% basis</div>
-  <div class="flex-basis-1/2">50% basis</div>
-  <div class="flex-basis-full">100% basis</div>
+  <!-- Specific base width -->
+  <div class="flex-base-1/4">25% base</div>
+  <div class="flex-base-1/3">33% base</div>
+  <div class="flex-base-1/2">50% base</div>
+  <div class="flex-base-full">100% base</div>
 </div>
 ```
 
@@ -307,10 +307,10 @@ Control properties of individual flex items:
 ```html
 <div class="flex">
   <!-- flex: 1 1 0% -->
-  <div class="flex-1">Grows and shrinks, with 0 basis</div>
+  <div class="flex-1">Grows and shrinks, with 0 base</div>
   
   <!-- flex: 1 1 auto -->
-  <div class="flex-auto">Grows and shrinks, with auto basis</div>
+  <div class="flex-auto">Grows and shrinks, with auto base</div>
   
   <!-- flex: 0 1 auto -->
   <div class="flex-initial">Default behavior</div>
@@ -457,21 +457,21 @@ The library also provides pre-built flexbox components for common layout pattern
 
 ```html
 <div class="flex flex-wrap">
-  <div class="flex-basis-1/3 p-4">
+  <div class="flex-base-1/3 p-4">
     <div class="flex flex-col h-full bg-light">
       <h3>Column 1</h3>
       <p class="flex-grow">Content that causes this column to stretch</p>
       <button>Action</button>
     </div>
   </div>
-  <div class="flex-basis-1/3 p-4">
+  <div class="flex-base-1/3 p-4">
     <div class="flex flex-col h-full bg-light">
       <h3>Column 2</h3>
       <p class="flex-grow">Short content</p>
       <button>Action</button>
     </div>
   </div>
-  <div class="flex-basis-1/3 p-4">
+  <div class="flex-base-1/3 p-4">
     <div class="flex flex-col h-full bg-light">
       <h3>Column 3</h3>
       <p class="flex-grow">Medium length content that would normally cause uneven heights</p>
@@ -487,9 +487,9 @@ The library also provides pre-built flexbox components for common layout pattern
 <div class="flex flex-col min-h-screen">
   <header class="p-4 bg-primary text-white">Header</header>
   <div class="flex flex-grow">
-    <nav class="flex-basis-64 p-4 bg-light">Navigation</nav>
+    <nav class="flex-base-64 p-4 bg-light">Navigation</nav>
     <main class="flex-grow p-4">Main Content</main>
-    <aside class="flex-basis-64 p-4 bg-light">Sidebar</aside>
+    <aside class="flex-base-64 p-4 bg-light">Sidebar</aside>
   </div>
   <footer class="p-4 bg-secondary text-white">Footer</footer>
 </div>
@@ -613,7 +613,7 @@ The flex utilities are implemented using a comprehensive set of CSS rules:
 }
 ```
 
-## Integration with Grid System
+## Integration with Grid system
 
 While flexbox is ideal for one-dimensional layouts, it can be combined with the grid system for more complex layouts:
 

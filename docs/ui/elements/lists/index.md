@@ -1,35 +1,35 @@
 ---
-title: Lists Element
+title: Lists element
 outline: deep
 ---
 
 
-# Listen
+# lists
 
-Das Listen-Element bietet verschiedene Möglichkeiten zur Darstellung von strukturierten Daten in Form von Listen. Es unterstützt die drei grundlegenden HTML-Listentypen: ungeordnete Listen (`ul`), geordnete Listen (`ol`) und Beschreibungslisten (`dl`).
+the lists-element bietet verschiedene Moglichkeiten zur Display from strukturierten Daten in Form from lists. it unterstutzt the drei grundlegenden HTML-Listentypen: ungeordnete lists (`ul`), geordnete lists (`ol`) and Beschreibungslisten (`dl`).
 
 ## Installation
 
-Das Listen-Element ist Teil der Casoon UI Library.
+the lists-element ist Teil the Casoon UI Library.
 
 ```bash
-# Installation der gesamten Bibliothek
+# Installation the gesamten Bibliothek
 npm install @casoon/ui-lib
 ```
 
 ## Import
 
 ```css
-/* Import aller UI-Elemente */
+/* Import aller UI-elements */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Basis-Elemente */
+/* or only the Base-elements */
 @import '@casoon/ui-lib/base/elements.css';
 ```
 
 ## Basic Usage
 
-### Ungeordnete Liste
+### Ungeordnete list
 
 ```html
 <ul>
@@ -39,7 +39,7 @@ npm install @casoon/ui-lib
 </ul>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <ul style="margin: 1rem 0; padding-left: 2rem;">
     <li style="margin: 0.5rem 0;">Erster Listenpunkt</li>
     <li style="margin: 0.5rem 0;">Zweiter Listenpunkt</li>
@@ -47,7 +47,7 @@ npm install @casoon/ui-lib
   </ul>
 </div>
 
-### Geordnete Liste
+### Geordnete list
 
 ```html
 <ol>
@@ -57,7 +57,7 @@ npm install @casoon/ui-lib
 </ol>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <ol style="margin: 1rem 0; padding-left: 2rem;">
     <li style="margin: 0.5rem 0;">Erster Schritt</li>
     <li style="margin: 0.5rem 0;">Zweiter Schritt</li>
@@ -70,34 +70,34 @@ npm install @casoon/ui-lib
 ```html
 <dl>
   <dt>Begriff 1</dt>
-  <dd>Beschreibung des ersten Begriffs.</dd>
+  <dd>Description des ersten Begriffs.</dd>
   
   <dt>Begriff 2</dt>
-  <dd>Beschreibung des zweiten Begriffs.</dd>
+  <dd>Description des zweiten Begriffs.</dd>
   
   <dt>Begriff 3</dt>
-  <dd>Beschreibung des dritten Begriffs.</dd>
+  <dd>Description des dritten Begriffs.</dd>
 </dl>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <dl style="margin: 1rem 0;">
     <dt style="margin-top: 1rem; font-weight: bold;">Begriff 1</dt>
-    <dd style="margin-left: 1rem; margin-top: 0.5rem;">Beschreibung des ersten Begriffs.</dd>
+    <dd style="margin-left: 1rem; margin-top: 0.5rem;">Description des ersten Begriffs.</dd>
     
     <dt style="margin-top: 1rem; font-weight: bold;">Begriff 2</dt>
-    <dd style="margin-left: 1rem; margin-top: 0.5rem;">Beschreibung des zweiten Begriffs.</dd>
+    <dd style="margin-left: 1rem; margin-top: 0.5rem;">Description des zweiten Begriffs.</dd>
     
     <dt style="margin-top: 1rem; font-weight: bold;">Begriff 3</dt>
-    <dd style="margin-left: 1rem; margin-top: 0.5rem;">Beschreibung des dritten Begriffs.</dd>
+    <dd style="margin-left: 1rem; margin-top: 0.5rem;">Description des dritten Begriffs.</dd>
   </dl>
 </div>
 
 ## Variants
 
-### Verschachtelte Listen
+### Verschachtelte lists
 
-Listen können verschachtelt werden, um Hierarchien darzustellen.
+lists can verschachtelt become, um Hierarchien darzustellen.
 
 ```html
 <ul>
@@ -116,7 +116,7 @@ Listen können verschachtelt werden, um Hierarchien darzustellen.
 </ul>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <ul style="margin: 1rem 0; padding-left: 2rem;">
     <li style="margin: 0.5rem 0;">Hauptpunkt 1
       <ul style="margin: 0.5rem 0; padding-left: 2rem;">
@@ -133,9 +133,9 @@ Listen können verschachtelt werden, um Hierarchien darzustellen.
   </ul>
 </div>
 
-### Listen im Content-Bereich
+### lists im Content-area
 
-Im Content-Bereich haben Listen leicht angepasste Styles.
+Im Content-area have lists leicht angepasste Styles.
 
 ```html
 <div class="content">
@@ -147,11 +147,11 @@ Im Content-Bereich haben Listen leicht angepasste Styles.
     <li>Dritter Listenpunkt</li>
   </ul>
   
-  <p>Fortführender Text...</p>
+  <p>Fortfuhrender Text...</p>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="color: #111827; font-size: 1rem; line-height: 1.6;">
     <p style="margin-bottom: 1em;">Einleitender Text...</p>
     
@@ -161,13 +161,13 @@ Im Content-Bereich haben Listen leicht angepasste Styles.
       <li style="margin-bottom: 0.5em;">Dritter Listenpunkt</li>
     </ul>
     
-    <p style="margin-bottom: 1em;">Fortführender Text...</p>
+    <p style="margin-bottom: 1em;">Fortfuhrender Text...</p>
   </div>
 </div>
 
-### Spezial-Listen: Dateiliste
+### Spezial-lists: Dateiliste
 
-Ein spezielles Example für eine angepasste Liste ist die Dateiliste, die für die Anzeige von Dateien in Upload-Components verwendet wird.
+a spezielles Example for a angepasste list ist the Dateiliste, the for the Display from Dateien in Upload-Components verwendet wird.
 
 ```html
 <ul class="file-list">
@@ -182,7 +182,7 @@ Ein spezielles Example für eine angepasste Liste ist die Dateiliste, die für d
   <li class="file-item">
     <div class="icon">📷</div>
     <div class="info">
-      <div class="name">bild.jpg</div>
+      <div class="name">image.jpg</div>
       <div class="size">3.5 MB</div>
     </div>
     <button class="remove">×</button>
@@ -190,7 +190,7 @@ Ein spezielles Example für eine angepasste Liste ist die Dateiliste, die für d
 </ul>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <ul style="display: flex; flex-direction: column; gap: 0.5rem; list-style: none; margin: 0.75rem 0; padding: 0;">
     <li style="align-items: center; background-color: #f3f4f6; border-radius: 0.375rem; display: flex; gap: 0.75rem; padding: 0.5rem 0.75rem;">
       <div style="color: #6b7280; font-size: 1.5rem;">📄</div>
@@ -203,7 +203,7 @@ Ein spezielles Example für eine angepasste Liste ist die Dateiliste, die für d
     <li style="align-items: center; background-color: #f3f4f6; border-radius: 0.375rem; display: flex; gap: 0.75rem; padding: 0.5rem 0.75rem;">
       <div style="color: #6b7280; font-size: 1.5rem;">📷</div>
       <div style="flex: 1;">
-        <div style="font-weight: 500;">bild.jpg</div>
+        <div style="font-weight: 500;">image.jpg</div>
         <div style="color: #6b7280; font-size: 0.75rem;">3.5 MB</div>
       </div>
       <button style="align-items: center; background-color: #e5e7eb; border: none; border-radius: 50%; color: #4b5563; cursor: pointer; display: flex; font-size: 1.25rem; height: 1.5rem; justify-content: center; line-height: 1; width: 1.5rem;">×</button>
@@ -211,13 +211,13 @@ Ein spezielles Example für eine angepasste Liste ist die Dateiliste, die für d
   </ul>
 </div>
 
-## Anpassung
+## Customization
 
-Die Listen-Elemente können über CSS Variables angepasst werden:
+the lists-elements can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Listen */
+  /* Grundlegende lists */
   --list-margin: 1rem 0;
   --list-padding-left: 2rem;
   --list-item-margin: 0.5rem 0;
@@ -228,12 +228,12 @@ Die Listen-Elemente können über CSS Variables angepasst werden:
   --dd-margin-left: 1rem;
   --dd-margin-top: 0.5rem;
   
-  /* Content-Bereich Listen */
+  /* Content-area lists */
   --content-list-margin-bottom: 1em;
   --content-list-padding-left: 1.5em;
   --content-list-item-margin-bottom: 0.5em;
   
-  /* Spezial-Listen: Dateiliste */
+  /* Spezial-lists: Dateiliste */
   --file-list-gap: var(--space-2);
   --file-list-margin: var(--space-3) 0;
   --file-item-bg: var(--color-gray-100);
@@ -245,19 +245,19 @@ Die Listen-Elemente können über CSS Variables angepasst werden:
 
 ## Accessibility
 
-- Verwende semantisch korrekte Listen-Elemente (`ul`, `ol`, `dl`) für Listen-Inhalte
-- Stelle sicher, dass die Liste eine logische Struktur hat
-- Entferne nicht die visuellen Marker (Bullet Points/Nummerierung), wenn sie für das Verständnis wichtig sind
-- Biete ausreichenden Kontrast für Text und visuelle Marker
-- Verwende ausreichenden Abstand zwischen Listenpunkten für bessere Lesbarkeit
+- Verwende semantisch korrekte lists-elements (`ul`, `ol`, `dl`) for lists-contents
+- Stelle sicher, that the list a logische Structure hat
+- Entferne not the visuellen Marker (Bullet Points/Nummerierung), If you for the Verstandnis important sind
+- Biete ausreichenden Kontrast for Text and visuelle Marker
+- Verwende ausreichenden spacing between Listenpunkten for bessere Lesbarkeit
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Das Listen-Element ist mit allen modernen Browsern kompatibel.
+the lists-element ist with allen modernen Browsern kompatibel.
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| Function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
+| Grundlegende Funktionalitat | ✅ | ✅ | ✅ | ✅ |
 | Beschreibungslisten | ✅ | ✅ | ✅ | ✅ |
-| Verschachtelte Listen | ✅ | ✅ | ✅ | ✅ |
+| Verschachtelte lists | ✅ | ✅ | ✅ | ✅ |
 | CSS Variables | 49+ | 31+ | 9.1+ | 15+ | 

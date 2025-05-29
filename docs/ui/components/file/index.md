@@ -20,7 +20,7 @@ The File Input component of the Casoon UI Library allows users to upload files a
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* File Input module */
+/* File Input modules */
 @import '@casoon/ui-lib/components/file.css';
 ```
 

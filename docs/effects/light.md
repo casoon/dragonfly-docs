@@ -3,122 +3,122 @@ title: Light Effects
 category: Effects
 ---
 
-# Light-Effekte
+# Light-effects
 
-Die Light-Effekte der Casoon UI Library bieten eine Sammlung von Beleuchtungseffekten, die Ihrer Benutzeroberfläche Tiefe, Dimensionalität und realistische Lichtinteraktionen verleihen, um ein immersives und visuell ansprechendes Nutzererlebnis zu schaffen.
+the Light-effects the Casoon UI Library bieten a Sammlung from Beleuchtungseffekten, the Ihrer Benutzeroberflache Tiefe, Dimensionalitat and realistische Lichtinteraktionen verleihen, um a immersives and visuell ansprechendes Nutzererlebnis to schaffen.
 
-## Überblick
+## Uberblick
 
-Light-Effekte simulieren die Interaktion von Licht mit Oberflächen, um realistische Schattierungen, Highlights und Reflexionen zu erzeugen. Diese Effekte können verwendet werden, um Tiefe zu vermitteln, Elemente hervorzuheben und eine natürlichere, physisch plausible Benutzeroberfläche zu gestalten.
+Light-effects simulieren the interaction from Licht with Oberflachen, um realistische Schattierungen, Highlights and Reflexionen to erzeugen. these effects can verwendet become, um Tiefe to vermitteln, elements hervorzuheben and a naturlichere, physisch plausible Benutzeroberflache to gestalten.
 
 ## Installation
 
-Importieren Sie das Light-Effekte-Modul über CSS:
+import them the Light-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/light.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
 ### Grundlegende Beleuchtungseffekte
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.light-source` | Definiert ein Element als Lichtquelle |
-| `.light-surface` | Bereitet ein Element auf Lichtinteraktionen vor |
-| `.light-ambient` | Erzeugt ein sanftes Umgebungslicht ohne starke Schatten |
+| `.light-source` | Definiert a element as Lichtquelle |
+| `.light-surface` | Bereitet a element on Lichtinteraktionen before |
+| `.light-ambient` | Erzeugt a sanftes Umgebungslicht without strength shadow |
 | `.light-directional` | Erzeugt gerichtetes Licht aus einer bestimmten Richtung |
-| `.light-point` | Erzeugt punktförmiges Licht, das in alle Richtungen strahlt |
-| `.light-spot` | Erzeugt Spotlicht mit definiertem Fokusbereich |
+| `.light-point` | Erzeugt punktformiges Licht, the in all Richtungen strahlt |
+| `.light-spot` | Erzeugt Spotlicht with definiertem Fokusbereich |
 
-### Lichtintensitäten
+### Lichtintensitaten
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.light-dim` | Gedämpftes Licht mit niedriger Intensität |
-| `.light-normal` | Normales Licht mit Standardintensität |
-| `.light-bright` | Helles Licht mit erhöhter Intensität |
-| `.light-intense` | Sehr intensives Licht mit starker Auswirkung |
+| `.light-dim` | Gedampftes Licht with niedriger Intensitat |
+| `.light-normal` | Normales Licht with Standardintensitat |
+| `.light-bright` | Helles Licht with erhohter Intensitat |
+| `.light-intense` | very intensives Licht with starker Auswirkung |
 
 ### Lichtfarben
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
 | `.light-warm` | Warmes Licht (gelblich-orange) |
-| `.light-cool` | Kühles Licht (bläulich) |
-| `.light-neutral` | Neutrales weißes Licht |
-| `.light-primary` | Licht in der Primärfarbe |
-| `.light-secondary` | Licht in der Sekundärfarbe |
-| `.light-success` | Licht in Erfolgsfarbe (grün) |
+| `.light-cool` | Kuhles Licht (blaulich) |
+| `.light-neutral` | Neutrales weisses Licht |
+| `.light-primary` | Licht in the Primarfarbe |
+| `.light-secondary` | Licht in the Sekundarfarbe |
+| `.light-success` | Licht in Erfolgsfarbe (grun) |
 | `.light-warning` | Licht in Warnfarbe (gelb/orange) |
 | `.light-danger` | Licht in Gefahrenfarbe (rot) |
 | `.light-info` | Licht in Informationsfarbe (blau) |
 
 ### Schatteneffekte
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.light-shadow-sm` | Kleiner, weicher Schatten |
-| `.light-shadow-md` | Mittlerer Schatten mit moderater Ausbreitung |
-| `.light-shadow-lg` | Großer Schatten mit weiter Ausbreitung |
-| `.light-shadow-sharp` | Scharfer, definierter Schatten |
-| `.light-shadow-soft` | Weicher, diffuser Schatten |
-| `.light-shadow-inner` | Nach innen gerichteter Schatten |
-| `.light-shadow-floating` | Schwebender Schatten für erhöhte Elemente |
+| `.light-shadow-sm` | smaller, weicher shadow |
+| `.light-shadow-md` | Mittlerer shadow with moderater Ausbreitung |
+| `.light-shadow-lg` | Grosser shadow with weiter Ausbreitung |
+| `.light-shadow-sharp` | Scharfer, definierter shadow |
+| `.light-shadow-soft` | Weicher, diffuser shadow |
+| `.light-shadow-inner` | after innen gerichteter shadow |
+| `.light-shadow-floating` | Schwebender shadow for erhohte elements |
 
-### Highlight-Effekte
+### Highlight-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.light-highlight` | Fügt Highlights an beleuchteten Kanten hinzu |
-| `.light-highlight-subtle` | Subtile Highlights mit geringer Intensität |
-| `.light-highlight-strong` | Starke Highlights mit hoher Intensität |
-| `.light-reflection` | Erzeugt subtile Lichtreflexionen auf Oberflächen |
-| `.light-specular` | Erzeugt spiegelnde Lichtreflexionen auf glänzenden Oberflächen |
+| `.light-highlight` | Fugt Highlights on beleuchteten Kanten hinzu |
+| `.light-highlight-subtle` | Subtile Highlights with geringer Intensitat |
+| `.light-highlight-strong` | strength Highlights with hoher Intensitat |
+| `.light-reflection` | Erzeugt subtile Lichtreflexionen on Oberflachen |
+| `.light-specular` | Erzeugt spiegelnde Lichtreflexionen on glanzenden Oberflachen |
 
 ### Spezialeffekte
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.light-halo` | Erzeugt einen Halo-Effekt um Lichtquellen |
+| `.light-halo` | Erzeugt einen Halo-effect um Lichtquellen |
 | `.light-rays` | Erzeugt sichtbare Lichtstrahlen (Godrays) |
-| `.light-lens-flare` | Erzeugt Lens-Flare-Effekte für starke Lichtquellen |
+| `.light-lens-flare` | Erzeugt Lens-Flare-effects for strength Lichtquellen |
 | `.light-volumetric` | Erzeugt volumetrische Lichteffekte |
-| `.light-ambient-occlusion` | Simuliert Umgebungsverdeckung in Ecken und Spalten |
-| `.light-bloom` | Erzeugt einen Bloom-Effekt für helle Bereiche |
+| `.light-ambient-occlusion` | Simuliert Umgebungsverdeckung in Ecken and columns |
+| `.light-bloom` | Erzeugt einen Bloom-effect for helle areas |
 
 ### Interaktive Lichteffekte
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.light-hover` | Aktiviert Lichteffekte bei Hover |
-| `.light-active` | Aktiviert Lichteffekte bei aktivem Zustand |
-| `.light-focus` | Aktiviert Lichteffekte bei Fokus |
-| `.light-interactive` | Licht reagiert auf Interaktionen |
+| `.light-hover` | Aktiviert Lichteffekte at Hover |
+| `.light-active` | Aktiviert Lichteffekte at aktivem state |
+| `.light-focus` | Aktiviert Lichteffekte at Fokus |
+| `.light-interactive` | Licht reagiert on interactions |
 | `.light-follow-cursor` | Lichtquelle folgt dem Cursor |
 
 ## Examples
 
-### Grundlegende Lichtquellen und Oberflächen
+### Grundlegende Lichtquellen and Oberflachen
 
 ```html
-<div class="light-container">
+<div class="light-containers">
   <div class="light-source light-point light-warm" style="--light-position-x: 30%; --light-position-y: 30%;"></div>
   
   <div class="light-surface light-shadow-md">
-    <h3>Beleuchtete Box</h3>
-    <p>Diese Box reagiert auf die Lichtquelle in der oberen linken Ecke.</p>
+    <h3>Beleuchtete box</h3>
+    <p>these box reagiert on the Lichtquelle in the oberen linken Ecke.</p>
   </div>
   
   <div class="light-surface light-shadow-md light-highlight">
-    <h3>Beleuchtete Box mit Highlights</h3>
-    <p>Diese Box zeigt zusätzliche Highlights an beleuchteten Kanten.</p>
+    <h3>Beleuchtete box with Highlights</h3>
+    <p>these box zeigt zusatzliche Highlights on beleuchteten Kanten.</p>
   </div>
 </div>
 
 <style>
-  .light-container {
+  .light-containers {
     position: relative;
     background-color: #1a1a2e;
     padding: 4rem;
@@ -240,9 +240,9 @@ Importieren Sie das Light-Effekte-Modul über CSS:
   </div>
   
   <div class="light-interactive-buttons">
-    <button class="light-button light-surface light-interactive light-highlight">Hover für Lichteffekt</button>
+    <button class="light-button light-surface light-interactive light-highlight">Hover for Lichteffekt</button>
     <button class="light-button light-surface light-interactive light-highlight light-warm">Warmes Licht</button>
-    <button class="light-button light-surface light-interactive light-highlight light-cool">Kühles Licht</button>
+    <button class="light-button light-surface light-interactive light-highlight light-cool">Kuhles Licht</button>
   </div>
 </div>
 
@@ -322,32 +322,32 @@ Importieren Sie das Light-Effekte-Modul über CSS:
 </style>
 ```
 
-### 3D-Cardn mit Lichteffekten
+### 3D-Cardn with Lichteffekten
 
 ```html
-<div class="light-cards-container">
+<div class="light-cards-containers">
   <div class="light-card light-surface light-directional light-shadow-md light-highlight" style="--light-angle: 135deg;">
     <div class="light-card-content">
-      <h3>3D-Card mit Licht</h3>
-      <p>Diese Card nutzt direktionales Licht, um einen 3D-Effekt zu erzeugen.</p>
-      <button class="light-button light-surface light-interactive">Mehr erfahren</button>
+      <h3>3D-Card with Licht</h3>
+      <p>these Card nutzt direktionales Licht, um einen 3D-effect to erzeugen.</p>
+      <button class="light-button light-surface light-interactive">more erfahren</button>
     </div>
   </div>
   
   <div class="light-card light-surface light-point light-shadow-md light-highlight light-warm">
     <div class="light-source" style="--light-position-x: 20%; --light-position-y: 20%;"></div>
     <div class="light-card-content">
-      <h3>3D-Card mit Punktlicht</h3>
-      <p>Diese Card verwendet ein warmes Punktlicht in der oberen linken Ecke.</p>
-      <button class="light-button light-surface light-interactive">Mehr erfahren</button>
+      <h3>3D-Card with Punktlicht</h3>
+      <p>these Card verwendet a warmes Punktlicht in the oberen linken Ecke.</p>
+      <button class="light-button light-surface light-interactive">more erfahren</button>
     </div>
   </div>
   
   <div class="light-card light-surface light-interactive light-shadow-md light-highlight light-cool">
     <div class="light-card-content">
       <h3>Interaktive 3D-Card</h3>
-      <p>Bewegen Sie den Mauszeiger über diese Card, um den Lichteffekt zu sehen.</p>
-      <button class="light-button light-surface light-interactive">Mehr erfahren</button>
+      <p>Bewegen them den Mauszeiger over these Card, um den Lichteffekt to sehen.</p>
+      <button class="light-button light-surface light-interactive">more erfahren</button>
     </div>
   </div>
 </div>
@@ -361,7 +361,7 @@ Importieren Sie das Light-Effekte-Modul über CSS:
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       
-      // Berechnung der Lichtposition relativ zur Cardngröße
+      // Berechnung the Lichtposition relativ zur Cardngrosse
       const lightX = (x / rect.width) * 100;
       const lightY = (y / rect.height) * 100;
       
@@ -372,7 +372,7 @@ Importieren Sie das Light-Effekte-Modul über CSS:
 </script>
 
 <style>
-  .light-cards-container {
+  .light-cards-containers {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
@@ -414,9 +414,9 @@ Importieren Sie das Light-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Light-Effekte können über CSS Variables angepasst werden:
+the Light-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -425,7 +425,7 @@ Die Light-Effekte können über CSS Variables angepasst werden:
   --light-source-intensity: 1;
   --light-source-color: #ffffff;
   
-  /* Positionierung und Ausrichtung */
+  /* Positionierung and alignment */
   --light-position-x: 50%;
   --light-position-y: 50%;
   --light-angle: 45deg;
@@ -439,7 +439,7 @@ Die Light-Effekte können über CSS Variables angepasst werden:
   --light-shadow-x-offset: 5px;
   --light-shadow-y-offset: 5px;
   
-  /* Highlight-Parameter */
+  /* Highlight-parameter */
   --light-highlight-color: rgba(255, 255, 255, 0.1);
   --light-highlight-blur: 0px;
   --light-highlight-spread: 1px;
@@ -467,9 +467,9 @@ Die Light-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Die grundlegenden Light-Effekte werden durch CSS-Schatten, Verläufe und Pseudo-Elemente implementiert:
+the grundlegenden Light-effects become through CSS-shadow, Verlaufe and Pseudo-elements implementiert:
 
 ```css
 /* Lichtquellen */
@@ -487,7 +487,7 @@ Die grundlegenden Light-Effekte werden durch CSS-Schatten, Verläufe und Pseudo-
   left: var(--light-position-x);
 }
 
-/* Beleuchtete Oberflächen */
+/* Beleuchtete Oberflachen */
 .light-surface {
   position: relative;
   overflow: hidden;
@@ -539,7 +539,7 @@ Die grundlegenden Light-Effekte werden durch CSS-Schatten, Verläufe und Pseudo-
     var(--light-shadow-color);
 }
 
-/* Highlight-Effekte */
+/* Highlight-effects */
 .light-highlight::after {
   content: '';
   position: absolute;
@@ -562,7 +562,7 @@ Die grundlegenden Light-Effekte werden durch CSS-Schatten, Verläufe und Pseudo-
   --light-source-intensity: var(--light-warm-intensity);
 }
 
-/* Interaktive Effekte */
+/* Interaktive effects */
 .light-interactive {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -611,10 +611,10 @@ Die grundlegenden Light-Effekte werden durch CSS-Schatten, Verläufe und Pseudo-
 ### Dynamische Lichteffekte
 
 ```js
-// Dynamisches Licht, das auf Scroll-Position reagiert
+// Dynamisches Licht, the on Scroll-position reagiert
 window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-  const lightAngle = 180 + (scrollPosition * 180); // Licht von 180° bis 360° drehen
+  const lightAngle = 180 + (scrollPosition * 180); // Licht from 180° until 360° drehen
   
   document.documentElement.style.setProperty('--light-angle', `${lightAngle}deg`);
 });
@@ -622,20 +622,20 @@ window.addEventListener('scroll', function() {
 
 ## Accessibility
 
-Bei der Usage von Light-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Light-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Text und Hintergrund ausreichend ist, auch wenn Lichteffekte angewendet werden
-2. **Bewegung reduzieren**: Bieten Sie eine Option zum Deaktivieren von animierten Lichteffekten für Nutzer mit Empfindlichkeiten
-3. **Alternative Styles**: Stellen Sie alternative, flachere Styles für Nutzer bereit, die Probleme mit der Wahrnehmung von Tiefe haben
+1. **Kontrast**: ensure, that the Kontrast between Text and background ausreichend ist, also if Lichteffekte angewendet become
+2. **Bewegung reduzieren**: Bieten them a Option zum deactivate from animierten Lichteffekten for Nutzer with Empfindlichkeiten
+3. **Alternative Styles**: Stellen them alternative, flachere Styles for Nutzer bereit, the Probleme with the Wahrnehmung from Tiefe have
 
 ```css
-/* Verbesserte Textlesbarkeit bei Lichteffekten */
+/* Verbesserte Textlesbarkeit at Lichteffekten */
 .light-surface {
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Reduzierte Bewegung für animierte Lichteffekte */
+/* Reduzierte Bewegung for animierte Lichteffekte */
 @media (prefers-reduced-motion: reduce) {
   .light-follow-cursor,
   .light-interactive::before,
@@ -645,7 +645,7 @@ Bei der Usage von Light-Effekten sollten folgende Accessibilitysaspekte berücks
   }
 }
 
-/* Alternative Styles für reduzierte Effekte */
+/* Alternative Styles for reduzierte effects */
 @media (prefers-reduced-transparency: reduce) {
   .light-surface::before,
   .light-surface::after {
@@ -657,36 +657,36 @@ Bei der Usage von Light-Effekten sollten folgende Accessibilitysaspekte berücks
 
 ## Performance-Optimierung
 
-Lichteffekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Lichteffekte can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Begrenzen Sie die Lichtquellen**: Verwenden Sie nicht zu viele Lichtquellen auf einer Seite
-2. **Vermeiden Sie komplexe Schatten**: Reduzieren Sie die Komplexität von Schatten für bessere Performance
-3. **Layer-Promotion**: Verwenden Sie `will-change` für animierte Lichteffekte
-4. **Reduktion bei niedrigen Geräten**: Erkennen Sie Geräte mit niedriger Leistung und bieten Sie vereinfachte Effekte an
+1. **Begrenzen them the Lichtquellen**: use them not to many Lichtquellen on einer Seite
+2. **Vermeiden them komplexe shadow**: Reduzieren them the Komplexitat from shadow for bessere Performance
+3. **Layer-Promotion**: use them `will-change` for animierte Lichteffekte
+4. **Reduktion at niedrigen Geraten**: Erkennen them Gerate with niedriger Leistung and bieten them vereinfachte effects on
 
 ```css
-/* Performance-Optimierung für Lichteffekte */
+/* Performance-Optimierung for Lichteffekte */
 .light-surface {
   will-change: transform, box-shadow;
 }
 
-/* Layer-Promotion für bessere Rendering-Performance */
+/* Layer-Promotion for bessere Rendering-Performance */
 .light-interactive {
   transform: translateZ(0);
 }
 
-/* Reduzierte Effekte für einfache Darstellung */
+/* Reduzierte effects for einfache Display */
 .light-reduced {
   --light-shadow-blur: 5px;
   --light-highlight-opacity: 0.3;
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Light-Effekte werden von allen modernen Browsern unterstützt.
+the Light-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | Gradients | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | box-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -694,4 +694,4 @@ Die Light-Effekte werden von allen modernen Browsern unterstützt.
 | mix-blend-mode | ✓ | ✓ | ✓ | ✓ | ✗ |
 | conic-gradient | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser werden vereinfachte Fallback-Styles bereitgestellt, die ähnliche visuelle Effekte mit grundlegender CSS-Unterstützung bieten. 
+for altere Browser become vereinfachte Fallback-Styles bereitgestellt, the ahnliche visuelle effects with grundlegender CSS-Unterstutzung bieten. 

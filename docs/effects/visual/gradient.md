@@ -1,91 +1,91 @@
 ---
-title: Gradient-Effekte
+title: Gradient-effects
 category: Guide
 ---
 
-# Gradient-Effekte
+# Gradient-effects
 
-Die `gradients.css` Datei bietet eine umfangreiche Sammlung von Farbverlaufseffekten, die Ihren UI-Elementen Tiefe, Dimension und visuelle Attraktivität verleihen. Mit verschiedenen Arten, Richtungen und Farbkombinationen können Sie einzigartige und ansprechende Designs erstellen.
+the `gradients.css` file bietet a umfangreiche Sammlung from Farbverlaufseffekten, the Ihren UI-Elementen Tiefe, Dimension and visuelle Attraktivitat verleihen. with verschiedenen Arten, Richtungen and Farbkombinationen can them einzigartige and ansprechende designs create.
 
 ## Overview
 
-Farbverläufe (Gradients) sind ein vielseitiges Designelement, das überall von Hintergründen bis zu Texten eingesetzt werden kann. Die Casoon UI Library bietet vorgefertigte Gradient-Klassen für häufige Use Cases sowie CSS Variables für benutzerdefinierte Customizations.
+Farbverlaufe (Gradients) sind a vielseitiges Designelement, the uberall from Hintergrunden until to Texten eingesetzt become kann. the Casoon UI Library bietet vorgefertigte Gradient-classes for haufige Use Cases sowie CSS Variables for benutzerdefinierte customizations.
 
-## Basis-Farbverläufe
+## Base-Farbverlaufe
 
 ```html
-<!-- Lineare Farbverläufe -->
-<div class="gradient-linear">Standard linearer Farbverlauf</div>
-<div class="gradient-linear-primary">Primärfarbener linearer Farbverlauf</div>
-<div class="gradient-linear-secondary">Sekundärfarbener linearer Farbverlauf</div>
-<div class="gradient-linear-accent">Akzentfarbener linearer Farbverlauf</div>
+<!-- Lineare Farbverlaufe -->
+<div class="gradient-linear">Standard linearer gradient</div>
+<div class="gradient-linear-primary">Primarfarbener linearer gradient</div>
+<div class="gradient-linear-secondary">Sekundarfarbener linearer gradient</div>
+<div class="gradient-linear-accent">Akzentfarbener linearer gradient</div>
 
-<!-- Radiale Farbverläufe -->
-<div class="gradient-radial">Standard radialer Farbverlauf</div>
-<div class="gradient-radial-primary">Primärfarbener radialer Farbverlauf</div>
-<div class="gradient-radial-secondary">Sekundärfarbener radialer Farbverlauf</div>
-<div class="gradient-radial-accent">Akzentfarbener radialer Farbverlauf</div>
+<!-- Radiale Farbverlaufe -->
+<div class="gradient-radial">Standard radialer gradient</div>
+<div class="gradient-radial-primary">Primarfarbener radialer gradient</div>
+<div class="gradient-radial-secondary">Sekundarfarbener radialer gradient</div>
+<div class="gradient-radial-accent">Akzentfarbener radialer gradient</div>
 
-<!-- Konische Farbverläufe -->
-<div class="gradient-conic">Standard konischer Farbverlauf</div>
-<div class="gradient-conic-primary">Primärfarbener konischer Farbverlauf</div>
-<div class="gradient-conic-secondary">Sekundärfarbener konischer Farbverlauf</div>
-<div class="gradient-conic-accent">Akzentfarbener konischer Farbverlauf</div>
+<!-- Konische Farbverlaufe -->
+<div class="gradient-conic">Standard konischer gradient</div>
+<div class="gradient-conic-primary">Primarfarbener konischer gradient</div>
+<div class="gradient-conic-secondary">Sekundarfarbener konischer gradient</div>
+<div class="gradient-conic-accent">Akzentfarbener konischer gradient</div>
 ```
 
-## Richtungen der Farbverläufe
+## Richtungen the Farbverlaufe
 
 ```html
 <!-- Lineare Farbverlaufsrichtungen -->
-<div class="gradient-to-right">Von links nach rechts</div>
-<div class="gradient-to-left">Von rechts nach links</div>
-<div class="gradient-to-bottom">Von oben nach unten</div>
-<div class="gradient-to-top">Von unten nach oben</div>
-<div class="gradient-to-tr">Von unten links nach oben rechts</div>
-<div class="gradient-to-tl">Von unten rechts nach oben links</div>
-<div class="gradient-to-br">Von oben links nach unten rechts</div>
-<div class="gradient-to-bl">Von oben rechts nach unten links</div>
+<div class="gradient-to-right">from links after rechts</div>
+<div class="gradient-to-left">from rechts after links</div>
+<div class="gradient-to-bottom">from oben after unten</div>
+<div class="gradient-to-top">from unten after oben</div>
+<div class="gradient-to-tr">from unten links after oben rechts</div>
+<div class="gradient-to-tl">from unten rechts after oben links</div>
+<div class="gradient-to-br">from oben links after unten rechts</div>
+<div class="gradient-to-bl">from oben rechts after unten links</div>
 
 <!-- Radiale Farbverlaufsformen -->
-<div class="gradient-radial-circle">Kreisförmiger radialer Farbverlauf</div>
-<div class="gradient-radial-ellipse">Elliptischer radialer Farbverlauf</div>
+<div class="gradient-radial-circle">Kreisformiger radialer gradient</div>
+<div class="gradient-radial-ellipse">Elliptischer radialer gradient</div>
 
 <!-- Radiale Farbverlaufspositionen -->
-<div class="gradient-radial-center">Radialer Farbverlauf von der Mitte</div>
-<div class="gradient-radial-top">Radialer Farbverlauf von oben</div>
-<div class="gradient-radial-right">Radialer Farbverlauf von rechts</div>
-<div class="gradient-radial-bottom">Radialer Farbverlauf von unten</div>
-<div class="gradient-radial-left">Radialer Farbverlauf von links</div>
-<div class="gradient-radial-top-right">Radialer Farbverlauf von oben rechts</div>
-<div class="gradient-radial-bottom-right">Radialer Farbverlauf von unten rechts</div>
-<div class="gradient-radial-bottom-left">Radialer Farbverlauf von unten links</div>
-<div class="gradient-radial-top-left">Radialer Farbverlauf von oben links</div>
+<div class="gradient-radial-center">Radialer gradient from the Mitte</div>
+<div class="gradient-radial-top">Radialer gradient from oben</div>
+<div class="gradient-radial-right">Radialer gradient from rechts</div>
+<div class="gradient-radial-bottom">Radialer gradient from unten</div>
+<div class="gradient-radial-left">Radialer gradient from links</div>
+<div class="gradient-radial-top-right">Radialer gradient from oben rechts</div>
+<div class="gradient-radial-bottom-right">Radialer gradient from unten rechts</div>
+<div class="gradient-radial-bottom-left">Radialer gradient from unten links</div>
+<div class="gradient-radial-top-left">Radialer gradient from oben links</div>
 
 <!-- Konische Farbverlaufspositionen -->
-<div class="gradient-conic-center">Konischer Farbverlauf von der Mitte</div>
-<div class="gradient-conic-top-right">Konischer Farbverlauf von oben rechts</div>
-<div class="gradient-conic-bottom-right">Konischer Farbverlauf von unten rechts</div>
-<div class="gradient-conic-bottom-left">Konischer Farbverlauf von unten links</div>
-<div class="gradient-conic-top-left">Konischer Farbverlauf von oben links</div>
+<div class="gradient-conic-center">Konischer gradient from the Mitte</div>
+<div class="gradient-conic-top-right">Konischer gradient from oben rechts</div>
+<div class="gradient-conic-bottom-right">Konischer gradient from unten rechts</div>
+<div class="gradient-conic-bottom-left">Konischer gradient from unten links</div>
+<div class="gradient-conic-top-left">Konischer gradient from oben links</div>
 ```
 
-## Mehrfarbige Farbverläufe
+## Mehrfarbige Farbverlaufe
 
 ```html
-<!-- Zwei-Colors-Verläufe -->
-<div class="gradient-blue-green">Blau zu Grün</div>
-<div class="gradient-purple-pink">Lila zu Pink</div>
-<div class="gradient-orange-red">Orange zu Rot</div>
-<div class="gradient-yellow-green">Gelb zu Grün</div>
+<!-- Zwei-Colors-Verlaufe -->
+<div class="gradient-blue-green">Blau to Grun</div>
+<div class="gradient-purple-pink">Lila to Pink</div>
+<div class="gradient-orange-red">Orange to Rot</div>
+<div class="gradient-yellow-green">Gelb to Grun</div>
 
-<!-- Drei-Colors-Verläufe -->
+<!-- Drei-Colors-Verlaufe -->
 <div class="gradient-rainbow">Regenbogenfarben (Rot, Gelb, Blau)</div>
 <div class="gradient-sunset">Sonnenuntergang (Orange, Rosa, Lila)</div>
 <div class="gradient-ocean">Ozean (Hellblau, Blau, Dunkelblau)</div>
-<div class="gradient-forest">Wald (Hellgrün, Grün, Dunkelgrün)</div>
+<div class="gradient-forest">Wald (Hellgrun, Grun, Dunkelgrun)</div>
 
-<!-- Mehrfarbige Farbverläufe -->
-<div class="gradient-multi-primary">Mehrfarbiger Primärfarbverlauf</div>
+<!-- Mehrfarbige Farbverlaufe -->
+<div class="gradient-multi-primary">Mehrfarbiger Primarfarbverlauf</div>
 <div class="gradient-multi-pastel">Mehrfarbiger Pastellfarbverlauf</div>
 <div class="gradient-multi-neon">Mehrfarbiger Neonfarbverlauf</div>
 ```
@@ -93,108 +93,108 @@ Farbverläufe (Gradients) sind ein vielseitiges Designelement, das überall von 
 ## Spezielle Farbverlaufseffekte
 
 ```html
-<!-- Mesh-Gradients (komplexe Verläufe) -->
+<!-- Mesh-Gradients (komplexe Verlaufe) -->
 <div class="gradient-mesh-warm">Warmes Mesh-Gradient</div>
-<div class="gradient-mesh-cool">Kühles Mesh-Gradient</div>
+<div class="gradient-mesh-cool">Kuhles Mesh-Gradient</div>
 <div class="gradient-mesh-mixed">Gemischtes Mesh-Gradient</div>
 
-<!-- Noise-Gradients (mit Rauscheffekt) -->
+<!-- Noise-Gradients (with Rauscheffekt) -->
 <div class="gradient-noise-light">Helles Rausch-Gradient</div>
 <div class="gradient-noise-dark">Dunkles Rausch-Gradient</div>
 <div class="gradient-noise-color">Farbiges Rausch-Gradient</div>
 
 <!-- Glassmorphism-Gradients -->
-<div class="gradient-glass">Glas-Gradient mit subtiler Transparenz</div>
+<div class="gradient-glass">Glas-Gradient with subtiler transparency</div>
 <div class="gradient-glass-light">Helles Glas-Gradient</div>
 <div class="gradient-glass-dark">Dunkles Glas-Gradient</div>
 
 <!-- Duotone-Gradients -->
 <div class="gradient-duotone-blue-red">Blau-Rot Duotone</div>
 <div class="gradient-duotone-purple-yellow">Lila-Gelb Duotone</div>
-<div class="gradient-duotone-green-magenta">Grün-Magenta Duotone</div>
+<div class="gradient-duotone-green-magenta">Grun-Magenta Duotone</div>
 ```
 
-## Farbverlaufsopazität und -intensität
+## Farbverlaufsopazitat and -intensitat
 
 ```html
-<!-- Farbverlaufsopazität -->
+<!-- Farbverlaufsopazitat -->
 <div class="gradient-opacity-10">10% Deckkraft</div>
 <div class="gradient-opacity-25">25% Deckkraft</div>
 <div class="gradient-opacity-50">50% Deckkraft</div>
 <div class="gradient-opacity-75">75% Deckkraft</div>
 
-<!-- Farbverlaufsintensität -->
-<div class="gradient-soft">Sanfter Farbverlauf</div>
-<div class="gradient-medium">Mittlerer Farbverlauf</div>
-<div class="gradient-bold">Intensiver Farbverlauf</div>
+<!-- Farbverlaufsintensitat -->
+<div class="gradient-soft">Sanfter gradient</div>
+<div class="gradient-medium">Mittlerer gradient</div>
+<div class="gradient-bold">Intensiver gradient</div>
 ```
 
-## Text mit Farbverlauf
+## Text with gradient
 
 ```html
-<!-- Text mit Farbverlauf -->
-<h2 class="text-gradient">Überschrift mit Farbverlauf</h2>
-<h2 class="text-gradient-primary">Überschrift mit Primärfarbverlauf</h2>
-<h2 class="text-gradient-secondary">Überschrift mit Sekundärfarbverlauf</h2>
-<h2 class="text-gradient-rainbow">Überschrift mit Regenbogenfarbverlauf</h2>
+<!-- Text with gradient -->
+<h2 class="text-gradient">heading with gradient</h2>
+<h2 class="text-gradient-primary">heading with Primarfarbverlauf</h2>
+<h2 class="text-gradient-secondary">heading with Sekundarfarbverlauf</h2>
+<h2 class="text-gradient-rainbow">heading with Regenbogenfarbverlauf</h2>
 ```
 
-## Rahmen mit Farbverlauf
+## border with gradient
 
 ```html
-<!-- Rahmen mit Farbverlauf -->
-<div class="border-gradient">Element mit Farbverlaufsrahmen</div>
-<div class="border-gradient-primary">Element mit primärem Farbverlaufsrahmen</div>
-<div class="border-gradient-rainbow">Element mit Regenbogen-Farbverlaufsrahmen</div>
-<div class="border-gradient-animated">Element mit animiertem Farbverlaufsrahmen</div>
+<!-- border with gradient -->
+<div class="border-gradient">element with Farbverlaufsrahmen</div>
+<div class="border-gradient-primary">element with primarem Farbverlaufsrahmen</div>
+<div class="border-gradient-rainbow">element with Regenbogen-Farbverlaufsrahmen</div>
+<div class="border-gradient-animated">element with animiertem Farbverlaufsrahmen</div>
 ```
 
-## Animierte Farbverläufe
+## Animierte Farbverlaufe
 
 ```html
-<!-- Animierte Farbverläufe -->
-<div class="gradient-animated">Animierter Farbverlauf</div>
-<div class="gradient-animated-slow">Langsam animierter Farbverlauf</div>
-<div class="gradient-animated-fast">Schnell animierter Farbverlauf</div>
+<!-- Animierte Farbverlaufe -->
+<div class="gradient-animated">Animierter gradient</div>
+<div class="gradient-animated-slow">Langsam animierter gradient</div>
+<div class="gradient-animated-fast">Schnell animierter gradient</div>
 
 <!-- Animierte Richtungswechsel -->
-<div class="gradient-animated-rotate">Rotierender Farbverlauf</div>
-<div class="gradient-animated-shift">Verschiebender Farbverlauf</div>
-<div class="gradient-animated-pulse">Pulsierender Farbverlauf</div>
+<div class="gradient-animated-rotate">Rotierender gradient</div>
+<div class="gradient-animated-shift">Verschiebender gradient</div>
+<div class="gradient-animated-pulse">Pulsierender gradient</div>
 
 <!-- Animierte Farbwechsel -->
-<div class="gradient-animated-hue-shift">Farbton-Shift-Animation</div>
+<div class="gradient-animated-hue-shift">Farbton-Shift-animation</div>
 <div class="gradient-animated-rainbow">Regenbogenanimation</div>
-<div class="gradient-animated-transition">Farbübergangsanimation</div>
+<div class="gradient-animated-transition">Farbubergangsanimation</div>
 ```
 
-## Interaktive Farbverläufe
+## Interaktive Farbverlaufe
 
 ```html
-<!-- Hover-Farbverläufe -->
-<div class="gradient-hover">Ändert Farbverlauf bei Hover</div>
-<div class="gradient-hover-intensify">Intensiviert Farbverlauf bei Hover</div>
-<div class="gradient-hover-shift">Verschiebt Farbverlauf bei Hover</div>
-<div class="gradient-hover-rotate">Rotiert Farbverlauf bei Hover</div>
+<!-- Hover-Farbverlaufe -->
+<div class="gradient-hover">Andert gradient at Hover</div>
+<div class="gradient-hover-intensify">Intensiviert gradient at Hover</div>
+<div class="gradient-hover-shift">Verschiebt gradient at Hover</div>
+<div class="gradient-hover-rotate">Rotiert gradient at Hover</div>
 
-<!-- Fokus-Farbverläufe -->
-<button class="gradient-focus">Ändert Farbverlauf bei Fokus</button>
+<!-- Fokus-Farbverlaufe -->
+<button class="gradient-focus">Andert gradient at Fokus</button>
 
-<!-- Aktiv-Farbverläufe -->
-<button class="gradient-active">Ändert Farbverlauf bei Aktivierung</button>
+<!-- Aktiv-Farbverlaufe -->
+<button class="gradient-active">Andert gradient at Aktivierung</button>
 ```
 
-## Anpassung über CSS Variables
+## Customization over CSS Variables
 
-Die Farbverläufe können über CSS Variables angepasst werden:
+the Farbverlaufe can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Primäre Farbverlaufsfarben */
+  /* Primare Farbverlaufsfarben */
   --gradient-primary-start: var(--color-primary);
   --gradient-primary-end: color-mix(in srgb, var(--color-primary) 50%, white);
   
-  /* Sekundäre Farbverlaufsfarben */
+  /* Sekundare Farbverlaufsfarben */
   --gradient-secondary-start: var(--color-secondary);
   --gradient-secondary-end: color-mix(in srgb, var(--color-secondary) 50%, white);
   
@@ -202,11 +202,11 @@ Die Farbverläufe können über CSS Variables angepasst werden:
   --gradient-accent-start: var(--color-accent);
   --gradient-accent-end: color-mix(in srgb, var(--color-accent) 50%, white);
   
-  /* Standard-Farbverlaufswinkel und -positionen */
+  /* Standard-Farbverlaufswinkel and -positions */
   --gradient-angle: 90deg;
   --gradient-position: center;
   
-  /* Vordefinierte Farbverläufe */
+  /* Vordefinierte Farbverlaufe */
   --gradient-rainbow: linear-gradient(var(--gradient-angle), #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
   --gradient-sunset: linear-gradient(var(--gradient-angle), #ff7e5f, #feb47b);
   --gradient-ocean: linear-gradient(var(--gradient-angle), #00c6fb, #005bea);
@@ -228,10 +228,10 @@ Die Farbverläufe können über CSS Variables angepasst werden:
 }
 ```
 
-## Fallbacks und Browser-Unterstützung
+## Fallbacks and Browser-Unterstutzung
 
 ```css
-/* Fallback für Browser ohne Unterstützung für moderne Gradients */
+/* Fallback for Browser without Unterstutzung for moderne Gradients */
 .gradient-linear {
   background-color: var(--gradient-primary-end);
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-primary-start), var(--gradient-primary-end));
@@ -244,17 +244,17 @@ Die Farbverläufe können über CSS Variables angepasst werden:
 }
 ```
 
-## Gradient-Generierung mit CSS-Funktionen
+## Gradient-Generierung with CSS-functions
 
 ```css
-/* Dynamische Farbverlaufsgenerierung mit CSS color-mix */
+/* Dynamische Farbverlaufsgenerierung with CSS color-mix */
 .gradient-dynamic-primary {
   --light-variant: color-mix(in srgb, var(--color-primary) 60%, white);
   --dark-variant: color-mix(in srgb, var(--color-primary) 60%, black);
   background: linear-gradient(var(--gradient-angle), var(--dark-variant), var(--color-primary), var(--light-variant));
 }
 
-/* Mit CSS Variables aus Benutzereingaben (über Style-Attribut) */
+/* with CSS Variables aus Benutzereingaben (over Style-attributes) */
 .gradient-custom {
   background: linear-gradient(var(--custom-angle, 90deg), 
                              var(--custom-color-start, #3498db), 
@@ -264,14 +264,14 @@ Die Farbverläufe können über CSS Variables angepasst werden:
 
 ## Accessibility
 
-Bei der Usage von Farbverläufen sollten einige wichtige Aspekte der Accessibility beachtet werden:
+at the Usage from Farbverlaufen should some wichtige Aspekte the Accessibility beachtet become:
 
-1. **Kontrast**: Stellen Sie sicher, dass Text auf Farbverläufen ausreichenden Kontrast hat
-2. **Farbfehlsichtigkeit**: Vermeiden Sie Farbkombinationen, die für Menschen mit Farbfehlsichtigkeit problematisch sein könnten
-3. **Übermäßige Animationen**: Reduzieren Sie animierte Farbverläufe für Nutzer, die reduzierte Bewegung bevorzugen
+1. **Kontrast**: ensure, that Text on Farbverlaufen ausreichenden Kontrast hat
+2. **Farbfehlsichtigkeit**: Vermeiden them Farbkombinationen, the for Menschen with Farbfehlsichtigkeit problematisch be konnten
+3. **Ubermassige animations**: Reduzieren them animierte Farbverlaufe for Nutzer, the reduzierte Bewegung bevorzugen
 
 ```css
-/* Barrierefreie Textüberlagerung */
+/* Barrierefreie Textuberlagerung */
 .accessible-text-on-gradient {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -302,17 +302,17 @@ Bei der Usage von Farbverläufen sollten einige wichtige Aspekte der Accessibili
 }
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Farbverläufe können die Rendering-Performance beeinflussen:
+Farbverlaufe can the Rendering-Performance beeinflussen:
 
-1. **Verwenden Sie einfache Farbverläufe** für bessere Performance
-2. **Vermeiden Sie zu viele animierte Farbverläufe** auf einer Seite
-3. **Vorsicht mit komplexen Mesh-Gradients** auf mobilen Geräten
-4. **Nutzen Sie Hardware-Beschleunigung** mit `will-change` bei Bedarf 
+1. **use them einfache Farbverlaufe** for bessere Performance
+2. **Vermeiden them to many animierte Farbverlaufe** on einer Seite
+3. **Vorsicht with komplexen Mesh-Gradients** on mobilen Geraten
+4. **use them Hardware-Beschleunigung** with `will-change` at Bedarf 
 
 ```css
-/* Performance-Optimierung für animierte Farbverläufe */
+/* Performance-Optimierung for animierte Farbverlaufe */
 .gradient-animated.performance-critical {
   will-change: background-position;
   transform: translateZ(0);
@@ -321,23 +321,23 @@ Farbverläufe können die Rendering-Performance beeinflussen:
 
 ## Praktische Examples
 
-### Moderne Button mit Farbverlauf
+### Moderne button with gradient
 
 ```html
 <button class="button gradient-primary">
-  Primärer Gradient-Button
+  Primarer Gradient-button
 </button>
 
 <button class="button gradient-sunset hover-gradient-intensify">
-  Sonnenuntergangs-Button mit Hover-Effekt
+  Sonnenuntergangs-button with Hover-effect
 </button>
 
 <button class="button border-gradient-rainbow">
-  Button mit Regenbogen-Rand
+  button with Regenbogen-margin
 </button>
 ```
 
-### Cardn mit Farbverlaufshintergrund
+### Cardn with Farbverlaufshintergrund
 
 ```html
 <div class="card gradient-glass-light">
@@ -345,7 +345,7 @@ Farbverläufe können die Rendering-Performance beeinflussen:
     <h3 class="text-gradient-primary">Gradient-Card</h3>
   </div>
   <div class="card-body">
-    <p>Inhalt mit Glas-Farbverlaufseffekt</p>
+    <p>content with Glas-Farbverlaufseffekt</p>
   </div>
   <div class="card-footer">
     <button class="button gradient-primary">Aktion</button>
@@ -353,13 +353,13 @@ Farbverläufe können die Rendering-Performance beeinflussen:
 </div>
 ```
 
-### Hero-Bereich mit komplexem Farbverlauf
+### Hero-area with komplexem gradient
 
 ```html
 <section class="hero gradient-mesh-warm">
   <div class="hero-content">
-    <h1 class="text-gradient-sunset">Willkommen bei Casoon</h1>
-    <p>Eine moderne UI-Bibliothek mit beeindruckenden Effekten</p>
+    <h1 class="text-gradient-sunset">Willkommen at Casoon</h1>
+    <p>a moderne UI-Bibliothek with beeindruckenden Effekten</p>
     <button class="button gradient-primary">Jetzt starten</button>
   </div>
 </section>
@@ -367,9 +367,9 @@ Farbverläufe können die Rendering-Performance beeinflussen:
 
 ## Best Practices
 
-1. **Sparsam einsetzen**: Verwenden Sie Farbverläufe gezielt und vermeiden Sie Überladung
-2. **Harmonische Colors wählen**: Stellen Sie sicher, dass die Farbverlaufsfarben zum Farbschema Ihrer Anwendung passen
-3. **Consistency wahren**: Verwenden Sie ähnliche Farbverläufe für ähnliche Elemente
-4. **Lesbarkeit sicherstellen**: Text auf Farbverläufen sollte gut lesbar sein
-5. **Accessibility beachten**: Berücksichtigen Sie Farbfehlsichtigkeit und ausreichenden Kontrast
+1. **Sparsam einsetzen**: use them Farbverlaufe gezielt and vermeiden them Uberladung
+2. **Harmonische Colors wahlen**: ensure, that the Farbverlaufsfarben zum color scheme Ihrer Application passen
+3. **Consistency wahren**: use them ahnliche Farbverlaufe for ahnliche elements
+4. **Lesbarkeit sicherstellen**: Text on Farbverlaufen sollte good lesbar be
+5. **Accessibility note**: Berucksichtigen them Farbfehlsichtigkeit and ausreichenden Kontrast
 ``` 

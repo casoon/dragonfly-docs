@@ -1,44 +1,44 @@
 ---
-title: Design Tokens
+title: design Tokens
 category: Tokens
 ---
 
-# Design Tokens
+# design Tokens
 
-Design Tokens bilden die grundlegende Sprache des Casoon UI Design-Systems. Sie sind die kleinsten Einheiten, die Colors, Abstände, Typography und andere visuelle Eigenschaften definieren und konsistent in der gesamten Anwendung angewendet werden können.
+design Tokens bilden the grundlegende Sprache des Casoon UI design-Systems. them sind the kleinsten Einheiten, the Colors, Abstande, Typography and others visuelle properties define and konsistent in the gesamten Application angewendet become can.
 
 ## Overview
 
-Das Token-System der Casoon UI Library umfasst:
+the Token-system the Casoon UI Library umfasst:
 
-- **Color Tokens**: Farbpaletten und -variablen
-- **Typography Tokens**: Schriftarten, -größen und -gewichte
-- **Spacing Tokens**: Abstände und Ränder
-- **Border Tokens**: Rahmenbreiten, -stile und -radien
-- **Shadow Tokens**: Schatten- und Erhebungseffekte
-- **Z-Index Tokens**: Ebenen-Management für das Stapeln von Elementen
+- **Color Tokens**: Farbpaletten and -variables
+- **Typography Tokens**: Schriftarten, -sizes and -gewichte
+- **Spacing Tokens**: Abstande and Rander
+- **Border Tokens**: Rahmenbreiten, -styles and -radien
+- **Shadow Tokens**: shadow- and Erhebungseffekte
+- **Z-Index Tokens**: Ebenen-Management for the Stapeln from Elementen
 
 ## Prinzipien
 
-Die Design Tokens der Casoon UI Library folgen diesen Prinzipien:
+the design Tokens the Casoon UI Library folgen diesen Prinzipien:
 
-1. **Consistency**: Einheitliche Designsprache in der gesamten Anwendung
-2. **Skalierbarkeit**: Customizability an verschiedene Anforderungen
-3. **Maintainability**: Einfache Aktualisierung und Verwaltung
-4. **Semantik**: Bedeutungsvolle, selbsterklärende Namensgebung
-5. **Accessibility**: Unterstützung für Kontrast- und Lesbarkeitsanforderungen
+1. **Consistency**: Einheitliche Designsprache in the gesamten Application
+2. **Skalierbarkeit**: Customizability on verschiedene Anforderungen
+3. **Maintainability**: Einfache Aktualisierung and Verwaltung
+4. **Semantik**: Bedeutungsvolle, selbsterklarende Namensgebung
+5. **Accessibility**: Unterstutzung for Kontrast- and Lesbarkeitsanforderungen
 
-## Implementierung
+## Implementation
 
-Design Tokens werden als CSS Variables implementiert und sind in der gesamten Casoon UI Library verfügbar:
+design Tokens become as CSS Variables implementiert and sind in the gesamten Casoon UI Library verfugbar:
 
 ```css
 :root {
-  /* Example für Color Tokens */
+  /* Example for Color Tokens */
   --color-primary-500: #3b82f6;
   --color-neutral-100: #f3f4f6;
   
-  /* Example für Spacing Tokens */
+  /* Example for Spacing Tokens */
   --space-xs: 0.25rem;
   --space-s: 0.5rem;
   --space-m: 1rem;
@@ -49,7 +49,7 @@ Design Tokens werden als CSS Variables implementiert und sind in der gesamten Ca
 
 ## Usage
 
-Design Tokens können in Ihrem CSS oder in HTML-Inline-Styles verwendet werden:
+design Tokens can in Ihrem CSS or in HTML-Inline-Styles verwendet become:
 
 ```css
 .button {

@@ -12,7 +12,7 @@ The Casoon UI Library provides a comprehensive set of utility classes for contro
 
 All spacing utilities are based on a consistent spacing scale defined by CSS variables:
 
-| Variable | Default Value | Description |
+| variable | Default Value | Description |
 |----------|---------------|-------------|
 | `--space-0` | `0` | No spacing |
 | `--space-px` | `1px` | Single pixel spacing |

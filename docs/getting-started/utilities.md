@@ -372,7 +372,7 @@ The flexbox utilities enable the quick creation of flexible layouts:
 .max-w-100p { max-width: 100%; }
 ```
 
-## Color System Utilities
+## Color system Utilities
 
 ```css
 /* Text colors */

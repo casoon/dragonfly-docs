@@ -24,7 +24,7 @@ Where:
 
 The primary color palette is based on blue tones and is used for primary actions, links, and highlighting important UI elements.
 
-| Variable | Default Value | Description |
+| variable | Default Value | Description |
 |----------|---------------|-------------|
 | `--color-primary-50` | `#e6f0ff` | Lightest primary, for backgrounds |
 | `--color-primary-100` | `#cce0ff` | Very light primary |
@@ -41,7 +41,7 @@ The primary color palette is based on blue tones and is used for primary actions
 
 The secondary color palette is based on violet tones and is used for secondary actions, accents, and less prominent UI elements.
 
-| Variable | Default Value | Description |
+| variable | Default Value | Description |
 |----------|---------------|-------------|
 | `--color-secondary-50` | `#eeeaff` | Lightest secondary |
 | `--color-secondary-100` | `#dcd6ff` | Very light secondary |
@@ -58,7 +58,7 @@ The secondary color palette is based on violet tones and is used for secondary a
 
 The success color palette is based on green tones and is used for success states, confirmation messages, and positive indicators.
 
-| Variable | Default Value | Description |
+| variable | Default Value | Description |
 |----------|---------------|-------------|
 | `--color-success-50` | `#e6f9f1` | Lightest success |
 | `--color-success-100` | `#ccf3e3` | Very light success |
@@ -75,7 +75,7 @@ The success color palette is based on green tones and is used for success states
 
 The warning color palette is based on orange tones and is used for warning states, alerts that require attention but aren't critical, and cautionary indicators.
 
-| Variable | Default Value | Description |
+| variable | Default Value | Description |
 |----------|---------------|-------------|
 | `--color-warning-50` | `#fef4e6` | Lightest warning |
 | `--color-warning-100` | `#fdeacc` | Very light warning |
@@ -92,7 +92,7 @@ The warning color palette is based on orange tones and is used for warning state
 
 The error color palette is based on red tones and is used for error states, critical alerts, and negative indicators.
 
-| Variable | Default Value | Description |
+| variable | Default Value | Description |
 |----------|---------------|-------------|
 | `--color-error-50` | `#fdeded` | Lightest error |
 | `--color-error-100` | `#fbdbdb` | Very light error |
@@ -109,7 +109,7 @@ The error color palette is based on red tones and is used for error states, crit
 
 The gray color palette is a neutral set with a slight blue undertone. It is used for UI backgrounds, text, borders, and other neutral elements.
 
-| Variable | Default Value | Description |
+| variable | Default Value | Description |
 |----------|---------------|-------------|
 | `--color-gray-50` | `#f9f9fa` | Lightest gray, often used for backgrounds |
 | `--color-gray-100` | `#f3f3f5` | Very light gray |
@@ -128,7 +128,7 @@ The gray color palette is a neutral set with a slight blue undertone. It is used
 
 The neutral color palette is a pure gray scale without any color tone. It's used when a completely neutral gray is needed.
 
-| Variable | Default Value | Description |
+| variable | Default Value | Description |
 |----------|---------------|-------------|
 | `--color-neutral-50` | `#f9fafb` | Lightest neutral |
 | `--color-neutral-100` | `#f3f4f6` | Very light neutral |

@@ -3,58 +3,58 @@ title: Sparkle Effects
 category: Effects
 ---
 
-# Funkeln-Effekte
+# Funkeln-effects
 
-Die Funkeln-Effekte der Casoon UI Library bieten eine Sammlung von dynamischen Partikeleffekten, die Ihren UI-Elementen ein funkelndes, magisches Aussehen verleihen können. Diese Effekte eignen sich hervorragend, um besondere Aktionen zu betonen oder festliche, spielerische Akzente zu setzen.
+the Funkeln-effects the Casoon UI Library bieten a Sammlung from dynamischen Partikeleffekten, the Ihren UI-Elementen a funkelndes, magisches Aussehen verleihen can. these effects eignen oneself hervorragend, um besondere Aktionen to betonen or festliche, spielerische Akzente to setzen.
 
-## Überblick
+## Uberblick
 
-Funkeln-Effekte simulieren kleine, glitzernde Partikel, die auf oder um ein Element herum auftreten. Sie können verwendet werden, um Erfolge zu feiern, wichtige Elemente hervorzuheben oder einfach eine verspielte, magische Atmosphäre zu schaffen. Die Casoon UI Library bietet verschiedene Arten von Funkeln-Effekten, die einfach anzuwenden und anzupassen sind.
+Funkeln-effects simulieren kleine, glitzernde Partikel, the on or um a element herum auftreten. You can verwendet become, um successes to feiern, wichtige elements hervorzuheben or einfach a verspielte, magische Atmosphare to schaffen. the Casoon UI Library bietet verschiedene Arten from Funkeln-Effekten, the einfach anzuwenden and anzupassen sind.
 
 ## Installation
 
-Importieren Sie das Funkeln-Effekte-Modul über CSS:
+import them the Funkeln-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/sparkle.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
-### Grundlegende Funkeln-Effekte
+### Grundlegende Funkeln-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.sparkle` | Standardmäßiger Funkeln-Effekt |
-| `.sparkle-subtle` | Subtiler Funkeln-Effekt |
-| `.sparkle-medium` | Mittlerer Funkeln-Effekt (Standard) |
-| `.sparkle-intense` | Intensiver Funkeln-Effekt |
+| `.sparkle` | Standardmassiger Funkeln-effect |
+| `.sparkle-subtle` | Subtiler Funkeln-effect |
+| `.sparkle-medium` | Mittlerer Funkeln-effect (Standard) |
+| `.sparkle-intense` | Intensiver Funkeln-effect |
 
 ### Funkeln-Typen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
 | `.sparkle-stars` | Sternartige Funkeln (Standard) |
 | `.sparkle-dots` | Punktartige Funkeln |
 | `.sparkle-burst` | Explosionsartige Funkeln |
 | `.sparkle-glitter` | Glitzerartige Funkeln |
 | `.sparkle-fire` | Feuerartige Funkeln |
-| `.sparkle-magic` | Magische Funkeln mit verschiedenen Formen |
+| `.sparkle-magic` | Magische Funkeln with verschiedenen Formen |
 
 ### Funktions-Modi
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.sparkle-hover` | Funkeln erscheint bei Hover |
-| `.sparkle-click` | Funkeln erscheint beim Klicken |
-| `.sparkle-active` | Funkeln erscheint im aktiven Zustand |
-| `.sparkle-random` | Zufällig auftretende Funkeln |
-| `.sparkle-continuous` | Kontinuierlich funkelnder Effekt |
-| `.sparkle-follow` | Funkeln folgt der Mausposition |
+| `.sparkle-hover` | Funkeln erscheint at Hover |
+| `.sparkle-click` | Funkeln erscheint beim Click |
+| `.sparkle-active` | Funkeln erscheint im aktiven state |
+| `.sparkle-random` | Zufallig auftretende Funkeln |
+| `.sparkle-continuous` | Kontinuierlich funkelnder effect |
+| `.sparkle-follow` | Funkeln folgt the Mausposition |
 
 ## Examples
 
-### Grundlegende Funkeln-Effekte
+### Grundlegende Funkeln-effects
 
 ```html
 <div class="sparkle-examples">
@@ -86,20 +86,20 @@ Importieren Sie das Funkeln-Effekte-Modul über CSS:
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Funkeln-Effekte können über CSS Variables angepasst werden:
+the Funkeln-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Funkeln-Parameter */
+  /* Grundlegende Funkeln-parameter */
   --sparkle-color: #ffeb3b;
   --sparkle-size: 10px;
   --sparkle-duration: 1.5s;
   --sparkle-count: 15;
   --sparkle-speed: 1;
   
-  /* Effekt-spezifische Parameter */
+  /* effect-spezifische parameter */
   --sparkle-star-points: 5;
   --sparkle-burst-scale: 1.5;
   --sparkle-random-delay: 3s;
@@ -111,18 +111,18 @@ Die Funkeln-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Die Funkeln-Effekte werden durch eine Kombination aus CSS-Animationen und pseudo-Elementen erzeugt:
+the Funkeln-effects become through a Kombination aus CSS-animations and pseudo-Elementen erzeugt:
 
 ```css
-/* Basis-Funkeln */
+/* Base-Funkeln */
 .sparkle {
   position: relative;
   overflow: visible;
 }
 
-/* Funkeln-Container */
+/* Funkeln-containers */
 .sparkle::after {
   content: '';
   position: absolute;
@@ -193,9 +193,9 @@ Die Funkeln-Effekte werden durch eine Kombination aus CSS-Animationen und pseudo
 }
 ```
 
-## JavaScript-Unterstützung
+## JavaScript-Unterstutzung
 
-Für einige der fortgeschritteneren Funkeln-Effekte wird JavaScript benötigt:
+for some the fortgeschritteneren Funkeln-effects wird JavaScript benotigt:
 
 ```javascript
 // Click-Funkeln
@@ -209,7 +209,7 @@ document.querySelectorAll('.sparkle-click').forEach(element => {
   });
 });
 
-// Zufälliges Funkeln
+// Zufalliges Funkeln
 document.querySelectorAll('.sparkle-random').forEach(element => {
   function randomSparkle() {
     element.classList.add('active');
@@ -234,7 +234,7 @@ document.querySelectorAll('.sparkle-follow').forEach(element => {
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     
-    // Funkeln an der Mausposition erstellen
+    // Funkeln on the Mausposition create
     const sparkle = document.createElement('div');
     sparkle.className = 'sparkle-particle';
     sparkle.style.left = `${x}px`;
@@ -242,7 +242,7 @@ document.querySelectorAll('.sparkle-follow').forEach(element => {
     
     element.appendChild(sparkle);
     
-    // Nach der Animation entfernen
+    // after the animation remove
     setTimeout(() => {
       sparkle.remove();
     }, 1000);
@@ -252,11 +252,11 @@ document.querySelectorAll('.sparkle-follow').forEach(element => {
 
 ## Accessibility
 
-Bei der Usage von Funkeln-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Funkeln-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Bewegung reduzieren**: Vermeiden Sie übermäßige Funkeln-Effekte, die ablenkend sein können
-2. **Photosensitive Epilepsie**: Stellen Sie sicher, dass die Funkeln-Effekte nicht zu hell oder blinkend sind
-3. **Informationsvermittlung**: Verlassen Sie sich nicht ausschließlich auf Funkeln-Effekte, um wichtige Informationen zu vermitteln
+1. **Bewegung reduzieren**: Vermeiden them ubermassige Funkeln-effects, the ablenkend be can
+2. **Photosensitive Epilepsie**: ensure, that the Funkeln-effects not to hell or blinkend sind
+3. **Informationsvermittlung**: Verlassen them oneself not ausschliesslich on Funkeln-effects, um wichtige Informationen to vermitteln
 
 ```css
 /* Reduzierte Bewegung */
@@ -282,15 +282,15 @@ Bei der Usage von Funkeln-Effekten sollten folgende Accessibilitysaspekte berüc
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Funkeln-Effekte werden von allen modernen Browsern unterstützt.
+the Funkeln-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| Basis-Funkeln | ✓ | ✓ | ✓ | ✓ | Teilweise |
-| CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| Base-Funkeln | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| CSS-animations | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | Radial-Gradienten | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
+for altere Browser, the some functions not vollstandig unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 

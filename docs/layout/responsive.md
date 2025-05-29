@@ -1,9 +1,9 @@
 ---
-title: Responsive Design System
+title: Responsive Design system
 category: Layout
 ---
 
-# Responsive Design System
+# Responsive Design system
 
 The Casoon UI Library implements a comprehensive responsive design system that allows your interfaces to adapt seamlessly across different screen sizes and devices. This document outlines the responsive breakpoints, layout utilities, and best practices for creating responsive interfaces.
 
@@ -90,7 +90,7 @@ The library provides CSS variables for media queries to ensure consistent usage:
 }
 ```
 
-## Container System
+## Container system
 
 The library provides responsive containers that set a maximum width at each breakpoint:
 
@@ -123,7 +123,7 @@ Container behavior:
 | `.container-xl` | 100% | 100% | 100% | 100% | 1140px | 1320px |
 | `.container-xxl` | 100% | 100% | 100% | 100% | 100% | 1320px |
 
-## Responsive Grid System
+## Responsive Grid system
 
 The library includes a flexible 12-column grid system:
 

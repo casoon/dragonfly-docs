@@ -1,62 +1,62 @@
-# Transform-Effekte
+# Transform-effects
 
-Transform-Effekte werden verwendet, um Elemente zu verschieben, zu drehen, zu skalieren oder zu verzerren, ohne das umgebende Layout zu beeinflussen. Die `@casoon/ui-lib` bietet verschiedene Transform-Effekte, die dazu beitragen, dynamische und interaktive Benutzeroberflächen zu gestalten.
+Transform-effects become verwendet, um elements to verschieben, to drehen, to skalieren or to verzerren, without the umgebende layout to beeinflussen. the `@casoon/ui-lib` bietet verschiedene Transform-effects, the for that beitragen, dynamische and interaktive user interfaces to gestalten.
 
 ## Basic Usage
 
-Der grundlegende Transform-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Transform-effect kann on jedes element angewendet become:
 
 ```html
-<div class="transform-scale">Element mit Skalierungseffekt</div>
+<div class="transform-scale">element with Skalierungseffekt</div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Transform-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Transform-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.transform` | Basisklasse für Transform-Effekte |
+| `.transform` | Basisklasse for Transform-effects |
 | `.transform-scale` | Skalierungseffekt |
 | `.transform-rotate` | Dreheffekt |
 | `.transform-translate` | Verschiebungseffekt |
 | `.transform-skew` | Verzerrungseffekt |
-| `.transform-origin-center` | Transformationsursprung in der Mitte |
-| `.transform-origin-top` | Transformationsursprung am oberen Rand |
-| `.transform-origin-right` | Transformationsursprung am rechten Rand |
-| `.transform-origin-bottom` | Transformationsursprung am unteren Rand |
-| `.transform-origin-left` | Transformationsursprung am linken Rand |
-| `.transform-preserve-3d` | 3D-Transformationen aktivieren |
-| `.transform-perspective` | Perspektivische Darstellung |
-| `.transform-backface-visible` | Rückseite sichtbar machen |
-| `.transform-backface-hidden` | Rückseite ausblenden |
+| `.transform-origin-center` | Transformationsursprung in the Mitte |
+| `.transform-origin-top` | Transformationsursprung am oberen margin |
+| `.transform-origin-right` | Transformationsursprung am rechten margin |
+| `.transform-origin-bottom` | Transformationsursprung am unteren margin |
+| `.transform-origin-left` | Transformationsursprung am linken margin |
+| `.transform-preserve-3d` | 3D-Transformationen activate |
+| `.transform-perspective` | Perspektivische Display |
+| `.transform-backface-visible` | Ruckseite sichtbar machen |
+| `.transform-backface-hidden` | Ruckseite ausblenden |
 
 ## Variants
 
 ### Skalierungseffekte
 
-Transform-Effekte zum Vergrößern oder Verkleinern von Elementen:
+Transform-effects zum enlarge or reduce from Elementen:
 
 ```html
-<div class="transform-scale-up">Vergrößern</div>
-<div class="transform-scale-down">Verkleinern</div>
+<div class="transform-scale-up">enlarge</div>
+<div class="transform-scale-down">reduce</div>
 <div class="transform-scale-x">Horizontal skalieren</div>
 <div class="transform-scale-y">Vertikal skalieren</div>
 ```
 
-Verfügbare Sizesvarianten:
+Verfugbare Sizesvarianten:
 
 ```html
-<div class="transform-scale-xs">Sehr kleine Skalierung</div>
+<div class="transform-scale-xs">very kleine Skalierung</div>
 <div class="transform-scale-sm">Kleine Skalierung</div>
 <div class="transform-scale-md">Mittlere Skalierung</div>
-<div class="transform-scale-lg">Große Skalierung</div>
-<div class="transform-scale-xl">Sehr große Skalierung</div>
+<div class="transform-scale-lg">size Skalierung</div>
+<div class="transform-scale-xl">very size Skalierung</div>
 ```
 
 ### Dreheffekte
 
-Transform-Effekte zum Drehen von Elementen:
+Transform-effects zum Drehen from Elementen:
 
 ```html
 <div class="transform-rotate-45">45 Grad drehen</div>
@@ -70,7 +70,7 @@ Drehrichtung:
 
 ```html
 <div class="transform-rotate-clockwise">Im Uhrzeigersinn drehen</div>
-<div class="transform-rotate-counterclockwise">Gegen den Uhrzeigersinn drehen</div>
+<div class="transform-rotate-counterclockwise">against den Uhrzeigersinn drehen</div>
 ```
 
 3D-Drehung:
@@ -83,42 +83,42 @@ Drehrichtung:
 
 ### Verschiebungseffekte
 
-Transform-Effekte zum Verschieben von Elementen:
+Transform-effects zum Verschieben from Elementen:
 
 ```html
-<div class="transform-translate-up">Nach oben verschieben</div>
-<div class="transform-translate-right">Nach rechts verschieben</div>
-<div class="transform-translate-down">Nach unten verschieben</div>
-<div class="transform-translate-left">Nach links verschieben</div>
+<div class="transform-translate-up">after oben verschieben</div>
+<div class="transform-translate-right">after rechts verschieben</div>
+<div class="transform-translate-down">after unten verschieben</div>
+<div class="transform-translate-left">after links verschieben</div>
 ```
 
-Verfügbare Distanzvarianten:
+Verfugbare Distanzvarianten:
 
 ```html
-<div class="transform-translate-xs">Sehr kleine Verschiebung</div>
+<div class="transform-translate-xs">very kleine Verschiebung</div>
 <div class="transform-translate-sm">Kleine Verschiebung</div>
 <div class="transform-translate-md">Mittlere Verschiebung</div>
-<div class="transform-translate-lg">Große Verschiebung</div>
-<div class="transform-translate-xl">Sehr große Verschiebung</div>
+<div class="transform-translate-lg">size Verschiebung</div>
+<div class="transform-translate-xl">very size Verschiebung</div>
 ```
 
 3D-Verschiebung:
 
 ```html
-<div class="transform-translate-z">In Z-Richtung verschieben</div>
+<div class="transform-translate-z">in Z-Richtung verschieben</div>
 ```
 
 ### Verzerrungseffekte
 
-Transform-Effekte zum Verzerren von Elementen:
+Transform-effects zum Verzerren from Elementen:
 
 ```html
 <div class="transform-skew-x">Horizontal verzerren</div>
 <div class="transform-skew-y">Vertikal verzerren</div>
-<div class="transform-skew-both">In beide Richtungen verzerren</div>
+<div class="transform-skew-both">in both Richtungen verzerren</div>
 ```
 
-Verfügbare Winkel:
+Verfugbare Winkel:
 
 ```html
 <div class="transform-skew-15">15 Grad verzerren</div>
@@ -128,27 +128,27 @@ Verfügbare Winkel:
 
 ### Kombinierte Transformationen
 
-Mehrere Transform-Effekte können kombiniert werden:
+several Transform-effects can kombiniert become:
 
 ```html
-<div class="transform-scale-up transform-rotate-45">Vergrößern und drehen</div>
-<div class="transform-translate-up transform-rotate-90">Verschieben und drehen</div>
-<div class="transform-scale-down transform-skew-x">Verkleinern und verzerren</div>
+<div class="transform-scale-up transform-rotate-45">enlarge and drehen</div>
+<div class="transform-translate-up transform-rotate-90">Verschieben and drehen</div>
+<div class="transform-scale-down transform-skew-x">reduce and verzerren</div>
 ```
 
 ### Transformationsursprung
 
-Der Ursprung der Transformation kann festgelegt werden:
+the Ursprung the Transformation kann festgelegt become:
 
 ```html
 <div class="transform-rotate-45 transform-origin-center">Vom Zentrum aus drehen</div>
-<div class="transform-rotate-45 transform-origin-top-left">Von der oberen linken Ecke aus drehen</div>
-<div class="transform-rotate-45 transform-origin-bottom-right">Von der unteren rechten Ecke aus drehen</div>
+<div class="transform-rotate-45 transform-origin-top-left">from the oberen linken Ecke aus drehen</div>
+<div class="transform-rotate-45 transform-origin-bottom-right">from the unteren rechten Ecke aus drehen</div>
 ```
 
 ## 3D-Transformationen
 
-Die Bibliothek unterstützt auch 3D-Transformationen:
+the Bibliothek unterstutzt also 3D-Transformationen:
 
 ```html
 <div class="transform-perspective">
@@ -157,69 +157,69 @@ Die Bibliothek unterstützt auch 3D-Transformationen:
 
 <div class="transform-preserve-3d">
   <div class="transform-rotate-y-180 transform-backface-hidden">Card (Vorderseite)</div>
-  <div class="transform-rotate-y-0 transform-backface-hidden">Card (Rückseite)</div>
+  <div class="transform-rotate-y-0 transform-backface-hidden">Card (Ruckseite)</div>
 </div>
 ```
 
-## Interaktive Transform-Effekte
+## Interaktive Transform-effects
 
-Transform-Effekte können mit Interaktionen kombiniert werden:
+Transform-effects can with interactions kombiniert become:
 
 ```html
-<div class="hover-transform-scale-up">Beim Hover vergrößern</div>
+<div class="hover-transform-scale-up">Beim Hover enlarge</div>
 <div class="hover-transform-rotate-45">Beim Hover drehen</div>
-<div class="hover-transform-translate-up">Beim Hover nach oben verschieben</div>
+<div class="hover-transform-translate-up">Beim Hover after oben verschieben</div>
 
-<div class="focus-transform-scale-up">Bei Fokus vergrößern</div>
-<div class="active-transform-scale-down">Bei Aktivierung verkleinern</div>
+<div class="focus-transform-scale-up">at Fokus enlarge</div>
+<div class="active-transform-scale-down">at Aktivierung reduce</div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Transform-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Transform-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Buttons mit Transform-Effekten
+### buttons with Transform-Effekten
 
 ```html
-<button class="btn hover-transform-scale-up">Beim Hover vergrößern</button>
+<button class="btn hover-transform-scale-up">Beim Hover enlarge</button>
 <button class="btn hover-transform-translate-up">Beim Hover anheben</button>
-<button class="btn active-transform-scale-down">Bei Klick verkleinern</button>
+<button class="btn active-transform-scale-down">at Klick reduce</button>
 ```
 
-### Cardn mit Transform-Effekten
+### Cardn with Transform-Effekten
 
 ```html
 <div class="card hover-transform-scale-up hover-transform-shadow">
-  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-header">Cardnuberschrift</div>
   <div class="card-body">Cardninhalt</div>
 </div>
 
 <div class="card-flip transform-preserve-3d">
   <div class="card-front transform-backface-hidden">Vorderseite</div>
-  <div class="card-back transform-backface-hidden transform-rotate-y-180">Rückseite</div>
+  <div class="card-back transform-backface-hidden transform-rotate-y-180">Ruckseite</div>
 </div>
 ```
 
-### Bilder mit Transform-Effekten
+### images with Transform-Effekten
 
 ```html
-<img src="image.jpg" alt="Bild" class="hover-transform-scale-up">
-<img src="image.jpg" alt="Bild" class="hover-transform-rotate-15">
+<img src="image.jpg" alt="image" class="hover-transform-scale-up">
+<img src="image.jpg" alt="image" class="hover-transform-rotate-15">
 ```
 
-### Navigation mit Transform-Effekten
+### navigation with Transform-Effekten
 
 ```html
 <nav class="navbar">
   <a href="#" class="hover-transform-translate-up">Home</a>
-  <a href="#" class="hover-transform-translate-up">Über uns</a>
+  <a href="#" class="hover-transform-translate-up">over us</a>
   <a href="#" class="hover-transform-translate-up">Kontakt</a>
 </nav>
 ```
 
-## Animierte Transform-Effekte
+## Animierte Transform-effects
 
-Transform-Effekte können animiert werden:
+Transform-effects can animiert become:
 
 ```html
 <div class="transform-animated-scale">Animierte Skalierung</div>
@@ -230,15 +230,15 @@ Transform-Effekte können animiert werden:
 Animations-Einstellungen:
 
 ```html
-<div class="transform-animated-slow">Langsame Animation</div>
-<div class="transform-animated-fast">Schnelle Animation</div>
-<div class="transform-animated-loop">Wiederholte Animation</div>
-<div class="transform-animated-bounce">Federnde Animation</div>
+<div class="transform-animated-slow">Langsame animation</div>
+<div class="transform-animated-fast">Schnelle animation</div>
+<div class="transform-animated-loop">Wiederholte animation</div>
+<div class="transform-animated-bounce">Federnde animation</div>
 ```
 
-## Anpassung
+## Customization
 
-Die Transform-Effekte können über CSS Variables angepasst werden:
+the Transform-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -281,9 +281,9 @@ Die Transform-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Examples für die CSS-Implementierung der Transform-Effekte:
+Examples for the CSS-Implementation the Transform-effects:
 
 ```css
 /* Skalierungseffekte */
@@ -356,7 +356,7 @@ Examples für die CSS-Implementierung der Transform-Effekte:
   backface-visibility: hidden;
 }
 
-/* Interaktive Effekte */
+/* Interaktive effects */
 .hover-transform-scale-up:hover {
   transform: scale(var(--transform-scale-md));
 }
@@ -365,7 +365,7 @@ Examples für die CSS-Implementierung der Transform-Effekte:
   transform: scale(0.95);
 }
 
-/* Animierte Effekte */
+/* Animierte effects */
 .transform-animated-rotate {
   animation: transform-rotate var(--transform-animation-duration) var(--transform-animation-timing);
 }
@@ -378,15 +378,15 @@ Examples für die CSS-Implementierung der Transform-Effekte:
 
 ## Accessibility
 
-Bei der Usage von Transform-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Transform-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Bewegung minimieren**: Übermäßige oder dauerhafte Animationen können für Menschen mit vestibulären Störungen problematisch sein
-2. **Benutzereinstellungen**: Die Einstellung `prefers-reduced-motion` respektieren
-3. **Lesbarkeit**: Sicherstellen, dass Text lesbar bleibt, auch wenn er transformiert wird
-4. **Orientierung**: Benutzer nicht durch drastische Orientierungsänderungen verwirren
+1. **Bewegung minimieren**: Ubermassige or dauerhafte animations can for Menschen with vestibularen Storungen problematisch be
+2. **Benutzereinstellungen**: the Setting `prefers-reduced-motion` respektieren
+3. **Lesbarkeit**: Sicherstellen, that Text lesbar bleibt, also if he transformiert wird
+4. **Orientierung**: user not through drastische Orientierungsanderungen verwirren
 
 ```css
-/* Berücksichtigung von Benutzereinstellungen für reduzierte Bewegung */
+/* Berucksichtigung from Benutzereinstellungen for reduzierte Bewegung */
 @media (prefers-reduced-motion: reduce) {
   .transform-animated-rotate,
   .transform-animated-scale,
@@ -401,36 +401,36 @@ Bei der Usage von Transform-Effekten sollten folgende Accessibilitysaspekte ber�
 }
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Transform-Effekte können die Leistung beeinflussen:
+Transform-effects can the Leistung beeinflussen:
 
-1. **GPU-Beschleunigung**: Transform-Effekte werden von der GPU beschleunigt und sind performanter als andere Animationsarten
-2. **Komposit-Eigenschaften**: `transform` und `opacity` sind Eigenschaften, die nur die Compositing-Phase beeinflussen
-3. **Renderebenen**: Viele transformierte Elemente können zu einer großen Anzahl von Renderebenen führen
-4. **Hardwarebeschleunigung**: Die Usage von `will-change` oder `transform: translateZ(0)` kann die Leistung verbessern
+1. **GPU-Beschleunigung**: Transform-effects become from the GPU beschleunigt and sind performanter as others Animationsarten
+2. **Komposit-properties**: `transform` and `opacity` sind properties, the only the Compositing-Phase beeinflussen
+3. **Renderebenen**: many transformierte elements can to einer sizes Anzahl from Renderebenen fuhren
+4. **Hardwarebeschleunigung**: the Usage from `will-change` or `transform: translateZ(0)` kann the Leistung verbessern
 
 ```css
-/* Performance-Optimierung für animierte Transformationen */
+/* Performance-Optimierung for animierte Transformationen */
 .transform-animated,
 .hover-transform {
   will-change: transform;
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Transform-Effekte werden von allen modernen Browsern unterstützt.
+the meisten Transform-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | 2D-Transformationen | ✓ | ✓ | ✓ | ✓ | ✓ |
 | 3D-Transformationen | ✓ | ✓ | ✓ | ✓ | Begrenzt |
 | Animierte Transformationen | ✓ | ✓ | ✓ | ✓ | Begrenzt |
 | transform-style: preserve-3d | ✓ | ✓ | ✓ | ✓ | Nein |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Animations-Effekte](/docs/effects/animation/animations.md) - Animationseffekte für Elemente
-- [Transitions-Effekte](/docs/effects/transitions.md) - Übergangseffekte für Zustandsänderungen
-- [3D-Effekte](/docs/effects/3d.md) - Dreidimensionale Effekte für Elemente 
+- [Animations-effects](/docs/effects/animation/animations.md) - Animationseffekte for elements
+- [Transitions-effects](/docs/effects/transitions.md) - Ubergangseffekte for Zustandsanderungen
+- [3D-effects](/docs/effects/3d.md) - Dreidimensionale effects for elements 

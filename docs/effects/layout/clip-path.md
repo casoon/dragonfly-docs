@@ -1,70 +1,70 @@
-# Clip-Path-Effekte
+# Clip-Path-effects
 
-Clip-Path-Effekte werden verwendet, um Elemente in bestimmte Formen zu schneiden. Die `@casoon/ui-lib` bietet verschiedene Clip-Path-Effekte, die dazu beitragen, visuell interessante und dynamische Layouts zu erzeugen.
+Clip-Path-effects become verwendet, um elements in bestimmte Formen to schneiden. the `@casoon/ui-lib` bietet verschiedene Clip-Path-effects, the for that beitragen, visuell interessante and dynamische layouts to erzeugen.
 
 ## Basic Usage
 
-Der grundlegende Clip-Path-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Clip-Path-effect kann on jedes element angewendet become:
 
 ```html
 <div class="clip-path">
-  <img src="image.jpg" alt="Zugeschnittenes Bild">
+  <img src="image.jpg" alt="Zugeschnittenes image">
 </div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Clip-Path-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Clip-Path-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.clip-path` | Basisklasse für Clip-Path-Effekte |
-| `.clip-circle` | Kreisförmiger Ausschnitt |
+| `.clip-path` | Basisklasse for Clip-Path-effects |
+| `.clip-circle` | Kreisformiger Ausschnitt |
 | `.clip-ellipse` | Elliptischer Ausschnitt |
 | `.clip-triangle` | Dreieckiger Ausschnitt |
-| `.clip-rhombus` | Rhombusförmiger Ausschnitt |
-| `.clip-pentagon` | Fünfeckiger Ausschnitt |
+| `.clip-rhombus` | Rhombusformiger Ausschnitt |
+| `.clip-pentagon` | Funfeckiger Ausschnitt |
 | `.clip-hexagon` | Sechseckiger Ausschnitt |
 | `.clip-heptagon` | Siebeneckiger Ausschnitt |
 | `.clip-octagon` | Achteckiger Ausschnitt |
-| `.clip-bevel` | Ausschnitt mit abgeschrägten Ecken |
-| `.clip-rabbet` | Ausschnitt mit eingelassenen Ecken |
-| `.clip-arrow` | Pfeilförmiger Ausschnitt |
+| `.clip-bevel` | Ausschnitt with abgeschragten Ecken |
+| `.clip-rabbet` | Ausschnitt with eingelassenen Ecken |
+| `.clip-arrow` | Pfeilformiger Ausschnitt |
 | `.clip-message` | Nachrichtenblase-Ausschnitt |
 | `.clip-diagonal` | Diagonaler Ausschnitt |
-| `.clip-frame` | Rahmenförmiger Ausschnitt |
+| `.clip-frame` | Rahmenformiger Ausschnitt |
 
 ## Variants
 
 ### Kreis-Ausschnitt
 
-Der Kreis-Ausschnitt schneidet das Element in einer Kreisform aus:
+the Kreis-Ausschnitt schneidet the element in einer Kreisform aus:
 
 ```html
 <div class="clip-circle">
-  <img src="image.jpg" alt="Kreisförmiges Bild">
+  <img src="image.jpg" alt="Kreisformiges image">
 </div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
 <div class="clip-circle-center">Zentrierter Kreis</div>
-<div class="clip-circle-top-left">Kreis in der oberen linken Ecke</div>
-<div class="clip-circle-bottom-right">Kreis in der unteren rechten Ecke</div>
+<div class="clip-circle-top-left">Kreis in the oberen linken Ecke</div>
+<div class="clip-circle-bottom-right">Kreis in the unteren rechten Ecke</div>
 ```
 
 ### Elliptischer Ausschnitt
 
-Der elliptische Ausschnitt erstellt eine ovale Form:
+the elliptische Ausschnitt erstellt a ovale Form:
 
 ```html
 <div class="clip-ellipse">
-  <img src="image.jpg" alt="Elliptisches Bild">
+  <img src="image.jpg" alt="Elliptisches image">
 </div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
 <div class="clip-ellipse-horizontal">Horizontale Ellipse</div>
@@ -74,43 +74,43 @@ Verfügbare Variants:
 
 ### Dreieckiger Ausschnitt
 
-Der dreieckige Ausschnitt schneidet das Element in Dreiecksform aus:
+the dreieckige Ausschnitt schneidet the element in Dreiecksform aus:
 
 ```html
 <div class="clip-triangle">
-  <img src="image.jpg" alt="Dreieckiges Bild">
+  <img src="image.jpg" alt="Dreieckiges image">
 </div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
-<div class="clip-triangle-up">Nach oben zeigendes Dreieck</div>
-<div class="clip-triangle-right">Nach rechts zeigendes Dreieck</div>
-<div class="clip-triangle-down">Nach unten zeigendes Dreieck</div>
-<div class="clip-triangle-left">Nach links zeigendes Dreieck</div>
-<div class="clip-triangle-top-left">Dreieck in der oberen linken Ecke</div>
-<div class="clip-triangle-top-right">Dreieck in der oberen rechten Ecke</div>
-<div class="clip-triangle-bottom-left">Dreieck in der unteren linken Ecke</div>
-<div class="clip-triangle-bottom-right">Dreieck in der unteren rechten Ecke</div>
+<div class="clip-triangle-up">after oben zeigendes Dreieck</div>
+<div class="clip-triangle-right">after rechts zeigendes Dreieck</div>
+<div class="clip-triangle-down">after unten zeigendes Dreieck</div>
+<div class="clip-triangle-left">after links zeigendes Dreieck</div>
+<div class="clip-triangle-top-left">Dreieck in the oberen linken Ecke</div>
+<div class="clip-triangle-top-right">Dreieck in the oberen rechten Ecke</div>
+<div class="clip-triangle-bottom-left">Dreieck in the unteren linken Ecke</div>
+<div class="clip-triangle-bottom-right">Dreieck in the unteren rechten Ecke</div>
 ```
 
-### Rhombusförmiger Ausschnitt
+### Rhombusformiger Ausschnitt
 
-Der rhombusförmige Ausschnitt erstellt eine Rautenform:
+the rhombusformige Ausschnitt erstellt a Rautenform:
 
 ```html
 <div class="clip-rhombus">
-  <img src="image.jpg" alt="Rautenförmiges Bild">
+  <img src="image.jpg" alt="Rautenformiges image">
 </div>
 ```
 
 ### Polygonale Ausschnitte
 
-Verschiedene polygonale Ausschnitte für geometrische Formen:
+Verschiedene polygonale Ausschnitte for geometrische Formen:
 
 ```html
-<div class="clip-pentagon">Fünfeckiger Ausschnitt</div>
+<div class="clip-pentagon">Funfeckiger Ausschnitt</div>
 <div class="clip-hexagon">Sechseckiger Ausschnitt</div>
 <div class="clip-heptagon">Siebeneckiger Ausschnitt</div>
 <div class="clip-octagon">Achteckiger Ausschnitt</div>
@@ -118,13 +118,13 @@ Verschiedene polygonale Ausschnitte für geometrische Formen:
 
 ### Funktionale Ausschnitte
 
-Ausschnitte mit spezifischen Funktionen oder Bedeutungen:
+Ausschnitte with spezifischen functions or Bedeutungen:
 
 ```html
-<div class="clip-arrow-up">Pfeil nach oben</div>
-<div class="clip-arrow-right">Pfeil nach rechts</div>
-<div class="clip-arrow-down">Pfeil nach unten</div>
-<div class="clip-arrow-left">Pfeil nach links</div>
+<div class="clip-arrow-up">Pfeil after oben</div>
+<div class="clip-arrow-right">Pfeil after rechts</div>
+<div class="clip-arrow-down">Pfeil after unten</div>
+<div class="clip-arrow-left">Pfeil after links</div>
 <div class="clip-message">Nachrichtenblase</div>
 <div class="clip-message-left">Nachrichtenblase links</div>
 <div class="clip-message-right">Nachrichtenblase rechts</div>
@@ -135,27 +135,27 @@ Ausschnitte mit spezifischen Funktionen oder Bedeutungen:
 Ausschnitte entlang diagonaler Linien:
 
 ```html
-<div class="clip-diagonal-tl-br">Diagonal von oben links nach unten rechts</div>
-<div class="clip-diagonal-tr-bl">Diagonal von oben rechts nach unten links</div>
-<div class="clip-diagonal-bl-tr">Diagonal von unten links nach oben rechts</div>
-<div class="clip-diagonal-br-tl">Diagonal von unten rechts nach oben links</div>
+<div class="clip-diagonal-tl-br">Diagonal from oben links after unten rechts</div>
+<div class="clip-diagonal-tr-bl">Diagonal from oben rechts after unten links</div>
+<div class="clip-diagonal-bl-tr">Diagonal from unten links after oben rechts</div>
+<div class="clip-diagonal-br-tl">Diagonal from unten rechts after oben links</div>
 ```
 
-### Rahmenförmige Ausschnitte
+### Rahmenformige Ausschnitte
 
-Ausschnitte, die einen Rahmen um das Element erstellen:
+Ausschnitte, the einen border um the element create:
 
 ```html
-<div class="clip-frame">Rahmenförmiger Ausschnitt</div>
-<div class="clip-frame-thin">Dünner Rahmen</div>
-<div class="clip-frame-thick">Dicker Rahmen</div>
+<div class="clip-frame">Rahmenformiger Ausschnitt</div>
+<div class="clip-frame-thin">Dunner border</div>
+<div class="clip-frame-thick">Dicker border</div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Clip-Path-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Clip-Path-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Bilder mit Clip-Path
+### images with Clip-Path
 
 ```html
 <img src="image.jpg" alt="Profilbild" class="clip-circle">
@@ -165,82 +165,82 @@ Clip-Path-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-### Cardn mit Clip-Path
+### Cardn with Clip-Path
 
 ```html
 <div class="card clip-bevel">
-  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-header">Cardnuberschrift</div>
   <div class="card-body">Cardninhalt</div>
 </div>
 ```
 
-### Buttons mit Clip-Path
+### buttons with Clip-Path
 
 ```html
-<button class="btn clip-octagon">Achteckiger Button</button>
+<button class="btn clip-octagon">Achteckiger button</button>
 ```
 
-### Container mit Clip-Path
+### containers with Clip-Path
 
 ```html
-<section class="container clip-diagonal-tl-br">
-  <h2>Abschnitt mit diagonalem Schnitt</h2>
-  <p>Inhalt des Abschnitts...</p>
+<section class="containers clip-diagonal-tl-br">
+  <h2>Abschnitt with diagonalem Schnitt</h2>
+  <p>content des Abschnitts...</p>
 </section>
 ```
 
-## Interaktive Clip-Path-Effekte
+## Interaktive Clip-Path-effects
 
-Clip-Path-Effekte können mit Interaktionen kombiniert werden:
+Clip-Path-effects can with interactions kombiniert become:
 
 ```html
 <div class="clip-hover-circle">
-  <img src="image.jpg" alt="Bild wird beim Hover kreisförmig">
+  <img src="image.jpg" alt="image wird beim Hover kreisformig">
 </div>
 
 <div class="clip-path-transition">
-  <img src="image.jpg" alt="Clip-Path mit Übergangseffekt">
+  <img src="image.jpg" alt="Clip-Path with Ubergangseffekt">
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Clip-Path-Effekte können über CSS Variables angepasst werden:
+the Clip-Path-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Clip-Path-Parameter */
+  /* Grundlegende Clip-Path-parameter */
   --clip-circle-size: 50%;
   --clip-circle-position-x: 50%;
   --clip-circle-position-y: 50%;
   
-  /* Elliptische Parameter */
+  /* Elliptische parameter */
   --clip-ellipse-radius-x: 50%;
   --clip-ellipse-radius-y: 30%;
   --clip-ellipse-position-x: 50%;
   --clip-ellipse-position-y: 50%;
   --clip-ellipse-rotation: 0deg;
   
-  /* Dreieck-Parameter */
+  /* Dreieck-parameter */
   --clip-triangle-size: 100%;
   --clip-triangle-direction: up; /* up, right, down, left */
   
-  /* Polygon-Parameter */
-  --clip-polygon-sides: 6; /* für regelmäßige Polygone */
+  /* Polygon-parameter */
+  --clip-polygon-sides: 6; /* for regelmassige Polygone */
   --clip-polygon-rotation: 0deg;
   
-  /* Diagonale Parameter */
+  /* Diagonale parameter */
   --clip-diagonal-offset: 0%;
   
-  /* Rahmen-Parameter */
+  /* border-parameter */
   --clip-frame-thickness: 20px;
   --clip-frame-inset: 0px;
 }
 ```
 
-## Erstellen benutzerdefinierter Clip-Paths
+## create benutzerdefinierter Clip-Paths
 
-Für komplexere Clip-Path-Effekte können Sie die CSS-Funktion `clip-path` direkt verwenden:
+for komplexere Clip-Path-effects can them the CSS-Function `clip-path` direkt use:
 
 ```html
 <div style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);">
@@ -254,9 +254,9 @@ Für komplexere Clip-Path-Effekte können Sie die CSS-Funktion `clip-path` direk
 }
 ```
 
-## Animationen mit Clip-Path
+## animations with Clip-Path
 
-Clip-Path-Effekte können animiert werden für dynamische Übergänge:
+Clip-Path-effects can animiert become for dynamische Ubergange:
 
 ```css
 @keyframes clipPathAnimation {
@@ -275,41 +275,41 @@ Clip-Path-Effekte können animiert werden für dynamische Übergänge:
 
 ## Accessibility
 
-Bei der Usage von Clip-Path-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Clip-Path-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Inhaltsverständlichkeit**: Stellen Sie sicher, dass durch das Ausschneiden keine wichtigen Inhalte verloren gehen
-2. **Alternative Texte**: Bieten Sie immer alternative Texte für Bilder mit Clip-Path an
-3. **Consistency**: Verwenden Sie Clip-Path-Effekte konsistent in Ihrer Benutzeroberfläche
+1. **Inhaltsverstandlichkeit**: ensure, that through the Ausschneiden no wichtigen contents verloren gehen
+2. **Alternative Texte**: Bieten them immer alternative Texte for images with Clip-Path on
+3. **Consistency**: use them Clip-Path-effects konsistent in Ihrer Benutzeroberflache
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Clip-Path-Effekte können die Leistung beeinflussen:
+Clip-Path-effects can the Leistung beeinflussen:
 
-1. **Komplexität**: Komplexe Formen können die Renderleistung beeinträchtigen
-2. **Animationen**: Animierte Clip-Paths sollten sparsam eingesetzt werden
-3. **Hardware-Beschleunigung**: Clip-Path-Animationen profitieren von der Hardware-Beschleunigung
+1. **Komplexitat**: Komplexe Formen can the Renderleistung beeintrachtigen
+2. **animations**: Animierte Clip-Paths should sparsam eingesetzt become
+3. **Hardware-Beschleunigung**: Clip-Path-animations profitieren from the Hardware-Beschleunigung
 
 ```css
-/* Performance-Optimierung für animierte Clip-Paths */
+/* Performance-Optimierung for animierte Clip-Paths */
 .clip-animated {
   will-change: clip-path;
   transform: translateZ(0);
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Clip-Path-Effekte sind mit allen modernen Browsern kompatibel. Einige komplexere Effekte haben jedoch Einschränkungen in älteren Browsern.
+the meisten Clip-Path-effects sind with allen modernen Browsern kompatibel. some komplexere effects have however Einschrankungen in alteren Browsern.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | Grundlegende Formen | ✓ | ✓ | ✓ | ✓ | Nein |
 | Polygon-Pfade | ✓ | ✓ | ✓ | ✓ | Nein |
 | SVG-Pfade | ✓ | ✓ | ✓ | ✓ | Nein |
-| Animationen | ✓ | ✓ | ✓ | ✓ | Nein |
+| animations | ✓ | ✓ | ✓ | ✓ | Nein |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Masken-Effekte](/docs/effects/layout/masks.md) - Ähnliche Effekte mit Maskierung
-- [Overlays](/docs/effects/layout/overlays.md) - Überlagerungseffekte
-- [Formen](/docs/effects/visual/shapes.md) - Formeffekte ohne Ausschneiden 
+- [Masken-effects](/docs/effects/layout/masks.md) - Ahnliche effects with Maskierung
+- [Overlays](/docs/effects/layout/overlays.md) - Uberlagerungseffekte
+- [Formen](/docs/effects/visual/shapes.md) - Formeffekte without Ausschneiden 

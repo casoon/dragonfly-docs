@@ -1,17 +1,17 @@
 ---
 title: Custom Properties
-category: Themes
+category: themes
 ---
 
 # Custom Properties
 
-> **Wichtiger Hinweis:** Ab der aktuellen Version wurde der separate `custom-properties`-Layer in das übergreifende Tokensystem integriert. Die grundlegenden Funktionen und Vorteile von CSS Custom Properties (CSS Variables) bleiben jedoch erhalten und werden nun zentral im `tokens`-Layer verwaltet.
+> **Wichtiger Note:** Ab the aktuellen version wurde the separate `custom-properties`-Layer in the ubergreifende Tokensystem integriert. the grundlegenden functions and Vorteile from CSS Custom Properties (CSS Variables) bleiben however erhalten and become nun zentral im `tokens`-Layer verwaltet.
 
-Die Casoon UI Library verwendet CSS Custom Properties (CSS Variables) für ein flexibles und konsistentes Theming-System. In der aktuellen Version werden diese Properties direkt im `tokens`-Layer definiert, was eine besser integrierte und wartbare Struktur ermöglicht.
+the Casoon UI Library verwendet CSS Custom Properties (CSS Variables) for a flexibles and konsistentes Theming-system. in the aktuellen version become these Properties direkt im `tokens`-Layer definiert, what a better integrierte and wartbare Structure ermoglicht.
 
-## Basis-Theme-Struktur
+## Base-theme-Structure
 
-Die Design Tokens definieren die grundlegenden Custom Properties:
+the design Tokens define the grundlegenden Custom Properties:
 
 ```css
 @layer tokens {
@@ -48,7 +48,7 @@ Die Design Tokens definieren die grundlegenden Custom Properties:
     --font-size-base: 1rem;
     --line-height-base: 1.5;
     
-    /* Abstände */
+    /* Abstande */
     --spacing-unit: 0.25rem;
     --spacing-1: calc(var(--spacing-unit) * 1);
     --spacing-2: calc(var(--spacing-unit) * 2);
@@ -60,12 +60,12 @@ Die Design Tokens definieren die grundlegenden Custom Properties:
     --border-width: 1px;
     --border-color: var(--color-gray-300);
     
-    /* Schatten */
+    /* shadow */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
     
-    /* Animation */
+    /* animation */
     --transition-base: all 0.3s ease;
     --transition-fast: all 0.15s ease;
     --transition-slow: all 0.5s ease;
@@ -73,32 +73,32 @@ Die Design Tokens definieren die grundlegenden Custom Properties:
 }
 ```
 
-## Theme-Überschreibung
+## theme-Uberschreibung
 
-### 1. Direkte Überschreibung
+### 1. Direkte Uberschreibung
 
-Sie können die Custom Properties direkt in Ihrem CSS überschreiben:
+You can the Custom Properties direkt in Ihrem CSS overwrite:
 
 ```css
 @layer tokens {
   :root {
-    /* Primärfarben anpassen */
+    /* Primarfarben customize */
     --color-primary: #FF6B6B;
     --color-primary-light: #FF9E9E;
     --color-primary-dark: #FF3B3B;
     
-    /* Schriftart ändern */
+    /* font change */
     --font-family-base: 'Inter', sans-serif;
     
-    /* Abstände anpassen */
+    /* Abstande customize */
     --spacing-unit: 0.5rem;
   }
 }
 ```
 
-### 2. Theme-Klassen
+### 2. theme-classes
 
-Alternativ können Sie Theme-Klassen verwenden:
+Alternativ can them theme-classes use:
 
 ```css
 @layer themes {
@@ -119,9 +119,9 @@ Alternativ können Sie Theme-Klassen verwenden:
 }
 ```
 
-### 3. Components-spezifische Customizations
+### 3. Components-spezifische customizations
 
-Sie können auch Custom Properties für spezifische Components definieren:
+You can also Custom Properties for spezifische Components define:
 
 ```css
 @layer core {
@@ -140,31 +140,31 @@ Sie können auch Custom Properties für spezifische Components definieren:
 
 ## Best Practices
 
-### 1. Theme-Struktur
+### 1. theme-Structure
 
 ```css
-/* 1. Basis-Theme (im tokens Layer) */
+/* 1. Base-theme (im tokens Layer) */
 @layer tokens {
   :root {
     /* Grundlegende Custom Properties */
   }
 }
 
-/* 2. Theme-Variants (im themes Layer) */
+/* 2. theme-Variants (im themes Layer) */
 @layer themes {
   .theme-light {
-    /* Helles Theme */
+    /* Helles theme */
   }
 
   .theme-dark {
-    /* Dunkles Theme */
+    /* Dunkles theme */
   }
 }
 
 /* 3. Components-spezifische Properties (im jeweiligen Components-Layer) */
 @layer core {
   .component {
-    /* Components-spezifische Customizations */
+    /* Components-spezifische customizations */
   }
 }
 ```
@@ -185,40 +185,40 @@ Sie können auch Custom Properties für spezifische Components definieren:
 }
 ```
 
-### 3. Dynamische Customizations
+### 3. Dynamische customizations
 
 ```javascript
-// Theme zur Laufzeit ändern
+// theme zur Laufzeit change
 document.documentElement.style.setProperty('--color-primary', '#FF6B6B');
 
-// Oder Theme-Klasse wechseln
+// or theme-Class wechseln
 document.body.classList.remove('theme-light');
 document.body.classList.add('theme-dark');
 ```
 
-## Performance-Optimierung mit Lightning CSS
+## Performance-Optimierung with Lightning CSS
 
-Lightning CSS (früher Parcel CSS) bietet optimierte Verarbeitung von CSS Custom Properties:
+Lightning CSS (fruher Parcel CSS) bietet optimierte Verarbeitung from CSS Custom Properties:
 
 1. **Effiziente Kompilierung**
    ```css
-   /* In einer zentralen Datei */
+   /* in einer zentralen file */
    @layer tokens {
      :root {
-       /* Alle Custom Properties */
+       /* all Custom Properties */
      }
    }
    ```
 
-2. **Theme-Wechsel optimieren**
+2. **theme-Wechsel optimieren**
    ```css
-   /* Theme-Wechsel mit Transition */
+   /* theme-Wechsel with transition */
    :root {
      transition: background-color 0.3s ease, color 0.3s ease;
    }
    ```
 
-3. **Fallbacks definieren**
+3. **Fallbacks define**
    ```css
    .element {
      background-color: var(--color-primary, #3366FF);
@@ -226,9 +226,9 @@ Lightning CSS (früher Parcel CSS) bietet optimierte Verarbeitung von CSS Custom
    }
    ```
 
-## Browser-Unterstützung
+## Browser-Unterstutzung
 
-CSS Custom Properties werden von allen modernen Browsern unterstützt:
+CSS Custom Properties become from allen modernen Browsern unterstutzt:
 
 - Chrome 49+
 - Firefox 31+
@@ -237,17 +237,17 @@ CSS Custom Properties werden von allen modernen Browsern unterstützt:
 
 ## Troubleshooting
 
-### Theme wird nicht angewendet
-- Überprüfen Sie die Spezifität der CSS-Regeln
-- Stellen Sie sicher, dass die Custom Properties im richtigen Layer definiert sind
-- Prüfen Sie die Layer-Reihenfolge
+### theme wird not angewendet
+- Uberprufen them the Spezifitat the CSS-Regeln
+- ensure, that the Custom Properties im richtigen Layer definiert sind
+- Prufen them the Layer-Reihenfolge
 
 ### Performance-Probleme
-- Reduzieren Sie die Anzahl der Custom Properties
-- Vermeiden Sie zu häufige Theme-Wechsel
-- Nutzen Sie CSS Variables sparsam in Animationen
+- Reduzieren them the Anzahl the Custom Properties
+- Vermeiden them to haufige theme-Wechsel
+- use them CSS Variables sparsam in animations
 
-### Browser-Kompatibilität
-- Testen Sie in verschiedenen Browsern
-- Verwenden Sie Fallback-Werte
-- Implementieren Sie einen Polyfill für ältere Browser, wenn nötig 
+### Browser-Kompatibilitat
+- Testen them in verschiedenen Browsern
+- use them Fallback-values
+- implement them einen Polyfill for altere Browser, if notig 

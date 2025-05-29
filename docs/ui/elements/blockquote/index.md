@@ -1,29 +1,29 @@
 ---
-title: Blockquote Element
+title: Blockquote element
 outline: deep
 ---
 
 
 # Blockquote
 
-Das Blockquote-Element dient zur Darstellung von Zitaten oder hervorgehobenen Textabschnitten. Es ist ein wichtiges typografisches Element, das Zitate visuell vom Haupttext absetzt.
+the Blockquote-element dient zur display from Zitaten or hervorgehobenen Textabschnitten. it ist a wichtiges typografisches element, the Zitate visuell vom Haupttext absetzt.
 
 ## Installation
 
-Das Blockquote-Element ist Teil der Casoon UI Library.
+the Blockquote-element ist Teil the Casoon UI Library.
 
 ```bash
-# Installation der gesamten Bibliothek
+# Installation the gesamten Bibliothek
 npm install @casoon/ui-lib
 ```
 
 ## Import
 
 ```css
-/* Import aller UI-Elemente */
+/* Import aller UI-elements */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Typography-Components */
+/* or only the Typography-Components */
 @import '@casoon/ui-lib/typography.css';
 ```
 
@@ -31,13 +31,13 @@ npm install @casoon/ui-lib
 
 ```html
 <blockquote>
-  Dies ist ein Zitat oder ein hervorgehobener Textabschnitt.
+  Dies ist a Zitat or a hervorgehobener Textabschnitt.
 </blockquote>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <blockquote style="border-left: 4px solid #e5e7eb; color: #4b5563; font-size: 1.125rem; font-style: italic; margin-bottom: 1.5rem; padding-left: 1rem;">
-    Dies ist ein Zitat oder ein hervorgehobener Textabschnitt.
+    Dies ist a Zitat or a hervorgehobener Textabschnitt.
   </blockquote>
 </div>
 
@@ -45,85 +45,85 @@ npm install @casoon/ui-lib
 
 ### Standard-Blockquote
 
-Die einfachste Form des Blockquote-Elements mit linkem Randbalken.
+the einfachste Form des Blockquote-Elements with linkem Randbalken.
 
 ```html
 <blockquote>
-  Design ist nicht nur, wie es aussieht und sich anfühlt. Design ist, wie es funktioniert.
+  design ist not only, how it aussieht and oneself anfuhlt. design ist, how it funktioniert.
 </blockquote>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <blockquote style="border-left: 4px solid #e5e7eb; color: #4b5563; font-size: 1.125rem; font-style: italic; margin-bottom: 1.5rem; padding-left: 1rem;">
-    Design ist nicht nur, wie es aussieht und sich anfühlt. Design ist, wie es funktioniert.
+    design ist not only, how it aussieht and oneself anfuhlt. design ist, how it funktioniert.
   </blockquote>
 </div>
 
-### Mit Quellenangabe
+### with Quellenangabe
 
-Füge eine Quellenangabe mit dem `<cite>`-Element hinzu.
+Fuge a Quellenangabe with dem `<cite>`-element hinzu.
 
 ```html
 <blockquote>
-  Design ist nicht nur, wie es aussieht und sich anfühlt. Design ist, wie es funktioniert.
+  design ist not only, how it aussieht and oneself anfuhlt. design ist, how it funktioniert.
   <cite>Steve Jobs</cite>
 </blockquote>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <blockquote style="border-left: 4px solid #e5e7eb; color: #4b5563; font-size: 1.125rem; font-style: italic; margin-bottom: 1.5rem; padding-left: 1rem;">
-    Design ist nicht nur, wie es aussieht und sich anfühlt. Design ist, wie es funktioniert.
+    design ist not only, how it aussieht and oneself anfuhlt. design ist, how it funktioniert.
     <cite style="color: #6b7280; display: block; font-size: 0.875rem; font-style: normal; font-weight: 500; margin-top: 0.5rem;">Steve Jobs</cite>
   </blockquote>
 </div>
 
 ### Pull-Quote
 
-Ein hervorgehobenes Zitat mit größerer Schrift und zentrierter Ausrichtung.
+a hervorgehobenes Zitat with grosserer font and zentrierter alignment.
 
 ```html
 <blockquote class="pull-quote">
-  Kreativität ist, Fehler zu erlauben. Kunst ist zu wissen, welche man behalten soll.
+  Kreativitat ist, errors to erlauben. Kunst ist to wissen, welche one behalten soll.
 </blockquote>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <blockquote style="color: #3b82f6; font-size: 1.5rem; font-style: italic; font-weight: 500; line-height: 1.25; margin: 2rem 0; padding: 1.5rem 2rem; position: relative; text-align: center;">
-    Kreativität ist, Fehler zu erlauben. Kunst ist zu wissen, welche man behalten soll.
+    Kreativitat ist, errors to erlauben. Kunst ist to wissen, welche one behalten soll.
   </blockquote>
 </div>
 
-### Im Content-Bereich
+### Im Content-area
 
-Innerhalb eines Content-Bereichs erhält das Blockquote einen leicht anderen Stil.
+within eines Content-Bereichs erhalt the Blockquote einen leicht anderen style.
 
 ```html
 <div class="content">
   <p>Einleitender Text...</p>
   
   <blockquote>
-    Ein Zitat innerhalb eines Content-Bereichs hat einen leicht grauen Hintergrund und einen farbigen Randbalken.
+    a Zitat within eines Content-Bereichs hat einen leicht grauen background and einen farbigen Randbalken.
   </blockquote>
   
-  <p>Fortführender Text...</p>
+  <p>Fortfuhrender Text...</p>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="color: #111827; font-size: 1rem; line-height: 1.6;">
     <p style="margin-bottom: 1em;">Einleitender Text...</p>
     
     <blockquote style="background-color: #f9fafb; border-left: 4px solid #3b82f6; font-style: italic; margin: 1.5em 0; padding: 1em 1.5em;">
-      Ein Zitat innerhalb eines Content-Bereichs hat einen leicht grauen Hintergrund und einen farbigen Randbalken.
+      a Zitat within eines Content-Bereichs hat einen leicht grauen background and einen farbigen Randbalken.
     </blockquote>
     
-    <p style="margin-bottom: 1em;">Fortführender Text...</p>
+    <p style="margin-bottom: 1em;">Fortfuhrender Text...</p>
   </div>
 </div>
 
 ## Anpassung
 
-Das Blockquote-Element kann über CSS Variables angepasst werden:
+the Blockquote-element kann over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -150,17 +150,17 @@ Das Blockquote-Element kann über CSS Variables angepasst werden:
 
 ## Accessibility
 
-- Verwende das `<blockquote>`-Element für Zitate, nicht nur für visuelle Gestaltung
-- Achte auf ausreichenden Kontrast zwischen Text und Hintergrund
-- Wenn möglich, gib mit `<cite>` die Quelle des Zitats an
-- Stelle sicher, dass die Schriftgröße und der Zeilenabstand gut lesbar sind
+- Verwende the `<blockquote>`-element for Zitate, not only for visuelle Gestaltung
+- Achte on ausreichenden Kontrast between Text and background
+- if moglich, gib with `<cite>` the Quelle des Zitats on
+- Stelle sicher, that the Schriftgrosse and the line-height good lesbar sind
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Das Blockquote-Element ist mit allen modernen Browsern kompatibel.
+the Blockquote-element ist with allen modernen Browsern kompatibel.
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
+| Grundlegende Funktionalitat | ✅ | ✅ | ✅ | ✅ |
 | CSS Styling | ✅ | ✅ | ✅ | ✅ |
 | CSS Variables | 49+ | 31+ | 9.1+ | 15+ | 

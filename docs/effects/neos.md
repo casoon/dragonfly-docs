@@ -3,80 +3,80 @@ title: Neos Effects
 category: Effects
 ---
 
-# Neos-Effekte
+# Neos-effects
 
-Die Neos-Effekte der Casoon UI Library bieten eine Sammlung moderner, futuristischer Gestaltungselemente im Neon-Cyberpunk-Stil, die Ihrer Benutzeroberfläche ein einzigartiges, futuristisches Aussehen verleihen.
+the Neos-effects the Casoon UI Library bieten a Sammlung moderner, futuristischer Gestaltungselemente im Neon-Cyberpunk-Style, the Ihrer Benutzeroberflache a einzigartiges, futuristisches Aussehen verleihen.
 
-## Überblick
+## Uberblick
 
-Die Neos-Effekte kombinieren leuchtende Colors, scharfe Kontraste und dynamische Elemente, um eine futuristische Ästhetik zu schaffen. Sie eignen sich hervorragend für moderne Web-Apps, Spieleoberflächen und Projekte mit Cyberpunk- oder Sci-Fi-Thematik.
+the Neos-effects combine leuchtende Colors, scharfe Kontraste and dynamische elements, um a futuristische Asthetik to schaffen. them eignen oneself hervorragend for moderne Web-Apps, Spieleoberflachen and Projekte with Cyberpunk- or Sci-Fi-Thematik.
 
 ## Installation
 
-Importieren Sie das Neos-Effekte-Modul über CSS:
+import them the Neos-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/neos.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
-### Grundlegende Neos-Elemente
+### Grundlegende Neos-elements
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.neos` | Grundlegende Neos-Stilisierung mit leuchtenden Kanten |
-| `.neos-text` | Text mit Neos-Stilisierung |
-| `.neos-border` | Element mit leuchtender Neos-Umrandung |
-| `.neos-box` | Box mit Neos-Stilisierung |
-| `.neos-card` | Card mit Neos-Stilisierung |
-| `.neos-button` | Button mit Neos-Stilisierung |
+| `.neos` | Grundlegende Neos-Stilisierung with leuchtenden Kanten |
+| `.neos-text` | Text with Neos-Stilisierung |
+| `.neos-border` | element with leuchtender Neos-Umrandung |
+| `.neos-box` | box with Neos-Stilisierung |
+| `.neos-card` | Card with Neos-Stilisierung |
+| `.neos-button` | button with Neos-Stilisierung |
 
 ### Neos-Colors
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
 | `.neos-cyan` | Cyan-farbene Neos-Stilisierung |
 | `.neos-magenta` | Magenta-farbene Neos-Stilisierung |
 | `.neos-yellow` | Gelbe Neos-Stilisierung |
-| `.neos-green` | Grüne Neos-Stilisierung |
+| `.neos-green` | Grune Neos-Stilisierung |
 | `.neos-blue` | Blaue Neos-Stilisierung |
 | `.neos-purple` | Violette Neos-Stilisierung |
 | `.neos-red` | Rote Neos-Stilisierung |
 | `.neos-orange` | Orange Neos-Stilisierung |
 | `.neos-multi` | Mehrfarbige Neos-Stilisierung |
 
-### Neos-Effekte
+### Neos-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.neos-glow` | Verstärkter Leuchteffekt |
+| `.neos-glow` | Verstarkter Leuchteffekt |
 | `.neos-pulse` | Pulsierender Leuchteffekt |
 | `.neos-flicker` | Flackernder Leuchteffekt |
 | `.neos-shadow` | Neos-Schatteneffekt |
-| `.neos-scanline` | Scanline-Effekt für Retro-CRT-Look |
-| `.neos-glitch` | Glitch-Effekt für digitale Störungen |
-| `.neos-circuit` | Schaltkreis-Muster-Effekt |
+| `.neos-scanline` | Scanline-effect for Retro-CRT-Look |
+| `.neos-glitch` | Glitch-effect for digitale Storungen |
+| `.neos-circuit` | Schaltkreis-pattern-effect |
 | `.neos-grid` | Neos-Rasterhintergrund |
-| `.neos-hologram` | Hologramm-ähnlicher Effekt |
+| `.neos-hologram` | Hologramm-ahnlicher effect |
 
-### Neos-Layouts
+### Neos-layouts
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.neos-container` | Container mit Neos-Stilisierung |
-| `.neos-panel` | Panel mit Neos-Stilisierung |
-| `.neos-terminal` | Terminal-ähnliches Element |
-| `.neos-dashboard` | Dashboard mit Neos-Stilisierung |
-| `.neos-hud` | Head-up-Display-Stil |
+| `.neos-containers` | containers with Neos-Stilisierung |
+| `.neos-panel` | panel with Neos-Stilisierung |
+| `.neos-terminal` | Terminal-ahnliches element |
+| `.neos-dashboard` | Dashboard with Neos-Stilisierung |
+| `.neos-hud` | Head-up-Display-Style |
 
 ## Examples
 
-### Neos-Button
+### Neos-button
 
 ```html
 <button class="neos-button neos-cyan">
-  <span class="neos-button-text">Neos Button</span>
+  <span class="neos-button-text">Neos button</span>
 </button>
 
 <style>
@@ -130,10 +130,10 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
     <h3 class="neos-text">Neos Card</h3>
   </div>
   <div class="neos-card-body">
-    <p>Dieser Inhalt wird im futuristischen Neos-Stil dargestellt.</p>
+    <p>this content wird im futuristischen Neos-Style dargestellt.</p>
   </div>
   <div class="neos-card-footer">
-    <button class="neos-button neos-purple">Mehr erfahren</button>
+    <button class="neos-button neos-purple">more erfahren</button>
   </div>
 </div>
 
@@ -181,8 +181,8 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
   </div>
   <div class="neos-terminal-body">
     <div class="neos-terminal-line">$ system_init</div>
-    <div class="neos-terminal-line">Initialisiere System...</div>
-    <div class="neos-terminal-line">Zugriff auf Netzwerk hergestellt</div>
+    <div class="neos-terminal-line">Initialisiere system...</div>
+    <div class="neos-terminal-line">Zugriff on Netzwerk hergestellt</div>
     <div class="neos-terminal-line">Status: Online</div>
     <div class="neos-terminal-line neos-terminal-cursor">$</div>
   </div>
@@ -275,7 +275,7 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
   <div class="neos-dashboard-grid">
     <div class="neos-panel neos-cyan">
       <div class="neos-panel-header">
-        <h3 class="neos-text">System Status</h3>
+        <h3 class="neos-text">system Status</h3>
       </div>
       <div class="neos-panel-body">
         <div class="neos-stat">
@@ -306,13 +306,13 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
     
     <div class="neos-panel neos-magenta">
       <div class="neos-panel-header">
-        <h3 class="neos-text">Aktivität</h3>
+        <h3 class="neos-text">Aktivitat</h3>
       </div>
       <div class="neos-panel-body">
         <div class="neos-activity-log">
           <div class="neos-activity-item">
             <span class="neos-activity-time">10:42</span>
-            <span class="neos-activity-text">System-Update abgeschlossen</span>
+            <span class="neos-activity-text">system-Update abgeschlossen</span>
           </div>
           <div class="neos-activity-item">
             <span class="neos-activity-time">10:31</span>
@@ -328,22 +328,22 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
     
     <div class="neos-panel neos-yellow">
       <div class="neos-panel-header">
-        <h3 class="neos-text">Benachrichtigungen</h3>
+        <h3 class="neos-text">notifications</h3>
       </div>
       <div class="neos-panel-body">
         <div class="neos-notification">
           <div class="neos-notification-icon">!</div>
           <div class="neos-notification-content">
-            <div class="neos-notification-title">System-Warnung</div>
-            <div class="neos-notification-message">Speichernutzung über 80%</div>
+            <div class="neos-notification-title">system-warning</div>
+            <div class="neos-notification-message">Speichernutzung over 80%</div>
           </div>
         </div>
         
         <div class="neos-notification">
           <div class="neos-notification-icon">i</div>
           <div class="neos-notification-content">
-            <div class="neos-notification-title">Info</div>
-            <div class="neos-notification-message">5 neue Updates verfügbar</div>
+            <div class="neos-notification-title">info</div>
+            <div class="neos-notification-message">5 neue Updates verfugbar</div>
           </div>
         </div>
       </div>
@@ -463,9 +463,9 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Neos-Effekte können über CSS Variables angepasst werden:
+the Neos-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -502,7 +502,7 @@ Die Neos-Effekte können über CSS Variables angepasst werden:
   --neos-orange-rgb: 255, 102, 0;
   --neos-orange-glow: rgba(255, 102, 0, 0.6);
   
-  /* Effekt-Parameter */
+  /* effect-parameter */
   --neos-glow-intensity: 0.7;
   --neos-pulse-speed: 2s;
   --neos-flicker-speed: 0.1s;
@@ -513,21 +513,21 @@ Die Neos-Effekte können über CSS Variables angepasst werden:
   /* Textschatten */
   --neos-text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
   
-  /* Hintergrund */
+  /* background */
   --neos-bg-color: rgba(10, 10, 20, 0.95);
 }
 ```
 
 ## Accessibility
 
-Bei der Usage von Neos-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Neos-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie trotz leuchtender Effekte einen ausreichenden Kontrast sicher
-2. **Flackernde Effekte**: Vermeiden Sie übermäßig flackernde Effekte für Menschen mit Empfindlichkeiten
-3. **Alternative Styles**: Bieten Sie eine nicht-Neos Version für Nutzer, die reduzierte Bewegung bevorzugen
+1. **Kontrast**: Stellen them despite leuchtender effects einen ausreichenden Kontrast sicher
+2. **Flackernde effects**: Vermeiden them ubermassig flackernde effects for Menschen with Empfindlichkeiten
+3. **Alternative Styles**: Bieten them a not-Neos version for Nutzer, the reduzierte Bewegung bevorzugen
 
 ```css
-/* Alternative Styles für reduzierte Bewegung */
+/* Alternative Styles for reduzierte Bewegung */
 @media (prefers-reduced-motion: reduce) {
   .neos-pulse, 
   .neos-flicker, 
@@ -541,13 +541,13 @@ Bei der Usage von Neos-Effekten sollten folgende Accessibilitysaspekte berücksi
   }
 }
 
-/* Verbesserter Kontrast für bessere Lesbarkeit */
+/* Verbesserter Kontrast for bessere Lesbarkeit */
 .neos-text {
   font-weight: bold;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Neos-Effekte werden von allen modernen Browsern unterstützt. Für ältere Browser werden alternative Stiloptionen angeboten. 
+the Neos-effects become from allen modernen Browsern unterstutzt. for altere Browser become alternative Stiloptionen angeboten. 

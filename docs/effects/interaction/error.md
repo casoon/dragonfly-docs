@@ -1,70 +1,70 @@
-# Error-Effekte
+# Error-effects
 
-Error-Effekte werden verwendet, um dem Benutzer visuell zu signalisieren, dass bei einer Interaktion ein Fehler aufgetreten ist oder dass ein Element einen fehlerhaften Zustand aufweist. Die `@casoon/ui-lib` bietet verschiedene Error-Effekte, die dazu beitragen, Fehlerzustände klar und konsistent darzustellen.
+Error-effects become verwendet, um dem user visuell to signalisieren, that at einer interaction a errors aufgetreten ist or that a element einen fehlerhaften state aufweist. the `@casoon/ui-lib` bietet verschiedene Error-effects, the for that beitragen, Fehlerzustande klar and konsistent darzustellen.
 
 ## Basic Usage
 
-Der grundlegende Error-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Error-effect kann on jedes element angewendet become:
 
 ```html
 <input type="text" class="error">
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Error-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Error-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.error` | Basisklasse für Fehlerdarstellung |
-| `.error-border` | Fehler mit rotem Rand |
-| `.error-bg` | Fehler mit Hintergrundfarbe |
-| `.error-text` | Fehler mit roter Textfarbe |
-| `.error-shake` | Fehler mit Schüttelanimation |
-| `.error-pulse` | Fehler mit Pulsiereffekt |
-| `.error-glow` | Fehler mit rotem Glüheffekt |
-| `.error-icon` | Fehler mit Icon-Indikator |
+| `.error` | Basisklasse for Fehlerdarstellung |
+| `.error-border` | errors with rotem margin |
+| `.error-bg` | errors with Hintergrundfarbe |
+| `.error-text` | errors with roter Textfarbe |
+| `.error-shake` | errors with Schuttelanimation |
+| `.error-pulse` | errors with Pulsiereffekt |
+| `.error-glow` | errors with rotem Gluheffekt |
+| `.error-icon` | errors with icon-Indikator |
 
 ## Variants
 
-### Border-Effekt
+### Border-effect
 
-Der klassische Fehlereffekt mit rotem Rand:
+the klassische Fehlereffekt with rotem margin:
 
 ```html
-<input type="text" class="error-border" placeholder="Ungültige E-Mail">
+<input type="text" class="error-border" placeholder="Ungultige E-Mail">
 ```
 
-### Background-Effekt
+### Background-effect
 
-Fehlerdarstellung mit subtiler Hintergrundfarbe:
+Fehlerdarstellung with subtiler Hintergrundfarbe:
 
 ```html
 <div class="form-group error-bg">
   <label>Name</label>
-  <input type="text" placeholder="Ungültiger Name">
+  <input type="text" placeholder="Ungultiger Name">
 </div>
 ```
 
-### Text-Effekt
+### Text-effect
 
-Fehlerdarstellung mit roter Textfarbe:
-
-```html
-<p class="error-text">Diese Aktion konnte nicht ausgeführt werden.</p>
-```
-
-### Shake-Effekt
-
-Dynamische Fehlerdarstellung mit kurzer Schüttelanimation:
+Fehlerdarstellung with roter Textfarbe:
 
 ```html
-<button class="btn error-shake">Ungültige Eingabe</button>
+<p class="error-text">these Aktion konnte not ausgefuhrt become.</p>
 ```
 
-### Pulse-Effekt
+### Shake-effect
 
-Pulsierende Fehlerdarstellung für höhere Aufmerksamkeit:
+Dynamische Fehlerdarstellung with kurzer Schuttelanimation:
+
+```html
+<button class="btn error-shake">Ungultige input</button>
+```
+
+### Pulse-effect
+
+Pulsierende Fehlerdarstellung for hohere Aufmerksamkeit:
 
 ```html
 <div class="notification error-pulse">
@@ -72,30 +72,30 @@ Pulsierende Fehlerdarstellung für höhere Aufmerksamkeit:
 </div>
 ```
 
-### Glow-Effekt
+### Glow-effect
 
-Fehlerdarstellung mit rotem Glüheffekt:
+Fehlerdarstellung with rotem Gluheffekt:
 
 ```html
-<input type="password" class="error-glow" placeholder="Passwort ist zu schwach">
+<input type="password" class="error-glow" placeholder="Passwort ist to schwach">
 ```
 
-### Icon-Effekt
+### icon-effect
 
-Fehlerdarstellung mit Error-Icon:
+Fehlerdarstellung with Error-icon:
 
 ```html
 <div class="form-control error-icon">
   <input type="email" placeholder="E-Mail Adresse">
-  <!-- Icon wird per CSS eingefügt -->
+  <!-- icon wird per CSS eingefugt -->
 </div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Error-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Error-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Formelemente
+### form elements
 
 ```html
 <div class="form-group">
@@ -111,36 +111,36 @@ Error-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 
 <select class="error-border">
-  <option value="">Bitte wählen</option>
+  <option value="">please wahlen</option>
   <option value="1">Option 1</option>
   <option value="2">Option 2</option>
 </select>
 ```
 
-### Buttons und Aktionen
+### buttons and Aktionen
 
 ```html
 <button class="btn error-border">Fehlgeschlagene Aktion</button>
-<a href="#" class="link error-text">Ungültiger Link</a>
+<a href="#" class="link error-text">Ungultiger link</a>
 ```
 
-### Benachrichtigungen und Alerts
+### notifications and Alerts
 
 ```html
 <div class="alert error-bg">
-  <h4>Fehler aufgetreten</h4>
-  <p>Die Daten konnten nicht gespeichert werden.</p>
+  <h4>errors aufgetreten</h4>
+  <p>the Daten konnten not gespeichert become.</p>
 </div>
 
 <div class="toast error-border">
-  <div class="toast-header">Fehler</div>
+  <div class="toast-header">errors</div>
   <div class="toast-body">Aktion fehlgeschlagen</div>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Error-Effekte können über CSS Variables angepasst werden:
+the Error-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -149,16 +149,16 @@ Die Error-Effekte können über CSS Variables angepasst werden:
   --error-border-width: 1px; /* Fehlerrandbreite */
   --error-background: rgba(220, 53, 69, 0.1); /* Fehlerhintergrundfarbe */
   --error-text-color: #dc3545; /* Fehlertextfarbe */
-  --error-shake-distance: 5px; /* Distanz für Schüttelanimation */
-  --error-shake-duration: 0.4s; /* Dauer der Schüttelanimation */
-  --error-pulse-opacity: 0.8; /* Deckkraft für Pulsiereffekt */
+  --error-shake-distance: 5px; /* Distanz for Schuttelanimation */
+  --error-shake-duration: 0.4s; /* Dauer the Schuttelanimation */
+  --error-pulse-opacity: 0.8; /* Deckkraft for Pulsiereffekt */
   --error-pulse-duration: 1.5s; /* Dauer des Pulsiereffekts */
-  --error-glow-radius: 4px; /* Radius für Glüheffekt */
-  --error-glow-intensity: 0.5; /* Intensität des Glüheffekts */
-  --error-icon-size: 16px; /* Größe des Fehler-Icons */
+  --error-glow-radius: 4px; /* Radius for Gluheffekt */
+  --error-glow-intensity: 0.5; /* Intensitat des Gluheffekts */
+  --error-icon-size: 16px; /* size des errors-icons */
 }
 
-/* Anpassung für dunkle Themes */
+/* Customization for dunkle themes */
 .dark-theme {
   --error-color: #ff6b6b;
   --error-background: rgba(255, 107, 107, 0.15);
@@ -168,7 +168,7 @@ Die Error-Effekte können über CSS Variables angepasst werden:
 
 ## Dynamische Fehlerdarstellung
 
-Error-Effekte können dynamisch hinzugefügt werden, typischerweise bei der Formvalidierung:
+Error-effects can dynamisch hinzugefugt become, typischerweise at the Formvalidierung:
 
 ```html
 <form id="example-form">
@@ -189,33 +189,33 @@ Error-Effekte können dynamisch hinzugefügt werden, typischerweise bei der Form
 ```
 
 ```javascript
-// Formvalidierung mit Error-Effekten
+// Formvalidierung with Error-Effekten
 const form = document.getElementById('example-form');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   
-  // Alle Fehler zurücksetzen
+  // all errors zurucksetzen
   resetErrors();
   
-  // Validierung durchführen
+  // validation durchfuhren
   let hasErrors = false;
   
   // E-Mail validieren
   const emailInput = document.getElementById('email');
   if (!isValidEmail(emailInput.value)) {
-    showError(emailInput, 'Bitte geben Sie eine gültige E-Mail-Adresse ein');
+    showError(emailInput, 'please geben them a gultige E-Mail-Adresse a');
     hasErrors = true;
   }
   
   // Passwort validieren
   const passwordInput = document.getElementById('password');
   if (passwordInput.value.length < 8) {
-    showError(passwordInput, 'Das Passwort muss mindestens 8 Zeichen enthalten');
+    showError(passwordInput, 'the Passwort muss mindestens 8 Zeichen enthalten');
     hasErrors = true;
   }
   
-  // Wenn keine Fehler, Form absenden
+  // if no errors, Form absenden
   if (!hasErrors) {
     // Form absenden...
     console.log('Form wird abgesendet');
@@ -223,7 +223,7 @@ form.addEventListener('submit', function(event) {
 });
 
 function showError(inputElement, message) {
-  // Fehlerklassen hinzufügen
+  // Fehlerklassen add
   inputElement.classList.add('error-border');
   inputElement.classList.add('error-shake');
   
@@ -234,24 +234,24 @@ function showError(inputElement, message) {
     errorContainer.classList.add('error-text');
   }
   
-  // Nach Shake-Animation die Klasse entfernen
+  // after Shake-animation the Class remove
   setTimeout(() => {
     inputElement.classList.remove('error-shake');
   }, 500);
 }
 
 function resetErrors() {
-  // Alle Fehlerklassen entfernen
+  // all Fehlerklassen remove
   const inputs = form.querySelectorAll('input');
   inputs.forEach(input => {
     input.classList.remove('error-border', 'error-shake', 'error-glow');
   });
   
-  // Alle Fehlermeldungen leeren
+  // all Fehlermeldungen leeren
   const errorMessages = form.querySelectorAll('.error-message');
-  errorMessages.forEach(container => {
-    container.textContent = '';
-    container.classList.remove('error-text');
+  errorMessages.forEach(containers => {
+    containers.textContent = '';
+    containers.classList.remove('error-text');
   });
 }
 
@@ -263,16 +263,16 @@ function isValidEmail(email) {
 
 ## Accessibility
 
-Bei der Usage von Error-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Error-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Semantik**: Verwenden Sie `aria-invalid="true"` für fehlerhafte Inputer
-2. **Fehlermeldungen**: Verbinden Sie Fehlermeldungen mit `aria-describedby`
-3. **Kontrast**: Achten Sie auf ausreichenden Kontrast für Fehlerfarben
-4. **Multiple Signale**: Verlassen Sie sich nicht nur auf Farbe zur Fehlerdarstellung
-5. **Live-Regions**: Verwenden Sie `aria-live` für dynamisch hinzugefügte Fehlermeldungen
+1. **Semantik**: use them `aria-invalid="true"` for fehlerhafte Inputer
+2. **Fehlermeldungen**: connect them Fehlermeldungen with `aria-describedby`
+3. **Kontrast**: ensure them on ausreichenden Kontrast for Fehlerfarben
+4. **Multiple Signale**: Verlassen them oneself not only on color zur Fehlerdarstellung
+5. **Live-Regions**: use them `aria-live` for dynamisch hinzugefugte Fehlermeldungen
 
 ```html
-<!-- Barrierefreies Form mit Error-Effekten -->
+<!-- Barrierefreies Form with Error-Effekten -->
 <div class="form-group">
   <label for="creditcard">Kreditkartennummer</label>
   <input 
@@ -283,17 +283,17 @@ Bei der Usage von Error-Effekten sollten folgende Accessibilitysaspekte berücks
     aria-describedby="cc-error"
   >
   <p id="cc-error" class="error-text" role="alert">
-    Ungültige Kreditkartennummer
+    Ungultige Kreditkartennummer
   </p>
 </div>
 ```
 
-## Animation und Timing
+## animation and Timing
 
-Die Dauer und das Timing von Error-Animationen sind wichtig für eine gute Benutzererfahrung:
+the Dauer and the Timing from Error-animations sind important for a gute Benutzererfahrung:
 
 ```css
-/* Schüttelanimation */
+/* Schuttelanimation */
 @keyframes errorShake {
   0%, 100% { transform: translateX(0); }
   20%, 60% { transform: translateX(var(--error-shake-distance)); }
@@ -315,12 +315,12 @@ Die Dauer und das Timing von Error-Animationen sind wichtig für eine gute Benut
 }
 ```
 
-## Formlive-Validierung
+## Formlive-validation
 
-Error-Effekte können mit Live-Validierung kombiniert werden:
+Error-effects can with Live-validation kombiniert become:
 
 ```javascript
-// Live-Validierung mit Error-Effekten
+// Live-validation with Error-Effekten
 document.querySelectorAll('input, select, textarea').forEach(field => {
   field.addEventListener('blur', function() {
     validateField(this);
@@ -334,32 +334,32 @@ document.querySelectorAll('input, select, textarea').forEach(field => {
 });
 
 function validateField(field) {
-  // Validierungslogik basierend auf Feldtyp
+  // Validierungslogik basierend on Feldtyp
   let isValid = true;
   let errorMessage = '';
   
-  // Prüfen, ob ein Wert vorhanden ist, falls erforderlich
+  // Prufen, whether a Value vorhanden ist, if erforderlich
   if (field.hasAttribute('required') && !field.value.trim()) {
     isValid = false;
-    errorMessage = 'Dieses Feld ist erforderlich';
+    errorMessage = 'this Feld ist erforderlich';
   } 
-  // E-Mail-Validierung
+  // E-Mail-validation
   else if (field.type === 'email' && field.value && !isValidEmail(field.value)) {
     isValid = false;
-    errorMessage = 'Bitte geben Sie eine gültige E-Mail-Adresse ein';
+    errorMessage = 'please geben them a gultige E-Mail-Adresse a';
   }
-  // Passwortlängenprüfung
+  // Passwortlangenprufung
   else if (field.type === 'password' && field.minLength && field.value.length < field.minLength) {
     isValid = false;
-    errorMessage = `Das Passwort muss mindestens ${field.minLength} Zeichen enthalten`;
+    errorMessage = `the Passwort muss mindestens ${field.minLength} Zeichen enthalten`;
   }
   
-  // Fehlerdarstellung anwenden oder entfernen
+  // Fehlerdarstellung anwenden or remove
   if (!isValid) {
     field.classList.add('error-border');
     field.setAttribute('aria-invalid', 'true');
     
-    // Fehlermeldung aktualisieren, wenn vorhanden
+    // Fehlermeldung aktualisieren, if vorhanden
     const errorContainer = field.nextElementSibling;
     if (errorContainer && errorContainer.classList.contains('error-message')) {
       errorContainer.textContent = errorMessage;
@@ -371,11 +371,11 @@ function validateField(field) {
       field.setAttribute('aria-describedby', errorId);
     }
   } else {
-    // Fehler entfernen
+    // errors remove
     field.classList.remove('error-border');
     field.setAttribute('aria-invalid', 'false');
     
-    // Fehlermeldung leeren, wenn vorhanden
+    // Fehlermeldung leeren, if vorhanden
     const errorContainer = field.nextElementSibling;
     if (errorContainer && errorContainer.classList.contains('error-message')) {
       errorContainer.textContent = '';
@@ -386,20 +386,20 @@ function validateField(field) {
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Error-Effekte sind mit allen modernen Browsern kompatibel. Einige Animationseffekte haben jedoch Einschränkungen in älteren Browsern.
+the meisten Error-effects sind with allen modernen Browsern kompatibel. some Animationseffekte have however Einschrankungen in alteren Browsern.
 
-| Browser | Kompatibilität |
+| Browser | Kompatibilitat |
 |---------|---------------|
-| Chrome | Vollständige Unterstützung |
-| Firefox | Vollständige Unterstützung |
-| Safari | Vollständige Unterstützung |
-| Edge | Vollständige Unterstützung |
-| IE11 | Eingeschränkte Unterstützung für Animationen und Glüheffekte |
+| Chrome | Vollstandige Unterstutzung |
+| Firefox | Vollstandige Unterstutzung |
+| Safari | Vollstandige Unterstutzung |
+| Edge | Vollstandige Unterstutzung |
+| IE11 | Eingeschrankte Unterstutzung for animations and Gluheffekte |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Focus-Effekte](/docs/effects/interaction/focus.md) - Effekte beim Fokussieren von Elementen
-- [Warning-Effekte](/docs/effects/interaction/warning.md) - Warnhinweiseffekte
-- [Success-Effekte](/docs/effects/interaction/success.md) - Erfolgseffekte 
+- [Focus-effects](/docs/effects/interaction/focus.md) - effects beim Fokussieren from Elementen
+- [Warning-effects](/docs/effects/interaction/warning.md) - Warnhinweiseffekte
+- [Success-effects](/docs/effects/interaction/success.md) - Erfolgseffekte 

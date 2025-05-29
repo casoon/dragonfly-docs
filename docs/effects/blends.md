@@ -3,95 +3,95 @@ title: Blend Effects
 category: Effects
 ---
 
-# Blend-Effekte
+# Blend-effects
 
-Die Blend-Effekte der Casoon UI Library bieten eine umfassende Sammlung von Mischmodi und Überlagerungseffekten, die die visuelle Interaktion zwischen Elementen bestimmen und einzigartige visuelle Ergebnisse erzeugen.
+the Blend-effects the Casoon UI Library bieten a umfassende Sammlung from Mischmodi and Uberlagerungseffekten, the the visuelle interaction between Elementen bestimmen and einzigartige visuelle Ergebnisse erzeugen.
 
-## Überblick
+## Uberblick
 
-Die Blend-Effekte nutzen CSS-Mischmodi, um zu kontrollieren, wie Elemente miteinander interagieren, wenn sie übereinander liegen. Sie können verwendet werden, um interessante visuelle Effekte, dynamische Bildüberlagerungen und kreative UI-Elemente zu erstellen.
+the Blend-effects use CSS-Mischmodi, To kontrollieren, how elements miteinander interagieren, If you ubereinander liegen. You can verwendet become, um interessante visuelle effects, dynamische Bilduberlagerungen and kreative UI-elements to create.
 
 ## Installation
 
-Importieren Sie das Blend-Effekte-Modul über CSS:
+import them the Blend-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/blend.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
 ### Grundlegende Blend-Modi
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.blend-normal` | Standarddarstellung ohne Mischeffekt |
-| `.blend-multiply` | Multiplikation der Colors (dunkler) |
+| `.blend-normal` | Standarddarstellung without Mischeffekt |
+| `.blend-multiply` | Multiplikation the Colors (dunkler) |
 | `.blend-screen` | Umkehrung, Multiplikation, Umkehrung (heller) |
-| `.blend-overlay` | Kombiniert Multiply und Screen |
-| `.blend-darken` | Behält die dunkleren Pixel |
-| `.blend-lighten` | Behält die helleren Pixel |
-| `.blend-color-dodge` | Teilt die Hintergrundfarbe durch die inverse Vordergrundfarbe |
-| `.blend-color-burn` | Invertiert den Hintergrund, teilt durch Vordergrund, invertiert |
-| `.blend-hard-light` | Ähnlich wie Overlay, aber Vorder- und Hintergrund tauschen |
-| `.blend-soft-light` | Weichere Version von Hard-Light |
-| `.blend-difference` | Subtrahiert die dunklere von der helleren Farbe |
-| `.blend-exclusion` | Ähnlich wie Difference, aber mit niedrigerem Kontrast |
-| `.blend-hue` | Wendet den Farbton des Vordergrunds auf den Hintergrund an |
-| `.blend-saturation` | Wendet die Sättigung des Vordergrunds auf den Hintergrund an |
-| `.blend-color` | Wendet Farbton und Sättigung des Vordergrunds auf den Hintergrund an |
-| `.blend-luminosity` | Wendet die Helligkeit des Vordergrunds auf den Hintergrund an |
+| `.blend-overlay` | Kombiniert Multiply and Screen |
+| `.blend-darken` | Behalt the dunkleren Pixel |
+| `.blend-lighten` | Behalt the helleren Pixel |
+| `.blend-color-dodge` | Teilt the Hintergrundfarbe through the inverse Vordergrundfarbe |
+| `.blend-color-burn` | Invertiert den background, teilt through foreground, invertiert |
+| `.blend-hard-light` | Ahnlich how Overlay, but Vorder- and background tauschen |
+| `.blend-soft-light` | Weichere version from Hard-Light |
+| `.blend-difference` | Subtrahiert the dunklere from the helleren color |
+| `.blend-exclusion` | Ahnlich how Difference, but with niedrigerem Kontrast |
+| `.blend-hue` | Wendet den Farbton des Vordergrunds on den background on |
+| `.blend-saturation` | Wendet the Sattigung des Vordergrunds on den background on |
+| `.blend-color` | Wendet Farbton and Sattigung des Vordergrunds on den background on |
+| `.blend-luminosity` | Wendet the Helligkeit des Vordergrunds on den background on |
 
-### Blend-Modi für Hintergründe
+### Blend-Modi for Hintergrunde
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.bg-blend-normal` | Normaler Mischmodus für Hintergrundbilder |
-| `.bg-blend-multiply` | Multiply-Mischmodus für Hintergrundbilder |
-| `.bg-blend-screen` | Screen-Mischmodus für Hintergrundbilder |
-| `.bg-blend-overlay` | Overlay-Mischmodus für Hintergrundbilder |
-| `.bg-blend-darken` | Darken-Mischmodus für Hintergrundbilder |
-| `.bg-blend-lighten` | Lighten-Mischmodus für Hintergrundbilder |
-| `.bg-blend-color-dodge` | Color-Dodge-Mischmodus für Hintergrundbilder |
-| `.bg-blend-color-burn` | Color-Burn-Mischmodus für Hintergrundbilder |
-| `.bg-blend-hard-light` | Hard-Light-Mischmodus für Hintergrundbilder |
-| `.bg-blend-soft-light` | Soft-Light-Mischmodus für Hintergrundbilder |
-| `.bg-blend-difference` | Difference-Mischmodus für Hintergrundbilder |
-| `.bg-blend-exclusion` | Exclusion-Mischmodus für Hintergrundbilder |
-| `.bg-blend-hue` | Hue-Mischmodus für Hintergrundbilder |
-| `.bg-blend-saturation` | Saturation-Mischmodus für Hintergrundbilder |
-| `.bg-blend-color` | Color-Mischmodus für Hintergrundbilder |
-| `.bg-blend-luminosity` | Luminosity-Mischmodus für Hintergrundbilder |
+| `.bg-blend-normal` | Normaler Mischmodus for Hintergrundbilder |
+| `.bg-blend-multiply` | Multiply-Mischmodus for Hintergrundbilder |
+| `.bg-blend-screen` | Screen-Mischmodus for Hintergrundbilder |
+| `.bg-blend-overlay` | Overlay-Mischmodus for Hintergrundbilder |
+| `.bg-blend-darken` | Darken-Mischmodus for Hintergrundbilder |
+| `.bg-blend-lighten` | Lighten-Mischmodus for Hintergrundbilder |
+| `.bg-blend-color-dodge` | Color-Dodge-Mischmodus for Hintergrundbilder |
+| `.bg-blend-color-burn` | Color-Burn-Mischmodus for Hintergrundbilder |
+| `.bg-blend-hard-light` | Hard-Light-Mischmodus for Hintergrundbilder |
+| `.bg-blend-soft-light` | Soft-Light-Mischmodus for Hintergrundbilder |
+| `.bg-blend-difference` | Difference-Mischmodus for Hintergrundbilder |
+| `.bg-blend-exclusion` | Exclusion-Mischmodus for Hintergrundbilder |
+| `.bg-blend-hue` | Hue-Mischmodus for Hintergrundbilder |
+| `.bg-blend-saturation` | Saturation-Mischmodus for Hintergrundbilder |
+| `.bg-blend-color` | Color-Mischmodus for Hintergrundbilder |
+| `.bg-blend-luminosity` | Luminosity-Mischmodus for Hintergrundbilder |
 
-### Isolations-Klassen
+### Isolations-classes
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.isolation-auto` | Automatische Isolierung von Blend-Effekten |
-| `.isolation-isolate` | Erzwingt die Isolierung von Blend-Effekten |
+| `.isolation-auto` | Automatische Isolierung from Blend-Effekten |
+| `.isolation-isolate` | Erzwingt the Isolierung from Blend-Effekten |
 
 ## Examples
 
-### Text mit Hintergrundbild und Blend-Modus
+### Text with Hintergrundbild and Blend-Modus
 
 ```html
-<div class="blend-container">
+<div class="blend-containers">
   <img src="background.jpg" alt="Hintergrundbild">
   <div class="overlay blend-multiply">
-    <h2>Überschrift mit Multiply-Effekt</h2>
-    <p>Der Text mischt sich mit dem Hintergrundbild mittels Multiply-Blend-Modus.</p>
+    <h2>heading with Multiply-effect</h2>
+    <p>the Text mischt oneself with dem Hintergrundbild mittels Multiply-Blend-Modus.</p>
   </div>
 </div>
 
 <style>
-  .blend-container {
+  .blend-containers {
     position: relative;
     width: 100%;
     height: 300px;
     overflow: hidden;
   }
   
-  .blend-container img {
+  .blend-containers img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -115,17 +115,17 @@ Importieren Sie das Blend-Effekte-Modul über CSS:
 </style>
 ```
 
-### Überlappende farbige Elemente mit verschiedenen Blend-Modi
+### Uberlappende farbige elements with verschiedenen Blend-Modi
 
 ```html
-<div class="blend-circles-container">
+<div class="blend-circles-containers">
   <div class="circle circle-red blend-screen"></div>
   <div class="circle circle-green blend-screen"></div>
   <div class="circle circle-blue blend-screen"></div>
 </div>
 
 <style>
-  .blend-circles-container {
+  .blend-circles-containers {
     position: relative;
     width: 300px;
     height: 300px;
@@ -160,12 +160,12 @@ Importieren Sie das Blend-Effekte-Modul über CSS:
 </style>
 ```
 
-### Hintergrundbild mit Blend-Modus
+### Hintergrundbild with Blend-Modus
 
 ```html
 <div class="bg-blend-example">
-  <h2>Hintergrund mit Blend-Modus</h2>
-  <p>Dieser Container verwendet einen Hintergrund-Blend-Modus.</p>
+  <h2>background with Blend-Modus</h2>
+  <p>this containers verwendet einen background-Blend-Modus.</p>
 </div>
 
 <style>
@@ -220,10 +220,10 @@ Importieren Sie das Blend-Effekte-Modul über CSS:
     
     blendItems.forEach(item => {
       item.addEventListener('click', () => {
-        // Aktive Klasse entfernen
+        // Aktive Class remove
         blendItems.forEach(i => i.classList.remove('active'));
         
-        // Aktive Klasse hinzufügen
+        // Aktive Class add
         item.classList.add('active');
         
         // Blend-Modus anwenden
@@ -286,9 +286,9 @@ Importieren Sie das Blend-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Blend-Effekte können über CSS Variables angepasst werden:
+the Blend-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -301,20 +301,20 @@ Die Blend-Effekte können über CSS Variables angepasst werden:
 
 ## Accessibility
 
-Bei der Usage von Blend-Modi ist es wichtig, die Lesbarkeit und den Kontrast zu berücksichtigen:
+at the Usage from Blend-Modi ist it important, the Lesbarkeit and den Kontrast to berucksichtigen:
 
-1. **Kontrast**: Stellen Sie sicher, dass Text über Blend-Effekten ausreichenden Kontrast hat
-2. **Lesbarkeit**: Verwenden Sie keine Blend-Modi, die die Lesbarkeit von wichtigem Inhalt beeinträchtigen
-3. **Alternative Styles**: Bieten Sie alternative Styles für Nutzer mit visuellen Einschränkungen an
+1. **Kontrast**: ensure, that Text over Blend-Effekten ausreichenden Kontrast hat
+2. **Lesbarkeit**: use them no Blend-Modi, the the Lesbarkeit from wichtigem content beeintrachtigen
+3. **Alternative Styles**: Bieten them alternative Styles for Nutzer with visuellen Einschrankungen on
 
 ```css
-/* Verbesserte Lesbarkeit für Text über Blend-Effekten */
-.blend-container .overlay h2,
-.blend-container .overlay p {
+/* Verbesserte Lesbarkeit for Text over Blend-Effekten */
+.blend-containers .overlay h2,
+.blend-containers .overlay p {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-/* Alternative Styles für reduzierte Bewegung */
+/* Alternative Styles for reduzierte Bewegung */
 @media (prefers-reduced-motion: reduce) {
   .animated-blend {
     animation: none !important;
@@ -323,14 +323,14 @@ Bei der Usage von Blend-Modi ist es wichtig, die Lesbarkeit und den Kontrast zu 
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Blend-Effekte werden von allen modernen Browsern unterstützt.
+the Blend-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | mix-blend-mode | ✓ | ✓ | ✓ | ✓ | ✗ |
 | background-blend-mode | ✓ | ✓ | ✓ | ✓ | ✗ |
 | isolation | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die keine Blend-Modi unterstützen, werden Fallback-Styles bereitgestellt, die eine ähnliche visuelle Wirkung erzielen. 
+for altere Browser, the no Blend-Modi unterstutzen, become Fallback-Styles bereitgestellt, the a ahnliche visuelle Wirkung erzielen. 

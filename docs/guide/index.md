@@ -1,26 +1,26 @@
-# Guide für fortgeschrittene Components
+# Guide for fortgeschrittene Components
 
-In diesem Bereich finden Sie detaillierte Anleitungen und Best Practices für fortgeschrittene Components und Layouts der Casoon UI Library.
+in diesem area finden them detaillierte Anleitungen and Best Practices for fortgeschrittene Components and layouts the Casoon UI Library.
 
-## Verfügbare Guides
+## Verfugbare Guides
 
-- [Grid System](./grid-system.md) - Lernen Sie, wie Sie das flexible Grid System für responsive Layouts einsetzen
-- [Formsystem](./forms-system.md) - Entdecken Sie die umfassenden Möglichkeiten des Formsystems
+- [grid system](./grid-system.md) - Lernen them, how them the flexible grid system for responsive layouts einsetzen
+- [Formsystem](./forms-system.md) - Entdecken them the umfassenden Moglichkeiten des Formsystems
 
-## Module und Components
+## modules and Components
 
-Die Casoon UI Library bietet eine umfangreiche Sammlung von Modulen, die Sie je nach Bedarf in Ihr Projekt integrieren können. Im Folgenden finden Sie einen Überblick über die wichtigsten Module und ihre jeweiligen Usagesbereiche.
+the Casoon UI Library bietet a umfangreiche Sammlung from Modulen, the them je after Bedarf in her Projekt integrieren can. Im Folgenden finden them einen Uberblick over the wichtigsten modules and ihre jeweiligen Usagesbereiche.
 
-## Abhängigkeiten zwischen Modulen
+## Abhangigkeiten between Modulen
 
-**Wichtig:** Die meisten Module der casoon-ui-lib setzen voraus, dass `core.css` bereits geladen ist. Diese Datei enthält grundlegende Definitionen, Variablen und Utility-Klassen, die von anderen Modulen verwendet werden.
+**important:** the meisten modules the casoon-ui-lib setzen voraus, that `core.css` bereits geladen ist. these file enthalt grundlegende Definitionen, variables and Utility-classes, the from anderen Modulen verwendet become.
 
 ```css
-/* Immer zuerst core.css laden */
+/* Immer zuerst core.css load */
 @import '@casoon/ui-lib/core.css';
-@import '@casoon/ui-lib/themes/day.css'; /* Ein Theme wird empfohlen */
+@import '@casoon/ui-lib/themes/day.css'; /* a theme wird empfohlen */
 
-/* Erst danach spezifische Module */
+/* Erst afterwards spezifische modules */
 @import '@casoon/ui-lib/layout.css';
 @import '@casoon/ui-lib/forms.css';
 @import '@casoon/ui-lib/components/button.css';
@@ -29,100 +29,100 @@ Die Casoon UI Library bietet eine umfangreiche Sammlung von Modulen, die Sie je 
 
 ### Importreihenfolge
 
-Die folgende Reihenfolge wird für Imports empfohlen:
+the folgende Reihenfolge wird for Imports empfohlen:
 
-1. **Core**: Enthält grundlegende Layer und wird immer zuerst geladen
+1. **Core**: Enthalt grundlegende Layer and wird immer zuerst geladen
    ```css
    @import '@casoon/ui-lib/core.css';
    ```
 
-2. **Theme**: Mindestens ein Theme sollte geladen werden
+2. **theme**: Mindestens a theme sollte geladen become
    ```css
    @import '@casoon/ui-lib/themes/day.css';
    ```
 
-3. **Optionale Layer**: Erweitern die Core-Funktionalität
+3. **Optionale Layer**: extend the Core-Funktionalitat
    ```css
    @import '@casoon/ui-lib/forms.css';
    @import '@casoon/ui-lib/layout.css';
-   /* weitere Layer nach Bedarf */
+   /* additional Layer after Bedarf */
    ```
 
-4. **Module**: Spezifische Components nach Bedarf
+4. **modules**: Spezifische Components after Bedarf
    ```css
    @import '@casoon/ui-lib/components/button.css';
    @import '@casoon/ui-lib/components/input.css';
-   /* weitere Module nach Bedarf */
+   /* additional modules after Bedarf */
    ```
 
-Diese Reihenfolge stellt sicher, dass alle Abhängigkeiten korrekt aufgelöst werden.
+these Reihenfolge stellt sicher, that all Abhangigkeiten korrekt aufgelost become.
 
-### Layout-Module
+### layout-modules
 
-| Modul | Beschreibung | Import | Abhängigkeiten |
+| modules | Description | Import | Abhangigkeiten |
 |-------|-------------|--------|---------------|
-| Layout | Grundlegende Layout-Strukturen und Container | `@import '@casoon/ui-lib/layout.css';` | core.css |
-| Grid | Flexibles Grid System für responsive Layouts | Enthalten in layout.css | core.css, layout.css |
-| Container | Vordefinierte Container mit responsiven Breiten | Enthalten in layout.css | core.css, layout.css |
+| layout | Grundlegende layout-Strukturen and containers | `@import '@casoon/ui-lib/layout.css';` | core.css |
+| grid | Flexibles grid system for responsive layouts | Enthalten in layout.css | core.css, layout.css |
+| containers | Vordefinierte containers with responsiven Breiten | Enthalten in layout.css | core.css, layout.css |
 
-### Form-Module
+### Form-modules
 
-| Modul | Beschreibung | Import | Abhängigkeiten |
+| modules | Description | Import | Abhangigkeiten |
 |-------|-------------|--------|---------------|
 | Forms | Allgemeine Form-Styles | `@import '@casoon/ui-lib/forms.css';` | core.css |
 | Input | Text-Inputer | `@import '@casoon/ui-lib/components/input.css';` | core.css, forms.css |
-| Textarea | Mehrzeilige Textfelder | `@import '@casoon/ui-lib/components/textarea.css';` | core.css, forms.css |
-| Select | Checkboxer und Dropdowns | `@import '@casoon/ui-lib/components/select.css';` | core.css, forms.css |
-| Checkbox | Checkboxen und Auswahloptionen | `@import '@casoon/ui-lib/components/checkbox.css';` | core.css, forms.css |
-| Radio | Radio-Buttons | `@import '@casoon/ui-lib/components/radio.css';` | core.css, forms.css |
+| Textarea | textareas | `@import '@casoon/ui-lib/components/textarea.css';` | core.css, forms.css |
+| Select | Checkboxer and Dropdowns | `@import '@casoon/ui-lib/components/select.css';` | core.css, forms.css |
+| checkbox | checkboxes and Auswahloptionen | `@import '@casoon/ui-lib/components/checkbox.css';` | core.css, forms.css |
+| Radio | Radio-buttons | `@import '@casoon/ui-lib/components/radio.css';` | core.css, forms.css |
 | Switch | Toggle-Switch | `@import '@casoon/ui-lib/components/switch.css';` | core.css, forms.css |
-| File | Datei-Upload-Elemente | `@import '@casoon/ui-lib/components/file.css';` | core.css, forms.css |
+| File | file-Upload-elements | `@import '@casoon/ui-lib/components/file.css';` | core.css, forms.css |
 
-### Integration mit dem Design-System
+### Integration with dem design-system
 
-Die in diesen Guides beschriebenen Components sind Teil des gesamten Design-Systems und integrieren sich nahtlos mit anderen Components der Casoon UI Library. Beachten Sie folgende Prinzipien für eine optimale Integration:
+the in diesen Guides beschriebenen Components sind Teil des gesamten design-Systems and integrieren oneself nahtlos with anderen Components the Casoon UI Library. note folgende Prinzipien for a optimale Integration:
 
-1. **Konsistente Usage von CSS Variables**
-   - Verwenden Sie vorhandene Variablen für Colors, Abstände und Typography
-   - Erstellen Sie bei Bedarf neue Variablen nach dem bestehenden Muster
+1. **Konsistente Usage from CSS Variables**
+   - use them vorhandene variables for Colors, Abstande and Typography
+   - create them at Bedarf neue variables after dem bestehenden pattern
 
-2. **Responsive Design**
-   - Nutzen Sie das Grid System für responsive Layouts
-   - Verwenden Sie die vordefinierten Breakpoints für konsistente Medienabfragen
+2. **responsive design**
+   - use them the grid system for responsive layouts
+   - use them the vordefinierten Breakpoints for konsistente Medienabfragen
 
 3. **Accessibility**
-   - Achten Sie auf ausreichenden Kontrast und semantisches Markup
-   - Verwenden Sie ARIA-Attribute für verbesserte Accessibility
+   - ensure them on ausreichenden Kontrast and semantisches Markup
+   - use them ARIA-attributes for verbesserte Accessibility
 
 4. **Modulare Integration**
-   - Importieren Sie nur die Module, die Sie tatsächlich benötigen
-   - Kombinieren Sie Module zu komplexeren Components nach Bedarf
+   - import them only the modules, the them tatsachlich benotigen
+   - combine them modules to komplexeren Components after Bedarf
 
 ## Best Practices
 
 ### Optimale Performance
 
-- Vermeiden Sie übermäßige Verschachtelung von Selektoren
-- Nutzen Sie die CSS-Strukturen der Bibliothek effizient
-- Achten Sie auf die Dateigröße durch selektive Imports
+- Vermeiden them ubermassige Verschachtelung from Selektoren
+- use them the CSS-Strukturen the Bibliothek effizient
+- ensure them on the Dateigrosse through selektive Imports
 
-### Codequalität
+### Codequalitat
 
-- Halten Sie sich an die BEM-Namenskonventionen (Block__Element--Modifier)
-- Gruppieren Sie zusammengehörige Styles
-- Dokumentieren Sie komplexe oder ungewöhnliche Implementierungen
+- Halten them oneself on the BEM-Namenskonventionen (Block__Element--Modifier)
+- Gruppieren them zusammengehorige Styles
+- Dokumentieren them komplexe or ungewohnliche Implementierungen
 
-### Responsive Design
+### responsive design
 
-- Testen Sie Ihre Components auf verschiedenen Bildschirmgrößen
-- Verwenden Sie flexible Einheiten (rem, em, %) statt fester Pixel-Werte
-- Nutzen Sie die responsiven Utility-Klassen der Casoon UI Library
+- Testen them Ihre Components on verschiedenen Bildschirmgrossen
+- use them flexible Einheiten (rem, em, %) instead of fester Pixel-values
+- use them the responsiven Utility-classes the Casoon UI Library
 
-## Häufige Fragen
+## Haufige Fragen
 
-### Wie kombiniere ich Grid und Forme?
+### how kombiniere I grid and Forme?
 
-Das Grid System und die Formkomponenten lassen sich ideal kombinieren, um komplexe, responsive Formlayouts zu erstellen. Ein typisches Example ist die Aufteilung von Formfeldern in mehrere Spalten:
+the grid system and the Formkomponenten lassen oneself ideal combine, um komplexe, responsive Formlayouts to create. a typisches Example ist the Aufteilung from Formfeldern in several columns:
 
 ```html
 <form class="form">
@@ -136,51 +136,51 @@ Das Grid System und die Formkomponenten lassen sich ideal kombinieren, um komple
       <input type="text" id="lastname" class="form-input">
     </div>
   </div>
-  <!-- Weitere Formfelder -->
+  <!-- additional Formfelder -->
 </form>
 ```
 
-### Kann ich eigene CSS Variables definieren?
+### Kann I own CSS Variables define?
 
-Ja, Sie können eigene CSS Variables definieren oder bestehende überschreiben, um das Design-System an Ihre Bedürfnisse anzupassen:
+Ja, You can own CSS Variables define or bestehende overwrite, um the design-system on Ihre Bedurfnisse anzupassen:
 
 ```css
 :root {
-  /* Überschreiben einer bestehenden Variable */
+  /* overwrite einer bestehenden variable */
   --form-input-border-radius: 8px;
   
-  /* Definieren einer neuen Variable */
+  /* define einer neuen variable */
   --custom-component-padding: 1.5rem;
 }
 ```
 
-### Was passiert, wenn ich Abhängigkeiten nicht in der richtigen Reihenfolge lade?
+### what passiert, if I Abhangigkeiten not in the richtigen Reihenfolge lade?
 
-Wenn die CSS-Dateien nicht in der korrekten Reihenfolge geladen werden, können verschiedene Probleme auftreten:
+if the CSS-Dateien not in the korrekten Reihenfolge geladen become, can verschiedene Probleme auftreten:
 
-1. **Fehlende Styles:** Components erscheinen unstyled oder nur teilweise gestylt
-2. **Fehlerhafte Layouts:** Grid Systeme funktionieren nicht korrekt
-3. **CSS Variables nicht verfügbar:** Referenzen auf Variablen wie `var(--color-primary)` werden nicht aufgelöst
-4. **Utility-Klassen nicht verfügbar:** Klassen wie `flex`, `grid` oder `hidden` funktionieren nicht
+1. **Fehlende Styles:** Components erscheinen unstyled or only teilweise gestylt
+2. **Fehlerhafte layouts:** grid Systeme funktionieren not korrekt
+3. **CSS Variables not verfugbar:** Referenzen on variables how `var(--color-primary)` become not aufgelost
+4. **Utility-classes not verfugbar:** classes how `flex`, `grid` or `hidden` funktionieren not
 
-**Example für ein Problem:**
+**Example for a Problem:**
 ```css
-/* FALSCH: Module vor core.css laden */
+/* FALSCH: modules before core.css load */
 @import '@casoon/ui-lib/components/button.css';
 @import '@casoon/ui-lib/core.css';
 ```
 
-Hier würde der Button Module vielleicht Referenzen auf Variablen oder Utility-Klassen enthalten, die erst in core.css definiert werden, was zu fehlerhafter Darstellung führt.
+Hier wurde the button modules vielleicht Referenzen on variables or Utility-classes enthalten, the erst in core.css definiert become, what to fehlerhafter Display fuhrt.
 
-**Richtige Lösung:**
+**Richtige Losung:**
 ```css
-/* RICHTIG: core.css zuerst laden */
+/* RICHTIG: core.css zuerst load */
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/components/button.css';
 ```
 
-### Kann ich einzelne Components ohne core.css verwenden?
+### Kann I einzelne Components without core.css use?
 
-Nein, beinahe alle Components der casoon-ui-lib setzen voraus, dass `core.css` geladen ist. Selbst wenn eine Komponente scheinbar unabhängig funktioniert, ist es sehr wahrscheinlich, dass sie auf Variablen, Utility-Klassen oder grundlegende Styles aus `core.css` zurückgreift.
+Nein, beinahe all Components the casoon-ui-lib setzen voraus, that `core.css` geladen ist. self if a Component scheinbar unabhangig funktioniert, ist it very wahrscheinlich, that them on variables, Utility-classes or grundlegende Styles aus `core.css` zuruckgreift.
 
-Wenn Sie nur einzelne Components benötigen, laden Sie trotzdem immer zuerst `core.css` und dann die spezifischen Module, die Sie verwenden möchten. Der modulare Aufbau der Bibliothek stellt sicher, dass nur die tatsächlich genutzten CSS-Regeln angewendet werden. 
+If you only einzelne Components benotigen, load them despite that immer zuerst `core.css` and dann the spezifischen modules, the them use want to. the modulare Aufbau the Bibliothek stellt sicher, that only the tatsachlich genutzten CSS-Regeln angewendet become. 

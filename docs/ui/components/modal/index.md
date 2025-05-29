@@ -1,19 +1,19 @@
 ---
-title: Modal Component
+title: modal Component
 outline: deep
 ---
 
 
-# Modal
+# modal
 
-Die Modal-Komponente zeigt Inhalte in einem Dialogfenster an, das über der Hauptseite schwebt. Modals werden verwendet, um wichtige Informationen hervorzuheben oder Benutzerinteraktionen zu erfordern, ohne dass der Benutzer die aktuelle Seite verlassen muss.
+the modal-component zeigt contents in einem Dialogfenster on, the over the Hauptseite schwebt. modals become verwendet, um wichtige Informationen hervorzuheben or Benutzerinteraktionen to erfordern, without that the user the aktuelle Seite verlassen muss.
 
 ## Installation
 
-Die Modal-Komponente ist Teil der Casoon UI Library.
+the modal-component ist Teil the Casoon UI Library.
 
 ```bash
-# Installation der gesamten Bibliothek
+# Installation the gesamten Bibliothek
 npm install @casoon/ui-lib
 ```
 
@@ -23,21 +23,21 @@ npm install @casoon/ui-lib
 /* Import aller UI-Components */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Modal-Komponente */
+/* or only the modal-component */
 @import '@casoon/ui-lib/ui/components/modal.css';
 ```
 
 ## Basic Usage
 
 ```html
-<button class="button" data-modal-trigger="example-modal">Modal öffnen</button>
+<button class="button" data-modal-trigger="example-modal">modal offnen</button>
 
 <div class="modal" id="example-modal" aria-labelledby="modal-title" aria-modal="true" role="dialog">
   <div class="modal__overlay" data-modal-close></div>
   <div class="modal__container">
     <div class="modal__header">
-      <h2 class="modal__title" id="modal-title">Modal-Titel</h2>
-      <button class="modal__close" data-modal-close aria-label="Schließen">
+      <h2 class="modal__title" id="modal-title">modal-Titel</h2>
+      <button class="modal__close" data-modal-close aria-label="close">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -45,23 +45,23 @@ npm install @casoon/ui-lib
       </button>
     </div>
     <div class="modal__content">
-      <p>Hier ist der Inhalt des Modals. Du kannst beliebige HTML-Elemente einfügen.</p>
+      <p>Hier ist the content des modals. you kannst beliebige HTML-elements einfugen.</p>
     </div>
     <div class="modal__footer">
       <button class="button button--secondary" data-modal-close>Abbrechen</button>
-      <button class="button button--primary">Bestätigen</button>
+      <button class="button button--primary">Bestatigen</button>
     </div>
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="padding: 2rem; border: 1px dashed #e5e7eb; border-radius: 0.5rem; text-align: center;">
-    <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Modal öffnen</button>
+    <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">modal offnen</button>
     
     <div style="position: relative; z-index: 1; margin-top: 2rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); background-color: white; width: 100%; max-width: 500px; margin-left: auto; margin-right: auto;">
       <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #e5e7eb;">
-        <h2 style="margin: 0; font-size: 1.25rem; font-weight: 600; color: #111827;">Modal-Titel</h2>
+        <h2 style="margin: 0; font-size: 1.25rem; font-weight: 600; color: #111827;">modal-Titel</h2>
         <button style="background: none; border: none; color: #6b7280; cursor: pointer;">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -70,11 +70,11 @@ npm install @casoon/ui-lib
         </button>
       </div>
       <div style="padding: 1rem;">
-        <p>Hier ist der Inhalt des Modals. Du kannst beliebige HTML-Elemente einfügen.</p>
+        <p>Hier ist the content des modals. you kannst beliebige HTML-elements einfugen.</p>
       </div>
       <div style="display: flex; justify-content: flex-end; gap: 0.5rem; padding: 1rem; border-top: 1px solid #e5e7eb;">
         <button style="padding: 0.5rem 1rem; background-color: #f3f4f6; color: #374151; border: 1px solid #d1d5db; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Abbrechen</button>
-        <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Bestätigen</button>
+        <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Bestatigen</button>
       </div>
     </div>
   </div>
@@ -85,112 +85,112 @@ npm install @casoon/ui-lib
 ### Sizes
 
 ```html
-<!-- Kleines Modal -->
+<!-- Kleines modal -->
 <div class="modal modal--sm">
-  <!-- Modal-Inhalt -->
+  <!-- modal-content -->
 </div>
 
-<!-- Standard-Modal (Standardgröße) -->
+<!-- Standard-modal (Standardgrosse) -->
 <div class="modal">
-  <!-- Modal-Inhalt -->
+  <!-- modal-content -->
 </div>
 
-<!-- Großes Modal -->
+<!-- Grosses modal -->
 <div class="modal modal--lg">
-  <!-- Modal-Inhalt -->
+  <!-- modal-content -->
 </div>
 
-<!-- Extragroßes Modal -->
+<!-- Extragrosses modal -->
 <div class="modal modal--xl">
-  <!-- Modal-Inhalt -->
+  <!-- modal-content -->
 </div>
 
 <!-- Vollbildmodus -->
 <div class="modal modal--full">
-  <!-- Modal-Inhalt -->
+  <!-- modal-content -->
 </div>
 ```
 
-<div class="example-wrapper" style="display: flex; flex-direction: column; gap: 1rem;">
+<div class="example-wrappers" style="display: flex; flex-direction: column; gap: 1rem;">
   <div style="padding: 1rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; background-color: #f9fafb;">
-    <div style="font-weight: 600; margin-bottom: 0.5rem;">Kleine Modalgröße (modal--sm)</div>
+    <div style="font-weight: 600; margin-bottom: 0.5rem;">Kleine Modalgrosse (modal--sm)</div>
     <div style="width: 300px; border: 1px solid #e5e7eb; border-radius: 0.5rem; background-color: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
       <div style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb;">
         <div style="font-weight: 600;">Titel</div>
       </div>
-      <div style="padding: 0.75rem;">Inhalt</div>
+      <div style="padding: 0.75rem;">content</div>
     </div>
   </div>
   
   <div style="padding: 1rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; background-color: #f9fafb;">
-    <div style="font-weight: 600; margin-bottom: 0.5rem;">Standard-Modalgröße</div>
+    <div style="font-weight: 600; margin-bottom: 0.5rem;">Standard-Modalgrosse</div>
     <div style="width: 400px; border: 1px solid #e5e7eb; border-radius: 0.5rem; background-color: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
       <div style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">
         <div style="font-weight: 600;">Titel</div>
       </div>
-      <div style="padding: 1rem;">Inhalt</div>
+      <div style="padding: 1rem;">content</div>
     </div>
   </div>
   
   <div style="padding: 1rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; background-color: #f9fafb;">
-    <div style="font-weight: 600; margin-bottom: 0.5rem;">Große Modalgröße (modal--lg)</div>
+    <div style="font-weight: 600; margin-bottom: 0.5rem;">size Modalgrosse (modal--lg)</div>
     <div style="width: 500px; border: 1px solid #e5e7eb; border-radius: 0.5rem; background-color: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
       <div style="padding: 1rem; border-bottom: 1px solid #e5e7eb;">
         <div style="font-weight: 600;">Titel</div>
       </div>
-      <div style="padding: 1rem;">Inhalt</div>
+      <div style="padding: 1rem;">content</div>
     </div>
   </div>
 </div>
 
-### Ohne Header oder Footer
+### without header or footer
 
 ```html
-<!-- Modal ohne Header -->
+<!-- modal without header -->
 <div class="modal">
   <div class="modal__overlay" data-modal-close></div>
   <div class="modal__container">
     <div class="modal__content">
-      <p>Modalinhalt ohne Header</p>
+      <p>Modalinhalt without header</p>
     </div>
     <div class="modal__footer">
       <button class="button button--secondary" data-modal-close>Abbrechen</button>
-      <button class="button button--primary">Bestätigen</button>
+      <button class="button button--primary">Bestatigen</button>
     </div>
   </div>
 </div>
 
-<!-- Modal ohne Footer -->
+<!-- modal without footer -->
 <div class="modal">
   <div class="modal__overlay" data-modal-close></div>
   <div class="modal__container">
     <div class="modal__header">
-      <h2 class="modal__title">Modal-Titel</h2>
-      <button class="modal__close" data-modal-close aria-label="Schließen">
-        <svg><!-- Schließen-Icon --></svg>
+      <h2 class="modal__title">modal-Titel</h2>
+      <button class="modal__close" data-modal-close aria-label="close">
+        <svg><!-- close-icon --></svg>
       </button>
     </div>
     <div class="modal__content">
-      <p>Modalinhalt ohne Footer</p>
+      <p>Modalinhalt without footer</p>
     </div>
   </div>
 </div>
 ```
 
-<div class="example-wrapper" style="display: flex; flex-direction: column; gap: 2rem;">
+<div class="example-wrappers" style="display: flex; flex-direction: column; gap: 2rem;">
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); background-color: white; width: 100%; max-width: 400px;">
     <div style="padding: 1rem;">
-      <p style="margin-top: 0;">Modalinhalt ohne Header</p>
+      <p style="margin-top: 0;">Modalinhalt without header</p>
     </div>
     <div style="display: flex; justify-content: flex-end; gap: 0.5rem; padding: 1rem; border-top: 1px solid #e5e7eb;">
       <button style="padding: 0.5rem 1rem; background-color: #f3f4f6; color: #374151; border: 1px solid #d1d5db; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Abbrechen</button>
-      <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Bestätigen</button>
+      <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Bestatigen</button>
     </div>
   </div>
   
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); background-color: white; width: 100%; max-width: 400px;">
     <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #e5e7eb;">
-      <h2 style="margin: 0; font-size: 1.25rem; font-weight: 600; color: #111827;">Modal-Titel</h2>
+      <h2 style="margin: 0; font-size: 1.25rem; font-weight: 600; color: #111827;">modal-Titel</h2>
       <button style="background: none; border: none; color: #6b7280; cursor: pointer;">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -199,45 +199,45 @@ npm install @casoon/ui-lib
       </button>
     </div>
     <div style="padding: 1rem;">
-      <p style="margin-top: 0;">Modalinhalt ohne Footer</p>
+      <p style="margin-top: 0;">Modalinhalt without footer</p>
     </div>
   </div>
 </div>
 
 ## Usagesbeispiele
 
-### Bestätigungsdialog
+### Bestatigungsdialog
 
 ```html
-<button class="button button--danger" data-modal-trigger="confirm-modal">Löschen</button>
+<button class="button button--danger" data-modal-trigger="confirm-modal">delete</button>
 
 <div class="modal" id="confirm-modal">
   <div class="modal__overlay" data-modal-close></div>
   <div class="modal__container">
     <div class="modal__header">
-      <h2 class="modal__title">Bestätigung erforderlich</h2>
-      <button class="modal__close" data-modal-close aria-label="Schließen">
-        <svg><!-- Schließen-Icon --></svg>
+      <h2 class="modal__title">Bestatigung erforderlich</h2>
+      <button class="modal__close" data-modal-close aria-label="close">
+        <svg><!-- close-icon --></svg>
       </button>
     </div>
     <div class="modal__content">
-      <p>Bist du sicher, dass du dieses Element löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.</p>
+      <p>Bist you sicher, that you this element delete mochtest? these Aktion kann not ruckgangig gemacht become.</p>
     </div>
     <div class="modal__footer">
       <button class="button button--secondary" data-modal-close>Abbrechen</button>
-      <button class="button button--danger">Löschen bestätigen</button>
+      <button class="button button--danger">delete bestatigen</button>
     </div>
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="padding: 1.5rem; border: 1px dashed #e5e7eb; border-radius: 0.5rem; text-align: center;">
-    <button style="padding: 0.5rem 1rem; background-color: #ef4444; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Löschen</button>
+    <button style="padding: 0.5rem 1rem; background-color: #ef4444; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">delete</button>
     
     <div style="margin-top: 2rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); background-color: white; width: 100%; max-width: 450px; margin-left: auto; margin-right: auto;">
       <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #e5e7eb;">
-        <h2 style="margin: 0; font-size: 1.25rem; font-weight: 600; color: #111827;">Bestätigung erforderlich</h2>
+        <h2 style="margin: 0; font-size: 1.25rem; font-weight: 600; color: #111827;">Bestatigung erforderlich</h2>
         <button style="background: none; border: none; color: #6b7280; cursor: pointer;">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -246,28 +246,28 @@ npm install @casoon/ui-lib
         </button>
       </div>
       <div style="padding: 1rem;">
-        <p style="margin-top: 0;">Bist du sicher, dass du dieses Element löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.</p>
+        <p style="margin-top: 0;">Bist you sicher, that you this element delete mochtest? these Aktion kann not ruckgangig gemacht become.</p>
       </div>
       <div style="display: flex; justify-content: flex-end; gap: 0.5rem; padding: 1rem; border-top: 1px solid #e5e7eb;">
         <button style="padding: 0.5rem 1rem; background-color: #f3f4f6; color: #374151; border: 1px solid #d1d5db; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Abbrechen</button>
-        <button style="padding: 0.5rem 1rem; background-color: #ef4444; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Löschen bestätigen</button>
+        <button style="padding: 0.5rem 1rem; background-color: #ef4444; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">delete bestatigen</button>
       </div>
     </div>
   </div>
 </div>
 
-### Form-Modal
+### Form-modal
 
 ```html
-<button class="button" data-modal-trigger="form-modal">Neuen Benutzer hinzufügen</button>
+<button class="button" data-modal-trigger="form-modal">Neuen user add</button>
 
 <div class="modal" id="form-modal">
   <div class="modal__overlay" data-modal-close></div>
   <div class="modal__container">
     <div class="modal__header">
-      <h2 class="modal__title">Neuen Benutzer hinzufügen</h2>
-      <button class="modal__close" data-modal-close aria-label="Schließen">
-        <svg><!-- Schließen-Icon --></svg>
+      <h2 class="modal__title">Neuen user add</h2>
+      <button class="modal__close" data-modal-close aria-label="close">
+        <svg><!-- close-icon --></svg>
       </button>
     </div>
     <div class="modal__content">
@@ -283,7 +283,7 @@ npm install @casoon/ui-lib
         <div class="form-group">
           <label for="role">Rolle</label>
           <select id="role" class="select">
-            <option value="user">Benutzer</option>
+            <option value="user">user</option>
             <option value="admin">Administrator</option>
             <option value="editor">Editor</option>
           </select>
@@ -292,19 +292,19 @@ npm install @casoon/ui-lib
     </div>
     <div class="modal__footer">
       <button class="button button--secondary" data-modal-close>Abbrechen</button>
-      <button class="button button--primary" form="user-form">Benutzer hinzufügen</button>
+      <button class="button button--primary" form="user-form">user add</button>
     </div>
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="padding: 1.5rem; border: 1px dashed #e5e7eb; border-radius: 0.5rem; text-align: center;">
-    <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Neuen Benutzer hinzufügen</button>
+    <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Neuen user add</button>
     
     <div style="margin-top: 2rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); background-color: white; width: 100%; max-width: 450px; margin-left: auto; margin-right: auto;">
       <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #e5e7eb;">
-        <h2 style="margin: 0; font-size: 1.25rem; font-weight: 600; color: #111827;">Neuen Benutzer hinzufügen</h2>
+        <h2 style="margin: 0; font-size: 1.25rem; font-weight: 600; color: #111827;">Neuen user add</h2>
         <button style="background: none; border: none; color: #6b7280; cursor: pointer;">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -325,7 +325,7 @@ npm install @casoon/ui-lib
           <div>
             <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Rolle</label>
             <select style="width: 100%; padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 0.375rem; background-color: white;">
-              <option value="user">Benutzer</option>
+              <option value="user">user</option>
               <option value="admin">Administrator</option>
               <option value="editor">Editor</option>
             </select>
@@ -334,7 +334,7 @@ npm install @casoon/ui-lib
       </div>
       <div style="display: flex; justify-content: flex-end; gap: 0.5rem; padding: 1rem; border-top: 1px solid #e5e7eb;">
         <button style="padding: 0.5rem 1rem; background-color: #f3f4f6; color: #374151; border: 1px solid #d1d5db; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Abbrechen</button>
-        <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">Benutzer hinzufügen</button>
+        <button style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; font-weight: 500; cursor: pointer;">user add</button>
       </div>
     </div>
   </div>
@@ -342,19 +342,19 @@ npm install @casoon/ui-lib
 
 ## Anpassung
 
-Die Modal-Komponente kann mit CSS Variables angepasst werden:
+the modal-component kann with CSS Variables angepasst become:
 
 ```css
 :root {
   --modal-z-index: 1000;
   --modal-overlay-bg: rgba(0, 0, 0, 0.5);
   
-  --modal-container-width: 32rem;
-  --modal-container-max-width: calc(100vw - 2rem);
-  --modal-container-max-height: calc(100vh - 2rem);
-  --modal-container-bg: var(--color-white);
-  --modal-container-border-radius: var(--radius-lg);
-  --modal-container-shadow: var(--shadow-xl);
+  --modal-containers-width: 32rem;
+  --modal-containers-max-width: calc(100vw - 2rem);
+  --modal-containers-max-height: calc(100vh - 2rem);
+  --modal-containers-bg: var(--color-white);
+  --modal-containers-border-radius: var(--radius-lg);
+  --modal-containers-shadow: var(--shadow-xl);
   
   --modal-header-padding: 1rem;
   --modal-header-border: 1px solid var(--color-neutral-200);
@@ -367,7 +367,7 @@ Die Modal-Komponente kann mit CSS Variables angepasst werden:
   --modal-footer-padding: 1rem;
   --modal-footer-border: 1px solid var(--color-neutral-200);
   
-  /* Modal-Sizes */
+  /* modal-Sizes */
   --modal-sm-width: 20rem;
   --modal-lg-width: 40rem;
   --modal-xl-width: 56rem;
@@ -376,11 +376,11 @@ Die Modal-Komponente kann mit CSS Variables angepasst werden:
 
 ## JavaScript-Example
 
-Hier ist ein einfaches JavaScript-Example für die Modal-Funktionalität:
+Hier ist a einfaches JavaScript-Example for the modal-Funktionalitat:
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
-  // Modal-Trigger
+  // modal-Trigger
   const triggers = document.querySelectorAll('[data-modal-trigger]');
   
   triggers.forEach(trigger => {
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Modal schließen
+  // modal close
   const closeButtons = document.querySelectorAll('[data-modal-close]');
   
   closeButtons.forEach(button => {
@@ -406,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // ESC-Taste zum Schließen
+  // ESC-Taste zum close
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       const openModal = document.querySelector('.modal.active');
@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', function() {
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
     
-    // Fokus auf das erste fokussierbare Element setzen
+    // Fokus on the erste fokussierbare element setzen
     const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
     if (focusableElements.length > 0) {
       focusableElements[0].focus();
@@ -437,21 +437,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Accessibility
 
-- Verwende `role="dialog"` und `aria-modal="true"` für das Modal
-- Füge `aria-labelledby` hinzu, das auf die ID des Modal-Titels verweist
-- Stelle sicher, dass der Fokus beim Öffnen des Modals in das Modal gesetzt wird
-- Halte den Fokus innerhalb des Modals, solange es geöffnet ist
-- Ermögliche das Schließen des Modals mit der ESC-Taste
-- Gib den Fokus an das auslösende Element zurück, wenn das Modal geschlossen wird
-- Achte auf korrekten Farbkontrast für bessere Lesbarkeit
-- Stelle sicher, dass Buttonn beschreibende Text- oder ARIA-Labels haben
+- Verwende `role="dialog"` and `aria-modal="true"` for the modal
+- Fuge `aria-labelledby` hinzu, the on the ID des modal-Titels verweist
+- Stelle sicher, that the Fokus beim Offnen des modals in the modal gesetzt wird
+- Halte den Fokus within des modals, as long as it open ist
+- Ermogliche the close des modals with the ESC-Taste
+- Gib den Fokus on the auslosende element back, if the modal geschlossen wird
+- Achte on korrekten Farbkontrast for bessere Lesbarkeit
+- Stelle sicher, that Buttonn beschreibende Text- or ARIA-Labels have
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Modal-Komponente ist mit allen modernen Browsern kompatibel.
+the modal-component ist with allen modernen Browsern kompatibel.
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
-| Overlay-Effekte | ✅ | ✅ | ✅ | ✅ |
+| Grundlegende Funktionalitat | ✅ | ✅ | ✅ | ✅ |
+| Overlay-effects | ✅ | ✅ | ✅ | ✅ |
 | CSS Variables | 49+ | 31+ | 9.1+ | 15+ |

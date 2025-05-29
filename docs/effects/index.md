@@ -1,15 +1,15 @@
 ---
-title: Effects System
+title: Effects system
 category: Guide
 ---
 
-# Effects System
+# Effects system
 
-The Casoon UI Effects System provides a comprehensive collection of CSS effects that enhance your user interface, giving it depth, movement, and visual appeal.
+The Casoon UI Effects system provides a comprehensive collection of CSS effects that enhance your user interface, giving it depth, movement, and visual appeal.
 
 ## Overview
 
-The Effects System is modularly structured and divided into different categories, each covering a specific aspect of visual design. Each module can be imported independently to include only the effects needed in your project.
+The Effects system is modularly structured and divided into different categories, each covering a specific aspect of visual design. Each modules can be imported independently to include only the effects needed in your project.
 
 ## Effect Categories
 
@@ -47,9 +47,9 @@ State effects visualize various states of UI components:
 
 ## Installation and Usage
 
-You can import the entire Effects System or individual modules:
+You can import the entire Effects system or individual modules:
 
-### Complete Effects System
+### Complete Effects system
 
 ```css
 @import '@casoon/ui-lib/effects/index.css';
@@ -70,7 +70,7 @@ You can import the entire Effects System or individual modules:
 
 ## Performance Optimization
 
-The Effects System is designed for optimal performance:
+The Effects system is designed for optimal performance:
 
 1. **Modular Structure**: Import only the effects you need
 2. **CSS Variables**: Easy customization without additional code
@@ -79,7 +79,7 @@ The Effects System is designed for optimal performance:
 
 ## Accessibility
 
-The Effects System considers accessibility through:
+The Effects system considers accessibility through:
 
 1. **Reduced Motion**: Alternative styles for users who prefer reduced motion
 2. **Sufficient Contrast**: Ensuring that effects do not compromise contrast
@@ -112,7 +112,7 @@ All effects can be customized via CSS variables:
 
 ## Browser Support
 
-The Effects System supports all modern browsers. For older browsers, fallback styles are provided to ensure a consistent appearance.
+The Effects system supports all modern browsers. For older browsers, fallback styles are provided to ensure a consistent appearance.
 
 ## Examples
 

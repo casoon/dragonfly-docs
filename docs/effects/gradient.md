@@ -13,7 +13,7 @@ The gradient effects are performance-optimized and available in various styles a
 
 ## Installation
 
-Import the gradient effects module via CSS:
+Import the gradient effects modules via CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/gradient.css';

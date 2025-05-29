@@ -16,7 +16,7 @@ Casoon UI Library is built using modern CSS features to provide the best possibl
 
 The following table shows the general compatibility of Casoon UI Library with major browsers:
 
-| Browser | Minimum Version | Notes |
+| Browser | Minimum version | Notes |
 |---------|----------------|-------|
 | Chrome | 88+ | Full support for all features |
 | Firefox | 85+ | Full support for all features |

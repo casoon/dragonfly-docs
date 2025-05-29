@@ -1,64 +1,64 @@
-# Warning-Effekte
+# Warning-effects
 
-Warning-Effekte werden verwendet, um Benutzer auf potenzielle Probleme oder wichtige Informationen aufmerksam zu machen, die Beachtung erfordern, aber keinen kritischen Fehler darstellen. Die `@casoon/ui-lib` bietet verschiedene Warning-Effekte, die dazu beitragen, Warnhinweise klar und auffällig zu präsentieren.
+Warning-effects become verwendet, um user on potenzielle Probleme or wichtige Informationen aufmerksam to machen, the Beachtung erfordern, but keinen kritischen errors darstellen. the `@casoon/ui-lib` bietet verschiedene Warning-effects, the for that beitragen, Warnhinweise klar and auffallig to prasentieren.
 
 ## Basic Usage
 
-Der grundlegende Warning-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Warning-effect kann on jedes element angewendet become:
 
 ```html
-<div class="warning">Achtung: Wichtige Information</div>
+<div class="warning">attention: Wichtige Information</div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Warning-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Warning-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.warning` | Basisklasse für Warnhinweise |
-| `.warning-border` | Warnung mit orangefarbenem Rand |
-| `.warning-bg` | Warnung mit Hintergrundfarbe |
-| `.warning-text` | Warnung mit orangefarbener Textfarbe |
-| `.warning-icon` | Warnung mit Icon-Indikator |
-| `.warning-pulse` | Warnung mit Pulsiereffekt |
-| `.warning-flash` | Warnung mit Blinkeffekt |
-| `.warning-glow` | Warnung mit orangefarbenem Glüheffekt |
-| `.warning-badge` | Warnung als kleines Badge-Element |
+| `.warning` | Basisklasse for Warnhinweise |
+| `.warning-border` | warning with orangefarbenem margin |
+| `.warning-bg` | warning with Hintergrundfarbe |
+| `.warning-text` | warning with orangefarbener Textfarbe |
+| `.warning-icon` | warning with icon-Indikator |
+| `.warning-pulse` | warning with Pulsiereffekt |
+| `.warning-flash` | warning with Blinkeffekt |
+| `.warning-glow` | warning with orangefarbenem Gluheffekt |
+| `.warning-badge` | warning as kleines badge-element |
 
 ## Variants
 
-### Border-Effekt
+### Border-effect
 
-Der klassische Warneffekt mit orangefarbenem Rand:
+the klassische Warneffekt with orangefarbenem margin:
 
 ```html
 <div class="card warning-border">
-  <div class="card-body">Ihre Sitzung läuft in 5 Minuten ab</div>
+  <div class="card-body">Ihre Sitzung lauft in 5 Minuten ab</div>
 </div>
 ```
 
-### Background-Effekt
+### Background-effect
 
-Warndarstellung mit subtiler Hintergrundfarbe:
+Warndarstellung with subtiler Hintergrundfarbe:
 
 ```html
 <div class="alert warning-bg">
-  <p>Diese Aktion kann nicht rückgängig gemacht werden.</p>
+  <p>these Aktion kann not ruckgangig gemacht become.</p>
 </div>
 ```
 
-### Text-Effekt
+### Text-effect
 
-Warndarstellung mit orangefarbener Textfarbe:
+Warndarstellung with orangefarbener Textfarbe:
 
 ```html
-<p class="warning-text">Ihre Zahlungsinformationen sind nicht aktuell.</p>
+<p class="warning-text">Ihre Zahlungsinformationen sind not aktuell.</p>
 ```
 
-### Icon-Effekt
+### icon-effect
 
-Warndarstellung mit Warning-Icon:
+Warndarstellung with Warning-icon:
 
 ```html
 <div class="notification warning-icon">
@@ -66,9 +66,9 @@ Warndarstellung mit Warning-Icon:
 </div>
 ```
 
-### Pulse-Effekt
+### Pulse-effect
 
-Pulsierende Warndarstellung für höhere Aufmerksamkeit:
+Pulsierende Warndarstellung for hohere Aufmerksamkeit:
 
 ```html
 <div class="badge warning-pulse">
@@ -76,9 +76,9 @@ Pulsierende Warndarstellung für höhere Aufmerksamkeit:
 </div>
 ```
 
-### Flash-Effekt
+### Flash-effect
 
-Blinkende Warndarstellung für kritische Hinweise:
+Blinkende Warndarstellung for kritische Notee:
 
 ```html
 <div class="notification warning-flash">
@@ -86,9 +86,9 @@ Blinkende Warndarstellung für kritische Hinweise:
 </div>
 ```
 
-### Glow-Effekt
+### Glow-effect
 
-Warndarstellung mit orangefarbenem Glüheffekt:
+Warndarstellung with orangefarbenem Gluheffekt:
 
 ```html
 <button class="btn warning-glow">
@@ -96,51 +96,51 @@ Warndarstellung mit orangefarbenem Glüheffekt:
 </button>
 ```
 
-### Badge-Effekt
+### badge-effect
 
-Kompakte Warndarstellung als kleines Badge:
+Kompakte Warndarstellung as kleines badge:
 
 ```html
 <span class="warning-badge">99+</span>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Warning-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Warning-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Formelemente
+### form elements
 
 ```html
 <div class="form-group">
   <label for="password">Passwort</label>
   <input type="password" id="password" class="warning-border" value="Abc123">
-  <p class="warning-text">Passwort ist zu schwach</p>
+  <p class="warning-text">Passwort ist to schwach</p>
 </div>
 
 <select class="warning-border">
-  <option value="1">Alte Version (nicht empfohlen)</option>
-  <option value="2">Aktuelle Version</option>
+  <option value="1">Alte version (not empfohlen)</option>
+  <option value="2">Aktuelle version</option>
 </select>
 ```
 
-### Buttons und Aktionen
+### buttons and Aktionen
 
 ```html
-<button class="btn warning-bg">Mit Vorsicht fortfahren</button>
-<a href="#" class="link warning-text">Nicht empfohlene Option</a>
+<button class="btn warning-bg">with Vorsicht fortfahren</button>
+<a href="#" class="link warning-text">not empfohlene Option</a>
 ```
 
-### Benachrichtigungen und Alerts
+### notifications and Alerts
 
 ```html
 <div class="alert warning-bg">
-  <h4>Achtung</h4>
-  <p>Sie haben ungespeicherte Änderungen.</p>
+  <h4>attention</h4>
+  <p>them have ungespeicherte Anderungen.</p>
 </div>
 
 <div class="toast warning-border">
-  <div class="toast-header">Hinweis</div>
-  <div class="toast-body">Updates verfügbar</div>
+  <div class="toast-header">Note</div>
+  <div class="toast-body">Updates verfugbar</div>
 </div>
 ```
 
@@ -157,9 +157,9 @@ Warning-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Warning-Effekte können über CSS Variables angepasst werden:
+the Warning-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -168,17 +168,17 @@ Die Warning-Effekte können über CSS Variables angepasst werden:
   --warning-border-width: 1px; /* Warnrandbreite */
   --warning-background: rgba(255, 193, 7, 0.1); /* Warnhintergrundfarbe */
   --warning-text-color: #ffc107; /* Warntextfarbe */
-  --warning-icon-size: 16px; /* Größe des Warn-Icons */
-  --warning-pulse-opacity: 0.6; /* Deckkraft für Pulsiereffekt */
+  --warning-icon-size: 16px; /* size des Warn-icons */
+  --warning-pulse-opacity: 0.6; /* Deckkraft for Pulsiereffekt */
   --warning-pulse-duration: 2s; /* Dauer des Pulsiereffekts */
   --warning-flash-duration: 1s; /* Dauer des Blinkeffekts */
-  --warning-flash-color: #fff3cd; /* Farbe für Blinkeffekt */
-  --warning-glow-radius: 4px; /* Radius für Glüheffekt */
-  --warning-glow-intensity: 0.5; /* Intensität des Glüheffekts */
-  --warning-badge-size: 18px; /* Größe des Warning-Badges */
+  --warning-flash-color: #fff3cd; /* color for Blinkeffekt */
+  --warning-glow-radius: 4px; /* Radius for Gluheffekt */
+  --warning-glow-intensity: 0.5; /* Intensitat des Gluheffekts */
+  --warning-badge-size: 18px; /* size des Warning-badges */
 }
 
-/* Anpassung für dunkle Themes */
+/* Customization for dunkle themes */
 .dark-theme {
   --warning-color: #ffda6a;
   --warning-background: rgba(255, 218, 106, 0.15);
@@ -189,7 +189,7 @@ Die Warning-Effekte können über CSS Variables angepasst werden:
 
 ## Animierte Warneffekte
 
-### Pulse-Animation
+### Pulse-animation
 
 ```css
 @keyframes warningPulse {
@@ -202,7 +202,7 @@ Die Warning-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-### Flash-Animation
+### Flash-animation
 
 ```css
 @keyframes warningFlash {
@@ -215,7 +215,7 @@ Die Warning-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-### Badge-Animation
+### badge-animation
 
 ```css
 @keyframes warningBadgePulse {
@@ -239,9 +239,9 @@ Die Warning-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## Kontextbezogene Warnungen
+## Kontextbezogene warnings
 
-Warning-Effekte können je nach Kontext unterschiedlich gestaltet werden:
+Warning-effects can je after Kontext unterschiedlich gestaltet become:
 
 ### Ablaufende Sitzung
 
@@ -249,14 +249,14 @@ Warning-Effekte können je nach Kontext unterschiedlich gestaltet werden:
 <div class="session-warning warning-bg">
   <div class="warning-icon"></div>
   <div class="warning-content">
-    <h5>Sitzung läuft bald ab</h5>
-    <p>Ihre Sitzung läuft in <span class="countdown">5:00</span> Minuten ab.</p>
+    <h5>Sitzung lauft bald ab</h5>
+    <p>Ihre Sitzung lauft in <span class="countdown">5:00</span> Minuten ab.</p>
   </div>
-  <button class="btn btn-sm">Verlängern</button>
+  <button class="btn btn-sm">Verlangern</button>
 </div>
 ```
 
-### Kapazitätswarnung
+### Kapazitatswarnung
 
 ```html
 <div class="storage-indicator">
@@ -278,44 +278,44 @@ Warning-Effekte können je nach Kontext unterschiedlich gestaltet werden:
   <input type="text" id="username" class="warning-border" value="user1">
   <p class="warning-text">
     <span class="warning-icon"></span>
-    Dieser Benutzername ist bereits vergeben. Verfügbarkeit prüfen?
+    this Benutzername ist bereits vergeben. Verfugbarkeit prufen?
   </p>
 </div>
 ```
 
 ## JavaScript-Integration
 
-Für dynamische Warning-Effekte kann JavaScript verwendet werden:
+for dynamische Warning-effects kann JavaScript verwendet become:
 
 ```javascript
-// Dynamisches Hinzufügen von Warning-Effekten
+// Dynamisches add from Warning-Effekten
 function showWarningEffect(element, type = 'border', message = '', autoHide = true) {
-  // Warning-Klasse hinzufügen
+  // Warning-Class add
   const warningClass = `warning-${type}`;
   element.classList.add(warningClass);
   
-  // Wenn eine Nachricht vorhanden ist, diese anzeigen
+  // if a Nachricht vorhanden ist, these anzeigen
   if (message) {
-    // Bestehende Warnung entfernen, falls vorhanden
+    // Bestehende warning remove, if vorhanden
     const existingWarning = element.nextElementSibling;
     if (existingWarning && existingWarning.classList.contains('warning-message')) {
       existingWarning.remove();
     }
     
-    // Neue Warnmeldung erstellen
+    // Neue Warnmeldung create
     const warningMessage = document.createElement('p');
     warningMessage.classList.add('warning-text', 'warning-message');
     warningMessage.innerHTML = `<span class="warning-icon"></span> ${message}`;
     
-    // Warnmeldung nach dem Element einfügen
+    // Warnmeldung after dem element einfugen
     element.parentNode.insertBefore(warningMessage, element.nextSibling);
     
-    // ARIA für Accessibility
+    // ARIA for Accessibility
     const warningId = `warning-${Math.random().toString(36).substr(2, 9)}`;
     warningMessage.id = warningId;
     element.setAttribute('aria-describedby', warningId);
     
-    // Für Screenreader ankündigen
+    // for Screenreader ankundigen
     warningMessage.setAttribute('role', 'alert');
     warningMessage.setAttribute('aria-live', 'polite');
   }
@@ -325,7 +325,7 @@ function showWarningEffect(element, type = 'border', message = '', autoHide = tr
     setTimeout(() => {
       element.classList.remove(warningClass);
       
-      // Warnmeldung entfernen, falls vorhanden
+      // Warnmeldung remove, if vorhanden
       const warningMessage = element.nextElementSibling;
       if (warningMessage && warningMessage.classList.contains('warning-message')) {
         warningMessage.remove();
@@ -334,12 +334,12 @@ function showWarningEffect(element, type = 'border', message = '', autoHide = tr
     }, 5000);
   }
   
-  // Rückgabe einer Funktion zum manuellen Entfernen
+  // Ruckgabe einer Function zum manuellen remove
   return {
     clear: () => {
       element.classList.remove(warningClass);
       
-      // Warnmeldung entfernen, falls vorhanden
+      // Warnmeldung remove, if vorhanden
       const warningMessage = element.nextElementSibling;
       if (warningMessage && warningMessage.classList.contains('warning-message')) {
         warningMessage.remove();
@@ -354,12 +354,12 @@ const passwordInput = document.getElementById('password');
 passwordInput.addEventListener('input', function() {
   // Einfache Passwortvalidierung
   if (this.value.length > 0 && this.value.length < 8) {
-    showWarningEffect(this, 'border', 'Passwort sollte mindestens 8 Zeichen lang sein', false);
+    showWarningEffect(this, 'border', 'Passwort sollte mindestens 8 Zeichen lang be', false);
   } else {
-    // Warnung entfernen, wenn Passwort leer oder lang genug ist
+    // warning remove, if Passwort leer or lang genug ist
     this.classList.remove('warning-border');
     
-    // Warnmeldung entfernen, falls vorhanden
+    // Warnmeldung remove, if vorhanden
     const warningMessage = this.nextElementSibling;
     if (warningMessage && warningMessage.classList.contains('warning-message')) {
       warningMessage.remove();
@@ -369,19 +369,19 @@ passwordInput.addEventListener('input', function() {
 });
 ```
 
-## Ablaufende Countdown-Warnung
+## Ablaufende Countdown-warning
 
-Ein häufiger Anwendungsfall ist die Warnung vor ablaufenden Sitzungen:
+a haufiger Anwendungsfall ist the warning before ablaufenden Sitzungen:
 
 ```html
 <div id="session-warning" class="warning-bg" style="display: none;">
-  <p>Ihre Sitzung läuft in <span id="countdown">5:00</span> Minuten ab.</p>
-  <button id="extend-session">Sitzung verlängern</button>
+  <p>Ihre Sitzung lauft in <span id="countdown">5:00</span> Minuten ab.</p>
+  <button id="extend-session">Sitzung verlangern</button>
 </div>
 ```
 
 ```javascript
-// Countdown-Warnung
+// Countdown-warning
 function startSessionWarning(minutesUntilExpiry) {
   const warningElement = document.getElementById('session-warning');
   const countdownElement = document.getElementById('countdown');
@@ -390,7 +390,7 @@ function startSessionWarning(minutesUntilExpiry) {
   let secondsLeft = minutesUntilExpiry * 60;
   let countdownInterval;
   
-  // Warnung anzeigen
+  // warning anzeigen
   warningElement.style.display = 'block';
   warningElement.classList.add('warning-fade-in');
   
@@ -403,53 +403,53 @@ function startSessionWarning(minutesUntilExpiry) {
     const seconds = secondsLeft % 60;
     countdownElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
     
-    // Zusätzliche Warnung bei kritischer Zeit
+    // Zusatzliche warning at kritischer Zeit
     if (secondsLeft <= 60) {
       warningElement.classList.remove('warning-bg');
       warningElement.classList.add('warning-flash');
     }
     
-    // Timeout bei 0
+    // Timeout at 0
     if (secondsLeft <= 0) {
       clearInterval(countdownInterval);
-      // Hier Sitzung beenden oder automatisch verlängern
+      // Hier Sitzung beenden or automatisch verlangern
       window.location.href = '/session-expired';
     }
   }, 1000);
   
-  // Event-Listener für Verlängerungsbutton
+  // Event-Listener for Verlangerungsbutton
   extendButton.addEventListener('click', () => {
     clearInterval(countdownInterval);
     warningElement.style.display = 'none';
     warningElement.classList.remove('warning-fade-in', 'warning-flash');
     
-    // Hier Sitzung verlängern (API-Aufruf)
+    // Hier Sitzung verlangern (API-Aufruf)
     fetch('/api/extend-session', { method: 'POST' })
       .then(response => response.json())
       .then(data => {
-        console.log('Sitzung verlängert', data);
-        // Optional: Nach einiger Zeit erneut warnen
+        console.log('Sitzung verlangert', data);
+        // Optional: after einiger Zeit erneut warnen
         setTimeout(() => startSessionWarning(30), (30 - 5) * 60 * 1000);
       });
   });
 }
 
-// Usage: 5 Minuten vor Ablauf warnen
+// Usage: 5 Minuten before Ablauf warnen
 setTimeout(() => startSessionWarning(5), (30 - 5) * 60 * 1000);
 ```
 
 ## Accessibility
 
-Bei der Usage von Warning-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Warning-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Semantik**: Verwenden Sie passende ARIA-Attribute wie `role="alert"` für wichtige Warnungen
-2. **Live-Regions**: Verwenden Sie `aria-live="polite"` für dynamische Warnungen
-3. **Kontrast**: Achten Sie auf ausreichenden Kontrast für Warnfarben
-4. **Multiple Signale**: Verlassen Sie sich nicht nur auf Farbe zur Warndarstellung
-5. **Timing**: Stellen Sie sicher, dass Warnungen lang genug sichtbar sind, um wahrgenommen zu werden
+1. **Semantik**: use them passende ARIA-attributes how `role="alert"` for wichtige warnings
+2. **Live-Regions**: use them `aria-live="polite"` for dynamische warnings
+3. **Kontrast**: ensure them on ausreichenden Kontrast for Warnfarben
+4. **Multiple Signale**: Verlassen them oneself not only on color zur Warndarstellung
+5. **Timing**: ensure, that warnings lang genug sichtbar sind, um wahrgenommen to become
 
 ```html
-<!-- Barrierefreie Warnung -->
+<!-- Barrierefreie warning -->
 <div 
   class="alert warning-bg" 
   role="alert" 
@@ -457,14 +457,14 @@ Bei der Usage von Warning-Effekten sollten folgende Accessibilitysaspekte berüc
 >
   <div class="warning-icon" aria-hidden="true"></div>
   <div class="alert-content">
-    <strong>Achtung!</strong> Diese Aktion kann nicht rückgängig gemacht werden.
+    <strong>attention!</strong> these Aktion kann not ruckgangig gemacht become.
   </div>
 </div>
 ```
 
-## Animation und Timing
+## animation and Timing
 
-Die Dauer und das Timing von Warning-Animationen sind wichtig für eine gute Benutzererfahrung:
+the Dauer and the Timing from Warning-animations sind important for a gute Benutzererfahrung:
 
 ```css
 /* Pulsieranimation */
@@ -504,20 +504,20 @@ Die Dauer und das Timing von Warning-Animationen sind wichtig für eine gute Ben
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Warning-Effekte sind mit allen modernen Browsern kompatibel. Einige Animationseffekte haben jedoch Einschränkungen in älteren Browsern.
+the meisten Warning-effects sind with allen modernen Browsern kompatibel. some Animationseffekte have however Einschrankungen in alteren Browsern.
 
-| Browser | Kompatibilität |
+| Browser | Kompatibilitat |
 |---------|---------------|
-| Chrome | Vollständige Unterstützung |
-| Firefox | Vollständige Unterstützung |
-| Safari | Vollständige Unterstützung |
-| Edge | Vollständige Unterstützung |
-| IE11 | Eingeschränkte Unterstützung für Animationen und Glüheffekte |
+| Chrome | Vollstandige Unterstutzung |
+| Firefox | Vollstandige Unterstutzung |
+| Safari | Vollstandige Unterstutzung |
+| Edge | Vollstandige Unterstutzung |
+| IE11 | Eingeschrankte Unterstutzung for animations and Gluheffekte |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Error-Effekte](/docs/effects/interaction/error.md) - Effekte für Fehlerzustände
-- [Success-Effekte](/docs/effects/interaction/success.md) - Erfolgseffekte
-- [Info-Effekte](/docs/effects/interaction/info.md) - Informationseffekte 
+- [Error-effects](/docs/effects/interaction/error.md) - effects for Fehlerzustande
+- [Success-effects](/docs/effects/interaction/success.md) - Erfolgseffekte
+- [info-effects](/docs/effects/interaction/info.md) - Informationseffekte 

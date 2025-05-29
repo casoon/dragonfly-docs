@@ -150,7 +150,7 @@ document.documentElement.style.setProperty('--color-primary', '#FF6B6B');
 - Use fallback values
 - Implement a polyfill for older browsers
 
-# Theme System
+# Theme system
 
 The theme system of the Casoon UI Library enables flexible design of your application's appearance with predefined themes and customizable design tokens.
 
@@ -469,7 +469,7 @@ All components automatically use the theme variables, ensuring a consistent appe
 
 You can override the theme variables in your own CSS file to customize the appearance:
 
-### Simple Customizations
+### Simple customizations
 
 ```css
 /* Customize the Day theme with your brand color */
@@ -545,7 +545,7 @@ The color system uses semantic variables for various use cases. Each theme defin
 
 Casoon UI Themes can respond to user preferences:
 
-### System Color Scheme (Light/Dark)
+### system Color Scheme (Light/Dark)
 
 ```css
 /* Automatic adaptation to operating system setting */
@@ -650,8 +650,8 @@ export default defineConfig({
 
 ```js
 // webpack.config.js
-module.exports = {
-  module: {
+modules.exports = {
+  modules: {
     rules: [
       {
         test: /\.scss$/,
@@ -678,7 +678,7 @@ module.exports = {
 - **Plan for Accessibility** - Offer alternative themes for users with special needs
 - **Test Theme Switching** - Ensure all components update correctly
 - **Optimize Dark Mode** - Reduce brightness of images in dark themes
-- **Respect System Settings** - Support `prefers-color-scheme` and `prefers-reduced-motion`
+- **Respect system Settings** - Support `prefers-color-scheme` and `prefers-reduced-motion`
 - **Consistent Contrast Colors** - Define a matching contrast color for each semantic color 
 
 ## Creating Custom Themes
@@ -706,10 +706,10 @@ You can create custom themes by using the themes layer:
 
 This integrates your custom theme seamlessly into the existing theme hierarchy.
 
-## Best Practices for the Theme System
+## Best Practices for the Theme system
 
 - **Use Theme Tokens in Your Components** - Use `var(--color-primary)` instead of direct color values
 - **Provide Theme Switchers** - Give users the ability to choose their preferred theme
-- **Consider System Settings** - Respect `prefers-color-scheme` for dark/light preferences
+- **Consider system Settings** - Respect `prefers-color-scheme` for dark/light preferences
 - **Test Themes for Contrast** - Ensure all themes provide sufficient contrast for readability
 - **Consistent Semantics Across Themes** - Make sure that semantic colors like `success` or `error` maintain their meaning across all themes 

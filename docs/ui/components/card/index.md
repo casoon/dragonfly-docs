@@ -91,7 +91,7 @@ The Card component provides a flexible and customizable card component for the C
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Card module */
+/* Card modules */
 @import '@casoon/ui-lib/components/card.css';
 ```
 

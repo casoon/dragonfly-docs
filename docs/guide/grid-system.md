@@ -1,196 +1,196 @@
-# Grid System
+# grid system
 
-Das Grid System der Casoon UI Library bietet eine leistungsstarke Möglichkeit, komplexe, responsive Layouts zu erstellen.
+the grid system the Casoon UI Library bietet a leistungsstarke Moglichkeit, komplexe, responsive layouts to create.
 
 ## Importing Modules
 
-**Wichtig:** Das Grid System ist im `layout.css` Layer enthalten, welches `core.css` als Abhängigkeit hat. Stellen Sie sicher, dass diese in der richtigen Reihenfolge importiert werden:
+**important:** the grid system ist im `layout.css` Layer enthalten, welches `core.css` as Abhangigkeit hat. ensure, that these in the richtigen Reihenfolge importiert become:
 
 ```css
-/* Notwendige Abhängigkeit */
+/* Notwendige Abhangigkeit */
 @import '@casoon/ui-lib/core.css';
 
-/* Layout-System, enthält Grid */
+/* layout-system, enthalt grid */
 @import '@casoon/ui-lib/layout.css';
 ```
 
-Wenn Sie nur das Layout-Layer importieren ohne core.css, können einige Funktionen nicht korrekt funktionieren, da notwendige Definitionen für Variablen, Utility-Klassen und Grundstile fehlen würden.
+If you only the layout-Layer import without core.css, can some functions not korrekt funktionieren, da notwendige Definitionen for variables, Utility-classes and Grundstile fehlen wurden.
 
-## Grid mit Spalten
+## grid with columns
 
-Sie können die Anzahl der Spalten mit der `grid-cols-*` Klasse definieren:
+You can the Anzahl the columns with the `grid-cols-*` Class define:
 
 ```html
 <div class="grid grid-cols-3">
-  <div>Element 1</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
+  <div>element 1</div>
+  <div>element 2</div>
+  <div>element 3</div>
 </div>
 ```
 
-Verfügbare Spalten-Klassen:
-- `grid-cols-1` bis `grid-cols-12`: Definiert eine feste Anzahl von Spalten
-- `grid-cols-auto`: Spalten werden automatisch basierend auf dem Inhalt erstellt
-- `grid-cols-none`: Keine vordefinierte Spaltenstruktur
+Verfugbare columns-classes:
+- `grid-cols-1` until `grid-cols-12`: Definiert a feste Anzahl from columns
+- `grid-cols-auto`: columns become automatisch basierend on dem content erstellt
+- `grid-cols-none`: no vordefinierte Spaltenstruktur
 
-## Responsive Grids
+## responsive Grids
 
-Das Grid System ist vollständig responsiv. Sie können für verschiedene Bildschirmgrößen unterschiedliche Layouts definieren:
+the grid system ist vollstandig responsiv. You can for verschiedene Bildschirmgrossen unterschiedliche layouts define:
 
 ```html
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-  <div>Element 1</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
+  <div>element 1</div>
+  <div>element 2</div>
+  <div>element 3</div>
 </div>
 ```
 
-Verfügbare Breakpoints:
-- `sm:`: Klein (>= 640px)
+Verfugbare Breakpoints:
+- `sm:`: small (>= 640px)
 - `md:`: Mittel (>= 768px)
-- `lg:`: Groß (>= 1024px)
-- `xl:`: Extra groß (>= 1280px)
-- `2xl:`: Extra extra groß (>= 1536px)
+- `lg:`: Gross (>= 1024px)
+- `xl:`: Extra gross (>= 1280px)
+- `2xl:`: Extra extra gross (>= 1536px)
 
-## Abstände zwischen Grid-Elementen
+## Abstande between grid-Elementen
 
-Mit `gap-*` Klassen können Sie den Abstand zwischen Grid-Elementen definieren:
+with `gap-*` classes can them den spacing between grid-Elementen define:
 
 ```html
 <div class="grid grid-cols-3 gap-4">
-  <div>Element 1</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
+  <div>element 1</div>
+  <div>element 2</div>
+  <div>element 3</div>
 </div>
 ```
 
-Abstände können auch unterschiedlich für horizontale und vertikale Richtungen definiert werden:
-- `gap-x-*`: Horizontaler Abstand
-- `gap-y-*`: Vertikaler Abstand
+Abstande can also unterschiedlich for horizontale and vertikale Richtungen definiert become:
+- `gap-x-*`: Horizontaler spacing
+- `gap-y-*`: Vertikaler spacing
 
 ```html
 <div class="grid grid-cols-3 gap-x-4 gap-y-8">
-  <div>Element 1</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
+  <div>element 1</div>
+  <div>element 2</div>
+  <div>element 3</div>
 </div>
 ```
 
-## Ausrichtung der Grid-Elemente
+## alignment the grid-elements
 
-### Horizontale Ausrichtung
+### Horizontale alignment
 
 ```html
 <div class="grid grid-cols-3 justify-items-start">
-  <div>Element 1</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
+  <div>element 1</div>
+  <div>element 2</div>
+  <div>element 3</div>
 </div>
 ```
 
 Optionen:
-- `justify-items-start`: Ausrichtung am Anfang
-- `justify-items-end`: Ausrichtung am Ende
-- `justify-items-center`: Zentrierte Ausrichtung
-- `justify-items-stretch`: Ausdehnung über die gesamte Breite (Standard)
+- `justify-items-start`: alignment am Anfang
+- `justify-items-end`: alignment am Ende
+- `justify-items-center`: Zentrierte alignment
+- `justify-items-stretch`: Ausdehnung over the gesamte width (Standard)
 
-### Vertikale Ausrichtung
+### Vertikale alignment
 
 ```html
 <div class="grid grid-cols-3 align-items-center">
-  <div>Element 1</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
+  <div>element 1</div>
+  <div>element 2</div>
+  <div>element 3</div>
 </div>
 ```
 
 Optionen:
-- `align-items-start`: Ausrichtung am Anfang
-- `align-items-end`: Ausrichtung am Ende
-- `align-items-center`: Zentrierte Ausrichtung
-- `align-items-stretch`: Ausdehnung über die gesamte Höhe (Standard)
+- `align-items-start`: alignment am Anfang
+- `align-items-end`: alignment am Ende
+- `align-items-center`: Zentrierte alignment
+- `align-items-stretch`: Ausdehnung over the gesamte height (Standard)
 
-## Element-Platzierung
+## element-Platzierung
 
-Einzelne Elemente können über mehrere Zellen im Grid platziert werden:
+Einzelne elements can over several Zellen im grid platziert become:
 
 ```html
 <div class="grid grid-cols-3">
-  <div class="col-span-2">Nimmt 2 Spalten ein</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
+  <div class="col-span-2">Nimmt 2 columns a</div>
+  <div>element 2</div>
+  <div>element 3</div>
 </div>
 ```
 
-Verfügbare Klassen:
-- `col-span-1` bis `col-span-12`: Definiert, wie viele Spalten das Element einnimmt
-- `col-start-1` bis `col-start-13`: Definiert, in welcher Spalte das Element beginnt
-- `col-end-1` bis `col-end-13`: Definiert, in welcher Spalte das Element endet
+Verfugbare classes:
+- `col-span-1` until `col-span-12`: Definiert, how many columns the element einnimmt
+- `col-start-1` until `col-start-13`: Definiert, in welcher column the element beginnt
+- `col-end-1` until `col-end-13`: Definiert, in welcher column the element endet
 
-Ähnlich funktioniert es für Zeilen:
-- `row-span-1` bis `row-span-6`: Definiert, wie viele Zeilen das Element einnimmt
-- `row-start-1` bis `row-start-7`: Definiert, in welcher Zeile das Element beginnt
-- `row-end-1` bis `row-end-7`: Definiert, in welcher Zeile das Element endet
+Ahnlich funktioniert it for rows:
+- `row-span-1` until `row-span-6`: Definiert, how many rows the element einnimmt
+- `row-start-1` until `row-start-7`: Definiert, in welcher row the element beginnt
+- `row-end-1` until `row-end-7`: Definiert, in welcher row the element endet
 
 ## Automatischer Zeilenumbruch
 
-Mit `grid-flow-*` Klassen können Sie steuern, wie Elemente im Grid platziert werden:
+with `grid-flow-*` classes can them steuern, how elements im grid platziert become:
 
 ```html
 <div class="grid grid-cols-3 grid-flow-row-dense">
-  <div class="col-span-2">Nimmt 2 Spalten ein</div>
-  <div>Element 2</div>
-  <div>Element 3</div>
-  <div class="col-span-2">Nimmt 2 Spalten ein</div>
+  <div class="col-span-2">Nimmt 2 columns a</div>
+  <div>element 2</div>
+  <div>element 3</div>
+  <div class="col-span-2">Nimmt 2 columns a</div>
 </div>
 ```
 
 Optionen:
 - `grid-flow-row`: Zeilenweise Anordnung (Standard)
 - `grid-flow-col`: Spaltenweise Anordnung
-- `grid-flow-row-dense`: Zeilenweise Anordnung mit dichterer Packung
-- `grid-flow-col-dense`: Spaltenweise Anordnung mit dichterer Packung
+- `grid-flow-row-dense`: Zeilenweise Anordnung with dichterer Packung
+- `grid-flow-col-dense`: Spaltenweise Anordnung with dichterer Packung
 
-## Container-Grid
+## containers-grid
 
-Für eine vordefinierte Grid-Struktur mit maximaler Breite und zentrierter Ausrichtung können Sie die Container-Klasse verwenden:
+for a vordefinierte grid-Structure with maximaler width and zentrierter alignment can them the containers-Class use:
 
 ```html
-<div class="container">
+<div class="containers">
   <div class="grid grid-cols-3">
-    <div>Element 1</div>
-    <div>Element 2</div>
-    <div>Element 3</div>
+    <div>element 1</div>
+    <div>element 2</div>
+    <div>element 3</div>
   </div>
 </div>
 ```
 
-Der Container passt seine Breite automatisch an verschiedene Bildschirmgrößen an:
-- Standard: 100% Breite
-- `sm`: maximale Breite von 640px
-- `md`: maximale Breite von 768px
-- `lg`: maximale Breite von 1024px
-- `xl`: maximale Breite von 1280px
-- `2xl`: maximale Breite von 1536px
+the containers passt seine width automatisch on verschiedene Bildschirmgrossen on:
+- Standard: 100% width
+- `sm`: maximale width from 640px
+- `md`: maximale width from 768px
+- `lg`: maximale width from 1024px
+- `xl`: maximale width from 1280px
+- `2xl`: maximale width from 1536px
 
 ## Best Practices
 
-- **12-Spalten-System nutzen**: Verwenden Sie das standardmäßige 12-Spalten-System für maximale Flexibility bei der Gestaltung von Layouts.
-- **Verschachtelte Grids für komplexe Layouts**: Nutzen Sie verschachtelte Grids, um komplexe UI-Strukturen zu erstellen.
-- **Grid-Bereiche benennen**: Verwenden Sie Grid-Bereichsnamen für komplexe Layouts, um die Lesbarkeit und Maintainability zu verbessern.
-- **Auto-Fill und Auto-Fit für responsive Galerien**: Nutzen Sie `grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))` für dynamische, responsive Galerien.
-- **Gap-Eigenschaft verwenden**: Nutzen Sie die `gap`-Eigenschaft für konsistente Abstände zwischen Grid-Elementen.
-- **Minmax für flexible Zellgrößen**: Verwenden Sie die `minmax()`-Funktion, um minimale und maximale Zellgrößen festzulegen.
-- **Grid mit Flexbox kombinieren**: Nutzen Sie Grid für das gesamte Seitenlayout und Flexbox für Components.
-- **Responsive Grid-Layouts**: Passen Sie Ihre Grid-Struktur an verschiedene Bildschirmgrößen mit Breakpoint-Klassen an.
-- **Implizite Grids für dynamischen Inhalt**: Nutzen Sie `grid-auto-rows` und `grid-auto-columns` für Inhalte mit unbekannter Anzahl von Elementen.
+- **12-columns-system use**: use them the standardmassige 12-columns-system for maximale Flexibility at the Gestaltung from layouts.
+- **Verschachtelte Grids for komplexe layouts**: use them verschachtelte Grids, um komplexe UI-Strukturen to create.
+- **grid-areas benennen**: use them grid-Bereichsnamen for komplexe layouts, um the Lesbarkeit and Maintainability to verbessern.
+- **Auto-Fill and Auto-Fit for responsive Galerien**: use them `grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))` for dynamische, responsive Galerien.
+- **Gap-Property use**: use them the `gap`-Property for konsistente Abstande between grid-Elementen.
+- **Minmax for flexible Zellgrossen**: use them the `minmax()`-Function, um minimale and maximale Zellgrossen festzulegen.
+- **grid with flexbox combine**: use them grid for the gesamte Seitenlayout and flexbox for Components.
+- **responsive grid-layouts**: Passen them Ihre grid-Structure on verschiedene Bildschirmgrossen with breakpoint-classes on.
+- **Implizite Grids for dynamischen content**: use them `grid-auto-rows` and `grid-auto-columns` for contents with unbekannter Anzahl from Elementen.
 
 ## Examples
 
-### Einfaches responsives Layout
+### Einfaches responsives layout
 
 ```html
-<div class="container">
+<div class="containers">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <header class="col-span-full">
       <h1>Meine Webseite</h1>
@@ -202,46 +202,46 @@ Der Container passt seine Breite automatisch an verschiedene Bildschirmgrößen 
       Hauptinhalt
     </main>
     <footer class="col-span-full">
-      Footer
+      footer
     </footer>
   </div>
 </div>
 ```
 
-### Komplexes Grid-Layout
+### Komplexes grid-layout
 
 ```html
-<div class="container">
+<div class="containers">
   <div class="grid grid-cols-12 gap-4">
     <div class="col-span-12 lg:col-span-8">Hauptinhalt</div>
     <div class="col-span-12 lg:col-span-4">Seitenleiste</div>
     
-    <div class="col-span-12 sm:col-span-6 lg:col-span-3">Box 1</div>
-    <div class="col-span-12 sm:col-span-6 lg:col-span-3">Box 2</div>
-    <div class="col-span-12 sm:col-span-6 lg:col-span-3">Box 3</div>
-    <div class="col-span-12 sm:col-span-6 lg:col-span-3">Box 4</div>
+    <div class="col-span-12 sm:col-span-6 lg:col-span-3">box 1</div>
+    <div class="col-span-12 sm:col-span-6 lg:col-span-3">box 2</div>
+    <div class="col-span-12 sm:col-span-6 lg:col-span-3">box 3</div>
+    <div class="col-span-12 sm:col-span-6 lg:col-span-3">box 4</div>
   </div>
 </div>
 ```
 
-## Integration mit anderen Components
+## Integration with anderen Components
 
-Das Grid System lässt sich nahtlos mit anderen Components der Casoon UI Library kombinieren:
+the grid system lasst oneself nahtlos with anderen Components the Casoon UI Library combine:
 
 ```html
-<div class="container">
+<div class="containers">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <div class="card">
       <div class="card__header">Card 1</div>
-      <div class="card__body">Inhalt der Card 1</div>
+      <div class="card__body">content the Card 1</div>
     </div>
     <div class="card">
       <div class="card__header">Card 2</div>
-      <div class="card__body">Inhalt der Card 2</div>
+      <div class="card__body">content the Card 2</div>
     </div>
     <div class="card">
       <div class="card__header">Card 3</div>
-      <div class="card__body">Inhalt der Card 3</div>
+      <div class="card__body">content the Card 3</div>
     </div>
   </div>
 </div>
@@ -249,17 +249,17 @@ Das Grid System lässt sich nahtlos mit anderen Components der Casoon UI Library
 
 ## CSS Variables
 
-Das Grid System verwendet folgende CSS Variables, die Sie anpassen können:
+the grid system verwendet folgende CSS Variables, the them customize can:
 
 ```css
 :root {
   --grid-columns: 12;
   --grid-gap: 1rem;
-  --container-padding: 1rem;
-  --container-max-width-sm: 640px;
-  --container-max-width-md: 768px;
-  --container-max-width-lg: 1024px;
-  --container-max-width-xl: 1280px;
-  --container-max-width-2xl: 1536px;
+  --containers-padding: 1rem;
+  --containers-max-width-sm: 640px;
+  --containers-max-width-md: 768px;
+  --containers-max-width-lg: 1024px;
+  --containers-max-width-xl: 1280px;
+  --containers-max-width-2xl: 1536px;
 }
 ``` 

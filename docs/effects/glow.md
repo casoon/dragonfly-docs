@@ -3,90 +3,90 @@ title: Glow Effects
 category: Effects
 ---
 
-# Glow-Effekte
+# Glow-effects
 
-Die Glow-Effekte der Casoon UI Library bieten eine Sammlung von leuchtenden und strahlenden visuellen Effekten, die Elementen eine ansprechende Tiefe und visuelle Aufmerksamkeit verleihen, ideal für moderne und energiereiche Benutzeroberflächen.
+the Glow-effects the Casoon UI Library bieten a Sammlung from leuchtenden and strahlenden visuellen Effekten, the Elementen a ansprechende Tiefe and visuelle Aufmerksamkeit verleihen, ideal for moderne and energiereiche user interfaces.
 
-## Überblick
+## Uberblick
 
-Glow-Effekte nutzen CSS-Schatten und Farbverläufe, um ein strahlendes, leuchtendes Erscheinungsbild zu erzeugen. Sie können verwendet werden, um wichtige Elemente hervorzuheben, visuelle Hierarchien zu schaffen und interaktive States zu verdeutlichen. Diese Effekte verleihen Ihrer Benutzeroberfläche einen modernen, dynamischen Look.
+Glow-effects use CSS-shadow and Farbverlaufe, um a strahlendes, leuchtendes Erscheinungsbild to erzeugen. You can verwendet become, um wichtige elements hervorzuheben, visuelle Hierarchien to schaffen and interaktive States to verdeutlichen. these effects verleihen Ihrer Benutzeroberflache einen modernen, dynamischen Look.
 
 ## Installation
 
-Importieren Sie das Glow-Effekte-Modul über CSS:
+import them the Glow-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/glow.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
-### Grundlegende Glow-Effekte
+### Grundlegende Glow-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.glow` | Standardmäßiger Glow-Effekt mit weißem Leuchten |
-| `.glow-sm` | Kleiner Glow-Effekt mit geringerem Radius |
-| `.glow-md` | Mittlerer Glow-Effekt (Standard) |
-| `.glow-lg` | Großer Glow-Effekt mit größerem Radius |
-| `.glow-xl` | Extra großer Glow-Effekt für dramatische Wirkung |
-| `.glow-soft` | Weicher, diffuser Glow-Effekt |
-| `.glow-sharp` | Schärferer, intensiverer Glow-Effekt |
-| `.glow-intense` | Sehr intensiver, auffälliger Glow-Effekt |
-| `.glow-inner` | Nach innen gerichteter Glow-Effekt |
-| `.glow-outer` | Nach außen gerichteter Glow-Effekt (Standard) |
-| `.glow-both` | Kombinierter innerer und äußerer Glow-Effekt |
+| `.glow` | Standardmassiger Glow-effect with weissem Leuchten |
+| `.glow-sm` | smaller Glow-effect with geringerem Radius |
+| `.glow-md` | Mittlerer Glow-effect (Standard) |
+| `.glow-lg` | Grosser Glow-effect with grosserem Radius |
+| `.glow-xl` | Extra grosser Glow-effect for dramatische Wirkung |
+| `.glow-soft` | Weicher, diffuser Glow-effect |
+| `.glow-sharp` | Scharferer, intensiverer Glow-effect |
+| `.glow-intense` | very intensiver, auffalliger Glow-effect |
+| `.glow-inner` | after innen gerichteter Glow-effect |
+| `.glow-outer` | after aussen gerichteter Glow-effect (Standard) |
+| `.glow-both` | Kombinierter innerer and ausserer Glow-effect |
 
 ### Glow-Farbvarianten
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.glow-primary` | Glow-Effekt in Primärfarbe |
-| `.glow-secondary` | Glow-Effekt in Sekundärfarbe |
-| `.glow-success` | Glow-Effekt in Erfolgsfarbe (grün) |
-| `.glow-warning` | Glow-Effekt in Warnfarbe (gelb/orange) |
-| `.glow-danger` | Glow-Effekt in Gefahrenfarbe (rot) |
-| `.glow-info` | Glow-Effekt in Informationsfarbe (blau) |
-| `.glow-white` | Weißer Glow-Effekt |
-| `.glow-blue` | Blauer Glow-Effekt |
-| `.glow-green` | Grüner Glow-Effekt |
-| `.glow-red` | Roter Glow-Effekt |
-| `.glow-purple` | Violetter Glow-Effekt |
-| `.glow-cyan` | Cyan-farbener Glow-Effekt |
-| `.glow-pink` | Rosa Glow-Effekt |
-| `.glow-amber` | Bernsteinfarbener Glow-Effekt |
-| `.glow-teal` | Türkisfarbener Glow-Effekt |
+| `.glow-primary` | Glow-effect in Primarfarbe |
+| `.glow-secondary` | Glow-effect in Sekundarfarbe |
+| `.glow-success` | Glow-effect in Erfolgsfarbe (grun) |
+| `.glow-warning` | Glow-effect in Warnfarbe (gelb/orange) |
+| `.glow-danger` | Glow-effect in Gefahrenfarbe (rot) |
+| `.glow-info` | Glow-effect in Informationsfarbe (blau) |
+| `.glow-white` | Weisser Glow-effect |
+| `.glow-blue` | Blauer Glow-effect |
+| `.glow-green` | Gruner Glow-effect |
+| `.glow-red` | Roter Glow-effect |
+| `.glow-purple` | Violetter Glow-effect |
+| `.glow-cyan` | Cyan-farbener Glow-effect |
+| `.glow-pink` | Rosa Glow-effect |
+| `.glow-amber` | Bernsteinfarbener Glow-effect |
+| `.glow-teal` | Turkisfarbener Glow-effect |
 
-### Interaktive Glow-Effekte
+### Interaktive Glow-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.glow-hover` | Zeigt Glow-Effekt bei Hover an |
-| `.glow-active` | Zeigt Glow-Effekt im aktiven Zustand an |
-| `.glow-focus` | Zeigt Glow-Effekt bei Fokus an |
-| `.glow-pulse` | Pulsierender Glow-Effekt |
-| `.glow-breathe` | Sanft atmender Glow-Effekt |
-| `.glow-flash` | Kurz aufblitzender Glow-Effekt |
-| `.glow-fade-in` | Langsam einblendender Glow-Effekt |
-| `.glow-fade-out` | Langsam ausblendender Glow-Effekt |
+| `.glow-hover` | Zeigt Glow-effect at Hover on |
+| `.glow-active` | Zeigt Glow-effect im aktiven state on |
+| `.glow-focus` | Zeigt Glow-effect at Fokus on |
+| `.glow-pulse` | Pulsierender Glow-effect |
+| `.glow-breathe` | Sanft atmender Glow-effect |
+| `.glow-flash` | Kurz aufblitzender Glow-effect |
+| `.glow-fade-in` | Langsam einblendender Glow-effect |
+| `.glow-fade-out` | Langsam ausblendender Glow-effect |
 
-### Element-spezifische Glow-Effekte
+### element-spezifische Glow-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.glow-text` | Glow-Effekt für Text |
-| `.glow-button` | Glow-Effekt für Buttons |
-| `.glow-card` | Glow-Effekt für Cardn |
-| `.glow-icon` | Glow-Effekt für Icons |
-| `.glow-input` | Glow-Effekt für Inputer |
-| `.glow-image` | Glow-Effekt für Bilder |
-| `.glow-border` | Glow-Effekt nur für Ränder |
-| `.glow-nav` | Glow-Effekt für Navigationselemente |
-| `.glow-badge` | Glow-Effekt für Badges |
+| `.glow-text` | Glow-effect for Text |
+| `.glow-button` | Glow-effect for buttons |
+| `.glow-card` | Glow-effect for Cardn |
+| `.glow-icon` | Glow-effect for icons |
+| `.glow-input` | Glow-effect for Inputer |
+| `.glow-image` | Glow-effect for images |
+| `.glow-border` | Glow-effect only for Rander |
+| `.glow-nav` | Glow-effect for Navigationselemente |
+| `.glow-badge` | Glow-effect for badges |
 
 ## Examples
 
-### Grundlegende Glow-Effekte
+### Grundlegende Glow-effects
 
 ```html
 <div class="glow-examples">
@@ -155,7 +155,7 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
 </style>
 ```
 
-### Farbige Glow-Effekte
+### Farbige Glow-effects
 
 ```html
 <div class="glow-examples">
@@ -176,7 +176,7 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
   </div>
   
   <div class="glow-example">
-    <button class="glow-info">Info Glow</button>
+    <button class="glow-info">info Glow</button>
   </div>
   
   <div class="glow-example">
@@ -193,7 +193,7 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
 </div>
 ```
 
-### Interaktive Glow-Effekte
+### Interaktive Glow-effects
 
 ```html
 <div class="glow-examples">
@@ -238,7 +238,7 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
 </style>
 ```
 
-### Glow-Texte und -Elemente
+### Glow-Texte and -elements
 
 ```html
 <div class="glow-elements">
@@ -246,8 +246,8 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
   
   <div class="glow-card glow-soft">
     <h3>Glow Card</h3>
-    <p>Diese Card hat einen weichen Glow-Effekt.</p>
-    <button class="glow-button glow-sharp">Mehr erfahren</button>
+    <p>these Card hat einen weichen Glow-effect.</p>
+    <button class="glow-button glow-sharp">more erfahren</button>
   </div>
   
   <div class="glow-icons">
@@ -260,7 +260,7 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
   <div class="glow-nav-example">
     <nav class="glow-nav">
       <a href="#" class="active">Home</a>
-      <a href="#">Über uns</a>
+      <a href="#">over us</a>
       <a href="#">Produkte</a>
       <a href="#">Kontakt</a>
     </nav>
@@ -359,9 +359,9 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
   </div>
   
   <div class="glow-buttons-showcase">
-    <button class="glow-button glow-border glow-primary">Primär</button>
-    <button class="glow-button glow-border glow-success">Erfolg</button>
-    <button class="glow-button glow-border glow-warning">Warnung</button>
+    <button class="glow-button glow-border glow-primary">Primar</button>
+    <button class="glow-button glow-border glow-success">success</button>
+    <button class="glow-button glow-border glow-warning">warning</button>
     <button class="glow-button glow-border glow-danger">Gefahr</button>
   </div>
 </div>
@@ -441,13 +441,13 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Glow-Effekte können über CSS Variables angepasst werden:
+the Glow-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Glow-Parameter */
+  /* Grundlegende Glow-parameter */
   --glow-opacity: 0.6;
   --glow-blur-radius: 15px;
   --glow-spread-radius: 5px;
@@ -493,12 +493,12 @@ Die Glow-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
+the grundlegende Glow-effect wird through CSS-shadow implementiert:
 
 ```css
-/* Grundlegender Glow-Effekt */
+/* Grundlegender Glow-effect */
 .glow {
   box-shadow: 0 0 var(--glow-blur-radius) var(--glow-spread-radius) var(--glow-color);
 }
@@ -547,7 +547,7 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
   --glow-color: rgba(var(--glow-primary-color-rgb), var(--glow-opacity));
 }
 
-/* Weitere farbige Variants... */
+/* additional farbige Variants... */
 
 /* Interaktive States */
 .glow-hover {
@@ -558,9 +558,9 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
   box-shadow: 0 0 var(--glow-blur-radius) var(--glow-spread-radius) var(--glow-color);
 }
 
-/* Weitere interaktive States... */
+/* additional interaktive States... */
 
-/* Animierte Glow-Effekte */
+/* Animierte Glow-effects */
 .glow-pulse {
   animation: glow-pulse-animation var(--glow-pulse-duration) infinite ease-in-out;
 }
@@ -574,12 +574,12 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
   }
 }
 
-/* Weitere Animationen... */
+/* additional animations... */
 ```
 
 ## Use Cases
 
-### Glow für Fokuszustände
+### Glow for Fokuszustande
 
 ```css
 .form-control:focus {
@@ -588,7 +588,7 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
 }
 ```
 
-### Glow für Call-to-Action-Buttons
+### Glow for Call-to-Action-buttons
 
 ```css
 .cta-button {
@@ -606,7 +606,7 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
 }
 ```
 
-### Glow für Texthighlights
+### Glow for Texthighlights
 
 ```css
 .highlight-text {
@@ -631,20 +631,20 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
 
 ## Accessibility
 
-Bei der Usage von Glow-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Glow-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Text und Hintergrund trotz Glow-Effekt ausreichend ist
-2. **Animationen**: Bieten Sie eine Option zum Deaktivieren von animierten Glow-Effekten für Nutzer mit Empfindlichkeiten
-3. **Fokus-Indikatoren**: Glow-Effekte können als Fokus-Indikatoren dienen, sollten aber deutlich erkennbar sein
+1. **Kontrast**: ensure, that the Kontrast between Text and background despite Glow-effect ausreichend ist
+2. **animations**: Bieten them a Option zum deactivate from animierten Glow-Effekten for Nutzer with Empfindlichkeiten
+3. **Fokus-Indikatoren**: Glow-effects can as Fokus-Indikatoren dienen, should but deutlich erkennbar be
 
 ```css
-/* Verbesserte Fokus-Indikatoren mit Glow */
+/* Verbesserte Fokus-Indikatoren with Glow */
 :focus {
   outline: 2px solid white;
   box-shadow: 0 0 var(--glow-blur-radius) var(--glow-spread-radius) var(--glow-color);
 }
 
-/* Reduzierte Bewegung für animierte Glow-Effekte */
+/* Reduzierte Bewegung for animierte Glow-effects */
 @media (prefers-reduced-motion: reduce) {
   .glow-pulse,
   .glow-breathe,
@@ -656,20 +656,20 @@ Bei der Usage von Glow-Effekten sollten folgende Accessibilitysaspekte berücksi
 
 ## Performance-Optimierung
 
-Glow-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Glow-effects can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Begrenzen Sie die Anzahl**: Verwenden Sie Glow-Effekte sparsam auf einer Seite
-2. **Reduzieren Sie die Größe**: Verwenden Sie für große Flächen kleinere Blur- und Spread-Radien
-3. **Vermeiden Sie Animationen auf niedrigen Geräten**: Prüfen Sie die Geräteleistung, bevor Sie animierte Glow-Effekte verwenden
-4. **Verwenden Sie will-change**: Nutzen Sie `will-change: box-shadow` für animierte Glow-Effekte
+1. **Begrenzen them the Anzahl**: use them Glow-effects sparsam on einer Seite
+2. **Reduzieren them the size**: use them for size Flachen kleinere Blur- and Spread-Radien
+3. **Vermeiden them animations on niedrigen Geraten**: Prufen them the Gerateleistung, before them animierte Glow-effects use
+4. **use them will-change**: use them `will-change: box-shadow` for animierte Glow-effects
 
 ```css
-/* Performance-Optimierung für Glow-Effekte */
+/* Performance-Optimierung for Glow-effects */
 .glow-optimized {
   will-change: box-shadow;
 }
 
-/* Bedingte Animationen basierend auf Browser-Unterstützung */
+/* Bedingte animations basierend on Browser-Unterstutzung */
 @supports (animation-timeline: scroll()) {
   .glow-advanced-animation {
     animation: advanced-glow-effect 2s infinite;
@@ -677,15 +677,15 @@ Glow-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese 
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Glow-Effekte werden von allen modernen Browsern unterstützt.
+the Glow-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | box-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
 | text-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
 | animation | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | filter (blur) | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Effekte nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
+for altere Browser, the some effects not vollstandig unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 

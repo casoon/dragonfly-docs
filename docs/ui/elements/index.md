@@ -5,65 +5,65 @@ category: UI
 
 # UI Elements
 
-UI Elements sind die fundamentalen Bausteine der Casoon UI Library. Sie bilden die Grundlage für die Erstellung komplexerer Components und Benutzeroberflächen.
+UI Elements sind the fundamentalen Bausteine the Casoon UI Library. them bilden the Base for the Erstellung komplexerer Components and user interfaces.
 
 ## Overview
 
-UI Elements zeichnen sich durch folgende Eigenschaften aus:
+UI Elements zeichnen oneself through folgende properties aus:
 
-- **Einfachheit**: Fokus auf eine einzelne Funktionalität
-- **Wiederverwendbarkeit**: Können in verschiedenen Kontexten eingesetzt werden
-- **Komposition**: Können zu komplexeren Components kombiniert werden
-- **Consistency**: Einheitliches Design und Verhalten
+- **Einfachheit**: Fokus on a einzelne Funktionalitat
+- **Wiederverwendbarkeit**: can in verschiedenen Kontexten eingesetzt become
+- **Komposition**: can to komplexeren Components kombiniert become
+- **Consistency**: Einheitliches design and behavior
 
-## Verfügbare Elements
+## Verfugbare Elements
 
-Die Casoon UI Library bietet folgende UI Elements:
+the Casoon UI Library bietet folgende UI Elements:
 
 ### Interaktionselemente
 
-- [Button](/ui/elements/button/): Buttonn für Aktionen
-- [Checkbox](/ui/elements/checkbox/): Auswahlboxen für Mehrfachauswahl
-- [Radio](/ui/elements/radio/): Radioer für Einzelauswahl
-- [Select](/ui/elements/select/): Selects für Listen von Optionen
-- [Slider](/ui/elements/slider/): Slider für Wertebereiche
-- [Switch](/ui/elements/switch/): Umschalter für binäre States
-- [Input](/ui/elements/input/): Textfelder für Benutzereingaben
-- [Textarea](/ui/elements/textarea/): Mehrzeilige Textfelder
+- [button](/ui/elements/button/): Buttonn for Aktionen
+- [checkbox](/ui/elements/checkbox/): Auswahlboxen for Mehrfachauswahl
+- [Radio](/ui/elements/radio/): Radioer for Einzelauswahl
+- [Select](/ui/elements/select/): Selects for lists from Optionen
+- [Slider](/ui/elements/slider/): Slider for Wertebereiche
+- [Switch](/ui/elements/switch/): Umschalter for binare States
+- [Input](/ui/elements/input/): text fields for Benutzereingaben
+- [Textarea](/ui/elements/textarea/): textareas
 
-### Präsentationselemente
+### Prasentationselemente
 
-- [Avatar](/ui/elements/avatar/): Benutzerbilder und -initialen
-- [Badge](/ui/elements/badge/): Markierungen für Status oder Anzahl
-- [Chip](/ui/elements/chip/): Kompakte Informationsdarstellung
-- [Code](/ui/elements/code/): Formatierung für Quellcode
-- [Spinner](/ui/elements/spinner/): Ladeanzeigen
-- [Tooltip](/ui/elements/tooltip/): Zusätzliche Informationen bei Hover
+- [avatar](/ui/elements/avatar/): Benutzerbilder and -initialen
+- [badge](/ui/elements/badge/): Markierungen for Status or Anzahl
+- [chip](/ui/elements/chip/): Kompakte Informationsdarstellung
+- [Code](/ui/elements/code/): Formatting for Quellcode
+- [spinners](/ui/elements/spinners/): Ladeanzeigen
+- [tooltip](/ui/elements/tooltip/): Zusatzliche Informationen at Hover
 
 ## Usage
 
-UI Elements können individuell oder als Teil des gesamten UI-Systems importiert werden:
+UI Elements can individuell or as Teil des gesamten UI-Systems importiert become:
 
 ```css
-/* Entire UI System */
+/* Entire UI system */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur einzelne Elements */
+/* or only einzelne Elements */
 @import '@casoon/ui-lib/ui/elements/button.css';
 @import '@casoon/ui-lib/ui/elements/input.css';
 ```
 
 ## Customizability
 
-Alle UI Elements können über CSS Variables angepasst werden:
+all UI Elements can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Button-Customizations */
+  /* button-customizations */
   --button-radius: 0.25rem;
   --button-primary-bg: #0066cc;
   
-  /* Input-Customizations */
+  /* Input-customizations */
   --input-border-color: #cbd5e1;
   --input-focus-ring-color: rgba(0, 102, 204, 0.25);
 }
@@ -71,10 +71,10 @@ Alle UI Elements können über CSS Variables angepasst werden:
 
 ## Accessibility
 
-Alle UI Elements sind für optimale Accessibility entwickelt:
+all UI Elements sind for optimale Accessibility entwickelt:
 
-- Unterstützung für Tastaturnavigation
-- Semantische HTML-Struktur
-- ARIA-Attribute für Screenreader
+- Unterstutzung for Tastaturnavigation
+- Semantische HTML-Structure
+- ARIA-attributes for Screenreader
 - Ausreichende Farbkontraste
 - Fokus-Indikatoren 

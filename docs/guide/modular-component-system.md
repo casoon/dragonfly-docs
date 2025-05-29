@@ -1,9 +1,9 @@
 ---
-title: Modular Component System
+title: Modular Component system
 category: Guide
 ---
 
-# Modular Component System
+# Modular Component system
 
 The modular component system of the Casoon UI Library offers an extensive collection of reusable UI components that are organized through a structured layer system. Each component is defined in its own layer, which increases isolation, maintainability, and flexibility.
 
@@ -27,7 +27,7 @@ The simplest way to use the entire component system:
 Or for selective use of specific components:
 
 ```css
-/* Nur die Komponenten importieren, die Sie wirklich benötigen */
+/* Only import the components you really need */
 @import '@casoon/ui-lib/components/button.css';
 @import '@casoon/ui-lib/components/card.css';
 ```
@@ -198,7 +198,7 @@ The components are optimized for accessibility:
 </form>
 ```
 
-### Notification System
+### Notification system
 
 ```html
 <div class="alert alert--success">
@@ -290,7 +290,7 @@ The components are designed for seamless combination with each other:
 </div>
 ```
 
-## Extending the Component System
+## Extending the Component system
 
 You can extend the component system with your own components:
 

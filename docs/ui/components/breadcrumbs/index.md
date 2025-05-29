@@ -326,7 +326,7 @@ For long paths, breadcrumbs can be truncated on smaller screens.
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Component module */
+/* Component modules */
 @import '@casoon/ui-lib/ui/components/breadcrumbs.css';
 ```
 
@@ -355,7 +355,7 @@ The Breadcrumbs component can be customized using CSS variables:
 
 ### Available Variables
 
-| Variable | Default | Description |
+| variable | Default | Description |
 |----------|---------|-------------|
 | `--breadcrumbs-font-size` | `0.875rem` | Font size of breadcrumb items |
 | `--breadcrumbs-font-weight` | `var(--font-weight-normal)` | Font weight of breadcrumb items |

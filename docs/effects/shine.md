@@ -3,29 +3,29 @@ title: Shine Effects
 category: Effects
 ---
 
-# Glanz-Effekte
+# Glanz-effects
 
-Die Glanz-Effekte der Casoon UI Library bieten eine Sammlung von Lichteffekten, die Ihren UI-Elementen einen dynamischen, interaktiven und hochwertigen Look verleihen können. Diese Effekte sind ideal, um Aufmerksamkeit auf wichtige Elemente zu lenken oder subtile Bewegung in statische Interfaces zu bringen.
+the Glanz-effects the Casoon UI Library bieten a Sammlung from Lichteffekten, the Ihren UI-Elementen einen dynamischen, interaktiven and hochwertigen Look verleihen can. these effects sind ideal, um Aufmerksamkeit on wichtige elements to lenken or subtile Bewegung in statische Interfaces to bringen.
 
-## Überblick
+## Uberblick
 
-Glanz-Effekte imitieren das Verhalten von Licht, das über eine Oberfläche wandert oder auf ihr glänzt. Sie können verwendet werden, um Metalleffekte, Lichtreflexionen oder animierte Oberflächeneffekte zu erzeugen. Die Casoon UI Library bietet verschiedene Arten von Glanzeffekten, die einfach anzuwenden und anzupassen sind.
+Glanz-effects imitieren the behavior from Licht, the over a Oberflache wandert or on her glanzt. You can verwendet become, um Metalleffekte, Lichtreflexionen or animierte Oberflacheneffekte to erzeugen. the Casoon UI Library bietet verschiedene Arten from Glanzeffekten, the einfach anzuwenden and anzupassen sind.
 
 ## Installation
 
-Importieren Sie das Glanz-Effekte-Modul über CSS:
+import them the Glanz-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/shine.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
 ### Grundlegende Glanzeffekte
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shine` | Standardmäßiger Glanzeffekt |
+| `.shine` | Standardmassiger Glanzeffekt |
 | `.shine-subtle` | Subtiler Glanzeffekt |
 | `.shine-medium` | Mittlerer Glanzeffekt (Standard) |
 | `.shine-strong` | Starker, deutlicher Glanzeffekt |
@@ -34,36 +34,36 @@ Importieren Sie das Glanz-Effekte-Modul über CSS:
 
 ### Glanztypen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shine-sweep` | Glanzeffekt, der über das Element wandert |
+| `.shine-sweep` | Glanzeffekt, the over the element wandert |
 | `.shine-pulse` | Pulsierender Glanzeffekt |
-| `.shine-static` | Statischer Glanzeffekt ohne Animation |
+| `.shine-static` | Statischer Glanzeffekt without animation |
 | `.shine-radial` | Radialer Glanzeffekt vom Zentrum ausgehend |
 | `.shine-flicker` | Flackernder Glanzeffekt |
-| `.shine-shimmer` | Schimmernder Glanzeffekt über die gesamte Oberfläche |
-| `.shine-highlight` | Hervorhebendes Glanzlicht an bestimmten Stellen |
+| `.shine-shimmer` | Schimmernder Glanzeffekt over the gesamte Oberflache |
+| `.shine-highlight` | Hervorhebendes Glanzlicht on bestimmten Stellen |
 
 ### Glanzrichtungen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shine-left-to-right` | Glanz von links nach rechts (Standard) |
-| `.shine-right-to-left` | Glanz von rechts nach links |
-| `.shine-top-to-bottom` | Glanz von oben nach unten |
-| `.shine-bottom-to-top` | Glanz von unten nach oben |
+| `.shine-left-to-right` | Glanz from links after rechts (Standard) |
+| `.shine-right-to-left` | Glanz from rechts after links |
+| `.shine-top-to-bottom` | Glanz from oben after unten |
+| `.shine-bottom-to-top` | Glanz from unten after oben |
 | `.shine-diagonal` | Diagonaler Glanzeffekt |
-| `.shine-radiate` | Glanz, der von der Mitte nach außen strahlt |
+| `.shine-radiate` | Glanz, the from the Mitte after aussen strahlt |
 
 ### Interaktive Glanzeffekte
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.shine-hover` | Zeigt Glanzeffekt bei Hover an |
-| `.shine-active` | Zeigt Glanzeffekt im aktiven Zustand an |
-| `.shine-click` | Auslösen des Glanzeffekts beim Klicken |
-| `.shine-focus` | Zeigt Glanzeffekt im Fokus-Zustand an |
-| `.shine-reactive` | Glanzeffekt reagiert auf Mausbewegungen |
+| `.shine-hover` | Zeigt Glanzeffekt at Hover on |
+| `.shine-active` | Zeigt Glanzeffekt im aktiven state on |
+| `.shine-click` | Auslosen des Glanzeffekts beim Click |
+| `.shine-focus` | Zeigt Glanzeffekt im Fokus-state on |
+| `.shine-reactive` | Glanzeffekt reagiert on Mausbewegungen |
 | `.shine-autoplay` | Automatisch abspielender Glanzeffekt |
 
 ## Examples
@@ -123,19 +123,19 @@ Importieren Sie das Glanz-Effekte-Modul über CSS:
 ```html
 <div class="shine-directions">
   <div class="direction-example shine shine-left-to-right">
-    <span>Links nach Rechts</span>
+    <span>links after Rechts</span>
   </div>
   
   <div class="direction-example shine shine-right-to-left">
-    <span>Rechts nach Links</span>
+    <span>Rechts after links</span>
   </div>
   
   <div class="direction-example shine shine-top-to-bottom">
-    <span>Oben nach Unten</span>
+    <span>Oben after Unten</span>
   </div>
   
   <div class="direction-example shine shine-bottom-to-top">
-    <span>Unten nach Oben</span>
+    <span>Unten after Oben</span>
   </div>
   
   <div class="direction-example shine shine-diagonal">
@@ -231,9 +231,9 @@ Importieren Sie das Glanz-Effekte-Modul über CSS:
 <div class="ui-shine">
   <div class="card shine shine-hover">
     <div class="card-content">
-      <h3>Card mit Glanzeffekt</h3>
-      <p>Diese Card zeigt einen Glanzeffekt beim Hover.</p>
-      <button class="card-btn shine shine-sweep">Mehr erfahren</button>
+      <h3>Card with Glanzeffekt</h3>
+      <p>these Card zeigt einen Glanzeffekt beim Hover.</p>
+      <button class="card-btn shine shine-sweep">more erfahren</button>
     </div>
   </div>
   
@@ -245,27 +245,27 @@ Importieren Sie das Glanz-Effekte-Modul über CSS:
     <div class="product-info">
       <h4>Produktname</h4>
       <p class="price">€99,99</p>
-      <button class="add-to-cart shine shine-click">In den Warenkorb</button>
+      <button class="add-to-cart shine shine-click">in den Warenkorb</button>
     </div>
   </div>
   
   <div class="features">
     <div class="feature-item shine shine-shimmer">
       <div class="icon">✨</div>
-      <h4>Funktion 1</h4>
-      <p>Beschreibung der ersten Funktion.</p>
+      <h4>Function 1</h4>
+      <p>Description the ersten Function.</p>
     </div>
     
     <div class="feature-item shine shine-shimmer">
       <div class="icon">🚀</div>
-      <h4>Funktion 2</h4>
-      <p>Beschreibung der zweiten Funktion.</p>
+      <h4>Function 2</h4>
+      <p>Description the zweiten Function.</p>
     </div>
     
     <div class="feature-item shine shine-shimmer">
       <div class="icon">💡</div>
-      <h4>Funktion 3</h4>
-      <p>Beschreibung der dritten Funktion.</p>
+      <h4>Function 3</h4>
+      <p>Description the dritten Function.</p>
     </div>
   </div>
 </div>
@@ -402,9 +402,9 @@ Importieren Sie das Glanz-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Glanzeffekte können über CSS Variables angepasst werden:
+the Glanzeffekte can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -426,18 +426,18 @@ Die Glanzeffekte können über CSS Variables angepasst werden:
   --shine-pulse-scale: 1.5;
   --shine-radial-size: 150%;
   
-  /* Interaktive Parameter */
+  /* Interaktive parameter */
   --shine-hover-opacity: 0.9;
   --shine-hover-duration: 1.5s;
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Animationen implementiert:
+the Glanzeffekte become hauptsachlich through pseudo-elements, Gradienten and animations implementiert:
 
 ```css
-/* Basis-Glanzeffekt */
+/* Base-Glanzeffekt */
 .shine {
   position: relative;
   overflow: hidden;
@@ -465,7 +465,7 @@ Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Ani
   pointer-events: none;
 }
 
-/* Sweep-Effekt (Standard) */
+/* Sweep-effect (Standard) */
 .shine.shine-sweep::before {
   opacity: var(--shine-opacity, 0.7);
   animation: shine-sweep var(--shine-duration, 2s) var(--shine-timing, ease-in-out) var(--shine-delay, 0s) var(--shine-iteration, infinite);
@@ -480,7 +480,7 @@ Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Ani
   }
 }
 
-/* Pulse-Effekt */
+/* Pulse-effect */
 .shine.shine-pulse::before {
   opacity: var(--shine-opacity, 0.7);
   animation: shine-pulse var(--shine-duration, 2s) var(--shine-timing, ease-in-out) var(--shine-delay, 0s) var(--shine-iteration, infinite);
@@ -495,7 +495,7 @@ Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Ani
   }
 }
 
-/* Static-Effekt */
+/* Static-effect */
 .shine.shine-static::before {
   opacity: var(--shine-opacity, 0.7);
   background: linear-gradient(
@@ -507,7 +507,7 @@ Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Ani
   );
 }
 
-/* Radial-Effekt */
+/* Radial-effect */
 .shine.shine-radial::before {
   opacity: var(--shine-opacity, 0.7);
   background: radial-gradient(
@@ -550,7 +550,7 @@ Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Ani
   --shine-angle: 45deg;
 }
 
-/* Interaktive Effekte */
+/* Interaktive effects */
 .shine.shine-hover::before {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -570,7 +570,7 @@ Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Ani
   animation: shine-sweep 0.8s ease-out;
 }
 
-/* Shimmer-Effekt */
+/* Shimmer-effect */
 .shine.shine-shimmer::before {
   opacity: var(--shine-opacity, 0.7);
   background: linear-gradient(
@@ -592,7 +592,7 @@ Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Ani
   }
 }
 
-/* Flicker-Effekt */
+/* Flicker-effect */
 .shine.shine-flicker::before {
   opacity: var(--shine-opacity, 0.7);
   animation: shine-flicker var(--shine-duration, 2s) var(--shine-timing, ease-in-out) var(--shine-delay, 0s) var(--shine-iteration, infinite);
@@ -623,24 +623,24 @@ Die Glanzeffekte werden hauptsächlich durch pseudo-Elemente, Gradienten und Ani
 }
 ```
 
-## JavaScript-Unterstützung
+## JavaScript-Unterstutzung
 
-Für reaktive Glanzeffekte, die auf Mausbewegungen reagieren, wird ein einfaches JavaScript benötigt:
+for reaktive Glanzeffekte, the on Mausbewegungen reagieren, wird a einfaches JavaScript benotigt:
 
 ```javascript
-// Reaktive Glanzeffekte, die auf Mausbewegungen reagieren
+// Reaktive Glanzeffekte, the on Mausbewegungen reagieren
 document.querySelectorAll('.shine-reactive').forEach(element => {
   element.addEventListener('mousemove', (e) => {
     const rect = element.getBoundingClientRect();
-    const x = e.clientX - rect.left; // X-Position innerhalb des Elements
-    const y = e.clientY - rect.top;  // Y-Position innerhalb des Elements
+    const x = e.clientX - rect.left; // X-position within des Elements
+    const y = e.clientY - rect.top;  // Y-position within des Elements
     
-    // Position des Glanzeffekts basierend auf Mausposition setzen
+    // position des Glanzeffekts basierend on Mausposition setzen
     const shineElement = element.querySelector('.shine-effect') || element;
     shineElement.style.setProperty('--shine-position-x', `${x}px`);
     shineElement.style.setProperty('--shine-position-y', `${y}px`);
     
-    // Glanzeffekt aktivieren
+    // Glanzeffekt activate
     shineElement.classList.add('active');
   });
   
@@ -657,7 +657,7 @@ document.querySelectorAll('.shine-click').forEach(element => {
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     
-    // Temporäres Element für den Klick-Effekt erstellen
+    // Temporares element for den Klick-effect create
     const clickEffect = document.createElement('div');
     clickEffect.className = 'shine-click-effect';
     clickEffect.style.left = `${x}px`;
@@ -665,7 +665,7 @@ document.querySelectorAll('.shine-click').forEach(element => {
     
     element.appendChild(clickEffect);
     
-    // Nach der Animation entfernen
+    // after the animation remove
     setTimeout(() => {
       clickEffect.remove();
     }, 1000);
@@ -740,14 +740,14 @@ document.querySelectorAll('.shine-click').forEach(element => {
 
 ## Accessibility
 
-Bei der Usage von Glanzeffekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Glanzeffekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Bewegung reduzieren**: Vermeiden Sie übermäßige oder ablenkende Animationen, die Nutzer mit vestibulären Störungen beeinträchtigen könnten
-2. **Kontrast**: Stellen Sie sicher, dass der Glanzeffekt den Kontrast und die Lesbarkeit von Text nicht beeinträchtigt
-3. **Alternativer Zustand**: Bieten Sie eine alternative Möglichkeit, auf Inhalte zuzugreifen, die durch Hover-Glanzeffekte hervorgehoben werden
+1. **Bewegung reduzieren**: Vermeiden them ubermassige or ablenkende animations, the Nutzer with vestibularen Storungen beeintrachtigen konnten
+2. **Kontrast**: ensure, that the Glanzeffekt den Kontrast and the Lesbarkeit from Text not beeintrachtigt
+3. **Alternativer state**: Bieten them a alternative Moglichkeit, on contents zuzugreifen, the through Hover-Glanzeffekte hervorgehoben become
 
 ```css
-/* Reduzierte Bewegung für Glanzeffekte */
+/* Reduzierte Bewegung for Glanzeffekte */
 @media (prefers-reduced-motion: reduce) {
   .shine::before {
     animation: none !important;
@@ -770,7 +770,7 @@ Bei der Usage von Glanzeffekten sollten folgende Accessibilitysaspekte berücksi
   }
 }
 
-/* Verbesserte Lesbarkeit für Text mit Glanzeffekten */
+/* Verbesserte Lesbarkeit for Text with Glanzeffekten */
 .shine-with-text {
   --shine-opacity: 0.3;
 }
@@ -778,41 +778,41 @@ Bei der Usage von Glanzeffekten sollten folgende Accessibilitysaspekte berücksi
 
 ## Performance-Optimierung
 
-Glanzeffekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Glanzeffekte can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Hardware-Beschleunigung**: Verwenden Sie Eigenschaften wie `transform` und `opacity` für bessere Performance
-2. **Reduzierte Komplexität**: Begrenzen Sie die Anzahl der Elemente mit Glanzeffekten auf einer Seite
-3. **Layer-Promotion**: Nutzen Sie `will-change` für animierte Glanzeffekte
+1. **Hardware-Beschleunigung**: use them properties how `transform` and `opacity` for bessere Performance
+2. **Reduzierte Komplexitat**: Begrenzen them the Anzahl the elements with Glanzeffekten on einer Seite
+3. **Layer-Promotion**: use them `will-change` for animierte Glanzeffekte
 
 ```css
-/* Performance-Optimierung für Glanzeffekte */
+/* Performance-Optimierung for Glanzeffekte */
 .shine-optimized::before {
   will-change: transform, opacity;
 }
 
-/* Reduzierte Komplexität für mobile Geräte */
+/* Reduzierte Komplexitat for mobile Gerate */
 @media (max-width: 768px) {
   :root {
     --shine-opacity: 0.5;
-    --shine-duration: 3s; /* Langsamere Animation für mobile Geräte */
+    --shine-duration: 3s; /* Langsamere animation for mobile Gerate */
   }
   
   .shine-complex::before {
-    display: none; /* Komplexe Effekte auf Mobilgeräten deaktivieren */
+    display: none; /* Komplexe effects on Mobilgeraten deactivate */
   }
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Glanzeffekte werden von allen modernen Browsern unterstützt.
+the Glanzeffekte become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| Basis-Glanzeffekte | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| Base-Glanzeffekte | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | Lineare Gradienten | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Radiale Gradienten | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| CSS-animations | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
+for altere Browser, the some functions not vollstandig unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 

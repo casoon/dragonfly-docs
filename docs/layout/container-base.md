@@ -1,149 +1,149 @@
 ---
-title: Container Base System
-category: Layout
+title: containers Base system
+category: layout
 ---
 
-# Container Base System
+# containers Base system
 
-Das Casoon UI Library implementiert ein flexibles Container System, das als Grundlage für konsistente Layouts und Inhaltsbreiten dient. Dieses Dokument beschreibt die Grundlagen, Eigenschaften und Use Cases des Container Systems.
+the Casoon UI Library implementiert a flexibles containers system, the as Base for konsistente layouts and Inhaltsbreiten dient. this Dokument beschreibt the Grundlagen, properties and Use Cases des containers Systems.
 
 ## Overview
 
-Das Container System basiert auf diesen Kernprinzipien:
+the containers system basiert on diesen Kernprinzipien:
 
-1. **Konsistente Breiten** - Standardisierte Maximalbereiten für Inhalte
-2. **Automatische Zentrierung** - Container zentrieren sich horizontal im verfügbaren Raum
-3. **Responsive Anpassung** - Automatische Anpassung an verschiedene Bildschirmgrößen
-4. **Flexibles Padding** - Konfigurierbarer Innenabstand für optimalen Content-Flow
-5. **Standardisierte Sizes** - Vordefinierte Sizesklassen für unterschiedliche Use Cases
+1. **Konsistente Breiten** - Standardisierte Maximalbereiten for contents
+2. **Automatische centering** - containers center oneself horizontal im verfugbaren Raum
+3. **responsive Customization** - Automatische Customization on verschiedene Bildschirmgrossen
+4. **Flexibles Padding** - Konfigurierbarer padding for optimalen Content-Flow
+5. **Standardisierte Sizes** - Vordefinierte Sizesklassen for unterschiedliche Use Cases
 
-## Basic Container
+## Basic containers
 
-Der grundlegende Container `.container` bietet eine zentrierte, breitenbegrenzte Box für Inhalte:
+the grundlegende containers `.containers` bietet a zentrierte, breitenbegrenzte box for contents:
 
 ```html
-<div class="container">
-  <!-- Inhalt wird auf eine maximale Breite begrenzt und zentriert -->
-  <p>Containerinhalt mit maximaler Breite</p>
+<div class="containers">
+  <!-- content wird on a maximale width begrenzt and zentriert -->
+  <p>Containerinhalt with maximaler width</p>
 </div>
 ```
 
-Die Standard-Container-Implementierung enthält folgende CSS-Eigenschaften:
+the Standard-containers-Implementation enthalt folgende CSS-properties:
 
 ```css
-.container {
-  margin-inline: auto;     /* Horizontale Zentrierung */
-  max-width: var(--container-lg);  /* Standard-Maximalbreite */
-  padding-inline: var(--space-4);  /* Horizontaler Innenabstand */
-  width: 100%;             /* Volle verfügbare Breite nutzen */
+.containers {
+  margin-inline: auto;     /* Horizontale centering */
+  max-width: var(--containers-lg);  /* Standard-Maximalbreite */
+  padding-inline: var(--space-4);  /* Horizontaler padding */
+  width: 100%;             /* Volle verfugbare width use */
 }
 ```
 
-## Container Sizes
+## containers Sizes
 
-Das System bietet verschiedene Container-Sizes für unterschiedliche Use Cases:
+the system bietet verschiedene containers-Sizes for unterschiedliche Use Cases:
 
 ```html
-<!-- Kleiner Container, ideal für schmale Inhalte -->
-<div class="container container-sm">
-  <p>Schmaler Container-Inhalt</p>
+<!-- smaller containers, ideal for schmale contents -->
+<div class="containers containers-sm">
+  <p>Schmaler containers-content</p>
 </div>
 
-<!-- Mittlerer Container -->
-<div class="container container-md">
-  <p>Mittelbreiter Container-Inhalt</p>
+<!-- Mittlerer containers -->
+<div class="containers containers-md">
+  <p>Mittelbreiter containers-content</p>
 </div>
 
-<!-- Großer Container (Standard) -->
-<div class="container container-lg">
-  <p>Standard-Container-Inhalt</p>
+<!-- Grosser containers (Standard) -->
+<div class="containers containers-lg">
+  <p>Standard-containers-content</p>
 </div>
 
-<!-- Extra großer Container -->
-<div class="container container-xl">
-  <p>Breiter Container-Inhalt</p>
+<!-- Extra grosser containers -->
+<div class="containers containers-xl">
+  <p>Breiter containers-content</p>
 </div>
 
-<!-- Extra extra großer Container -->
-<div class="container container-2xl">
-  <p>Sehr breiter Container-Inhalt</p>
+<!-- Extra extra grosser containers -->
+<div class="containers containers-2xl">
+  <p>very breiter containers-content</p>
 </div>
 ```
 
-Containergrößen und ihre Maximalbreiten:
+Containergrossen and ihre Maximalbreiten:
 
-| Klasse | Maximalbreite | Typische Anwendung |
+| Class | Maximalbreite | Typische Application |
 |--------|---------------|-------------------|
-| `.container-sm` | `var(--container-sm)` (640px) | Schmale Inhalte, Forme, schmale Textspalten |
-| `.container-md` | `var(--container-md)` (768px) | Mittlere Inhaltsbreite, Blogposts |
-| `.container-lg` | `var(--container-lg)` (1024px) | Standard-Inhaltsbreite, Hauptlayouts |
-| `.container-xl` | `var(--container-xl)` (1280px) | Breite Layouts, Dashboard |
-| `.container-2xl` | `var(--container-2xl)` (1536px) | Sehr breite Layouts, komplexe Dashboards |
+| `.containers-sm` | `var(--containers-sm)` (640px) | Schmale contents, Forme, schmale Textspalten |
+| `.containers-md` | `var(--containers-md)` (768px) | Mittlere Inhaltsbreite, Blogposts |
+| `.containers-lg` | `var(--containers-lg)` (1024px) | Standard-Inhaltsbreite, Hauptlayouts |
+| `.containers-xl` | `var(--containers-xl)` (1280px) | width layouts, Dashboard |
+| `.containers-2xl` | `var(--containers-2xl)` (1536px) | very width layouts, komplexe Dashboards |
 
-## Container Padding
+## containers Padding
 
-Das Container System bietet verschiedene Padding-Optionen für den Innenabstand:
-
-```html
-<!-- Container mit kleinerem Innenabstand -->
-<div class="container container-padding-sm">
-  <p>Container mit reduziertem Innenabstand</p>
-</div>
-
-<!-- Container mit Standard-Innenabstand -->
-<div class="container container-padding-md">
-  <p>Container mit Standard-Innenabstand</p>
-</div>
-
-<!-- Container mit größerem Innenabstand -->
-<div class="container container-padding-lg">
-  <p>Container mit erhöhtem Innenabstand</p>
-</div>
-```
-
-Die verschiedenen Padding-Klassen setzen folgende Werte:
-
-```css
-.container-padding-sm { padding-inline: var(--space-2); } /* Kleinerer Innenabstand */
-.container-padding-md { padding-inline: var(--space-4); } /* Standard-Innenabstand */
-.container-padding-lg { padding-inline: var(--space-6); } /* Größerer Innenabstand */
-```
-
-## Fluid Container
-
-In manchen Fällen benötigen Sie einen Container, der die volle verfügbare Breite nutzt, ohne eine Maximalbreite zu setzen. Dafür kann ein "Fluid Container" verwendet werden:
+the containers system bietet verschiedene Padding-Optionen for den padding:
 
 ```html
-<div class="container-fluid">
-  <p>Dieser Container nutzt immer die volle Breite</p>
+<!-- containers with kleinerem padding -->
+<div class="containers containers-padding-sm">
+  <p>containers with reduziertem padding</p>
+</div>
+
+<!-- containers with Standard-padding -->
+<div class="containers containers-padding-md">
+  <p>containers with Standard-padding</p>
+</div>
+
+<!-- containers with grosserem padding -->
+<div class="containers containers-padding-lg">
+  <p>containers with erhohtem padding</p>
 </div>
 ```
 
-Implementierung:
+the verschiedenen Padding-classes setzen folgende values:
 
 ```css
-.container-fluid {
+.containers-padding-sm { padding-inline: var(--space-2); } /* Kleinerer padding */
+.containers-padding-md { padding-inline: var(--space-4); } /* Standard-padding */
+.containers-padding-lg { padding-inline: var(--space-6); } /* Grosserer padding */
+```
+
+## Fluid containers
+
+in manchen Fallen benotigen them einen containers, the the volle verfugbare width nutzt, without a Maximalbreite to setzen. Dafur kann a "Fluid containers" verwendet become:
+
+```html
+<div class="containers-fluid">
+  <p>this containers nutzt immer the volle width</p>
+</div>
+```
+
+Implementation:
+
+```css
+.containers-fluid {
   width: 100%;
   padding-inline: var(--space-4);
 }
 ```
 
-## Integration mit Grid und Flexbox
+## Integration with grid and flexbox
 
-Container arbeiten nahtlos mit dem Grid- und Flexbox System zusammen:
+containers arbeiten nahtlos with dem grid- and flexbox system zusammen:
 
 ```html
-<!-- Container mit Grid-Layout -->
-<div class="container">
+<!-- containers with grid-layout -->
+<div class="containers">
   <div class="grid grid-cols-3 gap-4">
-    <div>Spalte 1</div>
-    <div>Spalte 2</div>
-    <div>Spalte 3</div>
+    <div>column 1</div>
+    <div>column 2</div>
+    <div>column 3</div>
   </div>
 </div>
 
-<!-- Container mit Flexbox-Layout -->
-<div class="container">
+<!-- containers with flexbox-layout -->
+<div class="containers">
   <div class="flex justify-between">
     <div>Flexitem links</div>
     <div>Flexitem rechts</div>
@@ -151,101 +151,101 @@ Container arbeiten nahtlos mit dem Grid- und Flexbox System zusammen:
 </div>
 ```
 
-## Responsive Verhalten
+## responsive behavior
 
-Container passen sich automatisch an verschiedene Bildschirmgrößen an. Auf kleinen Bildschirmen nutzen sie die volle verfügbare Breite und werden erst ab bestimmten Breakpoints in ihrer Breite begrenzt.
+containers passen oneself automatisch on verschiedene Bildschirmgrossen on. on kleinen Bildschirmen use them the volle verfugbare width and become erst ab bestimmten Breakpoints in ihrer width begrenzt.
 
-Auf mobilen Geräten verhält sich jeder Container effektiv wie ein `container-fluid` und nimmt die volle Breite ein, wobei nur das definierte Padding als Abstand zu den Bildschirmrändern dient.
+on mobilen Geraten verhalt oneself every containers effektiv how a `containers-fluid` and nimmt the volle width a, wobei only the definierte Padding as spacing to den Bildschirmrandern dient.
 
-## Verschachtelte Container
+## Verschachtelte containers
 
-Container können verschachtelt werden, obwohl dies in den meisten Fällen nicht notwendig ist:
+containers can verschachtelt become, although dies in den meisten Fallen not notwendig ist:
 
 ```html
-<div class="container container-lg">
-  <h1>Hauptüberschrift</h1>
+<div class="containers containers-lg">
+  <h1>Hauptuberschrift</h1>
   
-  <!-- Verschachtelter Container für engeren Inhaltsbereich -->
-  <div class="container container-sm">
-    <p>Dieser Text ist in einem schmalen Container innerhalb des Hauptcontainers.</p>
+  <!-- Verschachtelter containers for engeren Inhaltsbereich -->
+  <div class="containers containers-sm">
+    <p>this Text ist in einem schmalen containers within des Hauptcontainers.</p>
   </div>
 </div>
 ```
 
-**Hinweis:** Verschachtelte Container sollten sparsam verwendet werden, da sie zu unerwarteten Layouts führen können. In den meisten Fällen ist es besser, Grid oder Flexbox innerhalb eines einzelnen Containers zu verwenden.
+**Note:** Verschachtelte containers should sparsam verwendet become, da them to unerwarteten layouts fuhren can. in den meisten Fallen ist it better, grid or flexbox within eines einzelnen Containers to use.
 
-## Container für semantische Inhaltsgruppen
+## containers for semantische Inhaltsgruppen
 
-Container können auch verwendet werden, um semantische Gruppen von Inhalten zu definieren:
+containers can also verwendet become, um semantische Gruppen from Inhalten to define:
 
 ```html
 <header>
-  <div class="container">
-    <!-- Header-Inhalt -->
+  <div class="containers">
+    <!-- header-content -->
   </div>
 </header>
 
 <main>
   <section class="hero">
-    <div class="container">
-      <!-- Hero-Sektion-Inhalt -->
+    <div class="containers">
+      <!-- Hero-section-content -->
     </div>
   </section>
   
   <section class="features">
-    <div class="container">
-      <!-- Features-Sektion-Inhalt -->
+    <div class="containers">
+      <!-- Features-section-content -->
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="container">
-    <!-- Footer-Inhalt -->
+  <div class="containers">
+    <!-- footer-content -->
   </div>
 </footer>
 ```
 
-## Anpassung des Container Systems
+## Customization des containers Systems
 
-Das Container System basiert auf CSS Variables, die leicht angepasst werden können:
+the containers system basiert on CSS Variables, the leicht angepasst become can:
 
 ```css
 :root {
-  /* Container-Sizes anpassen */
-  --container-sm: 540px;
-  --container-md: 720px;
-  --container-lg: 960px;
-  --container-xl: 1140px;
-  --container-2xl: 1400px;
+  /* containers-Sizes customize */
+  --containers-sm: 540px;
+  --containers-md: 720px;
+  --containers-lg: 960px;
+  --containers-xl: 1140px;
+  --containers-2xl: 1400px;
   
-  /* Container-Padding anpassen */
-  --space-2: 0.5rem;  /* container-padding-sm */
-  --space-4: 1rem;    /* container-padding-md */
-  --space-6: 1.5rem;  /* container-padding-lg */
+  /* containers-Padding customize */
+  --space-2: 0.5rem;  /* containers-padding-sm */
+  --space-4: 1rem;    /* containers-padding-md */
+  --space-6: 1.5rem;  /* containers-padding-lg */
 }
 ```
 
 ## Best Practices
 
-1. **Container für konsistente Breiten verwenden** - Nutzen Sie Container, um eine einheitliche Inhaltsbreite auf Ihrer gesamten Website zu gewährleisten.
-2. **Container-Variants gezielt einsetzen** - Wählen Sie zwischen `.container`, `.container-fluid` und Sizesvarianten je nach Anforderung des Layouts.
-3. **Verschachtelte Container vermeiden** - Verschachteln Sie Container nur, wenn unbedingt nötig, um unerwartete Layout-Probleme zu vermeiden.
-4. **Container mit Grid kombinieren** - Container eignen sich hervorragend als Wrapper für Grid-Layouts, um konsistente Seitenränder zu gewährleisten.
-5. **Container-Abmessungen anpassen** - Passen Sie bei Bedarf die Container-Variablen an, um den Designanforderungen Ihres Projekts gerecht zu werden.
-6. **Container für Abschnitte verwenden** - Nutzen Sie Container, um verschiedene Seitenabschnitte visuell zu trennen und zu organisieren.
-7. **Responsive Überlegungen beachten** - Beachten Sie, wie sich Container auf verschiedenen Bildschirmgrößen verhalten, insbesondere bei Übergängen zwischen Breakpoints.
+1. **containers for konsistente Breiten use** - use them containers, um a einheitliche Inhaltsbreite on Ihrer gesamten Website to gewahrleisten.
+2. **containers-Variants gezielt einsetzen** - Wahlen them between `.containers`, `.containers-fluid` and Sizesvarianten je after Anforderung des layouts.
+3. **Verschachtelte containers vermeiden** - Verschachteln them containers only, if unbedingt notig, um unerwartete layout-Probleme to vermeiden.
+4. **containers with grid combine** - containers eignen oneself hervorragend as wrappers for grid-layouts, um konsistente Seitenrander to gewahrleisten.
+5. **containers-Abmessungen customize** - Passen them at Bedarf the containers-variables on, um den Designanforderungen Ihres Projekts gerecht to become.
+6. **containers for Abschnitte use** - use them containers, um verschiedene Seitenabschnitte visuell to disconnect and to organisieren.
+7. **responsive Uberlegungen note** - note, how oneself containers on verschiedenen Bildschirmgrossen behavior, insbesondere at Ubergangen between Breakpoints.
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Das Container System ist mit allen modernen Browsern kompatibel:
+the containers system ist with allen modernen Browsern kompatibel:
 
 | Feature | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|
-| Container-Klassen | Alle | Alle | Alle | Alle |
+| containers-classes | all | all | all | all |
 | CSS Variables | 49+ | 31+ | 9.1+ | 15+ |
 | Logical Properties | 69+ | 41+ | 12.1+ | 79+ |
 
 ## Zusammenfassung
 
-Das Container System der Casoon UI Library bietet eine flexible und leistungsstarke Grundlage für konsistente Layouts. Durch die Usage von Containern können Sie Inhalte strukturieren, eine konsistente maximale Breite festlegen und ein einheitliches Erscheinungsbild über alle Seiten hinweg gewährleisten. Container bilden eine wichtige Grundlage für responsive Designs und arbeiten nahtlos mit anderen Layout-Systemen wie Grid und Flexbox zusammen. 
+the containers system the Casoon UI Library bietet a flexible and leistungsstarke Base for konsistente layouts. through the Usage from Containern can them contents strukturieren, a konsistente maximale width festlegen and a einheitliches Erscheinungsbild over all Seiten hinweg gewahrleisten. containers bilden a wichtige Base for responsive designs and arbeiten nahtlos with anderen layout-Systemen how grid and flexbox zusammen. 

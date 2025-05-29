@@ -352,7 +352,7 @@ Use icons instead of text for previous and next buttons.
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Component module */
+/* Component modules */
 @import '@casoon/ui-lib/ui/components/pagination.css';
 ```
 
@@ -396,7 +396,7 @@ The Pagination component can be customized using CSS variables:
 
 ### Available Variables
 
-| Variable | Default | Description |
+| variable | Default | Description |
 |----------|---------|-------------|
 | `--pagination-font-size` | `0.875rem` | Font size of pagination links |
 | `--pagination-font-size-sm` | `0.75rem` | Font size of small pagination links |

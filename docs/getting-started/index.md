@@ -39,10 +39,10 @@ import '@casoon/ui-lib/effects.css';
 
 Casoon UI is organized into several main sections:
 
-- **Core System**: Foundational elements like colors, typography, and spacing
+- **Core system**: Foundational elements like colors, typography, and spacing
 - **UI Components**: Ready-to-use UI elements and patterns
-- **Layout System**: Flexible grid and container utilities
-- **Effects System**: Visual effects and animations
+- **Layout system**: Flexible grid and container utilities
+- **Effects system**: Visual effects and animations
 - **Utility Classes**: Helper classes for common styling needs
 
 ## Next Steps

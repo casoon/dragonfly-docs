@@ -1,116 +1,116 @@
 ---
-title: Kern-CSS-System
+title: Core CSS system
 category: Guide
 ---
 
-# Kern-CSS-System
+# Core CSS system
 
-Das Kern-CSS-System der Casoon UI Library besteht aus mehreren zentralen Dateien, die das Fundament für alle Stilanwendungen bilden. Diese Dateien organisieren die CSS-Layer und definieren die Importreihenfolge, wodurch eine präzise Kontrolle über die Spezifität und Kaskadierung ermöglicht wird.
+The Core CSS system of the Casoon UI Library consists of several central files that form the foundation for all style applications. These files organize the CSS layers and define the import order, enabling precise control over specificity and cascading.
 
 ## Core.css
 
-Die `core.css` ist das zentrale Organisationssystem der Casoon UI Library. Sie definiert die Struktur der CSS-Layer und koordiniert deren Import in der richtigen Reihenfolge, um ein präzises und wartbares Styling-System zu gewährleisten.
+The `core.css` is the central organization system of the Casoon UI Library. It defines the structure of CSS layers and coordinates their import in the correct order to ensure a precise and maintainable styling system.
 
-## Overview der Core-Datei
+## Overview of the Core File
 
-Die `core.css` Datei organisiert das gesamte CSS-Framework durch eine strukturierte Reihe von Imports:
+The `core.css` file organizes the entire CSS framework through a structured series of imports:
 
 ```css
 /**
  * Core CSS
  *
- * Zentrale Datei zur Organisation und Priorisierung aller CSS-Layer und -Module.
- * Hier werden alle Layer deklariert und die entsprechenden CSS-Dateien importiert.
- * Die Reihenfolge der Importe bestimmt die Kaskaden-Priorität (spätere haben Vorrang).
+ * Central file for organizing and prioritizing all CSS layers and modules.
+ * All layers are declared here and the corresponding CSS files are imported.
+ * The order of imports determines the cascade priority (later ones take precedence).
  */
 
 /* 
- * Basis-System
- * Enthält Reset, Custom Properties, Tokens und logische Eigenschaften
+ * Base system
+ * Contains Reset, Custom Properties, Tokens, and logical properties
  */
 @import url("base.css");
 
 /* 
- * Layout-System
- * Container, Grid, Flexbox-Layouts und responsive Customizations
+ * layout system
+ * containers, grid, flexbox layouts and responsive customizations
  */
 @import url("layout.css");
 @import url("layout.queries.css");
 
 /* 
- * Typography-System
- * Schriftarten, Sizes, Abstände und Text-Formatierungen
+ * Typography system
+ * Fonts, sizes, spacing, and text formatting
  */
 @import url("typography.css") layer(typography);
 
 /* 
- * Modul-System
- * Wiederverwendbare UI-Components in eigenständigen Dateien
+ * modules system
+ * Reusable UI components in standalone files
  */
 @import url("components.css");
 
 /* 
- * Icon-System
- * SVG-Symbole und Icon-Fonts
+ * icon system
+ * SVG symbols and icon fonts
  */
 @import url("icons.css");
 ```
 
-## Layer-Hierarchie
+## Layer Hierarchy
 
-Die gesamte Layer-Struktur ist in der `base.css` definiert und folgt einer klaren Hierarchie:
+The entire layer structure is defined in `base.css` and follows a clear hierarchy:
 
 ```css
-@layer reset,                /* Browser-Reset, Normalisierung */
-       tokens,               /* Design Tokens und Variablen */
-       core,                 /* Kernfunktionalitäten */
-       logical-properties,   /* Logical Properties für Bidirektionalität */
-       colors,               /* Color System */
-       color-mix,            /* Farbmischungen und -variationen */
-       layout,               /* Layout-Grundlagen */
-       layout-queries,       /* Responsive Customizations */
-       typography,           /* Typography-System */
-       utilities,            /* Utility-Klassen */
-       smooth-scroll,        /* Scroll-Verhalten */
+@layer reset,                /* Browser reset, normalization */
+       tokens,               /* design tokens and variables */
+       core,                 /* Core functionalities */
+       logical-properties,   /* Logical properties for bidirectionality */
+       colors,               /* Color system */
+       color-mix,            /* Color mixtures and variations */
+       layout,               /* layout basics */
+       layout-queries,       /* Responsive customizations */
+       typography,           /* Typography system */
+       utilities,            /* Utility classes */
+       smooth-scroll,        /* Scroll behavior */
        accessibility,        /* Accessibility */
-       icons,                /* Icon-System */
-       components,           /* UI-Components */
-       animations,           /* Bewegungssystem */
-       effects,              /* Visuelle Effekte */
-       themes;               /* Theming-System */
+       icons,                /* icon system */
+       components,           /* UI components */
+       animations,           /* Motion system */
+       effects,              /* Visual effects */
+       themes;               /* Theming system */
 ```
 
-**Hinweis:** Der ursprünglich separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, um die Struktur zu vereinfachen und die Maintainability zu verbessern.
+**Note:** The originally separate `custom-properties` layer what integrated into the `tokens` layer to simplify the structure and improve maintainability.
 
-## Detaillierte Layer-Beschreibungen
+## Detailed Layer Descriptions
 
 ### 1. reset
 
-Der `reset` Layer normalisiert Browser-Standardstile und stellt eine konsistente Basis für alle Styling-Operationen bereit.
+The `reset` layer normalizes browser default styles and provides a consistent base for all styling operations.
 
 ```css
 @layer reset {
-  /* Browser-Standardstile zurücksetzen */
+  /* Reset browser default styles */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Weitere Reset-Styles... */
+  /* Additional reset styles... */
 }
 ```
 
-Dieser Layer hat die niedrigste Priorität in der Kaskade und wird von allen nachfolgenden Layern überschrieben.
+This layer has the lowest priority in the cascade and is overridden by all subsequent layers.
 
 ### 2. tokens
 
-Der `tokens` Layer definiert die grundlegenden Design Tokens und CSS Variables, die im gesamten System verwendet werden.
+The `tokens` layer defines the basic design tokens and CSS variables used throughout the system.
 
 ```css
 @layer tokens {
   :root {
-    /* Abstände */
+    /* Spacing */
     --space-1: 0.25rem;
     --space-2: 0.5rem;
     --space-3: 0.75rem;
@@ -121,17 +121,17 @@ Der `tokens` Layer definiert die grundlegenden Design Tokens und CSS Variables, 
     --color-secondary: #6b7280;
     --color-accent: #f59e0b;
     
-    /* Radien */
+    /* Radii */
     --radius-sm: 0.125rem;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     
-    /* Weitere Design Tokens... */
+    /* Additional design tokens... */
   }
 }
 ```
 
-Dieser Layer enthält auch registrierte CSS-Eigenschaften (früher im `custom-properties`-Layer):
+This layer also contains registered CSS properties (previously in the `custom-properties` layer):
 
 ```css
 @layer tokens {
@@ -141,17 +141,17 @@ Dieser Layer enthält auch registrierte CSS-Eigenschaften (früher im `custom-pr
     initial-value: transparent;
   }
   
-  /* Weitere registrierte Eigenschaften... */
+  /* Additional registered properties... */
 }
 ```
 
 ### 3. core
 
-Der `core` Layer enthält grundlegende Funktionalitäten und Styles, die das Fundament der Anwendung bilden.
+The `core` layer contains fundamental functionalities and styles that form the foundation of the application.
 
 ```css
 @layer core {
-  /* Grundlegende Styling für Elemente */
+  /* Basic styling for elements */
   html {
     font-family: var(--font-family-base);
     font-size: var(--font-size-base);
@@ -163,17 +163,17 @@ Der `core` Layer enthält grundlegende Funktionalitäten und Styles, die das Fun
     line-height: var(--line-height-normal);
   }
   
-  /* Weitere Core-Styles... */
+  /* Additional core styles... */
 }
 ```
 
 ### 4. logical-properties
 
-Der `logical-properties` Layer implementiert bidirektionales Layout mit logischen Eigenschaften für internationale Anwendungen.
+The `logical-properties` layer implements bidirectional layout with logical properties for international applications.
 
 ```css
 @layer logical-properties {
-  /* Bidirektionale Margin-Utilities */
+  /* Bidirectional margin utilities */
   .mx-auto {
     margin-inline: auto;
   }
@@ -186,103 +186,103 @@ Der `logical-properties` Layer implementiert bidirektionales Layout mit logische
     margin-inline-end: var(--space-4);
   }
   
-  /* Bidirektionale Padding-Utilities */
+  /* Bidirectional padding utilities */
   .px-4 {
     padding-inline: var(--space-4);
   }
   
-  /* Weitere logische Eigenschaften... */
+  /* Additional logical properties... */
 }
 ```
 
 ### 5. colors
 
-Der `colors` Layer definiert das Color System und farbbasierte Klassen für Text, Hintergründe und Ränder.
+The `colors` layer defines the color system and color-based classes for text, backgrounds, and borders.
 
 ```css
 @layer colors {
-  /* Hintergrundfarben */
+  /* Background colors */
   .bg-primary {
     background-color: var(--color-primary);
   }
   
-  /* Textfarben */
+  /* Text colors */
   .text-primary {
     color: var(--color-primary);
   }
   
-  /* Randfarben */
+  /* Border colors */
   .border-primary {
     border-color: var(--color-primary);
   }
   
-  /* Weitere farbbasierte Klassen... */
+  /* Additional color-based classes... */
 }
 ```
 
 ### 6. color-mix
 
-Der `color-mix` Layer implementiert dynamische Farbberechnungen und -mischungen.
+The `color-mix` layer implements dynamic color calculations and mixtures.
 
 ```css
 @layer color-mix {
-  /* Farbvarianten erzeugen */
+  /* Generate color variants */
   .color-mix-overlay {
     background-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
   }
   
-  /* Kontrastfarben */
+  /* Contrast colors */
   .color-contrast {
     color: color-contrast(var(--color-primary) vs white, black);
   }
   
-  /* Weitere Farbmischungen... */
+  /* Additional color mixtures... */
 }
 ```
 
 ### 7. layout
 
-Der `layout` Layer definiert die grundlegenden Layout-Components und -Strukturen.
+The `layout` layer defines the basic layout components and structures.
 
 ```css
 @layer layout {
-  /* Container */
-  .container {
+  /* containers */
+  .containers {
     width: 100%;
-    max-width: var(--container-max-width);
+    max-width: var(--containers-max-width);
     margin-inline: auto;
-    padding-inline: var(--container-padding);
+    padding-inline: var(--containers-padding);
   }
   
-  /* Grid System */
+  /* grid system */
   .grid {
     display: grid;
     gap: var(--grid-gap);
   }
   
-  /* Flexbox-Layout */
+  /* flexbox-layout */
   .flex {
     display: flex;
   }
   
-  /* Weitere Layout-Components... */
+  /* Additional layout components... */
 }
 ```
 
 ### 8. layout-queries
 
-Der `layout-queries` Layer implementiert responsive Customizations basierend auf Container-Queries.
+The `layout-queries` layer implements responsive customizations based on containers queries.
 
 ```css
 @layer layout-queries {
-  /* Container-Anker für Container-Queries */
-  .container-query {
-    container-type: inline-size;
-    container-name: layout;
+  /* containers-anchor for containers queries */
+  .containers-query {
+    containers-type: inline-size;
+    containers-name: layout;
   }
   
-  /* Responsive Breakpoints basierend auf Container-Größe */
-  @container layout (min-width: 30rem) {
+  /* responsive Breakpoints based on containers-size */
+  @containers layout (min-width: 30rem) {
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -292,28 +292,28 @@ Der `layout-queries` Layer implementiert responsive Customizations basierend auf
     }
   }
   
-  @container layout (min-width: 48rem) {
+  @containers layout (min-width: 48rem) {
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
-  /* Weitere responsive Customizations... */
+  /* Additional responsive customizations... */
 }
 ```
 
 ### 9. typography
 
-Der `typography` Layer definiert das Typography-System mit Schriftarten, Sizes und Text-Formatierungen.
+The `typography` layer defines the Typography system with fonts, sizes, and text formatting.
 
 ```css
 @layer typography {
-  /* Schriftfamilien */
+  /* Font families */
   .font-sans {
     font-family: var(--font-family-sans);
   }
   
-  /* Schriftgrößen */
+  /* Font sizes */
   .text-sm {
     font-size: var(--font-size-sm);
   }
@@ -322,32 +322,32 @@ Der `typography` Layer definiert das Typography-System mit Schriftarten, Sizes u
     font-size: var(--font-size-base);
   }
   
-  /* Schriftstärken */
+  /* Font weights */
   .font-bold {
     font-weight: var(--font-weight-bold);
   }
   
-  /* Text-Ausrichtung */
+  /* Text-alignment */
   .text-center {
     text-align: center;
   }
   
-  /* Weitere typografische Styles... */
+  /* Additional typographical styles... */
 }
 ```
 
 ### 10. utilities
 
-Der `utilities` Layer bietet atomare Utility-Klassen für schnelles Styling.
+The `utilities` layer provides atomic utility classes for quick styling.
 
 ```css
 @layer utilities {
-  /* Flexbox-Utilities */
+  /* flexbox-Utilities */
   .flex-col {
     flex-direction: column;
   }
   
-  /* Abstand-Utilities */
+  /* spacing-Utilities */
   .gap-4 {
     gap: var(--space-4);
   }
@@ -357,13 +357,13 @@ Der `utilities` Layer bietet atomare Utility-Klassen für schnelles Styling.
     width: 100%;
   }
   
-  /* Weitere Utility-Klassen... */
+  /* Additional utility classes... */
 }
 ```
 
 ### 11. smooth-scroll
 
-Der `smooth-scroll` Layer definiert das Scrollverhalten für eine bessere Benutzererfahrung.
+The `smooth-scroll` layer defines the scroll behavior for a better user experience.
 
 ```css
 @layer smooth-scroll {
@@ -371,18 +371,18 @@ Der `smooth-scroll` Layer definiert das Scrollverhalten für eine bessere Benutz
     scroll-behavior: smooth;
   }
   
-  /* Anker-Verhalten */
+  /* Anchor behavior */
   .scroll-mt-4 {
     scroll-margin-top: var(--space-4);
   }
   
-  /* Weitere Scroll-Styles... */
+  /* Additional scroll styles... */
 }
 ```
 
 ### 12. accessibility
 
-Der `accessibility` Layer enthält Verbesserungen für die Accessibility.
+The `accessibility` layer contains improvements for accessibility.
 
 ```css
 @layer accessibility {
@@ -392,7 +392,7 @@ Der `accessibility` Layer enthält Verbesserungen für die Accessibility.
     outline-offset: 2px;
   }
   
-  /* Unterstützung für reduzierte Bewegung */
+  /* Support for reduced motion */
   @media (prefers-reduced-motion: reduce) {
     * {
       animation-duration: 0.01ms !important;
@@ -400,7 +400,7 @@ Der `accessibility` Layer enthält Verbesserungen für die Accessibility.
     }
   }
   
-  /* Screen-Reader-Only Elemente */
+  /* Screen-Reader-Only elements */
   .sr-only {
     position: absolute;
     width: 1px;
@@ -413,17 +413,17 @@ Der `accessibility` Layer enthält Verbesserungen für die Accessibility.
     border-width: 0;
   }
   
-  /* Weitere Accessibility-Verbesserungen... */
+  /* Additional accessibility improvements... */
 }
 ```
 
 ### 13. icons
 
-Der `icons` Layer definiert das Icon-System und die dazugehörigen Styles.
+The `icons` layer defines the icon system and the corresponding styles.
 
 ```css
 @layer icons {
-  /* Icon-Basis */
+  /* icon-Base */
   .icon {
     display: inline-block;
     width: 1em;
@@ -431,7 +431,7 @@ Der `icons` Layer definiert das Icon-System und die dazugehörigen Styles.
     vertical-align: -0.125em;
   }
   
-  /* Icon-Sizes */
+  /* icon-Sizes */
   .icon-sm {
     font-size: var(--icon-size-sm);
   }
@@ -440,17 +440,17 @@ Der `icons` Layer definiert das Icon-System und die dazugehörigen Styles.
     font-size: var(--icon-size-md);
   }
   
-  /* Weitere Icon-Styles... */
+  /* Additional icon-Styles... */
 }
 ```
 
 ### 14. components
 
-Der `components` Layer enthält alle UI-Components des Design-Systems.
+The `components` layer contains all UI components of the design system.
 
 ```css
 @layer components {
-  /* Button-Komponente */
+  /* button-Component */
   .button {
     display: inline-flex;
     align-items: center;
@@ -466,24 +466,24 @@ Der `components` Layer enthält alle UI-Components des Design-Systems.
     color: var(--button-primary-text);
   }
   
-  /* Card-Komponente */
+  /* Card-Component */
   .card {
     border-radius: var(--card-radius);
     overflow: hidden;
     background-color: var(--card-bg);
   }
   
-  /* Weitere Components... */
+  /* Additional components... */
 }
 ```
 
 ### 15. animations
 
-Der `animations` Layer definiert das Animations- und Bewegungssystem.
+The `animations` layer defines the animation and Motion system.
 
 ```css
 @layer animations {
-  /* Fade-Animation */
+  /* Fade-animation */
   @keyframes fade {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -493,7 +493,7 @@ Der `animations` Layer definiert das Animations- und Bewegungssystem.
     animation: fade var(--animation-duration) var(--animation-easing);
   }
   
-  /* Slide-Animation */
+  /* Slide-animation */
   @keyframes slide-in {
     from { transform: translateY(20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -503,120 +503,120 @@ Der `animations` Layer definiert das Animations- und Bewegungssystem.
     animation: slide-in var(--animation-duration) var(--animation-easing);
   }
   
-  /* Weitere Animationen... */
+  /* Additional animations... */
 }
 ```
 
 ### 16. effects
 
-Der `effects` Layer enthält visuelle Effekte wie Schatten, Glaseffekte und Hintergründe.
+The `effects` layer contains visual effects like shadow, glass effects, and backgrounds.
 
 ```css
 @layer effects {
-  /* Schatten */
+  /* shadow */
   .shadow-sm {
     box-shadow: var(--shadow-sm);
   }
   
-  /* Glaseffekt */
+  /* Glass effect */
   .glass {
     backdrop-filter: blur(var(--glass-blur));
     background-color: var(--glass-bg);
   }
   
-  /* Weitere Effekte... */
+  /* Additional effects... */
 }
 ```
 
 ### 17. themes
 
-Der `themes` Layer definiert das Theming-System für verschiedene Farbschemata.
+The `themes` layer defines the Theming system for different color schemes.
 
 ```css
 @layer themes {
-  /* Helles Theme (Standard) */
+  /* Light theme (Default) */
   .theme-day {
     --color-background: var(--color-white);
     --color-text: var(--color-gray-900);
-    /* Weitere Theme-Variablen... */
+    /* Additional theme variables... */
   }
   
-  /* Dunkles Theme */
+  /* Dark theme */
   .theme-night {
     --color-background: var(--color-gray-900);
     --color-text: var(--color-gray-100);
-    /* Weitere Theme-Variablen... */
+    /* Additional theme variables... */
   }
   
-  /* Weitere Themes... */
+  /* Additional themes... */
 }
 ```
 
-## Vorteile des Layer Systems
+## Advantages of the Layer system
 
-Das Layer System der Casoon UI Library bietet mehrere Vorteile:
+The layer system of the Casoon UI Library offers several advantages:
 
-1. **Präzise Kontrolle der Spezifität**: Die Reihenfolge der Layer bestimmt die Priorität, unabhängig von der Komplexität der Selektoren.
-2. **Verbesserte Maintainability**: Klare Trennung von Zuständigkeiten erleichtert das Debugging und die Weiterentwicklung.
-3. **Skalierbarkeit**: Einfaches Hinzufügen neuer Funktionen ohne Beeinträchtigung bestehender Styles.
-4. **Vermeidung von !important**: Die Layer-Struktur reduziert die Notwendigkeit von !important-Deklarationen.
-5. **Performance-Optimierung**: Modern CSS-Engines können Layer-basierte Styles effizienter verarbeiten.
+1. **Precise Control of Specificity**: The order of layers determines priority, regardless of selector complexity.
+2. **Improved Maintainability**: Clear separation of responsibilities makes debugging and further development easier.
+3. **Scalability**: Easy addition of new features without affecting existing styles.
+4. **Avoiding !important**: The layer structure reduces the need for !important declarations.
+5. **Performance Optimization**: Modern CSS engines can process layer-based styles more efficiently.
 
 ## Best Practices
 
-Bei der Arbeit mit dem Layer System sollten folgende Best Practices beachtet werden:
+When working with the layer system, the following best practices should be followed:
 
-1. **Respektieren der Layer-Grenzen**: Platzieren Sie Styles im passenden Layer basierend auf ihrer Funktion.
-2. **Keine übergreifenden Abhängigkeiten**: Vermeiden Sie, dass ein Layer direkt von einem anderen abhängig ist.
-3. **Minimale Spezifität innerhalb von Layern**: Verwenden Sie die einfachsten möglichen Selektoren innerhalb eines Layers.
-4. **Konsistente Naming-Konventionen**: Folgen Sie den etablierten Konventionen für Klassen- und Variablennamen.
-5. **Dokumentieren von Customizations**: Beim Überschreiben von Styles in benutzerdefinierten Themes dokumentieren Sie den Zweck.
+1. **Respect Layer Boundaries**: Place styles in the appropriate layer based on their function.
+2. **Avoid Cross-Layer Dependencies**: Do not allow a layer to be directly dependent on another.
+3. **Minimal Specificity within Layers**: Use the simplest possible selectors within a layer.
+4. **Consistent Naming Conventions**: Follow the established conventions for class and variable names.
+5. **Document customizations**: When overriding styles in custom themes, document the purpose.
 
-## Integration in eigene Projekte
+## Integration in Own Projects
 
-Um das Layer System in Ihrem Projekt zu nutzen, importieren Sie einfach die `core.css`:
+To use the layer system in your project, simply import the `core.css`:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Wenn Sie eigene Customizations vornehmen möchten, respektieren Sie die Layer-Struktur:
+If you want to make your own customizations, respect the layer structure:
 
 ```css
-/* Eigene CSS-Datei nach dem Import der core.css */
+/* Own CSS file after importing the core.css */
 @import "@casoon/ui-lib/core.css";
 
-/* Eigene Components dem entsprechenden Layer zuordnen */
+/* Own components to the corresponding layer */
 @layer components {
   .custom-component {
-    /* Eigene Styles... */
+    /* Own styles... */
   }
 }
 
-/* Eigene Utilities dem utilities-Layer zuordnen */
+/* Own utilities to the utilities-layer */
 @layer utilities {
   .custom-utility {
-    /* Eigene Styles... */
+    /* Own styles... */
   }
 }
 
-/* Eigenes Theme dem themes-Layer zuordnen */
+/* Own theme to the themes-layer */
 @layer themes {
   .theme-custom {
-    /* Eigene Theme-Variablen... */
+    /* Own theme variables... */
   }
 }
 ```
 
-## Technische Details
+## Technical Details
 
-Das Core CSS System ist für moderne Browser optimiert und nutzt folgende Technologien:
+The Core CSS system is optimized for modern browsers and uses the following technologies:
 
-1. **CSS Layers**: Haupt-Organisationsprinzip für die Kaskade
-2. **Layer System**: Die `@layer`-Deklarationen werden optimal kompiliert
-3. **CSS Custom Properties**: Für dynamische Customizations und Themefähigkeit
-4. **Container Queries**: Für komponenten-basierte Responsivität
-5. **Modern Color Functions**: Für dynamische Farbberechnungen und Kontraste
-6. **Logical Properties**: Für internationalisierte und bidirektionale Layouts
+1. **CSS Layers**: Primary organization principle for cascade
+2. **Layer system**: The `@layer` declarations are optimally compiled
+3. **CSS Custom Properties**: For dynamic customizations and theming capability
+4. **containers Queries**: For component-based responsiveness
+5. **Modern Color Functions**: For dynamic color calculations and contrast
+6. **Logical Properties**: For internationalized and bidirectional layouts
 
-Das gesamte System ist für Lightning CSS (ehemals Parcel CSS) optimiert, was eine effiziente Verarbeitung und Minimierung ermöglicht.
+The entire system is optimized for Lightning CSS (formerly Parcel CSS), which allows efficient processing and minimization.

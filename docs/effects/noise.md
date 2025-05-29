@@ -3,67 +3,67 @@ title: Noise Effects
 category: Effects
 ---
 
-# Noise-Effekte
+# Noise-effects
 
-Die Noise-Effekte der Casoon UI Library bieten eine Sammlung von Rausch- und Textur-Effekten, die Ihren Designs Tiefe, Struktur und organisches Aussehen verleihen. Diese Effekte können verwendet werden, um sterile digitale Oberflächen zu beleben und visuelle Abwechslung zu schaffen.
+the Noise-effects the Casoon UI Library bieten a Sammlung from Rausch- and Textur-Effekten, the Ihren designs Tiefe, Structure and organisches Aussehen verleihen. these effects can verwendet become, um sterile digitale Oberflachen to beleben and visuelle Abwechslung to schaffen.
 
-## Überblick
+## Uberblick
 
-Noise-Effekte simulieren verschiedene Arten von visuellem Rauschen und Texturen, die in der Natur vorkommen. Diese können subtil im Hintergrund eingesetzt werden, um Tiefe zu erzeugen, oder als dominantes gestalterisches Element verwendet werden. Die Casoon UI Library bietet eine Reihe von vordefinierten Noise-Effekten, die einfach in Ihre Designs integriert werden können.
+Noise-effects simulieren verschiedene Arten from visuellem Rauschen and Texturen, the in the Natur vorkommen. these can subtil im background eingesetzt become, um Tiefe to erzeugen, or as dominantes gestalterisches element verwendet become. the Casoon UI Library bietet a Reihe from vordefinierten Noise-Effekten, the einfach in Ihre designs integriert become can.
 
 ## Installation
 
-Importieren Sie das Noise-Effekte-Modul über CSS:
+import them the Noise-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/noise.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
-### Grundlegende Noise-Effekte
+### Grundlegende Noise-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.noise` | Standardmäßiger Noise-Effekt |
-| `.noise-subtle` | Subtiler Noise-Effekt mit geringer Intensität |
-| `.noise-medium` | Mittlerer Noise-Effekt (Standard) |
-| `.noise-strong` | Starker Noise-Effekt mit hoher Intensität |
-| `.noise-bg` | Noise-Effekt speziell für Hintergründe optimiert |
+| `.noise` | Standardmassiger Noise-effect |
+| `.noise-subtle` | Subtiler Noise-effect with geringer Intensitat |
+| `.noise-medium` | Mittlerer Noise-effect (Standard) |
+| `.noise-strong` | Starker Noise-effect with hoher Intensitat |
+| `.noise-bg` | Noise-effect speziell for Hintergrunde optimiert |
 
 ### Noise-Typen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.noise-grain` | Feinkörniger Noise-Effekt (ähnlich Filmkorn) |
-| `.noise-static` | Statischer Noise-Effekt (wie TV-Rauschen) |
-| `.noise-perlin` | Weicher, fließender Perlin Noise-Effekt |
-| `.noise-fractal` | Fraktaler Noise mit selbstähnlichen Mustern |
-| `.noise-worley` | Zellulärer/Worley Noise mit organischen Zellstrukturen |
+| `.noise-grain` | Feinkorniger Noise-effect (ahnlich Filmkorn) |
+| `.noise-static` | Statischer Noise-effect (how TV-Rauschen) |
+| `.noise-perlin` | Weicher, fliessender Perlin Noise-effect |
+| `.noise-fractal` | Fraktaler Noise with selbstahnlichen Mustern |
+| `.noise-worley` | Zellularer/Worley Noise with organischen Zellstrukturen |
 
 ### Farbvarianten
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.noise-mono` | Monochromatischer Noise-Effekt |
-| `.noise-colored` | Mehrfarbiger Noise-Effekt |
-| `.noise-duotone` | Zweifarbiger Noise-Effekt |
-| `.noise-primary` | Noise in Primärfarbe |
-| `.noise-secondary` | Noise in Sekundärfarbe |
+| `.noise-mono` | Monochromatischer Noise-effect |
+| `.noise-colored` | Mehrfarbiger Noise-effect |
+| `.noise-duotone` | Zweifarbiger Noise-effect |
+| `.noise-primary` | Noise in Primarfarbe |
+| `.noise-secondary` | Noise in Sekundarfarbe |
 
-### Interaktive Noise-Effekte
+### Interaktive Noise-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.noise-hover` | Zeigt Noise-Effekt bei Hover an |
-| `.noise-active` | Zeigt Noise-Effekt im aktiven Zustand an |
-| `.noise-animated` | Animierter Noise-Effekt |
-| `.noise-shift` | Sanft bewegender Noise-Effekt |
-| `.noise-flicker` | Flackernder Noise-Effekt |
+| `.noise-hover` | Zeigt Noise-effect at Hover on |
+| `.noise-active` | Zeigt Noise-effect im aktiven state on |
+| `.noise-animated` | Animierter Noise-effect |
+| `.noise-shift` | Sanft bewegender Noise-effect |
+| `.noise-flicker` | Flackernder Noise-effect |
 
 ## Examples
 
-### Grundlegende Noise-Hintergründe
+### Grundlegende Noise-Hintergrunde
 
 ```html
 <div class="noise-examples">
@@ -146,18 +146,18 @@ Importieren Sie das Noise-Effekte-Modul über CSS:
 </style>
 ```
 
-### Animierte Noise-Effekte
+### Animierte Noise-effects
 
 ```html
 <div class="noise-animated-demo">
   <div class="noise-animated-bg noise-bg noise-animated">
-    <h2>Animierter Noise-Effekt</h2>
-    <p>Dieser Hintergrund verwendet einen sanft animierten Noise-Effekt.</p>
+    <h2>Animierter Noise-effect</h2>
+    <p>this background verwendet einen sanft animierten Noise-effect.</p>
   </div>
   
   <div class="noise-animated-bg noise-bg noise-shift">
     <h2>Shifting Noise</h2>
-    <p>Dieser Hintergrund verwendet einen sich bewegenden Noise-Effekt.</p>
+    <p>this background verwendet einen oneself bewegenden Noise-effect.</p>
   </div>
 </div>
 
@@ -186,17 +186,17 @@ Importieren Sie das Noise-Effekte-Modul über CSS:
 </style>
 ```
 
-### Noise-Effekte in UI-Elementen
+### Noise-effects in UI-Elementen
 
 ```html
 <div class="noise-ui-demo">
   <button class="button noise-button noise-bg noise-hover">
-    Noise Button
+    Noise button
   </button>
   
   <div class="card noise-card noise-bg noise-subtle">
-    <h3>Card mit Noise</h3>
-    <p>Diese Card verwendet einen subtilen Noise-Effekt im Hintergrund.</p>
+    <h3>Card with Noise</h3>
+    <p>these Card verwendet einen subtilen Noise-effect im background.</p>
   </div>
   
   <div class="badge noise-badge noise-bg noise-strong">
@@ -242,13 +242,13 @@ Importieren Sie das Noise-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Noise-Effekte können über CSS Variables angepasst werden:
+the Noise-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Noise-Parameter */
+  /* Grundlegende Noise-parameter */
   --noise-opacity: 0.15;
   --noise-intensity: 1;
   --noise-scale: 100px;
@@ -264,19 +264,19 @@ Die Noise-Effekte können über CSS Variables angepasst werden:
   --noise-primary-color: var(--color-primary, #3f51b5);
   --noise-secondary-color: var(--color-secondary, #f50057);
   
-  /* Animations-Parameter */
+  /* Animations-parameter */
   --noise-animation-duration: 8s;
   --noise-animation-timing: linear;
   --noise-flicker-duration: 3s;
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Der grundlegende Noise-Effekt wird durch generierte Hintergrundbilder und Filter implementiert:
+the grundlegende Noise-effect wird through generierte Hintergrundbilder and Filter implementiert:
 
 ```css
-/* Basis-Noise-Effekt mit SVG */
+/* Base-Noise-effect with SVG */
 .noise-bg {
   position: relative;
   overflow: hidden;
@@ -293,7 +293,7 @@ Der grundlegende Noise-Effekt wird durch generierte Hintergrundbilder und Filter
   pointer-events: none;
 }
 
-/* Noise-Intensitäten */
+/* Noise-Intensitaten */
 .noise-subtle::before {
   opacity: var(--noise-subtle-opacity);
 }
@@ -307,7 +307,7 @@ Der grundlegende Noise-Effekt wird durch generierte Hintergrundbilder und Filter
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)'/%3E%3C/svg%3E");
 }
 
-/* Noise mit Animationen */
+/* Noise with animations */
 .noise-animated::before {
   animation: noise-animation var(--noise-animation-duration) var(--noise-animation-timing) infinite;
 }
@@ -390,14 +390,14 @@ Der grundlegende Noise-Effekt wird durch generierte Hintergrundbilder und Filter
 
 ## Accessibility
 
-Bei der Usage von Noise-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Noise-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass Text auf Noise-Hintergründen ausreichend lesbar bleibt
-2. **Bewegung**: Bieten Sie eine Option zum Deaktivieren von animierten Noise-Effekten für Nutzer mit Bewegungsempfindlichkeiten
-3. **Ablenkung**: Verwenden Sie subtile Noise-Effekte, um Ablenkungen zu minimieren
+1. **Kontrast**: ensure, that Text on Noise-Hintergrunden ausreichend lesbar bleibt
+2. **Bewegung**: Bieten them a Option zum deactivate from animierten Noise-Effekten for Nutzer with Bewegungsempfindlichkeiten
+3. **Ablenkung**: use them subtile Noise-effects, um Ablenkungen to minimieren
 
 ```css
-/* Verbesserte Lesbarkeit für Text auf Noise-Hintergründen */
+/* Verbesserte Lesbarkeit for Text on Noise-Hintergrunden */
 .noise-bg-with-text {
   --noise-opacity: 0.1;
 }
@@ -409,7 +409,7 @@ Bei der Usage von Noise-Effekten sollten folgende Accessibilitysaspekte berücks
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Reduzierte Bewegung für animierte Noise-Effekte */
+/* Reduzierte Bewegung for animierte Noise-effects */
 @media (prefers-reduced-motion: reduce) {
   .noise-animated::before,
   .noise-shift::before,
@@ -421,19 +421,19 @@ Bei der Usage von Noise-Effekten sollten folgende Accessibilitysaspekte berücks
 
 ## Performance-Optimierung
 
-Noise-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Noise-effects can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **SVG-Optimierung**: Verwenden Sie optimierte SVG-Filter für Noise-Effekte
-2. **Caching**: Generieren Sie Noise-Texturen einmalig und cache sie
-3. **Layer-Promotion**: Nutzen Sie `will-change` für animierte Noise-Effekte
+1. **SVG-Optimierung**: use them optimierte SVG-Filter for Noise-effects
+2. **Caching**: Generieren them Noise-Texturen einmalig and cache them
+3. **Layer-Promotion**: use them `will-change` for animierte Noise-effects
 
 ```css
-/* Performance-Optimierung für Noise-Effekte */
+/* Performance-Optimierung for Noise-effects */
 .noise-optimized::before {
   will-change: transform;
 }
 
-/* Reduzierte Komplexität für mobile Geräte */
+/* Reduzierte Komplexitat for mobile Gerate */
 @media (max-width: 768px) {
   :root {
     --noise-opacity: 0.1;
@@ -442,14 +442,14 @@ Noise-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Noise-Effekte werden von allen modernen Browsern unterstützt.
+the Noise-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | SVG-Filter | ✓ | ✓ | ✓ | ✓ | Teilweise |
-| CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
+| CSS-animations | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die SVG-Filter nicht vollständig unterstützen, werden alternative Lösungen mit Bitmap-Texturen bereitgestellt. 
+for altere Browser, the SVG-Filter not vollstandig unterstutzen, become alternative Losungen with Bitmap-Texturen bereitgestellt. 

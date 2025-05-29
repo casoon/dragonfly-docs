@@ -3,106 +3,106 @@ title: Filter Effects
 category: Effects
 ---
 
-# Filter-Effekte
+# Filter-effects
 
-Die Filter-Effekte der Casoon UI Library bieten eine umfassende Sammlung von CSS-Filtern, mit denen Sie visuelle Transformationen auf Elemente anwenden können, um beeindruckende und dynamische Benutzeroberflächen zu gestalten.
+the Filter-effects the Casoon UI Library bieten a umfassende Sammlung from CSS-Filtern, with denen them visuelle Transformationen on elements anwenden can, um beeindruckende and dynamische user interfaces to gestalten.
 
-## Überblick
+## Uberblick
 
-Die Filter-Effekte nutzen CSS-Filtereigenschaften, um Grafiken, Hintergründe und Elemente zu verändern. Sie können die Helligkeit, den Kontrast, die Farbsättigung anpassen, Unschärfe hinzufügen und vieles mehr, um die visuelle Darstellung Ihrer Benutzeroberfläche zu verbessern.
+the Filter-effects use CSS-Filtereigenschaften, um Grafiken, Hintergrunde and elements to verandern. You can the Helligkeit, den Kontrast, the Farbsattigung customize, Unscharfe add and much more, um the visuelle Display Ihrer Benutzeroberflache to verbessern.
 
 ## Installation
 
-Importieren Sie das Filter-Effekte-Modul über CSS:
+import them the Filter-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/filters.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
 ### Grundlegende Filter
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-blur-sm` | Wendet eine leichte Unschärfe (2px) an |
-| `.filter-blur-md` | Wendet eine mittlere Unschärfe (4px) an |
-| `.filter-blur-lg` | Wendet eine starke Unschärfe (8px) an |
-| `.filter-blur-xl` | Wendet eine sehr starke Unschärfe (16px) an |
-| `.filter-brightness-0` | Reduziert die Helligkeit auf 0% (schwarz) |
-| `.filter-brightness-50` | Reduziert die Helligkeit auf 50% |
-| `.filter-brightness-75` | Reduziert die Helligkeit auf 75% |
-| `.filter-brightness-90` | Reduziert die Helligkeit auf 90% |
+| `.filter-blur-sm` | Wendet a leichte Unscharfe (2px) on |
+| `.filter-blur-md` | Wendet a mittlere Unscharfe (4px) on |
+| `.filter-blur-lg` | Wendet a strength Unscharfe (8px) on |
+| `.filter-blur-xl` | Wendet a very strength Unscharfe (16px) on |
+| `.filter-brightness-0` | Reduziert the Helligkeit on 0% (schwarz) |
+| `.filter-brightness-50` | Reduziert the Helligkeit on 50% |
+| `.filter-brightness-75` | Reduziert the Helligkeit on 75% |
+| `.filter-brightness-90` | Reduziert the Helligkeit on 90% |
 | `.filter-brightness-100` | Normale Helligkeit (100%) |
-| `.filter-brightness-110` | Erhöht die Helligkeit auf 110% |
-| `.filter-brightness-125` | Erhöht die Helligkeit auf 125% |
-| `.filter-brightness-150` | Erhöht die Helligkeit auf 150% |
-| `.filter-brightness-200` | Erhöht die Helligkeit auf 200% |
-| `.filter-contrast-0` | Reduziert den Kontrast auf 0% (grau) |
-| `.filter-contrast-50` | Reduziert den Kontrast auf 50% |
-| `.filter-contrast-75` | Reduziert den Kontrast auf 75% |
+| `.filter-brightness-110` | Erhoht the Helligkeit on 110% |
+| `.filter-brightness-125` | Erhoht the Helligkeit on 125% |
+| `.filter-brightness-150` | Erhoht the Helligkeit on 150% |
+| `.filter-brightness-200` | Erhoht the Helligkeit on 200% |
+| `.filter-contrast-0` | Reduziert den Kontrast on 0% (grau) |
+| `.filter-contrast-50` | Reduziert den Kontrast on 50% |
+| `.filter-contrast-75` | Reduziert den Kontrast on 75% |
 | `.filter-contrast-100` | Normaler Kontrast (100%) |
-| `.filter-contrast-125` | Erhöht den Kontrast auf 125% |
-| `.filter-contrast-150` | Erhöht den Kontrast auf 150% |
-| `.filter-contrast-200` | Erhöht den Kontrast auf 200% |
-| `.filter-grayscale-0` | Keine Graustufen (0%) |
+| `.filter-contrast-125` | Erhoht den Kontrast on 125% |
+| `.filter-contrast-150` | Erhoht den Kontrast on 150% |
+| `.filter-contrast-200` | Erhoht den Kontrast on 200% |
+| `.filter-grayscale-0` | no Graustufen (0%) |
 | `.filter-grayscale-25` | 25% Graustufen |
 | `.filter-grayscale-50` | 50% Graustufen |
 | `.filter-grayscale-75` | 75% Graustufen |
-| `.filter-grayscale-100` | Vollständige Graustufen (100%) |
-| `.filter-hue-rotate-0` | Keine Farbtonrotation |
+| `.filter-grayscale-100` | Vollstandige Graustufen (100%) |
+| `.filter-hue-rotate-0` | no Farbtonrotation |
 | `.filter-hue-rotate-90` | 90 Grad Farbtonrotation |
 | `.filter-hue-rotate-180` | 180 Grad Farbtonrotation |
 | `.filter-hue-rotate-270` | 270 Grad Farbtonrotation |
-| `.filter-invert-0` | Keine Farbinvertierung |
+| `.filter-invert-0` | no Farbinvertierung |
 | `.filter-invert-25` | 25% Farbinvertierung |
 | `.filter-invert-50` | 50% Farbinvertierung |
 | `.filter-invert-75` | 75% Farbinvertierung |
-| `.filter-invert-100` | Vollständige Farbinvertierung (100%) |
-| `.filter-saturate-0` | Keine Sättigung (0%) |
-| `.filter-saturate-50` | 50% Sättigung |
-| `.filter-saturate-75` | 75% Sättigung |
-| `.filter-saturate-100` | Normale Sättigung (100%) |
-| `.filter-saturate-125` | 125% Sättigung |
-| `.filter-saturate-150` | 150% Sättigung |
-| `.filter-saturate-200` | 200% Sättigung |
-| `.filter-sepia-0` | Kein Sepia-Effekt |
-| `.filter-sepia-25` | 25% Sepia-Effekt |
-| `.filter-sepia-50` | 50% Sepia-Effekt |
-| `.filter-sepia-75` | 75% Sepia-Effekt |
-| `.filter-sepia-100` | Vollständiger Sepia-Effekt (100%) |
+| `.filter-invert-100` | Vollstandige Farbinvertierung (100%) |
+| `.filter-saturate-0` | no Sattigung (0%) |
+| `.filter-saturate-50` | 50% Sattigung |
+| `.filter-saturate-75` | 75% Sattigung |
+| `.filter-saturate-100` | Normale Sattigung (100%) |
+| `.filter-saturate-125` | 125% Sattigung |
+| `.filter-saturate-150` | 150% Sattigung |
+| `.filter-saturate-200` | 200% Sattigung |
+| `.filter-sepia-0` | no Sepia-effect |
+| `.filter-sepia-25` | 25% Sepia-effect |
+| `.filter-sepia-50` | 50% Sepia-effect |
+| `.filter-sepia-75` | 75% Sepia-effect |
+| `.filter-sepia-100` | Vollstandiger Sepia-effect (100%) |
 | `.filter-drop-shadow-sm` | Kleine Schlagschatten (2px) |
 | `.filter-drop-shadow-md` | Mittlere Schlagschatten (4px) |
-| `.filter-drop-shadow-lg` | Große Schlagschatten (8px) |
-| `.filter-drop-shadow-xl` | Sehr große Schlagschatten (16px) |
+| `.filter-drop-shadow-lg` | size Schlagschatten (8px) |
+| `.filter-drop-shadow-xl` | very size Schlagschatten (16px) |
 
 ### Kombinierte Filter
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.filter-vintage` | Vintage-Foto-Effekt (Sepia + reduzierte Sättigung) |
-| `.filter-dramatic` | Dramatischer Effekt (erhöhter Kontrast + leichte Farbtonverschiebung) |
-| `.filter-cool` | Kühler Farbeffekt (bläuliche Tönung) |
-| `.filter-warm` | Warmer Farbeffekt (gelblich-rötliche Tönung) |
-| `.filter-noir` | Film-Noir-Effekt (hoher Kontrast + Graustufen) |
-| `.filter-clarity` | Klarheitseffekt (erhöhter Kontrast + Schärfe) |
-| `.filter-fade` | Verblassungseffekt (reduzierte Sättigung + erhöhte Helligkeit) |
-| `.filter-muted` | Gedämpfter Effekt (reduzierte Sättigung + reduzierter Kontrast) |
-| `.filter-vibrant` | Lebhafter Effekt (erhöhte Sättigung + leicht erhöhter Kontrast) |
+| `.filter-vintage` | Vintage-Foto-effect (Sepia + reduzierte Sattigung) |
+| `.filter-dramatic` | Dramatischer effect (erhohter Kontrast + leichte Farbtonverschiebung) |
+| `.filter-cool` | Kuhler Farbeffekt (blauliche Tonung) |
+| `.filter-warm` | Warmer Farbeffekt (gelblich-rotliche Tonung) |
+| `.filter-noir` | Film-Noir-effect (hoher Kontrast + Graustufen) |
+| `.filter-clarity` | Klarheitseffekt (erhohter Kontrast + Scharfe) |
+| `.filter-fade` | Verblassungseffekt (reduzierte Sattigung + erhohte Helligkeit) |
+| `.filter-muted` | Gedampfter effect (reduzierte Sattigung + reduzierter Kontrast) |
+| `.filter-vibrant` | Lebhafter effect (erhohte Sattigung + leicht erhohter Kontrast) |
 
 ### Hover-Filter
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.hover-filter-blur` | Wendet Unschärfe bei Hover an |
-| `.hover-filter-brightness-up` | Erhöht die Helligkeit bei Hover |
-| `.hover-filter-brightness-down` | Reduziert die Helligkeit bei Hover |
-| `.hover-filter-contrast-up` | Erhöht den Kontrast bei Hover |
-| `.hover-filter-grayscale` | Wendet Graustufen bei Hover an |
-| `.hover-filter-sepia` | Wendet Sepia-Effekt bei Hover an |
-| `.hover-filter-invert` | Invertiert Colors bei Hover |
-| `.hover-filter-saturate-up` | Erhöht die Sättigung bei Hover |
-| `.hover-filter-saturate-down` | Reduziert die Sättigung bei Hover |
+| `.hover-filter-blur` | Wendet Unscharfe at Hover on |
+| `.hover-filter-brightness-up` | Erhoht the Helligkeit at Hover |
+| `.hover-filter-brightness-down` | Reduziert the Helligkeit at Hover |
+| `.hover-filter-contrast-up` | Erhoht den Kontrast at Hover |
+| `.hover-filter-grayscale` | Wendet Graustufen at Hover on |
+| `.hover-filter-sepia` | Wendet Sepia-effect at Hover on |
+| `.hover-filter-invert` | Invertiert Colors at Hover |
+| `.hover-filter-saturate-up` | Erhoht the Sattigung at Hover |
+| `.hover-filter-saturate-down` | Reduziert the Sattigung at Hover |
 
 ## Examples
 
@@ -116,8 +116,8 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
   </div>
   
   <div class="filter-example">
-    <img src="image.jpg" alt="Unschärfe" class="filter-blur-md">
-    <span class="filter-label">Unschärfe</span>
+    <img src="image.jpg" alt="Unscharfe" class="filter-blur-md">
+    <span class="filter-label">Unscharfe</span>
   </div>
   
   <div class="filter-example">
@@ -168,7 +168,7 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
 </style>
 ```
 
-### Kombinierte Filter-Effekte
+### Kombinierte Filter-effects
 
 ```html
 <div class="filter-examples">
@@ -210,22 +210,22 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
 <div class="hover-filter-examples">
   <div class="hover-example">
     <img src="image.jpg" alt="Hover Blur" class="hover-filter-blur">
-    <span class="hover-label">Hover für Unschärfe</span>
+    <span class="hover-label">Hover for Unscharfe</span>
   </div>
   
   <div class="hover-example">
     <img src="image.jpg" alt="Hover Brightness" class="hover-filter-brightness-up">
-    <span class="hover-label">Hover für Helligkeit</span>
+    <span class="hover-label">Hover for Helligkeit</span>
   </div>
   
   <div class="hover-example">
     <img src="image.jpg" alt="Hover Grayscale" class="hover-filter-grayscale">
-    <span class="hover-label">Hover für Graustufen</span>
+    <span class="hover-label">Hover for Graustufen</span>
   </div>
   
   <div class="hover-example">
     <img src="image.jpg" alt="Hover Invert" class="hover-filter-invert">
-    <span class="hover-label">Hover für Invertierung</span>
+    <span class="hover-label">Hover for Invertierung</span>
   </div>
 </div>
 
@@ -263,7 +263,7 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
 <div class="filter-editor">
   <div class="filter-controls">
     <div class="filter-control">
-      <label for="blur">Unschärfe:</label>
+      <label for="blur">Unscharfe:</label>
       <input type="range" id="blur" min="0" max="20" value="0" step="1">
       <span class="filter-value">0px</span>
     </div>
@@ -293,7 +293,7 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
     </div>
     
     <div class="filter-control">
-      <label for="saturate">Sättigung:</label>
+      <label for="saturate">Sattigung:</label>
       <input type="range" id="saturate" min="0" max="200" value="100" step="5">
       <span class="filter-value">100%</span>
     </div>
@@ -382,7 +382,7 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
       filterCss.textContent = `filter: ${css.trim()};`;
     }
     
-    // Event-Listener für alle Regler hinzufügen
+    // Event-Listener for all Regler add
     Object.values(controls).forEach(control => {
       control.addEventListener('input', updateFilter);
     });
@@ -440,13 +440,13 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Filter-Effekte können über CSS Variables angepasst werden:
+the Filter-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Basis-Filter-Parameter */
+  /* Base-Filter-parameter */
   --filter-blur-sm: 2px;
   --filter-blur-md: 4px;
   --filter-blur-lg: 8px;
@@ -483,29 +483,29 @@ Die Filter-Effekte können über CSS Variables angepasst werden:
 
 ## Accessibility
 
-Bei der Usage von Filter-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Filter-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Achten Sie darauf, dass Filter nicht den Kontrast so stark reduzieren, dass Text schwer lesbar wird
-2. **Farbwahrnehmung**: Berücksichtigen Sie, dass Farbanpassungen durch Filter für Menschen mit Farbfehlsichtigkeit problematisch sein können
-3. **Bewegung und Animation**: Verwenden Sie keine animierten Filter, die schnell blinken oder flackern, um Probleme bei Personen mit Vestibulärerkrankungen oder Epilepsie zu vermeiden
-4. **Alternative Styles**: Bieten Sie alternative Ansichten ohne Filter für Nutzer, die diese benötigen
+1. **Kontrast**: make sure, that Filter not den Kontrast so stark reduzieren, that Text schwer lesbar wird
+2. **Farbwahrnehmung**: Berucksichtigen them, that Farbanpassungen through Filter for Menschen with Farbfehlsichtigkeit problematisch be can
+3. **Bewegung and animation**: use them no animierten Filter, the schnell blinken or flackern, um Probleme at Personen with Vestibularerkrankungen or Epilepsie to vermeiden
+4. **Alternative Styles**: Bieten them alternative Ansichten without Filter for Nutzer, the these benotigen
 
 ```css
-/* Verbesserte Lesbarkeit für Text über gefilterten Hintergründen */
+/* Verbesserte Lesbarkeit for Text over gefilterten Hintergrunden */
 .filter-background-with-text {
-  /* Hintergrund mit Filter */
+  /* background with Filter */
   position: relative;
 }
 
 .filter-background-with-text .content {
-  /* Text-Container */
+  /* Text-containers */
   position: relative;
   z-index: 1;
-  /* Sorgt für ausreichenden Kontrast */
+  /* Sorgt for ausreichenden Kontrast */
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Alternative Styles für reduzierte Bewegung */
+/* Alternative Styles for reduzierte Bewegung */
 @media (prefers-reduced-motion: reduce) {
   .animated-filter {
     transition: none !important;
@@ -516,28 +516,28 @@ Bei der Usage von Filter-Effekten sollten folgende Accessibilitysaspekte berück
 
 ## Performance-Optimierung
 
-Filter-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Filter-effects can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Kombinieren Sie Filter**: Verwenden Sie einen einzelnen Filter-Wert statt mehrerer verschachtelter Elemente mit Filtern
-2. **Verwenden Sie will-change**: Fügen Sie `will-change: filter` für Elemente mit Hover-Filtern hinzu
-3. **Begrenzen Sie animierte Filter**: Animieren Sie Filter nur auf kleinen Elementen oder reduzieren Sie die Komplexität
-4. **Hardware-Beschleunigung**: Nutzen Sie `transform: translateZ(0)` für Hardware-Beschleunigung bei gefilterten Elementen
+1. **combine them Filter**: use them einen einzelnen Filter-Value instead of mehrerer verschachtelter elements with Filtern
+2. **use them will-change**: Fugen them `will-change: filter` for elements with Hover-Filtern hinzu
+3. **Begrenzen them animierte Filter**: Animieren them Filter only on kleinen Elementen or reduzieren them the Komplexitat
+4. **Hardware-Beschleunigung**: use them `transform: translateZ(0)` for Hardware-Beschleunigung at gefilterten Elementen
 
 ```css
-/* Performance-Optimierung für Filter */
+/* Performance-Optimierung for Filter */
 .optimized-filter {
   will-change: filter;
   transform: translateZ(0);
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Filter-Effekte werden von allen modernen Browsern unterstützt.
+the Filter-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | filter | ✓ | ✓ | ✓ | ✓ | ✗ |
 | backdrop-filter | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die keine Filter unterstützen, werden Fallback-Styles bereitgestellt. 
+for altere Browser, the no Filter unterstutzen, become Fallback-Styles bereitgestellt. 

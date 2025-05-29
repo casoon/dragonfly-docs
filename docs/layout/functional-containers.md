@@ -1,42 +1,42 @@
 ---
 title: Functional Containers
-category: Layout
+category: layout
 ---
 
 # Functional Containers
 
-Die Casoon UI Library bietet spezielle funktionale Container, die über ihre visuellen Eigenschaften hinaus bestimmte Verhaltensmuster und Funktionalitäten implementieren. Diese Dokumentation erklärt die verfügbaren funktionalen Container und ihre Use Cases.
+the Casoon UI Library bietet spezielle funktionale containers, the over ihre visuellen properties hinaus bestimmte Verhaltensmuster and Funktionalitaten implement. these Documentation erklart the verfugbaren funktionalen containers and ihre Use Cases.
 
 ## Overview
 
-Funktionale Container erweitern das Container System um folgende Aspekte:
+Funktionale containers extend the containers system um folgende Aspekte:
 
-1. **Interaktive Funktionen** - Container mit eingebauten Interaktionen
-2. **Inhaltssteuerung** - Container für spezifische Inhaltsanzeige und -verwaltung
-3. **Verhaltenslogik** - Container mit speziellen Verhaltensmustern
-4. **Status-Management** - Container, die auf verschiedene States reagieren
-5. **Kontext-Bereitstellung** - Container, die Kontext für Kinder-Components bereitstellen
+1. **Interaktive functions** - containers with eingebauten interactions
+2. **Inhaltssteuerung** - containers for spezifische Inhaltsanzeige and -verwaltung
+3. **Verhaltenslogik** - containers with speziellen Verhaltensmustern
+4. **Status-Management** - containers, the on verschiedene States reagieren
+5. **Kontext-Bereitstellung** - containers, the Kontext for Kinder-Components bereitstellen
 
-## Collapsible Container
+## Collapsible containers
 
-Container, die ein- und ausgeklappt werden können:
+containers, the a- and ausgeklappt become can:
 
 ```html
-<div class="collapsible-container">
+<div class="collapsible-containers">
   <button class="collapsible-trigger">
-    <h3>Klicken zum Erweitern</h3>
+    <h3>Click zum extend</h3>
     <span class="collapsible-icon">+</span>
   </button>
   <div class="collapsible-content">
-    <p>Dieser Inhalt wird angezeigt, wenn der Container erweitert ist.</p>
+    <p>this content wird angezeigt, if the containers erweitert ist.</p>
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.collapsible-container {
+.collapsible-containers {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -61,12 +61,12 @@ Implementierung:
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
-.collapsible-container.open .collapsible-content {
+.collapsible-containers.open .collapsible-content {
   padding: var(--space-4);
-  max-height: 500px; /* Anpassen je nach Inhalt */
+  max-height: 500px; /* customize je after content */
 }
 
-.collapsible-container.open .collapsible-icon {
+.collapsible-containers.open .collapsible-icon {
   transform: rotate(45deg);
 }
 
@@ -75,23 +75,23 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for the Funktionalitat:
 
 ```javascript
 document.querySelectorAll('.collapsible-trigger').forEach(trigger => {
   trigger.addEventListener('click', () => {
-    const container = trigger.closest('.collapsible-container');
-    container.classList.toggle('open');
+    const containers = trigger.closest('.collapsible-containers');
+    containers.classList.toggle('open');
   });
 });
 ```
 
-## Tabs Container
+## Tabs containers
 
-Container für Tab-basierte Inhaltsanzeige:
+containers for Tab-basierte Inhaltsanzeige:
 
 ```html
-<div class="tabs-container">
+<div class="tabs-containers">
   <div class="tabs-header">
     <button class="tab-trigger active" data-tab="tab1">Tab 1</button>
     <button class="tab-trigger" data-tab="tab2">Tab 2</button>
@@ -99,22 +99,22 @@ Container für Tab-basierte Inhaltsanzeige:
   </div>
   <div class="tabs-content">
     <div id="tab1" class="tab-panel active">
-      <p>Inhalt für Tab 1</p>
+      <p>content for Tab 1</p>
     </div>
     <div id="tab2" class="tab-panel">
-      <p>Inhalt für Tab 2</p>
+      <p>content for Tab 2</p>
     </div>
     <div id="tab3" class="tab-panel">
-      <p>Inhalt für Tab 3</p>
+      <p>content for Tab 3</p>
     </div>
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.tabs-container {
+.tabs-containers {
   width: 100%;
 }
 
@@ -146,12 +146,12 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for the Funktionalitat:
 
 ```javascript
 document.querySelectorAll('.tab-trigger').forEach(trigger => {
   trigger.addEventListener('click', () => {
-    // Alle Tabs deaktivieren
+    // all Tabs deactivate
     document.querySelectorAll('.tab-trigger').forEach(t => {
       t.classList.remove('active');
     });
@@ -159,7 +159,7 @@ document.querySelectorAll('.tab-trigger').forEach(trigger => {
       p.classList.remove('active');
     });
     
-    // Ausgewählten Tab aktivieren
+    // Ausgewahlten Tab activate
     trigger.classList.add('active');
     const tabId = trigger.dataset.tab;
     document.getElementById(tabId).classList.add('active');
@@ -167,19 +167,19 @@ document.querySelectorAll('.tab-trigger').forEach(trigger => {
 });
 ```
 
-## Accordion Container
+## Accordion containers
 
-Container für Akkordeon-Inhaltsanzeige:
+containers for Akkordeon-Inhaltsanzeige:
 
 ```html
-<div class="accordion-container">
+<div class="accordion-containers">
   <div class="accordion-item">
     <button class="accordion-header">
       <h3>Abschnitt 1</h3>
       <span class="accordion-icon">+</span>
     </button>
     <div class="accordion-content">
-      <p>Inhalt für Abschnitt 1</p>
+      <p>content for Abschnitt 1</p>
     </div>
   </div>
   
@@ -189,7 +189,7 @@ Container für Akkordeon-Inhaltsanzeige:
       <span class="accordion-icon">+</span>
     </button>
     <div class="accordion-content">
-      <p>Inhalt für Abschnitt 2</p>
+      <p>content for Abschnitt 2</p>
     </div>
   </div>
   
@@ -199,16 +199,16 @@ Container für Akkordeon-Inhaltsanzeige:
       <span class="accordion-icon">+</span>
     </button>
     <div class="accordion-content">
-      <p>Inhalt für Abschnitt 3</p>
+      <p>content for Abschnitt 3</p>
     </div>
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.accordion-container {
+.accordion-containers {
   width: 100%;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -244,7 +244,7 @@ Implementierung:
 
 .accordion-item.open .accordion-content {
   padding: var(--space-4);
-  max-height: 500px; /* Anpassen je nach Inhalt */
+  max-height: 500px; /* customize je after content */
 }
 
 .accordion-item.open .accordion-icon {
@@ -256,41 +256,41 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for the Funktionalitat:
 
 ```javascript
 document.querySelectorAll('.accordion-header').forEach(header => {
   header.addEventListener('click', () => {
     const item = header.closest('.accordion-item');
     
-    // Optional: Andere Accordion-Items schließen
+    // Optional: others Accordion-Items close
     document.querySelectorAll('.accordion-item').forEach(i => {
       if (i !== item) i.classList.remove('open');
     });
     
-    // Ausgewähltes Item umschalten
+    // Ausgewahltes Item umschalten
     item.classList.toggle('open');
   });
 });
 ```
 
-## Tooltip Container
+## tooltip containers
 
-Container für Tooltip-Funktionalität:
+containers for tooltip-Funktionalitat:
 
 ```html
-<div class="tooltip-container">
-  <button class="tooltip-trigger">Hover für Info</button>
+<div class="tooltip-containers">
+  <button class="tooltip-trigger">Hover for info</button>
   <div class="tooltip-content">
-    Dies ist ein Tooltip mit zusätzlichen Informationen
+    Dies ist a tooltip with zusatzlichen Informationen
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.tooltip-container {
+.tooltip-containers {
   position: relative;
   display: inline-block;
 }
@@ -323,42 +323,42 @@ Implementierung:
   border-color: var(--color-neutral-800) transparent transparent transparent;
 }
 
-.tooltip-container:hover .tooltip-content,
+.tooltip-containers:hover .tooltip-content,
 .tooltip-trigger:focus + .tooltip-content {
   opacity: 1;
   visibility: visible;
 }
 ```
 
-## Modal Container
+## modal containers
 
-Container für Modal-Dialoge:
+containers for modal-dialogs:
 
 ```html
-<button class="modal-open-btn" data-modal="example-modal">Modal öffnen</button>
+<button class="modal-open-btn" data-modal="example-modal">modal offnen</button>
 
-<div id="example-modal" class="modal-container">
+<div id="example-modal" class="modal-containers">
   <div class="modal-backdrop"></div>
   <div class="modal-content">
     <div class="modal-header">
-      <h3>Modal-Titel</h3>
+      <h3>modal-Titel</h3>
       <button class="modal-close-btn">&times;</button>
     </div>
     <div class="modal-body">
-      <p>Modal-Inhalt geht hier...</p>
+      <p>modal-content geht hier...</p>
     </div>
     <div class="modal-footer">
       <button class="btn btn-secondary modal-close-btn">Abbrechen</button>
-      <button class="btn btn-primary">Bestätigen</button>
+      <button class="btn btn-primary">Bestatigen</button>
     </div>
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.modal-container {
+.modal-containers {
   position: fixed;
   top: 0;
   left: 0;
@@ -373,7 +373,7 @@ Implementierung:
   transition: opacity 0.3s, visibility 0.3s;
 }
 
-.modal-container.open {
+.modal-containers.open {
   opacity: 1;
   visibility: visible;
 }
@@ -423,10 +423,10 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for the Funktionalitat:
 
 ```javascript
-// Modal öffnen
+// modal offnen
 document.querySelectorAll('.modal-open-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const modalId = btn.dataset.modal;
@@ -436,11 +436,11 @@ document.querySelectorAll('.modal-open-btn').forEach(btn => {
   });
 });
 
-// Modal schließen
+// modal close
 document.querySelectorAll('.modal-close-btn, .modal-backdrop').forEach(btn => {
   btn.addEventListener('click', (e) => {
     if (e.target === btn) {
-      const modal = btn.closest('.modal-container');
+      const modal = btn.closest('.modal-containers');
       modal.classList.remove('open');
       document.body.style.overflow = ''; // Scroll wiederherstellen
     }
@@ -448,14 +448,14 @@ document.querySelectorAll('.modal-close-btn, .modal-backdrop').forEach(btn => {
 });
 ```
 
-## Dropdown Container
+## Dropdown containers
 
-Container für Dropdown-Menüs:
+containers for Dropdown-Menus:
 
 ```html
-<div class="dropdown-container">
+<div class="dropdown-containers">
   <button class="dropdown-trigger">
-    Menü öffnen
+    Menu offnen
     <span class="dropdown-icon">▼</span>
   </button>
   <div class="dropdown-menu">
@@ -466,10 +466,10 @@ Container für Dropdown-Menüs:
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.dropdown-container {
+.dropdown-containers {
   position: relative;
   display: inline-block;
 }
@@ -501,7 +501,7 @@ Implementierung:
   transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
 }
 
-.dropdown-container.open .dropdown-menu {
+.dropdown-containers.open .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -519,41 +519,41 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for the Funktionalitat:
 
 ```javascript
 document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
   trigger.addEventListener('click', (e) => {
     e.stopPropagation();
-    const container = trigger.closest('.dropdown-container');
-    container.classList.toggle('open');
+    const containers = trigger.closest('.dropdown-containers');
+    containers.classList.toggle('open');
   });
 });
 
-// Dropdown bei Klick außerhalb schließen
+// Dropdown at Klick ausserhalb close
 document.addEventListener('click', () => {
-  document.querySelectorAll('.dropdown-container.open').forEach(dropdown => {
+  document.querySelectorAll('.dropdown-containers.open').forEach(dropdown => {
     dropdown.classList.remove('open');
   });
 });
 ```
 
-## Toast Container
+## Toast containers
 
-Container für Toast-Benachrichtigungen:
+containers for Toast-notifications:
 
 ```html
-<button onclick="showToast('success', 'Aktion erfolgreich durchgeführt!')">
+<button onclick="showToast('success', 'Aktion erfolgreich durchgefuhrt!')">
   Erfolgs-Toast anzeigen
 </button>
 
-<div id="toast-container" class="toast-container"></div>
+<div id="toast-containers" class="toast-containers"></div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.toast-container {
+.toast-containers {
   position: fixed;
   bottom: var(--space-4);
   right: var(--space-4);
@@ -601,18 +601,18 @@ Implementierung:
 }
 ```
 
-JavaScript für die Funktionalität:
+JavaScript for the Funktionalitat:
 
 ```javascript
 function showToast(type, message) {
-  const toastContainer = document.getElementById('toast-container');
+  const toastContainer = document.getElementById('toast-containers');
   const toast = document.createElement('div');
   toast.className = `toast toast-${type}`;
   toast.innerHTML = message;
   
   toastContainer.appendChild(toast);
   
-  // Toast nach einer bestimmten Zeit entfernen
+  // Toast after einer bestimmten Zeit remove
   setTimeout(() => {
     toast.remove();
   }, 3000);
@@ -621,53 +621,53 @@ function showToast(type, message) {
 
 ## Best Practices
 
-1. **Accessibility priorisieren** - Stellen Sie sicher, dass funktionale Container zugänglich sind, einschließlich Tastaturnavigation und ARIA-Attribute
-2. **Konsistentes Verhalten gewährleisten** - Verwenden Sie in der gesamten Anwendung einheitliche Interaktionsmuster
-3. **Performance beachten** - Vermeiden Sie zu viele JavaScript-intensive Container auf einer Seite
-4. **Mobile-First-Ansatz verfolgen** - Stellen Sie sicher, dass funktionale Container auf kleinen Bildschirmen gut funktionieren
-5. **Progressive Enhancement anwenden** - Stellen Sie eine Basis-Funktionalität bereit, auch wenn JavaScript deaktiviert ist
-6. **Feedback geben** - Geben Sie Benutzern immer visuelles Feedback zu Interaktionen
-7. **Transitionen anbieten** - Verwenden Sie Übergänge, um Zustandsänderungen zu verdeutlichen
+1. **Accessibility priorisieren** - ensure, that funktionale containers zuganglich sind, einschliesslich Tastaturnavigation and ARIA-attributes
+2. **Konsistentes behavior gewahrleisten** - use them in the gesamten Application einheitliche Interaktionsmuster
+3. **Performance note** - Vermeiden them to many JavaScript-intensive containers on einer Seite
+4. **Mobile-First-Ansatz verfolgen** - ensure, that funktionale containers on kleinen Bildschirmen good funktionieren
+5. **Progressive Enhancement anwenden** - Stellen them a Base-Funktionalitat bereit, also if JavaScript deaktiviert ist
+6. **Feedback geben** - Geben them Benutzern immer visuelles Feedback to interactions
+7. **transitions anbieten** - use them Ubergange, um Zustandsanderungen to verdeutlichen
 
 ## Use Cases
 
-### FAQ-Sektion
+### FAQ-section
 
 ```html
-<div class="container">
-  <h2 class="mb-6">Häufig gestellte Fragen</h2>
+<div class="containers">
+  <h2 class="mb-6">Haufig gestellte Fragen</h2>
   
-  <div class="accordion-container">
+  <div class="accordion-containers">
     <div class="accordion-item">
       <button class="accordion-header">
-        <h3>Was bietet unser Service?</h3>
+        <h3>what bietet our Service?</h3>
         <span class="accordion-icon">+</span>
       </button>
       <div class="accordion-content">
-        <p>Unser Service bietet umfassende Lösungen für verschiedene Anforderungen...</p>
+        <p>our Service bietet umfassende Losungen for verschiedene Anforderungen...</p>
       </div>
     </div>
     
-    <!-- Weitere FAQ-Einträge -->
+    <!-- additional FAQ-Eintrage -->
   </div>
 </div>
 ```
 
-### Produktseite mit Tabs
+### Produktseite with Tabs
 
 ```html
-<div class="container">
+<div class="containers">
   <h1 class="mb-6">Produktname</h1>
   
-  <div class="tabs-container">
+  <div class="tabs-containers">
     <div class="tabs-header">
-      <button class="tab-trigger active" data-tab="description">Beschreibung</button>
+      <button class="tab-trigger active" data-tab="description">Description</button>
       <button class="tab-trigger" data-tab="specifications">Spezifikationen</button>
       <button class="tab-trigger" data-tab="reviews">Bewertungen</button>
     </div>
     <div class="tabs-content">
       <div id="description" class="tab-panel active">
-        <p>Ausführliche Produktbeschreibung...</p>
+        <p>Ausfuhrliche Produktbeschreibung...</p>
       </div>
       <div id="specifications" class="tab-panel">
         <!-- Produktspezifikationen -->
@@ -683,15 +683,15 @@ function showToast(type, message) {
 ### Benachrichtigungssystem
 
 ```html
-<div class="toast-container" id="toast-container"></div>
+<div class="toast-containers" id="toast-containers"></div>
 
 <script>
-  // Benachrichtigungen anzeigen
+  // notifications anzeigen
   function showNotification(type, message) {
     showToast(type, message);
   }
   
-  // Nach erfolgreichem Form-Submit
+  // after erfolgreichem Form-Submit
   document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
     // Formverarbeitung...
@@ -700,18 +700,18 @@ function showToast(type, message) {
 </script>
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
 | Feature | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|
-| CSS Transitions | Alle | Alle | Alle | Alle |
-| CSS Transforms | Alle | Alle | Alle | Alle |
-| Position: fixed | Alle | Alle | Alle | Alle |
-| JavaScript Events | Alle | Alle | Alle | Alle |
-| CSS Animations | Alle | Alle | Alle | Alle |
+| CSS Transitions | all | all | all | all |
+| CSS Transforms | all | all | all | all |
+| position: fixed | all | all | all | all |
+| JavaScript Events | all | all | all | all |
+| CSS Animations | all | all | all | all |
 
-Die funktionalen Container der Bibliothek sind so konzipiert, dass sie in allen modernen Browsern funktionieren, mit angemessenen Fallbacks für ältere Browser.
+the funktionalen containers the Bibliothek sind so konzipiert, that them in allen modernen Browsern funktionieren, with angemessenen Fallbacks for altere Browser.
 
 ## Zusammenfassung
 
-Funktionale Container der Casoon UI Library bieten leistungsstarke, wiederverwendbare Components für gängige Interaktionsmuster. Durch die Usage dieser vorgefertigten Container können Sie komplexe Funktionalitäten wie Tabs, Akkordeons, Dropdowns, Modals und Toasts schnell und konsistent in Ihre Anwendung integrieren. Diese Container folgen bewährten UX-Praktiken und sind so konzipiert, dass sie zugänglich, performant und für verschiedene Geräte optimiert sind. 
+Funktionale containers the Casoon UI Library bieten leistungsstarke, wiederverwendbare Components for gangige Interaktionsmuster. through the Usage this vorgefertigten containers can them komplexe Funktionalitaten how Tabs, Akkordeons, Dropdowns, modals and Toasts schnell and konsistent in Ihre Application integrieren. these containers folgen bewahrten UX-Praktiken and sind so konzipiert, that them zuganglich, performant and for verschiedene Gerate optimiert sind. 

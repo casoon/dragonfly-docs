@@ -1,34 +1,34 @@
 ---
-title: Icon System
-category: Icons
+title: icon system
+category: icons
 ---
 
-# Icon System
+# icon system
 
-Das Icon System der Casoon UI Library bietet eine umfassende Sammlung von Symbolen, die in verschiedenen Formaten und Stylesn verfügbar sind, um eine konsistente visuelle Sprache in Ihrer Anwendung zu gewährleisten.
+the icon system the Casoon UI Library bietet a umfassende Sammlung from Symbolen, the in verschiedenen Formaten and Stylesn verfugbar sind, um a konsistente visuelle Sprache in Ihrer Application to gewahrleisten.
 
 ## Overview
 
-Das Icon System umfasst:
+the icon system umfasst:
 
-- **Icon Sets**: Verschiedene Sammlungen von Icons für unterschiedliche Zwecke
-- **Formate**: SVG, Webfonts und CSS-basierte Icons
-- **Sizes und Variants**: Verschiedene Sizes und Stilvarianten
-- **Accessibility**: Zugängliche Icons mit angemessenen Labels
+- **icon Sets**: Verschiedene Sammlungen from icons for unterschiedliche Zwecke
+- **Formate**: SVG, Webfonts and CSS-basierte icons
+- **Sizes and Variants**: Verschiedene Sizes and Stilvarianten
+- **Accessibility**: Zugangliche icons with angemessenen Labels
 
-## Icon Sets
+## icon Sets
 
-Die Casoon UI Library bietet folgende Icon Sets:
+the Casoon UI Library bietet folgende icon Sets:
 
-- **UI Icons**: Grundlegende Symbole für Benutzeroberflächen (Navigation, Aktionen, Steuerelemente)
-- **Application Icons**: Symbole für häufige Anwendungsfunktionen
-- **Document Icons**: Symbole für Dokumente und Dateitypen
-- **Social Icons**: Symbole für soziale Medien und Kommunikation
-- **Device Icons**: Symbole für Geräte und Hardware
+- **UI icons**: Grundlegende Symbole for user interfaces (navigation, Aktionen, Steuerelemente)
+- **Application icons**: Symbole for haufige Anwendungsfunktionen
+- **Document icons**: Symbole for Dokumente and Dateitypen
+- **Social icons**: Symbole for soziale Medien and Kommunikation
+- **Device icons**: Symbole for Gerate and Hardware
 
-## Formate und Implementierung
+## Formate and Implementation
 
-### SVG-Icons
+### SVG-icons
 
 ```html
 <span class="icon">
@@ -38,21 +38,21 @@ Die Casoon UI Library bietet folgende Icon Sets:
 </span>
 ```
 
-### CSS-Icons
+### CSS-icons
 
 ```html
 <span class="icon icon-home" aria-hidden="true"></span>
 ```
 
-### Icon-Webfont
+### icon-Webfont
 
 ```html
 <i class="casoon-icon casoon-home" aria-hidden="true"></i>
 ```
 
-## Sizes und Variants
+## Sizes and Variants
 
-Icons sind in verschiedenen Sizes und Variants verfügbar:
+icons sind in verschiedenen Sizes and Variants verfugbar:
 
 ```html
 <!-- Sizes -->
@@ -70,34 +70,34 @@ Icons sind in verschiedenen Sizes und Variants verfügbar:
 
 ## Accessibility
 
-Für optimale Accessibility sollten Icons entweder:
+for optimale Accessibility should icons entweder:
 
-1. Mit `aria-hidden="true"` versehen werden, wenn sie rein dekorativ sind
-2. Mit einem aussagekräftigen Label versehen werden, wenn sie informativ sind
+1. with `aria-hidden="true"` versehen become, If you rein dekorativ sind
+2. with einem aussagekraftigen Label versehen become, If you informativ sind
 
 ```html
-<!-- Dekoratives Icon -->
+<!-- Dekoratives icon -->
 <span class="icon icon-star" aria-hidden="true"></span>
 
-<!-- Informatives Icon -->
-<span class="icon icon-warning" aria-label="Warnung"></span>
+<!-- Informatives icon -->
+<span class="icon icon-warning" aria-label="warning"></span>
 ```
 
 ## Integration
 
-Das Icon System kann in Ihre Anwendung integriert werden durch:
+the icon system kann in Ihre Application integriert become through:
 
 ```css
-/* Gesamtes Icon-System */
+/* Gesamtes icon-system */
 @import '@casoon/ui-lib/icons.css';
 
-/* Oder nur einzelne Icon Sets */
+/* or only einzelne icon Sets */
 @import '@casoon/ui-lib/icons/ui-icons.css';
 @import '@casoon/ui-lib/icons/social-icons.css';
 ```
 
 ## Further Topics
 
-- [Icon Sets](/icons/sets)
-- [Icon Usage](/icons/usage)
-- [Icon Customization](/icons/customization) 
+- [icon Sets](/icons/sets)
+- [icon Usage](/icons/usage)
+- [icon Customization](/icons/customization) 

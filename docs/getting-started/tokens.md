@@ -249,7 +249,7 @@ Tokens for Z-Index values to control stacking order:
 }
 ```
 
-## Tokens and the Layer System
+## Tokens and the Layer system
 
 The Design Tokens are defined in the `tokens` layer, one of the most fundamental layers in the layer hierarchy. This ensures they are available everywhere but can be overridden by later layers.
 

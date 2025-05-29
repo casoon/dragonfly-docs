@@ -1,149 +1,149 @@
 ---
-title: Hover-Effekte
+title: Hover-effects
 category: Guide
 ---
 
-# Hover-Effekte
+# Hover-effects
 
-Die `hover.css` Datei bietet eine umfangreiche Sammlung von Effekten, die beim Bewegen des Mauszeigers über ein Element (Hover) ausgelöst werden. Diese Effekte verbessern die Interaktivität Ihrer Benutzeroberfläche und geben den Nutzern visuelles Feedback über interaktive Elemente.
+the `hover.css` file bietet a umfangreiche Sammlung from Effekten, the beim Bewegen des Mauszeigers over a element (Hover) ausgelost become. these effects verbessern the Interaktivitat Ihrer Benutzeroberflache and geben den Nutzern visuelles Feedback over interaktive elements.
 
 ## Overview
 
-Hover-Effekte sind ein wesentlicher Bestandteil einer interaktiven Weboberfläche. Sie signalisieren Nutzern, welche Elemente anklickbar sind, und steigern die wahrgenommene Reaktionsfähigkeit einer Anwendung. Die Casoon UI Library bietet verschiedene Hover-Effekte, von subtilen Änderungen bis hin zu auffälligen Transformationen.
+Hover-effects sind a wesentlicher Bestandteil einer interaktiven Weboberflache. them signalisieren Nutzern, welche elements anklickbar sind, and steigern the wahrgenommene Reaktionsfahigkeit einer Application. the Casoon UI Library bietet verschiedene Hover-effects, from subtilen Anderungen until hin to auffalligen Transformationen.
 
-## Basis-Hover-Effekte
+## Base-Hover-effects
 
 ```html
-<!-- Farbwechsel bei Hover -->
-<div class="hover-color">Ändert Farbe bei Hover</div>
-<div class="hover-bg">Ändert Hintergrundfarbe bei Hover</div>
-<div class="hover-border">Ändert Rahmenfarbe bei Hover</div>
+<!-- Farbwechsel at Hover -->
+<div class="hover-color">Andert color at Hover</div>
+<div class="hover-bg">Andert Hintergrundfarbe at Hover</div>
+<div class="hover-border">Andert Rahmenfarbe at Hover</div>
 
-<!-- Hervorhebung bei Hover -->
-<div class="hover-highlight">Wird bei Hover hervorgehoben</div>
-<div class="hover-underline">Bekommt Unterstreichung bei Hover</div>
-<div class="hover-outline">Bekommt Umriss bei Hover</div>
+<!-- Hervorhebung at Hover -->
+<div class="hover-highlight">Wird at Hover hervorgehoben</div>
+<div class="hover-underline">Bekommt Unterstreichung at Hover</div>
+<div class="hover-outline">Bekommt Umriss at Hover</div>
 
-<!-- Schattierung bei Hover -->
-<div class="hover-shadow">Bekommt Schatten bei Hover</div>
-<div class="hover-shadow-soft">Bekommt weichen Schatten bei Hover</div>
-<div class="hover-shadow-sharp">Bekommt scharfen Schatten bei Hover</div>
+<!-- Schattierung at Hover -->
+<div class="hover-shadow">Bekommt shadow at Hover</div>
+<div class="hover-shadow-soft">Bekommt weichen shadow at Hover</div>
+<div class="hover-shadow-sharp">Bekommt scharfen shadow at Hover</div>
 ```
 
-## Bewegungs-Hover-Effekte
+## Bewegungs-Hover-effects
 
 ```html
-<!-- Anheben bei Hover -->
-<div class="hover-lift">Wird bei Hover angehoben</div>
-<div class="hover-lift-sm">Wird bei Hover leicht angehoben</div>
-<div class="hover-lift-lg">Wird bei Hover stark angehoben</div>
+<!-- Anheben at Hover -->
+<div class="hover-lift">Wird at Hover angehoben</div>
+<div class="hover-lift-sm">Wird at Hover leicht angehoben</div>
+<div class="hover-lift-lg">Wird at Hover stark angehoben</div>
 
-<!-- Skalieren bei Hover -->
-<div class="hover-scale">Wird bei Hover größer</div>
-<div class="hover-scale-sm">Wird bei Hover leicht größer</div>
-<div class="hover-scale-lg">Wird bei Hover deutlich größer</div>
-<div class="hover-scale-down">Wird bei Hover kleiner</div>
+<!-- Skalieren at Hover -->
+<div class="hover-scale">Wird at Hover grosser</div>
+<div class="hover-scale-sm">Wird at Hover leicht grosser</div>
+<div class="hover-scale-lg">Wird at Hover deutlich grosser</div>
+<div class="hover-scale-down">Wird at Hover smaller</div>
 
-<!-- Verschiebung bei Hover -->
-<div class="hover-shift-up">Bewegt sich bei Hover nach oben</div>
-<div class="hover-shift-right">Bewegt sich bei Hover nach rechts</div>
-<div class="hover-shift-down">Bewegt sich bei Hover nach unten</div>
-<div class="hover-shift-left">Bewegt sich bei Hover nach links</div>
+<!-- Verschiebung at Hover -->
+<div class="hover-shift-up">Bewegt oneself at Hover after oben</div>
+<div class="hover-shift-right">Bewegt oneself at Hover after rechts</div>
+<div class="hover-shift-down">Bewegt oneself at Hover after unten</div>
+<div class="hover-shift-left">Bewegt oneself at Hover after links</div>
 
-<!-- Rotation bei Hover -->
-<div class="hover-rotate">Rotiert bei Hover</div>
-<div class="hover-rotate-sm">Rotiert bei Hover leicht</div>
-<div class="hover-rotate-lg">Rotiert bei Hover stark</div>
+<!-- Rotation at Hover -->
+<div class="hover-rotate">Rotiert at Hover</div>
+<div class="hover-rotate-sm">Rotiert at Hover leicht</div>
+<div class="hover-rotate-lg">Rotiert at Hover stark</div>
 ```
 
-## Spezielle Hover-Effekte
+## Spezielle Hover-effects
 
 ```html
-<!-- Glow-Effekt bei Hover -->
-<div class="hover-glow">Leuchtet bei Hover</div>
-<div class="hover-glow-soft">Leuchtet bei Hover sanft</div>
-<div class="hover-glow-intense">Leuchtet bei Hover intensiv</div>
-<div class="hover-glow-primary">Leuchtet bei Hover in Primärfarbe</div>
+<!-- Glow-effect at Hover -->
+<div class="hover-glow">Leuchtet at Hover</div>
+<div class="hover-glow-soft">Leuchtet at Hover sanft</div>
+<div class="hover-glow-intense">Leuchtet at Hover intensiv</div>
+<div class="hover-glow-primary">Leuchtet at Hover in Primarfarbe</div>
 
-<!-- Hover-States für bestimmte Elemente -->
-<button class="hover-fill">Button füllt sich bei Hover</button>
-<div class="card hover-float">Card schwebt bei Hover</div>
-<img class="hover-zoom" src="image.jpg" alt="Bild zoomt bei Hover">
-<a class="hover-slide-line">Link mit Unterstreichungs-Animation</a>
+<!-- Hover-States for bestimmte elements -->
+<button class="hover-fill">button fullt oneself at Hover</button>
+<div class="card hover-float">Card schwebt at Hover</div>
+<img class="hover-zoom" src="image.jpg" alt="image zoomt at Hover">
+<a class="hover-slide-line">link with Unterstreichungs-animation</a>
 
-<!-- Sweep-Effekte bei Hover -->
-<div class="hover-sweep-to-right">Füllung gleitet von links nach rechts</div>
-<div class="hover-sweep-to-left">Füllung gleitet von rechts nach links</div>
-<div class="hover-sweep-to-top">Füllung gleitet von unten nach oben</div>
-<div class="hover-sweep-to-bottom">Füllung gleitet von oben nach unten</div>
+<!-- Sweep-effects at Hover -->
+<div class="hover-sweep-to-right">Fullung gleitet from links after rechts</div>
+<div class="hover-sweep-to-left">Fullung gleitet from rechts after links</div>
+<div class="hover-sweep-to-top">Fullung gleitet from unten after oben</div>
+<div class="hover-sweep-to-bottom">Fullung gleitet from oben after unten</div>
 ```
 
-## Text-Hover-Effekte
+## Text-Hover-effects
 
 ```html
-<!-- Text-Transformationen bei Hover -->
-<p class="hover-text-bold">Wird bei Hover fett</p>
-<p class="hover-text-italic">Wird bei Hover kursiv</p>
-<p class="hover-text-uppercase">Wird bei Hover großgeschrieben</p>
+<!-- Text-Transformationen at Hover -->
+<p class="hover-text-bold">Wird at Hover fett</p>
+<p class="hover-text-italic">Wird at Hover kursiv</p>
+<p class="hover-text-uppercase">Wird at Hover grossgeschrieben</p>
 
-<!-- Text-Farbe bei Hover -->
-<p class="hover-text-primary">Ändert bei Hover zu Primärfarbe</p>
-<p class="hover-text-secondary">Ändert bei Hover zu Sekundärfarbe</p>
-<p class="hover-text-accent">Ändert bei Hover zu Akzentfarbe</p>
+<!-- Text-color at Hover -->
+<p class="hover-text-primary">Andert at Hover to Primarfarbe</p>
+<p class="hover-text-secondary">Andert at Hover to Sekundarfarbe</p>
+<p class="hover-text-accent">Andert at Hover to Akzentfarbe</p>
 ```
 
-## Rahmen-Hover-Effekte
+## border-Hover-effects
 
 ```html
-<!-- Rahmeneffekte bei Hover -->
-<div class="hover-border-thicker">Rahmen wird bei Hover dicker</div>
-<div class="hover-border-rounded">Rahmen wird bei Hover abgerundet</div>
-<div class="hover-border-solid">Durchgezogener Rahmen bei Hover</div>
-<div class="hover-border-dashed">Gestrichelter Rahmen bei Hover</div>
-<div class="hover-border-animated">Animierter Rahmen bei Hover</div>
+<!-- Rahmeneffekte at Hover -->
+<div class="hover-border-thicker">border wird at Hover dicker</div>
+<div class="hover-border-rounded">border wird at Hover abgerundet</div>
+<div class="hover-border-solid">Durchgezogener border at Hover</div>
+<div class="hover-border-dashed">Gestrichelter border at Hover</div>
+<div class="hover-border-animated">Animierter border at Hover</div>
 ```
 
-## Transparenz-Hover-Effekte
+## transparency-Hover-effects
 
 ```html
-<!-- Transparenzeffekte bei Hover -->
-<div class="hover-fade-in">Wird bei Hover sichtbarer</div>
-<div class="hover-fade-out">Wird bei Hover transparenter</div>
-<div class="hover-reveal">Inhalt wird bei Hover enthüllt</div>
-<div class="hover-mask">Maskierungseffekt bei Hover</div>
+<!-- Transparenzeffekte at Hover -->
+<div class="hover-fade-in">Wird at Hover sichtbarer</div>
+<div class="hover-fade-out">Wird at Hover transparenter</div>
+<div class="hover-reveal">content wird at Hover enthullt</div>
+<div class="hover-mask">Maskierungseffekt at Hover</div>
 ```
 
-## Ein-/Ausblendungseffekte bei Hover
+## a-/Ausblendungseffekte at Hover
 
 ```html
-<!-- Überblendungseffekte bei Hover -->
+<!-- Uberblendungseffekte at Hover -->
 <div class="hover-overlay">
-  <img src="image.jpg" alt="Bild">
-  <div class="overlay-content">Überblendungsinhalt</div>
+  <img src="image.jpg" alt="image">
+  <div class="overlay-content">Uberblendungsinhalt</div>
 </div>
 
-<!-- Anzeigen von Elementen bei Hover -->
+<!-- Anzeigen from Elementen at Hover -->
 <div class="hover-show-content">
-  <img src="image.jpg" alt="Bild">
-  <div class="hover-content">Erscheint bei Hover</div>
+  <img src="image.jpg" alt="image">
+  <div class="hover-content">Erscheint at Hover</div>
 </div>
 
-<!-- Einblenden von Icons bei Hover -->
+<!-- Einblenden from icons at Hover -->
 <button class="hover-show-icon">
-  Mehr erfahren
+  more erfahren
   <span class="hover-icon">→</span>
 </button>
 ```
 
-## Kombinierte Hover-Effekte
+## Kombinierte Hover-effects
 
 ```html
-<!-- Mehrere Hover-Effekte kombinieren -->
+<!-- several Hover-effects combine -->
 <div class="hover-scale hover-shadow hover-color">
-  Skalierende, schattige Farbänderung bei Hover
+  Skalierende, schattige Farbanderung at Hover
 </div>
 
-<!-- Cardn-Hover-Effekte -->
+<!-- Cardn-Hover-effects -->
 <div class="card hover-lift hover-shadow hover-border">
   <div class="card-content">
     <h3 class="hover-text-primary">Cardntitel</h3>
@@ -151,20 +151,20 @@ Hover-Effekte sind ein wesentlicher Bestandteil einer interaktiven Weboberfläch
   </div>
 </div>
 
-<!-- Button-Hover-Effekte -->
+<!-- button-Hover-effects -->
 <button class="button hover-scale-sm hover-bg hover-shadow">
-  Ansprechender Button
+  Ansprechender button
 </button>
 
-<!-- Link-Hover-Effekte -->
+<!-- link-Hover-effects -->
 <a class="link hover-underline hover-text-bold hover-text-primary">
-  Hervorgehobener Link
+  Hervorgehobener link
 </a>
 ```
 
-## Anpassbare Hover-Effekte
+## Anpassbare Hover-effects
 
-Viele Hover-Effekte können durch CSS Variables angepasst werden:
+many Hover-effects can through CSS Variables angepasst become:
 
 ```html
 <button class="hover-scale" style="--hover-scale: 1.1">
@@ -172,7 +172,7 @@ Viele Hover-Effekte können durch CSS Variables angepasst werden:
 </button>
 
 <div class="hover-glow" style="--hover-glow-color: #ff3366">
-  Angepasste Glow-Farbe
+  Angepasste Glow-color
 </div>
 
 <div class="hover-shift-up" style="--hover-shift-distance: 10px">
@@ -180,11 +180,11 @@ Viele Hover-Effekte können durch CSS Variables angepasst werden:
 </div>
 ```
 
-## CSS Variables für Hover-Effekte
+## CSS Variables for Hover-effects
 
 ```css
 :root {
-  /* Basis-Hover-Parameter */
+  /* Base-Hover-parameter */
   --hover-transition-duration: 0.3s;
   --hover-transition-timing: ease;
   
@@ -203,7 +203,7 @@ Viele Hover-Effekte können durch CSS Variables angepasst werden:
   --hover-rotate-md: 5deg;
   --hover-rotate-lg: 10deg;
   
-  /* Schatten */
+  /* shadow */
   --hover-shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
   --hover-shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
   --hover-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -218,19 +218,19 @@ Viele Hover-Effekte können durch CSS Variables angepasst werden:
   --hover-color-secondary: var(--color-secondary);
   --hover-color-accent: var(--color-accent);
   
-  /* Rahmen */
+  /* border */
   --hover-border-width: 2px;
   --hover-border-color: var(--color-primary);
   --hover-border-style: solid;
 }
 ```
 
-## Reaktionsfähigkeit für Touch-Geräte
+## Reaktionsfahigkeit for Touch-Gerate
 
-Für Touch-Geräte, bei denen kein Hover möglich ist, können Sie alternative Effekte anbieten:
+for Touch-Gerate, at denen no Hover moglich ist, can them alternative effects anbieten:
 
 ```css
-/* Auf Geräten mit Touch verwenden wir stattdessen active-States */
+/* on Geraten with Touch use we stattdessen active-States */
 @media (hover: none) {
   .hover-scale:active {
     transform: scale(var(--hover-scale-md));
@@ -240,57 +240,57 @@ Für Touch-Geräte, bei denen kein Hover möglich ist, können Sie alternative E
     color: var(--hover-color-primary);
   }
   
-  /* ... weitere Touch-optimierte Alternativen ... */
+  /* ... additional Touch-optimierte Alternativen ... */
 }
 ```
 
 ## Accessibility
 
-Bei der Usage von Hover-Effekten sollten Sie auf Accessibility achten:
+at the Usage from Hover-Effekten should them on Accessibility ensure:
 
-1. **Tastaturnutzung**: Stellen Sie sicher, dass Hover-Effekte auch mit `:focus` funktionieren
-2. **Reduzierte Bewegung**: Respektieren Sie `prefers-reduced-motion`
-3. **Ausreichender Kontrast**: Hover-Effekte sollten den Kontrast nicht beeinträchtigen
-4. **Kein exklusiver Content**: Wichtige Inhalte sollten nicht ausschließlich bei Hover sichtbar sein
+1. **Tastaturnutzung**: ensure, that Hover-effects also with `:focus` funktionieren
+2. **Reduzierte Bewegung**: Respektieren them `prefers-reduced-motion`
+3. **Ausreichender Kontrast**: Hover-effects should den Kontrast not beeintrachtigen
+4. **no exklusiver Content**: Wichtige contents should not ausschliesslich at Hover sichtbar be
 
 ```css
-/* Example für barrierefreie Hover-Effekte */
+/* Example for barrierefreie Hover-effects */
 .hover-scale,
 .hover-rotate,
 .hover-shift-up {
   transition: transform var(--hover-transition-duration) var(--hover-transition-timing);
 }
 
-/* Für Tastaturbedienung */
+/* for Tastaturbedienung */
 .hover-scale:focus-visible,
 .hover-rotate:focus-visible,
 .hover-shift-up:focus-visible {
-  /* Gleiche Effekte wie bei Hover */
+  /* Gleiche effects how at Hover */
 }
 
-/* Reduzierte Bewegung berücksichtigen */
+/* Reduzierte Bewegung berucksichtigen */
 @media (prefers-reduced-motion: reduce) {
   .hover-scale,
   .hover-rotate,
   .hover-shift-up,
-  /* weitere Bewegungseffekte */ {
+  /* additional Bewegungseffekte */ {
     transition: none !important;
     transform: none !important;
   }
 }
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Einige Hover-Effekte können die Performance beeinflussen:
+some Hover-effects can the Performance beeinflussen:
 
-1. **Vermeiden Sie `box-shadow` und `filter`** bei häufig animierten Hoverelementen
-2. **Verwenden Sie `transform` und `opacity`** für bessere Performance
-3. **Setzen Sie `will-change`** sparsam ein bei Elementen, die häufig Hover-Übergänge haben
-4. **Beschränken Sie komplexe Hover-Effekte** auf wichtige interaktive Elemente
+1. **Vermeiden them `box-shadow` and `filter`** at haufig animierten Hoverelementen
+2. **use them `transform` and `opacity`** for bessere Performance
+3. **Setzen them `will-change`** sparsam a at Elementen, the haufig Hover-Ubergange have
+4. **Beschranken them komplexe Hover-effects** on wichtige interaktive elements
 
 ```css
-/* Performance-optimierter Hover-Effekt */
+/* Performance-optimierter Hover-effect */
 .hover-performance {
   transform: translateZ(0);
 }
@@ -299,7 +299,7 @@ Einige Hover-Effekte können die Performance beeinflussen:
   transform: translateZ(0) scale(1.05);
 }
 
-/* Für häufig gehoverte Elemente */
+/* for haufig gehoverte elements */
 .hover-optimized {
   will-change: transform;
 }
@@ -307,37 +307,37 @@ Einige Hover-Effekte können die Performance beeinflussen:
 
 ## Praktische Examples
 
-### Interaktive Button-Sammlung
+### Interaktive button-Sammlung
 
 ```html
 <div class="button-collection">
-  <!-- Primärer Button mit Skalierung und Schattierung -->
+  <!-- Primarer button with Skalierung and Schattierung -->
   <button class="button primary hover-scale-sm hover-shadow">
-    Primärer Button
+    Primarer button
   </button>
   
-  <!-- Sekundärer Button mit sanfter Hintergrundänderung -->
+  <!-- Sekundarer button with sanfter Hintergrundanderung -->
   <button class="button secondary hover-bg hover-text-bold">
-    Sekundärer Button
+    Sekundarer button
   </button>
   
-  <!-- Outline-Button mit Füll-Effekt -->
+  <!-- Outline-button with Full-effect -->
   <button class="button outline hover-fill">
-    Outline-Button
+    Outline-button
   </button>
   
-  <!-- Icon-Button mit Rotation -->
+  <!-- icon-button with Rotation -->
   <button class="button icon-button hover-rotate-sm hover-glow">
     <i class="icon">↻</i>
   </button>
 </div>
 ```
 
-### Produktkarte mit Hover-Effekten
+### Produktkarte with Hover-Effekten
 
 ```html
 <div class="product-card hover-lift hover-shadow-lg">
-  <div class="product-image-container">
+  <div class="product-image-containers">
     <img class="product-image hover-scale" src="product.jpg" alt="Produkt">
     <div class="hover-overlay">
       <div class="overlay-content">
@@ -349,12 +349,12 @@ Einige Hover-Effekte können die Performance beeinflussen:
     <h3 class="hover-text-primary">Produktname</h3>
     <p>Produktbeschreibung</p>
     <div class="price">29,99 €</div>
-    <button class="button hover-bg hover-shift-up">In den Warenkorb</button>
+    <button class="button hover-bg hover-shift-up">in den Warenkorb</button>
   </div>
 </div>
 ```
 
-### Navigationsmenü mit Hover-Effekten
+### Navigationsmenu with Hover-Effekten
 
 ```html
 <nav class="main-nav">
@@ -363,14 +363,14 @@ Einige Hover-Effekte können die Performance beeinflussen:
       <a class="hover-slide-line" href="#">Startseite</a>
     </li>
     <li>
-      <a class="hover-slide-line" href="#">Über uns</a>
+      <a class="hover-slide-line" href="#">over us</a>
     </li>
     <li class="has-dropdown">
       <a class="hover-slide-line" href="#">Produkte</a>
       <ul class="dropdown hover-shadow">
-        <li><a class="hover-bg" href="#">Kategorie 1</a></li>
-        <li><a class="hover-bg" href="#">Kategorie 2</a></li>
-        <li><a class="hover-bg" href="#">Kategorie 3</a></li>
+        <li><a class="hover-bg" href="#">category 1</a></li>
+        <li><a class="hover-bg" href="#">category 2</a></li>
+        <li><a class="hover-bg" href="#">category 3</a></li>
       </ul>
     </li>
     <li>
@@ -382,9 +382,9 @@ Einige Hover-Effekte können die Performance beeinflussen:
 
 ## Best Practices
 
-1. **Subtile Effekte bevorzugen**: Dezente Hover-Effekte wirken oft professioneller als übertriebene Animationen
-2. **Consistency bewahren**: Verwenden Sie ähnliche Hover-Effekte für ähnliche Elementtypen
-3. **Feedback geben**: Hover-Effekte sollten dem Nutzer klares Feedback über interaktive Elemente geben
-4. **Performance beachten**: Komplexe Hover-Effekte können die Leistung beeinträchtigen, besonders auf älteren Geräten
-5. **Accessibility einbauen**: Stellen Sie sicher, dass Ihre Hover-Effekte auch mit der Tastatur zugänglich sind
+1. **Subtile effects bevorzugen**: Dezente Hover-effects wirken oft professioneller as ubertriebene animations
+2. **Consistency bewahren**: use them ahnliche Hover-effects for ahnliche Elementtypen
+3. **Feedback geben**: Hover-effects should dem Nutzer klares Feedback over interaktive elements geben
+4. **Performance note**: Komplexe Hover-effects can the Leistung beeintrachtigen, besonders on alteren Geraten
+5. **Accessibility einbauen**: ensure, that Ihre Hover-effects also with the Tastatur zuganglich sind
 </rewritten_file> 

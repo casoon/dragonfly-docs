@@ -3,36 +3,36 @@ title: Texture Effects
 category: Effects
 ---
 
-# Textur-Effekte
+# Textur-effects
 
-Die Textur-Effekte der Casoon UI Library bieten eine Sammlung von realistischen Oberflächentexturen, die Ihren UI-Elementen Tiefe, Charakter und taktile Qualität verleihen können. Diese Effekte helfen dabei, digitale Oberflächen interessanter und ansprechender zu gestalten.
+the Textur-effects the Casoon UI Library bieten a Sammlung from realistischen Oberflachentexturen, the Ihren UI-Elementen Tiefe, Charakter and taktile Qualitat verleihen can. these effects helfen in doing so, digitale Oberflachen interessanter and ansprechender to gestalten.
 
-## Überblick
+## Uberblick
 
-Textur-Effekte simulieren verschiedene reale Materialien und Oberflächen in der digitalen Umgebung. Sie können verwendet werden, um UI-Elementen mehr Persönlichkeit zu verleihen, bestimmte Materialien zu imitieren oder einfach visuelle Abwechslung zu schaffen. Die Casoon UI Library bietet verschiedene Arten von Texturen, die einfach anzuwenden und anzupassen sind.
+Textur-effects simulieren verschiedene reale Materialien and Oberflachen in the digitalen Umgebung. You can verwendet become, um UI-Elementen more Personlichkeit to verleihen, bestimmte Materialien to imitieren or einfach visuelle Abwechslung to schaffen. the Casoon UI Library bietet verschiedene Arten from Texturen, the einfach anzuwenden and anzupassen sind.
 
 ## Installation
 
-Importieren Sie das Textur-Effekte-Modul über CSS:
+import them the Textur-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/textures.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
 ### Grundlegende Texturen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.texture` | Standardmäßiger Textur-Effekt |
-| `.texture-subtle` | Subtile Textur mit geringer Intensität |
+| `.texture` | Standardmassiger Textur-effect |
+| `.texture-subtle` | Subtile Textur with geringer Intensitat |
 | `.texture-medium` | Mittelstarke Textur (Standard) |
-| `.texture-strong` | Starke, deutlich sichtbare Textur |
+| `.texture-strong` | strength, deutlich sichtbare Textur |
 
 ### Materialtypen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
 | `.texture-paper` | Papiertextur |
 | `.texture-fabric` | Stofftextur |
@@ -47,14 +47,14 @@ Importieren Sie das Textur-Effekte-Modul über CSS:
 
 ### Spezielle Texturen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
 | `.texture-noise` | Rauschtextur |
 | `.texture-dots` | Punkttextur |
 | `.texture-lines` | Linientextur |
 | `.texture-grid` | Gittertextur |
 | `.texture-weave` | Webmustertextur |
-| `.texture-brushed` | Gebürstete Textur |
+| `.texture-brushed` | Geburstete Textur |
 | `.texture-vintage` | Vintage/alte Papiertextur |
 | `.texture-distressed` | Abgenutzte/distressed Textur |
 
@@ -87,26 +87,26 @@ Importieren Sie das Textur-Effekte-Modul über CSS:
 ```html
 <div class="ui-textures">
   <div class="card texture texture-paper">
-    <h3>Notiz</h3>
-    <p>Diese Notiz verwendet eine Papiertextur für einen realistischen Look.</p>
+    <h3>note</h3>
+    <p>these note verwendet a Papiertextur for einen realistischen Look.</p>
   </div>
   
   <button class="button texture texture-leather">
-    Leder-Button
+    Leder-button
   </button>
   
   <div class="panel texture texture-metal">
     <h4>Metallplatte</h4>
     <div class="panel-content">
-      Inhalte auf einer metallischen Oberfläche
+      contents on einer metallischen Oberflache
     </div>
   </div>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Textur-Effekte können über CSS Variables angepasst werden:
+the Textur-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -114,7 +114,7 @@ Die Textur-Effekte können über CSS Variables angepasst werden:
   --texture-opacity: 0.2;
   --texture-blend-mode: multiply;
   
-  /* Intensitätsstufen */
+  /* Intensitatsstufen */
   --texture-subtle-opacity: 0.1;
   --texture-medium-opacity: 0.2;
   --texture-strong-opacity: 0.3;
@@ -130,12 +130,12 @@ Die Textur-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Die Textur-Effekte werden hauptsächlich durch background-image, Masken und Blend-Modes implementiert:
+the Textur-effects become hauptsachlich through background-image, Masken and Blend-Modes implementiert:
 
 ```css
-/* Basis-Textur */
+/* Base-Textur */
 .texture {
   position: relative;
 }
@@ -171,7 +171,7 @@ Die Textur-Effekte werden hauptsächlich durch background-image, Masken und Blen
   background-size: calc(256px * var(--texture-scale, 1));
 }
 
-/* Noise-Textur mit CSS */
+/* Noise-Textur with CSS */
 .texture.texture-noise::before {
   background-image: url('data:image/svg+xml;base64,...');
   background-size: calc(var(--texture-noise-scale, 100px) * var(--texture-scale, 1));
@@ -207,7 +207,7 @@ Die Textur-Effekte werden hauptsächlich durch background-image, Masken und Blen
     var(--texture-grid-size, 10px) var(--texture-grid-size, 10px);
 }
 
-/* Intensitätsstufen */
+/* Intensitatsstufen */
 .texture.texture-subtle::before {
   opacity: var(--texture-subtle-opacity, 0.1);
 }
@@ -221,22 +221,22 @@ Die Textur-Effekte werden hauptsächlich durch background-image, Masken und Blen
 }
 ```
 
-## Optimierung für Accessibility
+## Optimierung for Accessibility
 
-Bei der Usage von Textur-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Textur-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass Texturen den Kontrast nicht so stark beeinträchtigen, dass Text schwer lesbar wird
-2. **Überlagerungen**: Vermeiden Sie zu starke Texturen, die vom eigentlichen Inhalt ablenken können
-3. **Alternativdesign**: Bieten Sie eine Option zum Deaktivieren von Texturen für Nutzer, die eine einfachere Darstellung bevorzugen
+1. **Kontrast**: ensure, that Texturen den Kontrast not so stark beeintrachtigen, that Text schwer lesbar wird
+2. **Uberlagerungen**: Vermeiden them to strength Texturen, the vom eigentlichen content ablenken can
+3. **Alternativdesign**: Bieten them a Option zum deactivate from Texturen for Nutzer, the a einfachere Display bevorzugen
 
 ```css
-/* Verbesserte Lesbarkeit für Text mit Texturen */
+/* Verbesserte Lesbarkeit for Text with Texturen */
 .texture-with-text::before {
   opacity: 0.15;
   mix-blend-mode: soft-light;
 }
 
-/* Reduzierte Texturen für bevorzugte reduzierte Transparenz */
+/* Reduzierte Texturen for bevorzugte reduzierte transparency */
 @media (prefers-reduced-transparency: reduce) {
   .texture::before {
     opacity: 0.1;
@@ -247,14 +247,14 @@ Bei der Usage von Textur-Effekten sollten folgende Accessibilitysaspekte berück
 
 ## Performance-Optimierung
 
-Textur-Effekte können Einfluss auf die Rendering-Performance haben. Beachten Sie diese Tipps:
+Textur-effects can Einfluss on the Rendering-Performance have. note these Tipps:
 
-1. **Bildgröße optimieren**: Verwenden Sie komprimierte und optimal dimensionierte Texturbilder
-2. **CSS-generierte Texturen bevorzugen**: Wo möglich, nutzen Sie CSS-generierte Texturen statt Bildern
-3. **Wiederholung optimieren**: Stellen Sie sicher, dass wiederholbare Texturen nahtlos sind und kleine Dateigrößen haben
+1. **Bildgrosse optimieren**: use them komprimierte and optimal dimensionierte Texturbilder
+2. **CSS-generierte Texturen bevorzugen**: where moglich, use them CSS-generierte Texturen instead of Bildern
+3. **Wiederholung optimieren**: ensure, that wiederholbare Texturen nahtlos sind and kleine Dateigrossen have
 
 ```css
-/* Performance-Optimierung für Texturen */
+/* Performance-Optimierung for Texturen */
 .texture-optimized::before {
   will-change: transform;
   transform: translateZ(0);
@@ -273,15 +273,15 @@ Textur-Effekte können Einfluss auf die Rendering-Performance haben. Beachten Si
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Textur-Effekte werden von allen modernen Browsern unterstützt.
+the Textur-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| Basis-Texturen | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SVG-Hintergründe | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Base-Texturen | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SVG-Hintergrunde | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Blend-Modes | ✓ | ✓ | ✓ | ✓ | ✗ |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
+for altere Browser, the some functions not vollstandig unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 

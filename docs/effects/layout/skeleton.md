@@ -1,48 +1,48 @@
-# Skeleton-Effekte
+# Skeleton-effects
 
-Skeleton-Effekte werden verwendet, um den Ladezustand von Inhalten auf einer Webseite visuell darzustellen. Die `@casoon/ui-lib` bietet verschiedene Skeleton-Effekte, die dazu beitragen, das Ladeerlebnis zu verbessern und die wahrgenommene Leistung zu steigern.
+Skeleton-effects become verwendet, um den Ladezustand from Inhalten on einer Webseite visuell darzustellen. the `@casoon/ui-lib` bietet verschiedene Skeleton-effects, the for that beitragen, the Ladeerlebnis to verbessern and the wahrgenommene Leistung to steigern.
 
 ## Basic Usage
 
-Der grundlegende Skeleton-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Skeleton-effect kann on jedes element angewendet become:
 
 ```html
-<div class="skeleton">Ladender Inhalt</div>
+<div class="skeleton">Ladender content</div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Skeleton-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Skeleton-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.skeleton` | Basisklasse für Skeleton-Effekte |
-| `.skeleton-text` | Skeleton für Textinhalte |
-| `.skeleton-heading` | Skeleton für Überschriften |
-| `.skeleton-image` | Skeleton für Bilder |
-| `.skeleton-avatar` | Skeleton für Profilbilder |
-| `.skeleton-button` | Skeleton für Buttons |
-| `.skeleton-card` | Skeleton für Cardn |
-| `.skeleton-list` | Skeleton für Listen |
-| `.skeleton-table` | Skeleton für Tablen |
-| `.skeleton-input` | Skeleton für Inputer |
-| `.skeleton-circle` | Kreisförmiger Skeleton |
+| `.skeleton` | Basisklasse for Skeleton-effects |
+| `.skeleton-text` | Skeleton for Textinhalte |
+| `.skeleton-heading` | Skeleton for Uberschriften |
+| `.skeleton-image` | Skeleton for images |
+| `.skeleton-avatar` | Skeleton for Profilbilder |
+| `.skeleton-button` | Skeleton for buttons |
+| `.skeleton-card` | Skeleton for Cardn |
+| `.skeleton-list` | Skeleton for lists |
+| `.skeleton-table` | Skeleton for Tablen |
+| `.skeleton-input` | Skeleton for Inputer |
+| `.skeleton-circle` | Kreisformiger Skeleton |
 | `.skeleton-rectangle` | Rechteckiger Skeleton |
 | `.skeleton-rounded` | Abgerundeter Skeleton |
-| `.skeleton-pulse` | Pulsierender Skeleton-Effekt |
-| `.skeleton-wave` | Welliger Skeleton-Effekt |
+| `.skeleton-pulse` | Pulsierender Skeleton-effect |
+| `.skeleton-wave` | Welliger Skeleton-effect |
 
 ## Variants
 
 ### Text-Skeleton
 
-Der Text-Skeleton simuliert Textzeilen:
+the Text-Skeleton simuliert Textzeilen:
 
 ```html
 <div class="skeleton-text">Ladender Textinhalt</div>
 ```
 
-Variants für unterschiedliche Textlängen:
+Variants for unterschiedliche Textlangen:
 
 ```html
 <div class="skeleton-text-short">Kurzer Text</div>
@@ -53,76 +53,76 @@ Variants für unterschiedliche Textlängen:
 
 ### Heading-Skeleton
 
-Der Heading-Skeleton simuliert Überschriften:
+the Heading-Skeleton simuliert Uberschriften:
 
 ```html
-<div class="skeleton-heading">Ladende Überschrift</div>
+<div class="skeleton-heading">Ladende heading</div>
 ```
 
-Variants für unterschiedliche Überschriftengrößen:
+Variants for unterschiedliche Uberschriftengrossen:
 
 ```html
-<div class="skeleton-heading-h1">H1 Überschrift</div>
-<div class="skeleton-heading-h2">H2 Überschrift</div>
-<div class="skeleton-heading-h3">H3 Überschrift</div>
+<div class="skeleton-heading-h1">H1 heading</div>
+<div class="skeleton-heading-h2">H2 heading</div>
+<div class="skeleton-heading-h3">H3 heading</div>
 ```
 
 ### Image-Skeleton
 
-Der Image-Skeleton simuliert ein ladendes Bild:
+the Image-Skeleton simuliert a ladendes image:
 
 ```html
-<div class="skeleton-image">Ladendes Bild</div>
+<div class="skeleton-image">Ladendes image</div>
 ```
 
-Variants für unterschiedliche Bildgrößen und -formate:
+Variants for unterschiedliche Bildgrossen and -formate:
 
 ```html
-<div class="skeleton-image-small">Kleines Bild</div>
-<div class="skeleton-image-medium">Mittleres Bild</div>
-<div class="skeleton-image-large">Großes Bild</div>
-<div class="skeleton-image-square">Quadratisches Bild</div>
-<div class="skeleton-image-landscape">Querformat-Bild</div>
-<div class="skeleton-image-portrait">Hochformat-Bild</div>
+<div class="skeleton-image-small">Kleines image</div>
+<div class="skeleton-image-medium">Mittleres image</div>
+<div class="skeleton-image-large">Grosses image</div>
+<div class="skeleton-image-square">Quadratisches image</div>
+<div class="skeleton-image-landscape">Querformat-image</div>
+<div class="skeleton-image-portrait">Hochformat-image</div>
 ```
 
-### Avatar-Skeleton
+### avatar-Skeleton
 
-Der Avatar-Skeleton simuliert ein ladendes Profilbild:
+the avatar-Skeleton simuliert a ladendes Profilbild:
 
 ```html
 <div class="skeleton-avatar">Ladendes Profilbild</div>
 ```
 
-Variants für unterschiedliche Avatar-Sizes:
+Variants for unterschiedliche avatar-Sizes:
 
 ```html
-<div class="skeleton-avatar-small">Kleiner Avatar</div>
-<div class="skeleton-avatar-medium">Mittlerer Avatar</div>
-<div class="skeleton-avatar-large">Großer Avatar</div>
+<div class="skeleton-avatar-small">smaller avatar</div>
+<div class="skeleton-avatar-medium">Mittlerer avatar</div>
+<div class="skeleton-avatar-large">Grosser avatar</div>
 ```
 
-### Button-Skeleton
+### button-Skeleton
 
-Der Button-Skeleton simuliert einen ladenden Button:
+the button-Skeleton simuliert einen ladenden button:
 
 ```html
-<div class="skeleton-button">Ladender Button</div>
+<div class="skeleton-button">Ladender button</div>
 ```
 
-Variants für unterschiedliche Button-Styles:
+Variants for unterschiedliche button-Styles:
 
 ```html
-<div class="skeleton-button-small">Kleiner Button</div>
-<div class="skeleton-button-medium">Mittlerer Button</div>
-<div class="skeleton-button-large">Großer Button</div>
-<div class="skeleton-button-rounded">Abgerundeter Button</div>
-<div class="skeleton-button-pill">Pillenförmiger Button</div>
+<div class="skeleton-button-small">smaller button</div>
+<div class="skeleton-button-medium">Mittlerer button</div>
+<div class="skeleton-button-large">Grosser button</div>
+<div class="skeleton-button-rounded">Abgerundeter button</div>
+<div class="skeleton-button-pill">Pillenformiger button</div>
 ```
 
 ### Card-Skeleton
 
-Der Card-Skeleton simuliert eine ladende Card:
+the Card-Skeleton simuliert a ladende Card:
 
 ```html
 <div class="skeleton-card">
@@ -137,7 +137,7 @@ Der Card-Skeleton simuliert eine ladende Card:
 
 ### List-Skeleton
 
-Der List-Skeleton simuliert eine ladende Liste:
+the List-Skeleton simuliert a ladende list:
 
 ```html
 <ul class="skeleton-list">
@@ -149,7 +149,7 @@ Der List-Skeleton simuliert eine ladende Liste:
 
 ### Table-Skeleton
 
-Der Table-Skeleton simuliert eine ladende Table:
+the Table-Skeleton simuliert a ladende Table:
 
 ```html
 <div class="skeleton-table">
@@ -162,7 +162,7 @@ Der Table-Skeleton simuliert eine ladende Table:
 
 ### Form-Skeleton
 
-Der Form-Skeleton simuliert ein ladendes Form:
+the Form-Skeleton simuliert a ladendes Form:
 
 ```html
 <div class="skeleton-form">
@@ -172,45 +172,45 @@ Der Form-Skeleton simuliert ein ladendes Form:
 </div>
 ```
 
-## Animation-Variants
+## animation-Variants
 
-Verschiedene Animationsstile für Skeleton-Effekte:
+Verschiedene Animationsstile for Skeleton-effects:
 
-### Pulse-Animation
+### Pulse-animation
 
-Die Pulse-Animation lässt den Skeleton pulsieren:
+the Pulse-animation lasst den Skeleton pulsieren:
 
 ```html
 <div class="skeleton-pulse">Pulsierender Skeleton</div>
 ```
 
-### Wave-Animation
+### Wave-animation
 
-Die Wave-Animation erzeugt einen Welleneffekt über den Skeleton:
+the Wave-animation erzeugt einen Welleneffekt over den Skeleton:
 
 ```html
 <div class="skeleton-wave">Welliger Skeleton</div>
 ```
 
-### Shimmer-Animation
+### Shimmer-animation
 
-Die Shimmer-Animation erzeugt einen Glanzeffekt über den Skeleton:
+the Shimmer-animation erzeugt einen Glanzeffekt over den Skeleton:
 
 ```html
 <div class="skeleton-shimmer">Schimmernder Skeleton</div>
 ```
 
-### Fade-Animation
+### Fade-animation
 
-Die Fade-Animation lässt den Skeleton ein- und ausblenden:
+the Fade-animation lasst den Skeleton a- and ausblenden:
 
 ```html
-<div class="skeleton-fade">Ein- und ausblendender Skeleton</div>
+<div class="skeleton-fade">a- and ausblendender Skeleton</div>
 ```
 
 ## Komplexe Components
 
-Skeleton-Effekte für komplexere UI-Components:
+Skeleton-effects for komplexere UI-Components:
 
 ### Profil-Skeleton
 
@@ -275,17 +275,17 @@ Skeleton-Effekte für komplexere UI-Components:
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Skeleton-Effekte können über CSS Variables angepasst werden:
+the Skeleton-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Skeleton-Parameter */
+  /* Grundlegende Skeleton-parameter */
   --skeleton-bg-color: #e0e0e0;
   --skeleton-highlight-color: #f0f0f0;
   
-  /* Animation-Parameter */
+  /* animation-parameter */
   --skeleton-animation-duration: 1.5s;
   --skeleton-animation-timing: ease-in-out;
   
@@ -296,15 +296,15 @@ Die Skeleton-Effekte können über CSS Variables angepasst werden:
   --skeleton-avatar-size: 50px;
   --skeleton-button-height: 40px;
   
-  /* Abstand-Parameter */
+  /* spacing-parameter */
   --skeleton-spacing: 0.5rem;
   
-  /* Radius-Parameter */
+  /* Radius-parameter */
   --skeleton-border-radius: 4px;
   --skeleton-avatar-radius: 50%;
 }
 
-/* Für dunkle Themes */
+/* for dunkle themes */
 .dark-theme {
   --skeleton-bg-color: #3a3a3a;
   --skeleton-highlight-color: #444444;
@@ -313,69 +313,69 @@ Die Skeleton-Effekte können über CSS Variables angepasst werden:
 
 ## JavaScript-Integration
 
-Für dynamisches Umschalten von Skeleton-Effekten kann JavaScript verwendet werden:
+for dynamisches Umschalten from Skeleton-Effekten kann JavaScript verwendet become:
 
 ```javascript
-// Skeleton anzeigen, während Inhalte geladen werden
+// Skeleton anzeigen, wahrend contents geladen become
 function showSkeletonLoader(containerId, isLoading) {
-  const container = document.getElementById(containerId);
+  const containers = document.getElementById(containerId);
   
   if (isLoading) {
-    // Tatsächlichen Inhalt ausblenden und Skeleton anzeigen
-    container.querySelectorAll('.content').forEach(el => {
+    // Tatsachlichen content ausblenden and Skeleton anzeigen
+    containers.querySelectorAll('.content').forEach(el => {
       el.style.display = 'none';
     });
     
-    container.querySelectorAll('.skeleton').forEach(el => {
+    containers.querySelectorAll('.skeleton').forEach(el => {
       el.style.display = 'block';
     });
   } else {
-    // Skeleton ausblenden und tatsächlichen Inhalt anzeigen
-    container.querySelectorAll('.skeleton').forEach(el => {
+    // Skeleton ausblenden and tatsachlichen content anzeigen
+    containers.querySelectorAll('.skeleton').forEach(el => {
       el.style.display = 'none';
     });
     
-    container.querySelectorAll('.content').forEach(el => {
+    containers.querySelectorAll('.content').forEach(el => {
       el.style.display = 'block';
     });
   }
 }
 
-// Example für das Laden von Daten mit Fetch
+// Example for the load from Daten with Fetch
 function loadData(containerId, url) {
-  const container = document.getElementById(containerId);
+  const containers = document.getElementById(containerId);
   
   // Skeleton anzeigen
   showSkeletonLoader(containerId, true);
   
-  // Daten laden
+  // Daten load
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      // Daten in den Container einfügen
-      renderData(container, data);
+      // Daten in den containers einfugen
+      renderData(containers, data);
       
       // Skeleton ausblenden
       showSkeletonLoader(containerId, false);
     })
     .catch(error => {
-      console.error('Fehler beim Laden der Daten:', error);
+      console.error('errors beim load the Daten:', error);
       
-      // Skeleton ausblenden und Fehlermeldung anzeigen
+      // Skeleton ausblenden and Fehlermeldung anzeigen
       showSkeletonLoader(containerId, false);
-      container.innerHTML = '<div class="error">Fehler beim Laden der Daten.</div>';
+      containers.innerHTML = '<div class="error">errors beim load the Daten.</div>';
     });
 }
 ```
 
 ## Accessibility
 
-Bei der Usage von Skeleton-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Skeleton-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **ARIA-Attribute**: Verwenden Sie geeignete ARIA-Attribute, um anzuzeigen, dass Inhalte geladen werden
-2. **Status-Updates**: Informieren Sie Screenreader über den Ladezustand
-3. **Kontrast**: Stellen Sie sicher, dass Skeleton-Elemente ausreichenden Kontrast zum Hintergrund haben
-4. **Animation**: Respektieren Sie die Einstellung `prefers-reduced-motion`
+1. **ARIA-attributes**: use them geeignete ARIA-attributes, um anzuzeigen, that contents geladen become
+2. **Status-Updates**: Informieren them Screenreader over den Ladezustand
+3. **Kontrast**: ensure, that Skeleton-elements ausreichenden Kontrast zum background have
+4. **animation**: Respektieren them the Setting `prefers-reduced-motion`
 
 ```html
 <!-- Barrierefreier Skeleton-Loader -->
@@ -383,17 +383,17 @@ Bei der Usage von Skeleton-Effekten sollten folgende Accessibilitysaspekte berü
   class="skeleton-card" 
   role="status" 
   aria-busy="true" 
-  aria-label="Lädt Inhalte"
+  aria-label="Ladt contents"
 >
   <div class="skeleton-image"></div>
   <div class="skeleton-heading"></div>
   <div class="skeleton-text"></div>
-  <div class="visually-hidden">Inhalte werden geladen, bitte warten</div>
+  <div class="visually-hidden">contents become geladen, please warten</div>
 </div>
 ```
 
 ```css
-/* Reduzierte Animation für Benutzer, die dies bevorzugen */
+/* Reduzierte animation for user, the dies bevorzugen */
 @media (prefers-reduced-motion: reduce) {
   .skeleton-pulse,
   .skeleton-wave,
@@ -404,12 +404,12 @@ Bei der Usage von Skeleton-Effekten sollten folgende Accessibilitysaspekte berü
 }
 ```
 
-## Animation-Implementierung
+## animation-Implementation
 
-Exampleimplementierung der Skeleton-Animationen:
+Exampleimplementierung the Skeleton-animations:
 
 ```css
-/* Pulse-Animation */
+/* Pulse-animation */
 @keyframes skeletonPulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
@@ -419,7 +419,7 @@ Exampleimplementierung der Skeleton-Animationen:
   animation: skeletonPulse var(--skeleton-animation-duration) var(--skeleton-animation-timing) infinite;
 }
 
-/* Wave-Animation */
+/* Wave-animation */
 @keyframes skeletonWave {
   0% { 
     background-position: -200px 0; 
@@ -440,7 +440,7 @@ Exampleimplementierung der Skeleton-Animationen:
   animation: skeletonWave var(--skeleton-animation-duration) var(--skeleton-animation-timing) infinite;
 }
 
-/* Shimmer-Animation */
+/* Shimmer-animation */
 @keyframes skeletonShimmer {
   0% {
     transform: translateX(-100%);
@@ -471,7 +471,7 @@ Exampleimplementierung der Skeleton-Animationen:
   animation: skeletonShimmer var(--skeleton-animation-duration) var(--skeleton-animation-timing) infinite;
 }
 
-/* Fade-Animation */
+/* Fade-animation */
 @keyframes skeletonFade {
   0%, 100% { opacity: 0.7; }
   50% { opacity: 0.4; }
@@ -482,18 +482,18 @@ Exampleimplementierung der Skeleton-Animationen:
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Skeleton-Effekte sind mit allen modernen Browsern kompatibel.
+the meisten Skeleton-effects sind with allen modernen Browsern kompatibel.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | Grundlegende Skeletons | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Gradient-Animationen | ✓ | ✓ | ✓ | ✓ | Begrenzt |
-| Komplexe Animationen | ✓ | ✓ | ✓ | ✓ | Begrenzt |
+| Gradient-animations | ✓ | ✓ | ✓ | ✓ | Begrenzt |
+| Komplexe animations | ✓ | ✓ | ✓ | ✓ | Begrenzt |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Loading-Effekte](/docs/effects/animation/loading.md) - Animierte Ladeeffekte
-- [Animation-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Pulse-Effekte](/docs/effects/visual/pulse.md) - Pulseffekte für Elemente 
+- [Loading-effects](/docs/effects/animation/loading.md) - Animierte Ladeeffekte
+- [animation-effects](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
+- [Pulse-effects](/docs/effects/visual/pulse.md) - Pulseffekte for elements 

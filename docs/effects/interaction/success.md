@@ -1,36 +1,36 @@
-# Success-Effekte
+# Success-effects
 
-Success-Effekte werden verwendet, um dem Benutzer visuell zu signalisieren, dass eine Aktion erfolgreich abgeschlossen wurde. Die `@casoon/ui-lib` bietet verschiedene Success-Effekte, die dazu beitragen, positive Feedbacks klar und ansprechend darzustellen.
+Success-effects become verwendet, um dem user visuell to signalisieren, that a Aktion erfolgreich abgeschlossen wurde. the `@casoon/ui-lib` bietet verschiedene Success-effects, the for that beitragen, positive Feedbacks klar and ansprechend darzustellen.
 
 ## Basic Usage
 
-Der grundlegende Success-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Success-effect kann on jedes element angewendet become:
 
 ```html
 <div class="success">Aktion erfolgreich</div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Success-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Success-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.success` | Basisklasse für Erfolgsdarstellung |
-| `.success-border` | Erfolg mit grünem Rand |
-| `.success-bg` | Erfolg mit Hintergrundfarbe |
-| `.success-text` | Erfolg mit grüner Textfarbe |
-| `.success-icon` | Erfolg mit Icon-Indikator |
-| `.success-fade-in` | Erfolg mit Einblendeeffekt |
-| `.success-scale` | Erfolg mit Skalierungseffekt |
-| `.success-check` | Erfolg mit Animiertem Häkchen |
-| `.success-glow` | Erfolg mit grünem Glüheffekt |
+| `.success` | Basisklasse for Erfolgsdarstellung |
+| `.success-border` | success with grunem margin |
+| `.success-bg` | success with Hintergrundfarbe |
+| `.success-text` | success with gruner Textfarbe |
+| `.success-icon` | success with icon-Indikator |
+| `.success-fade-in` | success with Einblendeeffekt |
+| `.success-scale` | success with Skalierungseffekt |
+| `.success-check` | success with Animiertem Hakchen |
+| `.success-glow` | success with grunem Gluheffekt |
 
 ## Variants
 
-### Border-Effekt
+### Border-effect
 
-Der klassische Erfolgseffekt mit grünem Rand:
+the klassische Erfolgseffekt with grunem margin:
 
 ```html
 <div class="card success-border">
@@ -38,27 +38,27 @@ Der klassische Erfolgseffekt mit grünem Rand:
 </div>
 ```
 
-### Background-Effekt
+### Background-effect
 
-Erfolgsdarstellung mit subtiler Hintergrundfarbe:
+Erfolgsdarstellung with subtiler Hintergrundfarbe:
 
 ```html
 <div class="alert success-bg">
-  <p>Die Einstellungen wurden erfolgreich aktualisiert.</p>
+  <p>the Einstellungen wurden erfolgreich aktualisiert.</p>
 </div>
 ```
 
-### Text-Effekt
+### Text-effect
 
-Erfolgsdarstellung mit grüner Textfarbe:
+Erfolgsdarstellung with gruner Textfarbe:
 
 ```html
-<p class="success-text">Ihre Zahlung wurde bestätigt.</p>
+<p class="success-text">Ihre Zahlung wurde bestatigt.</p>
 ```
 
-### Icon-Effekt
+### icon-effect
 
-Erfolgsdarstellung mit Success-Icon:
+Erfolgsdarstellung with Success-icon:
 
 ```html
 <div class="notification success-icon">
@@ -66,9 +66,9 @@ Erfolgsdarstellung mit Success-Icon:
 </div>
 ```
 
-### Fade-In-Effekt
+### Fade-in-effect
 
-Erfolgsdarstellung mit sanftem Einblendeeffekt:
+Erfolgsdarstellung with sanftem Einblendeeffekt:
 
 ```html
 <div class="toast success-fade-in">
@@ -76,44 +76,44 @@ Erfolgsdarstellung mit sanftem Einblendeeffekt:
 </div>
 ```
 
-### Scale-Effekt
+### Scale-effect
 
-Erfolgsdarstellung mit kurzer Skalierungsanimation:
+Erfolgsdarstellung with kurzer Skalierungsanimation:
 
 ```html
 <button class="btn success-scale">Gespeichert</button>
 ```
 
-### Check-Effekt
+### Check-effect
 
-Erfolgsdarstellung mit animiertem Häkchen:
+Erfolgsdarstellung with animiertem Hakchen:
 
 ```html
-<div class="success-check-container">
+<div class="success-check-containers">
   <div class="success-check"></div>
   <p>Erfolgreich abgeschlossen</p>
 </div>
 ```
 
-### Glow-Effekt
+### Glow-effect
 
-Erfolgsdarstellung mit grünem Glüheffekt:
+Erfolgsdarstellung with grunem Gluheffekt:
 
 ```html
-<input type="text" class="success-glow" value="Gültiger Wert">
+<input type="text" class="success-glow" value="Gultiger Value">
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Success-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Success-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Formelemente
+### form elements
 
 ```html
 <div class="form-group">
   <label for="username">Benutzername</label>
-  <input type="text" id="username" class="success-border" value="verfügbar">
-  <p class="success-text">Dieser Benutzername ist verfügbar</p>
+  <input type="text" id="username" class="success-border" value="verfugbar">
+  <p class="success-text">this Benutzername ist verfugbar</p>
 </div>
 
 <div class="form-group">
@@ -123,14 +123,14 @@ Success-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-### Buttons und Aktionen
+### buttons and Aktionen
 
 ```html
 <button class="btn success-bg">Erfolgreich abgeschlossen</button>
-<a href="#" class="link success-text">Verifizierter Link</a>
+<a href="#" class="link success-text">Verifizierter link</a>
 ```
 
-### Benachrichtigungen und Alerts
+### notifications and Alerts
 
 ```html
 <div class="alert success-bg">
@@ -139,7 +139,7 @@ Success-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 
 <div class="toast success-border">
-  <div class="toast-header">Erfolg</div>
+  <div class="toast-header">success</div>
   <div class="toast-body">Aktion erfolgreich abgeschlossen</div>
 </div>
 ```
@@ -157,9 +157,9 @@ Success-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Success-Effekte können über CSS Variables angepasst werden:
+the Success-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
@@ -168,17 +168,17 @@ Die Success-Effekte können über CSS Variables angepasst werden:
   --success-border-width: 1px; /* Erfolgsrandbreite */
   --success-background: rgba(40, 167, 69, 0.1); /* Erfolgshintergrundfarbe */
   --success-text-color: #28a745; /* Erfolgstextfarbe */
-  --success-icon-size: 16px; /* Größe des Erfolgs-Icons */
-  --success-fade-duration: 0.5s; /* Dauer des Fade-In-Effekts */
-  --success-scale-factor: 1.05; /* Skalierungsfaktor für Scale-Effekt */
-  --success-scale-duration: 0.3s; /* Dauer der Skalierungsanimation */
-  --success-check-size: 80px; /* Größe des animierten Häkchens */
-  --success-check-thickness: 4px; /* Dicke des Häkchenstrichs */
-  --success-glow-radius: 4px; /* Radius für Glüheffekt */
-  --success-glow-intensity: 0.4; /* Intensität des Glüheffekts */
+  --success-icon-size: 16px; /* size des Erfolgs-icons */
+  --success-fade-duration: 0.5s; /* Dauer des Fade-in-Effekts */
+  --success-scale-factor: 1.05; /* Skalierungsfaktor for Scale-effect */
+  --success-scale-duration: 0.3s; /* Dauer the Skalierungsanimation */
+  --success-check-size: 80px; /* size des animierten Hakchens */
+  --success-check-thickness: 4px; /* Dicke des Hakchenstrichs */
+  --success-glow-radius: 4px; /* Radius for Gluheffekt */
+  --success-glow-intensity: 0.4; /* Intensitat des Gluheffekts */
 }
 
-/* Anpassung für dunkle Themes */
+/* Customization for dunkle themes */
 .dark-theme {
   --success-color: #48d869;
   --success-background: rgba(72, 216, 105, 0.15);
@@ -188,9 +188,9 @@ Die Success-Effekte können über CSS Variables angepasst werden:
 
 ## Animierte Erfolgseffekte
 
-### Check-Animation
+### Check-animation
 
-Die animierte Häkchen-Animation ist ein häufig verwendeter Erfolgseffekt:
+the animierte Hakchen-animation ist a haufig verwendeter Erfolgseffekt:
 
 ```css
 @keyframes successCheck {
@@ -208,7 +208,7 @@ Die animierte Häkchen-Animation ist ein häufig verwendeter Erfolgseffekt:
   }
 }
 
-.success-check-container {
+.success-check-containers {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +239,7 @@ Die animierte Häkchen-Animation ist ein häufig verwendeter Erfolgseffekt:
 }
 ```
 
-### Fade-In-Animation
+### Fade-in-animation
 
 ```css
 @keyframes successFadeIn {
@@ -258,7 +258,7 @@ Die animierte Häkchen-Animation ist ein häufig verwendeter Erfolgseffekt:
 }
 ```
 
-### Scale-Animation
+### Scale-animation
 
 ```css
 @keyframes successScale {
@@ -280,16 +280,16 @@ Die animierte Häkchen-Animation ist ein häufig verwendeter Erfolgseffekt:
 
 ## JavaScript-Integration
 
-Für dynamische Success-Effekte kann JavaScript verwendet werden:
+for dynamische Success-effects kann JavaScript verwendet become:
 
 ```javascript
-// Dynamisches Hinzufügen von Success-Effekten
+// Dynamisches add from Success-Effekten
 function showSuccessEffect(element, type = 'border', duration = 3000) {
-  // Success-Klasse hinzufügen
+  // Success-Class add
   const successClass = `success-${type}`;
   element.classList.add(successClass);
   
-  // ARIA für Screenreader
+  // ARIA for Screenreader
   const successMessage = element.getAttribute('data-success-message') || 'Aktion erfolgreich';
   const successAlert = document.createElement('div');
   successAlert.setAttribute('role', 'status');
@@ -298,7 +298,7 @@ function showSuccessEffect(element, type = 'border', duration = 3000) {
   successAlert.textContent = successMessage;
   document.body.appendChild(successAlert);
   
-  // Nach angegebener Dauer entfernen
+  // after angegebener Dauer remove
   if (duration) {
     setTimeout(() => {
       element.classList.remove(successClass);
@@ -321,9 +321,9 @@ const formElement = document.getElementById('my-form');
 formElement.addEventListener('submit', function(event) {
   event.preventDefault();
   
-  // Simulieren Sie eine Formübermittlung
+  // Simulieren them a Formubermittlung
   setTimeout(() => {
-    // Success-Effekt auf dem Button anzeigen
+    // Success-effect on dem button anzeigen
     showSuccessEffect(submitButton, 'bg');
     
     // Success-Text anzeigen
@@ -331,26 +331,26 @@ formElement.addEventListener('submit', function(event) {
     resultMessage.textContent = 'Daten erfolgreich gespeichert';
     resultMessage.classList.add('success-text');
     
-    // Success-Icon anzeigen
+    // Success-icon anzeigen
     const icon = document.getElementById('status-icon');
     icon.classList.add('success-icon');
   }, 1000);
 });
 ```
 
-## Fortschrittsverfolgung mit Success-Effekten
+## Fortschrittsverfolgung with Success-Effekten
 
-Success-Effekte können zur Anzeige von Fortschritten verwendet werden:
+Success-effects can zur Display from Fortschritten verwendet become:
 
 ```html
-<div class="steps-container">
+<div class="steps-containers">
   <div class="step success-bg">
     <span class="step-number">1</span>
     <span class="step-label">Registrierung</span>
   </div>
   <div class="step success-bg">
     <span class="step-number">2</span>
-    <span class="step-label">Bestätigung</span>
+    <span class="step-label">Bestatigung</span>
   </div>
   <div class="step active">
     <span class="step-number">3</span>
@@ -364,7 +364,7 @@ Success-Effekte können zur Anzeige von Fortschritten verwendet werden:
 ```
 
 ```css
-.steps-container {
+.steps-containers {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
@@ -422,13 +422,13 @@ Success-Effekte können zur Anzeige von Fortschritten verwendet werden:
 
 ## Accessibility
 
-Bei der Usage von Success-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Success-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Semantik**: Verwenden Sie passende ARIA-Attribute wie `role="status"`
-2. **Live-Regions**: Verwenden Sie `aria-live="polite"` für dynamische Updates
-3. **Kontrast**: Achten Sie auf ausreichenden Kontrast für Erfolgsfarben
-4. **Multiple Signale**: Verlassen Sie sich nicht nur auf Farbe zur Erfolgsdarstellung
-5. **Dauer**: Stellen Sie sicher, dass wichtige Erfolgsmeldungen lang genug sichtbar sind
+1. **Semantik**: use them passende ARIA-attributes how `role="status"`
+2. **Live-Regions**: use them `aria-live="polite"` for dynamische Updates
+3. **Kontrast**: ensure them on ausreichenden Kontrast for Erfolgsfarben
+4. **Multiple Signale**: Verlassen them oneself not only on color zur Erfolgsdarstellung
+5. **Dauer**: ensure, that wichtige Erfolgsmeldungen lang genug sichtbar sind
 
 ```html
 <!-- Barrierefreie Erfolgsmeldung -->
@@ -439,20 +439,20 @@ Bei der Usage von Success-Effekten sollten folgende Accessibilitysaspekte berüc
 >
   <div class="alert-icon success-icon" aria-hidden="true"></div>
   <div class="alert-content">
-    <strong>Erfolg!</strong> Ihre Daten wurden gespeichert.
+    <strong>success!</strong> Ihre Daten wurden gespeichert.
   </div>
 </div>
 ```
 
 ## Success-States in Formen
 
-Success-Effekte in Formen verbessern die Benutzererfahrung:
+Success-effects in Formen verbessern the Benutzererfahrung:
 
 ```html
 <form id="signup-form">
   <div class="form-group">
     <label for="email">E-Mail</label>
-    <div class="input-wrapper">
+    <div class="input-wrappers">
       <input 
         type="email" 
         id="email" 
@@ -466,7 +466,7 @@ Success-Effekte in Formen verbessern die Benutzererfahrung:
   
   <div class="form-group">
     <label for="password">Passwort</label>
-    <div class="input-wrapper">
+    <div class="input-wrappers">
       <input 
         type="password" 
         id="password" 
@@ -483,7 +483,7 @@ Success-Effekte in Formen verbessern die Benutzererfahrung:
 ```
 
 ```javascript
-// Live-Validierung mit Success-Effekten
+// Live-validation with Success-Effekten
 document.querySelectorAll('[data-validation]').forEach(field => {
   field.addEventListener('input', function() {
     validateField(this);
@@ -496,17 +496,17 @@ document.querySelectorAll('[data-validation]').forEach(field => {
 
 function validateField(field) {
   const type = field.getAttribute('data-validation');
-  const wrapper = field.closest('.input-wrapper');
-  const iconElement = wrapper.querySelector('.validation-icon');
+  const wrappers = field.closest('.input-wrappers');
+  const iconElement = wrappers.querySelector('.validation-icon');
   const messageElement = field.closest('.form-group').querySelector('.validation-message');
   
-  // Zurücksetzen
+  // Zurucksetzen
   field.classList.remove('success-border', 'error-border');
   iconElement.className = 'validation-icon';
   messageElement.className = 'validation-message';
   messageElement.textContent = '';
   
-  // Leer lassen, wenn noch nichts eingegeben wurde
+  // Leer lassen, if noch nothing eingegeben wurde
   if (!field.value.trim()) {
     return;
   }
@@ -514,27 +514,27 @@ function validateField(field) {
   let isValid = false;
   let message = '';
   
-  // Validierung nach Typ
+  // validation after Typ
   switch(type) {
     case 'email':
       isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value);
-      message = isValid ? 'Gültige E-Mail' : 'Ungültige E-Mail';
+      message = isValid ? 'Gultige E-Mail' : 'Ungultige E-Mail';
       break;
     case 'password':
       isValid = field.value.length >= 8;
-      message = isValid ? 'Passwort ist stark genug' : 'Passwort zu kurz';
+      message = isValid ? 'Passwort ist stark genug' : 'Passwort to kurz';
       break;
-    // Weitere Validierungstypen...
+    // additional Validierungstypen...
   }
   
   if (isValid) {
-    // Success-Effekte anwenden
+    // Success-effects anwenden
     field.classList.add('success-border');
     iconElement.classList.add('success-icon');
     messageElement.classList.add('success-text');
     messageElement.textContent = message;
   } else {
-    // Error-Effekte anwenden (hier für Vollständigkeit)
+    // Error-effects anwenden (hier for Vollstandigkeit)
     field.classList.add('error-border');
     iconElement.classList.add('error-icon');
     messageElement.classList.add('error-text');
@@ -543,20 +543,20 @@ function validateField(field) {
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Success-Effekte sind mit allen modernen Browsern kompatibel. Einige Animationseffekte haben jedoch Einschränkungen in älteren Browsern.
+the meisten Success-effects sind with allen modernen Browsern kompatibel. some Animationseffekte have however Einschrankungen in alteren Browsern.
 
-| Browser | Kompatibilität |
+| Browser | Kompatibilitat |
 |---------|---------------|
-| Chrome | Vollständige Unterstützung |
-| Firefox | Vollständige Unterstützung |
-| Safari | Vollständige Unterstützung |
-| Edge | Vollständige Unterstützung |
-| IE11 | Eingeschränkte Unterstützung für Animationen und Glüheffekte |
+| Chrome | Vollstandige Unterstutzung |
+| Firefox | Vollstandige Unterstutzung |
+| Safari | Vollstandige Unterstutzung |
+| Edge | Vollstandige Unterstutzung |
+| IE11 | Eingeschrankte Unterstutzung for animations and Gluheffekte |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Error-Effekte](/docs/effects/interaction/error.md) - Effekte für Fehlerzustände
-- [Warning-Effekte](/docs/effects/interaction/warning.md) - Warnhinweiseffekte
-- [Focus-Effekte](/docs/effects/interaction/focus.md) - Effekte beim Fokussieren von Elementen 
+- [Error-effects](/docs/effects/interaction/error.md) - effects for Fehlerzustande
+- [Warning-effects](/docs/effects/interaction/warning.md) - Warnhinweiseffekte
+- [Focus-effects](/docs/effects/interaction/focus.md) - effects beim Fokussieren from Elementen 

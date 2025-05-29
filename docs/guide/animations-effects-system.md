@@ -1,17 +1,17 @@
 ---
-title: Animation and Effects System
+title: Animation and Effects system
 category: Guide
 ---
 
-# Animation and Effects System
+# Animation and Effects system
 
-The Animation and Effects System of the Casoon UI Library provides a comprehensive collection of predefined animations, transitions, and visual effects to enhance the user interface.
+The Animation and Effects system of the Casoon UI Library provides a comprehensive collection of predefined animations, transitions, and visual effects to enhance the user interface.
 
-> **Update in Version 0.5.1:** The animation system has been extensively revised with a unified naming scheme (`slide-in-*` instead of `slide-from-*`), reduced redundancy, and improved custom properties.
+> **Update in version 0.5.1:** The animation system has been extensively revised with a unified naming scheme (`slide-in-*` instead of `slide-from-*`), reduced redundancy, and improved custom properties.
 
 ## CSS Import
 
-To use the complete Casoon UI Animation System, import the `core.css` file, which automatically includes the basic animations:
+To use the complete Casoon UI Animation system, import the `core.css` file, which automatically includes the basic animations:
 
 ```css
 @import "@casoon/ui-lib/core.css";
@@ -30,7 +30,7 @@ For special animations and effects, you can import additional modules:
 
 ## Animation Categories
 
-The Animation System is divided into the following categories:
+The Animation system is divided into the following categories:
 
 ### 1. Transitions
 
@@ -176,7 +176,7 @@ Animations can be combined with each other and with transitions:
 
 ## Animation Configuration
 
-The Animation System can be configured via CSS variables:
+The Animation system can be configured via CSS variables:
 
 ```css
 :root {
@@ -222,7 +222,7 @@ For better performance:
 
 ## Responsive Considerations
 
-The Animation System respects user preferences:
+The Animation system respects user preferences:
 
 ```css
 @media (prefers-reduced-motion: reduce) {

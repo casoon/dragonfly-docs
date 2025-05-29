@@ -3,43 +3,43 @@ title: Pattern Effects
 category: Effects
 ---
 
-# Pattern-Effekte
+# Pattern-effects
 
-Die Pattern-Effekte der Casoon UI Library bieten eine umfangreiche Sammlung von dekorativen Mustern und Hintergründen, die Ihren Designs visuelle Tiefe, Struktur und Persönlichkeit verleihen können. Diese Muster sind vielseitig einsetzbar und können für verschiedene Designzwecke angepasst werden.
+the Pattern-effects the Casoon UI Library bieten a umfangreiche Sammlung from dekorativen Mustern and Hintergrunden, the Ihren designs visuelle Tiefe, Structure and Personlichkeit verleihen can. these pattern sind vielseitig einsetzbar and can for verschiedene Designzwecke angepasst become.
 
-## Überblick
+## Uberblick
 
-Pattern-Effekte sind sich wiederholende visuelle Elemente, die zur Gestaltung von Hintergründen, Trennlinien, Dekorationen oder zur visuellen Strukturierung von Inhalten verwendet werden können. Die Casoon UI Library bietet verschiedene Arten von Mustern, von einfachen geometrischen Formen bis hin zu komplexen, organischen Designs.
+Pattern-effects sind oneself wiederholende visuelle elements, the zur Gestaltung from Hintergrunden, Trennlinien, Dekorationen or zur visuellen Strukturierung from Inhalten verwendet become can. the Casoon UI Library bietet verschiedene Arten from Mustern, from einfachen geometrischen Formen until hin to komplexen, organischen designs.
 
 ## Installation
 
-Importieren Sie das Pattern-Effekte-Modul über CSS:
+import them the Pattern-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/patterns.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
 ### Grundlegende Pattern-Typen
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.pattern` | Standardmäßiger Pattern-Effekt |
-| `.pattern-bg` | Pattern optimiert für Hintergründe |
-| `.pattern-border` | Pattern für Rahmen und Ränder |
-| `.pattern-divider` | Pattern für Trennlinien |
-| `.pattern-accent` | Pattern für Akzentelemente |
+| `.pattern` | Standardmassiger Pattern-effect |
+| `.pattern-bg` | Pattern optimiert for Hintergrunde |
+| `.pattern-border` | Pattern for border and Rander |
+| `.pattern-divider` | Pattern for Trennlinien |
+| `.pattern-accent` | Pattern for Akzentelemente |
 
-### Geometrische Muster
+### Geometrische pattern
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.pattern-grid` | Regelmäßiges Rastermuster |
+| `.pattern-grid` | Regelmassiges Rastermuster |
 | `.pattern-dots` | Punktmuster in verschiedenen Anordnungen |
 | `.pattern-lines` | Linienmuster (horizontal, vertikal, diagonal) |
-| `.pattern-stripes` | Streifenmuster mit verschiedenen Breiten |
-| `.pattern-zigzag` | Zickzack-Muster |
+| `.pattern-stripes` | Streifenmuster with verschiedenen Breiten |
+| `.pattern-zigzag` | Zickzack-pattern |
 | `.pattern-waves` | Wellenmuster |
 | `.pattern-triangles` | Dreieckmuster |
 | `.pattern-squares` | Quadratmuster |
@@ -48,40 +48,40 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
 | `.pattern-diamonds` | Rautenmuster |
 | `.pattern-chevron` | Chevron-/Pfeilmuster |
 
-### Organische und dekorative Muster
+### Organische and dekorative pattern
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.pattern-floral` | Blumen- und Pflanzenmuster |
-| `.pattern-organic` | Natürlich wirkende, fließende Muster |
-| `.pattern-abstract` | Abstrakte, nicht-geometrische Muster |
-| `.pattern-confetti` | Konfetti-/Sprenkel-Muster |
-| `.pattern-doodle` | Handgezeichnet wirkende Muster |
+| `.pattern-floral` | Blumen- and Pflanzenmuster |
+| `.pattern-organic` | Naturlich wirkende, fliessende pattern |
+| `.pattern-abstract` | Abstrakte, not-geometrische pattern |
+| `.pattern-confetti` | Konfetti-/Sprenkel-pattern |
+| `.pattern-doodle` | Handgezeichnet wirkende pattern |
 | `.pattern-leaves` | Blattmuster |
 | `.pattern-bubbles` | Blasenmuster |
-| `.pattern-maze` | Labyrinth-ähnliche Muster |
+| `.pattern-maze` | Labyrinth-ahnliche pattern |
 
-### Dichte und Sizesvarianten
+### Dichte and Sizesvarianten
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.pattern-dense` | Dicht gepacktes Muster |
-| `.pattern-sparse` | Weit auseinander liegendes Muster |
+| `.pattern-dense` | Dicht gepacktes pattern |
+| `.pattern-sparse` | Weit auseinander liegendes pattern |
 | `.pattern-sm` | Kleines Musterdesign |
 | `.pattern-md` | Mittleres Musterdesign (Standard) |
-| `.pattern-lg` | Großes Musterdesign |
-| `.pattern-xl` | Extra großes Musterdesign |
+| `.pattern-lg` | Grosses Musterdesign |
+| `.pattern-xl` | Extra grosses Musterdesign |
 
-### Overlay-Muster
+### Overlay-pattern
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.pattern-overlay` | Muster als Overlay über anderen Elementen |
-| `.pattern-overlay-light` | Helles Overlay-Muster |
-| `.pattern-overlay-dark` | Dunkles Overlay-Muster |
-| `.pattern-overlay-gradient` | Verlaufendes Overlay-Muster |
-| `.pattern-fade-top` | Nach oben ausblendendes Muster |
-| `.pattern-fade-bottom` | Nach unten ausblendendes Muster |
+| `.pattern-overlay` | pattern as Overlay over anderen Elementen |
+| `.pattern-overlay-light` | Helles Overlay-pattern |
+| `.pattern-overlay-dark` | Dunkles Overlay-pattern |
+| `.pattern-overlay-gradient` | Verlaufendes Overlay-pattern |
+| `.pattern-fade-top` | after oben ausblendendes pattern |
+| `.pattern-fade-bottom` | after unten ausblendendes pattern |
 
 ## Examples
 
@@ -132,35 +132,35 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
 </style>
 ```
 
-### Komplexere Geometrische Muster
+### Komplexere Geometrische pattern
 
 ```html
 <div class="geometric-patterns">
   <div class="pattern-card pattern-bg pattern-hexagons">
     <div class="content">
       <h3>Sechseckmuster</h3>
-      <p>Ein elegantes Sechseckmuster für moderne Designs.</p>
+      <p>a elegantes Sechseckmuster for moderne designs.</p>
     </div>
   </div>
   
   <div class="pattern-card pattern-bg pattern-triangles">
     <div class="content">
       <h3>Dreieckmuster</h3>
-      <p>Ein dynamisches Dreieckmuster für energiegeladene Designs.</p>
+      <p>a dynamisches Dreieckmuster for energiegeladene designs.</p>
     </div>
   </div>
   
   <div class="pattern-card pattern-bg pattern-circles">
     <div class="content">
       <h3>Kreismuster</h3>
-      <p>Ein sanftes Kreismuster für freundliche Interfaces.</p>
+      <p>a sanftes Kreismuster for freundliche Interfaces.</p>
     </div>
   </div>
   
   <div class="pattern-card pattern-bg pattern-zigzag">
     <div class="content">
       <h3>Zickzackmuster</h3>
-      <p>Ein dynamisches Zickzackmuster für lebendige Designs.</p>
+      <p>a dynamisches Zickzackmuster for lebendige designs.</p>
     </div>
   </div>
 </div>
@@ -203,12 +203,12 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
 </style>
 ```
 
-### Organische Muster
+### Organische pattern
 
 ```html
 <div class="organic-patterns">
   <div class="organic-pattern pattern-bg pattern-floral">
-    <div class="content">Florales Muster</div>
+    <div class="content">Florales pattern</div>
   </div>
   
   <div class="organic-pattern pattern-bg pattern-leaves">
@@ -216,7 +216,7 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
   </div>
   
   <div class="organic-pattern pattern-bg pattern-organic">
-    <div class="content">Organisches Muster</div>
+    <div class="content">Organisches pattern</div>
   </div>
   
   <div class="organic-pattern pattern-bg pattern-bubbles">
@@ -251,24 +251,24 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
 </style>
 ```
 
-### Overlay-Muster und Anwendungen
+### Overlay-pattern and Anwendungen
 
 ```html
 <div class="overlay-patterns">
   <div class="hero-section pattern-overlay pattern-dots-lg">
     <div class="hero-content">
-      <h2>Überlagerungsmuster</h2>
-      <p>Muster können als Overlay über Bildern oder farbigen Hintergründen verwendet werden.</p>
-      <button>Mehr erfahren</button>
+      <h2>Uberlagerungsmuster</h2>
+      <p>pattern can as Overlay over Bildern or farbigen Hintergrunden verwendet become.</p>
+      <button>more erfahren</button>
     </div>
   </div>
   
   <div class="card-with-pattern">
     <div class="card-header pattern-bg pattern-stripes">
-      <h3>Cardnüberschrift</h3>
+      <h3>Cardnuberschrift</h3>
     </div>
     <div class="card-body">
-      <p>Muster können für verschiedene Bereiche einer Komponente verwendet werden.</p>
+      <p>pattern can for verschiedene areas einer Component verwendet become.</p>
     </div>
     <div class="card-footer pattern-bg pattern-dots-sm">
       <button>Aktion</button>
@@ -277,13 +277,13 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
   
   <div class="pattern-divider-example">
     <div class="content-section">
-      <h3>Oberer Bereich</h3>
-      <p>Inhalte vor dem Trenner.</p>
+      <h3>Oberer area</h3>
+      <p>contents before dem Trenner.</p>
     </div>
     <div class="pattern-divider pattern-zigzag"></div>
     <div class="content-section">
-      <h3>Unterer Bereich</h3>
-      <p>Inhalte nach dem Trenner.</p>
+      <h3>Unterer area</h3>
+      <p>contents after dem Trenner.</p>
     </div>
   </div>
 </div>
@@ -377,13 +377,13 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Pattern-Effekte können über CSS Variables angepasst werden:
+the Pattern-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Pattern-Parameter */
+  /* Grundlegende Pattern-parameter */
   --pattern-opacity: 0.15;
   --pattern-color: currentColor;
   --pattern-bg-color: transparent;
@@ -391,7 +391,7 @@ Die Pattern-Effekte können über CSS Variables angepasst werden:
   --pattern-spacing: 5px;
   --pattern-line-width: 1px;
   
-  /* Muster-Variants */
+  /* pattern-Variants */
   --pattern-dots-size: 3px;
   --pattern-dots-spacing: 15px;
   --pattern-grid-size: 20px;
@@ -409,12 +409,12 @@ Die Pattern-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Die Muster werden hauptsächlich durch CSS-Hintergrundbilder, Gradienten und wiederholende Elemente implementiert:
+the pattern become hauptsachlich through CSS-Hintergrundbilder, Gradienten and wiederholende elements implementiert:
 
 ```css
-/* Basis-Pattern */
+/* Base-Pattern */
 .pattern {
   position: relative;
 }
@@ -475,7 +475,7 @@ Die Muster werden hauptsächlich durch CSS-Hintergrundbilder, Gradienten und wie
   background-size: var(--pattern-stripes-width) var(--pattern-stripes-width);
 }
 
-/* Overlay-Muster */
+/* Overlay-pattern */
 .pattern-overlay {
   position: relative;
 }
@@ -496,7 +496,7 @@ Die Muster werden hauptsächlich durch CSS-Hintergrundbilder, Gradienten und wie
   pointer-events: none;
 }
 
-/* Mustervarianten für Overlays */
+/* Mustervarianten for Overlays */
 .pattern-overlay.pattern-dots::before {
   background-image: radial-gradient(
     var(--pattern-color) var(--pattern-dots-size),
@@ -506,11 +506,11 @@ Die Muster werden hauptsächlich durch CSS-Hintergrundbilder, Gradienten und wie
 }
 ```
 
-## Fortgeschrittene Muster
+## Fortgeschrittene pattern
 
-### SVG-basierte Muster
+### SVG-basierte pattern
 
-Komplexere Muster können mit SVG implementiert werden:
+Komplexere pattern can with SVG implementiert become:
 
 ```css
 .pattern-hexagons {
@@ -522,9 +522,9 @@ Komplexere Muster können mit SVG implementiert werden:
 }
 ```
 
-### CSS-generierte Muster
+### CSS-generierte pattern
 
-Einige Muster können durch geschickte Kombination von CSS-Eigenschaften erzeugt werden:
+some pattern can through geschickte Kombination from CSS-properties erzeugt become:
 
 ```css
 .pattern-zigzag {
@@ -553,14 +553,14 @@ Einige Muster können durch geschickte Kombination von CSS-Eigenschaften erzeugt
 
 ## Accessibility
 
-Bei der Usage von Pattern-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Pattern-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass Text auf gemusterten Hintergründen ausreichend lesbar bleibt
-2. **Ablenkung**: Verwenden Sie subtile Muster, die nicht vom Inhalt ablenken
-3. **Animation**: Vermeiden Sie animierte Muster, die Bewegungsempfindlichkeiten auslösen könnten
+1. **Kontrast**: ensure, that Text on gemusterten Hintergrunden ausreichend lesbar bleibt
+2. **Ablenkung**: use them subtile pattern, the not vom content ablenken
+3. **animation**: Vermeiden them animierte pattern, the Bewegungsempfindlichkeiten auslosen konnten
 
 ```css
-/* Verbesserte Lesbarkeit für Text auf Mustern */
+/* Verbesserte Lesbarkeit for Text on Mustern */
 .pattern-with-text {
   --pattern-opacity: 0.1;
 }
@@ -571,7 +571,7 @@ Bei der Usage von Pattern-Effekten sollten folgende Accessibilitysaspekte berüc
   border-radius: 4px;
 }
 
-/* Reduzierte visuelle Komplexität */
+/* Reduzierte visuelle Komplexitat */
 @media (prefers-reduced-motion: reduce) {
   :root {
     --pattern-opacity: 0.1;
@@ -582,19 +582,19 @@ Bei der Usage von Pattern-Effekten sollten folgende Accessibilitysaspekte berüc
 
 ## Performance-Optimierung
 
-Pattern-Effekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Pattern-effects can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Einfache Muster**: Verwenden Sie möglichst einfache Muster für bessere Performance
-2. **SVG-Optimierung**: Minimieren Sie SVG-Dateien für Pattern-Effekte
-3. **Cache-Busting**: Nutzen Sie das Browser-Caching für Pattern-Grafiken
+1. **Einfache pattern**: use them moglichst einfache pattern for bessere Performance
+2. **SVG-Optimierung**: Minimieren them SVG-Dateien for Pattern-effects
+3. **Cache-Busting**: use them the Browser-Caching for Pattern-Grafiken
 
 ```css
-/* Performance-Optimierung für Pattern-Effekte */
+/* Performance-Optimierung for Pattern-effects */
 .pattern-optimized {
   will-change: background-image;
 }
 
-/* Reduzierte Komplexität für mobile Geräte */
+/* Reduzierte Komplexitat for mobile Gerate */
 @media (max-width: 768px) {
   :root {
     --pattern-opacity: 0.1;
@@ -609,15 +609,15 @@ Pattern-Effekte können die Rendering-Performance beeinflussen. Beachten Sie die
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Pattern-Effekte werden von allen modernen Browsern unterstützt.
+the Pattern-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | CSS Backgrounds | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CSS Gradients | ✓ | ✓ | ✓ | ✓ | Teilweise |
-| SVG Hintergründe | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SVG Hintergrunde | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
+for altere Browser, the some functions not unterstutzen, become vereinfachte Fallback-Styles bereitgestellt. 

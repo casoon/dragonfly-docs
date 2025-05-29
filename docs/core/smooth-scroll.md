@@ -5,36 +5,36 @@ category: Core
 
 # Smooth Scrolling
 
-Das Smooth Scrolling System der Casoon UI Library verbessert die Benutzererfahrung durch flüssige, animierte Seitenübergänge und Scrolling-Effekte. Es bietet eine natürlichere und angenehmere Möglichkeit, durch Inhalte zu navigieren, ohne die abrupten Sprünge traditioneller Scrolling-Mechanismen.
+the Smooth Scrolling system the Casoon UI Library verbessert the Benutzererfahrung through flussige, animierte Seitenubergange and Scrolling-effects. it bietet a naturlichere and angenehmere Moglichkeit, through contents to navigieren, without the abrupten Sprunge traditioneller Scrolling-Mechanismen.
 
-## Überblick
+## Uberblick
 
-Smooth Scrolling ist ein wichtiger Bestandteil moderner Benutzeroberflächen, der folgende Vorteile bietet:
+Smooth Scrolling ist a wichtiger Bestandteil moderner user interfaces, the folgende Vorteile bietet:
 
-- **Verbesserte Benutzererfahrung**: Sanfte Übergänge zwischen verschiedenen Abschnitten
-- **Bessere räumliche Orientierung**: Nutzer behalten einen besseren Überblick über ihren Standort in der Seite
-- **Reduzierte kognitive Belastung**: Weniger abrupte Veränderungen reduzieren die mentale Verarbeitungslast
-- **Moderneres Erscheinungsbild**: Ansprechendere und zeitgemäßere Ästhetik
+- **Verbesserte Benutzererfahrung**: Sanfte Ubergange between verschiedenen Abschnitten
+- **Bessere raumliche Orientierung**: Nutzer behalten einen besseren Uberblick over ihren Standort in the Seite
+- **Reduzierte kognitive Belastung**: less abrupte Veranderungen reduzieren the mentale Verarbeitungslast
+- **Moderneres Erscheinungsbild**: Ansprechendere and zeitgemassere Asthetik
 
 ## Installation
 
-Das Smooth Scrolling System ist Teil des Core-Moduls der Casoon UI Library:
+the Smooth Scrolling system ist Teil des Core-Moduls the Casoon UI Library:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 ```
 
-Sie können es auch speziell importieren:
+You can it also speziell import:
 
 ```css
 @import '@casoon/ui-lib/core/smooth-scroll.css';
 ```
 
-## Grundlegende Implementierung
+## Grundlegende Implementation
 
 ### Globales Smooth Scrolling
 
-Die Casoon UI Library aktiviert Smooth Scrolling standardmäßig für die gesamte Seite:
+the Casoon UI Library aktiviert Smooth Scrolling by default for the gesamte Seite:
 
 ```css
 html {
@@ -42,11 +42,11 @@ html {
 }
 ```
 
-Diese einfache CSS-Eigenschaft sorgt dafür, dass alle Scrolling-Aktionen, einschließlich Klicks auf Anker-Links und programmatisches Scrollen, sanft animiert werden.
+these einfache CSS-Property sorgt dafur, that all Scrolling-Aktionen, einschliesslich Klicks on Anker-links and programmatisches Scrollen, sanft animiert become.
 
-### Accessibility berücksichtigen
+### Accessibility berucksichtigen
 
-Für Nutzer, die reduzierte Bewegung bevorzugen, wird Smooth Scrolling automatisch deaktiviert:
+for Nutzer, the reduzierte Bewegung bevorzugen, wird Smooth Scrolling automatisch deaktiviert:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -58,9 +58,9 @@ Für Nutzer, die reduzierte Bewegung bevorzugen, wird Smooth Scrolling automatis
 
 ## Use Cases
 
-### Anker-Links
+### Anker-links
 
-Standardmäßig werden alle Anker-Links (Links zu IDs innerhalb der Seite) mit Smooth Scrolling animiert:
+by default become all Anker-links (links to IDs within the Seite) with Smooth Scrolling animiert:
 
 ```html
 <nav class="page-nav">
@@ -71,28 +71,28 @@ Standardmäßig werden alle Anker-Links (Links zu IDs innerhalb der Seite) mit S
 
 <section id="section1">
   <h2>Abschnitt 1</h2>
-  <!-- Inhalt -->
+  <!-- content -->
 </section>
 
 <section id="section2">
   <h2>Abschnitt 2</h2>
-  <!-- Inhalt -->
+  <!-- content -->
 </section>
 
 <section id="section3">
   <h2>Abschnitt 3</h2>
-  <!-- Inhalt -->
+  <!-- content -->
 </section>
 ```
 
-### Scroll-to-Top Buttons
+### Scroll-to-Top buttons
 
-Die Bibliothek beinhaltet einen vorgefertigten "Zurück nach oben"-Button, der Smooth Scrolling verwendet:
+the Bibliothek beinhaltet einen vorgefertigten "back after oben"-button, the Smooth Scrolling verwendet:
 
 ```html
 <button class="scroll-to-top">
   <span class="icon">↑</span>
-  <span class="sr-only">Nach oben scrollen</span>
+  <span class="sr-only">after oben scrollen</span>
 </button>
 
 <style>
@@ -111,7 +111,7 @@ Die Bibliothek beinhaltet einen vorgefertigten "Zurück nach oben"-Button, der S
     align-items: center;
     justify-content: center;
     transition: opacity 0.3s, transform 0.3s;
-    /* Versteckt standardmäßig */
+    /* Versteckt by default */
     opacity: 0;
     transform: translateY(10px);
     pointer-events: none;
@@ -137,13 +137,13 @@ Die Bibliothek beinhaltet einen vorgefertigten "Zurück nach oben"-Button, der S
 </style>
 ```
 
-Mit diesem JavaScript werden Sichtbarkeit und Funktionalität gesteuert:
+with diesem JavaScript become visibility and Funktionalitat gesteuert:
 
 ```javascript
-// Scroll-to-Top Button Logik
+// Scroll-to-Top button Logik
 const scrollButton = document.querySelector('.scroll-to-top');
 
-// Zeige Button nur, wenn der Nutzer gescrollt hat
+// Zeige button only, if the Nutzer gescrollt hat
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {
     scrollButton.classList.add('visible');
@@ -152,7 +152,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Scrolle sanft nach oben beim Klick
+// Scrolle sanft after oben beim Klick
 scrollButton.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
@@ -161,9 +161,9 @@ scrollButton.addEventListener('click', () => {
 });
 ```
 
-### Scrollspy Navigation
+### Scrollspy navigation
 
-Die Casoon UI Library bietet eine Scrollspy-Funktionalität, die die aktuelle Position im Dokument verfolgt und entsprechende Navigationslinks hervorhebt:
+the Casoon UI Library bietet a Scrollspy-Funktionalitat, the the aktuelle position im Dokument verfolgt and entsprechende Navigationslinks hervorhebt:
 
 ```html
 <nav class="scrollspy-nav">
@@ -175,17 +175,17 @@ Die Casoon UI Library bietet eine Scrollspy-Funktionalität, die die aktuelle Po
 <div class="content">
   <section id="section1" class="scrollspy-section">
     <h2>Abschnitt 1</h2>
-    <!-- Inhalt -->
+    <!-- content -->
   </section>
   
   <section id="section2" class="scrollspy-section">
     <h2>Abschnitt 2</h2>
-    <!-- Inhalt -->
+    <!-- content -->
   </section>
   
   <section id="section3" class="scrollspy-section">
     <h2>Abschnitt 3</h2>
-    <!-- Inhalt -->
+    <!-- content -->
   </section>
 </div>
 
@@ -219,38 +219,38 @@ Die Casoon UI Library bietet eine Scrollspy-Funktionalität, die die aktuelle Po
 </style>
 ```
 
-Mit diesem JavaScript wird die Scrollspy-Funktionalität implementiert:
+with diesem JavaScript wird the Scrollspy-Funktionalitat implementiert:
 
 ```javascript
-// Scrollspy Implementierung
+// Scrollspy Implementation
 const navItems = document.querySelectorAll('.scrollspy-nav .nav-item');
 const sections = document.querySelectorAll('.scrollspy-section');
 
-// Prüfe die aktuelle Position und aktualisiere die aktiven Links
+// Prufe the aktuelle position and aktualisiere the aktiven links
 function updateActiveNavItem() {
-  const scrollPosition = window.scrollY + 100; // Kleiner Offset für bessere UX
+  const scrollPosition = window.scrollY + 100; // smaller Offset for bessere UX
   
   sections.forEach((section, index) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
     
     if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-      // Entferne 'active' von allen Links
+      // Entferne 'active' from allen links
       navItems.forEach(item => item.classList.remove('active'));
       
-      // Füge 'active' zum aktuellen Link hinzu
+      // Fuge 'active' zum aktuellen link hinzu
       navItems[index].classList.add('active');
     }
   });
 }
 
-// Überwache Scroll-Events
+// Uberwache Scroll-Events
 window.addEventListener('scroll', updateActiveNavItem);
 
 // Initial setzen
 updateActiveNavItem();
 
-// Smooth Scroll bei Klick auf Nav-Items
+// Smooth Scroll at Klick on Nav-Items
 navItems.forEach(item => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
@@ -266,14 +266,14 @@ navItems.forEach(item => {
 });
 ```
 
-## Erweiterte Funktionen
+## Erweiterte functions
 
-### Offset-Unterstützung
+### Offset-Unterstutzung
 
-Manchmal möchten Sie beim Scrollen einen Offset berücksichtigen, zum Example für einen fixierten Header:
+Manchmal want to them beim Scrollen einen Offset berucksichtigen, zum Example for einen fixierten header:
 
 ```javascript
-// Funktion zum Scrollen mit Offset
+// Function zum Scrollen with Offset
 function scrollToWithOffset(elementId, offset = 0) {
   const element = document.getElementById(elementId);
   if (!element) return;
@@ -293,19 +293,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
     
     const targetId = this.getAttribute('href').substring(1);
-    const headerOffset = 80; // Höhe des fixierten Headers
+    const headerOffset = 80; // height des fixierten Headers
     
     scrollToWithOffset(targetId, headerOffset);
   });
 });
 ```
 
-### Scroll-Container
+### Scroll-containers
 
-Smooth Scrolling kann auch auf bestimmte Container angewendet werden, nicht nur auf die gesamte Seite:
+Smooth Scrolling kann also on bestimmte containers angewendet become, not only on the gesamte Seite:
 
 ```css
-.scroll-container {
+.scroll-containers {
   height: 400px;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -313,47 +313,47 @@ Smooth Scrolling kann auch auf bestimmte Container angewendet werden, nicht nur 
 ```
 
 ```html
-<div class="scroll-container">
+<div class="scroll-containers">
   <nav>
-    <a href="#item1">Element 1</a>
-    <a href="#item2">Element 2</a>
+    <a href="#item1">element 1</a>
+    <a href="#item2">element 2</a>
   </nav>
   
   <div id="item1">
-    <!-- Inhalt für Element 1 -->
+    <!-- content for element 1 -->
   </div>
   
   <div id="item2">
-    <!-- Inhalt für Element 2 -->
+    <!-- content for element 2 -->
   </div>
 </div>
 ```
 
 ## JavaScript-API
 
-Die Casoon UI Library bietet eine einfache JavaScript-API für programmatisches Smooth Scrolling:
+the Casoon UI Library bietet a einfache JavaScript-API for programmatisches Smooth Scrolling:
 
 ```javascript
-// Import der Scroll-Utility
+// Import the Scroll-Utility
 import { smoothScroll } from '@casoon/ui-lib/utils/scroll';
 
-// Einfaches Scrollen zu einem Element
+// Einfaches Scrollen to einem element
 smoothScroll('#target-element');
 
-// Scrollen mit Offset
+// Scrollen with Offset
 smoothScroll('#target-element', {
   offset: 80, // Pixel-Offset
   duration: 800, // Animationsdauer in ms
-  easing: 'easeInOutQuad' // Easing-Funktion
+  easing: 'easeInOutQuad' // Easing-Function
 });
 
-// Scrollen zu einer Position
+// Scrollen to einer position
 smoothScroll(null, {
-  position: 500, // Position in Pixeln vom Dokumentanfang
+  position: 500, // position in Pixeln vom Dokumentanfang
   duration: 600
 });
 
-// Callback nach Abschluss der Animation
+// Callback after Abschluss the animation
 smoothScroll('#target-element', {
   onComplete: () => {
     console.log('Scrolling abgeschlossen');
@@ -361,27 +361,27 @@ smoothScroll('#target-element', {
 });
 ```
 
-## Easing-Funktionen
+## Easing-functions
 
-Die Bibliothek bietet verschiedene Easing-Funktionen für unterschiedliche Scrolling-Effekte:
+the Bibliothek bietet verschiedene Easing-functions for unterschiedliche Scrolling-effects:
 
 ```javascript
-// Verfügbare Easing-Funktionen
+// Verfugbare Easing-functions
 const easingFunctions = {
-  // Lineare Funktion (keine Beschleunigung)
+  // Lineare Function (no Beschleunigung)
   linear: t => t,
   
-  // Quadratische Funktionen
+  // Quadratische functions
   easeInQuad: t => t * t,
   easeOutQuad: t => t * (2 - t),
   easeInOutQuad: t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t,
   
-  // Kubische Funktionen
+  // Kubische functions
   easeInCubic: t => t * t * t,
   easeOutCubic: t => (--t) * t * t + 1,
   easeInOutCubic: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
   
-  // Elastische Funktionen
+  // Elastische functions
   easeOutElastic: t => {
     const c4 = (2 * Math.PI) / 3;
     return t === 0 ? 0 : t === 1 ? 1 : Math.pow(2, -10 * t) * Math.sin((t * 10 - 0.75) * c4) + 1;
@@ -389,83 +389,83 @@ const easingFunctions = {
 };
 ```
 
-## Anpassung
+## Customization
 
-Das Smooth Scrolling System kann über CSS Variables angepasst werden:
+the Smooth Scrolling system kann over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Scroll-Verhalten global festlegen */
+  /* Scroll-behavior global festlegen */
   --scroll-behavior: smooth;
   
-  /* Standardwerte für JavaScript-Scrolling */
+  /* Standardwerte for JavaScript-Scrolling */
   --scroll-duration: 800ms;
   --scroll-easing: ease-in-out;
   --scroll-offset: 0px;
   
-  /* Schwellenwerte für Scroll-To-Top Button */
+  /* Schwellenwerte for Scroll-To-Top button */
   --scroll-to-top-threshold: 300px;
 }
 
-/* Überschreiben für bestimmte Container */
-.custom-scroll-container {
-  --scroll-behavior: auto; /* Deaktiviert Smooth Scrolling für diesen Container */
+/* overwrite for bestimmte containers */
+.custom-scroll-containers {
+  --scroll-behavior: auto; /* Deaktiviert Smooth Scrolling for diesen containers */
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die CSS `scroll-behavior`-Eigenschaft wird von den meisten modernen Browsern unterstützt:
+the CSS `scroll-behavior`-Property wird from den meisten modernen Browsern unterstutzt:
 
 | Feature | Chrome | Firefox | Safari | Edge | IE |
 |---------|--------|---------|--------|------|-----|
 | scroll-behavior | 61+ | 36+ | 15.4+ | 79+ | Nein |
 
-Für Browser ohne native Unterstützung stellt die Casoon UI Library eine JavaScript-Fallback-Lösung bereit, die die gleiche Funktionalität emuliert.
+for Browser without native Unterstutzung stellt the Casoon UI Library a JavaScript-Fallback-Losung bereit, the the gleiche Funktionalitat emuliert.
 
 ## Performance-Optimierung
 
-Smooth Scrolling kann, wenn nicht optimiert, die Performance beeinträchtigen. Die Casoon UI Library implementiert folgende Optimierungen:
+Smooth Scrolling kann, if not optimiert, the Performance beeintrachtigen. the Casoon UI Library implementiert folgende Optimierungen:
 
-1. **Passive Event Listener**: Verbesserte Scrolling-Performance durch Usage passiver Event-Listener
-2. **Throttling**: Begrenzung der Ereignisrate bei Scroll-Events
-3. **requestAnimationFrame**: Synchronisierung mit dem Browser-Rendering-Zyklus
-4. **GPU-Beschleunigung**: Nutzung von CSS-Transformationen für bessere Performance
+1. **Passive Event Listener**: Verbesserte Scrolling-Performance through Usage passiver Event-Listener
+2. **Throttling**: Begrenzung the Ereignisrate at Scroll-Events
+3. **requestAnimationFrame**: Synchronisierung with dem Browser-Rendering-Zyklus
+4. **GPU-Beschleunigung**: Nutzung from CSS-Transformationen for bessere Performance
 
 ```javascript
-// Example für optimierte Scroll-Event-Behandlung
+// Example for optimierte Scroll-Event-Behandlung
 window.addEventListener('scroll', () => {
-  // Prüft, ob requestAnimationFrame verfügbar ist
+  // Pruft, whether requestAnimationFrame verfugbar ist
   if (window.requestAnimationFrame) {
     window.requestAnimationFrame(() => {
       updateScrollElements();
     });
   } else {
-    // Fallback für ältere Browser
+    // Fallback for altere Browser
     updateScrollElements();
   }
-}, { passive: true }); // Passiver Event-Listener für bessere Performance
+}, { passive: true }); // Passiver Event-Listener for bessere Performance
 ```
 
 ## Accessibility
 
-Das Smooth Scrolling System der Casoon UI Library berücksichtigt Accessibilitysaspekte:
+the Smooth Scrolling system the Casoon UI Library berucksichtigt Accessibilitysaspekte:
 
-1. **Respektiert Nutzereinstellungen**: Beachtet die `prefers-reduced-motion`-Einstellung
-2. **Keyboard-Navigation**: Unterstützt vollständige Keyboard-Navigation
-3. **Fokus-Management**: Setzt den Fokus korrekt nach dem Scrollen
-4. **ARIA-Attribute**: Implementiert die entsprechenden ARIA-Rollen und -Attribute
+1. **Respektiert Nutzereinstellungen**: Beachtet the `prefers-reduced-motion`-Setting
+2. **Keyboard-navigation**: Unterstutzt vollstandige Keyboard-navigation
+3. **Fokus-Management**: Setzt den Fokus korrekt after dem Scrollen
+4. **ARIA-attributes**: Implementiert the entsprechenden ARIA-Rollen and -attributes
 
 ## Best Practices
 
-1. **Behutsam einsetzen**: Verwenden Sie Smooth Scrolling gezielt und nicht für jede Scrollaktion
-2. **Performance beachten**: Achten Sie auf die Performance bei längeren Seiten
-3. **Kurze Animationen**: Halten Sie die Scroll-Dauer kurz (ca. 300-800ms)
-4. **Accessibility berücksichtigen**: Respektieren Sie die Nutzereinstellungen zur Bewegungsreduktion
-5. **Responsive Design**: Passen Sie Offsets für verschiedene Bildschirmgrößen an
+1. **Behutsam einsetzen**: use them Smooth Scrolling gezielt and not for jede Scrollaktion
+2. **Performance note**: ensure them on the Performance at langeren Seiten
+3. **Kurze animations**: Halten them the Scroll-Dauer kurz (ca. 300-800ms)
+4. **Accessibility berucksichtigen**: Respektieren them the Nutzereinstellungen zur Bewegungsreduktion
+5. **responsive design**: Passen them Offsets for verschiedene Bildschirmgrossen on
 
 ## Zusammenfassung
 
-Das Smooth Scrolling System der Casoon UI Library bietet eine leistungsstarke, aber dennoch leicht zu implementierende Lösung für flüssige Scrolling-Erlebnisse. Durch die Kombination von nativem CSS Smooth Scrolling mit optimierten JavaScript-Fallbacks bietet es eine robuste, barrierefreie und anpassbare Lösung für moderne Webanwendungen.
+the Smooth Scrolling system the Casoon UI Library bietet a leistungsstarke, but nevertheless leicht to implementierende Losung for flussige Scrolling-Erlebnisse. through the Kombination from nativem CSS Smooth Scrolling with optimierten JavaScript-Fallbacks bietet it a robuste, barrierefreie and anpassbare Losung for moderne Webanwendungen.
 
-Die sorgfältige Berücksichtigung von Performance, Accessibility und Nutzererfahrung macht es zu einem wesentlichen Bestandteil für die Erstellung moderner, benutzerfreundlicher Interfaces. 
+the sorgfaltige Berucksichtigung from Performance, Accessibility and Nutzererfahrung macht it to einem wesentlichen Bestandteil for the Erstellung moderner, benutzerfreundlicher Interfaces. 

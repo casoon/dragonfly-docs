@@ -1,23 +1,23 @@
 ---
-title: Fokus-Effekte
+title: Fokus-effects
 category: Guide
 ---
 
-# Fokus-Effekte
+# Fokus-effects
 
-Die `focus.css` Datei bietet eine Sammlung von Effekten, die angewendet werden, wenn ein Element den Fokus erhält (z.B. durch Tastaturnavigation oder Mausklick). Diese Effekte verbessern die Accessibility Ihrer Benutzeroberfläche, indem sie den aktuellen Fokus deutlich sichtbar machen, und unterstützen gleichzeitig eine ästhetisch ansprechende Gestaltung.
+the `focus.css` file bietet a Sammlung from Effekten, the angewendet become, if a element den Fokus erhalt (z.B. through Tastaturnavigation or Mausklick). these effects verbessern the Accessibility Ihrer Benutzeroberflache, indem them den aktuellen Fokus deutlich sichtbar machen, and unterstutzen gleichzeitig a asthetisch ansprechende Gestaltung.
 
 ## Overview
 
-Fokus-Effekte sind entscheidend für die Accessibility und User-friendliness, besonders für Tastaturnutzer und Menschen mit motorischen Einschränkungen. Die Casoon UI Library bietet eine Reihe von modernen, anpassbaren Fokus-Effekten, die sowohl funktional als auch ästhetisch ansprechend sind.
+Fokus-effects sind entscheidend for the Accessibility and User-friendliness, besonders for Tastaturnutzer and Menschen with motorischen Einschrankungen. the Casoon UI Library bietet a Reihe from modernen, anpassbaren Fokus-Effekten, the sowohl funktional as also asthetisch ansprechend sind.
 
-## Basis-Fokus-Effekte
+## Base-Fokus-effects
 
 ```html
 <!-- Standard-Fokusringe -->
 <button class="focus-ring">Standard Fokusring</button>
-<button class="focus-ring-sm">Kleiner Fokusring</button>
-<button class="focus-ring-lg">Großer Fokusring</button>
+<button class="focus-ring-sm">smaller Fokusring</button>
+<button class="focus-ring-lg">Grosser Fokusring</button>
 
 <!-- Fokusring-Styles -->
 <button class="focus-ring-solid">Durchgezogener Fokusring</button>
@@ -26,91 +26,91 @@ Fokus-Effekte sind entscheidend für die Accessibility und User-friendliness, be
 
 <!-- Gerundete Fokusringe -->
 <button class="focus-ring-rounded">Abgerundeter Fokusring</button>
-<button class="focus-ring-pill">Pillenförmiger Fokusring</button>
-<button class="focus-ring-circle">Kreisförmiger Fokusring</button>
+<button class="focus-ring-pill">Pillenformiger Fokusring</button>
+<button class="focus-ring-circle">Kreisformiger Fokusring</button>
 ```
 
-## Farbvarianten für Fokusringe
+## Farbvarianten for Fokusringe
 
 ```html
 <!-- Farbige Fokusringe -->
-<button class="focus-ring-primary">Primärfarbener Fokusring</button>
-<button class="focus-ring-secondary">Sekundärfarbener Fokusring</button>
+<button class="focus-ring-primary">Primarfarbener Fokusring</button>
+<button class="focus-ring-secondary">Sekundarfarbener Fokusring</button>
 <button class="focus-ring-accent">Akzentfarbener Fokusring</button>
 <button class="focus-ring-success">Erfolgs-Fokusring</button>
 <button class="focus-ring-warning">Warnungs-Fokusring</button>
-<button class="focus-ring-error">Fehler-Fokusring</button>
-<button class="focus-ring-info">Info-Fokusring</button>
+<button class="focus-ring-error">errors-Fokusring</button>
+<button class="focus-ring-info">info-Fokusring</button>
 
-<!-- Mit Transparenz -->
+<!-- with transparency -->
 <button class="focus-ring-primary-translucent">Halbtransparenter Fokusring</button>
 ```
 
-## Offset- und Inset-Fokusringe
+## Offset- and Inset-Fokusringe
 
 ```html
-<!-- Offset-Fokusringe (außerhalb des Elements) -->
+<!-- Offset-Fokusringe (ausserhalb des Elements) -->
 <button class="focus-ring-offset">Offset-Fokusring</button>
-<button class="focus-ring-offset-sm">Kleiner Offset-Fokusring</button>
-<button class="focus-ring-offset-lg">Großer Offset-Fokusring</button>
+<button class="focus-ring-offset-sm">smaller Offset-Fokusring</button>
+<button class="focus-ring-offset-lg">Grosser Offset-Fokusring</button>
 
-<!-- Inset-Fokusringe (innerhalb des Elements) -->
+<!-- Inset-Fokusringe (within des Elements) -->
 <button class="focus-ring-inset">Inset-Fokusring</button>
-<button class="focus-ring-inset-sm">Kleiner Inset-Fokusring</button>
-<button class="focus-ring-inset-lg">Großer Inset-Fokusring</button>
+<button class="focus-ring-inset-sm">smaller Inset-Fokusring</button>
+<button class="focus-ring-inset-lg">Grosser Inset-Fokusring</button>
 ```
 
 ## Effektvolle Fokusringe
 
 ```html
-<!-- Glow-Effekt bei Fokus -->
+<!-- Glow-effect at Fokus -->
 <button class="focus-glow">Leuchtender Fokuseffekt</button>
-<button class="focus-glow-primary">Primärfarbener Leuchteffekt</button>
+<button class="focus-glow-primary">Primarfarbener Leuchteffekt</button>
 <button class="focus-glow-subtle">Subtiler Leuchteffekt</button>
 <button class="focus-glow-intense">Intensiver Leuchteffekt</button>
 
-<!-- Schatten-Effekt bei Fokus -->
-<button class="focus-shadow">Schatten-Fokuseffekt</button>
-<button class="focus-shadow-sm">Kleiner Schatten-Fokuseffekt</button>
-<button class="focus-shadow-lg">Großer Schatten-Fokuseffekt</button>
+<!-- shadow-effect at Fokus -->
+<button class="focus-shadow">shadow-Fokuseffekt</button>
+<button class="focus-shadow-sm">smaller shadow-Fokuseffekt</button>
+<button class="focus-shadow-lg">Grosser shadow-Fokuseffekt</button>
 
-<!-- Puls-Effekt bei Fokus -->
+<!-- Puls-effect at Fokus -->
 <button class="focus-pulse">Pulsierender Fokuseffekt</button>
 <button class="focus-pulse-subtle">Subtiles Pulsieren</button>
 <button class="focus-pulse-intense">Intensives Pulsieren</button>
 ```
 
-## Transformationseffekte bei Fokus
+## Transformationseffekte at Fokus
 
 ```html
-<!-- Skalierung bei Fokus -->
-<button class="focus-scale">Skaliert bei Fokus</button>
-<button class="focus-scale-sm">Skaliert leicht bei Fokus</button>
-<button class="focus-scale-lg">Skaliert stark bei Fokus</button>
+<!-- Skalierung at Fokus -->
+<button class="focus-scale">Skaliert at Fokus</button>
+<button class="focus-scale-sm">Skaliert leicht at Fokus</button>
+<button class="focus-scale-lg">Skaliert stark at Fokus</button>
 
-<!-- Verschiebung bei Fokus -->
-<button class="focus-lift">Hebt sich bei Fokus</button>
-<button class="focus-lift-sm">Hebt sich leicht bei Fokus</button>
-<button class="focus-lift-lg">Hebt sich stark bei Fokus</button>
+<!-- Verschiebung at Fokus -->
+<button class="focus-lift">Hebt oneself at Fokus</button>
+<button class="focus-lift-sm">Hebt oneself leicht at Fokus</button>
+<button class="focus-lift-lg">Hebt oneself stark at Fokus</button>
 ```
 
 ## Componentsspezifische Fokuseffekte
 
 ```html
 <!-- Form-Inputer -->
-<input type="text" class="focus-field" placeholder="Input mit Fokuseffekt">
+<input type="text" class="focus-field" placeholder="Input with Fokuseffekt">
 <input type="text" class="focus-field-underline" placeholder="Unterstrichener Fokuseffekt">
 <input type="text" class="focus-field-float-label" placeholder="Schwebende Beschriftung">
 
-<!-- Cardn und Container -->
+<!-- Cardn and containers -->
 <div class="card focus-card">
-  <div class="card-content">Card mit Fokuseffekt</div>
+  <div class="card-content">Card with Fokuseffekt</div>
 </div>
 
-<!-- Links und Navigationselemente -->
-<a href="#" class="focus-link">Link mit Fokuseffekt</a>
-<a href="#" class="focus-link-underline">Link mit Unterstreichungseffekt</a>
-<a href="#" class="focus-link-highlight">Link mit Hervorhebungseffekt</a>
+<!-- links and Navigationselemente -->
+<a href="#" class="focus-link">link with Fokuseffekt</a>
+<a href="#" class="focus-link-underline">link with Unterstreichungseffekt</a>
+<a href="#" class="focus-link-highlight">link with Hervorhebungseffekt</a>
 ```
 
 ## Animierte Fokuseffekte
@@ -121,10 +121,10 @@ Fokus-Effekte sind entscheidend für die Accessibility und User-friendliness, be
 <button class="focus-ring-animated-dash">Animierter gestrichelter Ring</button>
 <button class="focus-ring-animated-pulse">Animierter pulsierender Ring</button>
 
-<!-- Fokuseffekt-Übergänge -->
-<button class="focus-transition-fast">Schneller Fokusübergang</button>
-<button class="focus-transition-slow">Langsamer Fokusübergang</button>
-<button class="focus-transition-bounce">Federnder Fokusübergang</button>
+<!-- Fokuseffekt-Ubergange -->
+<button class="focus-transition-fast">Schneller Fokusubergang</button>
+<button class="focus-transition-slow">Langsamer Fokusubergang</button>
+<button class="focus-transition-bounce">Federnder Fokusubergang</button>
 ```
 
 ## Fortgeschrittene Fokuseffekte
@@ -134,10 +134,10 @@ Fokus-Effekte sind entscheidend für die Accessibility und User-friendliness, be
 <button class="focus-multi-layer">Mehrschichtiger Fokuseffekt</button>
 
 <!-- Kombinierte Fokuseffekte -->
-<button class="focus-ring-primary focus-glow">Fokusring mit Glow-Effekt</button>
-<button class="focus-scale focus-shadow">Skalierung mit Schatten</button>
+<button class="focus-ring-primary focus-glow">Fokusring with Glow-effect</button>
+<button class="focus-scale focus-shadow">Skalierung with shadow</button>
 
-<!-- Kontextabhängige Fokuseffekte -->
+<!-- Kontextabhangige Fokuseffekte -->
 <div class="focus-context-light">
   <button class="focus-ring">Fokusring im hellen Kontext</button>
 </div>
@@ -146,13 +146,13 @@ Fokus-Effekte sind entscheidend für die Accessibility und User-friendliness, be
 </div>
 ```
 
-## Anpassung über CSS Variables
+## Customization over CSS Variables
 
-Die Fokuseffekte können über CSS Variables angepasst werden:
+the Fokuseffekte can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Fokusring-Basis-Parameter */
+  /* Fokusring-Base-parameter */
   --focus-ring-width: 2px;
   --focus-ring-offset: 2px;
   --focus-ring-color: var(--color-primary);
@@ -165,12 +165,12 @@ Die Fokuseffekte können über CSS Variables angepasst werden:
   --focus-ring-radius-lg: 8px;
   --focus-ring-radius-full: 9999px;
   
-  /* Fokus-Glow-Parameter */
+  /* Fokus-Glow-parameter */
   --focus-glow-size-sm: 0 0 0 3px rgba(var(--color-primary-rgb), 0.25);
   --focus-glow-size-md: 0 0 0 4px rgba(var(--color-primary-rgb), 0.35);
   --focus-glow-size-lg: 0 0 0 6px rgba(var(--color-primary-rgb), 0.45);
   
-  /* Fokus-Transition-Parameter */
+  /* Fokus-transition-parameter */
   --focus-transition-duration: 0.2s;
   --focus-transition-timing: ease-out;
   --focus-transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -187,28 +187,28 @@ Die Fokuseffekte können über CSS Variables angepasst werden:
 }
 ```
 
-## Nur-Tastatur-Fokuseffekte
+## only-Tastatur-Fokuseffekte
 
-Ein wichtiger Aspekt der Accessibility ist die Unterscheidung zwischen Maus- und Tastaturfokus mit `:focus-visible`:
+a wichtiger Aspekt the Accessibility ist the Unterscheidung between Maus- and Tastaturfokus with `:focus-visible`:
 
 ```css
-/* Example für einen Fokuseffekt, der nur bei Tastaturfokus sichtbar ist */
+/* Example for einen Fokuseffekt, the only at Tastaturfokus sichtbar ist */
 .focus-keyboard-only:focus {
-  /* Kein sichtbarer Fokuseffekt bei Mausklick */
+  /* no sichtbarer Fokuseffekt at Mausklick */
   outline: none;
 }
 
 .focus-keyboard-only:focus-visible {
-  /* Fokuseffekt bei Tastaturfokus */
+  /* Fokuseffekt at Tastaturfokus */
   outline: var(--focus-ring-width) var(--focus-ring-style) var(--focus-ring-color);
   outline-offset: var(--focus-ring-offset);
 }
 ```
 
-## Accessibility-Überlegungen
+## Accessibility-Uberlegungen
 
 ```css
-/* Hoher Kontrast für bessere Sichtbarkeit */
+/* Hoher Kontrast for bessere visibility */
 @media (prefers-contrast: more) {
   :root {
     --focus-ring-width: 3px;
@@ -218,7 +218,7 @@ Ein wichtiger Aspekt der Accessibility ist die Unterscheidung zwischen Maus- und
   }
 }
 
-/* Reduzierte Bewegung berücksichtigen */
+/* Reduzierte Bewegung berucksichtigen */
 @media (prefers-reduced-motion: reduce) {
   .focus-ring-animated,
   .focus-ring-animated-dash,
@@ -238,11 +238,11 @@ Ein wichtiger Aspekt der Accessibility ist die Unterscheidung zwischen Maus- und
 }
 ```
 
-## Form-Element-Fokus
+## Form-element-Fokus
 
 ```html
-<!-- Textfelder -->
-<input type="text" class="input focus-field" placeholder="Textfeld">
+<!-- text fields -->
+<input type="text" class="input focus-field" placeholder="text field">
 
 <!-- Checkboxer -->
 <select class="select focus-field">
@@ -253,21 +253,21 @@ Ein wichtiger Aspekt der Accessibility ist die Unterscheidung zwischen Maus- und
 <!-- Textbereiche -->
 <textarea class="textarea focus-field" placeholder="Textbereich"></textarea>
 
-<!-- Checkboxen und Radiobuttons -->
-<label class="checkbox-container">
+<!-- checkboxes and radio buttons -->
+<label class="checkbox-containers">
   <input type="checkbox" class="checkbox focus-control">
-  <span class="checkbox-label">Checkbox mit Fokuseffekt</span>
+  <span class="checkbox-label">checkbox with Fokuseffekt</span>
 </label>
 
-<label class="radio-container">
+<label class="radio-containers">
   <input type="radio" class="radio focus-control">
-  <span class="radio-label">Radio mit Fokuseffekt</span>
+  <span class="radio-label">Radio with Fokuseffekt</span>
 </label>
 ```
 
 ## Dynamische Fokus-Indikatoren
 
-Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
+Fokus-Indikatoren, the oneself on ihre Umgebung customize:
 
 ```css
 /* Dynamischer Fokusindikator-Kontrast */
@@ -277,7 +277,7 @@ Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--focus-color) 40%, transparent);
 }
 
-/* Automatische Farbinvertierung auf dunklem Hintergrund */
+/* Automatische Farbinvertierung on dunklem background */
 .focus-auto-invert:focus-visible {
   outline-color: color-mix(in srgb, var(--color-background, white) 100%, invert);
 }
@@ -285,13 +285,13 @@ Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
 
 ## Praktische Examples
 
-### Barrierefreies Navigationsmenü
+### Barrierefreies Navigationsmenu
 
 ```html
 <nav class="main-nav">
   <ul>
     <li><a href="#" class="nav-link focus-link-underline">Startseite</a></li>
-    <li><a href="#" class="nav-link focus-link-underline">Über uns</a></li>
+    <li><a href="#" class="nav-link focus-link-underline">over us</a></li>
     <li><a href="#" class="nav-link focus-link-underline">Dienstleistungen</a></li>
     <li><a href="#" class="nav-link focus-link-underline">Kontakt</a></li>
   </ul>
@@ -313,7 +313,7 @@ Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
   </div>
   
   <div class="form-group">
-    <label class="checkbox-container">
+    <label class="checkbox-containers">
       <input type="checkbox" class="checkbox focus-control">
       <span class="checkbox-label">Angemeldet bleiben</span>
     </label>
@@ -325,7 +325,7 @@ Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
 </form>
 ```
 
-### Interaktive Cardn mit Fokuseffekten
+### Interaktive Cardn with Fokuseffekten
 
 ```html
 <div class="card-grid">
@@ -333,7 +333,7 @@ Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
     <img src="product1.jpg" alt="Produkt 1">
     <div class="card-content">
       <h3>Produkt 1</h3>
-      <p>Beschreibung für Produkt 1</p>
+      <p>Description for Produkt 1</p>
       <button class="button focus-ring-primary">Details</button>
     </div>
   </div>
@@ -342,36 +342,36 @@ Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
     <img src="product2.jpg" alt="Produkt 2">
     <div class="card-content">
       <h3>Produkt 2</h3>
-      <p>Beschreibung für Produkt 2</p>
+      <p>Description for Produkt 2</p>
       <button class="button focus-ring-primary">Details</button>
     </div>
   </div>
 </div>
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Einige Fokuseffekte können Auswirkungen auf die Performance haben:
+some Fokuseffekte can Auswirkungen on the Performance have:
 
-1. **Animierte Schatteneffekte** können die Rendering-Performance beeinträchtigen
-2. **Verwenden Sie `box-shadow` statt `filter`** für bessere Performance bei Glow-Effekten
-3. **Vorsicht bei großen Elementen** mit komplexen Fokuseffekten
-4. **`will-change` sparsam einsetzen** bei sehr komplexen Animationen, wenn nötig
+1. **Animierte Schatteneffekte** can the Rendering-Performance beeintrachtigen
+2. **use them `box-shadow` instead of `filter`** for bessere Performance at Glow-Effekten
+3. **Vorsicht at sizes Elementen** with komplexen Fokuseffekten
+4. **`will-change` sparsam einsetzen** at very komplexen animations, if notig
 
 ## Best Practices
 
-1. **Tastaturzugänglichkeit**: Stellen Sie sicher, dass alle interaktiven Elemente mit der Tastatur fokussierbar sind
-2. **Deutliche Sichtbarkeit**: Fokuseffekte sollten deutlich sichtbar sein, mit ausreichendem Kontrast
-3. **Consistency**: Verwenden Sie ähnliche Fokuseffekte für ähnliche Elemente
-4. **Niemals entfernen**: Entfernen Sie nie den Fokuseffekt ohne einen geeigneten Ersatz anzubieten (`outline: none` ist nur mit alternativem Fokusindikator erlaubt)
-5. **Unterscheide `:focus` und `:focus-visible`**: Nutzen Sie `:focus-visible` für Effekte, die nur bei Tastaturfokus sichtbar sein sollen
+1. **Tastaturzuganglichkeit**: ensure, that all interaktiven elements with the Tastatur fokussierbar sind
+2. **Deutliche visibility**: Fokuseffekte should deutlich sichtbar be, with ausreichendem Kontrast
+3. **Consistency**: use them ahnliche Fokuseffekte for ahnliche elements
+4. **Niemals remove**: remove them nie den Fokuseffekt without einen geeigneten Ersatz anzubieten (`outline: none` ist only with alternativem Fokusindikator erlaubt)
+5. **Unterscheide `:focus` and `:focus-visible`**: use them `:focus-visible` for effects, the only at Tastaturfokus sichtbar be should
 
-### Example für korrekte Fokus-Behandlung:
+### Example for korrekte Fokus-Behandlung:
 
 ```css
-/* FALSCH: Fokus ohne Ersatz entfernt */
+/* FALSCH: Fokus without Ersatz entfernt */
 .button-bad:focus {
-  outline: none; /* Kein Ersatz angeboten! */
+  outline: none; /* no Ersatz angeboten! */
 }
 
 /* RICHTIG: Alternativer Fokusindikator */
@@ -380,21 +380,21 @@ Einige Fokuseffekte können Auswirkungen auf die Performance haben:
   box-shadow: var(--focus-glow-size-md);
 }
 
-/* BESSER: Nur bei Tastaturfokus */
+/* better: only at Tastaturfokus */
 .button-best:focus {
-  outline: none; /* Standard-Fokus entfernen */
+  outline: none; /* Standard-Fokus remove */
 }
 
 .button-best:focus-visible {
-  box-shadow: var(--focus-glow-size-md); /* Eigener Indikator für Tastaturfokus */
+  box-shadow: var(--focus-glow-size-md); /* Eigener Indikator for Tastaturfokus */
 }
 ```
 
-## Integration mit anderen Components
+## Integration with anderen Components
 
-Fokuseffekte sollten in der gesamten Anwendung konsistent und zugänglich sein. Dies gilt für alle interaktiven Elemente:
+Fokuseffekte should in the gesamten Application konsistent and zuganglich be. Dies gilt for all interaktiven elements:
 
-1. **Buttons und Links**: Deutliche Fokuseffekte
-2. **Formelemente**: Konsistente Darstellung bei Fokus
-3. **Cardn und andere Container**: Wenn fokussierbar, mit klarem Fokusindikator
-4. **Benutzerdefinierte Components**: ARIA-konforme Fokussteuerung und visuelle Indikatoren 
+1. **buttons and links**: Deutliche Fokuseffekte
+2. **form elements**: Konsistente Display at Fokus
+3. **Cardn and others containers**: if fokussierbar, with klarem Fokusindikator
+4. **Benutzerdefinierte Components**: ARIA-konforme Fokussteuerung and visuelle Indikatoren 

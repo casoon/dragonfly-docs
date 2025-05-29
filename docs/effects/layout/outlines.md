@@ -1,53 +1,53 @@
-# Outline-Effekte
+# Outline-effects
 
-Outline-Effekte werden verwendet, um Elemente zu betonen oder hervorzuheben, ohne den Fluss oder das Layout der Seite zu beeinflussen. Die `@casoon/ui-lib` bietet verschiedene Outline-Effekte, die dazu beitragen, wichtige Elemente hervorzuheben und visuelle Hierarchien zu verdeutlichen.
+Outline-effects become verwendet, um elements to betonen or hervorzuheben, without den Fluss or the layout the Seite to beeinflussen. the `@casoon/ui-lib` bietet verschiedene Outline-effects, the for that beitragen, wichtige elements hervorzuheben and visuelle Hierarchien to verdeutlichen.
 
 ## Basic Usage
 
-Der grundlegende Outline-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Outline-effect kann on jedes element angewendet become:
 
 ```html
-<div class="outline">Element mit Outline</div>
+<div class="outline">element with Outline</div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Outline-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Outline-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.outline` | Basisklasse für Outline-Effekte |
-| `.outline-thin` | Dünne Outline |
+| `.outline` | Basisklasse for Outline-effects |
+| `.outline-thin` | Dunne Outline |
 | `.outline-thick` | Dicke Outline |
 | `.outline-dashed` | Gestrichelte Outline |
 | `.outline-dotted` | Gepunktete Outline |
 | `.outline-double` | Doppelte Outline |
-| `.outline-inset` | Nach innen versetzte Outline |
-| `.outline-outset` | Nach außen versetzte Outline |
+| `.outline-inset` | after innen versetzte Outline |
+| `.outline-outset` | after aussen versetzte Outline |
 | `.outline-glow` | Leuchtende Outline |
 | `.outline-pulse` | Pulsierende Outline |
 | `.outline-colored` | Farbige Outline |
-| `.outline-offset` | Outline mit Abstand |
-| `.outline-focus` | Outline bei Fokus |
-| `.outline-hover` | Outline bei Hover |
-| `.outline-active` | Outline bei Aktivierung |
+| `.outline-offset` | Outline with spacing |
+| `.outline-focus` | Outline at Fokus |
+| `.outline-hover` | Outline at Hover |
+| `.outline-active` | Outline at Aktivierung |
 
 ## Variants
 
 ### Dicke-Variants
 
-Verschiedene Dicken für Outlines:
+Verschiedene Dicken for Outlines:
 
 ```html
-<div class="outline-thin">Dünne Outline</div>
+<div class="outline-thin">Dunne Outline</div>
 <div class="outline">Standard Outline</div>
 <div class="outline-thick">Dicke Outline</div>
 <div class="outline-extra-thick">Extra dicke Outline</div>
 ```
 
-### Stil-Variants
+### Style-Variants
 
-Verschiedene Styles für Outlines:
+Verschiedene Styles for Outlines:
 
 ```html
 <div class="outline-solid">Durchgezogene Outline</div>
@@ -62,16 +62,16 @@ Verschiedene Styles für Outlines:
 
 ### Farb-Variants
 
-Verschiedene Colors für Outlines:
+Verschiedene Colors for Outlines:
 
 ```html
-<div class="outline-primary">Primärfarbene Outline</div>
-<div class="outline-secondary">Sekundärfarbene Outline</div>
+<div class="outline-primary">Primarfarbene Outline</div>
+<div class="outline-secondary">Sekundarfarbene Outline</div>
 <div class="outline-accent">Akzentfarbene Outline</div>
 <div class="outline-success">Erfolgs-Outline</div>
 <div class="outline-warning">Warnungs-Outline</div>
-<div class="outline-error">Fehler-Outline</div>
-<div class="outline-info">Info-Outline</div>
+<div class="outline-error">errors-Outline</div>
+<div class="outline-info">info-Outline</div>
 <div class="outline-light">Helle Outline</div>
 <div class="outline-dark">Dunkle Outline</div>
 <div class="outline-contrast">Kontrastreiche Outline</div>
@@ -79,22 +79,22 @@ Verschiedene Colors für Outlines:
 
 ### Offset-Variants
 
-Outlines mit verschiedenen Abständen zum Element:
+Outlines with verschiedenen spacings zum element:
 
 ```html
-<div class="outline-offset-sm">Kleiner Abstand</div>
+<div class="outline-offset-sm">smaller spacing</div>
 <div class="outline-offset">Standardabstand</div>
-<div class="outline-offset-lg">Großer Abstand</div>
-<div class="outline-offset-xl">Extra großer Abstand</div>
+<div class="outline-offset-lg">Grosser spacing</div>
+<div class="outline-offset-xl">Extra grosser spacing</div>
 ```
 
-### Spezielle Effekte
+### Spezielle effects
 
-Besondere Outline-Effekte für mehr Aufmerksamkeit:
+Besondere Outline-effects for more Aufmerksamkeit:
 
 ```html
 <div class="outline-glow">Leuchtende Outline</div>
-<div class="outline-glow-primary">Primärfarbig leuchtende Outline</div>
+<div class="outline-glow-primary">Primarfarbig leuchtende Outline</div>
 <div class="outline-pulse">Pulsierende Outline</div>
 <div class="outline-pulse-slow">Langsam pulsierende Outline</div>
 <div class="outline-pulse-fast">Schnell pulsierende Outline</div>
@@ -105,81 +105,81 @@ Besondere Outline-Effekte für mehr Aufmerksamkeit:
 
 ### Ecken-Variants
 
-Outlines mit unterschiedlich geformten Ecken:
+Outlines with unterschiedlich geformten Ecken:
 
 ```html
 <div class="outline-rounded">Abgerundete Outline</div>
 <div class="outline-rounded-sm">Leicht abgerundete Outline</div>
 <div class="outline-rounded-lg">Stark abgerundete Outline</div>
-<div class="outline-pill">Pillenförmige Outline</div>
-<div class="outline-circle">Kreisförmige Outline</div>
+<div class="outline-pill">Pillenformige Outline</div>
+<div class="outline-circle">Kreisformige Outline</div>
 ```
 
-## Interaktive Outline-Effekte
+## Interaktive Outline-effects
 
-Outlines, die auf Benutzerinteraktionen reagieren:
+Outlines, the on Benutzerinteraktionen reagieren:
 
 ```html
-<div class="outline-hover">Outline bei Hover</div>
-<div class="outline-focus">Outline bei Fokus</div>
-<div class="outline-active">Outline bei Aktivierung</div>
+<div class="outline-hover">Outline at Hover</div>
+<div class="outline-focus">Outline at Fokus</div>
+<div class="outline-active">Outline at Aktivierung</div>
 
-<div class="outline-hover-glow">Leuchtende Outline bei Hover</div>
-<div class="outline-focus-pulse">Pulsierende Outline bei Fokus</div>
-<div class="outline-active-thick">Dicke Outline bei Aktivierung</div>
+<div class="outline-hover-glow">Leuchtende Outline at Hover</div>
+<div class="outline-focus-pulse">Pulsierende Outline at Fokus</div>
+<div class="outline-active-thick">Dicke Outline at Aktivierung</div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Outline-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Outline-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Buttons mit Outlines
+### buttons with Outlines
 
 ```html
-<button class="btn outline-hover-primary">Button mit Hover-Outline</button>
-<button class="btn outline-focus-glow">Button mit Fokus-Glow</button>
+<button class="btn outline-hover-primary">button with Hover-Outline</button>
+<button class="btn outline-focus-glow">button with Fokus-Glow</button>
 ```
 
-### Cardn mit Outlines
+### Cardn with Outlines
 
 ```html
 <div class="card outline">
-  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-header">Cardnuberschrift</div>
   <div class="card-body">Cardninhalt</div>
 </div>
 
 <div class="card outline-hover-accent">
-  <div class="card-header">Cardnüberschrift</div>
-  <div class="card-body">Card mit Hover-Outline</div>
+  <div class="card-header">Cardnuberschrift</div>
+  <div class="card-body">Card with Hover-Outline</div>
 </div>
 ```
 
-### Formelemente mit Outlines
+### form elements with Outlines
 
 ```html
-<input type="text" class="outline-focus-success" placeholder="Fokus zeigt Erfolg">
+<input type="text" class="outline-focus-success" placeholder="Fokus zeigt success">
 <select class="outline-focus-primary">
   <option>Option 1</option>
   <option>Option 2</option>
 </select>
 ```
 
-### Container mit Outlines
+### containers with Outlines
 
 ```html
-<div class="container outline-dashed outline-primary">
-  <h2>Container mit gestrichelter Outline</h2>
+<div class="containers outline-dashed outline-primary">
+  <h2>containers with gestrichelter Outline</h2>
   <p>Containerinhalt...</p>
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Die Outline-Effekte können über CSS Variables angepasst werden:
+the Outline-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Grundlegende Outline-Parameter */
+  /* Grundlegende Outline-parameter */
   --outline-width: 1px;
   --outline-style: solid;
   --outline-color: currentColor;
@@ -219,15 +219,15 @@ Die Outline-Effekte können über CSS Variables angepasst werden:
 
 ## Outline vs. Border
 
-Ein wichtiger Unterschied zwischen `outline` und `border` in CSS:
+a wichtiger Unterschied between `outline` and `border` in CSS:
 
 ```html
 <div class="comparison">
   <div class="with-border">
-    Element mit Border nimmt Platz im Layout ein
+    element with Border nimmt Platz im layout a
   </div>
   <div class="with-outline">
-    Element mit Outline nimmt keinen zusätzlichen Platz ein
+    element with Outline nimmt keinen zusatzlichen Platz a
   </div>
 </div>
 ```
@@ -235,22 +235,22 @@ Ein wichtiger Unterschied zwischen `outline` und `border` in CSS:
 ```css
 .with-border {
   border: 3px solid red;
-  /* Erhöht die Elementgröße um 6px (3px auf jeder Seite) */
+  /* Erhoht the Elementgrosse um 6px (3px on every Seite) */
 }
 
 .with-outline {
   outline: 3px solid blue;
-  /* Beeinflusst nicht die Elementgröße oder das Layout */
+  /* Beeinflusst not the Elementgrosse or the layout */
 }
 ```
 
 ## Accessibility
 
-Bei der Usage von Outline-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Outline-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Fokusindikator**: Entfernen Sie niemals die Outline für Fokuszustände ohne einen alternativen, gut sichtbaren Ersatz
-2. **Kontrast**: Stellen Sie sicher, dass Outlines ausreichenden Kontrast zum Hintergrund und zum Element bieten
-3. **Consistency**: Verwenden Sie konsistente Outline-Styles für ähnliche Interaktionen
+1. **Fokusindikator**: remove them niemals the Outline for Fokuszustande without einen alternativen, good sichtbaren Ersatz
+2. **Kontrast**: ensure, that Outlines ausreichenden Kontrast zum background and zum element bieten
+3. **Consistency**: use them konsistente Outline-Styles for ahnliche interactions
 
 ```html
 <!-- Barrierefreier Fokusindikator -->
@@ -262,11 +262,11 @@ Bei der Usage von Outline-Effekten sollten folgende Accessibilitysaspekte berüc
   .outline-focus-enhanced:focus {
     outline: 3px solid var(--outline-primary-color);
     outline-offset: 2px;
-    /* Zusätzliche Verbesserung für bessere Sichtbarkeit */
+    /* Zusatzliche Verbesserung for bessere visibility */
     box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.4);
   }
   
-  /* Keine Outline bei Mausklick, aber sichtbar bei Tastaturfokus */
+  /* no Outline at Mausklick, but sichtbar at Tastaturfokus */
   .outline-focus-enhanced:focus:not(:focus-visible) {
     outline: none;
     box-shadow: none;
@@ -282,10 +282,10 @@ Bei der Usage von Outline-Effekten sollten folgende Accessibilitysaspekte berüc
 
 ## JavaScript-Integration
 
-Für dynamische Outline-Steuerung kann JavaScript verwendet werden:
+for dynamische Outline-Steuerung kann JavaScript verwendet become:
 
 ```javascript
-// Dynamisches Hinzufügen/Entfernen von Outlines
+// Dynamisches add/remove from Outlines
 function toggleOutline(elementId, outlineClass) {
   const element = document.getElementById(elementId);
   
@@ -296,28 +296,28 @@ function toggleOutline(elementId, outlineClass) {
   }
 }
 
-// Outline basierend auf Validierung
+// Outline basierend on validation
 function validateInput(input) {
   const value = input.value;
   
-  // Alle vorherigen Outline-Klassen entfernen
+  // all vorherigen Outline-classes remove
   input.classList.remove('outline-success', 'outline-error');
   
   if (value.length === 0) {
-    // Neutral, keine spezielle Outline
+    // Neutral, no spezielle Outline
     return;
   }
   
   if (value.length >= 5) {
-    // Gültige Eingabe
+    // Gultige input
     input.classList.add('outline-success');
   } else {
-    // Ungültige Eingabe
+    // Ungultige input
     input.classList.add('outline-error');
   }
 }
 
-// Event-Listener für Echtzeit-Validierung
+// Event-Listener for Echtzeit-validation
 document.querySelectorAll('.validate-length').forEach(input => {
   input.addEventListener('input', function() {
     validateInput(this);
@@ -325,7 +325,7 @@ document.querySelectorAll('.validate-length').forEach(input => {
 });
 ```
 
-## Animierte Outline-Effekte
+## Animierte Outline-effects
 
 ```css
 /* Pulsierende Outline */
@@ -359,21 +359,21 @@ document.querySelectorAll('.validate-length').forEach(input => {
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Outline-Effekte sind mit allen modernen Browsern kompatibel. Einige Effekte haben jedoch Einschränkungen in älteren Browsern.
+the meisten Outline-effects sind with allen modernen Browsern kompatibel. some effects have however Einschrankungen in alteren Browsern.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | Grundlegende Outlines | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Outline-Offset | ✓ | ✓ | ✓ | ✓ | Nein |
 | Outline-Radius | Nein | Nein | Nein | Nein | Nein |
 | Gradient Outlines | Nein | Nein | Nein | Nein | Nein |
 
-**Hinweis:** Die CSS-Eigenschaft `outline-radius` wird von keinem Browser standardmäßig unterstützt. Für abgerundete Outlines wird in der Bibliothek eine Kombination aus `box-shadow` und anderen Techniken verwendet.
+**Note:** the CSS-Property `outline-radius` wird from keinem Browser by default unterstutzt. for abgerundete Outlines wird in the Bibliothek a Kombination aus `box-shadow` and anderen Techniken verwendet.
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Border-Effekte](/docs/effects/visual/borders.md) - Randstyling für Elemente
-- [Focus-Effekte](/docs/effects/interaction/focus.md) - Fokuseffekte für interaktive Elemente
-- [Glow-Effekte](/docs/effects/visual/glow.md) - Leuchteffekte für Elemente 
+- [Border-effects](/docs/effects/visual/borders.md) - Randstyling for elements
+- [Focus-effects](/docs/effects/interaction/focus.md) - Fokuseffekte for interaktive elements
+- [Glow-effects](/docs/effects/visual/glow.md) - Leuchteffekte for elements 

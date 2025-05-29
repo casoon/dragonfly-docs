@@ -1,105 +1,105 @@
 ---
-title: Position Containers
-category: Layout
+title: position Containers
+category: layout
 ---
 
-# Position Containers
+# position Containers
 
-Die Casoon UI Library bietet spezielle Container-Variants, die mit Positionierungseigenschaften erweitert wurden. Diese Position Containers erlauben es, komplexe Layouts mit präziser Kontrolle über die Positionierung zu erstellen, ohne die grundlegenden Prinzipien des Container Systems zu verletzen.
+the Casoon UI Library bietet spezielle containers-Variants, the with Positionierungseigenschaften erweitert wurden. these position Containers erlauben it, komplexe layouts with praziser Kontrolle over the Positionierung to create, without the grundlegenden Prinzipien des containers Systems to verletzen.
 
 ## Overview
 
-Position Containers kombinieren die Vorteile des Container Systems mit den folgenden Positionierungsfunktionen:
+position Containers combine the Vorteile des containers Systems with den folgenden Positionierungsfunktionen:
 
-1. **Relative Positionierung** - Container als Bezugspunkt für absolut positionierte Elemente
-2. **Absolute Positionierung** - Container, die aus dem normalen Dokumentfluss herausgenommen werden
-3. **Sticky Positionierung** - Container, die ab einem bestimmten Scroll-Punkt fixiert werden
-4. **Fixed Positionierung** - Container, die relativ zum Viewport fixiert sind
-5. **Z-Index Management** - Kontrolle über die Stapelreihenfolge von Containern
+1. **Relative Positionierung** - containers as Bezugspunkt for absolut positionierte elements
+2. **Absolute Positionierung** - containers, the aus dem normalen Dokumentfluss herausgenommen become
+3. **Sticky Positionierung** - containers, the ab einem bestimmten Scroll-Punkt fixiert become
+4. **Fixed Positionierung** - containers, the relativ zum viewport fixiert sind
+5. **Z-Index Management** - Kontrolle over the Stapelreihenfolge from Containern
 
-## Relative Container
+## Relative containers
 
-Relative Container dienen als Bezugspunkt für absolut positionierte Kind-Elemente, behalten aber ihren Platz im normalen Dokumentfluss bei:
+Relative containers dienen as Bezugspunkt for absolut positionierte Kind-elements, behalten but ihren Platz im normalen Dokumentfluss at:
 
 ```html
-<div class="container container-relative">
-  <!-- Normal positionierter Inhalt -->
-  <p>Dieser Text behält seine normale Position.</p>
+<div class="containers containers-relative">
+  <!-- Normal positionierter content -->
+  <p>this Text behalt seine normale position.</p>
   
-  <!-- Absolut positioniertes Element innerhalb des relativen Containers -->
+  <!-- Absolut positioniertes element within des relativen Containers -->
   <div class="absolute top-0 right-0">
-    Dieses Element wird absolut zur oberen rechten Ecke des Containers positioniert.
+    this element wird absolut zur oberen rechten Ecke des Containers positioniert.
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.container-relative {
+.containers-relative {
   position: relative;
 }
 ```
 
-## Absolute Container
+## Absolute containers
 
-Absolute Container werden aus dem normalen Dokumentfluss herausgenommen und relativ zum nächsten positionierten Elternelement platziert:
+Absolute containers become aus dem normalen Dokumentfluss herausgenommen and relativ zum nachsten positionierten Elternelement platziert:
 
 ```html
-<div class="container-relative">
-  <!-- Dieser Container wird absolut positioniert -->
-  <div class="container container-absolute top-0 left-0 right-0">
-    <p>Dieser Container überlagert den Inhalt und erstreckt sich über die gesamte Breite.</p>
+<div class="containers-relative">
+  <!-- this containers wird absolut positioniert -->
+  <div class="containers containers-absolute top-0 left-0 right-0">
+    <p>this containers uberlagert den content and erstreckt oneself over the gesamte width.</p>
   </div>
   
-  <!-- Weiterer Inhalt im relativen Container -->
-  <p>Normaler Inhalt unter dem absoluten Container.</p>
+  <!-- Weiterer content im relativen containers -->
+  <p>Normaler content under dem absoluten containers.</p>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.container-absolute {
+.containers-absolute {
   position: absolute;
 }
 ```
 
-## Sticky Container
+## Sticky containers
 
-Sticky Container bleiben im normalen Dokumentfluss, bis sie einen bestimmten Scroll-Punkt erreichen, und werden dann fixiert:
+Sticky containers bleiben im normalen Dokumentfluss, until them einen bestimmten Scroll-Punkt erreichen, and become dann fixiert:
 
 ```html
-<div class="container-query">
-  <!-- Dieser Container klebt am oberen Rand, wenn er beim Scrollen erreicht wird -->
-  <header class="container container-sticky top-0">
-    <h1>Sticky Header</h1>
-    <nav>Navigation bleibt sichtbar beim Scrollen</nav>
+<div class="containers-query">
+  <!-- this containers klebt am oberen margin, if he beim Scrollen erreicht wird -->
+  <header class="containers containers-sticky top-0">
+    <h1>Sticky header</h1>
+    <nav>navigation bleibt sichtbar beim Scrollen</nav>
   </header>
   
   <main>
     <!-- Hauptinhalt scrollt normal -->
-    <p>Normaler Inhalt, der unter dem sticky Header scrollt.</p>
+    <p>Normaler content, the under dem sticky header scrollt.</p>
   </main>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.container-sticky {
+.containers-sticky {
   position: sticky;
 }
 ```
 
-## Fixed Container
+## Fixed containers
 
-Fixed Container werden komplett aus dem Dokumentfluss herausgenommen und relativ zum Viewport positioniert:
+Fixed containers become komplett aus dem Dokumentfluss herausgenommen and relativ zum viewport positioniert:
 
 ```html
-<div class="container container-fixed bottom-0 left-0 right-0">
+<div class="containers containers-fixed bottom-0 left-0 right-0">
   <div class="cookie-banner">
-    <p>Diese Website verwendet Cookies.</p>
+    <p>these Website verwendet Cookies.</p>
     <button>Akzeptieren</button>
   </div>
 </div>
@@ -107,96 +107,96 @@ Fixed Container werden komplett aus dem Dokumentfluss herausgenommen und relativ
 <!-- Restlicher Seiteninhalt -->
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.container-fixed {
+.containers-fixed {
   position: fixed;
 }
 ```
 
-## Z-Index Container
+## Z-Index containers
 
-Container mit definierten Z-Index-Werten für die Kontrolle der Stapelreihenfolge:
+containers with definierten Z-Index-Werten for the Kontrolle the Stapelreihenfolge:
 
 ```html
-<div class="container container-relative">
-  <!-- Basis-Content -->
+<div class="containers containers-relative">
+  <!-- Base-Content -->
   <div class="content">Hauptinhalt</div>
   
-  <!-- Overlay mit niedrigerem Z-Index -->
-  <div class="container container-absolute container-z-10 inset-0">
-    Hintergrund-Overlay
+  <!-- Overlay with niedrigerem Z-Index -->
+  <div class="containers containers-absolute containers-z-10 inset-0">
+    background-Overlay
   </div>
   
-  <!-- Modal mit höherem Z-Index -->
-  <div class="container container-absolute container-z-20 inset-center">
-    Modal-Inhalt
+  <!-- modal with hoherem Z-Index -->
+  <div class="containers containers-absolute containers-z-20 inset-center">
+    modal-content
   </div>
 </div>
 ```
 
-Implementierung:
+Implementation:
 
 ```css
-.container-z-0 {
+.containers-z-0 {
   z-index: var(--z-0);
 }
 
-.container-z-10 {
+.containers-z-10 {
   z-index: var(--z-10);
 }
 
-.container-z-20 {
+.containers-z-20 {
   z-index: var(--z-20);
 }
 
-.container-z-30 {
+.containers-z-30 {
   z-index: var(--z-30);
 }
 
-.container-z-40 {
+.containers-z-40 {
   z-index: var(--z-40);
 }
 
-.container-z-50 {
+.containers-z-50 {
   z-index: var(--z-50);
 }
 
-.container-z-modal {
+.containers-z-modal {
   z-index: var(--z-modal);
 }
 ```
 
 ## Positionierungshilfen
 
-Das System bietet zusätzliche Hilfsklassen für die Positionierung:
+the system bietet zusatzliche Hilfsklassen for the Positionierung:
 
 ```html
-<div class="container container-relative">
-  <!-- An allen Seiten anliegend -->
-  <div class="container-absolute inset-0">
-    Füllt den gesamten Container
+<div class="containers containers-relative">
+  <!-- on allen Seiten anliegend -->
+  <div class="containers-absolute inset-0">
+    Fullt den gesamten containers
   </div>
   
   <!-- Horizontal zentriert, oben anliegend -->
-  <div class="container-absolute inset-x-center top-0">
-    Horizontal zentrierter Header
+  <div class="containers-absolute inset-x-center top-0">
+    Horizontal zentrierter header
   </div>
   
   <!-- Vertikal zentriert, rechts anliegend -->
-  <div class="container-absolute inset-y-center right-0">
+  <div class="containers-absolute inset-y-center right-0">
     Rechte Seitenleiste
   </div>
   
-  <!-- Vollständig zentriert -->
-  <div class="container-absolute inset-center">
-    Zentrierter Modal-Dialog
+  <!-- Vollstandig zentriert -->
+  <div class="containers-absolute inset-center">
+    Zentrierter modal-dialog
   </div>
 </div>
 ```
 
-Implementierung einiger Positionierungshilfen:
+Implementation einiger Positionierungshilfen:
 
 ```css
 .inset-0 {
@@ -223,158 +223,158 @@ Implementierung einiger Positionierungshilfen:
 }
 ```
 
-## Kombinierte Container-Positionierung
+## Kombinierte containers-Positionierung
 
-Position Container können mit anderen Container-Klassen kombiniert werden:
+position containers can with anderen containers-classes kombiniert become:
 
 ```html
-<!-- Container mit fester Größe, der am oberen Rand fixiert ist -->
-<div class="container container-md container-sticky top-0">
+<!-- containers with fester size, the am oberen margin fixiert ist -->
+<div class="containers containers-md containers-sticky top-0">
   <header>
-    <h1>Sticky Header mit mittlerer Breite</h1>
+    <h1>Sticky header with mittlerer width</h1>
   </header>
 </div>
 
-<!-- Absolut positionierter Container mit großer Breite -->
-<div class="container container-lg container-absolute inset-center">
+<!-- Absolut positionierter containers with grosser width -->
+<div class="containers containers-lg containers-absolute inset-center">
   <div class="modal">
-    <h2>Großer Modal-Dialog</h2>
-    <p>Dieser Modal-Dialog verwendet einen großen Container und ist zentriert positioniert.</p>
+    <h2>Grosser modal-dialog</h2>
+    <p>this modal-dialog verwendet einen sizes containers and ist zentriert positioniert.</p>
   </div>
 </div>
 ```
 
 ## Layer Management
 
-Für komplexe Layouts mit mehreren überlagerten Containern ist ein strukturiertes Layer-Management wichtig:
+for komplexe layouts with mehreren uberlagerten Containern ist a strukturiertes Layer-Management important:
 
 ```html
-<!-- Basis-Layer -->
-<div class="container container-z-0">
+<!-- Base-Layer -->
+<div class="containers containers-z-0">
   <main>Hauptinhalt</main>
 </div>
 
-<!-- UI-Elemente Layer -->
-<div class="container container-sticky container-z-10 top-0">
-  <header>Sticky Header</header>
+<!-- UI-elements Layer -->
+<div class="containers containers-sticky containers-z-10 top-0">
+  <header>Sticky header</header>
 </div>
 
 <!-- Overlay Layer -->
-<div class="container container-fixed container-z-20 inset-0 bg-overlay">
+<div class="containers containers-fixed containers-z-20 inset-0 bg-overlay">
   Transparenter Overlay
 </div>
 
-<!-- Modal Layer -->
-<div class="container container-fixed container-z-30 inset-center container-sm">
-  <div class="modal">Modal-Dialog</div>
+<!-- modal Layer -->
+<div class="containers containers-fixed containers-z-30 inset-center containers-sm">
+  <div class="modal">modal-dialog</div>
 </div>
 
 <!-- Notification Layer -->
-<div class="container container-fixed container-z-40 top-4 right-4 container-sm">
-  <div class="notification">Benachrichtigung</div>
+<div class="containers containers-fixed containers-z-40 top-4 right-4 containers-sm">
+  <div class="notification">notification</div>
 </div>
 ```
 
-## Responsive Positionierung
+## responsive Positionierung
 
-Position Container können responsiv angepasst werden:
+position containers can responsiv angepasst become:
 
 ```html
-<!-- Auf mobilen Geräten relativ, auf Desktop fixiert -->
-<div class="container container-relative container-md-fixed top-md-0 left-md-0">
+<!-- on mobilen Geraten relativ, on Desktop fixiert -->
+<div class="containers containers-relative containers-md-fixed top-md-0 left-md-0">
   <nav>
-    Navigation ist auf mobilen Geräten im normalen Fluss,
-    wird auf Desktop-Geräten fixiert
+    navigation ist on mobilen Geraten im normalen Fluss,
+    wird on Desktop-Geraten fixiert
   </nav>
 </div>
 
-<!-- Auf mobilen Geräten am unteren Rand, auf Desktop an der Seite -->
-<div class="container container-fixed bottom-0 right-0 bottom-md-auto right-md-0 top-md-50">
+<!-- on mobilen Geraten am unteren margin, on Desktop on the Seite -->
+<div class="containers containers-fixed bottom-0 right-0 bottom-md-auto right-md-0 top-md-50">
   <div class="floating-action">
-    Aktions-Button wechselt die Position je nach Bildschirmgröße
+    Aktions-button wechselt the position je after Bildschirmgrosse
   </div>
 </div>
 ```
 
 ## Best Practices
 
-1. **Position Container sparsam einsetzen** - Übermäßige Usage kann zu komplexen und schwer wartbaren Layouts führen.
-2. **Z-Index-Strategie definieren** - Legen Sie eine klare Strategie für Z-Index-Werte fest, um Konflikte zu vermeiden.
-3. **Accessibility beachten** - Stellen Sie sicher, dass fixierte oder absolut positionierte Elemente nicht die Bedienbarkeit beeinträchtigen.
-4. **Scrollverhalten testen** - Überprüfen Sie, wie sich sticky und fixed Container beim Scrollen verhalten, besonders auf mobilen Geräten.
-5. **Vermeiden von Z-Index-Kriegen** - Verwenden Sie vordefinierte Z-Index-Variablen statt harter Zahlenwerte.
-6. **Responsives Verhalten berücksichtigen** - Positionierung kann auf verschiedenen Bildschirmgrößen unterschiedlich sein.
-7. **Inhaltsüberläufe beachten** - Stellen Sie sicher, dass positionierte Container mit übergroßem Inhalt korrekt umgehen.
+1. **position containers sparsam einsetzen** - Ubermassige Usage kann to komplexen and schwer wartbaren layouts fuhren.
+2. **Z-Index-Strategie define** - Legen them a klare Strategie for Z-Index-values fest, um Konflikte to vermeiden.
+3. **Accessibility note** - ensure, that fixierte or absolut positionierte elements not the Bedienbarkeit beeintrachtigen.
+4. **Scrollverhalten testen** - Uberprufen them, how oneself sticky and fixed containers beim Scrollen behavior, besonders on mobilen Geraten.
+5. **Vermeiden from Z-Index-Kriegen** - use them vordefinierte Z-Index-variables instead of harter Zahlenwerte.
+6. **Responsives behavior berucksichtigen** - Positionierung kann on verschiedenen Bildschirmgrossen unterschiedlich be.
+7. **Inhaltsuberlaufe note** - ensure, that positionierte containers with ubergrossem content korrekt umgehen.
 
 ## Use Cases
 
-### Sticky Header
+### Sticky header
 
 ```html
-<header class="container container-sticky top-0 container-z-10">
+<header class="containers containers-sticky top-0 containers-z-10">
   <div class="flex justify-between align-center">
     <div class="logo">Logo</div>
-    <nav>Navigation</nav>
+    <nav>navigation</nav>
   </div>
 </header>
 ```
 
-### Fixiertes Sidebar-Menü
+### Fixiertes sidebar-Menu
 
 ```html
-<div class="container-relative">
-  <!-- Sidebar, die an der Seite fixiert bleibt -->
-  <aside class="container-sticky top-20 left-0 w-64">
+<div class="containers-relative">
+  <!-- sidebar, the on the Seite fixiert bleibt -->
+  <aside class="containers-sticky top-20 left-0 w-64">
     <nav>
       <ul>
-        <li><a href="#">Navigation 1</a></li>
-        <li><a href="#">Navigation 2</a></li>
+        <li><a href="#">navigation 1</a></li>
+        <li><a href="#">navigation 2</a></li>
       </ul>
     </nav>
   </aside>
   
-  <!-- Hauptinhalt, der neben der Sidebar scrollt -->
-  <main class="container ml-64">
-    <p>Hauptinhalt, der neben der fixierten Sidebar scrollt.</p>
+  <!-- Hauptinhalt, the next to the sidebar scrollt -->
+  <main class="containers ml-64">
+    <p>Hauptinhalt, the next to the fixierten sidebar scrollt.</p>
   </main>
 </div>
 ```
 
-### Modal-Dialog
+### modal-dialog
 
 ```html
-<div class="container container-fixed inset-0 container-z-modal bg-overlay-50">
-  <div class="container container-sm container-absolute inset-center">
+<div class="containers containers-fixed inset-0 containers-z-modal bg-overlay-50">
+  <div class="containers containers-sm containers-absolute inset-center">
     <div class="modal">
-      <h2>Modal-Titel</h2>
-      <p>Modal-Inhalt</p>
-      <button>Schließen</button>
+      <h2>modal-Titel</h2>
+      <p>modal-content</p>
+      <button>close</button>
     </div>
   </div>
 </div>
 ```
 
-### Toast-Benachrichtigungen
+### Toast-notifications
 
 ```html
-<div class="container container-fixed bottom-4 right-4 container-z-40">
+<div class="containers containers-fixed bottom-4 right-4 containers-z-40">
   <div class="toast">
-    <p>Aktion erfolgreich durchgeführt!</p>
+    <p>Aktion erfolgreich durchgefuhrt!</p>
   </div>
 </div>
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Position Container sind gut unterstützt in modernen Browsern:
+position containers sind good unterstutzt in modernen Browsern:
 
 | Feature | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|
-| Relative/Absolute Positionierung | Alle | Alle | Alle | Alle |
-| Fixed Positionierung | Alle | Alle | Alle | Alle |
+| Relative/Absolute Positionierung | all | all | all | all |
+| Fixed Positionierung | all | all | all | all |
 | Sticky Positionierung | 56+ | 32+ | 13+ | 16+ |
-| Transform für Zentrierung | 36+ | 16+ | 9+ | 12+ |
+| Transform for centering | 36+ | 16+ | 9+ | 12+ |
 
 ## Zusammenfassung
 
-Position Containers erweitern das Basis-Container System der Casoon UI Library um leistungsstarke Positionierungsfunktionen. Sie ermöglichen komplexe, überlagerte Layouts, fixierte UI-Elemente und präzise Platzierung von Inhalten, während sie gleichzeitig die Vorteile des Container Systems beibehalten. Durch die Kombination von Container-Sizes, Positionierungsklassen und Z-Index-Management können anspruchsvolle Layouts auf strukturierte und wartbare Weise erstellt werden. 
+position Containers extend the Base-containers system the Casoon UI Library um leistungsstarke Positionierungsfunktionen. them ermoglichen komplexe, uberlagerte layouts, fixierte UI-elements and prazise Platzierung from Inhalten, wahrend them gleichzeitig the Vorteile des containers Systems beibehalten. through the Kombination from containers-Sizes, Positionierungsklassen and Z-Index-Management can anspruchsvolle layouts on strukturierte and wartbare Weise erstellt become. 

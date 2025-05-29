@@ -1,15 +1,15 @@
 ---
-title: Color System
+title: Color system
 outline: deep
 ---
 
-# Color System
+# Color system
 
-The Color System in Casoon UI provides a comprehensive and accessible color palette designed for consistent user interfaces. It includes primary, secondary, and neutral colors with various shades and accents.
+The Color system in Casoon UI provides a comprehensive and accessible color palette designed for consistent user interfaces. It includes primary, secondary, and neutral colors with various shades and accents.
 
 ## Installation
 
-The Color System is part of the Casoon UI Library.
+The Color system is part of the Casoon UI Library.
 
 ```bash
 # Installation of the entire library
@@ -245,7 +245,7 @@ For advanced color manipulation, the library includes color mix utilities:
 
 ## Browser Compatibility
 
-The Color System works in all modern browsers:
+The Color system works in all modern browsers:
 
 | Feature | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|

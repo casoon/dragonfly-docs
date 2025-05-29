@@ -210,7 +210,7 @@ Button groups can be used to group related actions.
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Button module */
+/* Button modules */
 @import '@casoon/ui-lib/components/button.css';
 ```
 
@@ -306,13 +306,13 @@ The Button component can be customized using CSS variables:
 - **Icon buttons**: Use for common actions with universally recognized icons
 - **Button groups**: Use for related actions or options
 
-### Best Practices für sauberes CSS
+### Best Practices for sauberes CSS
 
 - **Selektoren kurz & sprechend halten**: Verwende klare, semantische Klassennamen
-- **Tiefe Verschachtelung vermeiden**: Maximiere die CSS-Spezifität nur wenn nötig
-- **Wiederholbare Styles mit Utility-Klassen lösen**: Nutze gemeinsame Stilelemente für Konsistenz
-- **Komplexe Selektoren kommentieren**: Erkläre den Zweck komplizierter CSS-Regeln
-- **Kompatibilität in verschiedenen Browsern prüfen**: Stelle sicher, dass deine Styles in allen unterstützten Browsern korrekt dargestellt werden
+- **Tiefe Verschachtelung vermeiden**: Maximiere die CSS-Spezifitat nur wenn notig
+- **Wiederholbare Styles mit Utility-Klassen losen**: Nutze gemeinsame Stilelemente for Konsistenz
+- **Komplexe Selektoren kommentieren**: Erklare den Zweck komplizierter CSS-Regeln
+- **Kompatibilitat in verschiedenen Browsern prufen**: Stelle sicher, dass deine Styles in allen unterstutzten Browsern korrekt dargestellt werden
 
 ## Integration
 

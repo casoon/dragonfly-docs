@@ -3,80 +3,80 @@ title: Glass Effects
 category: Effects
 ---
 
-# Glass-Effekte
+# Glass-effects
 
-Die Glass-Effekte der Casoon UI Library bieten moderne, elegante Glasmorphismus-Styleslemente, die Transparenz, Unschärfe und subtile Lichteffekte kombinieren, um eine zeitgemäße und elegante Benutzeroberfläche zu schaffen.
+the Glass-effects the Casoon UI Library bieten moderne, elegante Glasmorphismus-Styleslemente, the transparency, Unscharfe and subtile Lichteffekte combine, um a zeitgemasse and elegante Benutzeroberflache to schaffen.
 
-## Überblick
+## Uberblick
 
-Der Glasmorphismus (auch "Frosted Glass" oder "Glaseffekt" genannt) ist ein Design-Trend, der transparente, verschwommene Elemente verwendet, um den Eindruck von durchscheinendem Glas zu erzeugen. Diese Effekte verleihen Ihrer Benutzeroberfläche Tiefe und Leichtigkeit und eignen sich hervorragend für moderne, minimalistische Designs.
+the Glasmorphismus (also "Frosted Glass" or "Glaseffekt" genannt) ist a design-Trend, the transparente, verschwommene elements verwendet, um den Eindruck from durchscheinendem Glas to erzeugen. these effects verleihen Ihrer Benutzeroberflache Tiefe and Leichtigkeit and eignen oneself hervorragend for moderne, minimalistische designs.
 
 ## Installation
 
-Importieren Sie das Glass-Effekte-Modul über CSS:
+import them the Glass-effects-modules over CSS:
 
 ```css
 @import '@casoon/ui-lib/effects/glass.css';
 ```
 
-## Verfügbare Klassen
+## Verfugbare classes
 
-### Grundlegende Glass-Effekte
+### Grundlegende Glass-effects
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.glass` | Grundlegender Glaseffekt mit Transparenz und Unschärfe |
+| `.glass` | Grundlegender Glaseffekt with transparency and Unscharfe |
 | `.glass-light` | Hellere Variante des Glaseffekts |
 | `.glass-dark` | Dunklere Variante des Glaseffekts |
-| `.glass-frosted` | Stark verschwommener "Frosted Glass"-Effekt |
-| `.glass-thin` | Dünnerer Glaseffekt mit weniger Opazität |
-| `.glass-thick` | Dickerer Glaseffekt mit mehr Opazität |
+| `.glass-frosted` | Stark verschwommener "Frosted Glass"-effect |
+| `.glass-thin` | Dunnerer Glaseffekt with less opacity |
+| `.glass-thick` | Dickerer Glaseffekt with more opacity |
 
 ### Glass-Farbvarianten
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.glass-primary` | Glaseffekt mit Primärfarben-Tönung |
-| `.glass-secondary` | Glaseffekt mit Sekundärfarben-Tönung |
-| `.glass-success` | Glaseffekt mit Erfolgsfarben-Tönung |
-| `.glass-warning` | Glaseffekt mit Warnfarben-Tönung |
-| `.glass-danger` | Glaseffekt mit Gefahrenfarben-Tönung |
-| `.glass-info` | Glaseffekt mit Informationsfarben-Tönung |
-| `.glass-blue` | Glaseffekt mit blauer Tönung |
-| `.glass-green` | Glaseffekt mit grüner Tönung |
-| `.glass-red` | Glaseffekt mit roter Tönung |
-| `.glass-purple` | Glaseffekt mit violetter Tönung |
-| `.glass-amber` | Glaseffekt mit bernsteinfarbener Tönung |
-| `.glass-teal` | Glaseffekt mit türkisfarbener Tönung |
+| `.glass-primary` | Glaseffekt with Primarfarben-Tonung |
+| `.glass-secondary` | Glaseffekt with Sekundarfarben-Tonung |
+| `.glass-success` | Glaseffekt with Erfolgsfarben-Tonung |
+| `.glass-warning` | Glaseffekt with Warnfarben-Tonung |
+| `.glass-danger` | Glaseffekt with Gefahrenfarben-Tonung |
+| `.glass-info` | Glaseffekt with Informationsfarben-Tonung |
+| `.glass-blue` | Glaseffekt with blauer Tonung |
+| `.glass-green` | Glaseffekt with gruner Tonung |
+| `.glass-red` | Glaseffekt with roter Tonung |
+| `.glass-purple` | Glaseffekt with violetter Tonung |
+| `.glass-amber` | Glaseffekt with bernsteinfarbener Tonung |
+| `.glass-teal` | Glaseffekt with turkisfarbener Tonung |
 
-### Glass-Elemente
+### Glass-elements
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.glass-card` | Card mit Glaseffekt |
-| `.glass-button` | Button mit Glaseffekt |
-| `.glass-nav` | Navigationsleiste mit Glaseffekt |
-| `.glass-sidebar` | Seitenleiste mit Glaseffekt |
-| `.glass-modal` | Modal mit Glaseffekt |
-| `.glass-dropdown` | Dropdown-Menü mit Glaseffekt |
-| `.glass-tooltip` | Tooltip mit Glaseffekt |
-| `.glass-form` | Form mit Glaseffekt für Inputer |
-| `.glass-header` | Header-Bereich mit Glaseffekt |
-| `.glass-footer` | Footer-Bereich mit Glaseffekt |
-| `.glass-badge` | Badge mit Glaseffekt |
-| `.glass-alert` | Benachrichtigung mit Glaseffekt |
+| `.glass-card` | Card with Glaseffekt |
+| `.glass-button` | button with Glaseffekt |
+| `.glass-nav` | Navigationsleiste with Glaseffekt |
+| `.glass-sidebar` | Seitenleiste with Glaseffekt |
+| `.glass-modal` | modal with Glaseffekt |
+| `.glass-dropdown` | Dropdown-Menu with Glaseffekt |
+| `.glass-tooltip` | tooltip with Glaseffekt |
+| `.glass-form` | Form with Glaseffekt for Inputer |
+| `.glass-header` | header-area with Glaseffekt |
+| `.glass-footer` | footer-area with Glaseffekt |
+| `.glass-badge` | badge with Glaseffekt |
+| `.glass-alert` | notification with Glaseffekt |
 
 ### Glass-Modifikatoren
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.glass-border` | Fügt einen feinen Rand zum Glaseffekt hinzu |
-| `.glass-rounded` | Fügt abgerundete Ecken zum Glaseffekt hinzu |
-| `.glass-shadow` | Fügt einen subtilen Schatten zum Glaseffekt hinzu |
-| `.glass-hover` | Ändert den Glaseffekt bei Hover |
-| `.glass-glow` | Fügt einen Leuchteffekt zum Glaseffekt hinzu |
-| `.glass-reflect` | Fügt einen leichten Reflexionseffekt hinzu |
-| `.glass-backdrop` | Glaseffekt für Hintergrundelemente |
+| `.glass-border` | Fugt einen feinen margin zum Glaseffekt hinzu |
+| `.glass-rounded` | Fugt abgerundete Ecken zum Glaseffekt hinzu |
+| `.glass-shadow` | Fugt einen subtilen shadow zum Glaseffekt hinzu |
+| `.glass-hover` | Andert den Glaseffekt at Hover |
+| `.glass-glow` | Fugt einen Leuchteffekt zum Glaseffekt hinzu |
+| `.glass-reflect` | Fugt einen leichten Reflexionseffekt hinzu |
+| `.glass-backdrop` | Glaseffekt for Hintergrundelemente |
 
 ## Examples
 
@@ -88,15 +88,15 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
     <h3>Glass Card</h3>
   </div>
   <div class="glass-card-body">
-    <p>Dieser Inhalt wird in einer eleganten Glaskarte dargestellt. Der Hintergrund schimmert durch die transparente Oberfläche.</p>
+    <p>this content wird in einer eleganten Glaskarte dargestellt. the background schimmert through the transparente Oberflache.</p>
   </div>
   <div class="glass-card-footer">
-    <button class="glass-button glass-primary">Mehr erfahren</button>
+    <button class="glass-button glass-primary">more erfahren</button>
   </div>
 </div>
 
 <style>
-  /* Hintergrund für den Glaseffekt */
+  /* background for den Glaseffekt */
   body {
     background-image: url('gradient-background.jpg');
     background-size: cover;
@@ -149,7 +149,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
     
     <ul class="glass-nav-menu">
       <li class="glass-nav-item"><a href="#" class="glass-nav-link active">Home</a></li>
-      <li class="glass-nav-item"><a href="#" class="glass-nav-link">Über uns</a></li>
+      <li class="glass-nav-item"><a href="#" class="glass-nav-link">over us</a></li>
       <li class="glass-nav-item"><a href="#" class="glass-nav-link">Dienstleistungen</a></li>
       <li class="glass-nav-item"><a href="#" class="glass-nav-link">Portfolio</a></li>
       <li class="glass-nav-item"><a href="#" class="glass-nav-link">Kontakt</a></li>
@@ -222,7 +222,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
     </div>
     <div class="glass-panel-content">
       <h3 class="glass-panel-title">1,248</h3>
-      <p class="glass-panel-subtitle">Neue Benutzer</p>
+      <p class="glass-panel-subtitle">Neue user</p>
     </div>
   </div>
   
@@ -252,25 +252,25 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
     </div>
     <div class="glass-panel-content">
       <h3 class="glass-panel-title">12</h3>
-      <p class="glass-panel-subtitle">Benachrichtigungen</p>
+      <p class="glass-panel-subtitle">notifications</p>
     </div>
   </div>
   
   <div class="glass-card glass-shadow glass-wide">
     <div class="glass-card-header">
-      <h3>Aktivitätsübersicht</h3>
+      <h3>Aktivitatsubersicht</h3>
     </div>
     <div class="glass-card-body">
       <div class="glass-chart">
-        <!-- Hier könnte ein Chart eingebunden werden -->
-        <div class="glass-chart-placeholder">Aktivitätsdaten werden hier angezeigt</div>
+        <!-- Hier konnte a Chart eingebunden become -->
+        <div class="glass-chart-placeholder">Aktivitatsdaten become hier angezeigt</div>
       </div>
     </div>
   </div>
   
   <div class="glass-card glass-shadow">
     <div class="glass-card-header">
-      <h3>Neueste Aktivitäten</h3>
+      <h3>Neueste Aktivitaten</h3>
     </div>
     <div class="glass-card-body">
       <ul class="glass-activity-list">
@@ -280,7 +280,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
           </div>
           <div class="glass-activity-content">
             <p class="glass-activity-text">Neues Dokument erstellt</p>
-            <span class="glass-activity-time">Vor 5 Minuten</span>
+            <span class="glass-activity-time">before 5 Minuten</span>
           </div>
         </li>
         <li class="glass-activity-item">
@@ -289,7 +289,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
           </div>
           <div class="glass-activity-content">
             <p class="glass-activity-text">Profil aktualisiert</p>
-            <span class="glass-activity-time">Vor 2 Stunden</span>
+            <span class="glass-activity-time">before 2 Stunden</span>
           </div>
         </li>
         <li class="glass-activity-item">
@@ -298,7 +298,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
           </div>
           <div class="glass-activity-content">
             <p class="glass-activity-text">Neue Nachricht erhalten</p>
-            <span class="glass-activity-time">Vor 1 Tag</span>
+            <span class="glass-activity-time">before 1 tag</span>
           </div>
         </li>
       </ul>
@@ -398,7 +398,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
 ### Glass-Login-Form
 
 ```html
-<div class="glass-container">
+<div class="glass-containers">
   <div class="glass-card glass-form glass-rounded glass-shadow">
     <div class="glass-card-header">
       <h2>Anmelden</h2>
@@ -412,7 +412,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
         
         <div class="glass-form-group">
           <label for="password">Passwort</label>
-          <input type="password" id="password" class="glass-input" placeholder="Ihr Passwort">
+          <input type="password" id="password" class="glass-input" placeholder="her Passwort">
         </div>
         
         <div class="glass-form-group glass-checkbox">
@@ -426,13 +426,13 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
       </form>
     </div>
     <div class="glass-card-footer">
-      <p>Noch kein Konto? <a href="#" class="glass-link">Registrieren</a></p>
+      <p>Noch no Konto? <a href="#" class="glass-link">Registrieren</a></p>
     </div>
   </div>
 </div>
 
 <style>
-  .glass-container {
+  .glass-containers {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -496,13 +496,13 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
 </style>
 ```
 
-## Anpassung
+## Customization
 
-Die Glass-Effekte können über CSS Variables angepasst werden:
+the Glass-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Basis-Glaseffekt-Parameter */
+  /* Base-Glaseffekt-parameter */
   --glass-opacity: 0.15;
   --glass-blur: 10px;
   --glass-saturation: 180%;
@@ -525,14 +525,14 @@ Die Glass-Effekte können über CSS Variables angepasst werden:
   --glass-danger-color: rgba(239, 68, 68, 0.3);
   --glass-info-color: rgba(14, 165, 233, 0.3);
   
-  /* Elemente */
+  /* elements */
   --glass-border-width: 1px;
   --glass-border-radius: 8px;
   --glass-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
   --glass-glow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Dunkles Farbschema */
+/* Dunkles color scheme */
 @media (prefers-color-scheme: dark) {
   :root {
     --glass-background: rgba(16, 18, 27, 0.4);
@@ -541,9 +541,9 @@ Die Glass-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Der grundlegende Glaseffekt wird durch folgende CSS-Eigenschaften erzeugt:
+the grundlegende Glaseffekt wird through folgende CSS-properties erzeugt:
 
 ```css
 .glass {
@@ -580,20 +580,20 @@ Der grundlegende Glaseffekt wird durch folgende CSS-Eigenschaften erzeugt:
 
 ## Accessibility
 
-Bei der Usage von Glass-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Glass-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass trotz Transparenz ein ausreichender Kontrast zwischen Text und Hintergrund besteht
-2. **Lesbarkeit**: Vermeiden Sie zu starke Unschärfe-Effekte, die die Lesbarkeit beeinträchtigen könnten
-3. **Alternativ-Ansicht**: Bieten Sie eine nicht-transparente Alternative für Nutzer, die Schwierigkeiten mit transparenten Oberflächen haben
+1. **Kontrast**: ensure, that despite transparency a ausreichender Kontrast between Text and background besteht
+2. **Lesbarkeit**: Vermeiden them to strength Unscharfe-effects, the the Lesbarkeit beeintrachtigen konnten
+3. **Alternativ-Ansicht**: Bieten them a not-transparente Alternative for Nutzer, the Schwierigkeiten with transparenten Oberflachen have
 
 ```css
-/* Verbesserte Lesbarkeit für Text in Glaseffekten */
+/* Verbesserte Lesbarkeit for Text in Glaseffekten */
 .glass-text {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Alternative Styles für reduzierte Transparenz */
+/* Alternative Styles for reduzierte transparency */
 @media (prefers-reduced-transparency: reduce) {
   .glass,
   .glass-light,
@@ -608,30 +608,30 @@ Bei der Usage von Glass-Effekten sollten folgende Accessibilitysaspekte berücks
 
 ## Performanceoptimierung
 
-Glaseffekte können die Rendering-Performance beeinflussen. Beachten Sie diese Tipps für optimale Leistung:
+Glaseffekte can the Rendering-Performance beeinflussen. note these Tipps for optimale Leistung:
 
-1. **Begrenzen Sie die Fläche**: Wenden Sie Glaseffekte nur auf kleinere UI-Elemente an, nicht auf große Flächen
-2. **Reduzieren Sie die Anzahl**: Nutzen Sie nicht zu viele Glaselemente auf einer Seite
-3. **Will-change**: Nutzen Sie `will-change: backdrop-filter` für verbesserte Performance bei Animationen
-4. **Layer-Promotion**: Verwenden Sie `transform: translateZ(0)` für Hardware-Beschleunigung
+1. **Begrenzen them the Flache**: Wenden them Glaseffekte only on kleinere UI-elements on, not on size Flachen
+2. **Reduzieren them the Anzahl**: use them not to many Glaselemente on einer Seite
+3. **Will-change**: use them `will-change: backdrop-filter` for verbesserte Performance at animations
+4. **Layer-Promotion**: use them `transform: translateZ(0)` for Hardware-Beschleunigung
 
 ```css
-/* Performance-Optimierung für Glaseffekte */
+/* Performance-Optimierung for Glaseffekte */
 .glass-optimized {
   will-change: backdrop-filter;
   transform: translateZ(0);
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Glass-Effekte werden von den meisten modernen Browsern unterstützt.
+the Glass-effects become from den meisten modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | backdrop-filter | ✓ | ✓* | ✓ | ✓ | ✗ |
 | -webkit-backdrop-filter | ✓ | ✗ | ✓ | ✓ | ✗ |
 
-\* In Firefox muss backdrop-filter über die Einstellung `layout.css.backdrop-filter.enabled` aktiviert werden.
+\* in Firefox muss backdrop-filter over the Setting `layout.css.backdrop-filter.enabled` aktiviert become.
 
-Für Browser, die keine `backdrop-filter` unterstützen, wird ein Fallback bereitgestellt, der eine ähnliche Ästhetik mit reduzierter Transparenz bietet. 
+for Browser, the no `backdrop-filter` unterstutzen, wird a Fallback bereitgestellt, the a ahnliche Asthetik with reduzierter transparency bietet. 

@@ -1,53 +1,53 @@
 ---
-title: Color System
+title: Color system
 category: Guide
 ---
 
-# Color System
+# Color system
 
-Das Color System der Casoon UI Library bietet eine umfassende und flexible Methode zur Verwaltung und Anwendung von Colors in Ihrer Benutzeroberfläche. Es kombiniert ein gut strukturiertes Token-System mit modernen CSS-Techniken für maximale Flexibility.
+the Color system the Casoon UI Library bietet a umfassende and flexible Method zur Verwaltung and Application from Colors in Ihrer Benutzeroberflache. it kombiniert a good strukturiertes Token-system with modernen CSS-Techniken for maximale Flexibility.
 
 ## Importing Modules
 
-Das komplette Color System wird automatisch geladen, wenn Sie die `core.css` Datei importieren:
+the komplette Color system wird automatisch geladen, If you the `core.css` file import:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 ```
 
-Die Reihenfolge der Layer ist entscheidend, wobei das `colors` Layer nach den grundlegenden Tokens geladen wird:
+the Reihenfolge the Layer ist entscheidend, wobei the `colors` Layer after den grundlegenden Tokens geladen wird:
 
 ```css
 @layer reset,
-       tokens,              /* Grundlegende Design Tokens */
+       tokens,              /* Grundlegende design Tokens */
        core,
        logical-properties,
-       colors,              /* Basisfarben und Farbklassen */
-       color-mix,           /* Farbmischungen und -varianten */
-       ...                  /* weitere Layer */
+       colors,              /* Basisfarben and Farbklassen */
+       color-mix,           /* Farbmischungen and -varianten */
+       ...                  /* additional Layer */
 ```
 
 ## Farbpalette
 
-Die Farbpalette der Casoon UI Library besteht aus mehreren Arten von Farbdefinitionen:
+the Farbpalette the Casoon UI Library besteht aus mehreren Arten from Farbdefinitionen:
 
-### Primäre Farbpalette
+### Primare Farbpalette
 
-Die Basisfarben definieren die grundlegende Identität Ihrer Anwendung:
+the Basisfarben define the grundlegende Identitat Ihrer Application:
 
 ```css
 :root {
-  /* Primärfarbe und Variants */
+  /* Primarfarbe and Variants */
   --color-primary: #4a90e2;
   --color-primary-light: #6ba5e7;
   --color-primary-dark: #3570b2;
 
-  /* Sekundärfarbe und Variants */
+  /* Sekundarfarbe and Variants */
   --color-secondary: #6c757d;
   --color-secondary-light: #868e96;
   --color-secondary-dark: #495057;
 
-  /* Akzentfarbe und Variants */
+  /* Akzentfarbe and Variants */
   --color-accent: #f8a100;
   --color-accent-light: #ffc107;
   --color-accent-dark: #e67700;
@@ -56,21 +56,21 @@ Die Basisfarben definieren die grundlegende Identität Ihrer Anwendung:
 
 ### Funktionale Colors
 
-Für semantische Bedeutungen gibt es spezielle Funktionsfarben:
+for semantische Bedeutungen gibt it spezielle Funktionsfarben:
 
 ```css
 :root {
-  /* Erfolg */
+  /* success */
   --color-success: #28a745;
   --color-success-light: #48c664;
   --color-success-dark: #1e7e34;
 
-  /* Warnung */
+  /* warning */
   --color-warning: #ffc107;
   --color-warning-light: #ffda6a;
   --color-warning-dark: #e0a800;
 
-  /* Fehler */
+  /* errors */
   --color-error: #dc3545;
   --color-error-light: #e4606d;
   --color-error-dark: #bd2130;
@@ -84,7 +84,7 @@ Für semantische Bedeutungen gibt es spezielle Funktionsfarben:
 
 ### Neutrale Colors
 
-Eine umfassende Grau-Palette dient als Basis für Text, Hintergründe und Ränder:
+a umfassende Grau-Palette dient as Base for Text, Hintergrunde and Rander:
 
 ```css
 :root {
@@ -100,7 +100,7 @@ Eine umfassende Grau-Palette dient als Basis für Text, Hintergründe und Rände
   --color-gray-900: #111827;
   --color-gray-950: #030712;
 
-  /* Grundlegende Schwarz/Weiß-Töne */
+  /* Grundlegende Schwarz/Weiss-Tone */
   --color-white: #ffffff;
   --color-black: #000000;
 }
@@ -108,7 +108,7 @@ Eine umfassende Grau-Palette dient als Basis für Text, Hintergründe und Rände
 
 ### Erweiterte Farbpalette
 
-Zusätzlich zu den Basisfarben bietet das System eine erweiterte Palette mit 9 Stufen für jede Hauptfarbe:
+Zusatzlich to den Basisfarben bietet the system a erweiterte Palette with 9 Stufen for jede Hauptfarbe:
 
 ```css
 :root {
@@ -127,16 +127,16 @@ Zusätzlich zu den Basisfarben bietet das System eine erweiterte Palette mit 9 S
   /* Rote Palette */
   --color-red-50: #fef2f2;
   --color-red-100: #fee2e2;
-  /* ... weitere Rot-Stufen ... */
+  /* ... additional Rot-Stufen ... */
   --color-red-900: #7f1d1d;
 
-  /* Weitere Farbpaletten (Grün, Gelb, Lila, etc.) mit jeweils 9 Stufen */
+  /* additional Farbpaletten (Grun, Gelb, Lila, etc.) with jeweils 9 Stufen */
 }
 ```
 
 ## Semantische Farbverwendung
 
-Das Color System erleichtert die semantische Usage von Colors für unterschiedliche UI-Elemente:
+the Color system erleichtert the semantische Usage from Colors for unterschiedliche UI-elements:
 
 ```css
 :root {
@@ -147,14 +147,14 @@ Das Color System erleichtert die semantische Usage von Colors für unterschiedli
   --text-disabled: var(--color-gray-400);
   --text-inverse: var(--color-white);
 
-  /* Hintergrund-Colors */
+  /* background-Colors */
   --bg-body: var(--color-white);
   --bg-surface: var(--color-gray-50);
   --bg-elevation-1: var(--color-white);
   --bg-elevation-2: var(--color-gray-50);
   --bg-disabled: var(--color-gray-200);
 
-  /* Rand-Colors */
+  /* margin-Colors */
   --border-light: var(--color-gray-200);
   --border-medium: var(--color-gray-300);
   --border-strong: var(--color-gray-400);
@@ -162,70 +162,70 @@ Das Color System erleichtert die semantische Usage von Colors für unterschiedli
 }
 ```
 
-## Utility-Klassen für Colors
+## Utility-classes for Colors
 
-Das Color System bietet praktische Utility-Klassen für schnelles Styling:
+the Color system bietet praktische Utility-classes for schnelles Styling:
 
 ### Hintergrundfarben
 
 ```html
-<div class="bg-primary">Primärfarbe als Hintergrund</div>
-<div class="bg-secondary">Sekundärfarbe als Hintergrund</div>
-<div class="bg-success">Erfolgsfarbe als Hintergrund</div>
-<div class="bg-warning">Warnfarbe als Hintergrund</div>
-<div class="bg-error">Fehlerfarbe als Hintergrund</div>
-<div class="bg-info">Infofarbe als Hintergrund</div>
+<div class="bg-primary">Primarfarbe as background</div>
+<div class="bg-secondary">Sekundarfarbe as background</div>
+<div class="bg-success">Erfolgsfarbe as background</div>
+<div class="bg-warning">Warnfarbe as background</div>
+<div class="bg-error">Fehlerfarbe as background</div>
+<div class="bg-info">Infofarbe as background</div>
 
 <!-- Variants -->
-<div class="bg-primary-light">Hellere Primärfarbe</div>
-<div class="bg-primary-dark">Dunklere Primärfarbe</div>
+<div class="bg-primary-light">Hellere Primarfarbe</div>
+<div class="bg-primary-dark">Dunklere Primarfarbe</div>
 
 <!-- Neutrale Colors -->
-<div class="bg-gray-100">Sehr helles Grau</div>
-<div class="bg-gray-900">Sehr dunkles Grau</div>
+<div class="bg-gray-100">very helles Grau</div>
+<div class="bg-gray-900">very dunkles Grau</div>
 ```
 
 ### Textfarben
 
 ```html
-<p class="text-primary">Text in Primärfarbe</p>
-<p class="text-secondary">Text in Sekundärfarbe</p>
+<p class="text-primary">Text in Primarfarbe</p>
+<p class="text-secondary">Text in Sekundarfarbe</p>
 <p class="text-success">Text in Erfolgsfarbe</p>
 <p class="text-warning">Text in Warnfarbe</p>
 <p class="text-error">Text in Fehlerfarbe</p>
 <p class="text-info">Text in Infofarbe</p>
 
 <!-- Variants -->
-<p class="text-primary-light">Text in hellerer Primärfarbe</p>
-<p class="text-primary-dark">Text in dunklerer Primärfarbe</p>
+<p class="text-primary-light">Text in hellerer Primarfarbe</p>
+<p class="text-primary-dark">Text in dunklerer Primarfarbe</p>
 
 <!-- Neutrale Colors -->
 <p class="text-gray-500">Mittleres Grau</p>
-<p class="text-white">Weißer Text</p>
+<p class="text-white">Weisser Text</p>
 <p class="text-black">Schwarzer Text</p>
 ```
 
 ### Randfarben
 
 ```html
-<div class="border border-primary">Rand in Primärfarbe</div>
-<div class="border border-secondary">Rand in Sekundärfarbe</div>
-<div class="border border-success">Rand in Erfolgsfarbe</div>
-<div class="border border-warning">Rand in Warnfarbe</div>
-<div class="border border-error">Rand in Fehlerfarbe</div>
-<div class="border border-info">Rand in Infofarbe</div>
+<div class="border border-primary">margin in Primarfarbe</div>
+<div class="border border-secondary">margin in Sekundarfarbe</div>
+<div class="border border-success">margin in Erfolgsfarbe</div>
+<div class="border border-warning">margin in Warnfarbe</div>
+<div class="border border-error">margin in Fehlerfarbe</div>
+<div class="border border-info">margin in Infofarbe</div>
 
 <!-- Variants -->
-<div class="border border-primary-light">Rand in hellerer Primärfarbe</div>
-<div class="border border-primary-dark">Rand in dunklerer Primärfarbe</div>
+<div class="border border-primary-light">margin in hellerer Primarfarbe</div>
+<div class="border border-primary-dark">margin in dunklerer Primarfarbe</div>
 
 <!-- Neutrale Colors -->
-<div class="border border-gray-300">Rand in hellem Grau</div>
+<div class="border border-gray-300">margin in hellem Grau</div>
 ```
 
-## Dynamische Colors mit CSS Color-Mix
+## Dynamische Colors with CSS Color-Mix
 
-Das Color System unterstützt dynamische Farbberechnungen mit der CSS `color-mix()`-Funktion:
+the Color system unterstutzt dynamische Farbberechnungen with the CSS `color-mix()`-Function:
 
 ```css
 :root {
@@ -240,15 +240,15 @@ Das Color System unterstützt dynamische Farbberechnungen mit der CSS `color-mix
 }
 ```
 
-Mehr Details zum Color-Mix System finden Sie in der [Color-Mix Dokumentation](./color-mix-system.md).
+more Details zum Color-Mix system finden them in the [Color-Mix Documentation](./color-mix-system.md).
 
 ## CSS-Farbfunktionen
 
-Das System nutzt auch moderne CSS-Farbfunktionen für erweiterte Use Cases:
+the system nutzt also moderne CSS-Farbfunktionen for erweiterte Use Cases:
 
 ```css
 .card {
-  /* Automatische Kontrastfarbe für Text */
+  /* Automatische Kontrastfarbe for Text */
   color: color-contrast(var(--color-primary) vs black, white);
 
   /* Transparente Variants */
@@ -257,9 +257,9 @@ Das System nutzt auch moderne CSS-Farbfunktionen für erweiterte Use Cases:
 }
 ```
 
-## Farbmodi und Theming
+## Farbmodi and Theming
 
-Das Color System unterstützt verschiedene Farbmodi, wie z.B. ein Dark Mode:
+the Color system unterstutzt verschiedene Farbmodi, how z.B. a Dark Mode:
 
 ```css
 :root {
@@ -275,11 +275,11 @@ Das Color System unterstützt verschiedene Farbmodi, wie z.B. ein Dark Mode:
 }
 ```
 
-Weitere Details zum Theming-System finden Sie in der [Theme-System Dokumentation](./theme-system.md).
+additional Details zum Theming-system finden them in the [theme-system Documentation](./theme-system.md).
 
-## Accessibility und Kontrast
+## Accessibility and Kontrast
 
-Das Color System berücksichtigt die Accessibility, indem es sicherstellt, dass Colors ausreichend Kontrast bieten:
+the Color system berucksichtigt the Accessibility, indem it sicherstellt, that Colors ausreichend Kontrast bieten:
 
 ```css
 :root {
@@ -294,84 +294,84 @@ Das Color System berücksichtigt die Accessibility, indem es sicherstellt, dass 
 }
 ```
 
-Diese Kontrastfarben werden automatisch in Components wie Buttons verwendet:
+these Kontrastfarben become automatisch in Components how buttons verwendet:
 
 ```html
 <button class="button primary">
-  Bestätigen
+  Bestatigen
 </button>
 ```
 
-## Anpassung des Color Systems
+## Customization des Color Systems
 
-Sie können das Color System an Ihr Branding anpassen, indem Sie die Basisfarben überschreiben:
+You can the Color system on her Branding customize, indem them the Basisfarben overwrite:
 
 ```css
-/* Eigene CSS-Datei */
+/* own CSS-file */
 @import "@casoon/ui-lib/core.css";
 
 @layer tokens {
   :root {
-    /* Überschreiben der Grundfarben */
+    /* overwrite the Grundfarben */
     --color-primary: #8e44ad;
     --color-secondary: #2c3e50;
     --color-accent: #f39c12;
 
-    /* Andere Colors bleiben unverändert oder können ebenfalls überschrieben werden */
+    /* others Colors bleiben unverandert or can ebenfalls uberschrieben become */
   }
 }
 ```
 
-## Farbharmonie und -komposition
+## Farbharmonie and -komposition
 
-Für harmonische Designs empfehlen wir folgende Farbrichtlinien:
+for harmonische designs empfehlen we folgende Farbrichtlinien:
 
-1. **60-30-10 Regel**: 60% neutrale Colors, 30% Primär-/Sekundärfarben und 10% Akzentfarben
-2. **Konsistente Sättigung**: Verwenden Sie Colors mit ähnlicher Sättigung für ein ausgewogenes Design
-3. **Limitierte Farbpalette**: Beschränken Sie sich auf 2-3 Hauptfarben plus Akzentfarbe
+1. **60-30-10 Rule**: 60% neutrale Colors, 30% Primar-/Sekundarfarben and 10% Akzentfarben
+2. **Konsistente Sattigung**: use them Colors with ahnlicher Sattigung for a ausgewogenes design
+3. **Limitierte Farbpalette**: Beschranken them oneself on 2-3 Hauptfarben plus Akzentfarbe
 
 ## Best Practices
 
-1. **Semantische Farbklassen verwenden** - Nutzen Sie `.bg-success` statt direkte Farbcodes
-2. **Kontrast beachten** - Stellen Sie sicher, dass Text auf farbigen Hintergründen gut lesbar ist
-3. **Farbvariablen für eigene Components** - Verwenden Sie das vorhandene Variablensystem für konsistente Customizations
-4. **Accessibility testen** - Prüfen Sie Ihr Design auf ausreichenden Farbkontrast (WCAG AA/AAA)
-5. **Farbkombinationen limitieren** - Zu viele verschiedene Colors können die Benutzeroberfläche unruhig wirken lassen
+1. **Semantische Farbklassen use** - use them `.bg-success` instead of direkte Farbcodes
+2. **Kontrast note** - ensure, that Text on farbigen Hintergrunden good lesbar ist
+3. **Farbvariablen for own Components** - use them the vorhandene Variablensystem for konsistente customizations
+4. **Accessibility testen** - Prufen them her design on ausreichenden Farbkontrast (WCAG AA/AAA)
+5. **Farbkombinationen limitieren** - to many verschiedene Colors can the Benutzeroberflache unruhig wirken lassen
 
-## Examples für Farbkombinationen
+## Examples for Farbkombinationen
 
-### Call-to-Action Buttons
+### Call-to-Action buttons
 
 ```html
 <button class="button primary">Hauptaktion</button>
-<button class="button secondary">Sekundäre Aktion</button>
+<button class="button secondary">Sekundare Aktion</button>
 <button class="button accent">Hervorgehobene Aktion</button>
 ```
 
-### Benachrichtigungen und Alerts
+### notifications and Alerts
 
 ```html
 <div class="alert alert--success">
   <div class="alert__icon">✓</div>
   <div class="alert__content">
-    <h4 class="alert__title">Erfolg!</h4>
-    <p class="alert__message">Der Vorgang wurde erfolgreich abgeschlossen.</p>
+    <h4 class="alert__title">success!</h4>
+    <p class="alert__message">the Vorgang wurde erfolgreich abgeschlossen.</p>
   </div>
 </div>
 
 <div class="alert alert--warning">
   <div class="alert__icon">⚠</div>
   <div class="alert__content">
-    <h4 class="alert__title">Warnung</h4>
-    <p class="alert__message">Bitte überprüfen Sie Ihre Eingaben.</p>
+    <h4 class="alert__title">warning</h4>
+    <p class="alert__message">please uberprufen them Ihre inputs.</p>
   </div>
 </div>
 
 <div class="alert alert--error">
   <div class="alert__icon">✕</div>
   <div class="alert__content">
-    <h4 class="alert__title">Fehler</h4>
-    <p class="alert__message">Der Vorgang konnte nicht abgeschlossen werden.</p>
+    <h4 class="alert__title">errors</h4>
+    <p class="alert__message">the Vorgang konnte not abgeschlossen become.</p>
   </div>
 </div>
 
@@ -379,7 +379,7 @@ Für harmonische Designs empfehlen wir folgende Farbrichtlinien:
   <div class="alert__icon">ℹ</div>
   <div class="alert__content">
     <h4 class="alert__title">Information</h4>
-    <p class="alert__message">Hier sind weitere Informationen zum Vorgang.</p>
+    <p class="alert__message">Hier sind additional Informationen zum Vorgang.</p>
   </div>
 </div>
 ```
@@ -388,23 +388,23 @@ Für harmonische Designs empfehlen wir folgende Farbrichtlinien:
 
 ```html
 <section class="bg-white p-6">
-  <h2>Weißer Hintergrund</h2>
-  <p class="text-primary">Text in Primärfarbe auf weißem Hintergrund.</p>
+  <h2>Weisser background</h2>
+  <p class="text-primary">Text in Primarfarbe on weissem background.</p>
 </section>
 
 <section class="bg-gray-100 p-6">
-  <h2>Hellgrauer Hintergrund</h2>
-  <p class="text-primary">Text in Primärfarbe auf hellgrauem Hintergrund.</p>
+  <h2>Hellgrauer background</h2>
+  <p class="text-primary">Text in Primarfarbe on hellgrauem background.</p>
 </section>
 
 <section class="bg-primary p-6">
-  <h2 class="text-white">Primärfarbe als Hintergrund</h2>
-  <p class="text-white">Weißer Text auf Hintergrund in Primärfarbe.</p>
+  <h2 class="text-white">Primarfarbe as background</h2>
+  <p class="text-white">Weisser Text on background in Primarfarbe.</p>
 </section>
 
 <section class="bg-primary-light p-6">
-  <h2>Hellere Primärfarbe als Hintergrund</h2>
-  <p class="text-primary-dark">Text in dunklerer Primärfarbe auf hellerem Primärhintergrund.</p>
+  <h2>Hellere Primarfarbe as background</h2>
+  <p class="text-primary-dark">Text in dunklerer Primarfarbe on hellerem Primarhintergrund.</p>
 </section>
 ```
 
@@ -413,23 +413,23 @@ Für harmonische Designs empfehlen wir folgende Farbrichtlinien:
 ```html
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
   <div class="card bg-primary text-white">
-    <div class="card__header">Primärkarte</div>
+    <div class="card__header">Primarkarte</div>
     <div class="card__body">
-      <p>Inhalt in Primärfarbe mit weißem Text.</p>
+      <p>content in Primarfarbe with weissem Text.</p>
     </div>
   </div>
 
   <div class="card bg-white border border-accent">
     <div class="card__header text-accent">Akzentuierte Card</div>
     <div class="card__body">
-      <p>Weiße Card mit Akzentfarbe für Rand und Überschrift.</p>
+      <p>Weisse Card with Akzentfarbe for margin and heading.</p>
     </div>
   </div>
 
   <div class="card bg-gray-50 border border-gray-200">
     <div class="card__header text-secondary">Neutrale Card</div>
     <div class="card__body">
-      <p>Neutrale Card mit subtilen Grautönen.</p>
+      <p>Neutrale Card with subtilen Grautonen.</p>
     </div>
   </div>
 </div>

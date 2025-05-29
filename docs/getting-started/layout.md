@@ -1,9 +1,9 @@
 ---
-title: Layout System
+title: Layout system
 category: Getting Started
 ---
 
-# Layout System
+# Layout system
 
 The Casoon UI Library's layout system provides structured and flexible tools for designing responsive user interfaces. It's based on a modern CSS layer system and uses Container Queries for precise component-based responsiveness.
 
@@ -105,7 +105,7 @@ Your own styles can be seamlessly integrated into the existing layer system:
 
 By adhering to the layer structure, your own customizations remain maintainable and conflict-free.
 
-## Container System
+## Container system
 
 The container is the basic layout element and ensures consistent page widths with appropriate margins.
 
@@ -192,7 +192,7 @@ The framework offers two main components for layouts:
 </div>
 ```
 
-## Grid System
+## Grid system
 
 The grid system uses modern CSS Grid technology for flexible layouts.
 
@@ -332,28 +332,28 @@ For one-dimensional layouts and complex alignments, the library provides a flexb
 </div>
 ```
 
-### Flex Basis
+### Flex base
 
 For precise size distribution:
 
 ```html
 <div class="flex">
-  <div class="flex-basis-1-2">50% width</div>
-  <div class="flex-basis-1-2">50% width</div>
+  <div class="flex-base-1-2">50% width</div>
+  <div class="flex-base-1-2">50% width</div>
 </div>
 
 <div class="flex">
-  <div class="flex-basis-1-3">33.33% width</div>
-  <div class="flex-basis-2-3">66.67% width</div>
+  <div class="flex-base-1-3">33.33% width</div>
+  <div class="flex-base-2-3">66.67% width</div>
 </div>
 
 <div class="flex">
-  <div class="flex-basis-1-4">25% width</div>
-  <div class="flex-basis-3-4">75% width</div>
+  <div class="flex-base-1-4">25% width</div>
+  <div class="flex-base-3-4">75% width</div>
 </div>
 ```
 
-## Spacing System
+## Spacing system
 
 A consistent spacing system is crucial for harmonious layouts. Casoon UI offers comprehensive utilities for margins, paddings, and gaps.
 
@@ -484,7 +484,7 @@ The framework also provides classes for positioning and visibility control:
 
 1. **Prefer Container Queries** - Use container queries for component-based responsiveness
 2. **Consistent Spacing** - Use predefined spacing values for harmonious designs
-3. **Respect Layer System** - Add your own styles in the appropriate layers
+3. **Respect Layer system** - Add your own styles in the appropriate layers
 4. **Mobile First** - Start with the layout for small screens and expand for larger ones
 5. **Semantic HTML** - Use semantic HTML elements for better accessibility
 

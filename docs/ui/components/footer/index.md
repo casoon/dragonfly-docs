@@ -16,7 +16,7 @@ The Footer component is automatically imported with the `core.css`:
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* or another theme */
 
-/* Footer module */
+/* Footer modules */
 @import '@casoon/ui-lib/components/footer.css';
 ```
 
@@ -97,7 +97,7 @@ Alternatively, you can import the component directly:
 The Footer component can be customized via CSS variables:
 
 ```css
-@layer module-footer {
+@layer modules-footer {
   .footer {
     --footer-bg: var(--color-gray-900);
     --footer-text: var(--color-gray-100);

@@ -1,11 +1,11 @@
 ---
-title: Effects System
+title: Effects system
 category: Guide
 ---
 
-# Effects System
+# Effects system
 
-The Effects System in Casoon UI has been revised to provide better modularity and flexibility. It consists of basic effects (such as animations and transitions) and specific visual effects that can be imported and used individually.
+The Effects system in Casoon UI has been revised to provide better modularity and flexibility. It consists of basic effects (such as animations and transitions) and specific visual effects that can be imported and used individually.
 
 ## Basic Effects
 

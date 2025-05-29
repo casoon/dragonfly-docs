@@ -6,153 +6,153 @@ outline: deep
 
 # Shadow Effects
 
-Die Casoon UI Library bietet eine Sammlung von Schatten-Effekten, die Tiefe und Dimensionalität zu Ihren UI-Elementen hinzufügen. Diese Schatten-Utilities helfen, die visuelle Hierarchie in Ihrer Benutzeroberfläche zu definieren.
+the Casoon UI Library bietet a Sammlung from shadow-Effekten, the Tiefe and Dimensionalitat to Ihren UI-Elementen add. these shadow-Utilities helfen, the visuelle Hierarchie in Ihrer Benutzeroberflache to define.
 
 ## Overview
 
-Schatten sind ein wesentliches Element des modernen UI-Designs und helfen dabei, Elemente visuell vom Hintergrund abzuheben und die Benutzererfahrung zu verbessern.
+shadow sind a wesentliches element des modernen UI-designs and helfen in doing so, elements visuell vom background abzuheben and the Benutzererfahrung to verbessern.
 
 ## Import
 
 ```css
-/* Entweder alle visuellen Effekte importieren */
+/* Entweder all visuellen effects import */
 @import '@casoon/ui-lib/effects/visual/index.css';
 
-/* Oder spezifisch nur die Schatten-Effekte */
+/* or spezifisch only the shadow-effects */
 @import '@casoon/ui-lib/effects/visual/shadows.css';
 ```
 
 ## Shadow Utilities
 
-Die Library bietet verschiedene Shadow-Klassen für unterschiedliche Elevations-Stufen:
+the Library bietet verschiedene Shadow-classes for unterschiedliche Elevations-Stufen:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|--------------|
-| `.shadow-sm` | Sehr leichter Schatten für subtile Elevation |
-| `.shadow` | Standard-Schatten für allgemeine Elevation |
-| `.shadow-md` | Mittlerer Schatten für moderate Elevation |
-| `.shadow-lg` | Großer Schatten für deutliche Elevation |
-| `.shadow-xl` | Extra großer Schatten für starke Elevation |
-| `.shadow-2xl` | Sehr großer Schatten für maximale Elevation |
-| `.shadow-inner` | Innerer Schatten für eingedrückte Elemente |
-| `.shadow-none` | Kein Schatten (nützlich zum Entfernen von Schatten) |
+| `.shadow-sm` | very leichter shadow for subtile Elevation |
+| `.shadow` | Standard-shadow for allgemeine Elevation |
+| `.shadow-md` | Mittlerer shadow for moderate Elevation |
+| `.shadow-lg` | Grosser shadow for deutliche Elevation |
+| `.shadow-xl` | Extra grosser shadow for strength Elevation |
+| `.shadow-2xl` | very grosser shadow for maximale Elevation |
+| `.shadow-inner` | Innerer shadow for eingedruckte elements |
+| `.shadow-none` | no shadow (nutzlich zum remove from shadow) |
 
 ### Example
 
 ```html
 <div class="shadow-sm p-4 m-4">
-  Element mit sehr leichtem Schatten
+  element with very leichtem shadow
 </div>
 
 <div class="shadow p-4 m-4">
-  Element mit Standard-Schatten
+  element with Standard-shadow
 </div>
 
 <div class="shadow-md p-4 m-4">
-  Element mit mittlerem Schatten
+  element with mittlerem shadow
 </div>
 
 <div class="shadow-lg p-4 m-4">
-  Element mit großem Schatten
+  element with grossem shadow
 </div>
 
 <div class="shadow-xl p-4 m-4">
-  Element mit extra großem Schatten
+  element with extra grossem shadow
 </div>
 
 <div class="shadow-2xl p-4 m-4">
-  Element mit sehr großem Schatten
+  element with very grossem shadow
 </div>
 
 <div class="shadow-inner p-4 m-4">
-  Element mit innerem Schatten
+  element with innerem shadow
 </div>
 ```
 
-## Elevation-System
+## Elevation-system
 
-Die Schatten-Utilities folgen einem konsistenten Elevation-System, das die visuelle Hierarchie unterstützt:
+the shadow-Utilities folgen einem konsistenten Elevation-system, the the visuelle Hierarchie unterstutzt:
 
-| Elevation | Schatten-Klasse | Typische Anwendung |
+| Elevation | shadow-Class | Typische Application |
 |-----------|-----------------|-------------------|
-| 1 (am niedrigsten) | `.shadow-sm` | Separatoren, abgegrenzte Bereiche |
-| 2 | `.shadow` | Cardn, Container, Panels |
-| 3 | `.shadow-md` | Erhöhte Cardn, Dropdown-Menüs |
-| 4 | `.shadow-lg` | Dialoge, hervorgehobene Elemente |
-| 5 | `.shadow-xl` | Modals, Popups |
-| 6 (am höchsten) | `.shadow-2xl` | Kritische Benachrichtigungen |
+| 1 (am niedrigsten) | `.shadow-sm` | Separatoren, abgegrenzte areas |
+| 2 | `.shadow` | Cardn, containers, panels |
+| 3 | `.shadow-md` | Erhohte Cardn, Dropdown-Menus |
+| 4 | `.shadow-lg` | dialogs, hervorgehobene elements |
+| 5 | `.shadow-xl` | modals, popups |
+| 6 (am hochsten) | `.shadow-2xl` | Kritische notifications |
 
-### Example für eine Elevation-Hierarchie
+### Example for a Elevation-Hierarchie
 
 ```html
 <div class="shadow-sm p-4 mb-4">
   <h3>Basisebene</h3>
-  <p>Niedrigste Elevation mit subtiler Unterscheidung vom Hintergrund</p>
+  <p>Niedrigste Elevation with subtiler Unterscheidung vom background</p>
 </div>
 
 <div class="shadow p-4 mb-4">
   <h3>Containerebene</h3>
-  <p>Standard-Cardn und Container</p>
+  <p>Standard-Cardn and containers</p>
 </div>
 
 <div class="shadow-md p-4 mb-4">
-  <h3>Erhöhte Ebene</h3>
-  <p>Hervorgehobene Elemente und Dropdown-Menüs</p>
+  <h3>Erhohte layer</h3>
+  <p>Hervorgehobene elements and Dropdown-Menus</p>
 </div>
 
 <div class="shadow-lg p-4 mb-4">
-  <h3>Darüber schwebende Ebene</h3>
-  <p>Dialoge und wichtige Elemente</p>
+  <h3>Daruber schwebende layer</h3>
+  <p>dialogs and wichtige elements</p>
 </div>
 
 <div class="shadow-xl p-4 mb-4">
-  <h3>Overlay-Ebene</h3>
-  <p>Modals und Popups</p>
+  <h3>Overlay-layer</h3>
+  <p>modals and popups</p>
 </div>
 
 <div class="shadow-2xl p-4">
-  <h3>Oberste Ebene</h3>
-  <p>Kritische Benachrichtigungen und fokussierte Elemente</p>
+  <h3>Oberste layer</h3>
+  <p>Kritische notifications and fokussierte elements</p>
 </div>
 ```
 
-## Interaktive Schatten
+## Interaktive shadow
 
-Schatten können mit Hover- und anderen Interaktionseffekten kombiniert werden, um dynamische UI-Elemente zu erstellen:
+shadow can with Hover- and anderen Interaktionseffekten kombiniert become, um dynamische UI-elements to create:
 
 ```html
-<!-- Schatten, der sich beim Hover vergrößert -->
+<!-- shadow, the oneself beim Hover vergrossert -->
 <div class="shadow hover-lift">
-  Beim Hover angehobenes Element
+  Beim Hover angehobenes element
 </div>
 
-<!-- Card mit Schatten und Hover-Effekt -->
+<!-- Card with shadow and Hover-effect -->
 <div class="shadow-md hover-scale">
-  Interaktive Card mit Skalierung
+  Interaktive Card with Skalierung
 </div>
 ```
 
-## Innere Schatten
+## Innere shadow
 
-Der innere Schatten (`.shadow-inner`) ist nützlich für eingedrückte Elemente wie Inputer oder Toggle-Buttons:
+the innere shadow (`.shadow-inner`) ist nutzlich for eingedruckte elements how Inputer or Toggle-buttons:
 
 ```html
-<!-- Eingedrücktes Input -->
-<input type="text" class="shadow-inner p-2" placeholder="Eingedrücktes Input">
+<!-- Eingedrucktes Input -->
+<input type="text" class="shadow-inner p-2" placeholder="Eingedrucktes Input">
 
-<!-- Eingedrückter Container -->
+<!-- Eingedruckter containers -->
 <div class="shadow-inner p-4">
-  Dieser Container erscheint eingedrückt statt erhöht
+  this containers erscheint eingedruckt instead of erhoht
 </div>
 ```
 
-## Anpassung
+## Customization
 
-Alle Schatten-Effekte können mit CSS Variables angepasst werden:
+all shadow-effects can with CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Schatten-Variablen */
+  /* shadow-variables */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 5%);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%);
@@ -164,23 +164,23 @@ Alle Schatten-Effekte können mit CSS Variables angepasst werden:
 }
 ```
 
-### Anpassung der Schatten-Farbe
+### Customization the shadow-color
 
-Sie können die Farbe und Intensität der Schatten anpassen, um sie an Ihr Farbschema anzupassen:
+You can the color and Intensitat the shadow customize, um them on her color scheme anzupassen:
 
 ```css
 :root {
-  /* Blaue Schatten */
+  /* Blaue shadow */
   --shadow: 0 1px 3px 0 rgb(0 100 255 / 10%), 0 1px 2px -1px rgb(0 100 255 / 10%);
   
-  /* Stärkere Schatten */
+  /* Starkere shadow */
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 20%), 0 4px 6px -4px rgb(0 0 0 / 20%);
 }
 ```
 
 ## Dark Mode Integration
 
-Die Schatten können auch für den Dark Mode angepasst werden, um die richtige visuelle Hierarchie in dunkleren Umgebungen zu erhalten:
+the shadow can also for den Dark Mode angepasst become, um the richtige visuelle Hierarchie in dunkleren Umgebungen to erhalten:
 
 ```css
 @media (prefers-color-scheme: dark) {
@@ -198,26 +198,26 @@ Die Schatten können auch für den Dark Mode angepasst werden, um die richtige v
 
 ## Accessibility
 
-Bei der Usage von Schatten zur Darstellung von visueller Hierarchie ist es wichtig, auch andere visuelle Hinweise zu verwenden, damit Benutzer mit Sehschwächen die Hierarchie erkennen können:
+at the Usage from shadow zur Display from visueller Hierarchie ist it important, also others visuelle Notee to use, with that user with Sehschwachen the Hierarchie erkennen can:
 
-1. **Nicht nur auf Schatten verlassen**: Kombinieren Sie Schatten mit anderen visuellen Hinweisen wie Farbe, Größe oder Position.
-2. **Ausreichender Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Elementen auch ohne Schatten ausreichend ist.
-3. **Konsistente Hierarchie**: Verwenden Sie Schatten konsistent in Ihrer gesamten Anwendung.
+1. **not only on shadow verlassen**: combine them shadow with anderen visuellen Noteen how color, size or position.
+2. **Ausreichender Kontrast**: ensure, that the Kontrast between Elementen also without shadow ausreichend ist.
+3. **Konsistente Hierarchie**: use them shadow konsistent in Ihrer gesamten Application.
 
 ## Best Practices
 
-1. **Verwenden Sie Schatten sparsam**: Zu viele Schatten können die visuelle Hierarchie verwirren.
-2. **Befolgen Sie die Elevation-Hierarchie**: Verwenden Sie konsistent die richtigen Schatten für die entsprechende Elevation.
-3. **Kombinieren Sie mit anderen Effekten**: Schatten funktionieren gut mit anderen visuellen Effekten wie Border-Radius oder Hover-Effekten.
-4. **Berücksichtigen Sie die Performance**: Schatten können die Renderleistung beeinträchtigen, besonders auf mobilen Geräten.
-5. **Anpassung an das Farbschema**: Passen Sie Schatten an Ihr Farbschema an, besonders im Dark Mode.
+1. **use them shadow sparsam**: to many shadow can the visuelle Hierarchie verwirren.
+2. **Befolgen them the Elevation-Hierarchie**: use them konsistent the richtigen shadow for the entsprechende Elevation.
+3. **combine them with anderen Effekten**: shadow funktionieren good with anderen visuellen Effekten how Border-Radius or Hover-Effekten.
+4. **Berucksichtigen them the Performance**: shadow can the Renderleistung beeintrachtigen, besonders on mobilen Geraten.
+5. **Customization on the color scheme**: Passen them shadow on her color scheme on, besonders im Dark Mode.
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| Function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Box-Shadow | 10+ | 4+ | 5.1+ | 12+ |
-| Multiple Box-Shadows | 10+ | 4+ | 5.1+ | 12+ |
-| Inset Box-Shadow | 10+ | 4+ | 5.1+ | 12+ |
+| box-Shadow | 10+ | 4+ | 5.1+ | 12+ |
+| Multiple box-Shadows | 10+ | 4+ | 5.1+ | 12+ |
+| Inset box-Shadow | 10+ | 4+ | 5.1+ | 12+ |
 
-Die Schatten-Utilities werden von allen modernen Browsern unterstützt. 
+the shadow-Utilities become from allen modernen Browsern unterstutzt. 

@@ -8,7 +8,7 @@ outline: false
 
 This page showcases the layout components available in the Casoon UI Library. These components help structure and organize content on your pages.
 
-## Grid System
+## Grid system
 
 The grid system allows you to create responsive layouts with rows and columns.
 

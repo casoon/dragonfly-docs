@@ -1,65 +1,65 @@
-# Backdrop-Effekte
+# Backdrop-effects
 
-Backdrop-Effekte werden verwendet, um einen visuellen Hintergrund oder eine Ebene hinter einem Element zu erstellen. Die `@casoon/ui-lib` bietet verschiedene Backdrop-Effekte, die dazu beitragen, tiefere visuelle Hierarchien und ansprechende Benutzeroberflächen zu gestalten.
+Backdrop-effects become verwendet, um einen visuellen background or a layer behind einem element to create. the `@casoon/ui-lib` bietet verschiedene Backdrop-effects, the for that beitragen, tiefere visuelle Hierarchien and ansprechende user interfaces to gestalten.
 
 ## Basic Usage
 
-Der grundlegende Backdrop-Effekt kann auf jedes Element angewendet werden:
+the grundlegende Backdrop-effect kann on jedes element angewendet become:
 
 ```html
 <div class="backdrop">
-  <div class="content">Inhalt mit Backdrop</div>
+  <div class="content">content with Backdrop</div>
 </div>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Backdrop-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Backdrop-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.backdrop` | Basisklasse für Backdrop-Effekte |
-| `.backdrop-blur` | Unscharfer Hintergrund |
-| `.backdrop-dim` | Abgedunkelter Hintergrund |
-| `.backdrop-frosted` | Frosted-Glass-Effekt |
+| `.backdrop` | Basisklasse for Backdrop-effects |
+| `.backdrop-blur` | Unscharfer background |
+| `.backdrop-dim` | Abgedunkelter background |
+| `.backdrop-frosted` | Frosted-Glass-effect |
 | `.backdrop-gradient` | Verlaufshintergrund |
-| `.backdrop-noise` | Hintergrund mit Rauschstruktur |
-| `.backdrop-pattern` | Hintergrund mit Muster |
-| `.backdrop-spotlight` | Spotlight-Effekt |
+| `.backdrop-noise` | background with Rauschstruktur |
+| `.backdrop-pattern` | background with pattern |
+| `.backdrop-spotlight` | Spotlight-effect |
 | `.backdrop-shadow` | Schattenhintergrund |
-| `.backdrop-glow` | Glühender Hintergrund |
+| `.backdrop-glow` | Gluhender background |
 
 ## Variants
 
-### Blur-Effekt
+### Blur-effect
 
-Der Blur-Effekt erstellt einen unscharfen Hintergrund:
+the Blur-effect erstellt einen unscharfen background:
 
 ```html
 <div class="backdrop-blur">
-  <div class="content">Inhalt mit unscharfem Hintergrund</div>
+  <div class="content">content with unscharfem background</div>
 </div>
 ```
 
-Verfügbare Stärken:
+Verfugbare Starken:
 
 ```html
-<div class="backdrop-blur-sm">Leichte Unschärfe</div>
-<div class="backdrop-blur-md">Mittlere Unschärfe</div>
-<div class="backdrop-blur-lg">Starke Unschärfe</div>
+<div class="backdrop-blur-sm">Leichte Unscharfe</div>
+<div class="backdrop-blur-md">Mittlere Unscharfe</div>
+<div class="backdrop-blur-lg">strength Unscharfe</div>
 ```
 
-### Dim-Effekt
+### Dim-effect
 
-Der Dim-Effekt verdunkelt den Hintergrund:
+the Dim-effect verdunkelt den background:
 
 ```html
 <div class="backdrop-dim">
-  <div class="content">Inhalt mit abgedunkeltem Hintergrund</div>
+  <div class="content">content with abgedunkeltem background</div>
 </div>
 ```
 
-Verfügbare Stärken:
+Verfugbare Starken:
 
 ```html
 <div class="backdrop-dim-light">Leicht abgedunkelt</div>
@@ -67,27 +67,27 @@ Verfügbare Stärken:
 <div class="backdrop-dim-heavy">Stark abgedunkelt</div>
 ```
 
-### Frosted-Glass-Effekt
+### Frosted-Glass-effect
 
-Der Frosted-Glass-Effekt erstellt einen matten Glaseffekt:
+the Frosted-Glass-effect erstellt einen matten Glaseffekt:
 
 ```html
 <div class="backdrop-frosted">
-  <div class="content">Inhalt mit Frosted-Glass-Effekt</div>
+  <div class="content">content with Frosted-Glass-effect</div>
 </div>
 ```
 
-### Gradient-Effekt
+### Gradient-effect
 
-Der Gradient-Effekt erstellt einen Verlaufshintergrund:
+the Gradient-effect erstellt einen Verlaufshintergrund:
 
 ```html
 <div class="backdrop-gradient">
-  <div class="content">Inhalt mit Verlaufshintergrund</div>
+  <div class="content">content with Verlaufshintergrund</div>
 </div>
 ```
 
-Verfügbare Variants:
+Verfugbare Variants:
 
 ```html
 <div class="backdrop-gradient-linear">Linearer Verlauf</div>
@@ -95,27 +95,27 @@ Verfügbare Variants:
 <div class="backdrop-gradient-conic">Konischer Verlauf</div>
 ```
 
-### Noise-Effekt
+### Noise-effect
 
-Der Noise-Effekt fügt eine Rauschstruktur hinzu:
+the Noise-effect fugt a Rauschstruktur hinzu:
 
 ```html
 <div class="backdrop-noise">
-  <div class="content">Inhalt mit Rauschstruktur</div>
+  <div class="content">content with Rauschstruktur</div>
 </div>
 ```
 
-### Pattern-Effekt
+### Pattern-effect
 
-Der Pattern-Effekt erstellt einen Hintergrund mit Muster:
+the Pattern-effect erstellt einen background with pattern:
 
 ```html
 <div class="backdrop-pattern">
-  <div class="content">Inhalt mit Musterhintergrund</div>
+  <div class="content">content with Musterhintergrund</div>
 </div>
 ```
 
-Verfügbare Muster:
+Verfugbare pattern:
 
 ```html
 <div class="backdrop-pattern-dots">Punktmuster</div>
@@ -124,176 +124,176 @@ Verfügbare Muster:
 <div class="backdrop-pattern-waves">Wellenmuster</div>
 ```
 
-### Spotlight-Effekt
+### Spotlight-effect
 
-Der Spotlight-Effekt erzeugt einen Spotlight-Hintergrund:
+the Spotlight-effect erzeugt einen Spotlight-background:
 
 ```html
 <div class="backdrop-spotlight">
-  <div class="content">Inhalt mit Spotlight-Effekt</div>
+  <div class="content">content with Spotlight-effect</div>
 </div>
 ```
 
-### Shadow-Effekt
+### Shadow-effect
 
-Der Shadow-Effekt erstellt einen Schattenhintergrund:
+the Shadow-effect erstellt einen Schattenhintergrund:
 
 ```html
 <div class="backdrop-shadow">
-  <div class="content">Inhalt mit Schattenhintergrund</div>
+  <div class="content">content with Schattenhintergrund</div>
 </div>
 ```
 
-### Glow-Effekt
+### Glow-effect
 
-Der Glow-Effekt erstellt einen glühenden Hintergrund:
+the Glow-effect erstellt einen gluhenden background:
 
 ```html
 <div class="backdrop-glow">
-  <div class="content">Inhalt mit glühendem Hintergrund</div>
+  <div class="content">content with gluhendem background</div>
 </div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Backdrop-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Backdrop-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Cardn und Container
+### Cardn and containers
 
 ```html
 <div class="card backdrop-blur">
-  <div class="card-header">Cardnüberschrift</div>
-  <div class="card-body">Cardninhalt mit unscharfem Hintergrund</div>
+  <div class="card-header">Cardnuberschrift</div>
+  <div class="card-body">Cardninhalt with unscharfem background</div>
 </div>
 
-<div class="container backdrop-frosted">
-  <h2>Container-Überschrift</h2>
-  <p>Container-Inhalt mit Frosted-Glass-Effekt</p>
+<div class="containers backdrop-frosted">
+  <h2>containers-heading</h2>
+  <p>containers-content with Frosted-Glass-effect</p>
 </div>
 ```
 
-### Modals und Dialoge
+### modals and dialogs
 
 ```html
 <div class="modal-backdrop backdrop-dim">
   <div class="modal">
-    <div class="modal-header">Modal-Überschrift</div>
-    <div class="modal-body">Modal-Inhalt</div>
+    <div class="modal-header">modal-heading</div>
+    <div class="modal-body">modal-content</div>
   </div>
 </div>
 
 <div class="dialog-backdrop backdrop-blur">
   <div class="dialog">
-    <div class="dialog-content">Dialog-Inhalt</div>
+    <div class="dialog-content">dialog-content</div>
   </div>
 </div>
 ```
 
-### Hero-Bereiche
+### Hero-areas
 
 ```html
 <section class="hero backdrop-gradient">
   <div class="hero-content">
     <h1>Willkommen</h1>
-    <p>Held-Bereich mit Verlaufshintergrund</p>
+    <p>Held-area with Verlaufshintergrund</p>
   </div>
 </section>
 ```
 
-### Navigation
+### navigation
 
 ```html
 <nav class="navbar backdrop-frosted">
   <div class="navbar-brand">Logo</div>
   <div class="navbar-menu">
     <a href="#">Home</a>
-    <a href="#">Über uns</a>
+    <a href="#">over us</a>
     <a href="#">Kontakt</a>
   </div>
 </nav>
 ```
 
-## Interaktive Backdrop-Effekte
+## Interaktive Backdrop-effects
 
-Backdrop-Effekte können mit Interaktionen kombiniert werden:
+Backdrop-effects can with interactions kombiniert become:
 
 ```html
 <div class="card hover-backdrop-blur">
   <div class="card-content">
-    Card mit Backdrop-Effekt bei Hover
+    Card with Backdrop-effect at Hover
   </div>
 </div>
 
 <button class="focus-backdrop-glow">
-  Button mit Backdrop-Effekt bei Fokus
+  button with Backdrop-effect at Fokus
 </button>
 ```
 
-## Anpassung
+## Customization
 
-Die Backdrop-Effekte können über CSS Variables angepasst werden:
+the Backdrop-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Blur-Effekt */
+  /* Blur-effect */
   --backdrop-blur-sm: 2px;
   --backdrop-blur-md: 5px;
   --backdrop-blur-lg: 10px;
   
-  /* Dim-Effekt */
+  /* Dim-effect */
   --backdrop-dim-light: rgba(0, 0, 0, 0.3);
   --backdrop-dim-medium: rgba(0, 0, 0, 0.5);
   --backdrop-dim-heavy: rgba(0, 0, 0, 0.8);
   
-  /* Frosted-Glass-Effekt */
+  /* Frosted-Glass-effect */
   --backdrop-frosted-opacity: 0.7;
   --backdrop-frosted-blur: 10px;
   --backdrop-frosted-saturation: 180%;
   
-  /* Gradient-Effekt */
+  /* Gradient-effect */
   --backdrop-gradient-start: rgba(255, 255, 255, 0.1);
   --backdrop-gradient-end: rgba(255, 255, 255, 0.3);
   --backdrop-gradient-angle: 135deg;
   
-  /* Noise-Effekt */
+  /* Noise-effect */
   --backdrop-noise-opacity: 0.05;
   --backdrop-noise-density: 20%;
   
-  /* Pattern-Effekt */
+  /* Pattern-effect */
   --backdrop-pattern-color: rgba(255, 255, 255, 0.1);
   --backdrop-pattern-size: 20px;
   --backdrop-pattern-spacing: 40px;
   
-  /* Spotlight-Effekt */
+  /* Spotlight-effect */
   --backdrop-spotlight-size: 40%;
   --backdrop-spotlight-color: rgba(255, 255, 255, 0.1);
   
-  /* Shadow-Effekt */
+  /* Shadow-effect */
   --backdrop-shadow-color: rgba(0, 0, 0, 0.2);
   --backdrop-shadow-size: 20px;
   
-  /* Glow-Effekt */
+  /* Glow-effect */
   --backdrop-glow-color: rgba(255, 255, 255, 0.1);
   --backdrop-glow-size: 100px;
   --backdrop-glow-intensity: 0.5;
 }
 ```
 
-## Positionierung von Backdrops
+## Positionierung from Backdrops
 
-Backdrops können auf verschiedene Arten positioniert werden:
+Backdrops can on verschiedene Arten positioniert become:
 
-### Als Hintergrund
+### as background
 
 ```html
-<div class="backdrop-container">
+<div class="backdrop-containers">
   <div class="backdrop backdrop-blur"></div>
-  <div class="content">Inhalt über dem Backdrop</div>
+  <div class="content">content over dem Backdrop</div>
 </div>
 ```
 
 ```css
-.backdrop-container {
+.backdrop-containers {
   position: relative;
 }
 
@@ -312,11 +312,11 @@ Backdrops können auf verschiedene Arten positioniert werden:
 }
 ```
 
-### Als Overlay
+### as Overlay
 
 ```html
 <div class="backdrop-overlay backdrop-dim">
-  <div class="overlay-content">Overlay-Inhalt</div>
+  <div class="overlay-content">Overlay-content</div>
 </div>
 ```
 
@@ -341,35 +341,35 @@ Backdrops können auf verschiedene Arten positioniert werden:
 
 ## Accessibility
 
-Bei der Usage von Backdrop-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Backdrop-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Kontrast**: Stellen Sie sicher, dass der Text auf dem Backdrop ausreichenden Kontrast bietet
-2. **Lesbarkeit**: Backdrop-Effekte sollten die Lesbarkeit von Text nicht beeinträchtigen
-3. **Animation**: Vermeiden Sie übermäßige Animationen, die für Benutzer mit vestibulären Störungen problematisch sein können
-4. **Fokus**: Stellen Sie sicher, dass Fokushinweise weiterhin sichtbar sind
+1. **Kontrast**: ensure, that the Text on dem Backdrop ausreichenden Kontrast bietet
+2. **Lesbarkeit**: Backdrop-effects should the Lesbarkeit from Text not beeintrachtigen
+3. **animation**: Vermeiden them ubermassige animations, the for user with vestibularen Storungen problematisch be can
+4. **Fokus**: ensure, that Fokushinweise weiterhin sichtbar sind
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Backdrop-Effekte können die Leistung beeinflussen, insbesondere auf mobilen Geräten:
+Backdrop-effects can the Leistung beeinflussen, insbesondere on mobilen Geraten:
 
-1. **Blur-Effekte**: Blur-Effekte sind rechenintensiv und sollten sparsam eingesetzt werden
-2. **Filter**: Mehrere Filter können die Leistung beeinträchtigen
-3. **Animationen**: Animierte Backdrop-Effekte sollten auf `transform` und `opacity` beschränkt werden
-4. **Schichten**: Zu viele überlagerte Backdrop-Effekte können zu Leistungsproblemen führen
+1. **Blur-effects**: Blur-effects sind rechenintensiv and should sparsam eingesetzt become
+2. **Filter**: several Filter can the Leistung beeintrachtigen
+3. **animations**: Animierte Backdrop-effects should on `transform` and `opacity` beschrankt become
+4. **Schichten**: to many uberlagerte Backdrop-effects can to Leistungsproblemen fuhren
 
 ```css
-/* Optimierung für Animationen */
+/* Optimierung for animations */
 .animated-backdrop {
   will-change: transform, opacity;
   transform: translateZ(0);
 }
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die meisten Backdrop-Effekte sind mit allen modernen Browsern kompatibel. Einige Effekte haben jedoch Einschränkungen in älteren Browsern.
+the meisten Backdrop-effects sind with allen modernen Browsern kompatibel. some effects have however Einschrankungen in alteren Browsern.
 
-| Effekt | Chrome | Firefox | Safari | Edge | IE11 |
+| effect | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | Blur | ✓ | ✓ | ✓ | ✓ | Begrenzt |
 | Dim | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -381,8 +381,8 @@ Die meisten Backdrop-Effekte sind mit allen modernen Browsern kompatibel. Einige
 | Shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Glow | ✓ | ✓ | ✓ | ✓ | Begrenzt |
 
-## Verwandte Effekte
+## Verwandte effects
 
 - [Glaseffekte](/docs/effects/visual/glass.md) - Verwandte Glaseffekte
-- [Overlays](/docs/effects/layout/overlays.md) - Überlagerungseffekte
-- [Blur-Effekte](/docs/effects/visual/filters.md) - Weitere Unschärfeeffekte 
+- [Overlays](/docs/effects/layout/overlays.md) - Uberlagerungseffekte
+- [Blur-effects](/docs/effects/visual/filters.md) - additional Unscharfeeffekte 

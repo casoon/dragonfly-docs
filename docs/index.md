@@ -37,7 +37,7 @@ features:
 ---
 
 <div class="version-badge">
-  <p>Current Version: {{ $ui_lib_version }} <span class="beta-tag">BETA</span></p>
+  <p>Current version: {{ $ui_lib_version }} <span class="beta-tag">BETA</span></p>
 </div>
 
 <style>
@@ -98,7 +98,7 @@ Visit the [Getting Started](/getting-started/) section for detailed installation
 
 ## Key Features
 
-### Component System
+### Component system
 
 Dragonfly UI includes a wide range of UI components, from basic elements like buttons and inputs to complex components like data tables and modal dialogs. All components are designed to be:
 
@@ -107,12 +107,12 @@ Dragonfly UI includes a wide range of UI components, from basic elements like bu
 - Customizable through CSS variables
 - Consistent in behavior and appearance
 
-### Design System
+### Design system
 
 The library is built on a robust design system with:
 
 - [Design Tokens](/tokens/) for colors, spacing, typography, etc.
-- [Layout System](/layout/) with flexible grid and container options
+- [Layout system](/layout/) with flexible grid and container options
 - [Typography](/typography/) with responsive text scaling
 - [Effects](/effects/) for shadows, animations, and more
 

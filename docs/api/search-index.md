@@ -57,7 +57,7 @@ Complex components composed of multiple elements:
 | Hamburger | Mobile menu controls | [Documentation](/ui/components/hamburger) |
 | Input Group | Grouped input components | [Documentation](/ui/components/input-group) |
 | Modal | Modal window components | [Documentation](/ui/components/modal) |
-| Notification | System notification components | [Documentation](/ui/components/notification) |
+| Notification | system notification components | [Documentation](/ui/components/notification) |
 | Pagination | Page navigation controls | [Documentation](/ui/components/pagination) |
 | Popover | Contextual popup containers | [Documentation](/ui/components/popover) |
 | Progress | Progress indicators | [Documentation](/ui/components/progress) |
@@ -180,11 +180,11 @@ Helper classes for common CSS tasks:
 
 Foundational systems that power the library:
 
-| System | Description | Link |
+| system | Description | Link |
 |--------|-------------|------|
-| Color System | Color management system | [Documentation](/core/colors-system) |
+| Color system | Color management system | [Documentation](/core/colors-system) |
 | Color Mix | Color blending and manipulation | [Documentation](/core/color-mix-system) |
-| Layer System | CSS cascade layer organization | [Documentation](/core/layer-system) |
+| Layer system | CSS cascade layer organization | [Documentation](/core/layer-system) |
 | CSS Architecture | Core CSS organization | [Documentation](/core/css-system) |
 | Logical Properties | Direction-aware properties | [Documentation](/core/logical-properties) |
 | Smooth Scroll | Scrolling behavior system | [Documentation](/core/smooth-scroll) |
@@ -206,11 +206,11 @@ Design tokens for consistent styling:
 
 Systems for creating page layouts:
 
-| System | Description | Link |
+| system | Description | Link |
 |--------|-------------|------|
-| Grid System | CSS grid layout system | [Documentation](/layout/grid) |
-| Flexbox System | Flexbox layout system | [Documentation](/layout/flexbox) |
-| Container System | Layout container system | [Documentation](/layout/container) |
+| Grid system | CSS grid layout system | [Documentation](/layout/grid) |
+| Flexbox system | Flexbox layout system | [Documentation](/layout/flexbox) |
+| Container system | Layout container system | [Documentation](/layout/container) |
 | Responsive Layout | Breakpoint and responsive system | [Documentation](/layout/responsive) |
 | Spacing | Layout spacing system | [Documentation](/layout/spacing) |
 

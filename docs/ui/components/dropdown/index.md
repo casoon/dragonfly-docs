@@ -6,14 +6,14 @@ outline: deep
 
 # Dropdown
 
-Die Dropdown-Komponente ermöglicht die Anzeige einer versteckten Liste von Optionen, die bei Aktivierung sichtbar wird. Diese Komponente ist ideal für Navigationsmenüs, Filteroptionen und andere interaktive Elemente.
+the Dropdown-component ermoglicht the Anzeige einer versteckten list from Optionen, the at Aktivierung sichtbar wird. these component ist ideal for Navigationsmenus, Filteroptionen and others interaktive elements.
 
 ## Installation
 
-Die Dropdown-Komponente ist Teil der Casoon UI Library.
+the Dropdown-component ist Teil the Casoon UI Library.
 
 ```bash
-# Installation der gesamten Bibliothek
+# Installation the gesamten Bibliothek
 npm install @casoon/ui-lib
 ```
 
@@ -23,7 +23,7 @@ npm install @casoon/ui-lib
 /* Import aller UI-Components */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Dropdown-Komponente */
+/* or only the Dropdown-component */
 @import '@casoon/ui-lib/ui/components/dropdown.css';
 ```
 
@@ -32,7 +32,7 @@ npm install @casoon/ui-lib
 ```html
 <div class="dropdown">
   <button class="dropdown__trigger button">
-    Dropdown öffnen
+    Dropdown offnen
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <polyline points="6 9 12 15 18 9"></polyline>
     </svg>
@@ -45,10 +45,10 @@ npm install @casoon/ui-lib
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="position: relative; display: inline-block;">
     <button style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; cursor: pointer; font-weight: 500;">
-      Dropdown öffnen
+      Dropdown offnen
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="6 9 12 15 18 9"></polyline>
       </svg>
@@ -63,7 +63,7 @@ npm install @casoon/ui-lib
 
 ## Variants
 
-### Mit Trennlinien
+### with Trennlinien
 
 ```html
 <div class="dropdown">
@@ -72,12 +72,12 @@ npm install @casoon/ui-lib
     <a href="#" class="dropdown__item">Bearbeiten</a>
     <a href="#" class="dropdown__item">Duplizieren</a>
     <div class="dropdown__divider"></div>
-    <a href="#" class="dropdown__item dropdown__item--danger">Löschen</a>
+    <a href="#" class="dropdown__item dropdown__item--danger">delete</a>
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="position: relative; display: inline-block;">
     <button style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; cursor: pointer; font-weight: 500;">
       Aktionen
@@ -89,16 +89,16 @@ npm install @casoon/ui-lib
       <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">Bearbeiten</a>
       <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">Duplizieren</a>
       <div style="height: 1px; background-color: #e5e7eb; margin: 0.25rem 0;"></div>
-      <a href="#" style="display: block; padding: 0.5rem 1rem; color: #ef4444; text-decoration: none; hover:background-color: #f3f4f6;">Löschen</a>
+      <a href="#" style="display: block; padding: 0.5rem 1rem; color: #ef4444; text-decoration: none; hover:background-color: #f3f4f6;">delete</a>
     </div>
   </div>
 </div>
 
-### With Icons
+### With icons
 
 ```html
 <div class="dropdown">
-  <button class="dropdown__trigger button">Menü</button>
+  <button class="dropdown__trigger button">Menu</button>
   <div class="dropdown__menu">
     <a href="#" class="dropdown__item">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -126,10 +126,10 @@ npm install @casoon/ui-lib
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="position: relative; display: inline-block;">
     <button style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border: none; border-radius: 0.375rem; cursor: pointer; font-weight: 500;">
-      Menü
+      Menu
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="6 9 12 15 18 9"></polyline>
       </svg>
@@ -163,14 +163,14 @@ npm install @casoon/ui-lib
 
 ## Usagesbeispiele
 
-### Navigationsmenü
+### Navigationsmenu
 
 ```html
 <nav class="navbar">
   <div class="navbar__brand">Meine Website</div>
   <div class="navbar__menu">
     <a href="#" class="navbar__link">Home</a>
-    <a href="#" class="navbar__link">Über uns</a>
+    <a href="#" class="navbar__link">over us</a>
     <div class="dropdown">
       <button class="dropdown__trigger navbar__link">
         Produkte
@@ -179,9 +179,9 @@ npm install @casoon/ui-lib
         </svg>
       </button>
       <div class="dropdown__menu">
-        <a href="#" class="dropdown__item">Kategorie 1</a>
-        <a href="#" class="dropdown__item">Kategorie 2</a>
-        <a href="#" class="dropdown__item">Kategorie 3</a>
+        <a href="#" class="dropdown__item">category 1</a>
+        <a href="#" class="dropdown__item">category 2</a>
+        <a href="#" class="dropdown__item">category 3</a>
       </div>
     </div>
     <a href="#" class="navbar__link">Kontakt</a>
@@ -189,12 +189,12 @@ npm install @casoon/ui-lib
 </nav>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; background-color: #f9fafb; border-radius: 0.5rem; width: 100%; max-width: 700px; border: 1px solid #e5e7eb;">
     <div style="font-weight: 600; font-size: 1.25rem; color: #111827;">Meine Website</div>
     <div style="display: flex; gap: 1.5rem; align-items: center;">
       <a href="#" style="color: #374151; text-decoration: none; font-weight: 500;">Home</a>
-      <a href="#" style="color: #374151; text-decoration: none; font-weight: 500;">Über uns</a>
+      <a href="#" style="color: #374151; text-decoration: none; font-weight: 500;">over us</a>
       <div style="position: relative;">
         <button style="display: flex; align-items: center; gap: 0.5rem; background: none; border: none; color: #374151; font-weight: 500; cursor: pointer; padding: 0;">
           Produkte
@@ -203,9 +203,9 @@ npm install @casoon/ui-lib
           </svg>
         </button>
         <div style="position: absolute; top: 100%; left: 0; margin-top: 0.5rem; min-width: 10rem; background-color: white; border: 1px solid #e5e7eb; border-radius: 0.375rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); z-index: 10;">
-          <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">Kategorie 1</a>
-          <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">Kategorie 2</a>
-          <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">Kategorie 3</a>
+          <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">category 1</a>
+          <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">category 2</a>
+          <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">category 3</a>
         </div>
       </div>
       <a href="#" style="color: #374151; text-decoration: none; font-weight: 500;">Kontakt</a>
@@ -213,7 +213,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-### Aktionsmenü
+### Aktionsmenu
 
 ```html
 <div class="card">
@@ -232,17 +232,17 @@ npm install @casoon/ui-lib
         <a href="#" class="dropdown__item">Bearbeiten</a>
         <a href="#" class="dropdown__item">Archivieren</a>
         <div class="dropdown__divider"></div>
-        <a href="#" class="dropdown__item dropdown__item--danger">Löschen</a>
+        <a href="#" class="dropdown__item dropdown__item--danger">delete</a>
       </div>
     </div>
   </div>
   <div class="card__body">
-    Redesign der Unternehmenswebsite mit neuer Markenidentität und verbesserten Funktionen.
+    Redesign the Unternehmenswebsite with neuer Markenidentitat and verbesserten functions.
   </div>
 </div>
 ```
 
-<div class="example-wrapper">
+<div class="example-wrappers">
   <div style="border: 1px solid #e5e7eb; border-radius: 0.5rem; width: 100%; max-width: 400px; overflow: hidden;">
     <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #e5e7eb; background-color: #f9fafb;">
       <h3 style="margin: 0; font-size: 1rem; color: #111827;">Projekt: Website-Redesign</h3>
@@ -259,19 +259,19 @@ npm install @casoon/ui-lib
           <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">Bearbeiten</a>
           <a href="#" style="display: block; padding: 0.5rem 1rem; color: #374151; text-decoration: none; hover:background-color: #f3f4f6;">Archivieren</a>
           <div style="height: 1px; background-color: #e5e7eb; margin: 0.25rem 0;"></div>
-          <a href="#" style="display: block; padding: 0.5rem 1rem; color: #ef4444; text-decoration: none; hover:background-color: #f3f4f6;">Löschen</a>
+          <a href="#" style="display: block; padding: 0.5rem 1rem; color: #ef4444; text-decoration: none; hover:background-color: #f3f4f6;">delete</a>
         </div>
       </div>
     </div>
     <div style="padding: 1rem;">
-      Redesign der Unternehmenswebsite mit neuer Markenidentität und verbesserten Funktionen.
+      Redesign the Unternehmenswebsite with neuer Markenidentitat and verbesserten functions.
     </div>
   </div>
 </div>
 
 ## Anpassung
 
-Die Dropdown-Komponente kann mit CSS Variables angepasst werden:
+the Dropdown-component kann with CSS Variables angepasst become:
 
 ```css
 :root {
@@ -298,11 +298,11 @@ Die Dropdown-Komponente kann mit CSS Variables angepasst werden:
 
 ## JavaScript-Example
 
-Hier ist ein einfaches JavaScript-Example, um die Dropdown-Funktionalität zu implementieren:
+Hier ist a einfaches JavaScript-Example, um the Dropdown-Funktionalitat to implement:
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
-  // Alle Dropdown-Trigger finden
+  // all Dropdown-Trigger finden
   const triggers = document.querySelectorAll('.dropdown__trigger');
   
   triggers.forEach(trigger => {
@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Umschalten des aktiven Zustands
       dropdown.classList.toggle('active');
       
-      // Schließen bei Klick außerhalb
+      // close at Klick ausserhalb
       document.addEventListener('click', function closeDropdown(e) {
         if (!dropdown.contains(e.target)) {
           dropdown.classList.remove('active');
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Tastaturunterstützung für Dropdown-Items
+  // Tastaturunterstutzung for Dropdown-Items
   const items = document.querySelectorAll('.dropdown__item');
   
   items.forEach(item => {
@@ -352,20 +352,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Accessibility
 
-- Verwende `aria-expanded="true/false"` auf dem Trigger-Element
-- Setze `aria-haspopup="true"` auf dem Trigger-Element
-- Füge `aria-labelledby` zum Dropdown-Menü hinzu, das auf die ID des Triggers verweist
-- Stelle sicher, dass Dropdown-Menüs mit der Tastatur bedienbar sind
-- Verwende `role="menu"` für das Menü und `role="menuitem"` für die Menüpunkte
-- Ermögliche das Schließen des Menüs mit der ESC-Taste
-- Achte auf ausreichenden Kontrast zwischen Text und Hintergrund
+- Verwende `aria-expanded="true/false"` on dem Trigger-element
+- Setze `aria-haspopup="true"` on dem Trigger-element
+- Fuge `aria-labelledby` zum Dropdown-Menu hinzu, the on the ID des Triggers verweist
+- Stelle sicher, that Dropdown-Menus with the Tastatur bedienbar sind
+- Verwende `role="menu"` for the Menu and `role="menuitem"` for the Menupunkte
+- Ermogliche the close des Menus with the ESC-Taste
+- Achte on ausreichenden Kontrast between Text and background
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Dropdown-Komponente ist mit allen modernen Browsern kompatibel.
+the Dropdown-component ist with allen modernen Browsern kompatibel.
 
-| Funktion | Chrome | Firefox | Safari | Edge |
+| function | Chrome | Firefox | Safari | Edge |
 |----------|--------|---------|--------|------|
-| Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
+| Grundlegende Funktionalitat | ✅ | ✅ | ✅ | ✅ |
 | Positionierung | ✅ | ✅ | ✅ | ✅ |
 | CSS Variables | 49+ | 31+ | 9.1+ | 15+ |

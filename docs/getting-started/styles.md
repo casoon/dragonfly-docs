@@ -3,9 +3,9 @@ title: Styles
 category: Getting Started
 ---
 
-# Styles in the Casoon UI Design System
+# Styles in the Casoon UI Design system
 
-The Casoon UI Design System offers a comprehensive collection of CSS styles and utility classes that are based on design tokens and ensure consistent, responsive, and accessible user interfaces.
+The Casoon UI Design system offers a comprehensive collection of CSS styles and utility classes that are based on design tokens and ensure consistent, responsive, and accessible user interfaces.
 
 ## Overview
 
@@ -39,7 +39,7 @@ The styles are modularly structured and use the layering approach of CSS:
 }
 ```
 
-## CSS Variables System
+## CSS Variables system
 
 All styles are based on CSS variables (Custom Properties) defined at the :root level:
 

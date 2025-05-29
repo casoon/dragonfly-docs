@@ -1,9 +1,9 @@
 ---
-title: Grid System
+title: Grid system
 category: Layout
 ---
 
-# Grid System
+# Grid system
 
 The Casoon UI Library implements a powerful CSS Grid system that enables complex, two-dimensional layouts with minimal markup. This document outlines the grid utilities, components, and best practices for creating advanced layouts.
 

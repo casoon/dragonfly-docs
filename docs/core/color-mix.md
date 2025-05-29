@@ -1,31 +1,31 @@
 ---
-title: Color-Mix System
+title: Color-Mix system
 category: Core
 ---
 
-# Color-Mix System
+# Color-Mix system
 
-Das Color-Mix System der Casoon UI Library bietet fortschrittliche Werkzeuge zur dynamischen Farbmanipulation und -mischung. Mit diesem System können Sie nahtlos Colors mischen, transformieren und anpassen, um ein konsistentes und harmonisches Farbschema in Ihrer Anwendung zu erzielen.
+the Color-Mix system the Casoon UI Library bietet fortschrittliche Werkzeuge zur dynamischen Farbmanipulation and -mischung. with diesem system can them nahtlos Colors mischen, transformieren and customize, um a konsistentes and harmonisches color scheme in Ihrer Application to erzielen.
 
-## Überblick
+## Uberblick
 
-Das Color-Mix System nutzt moderne CSS-Funktionen wie `color-mix()`, `color-contrast()` und `color()`, um Colors dynamisch zu manipulieren. Dies ermöglicht:
+the Color-Mix system nutzt moderne CSS-functions how `color-mix()`, `color-contrast()` and `color()`, um Colors dynamisch to manipulieren. Dies ermoglicht:
 
-- Dynamisches Mischen von Colors
-- Automatische Berechnung von Kontrasten
-- Erzeugung von Farbvarianten und -schattierungen
-- Anpassung der Opazität von Colors
-- Erstellung fließender Farbübergänge
+- Dynamisches Mischen from Colors
+- Automatische Berechnung from Kontrasten
+- Erzeugung from Farbvarianten and -schattierungen
+- Customization the opacity from Colors
+- Erstellung fliessender Farbubergange
 
 ## Installation
 
-Das Color-Mix System wird automatisch mit dem Core-Modul der Casoon UI Library geladen:
+the Color-Mix system wird automatisch with dem Core-modules the Casoon UI Library geladen:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 ```
 
-Sie können es auch separat importieren:
+You can it also separat import:
 
 ```css
 @import '@casoon/ui-lib/core/color-mix.css';
@@ -33,32 +33,32 @@ Sie können es auch separat importieren:
 
 ## Grundlegende Farbmischung
 
-### Die color-mix() Funktion
+### the color-mix() Function
 
-Das Herzstück des Color-Mix Systems ist die `color-mix()` CSS-Funktion, die zwei Colors in einem bestimmten Farbmodell mischt:
+the Herzstuck des Color-Mix Systems ist the `color-mix()` CSS-Function, the zwei Colors in einem bestimmten Farbmodell mischt:
 
 ```css
 .element {
-  /* Mischt Rot und Blau zu einem Lila */
+  /* Mischt Rot and Blau to einem Lila */
   background-color: color-mix(in srgb, red, blue);
   
-  /* Mischt 30% Rot mit 70% Blau */
+  /* Mischt 30% Rot with 70% Blau */
   color: color-mix(in srgb, red 30%, blue 70%);
 }
 ```
 
-### Farbmischungs-Klassen
+### Farbmischungs-classes
 
-Die Casoon UI Library bietet vordefinierte Klassen für häufige Farbmischungen:
+the Casoon UI Library bietet vordefinierte classes for haufige Farbmischungen:
 
 ```html
-<!-- Primärfarbe mit 20% Weiß gemischt (aufhellen) -->
+<!-- Primarfarbe with 20% Weiss gemischt (aufhellen) -->
 <div class="color-mix-lighten-20"></div>
 
-<!-- Primärfarbe mit 20% Schwarz gemischt (abdunkeln) -->
+<!-- Primarfarbe with 20% Schwarz gemischt (abdunkeln) -->
 <div class="color-mix-darken-20"></div>
 
-<!-- Primärfarbe mit 20% Transparenz -->
+<!-- Primarfarbe with 20% transparency -->
 <div class="color-mix-alpha-80"></div>
 ```
 
@@ -66,7 +66,7 @@ Die Casoon UI Library bietet vordefinierte Klassen für häufige Farbmischungen:
 
 ### Farbmodelle
 
-Das Color-Mix System unterstützt verschiedene Farbmodelle für unterschiedliche Use Cases:
+the Color-Mix system unterstutzt verschiedene Farbmodelle for unterschiedliche Use Cases:
 
 ```css
 /* RGB-Farbmodell (Standard) */
@@ -74,12 +74,12 @@ Das Color-Mix System unterstützt verschiedene Farbmodelle für unterschiedliche
   background-color: color-mix(in srgb, var(--color-primary), var(--color-secondary));
 }
 
-/* HSL-Farbmodell (gut für Farbton-Customizations) */
+/* HSL-Farbmodell (good for Farbton-customizations) */
 .hsl-mix {
   background-color: color-mix(in hsl, var(--color-primary), var(--color-secondary));
 }
 
-/* LCH-Farbmodell (wahrnehmungsbasiert, gleichmäßigere Mischungen) */
+/* LCH-Farbmodell (wahrnehmungsbasiert, gleichmassigere Mischungen) */
 .lch-mix {
   background-color: color-mix(in lch, var(--color-primary), var(--color-secondary));
 }
@@ -87,29 +87,29 @@ Das Color-Mix System unterstützt verschiedene Farbmodelle für unterschiedliche
 
 ### Farb-Kontrast
 
-Mit der `color-contrast()` Funktion können Sie automatisch die Farbe mit dem besten Kontrast auswählen:
+with the `color-contrast()` Function can them automatisch the color with dem besten Kontrast selections:
 
 ```css
 .auto-contrast-text {
-  /* Wählt entweder Schwarz oder Weiß, je nachdem, was besser auf dem Hintergrund lesbar ist */
+  /* Wahlt entweder Schwarz or Weiss, je after, what better on dem background lesbar ist */
   color: color-contrast(var(--background-color) vs white, black);
 }
 ```
 
-Die Casoon UI Library bietet Utility-Klassen für automatischen Kontrast:
+the Casoon UI Library bietet Utility-classes for automatischen Kontrast:
 
 ```html
-<!-- Text passt sich automatisch dem Hintergrund an -->
+<!-- Text passt oneself automatisch dem background on -->
 <div class="bg-primary text-contrast">
-  Dieser Text hat optimalen Kontrast
+  this Text hat optimalen Kontrast
 </div>
 ```
 
-## Farbschemata erstellen
+## Farbschemata create
 
 ### Monochromatische Farbschemata
 
-Erstellen Sie ein monochromatisches Farbschema basierend auf einer Basisfarbe:
+create them a monochromatisches color scheme basierend on einer Basisfarbe:
 
 ```css
 :root {
@@ -125,7 +125,7 @@ Erstellen Sie ein monochromatisches Farbschema basierend auf einer Basisfarbe:
 
 ### Analoge Farbschemata
 
-Mit HSL-Mischungen können Sie analoge Farbschemata erstellen:
+with HSL-Mischungen can them analoge Farbschemata create:
 
 ```css
 :root {
@@ -133,7 +133,7 @@ Mit HSL-Mischungen können Sie analoge Farbschemata erstellen:
   --color-analogous-1: hsl(240, 100%, 50%); /* +30 Grad im Farbkreis */
   --color-analogous-2: hsl(180, 100%, 50%); /* -30 Grad im Farbkreis */
   
-  /* Mischungen für sanfte Übergänge */
+  /* Mischungen for sanfte Ubergange */
   --color-transition-1: color-mix(in hsl, var(--color-base), var(--color-analogous-1));
   --color-transition-2: color-mix(in hsl, var(--color-base), var(--color-analogous-2));
 }
@@ -141,9 +141,9 @@ Mit HSL-Mischungen können Sie analoge Farbschemata erstellen:
 
 ## Praktische Anwendungen
 
-### Hover-Effekte
+### Hover-effects
 
-Erstellen Sie dynamische Hover-Effekte mit dem Color-Mix System:
+create them dynamische Hover-effects with dem Color-Mix system:
 
 ```css
 .button {
@@ -152,14 +152,14 @@ Erstellen Sie dynamische Hover-Effekte mit dem Color-Mix System:
 }
 
 .button:hover {
-  /* 15% dunklere Version der Primärfarbe beim Hover */
+  /* 15% dunklere version the Primarfarbe beim Hover */
   background-color: color-mix(in srgb, var(--color-primary), black 15%);
 }
 ```
 
-### Schatten und Overlays
+### shadow and Overlays
 
-Erstellen Sie themenkonsistente Schatten:
+create them themenkonsistente shadow:
 
 ```css
 .card {
@@ -174,7 +174,7 @@ Erstellen Sie themenkonsistente Schatten:
 
 ### Accessibility verbessern
 
-Verwenden Sie das Color-Mix System, um die Accessibility zu verbessern:
+use them the Color-Mix system, um the Accessibility to verbessern:
 
 ```css
 .focus-outline {
@@ -183,25 +183,25 @@ Verwenden Sie das Color-Mix System, um die Accessibility zu verbessern:
 }
 
 .error-message {
-  /* Verwendet eine dunklere Version der Fehlerfarbe für besseren Kontrast */
+  /* Verwendet a dunklere version the Fehlerfarbe for besseren Kontrast */
   color: color-mix(in srgb, var(--color-error), black 20%);
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Das Color-Mix System wird durch eine Kombination aus nativen CSS-Funktionen und Custom Properties implementiert:
+the Color-Mix system wird through a Kombination aus nativen CSS-functions and Custom Properties implementiert:
 
 ```css
 :root {
-  /* Basis-Farbdefinitionen */
+  /* Base-Farbdefinitionen */
   --color-primary: #3b82f6;
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   --color-info: #6366f1;
   
-  /* Dynamische Farbvarianten mit color-mix */
+  /* Dynamische Farbvarianten with color-mix */
   --color-primary-light: color-mix(in srgb, var(--color-primary), white 30%);
   --color-primary-lighter: color-mix(in srgb, var(--color-primary), white 70%);
   --color-primary-dark: color-mix(in srgb, var(--color-primary), black 30%);
@@ -220,7 +220,7 @@ Das Color-Mix System wird durch eine Kombination aus nativen CSS-Funktionen und 
   --color-on-info: color-contrast(var(--color-info) vs white, black);
 }
 
-/* Utility-Klassen für Farbmischung */
+/* Utility-classes for Farbmischung */
 .color-mix-lighten-10 { color: color-mix(in srgb, currentColor, white 10%); }
 .color-mix-lighten-20 { color: color-mix(in srgb, currentColor, white 20%); }
 .color-mix-lighten-30 { color: color-mix(in srgb, currentColor, white 30%); }
@@ -237,7 +237,7 @@ Das Color-Mix System wird durch eine Kombination aus nativen CSS-Funktionen und 
 .bg-mix-darken-20 { background-color: color-mix(in srgb, currentColor, black 20%); }
 .bg-mix-darken-30 { background-color: color-mix(in srgb, currentColor, black 30%); }
 
-/* Automatische Kontrast-Anpassung */
+/* Automatische Kontrast-Customization */
 .text-contrast {
   color: color-contrast(var(--background-color, inherit) vs white, black);
 }
@@ -310,10 +310,10 @@ Das Color-Mix System wird durch eine Kombination aus nativen CSS-Funktionen und 
 ### Interaktive Components
 
 ```html
-<button class="button button-primary">Primär-Button</button>
-<button class="button button-success">Erfolgs-Button</button>
-<button class="button button-warning">Warn-Button</button>
-<button class="button button-error">Fehler-Button</button>
+<button class="button button-primary">Primar-button</button>
+<button class="button button-success">Erfolgs-button</button>
+<button class="button button-warning">Warn-button</button>
+<button class="button button-error">errors-button</button>
 
 <style>
   .button {
@@ -367,28 +367,28 @@ Das Color-Mix System wird durch eine Kombination aus nativen CSS-Funktionen und 
 </style>
 ```
 
-## Tipps für optimale Farbmischung
+## Tipps for optimale Farbmischung
 
-1. **Wählen Sie das richtige Farbmodell**: 
-   - Verwenden Sie `srgb` für allgemeine Mischungen
-   - Verwenden Sie `hsl` für Farbton-Customizations
-   - Verwenden Sie `lch` für wahrnehmungsbasierte, gleichmäßigere Mischungen
+1. **Wahlen them the richtige Farbmodell**: 
+   - use them `srgb` for allgemeine Mischungen
+   - use them `hsl` for Farbton-customizations
+   - use them `lch` for wahrnehmungsbasierte, gleichmassigere Mischungen
 
-2. **Kontrast beachten**: 
-   - Stellen Sie sicher, dass gemischte Colors ausreichenden Kontrast für Accessibility bieten
-   - Verwenden Sie `color-contrast()` für automatische Kontrastanpassungen
+2. **Kontrast note**: 
+   - ensure, that gemischte Colors ausreichenden Kontrast for Accessibility bieten
+   - use them `color-contrast()` for automatische Kontrastanpassungen
 
 3. **Consistency wahren**: 
-   - Verwenden Sie die gleichen Mischungsverhältnisse für ähnliche UI-Elemente
-   - Definieren Sie Mischungsvariablen auf Root-Ebene für konsistente Anwendung
+   - use them the gleichen Mischungsverhaltnisse for ahnliche UI-elements
+   - define them Mischungsvariablen on Root-layer for konsistente Application
 
-4. **Performance-Überlegungen**:
-   - Vermeiden Sie übermäßig komplexe Farbberechnungen im Live-DOM
-   - Definieren Sie komplexe Mischungen als CSS Variables für bessere Performance
+4. **Performance-Uberlegungen**:
+   - Vermeiden them ubermassig komplexe Farbberechnungen im Live-DOM
+   - define them komplexe Mischungen as CSS Variables for bessere Performance
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Das Color-Mix System basiert auf modernen CSS-Funktionen mit unterschiedlicher Browser-Unterstützung:
+the Color-Mix system basiert on modernen CSS-functions with unterschiedlicher Browser-Unterstutzung:
 
 | Feature | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|
@@ -396,21 +396,21 @@ Das Color-Mix System basiert auf modernen CSS-Funktionen mit unterschiedlicher B
 | color-contrast() | Partial | Nein | Nein | Partial |
 | Relative Farbsyntax | 101+ | 113+ | 15+ | 101+ |
 
-Für Browser ohne native Unterstützung bietet die Casoon UI Library Fallback-Mechanismen:
+for Browser without native Unterstutzung bietet the Casoon UI Library Fallback-Mechanismen:
 
-- Vordefinierte Farbvariablen als Fallback
-- PostCSS-Plugins für Vorverarbeitung
-- JavaScript-Polyfills für dynamische Farbmischung
+- Vordefinierte Farbvariablen as Fallback
+- PostCSS-Plugins for Vorverarbeitung
+- JavaScript-Polyfills for dynamische Farbmischung
 
-## Integration mit anderen Systemen
+## Integration with anderen Systemen
 
-Das Color-Mix System integriert sich nahtlos mit anderen Teilen der Casoon UI Library:
+the Color-Mix system integriert oneself nahtlos with anderen Teilen the Casoon UI Library:
 
-- **Theming System**: Dynamische Themenwechsel mit automatischer Farbmischung
-- **Accessibility Utilities**: Automatische Kontrastanpassungen für bessere Lesbarkeit
-- **Component System**: Themenkonsistente Statusfarben (hover, active, disabled)
-- **Dark Mode**: Automatische Anpassung von Farbmischungen im Dark Mode
+- **Theming system**: Dynamische Themenwechsel with automatischer Farbmischung
+- **Accessibility Utilities**: Automatische Kontrastanpassungen for bessere Lesbarkeit
+- **Component system**: Themenkonsistente Statusfarben (hover, active, disabled)
+- **Dark Mode**: Automatische Customization from Farbmischungen im Dark Mode
 
 ## Zusammenfassung
 
-Das Color-Mix System der Casoon UI Library bietet leistungsstarke Werkzeuge zur dynamischen Farbmanipulation. Mit diesem System können Sie konsistente, themenkonforme und barrierefreie Farbschemata erstellen, die sich nahtlos an verschiedene Anforderungen anpassen. Die Kombination aus modernen CSS-Farbfunktionen und vorgefertigten Utility-Klassen vereinfacht die Verwaltung von Colors in Ihrer Anwendung erheblich. 
+the Color-Mix system the Casoon UI Library bietet leistungsstarke Werkzeuge zur dynamischen Farbmanipulation. with diesem system can them konsistente, themenkonforme and barrierefreie Farbschemata create, the oneself nahtlos on verschiedene Anforderungen customize. the Kombination aus modernen CSS-Farbfunktionen and vorgefertigten Utility-classes vereinfacht the Verwaltung from Colors in Ihrer Application erheblich. 

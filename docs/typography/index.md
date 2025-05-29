@@ -5,32 +5,32 @@ category: Typography
 
 # Typography
 
-Das Typography-System der Casoon UI Library bietet eine umfassende und flexible Lösung für die Gestaltung von Text und die Sicherstellung von Lesbarkeit, Hierarchie und Consistency in Ihrer Anwendung.
+the Typography-system the Casoon UI Library bietet a umfassende and flexible Losung for the Gestaltung from Text and the Sicherstellung from Lesbarkeit, Hierarchie and Consistency in Ihrer Anwendung.
 
 ## Overview
 
-Das Typography-System umfasst:
+the Typography-system umfasst:
 
-- **Font Families**: Sorgfältig ausgewählte Schriftfamilien für optimale Lesbarkeit
-- **Headings**: Hierarchische Überschriftenstruktur
+- **Font Families**: Sorgfaltig ausgewahlte Schriftfamilien for optimale Lesbarkeit
+- **Headings**: Hierarchische Uberschriftenstruktur
 - **Paragraphs**: Optimierte Absatzformatierung
-- **Inline Elements**: Hervorhebungen, Links und andere Inline-Textelemente
-- **Lists**: Formatierung für verschiedene Listentypen
-- **Responsive Typography**: Flüssige Schriftgrößenanpassung an verschiedene Bildschirmgrößen
+- **Inline Elements**: Hervorhebungen, links and others Inline-Textelemente
+- **Lists**: Formatierung for verschiedene Listentypen
+- **Responsive Typography**: Flussige Schriftgrossenanpassung on verschiedene Bildschirmgrossen
 
 ## Prinzipien
 
-Das Typography-System folgt diesen Prinzipien:
+the Typography-system folgt diesen Prinzipien:
 
-1. **Lesbarkeit**: Optimierung für bestmögliche Lesbarkeit
-2. **Hierarchie**: Klare visuelle Hierarchie für verbesserte Scanbarkeit
+1. **Lesbarkeit**: Optimierung for bestmogliche Lesbarkeit
+2. **Hierarchie**: Klare visuelle Hierarchie for verbesserte Scanbarkeit
 3. **Consistency**: Einheitliche Textdarstellung
-4. **Responsivität**: Anpassung an verschiedene Bildschirmgrößen
-5. **Accessibility**: Einhaltung von WCAG-Richtlinien für Textkontrast und -größe
+4. **Responsivitat**: Anpassung on verschiedene Bildschirmgrossen
+5. **Accessibility**: Einhaltung from WCAG-Richtlinien for Textkontrast and -size
 
 ## Implementierung
 
-Die Typography wird mittels CSS Variables und einem Schichtsystem implementiert:
+the Typography wird mittels CSS Variables and einem Schichtsystem implementiert:
 
 ```css
 :root {
@@ -39,7 +39,7 @@ Die Typography wird mittels CSS Variables und einem Schichtsystem implementiert:
   --font-family-heading: 'Inter', system-ui, sans-serif;
   --font-family-mono: 'Fira Code', monospace;
   
-  /* Schriftgrößen */
+  /* Schriftgrossen */
   --text-xs: 0.75rem;
   --text-s: 0.875rem;
   --text-m: 1rem;
@@ -60,13 +60,13 @@ Die Typography wird mittels CSS Variables und einem Schichtsystem implementiert:
 
 ## Usage
 
-Das Typography-System kann als Teil des Core-Imports oder individuell eingebunden werden:
+the Typography-system kann as Teil des Core-Imports or individuell eingebunden become:
 
 ```css
-/* Als Teil des Core-Imports */
+/* as Teil des Core-Imports */
 @import '@casoon/ui-lib/core.css';
 
-/* Oder individuell */
+/* or individuell */
 @import '@casoon/ui-lib/typography.css';
 ```
 

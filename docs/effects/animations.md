@@ -1,24 +1,24 @@
 ---
-title: Animation Effects
+title: animation Effects
 category: Effects
 ---
 
-# Animation Effects
+# animation Effects
 
-Die Datei `animations.css` bietet ein umfassendes System von Animationen, die Ihre Benutzeroberfläche zum Leben erwecken können. Mit über 20 verschiedenen Basis-Animationseffekten und zahlreichen Konfigurationsoptionen ermöglicht diese Bibliothek eine präzise Steuerung von Bewegungen in Ihrer Anwendung.
+Die file `animations.css` bietet ein umfassendes system von Animationen, die Ihre Benutzeroberflache zum Leben erwecken can. Mit over 20 verschiedenen Base-Animationseffekten und zahlreichen Konfigurationsoptionen ermoglicht diese Bibliothek eine prazise Steuerung von Bewegungen in Ihrer Application.
 
-## Überblick
+## Uberblick
 
 Die Animations-Bibliothek bietet:
 
-- Grundlegende Effekte (Einblenden, Gleiten, Skalieren)
-- Aufmerksamkeitserregende Animationen (Hüpfen, Pulsieren, Schütteln)
+- Grundlegende effects (Einblenden, Gleiten, Skalieren)
+- Aufmerksamkeitserregende Animationen (Hupfen, Pulsieren, Schutteln)
 - Interaktionsbasierte Animationen
-- Gestaffelte Animationen für Listenelemente
+- Gestaffelte Animationen for Listenelemente
 - Dialog- und Modal-Animationen
-- Anpassbare Animations-Kontexte für konsistente Bewegungsstile
+- Anpassbare Animations-Kontexte for konsistente Bewegungsstile
 
-Alle Animationen berücksichtigen Barrierefreiheitseinstellungen wie `prefers-reduced-motion` und bieten umfangreiche Konfigurationsmöglichkeiten durch CSS-Variablen.
+Alle Animationen berucksichtigen Barrierefreiheitseinstellungen wie `prefers-reduced-motion` und bieten umfangreiche Konfigurationsmoglichkeiten durch CSS Variables.
 
 ## Grundlegende Animationen
 
@@ -48,20 +48,20 @@ Alle Animationen berücksichtigen Barrierefreiheitseinstellungen wie `prefers-re
 ## Aufmerksamkeitserregende Animationen
 
 ```html
-<div class="animate-bounce">Hüpfendes Element</div>
+<div class="animate-bounce">Hupfendes Element</div>
 <div class="animate-pulse">Pulsierendes Element</div>
 <div class="animate-spin">Rotierendes Element</div>
-<div class="animate-ping">Ping-Effekt (nützlich für Benachrichtigungen)</div>
+<div class="animate-ping">Ping-Effekt (nutzlich for Benachrichtigungen)</div>
 <div class="animate-wiggle">Wackelndes Element</div>
 <div class="animate-float">Schwebendes Element</div>
-<div class="animate-shake">Schüttelndes Element</div>
-<div class="animate-heartbeat">Herzschlag-Animation</div>
+<div class="animate-shake">Schuttelndes Element</div>
+<div class="animate-heartbeat">Herzschlag-animation</div>
 <div class="animate-elastic">Elastischer Effekt</div>
 ```
 
 ## Scroll-aktivierte Animationen
 
-Elemente werden animiert, wenn sie beim Scrollen ins Sichtfeld kommen:
+elements werden animiert, If you beim Scrollen ins Sichtfeld kommen:
 
 ```html
 <div class="scroll-fade-in">Erscheint beim Scrollen</div>
@@ -78,45 +78,45 @@ Elemente werden animiert, wenn sie beim Scrollen ins Sichtfeld kommen:
 <button class="tap-feedback">Gibt visuelles Feedback bei Tipp/Klick</button>
 ```
 
-## Übergangsklassen
+## Ubergangsklassen
 
-Für sanfte Übergänge zwischen Zuständen:
+for sanfte Ubergange zwischen Zustanden:
 
 ```html
-<div class="transition-opacity">Sanfter Übergang der Transparenz</div>
-<div class="transition-transform">Sanfter Übergang von Transformationen</div>
-<div class="transition-shadow">Sanfter Übergang von Schatten</div>
-<div class="transition-colors">Sanfter Übergang von Farben</div>
-<div class="transition-all">Sanfter Übergang aller Eigenschaften</div>
+<div class="transition-opacity">Sanfter transition der transparency</div>
+<div class="transition-transform">Sanfter transition von Transformationen</div>
+<div class="transition-shadow">Sanfter transition von shadow</div>
+<div class="transition-colors">Sanfter transition von Farben</div>
+<div class="transition-all">Sanfter transition aller Eigenschaften</div>
 ```
 
 ## Dialog-Animationen
 
-Für modale Dialoge und Popups:
+for modale Dialoge und Popups:
 
 ```html
 <dialog class="dialog-animated">
-  Dieser Dialog wird beim Öffnen und Schließen animiert
+  Dieser Dialog wird beim Offnen und close animiert
 </dialog>
 
-<div class="dialog-enter">Animation für eingehende Dialoge</div>
-<div class="dialog-exit">Animation für ausgehende Dialoge</div>
+<div class="dialog-enter">animation for eingehende Dialoge</div>
+<div class="dialog-exit">animation for ausgehende Dialoge</div>
 ```
 
 ## Fokus-Animationen
 
-Für bessere Fokus-Sichtbarkeit (Barrierefreiheit):
+for bessere Fokus-Sichtbarkeit (Barrierefreiheit):
 
 ```html
 <button class="focus-ring-animated">Hat animierten Fokus-Ring</button>
-<button class="focus-ring-animated primary">Primärer Fokus-Ring</button>
+<button class="focus-ring-animated primary">Primarer Fokus-Ring</button>
 <button class="focus-ring-animated warning">Warnungs-Fokus-Ring</button>
 <button class="focus-ring-animated error">Fehler-Fokus-Ring</button>
 ```
 
 ## Gestaffelte Animationen
 
-Für sequentielle Animationen von Listenelementen:
+for sequentielle Animationen von Listenelementen:
 
 ```html
 <ul class="staggered-container staggered-fade-in">
@@ -126,7 +126,7 @@ Für sequentielle Animationen von Listenelementen:
   <!-- ... -->
 </ul>
 
-<!-- Verschiedene gestaffelte Effekte -->
+<!-- Verschiedene gestaffelte effects -->
 <ul class="staggered-container staggered-slide-in-up">...</ul>
 <ul class="staggered-container staggered-slide-in-down">...</ul>
 <ul class="staggered-container staggered-slide-in-left">...</ul>
@@ -140,27 +140,27 @@ Für sequentielle Animationen von Listenelementen:
 <ul class="staggered-container staggered-fade-in stagger-group-2">...</ul>
 <ul class="staggered-container staggered-fade-in stagger-group-3">...</ul>
 
-<!-- Zeitintervall-Anpassung -->
+<!-- Zeitintervall-Customization -->
 <ul class="staggered-container staggered-fade-in stagger-increment-small">...</ul>
 <ul class="staggered-container staggered-fade-in stagger-increment-normal">...</ul>
 <ul class="staggered-container staggered-fade-in stagger-increment-large">...</ul>
 ```
 
-## Hintergrund-Animationen
+## background-Animationen
 
-Für animierte Overlays und Hintergründe:
+for animierte Overlays und Hintergrunde:
 
 ```html
-<div class="backdrop">Abgedunkelter Hintergrund</div>
-<div class="backdrop-blur">Verschwommener Hintergrund</div>
+<div class="backdrop">Abgedunkelter background</div>
+<div class="backdrop-blur">Verschwommener background</div>
 <div class="backdrop-light">Leichter Hintergrundeffekt</div>
 <div class="backdrop-dark">Dunkler Hintergrundeffekt</div>
 <div class="backdrop-medium">Mittlerer Hintergrundeffekt</div>
 <div class="backdrop-strong">Starker Hintergrundeffekt</div>
-<div class="backdrop-transition">Animierter Hintergrund</div>
+<div class="backdrop-transition">Animierter background</div>
 ```
 
-## Anpassung der Animations-Parameter
+## Customization der Animations-parameter
 
 ### Dauerkategorien
 
@@ -173,14 +173,14 @@ Für animierte Overlays und Hintergründe:
 <div class="fade-in duration-slowest">Sehr langsam</div>
 ```
 
-### Verzögerungskategorien
+### Verzogerungskategorien
 
 ```html
-<div class="fade-in delay-xs">Sehr kurze Verzögerung</div>
-<div class="fade-in delay-sm">Kurze Verzögerung</div>
-<div class="fade-in delay-md">Mittlere Verzögerung</div>
-<div class="fade-in delay-lg">Lange Verzögerung</div>
-<div class="fade-in delay-xl">Sehr lange Verzögerung</div>
+<div class="fade-in delay-xs">Sehr kurze Verzogerung</div>
+<div class="fade-in delay-sm">Kurze Verzogerung</div>
+<div class="fade-in delay-md">Mittlere Verzogerung</div>
+<div class="fade-in delay-lg">length Verzogerung</div>
+<div class="fade-in delay-xl">Sehr length Verzogerung</div>
 ```
 
 ### Wiederholungskategorien
@@ -196,51 +196,51 @@ Für animierte Overlays und Hintergründe:
 
 ```html
 <div class="animate-pulse direction-normal">Normal</div>
-<div class="animate-pulse direction-reverse">Rückwärts</div>
+<div class="animate-pulse direction-reverse">Ruckwarts</div>
 <div class="animate-pulse direction-alternate">Abwechselnd</div>
-<div class="animate-pulse direction-alternate-reverse">Abwechselnd rückwärts</div>
+<div class="animate-pulse direction-alternate-reverse">Abwechselnd ruckwarts</div>
 ```
 
-### Füllmoduskategorien
+### Fullmoduskategorien
 
 ```html
-<div class="fade-in fill-none">Kein Füllmodus</div>
-<div class="fade-in fill-forwards">Vorwärts</div>
-<div class="fade-in fill-backwards">Rückwärts</div>
+<div class="fade-in fill-none">Kein Fullmodus</div>
+<div class="fade-in fill-forwards">Vorwarts</div>
+<div class="fade-in fill-backwards">Ruckwarts</div>
 <div class="fade-in fill-both">Beide</div>
 ```
 
 ## Animations-Kontexte
 
-Animations-Kontexte bieten vordefinierte Einstellungen für konsistente Animationsstile in Ihrem Designsystem:
+Animations-Kontexte bieten vordefinierte Einstellungen for konsistente Animationsstile in Ihrem design system:
 
 ```html
 <!-- Schnellere, energetische Animationen -->
 <div class="animation-context-energetic">
-  <div class="fade-in">Energetische Animation</div>
+  <div class="fade-in">Energetische animation</div>
   <div class="slide-in-up">Dynamischer Gleiteffekt</div>
   <div class="staggered-container staggered-fade-in">
-    <div>Schnelle gestaffelte Elemente</div>
+    <div>Schnelle gestaffelte elements</div>
     <div>Mit kurzen Intervallen</div>
   </div>
 </div>
 
 <!-- Subtile, sanfte Animationen -->
 <div class="animation-context-subtle">
-  <div class="fade-in">Subtile Animation</div>
+  <div class="fade-in">Subtile animation</div>
   <div class="slide-in-up">Sanfter Gleiteffekt</div>
 </div>
 
 <!-- Verspielte Animationen mit mehr Bewegung -->
 <div class="animation-context-playful">
-  <div class="animate-bounce">Stärkeres Hüpfen</div>
-  <div class="animate-wiggle">Auffälligeres Wackeln</div>
+  <div class="animate-bounce">Starkeres Hupfen</div>
+  <div class="animate-wiggle">Auffalligeres Wackeln</div>
 </div>
 ```
 
 ## Bewegungsdistanz-Kontexte
 
-Für konsistente Bewegungsdistanzen:
+for konsistente Bewegungsdistanzen:
 
 ```html
 <div class="move-context-small">
@@ -252,13 +252,13 @@ Für konsistente Bewegungsdistanzen:
 </div>
 
 <div class="move-context-large">
-  <div class="slide-in-up">Große Bewegungsdistanz</div>
+  <div class="slide-in-up">size Bewegungsdistanz</div>
 </div>
 ```
 
-## Anpassung über CSS-Variablen
+## Customization over CSS Variables
 
-Die Animations-Einstellungen können über CSS-Variablen angepasst werden:
+Die Animations-Einstellungen can over CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -275,7 +275,7 @@ Die Animations-Einstellungen können über CSS-Variablen angepasst werden:
   --move-distance-medium: 30px;
   --move-distance-large: 50px;
   
-  /* Verzögerungen */
+  /* Verzogerungen */
   --delay-xs: 50ms;
   --delay-sm: 100ms;
   --delay-md: 200ms;
@@ -299,7 +299,7 @@ Die Animations-Einstellungen können über CSS-Variablen angepasst werden:
 
 ## Barrierefreiheit
 
-Die Animations-Bibliothek respektiert automatisch Benutzereinstellungen für reduzierte Bewegung:
+Die Animations-Bibliothek respektiert automatisch Benutzereinstellungen for reduzierte Bewegung:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -320,6 +320,6 @@ Die Animations-Bibliothek respektiert automatisch Benutzereinstellungen für red
 }
 ```
 
-## Browser-Unterstützung
+## Browser-Unterstutzung
 
-Alle Animationseffekte unterstützen moderne Browser. Für ältere Browser werden Fallbacks bereitgestellt, die grundlegende Funktionalität gewährleisten, ohne dass Animationen erforderlich sind. 
+Alle Animationseffekte unterstutzen moderne Browser. for altere Browser werden Fallbacks bereitgestellt, die grundlegende Funktionalitat gewahrleisten, ohne dass Animationen erforderlich sind. 

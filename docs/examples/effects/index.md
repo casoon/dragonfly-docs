@@ -102,7 +102,7 @@ The Effects modules of the Casoon UI Library offer a variety of visual effects a
 ```html
 <div class="dashboard theme-night">
   <div class="dashboard-header">
-    <h2 class="neon-text-blue">System Status</h2>
+    <h2 class="neon-text-blue">system Status</h2>
     <div class="dashboard-controls">
       <button class="neon-border-blue neon-border-hover">Refresh</button>
       <button class="neon-border-blue neon-border-hover">Settings</button>

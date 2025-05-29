@@ -1,74 +1,74 @@
-# Typing-Effekte
+# Typing-effects
 
-Typing-Effekte simulieren den Prozess des Tippens oder Schreibens von Text. Die `@casoon/ui-lib` bietet verschiedene Typing-Effekte, die verwendet werden können, um Text dynamisch anzuzeigen, als würde er in Echtzeit getippt werden.
+Typing-effects simulieren den Prozess des Tippens or Schreibens from Text. the `@casoon/ui-lib` bietet verschiedene Typing-effects, the verwendet become can, um Text dynamisch anzuzeigen, as wurde he in Echtzeit getippt become.
 
 ## Basic Usage
 
-Der grundlegende Typing-Effekt kann auf jedes Textelement angewendet werden:
+the grundlegende Typing-effect kann on jedes Textelement angewendet become:
 
 ```html
-<p class="typing">Dieser Text wird getippt erscheinen.</p>
+<p class="typing">this Text wird getippt erscheinen.</p>
 ```
 
-## CSS-Klassen
+## CSS-classes
 
-Die folgenden CSS-Klassen stehen für Typing-Effekte zur Verfügung:
+the folgenden CSS-classes stehen for Typing-effects zur Verfugung:
 
-| Klasse | Beschreibung |
+| Class | Description |
 |--------|-------------|
-| `.typing` | Basisklasse für Typing-Effekte |
-| `.typing-cursor` | Fügt einen blinkenden Cursor hinzu |
+| `.typing` | Basisklasse for Typing-effects |
+| `.typing-cursor` | Fugt einen blinkenden Cursor hinzu |
 | `.typing-fast` | Schnelles Typing |
 | `.typing-slow` | Langsames Typing |
 | `.typing-blink` | Blinkender Cursor |
 | `.typing-cursor-solid` | Durchgehender Cursor |
-| `.typing-cursor-bar` | Vertikaler Balken als Cursor |
-| `.typing-cursor-underscore` | Unterstrich als Cursor |
-| `.typing-cursor-block` | Block als Cursor |
-| `.typing-infinite` | Endlos wiederholender Typing-Effekt |
-| `.typing-delete` | Löschen und Neutippen von Text |
-| `.typing-pause` | Pausiert an bestimmten Stellen |
+| `.typing-cursor-bar` | Vertikaler Balken as Cursor |
+| `.typing-cursor-underscore` | Unterstrich as Cursor |
+| `.typing-cursor-block` | Block as Cursor |
+| `.typing-infinite` | Endlos wiederholender Typing-effect |
+| `.typing-delete` | delete and Neutippen from Text |
+| `.typing-pause` | Pausiert on bestimmten Stellen |
 | `.typing-highlight` | Hebt Teile des getippten Textes hervor |
-| `.typing-multiline` | Mehrzeiliger Typing-Effekt |
-| `.typing-terminal` | Terminal-ähnlicher Typing-Effekt |
+| `.typing-multiline` | Mehrzeiliger Typing-effect |
+| `.typing-terminal` | Terminal-ahnlicher Typing-effect |
 
 ## Variants
 
 ### Cursor-Variants
 
-Verschiedene Cursor-Styles für Typing-Effekte:
+Verschiedene Cursor-Styles for Typing-effects:
 
 ```html
-<p class="typing typing-cursor-bar">Text mit Balken-Cursor</p>
-<p class="typing typing-cursor-underscore">Text mit Unterstrich-Cursor</p>
-<p class="typing typing-cursor-block">Text mit Block-Cursor</p>
-<p class="typing typing-cursor-solid">Text mit durchgehendem Cursor</p>
+<p class="typing typing-cursor-bar">Text with Balken-Cursor</p>
+<p class="typing typing-cursor-underscore">Text with Unterstrich-Cursor</p>
+<p class="typing typing-cursor-block">Text with Block-Cursor</p>
+<p class="typing typing-cursor-solid">Text with durchgehendem Cursor</p>
 ```
 
 ### Geschwindigkeits-Variants
 
-Verschiedene Geschwindigkeiten für Typing-Effekte:
+Verschiedene Geschwindigkeiten for Typing-effects:
 
 ```html
 <p class="typing typing-fast">Schnell getippter Text</p>
 <p class="typing typing-slow">Langsam getippter Text</p>
-<p class="typing typing-variable">Text mit variabler Geschwindigkeit</p>
+<p class="typing typing-variable">Text with variabler Geschwindigkeit</p>
 ```
 
 ### Spezial-Variants
 
-Spezielle Typing-Effekte:
+Spezielle Typing-effects:
 
 ```html
-<p class="typing typing-delete">Dieser Text wird getippt und dann gelöscht und neu getippt.</p>
-<p class="typing typing-pause">Dieser Text wird getippt mit... Pausen... zwischendurch.</p>
-<p class="typing typing-infinite">Dieser Text wird endlos wiederholt.</p>
-<p class="typing typing-highlight">Teile <span class="highlight">dieses Textes</span> werden hervorgehoben.</p>
+<p class="typing typing-delete">this Text wird getippt and dann geloscht and neu getippt.</p>
+<p class="typing typing-pause">this Text wird getippt with... Pausen... zwischendurch.</p>
+<p class="typing typing-infinite">this Text wird endlos wiederholt.</p>
+<p class="typing typing-highlight">Teile <span class="highlight">this Textes</span> become hervorgehoben.</p>
 ```
 
 ### Terminal-Variants
 
-Terminal-ähnliche Typing-Effekte:
+Terminal-ahnliche Typing-effects:
 
 ```html
 <div class="typing-terminal">
@@ -81,43 +81,43 @@ Terminal-ähnliche Typing-Effekte:
 </div>
 ```
 
-## Kombination mit anderen Elementen
+## Kombination with anderen Elementen
 
-Typing-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
+Typing-effects can with verschiedenen UI-Elementen kombiniert become:
 
-### Überschriften mit Typing-Effekt
+### Uberschriften with Typing-effect
 
 ```html
-<h1 class="typing typing-cursor">Dynamische Überschrift</h1>
+<h1 class="typing typing-cursor">Dynamische heading</h1>
 ```
 
-### Buttons mit Typing-Effekt
+### buttons with Typing-effect
 
 ```html
 <button class="btn btn-primary">
-  <span class="typing typing-cursor">Klick mich</span>
+  <span class="typing typing-cursor">Klick me</span>
 </button>
 ```
 
-### Benachrichtigungen mit Typing-Effekt
+### notifications with Typing-effect
 
 ```html
 <div class="notification">
   <div class="notification-title">Information</div>
-  <div class="notification-content typing">Diese wichtige Nachricht wird eingetippt...</div>
+  <div class="notification-content typing">these wichtige Nachricht wird eingetippt...</div>
 </div>
 ```
 
-### Chat-Nachrichten mit Typing-Effekt
+### Chat-Nachrichten with Typing-effect
 
 ```html
 <div class="chat">
-  <div class="chat-message">Hallo, wie kann ich dir helfen?</div>
-  <div class="chat-message typing typing-cursor">Ich schreibe gerade eine Antwort...</div>
+  <div class="chat-message">Hallo, how kann I you helfen?</div>
+  <div class="chat-message typing typing-cursor">I schreibe gerade a Antwort...</div>
 </div>
 ```
 
-### Code-Blocks mit Typing-Effekt
+### Code-Blocks with Typing-effect
 
 ```html
 <pre class="code-block typing-terminal">
@@ -131,20 +131,20 @@ helloWorld();
 </pre>
 ```
 
-## Anpassung
+## Customization
 
-Die Typing-Effekte können über CSS Variables angepasst werden:
+the Typing-effects can over CSS Variables angepasst become:
 
 ```css
 :root {
-  /* Allgemeine Typing-Parameter */
+  /* Allgemeine Typing-parameter */
   --typing-speed: 150ms; /* Zeit pro Zeichen */
-  --typing-delay: 1s; /* Verzögerung vor Beginn */
+  --typing-delay: 1s; /* Verzogerung before Beginn */
   --typing-cursor-color: currentColor;
   --typing-cursor-width: 2px;
   --typing-cursor-blink-speed: 0.7s;
   
-  /* Variants-Parameter */
+  /* Variants-parameter */
   --typing-speed-fast: 80ms;
   --typing-speed-slow: 250ms;
   --typing-pause-duration: 0.5s;
@@ -154,7 +154,7 @@ Die Typing-Effekte können über CSS Variables angepasst werden:
   --typing-cursor-height: 1.2em;
   --typing-cursor-border-radius: 0px;
   
-  /* Terminal-Parameter */
+  /* Terminal-parameter */
   --typing-terminal-bg: #1e1e1e;
   --typing-terminal-color: #f0f0f0;
   --typing-terminal-prompt-color: #0f0;
@@ -162,12 +162,12 @@ Die Typing-Effekte können über CSS Variables angepasst werden:
 }
 ```
 
-## CSS-Implementierung
+## CSS-Implementation
 
-Examples für die CSS-Implementierung der Typing-Effekte:
+Examples for the CSS-Implementation the Typing-effects:
 
 ```css
-/* Basis-Typing */
+/* Base-Typing */
 .typing {
   display: inline-block;
   position: relative;
@@ -184,7 +184,7 @@ Examples für die CSS-Implementierung der Typing-Effekte:
   }
 }
 
-/* Cursor-Effekte */
+/* Cursor-effects */
 .typing-cursor::after {
   content: "|";
   position: absolute;
@@ -255,7 +255,7 @@ Examples für die CSS-Implementierung der Typing-Effekte:
   100% { width: 0; }
 }
 
-/* Terminal-Effekte */
+/* Terminal-effects */
 .typing-terminal {
   background-color: var(--typing-terminal-bg);
   color: var(--typing-terminal-color);
@@ -283,7 +283,7 @@ Examples für die CSS-Implementierung der Typing-Effekte:
 
 ## JavaScript-Integration
 
-Für fortgeschrittene Typing-Effekte wird JavaScript verwendet:
+for fortgeschrittene Typing-effects wird JavaScript verwendet:
 
 ```javascript
 class TypingEffect {
@@ -304,11 +304,11 @@ class TypingEffect {
   }
   
   init() {
-    // Originalen Text speichern und Element leeren
+    // Originalen Text save and element leeren
     this.originalText = this.options.text;
     this.element.textContent = '';
     
-    // Cursor hinzufügen
+    // Cursor add
     if (this.options.cursor) {
       this.cursorElement = document.createElement('span');
       this.cursorElement.className = 'typing-js-cursor';
@@ -331,17 +331,17 @@ class TypingEffect {
       document.head.appendChild(style);
     }
     
-    // Starten nach Verzögerung
+    // Starten after Verzogerung
     setTimeout(() => this.type(), this.options.delay);
   }
   
   type(text = this.originalText, callback = null) {
     const typeCharacter = (index = 0) => {
-      // Wenn am Ende des Textes
+      // if am Ende des Textes
       if (index >= text.length) {
         if (callback) callback();
         
-        // Wenn Loop aktiviert, löschen und neu starten
+        // if Loop aktiviert, delete and neu starten
         if (this.options.loop) {
           setTimeout(() => this.delete(() => {
             setTimeout(() => this.type(), 500);
@@ -350,13 +350,13 @@ class TypingEffect {
         return;
       }
       
-      // Zeichen hinzufügen
+      // Zeichen add
       this.element.insertBefore(
         document.createTextNode(text.charAt(index)),
         this.cursorElement
       );
       
-      // Nächstes Zeichen tippen
+      // Nachstes Zeichen tippen
       setTimeout(() => typeCharacter(index + 1), this.options.speed);
     };
     
@@ -367,19 +367,19 @@ class TypingEffect {
     const deleteCharacter = () => {
       const textContent = this.element.textContent;
       
-      // Wenn kein Text mehr übrig ist (außer Cursor)
+      // if no Text more ubrig ist (ausser Cursor)
       if (textContent.length <= this.options.cursorChar.length) {
         if (callback) callback();
         return;
       }
       
-      // Letztes Zeichen entfernen
+      // Letztes Zeichen remove
       this.element.textContent = textContent.substring(0, textContent.length - 1 - this.options.cursorChar.length);
       if (this.cursorElement) {
         this.element.appendChild(this.cursorElement);
       }
       
-      // Nächstes Zeichen löschen
+      // Nachstes Zeichen delete
       setTimeout(deleteCharacter, this.options.deleteSpeed);
     };
     
@@ -387,24 +387,24 @@ class TypingEffect {
   }
 }
 
-// Initialisierung aller Typing-Elemente
+// Initialisierung aller Typing-elements
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-typing]').forEach(element => {
     new TypingEffect(element);
   });
   
-  // Terminal-Effekt
+  // Terminal-effect
   document.querySelectorAll('.typing-terminal').forEach(terminal => {
     const lines = terminal.querySelectorAll('.typing-terminal-line');
     
     lines.forEach((line, index) => {
       line.style.setProperty('--typing-line-index', index);
       
-      // Länge des Inhalts berechnen
+      // length des Inhalts berechnen
       const contentLength = line.textContent.length;
       line.style.setProperty('--typing-content-length', contentLength);
       
-      // Animation-Dauer basierend auf Inhaltslänge
+      // animation-Dauer basierend on Inhaltslange
       const speed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--typing-speed')) || 150;
       line.style.animationDuration = `${(contentLength * speed) / 1000}s`;
     });
@@ -418,16 +418,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```html
 <div class="typing-multiline" data-typing-multiline>
-  <p data-typing-delay="0">Erste Zeile wird zuerst getippt.</p>
-  <p data-typing-delay="2000">Zweite Zeile folgt nach 2 Sekunden.</p>
-  <p data-typing-delay="4000">Dritte Zeile folgt nach 4 Sekunden.</p>
+  <p data-typing-delay="0">Erste row wird zuerst getippt.</p>
+  <p data-typing-delay="2000">Zweite row folgt after 2 Sekunden.</p>
+  <p data-typing-delay="4000">Dritte row folgt after 4 Sekunden.</p>
 </div>
 ```
 
 ```javascript
 // Multiline-Typing
-document.querySelectorAll('[data-typing-multiline]').forEach(container => {
-  const lines = container.querySelectorAll('p, div');
+document.querySelectorAll('[data-typing-multiline]').forEach(containers => {
+  const lines = containers.querySelectorAll('p, div');
   
   lines.forEach(line => {
     const delay = parseInt(line.getAttribute('data-typing-delay')) || 0;
@@ -441,14 +441,14 @@ document.querySelectorAll('[data-typing-multiline]').forEach(container => {
 });
 ```
 
-### Typing mit Pausen und Variationen
+### Typing with Pausen and Variationen
 
 ```html
-<p class="typing-custom" data-typing-text="Dieser Text wird mit [PAUSE] Pausen [PAUSE] und unterschiedlichen [SCHNELL]Geschwindigkeiten[/SCHNELL] getippt."></p>
+<p class="typing-custom" data-typing-text="this Text wird with [PAUSE] Pausen [PAUSE] and unterschiedlichen [SCHNELL]Geschwindigkeiten[/SCHNELL] getippt."></p>
 ```
 
 ```javascript
-// Fortgeschrittenes Typing mit Pausen und Geschwindigkeitsvariationen
+// Fortgeschrittenes Typing with Pausen and Geschwindigkeitsvariationen
 document.querySelectorAll('.typing-custom').forEach(element => {
   const text = element.getAttribute('data-typing-text');
   element.textContent = '';
@@ -465,21 +465,21 @@ document.querySelectorAll('.typing-custom').forEach(element => {
         currentText = '';
       }
       segments.push({ type: 'pause', duration: 500 });
-      i += 6; // Länge von [PAUSE] - 1
+      i += 6; // length from [PAUSE] - 1
     } else if (text.substring(i, i + 9) === '[SCHNELL]') {
       if (currentText.length > 0) {
         segments.push({ text: currentText, type: 'text', speed: currentSpeed });
         currentText = '';
       }
       currentSpeed = 'fast';
-      i += 8; // Länge von [SCHNELL] - 1
+      i += 8; // length from [SCHNELL] - 1
     } else if (text.substring(i, i + 10) === '[/SCHNELL]') {
       if (currentText.length > 0) {
         segments.push({ text: currentText, type: 'text', speed: currentSpeed });
         currentText = '';
       }
       currentSpeed = 'normal';
-      i += 9; // Länge von [/SCHNELL] - 1
+      i += 9; // length from [/SCHNELL] - 1
     } else {
       currentText += text[i];
     }
@@ -489,7 +489,7 @@ document.querySelectorAll('.typing-custom').forEach(element => {
     segments.push({ text: currentText, type: 'text', speed: currentSpeed });
   }
   
-  // Segmente ausführen
+  // Segmente execute
   const processSegments = (index = 0) => {
     if (index >= segments.length) return;
     
@@ -505,7 +505,7 @@ document.querySelectorAll('.typing-custom').forEach(element => {
         cursor: index === segments.length - 1
       });
       
-      // Nach Abschluss des Tippens zum nächsten Segment
+      // after Abschluss des Tippens zum nachsten Segment
       setTimeout(() => {
         processSegments(index + 1);
       }, segment.text.length * speed + 50);
@@ -518,15 +518,15 @@ document.querySelectorAll('.typing-custom').forEach(element => {
 
 ## Accessibility
 
-Bei der Usage von Typing-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
+at the Usage from Typing-Effekten should folgende Accessibilitysaspekte berucksichtigt become:
 
-1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
-2. **Lesbarkeit**: Stellen Sie sicher, dass Text nach dem Typing-Effekt klar lesbar ist
-3. **Inhaltstransparenz**: Der Inhalt sollte für Screenreader ohne Animation verfügbar sein
-4. **Flackernde Inhalte**: Vermeiden Sie zu schnelle Cursor-Blinken für Menschen mit Empfindlichkeiten
+1. **Animationspraferenzen**: Respektieren them the Setting `prefers-reduced-motion`
+2. **Lesbarkeit**: ensure, that Text after dem Typing-effect klar lesbar ist
+3. **Inhaltstransparenz**: the content sollte for Screenreader without animation verfugbar be
+4. **Flackernde contents**: Vermeiden them to schnelle Cursor-Blinken for Menschen with Empfindlichkeiten
 
 ```css
-/* Reduzierte Animation für Benutzer, die dies bevorzugen */
+/* Reduzierte animation for user, the dies bevorzugen */
 @media (prefers-reduced-motion: reduce) {
   .typing,
   .typing-cursor::after,
@@ -547,23 +547,23 @@ Bei der Usage von Typing-Effekten sollten folgende Accessibilitysaspekte berück
 ```
 
 ```javascript
-// Barrierefreie Typing-Implementierung
+// Barrierefreie Typing-Implementation
 function setupAccessibleTyping() {
-  // Screenreader-Version mit vollständigem Text
+  // Screenreader-version with vollstandigem Text
   document.querySelectorAll('.typing, [data-typing]').forEach(element => {
     const originalText = element.getAttribute('data-typing-text') || element.textContent;
     
-    // ARIA-Attribute für Screenreader
+    // ARIA-attributes for Screenreader
     element.setAttribute('aria-label', originalText);
     
-    // Reduzierte Bewegung prüfen
+    // Reduzierte Bewegung prufen
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     
     if (prefersReducedMotion) {
-      // Bei reduzierter Bewegung den vollständigen Text anzeigen
+      // at reduzierter Bewegung den vollstandigen Text anzeigen
       element.textContent = originalText;
       
-      // Alle Animationen entfernen
+      // all animations remove
       element.style.animation = 'none';
       element.style.width = 'auto';
     }
@@ -573,17 +573,17 @@ function setupAccessibleTyping() {
 document.addEventListener('DOMContentLoaded', setupAccessibleTyping);
 ```
 
-## Performance-Überlegungen
+## Performance-Uberlegungen
 
-Typing-Effekte können die Leistung beeinflussen:
+Typing-effects can the Leistung beeinflussen:
 
-1. **DOM-Manipulation**: Vermeiden Sie häufiges Hinzufügen und Entfernen von DOM-Elementen
-2. **requestAnimationFrame**: Verwenden Sie `requestAnimationFrame` für flüssigere Animationen
-3. **Mehrere Effekte**: Begrenzen Sie die Anzahl gleichzeitiger Typing-Effekte auf einer Seite
-4. **Text-Länge**: Seien Sie vorsichtig mit sehr langen Texten, die getippt werden sollen
+1. **DOM-Manipulation**: Vermeiden them haufiges add and remove from DOM-Elementen
+2. **requestAnimationFrame**: use them `requestAnimationFrame` for flussigere animations
+3. **several effects**: Begrenzen them the Anzahl gleichzeitiger Typing-effects on einer Seite
+4. **Text-length**: Seien them vorsichtig with very langen Texten, the getippt become should
 
 ```javascript
-// Leistungsoptimierte Typing-Implementierung
+// Leistungsoptimierte Typing-Implementation
 class OptimizedTypingEffect {
   constructor(element, options = {}) {
     this.element = element;
@@ -593,12 +593,12 @@ class OptimizedTypingEffect {
       ...options
     };
     
-    // Optimierung: Text-Inhalt nur einmal vorbereiten
+    // Optimierung: Text-content only einmal vorbereiten
     this.textContent = this.options.text;
     this.textLength = this.textContent.length;
     this.currentIndex = 0;
     
-    // Optimierung: Erstellung von DOM-Elementen minimieren
+    // Optimierung: Erstellung from DOM-Elementen minimieren
     this.outputElement = document.createElement('span');
     this.cursorElement = document.createElement('span');
     this.cursorElement.className = 'typing-js-cursor';
@@ -611,7 +611,7 @@ class OptimizedTypingEffect {
     this.lastFrameTime = 0;
     this.charInterval = this.options.speed;
     
-    // Animation starten
+    // animation starten
     requestAnimationFrame(this.update.bind(this));
   }
   
@@ -632,9 +632,9 @@ class OptimizedTypingEffect {
   }
 }
 
-// Usage der optimierten Klasse
+// Usage the optimierten Class
 document.addEventListener('DOMContentLoaded', () => {
-  // Limitierung der gleichzeitigen Effekte
+  // Limitierung the gleichzeitigen effects
   const visibleTypingElements = Array.from(document.querySelectorAll('[data-typing]'))
     .filter(el => {
       const rect = el.getBoundingClientRect();
@@ -645,13 +645,13 @@ document.addEventListener('DOMContentLoaded', () => {
         rect.right <= window.innerWidth
       );
     })
-    .slice(0, 3); // Maximal 3 gleichzeitige Effekte
+    .slice(0, 3); // Maximal 3 gleichzeitige effects
   
   visibleTypingElements.forEach(element => {
     new OptimizedTypingEffect(element);
   });
   
-  // Weitere Elemente erst initialisieren, wenn sie sichtbar werden
+  // additional elements erst initialisieren, If you sichtbar become
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !entry.target.hasAttribute('data-typing-initialized')) {
@@ -667,20 +667,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-## Browser-Kompatibilität
+## Browser-Kompatibilitat
 
-Die Typing-Effekte werden von allen modernen Browsern unterstützt.
+the Typing-effects become from allen modernen Browsern unterstutzt.
 
-| Funktion | Chrome | Firefox | Safari | Edge | IE11 |
+| Function | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
-| CSS-Animationen | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CSS-animations | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JS Typing | ✓ | ✓ | ✓ | ✓ | ✓ |
 | requestAnimationFrame | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CSS Variables | ✓ | ✓ | ✓ | ✓ | Nein |
 | Intersection Observer | ✓ | ✓ | ✓ | ✓ | Nein |
 
-## Verwandte Effekte
+## Verwandte effects
 
-- [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Transitions-Effekte](/docs/effects/animation/transitions.md) - Übergangseffekte zwischen Statesn
-- [Loading-Effekte](/docs/effects/animation/loading.md) - Ladeanimationen 
+- [Animations-effects](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
+- [Transitions-effects](/docs/effects/animation/transitions.md) - Ubergangseffekte between Statesn
+- [Loading-effects](/docs/effects/animation/loading.md) - Ladeanimationen 
