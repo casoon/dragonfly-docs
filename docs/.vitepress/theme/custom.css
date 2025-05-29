@@ -22,6 +22,31 @@
   display: none;
 }
 
+/* Aktive Menüelemente und ausgewählte Links */
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink.active:hover,
+.VPSidebarItem.is-active .VPLink,
+.VPSidebarItem.is-active .VPLink:hover {
+  color: var(--vp-c-brand);
+}
+
+/* Seitenleisten-Menü aktive Links */
+.VPSidebar .VPSidebarItem.is-active > .item > .VPLink {
+  color: var(--vp-c-brand);
+  font-weight: 600;
+}
+
+/* Überschriften mit Name-Clip */
+.clip-heading,
+.clipped-heading,
+h1[data-clip],
+h2[data-clip],
+h3[data-clip],
+.title-with-clip {
+  color: var(--vp-c-brand);
+  position: relative;
+}
+
 /* Example wrapper styles */
 .example-wrapper {
   padding: 20px;
