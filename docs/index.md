@@ -1,127 +1,137 @@
 ---
-title: Casoon UI Documentation
+layout: home
+title: Dragonfly UI Library
+hero:
+  name: Dragonfly
+  text: Modern UI Library
+  tagline: A flexible, accessible, and modern CSS framework for building beautiful user interfaces
+  image:
+    src: /ui-docs/img/dragonfly.svg
+    alt: Dragonfly Logo
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /getting-started/
+    - theme: alt
+      text: Components
+      link: /ui/
+features:
+  - icon: ⚡
+    title: Speed & Agility
+    details: UI components that respond swiftly and intuitively.
+  - icon: 🎯
+    title: Precision & Clarity
+    details: Precise interfaces crafted for clear user experiences.
+  - icon: 🧩
+    title: Modular Flexibility
+    details: Modular elements designed to fit seamlessly.
+  - icon: ✨
+    title: Visual Elegance
+    details: Beautiful interfaces that engage and inspire.
+  - icon: 🔄
+    title: Evolution & Growth
+    details: Components built to adapt and evolve.
+  - icon: 🚀
+    title: Dragonfly Excellence
+    details: UI excellence in motion.
 ---
 
-<script setup>
-import { UI_LIB_VERSION } from './.vitepress/data/versions'
-</script>
+<div class="version-badge">
+  <p>Current Version: {{ $ui_lib_version }} <span class="beta-tag">BETA</span></p>
+</div>
 
-# Casoon UI Library
+<style>
+.version-badge {
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 0.5rem;
+  max-width: 250px;
+}
 
-Welcome to the Casoon UI Library documentation. This library provides a modern, consistent, and modular design system for developing user-friendly and accessible interfaces.
+.beta-tag {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  background-color: var(--vp-c-brand);
+  border-radius: 0.25rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+</style>
 
-## Current Version
+# Dragonfly UI Library Documentation
 
-The current version of the Casoon UI Library is `{{ UI_LIB_VERSION }}`.
+Welcome to the official documentation for Dragonfly UI Library, a modern, flexible CSS framework for building beautiful user interfaces.
 
-## Note on Version 0.5.5
+::: warning BETA STATUS
+Dragonfly UI is currently in early beta development. The API and components may change significantly before the 1.0 release. Use with caution in production environments.
+:::
 
-Version 0.5.5 includes minor optimizations and bug fixes. Please check the Release Notes for details on changes to the layer structure, animations, and utilities.
+## About
 
-## Overview
+Dragonfly UI provides a comprehensive set of UI components and utilities to help you build modern web applications with ease. The library is designed with a focus on:
 
-The Casoon UI Library is a comprehensive CSS framework that offers a structured system of design tokens, components, effects, and utility classes. The library is framework-agnostic and can be used in any modern web application.
-
-The main areas of the library are:
-
-- **[Components](/components/)** - Over 35 reusable UI elements for various use cases
-- **[Effects](/effects-system)** - Visual effects, animations, and state representations
-- **[Design System](/guide/)** - A well-thought-out system for consistent design
-
-## Key Features
-
-- **Modular CSS** - Each component is implemented as a standalone CSS module
-- **Responsive Design** - All components are fully responsive
-- **Accessibility** - Optimized for screen readers and keyboard navigation
-- **Customizable Themes** - Easily customizable design tokens for different brand identities
-- **Structured Layers** - Organized CSS specificity through a modern layer system
+- **Modern Design**: Clean, contemporary aesthetics that follow current design trends
+- **Flexibility**: Highly customizable through CSS variables and design tokens
+- **Accessibility**: Built with WCAG guidelines in mind for inclusive user experiences
+- **Performance**: Lightweight and optimized for production use
 
 ## Getting Started
 
-The quickest way to get started with Casoon UI:
+The easiest way to get started with Dragonfly UI is to install it via npm:
 
 ```bash
-npm install @casoon/ui-lib@latest
+npm install @casoon/dragonfly
 ```
 
-```css
-@import "@casoon/ui-lib/core.css";
+Then import the main CSS file in your project:
+
+```js
+import '@casoon/dragonfly/dist/styles.css';
 ```
 
-For detailed installation instructions, visit the [Installation Guide](/getting-started/installation).
+Visit the [Getting Started](/getting-started/) section for detailed installation and usage instructions.
 
-## Content Overview
+## Key Features
 
-### Components
+### Component System
 
-The Casoon UI Library offers an extensive collection of components for various UI requirements:
+Dragonfly UI includes a wide range of UI components, from basic elements like buttons and inputs to complex components like data tables and modal dialogs. All components are designed to be:
 
-- **Base Components**: Button, Card, Avatar, Badge, Chip, Tooltip
-- **Form Components**: Input, Select, Checkbox, Radio, Switch
-- **Layout Components**: Grid, Container, Header, Footer, Sidebar
-- **Feedback Components**: Alert, Toast, Modal, Notification, Progress
-
-Explore the [complete component library](/components/).
-
-### Effects
-
-The effect system includes specialized visual effects and animations:
-
-- **Visual Effects**: Neon, Glassmorphism, Shadows, 3D Transformations
-- **Interactions**: Hover, Focus, Active, Ripple
-- **States**: Success, Error, Warning, Loading, Disabled
-
-Learn more in the [Effects System Guide](/effects-system).
+- Responsive across devices and screen sizes
+- Accessible with proper ARIA attributes
+- Customizable through CSS variables
+- Consistent in behavior and appearance
 
 ### Design System
 
-The design system is based on a structured approach with:
+The library is built on a robust design system with:
 
-- **Layer System**: Controlled CSS specificity and organization
-- **Design Tokens**: Consistent design variables for colors, spacing, etc.
-- **Theming**: Flexible customization options for different visual styles
+- [Design Tokens](/tokens/) for colors, spacing, typography, etc.
+- [Layout System](/layout/) with flexible grid and container options
+- [Typography](/typography/) with responsive text scaling
+- [Effects](/effects/) for shadows, animations, and more
 
-More details in the [Guide](/guide/).
+### Themeable
 
-## Support and Resources
+Easily switch between built-in themes or create your own:
 
-- [GitHub Repository](https://github.com/casoon/ui-lib)
-- [Troubleshooting](/getting-started/#troubleshooting)
-- [FAQs](/getting-started/#faq)
+- [Light Theme](/themes/day)
+- [Dark Theme](/themes/night) 
+- [High Contrast Theme](/themes/contrast)
+- [Custom Themes](/themes/custom)
 
-## License
+## Browser Support
 
-The Casoon UI Library is released under the MIT License.
+Dragonfly UI is designed for modern browsers, with full support for:
 
-## Using with AI Tools (Model Context Protocol – MCP)
+- Chrome (latest 2 versions)
+- Firefox (latest 2 versions)
+- Safari (latest 2 versions)
+- Edge (latest 2 versions)
 
-To simplify development with casoon/ui-lib, your editor or AI tool (e.g., Cursor or Continue) can automatically load contextual information about the project – including code, structure, and documentation.
-
-This uses the Model Context Protocol (MCP).
-
-🔧 **Configuration (e.g., for Cursor)**
-Add the following configuration to your cursor.config.json or settings.json:
-
-```json
-{
-  "mcpServers": {
-    "gitmcp-ui-lib": {
-      "url": "https://gitmcp.io/casoon/ui-lib"
-    },
-    "gitmcp-ui-docs": {
-      "url": "https://gitmcp.io/casoon/ui-docs"
-    }
-  }
-}
-```
-
-📌 **Explanation**
-- **gitmcp-ui-lib**: Provides structural information about the component library itself (source code, props, imports, etc.).
-- **gitmcp-ui-docs**: Provides information from the accompanying VitePress documentation (e.g., examples, variants, slots).
-
-✅ **Advantage**
-With this configuration, an AI assistant can better understand your project and help more effectively with:
-
-- Using components with the correct props
-- Creating snippets based on real examples
-- Understanding the architecture of your project
+For details on browser compatibility and fallback strategies, see the [Compatibility](/compatibility/) section.
