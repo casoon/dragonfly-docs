@@ -68,7 +68,8 @@ jest-results.json
 docs/.vitepress/dist/
 docs/.vitepress/cache/
 docs/build/
-docs/public/
+docs/public/*
+!docs/public/img/
 
 # Temporäre Dateien
 *.tmp
