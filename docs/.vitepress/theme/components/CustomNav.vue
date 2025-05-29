@@ -6,8 +6,11 @@
       </a>
       <a href="/ui-docs/getting-started/" class="nav-item">Getting Started</a>
       
-      <div class="nav-item-with-menu">
-        <a href="/ui-docs/ui/" class="nav-item" @click.prevent="toggleComponentsMenu">Components</a>
+      <div class="nav-item-with-menu" 
+           @mouseenter="showUISystemMenu = true" 
+           @mouseleave="showUISystemMenu = false">
+        <a href="/ui-docs/ui/" class="nav-item">UI System</a>
+        <NavHoverMenu v-if="showUISystemMenu" />
       </div>
       
       <a href="/ui-docs/effects/" class="nav-item">Effects</a>
@@ -15,28 +18,35 @@
       <a href="https://github.com/casoon/dragonfly" class="nav-item" target="_blank">GitHub</a>
     </div>
     
-    <!-- Debug-Steuerung, immer sichtbar -->
+    <!-- Debug-Steuerung ausblenden, da jetzt Hover verwendet wird -->
+    <!--
     <div class="debug-controls">
       <button @click="toggleComponentsMenu" class="debug-button">
         {{ showComponentsMenu ? 'Hide Menu' : 'Show Menu' }}
       </button>
     </div>
+    -->
     
-    <!-- Neue Komponenten-Übersicht -->
-    <ComponentsMenu :is-visible="showComponentsMenu" />
+    <!-- Alte Komponenten-Übersicht auskommentieren -->
+    <!-- <ComponentsMenu :is-visible="showComponentsMenu" /> -->
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import ComponentsMenu from './ComponentsMenu.vue'
+import NavHoverMenu from './NavHoverMenu.vue'
 
+// Altes Click-Menü (auskommentiert)
 const showComponentsMenu = ref(false)
 
 function toggleComponentsMenu() {
   showComponentsMenu.value = !showComponentsMenu.value
   console.log('Toggle Components Menu:', showComponentsMenu.value)
 }
+
+// Neues Hover-Menü
+const showUISystemMenu = ref(false)
 </script>
 
 <style>

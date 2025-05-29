@@ -2,62 +2,63 @@
   <div class="nav-hover-menu-wrapper">
     <div class="nav-hover-menu">
       <div class="nav-hover-menu-content">
-        <!-- Linke Spalte mit Kategorien -->
+        <!-- Left column with categories -->
         <div class="nav-hover-menu-categories">
-          <h3 class="nav-hover-menu-title">Komponenten-Kategorien</h3>
+          <h3 class="nav-hover-menu-title">Categories</h3>
           <ul class="nav-hover-menu-category-list">
             <li>
               <a href="/ui-docs/ui/#elements" class="nav-hover-menu-category-item">
-                Basis-Elemente
+                Elements
               </a>
             </li>
             <li>
               <a href="/ui-docs/ui/#components" class="nav-hover-menu-category-item">
-                Komplexe Komponenten
+                Components
               </a>
             </li>
             <li>
-              <a href="/ui-docs/ui/#layout-components" class="nav-hover-menu-category-item">
-                Layout-Komponenten
-              </a>
-            </li>
-            <li>
-              <a href="/ui-docs/ui/#patterns" class="nav-hover-menu-category-item">
-                UI-Muster
+              <a href="/ui-docs/ui/patterns/tags" class="nav-hover-menu-category-item">
+                Patterns
               </a>
             </li>
           </ul>
         </div>
         
-        <!-- Rechte Spalte mit Komponenten-Links -->
+        <!-- Right column with links to components -->
         <div class="nav-hover-menu-components">
           <div class="nav-hover-menu-components-section">
-            <h3 class="nav-hover-menu-subtitle">Basis-Elemente</h3>
+            <h3 class="nav-hover-menu-subtitle">Elements</h3>
             <div class="nav-hover-menu-components-grid">
-              <a href="/ui-docs/ui/elements/avatar" class="nav-hover-menu-component-item">Avatar</a>
-              <a href="/ui-docs/ui/elements/blockquote" class="nav-hover-menu-component-item">Blockquote</a>
-              <a href="/ui-docs/ui/elements/button" class="nav-hover-menu-component-item">Button</a>
-              <a href="/ui-docs/ui/elements/checkbox" class="nav-hover-menu-component-item">Checkbox</a>
-              <a href="/ui-docs/ui/elements/chip" class="nav-hover-menu-component-item">Chip</a>
-              <a href="/ui-docs/ui/elements/input" class="nav-hover-menu-component-item">Input</a>
+              <a href="/ui-docs/ui/elements/avatar/" class="nav-hover-menu-component-item">Avatar</a>
+              <a href="/ui-docs/ui/elements/button/" class="nav-hover-menu-component-item">Button</a>
+              <a href="/ui-docs/ui/elements/chip/" class="nav-hover-menu-component-item">Chip</a>
+              <a href="/ui-docs/ui/elements/checkbox/" class="nav-hover-menu-component-item">Checkbox</a>
+              <a href="/ui-docs/ui/elements/input/" class="nav-hover-menu-component-item">Input</a>
+              <a href="/ui-docs/ui/elements/radio/" class="nav-hover-menu-component-item">Radio</a>
+              <a href="/ui-docs/ui/elements/select/" class="nav-hover-menu-component-item">Select</a>
+              <a href="/ui-docs/ui/elements/switch/" class="nav-hover-menu-component-item">Switch</a>
+              <a href="/ui-docs/ui/elements/slider/" class="nav-hover-menu-component-item">Slider</a>
             </div>
           </div>
           
           <div class="nav-hover-menu-components-section">
-            <h3 class="nav-hover-menu-subtitle">Komplexe Komponenten</h3>
+            <h3 class="nav-hover-menu-subtitle">Components</h3>
             <div class="nav-hover-menu-components-grid">
-              <a href="/ui-docs/ui/components/action-bar" class="nav-hover-menu-component-item">Action Bar</a>
-              <a href="/ui-docs/ui/components/alert" class="nav-hover-menu-component-item">Alert</a>
-              <a href="/ui-docs/ui/components/badge" class="nav-hover-menu-component-item">Badge</a>
-              <a href="/ui-docs/ui/components/card" class="nav-hover-menu-component-item">Card</a>
-              <a href="/ui-docs/ui/components/dialog" class="nav-hover-menu-component-item">Dialog</a>
-              <a href="/ui-docs/ui/components/toast" class="nav-hover-menu-component-item">Toast</a>
+              <a href="/ui-docs/ui/components/card/" class="nav-hover-menu-component-item">Card</a>
+              <a href="/ui-docs/ui/components/modal/" class="nav-hover-menu-component-item">Modal</a>
+              <a href="/ui-docs/ui/components/tabs/" class="nav-hover-menu-component-item">Tabs</a>
+              <a href="/ui-docs/ui/components/dialog/" class="nav-hover-menu-component-item">Dialog</a>
+              <a href="/ui-docs/ui/components/drawer/" class="nav-hover-menu-component-item">Drawer</a>
+              <a href="/ui-docs/ui/components/dropdown/" class="nav-hover-menu-component-item">Dropdown</a>
+              <a href="/ui-docs/ui/components/pagination/" class="nav-hover-menu-component-item">Pagination</a>
+              <a href="/ui-docs/ui/components/breadcrumbs/" class="nav-hover-menu-component-item">Breadcrumbs</a>
+              <a href="/ui-docs/ui/components/toast/" class="nav-hover-menu-component-item">Toast</a>
             </div>
           </div>
           
           <div class="nav-hover-menu-footer">
             <a href="/ui-docs/ui/" class="nav-hover-menu-all-link">
-              Alle Komponenten anzeigen →
+              View all UI components →
             </a>
           </div>
         </div>
@@ -67,7 +68,7 @@
 </template>
 
 <script setup>
-// Keine zusätzliche Logik erforderlich
+// No additional logic required
 </script>
 
 <style>
@@ -92,7 +93,7 @@
   margin-top: 8px;
 }
 
-/* Pfeil oben am Menü */
+/* Arrow at the top of the menu */
 .nav-hover-menu::before {
   content: '';
   position: absolute;
