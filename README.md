@@ -242,7 +242,7 @@ To start the development server:
 npm run dev
 ```
 
-This will launch the VitePress development server at http://localhost:5173/ui-docs/.
+This will launch the VitePress development server at http://localhost:5173/dragonfly-docs/.
 
 ## 🚀 Building for Production
 
@@ -330,7 +330,7 @@ Add the following configuration to your tool's cursor.config.json or settings.js
       "url": "https://gitmcp.io/casoon/dragonfly"
     },
     "gitmcp-ui-docs": {
-      "url": "https://gitmcp.io/casoon/ui-docs"
+      "url": "https://gitmcp.io/casoon/dragonfly-docs"
     }
   }
 }
@@ -351,7 +351,7 @@ With this configuration, an AI assistant can better understand your project and 
 
 ## 📚 Documentation
 
-The documentation for the Casoon UI Library is available at [https://casoon.github.io/ui-docs/](https://casoon.github.io/ui-docs/).
+The documentation for the Casoon UI Library is available at [https://casoon.github.io/dragonfly-docs/](https://casoon.github.io/dragonfly-docs/).
 
 ### Documentation Structure
 

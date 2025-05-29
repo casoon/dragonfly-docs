@@ -35,11 +35,11 @@ function cssImportPlugin() {
 export default defineConfig({
   title: 'Dragonfly UI Library',
   description: 'A modern, flexible and accessible component library',
-  base: "/ui-docs/",
+  base: '/dragonfly-docs/',
   ignoreDeadLinks: true,
   
   head: [
-    ['link', { rel: 'stylesheet', href: '/ui-docs/custom.css' }]
+    ['link', { rel: 'stylesheet', href: '/dragonfly-docs/custom.css' }]
   ],
 
   vite: {

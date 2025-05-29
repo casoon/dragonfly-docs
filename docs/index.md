@@ -6,7 +6,7 @@ hero:
   text: Modern UI Library
   tagline: A flexible, accessible, and modern CSS framework for building beautiful user interfaces
   image:
-    src: /ui-docs/img/dragonfly.svg
+    src: /dragonfly-docs/img/dragonfly.svg
     alt: Dragonfly Logo
   actions:
     - theme: brand
