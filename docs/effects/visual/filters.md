@@ -5,11 +5,11 @@ category: Guide
 
 # Filter-Effekte
 
-Die `filters.css` Datei bietet eine umfangreiche Sammlung von visuellen Filtereffekten, die zur Manipulation von Bildern, Hintergründen und anderen UI-Elementen eingesetzt werden können. Diese Filter basieren auf den CSS-Filterfunktionen und ermöglichen zahlreiche visuelle Anpassungen ohne den Einsatz von Grafikprogrammen.
+Die `filters.css` Datei bietet eine umfangreiche Sammlung von visuellen Filtereffekten, die zur Manipulation von Bildern, Hintergründen und anderen UI-Elementen eingesetzt werden können. Diese Filter basieren auf den CSS-Filterfunktionen und ermöglichen zahlreiche visuelle Customizations ohne den Einsatz von Grafikprogrammen.
 
-## Übersicht
+## Overview
 
-Mit CSS-Filtern können Sie Farben anpassen, Helligkeits- und Kontraständerungen vornehmen, Unschärfeeffekte hinzufügen und vieles mehr. Die Casoon UI Library bietet eine Sammlung vorgefertigter Filter sowie kombinierte Effekte für typische Anwendungsfälle.
+Mit CSS-Filtern können Sie Colors anpassen, Helligkeits- und Kontraständerungen vornehmen, Unschärfeeffekte hinzufügen und vieles mehr. Die Casoon UI Library bietet eine Sammlung vorgefertigter Filter sowie kombinierte Effekte für typische Use Cases.
 
 ## Basis-Filter
 
@@ -90,7 +90,7 @@ Voreingestellte Kombinationen für gängige Bildeffekte:
 <!-- Weichzeichnung für Porträts -->
 <img class="filter-soft-portrait" src="image.jpg" alt="Weichgezeichnetes Porträt">
 
-<!-- Duotone-Effekt (Zwei Farben) -->
+<!-- Duotone-Effekt (Zwei Colors) -->
 <img class="filter-duotone-blue-red" src="image.jpg" alt="Blau-Rot Duotone">
 <img class="filter-duotone-purple-yellow" src="image.jpg" alt="Lila-Gelb Duotone">
 ```
@@ -189,9 +189,9 @@ Sanfte Übergänge zwischen Filterzuständen:
      alt="Wechselt sanft von Graustufen zu Farbe bei Hover">
 ```
 
-## Anpassung über CSS-Variablen
+## Anpassung über CSS Variables
 
-Die Filter können über CSS-Variablen angepasst werden:
+Die Filter können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -274,9 +274,9 @@ Die Filter können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit-Überlegungen
+## Accessibility-Überlegungen
 
-Bei Filtern sind mehrere Aspekte der Barrierefreiheit zu beachten:
+Bei Filtern sind mehrere Aspekte der Accessibility zu beachten:
 
 1. **Kontrast und Lesbarkeit**: Stellen Sie sicher, dass Filter die Lesbarkeit von Text nicht beeinträchtigen
 2. **Farbfehlsichtigkeit**: Berücksichtigen Sie, dass manche Filter problematisch für Menschen mit Farbfehlsichtigkeit sein können
@@ -284,7 +284,7 @@ Bei Filtern sind mehrere Aspekte der Barrierefreiheit zu beachten:
 4. **Hoher Kontrast**: Respektieren Sie Systemeinstellungen für hohen Kontrast
 
 ```css
-/* Beispiel für barrierefreie Filteranwendung */
+/* Example für barrierefreie Filteranwendung */
 .accessible-filter {
   filter: var(--filter-accessible);
 }
@@ -311,7 +311,7 @@ Filter können rechenintensiv sein:
 3. **Kombinieren Sie Filter** statt mehrere filterbehaftete Elemente zu stapeln
 4. **Testen Sie auf mobilen Geräten**, um die Leistung zu überprüfen
 
-## Praktische Beispiele
+## Praktische Examples
 
 ### Bildergalerie mit verschiedenen Filtern
 
@@ -348,7 +348,7 @@ Filter können rechenintensiv sein:
 </section>
 ```
 
-### Interaktive Karte mit Hover-Effekt
+### Interaktive Card mit Hover-Effekt
 
 ```html
 <div class="card filter-grayscale filter-hover-color filter-transition">
@@ -364,7 +364,7 @@ Filter können rechenintensiv sein:
 ## Best Practices
 
 1. **Sparsam einsetzen**: Filter sollten die Nutzererfahrung verbessern, nicht ablenken
-2. **Zustand kommunizieren**: Verwenden Sie Filter, um interaktive Zustände zu verdeutlichen
+2. **Zustand kommunizieren**: Verwenden Sie Filter, um interaktive States zu verdeutlichen
 3. **Performance beachten**: Beschränken Sie die Anzahl der gefilterten Elemente
 4. **Barrierefrei gestalten**: Stellen Sie sicher, dass gefilterte Inhalte für alle zugänglich bleiben
 5. **Responsive anpassen**: Reduzieren Sie die Intensität von Filtern auf mobilen Geräten 

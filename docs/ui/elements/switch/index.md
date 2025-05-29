@@ -5,9 +5,9 @@ category: Components
 
 # Switch Komponente
 
-Die Switch-Komponente ist ein spezieller Toggle-Schalter, der für binäre Ein/Aus-Entscheidungen verwendet wird.
+Die Switch-Komponente ist ein spezieller Toggle-Switch, der für binäre Ein/Aus-Entscheidungen verwendet wird.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <div class="switch-container">
@@ -16,7 +16,7 @@ Die Switch-Komponente ist ein spezieller Toggle-Schalter, der für binäre Ein/A
 </div>
 ```
 
-## Varianten
+## Variants
 
 ### Standard Switch
 
@@ -54,7 +54,7 @@ Die Switch-Komponente ist ein spezieller Toggle-Schalter, der für binäre Ein/A
 </div>
 ```
 
-## Größenvarianten
+## Sizesvarianten
 
 ### Klein
 
@@ -147,7 +147,7 @@ Die Switch-Komponente ist ein spezieller Toggle-Schalter, der für binäre Ein/A
 
 ## Anpassung
 
-Die Switch-Komponente kann über CSS-Variablen angepasst werden:
+Die Switch-Komponente kann über CSS Variables angepasst werden:
 
 ```css
 .switch {
@@ -162,9 +162,9 @@ Die Switch-Komponente kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+Für eine bessere Accessibility beachten Sie bitte folgende Punkte:
 
 - Verwenden Sie immer ein `<label>`-Element, das mit dem Switch über das `for`-Attribut verknüpft ist
 - Stellen Sie sicher, dass der Switch über die Tastatur bedienbar ist (Tab-Navigation und Leertaste)
@@ -178,5 +178,5 @@ Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
 - Formulieren Sie Labels als positive Aussagen, die dem aktuellen Status entsprechen
 - Verwenden Sie Switches anstelle von Checkboxen, wenn eine sofortige Änderung erfolgen soll
 - Zeigen Sie den aktuellen Status des Switches deutlich an (durch Farbe, Position und Label)
-- Vermeiden Sie die Verwendung mehrerer Switches für miteinander zusammenhängende Optionen
+- Vermeiden Sie die Usage mehrerer Switches für miteinander zusammenhängende Optionen
 - Gruppieren Sie zusammengehörige Switches in logischen Abschnitten 

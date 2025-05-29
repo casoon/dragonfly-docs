@@ -44,7 +44,7 @@ html {
 
 Diese einfache CSS-Eigenschaft sorgt dafür, dass alle Scrolling-Aktionen, einschließlich Klicks auf Anker-Links und programmatisches Scrollen, sanft animiert werden.
 
-### Barrierefreiheit berücksichtigen
+### Accessibility berücksichtigen
 
 Für Nutzer, die reduzierte Bewegung bevorzugen, wird Smooth Scrolling automatisch deaktiviert:
 
@@ -56,7 +56,7 @@ Für Nutzer, die reduzierte Bewegung bevorzugen, wird Smooth Scrolling automatis
 }
 ```
 
-## Anwendungsfälle
+## Use Cases
 
 ### Anker-Links
 
@@ -270,7 +270,7 @@ navItems.forEach(item => {
 
 ### Offset-Unterstützung
 
-Manchmal möchten Sie beim Scrollen einen Offset berücksichtigen, zum Beispiel für einen fixierten Header:
+Manchmal möchten Sie beim Scrollen einen Offset berücksichtigen, zum Example für einen fixierten Header:
 
 ```javascript
 // Funktion zum Scrollen mit Offset
@@ -287,7 +287,7 @@ function scrollToWithOffset(elementId, offset = 0) {
   });
 }
 
-// Beispiel-Nutzung
+// Example-Nutzung
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -391,7 +391,7 @@ const easingFunctions = {
 
 ## Anpassung
 
-Das Smooth Scrolling System kann über CSS-Variablen angepasst werden:
+Das Smooth Scrolling System kann über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -427,13 +427,13 @@ Für Browser ohne native Unterstützung stellt die Casoon UI Library eine JavaSc
 
 Smooth Scrolling kann, wenn nicht optimiert, die Performance beeinträchtigen. Die Casoon UI Library implementiert folgende Optimierungen:
 
-1. **Passive Event Listener**: Verbesserte Scrolling-Performance durch Verwendung passiver Event-Listener
+1. **Passive Event Listener**: Verbesserte Scrolling-Performance durch Usage passiver Event-Listener
 2. **Throttling**: Begrenzung der Ereignisrate bei Scroll-Events
 3. **requestAnimationFrame**: Synchronisierung mit dem Browser-Rendering-Zyklus
 4. **GPU-Beschleunigung**: Nutzung von CSS-Transformationen für bessere Performance
 
 ```javascript
-// Beispiel für optimierte Scroll-Event-Behandlung
+// Example für optimierte Scroll-Event-Behandlung
 window.addEventListener('scroll', () => {
   // Prüft, ob requestAnimationFrame verfügbar ist
   if (window.requestAnimationFrame) {
@@ -447,9 +447,9 @@ window.addEventListener('scroll', () => {
 }, { passive: true }); // Passiver Event-Listener für bessere Performance
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Das Smooth Scrolling System der Casoon UI Library berücksichtigt Barrierefreiheitsaspekte:
+Das Smooth Scrolling System der Casoon UI Library berücksichtigt Accessibilitysaspekte:
 
 1. **Respektiert Nutzereinstellungen**: Beachtet die `prefers-reduced-motion`-Einstellung
 2. **Keyboard-Navigation**: Unterstützt vollständige Keyboard-Navigation
@@ -461,11 +461,11 @@ Das Smooth Scrolling System der Casoon UI Library berücksichtigt Barrierefreihe
 1. **Behutsam einsetzen**: Verwenden Sie Smooth Scrolling gezielt und nicht für jede Scrollaktion
 2. **Performance beachten**: Achten Sie auf die Performance bei längeren Seiten
 3. **Kurze Animationen**: Halten Sie die Scroll-Dauer kurz (ca. 300-800ms)
-4. **Barrierefreiheit berücksichtigen**: Respektieren Sie die Nutzereinstellungen zur Bewegungsreduktion
+4. **Accessibility berücksichtigen**: Respektieren Sie die Nutzereinstellungen zur Bewegungsreduktion
 5. **Responsive Design**: Passen Sie Offsets für verschiedene Bildschirmgrößen an
 
 ## Zusammenfassung
 
 Das Smooth Scrolling System der Casoon UI Library bietet eine leistungsstarke, aber dennoch leicht zu implementierende Lösung für flüssige Scrolling-Erlebnisse. Durch die Kombination von nativem CSS Smooth Scrolling mit optimierten JavaScript-Fallbacks bietet es eine robuste, barrierefreie und anpassbare Lösung für moderne Webanwendungen.
 
-Die sorgfältige Berücksichtigung von Performance, Barrierefreiheit und Nutzererfahrung macht es zu einem wesentlichen Bestandteil für die Erstellung moderner, benutzerfreundlicher Interfaces. 
+Die sorgfältige Berücksichtigung von Performance, Accessibility und Nutzererfahrung macht es zu einem wesentlichen Bestandteil für die Erstellung moderner, benutzerfreundlicher Interfaces. 

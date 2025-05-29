@@ -5,9 +5,9 @@ category: Tokens
 
 # Design Tokens
 
-Design Tokens bilden die grundlegende Sprache des Casoon UI Design-Systems. Sie sind die kleinsten Einheiten, die Farben, Abstände, Typografie und andere visuelle Eigenschaften definieren und konsistent in der gesamten Anwendung angewendet werden können.
+Design Tokens bilden die grundlegende Sprache des Casoon UI Design-Systems. Sie sind die kleinsten Einheiten, die Colors, Abstände, Typography und andere visuelle Eigenschaften definieren und konsistent in der gesamten Anwendung angewendet werden können.
 
-## Übersicht
+## Overview
 
 Das Token-System der Casoon UI Library umfasst:
 
@@ -22,23 +22,23 @@ Das Token-System der Casoon UI Library umfasst:
 
 Die Design Tokens der Casoon UI Library folgen diesen Prinzipien:
 
-1. **Konsistenz**: Einheitliche Designsprache in der gesamten Anwendung
-2. **Skalierbarkeit**: Anpassbarkeit an verschiedene Anforderungen
-3. **Wartbarkeit**: Einfache Aktualisierung und Verwaltung
+1. **Consistency**: Einheitliche Designsprache in der gesamten Anwendung
+2. **Skalierbarkeit**: Customizability an verschiedene Anforderungen
+3. **Maintainability**: Einfache Aktualisierung und Verwaltung
 4. **Semantik**: Bedeutungsvolle, selbsterklärende Namensgebung
-5. **Barrierefreiheit**: Unterstützung für Kontrast- und Lesbarkeitsanforderungen
+5. **Accessibility**: Unterstützung für Kontrast- und Lesbarkeitsanforderungen
 
 ## Implementierung
 
-Design Tokens werden als CSS-Variablen implementiert und sind in der gesamten Casoon UI Library verfügbar:
+Design Tokens werden als CSS Variables implementiert und sind in der gesamten Casoon UI Library verfügbar:
 
 ```css
 :root {
-  /* Beispiel für Color Tokens */
+  /* Example für Color Tokens */
   --color-primary-500: #3b82f6;
   --color-neutral-100: #f3f4f6;
   
-  /* Beispiel für Spacing Tokens */
+  /* Example für Spacing Tokens */
   --space-xs: 0.25rem;
   --space-s: 0.5rem;
   --space-m: 1rem;
@@ -47,7 +47,7 @@ Design Tokens werden als CSS-Variablen implementiert und sind in der gesamten Ca
 }
 ```
 
-## Verwendung
+## Usage
 
 Design Tokens können in Ihrem CSS oder in HTML-Inline-Styles verwendet werden:
 
@@ -59,7 +59,7 @@ Design Tokens können in Ihrem CSS oder in HTML-Inline-Styles verwendet werden:
 }
 ```
 
-## Weiterführende Themen
+## Further Topics
 
 - [Color Tokens](/tokens/colors)
 - [Typography Tokens](/tokens/typography)

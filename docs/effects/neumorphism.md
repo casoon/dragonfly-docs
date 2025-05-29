@@ -31,7 +31,7 @@ Importieren Sie das Neumorphism-Effekte-Modul über CSS:
 | `.neumorph-concave` | Konkaver Neumorphism-Effekt |
 | `.neumorph-convex` | Konvexer Neumorphism-Effekt |
 
-### Neumorphism-Varianten
+### Neumorphism-Variants
 
 | Klasse | Beschreibung |
 |--------|-------------|
@@ -45,9 +45,9 @@ Importieren Sie das Neumorphism-Effekte-Modul über CSS:
 | Klasse | Beschreibung |
 |--------|-------------|
 | `.neumorph-button` | Neumorphism-Stil für Buttons |
-| `.neumorph-card` | Neumorphism-Stil für Karten |
-| `.neumorph-input` | Neumorphism-Stil für Eingabefelder |
-| `.neumorph-switch` | Neumorphism-Stil für Schalter |
+| `.neumorph-card` | Neumorphism-Stil für Cardn |
+| `.neumorph-input` | Neumorphism-Stil für Inputer |
+| `.neumorph-switch` | Neumorphism-Stil für Switch |
 | `.neumorph-checkbox` | Neumorphism-Stil für Checkboxen |
 | `.neumorph-radio` | Neumorphism-Stil für Radiobuttons |
 | `.neumorph-slider` | Neumorphism-Stil für Slider |
@@ -55,7 +55,7 @@ Importieren Sie das Neumorphism-Effekte-Modul über CSS:
 | `.neumorph-dropdown` | Neumorphism-Stil für Dropdown-Menüs |
 | `.neumorph-nav` | Neumorphism-Stil für Navigation |
 
-### Interaktive Zustände
+### Interaktive States
 
 | Klasse | Beschreibung |
 |--------|-------------|
@@ -64,7 +64,7 @@ Importieren Sie das Neumorphism-Effekte-Modul über CSS:
 | `.neumorph-focus` | Ändert den Neumorphism-Effekt bei Fokus |
 | `.neumorph-toggle` | Umschaltbarer Neumorphism-Effekt |
 
-## Beispiele
+## Examples
 
 ### Neumorphism-Buttons
 
@@ -97,7 +97,7 @@ Importieren Sie das Neumorphism-Effekte-Modul über CSS:
 </style>
 ```
 
-### Neumorphism-Karte
+### Neumorphism-Card
 
 ```html
 <div class="neumorph-card">
@@ -139,7 +139,7 @@ Importieren Sie das Neumorphism-Effekte-Modul über CSS:
 </style>
 ```
 
-### Neumorphism-Formularelemente
+### Neumorphism-Formelemente
 
 ```html
 <div class="neumorph-form">
@@ -277,7 +277,7 @@ Importieren Sie das Neumorphism-Effekte-Modul über CSS:
 </style>
 ```
 
-### Neumorphism-Dashboard-Komponenten
+### Neumorphism-Dashboard-Components
 
 ```html
 <div class="neumorph-dashboard">
@@ -391,11 +391,11 @@ Importieren Sie das Neumorphism-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Neumorphism-Effekte können über CSS-Variablen angepasst werden:
+Die Neumorphism-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
-  /* Basis-Farben */
+  /* Basis-Colors */
   --neumorph-background: #e0e5ec;
   --neumorph-text-color: #333;
   --neumorph-text-light: #777;
@@ -424,7 +424,7 @@ Die Neumorphism-Effekte können über CSS-Variablen angepasst werden:
     inset var(--neumorph-dark-x) var(--neumorph-dark-y) var(--neumorph-shadow-blur) rgba(0, 0, 0, var(--neumorph-shadow-opacity)),
     inset var(--neumorph-light-x) var(--neumorph-light-y) var(--neumorph-shadow-blur) rgba(255, 255, 255, 0.7);
   
-  /* Varianten-Größen */
+  /* Variants-Sizes */
   --neumorph-shadow-sm: 
     calc(var(--neumorph-light-x) * 0.5) calc(var(--neumorph-light-y) * 0.5) calc(var(--neumorph-shadow-blur) * 0.5) rgba(255, 255, 255, 0.7),
     calc(var(--neumorph-dark-x) * 0.5) calc(var(--neumorph-dark-y) * 0.5) calc(var(--neumorph-shadow-blur) * 0.5) rgba(0, 0, 0, var(--neumorph-shadow-opacity));
@@ -460,23 +460,23 @@ Die Neumorphism-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Neumorphism-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Neumorphism-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Text und Hintergrund ausreichend ist
-2. **Fokus-Zustände**: Bieten Sie klare Fokus-Zustände für Tastaturnavigation
-3. **Größenanpassung**: Stellen Sie sicher, dass Elemente bei Textvergrößerung korrekt skalieren
+2. **Fokus-States**: Bieten Sie klare Fokus-States für Tastaturnavigation
+3. **Sizesanpassung**: Stellen Sie sicher, dass Elemente bei Textvergrößerung korrekt skalieren
 
 ```css
-/* Verbesserte Fokus-Zustände für Barrierefreiheit */
+/* Verbesserte Fokus-States für Accessibility */
 .neumorph-button:focus,
 .neumorph-input:focus {
   outline: none;
   box-shadow: var(--neumorph-inset-shadow), 0 0 0 3px var(--neumorph-accent-color);
 }
 
-/* Kontrastreiche Hover-Zustände */
+/* Kontrastreiche Hover-States */
 .neumorph-button:hover {
   color: var(--neumorph-accent-color);
   transform: translateY(-2px);
@@ -495,7 +495,7 @@ Die Neumorphism-Effekte werden von allen modernen Browsern unterstützt.
 | Funktion | Chrome | Firefox | Safari | Edge | IE11 |
 |--------|--------|---------|--------|------|------|
 | Box-Shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Calc-Funktion | ✓ | ✓ | ✓ | ✓ | Teilweise |
 
-Für ältere Browser, die keine CSS-Variablen unterstützen, werden Fallback-Stile bereitgestellt. 
+Für ältere Browser, die keine CSS Variables unterstützen, werden Fallback-Styles bereitgestellt. 

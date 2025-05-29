@@ -2,7 +2,7 @@
 
 Loading-Effekte werden verwendet, um dem Benutzer anzuzeigen, dass ein Prozess oder eine Operation im Hintergrund ausgeführt wird. Die `@casoon/ui-lib` bietet verschiedene Loading-Effekte, die dazu beitragen, das Benutzererlebnis während Ladezeiten zu verbessern.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Loading-Effekt kann auf jedes Element angewendet werden:
 
@@ -32,7 +32,7 @@ Die folgenden CSS-Klassen stehen für Loading-Effekte zur Verfügung:
 | `.loading-overlay` | Vollständiger Overlay mit Ladeindikator |
 | `.loading-fullscreen` | Vollbild-Ladeindikator |
 
-## Varianten
+## Variants
 
 ### Spinner
 
@@ -42,7 +42,7 @@ Der Spinner ist ein rotierendes Element, das ein laufendes Laden anzeigt:
 <div class="loading-spinner"></div>
 ```
 
-Verfügbare Größenvarianten:
+Verfügbare Sizesvarianten:
 
 ```html
 <div class="loading-spinner-xs">Extra klein</div>
@@ -52,7 +52,7 @@ Verfügbare Größenvarianten:
 <div class="loading-spinner-xl">Extra groß</div>
 ```
 
-Stilisierte Varianten:
+Stilisierte Variants:
 
 ```html
 <div class="loading-spinner-border">Rahmen-Spinner</div>
@@ -69,7 +69,7 @@ Die Dots-Animation zeigt eine Reihe von Punkten, die nacheinander animiert werde
 <div class="loading-dots"></div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="loading-dots-pulse">Pulsierende Punkte</div>
@@ -87,7 +87,7 @@ Der Pulse-Effekt zeigt einen pulsierenden Kreis oder ein anderes Element:
 <div class="loading-pulse"></div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="loading-pulse-circle">Kreisförmiger Puls</div>
@@ -104,7 +104,7 @@ Der Bar-Effekt zeigt einen Fortschrittsbalken:
 <div class="loading-bar"></div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="loading-bar-indeterminate">Unbestimmter Fortschritt</div>
@@ -126,7 +126,7 @@ Der Skeleton-Effekt erstellt Platzhalter für Inhalte, die geladen werden:
 </div>
 ```
 
-Verfügbare Komponenten:
+Verfügbare Components:
 
 ```html
 <div class="loading-skeleton-avatar">Avatar-Platzhalter</div>
@@ -134,7 +134,7 @@ Verfügbare Komponenten:
 <div class="loading-skeleton-heading">Überschriften-Platzhalter</div>
 <div class="loading-skeleton-text">Text-Platzhalter</div>
 <div class="loading-skeleton-button">Button-Platzhalter</div>
-<div class="loading-skeleton-card">Karten-Platzhalter</div>
+<div class="loading-skeleton-card">Cardn-Platzhalter</div>
 ```
 
 ### Shimmer
@@ -148,7 +148,7 @@ Der Shimmer-Effekt fügt einen animierten Glanzeffekt zu Skeleton-Elementen hinz
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="loading-shimmer-light">Heller Schimmereffekt</div>
@@ -165,7 +165,7 @@ Der Wave-Effekt zeigt eine wellenförmige Animation:
 <div class="loading-wave"></div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="loading-wave-bars">Wellenbalken</div>
@@ -182,7 +182,7 @@ Der Circle-Effekt zeigt einen kreisförmigen Fortschrittsindikator:
 <div class="loading-circle"></div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="loading-circle-indeterminate">Unbestimmter Kreisfortschritt</div>
@@ -210,7 +210,7 @@ Der Overlay-Effekt zeigt einen halbtransparenten Überzug mit einem Ladeindikato
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="loading-overlay-light">Heller Overlay</div>
@@ -236,7 +236,7 @@ Loading-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </button>
 ```
 
-### Karten mit Loading-Status
+### Cardn mit Loading-Status
 
 ```html
 <div class="card card-loading">
@@ -244,12 +244,12 @@ Loading-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
     <div class="loading-spinner"></div>
   </div>
   <div class="card-body">
-    Karteninhalt
+    Cardninhalt
   </div>
 </div>
 ```
 
-### Formularelemente mit Loading-Status
+### Formelemente mit Loading-Status
 
 ```html
 <div class="form-group">
@@ -272,7 +272,7 @@ Loading-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Loading-Effekte können über CSS-Variablen angepasst werden:
+Die Loading-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -327,7 +327,7 @@ Die Loading-Effekte können über CSS-Variablen angepasst werden:
 
 ## CSS-Implementierung
 
-Beispiele für die CSS-Implementierung der Loading-Effekte:
+Examples für die CSS-Implementierung der Loading-Effekte:
 
 ```css
 /* Basis-Loading */
@@ -532,7 +532,7 @@ function hideLoading(elementId) {
   element.classList.remove('loading');
 }
 
-// Beispiel für eine asynchrone Funktion mit Loading-Indikator
+// Example für eine asynchrone Funktion mit Loading-Indikator
 async function fetchData(url, containerId) {
   const container = document.getElementById(containerId);
   
@@ -557,9 +557,9 @@ async function fetchData(url, containerId) {
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Loading-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Loading-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **ARIA-Attribute**: Verwenden Sie geeignete ARIA-Attribute, um anzuzeigen, dass Inhalte geladen werden
 2. **Status-Updates**: Informieren Sie Screenreader über den Ladezustand
@@ -623,4 +623,4 @@ Die meisten Loading-Effekte werden von allen modernen Browsern unterstützt.
 
 - [Skeleton-Effekte](/docs/effects/layout/skeleton.md) - Platzhalter für Inhalte
 - [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Transitions-Effekte](/docs/effects/transitions.md) - Übergangseffekte zwischen Zuständen 
+- [Transitions-Effekte](/docs/effects/transitions.md) - Übergangseffekte zwischen Statesn 

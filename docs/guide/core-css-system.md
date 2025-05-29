@@ -11,7 +11,7 @@ Das Kern-CSS-System der Casoon UI Library besteht aus mehreren zentralen Dateien
 
 Die `core.css` ist das zentrale Organisationssystem der Casoon UI Library. Sie definiert die Struktur der CSS-Layer und koordiniert deren Import in der richtigen Reihenfolge, um ein präzises und wartbares Styling-System zu gewährleisten.
 
-## Übersicht der Core-Datei
+## Overview der Core-Datei
 
 Die `core.css` Datei organisiert das gesamte CSS-Framework durch eine strukturierte Reihe von Imports:
 
@@ -32,20 +32,20 @@ Die `core.css` Datei organisiert das gesamte CSS-Framework durch eine strukturie
 
 /* 
  * Layout-System
- * Container, Grid, Flexbox-Layouts und responsive Anpassungen
+ * Container, Grid, Flexbox-Layouts und responsive Customizations
  */
 @import url("layout.css");
 @import url("layout.queries.css");
 
 /* 
- * Typografie-System
- * Schriftarten, Größen, Abstände und Text-Formatierungen
+ * Typography-System
+ * Schriftarten, Sizes, Abstände und Text-Formatierungen
  */
 @import url("typography.css") layer(typography);
 
 /* 
  * Modul-System
- * Wiederverwendbare UI-Komponenten in eigenständigen Dateien
+ * Wiederverwendbare UI-Components in eigenständigen Dateien
  */
 @import url("components.css");
 
@@ -62,25 +62,25 @@ Die gesamte Layer-Struktur ist in der `base.css` definiert und folgt einer klare
 
 ```css
 @layer reset,                /* Browser-Reset, Normalisierung */
-       tokens,               /* Design-Tokens und Variablen */
+       tokens,               /* Design Tokens und Variablen */
        core,                 /* Kernfunktionalitäten */
-       logical-properties,   /* Logische Eigenschaften für Bidirektionalität */
-       colors,               /* Farbsystem */
+       logical-properties,   /* Logical Properties für Bidirektionalität */
+       colors,               /* Color System */
        color-mix,            /* Farbmischungen und -variationen */
        layout,               /* Layout-Grundlagen */
-       layout-queries,       /* Responsive Anpassungen */
-       typography,           /* Typografie-System */
+       layout-queries,       /* Responsive Customizations */
+       typography,           /* Typography-System */
        utilities,            /* Utility-Klassen */
        smooth-scroll,        /* Scroll-Verhalten */
-       accessibility,        /* Barrierefreiheit */
+       accessibility,        /* Accessibility */
        icons,                /* Icon-System */
-       components,           /* UI-Komponenten */
+       components,           /* UI-Components */
        animations,           /* Bewegungssystem */
        effects,              /* Visuelle Effekte */
        themes;               /* Theming-System */
 ```
 
-**Hinweis:** Der ursprünglich separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, um die Struktur zu vereinfachen und die Wartbarkeit zu verbessern.
+**Hinweis:** Der ursprünglich separate `custom-properties`-Layer wurde in den `tokens`-Layer integriert, um die Struktur zu vereinfachen und die Maintainability zu verbessern.
 
 ## Detaillierte Layer-Beschreibungen
 
@@ -105,7 +105,7 @@ Dieser Layer hat die niedrigste Priorität in der Kaskade und wird von allen nac
 
 ### 2. tokens
 
-Der `tokens` Layer definiert die grundlegenden Design-Tokens und CSS-Variablen, die im gesamten System verwendet werden.
+Der `tokens` Layer definiert die grundlegenden Design Tokens und CSS Variables, die im gesamten System verwendet werden.
 
 ```css
 @layer tokens {
@@ -116,7 +116,7 @@ Der `tokens` Layer definiert die grundlegenden Design-Tokens und CSS-Variablen, 
     --space-3: 0.75rem;
     --space-4: 1rem;
     
-    /* Farben */
+    /* Colors */
     --color-primary: #3b82f6;
     --color-secondary: #6b7280;
     --color-accent: #f59e0b;
@@ -126,7 +126,7 @@ Der `tokens` Layer definiert die grundlegenden Design-Tokens und CSS-Variablen, 
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     
-    /* Weitere Design-Tokens... */
+    /* Weitere Design Tokens... */
   }
 }
 ```
@@ -197,7 +197,7 @@ Der `logical-properties` Layer implementiert bidirektionales Layout mit logische
 
 ### 5. colors
 
-Der `colors` Layer definiert das Farbsystem und farbbasierte Klassen für Text, Hintergründe und Ränder.
+Der `colors` Layer definiert das Color System und farbbasierte Klassen für Text, Hintergründe und Ränder.
 
 ```css
 @layer colors {
@@ -242,7 +242,7 @@ Der `color-mix` Layer implementiert dynamische Farbberechnungen und -mischungen.
 
 ### 7. layout
 
-Der `layout` Layer definiert die grundlegenden Layout-Komponenten und -Strukturen.
+Der `layout` Layer definiert die grundlegenden Layout-Components und -Strukturen.
 
 ```css
 @layer layout {
@@ -254,7 +254,7 @@ Der `layout` Layer definiert die grundlegenden Layout-Komponenten und -Strukture
     padding-inline: var(--container-padding);
   }
   
-  /* Grid-System */
+  /* Grid System */
   .grid {
     display: grid;
     gap: var(--grid-gap);
@@ -265,13 +265,13 @@ Der `layout` Layer definiert die grundlegenden Layout-Komponenten und -Strukture
     display: flex;
   }
   
-  /* Weitere Layout-Komponenten... */
+  /* Weitere Layout-Components... */
 }
 ```
 
 ### 8. layout-queries
 
-Der `layout-queries` Layer implementiert responsive Anpassungen basierend auf Container-Queries.
+Der `layout-queries` Layer implementiert responsive Customizations basierend auf Container-Queries.
 
 ```css
 @layer layout-queries {
@@ -298,13 +298,13 @@ Der `layout-queries` Layer implementiert responsive Anpassungen basierend auf Co
     }
   }
   
-  /* Weitere responsive Anpassungen... */
+  /* Weitere responsive Customizations... */
 }
 ```
 
 ### 9. typography
 
-Der `typography` Layer definiert das Typografie-System mit Schriftarten, Größen und Text-Formatierungen.
+Der `typography` Layer definiert das Typography-System mit Schriftarten, Sizes und Text-Formatierungen.
 
 ```css
 @layer typography {
@@ -352,7 +352,7 @@ Der `utilities` Layer bietet atomare Utility-Klassen für schnelles Styling.
     gap: var(--space-4);
   }
   
-  /* Größen-Utilities */
+  /* Sizes-Utilities */
   .w-full {
     width: 100%;
   }
@@ -382,11 +382,11 @@ Der `smooth-scroll` Layer definiert das Scrollverhalten für eine bessere Benutz
 
 ### 12. accessibility
 
-Der `accessibility` Layer enthält Verbesserungen für die Barrierefreiheit.
+Der `accessibility` Layer enthält Verbesserungen für die Accessibility.
 
 ```css
 @layer accessibility {
-  /* Focus-Stile */
+  /* Focus-Styles */
   :focus-visible {
     outline: 2px solid var(--color-focus);
     outline-offset: 2px;
@@ -431,7 +431,7 @@ Der `icons` Layer definiert das Icon-System und die dazugehörigen Styles.
     vertical-align: -0.125em;
   }
   
-  /* Icon-Größen */
+  /* Icon-Sizes */
   .icon-sm {
     font-size: var(--icon-size-sm);
   }
@@ -440,13 +440,13 @@ Der `icons` Layer definiert das Icon-System und die dazugehörigen Styles.
     font-size: var(--icon-size-md);
   }
   
-  /* Weitere Icon-Stile... */
+  /* Weitere Icon-Styles... */
 }
 ```
 
 ### 14. components
 
-Der `components` Layer enthält alle UI-Komponenten des Design-Systems.
+Der `components` Layer enthält alle UI-Components des Design-Systems.
 
 ```css
 @layer components {
@@ -473,7 +473,7 @@ Der `components` Layer enthält alle UI-Komponenten des Design-Systems.
     background-color: var(--card-bg);
   }
   
-  /* Weitere Komponenten... */
+  /* Weitere Components... */
 }
 ```
 
@@ -552,41 +552,41 @@ Der `themes` Layer definiert das Theming-System für verschiedene Farbschemata.
 }
 ```
 
-## Vorteile des Layer-Systems
+## Vorteile des Layer Systems
 
-Das Layer-System der Casoon UI Library bietet mehrere Vorteile:
+Das Layer System der Casoon UI Library bietet mehrere Vorteile:
 
 1. **Präzise Kontrolle der Spezifität**: Die Reihenfolge der Layer bestimmt die Priorität, unabhängig von der Komplexität der Selektoren.
-2. **Verbesserte Wartbarkeit**: Klare Trennung von Zuständigkeiten erleichtert das Debugging und die Weiterentwicklung.
+2. **Verbesserte Maintainability**: Klare Trennung von Zuständigkeiten erleichtert das Debugging und die Weiterentwicklung.
 3. **Skalierbarkeit**: Einfaches Hinzufügen neuer Funktionen ohne Beeinträchtigung bestehender Styles.
 4. **Vermeidung von !important**: Die Layer-Struktur reduziert die Notwendigkeit von !important-Deklarationen.
 5. **Performance-Optimierung**: Modern CSS-Engines können Layer-basierte Styles effizienter verarbeiten.
 
 ## Best Practices
 
-Bei der Arbeit mit dem Layer-System sollten folgende Best Practices beachtet werden:
+Bei der Arbeit mit dem Layer System sollten folgende Best Practices beachtet werden:
 
 1. **Respektieren der Layer-Grenzen**: Platzieren Sie Styles im passenden Layer basierend auf ihrer Funktion.
 2. **Keine übergreifenden Abhängigkeiten**: Vermeiden Sie, dass ein Layer direkt von einem anderen abhängig ist.
 3. **Minimale Spezifität innerhalb von Layern**: Verwenden Sie die einfachsten möglichen Selektoren innerhalb eines Layers.
 4. **Konsistente Naming-Konventionen**: Folgen Sie den etablierten Konventionen für Klassen- und Variablennamen.
-5. **Dokumentieren von Anpassungen**: Beim Überschreiben von Styles in benutzerdefinierten Themes dokumentieren Sie den Zweck.
+5. **Dokumentieren von Customizations**: Beim Überschreiben von Styles in benutzerdefinierten Themes dokumentieren Sie den Zweck.
 
 ## Integration in eigene Projekte
 
-Um das Layer-System in Ihrem Projekt zu nutzen, importieren Sie einfach die `core.css`:
+Um das Layer System in Ihrem Projekt zu nutzen, importieren Sie einfach die `core.css`:
 
 ```css
 @import "@casoon/ui-lib/core.css";
 ```
 
-Wenn Sie eigene Anpassungen vornehmen möchten, respektieren Sie die Layer-Struktur:
+Wenn Sie eigene Customizations vornehmen möchten, respektieren Sie die Layer-Struktur:
 
 ```css
 /* Eigene CSS-Datei nach dem Import der core.css */
 @import "@casoon/ui-lib/core.css";
 
-/* Eigene Komponenten dem entsprechenden Layer zuordnen */
+/* Eigene Components dem entsprechenden Layer zuordnen */
 @layer components {
   .custom-component {
     /* Eigene Styles... */
@@ -613,8 +613,8 @@ Wenn Sie eigene Anpassungen vornehmen möchten, respektieren Sie die Layer-Struk
 Das Core CSS System ist für moderne Browser optimiert und nutzt folgende Technologien:
 
 1. **CSS Layers**: Haupt-Organisationsprinzip für die Kaskade
-2. **Layer-System**: Die `@layer`-Deklarationen werden optimal kompiliert
-3. **CSS Custom Properties**: Für dynamische Anpassungen und Themefähigkeit
+2. **Layer System**: Die `@layer`-Deklarationen werden optimal kompiliert
+3. **CSS Custom Properties**: Für dynamische Customizations und Themefähigkeit
 4. **Container Queries**: Für komponenten-basierte Responsivität
 5. **Modern Color Functions**: Für dynamische Farbberechnungen und Kontraste
 6. **Logical Properties**: Für internationalisierte und bidirektionale Layouts

@@ -5,9 +5,9 @@ category: Typography
 
 # Typography
 
-Das Typography-System der Casoon UI Library bietet eine umfassende und flexible Lösung für die Gestaltung von Text und die Sicherstellung von Lesbarkeit, Hierarchie und Konsistenz in Ihrer Anwendung.
+Das Typography-System der Casoon UI Library bietet eine umfassende und flexible Lösung für die Gestaltung von Text und die Sicherstellung von Lesbarkeit, Hierarchie und Consistency in Ihrer Anwendung.
 
-## Übersicht
+## Overview
 
 Das Typography-System umfasst:
 
@@ -24,13 +24,13 @@ Das Typography-System folgt diesen Prinzipien:
 
 1. **Lesbarkeit**: Optimierung für bestmögliche Lesbarkeit
 2. **Hierarchie**: Klare visuelle Hierarchie für verbesserte Scanbarkeit
-3. **Konsistenz**: Einheitliche Textdarstellung
+3. **Consistency**: Einheitliche Textdarstellung
 4. **Responsivität**: Anpassung an verschiedene Bildschirmgrößen
-5. **Barrierefreiheit**: Einhaltung von WCAG-Richtlinien für Textkontrast und -größe
+5. **Accessibility**: Einhaltung von WCAG-Richtlinien für Textkontrast und -größe
 
 ## Implementierung
 
-Die Typografie wird mittels CSS-Variablen und einem Schichtsystem implementiert:
+Die Typography wird mittels CSS Variables und einem Schichtsystem implementiert:
 
 ```css
 :root {
@@ -58,7 +58,7 @@ Die Typografie wird mittels CSS-Variablen und einem Schichtsystem implementiert:
 }
 ```
 
-## Verwendung
+## Usage
 
 Das Typography-System kann als Teil des Core-Imports oder individuell eingebunden werden:
 
@@ -70,7 +70,7 @@ Das Typography-System kann als Teil des Core-Imports oder individuell eingebunde
 @import '@casoon/ui-lib/typography.css';
 ```
 
-## Weiterführende Themen
+## Further Topics
 
 - [Font Families](/typography/fonts)
 - [Headings](/typography/headings)

@@ -26,7 +26,7 @@ Importieren Sie das Blend-Effekte-Modul über CSS:
 | Klasse | Beschreibung |
 |--------|-------------|
 | `.blend-normal` | Standarddarstellung ohne Mischeffekt |
-| `.blend-multiply` | Multiplikation der Farben (dunkler) |
+| `.blend-multiply` | Multiplikation der Colors (dunkler) |
 | `.blend-screen` | Umkehrung, Multiplikation, Umkehrung (heller) |
 | `.blend-overlay` | Kombiniert Multiply und Screen |
 | `.blend-darken` | Behält die dunkleren Pixel |
@@ -70,7 +70,7 @@ Importieren Sie das Blend-Effekte-Modul über CSS:
 | `.isolation-auto` | Automatische Isolierung von Blend-Effekten |
 | `.isolation-isolate` | Erzwingt die Isolierung von Blend-Effekten |
 
-## Beispiele
+## Examples
 
 ### Text mit Hintergrundbild und Blend-Modus
 
@@ -288,7 +288,7 @@ Importieren Sie das Blend-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Blend-Effekte können über CSS-Variablen angepasst werden:
+Die Blend-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -299,13 +299,13 @@ Die Blend-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Blend-Modi ist es wichtig, die Lesbarkeit und den Kontrast zu berücksichtigen:
+Bei der Usage von Blend-Modi ist es wichtig, die Lesbarkeit und den Kontrast zu berücksichtigen:
 
 1. **Kontrast**: Stellen Sie sicher, dass Text über Blend-Effekten ausreichenden Kontrast hat
 2. **Lesbarkeit**: Verwenden Sie keine Blend-Modi, die die Lesbarkeit von wichtigem Inhalt beeinträchtigen
-3. **Alternative Stile**: Bieten Sie alternative Stile für Nutzer mit visuellen Einschränkungen an
+3. **Alternative Styles**: Bieten Sie alternative Styles für Nutzer mit visuellen Einschränkungen an
 
 ```css
 /* Verbesserte Lesbarkeit für Text über Blend-Effekten */
@@ -314,7 +314,7 @@ Bei der Verwendung von Blend-Modi ist es wichtig, die Lesbarkeit und den Kontras
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-/* Alternative Stile für reduzierte Bewegung */
+/* Alternative Styles für reduzierte Bewegung */
 @media (prefers-reduced-motion: reduce) {
   .animated-blend {
     animation: none !important;
@@ -333,4 +333,4 @@ Die Blend-Effekte werden von allen modernen Browsern unterstützt.
 | background-blend-mode | ✓ | ✓ | ✓ | ✓ | ✗ |
 | isolation | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die keine Blend-Modi unterstützen, werden Fallback-Stile bereitgestellt, die eine ähnliche visuelle Wirkung erzielen. 
+Für ältere Browser, die keine Blend-Modi unterstützen, werden Fallback-Styles bereitgestellt, die eine ähnliche visuelle Wirkung erzielen. 

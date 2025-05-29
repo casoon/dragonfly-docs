@@ -9,7 +9,7 @@ Die Glow-Effekte der Casoon UI Library bieten eine Sammlung von leuchtenden und 
 
 ## Überblick
 
-Glow-Effekte nutzen CSS-Schatten und Farbverläufe, um ein strahlendes, leuchtendes Erscheinungsbild zu erzeugen. Sie können verwendet werden, um wichtige Elemente hervorzuheben, visuelle Hierarchien zu schaffen und interaktive Zustände zu verdeutlichen. Diese Effekte verleihen Ihrer Benutzeroberfläche einen modernen, dynamischen Look.
+Glow-Effekte nutzen CSS-Schatten und Farbverläufe, um ein strahlendes, leuchtendes Erscheinungsbild zu erzeugen. Sie können verwendet werden, um wichtige Elemente hervorzuheben, visuelle Hierarchien zu schaffen und interaktive States zu verdeutlichen. Diese Effekte verleihen Ihrer Benutzeroberfläche einen modernen, dynamischen Look.
 
 ## Installation
 
@@ -76,15 +76,15 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
 |--------|-------------|
 | `.glow-text` | Glow-Effekt für Text |
 | `.glow-button` | Glow-Effekt für Buttons |
-| `.glow-card` | Glow-Effekt für Karten |
+| `.glow-card` | Glow-Effekt für Cardn |
 | `.glow-icon` | Glow-Effekt für Icons |
-| `.glow-input` | Glow-Effekt für Eingabefelder |
+| `.glow-input` | Glow-Effekt für Inputer |
 | `.glow-image` | Glow-Effekt für Bilder |
 | `.glow-border` | Glow-Effekt nur für Ränder |
 | `.glow-nav` | Glow-Effekt für Navigationselemente |
 | `.glow-badge` | Glow-Effekt für Badges |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Glow-Effekte
 
@@ -246,7 +246,7 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
   
   <div class="glow-card glow-soft">
     <h3>Glow Card</h3>
-    <p>Diese Karte hat einen weichen Glow-Effekt.</p>
+    <p>Diese Card hat einen weichen Glow-Effekt.</p>
     <button class="glow-button glow-sharp">Mehr erfahren</button>
   </div>
   
@@ -443,7 +443,7 @@ Importieren Sie das Glow-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Glow-Effekte können über CSS-Variablen angepasst werden:
+Die Glow-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -453,7 +453,7 @@ Die Glow-Effekte können über CSS-Variablen angepasst werden:
   --glow-spread-radius: 5px;
   --glow-color: rgba(255, 255, 255, var(--glow-opacity));
   
-  /* Glow-Größenvarianten */
+  /* Glow-Sizesvarianten */
   --glow-sm-blur: 8px;
   --glow-sm-spread: 2px;
   --glow-md-blur: 15px;
@@ -468,7 +468,7 @@ Die Glow-Effekte können über CSS-Variablen angepasst werden:
   --glow-sharp-opacity: 0.8;
   --glow-intense-opacity: 1;
   
-  /* Farbige Glow-Varianten */
+  /* Farbige Glow-Variants */
   --glow-primary-color: #4f46e5;
   --glow-secondary-color: #64748b;
   --glow-success-color: #10b981;
@@ -503,7 +503,7 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
   box-shadow: 0 0 var(--glow-blur-radius) var(--glow-spread-radius) var(--glow-color);
 }
 
-/* Größenvarianten */
+/* Sizesvarianten */
 .glow-sm {
   box-shadow: 0 0 var(--glow-sm-blur) var(--glow-sm-spread) var(--glow-color);
 }
@@ -542,14 +542,14 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
               inset 0 0 var(--glow-blur-radius) var(--glow-spread-radius) var(--glow-color);
 }
 
-/* Farbige Varianten */
+/* Farbige Variants */
 .glow-primary {
   --glow-color: rgba(var(--glow-primary-color-rgb), var(--glow-opacity));
 }
 
-/* Weitere farbige Varianten... */
+/* Weitere farbige Variants... */
 
-/* Interaktive Zustände */
+/* Interaktive States */
 .glow-hover {
   transition: box-shadow 0.3s ease;
 }
@@ -558,7 +558,7 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
   box-shadow: 0 0 var(--glow-blur-radius) var(--glow-spread-radius) var(--glow-color);
 }
 
-/* Weitere interaktive Zustände... */
+/* Weitere interaktive States... */
 
 /* Animierte Glow-Effekte */
 .glow-pulse {
@@ -577,7 +577,7 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
 /* Weitere Animationen... */
 ```
 
-## Anwendungsfälle
+## Use Cases
 
 ### Glow für Fokuszustände
 
@@ -629,9 +629,9 @@ Der grundlegende Glow-Effekt wird durch CSS-Schatten implementiert:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Glow-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Glow-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Text und Hintergrund trotz Glow-Effekt ausreichend ist
 2. **Animationen**: Bieten Sie eine Option zum Deaktivieren von animierten Glow-Effekten für Nutzer mit Empfindlichkeiten
@@ -688,4 +688,4 @@ Die Glow-Effekte werden von allen modernen Browsern unterstützt.
 | animation | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | filter (blur) | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Effekte nicht vollständig unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Effekte nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 

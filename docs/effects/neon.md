@@ -9,7 +9,7 @@ Die Neon-Effekte der Casoon UI Library bieten eine Sammlung von leuchtenden, kr�
 
 ## Überblick
 
-Neon-Effekte kombinieren leuchtende Farben mit einem charakteristischen Glühen, um ein Erscheinungsbild zu erzeugen, das an klassische Neonlichter erinnert. Sie sind ideal für Akzente, Hervorhebungen und Elemente, die Aufmerksamkeit erregen sollen. Die Neon-Effekte der Casoon UI Library sind vollständig anpassbar und für verschiedene UI-Elemente optimiert.
+Neon-Effekte kombinieren leuchtende Colors mit einem charakteristischen Glühen, um ein Erscheinungsbild zu erzeugen, das an klassische Neonlichter erinnert. Sie sind ideal für Akzente, Hervorhebungen und Elemente, die Aufmerksamkeit erregen sollen. Die Neon-Effekte der Casoon UI Library sind vollständig anpassbar und für verschiedene UI-Elemente optimiert.
 
 ## Installation
 
@@ -78,16 +78,16 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
 | Klasse | Beschreibung |
 |--------|-------------|
 | `.neon-button` | Neon-Effekt für Buttons |
-| `.neon-card` | Neon-Effekt für Karten |
+| `.neon-card` | Neon-Effekt für Cardn |
 | `.neon-icon` | Neon-Effekt für Icons |
 | `.neon-link` | Neon-Effekt für Links |
-| `.neon-input` | Neon-Effekt für Eingabefelder |
+| `.neon-input` | Neon-Effekt für Inputer |
 | `.neon-heading` | Neon-Effekt für Überschriften |
 | `.neon-badge` | Neon-Effekt für Badges |
 | `.neon-nav` | Neon-Effekt für Navigationselemente |
 | `.neon-loader` | Neon-Effekt für Ladeanimationen |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Neon-Texte
 
@@ -161,28 +161,28 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
 </style>
 ```
 
-### Neon-Karten
+### Neon-Cardn
 
 ```html
 <div class="neon-card-examples">
   <div class="neon-card neon-border neon-blue">
     <h3>Neon Blue Card</h3>
-    <p>Eine Karte mit blauem Neon-Effekt an den Rändern.</p>
+    <p>Eine Card mit blauem Neon-Effekt an den Rändern.</p>
   </div>
   
   <div class="neon-card neon-border neon-red">
     <h3>Neon Red Card</h3>
-    <p>Eine Karte mit rotem Neon-Effekt an den Rändern.</p>
+    <p>Eine Card mit rotem Neon-Effekt an den Rändern.</p>
   </div>
   
   <div class="neon-card neon-box neon-green">
     <h3>Neon Green Box</h3>
-    <p>Eine Karte mit grünem Neon-Effekt für die gesamte Box.</p>
+    <p>Eine Card mit grünem Neon-Effekt für die gesamte Box.</p>
   </div>
   
   <div class="neon-card neon-border neon-hover neon-pink">
     <h3>Hover Card</h3>
-    <p>Bewegen Sie den Mauszeiger über diese Karte für einen Neon-Effekt.</p>
+    <p>Bewegen Sie den Mauszeiger über diese Card für einen Neon-Effekt.</p>
   </div>
 </div>
 
@@ -328,7 +328,7 @@ Importieren Sie das Neon-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Neon-Effekte können über CSS-Variablen angepasst werden:
+Die Neon-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -338,7 +338,7 @@ Die Neon-Effekte können über CSS-Variablen angepasst werden:
   --neon-opacity: 0.8;
   --neon-intensity: 1;
   
-  /* Neon-Größenvarianten */
+  /* Neon-Sizesvarianten */
   --neon-sm-blur: 3px;
   --neon-sm-spread: 1px;
   --neon-md-blur: 5px;
@@ -420,7 +420,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
 
 /* Weitere Farbvarianten... */
 
-/* Neon-Größenvarianten */
+/* Neon-Sizesvarianten */
 .neon-sm {
   --neon-blur-radius: var(--neon-sm-blur);
   --neon-spread-radius: var(--neon-sm-spread);
@@ -469,7 +469,7 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
 
 /* Weitere Animationen... */
 
-/* Interaktive Zustände */
+/* Interaktive States */
 .neon-hover {
   transition: all 0.3s ease;
 }
@@ -567,13 +567,13 @@ Der grundlegende Neon-Effekt wird durch CSS-Schatten und Farbwerte implementiert
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Neon-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Neon-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass Text trotz Neon-Effekt ausreichend lesbar bleibt
 2. **Flackernde Effekte**: Bieten Sie eine Möglichkeit, stark flackernde Effekte zu deaktivieren, da diese Anfälle bei empfindlichen Personen auslösen können
-3. **Farbblindheit**: Verlassen Sie sich nicht nur auf Farben, um Informationen zu vermitteln
+3. **Farbblindheit**: Verlassen Sie sich nicht nur auf Colors, um Informationen zu vermitteln
 
 ```css
 /* Verbesserte Lesbarkeit für Neon-Text */
@@ -631,9 +631,9 @@ Die Neon-Effekte werden von allen modernen Browsern unterstützt.
 |--------|--------|---------|--------|------|------|
 | text-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
 | box-shadow | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 | Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | Gradient Text | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Effekte nicht vollständig unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Effekte nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 
 Neon-Effekte werden von allen modernen Browsern unterstützt. Für ältere Browser werden Fallbacks mit einfacheren Hervorhebungen bereitgestellt. 

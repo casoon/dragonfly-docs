@@ -65,7 +65,7 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
 | `.reflection-pulse` | Pulsierende Reflexion |
 | `.reflection-flicker` | Flackernde Reflexion |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Reflexionen
 
@@ -216,20 +216,20 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
 </style>
 ```
 
-### Reflexionen in Karten und UI-Komponenten
+### Reflexionen in Cardn und UI-Components
 
 ```html
 <div class="ui-reflections">
   <div class="card reflection reflection-bottom">
     <div class="card-content">
-      <h3>Karte mit Reflexion</h3>
-      <p>Diese Karte verwendet einen Reflexionseffekt am unteren Rand.</p>
+      <h3>Card mit Reflexion</h3>
+      <p>Diese Card verwendet einen Reflexionseffekt am unteren Rand.</p>
       <button>Mehr erfahren</button>
     </div>
   </div>
   
   <div class="image-card reflection reflection-glass">
-    <img src="path/to/image.jpg" alt="Beispielbild">
+    <img src="path/to/image.jpg" alt="Examplebild">
     <div class="image-caption">Bildunterschrift mit Glasreflexion</div>
   </div>
   
@@ -322,7 +322,7 @@ Importieren Sie das Reflections-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Reflexionseffekte können über CSS-Variablen angepasst werden:
+Die Reflexionseffekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -332,7 +332,7 @@ Die Reflexionseffekte können über CSS-Variablen angepasst werden:
   --reflection-offset: 0px;
   --reflection-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent);
   
-  /* Reflexionstypen-Varianten */
+  /* Reflexionstypen-Variants */
   --reflection-mirror-opacity: 0.5;
   --reflection-water-opacity: 0.3;
   --reflection-glass-opacity: 0.2;
@@ -422,13 +422,13 @@ document.querySelectorAll('.reflection-reactive').forEach(element => {
     const x = e.clientX - rect.left; // X-Position innerhalb des Elements
     const y = e.clientY - rect.top;  // Y-Position innerhalb des Elements
     
-    // CSS-Variablen für die Mausposition setzen
+    // CSS Variables für die Mausposition setzen
     element.style.setProperty('--mouse-x', (x / rect.width));
     element.style.setProperty('--mouse-y', (y / rect.height));
   });
   
   element.addEventListener('mouseleave', () => {
-    // CSS-Variablen zurücksetzen
+    // CSS Variables zurücksetzen
     element.style.setProperty('--mouse-x', '0.5');
     element.style.setProperty('--mouse-y', '0.5');
   });
@@ -500,9 +500,9 @@ document.querySelectorAll('.reflection-reactive').forEach(element => {
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Reflexionseffekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Reflexionseffekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass Textelemente mit Reflexionen ausreichenden Kontrast für gute Lesbarkeit bieten
 2. **Ablenkung**: Verwenden Sie subtile Reflexionen, die nicht vom Inhalt ablenken oder die Lesbarkeit beeinträchtigen
@@ -562,6 +562,6 @@ Die Reflexionseffekte werden von allen modernen Browsern unterstützt.
 | CSS-Filter | ✓ | ✓ | ✓ | ✓ | ✗ |
 | CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | 3D-Transformationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 

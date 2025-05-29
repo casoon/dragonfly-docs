@@ -1,8 +1,8 @@
 # Transitions-Effekte
 
-Transitions-Effekte werden verwendet, um Übergänge zwischen verschiedenen Zuständen eines Elements zu animieren. Die `@casoon/ui-lib` bietet verschiedene Transitions-Effekte, die dazu beitragen, flüssige und ansprechende Zustandsänderungen zu gestalten.
+Transitions-Effekte werden verwendet, um Übergänge zwischen verschiedenen Statesn eines Elements zu animieren. Die `@casoon/ui-lib` bietet verschiedene Transitions-Effekte, die dazu beitragen, flüssige und ansprechende Zustandsänderungen zu gestalten.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Transitions-Effekt kann auf jedes Element angewendet werden:
 
@@ -36,9 +36,9 @@ Die folgenden CSS-Klassen stehen für Transitions-Effekte zur Verfügung:
 | `.transition-group` | Gruppierte Transition |
 | `.transition-stagger` | Gestaffelte Transition |
 
-## Varianten
+## Variants
 
-### Timing-Varianten
+### Timing-Variants
 
 Verschiedene Timings für Transitions:
 
@@ -51,7 +51,7 @@ Verschiedene Timings für Transitions:
 <button class="transition-elastic">Elastische Transition</button>
 ```
 
-### Effekt-Varianten
+### Effekt-Variants
 
 Verschiedene Arten von Transitions-Effekten:
 
@@ -66,7 +66,7 @@ Verschiedene Arten von Transitions-Effekten:
 <div class="transition-transform">Transform-Transition</div>
 ```
 
-### Richtungs-Varianten
+### Richtungs-Variants
 
 Verschiedene Richtungen für Transitions:
 
@@ -80,7 +80,7 @@ Verschiedene Richtungen für Transitions:
 <div class="transition-rotate-z">Um Z-Achse rotieren</div>
 ```
 
-### Verzögerungs-Varianten
+### Verzögerungs-Variants
 
 Transitions mit verschiedenen Verzögerungen:
 
@@ -152,25 +152,25 @@ Transitions-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </a>
 ```
 
-### Karten mit Transitions
+### Cardn mit Transitions
 
 ```html
 <div class="card transition-shadow">
   <div class="card-body">
-    <h3>Karte mit Shadow-Transition</h3>
+    <h3>Card mit Shadow-Transition</h3>
     <p>Hover für Schatten-Effekt</p>
   </div>
 </div>
 
 <div class="card transition-scale">
   <div class="card-body">
-    <h3>Karte mit Scale-Transition</h3>
+    <h3>Card mit Scale-Transition</h3>
     <p>Hover für Zoom-Effekt</p>
   </div>
 </div>
 ```
 
-### Formularelemente mit Transitions
+### Formelemente mit Transitions
 
 ```html
 <input type="text" class="input transition-border" placeholder="Input mit Border-Transition">
@@ -198,7 +198,7 @@ Transitions-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Zustandsübergänge
 
-Transitions für verschiedene Zustände:
+Transitions für verschiedene States:
 
 ```html
 <!-- Hover-Transitions -->
@@ -223,7 +223,7 @@ Transitions für verschiedene Zustände:
 
 ## Anpassung
 
-Die Transitions-Effekte können über CSS-Variablen angepasst werden:
+Die Transitions-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -232,7 +232,7 @@ Die Transitions-Effekte können über CSS-Variablen angepasst werden:
   --transition-timing-function: ease;
   --transition-delay: 0s;
   
-  /* Varianten-Parameter */
+  /* Variants-Parameter */
   --transition-duration-fast: 0.15s;
   --transition-duration-slow: 0.6s;
   --transition-timing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -271,7 +271,7 @@ Die Transitions-Effekte können über CSS-Variablen angepasst werden:
 
 ## CSS-Implementierung
 
-Beispiele für die CSS-Implementierung der Transitions-Effekte:
+Examples für die CSS-Implementierung der Transitions-Effekte:
 
 ```css
 /* Basis-Transition */
@@ -282,7 +282,7 @@ Beispiele für die CSS-Implementierung der Transitions-Effekte:
   transition-delay: var(--transition-delay);
 }
 
-/* Timing-Varianten */
+/* Timing-Variants */
 .transition-fast {
   transition-duration: var(--transition-duration-fast);
 }
@@ -307,7 +307,7 @@ Beispiele für die CSS-Implementierung der Transitions-Effekte:
   transition-timing-function: var(--transition-timing-elastic);
 }
 
-/* Effekt-Varianten */
+/* Effekt-Variants */
 .transition-fade {
   transition-property: opacity;
 }
@@ -369,7 +369,7 @@ Beispiele für die CSS-Implementierung der Transitions-Effekte:
   color: var(--transition-color-end);
 }
 
-/* Richtungs-Varianten */
+/* Richtungs-Variants */
 .transition-slide-up {
   transform: translateY(var(--transition-slide-distance));
   transition-property: transform, opacity;
@@ -394,7 +394,7 @@ Beispiele für die CSS-Implementierung der Transitions-Effekte:
 
 /* ähnliche Definitionen für links und rechts */
 
-/* Verzögerungs-Varianten */
+/* Verzögerungs-Variants */
 .transition-delay-xs {
   transition-delay: var(--transition-delay-xs);
 }
@@ -619,7 +619,7 @@ export default {
 
 <style scoped>
 .content {
-  /* Stile für den Inhalt */
+  /* Styles für den Inhalt */
 }
 
 /* Vordefinierte Transition-Klassen für Vue */
@@ -640,9 +640,9 @@ export default {
 </style>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Transitions-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Transitions-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
 2. **Kontrast**: Stellen Sie sicher, dass Farbübergänge ausreichend Kontrast behalten

@@ -5,11 +5,11 @@ category: Layout
 
 # Visual Containers
 
-Die Casoon UI Library bietet spezielle visuelle Container, die über die strukturellen Aspekte hinaus das visuelle Erscheinungsbild und die Präsentation von Inhalten verbessern. Diese Dokumentation erklärt die verfügbaren visuellen Container und ihre Anwendungsfälle.
+Die Casoon UI Library bietet spezielle visuelle Container, die über die strukturellen Aspekte hinaus das visuelle Erscheinungsbild und die Präsentation von Inhalten verbessern. Diese Dokumentation erklärt die verfügbaren visuellen Container und ihre Use Cases.
 
 ## Overview
 
-Visuelle Container erweitern das Container-System um folgende Aspekte:
+Visuelle Container erweitern das Container System um folgende Aspekte:
 
 1. **Schattierungen und Tiefe** - Container mit verschiedenen Schatten und Tiefeneffekten
 2. **Rahmen und Kanten** - Container mit unterschiedlichen Rahmen und Kantenbehandlungen
@@ -210,15 +210,15 @@ Implementierung:
 
 ## Card Container
 
-Spezialisierte Container für Karteninhalte:
+Spezialisierte Container für Cardninhalte:
 
 ```html
 <div class="card-container">
   <div class="card-header">
-    <h3>Kartentitel</h3>
+    <h3>Cardntitel</h3>
   </div>
   <div class="card-body">
-    <p>Karteninhalt geht hier...</p>
+    <p>Cardninhalt geht hier...</p>
   </div>
   <div class="card-footer">
     <button class="btn">Aktion</button>
@@ -400,15 +400,15 @@ Implementierung:
 
 ## Best Practices
 
-1. **Konsistenz wahren** - Verwenden Sie visuelle Container einheitlich im gesamten Design
+1. **Consistency wahren** - Verwenden Sie visuelle Container einheitlich im gesamten Design
 2. **Visuelle Hierarchie unterstützen** - Setzen Sie visuelle Container gezielt ein, um Wichtigkeit zu signalisieren
 3. **Performance beachten** - Komplexe visuelle Effekte können die Performance beeinträchtigen, besonders auf mobilen Geräten
-4. **Barrierefreiheit nicht vernachlässigen** - Stellen Sie sicher, dass der Kontrast zwischen Vorder- und Hintergrund ausreichend ist
-5. **Responsive Anpassungen vornehmen** - Passen Sie visuelle Effekte für verschiedene Bildschirmgrößen an
-6. **Übermäßige Verwendung vermeiden** - Zu viele visuelle Effekte können ablenkend wirken
+4. **Accessibility nicht vernachlässigen** - Stellen Sie sicher, dass der Kontrast zwischen Vorder- und Hintergrund ausreichend ist
+5. **Responsive Customizations vornehmen** - Passen Sie visuelle Effekte für verschiedene Bildschirmgrößen an
+6. **Übermäßige Usage vermeiden** - Zu viele visuelle Effekte können ablenkend wirken
 7. **Fallbacks implementieren** - Sorgen Sie für angemessene Fallbacks in älteren Browsern
 
-## Anwendungsfälle
+## Use Cases
 
 ### Feature-Showcase
 
@@ -473,4 +473,4 @@ Für ältere Browser bietet die Bibliothek Fallbacks für nicht unterstützte Ei
 
 ## Zusammenfassung
 
-Visuelle Container der Casoon UI Library bieten leistungsstarke Möglichkeiten, um Ihre Benutzeroberfläche visuell ansprechender zu gestalten. Durch die Verwendung von Schatten, Rahmen, Farbverläufen, Texturen und anderen visuellen Effekten können Sie die Benutzererfahrung verbessern und wichtige Inhalte hervorheben. Diese Container sind besonders nützlich für Landingpages, Produktpräsentationen und andere Bereiche, in denen die visuelle Gestaltung eine wichtige Rolle spielt. 
+Visuelle Container der Casoon UI Library bieten leistungsstarke Möglichkeiten, um Ihre Benutzeroberfläche visuell ansprechender zu gestalten. Durch die Usage von Schatten, Rahmen, Farbverläufen, Texturen und anderen visuellen Effekten können Sie die Benutzererfahrung verbessern und wichtige Inhalte hervorheben. Diese Container sind besonders nützlich für Landingpages, Produktpräsentationen und andere Bereiche, in denen die visuelle Gestaltung eine wichtige Rolle spielt. 

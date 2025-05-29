@@ -7,9 +7,9 @@ category: Guide
 
 Die `shadows.css` Datei bietet eine Sammlung von vordefinierten Schatten-Effekten, die Tiefe, Hierarchie und realistische Erscheinung Ihrer UI-Elemente verbessern. Durch sorgfältig abgestimmte Schattenwürfe können Sie visuelle Hinweise für Höhe, Interaktivität und Wichtigkeit von Elementen geben.
 
-## Übersicht
+## Overview
 
-Schatten sind ein fundamentales Element des Designsystems und schaffen Tiefe in einer flachen 2D-Oberfläche. Die Casoon UI Library bietet verschiedene Schatten-Typen, Intensitäten und Richtungen für verschiedene Anwendungsfälle.
+Schatten sind ein fundamentales Element des Designsystems und schaffen Tiefe in einer flachen 2D-Oberfläche. Die Casoon UI Library bietet verschiedene Schatten-Typen, Intensitäten und Richtungen für verschiedene Use Cases.
 
 ## Basis-Schatten
 
@@ -17,7 +17,7 @@ Schatten sind ein fundamentales Element des Designsystems und schaffen Tiefe in 
 <!-- Standard-Schatten -->
 <div class="shadow">Standard-Schatten</div>
 
-<!-- Schatten-Größen -->
+<!-- Schatten-Sizes -->
 <div class="shadow-sm">Kleiner Schatten</div>
 <div class="shadow-md">Mittlerer Schatten</div>
 <div class="shadow-lg">Großer Schatten</div>
@@ -34,7 +34,7 @@ Schatten sind ein fundamentales Element des Designsystems und schaffen Tiefe in 
 <!-- Innerer Schatten -->
 <div class="shadow-inner">Element mit innerem Schatten</div>
 
-<!-- Innere Schatten-Größen -->
+<!-- Innere Schatten-Sizes -->
 <div class="shadow-inner-sm">Kleiner innerer Schatten</div>
 <div class="shadow-inner-md">Mittlerer innerer Schatten</div>
 <div class="shadow-inner-lg">Großer innerer Schatten</div>
@@ -148,22 +148,22 @@ Animierte Schatten für sanfte Übergänge:
 </div>
 ```
 
-## Komponenten-spezifische Schatten
+## Components-spezifische Schatten
 
-Vordefinierte Schatten für bestimmte UI-Komponenten:
+Vordefinierte Schatten für bestimmte UI-Components:
 
 ```html
-<!-- Komponenten-Schatten -->
-<div class="card shadow-card">Karte mit optimiertem Schatten</div>
+<!-- Components-Schatten -->
+<div class="card shadow-card">Card mit optimiertem Schatten</div>
 <div class="dropdown shadow-dropdown">Dropdown mit optimiertem Schatten</div>
 <button class="button shadow-button">Button mit optimiertem Schatten</button>
 <div class="modal shadow-modal">Modal mit optimiertem Schatten</div>
 <div class="tooltip shadow-tooltip">Tooltip mit optimiertem Schatten</div>
 ```
 
-## Anpassung über CSS-Variablen
+## Anpassung über CSS Variables
 
-Die Schatten können über CSS-Variablen angepasst werden:
+Die Schatten können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -230,15 +230,15 @@ Schatten im Dunkelmodus sollten angepasst werden:
     --shadow-blur-xl: 18px;
     --shadow-blur-2xl: 30px;
     
-    /* Spezielle dunkle Schatten für bestimmte Komponenten */
+    /* Spezielle dunkle Schatten für bestimmte Components */
     --shadow-card: 0 0 10px 0 rgb(0 0 0 / 0.5);
   }
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei Schatten müssen folgende Aspekte der Barrierefreiheit beachtet werden:
+Bei Schatten müssen folgende Aspekte der Accessibility beachtet werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass der Schatten ausreichend Kontrast bietet, um wahrgenommen zu werden
 2. **Übermäßige Schatten**: Vermeiden Sie zu viele oder zu starke Schatten, die ablenkend wirken könnten
@@ -267,9 +267,9 @@ Schatten können die Rendering-Performance beeinflussen:
 3. **Bevorzugen Sie Einzel-Schatten** statt mehrfacher Schatten für bessere Performance
 4. **Testen Sie auf mobilen Geräten**, um sicherzustellen, dass die Schatten nicht die Performance beeinträchtigen
 
-## Praktische Beispiele
+## Praktische Examples
 
-### Gestaffelte Karten mit verschiedenen Schatten
+### Gestaffelte Cardn mit verschiedenen Schatten
 
 ```html
 <div class="card-group">
@@ -312,4 +312,4 @@ Schatten können die Rendering-Performance beeinflussen:
 2. **Schattenhierarchie**: Verwenden Sie unterschiedliche Schatten-Intensitäten, um visuelle Hierarchie zu kommunizieren
 3. **Dezente Schatten**: Subtile Schatten sind oft effektiver als starke, auffällige
 4. **Zweckmäßiger Einsatz**: Verwenden Sie Schatten, um wichtige Informationen hervorzuheben und Beziehungen zu verdeutlichen
-5. **Kontextbedingte Schatten**: Passen Sie Schatten an den Kontext an – Dialoge benötigen stärkere Schatten als Karten usw. 
+5. **Kontextbedingte Schatten**: Passen Sie Schatten an den Kontext an – Dialoge benötigen stärkere Schatten als Cardn usw. 

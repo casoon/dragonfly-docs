@@ -2,7 +2,7 @@
 
 Warning-Effekte werden verwendet, um Benutzer auf potenzielle Probleme oder wichtige Informationen aufmerksam zu machen, die Beachtung erfordern, aber keinen kritischen Fehler darstellen. Die `@casoon/ui-lib` bietet verschiedene Warning-Effekte, die dazu beitragen, Warnhinweise klar und auffällig zu präsentieren.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Warning-Effekt kann auf jedes Element angewendet werden:
 
@@ -26,7 +26,7 @@ Die folgenden CSS-Klassen stehen für Warning-Effekte zur Verfügung:
 | `.warning-glow` | Warnung mit orangefarbenem Glüheffekt |
 | `.warning-badge` | Warnung als kleines Badge-Element |
 
-## Varianten
+## Variants
 
 ### Border-Effekt
 
@@ -108,7 +108,7 @@ Kompakte Warndarstellung als kleines Badge:
 
 Warning-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
-### Formularelemente
+### Formelemente
 
 ```html
 <div class="form-group">
@@ -159,7 +159,7 @@ Warning-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Warning-Effekte können über CSS-Variablen angepasst werden:
+Die Warning-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -310,7 +310,7 @@ function showWarningEffect(element, type = 'border', message = '', autoHide = tr
     // Warnmeldung nach dem Element einfügen
     element.parentNode.insertBefore(warningMessage, element.nextSibling);
     
-    // ARIA für Barrierefreiheit
+    // ARIA für Accessibility
     const warningId = `warning-${Math.random().toString(36).substr(2, 9)}`;
     warningMessage.id = warningId;
     element.setAttribute('aria-describedby', warningId);
@@ -349,7 +349,7 @@ function showWarningEffect(element, type = 'border', message = '', autoHide = tr
   };
 }
 
-// Verwendung
+// Usage
 const passwordInput = document.getElementById('password');
 passwordInput.addEventListener('input', function() {
   // Einfache Passwortvalidierung
@@ -434,13 +434,13 @@ function startSessionWarning(minutesUntilExpiry) {
   });
 }
 
-// Verwendung: 5 Minuten vor Ablauf warnen
+// Usage: 5 Minuten vor Ablauf warnen
 setTimeout(() => startSessionWarning(5), (30 - 5) * 60 * 1000);
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Warning-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Warning-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Semantik**: Verwenden Sie passende ARIA-Attribute wie `role="alert"` für wichtige Warnungen
 2. **Live-Regions**: Verwenden Sie `aria-live="polite"` für dynamische Warnungen

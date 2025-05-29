@@ -2,7 +2,7 @@
 
 Ripple-Effekte sind wellenartige Animationen, die von einem Punkt ausgehen und sich kreisförmig ausbreiten. Die `@casoon/ui-lib` bietet verschiedene Ripple-Effekte, die dazu beitragen, interaktive und ansprechende Benutzeroberflächen zu gestalten.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Ripple-Effekt kann auf jedes Element angewendet werden:
 
@@ -33,11 +33,11 @@ Die folgenden CSS-Klassen stehen für Ripple-Effekte zur Verfügung:
 | `.ripple-slow` | Langsamer Ripple-Effekt |
 | `.ripple-fast` | Schneller Ripple-Effekt |
 
-## Varianten
+## Variants
 
 ### Farbvarianten
 
-Ripple-Effekte in verschiedenen Farben:
+Ripple-Effekte in verschiedenen Colors:
 
 ```html
 <button class="ripple-light">Heller Ripple</button>
@@ -73,7 +73,7 @@ Verschiedene Verhaltensweisen für Ripple-Effekte:
 
 ### Spezialeffekte
 
-Spezielle Ripple-Effekte für besondere Anwendungsfälle:
+Spezielle Ripple-Effekte für besondere Use Cases:
 
 ```html
 <button class="ripple-multiple">Mehrfacher Ripple</button>
@@ -95,13 +95,13 @@ Ripple-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 <button class="btn btn-accent ripple-dark">Akzentbutton mit dunklem Ripple</button>
 ```
 
-### Karten mit Ripple-Effekt
+### Cardn mit Ripple-Effekt
 
 ```html
 <div class="card ripple">
   <div class="card-body">
-    <h3>Karte mit Ripple-Effekt</h3>
-    <p>Klicken Sie irgendwo auf die Karte, um den Ripple-Effekt zu sehen.</p>
+    <h3>Card mit Ripple-Effekt</h3>
+    <p>Klicken Sie irgendwo auf die Card, um den Ripple-Effekt zu sehen.</p>
   </div>
 </div>
 ```
@@ -138,7 +138,7 @@ Ripple-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Ripple-Effekte können über CSS-Variablen angepasst werden:
+Die Ripple-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -162,7 +162,7 @@ Die Ripple-Effekte können über CSS-Variablen angepasst werden:
   --ripple-slow-duration: 1s;
   --ripple-fast-duration: 0.3s;
   
-  /* Größenparameter */
+  /* Sizesparameter */
   --ripple-scale: 4;
   --ripple-initial-scale: 0.2;
   --ripple-opacity-start: 0.5;
@@ -179,7 +179,7 @@ Die Ripple-Effekte können über CSS-Variablen angepasst werden:
 
 ## CSS-Implementierung
 
-Beispiele für die CSS-Implementierung der Ripple-Effekte:
+Examples für die CSS-Implementierung der Ripple-Effekte:
 
 ```css
 /* Basis-Ripple */
@@ -482,9 +482,9 @@ Für einen standardkonformen Material Design Ripple-Effekt kann auch die offizie
 </script>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Ripple-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Ripple-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
 2. **Fokussierbarkeit**: Stellen Sie sicher, dass interaktive Elemente mit Ripple-Effekten auch per Tastatur zugänglich sind

@@ -58,7 +58,7 @@ Importieren Sie das Textur-Effekte-Modul über CSS:
 | `.texture-vintage` | Vintage/alte Papiertextur |
 | `.texture-distressed` | Abgenutzte/distressed Textur |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Texturen
 
@@ -82,7 +82,7 @@ Importieren Sie das Textur-Effekte-Modul über CSS:
 </div>
 ```
 
-### Texturen in UI-Komponenten
+### Texturen in UI-Components
 
 ```html
 <div class="ui-textures">
@@ -106,7 +106,7 @@ Importieren Sie das Textur-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Textur-Effekte können über CSS-Variablen angepasst werden:
+Die Textur-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -119,7 +119,7 @@ Die Textur-Effekte können über CSS-Variablen angepasst werden:
   --texture-medium-opacity: 0.2;
   --texture-strong-opacity: 0.3;
   
-  /* Textur-Größen */
+  /* Textur-Sizes */
   --texture-scale: 1;
   --texture-noise-scale: 100px;
   --texture-dots-size: 2px;
@@ -221,9 +221,9 @@ Die Textur-Effekte werden hauptsächlich durch background-image, Masken und Blen
 }
 ```
 
-## Optimierung für Barrierefreiheit
+## Optimierung für Accessibility
 
-Bei der Verwendung von Textur-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Textur-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass Texturen den Kontrast nicht so stark beeinträchtigen, dass Text schwer lesbar wird
 2. **Überlagerungen**: Vermeiden Sie zu starke Texturen, die vom eigentlichen Inhalt ablenken können
@@ -282,6 +282,6 @@ Die Textur-Effekte werden von allen modernen Browsern unterstützt.
 | Basis-Texturen | ✓ | ✓ | ✓ | ✓ | ✓ |
 | SVG-Hintergründe | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Blend-Modes | ✓ | ✓ | ✓ | ✓ | ✗ |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 

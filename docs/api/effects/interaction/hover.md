@@ -8,9 +8,9 @@ outline: deep
 
 Die Casoon UI Library bietet eine Sammlung von Hover-Effekten, die Sie auf interaktive Elemente anwenden können, um das Benutzererlebnis zu verbessern. Diese Effekte werden aktiviert, wenn Benutzer mit der Maus über Elemente fahren oder sie auf Touch-Geräten berühren.
 
-## Übersicht
+## Overview
 
-Alle Hover-Effekte sind für optimale Leistung konzipiert und berücksichtigen Zugänglichkeitsaspekte wie `prefers-reduced-motion`.
+Alle Hover-Effekte sind für optimale Leistung konzipiert und berücksichtigen Accessibilitysaspekte wie `prefers-reduced-motion`.
 
 ## Import
 
@@ -32,7 +32,7 @@ Skalierungseffekte vergrößern Elemente, wenn Benutzer mit der Maus darüber fa
 | `.hover-scale-sm` | Kleine Skalierung (2% größer) beim Hover |
 | `.hover-scale-lg` | Große Skalierung (10% größer) beim Hover |
 
-### Beispiel
+### Example
 
 ```html
 <button class="hover-scale">
@@ -58,19 +58,19 @@ Anhebungseffekte heben Elemente beim Hover an, kombiniert mit einem Schatteneffe
 | `.hover-lift-sm` | Kleine Anhebung (2px nach oben) mit Schatten |
 | `.hover-lift-lg` | Große Anhebung (10px nach oben) mit Schatten |
 
-### Beispiel
+### Example
 
 ```html
 <div class="card hover-lift">
-  Diese Karte hebt sich beim Hover
+  Diese Card hebt sich beim Hover
 </div>
 
 <div class="card hover-lift-sm">
-  Diese Karte hebt sich leicht beim Hover
+  Diese Card hebt sich leicht beim Hover
 </div>
 
 <div class="card hover-lift-lg">
-  Diese Karte hebt sich stark beim Hover
+  Diese Card hebt sich stark beim Hover
 </div>
 ```
 
@@ -84,19 +84,19 @@ Neigungseffekte (Tilt) erzeugen eine 3D-Rotation beim Hover:
 | `.hover-tilt-sm` | Kleine 3D-Neigung (5 Grad) beim Hover |
 | `.hover-tilt-lg` | Große 3D-Neigung (15 Grad) beim Hover |
 
-### Beispiel
+### Example
 
 ```html
 <div class="card hover-tilt">
-  Diese Karte neigt sich beim Hover
+  Diese Card neigt sich beim Hover
 </div>
 
 <div class="card hover-tilt-sm">
-  Diese Karte neigt sich leicht beim Hover
+  Diese Card neigt sich leicht beim Hover
 </div>
 
 <div class="card hover-tilt-lg">
-  Diese Karte neigt sich stark beim Hover
+  Diese Card neigt sich stark beim Hover
 </div>
 ```
 
@@ -110,7 +110,7 @@ Glüheffekte fügen einen leuchtenden Schatten beim Hover hinzu:
 | `.hover-glow-sm` | Schwaches Leuchten beim Hover |
 | `.hover-glow-lg` | Starkes Leuchten beim Hover |
 
-### Beispiel
+### Example
 
 ```html
 <button class="hover-glow">
@@ -136,7 +136,7 @@ Randeffekte fügen einen animierten Rand beim Hover hinzu:
 | `.hover-border-sm` | Dünner animierter Rand beim Hover (1px) |
 | `.hover-border-lg` | Dicker animierter Rand beim Hover (3px) |
 
-### Beispiel
+### Example
 
 ```html
 <a href="#" class="hover-border">
@@ -162,7 +162,7 @@ Hintergrundeffekte ändern die Hintergrundfarbe beim Hover:
 | `.hover-bg-sm` | Leichter Hintergrund beim Hover |
 | `.hover-bg-lg` | Intensiver Hintergrund beim Hover |
 
-### Beispiel
+### Example
 
 ```html
 <div class="hover-bg">
@@ -191,7 +191,7 @@ Sie können die Farbe der Hover-Effekte mit diesen Klassen anpassen:
 | `.hover-color-warning` | Warnfarbe für Hover-Effekte |
 | `.hover-color-info` | Infofarbe für Hover-Effekte |
 
-### Beispiel
+### Example
 
 ```html
 <button class="hover-glow hover-color-primary">
@@ -214,12 +214,12 @@ Hover-Effekte können miteinander und mit anderen Effekten kombiniert werden:
 ```html
 <!-- Skalierung und Glühen -->
 <button class="hover-scale hover-glow hover-color-primary">
-  Skalierende und leuchtende Schaltfläche
+  Skalierende und leuchtende Button
 </button>
 
 <!-- Anhebung mit Farbeffekt -->
 <div class="card hover-lift hover-color-info">
-  Karte mit Anhebung und Info-Farbeffekt
+  Card mit Anhebung und Info-Farbeffekt
 </div>
 
 <!-- Mehrere Effekte kombiniert -->
@@ -228,7 +228,7 @@ Hover-Effekte können miteinander und mit anderen Effekten kombiniert werden:
 </a>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
 Alle Hover-Effekte respektieren die Benutzereinstellung `prefers-reduced-motion`. Wenn ein Benutzer reduzierte Bewegung bevorzugt, werden die Animationen deaktiviert.
 
@@ -254,11 +254,11 @@ Alle Hover-Effekte respektieren die Benutzereinstellung `prefers-reduced-motion`
 
 ## Anpassung
 
-Sie können die Hover-Effekte mit CSS-Variablen anpassen:
+Sie können die Hover-Effekte mit CSS Variables anpassen:
 
 ```css
 :root {
-  /* Farben für Hover-Effekte */
+  /* Colors für Hover-Effekte */
   --hover-primary: rgb(59 130 246 / 50%);
   --hover-primary-bg: rgb(59 130 246 / 10%);
   --hover-secondary: rgb(107 114 128 / 50%);
@@ -277,7 +277,7 @@ Sie können die Hover-Effekte mit CSS-Variablen anpassen:
 ## Empfohlene Anwendungen
 
 - **Skalierung**: Verwenden Sie diese für kleine UI-Elemente wie Buttons oder Icons.
-- **Anhebung**: Ideal für Karten, Container oder hervorgehobene Elemente.
+- **Anhebung**: Ideal für Cardn, Container oder hervorgehobene Elemente.
 - **Neigung**: Verwenden Sie diese für spielerische Elemente oder um 3D-Effekte hervorzuheben.
 - **Glühen**: Effektiv für Call-to-Action-Buttons oder wichtige Elemente.
 - **Rand**: Gut für Links, Menüelemente oder Navigationseinträge.
@@ -285,9 +285,9 @@ Sie können die Hover-Effekte mit CSS-Variablen anpassen:
 
 ## Best Practices
 
-1. **Konsistenz bewahren**: Verwenden Sie dieselben Hover-Effekte für ähnliche Elemente in Ihrer Anwendung.
+1. **Consistency bewahren**: Verwenden Sie dieselben Hover-Effekte für ähnliche Elemente in Ihrer Anwendung.
 2. **Übermäßige Animation vermeiden**: Kombinieren Sie nicht zu viele Effekte auf einmal.
-3. **Barrierefreiheit beachten**: Stellen Sie sicher, dass Ihre Inhalte auch ohne Hover zugänglich sind.
+3. **Accessibility beachten**: Stellen Sie sicher, dass Ihre Inhalte auch ohne Hover zugänglich sind.
 4. **Leistung optimieren**: Verwenden Sie Transformationen und Opacity für flüssige Animationen.
 5. **Mobile Geräte berücksichtigen**: Planen Sie auch für Touch-Interaktionen, da es auf Mobilgeräten keine Hover-Ereignisse gibt.
 

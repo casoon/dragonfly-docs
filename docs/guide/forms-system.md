@@ -1,17 +1,17 @@
-# Formularsystem
+# Formsystem
 
-Das Formularsystem der Casoon UI Library bietet eine umfassende Sammlung von Komponenten und Utility-Klassen zur Erstellung ansprechender und benutzerfreundlicher Formulare.
+Das Formsystem der Casoon UI Library bietet eine umfassende Sammlung von Components und Utility-Klassen zur Erstellung ansprechender und benutzerfreundlicher Forme.
 
-## Module importieren
+## Importing Modules
 
-**Wichtig:** Alle Formular-Module haben Abhängigkeiten zu `core.css` und dem allgemeinen `forms.css` Layer. Stellen Sie sicher, dass Sie diese in der richtigen Reihenfolge importieren:
+**Wichtig:** Alle Form-Module haben Abhängigkeiten zu `core.css` und dem allgemeinen `forms.css` Layer. Stellen Sie sicher, dass Sie diese in der richtigen Reihenfolge importieren:
 
 ```css
 /* Grundlegende Abhängigkeiten zuerst */
 @import '@casoon/ui-lib/core.css';
 @import '@casoon/ui-lib/themes/day.css'; /* oder ein anderes Theme */
 
-/* Allgemeines Formular-Layer */
+/* Allgemeines Form-Layer */
 @import '@casoon/ui-lib/forms.css';
 
 /* Dann die spezifischen Form-Module nach Bedarf */
@@ -24,11 +24,11 @@ Das Formularsystem der Casoon UI Library bietet eine umfassende Sammlung von Kom
 @import '@casoon/ui-lib/components/switch.css';
 ```
 
-Die korrekte Ladereihenfolge ist entscheidend, da die spezifischen Formularmodule Variablen, Utility-Klassen und Grundstile verwenden, die in `core.css` und `forms.css` definiert sind. Ohne diese Abhängigkeiten werden die Formularelemente nicht korrekt dargestellt.
+Die korrekte Ladereihenfolge ist entscheidend, da die spezifischen Formmodule Variablen, Utility-Klassen und Grundstile verwenden, die in `core.css` und `forms.css` definiert sind. Ohne diese Abhängigkeiten werden die Formelemente nicht korrekt dargestellt.
 
 ## Basisstruktur
 
-Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gruppen (`form-group`), Labels (`form-label`) und verschiedenen Eingabeelementen:
+Die Grundstruktur eines Forms mit der Casoon UI Library besteht aus Form-Gruppen (`form-group`), Labels (`form-label`) und verschiedenen Eingabeelementen:
 
 ```html
 <form class="form">
@@ -39,7 +39,7 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
 </form>
 ```
 
-## Formularlayout
+## Formlayout
 
 ### Standardlayout
 
@@ -97,7 +97,7 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
 </form>
 ```
 
-## Formularelemente
+## Formelemente
 
 ### Text-Input
 
@@ -121,7 +121,7 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
 
 ```html
 <div class="form-group">
-  <label for="select" class="form-label">Auswahlfeld</label>
+  <label for="select" class="form-label">Checkbox</label>
   <select id="select" class="form-select">
     <option value="">Bitte auswählen</option>
     <option value="1">Option 1</option>
@@ -230,7 +230,7 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
 </div>
 ```
 
-## Formulargrößen
+## Formgrößen
 
 ### Kleine Elemente
 
@@ -359,9 +359,9 @@ Die Grundstruktur eines Formulars mit der Casoon UI Library besteht aus Form-Gru
 </div>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Das Formularsystem der Casoon UI Library wurde mit Barrierefreiheit im Fokus entwickelt. Hier sind einige Best Practices:
+Das Formsystem der Casoon UI Library wurde mit Accessibility im Fokus entwickelt. Hier sind einige Best Practices:
 
 ### ARIA-Attribute
 
@@ -390,9 +390,9 @@ Das Formularsystem der Casoon UI Library wurde mit Barrierefreiheit im Fokus ent
 </div>
 ```
 
-## Responsive Formulare
+## Responsive Forme
 
-Für responsive Formulare können Sie Grid und Form-Komponenten kombinieren:
+Für responsive Forme können Sie Grid und Form-Components kombinieren:
 
 ```html
 <form class="form">
@@ -435,13 +435,13 @@ Für responsive Formulare können Sie Grid und Form-Komponenten kombinieren:
 </form>
 ```
 
-## CSS-Variablen
+## CSS Variables
 
-Das Formularsystem verwendet folgende CSS-Variablen, die Sie anpassen können:
+Das Formsystem verwendet folgende CSS Variables, die Sie anpassen können:
 
 ```css
 :root {
-  /* Allgemeine Formular-Variablen */
+  /* Allgemeine Form-Variablen */
   --form-margin-bottom: 1rem;
   --form-group-margin-bottom: 1rem;
   
@@ -494,7 +494,7 @@ Das Formularsystem verwendet folgende CSS-Variablen, die Sie anpassen können:
 }
 ```
 
-## Komplexes Beispiel: Registrierungsformular
+## Komplexes Example: Registrierungsformular
 
 ```html
 <form class="form">
@@ -592,11 +592,11 @@ Das Formularsystem verwendet folgende CSS-Variablen, die Sie anpassen können:
 
 ## Best Practices
 
-- **Formularvalidierung nutzen**: Verwenden Sie HTML5-Validierungsattribute und kombinieren Sie diese mit JavaScript für eine umfassende Validierung.
+- **Formvalidierung nutzen**: Verwenden Sie HTML5-Validierungsattribute und kombinieren Sie diese mit JavaScript für eine umfassende Validierung.
 - **Fehlerbehandlung einbauen**: Zeigen Sie Fehlermeldungen klar und präzise an, vorzugsweise in der Nähe des betroffenen Feldes.
-- **Zugänglichkeit beachten**: Verwenden Sie Labels für alle Formularelemente und stellen Sie sicher, dass alle Elemente per Tastatur bedienbar sind.
-- **Konsistente Feldgrößen verwenden**: Verwenden Sie einheitliche Größen für ähnliche Formularelemente in Ihrer Anwendung.
+- **Accessibility beachten**: Verwenden Sie Labels für alle Formelemente und stellen Sie sicher, dass alle Elemente per Tastatur bedienbar sind.
+- **Konsistente Feldgrößen verwenden**: Verwenden Sie einheitliche Sizes für ähnliche Formelemente in Ihrer Anwendung.
 - **Mobile-optimierte Eingabetypen nutzen**: Verwenden Sie spezialisierte Eingabetypen wie `email`, `tel` und `number` für eine bessere mobile Erfahrung.
 - **Visuelle Hinweise geben**: Markieren Sie Pflichtfelder deutlich und bieten Sie Hilfetexte für komplexe Eingaben.
-- **Sinnvolle Tab-Reihenfolge sicherstellen**: Stellen Sie sicher, dass die Tab-Navigation durch das Formular logisch und intuitiv ist.
+- **Sinnvolle Tab-Reihenfolge sicherstellen**: Stellen Sie sicher, dass die Tab-Navigation durch das Form logisch und intuitiv ist.
 - **Zusammengehörige Felder gruppieren**: Verwenden Sie Fieldsets und Legends für thematisch zusammengehörige Elemente. 

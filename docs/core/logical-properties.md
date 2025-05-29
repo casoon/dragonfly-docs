@@ -12,7 +12,7 @@ Die Casoon UI Library verwendet CSS Logical Properties für ein sprachunabhängi
 CSS Logical Properties definieren Layout-Eigenschaften basierend auf der Flussrichtung des Dokuments statt auf physischen Richtungen (links, rechts, oben, unten). Dies bietet folgende Vorteile:
 
 - **Sprachunabhängigkeit**: Layouts funktionieren korrekt in verschiedenen Schreibsystemen (LTR und RTL)
-- **Einfache Internationalisierung**: Keine speziellen Anpassungen für RTL-Sprachen notwendig
+- **Einfache Internationalisierung**: Keine speziellen Customizations für RTL-Sprachen notwendig
 - **Zukunftssicherheit**: Bessere Unterstützung für vertikale Schreibsysteme
 - **Reduzierte Codeduplizierung**: Kein Bedarf an separaten Stylesheets für verschiedene Schreibrichtungen
 
@@ -55,14 +55,14 @@ CSS Logical Properties basieren auf zwei Hauptachsen:
 Die Casoon UI Library bietet ein vollständiges Set an Utility-Klassen für logische Eigenschaften:
 
 ```css
-/* Größen auf der Inline-Achse (width in LTR/RTL) */
+/* Sizes auf der Inline-Achse (width in LTR/RTL) */
 .inline-size-full { inline-size: 100%; }
 .inline-size-half { inline-size: 50%; }
 .inline-size-quarter { inline-size: 25%; }
 .max-inline-size-full { max-inline-size: 100%; }
 .min-inline-size-0 { min-inline-size: 0; }
 
-/* Größen auf der Block-Achse (height in LTR/RTL) */
+/* Sizes auf der Block-Achse (height in LTR/RTL) */
 .block-size-full { block-size: 100%; }
 .block-size-screen { block-size: 100vh; }
 .max-block-size-full { max-block-size: 100%; }
@@ -80,7 +80,7 @@ Die Casoon UI Library bietet ein vollständiges Set an Utility-Klassen für logi
 .margin-inline-end-auto { margin-inline-end: auto; }
 .margin-inline-start-xs { margin-inline-start: var(--space-xs); }
 .margin-inline-end-xs { margin-inline-end: var(--space-xs); }
-/* ... weitere Größen ... */
+/* ... weitere Sizes ... */
 
 /* Padding auf der Block-Achse */
 .padding-block-xs { padding-block: var(--space-xs); }
@@ -91,7 +91,7 @@ Die Casoon UI Library bietet ein vollständiges Set an Utility-Klassen für logi
 
 .padding-block-start-xs { padding-block-start: var(--space-xs); }
 .padding-block-end-xs { padding-block-end: var(--space-xs); }
-/* ... weitere Größen ... */
+/* ... weitere Sizes ... */
 
 /* Borders auf den logischen Achsen */
 .border-inline { border-inline: 1px solid var(--color-border); }
@@ -108,7 +108,7 @@ Die Casoon UI Library bietet ein vollständiges Set an Utility-Klassen für logi
 .rounded-end-end { border-end-end-radius: var(--radius-m); }
 ```
 
-## Verwendungsbeispiele
+## Usagesbeispiele
 
 ### Grundlegendes Layout mit logischen Eigenschaften
 
@@ -161,14 +161,14 @@ Dieses Layout wird korrekt angezeigt, unabhängig davon, ob die Seite in einer L
 .position-block-end-0 { inset-block-end: 0; }
 ```
 
-## Komplexere Beispiele
+## Komplexere Examples
 
-### Kartenkomponente mit logischen Eigenschaften
+### Cardnkomponente mit logischen Eigenschaften
 
 ```html
 <div class="card">
   <div class="card-header border-block-end">
-    <h3 class="title">Kartentitel</h3>
+    <h3 class="title">Cardntitel</h3>
   </div>
   <div class="card-body">
     <p class="text-start">Dieser Text ist am Anfang der Zeile ausgerichtet.</p>
@@ -209,7 +209,7 @@ Dieses Layout wird korrekt angezeigt, unabhängig davon, ob die Seite in einer L
 </style>
 ```
 
-### Formular mit logischen Eigenschaften
+### Form mit logischen Eigenschaften
 
 ```html
 <form class="form">
@@ -259,7 +259,7 @@ Dieses Layout wird korrekt angezeigt, unabhängig davon, ob die Seite in einer L
 
 ## Integration mit dem Writing Mode
 
-Logische Eigenschaften arbeiten nahtlos mit verschiedenen Schreibmodi zusammen:
+Logical Properties arbeiten nahtlos mit verschiedenen Schreibmodi zusammen:
 
 ```css
 /* Horizontale Schreibrichtung (Standard) */
@@ -314,9 +314,9 @@ Obwohl moderne Browser gut unterstützt werden, gibt es einige Einschränkungen 
 }
 ```
 
-## CSS-Variablen für logische Eigenschaften
+## CSS Variables für logische Eigenschaften
 
-Die Casoon UI Library definiert CSS-Variablen für häufig verwendete logische Abstände:
+Die Casoon UI Library definiert CSS Variables für häufig verwendete logische Abstände:
 
 ```css
 :root {
@@ -343,7 +343,7 @@ Die Casoon UI Library definiert CSS-Variablen für häufig verwendete logische A
 
 ## Browser-Kompatibilität
 
-Logische Eigenschaften werden von allen modernen Browsern unterstützt:
+Logical Properties werden von allen modernen Browsern unterstützt:
 
 | Feature | Chrome | Firefox | Safari | Edge | IE |
 |---------|--------|---------|--------|------|-----|
@@ -356,7 +356,7 @@ Für ältere Browser stellt die Casoon UI Library Fallbacks bereit, die physisch
 
 ## Best Practices
 
-1. **Konsistente Verwendung**: Verwenden Sie durchgehend logische Eigenschaften, mischen Sie nicht physische und logische Eigenschaften.
+1. **Konsistente Usage**: Verwenden Sie durchgehend logische Eigenschaften, mischen Sie nicht physische und logische Eigenschaften.
 
 2. **Fallbacks bereitstellen**: Fügen Sie Fallbacks für Browser hinzu, die logische Eigenschaften nicht unterstützen.
 
@@ -364,7 +364,7 @@ Für ältere Browser stellt die Casoon UI Library Fallbacks bereit, die physisch
 
 ```html
 <html dir="rtl" lang="ar">
-  <!-- RTL-Dokument, zum Beispiel für Arabisch -->
+  <!-- RTL-Dokument, zum Example für Arabisch -->
 </html>
 ```
 
@@ -383,6 +383,6 @@ Für ältere Browser stellt die Casoon UI Library Fallbacks bereit, die physisch
 
 ## Zusammenfassung
 
-Die Verwendung von CSS Logical Properties in der Casoon UI Library bietet ein robustes, sprachunabhängiges Layout-System, das Ihre Anwendung für internationale Nutzung vorbereitet. Durch den Einsatz dieser Eigenschaften wird die Wartung vereinfacht, der Code reduziert und die Benutzerfreundlichkeit für ein globales Publikum verbessert.
+Die Usage von CSS Logical Properties in der Casoon UI Library bietet ein robustes, sprachunabhängiges Layout-System, das Ihre Anwendung für internationale Nutzung vorbereitet. Durch den Einsatz dieser Eigenschaften wird die Wartung vereinfacht, der Code reduziert und die User-friendliness für ein globales Publikum verbessert.
 
-Die konsistente Verwendung von logischen Eigenschaften ermöglicht es Ihnen, eine einzige Codebasis zu pflegen, die nahtlos in verschiedenen Sprachen und Schreibrichtungen funktioniert, was die Internationalisierung Ihrer Anwendung erheblich vereinfacht. 
+Die konsistente Usage von logischen Eigenschaften ermöglicht es Ihnen, eine einzige Codebasis zu pflegen, die nahtlos in verschiedenen Sprachen und Schreibrichtungen funktioniert, was die Internationalisierung Ihrer Anwendung erheblich vereinfacht. 

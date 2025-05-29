@@ -9,7 +9,7 @@ Die Vignette-Effekte der Casoon UI Library bieten eine Sammlung von Abdunkelungs
 
 ## Überblick
 
-Vignette-Effekte stammen aus der Fotografie und beschreiben die Abdunkelung der Ränder eines Bildes. In der UI können sie verwendet werden, um Tiefe zu erzeugen, Aufmerksamkeit zu lenken oder bestimmte ästhetische Stile zu vermitteln. Die Casoon UI Library bietet verschiedene Arten von Vignette-Effekten, die einfach anzuwenden und anzupassen sind.
+Vignette-Effekte stammen aus der Fotografie und beschreiben die Abdunkelung der Ränder eines Bildes. In der UI können sie verwendet werden, um Tiefe zu erzeugen, Aufmerksamkeit zu lenken oder bestimmte ästhetische Styles zu vermitteln. Die Casoon UI Library bietet verschiedene Arten von Vignette-Effekten, die einfach anzuwenden und anzupassen sind.
 
 ## Installation
 
@@ -53,7 +53,7 @@ Importieren Sie das Vignette-Effekte-Modul über CSS:
 | `.vignette-corners` | Vignette nur in den Ecken |
 | `.vignette-sides` | Vignette nur an den Seiten |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Vignette-Effekte
 
@@ -101,7 +101,7 @@ Importieren Sie das Vignette-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Vignette-Effekte können über CSS-Variablen angepasst werden:
+Die Vignette-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -270,15 +270,15 @@ Die Vignette-Effekte werden hauptsächlich durch radiale Gradienten und pseudo-E
 }
 ```
 
-## Vignette in Bilder und Karten
+## Vignette in Bilder und Cardn
 
-Vignette-Effekte eignen sich besonders gut für Bilder und Card-Komponenten:
+Vignette-Effekte eignen sich besonders gut für Bilder und Card-Components:
 
 ```html
 <div class="card vignette vignette-medium">
   <img src="path/to/image.jpg" alt="Bild mit Vignette">
   <div class="content">
-    <h3>Karte mit Vignette</h3>
+    <h3>Card mit Vignette</h3>
     <p>Der Vignette-Effekt lenkt die Aufmerksamkeit auf den Inhalt.</p>
   </div>
 </div>
@@ -292,9 +292,9 @@ Vignette-Effekte eignen sich besonders gut für Bilder und Card-Komponenten:
 </div>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Vignette-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Vignette-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass die Vignette den Kontrast zwischen Text und Hintergrund nicht zu stark beeinträchtigt
 2. **Lesbarkeit**: Vermeiden Sie zu intensive Vignetten, die die Lesbarkeit des Inhalts erschweren könnten
@@ -323,6 +323,6 @@ Die Vignette-Effekte werden von allen modernen Browsern unterstützt.
 | Radiale Gradienten | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Mehrfache Hintergründe | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Backdrop-Filter | ✓ | ✓ | ✓ | ✓ | ✗ |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 

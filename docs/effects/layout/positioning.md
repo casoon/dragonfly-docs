@@ -2,7 +2,7 @@
 
 Positionierungs-Effekte werden verwendet, um Elemente präzise auf der Seite zu platzieren und das Layout zu steuern. Die `@casoon/ui-lib` bietet verschiedene Positionierungs-Effekte, die dazu beitragen, flexible und ansprechende Layouts zu erstellen.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Die grundlegenden Positionierungs-Effekte können auf jedes Element angewendet werden:
 
@@ -225,7 +225,7 @@ Die Z-Index-Klassen steuern die Stapelreihenfolge von Elementen:
 </div>
 ```
 
-## Anwendungsfälle
+## Use Cases
 
 ### Header und Navigation
 
@@ -279,27 +279,27 @@ Tooltips um Elemente herum:
 </div>
 ```
 
-### Karten mit überlagernden Elementen
+### Cardn mit überlagernden Elementen
 
 Komplexe Layouts mit mehreren Ebenen:
 
 ```html
 <div class="card position-relative">
-  <img src="image.jpg" alt="Kartenillustration">
+  <img src="image.jpg" alt="Cardnillustration">
   
   <div class="position-absolute top-0 left-0 p-3">
     <span class="badge">Neu</span>
   </div>
   
   <div class="position-absolute bottom-0 left-0 right-0 p-3 bg-gradient-bottom">
-    <h3 class="card-title">Kartenüberschrift</h3>
+    <h3 class="card-title">Cardnüberschrift</h3>
   </div>
 </div>
 ```
 
 ## Anpassung
 
-Die Positionierungs-Effekte können über CSS-Variablen angepasst werden:
+Die Positionierungs-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -328,7 +328,7 @@ Die Positionierungs-Effekte können über CSS-Variablen angepasst werden:
 
 ## CSS-Implementierung
 
-Beispiele für die CSS-Implementierung der Positionierungs-Effekte:
+Examples für die CSS-Implementierung der Positionierungs-Effekte:
 
 ```css
 /* Grundlegende Positionierungsklassen */
@@ -441,12 +441,12 @@ Beispiele für die CSS-Implementierung der Positionierungs-Effekte:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Positionierungs-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Positionierungs-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Tastaturbedienung**: Sicherstellen, dass fixierte und absolute Elemente per Tastatur zugänglich sind
-2. **Fokus-Management**: Bei der Verwendung von Overlays und Modals den Fokus richtig verwalten
+2. **Fokus-Management**: Bei der Usage von Overlays und Modals den Fokus richtig verwalten
 3. **Sichtbarkeit**: Sicherstellen, dass wichtige Inhalte nicht durch fixierte Elemente verdeckt werden
 4. **Lesbarkeit**: Ausreichenden Kontrast für überlagerte Texte gewährleisten
 

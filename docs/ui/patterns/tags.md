@@ -1,8 +1,8 @@
 # Tags
 
-Tags sind kompakte UI-Elemente, die verwendet werden, um Inhalte zu kategorisieren, zu filtern oder zu kennzeichnen. Die `@casoon/ui-lib` bietet verschiedene Tag-Varianten für unterschiedliche Anwendungsfälle.
+Tags sind kompakte UI-Elemente, die verwendet werden, um Inhalte zu kategorisieren, zu filtern oder zu kennzeichnen. Die `@casoon/ui-lib` bietet verschiedene Tag-Variants für unterschiedliche Use Cases.
 
-## Verwendung
+## Usage
 
 Tags werden als einfache HTML-Elemente mit CSS-Klassen implementiert:
 
@@ -10,11 +10,11 @@ Tags werden als einfache HTML-Elemente mit CSS-Klassen implementiert:
 <span class="tag">Standard Tag</span>
 ```
 
-## Varianten
+## Variants
 
-### Größen
+### Sizes
 
-Tags sind in drei Größen verfügbar:
+Tags sind in drei Sizes verfügbar:
 
 - **Klein** (`.tag-sm`): Kompakte Tags für platzsparende Layouts
 - **Standard**: Mittlere Größe (Standard)
@@ -31,7 +31,7 @@ Tags sind in drei Größen verfügbar:
 <span class="tag tag-lg">Groß</span>
 ```
 
-### Farben
+### Colors
 
 Tags unterstützen verschiedene Farbvarianten:
 
@@ -62,7 +62,7 @@ Tags unterstützen verschiedene Farbvarianten:
 <span class="tag tag-info">Info</span>
 ```
 
-### Varianten
+### Variants
 
 #### Abgerundete Tags
 
@@ -87,7 +87,7 @@ Tags können mit Icons kombiniert werden:
 ```html
 <span class="tag">
   <i class="icon icon-star"></i>
-  Mit Icon
+  With Icon
 </span>
 ```
 
@@ -104,7 +104,7 @@ Tags, die vom Benutzer entfernt werden können:
 
 ## Anpassung
 
-Die Darstellung von Tags kann mithilfe von CSS-Variablen angepasst werden:
+Die Darstellung von Tags kann mithilfe von CSS Variables angepasst werden:
 
 ```css
 .custom-tag {
@@ -148,14 +148,14 @@ Mehrere zusammengehörige Tags können in Gruppen organisiert werden:
 </div>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine optimale Barrierefreiheit:
+Für eine optimale Accessibility:
 
 - Verwenden Sie ausreichenden Farbkontrast zwischen Tag-Hintergrund und Text
 - Stellen Sie sicher, dass interaktive Tags über die Tastatur bedienbar sind
 - Fügen Sie geeignete aria-Attribute hinzu, besonders für interaktive oder entfernbare Tags
-- Vermeiden Sie die alleinige Verwendung von Farbe zur Unterscheidung von Bedeutungen
+- Vermeiden Sie die alleinige Usage von Farbe zur Unterscheidung von Bedeutungen
 
 ```html
 <!-- Barrierefreies interaktives Tag -->
@@ -173,9 +173,9 @@ Für eine optimale Barrierefreiheit:
 
 ## Browser-Kompatibilität
 
-Die Tag-Komponenten sind mit allen modernen Browsern kompatibel und verwenden standardkonforme HTML- und CSS-Eigenschaften.
+Die Tag-Components sind mit allen modernen Browsern kompatibel und verwenden standardkonforme HTML- und CSS-Eigenschaften.
 
-## Verwandte Komponenten
+## Verwandte Components
 
 - [Badge](/components/elements/badge.md) - Für numerische oder Status-Anzeigen
 - [Chip](/components/elements/chip.md) - Für komplexere interaktive Elemente

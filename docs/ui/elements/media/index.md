@@ -6,7 +6,7 @@ outline: deep
 
 # Media
 
-Das Media-Element dient zur Darstellung verschiedener Medieninhalte wie Bilder, Videos und Audioelemente. Es bietet einheitliche Styling-Optionen und responsive Anpassungen für multimediale Inhalte.
+Das Media-Element dient zur Darstellung verschiedener Medieninhalte wie Bilder, Videos und Audioelemente. Es bietet einheitliche Styling-Optionen und responsive Customizations für multimediale Inhalte.
 
 ## Installation
 
@@ -23,11 +23,11 @@ npm install @casoon/ui-lib
 /* Import aller UI-Elemente */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Media-Komponenten */
+/* Oder nur die Media-Components */
 @import '@casoon/ui-lib/media.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ### Bilder
 
@@ -36,7 +36,7 @@ npm install @casoon/ui-lib
 ```
 
 <div class="example-wrapper">
-  <img style="display: block; max-width: 100%; height: auto; border-radius: 4px;" src="https://via.placeholder.com/800x400" alt="Beispielbild">
+  <img style="display: block; max-width: 100%; height: auto; border-radius: 4px;" src="https://via.placeholder.com/800x400" alt="Examplebild">
 </div>
 
 ### Videos
@@ -50,7 +50,7 @@ npm install @casoon/ui-lib
 
 <div class="example-wrapper">
   <div style="position: relative; width: 100%; background-color: #f3f4f6; height: 0; padding-bottom: 56.25%; border-radius: 4px;">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #6b7280;">Video-Player (Beispiel)</div>
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #6b7280;">Video-Player (Example)</div>
   </div>
 </div>
 
@@ -65,11 +65,11 @@ npm install @casoon/ui-lib
 
 <div class="example-wrapper">
   <div style="width: 100%; background-color: #f3f4f6; padding: 10px; border-radius: 4px;">
-    <div style="color: #6b7280; text-align: center;">Audio-Player (Beispiel)</div>
+    <div style="color: #6b7280; text-align: center;">Audio-Player (Example)</div>
   </div>
 </div>
 
-## Varianten
+## Variants
 
 ### Responsive Bilder
 
@@ -177,7 +177,7 @@ Container, die das Seitenverhältnis beibehalten:
 
 ## Anpassung
 
-Die Media-Elemente können über CSS-Variablen angepasst werden:
+Die Media-Elemente können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -186,7 +186,7 @@ Die Media-Elemente können über CSS-Variablen angepasst werden:
   --media-border-radius: var(--radius-md);
   --media-margin: 0;
   
-  /* Spezialisierte Media-Varianten */
+  /* Spezialisierte Media-Variants */
   --media-rounded-radius: var(--radius-lg);
   --media-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --media-border-color: var(--color-gray-200);
@@ -204,7 +204,7 @@ Die Media-Elemente können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
 - Verwende immer ein aussagekräftiges `alt`-Attribut für Bilder
 - Füge Untertitel und Beschreibungen für Video- und Audioelemente hinzu
@@ -223,4 +223,4 @@ Das Media-Element ist mit allen modernen Browsern kompatibel.
 | Picture-Element | ✅ | ✅ | ✅ | ✅ |
 | Aspect-Ratio-Container | ✅ | ✅ | ✅ | ✅ |
 | Lazy Loading | ✅ | ✅ | ✅ | ✅ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ | 
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ | 

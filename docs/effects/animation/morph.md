@@ -1,8 +1,8 @@
 # Morph-Effekte
 
-Morph-Effekte werden verwendet, um fließende Übergänge zwischen verschiedenen Formen und Zuständen zu erzeugen. Die `@casoon/ui-lib` bietet verschiedene Morph-Effekte, die dazu beitragen, dynamische und interaktive Benutzeroberflächen zu gestalten.
+Morph-Effekte werden verwendet, um fließende Übergänge zwischen verschiedenen Formen und Statesn zu erzeugen. Die `@casoon/ui-lib` bietet verschiedene Morph-Effekte, die dazu beitragen, dynamische und interaktive Benutzeroberflächen zu gestalten.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Morph-Effekt kann auf jedes Element angewendet werden:
 
@@ -23,7 +23,7 @@ Die folgenden CSS-Klassen stehen für Morph-Effekte zur Verfügung:
 |--------|-------------|
 | `.morph` | Basisklasse für Morph-Effekte |
 | `.morph-shape` | Formübergangseffekt |
-| `.morph-size` | Größenübergangseffekt |
+| `.morph-size` | Sizesübergangseffekt |
 | `.morph-color` | Farbübergangseffekt |
 | `.morph-text` | Textübergangseffekt |
 | `.morph-opacity` | Transparenzübergangseffekt |
@@ -36,7 +36,7 @@ Die folgenden CSS-Klassen stehen für Morph-Effekte zur Verfügung:
 | `.morph-auto` | Automatischer Morph-Effekt |
 | `.morph-loop` | Sich wiederholender Morph-Effekt |
 
-## Varianten
+## Variants
 
 ### Shape-Morph
 
@@ -70,15 +70,15 @@ Benutzerdefinierte Formübergänge mit clip-path:
 
 ### Size-Morph
 
-Der Size-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Größen:
+Der Size-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Sizes:
 
 ```html
 <div class="morph-size" data-morph-from-size="100px" data-morph-to-size="200px">
-  Größen-Morph
+  Sizes-Morph
 </div>
 ```
 
-Verfügbare Größenübergänge:
+Verfügbare Sizesübergänge:
 
 ```html
 <div class="morph-size-small-to-large">Von klein zu groß</div>
@@ -91,7 +91,7 @@ Verfügbare Größenübergänge:
 
 ### Color-Morph
 
-Der Color-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Farben:
+Der Color-Morph-Effekt ermöglicht Übergänge zwischen verschiedenen Colors:
 
 ```html
 <div class="morph-color" data-morph-from-color="#ff0000" data-morph-to-color="#0000ff">
@@ -214,12 +214,12 @@ Morph-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </svg>
 ```
 
-### Karten mit Morph-Effekt
+### Cardn mit Morph-Effekt
 
 ```html
 <div class="card morph-size-hover" data-morph-to-size="scale(1.05)">
   <div class="card-body">
-    Karte mit Hover-Zoom
+    Card mit Hover-Zoom
   </div>
 </div>
 ```
@@ -249,7 +249,7 @@ Morph-Effekte können zu komplexen Animationssequenzen kombiniert werden:
 
 ## Anpassung
 
-Die Morph-Effekte können über CSS-Variablen angepasst werden:
+Die Morph-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -264,7 +264,7 @@ Die Morph-Effekte können über CSS-Variablen angepasst werden:
   --morph-triangle: polygon(50% 0%, 100% 100%, 0% 100%);
   --morph-pill: inset(0 0 0 0 round 50px);
   
-  /* Größen-Parameter */
+  /* Sizes-Parameter */
   --morph-size-small: 50px;
   --morph-size-medium: 100px;
   --morph-size-large: 200px;
@@ -286,7 +286,7 @@ Die Morph-Effekte können über CSS-Variablen angepasst werden:
 
 ## CSS-Implementierung
 
-Beispiele für die CSS-Implementierung der Morph-Effekte:
+Examples für die CSS-Implementierung der Morph-Effekte:
 
 ```css
 /* Basis-Morph */
@@ -319,7 +319,7 @@ Beispiele für die CSS-Implementierung der Morph-Effekte:
   clip-path: var(--morph-to-shape);
 }
 
-/* Größen-Morph */
+/* Sizes-Morph */
 .morph-size {
   width: var(--morph-from-width);
   height: var(--morph-from-height);
@@ -421,9 +421,9 @@ class MorphEffect {
     const endState = toTarget ? this.toState : this.fromState;
     
     // FLIP-Technik (First, Last, Invert, Play) für performante Animationen
-    // Weitere Implementierungsdetails...
+    // Weitere Implementation Details...
     
-    // Beispiel für einfache Transition mit Web Animations API
+    // Example für einfache Transition mit Web Animations API
     this.element.animate([
       startState,
       endState
@@ -498,9 +498,9 @@ function morphPath(pathElement, targetPath) {
 setupSVGMorph();
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Morph-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Morph-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
 2. **Lesbarkeit**: Stellen Sie sicher, dass Text während des Morphs lesbar bleibt
@@ -537,7 +537,7 @@ Bei der Verwendung von Morph-Effekten sollten folgende Barrierefreiheitsaspekte 
 Morph-Effekte können die Leistung beeinflussen:
 
 1. **Compositor-Eigenschaften**: Bevorzugen Sie `transform` und `opacity` für die besten Leistungsergebnisse
-2. **Layout-Thrashing**: Vermeiden Sie Eigenschaften, die das Layout auslösen (wie Größenänderungen)
+2. **Layout-Thrashing**: Vermeiden Sie Eigenschaften, die das Layout auslösen (wie Sizesänderungen)
 3. **FLIP-Technik**: Verwenden Sie die FLIP-Technik (First, Last, Invert, Play) für performante Animationen
 4. **Komplexe Pfade**: Seien Sie vorsichtig mit komplexen SVG-Pfad-Morphs, die rechenintensiv sein können
 
@@ -591,5 +591,5 @@ Die meisten Morph-Effekte werden von allen modernen Browsern unterstützt.
 ## Verwandte Effekte
 
 - [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Transitions-Effekte](/docs/effects/transitions.md) - Übergangseffekte zwischen Zuständen
+- [Transitions-Effekte](/docs/effects/transitions.md) - Übergangseffekte zwischen Statesn
 - [Transform-Effekte](/docs/effects/layout/transforms.md) - Transformationseffekte für Elemente 

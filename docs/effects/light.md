@@ -98,7 +98,7 @@ Importieren Sie das Light-Effekte-Modul über CSS:
 | `.light-interactive` | Licht reagiert auf Interaktionen |
 | `.light-follow-cursor` | Lichtquelle folgt dem Cursor |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Lichtquellen und Oberflächen
 
@@ -322,14 +322,14 @@ Importieren Sie das Light-Effekte-Modul über CSS:
 </style>
 ```
 
-### 3D-Karten mit Lichteffekten
+### 3D-Cardn mit Lichteffekten
 
 ```html
 <div class="light-cards-container">
   <div class="light-card light-surface light-directional light-shadow-md light-highlight" style="--light-angle: 135deg;">
     <div class="light-card-content">
-      <h3>3D-Karte mit Licht</h3>
-      <p>Diese Karte nutzt direktionales Licht, um einen 3D-Effekt zu erzeugen.</p>
+      <h3>3D-Card mit Licht</h3>
+      <p>Diese Card nutzt direktionales Licht, um einen 3D-Effekt zu erzeugen.</p>
       <button class="light-button light-surface light-interactive">Mehr erfahren</button>
     </div>
   </div>
@@ -337,16 +337,16 @@ Importieren Sie das Light-Effekte-Modul über CSS:
   <div class="light-card light-surface light-point light-shadow-md light-highlight light-warm">
     <div class="light-source" style="--light-position-x: 20%; --light-position-y: 20%;"></div>
     <div class="light-card-content">
-      <h3>3D-Karte mit Punktlicht</h3>
-      <p>Diese Karte verwendet ein warmes Punktlicht in der oberen linken Ecke.</p>
+      <h3>3D-Card mit Punktlicht</h3>
+      <p>Diese Card verwendet ein warmes Punktlicht in der oberen linken Ecke.</p>
       <button class="light-button light-surface light-interactive">Mehr erfahren</button>
     </div>
   </div>
   
   <div class="light-card light-surface light-interactive light-shadow-md light-highlight light-cool">
     <div class="light-card-content">
-      <h3>Interaktive 3D-Karte</h3>
-      <p>Bewegen Sie den Mauszeiger über diese Karte, um den Lichteffekt zu sehen.</p>
+      <h3>Interaktive 3D-Card</h3>
+      <p>Bewegen Sie den Mauszeiger über diese Card, um den Lichteffekt zu sehen.</p>
       <button class="light-button light-surface light-interactive">Mehr erfahren</button>
     </div>
   </div>
@@ -361,7 +361,7 @@ Importieren Sie das Light-Effekte-Modul über CSS:
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       
-      // Berechnung der Lichtposition relativ zur Kartengröße
+      // Berechnung der Lichtposition relativ zur Cardngröße
       const lightX = (x / rect.width) * 100;
       const lightY = (y / rect.height) * 100;
       
@@ -416,7 +416,7 @@ Importieren Sie das Light-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Light-Effekte können über CSS-Variablen angepasst werden:
+Die Light-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -620,13 +620,13 @@ window.addEventListener('scroll', function() {
 });
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Light-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Light-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Text und Hintergrund ausreichend ist, auch wenn Lichteffekte angewendet werden
 2. **Bewegung reduzieren**: Bieten Sie eine Option zum Deaktivieren von animierten Lichteffekten für Nutzer mit Empfindlichkeiten
-3. **Alternative Stile**: Stellen Sie alternative, flachere Stile für Nutzer bereit, die Probleme mit der Wahrnehmung von Tiefe haben
+3. **Alternative Styles**: Stellen Sie alternative, flachere Styles für Nutzer bereit, die Probleme mit der Wahrnehmung von Tiefe haben
 
 ```css
 /* Verbesserte Textlesbarkeit bei Lichteffekten */
@@ -645,7 +645,7 @@ Bei der Verwendung von Light-Effekten sollten folgende Barrierefreiheitsaspekte 
   }
 }
 
-/* Alternative Stile für reduzierte Effekte */
+/* Alternative Styles für reduzierte Effekte */
 @media (prefers-reduced-transparency: reduce) {
   .light-surface::before,
   .light-surface::after {
@@ -694,4 +694,4 @@ Die Light-Effekte werden von allen modernen Browsern unterstützt.
 | mix-blend-mode | ✓ | ✓ | ✓ | ✓ | ✗ |
 | conic-gradient | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser werden vereinfachte Fallback-Stile bereitgestellt, die ähnliche visuelle Effekte mit grundlegender CSS-Unterstützung bieten. 
+Für ältere Browser werden vereinfachte Fallback-Styles bereitgestellt, die ähnliche visuelle Effekte mit grundlegender CSS-Unterstützung bieten. 

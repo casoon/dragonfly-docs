@@ -5,17 +5,17 @@ category: Layout
 
 # Container Base System
 
-Das Casoon UI Library implementiert ein flexibles Container-System, das als Grundlage für konsistente Layouts und Inhaltsbreiten dient. Dieses Dokument beschreibt die Grundlagen, Eigenschaften und Anwendungsfälle des Container-Systems.
+Das Casoon UI Library implementiert ein flexibles Container System, das als Grundlage für konsistente Layouts und Inhaltsbreiten dient. Dieses Dokument beschreibt die Grundlagen, Eigenschaften und Use Cases des Container Systems.
 
 ## Overview
 
-Das Container-System basiert auf diesen Kernprinzipien:
+Das Container System basiert auf diesen Kernprinzipien:
 
 1. **Konsistente Breiten** - Standardisierte Maximalbereiten für Inhalte
 2. **Automatische Zentrierung** - Container zentrieren sich horizontal im verfügbaren Raum
 3. **Responsive Anpassung** - Automatische Anpassung an verschiedene Bildschirmgrößen
 4. **Flexibles Padding** - Konfigurierbarer Innenabstand für optimalen Content-Flow
-5. **Standardisierte Größen** - Vordefinierte Größenklassen für unterschiedliche Anwendungsfälle
+5. **Standardisierte Sizes** - Vordefinierte Sizesklassen für unterschiedliche Use Cases
 
 ## Basic Container
 
@@ -41,7 +41,7 @@ Die Standard-Container-Implementierung enthält folgende CSS-Eigenschaften:
 
 ## Container Sizes
 
-Das System bietet verschiedene Container-Größen für unterschiedliche Anwendungsfälle:
+Das System bietet verschiedene Container-Sizes für unterschiedliche Use Cases:
 
 ```html
 <!-- Kleiner Container, ideal für schmale Inhalte -->
@@ -74,7 +74,7 @@ Containergrößen und ihre Maximalbreiten:
 
 | Klasse | Maximalbreite | Typische Anwendung |
 |--------|---------------|-------------------|
-| `.container-sm` | `var(--container-sm)` (640px) | Schmale Inhalte, Formulare, schmale Textspalten |
+| `.container-sm` | `var(--container-sm)` (640px) | Schmale Inhalte, Forme, schmale Textspalten |
 | `.container-md` | `var(--container-md)` (768px) | Mittlere Inhaltsbreite, Blogposts |
 | `.container-lg` | `var(--container-lg)` (1024px) | Standard-Inhaltsbreite, Hauptlayouts |
 | `.container-xl` | `var(--container-xl)` (1280px) | Breite Layouts, Dashboard |
@@ -82,7 +82,7 @@ Containergrößen und ihre Maximalbreiten:
 
 ## Container Padding
 
-Das Container-System bietet verschiedene Padding-Optionen für den Innenabstand:
+Das Container System bietet verschiedene Padding-Optionen für den Innenabstand:
 
 ```html
 <!-- Container mit kleinerem Innenabstand -->
@@ -130,7 +130,7 @@ Implementierung:
 
 ## Integration mit Grid und Flexbox
 
-Container arbeiten nahtlos mit dem Grid- und Flexbox-System zusammen:
+Container arbeiten nahtlos mit dem Grid- und Flexbox System zusammen:
 
 ```html
 <!-- Container mit Grid-Layout -->
@@ -206,13 +206,13 @@ Container können auch verwendet werden, um semantische Gruppen von Inhalten zu 
 </footer>
 ```
 
-## Anpassung des Container-Systems
+## Anpassung des Container Systems
 
-Das Container-System basiert auf CSS-Variablen, die leicht angepasst werden können:
+Das Container System basiert auf CSS Variables, die leicht angepasst werden können:
 
 ```css
 :root {
-  /* Container-Größen anpassen */
+  /* Container-Sizes anpassen */
   --container-sm: 540px;
   --container-md: 720px;
   --container-lg: 960px;
@@ -229,7 +229,7 @@ Das Container-System basiert auf CSS-Variablen, die leicht angepasst werden kön
 ## Best Practices
 
 1. **Container für konsistente Breiten verwenden** - Nutzen Sie Container, um eine einheitliche Inhaltsbreite auf Ihrer gesamten Website zu gewährleisten.
-2. **Container-Varianten gezielt einsetzen** - Wählen Sie zwischen `.container`, `.container-fluid` und Größenvarianten je nach Anforderung des Layouts.
+2. **Container-Variants gezielt einsetzen** - Wählen Sie zwischen `.container`, `.container-fluid` und Sizesvarianten je nach Anforderung des Layouts.
 3. **Verschachtelte Container vermeiden** - Verschachteln Sie Container nur, wenn unbedingt nötig, um unerwartete Layout-Probleme zu vermeiden.
 4. **Container mit Grid kombinieren** - Container eignen sich hervorragend als Wrapper für Grid-Layouts, um konsistente Seitenränder zu gewährleisten.
 5. **Container-Abmessungen anpassen** - Passen Sie bei Bedarf die Container-Variablen an, um den Designanforderungen Ihres Projekts gerecht zu werden.
@@ -238,14 +238,14 @@ Das Container-System basiert auf CSS-Variablen, die leicht angepasst werden kön
 
 ## Browser-Kompatibilität
 
-Das Container-System ist mit allen modernen Browsern kompatibel:
+Das Container System ist mit allen modernen Browsern kompatibel:
 
 | Feature | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|
 | Container-Klassen | Alle | Alle | Alle | Alle |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ |
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ |
 | Logical Properties | 69+ | 41+ | 12.1+ | 79+ |
 
 ## Zusammenfassung
 
-Das Container-System der Casoon UI Library bietet eine flexible und leistungsstarke Grundlage für konsistente Layouts. Durch die Verwendung von Containern können Sie Inhalte strukturieren, eine konsistente maximale Breite festlegen und ein einheitliches Erscheinungsbild über alle Seiten hinweg gewährleisten. Container bilden eine wichtige Grundlage für responsive Designs und arbeiten nahtlos mit anderen Layout-Systemen wie Grid und Flexbox zusammen. 
+Das Container System der Casoon UI Library bietet eine flexible und leistungsstarke Grundlage für konsistente Layouts. Durch die Usage von Containern können Sie Inhalte strukturieren, eine konsistente maximale Breite festlegen und ein einheitliches Erscheinungsbild über alle Seiten hinweg gewährleisten. Container bilden eine wichtige Grundlage für responsive Designs und arbeiten nahtlos mit anderen Layout-Systemen wie Grid und Flexbox zusammen. 

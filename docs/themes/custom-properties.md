@@ -5,13 +5,13 @@ category: Themes
 
 # Custom Properties
 
-> **Wichtiger Hinweis:** Ab der aktuellen Version wurde der separate `custom-properties`-Layer in das übergreifende Tokensystem integriert. Die grundlegenden Funktionen und Vorteile von CSS Custom Properties (CSS-Variablen) bleiben jedoch erhalten und werden nun zentral im `tokens`-Layer verwaltet.
+> **Wichtiger Hinweis:** Ab der aktuellen Version wurde der separate `custom-properties`-Layer in das übergreifende Tokensystem integriert. Die grundlegenden Funktionen und Vorteile von CSS Custom Properties (CSS Variables) bleiben jedoch erhalten und werden nun zentral im `tokens`-Layer verwaltet.
 
-Die Casoon UI Library verwendet CSS Custom Properties (CSS-Variablen) für ein flexibles und konsistentes Theming-System. In der aktuellen Version werden diese Properties direkt im `tokens`-Layer definiert, was eine besser integrierte und wartbare Struktur ermöglicht.
+Die Casoon UI Library verwendet CSS Custom Properties (CSS Variables) für ein flexibles und konsistentes Theming-System. In der aktuellen Version werden diese Properties direkt im `tokens`-Layer definiert, was eine besser integrierte und wartbare Struktur ermöglicht.
 
 ## Basis-Theme-Struktur
 
-Die Design-Tokens definieren die grundlegenden Custom Properties:
+Die Design Tokens definieren die grundlegenden Custom Properties:
 
 ```css
 @layer tokens {
@@ -30,7 +30,7 @@ Die Design-Tokens definieren die grundlegenden Custom Properties:
     --color-danger: #DC3545;
     --color-info: #17A2B8;
     
-    /* Neutrale Farben */
+    /* Neutrale Colors */
     --color-white: #FFFFFF;
     --color-black: #000000;
     --color-gray-100: #F8F9FA;
@@ -43,7 +43,7 @@ Die Design-Tokens definieren die grundlegenden Custom Properties:
     --color-gray-800: #343A40;
     --color-gray-900: #212529;
     
-    /* Typografie */
+    /* Typography */
     --font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-size-base: 1rem;
     --line-height-base: 1.5;
@@ -119,9 +119,9 @@ Alternativ können Sie Theme-Klassen verwenden:
 }
 ```
 
-### 3. Komponenten-spezifische Anpassungen
+### 3. Components-spezifische Customizations
 
-Sie können auch Custom Properties für spezifische Komponenten definieren:
+Sie können auch Custom Properties für spezifische Components definieren:
 
 ```css
 @layer core {
@@ -150,7 +150,7 @@ Sie können auch Custom Properties für spezifische Komponenten definieren:
   }
 }
 
-/* 2. Theme-Varianten (im themes Layer) */
+/* 2. Theme-Variants (im themes Layer) */
 @layer themes {
   .theme-light {
     /* Helles Theme */
@@ -161,15 +161,15 @@ Sie können auch Custom Properties für spezifische Komponenten definieren:
   }
 }
 
-/* 3. Komponenten-spezifische Properties (im jeweiligen Komponenten-Layer) */
+/* 3. Components-spezifische Properties (im jeweiligen Components-Layer) */
 @layer core {
   .component {
-    /* Komponenten-spezifische Anpassungen */
+    /* Components-spezifische Customizations */
   }
 }
 ```
 
-### 2. Verwendung in Komponenten
+### 2. Usage in Components
 
 ```css
 .button {
@@ -185,7 +185,7 @@ Sie können auch Custom Properties für spezifische Komponenten definieren:
 }
 ```
 
-### 3. Dynamische Anpassungen
+### 3. Dynamische Customizations
 
 ```javascript
 // Theme zur Laufzeit ändern
@@ -245,7 +245,7 @@ CSS Custom Properties werden von allen modernen Browsern unterstützt:
 ### Performance-Probleme
 - Reduzieren Sie die Anzahl der Custom Properties
 - Vermeiden Sie zu häufige Theme-Wechsel
-- Nutzen Sie CSS-Variablen sparsam in Animationen
+- Nutzen Sie CSS Variables sparsam in Animationen
 
 ### Browser-Kompatibilität
 - Testen Sie in verschiedenen Browsern

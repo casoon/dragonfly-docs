@@ -6,7 +6,7 @@ outline: deep
 
 # Slider
 
-Das Slider-Element bietet einen Schieberegler für die Auswahl von Werten innerhalb eines bestimmten Bereichs. Slider sind intuitive Bedienelemente für die Eingabe numerischer Werte und bieten eine visuelle Darstellung des ausgewählten Wertes.
+Das Slider-Element bietet einen Slider für die Auswahl von Werten innerhalb eines bestimmten Bereichs. Slider sind intuitive Bedienelemente für die Eingabe numerischer Werte und bieten eine visuelle Darstellung des ausgewählten Wertes.
 
 ## Installation
 
@@ -27,7 +27,7 @@ npm install @casoon/ui-lib
 @import '@casoon/ui-lib/components/slider.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <input type="range" class="slider" min="0" max="100" value="50">
@@ -37,7 +37,7 @@ npm install @casoon/ui-lib
   <input type="range" style="appearance: none; background-color: #d1d5db; border-radius: 9999px; cursor: pointer; height: 0.25rem; margin: 0.75rem 0; width: 100%;" min="0" max="100" value="50">
 </div>
 
-## Varianten
+## Variants
 
 ### Mit Wertebereichsanzeige
 
@@ -79,7 +79,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-### Varianten nach Farbe
+### Variants nach Farbe
 
 ```html
 <input type="range" class="slider primary" min="0" max="100" value="50">
@@ -103,7 +103,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-### Größenvarianten
+### Sizesvarianten
 
 ```html
 <input type="range" class="slider sm" min="0" max="100" value="50">
@@ -145,7 +145,7 @@ npm install @casoon/ui-lib
 
 ## Anpassung
 
-Das Slider-Element kann über CSS-Variablen angepasst werden:
+Das Slider-Element kann über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -167,9 +167,9 @@ Das Slider-Element kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+Für eine bessere Accessibility beachten Sie bitte folgende Punkte:
 
 - Verwenden Sie immer ein Label, das mit dem Slider-Element verknüpft ist
 - Fügen Sie aussagekräftige Attributwerte für `min`, `max` und `step` hinzu
@@ -194,7 +194,7 @@ Das Slider-Element ist mit allen modernen Browsern kompatibel, jedoch kann die D
 | Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
 | Anpassung des Thumbs | ✅ | ✅ | ✅ | ✅ |
 | Anpassung des Tracks | ✅ | ✅ | ✅ | ✅ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ |
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ |
 
 ## JavaScript-Integration
 
@@ -214,7 +214,7 @@ slider.addEventListener('input', function() {
 });
 ```
 
-## Komplexe Anwendungsfälle
+## Komplexe Use Cases
 
 ### Doppelter Bereichsslider mit JavaScript
 

@@ -61,7 +61,7 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
 | `.pattern-bubbles` | Blasenmuster |
 | `.pattern-maze` | Labyrinth-ähnliche Muster |
 
-### Dichte und Größenvarianten
+### Dichte und Sizesvarianten
 
 | Klasse | Beschreibung |
 |--------|-------------|
@@ -83,7 +83,7 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
 | `.pattern-fade-top` | Nach oben ausblendendes Muster |
 | `.pattern-fade-bottom` | Nach unten ausblendendes Muster |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Hintergrundmuster
 
@@ -265,7 +265,7 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
   
   <div class="card-with-pattern">
     <div class="card-header pattern-bg pattern-stripes">
-      <h3>Kartenüberschrift</h3>
+      <h3>Cardnüberschrift</h3>
     </div>
     <div class="card-body">
       <p>Muster können für verschiedene Bereiche einer Komponente verwendet werden.</p>
@@ -379,7 +379,7 @@ Importieren Sie das Pattern-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Pattern-Effekte können über CSS-Variablen angepasst werden:
+Die Pattern-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -391,7 +391,7 @@ Die Pattern-Effekte können über CSS-Variablen angepasst werden:
   --pattern-spacing: 5px;
   --pattern-line-width: 1px;
   
-  /* Muster-Varianten */
+  /* Muster-Variants */
   --pattern-dots-size: 3px;
   --pattern-dots-spacing: 15px;
   --pattern-grid-size: 20px;
@@ -401,7 +401,7 @@ Die Pattern-Effekte können über CSS-Variablen angepasst werden:
   --pattern-zigzag-size: 15px;
   --pattern-zigzag-width: 2px;
   
-  /* Pattern-Farben */
+  /* Pattern-Colors */
   --pattern-primary-color: var(--color-primary, #3f51b5);
   --pattern-secondary-color: var(--color-secondary, #f50057);
   --pattern-dark-color: rgba(0, 0, 0, 0.1);
@@ -551,9 +551,9 @@ Einige Muster können durch geschickte Kombination von CSS-Eigenschaften erzeugt
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Pattern-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Pattern-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass Text auf gemusterten Hintergründen ausreichend lesbar bleibt
 2. **Ablenkung**: Verwenden Sie subtile Muster, die nicht vom Inhalt ablenken
@@ -618,6 +618,6 @@ Die Pattern-Effekte werden von allen modernen Browsern unterstützt.
 | CSS Backgrounds | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CSS Gradients | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | SVG Hintergründe | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Funktionen nicht unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 

@@ -2,7 +2,7 @@
 
 Typing-Effekte simulieren den Prozess des Tippens oder Schreibens von Text. Die `@casoon/ui-lib` bietet verschiedene Typing-Effekte, die verwendet werden können, um Text dynamisch anzuzeigen, als würde er in Echtzeit getippt werden.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Typing-Effekt kann auf jedes Textelement angewendet werden:
 
@@ -32,11 +32,11 @@ Die folgenden CSS-Klassen stehen für Typing-Effekte zur Verfügung:
 | `.typing-multiline` | Mehrzeiliger Typing-Effekt |
 | `.typing-terminal` | Terminal-ähnlicher Typing-Effekt |
 
-## Varianten
+## Variants
 
-### Cursor-Varianten
+### Cursor-Variants
 
-Verschiedene Cursor-Stile für Typing-Effekte:
+Verschiedene Cursor-Styles für Typing-Effekte:
 
 ```html
 <p class="typing typing-cursor-bar">Text mit Balken-Cursor</p>
@@ -45,7 +45,7 @@ Verschiedene Cursor-Stile für Typing-Effekte:
 <p class="typing typing-cursor-solid">Text mit durchgehendem Cursor</p>
 ```
 
-### Geschwindigkeits-Varianten
+### Geschwindigkeits-Variants
 
 Verschiedene Geschwindigkeiten für Typing-Effekte:
 
@@ -55,7 +55,7 @@ Verschiedene Geschwindigkeiten für Typing-Effekte:
 <p class="typing typing-variable">Text mit variabler Geschwindigkeit</p>
 ```
 
-### Spezial-Varianten
+### Spezial-Variants
 
 Spezielle Typing-Effekte:
 
@@ -66,7 +66,7 @@ Spezielle Typing-Effekte:
 <p class="typing typing-highlight">Teile <span class="highlight">dieses Textes</span> werden hervorgehoben.</p>
 ```
 
-### Terminal-Varianten
+### Terminal-Variants
 
 Terminal-ähnliche Typing-Effekte:
 
@@ -133,7 +133,7 @@ helloWorld();
 
 ## Anpassung
 
-Die Typing-Effekte können über CSS-Variablen angepasst werden:
+Die Typing-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -144,13 +144,13 @@ Die Typing-Effekte können über CSS-Variablen angepasst werden:
   --typing-cursor-width: 2px;
   --typing-cursor-blink-speed: 0.7s;
   
-  /* Varianten-Parameter */
+  /* Variants-Parameter */
   --typing-speed-fast: 80ms;
   --typing-speed-slow: 250ms;
   --typing-pause-duration: 0.5s;
   --typing-delete-speed: 100ms;
   
-  /* Cursor-Varianten */
+  /* Cursor-Variants */
   --typing-cursor-height: 1.2em;
   --typing-cursor-border-radius: 0px;
   
@@ -164,7 +164,7 @@ Die Typing-Effekte können über CSS-Variablen angepasst werden:
 
 ## CSS-Implementierung
 
-Beispiele für die CSS-Implementierung der Typing-Effekte:
+Examples für die CSS-Implementierung der Typing-Effekte:
 
 ```css
 /* Basis-Typing */
@@ -222,7 +222,7 @@ Beispiele für die CSS-Implementierung der Typing-Effekte:
   opacity: 0.5;
 }
 
-/* Geschwindigkeits-Varianten */
+/* Geschwindigkeits-Variants */
 .typing-fast {
   animation-duration: calc(var(--typing-content-length, 1) * var(--typing-speed-fast));
 }
@@ -231,7 +231,7 @@ Beispiele für die CSS-Implementierung der Typing-Effekte:
   animation-duration: calc(var(--typing-content-length, 1) * var(--typing-speed-slow));
 }
 
-/* Spezial-Varianten */
+/* Spezial-Variants */
 .typing-infinite {
   animation: typing-infinite 5s steps(40, end) infinite;
 }
@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-## Fortgeschrittene Beispiele
+## Fortgeschrittene Examples
 
 ### Multiline-Typing
 
@@ -516,9 +516,9 @@ document.querySelectorAll('.typing-custom').forEach(element => {
 });
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Typing-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Typing-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
 2. **Lesbarkeit**: Stellen Sie sicher, dass Text nach dem Typing-Effekt klar lesbar ist
@@ -632,7 +632,7 @@ class OptimizedTypingEffect {
   }
 }
 
-// Verwendung der optimierten Klasse
+// Usage der optimierten Klasse
 document.addEventListener('DOMContentLoaded', () => {
   // Limitierung der gleichzeitigen Effekte
   const visibleTypingElements = Array.from(document.querySelectorAll('[data-typing]'))
@@ -676,11 +676,11 @@ Die Typing-Effekte werden von allen modernen Browsern unterstützt.
 | CSS-Animationen | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JS Typing | ✓ | ✓ | ✓ | ✓ | ✓ |
 | requestAnimationFrame | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | Nein |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | Nein |
 | Intersection Observer | ✓ | ✓ | ✓ | ✓ | Nein |
 
 ## Verwandte Effekte
 
 - [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Transitions-Effekte](/docs/effects/animation/transitions.md) - Übergangseffekte zwischen Zuständen
+- [Transitions-Effekte](/docs/effects/animation/transitions.md) - Übergangseffekte zwischen Statesn
 - [Loading-Effekte](/docs/effects/animation/loading.md) - Ladeanimationen 

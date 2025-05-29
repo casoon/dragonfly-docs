@@ -27,7 +27,7 @@ npm install @casoon/ui-lib
 @import '@casoon/ui-lib/components/spinner.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <div class="spinner"></div>
@@ -46,7 +46,7 @@ npm install @casoon/ui-lib
 }
 </style>
 
-## Größenvarianten
+## Sizesvarianten
 
 ### Extra Klein (XS)
 
@@ -103,7 +103,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-## Stil-Varianten
+## Stil-Variants
 
 ### Ring (Standard)
 
@@ -269,7 +269,7 @@ npm install @casoon/ui-lib
 
 ## Anpassung
 
-Der Spinner kann über CSS-Variablen angepasst werden:
+Der Spinner kann über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -278,9 +278,9 @@ Der Spinner kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+Für eine bessere Accessibility beachten Sie bitte folgende Punkte:
 
 - Fügen Sie geeignete ARIA-Attribute hinzu, um den Ladezustand für Screenreader anzukündigen
 - Verwenden Sie beschreibenden Text, der angibt, was geladen wird (es sei denn, es ist aus dem Kontext offensichtlich)
@@ -305,7 +305,7 @@ Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
 - Verwenden Sie für längere Vorgänge Fortschrittsanzeigen anstelle von unbestimmten Spinnern
 - Platzieren Sie Spinner an einer logischen Stelle (wo der Inhalt erscheinen wird)
 - Verwenden Sie für das Laden auf Seitenebene einen Vollbild-Overlay-Spinner
-- Vermeiden Sie die gleichzeitige Verwendung mehrerer Spinner in derselben Ansicht
+- Vermeiden Sie die gleichzeitige Usage mehrerer Spinner in derselben Ansicht
 - Erwägen Sie das Hinzufügen einer Timeout-Nachricht für lang andauernde Vorgänge
 
 ## Browser-Kompatibilität
@@ -316,7 +316,7 @@ Der Spinner ist mit allen modernen Browsern kompatibel:
 |----------|--------|---------|--------|------|
 | Grundlegende Animation | ✅ | ✅ | ✅ | ✅ |
 | CSS-Animationen | ✅ | ✅ | ✅ | ✅ |
-| Varianten | ✅ | ✅ | ✅ | ✅ |
+| Variants | ✅ | ✅ | ✅ | ✅ |
 
 ## Integration mit Icons
 

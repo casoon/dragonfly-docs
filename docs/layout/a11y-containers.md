@@ -5,7 +5,7 @@ category: Layout
 
 # Accessibility Containers
 
-Die Casoon UI Library bietet spezielle barrierefreie Container (A11y Containers), die darauf ausgelegt sind, die Zugänglichkeit Ihrer Anwendung zu verbessern. Diese Dokumentation erklärt, wie Sie diese Container verwenden können, um Barrierefreiheitsstandards zu erfüllen.
+Die Casoon UI Library bietet spezielle barrierefreie Container (A11y Containers), die darauf ausgelegt sind, die Accessibility Ihrer Anwendung zu verbessern. Diese Dokumentation erklärt, wie Sie diese Container verwenden können, um Accessibilitysstandards zu erfüllen.
 
 ## Overview
 
@@ -48,7 +48,7 @@ Implementierung:
 
 /* Visuelle Unterscheidung für verschiedene Landmark-Typen */
 .landmark-container[role="main"] {
-  /* Keine speziellen Stile nötig, da Hauptinhalt */
+  /* Keine speziellen Styles nötig, da Hauptinhalt */
 }
 
 .landmark-container[role="navigation"] {
@@ -270,14 +270,14 @@ class LiveRegion {
   }
 }
 
-// Initialisierung und Verwendung
+// Initialisierung und Usage
 const liveRegions = {};
 document.querySelectorAll('.live-region-container').forEach(container => {
   const id = container.id || 'default';
   liveRegions[id] = new LiveRegion(container);
 });
 
-// Beispiel für die Verwendung
+// Example für die Usage
 function notifyUser(message, isError = false) {
   const options = {
     politeness: isError ? 'assertive' : 'polite',
@@ -322,7 +322,7 @@ Implementierung:
   color: var(--color-contrast-dark);
 }
 
-/* CSS-Variablen mit Farben, die WCAG AA-Kontrastverhältnis garantieren */
+/* CSS Variables mit Colors, die WCAG AA-Kontrastverhältnis garantieren */
 :root {
   --color-contrast-dark: #121212;
   --color-contrast-light: #f8f9fa;
@@ -507,7 +507,7 @@ document.querySelectorAll('.font-size-adjustable-container').forEach(container =
 
 ## Keyboard Navigation Container
 
-Container mit verbesserter Tastaturnavigation für komplexe Komponenten:
+Container mit verbesserter Tastaturnavigation für komplexe Components:
 
 ```html
 <div class="keyboard-nav-container" role="toolbar" aria-label="Formatierungsoptionen">
@@ -661,7 +661,7 @@ document.querySelectorAll('.keyboard-nav-container').forEach(container => {
 6. **Text-Alternativen bereitstellen** - Bieten Sie Alternativen für nicht-textuelle Inhalte
 7. **Benutzereinstellungen respektieren** - Respektieren Sie Systemeinstellungen wie Reduced Motion
 
-## Anwendungsfälle
+## Use Cases
 
 ### Barrierefreies Kontaktformular
 
@@ -770,4 +770,4 @@ document.querySelectorAll('.keyboard-nav-container').forEach(container => {
 
 ## Zusammenfassung
 
-A11y Container der Casoon UI Library bieten umfassende Lösungen für barrierefreie Benutzeroberflächen. Durch die Verwendung dieser Container können Sie sicherstellen, dass Ihre Anwendung für alle Benutzer zugänglich ist, einschließlich Menschen mit Behinderungen. Diese Container implementieren bewährte Barrierefreiheitspraktiken und helfen Ihnen, gesetzliche Anforderungen zu erfüllen und eine inklusive Benutzererfahrung zu schaffen. 
+A11y Container der Casoon UI Library bieten umfassende Lösungen für barrierefreie Benutzeroberflächen. Durch die Usage dieser Container können Sie sicherstellen, dass Ihre Anwendung für alle Benutzer zugänglich ist, einschließlich Menschen mit Behinderungen. Diese Container implementieren bewährte Accessibilityspraktiken und helfen Ihnen, gesetzliche Anforderungen zu erfüllen und eine inklusive Benutzererfahrung zu schaffen. 

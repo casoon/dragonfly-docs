@@ -2,7 +2,7 @@
 
 Masken-Effekte werden verwendet, um den sichtbaren Bereich eines Elements zu definieren oder zu begrenzen. Die `@casoon/ui-lib` bietet verschiedene Masken-Effekte, die dazu beitragen, kreative und einzigartige visuelle Erscheinungsbilder zu erzeugen.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Masken-Effekt kann auf jedes Element angewendet werden:
 
@@ -29,7 +29,7 @@ Die folgenden CSS-Klassen stehen für Masken-Effekte zur Verfügung:
 | `.mask-custom` | Maske mit benutzerdefinierter Form |
 | `.mask-gradient` | Verlaufsmaske |
 
-## Varianten
+## Variants
 
 ### Kreis-Maske
 
@@ -51,7 +51,7 @@ Die abgerundete Maske erstellt ein Rechteck mit abgerundeten Ecken:
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="mask-rounded-sm">Leicht abgerundete Ecken</div>
@@ -129,7 +129,7 @@ Die Verlaufsmaske erstellt einen weichen Übergang:
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="mask-gradient-to-right">Verläuft nach rechts</div>
@@ -153,12 +153,12 @@ Masken-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-### Karten mit Masken
+### Cardn mit Masken
 
 ```html
 <div class="card mask-rounded-lg">
-  <div class="card-header">Kartenüberschrift</div>
-  <div class="card-body">Karteninhalt</div>
+  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-body">Cardninhalt</div>
 </div>
 ```
 
@@ -192,7 +192,7 @@ Masken können mit Interaktionen kombiniert werden:
 
 ## Anpassung
 
-Die Masken-Effekte können über CSS-Variablen angepasst werden:
+Die Masken-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -247,9 +247,9 @@ Sie können auch Text mit Masken gestalten:
 </h1>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Masken-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Masken-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass maskierte Inhalte ausreichenden Kontrast bieten
 2. **Alternative Texte**: Bieten Sie immer alternative Texte für maskierte Bilder an

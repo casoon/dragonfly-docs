@@ -5,17 +5,17 @@ category: Layout
 
 # Functional Containers
 
-Die Casoon UI Library bietet spezielle funktionale Container, die über ihre visuellen Eigenschaften hinaus bestimmte Verhaltensmuster und Funktionalitäten implementieren. Diese Dokumentation erklärt die verfügbaren funktionalen Container und ihre Anwendungsfälle.
+Die Casoon UI Library bietet spezielle funktionale Container, die über ihre visuellen Eigenschaften hinaus bestimmte Verhaltensmuster und Funktionalitäten implementieren. Diese Dokumentation erklärt die verfügbaren funktionalen Container und ihre Use Cases.
 
 ## Overview
 
-Funktionale Container erweitern das Container-System um folgende Aspekte:
+Funktionale Container erweitern das Container System um folgende Aspekte:
 
 1. **Interaktive Funktionen** - Container mit eingebauten Interaktionen
 2. **Inhaltssteuerung** - Container für spezifische Inhaltsanzeige und -verwaltung
 3. **Verhaltenslogik** - Container mit speziellen Verhaltensmustern
-4. **Status-Management** - Container, die auf verschiedene Zustände reagieren
-5. **Kontext-Bereitstellung** - Container, die Kontext für Kinder-Komponenten bereitstellen
+4. **Status-Management** - Container, die auf verschiedene States reagieren
+5. **Kontext-Bereitstellung** - Container, die Kontext für Kinder-Components bereitstellen
 
 ## Collapsible Container
 
@@ -621,7 +621,7 @@ function showToast(type, message) {
 
 ## Best Practices
 
-1. **Barrierefreiheit priorisieren** - Stellen Sie sicher, dass funktionale Container zugänglich sind, einschließlich Tastaturnavigation und ARIA-Attribute
+1. **Accessibility priorisieren** - Stellen Sie sicher, dass funktionale Container zugänglich sind, einschließlich Tastaturnavigation und ARIA-Attribute
 2. **Konsistentes Verhalten gewährleisten** - Verwenden Sie in der gesamten Anwendung einheitliche Interaktionsmuster
 3. **Performance beachten** - Vermeiden Sie zu viele JavaScript-intensive Container auf einer Seite
 4. **Mobile-First-Ansatz verfolgen** - Stellen Sie sicher, dass funktionale Container auf kleinen Bildschirmen gut funktionieren
@@ -629,7 +629,7 @@ function showToast(type, message) {
 6. **Feedback geben** - Geben Sie Benutzern immer visuelles Feedback zu Interaktionen
 7. **Transitionen anbieten** - Verwenden Sie Übergänge, um Zustandsänderungen zu verdeutlichen
 
-## Anwendungsfälle
+## Use Cases
 
 ### FAQ-Sektion
 
@@ -691,11 +691,11 @@ function showToast(type, message) {
     showToast(type, message);
   }
   
-  // Nach erfolgreichem Formular-Submit
+  // Nach erfolgreichem Form-Submit
   document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
-    // Formularverarbeitung...
-    showNotification('success', 'Formular erfolgreich gesendet!');
+    // Formverarbeitung...
+    showNotification('success', 'Form erfolgreich gesendet!');
   });
 </script>
 ```
@@ -714,4 +714,4 @@ Die funktionalen Container der Bibliothek sind so konzipiert, dass sie in allen 
 
 ## Zusammenfassung
 
-Funktionale Container der Casoon UI Library bieten leistungsstarke, wiederverwendbare Komponenten für gängige Interaktionsmuster. Durch die Verwendung dieser vorgefertigten Container können Sie komplexe Funktionalitäten wie Tabs, Akkordeons, Dropdowns, Modals und Toasts schnell und konsistent in Ihre Anwendung integrieren. Diese Container folgen bewährten UX-Praktiken und sind so konzipiert, dass sie zugänglich, performant und für verschiedene Geräte optimiert sind. 
+Funktionale Container der Casoon UI Library bieten leistungsstarke, wiederverwendbare Components für gängige Interaktionsmuster. Durch die Usage dieser vorgefertigten Container können Sie komplexe Funktionalitäten wie Tabs, Akkordeons, Dropdowns, Modals und Toasts schnell und konsistent in Ihre Anwendung integrieren. Diese Container folgen bewährten UX-Praktiken und sind so konzipiert, dass sie zugänglich, performant und für verschiedene Geräte optimiert sind. 

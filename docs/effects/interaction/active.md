@@ -2,7 +2,7 @@
 
 Active-Effekte werden verwendet, um dem Benutzer Feedback zu geben, wenn ein Element aktiv ist oder gerade aktiviert wurde. Dies kann durch einen Klick, Tap oder andere Interaktionen geschehen. Die `@casoon/ui-lib` bietet verschiedene Active-Effekte, die dazu beitragen, die Benutzererfahrung zu verbessern und klares visuelles Feedback zu liefern.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Active-Effekt kann auf jedes interaktive Element angewendet werden:
 
@@ -24,7 +24,7 @@ Die folgenden CSS-Klassen stehen für Active-Effekte zur Verfügung:
 | `.active-ripple` | Welleneffekt beim Aktivieren (Material Design inspiriert) |
 | `.active-color` | Farbwechseleffekt beim Aktivieren |
 
-## Varianten
+## Variants
 
 ### Scale-Effekt
 
@@ -92,18 +92,18 @@ Active-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 <a href="#" class="active-highlight">Link mit Highlight-Effekt</a>
 ```
 
-### Karten mit Active-Effekten
+### Cardn mit Active-Effekten
 
 ```html
 <div class="card active-push">
-  <div class="card-header">Kartenüberschrift</div>
-  <div class="card-body">Karteninhalt</div>
+  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-body">Cardninhalt</div>
 </div>
 ```
 
 ## Anpassung
 
-Die Active-Effekte können über CSS-Variablen angepasst werden:
+Die Active-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -120,9 +120,9 @@ Die Active-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Active-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Active-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass der Active-Zustand einen ausreichenden Kontrast zum inaktiven Zustand bietet
 2. **Bewegung**: Vermeiden Sie übermäßige Bewegung, da dies für Benutzer mit vestibulären Störungen problematisch sein kann
@@ -215,4 +215,4 @@ Die meisten Active-Effekte sind mit allen modernen Browsern kompatibel. Der Ripp
 
 - [Hover-Effekte](/docs/effects/interaction/hover.md) - Effekte beim Überfahren mit der Maus
 - [Focus-Effekte](/docs/effects/interaction/focus.md) - Effekte beim Fokussieren von Elementen
-- [Transitions](/docs/effects/transitions.md) - Übergänge zwischen Zuständen 
+- [Transitions](/docs/effects/transitions.md) - Übergänge zwischen Statesn 

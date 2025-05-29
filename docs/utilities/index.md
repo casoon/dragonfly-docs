@@ -5,15 +5,15 @@ category: Utilities
 
 # Utility Classes
 
-Das Utility-System der Casoon UI Library bietet eine umfassende Sammlung von CSS-Dienstprogrammklassen für schnelle Styling-Anpassungen ohne die Notwendigkeit, benutzerdefiniertes CSS zu schreiben.
+Das Utility-System der Casoon UI Library bietet eine umfassende Sammlung von CSS-Dienstprogrammklassen für schnelle Styling-Customizations ohne die Notwendigkeit, benutzerdefiniertes CSS zu schreiben.
 
-## Übersicht
+## Overview
 
 Das Utility-System umfasst Klassen für:
 
-- **Farben**: Text-, Hintergrund- und Rahmenfarben
+- **Colors**: Text-, Hintergrund- und Rahmenfarben
 - **Spacing**: Abstände, Ränder und Polsterung
-- **Typografie**: Schriftarten, -größen, -gewichte und Textausrichtung
+- **Typography**: Schriftarten, -größen, -gewichte und Textausrichtung
 - **Display**: Anzeigeeigenschaften und Sichtbarkeit
 - **Flexbox**: Flexible Box-Layout-Steuerung
 - **Grid**: CSS-Grid-Layout-Steuerung
@@ -36,7 +36,7 @@ Utility-Klassen folgen einem konsistenten Benennungsmuster:
 ```.[Eigenschaft]-[Variante]-[Wert]
 ```
 
-Beispiele:
+Examples:
 - `.color-primary-500`: Textfarbe auf Primary-500 setzen
 - `.bg-neutral-100`: Hintergrundfarbe auf Neutral-100 setzen
 - `.m-m`: Margin auf mittleren Wert setzen
@@ -91,7 +91,7 @@ Durch Präfixe können Utilities responsive angewendet werden:
 <p class="text-right">Rechtsbündiger Text</p>
 ```
 
-## Verwendung
+## Usage
 
 Das Utility-System kann als Ganzes oder modular eingebunden werden:
 
@@ -104,7 +104,7 @@ Das Utility-System kann als Ganzes oder modular eingebunden werden:
 @import '@casoon/ui-lib/utilities/colors.css';
 ```
 
-## Weiterführende Themen
+## Further Topics
 
 - [Color Utilities](/utilities/colors)
 - [Spacing Utilities](/utilities/spacing)

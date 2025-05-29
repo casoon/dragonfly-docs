@@ -2,7 +2,7 @@
 
 Skeleton-Effekte werden verwendet, um den Ladezustand von Inhalten auf einer Webseite visuell darzustellen. Die `@casoon/ui-lib` bietet verschiedene Skeleton-Effekte, die dazu beitragen, das Ladeerlebnis zu verbessern und die wahrgenommene Leistung zu steigern.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Skeleton-Effekt kann auf jedes Element angewendet werden:
 
@@ -22,17 +22,17 @@ Die folgenden CSS-Klassen stehen für Skeleton-Effekte zur Verfügung:
 | `.skeleton-image` | Skeleton für Bilder |
 | `.skeleton-avatar` | Skeleton für Profilbilder |
 | `.skeleton-button` | Skeleton für Buttons |
-| `.skeleton-card` | Skeleton für Karten |
+| `.skeleton-card` | Skeleton für Cardn |
 | `.skeleton-list` | Skeleton für Listen |
-| `.skeleton-table` | Skeleton für Tabellen |
-| `.skeleton-input` | Skeleton für Eingabefelder |
+| `.skeleton-table` | Skeleton für Tablen |
+| `.skeleton-input` | Skeleton für Inputer |
 | `.skeleton-circle` | Kreisförmiger Skeleton |
 | `.skeleton-rectangle` | Rechteckiger Skeleton |
 | `.skeleton-rounded` | Abgerundeter Skeleton |
 | `.skeleton-pulse` | Pulsierender Skeleton-Effekt |
 | `.skeleton-wave` | Welliger Skeleton-Effekt |
 
-## Varianten
+## Variants
 
 ### Text-Skeleton
 
@@ -42,7 +42,7 @@ Der Text-Skeleton simuliert Textzeilen:
 <div class="skeleton-text">Ladender Textinhalt</div>
 ```
 
-Varianten für unterschiedliche Textlängen:
+Variants für unterschiedliche Textlängen:
 
 ```html
 <div class="skeleton-text-short">Kurzer Text</div>
@@ -59,7 +59,7 @@ Der Heading-Skeleton simuliert Überschriften:
 <div class="skeleton-heading">Ladende Überschrift</div>
 ```
 
-Varianten für unterschiedliche Überschriftengrößen:
+Variants für unterschiedliche Überschriftengrößen:
 
 ```html
 <div class="skeleton-heading-h1">H1 Überschrift</div>
@@ -75,7 +75,7 @@ Der Image-Skeleton simuliert ein ladendes Bild:
 <div class="skeleton-image">Ladendes Bild</div>
 ```
 
-Varianten für unterschiedliche Bildgrößen und -formate:
+Variants für unterschiedliche Bildgrößen und -formate:
 
 ```html
 <div class="skeleton-image-small">Kleines Bild</div>
@@ -94,7 +94,7 @@ Der Avatar-Skeleton simuliert ein ladendes Profilbild:
 <div class="skeleton-avatar">Ladendes Profilbild</div>
 ```
 
-Varianten für unterschiedliche Avatar-Größen:
+Variants für unterschiedliche Avatar-Sizes:
 
 ```html
 <div class="skeleton-avatar-small">Kleiner Avatar</div>
@@ -110,7 +110,7 @@ Der Button-Skeleton simuliert einen ladenden Button:
 <div class="skeleton-button">Ladender Button</div>
 ```
 
-Varianten für unterschiedliche Button-Stile:
+Variants für unterschiedliche Button-Styles:
 
 ```html
 <div class="skeleton-button-small">Kleiner Button</div>
@@ -122,7 +122,7 @@ Varianten für unterschiedliche Button-Stile:
 
 ### Card-Skeleton
 
-Der Card-Skeleton simuliert eine ladende Karte:
+Der Card-Skeleton simuliert eine ladende Card:
 
 ```html
 <div class="skeleton-card">
@@ -149,7 +149,7 @@ Der List-Skeleton simuliert eine ladende Liste:
 
 ### Table-Skeleton
 
-Der Table-Skeleton simuliert eine ladende Tabelle:
+Der Table-Skeleton simuliert eine ladende Table:
 
 ```html
 <div class="skeleton-table">
@@ -162,7 +162,7 @@ Der Table-Skeleton simuliert eine ladende Tabelle:
 
 ### Form-Skeleton
 
-Der Form-Skeleton simuliert ein ladendes Formular:
+Der Form-Skeleton simuliert ein ladendes Form:
 
 ```html
 <div class="skeleton-form">
@@ -172,7 +172,7 @@ Der Form-Skeleton simuliert ein ladendes Formular:
 </div>
 ```
 
-## Animation-Varianten
+## Animation-Variants
 
 Verschiedene Animationsstile für Skeleton-Effekte:
 
@@ -208,9 +208,9 @@ Die Fade-Animation lässt den Skeleton ein- und ausblenden:
 <div class="skeleton-fade">Ein- und ausblendender Skeleton</div>
 ```
 
-## Komplexe Komponenten
+## Komplexe Components
 
-Skeleton-Effekte für komplexere UI-Komponenten:
+Skeleton-Effekte für komplexere UI-Components:
 
 ### Profil-Skeleton
 
@@ -277,7 +277,7 @@ Skeleton-Effekte für komplexere UI-Komponenten:
 
 ## Anpassung
 
-Die Skeleton-Effekte können über CSS-Variablen angepasst werden:
+Die Skeleton-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -289,7 +289,7 @@ Die Skeleton-Effekte können über CSS-Variablen angepasst werden:
   --skeleton-animation-duration: 1.5s;
   --skeleton-animation-timing: ease-in-out;
   
-  /* Größenparameter */
+  /* Sizesparameter */
   --skeleton-text-height: 1em;
   --skeleton-heading-height: 1.8em;
   --skeleton-image-height: 200px;
@@ -341,7 +341,7 @@ function showSkeletonLoader(containerId, isLoading) {
   }
 }
 
-// Beispiel für das Laden von Daten mit Fetch
+// Example für das Laden von Daten mit Fetch
 function loadData(containerId, url) {
   const container = document.getElementById(containerId);
   
@@ -368,9 +368,9 @@ function loadData(containerId, url) {
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Skeleton-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Skeleton-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **ARIA-Attribute**: Verwenden Sie geeignete ARIA-Attribute, um anzuzeigen, dass Inhalte geladen werden
 2. **Status-Updates**: Informieren Sie Screenreader über den Ladezustand
@@ -406,7 +406,7 @@ Bei der Verwendung von Skeleton-Effekten sollten folgende Barrierefreiheitsaspek
 
 ## Animation-Implementierung
 
-Beispielimplementierung der Skeleton-Animationen:
+Exampleimplementierung der Skeleton-Animationen:
 
 ```css
 /* Pulse-Animation */

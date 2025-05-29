@@ -5,11 +5,11 @@ category: Guide
 
 # Fokus-Effekte
 
-Die `focus.css` Datei bietet eine Sammlung von Effekten, die angewendet werden, wenn ein Element den Fokus erhält (z.B. durch Tastaturnavigation oder Mausklick). Diese Effekte verbessern die Barrierefreiheit Ihrer Benutzeroberfläche, indem sie den aktuellen Fokus deutlich sichtbar machen, und unterstützen gleichzeitig eine ästhetisch ansprechende Gestaltung.
+Die `focus.css` Datei bietet eine Sammlung von Effekten, die angewendet werden, wenn ein Element den Fokus erhält (z.B. durch Tastaturnavigation oder Mausklick). Diese Effekte verbessern die Accessibility Ihrer Benutzeroberfläche, indem sie den aktuellen Fokus deutlich sichtbar machen, und unterstützen gleichzeitig eine ästhetisch ansprechende Gestaltung.
 
-## Übersicht
+## Overview
 
-Fokus-Effekte sind entscheidend für die Barrierefreiheit und Benutzerfreundlichkeit, besonders für Tastaturnutzer und Menschen mit motorischen Einschränkungen. Die Casoon UI Library bietet eine Reihe von modernen, anpassbaren Fokus-Effekten, die sowohl funktional als auch ästhetisch ansprechend sind.
+Fokus-Effekte sind entscheidend für die Accessibility und User-friendliness, besonders für Tastaturnutzer und Menschen mit motorischen Einschränkungen. Die Casoon UI Library bietet eine Reihe von modernen, anpassbaren Fokus-Effekten, die sowohl funktional als auch ästhetisch ansprechend sind.
 
 ## Basis-Fokus-Effekte
 
@@ -19,7 +19,7 @@ Fokus-Effekte sind entscheidend für die Barrierefreiheit und Benutzerfreundlich
 <button class="focus-ring-sm">Kleiner Fokusring</button>
 <button class="focus-ring-lg">Großer Fokusring</button>
 
-<!-- Fokusring-Stile -->
+<!-- Fokusring-Styles -->
 <button class="focus-ring-solid">Durchgezogener Fokusring</button>
 <button class="focus-ring-dashed">Gestrichelter Fokusring</button>
 <button class="focus-ring-dotted">Gepunkteter Fokusring</button>
@@ -94,17 +94,17 @@ Fokus-Effekte sind entscheidend für die Barrierefreiheit und Benutzerfreundlich
 <button class="focus-lift-lg">Hebt sich stark bei Fokus</button>
 ```
 
-## Komponentenspezifische Fokuseffekte
+## Componentsspezifische Fokuseffekte
 
 ```html
-<!-- Formular-Eingabefelder -->
-<input type="text" class="focus-field" placeholder="Eingabefeld mit Fokuseffekt">
+<!-- Form-Inputer -->
+<input type="text" class="focus-field" placeholder="Input mit Fokuseffekt">
 <input type="text" class="focus-field-underline" placeholder="Unterstrichener Fokuseffekt">
 <input type="text" class="focus-field-float-label" placeholder="Schwebende Beschriftung">
 
-<!-- Karten und Container -->
+<!-- Cardn und Container -->
 <div class="card focus-card">
-  <div class="card-content">Karte mit Fokuseffekt</div>
+  <div class="card-content">Card mit Fokuseffekt</div>
 </div>
 
 <!-- Links und Navigationselemente -->
@@ -146,9 +146,9 @@ Fokus-Effekte sind entscheidend für die Barrierefreiheit und Benutzerfreundlich
 </div>
 ```
 
-## Anpassung über CSS-Variablen
+## Anpassung über CSS Variables
 
-Die Fokuseffekte können über CSS-Variablen angepasst werden:
+Die Fokuseffekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -189,10 +189,10 @@ Die Fokuseffekte können über CSS-Variablen angepasst werden:
 
 ## Nur-Tastatur-Fokuseffekte
 
-Ein wichtiger Aspekt der Barrierefreiheit ist die Unterscheidung zwischen Maus- und Tastaturfokus mit `:focus-visible`:
+Ein wichtiger Aspekt der Accessibility ist die Unterscheidung zwischen Maus- und Tastaturfokus mit `:focus-visible`:
 
 ```css
-/* Beispiel für einen Fokuseffekt, der nur bei Tastaturfokus sichtbar ist */
+/* Example für einen Fokuseffekt, der nur bei Tastaturfokus sichtbar ist */
 .focus-keyboard-only:focus {
   /* Kein sichtbarer Fokuseffekt bei Mausklick */
   outline: none;
@@ -205,7 +205,7 @@ Ein wichtiger Aspekt der Barrierefreiheit ist die Unterscheidung zwischen Maus- 
 }
 ```
 
-## Barrierefreiheit-Überlegungen
+## Accessibility-Überlegungen
 
 ```css
 /* Hoher Kontrast für bessere Sichtbarkeit */
@@ -238,13 +238,13 @@ Ein wichtiger Aspekt der Barrierefreiheit ist die Unterscheidung zwischen Maus- 
 }
 ```
 
-## Formular-Element-Fokus
+## Form-Element-Fokus
 
 ```html
 <!-- Textfelder -->
 <input type="text" class="input focus-field" placeholder="Textfeld">
 
-<!-- Auswahlfelder -->
+<!-- Checkboxer -->
 <select class="select focus-field">
   <option>Option 1</option>
   <option>Option 2</option>
@@ -283,7 +283,7 @@ Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
 }
 ```
 
-## Praktische Beispiele
+## Praktische Examples
 
 ### Barrierefreies Navigationsmenü
 
@@ -325,7 +325,7 @@ Fokus-Indikatoren, die sich an ihre Umgebung anpassen:
 </form>
 ```
 
-### Interaktive Karten mit Fokuseffekten
+### Interaktive Cardn mit Fokuseffekten
 
 ```html
 <div class="card-grid">
@@ -362,11 +362,11 @@ Einige Fokuseffekte können Auswirkungen auf die Performance haben:
 
 1. **Tastaturzugänglichkeit**: Stellen Sie sicher, dass alle interaktiven Elemente mit der Tastatur fokussierbar sind
 2. **Deutliche Sichtbarkeit**: Fokuseffekte sollten deutlich sichtbar sein, mit ausreichendem Kontrast
-3. **Konsistenz**: Verwenden Sie ähnliche Fokuseffekte für ähnliche Elemente
+3. **Consistency**: Verwenden Sie ähnliche Fokuseffekte für ähnliche Elemente
 4. **Niemals entfernen**: Entfernen Sie nie den Fokuseffekt ohne einen geeigneten Ersatz anzubieten (`outline: none` ist nur mit alternativem Fokusindikator erlaubt)
 5. **Unterscheide `:focus` und `:focus-visible`**: Nutzen Sie `:focus-visible` für Effekte, die nur bei Tastaturfokus sichtbar sein sollen
 
-### Beispiel für korrekte Fokus-Behandlung:
+### Example für korrekte Fokus-Behandlung:
 
 ```css
 /* FALSCH: Fokus ohne Ersatz entfernt */
@@ -390,11 +390,11 @@ Einige Fokuseffekte können Auswirkungen auf die Performance haben:
 }
 ```
 
-## Integration mit anderen Komponenten
+## Integration mit anderen Components
 
 Fokuseffekte sollten in der gesamten Anwendung konsistent und zugänglich sein. Dies gilt für alle interaktiven Elemente:
 
 1. **Buttons und Links**: Deutliche Fokuseffekte
-2. **Formularelemente**: Konsistente Darstellung bei Fokus
-3. **Karten und andere Container**: Wenn fokussierbar, mit klarem Fokusindikator
-4. **Benutzerdefinierte Komponenten**: ARIA-konforme Fokussteuerung und visuelle Indikatoren 
+2. **Formelemente**: Konsistente Darstellung bei Fokus
+3. **Cardn und andere Container**: Wenn fokussierbar, mit klarem Fokusindikator
+4. **Benutzerdefinierte Components**: ARIA-konforme Fokussteuerung und visuelle Indikatoren 

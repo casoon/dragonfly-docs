@@ -61,7 +61,7 @@ Importieren Sie das Noise-Effekte-Modul über CSS:
 | `.noise-shift` | Sanft bewegender Noise-Effekt |
 | `.noise-flicker` | Flackernder Noise-Effekt |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Noise-Hintergründe
 
@@ -196,7 +196,7 @@ Importieren Sie das Noise-Effekte-Modul über CSS:
   
   <div class="card noise-card noise-bg noise-subtle">
     <h3>Card mit Noise</h3>
-    <p>Diese Karte verwendet einen subtilen Noise-Effekt im Hintergrund.</p>
+    <p>Diese Card verwendet einen subtilen Noise-Effekt im Hintergrund.</p>
   </div>
   
   <div class="badge noise-badge noise-bg noise-strong">
@@ -244,7 +244,7 @@ Importieren Sie das Noise-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Noise-Effekte können über CSS-Variablen angepasst werden:
+Die Noise-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -254,7 +254,7 @@ Die Noise-Effekte können über CSS-Variablen angepasst werden:
   --noise-scale: 100px;
   --noise-blur: 0.5px;
   
-  /* Noise-Typen-Varianten */
+  /* Noise-Typen-Variants */
   --noise-subtle-opacity: 0.05;
   --noise-medium-opacity: 0.15;
   --noise-strong-opacity: 0.3;
@@ -388,9 +388,9 @@ Der grundlegende Noise-Effekt wird durch generierte Hintergrundbilder und Filter
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Noise-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Noise-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass Text auf Noise-Hintergründen ausreichend lesbar bleibt
 2. **Bewegung**: Bieten Sie eine Option zum Deaktivieren von animierten Noise-Effekten für Nutzer mit Bewegungsempfindlichkeiten
@@ -450,6 +450,6 @@ Die Noise-Effekte werden von allen modernen Browsern unterstützt.
 |--------|--------|---------|--------|------|------|
 | SVG-Filter | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
 Für ältere Browser, die SVG-Filter nicht vollständig unterstützen, werden alternative Lösungen mit Bitmap-Texturen bereitgestellt. 

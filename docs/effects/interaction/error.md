@@ -2,7 +2,7 @@
 
 Error-Effekte werden verwendet, um dem Benutzer visuell zu signalisieren, dass bei einer Interaktion ein Fehler aufgetreten ist oder dass ein Element einen fehlerhaften Zustand aufweist. Die `@casoon/ui-lib` bietet verschiedene Error-Effekte, die dazu beitragen, Fehlerzustände klar und konsistent darzustellen.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Error-Effekt kann auf jedes Element angewendet werden:
 
@@ -25,7 +25,7 @@ Die folgenden CSS-Klassen stehen für Error-Effekte zur Verfügung:
 | `.error-glow` | Fehler mit rotem Glüheffekt |
 | `.error-icon` | Fehler mit Icon-Indikator |
 
-## Varianten
+## Variants
 
 ### Border-Effekt
 
@@ -95,7 +95,7 @@ Fehlerdarstellung mit Error-Icon:
 
 Error-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
-### Formularelemente
+### Formelemente
 
 ```html
 <div class="form-group">
@@ -140,7 +140,7 @@ Error-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Error-Effekte können über CSS-Variablen angepasst werden:
+Die Error-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -168,7 +168,7 @@ Die Error-Effekte können über CSS-Variablen angepasst werden:
 
 ## Dynamische Fehlerdarstellung
 
-Error-Effekte können dynamisch hinzugefügt werden, typischerweise bei der Formularvalidierung:
+Error-Effekte können dynamisch hinzugefügt werden, typischerweise bei der Formvalidierung:
 
 ```html
 <form id="example-form">
@@ -189,7 +189,7 @@ Error-Effekte können dynamisch hinzugefügt werden, typischerweise bei der Form
 ```
 
 ```javascript
-// Formularvalidierung mit Error-Effekten
+// Formvalidierung mit Error-Effekten
 const form = document.getElementById('example-form');
 
 form.addEventListener('submit', function(event) {
@@ -215,10 +215,10 @@ form.addEventListener('submit', function(event) {
     hasErrors = true;
   }
   
-  // Wenn keine Fehler, Formular absenden
+  // Wenn keine Fehler, Form absenden
   if (!hasErrors) {
-    // Formular absenden...
-    console.log('Formular wird abgesendet');
+    // Form absenden...
+    console.log('Form wird abgesendet');
   }
 });
 
@@ -261,18 +261,18 @@ function isValidEmail(email) {
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Error-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Error-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
-1. **Semantik**: Verwenden Sie `aria-invalid="true"` für fehlerhafte Eingabefelder
+1. **Semantik**: Verwenden Sie `aria-invalid="true"` für fehlerhafte Inputer
 2. **Fehlermeldungen**: Verbinden Sie Fehlermeldungen mit `aria-describedby`
 3. **Kontrast**: Achten Sie auf ausreichenden Kontrast für Fehlerfarben
 4. **Multiple Signale**: Verlassen Sie sich nicht nur auf Farbe zur Fehlerdarstellung
 5. **Live-Regions**: Verwenden Sie `aria-live` für dynamisch hinzugefügte Fehlermeldungen
 
 ```html
-<!-- Barrierefreies Formular mit Error-Effekten -->
+<!-- Barrierefreies Form mit Error-Effekten -->
 <div class="form-group">
   <label for="creditcard">Kreditkartennummer</label>
   <input 
@@ -315,7 +315,7 @@ Die Dauer und das Timing von Error-Animationen sind wichtig für eine gute Benut
 }
 ```
 
-## Formularlive-Validierung
+## Formlive-Validierung
 
 Error-Effekte können mit Live-Validierung kombiniert werden:
 

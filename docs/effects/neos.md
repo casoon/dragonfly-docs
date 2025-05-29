@@ -9,7 +9,7 @@ Die Neos-Effekte der Casoon UI Library bieten eine Sammlung moderner, futuristis
 
 ## Überblick
 
-Die Neos-Effekte kombinieren leuchtende Farben, scharfe Kontraste und dynamische Elemente, um eine futuristische Ästhetik zu schaffen. Sie eignen sich hervorragend für moderne Web-Apps, Spieleoberflächen und Projekte mit Cyberpunk- oder Sci-Fi-Thematik.
+Die Neos-Effekte kombinieren leuchtende Colors, scharfe Kontraste und dynamische Elemente, um eine futuristische Ästhetik zu schaffen. Sie eignen sich hervorragend für moderne Web-Apps, Spieleoberflächen und Projekte mit Cyberpunk- oder Sci-Fi-Thematik.
 
 ## Installation
 
@@ -29,10 +29,10 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
 | `.neos-text` | Text mit Neos-Stilisierung |
 | `.neos-border` | Element mit leuchtender Neos-Umrandung |
 | `.neos-box` | Box mit Neos-Stilisierung |
-| `.neos-card` | Karte mit Neos-Stilisierung |
+| `.neos-card` | Card mit Neos-Stilisierung |
 | `.neos-button` | Button mit Neos-Stilisierung |
 
-### Neos-Farben
+### Neos-Colors
 
 | Klasse | Beschreibung |
 |--------|-------------|
@@ -70,7 +70,7 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
 | `.neos-dashboard` | Dashboard mit Neos-Stilisierung |
 | `.neos-hud` | Head-up-Display-Stil |
 
-## Beispiele
+## Examples
 
 ### Neos-Button
 
@@ -122,7 +122,7 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
 </style>
 ```
 
-### Neos-Karte
+### Neos-Card
 
 ```html
 <div class="neos-card neos-purple">
@@ -465,7 +465,7 @@ Importieren Sie das Neos-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Neos-Effekte können über CSS-Variablen angepasst werden:
+Die Neos-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -518,16 +518,16 @@ Die Neos-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Neos-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Neos-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie trotz leuchtender Effekte einen ausreichenden Kontrast sicher
 2. **Flackernde Effekte**: Vermeiden Sie übermäßig flackernde Effekte für Menschen mit Empfindlichkeiten
-3. **Alternative Stile**: Bieten Sie eine nicht-Neos Version für Nutzer, die reduzierte Bewegung bevorzugen
+3. **Alternative Styles**: Bieten Sie eine nicht-Neos Version für Nutzer, die reduzierte Bewegung bevorzugen
 
 ```css
-/* Alternative Stile für reduzierte Bewegung */
+/* Alternative Styles für reduzierte Bewegung */
 @media (prefers-reduced-motion: reduce) {
   .neos-pulse, 
   .neos-flicker, 

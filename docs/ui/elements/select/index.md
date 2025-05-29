@@ -6,7 +6,7 @@ outline: deep
 
 # Select
 
-Das Select-Element bietet Dropdown-Auswahlmenüs für Formulare und ermöglicht Benutzern, eine Option aus einer vordefinierten Liste auszuwählen. Es ist ein wichtiges Element für Formulare und Benutzereinstellungen.
+Das Select-Element bietet Dropdown-Selects für Forme und ermöglicht Benutzern, eine Option aus einer vordefinierten Liste auszuwählen. Es ist ein wichtiges Element für Forme und Benutzereinstellungen.
 
 ## Installation
 
@@ -27,7 +27,7 @@ npm install @casoon/ui-lib
 @import '@casoon/ui-lib/components/select.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <select class="select">
@@ -45,11 +45,11 @@ npm install @casoon/ui-lib
   </select>
 </div>
 
-## Varianten
+## Variants
 
-### Größenvarianten
+### Sizesvarianten
 
-Es gibt drei Größenvarianten für das Select-Element: klein, mittel (Standard) und groß.
+Es gibt drei Sizesvarianten für das Select-Element: klein, mittel (Standard) und groß.
 
 ```html
 <select class="select sm">
@@ -199,7 +199,7 @@ Es gibt drei Größenvarianten für das Select-Element: klein, mittel (Standard)
 
 ## Anpassung
 
-Das Select-Element kann über CSS-Variablen angepasst werden:
+Das Select-Element kann über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -226,9 +226,9 @@ Das Select-Element kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+Für eine bessere Accessibility beachten Sie bitte folgende Punkte:
 
 - Verwenden Sie immer ein sichtbares Label (mit einem `<label>`-Element), das mit dem Select-Element verknüpft ist
 - Stellen Sie einen ausreichenden Farbkontrast für Text und Rahmen sicher
@@ -241,8 +241,8 @@ Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
 
 - Verwenden Sie Select-Elemente, um eine (oder mehrere) Optionen aus einer Liste auszuwählen
 - Bieten Sie aussagekräftige Option-Texte an, die die Auswahl eindeutig beschreiben
-- Strukturieren Sie lange Listen mit Optionsgruppen für bessere Übersichtlichkeit
-- Verwenden Sie angemessene Größen basierend auf dem Kontext und der Wichtigkeit des Elements
+- Strukturieren Sie lange Listen mit Optionsgruppen für bessere Overviewlichkeit
+- Verwenden Sie angemessene Sizes basierend auf dem Kontext und der Wichtigkeit des Elements
 - Berücksichtigen Sie die mobile Nutzung bei der Gestaltung Ihrer Select-Elemente
 
 ## Browser-Kompatibilität
@@ -255,4 +255,4 @@ Das Select-Element ist mit allen modernen Browsern kompatibel.
 | Anpassung des Erscheinungsbildes | ✅ | ✅ | ✅ | ✅ |
 | Mehrfachauswahl | ✅ | ✅ | ✅ | ✅ |
 | Optionsgruppen | ✅ | ✅ | ✅ | ✅ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ | 
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ | 

@@ -2,7 +2,7 @@
 
 Success-Effekte werden verwendet, um dem Benutzer visuell zu signalisieren, dass eine Aktion erfolgreich abgeschlossen wurde. Die `@casoon/ui-lib` bietet verschiedene Success-Effekte, die dazu beitragen, positive Feedbacks klar und ansprechend darzustellen.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Success-Effekt kann auf jedes Element angewendet werden:
 
@@ -26,7 +26,7 @@ Die folgenden CSS-Klassen stehen für Success-Effekte zur Verfügung:
 | `.success-check` | Erfolg mit Animiertem Häkchen |
 | `.success-glow` | Erfolg mit grünem Glüheffekt |
 
-## Varianten
+## Variants
 
 ### Border-Effekt
 
@@ -107,7 +107,7 @@ Erfolgsdarstellung mit grünem Glüheffekt:
 
 Success-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
-### Formularelemente
+### Formelemente
 
 ```html
 <div class="form-group">
@@ -159,7 +159,7 @@ Success-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Success-Effekte können über CSS-Variablen angepasst werden:
+Die Success-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -314,14 +314,14 @@ function showSuccessEffect(element, type = 'border', duration = 3000) {
   };
 }
 
-// Verwendung
+// Usage
 const submitButton = document.getElementById('submit-button');
 const formElement = document.getElementById('my-form');
 
 formElement.addEventListener('submit', function(event) {
   event.preventDefault();
   
-  // Simulieren Sie eine Formularübermittlung
+  // Simulieren Sie eine Formübermittlung
   setTimeout(() => {
     // Success-Effekt auf dem Button anzeigen
     showSuccessEffect(submitButton, 'bg');
@@ -420,9 +420,9 @@ Success-Effekte können zur Anzeige von Fortschritten verwendet werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Success-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Success-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Semantik**: Verwenden Sie passende ARIA-Attribute wie `role="status"`
 2. **Live-Regions**: Verwenden Sie `aria-live="polite"` für dynamische Updates
@@ -444,9 +444,9 @@ Bei der Verwendung von Success-Effekten sollten folgende Barrierefreiheitsaspekt
 </div>
 ```
 
-## Success-States in Formularen
+## Success-States in Formen
 
-Success-Effekte in Formularen verbessern die Benutzererfahrung:
+Success-Effekte in Formen verbessern die Benutzererfahrung:
 
 ```html
 <form id="signup-form">

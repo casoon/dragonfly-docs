@@ -2,7 +2,7 @@
 
 Backdrop-Effekte werden verwendet, um einen visuellen Hintergrund oder eine Ebene hinter einem Element zu erstellen. Die `@casoon/ui-lib` bietet verschiedene Backdrop-Effekte, die dazu beitragen, tiefere visuelle Hierarchien und ansprechende Benutzeroberflächen zu gestalten.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Backdrop-Effekt kann auf jedes Element angewendet werden:
 
@@ -29,7 +29,7 @@ Die folgenden CSS-Klassen stehen für Backdrop-Effekte zur Verfügung:
 | `.backdrop-shadow` | Schattenhintergrund |
 | `.backdrop-glow` | Glühender Hintergrund |
 
-## Varianten
+## Variants
 
 ### Blur-Effekt
 
@@ -87,7 +87,7 @@ Der Gradient-Effekt erstellt einen Verlaufshintergrund:
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="backdrop-gradient-linear">Linearer Verlauf</div>
@@ -158,12 +158,12 @@ Der Glow-Effekt erstellt einen glühenden Hintergrund:
 
 Backdrop-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
-### Karten und Container
+### Cardn und Container
 
 ```html
 <div class="card backdrop-blur">
-  <div class="card-header">Kartenüberschrift</div>
-  <div class="card-body">Karteninhalt mit unscharfem Hintergrund</div>
+  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-body">Cardninhalt mit unscharfem Hintergrund</div>
 </div>
 
 <div class="container backdrop-frosted">
@@ -220,7 +220,7 @@ Backdrop-Effekte können mit Interaktionen kombiniert werden:
 ```html
 <div class="card hover-backdrop-blur">
   <div class="card-content">
-    Karte mit Backdrop-Effekt bei Hover
+    Card mit Backdrop-Effekt bei Hover
   </div>
 </div>
 
@@ -231,7 +231,7 @@ Backdrop-Effekte können mit Interaktionen kombiniert werden:
 
 ## Anpassung
 
-Die Backdrop-Effekte können über CSS-Variablen angepasst werden:
+Die Backdrop-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -339,9 +339,9 @@ Backdrops können auf verschiedene Arten positioniert werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Backdrop-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Backdrop-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass der Text auf dem Backdrop ausreichenden Kontrast bietet
 2. **Lesbarkeit**: Backdrop-Effekte sollten die Lesbarkeit von Text nicht beeinträchtigen

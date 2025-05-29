@@ -7,9 +7,9 @@ category: Guide
 
 Die `gradients.css` Datei bietet eine umfangreiche Sammlung von Farbverlaufseffekten, die Ihren UI-Elementen Tiefe, Dimension und visuelle Attraktivität verleihen. Mit verschiedenen Arten, Richtungen und Farbkombinationen können Sie einzigartige und ansprechende Designs erstellen.
 
-## Übersicht
+## Overview
 
-Farbverläufe (Gradients) sind ein vielseitiges Designelement, das überall von Hintergründen bis zu Texten eingesetzt werden kann. Die Casoon UI Library bietet vorgefertigte Gradient-Klassen für häufige Anwendungsfälle sowie CSS-Variablen für benutzerdefinierte Anpassungen.
+Farbverläufe (Gradients) sind ein vielseitiges Designelement, das überall von Hintergründen bis zu Texten eingesetzt werden kann. Die Casoon UI Library bietet vorgefertigte Gradient-Klassen für häufige Use Cases sowie CSS Variables für benutzerdefinierte Customizations.
 
 ## Basis-Farbverläufe
 
@@ -72,13 +72,13 @@ Farbverläufe (Gradients) sind ein vielseitiges Designelement, das überall von 
 ## Mehrfarbige Farbverläufe
 
 ```html
-<!-- Zwei-Farben-Verläufe -->
+<!-- Zwei-Colors-Verläufe -->
 <div class="gradient-blue-green">Blau zu Grün</div>
 <div class="gradient-purple-pink">Lila zu Pink</div>
 <div class="gradient-orange-red">Orange zu Rot</div>
 <div class="gradient-yellow-green">Gelb zu Grün</div>
 
-<!-- Drei-Farben-Verläufe -->
+<!-- Drei-Colors-Verläufe -->
 <div class="gradient-rainbow">Regenbogenfarben (Rot, Gelb, Blau)</div>
 <div class="gradient-sunset">Sonnenuntergang (Orange, Rosa, Lila)</div>
 <div class="gradient-ocean">Ozean (Hellblau, Blau, Dunkelblau)</div>
@@ -184,9 +184,9 @@ Farbverläufe (Gradients) sind ein vielseitiges Designelement, das überall von 
 <button class="gradient-active">Ändert Farbverlauf bei Aktivierung</button>
 ```
 
-## Anpassung über CSS-Variablen
+## Anpassung über CSS Variables
 
-Die Farbverläufe können über CSS-Variablen angepasst werden:
+Die Farbverläufe können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -254,7 +254,7 @@ Die Farbverläufe können über CSS-Variablen angepasst werden:
   background: linear-gradient(var(--gradient-angle), var(--dark-variant), var(--color-primary), var(--light-variant));
 }
 
-/* Mit CSS-Variablen aus Benutzereingaben (über Style-Attribut) */
+/* Mit CSS Variables aus Benutzereingaben (über Style-Attribut) */
 .gradient-custom {
   background: linear-gradient(var(--custom-angle, 90deg), 
                              var(--custom-color-start, #3498db), 
@@ -262,9 +262,9 @@ Die Farbverläufe können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Farbverläufen sollten einige wichtige Aspekte der Barrierefreiheit beachtet werden:
+Bei der Usage von Farbverläufen sollten einige wichtige Aspekte der Accessibility beachtet werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass Text auf Farbverläufen ausreichenden Kontrast hat
 2. **Farbfehlsichtigkeit**: Vermeiden Sie Farbkombinationen, die für Menschen mit Farbfehlsichtigkeit problematisch sein könnten
@@ -319,7 +319,7 @@ Farbverläufe können die Rendering-Performance beeinflussen:
 }
 ```
 
-## Praktische Beispiele
+## Praktische Examples
 
 ### Moderne Button mit Farbverlauf
 
@@ -337,12 +337,12 @@ Farbverläufe können die Rendering-Performance beeinflussen:
 </button>
 ```
 
-### Karten mit Farbverlaufshintergrund
+### Cardn mit Farbverlaufshintergrund
 
 ```html
 <div class="card gradient-glass-light">
   <div class="card-header">
-    <h3 class="text-gradient-primary">Gradient-Karte</h3>
+    <h3 class="text-gradient-primary">Gradient-Card</h3>
   </div>
   <div class="card-body">
     <p>Inhalt mit Glas-Farbverlaufseffekt</p>
@@ -368,8 +368,8 @@ Farbverläufe können die Rendering-Performance beeinflussen:
 ## Best Practices
 
 1. **Sparsam einsetzen**: Verwenden Sie Farbverläufe gezielt und vermeiden Sie Überladung
-2. **Harmonische Farben wählen**: Stellen Sie sicher, dass die Farbverlaufsfarben zum Farbschema Ihrer Anwendung passen
-3. **Konsistenz wahren**: Verwenden Sie ähnliche Farbverläufe für ähnliche Elemente
+2. **Harmonische Colors wählen**: Stellen Sie sicher, dass die Farbverlaufsfarben zum Farbschema Ihrer Anwendung passen
+3. **Consistency wahren**: Verwenden Sie ähnliche Farbverläufe für ähnliche Elemente
 4. **Lesbarkeit sicherstellen**: Text auf Farbverläufen sollte gut lesbar sein
-5. **Barrierefreiheit beachten**: Berücksichtigen Sie Farbfehlsichtigkeit und ausreichenden Kontrast
+5. **Accessibility beachten**: Berücksichtigen Sie Farbfehlsichtigkeit und ausreichenden Kontrast
 ``` 

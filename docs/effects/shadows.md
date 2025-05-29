@@ -46,7 +46,7 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
 | `.shadow-gradient` | Verlaufender Schatten mit Farbübergang |
 | `.shadow-multiple` | Kombination aus mehreren Schatten für komplexe Effekte |
 
-### Schatten-Farben
+### Schatten-Colors
 
 | Klasse | Beschreibung |
 |--------|-------------|
@@ -72,7 +72,7 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
 | `.shadow-pulse` | Pulsierender Schatten-Effekt |
 | `.shadow-float` | Schwebeeffekt mit Schatten, der Bewegung simuliert |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Schatten
 
@@ -234,14 +234,14 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
 </style>
 ```
 
-### Schatten in UI-Komponenten
+### Schatten in UI-Components
 
 ```html
 <div class="ui-shadows">
   <div class="card shadow-md">
     <div class="card-content">
-      <h3>Karte mit Schatten</h3>
-      <p>Diese Karte verwendet einen mittleren Schatten-Effekt.</p>
+      <h3>Card mit Schatten</h3>
+      <p>Diese Card verwendet einen mittleren Schatten-Effekt.</p>
       <button class="shadow-sm">Mehr erfahren</button>
     </div>
   </div>
@@ -261,7 +261,7 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
   </div>
   
   <div class="form-control shadow-inner">
-    <input type="text" placeholder="Eingabefeld mit innerem Schatten">
+    <input type="text" placeholder="Input mit innerem Schatten">
   </div>
   
   <div class="dropdown shadow-directional">
@@ -414,7 +414,7 @@ Importieren Sie das Schatten-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Schatten-Effekte können über CSS-Variablen angepasst werden:
+Die Schatten-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -425,7 +425,7 @@ Die Schatten-Effekte können über CSS-Variablen angepasst werden:
   --shadow-blur: 8px;
   --shadow-spread: 0px;
   
-  /* Schatten-Größen */
+  /* Schatten-Sizes */
   --shadow-sm-blur: 4px;
   --shadow-md-blur: 8px;
   --shadow-lg-blur: 16px;
@@ -437,7 +437,7 @@ Die Schatten-Effekte können über CSS-Variablen angepasst werden:
   --shadow-soft-blur: 20px;
   --shadow-layered-blur: 12px;
   
-  /* Schatten-Farben */
+  /* Schatten-Colors */
   --shadow-dark-color: rgba(0, 0, 0, 0.2);
   --shadow-light-color: rgba(255, 255, 255, 0.2);
   --shadow-primary-color: rgba(33, 150, 243, 0.3);
@@ -461,7 +461,7 @@ Die Schatten-Effekte werden hauptsächlich durch die `box-shadow`-Eigenschaft im
   box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
 }
 
-/* Schatten-Größen */
+/* Schatten-Sizes */
 .shadow-sm {
   box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-sm-blur) var(--shadow-spread) var(--shadow-color);
 }
@@ -530,7 +530,7 @@ Die Schatten-Effekte werden hauptsächlich durch die `box-shadow`-Eigenschaft im
   z-index: -1;
 }
 
-/* Schatten-Farben */
+/* Schatten-Colors */
 .shadow-dark {
   --shadow-color: var(--shadow-dark-color);
 }
@@ -688,9 +688,9 @@ document.querySelectorAll('.shadow-dynamic').forEach(element => {
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Schatten-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Schatten-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Elementen auch ohne Schatten ausreichend ist
 2. **Animationen**: Vermeiden Sie übermäßig animierte Schatten, die für Nutzer mit vestibulären Störungen problematisch sein können
@@ -711,7 +711,7 @@ Bei der Verwendung von Schatten-Effekten sollten folgende Barrierefreiheitsaspek
   }
 }
 
-/* Verbesserte Fokus-Anzeige für bessere Barrierefreiheit */
+/* Verbesserte Fokus-Anzeige für bessere Accessibility */
 .shadow-focus:focus {
   box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.5);
   outline: 2px solid transparent; /* Beibehaltung des Fokus-Rings */
@@ -724,7 +724,7 @@ Schatten-Effekte können die Rendering-Performance beeinflussen. Beachten Sie di
 
 1. **Komplexität reduzieren**: Vermeiden Sie mehrere komplexe Schatten auf einer Seite
 2. **Hardware-Beschleunigung**: Nutzen Sie `will-change` für animierte Schatten
-3. **Schatten-Größen limitieren**: Sehr große Schatten können die Performance beeinträchtigen
+3. **Schatten-Sizes limitieren**: Sehr große Schatten können die Performance beeinträchtigen
 
 ```css
 /* Performance-Optimierung für Schatten-Effekte */
@@ -756,7 +756,7 @@ Die Schatten-Effekte werden von allen modernen Browsern unterstützt.
 | Mehrfache Schatten | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Inset-Schatten | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 | filter | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 

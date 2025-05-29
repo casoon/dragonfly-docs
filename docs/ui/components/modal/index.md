@@ -20,14 +20,14 @@ npm install @casoon/ui-lib
 ## Import
 
 ```css
-/* Import aller UI-Komponenten */
+/* Import aller UI-Components */
 @import '@casoon/ui-lib/ui.css';
 
 /* Oder nur die Modal-Komponente */
 @import '@casoon/ui-lib/ui/components/modal.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <button class="button" data-modal-trigger="example-modal">Modal öffnen</button>
@@ -80,9 +80,9 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-## Varianten
+## Variants
 
-### Größen
+### Sizes
 
 ```html
 <!-- Kleines Modal -->
@@ -204,7 +204,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-## Verwendungsbeispiele
+## Usagesbeispiele
 
 ### Bestätigungsdialog
 
@@ -256,7 +256,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-### Formular-Modal
+### Form-Modal
 
 ```html
 <button class="button" data-modal-trigger="form-modal">Neuen Benutzer hinzufügen</button>
@@ -342,7 +342,7 @@ npm install @casoon/ui-lib
 
 ## Anpassung
 
-Die Modal-Komponente kann mit CSS-Variablen angepasst werden:
+Die Modal-Komponente kann mit CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -367,16 +367,16 @@ Die Modal-Komponente kann mit CSS-Variablen angepasst werden:
   --modal-footer-padding: 1rem;
   --modal-footer-border: 1px solid var(--color-neutral-200);
   
-  /* Modal-Größen */
+  /* Modal-Sizes */
   --modal-sm-width: 20rem;
   --modal-lg-width: 40rem;
   --modal-xl-width: 56rem;
 }
 ```
 
-## JavaScript-Beispiel
+## JavaScript-Example
 
-Hier ist ein einfaches JavaScript-Beispiel für die Modal-Funktionalität:
+Hier ist ein einfaches JavaScript-Example für die Modal-Funktionalität:
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-## Barrierefreiheit
+## Accessibility
 
 - Verwende `role="dialog"` und `aria-modal="true"` für das Modal
 - Füge `aria-labelledby` hinzu, das auf die ID des Modal-Titels verweist
@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', function() {
 - Ermögliche das Schließen des Modals mit der ESC-Taste
 - Gib den Fokus an das auslösende Element zurück, wenn das Modal geschlossen wird
 - Achte auf korrekten Farbkontrast für bessere Lesbarkeit
-- Stelle sicher, dass Schaltflächen beschreibende Text- oder ARIA-Labels haben
+- Stelle sicher, dass Buttonn beschreibende Text- oder ARIA-Labels haben
 
 ## Browser-Kompatibilität
 
@@ -454,4 +454,4 @@ Die Modal-Komponente ist mit allen modernen Browsern kompatibel.
 |----------|--------|---------|--------|------|
 | Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
 | Overlay-Effekte | ✅ | ✅ | ✅ | ✅ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ |
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ |

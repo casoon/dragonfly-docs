@@ -2,7 +2,7 @@
 
 Transform-Effekte werden verwendet, um Elemente zu verschieben, zu drehen, zu skalieren oder zu verzerren, ohne das umgebende Layout zu beeinflussen. Die `@casoon/ui-lib` bietet verschiedene Transform-Effekte, die dazu beitragen, dynamische und interaktive Benutzeroberflächen zu gestalten.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Transform-Effekt kann auf jedes Element angewendet werden:
 
@@ -31,7 +31,7 @@ Die folgenden CSS-Klassen stehen für Transform-Effekte zur Verfügung:
 | `.transform-backface-visible` | Rückseite sichtbar machen |
 | `.transform-backface-hidden` | Rückseite ausblenden |
 
-## Varianten
+## Variants
 
 ### Skalierungseffekte
 
@@ -44,7 +44,7 @@ Transform-Effekte zum Vergrößern oder Verkleinern von Elementen:
 <div class="transform-scale-y">Vertikal skalieren</div>
 ```
 
-Verfügbare Größenvarianten:
+Verfügbare Sizesvarianten:
 
 ```html
 <div class="transform-scale-xs">Sehr kleine Skalierung</div>
@@ -156,8 +156,8 @@ Die Bibliothek unterstützt auch 3D-Transformationen:
 </div>
 
 <div class="transform-preserve-3d">
-  <div class="transform-rotate-y-180 transform-backface-hidden">Karte (Vorderseite)</div>
-  <div class="transform-rotate-y-0 transform-backface-hidden">Karte (Rückseite)</div>
+  <div class="transform-rotate-y-180 transform-backface-hidden">Card (Vorderseite)</div>
+  <div class="transform-rotate-y-0 transform-backface-hidden">Card (Rückseite)</div>
 </div>
 ```
 
@@ -186,12 +186,12 @@ Transform-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 <button class="btn active-transform-scale-down">Bei Klick verkleinern</button>
 ```
 
-### Karten mit Transform-Effekten
+### Cardn mit Transform-Effekten
 
 ```html
 <div class="card hover-transform-scale-up hover-transform-shadow">
-  <div class="card-header">Kartenüberschrift</div>
-  <div class="card-body">Karteninhalt</div>
+  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-body">Cardninhalt</div>
 </div>
 
 <div class="card-flip transform-preserve-3d">
@@ -238,7 +238,7 @@ Animations-Einstellungen:
 
 ## Anpassung
 
-Die Transform-Effekte können über CSS-Variablen angepasst werden:
+Die Transform-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -283,7 +283,7 @@ Die Transform-Effekte können über CSS-Variablen angepasst werden:
 
 ## CSS-Implementierung
 
-Beispiele für die CSS-Implementierung der Transform-Effekte:
+Examples für die CSS-Implementierung der Transform-Effekte:
 
 ```css
 /* Skalierungseffekte */
@@ -376,9 +376,9 @@ Beispiele für die CSS-Implementierung der Transform-Effekte:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Transform-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Transform-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Bewegung minimieren**: Übermäßige oder dauerhafte Animationen können für Menschen mit vestibulären Störungen problematisch sein
 2. **Benutzereinstellungen**: Die Einstellung `prefers-reduced-motion` respektieren
@@ -408,7 +408,7 @@ Transform-Effekte können die Leistung beeinflussen:
 1. **GPU-Beschleunigung**: Transform-Effekte werden von der GPU beschleunigt und sind performanter als andere Animationsarten
 2. **Komposit-Eigenschaften**: `transform` und `opacity` sind Eigenschaften, die nur die Compositing-Phase beeinflussen
 3. **Renderebenen**: Viele transformierte Elemente können zu einer großen Anzahl von Renderebenen führen
-4. **Hardwarebeschleunigung**: Die Verwendung von `will-change` oder `transform: translateZ(0)` kann die Leistung verbessern
+4. **Hardwarebeschleunigung**: Die Usage von `will-change` oder `transform: translateZ(0)` kann die Leistung verbessern
 
 ```css
 /* Performance-Optimierung für animierte Transformationen */

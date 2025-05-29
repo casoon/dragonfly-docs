@@ -13,13 +13,13 @@ Performance-Container optimieren die Anwendungsleistung durch folgende Mechanism
 
 1. **Virtualisierung** - Effizientes Rendering großer Datensätze
 2. **Lazy Loading** - Verzögertes Laden von Inhalten
-3. **Lazy Rendering** - Verzögertes Rendern von Komponenten
+3. **Lazy Rendering** - Verzögertes Rendern von Components
 4. **Content-Slicing** - Aufteilung großer Inhaltsblöcke
 5. **Optimized Media** - Optimierte Darstellung von Medieninhalten
 
 ## Virtualized Container
 
-Container für die effiziente Darstellung langer Listen oder Tabellen:
+Container für die effiziente Darstellung langer Listen oder Tablen:
 
 ```html
 <div class="virtualized-container" data-height="500" data-item-height="50">
@@ -153,7 +153,7 @@ class VirtualizedContainer {
   
   populateTemplate(element, data) {
     // Implementierung je nach Datenstruktur
-    // Beispiel:
+    // Example:
     const title = element.querySelector('h3');
     const description = element.querySelector('p');
     
@@ -292,7 +292,7 @@ Container für das verzögerte Rendern von nicht-kritischen UI-Elementen:
     <div class="complex-component">
       <h3>Komplexe Komponente</h3>
       <div class="chart"><!-- Komplexes Chart --></div>
-      <div class="data-table"><!-- Komplexe Tabelle --></div>
+      <div class="data-table"><!-- Komplexe Table --></div>
     </div>
   </template>
   <div class="placeholder">
@@ -320,7 +320,7 @@ Implementierung:
 JavaScript für die Funktionalität:
 
 ```javascript
-// Verzögertes Rendering von Komponenten
+// Verzögertes Rendering von Components
 function initDeferredRendering() {
   const containers = document.querySelectorAll('.deferred-render-container');
   
@@ -442,7 +442,7 @@ class ChunkContainer {
     }
     
     // Hier würde normalerweise ein API-Aufruf stattfinden
-    // In diesem Beispiel generieren wir Dummy-Inhalte
+    // In diesem Example generieren wir Dummy-Inhalte
     this.fetchChunkData(startIndex, endIndex).then(items => {
       this.renderChunk(items);
       this.currentChunk++;
@@ -643,7 +643,7 @@ document.querySelectorAll('.optimized-image').forEach(image => {
 5. **DOM-Größe begrenzen** - Halten Sie die Anzahl der DOM-Elemente unter 1500, um die Renderleistung zu optimieren.
 6. **JavaScript sparsam einsetzen** - Vermeiden Sie unnötige JavaScript-Berechnungen während des Scrollens.
 7. **Netzwerkanfragen minimieren** - Bündeln Sie Inhaltsanfragen und vermeiden Sie zu viele einzelne API-Aufrufe.
-8. **Rendering-Prioritäten setzen** - Priorisieren Sie das Rendering basierend auf der Sichtbarkeit und Wichtigkeit der Komponenten.
+8. **Rendering-Prioritäten setzen** - Priorisieren Sie das Rendering basierend auf der Sichtbarkeit und Wichtigkeit der Components.
 
 ## Leistungsmessung
 
@@ -700,7 +700,7 @@ function measureContainerPerformance(containerId) {
 }
 ```
 
-## Anwendungsfälle
+## Use Cases
 
 ### Produkt-Listenansicht mit Virtualisierung
 

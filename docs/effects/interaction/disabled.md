@@ -2,7 +2,7 @@
 
 Disabled-Effekte werden verwendet, um dem Benutzer visuell zu signalisieren, dass ein Element nicht interaktiv oder verfügbar ist. Die `@casoon/ui-lib` bietet verschiedene Disabled-Effekte, die auf konsistente Weise zeigen, dass ein Element deaktiviert ist.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Disabled-Effekt kann auf jedes interaktive Element angewendet werden:
 
@@ -26,11 +26,11 @@ Die folgenden CSS-Klassen stehen für Disabled-Effekte zur Verfügung:
 | `.disabled-opacity` | Deaktivierung durch reduzierte Deckkraft |
 | `.disabled-grayscale` | Deaktivierung durch Umwandlung in Graustufen |
 | `.disabled-blur` | Deaktivierung durch leichtes Weichzeichnen |
-| `.disabled-muted` | Deaktivierung durch gedämpfte Farben |
+| `.disabled-muted` | Deaktivierung durch gedämpfte Colors |
 | `.disabled-striped` | Deaktivierung durch diagonale Streifen |
 | `.disabled-overlay` | Deaktivierung durch Überlagerung |
 
-## Varianten
+## Variants
 
 ### Opacity-Effekt
 
@@ -61,7 +61,7 @@ Leichtes Weichzeichnen des Elements:
 Reduzierung der Farbsättigung und Anpassung der Helligkeit:
 
 ```html
-<button class="btn disabled-muted">Gedämpfte Farben</button>
+<button class="btn disabled-muted">Gedämpfte Colors</button>
 ```
 
 ### Striped-Effekt
@@ -84,7 +84,7 @@ Ein halbtransparentes Overlay über dem Element:
 
 Disabled-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
-### Formularelemente
+### Formelemente
 
 ```html
 <!-- Standard HTML disabled Attribut -->
@@ -110,11 +110,11 @@ Disabled-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 <a href="#" class="btn disabled-muted">Deaktivierter Link-Button</a>
 ```
 
-### Interaktive Komponenten
+### Interaktive Components
 
 ```html
 <div class="card disabled-opacity">
-  <div class="card-header">Deaktivierte Karte</div>
+  <div class="card-header">Deaktivierte Card</div>
   <div class="card-body">Inhalt nicht verfügbar</div>
 </div>
 
@@ -129,7 +129,7 @@ Disabled-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Disabled-Effekte können über CSS-Variablen angepasst werden:
+Die Disabled-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -146,11 +146,11 @@ Die Disabled-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Disabled-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Disabled-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
-1. **Semantik**: Verwenden Sie immer das native `disabled`-Attribut für Formularelemente
+1. **Semantik**: Verwenden Sie immer das native `disabled`-Attribut für Formelemente
 2. **ARIA**: Für nicht-native Elemente verwenden Sie `aria-disabled="true"`
 3. **Kontrast**: Achten Sie auf ausreichenden Kontrast, auch im deaktivierten Zustand
 4. **Feedback**: Geben Sie zusätzliches Feedback bei Interaktionsversuchen
@@ -162,9 +162,9 @@ Bei der Verwendung von Disabled-Effekten sollten folgende Barrierefreiheitsaspek
   class="btn disabled" 
   disabled 
   aria-disabled="true" 
-  aria-label="Button deaktiviert: Bitte zuerst ein Formular ausfüllen"
+  aria-label="Button deaktiviert: Bitte zuerst ein Form ausfüllen"
 >
-  Formular absenden
+  Form absenden
 </button>
 
 <!-- Barrierefreies deaktiviertes benutzerdefiniertes Element -->
@@ -181,7 +181,7 @@ Bei der Verwendung von Disabled-Effekten sollten folgende Barrierefreiheitsaspek
 
 ## JavaScript-Integration
 
-Für fortgeschrittene Disabled-Zustände kann JavaScript verwendet werden:
+Für fortgeschrittene Disabled-States kann JavaScript verwendet werden:
 
 ```javascript
 // Dynamische Deaktivierung/Aktivierung von Elementen
@@ -248,7 +248,7 @@ function preventInteraction(event) {
   }
 }
 
-// Verwendung
+// Usage
 const submitButton = document.getElementById('submit-button');
 setElementDisabled(submitButton, true, 'Bitte füllen Sie zuerst alle Pflichtfelder aus');
 
@@ -256,9 +256,9 @@ setElementDisabled(submitButton, true, 'Bitte füllen Sie zuerst alle Pflichtfel
 setElementDisabled(submitButton, false);
 ```
 
-## Formvalidierung und Disabled-Zustände
+## Formvalidierung und Disabled-States
 
-Disabled-Zustände können mit Formularvalidierung kombiniert werden:
+Disabled-States können mit Formvalidierung kombiniert werden:
 
 ```html
 <form id="example-form">
@@ -279,7 +279,7 @@ Disabled-Zustände können mit Formularvalidierung kombiniert werden:
 ```
 
 ```javascript
-// Formularvalidierung und Disabled-Zustand
+// Formvalidierung und Disabled-Zustand
 const form = document.getElementById('example-form');
 const requiredInputs = form.querySelectorAll('[required]');
 const submitButton = document.getElementById('submit-button');
@@ -313,7 +313,7 @@ Disabled-Effekte können die Leistung beeinflussen, insbesondere bei komplexen E
 
 1. Verwenden Sie wenn möglich den einfachen `opacity`-Effekt
 2. Vermeiden Sie aufwändige Effekte wie `blur` bei vielen Elementen
-3. Bei Verwendung von Streifen oder Overlays, vermeiden Sie unnötige Neuberechnungen des Layouts
+3. Bei Usage von Streifen oder Overlays, vermeiden Sie unnötige Neuberechnungen des Layouts
 
 ## Browser-Kompatibilität
 

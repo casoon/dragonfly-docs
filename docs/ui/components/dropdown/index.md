@@ -20,14 +20,14 @@ npm install @casoon/ui-lib
 ## Import
 
 ```css
-/* Import aller UI-Komponenten */
+/* Import aller UI-Components */
 @import '@casoon/ui-lib/ui.css';
 
 /* Oder nur die Dropdown-Komponente */
 @import '@casoon/ui-lib/ui/components/dropdown.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <div class="dropdown">
@@ -61,7 +61,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-## Varianten
+## Variants
 
 ### Mit Trennlinien
 
@@ -94,7 +94,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-### Mit Icons
+### With Icons
 
 ```html
 <div class="dropdown">
@@ -161,7 +161,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-## Verwendungsbeispiele
+## Usagesbeispiele
 
 ### Navigationsmenü
 
@@ -271,7 +271,7 @@ npm install @casoon/ui-lib
 
 ## Anpassung
 
-Die Dropdown-Komponente kann mit CSS-Variablen angepasst werden:
+Die Dropdown-Komponente kann mit CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -296,9 +296,9 @@ Die Dropdown-Komponente kann mit CSS-Variablen angepasst werden:
 }
 ```
 
-## JavaScript-Beispiel
+## JavaScript-Example
 
-Hier ist ein einfaches JavaScript-Beispiel, um die Dropdown-Funktionalität zu implementieren:
+Hier ist ein einfaches JavaScript-Example, um die Dropdown-Funktionalität zu implementieren:
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-## Barrierefreiheit
+## Accessibility
 
 - Verwende `aria-expanded="true/false"` auf dem Trigger-Element
 - Setze `aria-haspopup="true"` auf dem Trigger-Element
@@ -368,4 +368,4 @@ Die Dropdown-Komponente ist mit allen modernen Browsern kompatibel.
 |----------|--------|---------|--------|------|
 | Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
 | Positionierung | ✅ | ✅ | ✅ | ✅ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ |
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ |

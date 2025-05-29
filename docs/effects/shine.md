@@ -66,7 +66,7 @@ Importieren Sie das Glanz-Effekte-Modul über CSS:
 | `.shine-reactive` | Glanzeffekt reagiert auf Mausbewegungen |
 | `.shine-autoplay` | Automatisch abspielender Glanzeffekt |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Glanzeffekte
 
@@ -225,14 +225,14 @@ Importieren Sie das Glanz-Effekte-Modul über CSS:
 </style>
 ```
 
-### Glanzeffekte in UI-Komponenten
+### Glanzeffekte in UI-Components
 
 ```html
 <div class="ui-shine">
   <div class="card shine shine-hover">
     <div class="card-content">
-      <h3>Karte mit Glanzeffekt</h3>
-      <p>Diese Karte zeigt einen Glanzeffekt beim Hover.</p>
+      <h3>Card mit Glanzeffekt</h3>
+      <p>Diese Card zeigt einen Glanzeffekt beim Hover.</p>
       <button class="card-btn shine shine-sweep">Mehr erfahren</button>
     </div>
   </div>
@@ -404,7 +404,7 @@ Importieren Sie das Glanz-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Glanzeffekte können über CSS-Variablen angepasst werden:
+Die Glanzeffekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -738,9 +738,9 @@ document.querySelectorAll('.shine-click').forEach(element => {
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Glanzeffekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Glanzeffekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Bewegung reduzieren**: Vermeiden Sie übermäßige oder ablenkende Animationen, die Nutzer mit vestibulären Störungen beeinträchtigen könnten
 2. **Kontrast**: Stellen Sie sicher, dass der Glanzeffekt den Kontrast und die Lesbarkeit von Text nicht beeinträchtigt
@@ -813,6 +813,6 @@ Die Glanzeffekte werden von allen modernen Browsern unterstützt.
 | Lineare Gradienten | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Radiale Gradienten | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 

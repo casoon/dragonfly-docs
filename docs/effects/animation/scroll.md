@@ -2,7 +2,7 @@
 
 Scroll-Effekte werden verwendet, um das Benutzererlebnis beim Scrollen auf einer Webseite zu verbessern. Die `@casoon/ui-lib` bietet verschiedene Scroll-Effekte, die Interaktionen beim Scrollen dynamischer und ansprechender gestalten.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Scroll-Effekt kann auf jedes Element angewendet werden:
 
@@ -34,7 +34,7 @@ Die folgenden CSS-Klassen stehen für Scroll-Effekte zur Verfügung:
 | `.scroll-infinite` | Unendliches Scrollen |
 | `.scroll-smooth` | Sanftes Scrollen |
 
-## Varianten
+## Variants
 
 ### Fade-Effekte
 
@@ -167,18 +167,18 @@ Scroll-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 <blockquote class="scroll-zoom-in">Zitat mit Zoom-Effekt</blockquote>
 ```
 
-### Karten mit Scroll-Effekten
+### Cardn mit Scroll-Effekten
 
 ```html
 <div class="card-grid">
   <div class="card scroll-reveal">
-    <div class="card-body">Karte 1</div>
+    <div class="card-body">Card 1</div>
   </div>
   <div class="card scroll-reveal">
-    <div class="card-body">Karte 2</div>
+    <div class="card-body">Card 2</div>
   </div>
   <div class="card scroll-reveal">
-    <div class="card-body">Karte 3</div>
+    <div class="card-body">Card 3</div>
   </div>
 </div>
 ```
@@ -197,7 +197,7 @@ Scroll-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Scroll-Effekte können über CSS-Variablen angepasst werden:
+Die Scroll-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -244,7 +244,7 @@ Die Scroll-Effekte können über CSS-Variablen angepasst werden:
 
 ## CSS-Implementierung
 
-Beispiele für die CSS-Implementierung der Scroll-Effekte:
+Examples für die CSS-Implementierung der Scroll-Effekte:
 
 ```css
 /* Basis-Scroll-Effekt */
@@ -557,9 +557,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Scroll-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Scroll-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Animationspräferenzen**: Respektieren Sie die Einstellung `prefers-reduced-motion`
 2. **Leserlichkeit**: Stellen Sie sicher, dass Text während Scroll-Effekten lesbar bleibt
@@ -707,7 +707,7 @@ Die Scroll-Effekte werden von allen modernen Browsern unterstützt.
 ## Verwandte Effekte
 
 - [Animations-Effekte](/docs/effects/animation/animations.md) - Allgemeine Animationseffekte
-- [Transitions-Effekte](/docs/effects/animation/transitions.md) - Übergangseffekte zwischen Zuständen
+- [Transitions-Effekte](/docs/effects/animation/transitions.md) - Übergangseffekte zwischen Statesn
 - [Transform-Effekte](/docs/effects/layout/transforms.md) - Transformationseffekte für Elemente
 ``` 
 </rewritten_file>

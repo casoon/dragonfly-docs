@@ -5,7 +5,7 @@ category: Effects
 
 # Glass-Effekte
 
-Die Glass-Effekte der Casoon UI Library bieten moderne, elegante Glasmorphismus-Stilelemente, die Transparenz, Unschärfe und subtile Lichteffekte kombinieren, um eine zeitgemäße und elegante Benutzeroberfläche zu schaffen.
+Die Glass-Effekte der Casoon UI Library bieten moderne, elegante Glasmorphismus-Styleslemente, die Transparenz, Unschärfe und subtile Lichteffekte kombinieren, um eine zeitgemäße und elegante Benutzeroberfläche zu schaffen.
 
 ## Überblick
 
@@ -53,14 +53,14 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
 
 | Klasse | Beschreibung |
 |--------|-------------|
-| `.glass-card` | Karte mit Glaseffekt |
+| `.glass-card` | Card mit Glaseffekt |
 | `.glass-button` | Button mit Glaseffekt |
 | `.glass-nav` | Navigationsleiste mit Glaseffekt |
 | `.glass-sidebar` | Seitenleiste mit Glaseffekt |
 | `.glass-modal` | Modal mit Glaseffekt |
 | `.glass-dropdown` | Dropdown-Menü mit Glaseffekt |
 | `.glass-tooltip` | Tooltip mit Glaseffekt |
-| `.glass-form` | Formular mit Glaseffekt für Eingabefelder |
+| `.glass-form` | Form mit Glaseffekt für Inputer |
 | `.glass-header` | Header-Bereich mit Glaseffekt |
 | `.glass-footer` | Footer-Bereich mit Glaseffekt |
 | `.glass-badge` | Badge mit Glaseffekt |
@@ -78,9 +78,9 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
 | `.glass-reflect` | Fügt einen leichten Reflexionseffekt hinzu |
 | `.glass-backdrop` | Glaseffekt für Hintergrundelemente |
 
-## Beispiele
+## Examples
 
-### Einfache Glass-Karte
+### Einfache Glass-Card
 
 ```html
 <div class="glass-card glass-rounded glass-shadow">
@@ -395,7 +395,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
 </style>
 ```
 
-### Glass-Login-Formular
+### Glass-Login-Form
 
 ```html
 <div class="glass-container">
@@ -498,7 +498,7 @@ Importieren Sie das Glass-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Glass-Effekte können über CSS-Variablen angepasst werden:
+Die Glass-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -510,7 +510,7 @@ Die Glass-Effekte können über CSS-Variablen angepasst werden:
   --glass-border-color: rgba(255, 255, 255, 0.2);
   --glass-shadow-color: rgba(0, 0, 0, 0.2);
   
-  /* Varianten */
+  /* Variants */
   --glass-light-opacity: 0.1;
   --glass-dark-opacity: 0.25;
   --glass-frosted-blur: 20px;
@@ -578,9 +578,9 @@ Der grundlegende Glaseffekt wird durch folgende CSS-Eigenschaften erzeugt:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Glass-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Glass-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass trotz Transparenz ein ausreichender Kontrast zwischen Text und Hintergrund besteht
 2. **Lesbarkeit**: Vermeiden Sie zu starke Unschärfe-Effekte, die die Lesbarkeit beeinträchtigen könnten
@@ -593,7 +593,7 @@ Bei der Verwendung von Glass-Effekten sollten folgende Barrierefreiheitsaspekte 
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Alternative Stile für reduzierte Transparenz */
+/* Alternative Styles für reduzierte Transparenz */
 @media (prefers-reduced-transparency: reduce) {
   .glass,
   .glass-light,

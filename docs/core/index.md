@@ -5,43 +5,43 @@ category: Core
 
 # Core System
 
-Das Core System der Casoon UI Library bildet das Fundament für alle Komponenten und Stile. Es definiert die grundlegenden Prinzipien und Strukturen, auf denen das gesamte Design-System aufbaut.
+The Core System of the Casoon UI Library forms the foundation for all components and styles. It defines the basic principles and structures on which the entire design system is built.
 
-## Übersicht
+## Overview
 
-Das Core System besteht aus mehreren Schlüsselkomponenten:
+The Core System consists of several key components:
 
-- **Layer System**: Organisation der CSS-Schichten für optimale Spezifität und Wartbarkeit
-- **CSS-Architektur**: Strukturierung und Organisation des CSS-Codes
-- **Color System**: Farbsystem und -management
-- **Color-Mix System**: Fortschrittliche Farbmischung und -manipulation
-- **Logical Properties**: Verwendung von logischen Eigenschaften für sprachunabhängiges Layout
-- **Smooth Scrolling**: Implementierung von weichem Scrollen für bessere Benutzererfahrung
+- **Layer System**: Organization of CSS layers for optimal specificity and maintainability
+- **CSS Architecture**: Structuring and organization of CSS code
+- **Color System**: Color system and management
+- **Color-Mix System**: Advanced color mixing and manipulation
+- **Logical Properties**: Use of logical properties for language-independent layout
+- **Smooth Scrolling**: Implementation of smooth scrolling for better user experience
 
-## Philosophie
+## Philosophy
 
-Das Core System folgt diesen Designprinzipien:
+The Core System follows these design principles:
 
-1. **Modularität**: Unabhängige, wiederverwendbare Komponenten
-2. **Konsistenz**: Einheitliche Designsprache
-3. **Flexibilität**: Anpassbarkeit an verschiedene Anforderungen
-4. **Performance**: Optimierte Leistung bei minimaler Dateigröße
-5. **Zugänglichkeit**: Einhaltung von Barrierefreiheitsstandards
+1. **Modularity**: Independent, reusable components
+2. **Consistency**: Unified design language
+3. **Flexibility**: Adaptability to different requirements
+4. **Performance**: Optimized performance with minimal file size
+5. **Accessibility**: Compliance with accessibility standards
 
-## Verwendung
+## Usage
 
-Die Komponenten des Core Systems werden automatisch geladen, wenn Sie die Hauptdatei der Casoon UI Library importieren:
+The components of the Core System are automatically loaded when you import the main file of the Casoon UI Library:
 
 ```css
 @import '@casoon/ui-lib/core.css';
 ```
 
-Für spezifischere Anforderungen können Sie einzelne Teile des Core Systems separat importieren.
+For more specific requirements, you can import individual parts of the Core System separately.
 
-## Weiterführende Themen
+## Further Topics
 
 - [Layer System](/core/layer-system)
-- [CSS-Architektur](/core/css-system)
+- [CSS Architecture](/core/css-system)
 - [Color System](/core/colors-system)
 - [Color-Mix System](/core/color-mix-system)
 - [Logical Properties](/core/logical-properties)

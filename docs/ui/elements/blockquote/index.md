@@ -23,11 +23,11 @@ npm install @casoon/ui-lib
 /* Import aller UI-Elemente */
 @import '@casoon/ui-lib/ui.css';
 
-/* Oder nur die Typografie-Komponenten */
+/* Oder nur die Typography-Components */
 @import '@casoon/ui-lib/typography.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <blockquote>
@@ -41,7 +41,7 @@ npm install @casoon/ui-lib
   </blockquote>
 </div>
 
-## Varianten
+## Variants
 
 ### Standard-Blockquote
 
@@ -123,7 +123,7 @@ Innerhalb eines Content-Bereichs erhält das Blockquote einen leicht anderen Sti
 
 ## Anpassung
 
-Das Blockquote-Element kann über CSS-Variablen angepasst werden:
+Das Blockquote-Element kann über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -148,7 +148,7 @@ Das Blockquote-Element kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
 - Verwende das `<blockquote>`-Element für Zitate, nicht nur für visuelle Gestaltung
 - Achte auf ausreichenden Kontrast zwischen Text und Hintergrund
@@ -163,4 +163,4 @@ Das Blockquote-Element ist mit allen modernen Browsern kompatibel.
 |----------|--------|---------|--------|------|
 | Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
 | CSS Styling | ✅ | ✅ | ✅ | ✅ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ | 
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ | 

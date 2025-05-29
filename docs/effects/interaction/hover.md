@@ -7,7 +7,7 @@ category: Guide
 
 Die `hover.css` Datei bietet eine umfangreiche Sammlung von Effekten, die beim Bewegen des Mauszeigers über ein Element (Hover) ausgelöst werden. Diese Effekte verbessern die Interaktivität Ihrer Benutzeroberfläche und geben den Nutzern visuelles Feedback über interaktive Elemente.
 
-## Übersicht
+## Overview
 
 Hover-Effekte sind ein wesentlicher Bestandteil einer interaktiven Weboberfläche. Sie signalisieren Nutzern, welche Elemente anklickbar sind, und steigern die wahrgenommene Reaktionsfähigkeit einer Anwendung. Die Casoon UI Library bietet verschiedene Hover-Effekte, von subtilen Änderungen bis hin zu auffälligen Transformationen.
 
@@ -65,9 +65,9 @@ Hover-Effekte sind ein wesentlicher Bestandteil einer interaktiven Weboberfläch
 <div class="hover-glow-intense">Leuchtet bei Hover intensiv</div>
 <div class="hover-glow-primary">Leuchtet bei Hover in Primärfarbe</div>
 
-<!-- Hover-Zustände für bestimmte Elemente -->
+<!-- Hover-States für bestimmte Elemente -->
 <button class="hover-fill">Button füllt sich bei Hover</button>
-<div class="card hover-float">Karte schwebt bei Hover</div>
+<div class="card hover-float">Card schwebt bei Hover</div>
 <img class="hover-zoom" src="image.jpg" alt="Bild zoomt bei Hover">
 <a class="hover-slide-line">Link mit Unterstreichungs-Animation</a>
 
@@ -143,11 +143,11 @@ Hover-Effekte sind ein wesentlicher Bestandteil einer interaktiven Weboberfläch
   Skalierende, schattige Farbänderung bei Hover
 </div>
 
-<!-- Karten-Hover-Effekte -->
+<!-- Cardn-Hover-Effekte -->
 <div class="card hover-lift hover-shadow hover-border">
   <div class="card-content">
-    <h3 class="hover-text-primary">Kartentitel</h3>
-    <p>Karteninhalt</p>
+    <h3 class="hover-text-primary">Cardntitel</h3>
+    <p>Cardninhalt</p>
   </div>
 </div>
 
@@ -164,7 +164,7 @@ Hover-Effekte sind ein wesentlicher Bestandteil einer interaktiven Weboberfläch
 
 ## Anpassbare Hover-Effekte
 
-Viele Hover-Effekte können durch CSS-Variablen angepasst werden:
+Viele Hover-Effekte können durch CSS Variables angepasst werden:
 
 ```html
 <button class="hover-scale" style="--hover-scale: 1.1">
@@ -180,7 +180,7 @@ Viele Hover-Effekte können durch CSS-Variablen angepasst werden:
 </div>
 ```
 
-## CSS-Variablen für Hover-Effekte
+## CSS Variables für Hover-Effekte
 
 ```css
 :root {
@@ -213,7 +213,7 @@ Viele Hover-Effekte können durch CSS-Variablen angepasst werden:
   --hover-glow-md: 0 0 10px rgba(var(--color-primary-rgb), 0.5);
   --hover-glow-lg: 0 0 20px rgba(var(--color-primary-rgb), 0.5);
   
-  /* Farben */
+  /* Colors */
   --hover-color-primary: var(--color-primary);
   --hover-color-secondary: var(--color-secondary);
   --hover-color-accent: var(--color-accent);
@@ -230,7 +230,7 @@ Viele Hover-Effekte können durch CSS-Variablen angepasst werden:
 Für Touch-Geräte, bei denen kein Hover möglich ist, können Sie alternative Effekte anbieten:
 
 ```css
-/* Auf Geräten mit Touch verwenden wir stattdessen active-Zustände */
+/* Auf Geräten mit Touch verwenden wir stattdessen active-States */
 @media (hover: none) {
   .hover-scale:active {
     transform: scale(var(--hover-scale-md));
@@ -244,9 +244,9 @@ Für Touch-Geräte, bei denen kein Hover möglich ist, können Sie alternative E
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Hover-Effekten sollten Sie auf Barrierefreiheit achten:
+Bei der Usage von Hover-Effekten sollten Sie auf Accessibility achten:
 
 1. **Tastaturnutzung**: Stellen Sie sicher, dass Hover-Effekte auch mit `:focus` funktionieren
 2. **Reduzierte Bewegung**: Respektieren Sie `prefers-reduced-motion`
@@ -254,7 +254,7 @@ Bei der Verwendung von Hover-Effekten sollten Sie auf Barrierefreiheit achten:
 4. **Kein exklusiver Content**: Wichtige Inhalte sollten nicht ausschließlich bei Hover sichtbar sein
 
 ```css
-/* Beispiel für barrierefreie Hover-Effekte */
+/* Example für barrierefreie Hover-Effekte */
 .hover-scale,
 .hover-rotate,
 .hover-shift-up {
@@ -305,7 +305,7 @@ Einige Hover-Effekte können die Performance beeinflussen:
 }
 ```
 
-## Praktische Beispiele
+## Praktische Examples
 
 ### Interaktive Button-Sammlung
 
@@ -383,8 +383,8 @@ Einige Hover-Effekte können die Performance beeinflussen:
 ## Best Practices
 
 1. **Subtile Effekte bevorzugen**: Dezente Hover-Effekte wirken oft professioneller als übertriebene Animationen
-2. **Konsistenz bewahren**: Verwenden Sie ähnliche Hover-Effekte für ähnliche Elementtypen
+2. **Consistency bewahren**: Verwenden Sie ähnliche Hover-Effekte für ähnliche Elementtypen
 3. **Feedback geben**: Hover-Effekte sollten dem Nutzer klares Feedback über interaktive Elemente geben
 4. **Performance beachten**: Komplexe Hover-Effekte können die Leistung beeinträchtigen, besonders auf älteren Geräten
-5. **Barrierefreiheit einbauen**: Stellen Sie sicher, dass Ihre Hover-Effekte auch mit der Tastatur zugänglich sind
+5. **Accessibility einbauen**: Stellen Sie sicher, dass Ihre Hover-Effekte auch mit der Tastatur zugänglich sind
 </rewritten_file> 

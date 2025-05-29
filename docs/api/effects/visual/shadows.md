@@ -8,7 +8,7 @@ outline: deep
 
 Die Casoon UI Library bietet eine Sammlung von Schatten-Effekten, die Tiefe und Dimensionalität zu Ihren UI-Elementen hinzufügen. Diese Schatten-Utilities helfen, die visuelle Hierarchie in Ihrer Benutzeroberfläche zu definieren.
 
-## Übersicht
+## Overview
 
 Schatten sind ein wesentliches Element des modernen UI-Designs und helfen dabei, Elemente visuell vom Hintergrund abzuheben und die Benutzererfahrung zu verbessern.
 
@@ -37,7 +37,7 @@ Die Library bietet verschiedene Shadow-Klassen für unterschiedliche Elevations-
 | `.shadow-inner` | Innerer Schatten für eingedrückte Elemente |
 | `.shadow-none` | Kein Schatten (nützlich zum Entfernen von Schatten) |
 
-### Beispiel
+### Example
 
 ```html
 <div class="shadow-sm p-4 m-4">
@@ -76,13 +76,13 @@ Die Schatten-Utilities folgen einem konsistenten Elevation-System, das die visue
 | Elevation | Schatten-Klasse | Typische Anwendung |
 |-----------|-----------------|-------------------|
 | 1 (am niedrigsten) | `.shadow-sm` | Separatoren, abgegrenzte Bereiche |
-| 2 | `.shadow` | Karten, Container, Panels |
-| 3 | `.shadow-md` | Erhöhte Karten, Dropdown-Menüs |
+| 2 | `.shadow` | Cardn, Container, Panels |
+| 3 | `.shadow-md` | Erhöhte Cardn, Dropdown-Menüs |
 | 4 | `.shadow-lg` | Dialoge, hervorgehobene Elemente |
 | 5 | `.shadow-xl` | Modals, Popups |
 | 6 (am höchsten) | `.shadow-2xl` | Kritische Benachrichtigungen |
 
-### Beispiel für eine Elevation-Hierarchie
+### Example für eine Elevation-Hierarchie
 
 ```html
 <div class="shadow-sm p-4 mb-4">
@@ -92,7 +92,7 @@ Die Schatten-Utilities folgen einem konsistenten Elevation-System, das die visue
 
 <div class="shadow p-4 mb-4">
   <h3>Containerebene</h3>
-  <p>Standard-Karten und Container</p>
+  <p>Standard-Cardn und Container</p>
 </div>
 
 <div class="shadow-md p-4 mb-4">
@@ -126,19 +126,19 @@ Schatten können mit Hover- und anderen Interaktionseffekten kombiniert werden, 
   Beim Hover angehobenes Element
 </div>
 
-<!-- Karte mit Schatten und Hover-Effekt -->
+<!-- Card mit Schatten und Hover-Effekt -->
 <div class="shadow-md hover-scale">
-  Interaktive Karte mit Skalierung
+  Interaktive Card mit Skalierung
 </div>
 ```
 
 ## Innere Schatten
 
-Der innere Schatten (`.shadow-inner`) ist nützlich für eingedrückte Elemente wie Eingabefelder oder Toggle-Buttons:
+Der innere Schatten (`.shadow-inner`) ist nützlich für eingedrückte Elemente wie Inputer oder Toggle-Buttons:
 
 ```html
-<!-- Eingedrücktes Eingabefeld -->
-<input type="text" class="shadow-inner p-2" placeholder="Eingedrücktes Eingabefeld">
+<!-- Eingedrücktes Input -->
+<input type="text" class="shadow-inner p-2" placeholder="Eingedrücktes Input">
 
 <!-- Eingedrückter Container -->
 <div class="shadow-inner p-4">
@@ -148,7 +148,7 @@ Der innere Schatten (`.shadow-inner`) ist nützlich für eingedrückte Elemente 
 
 ## Anpassung
 
-Alle Schatten-Effekte können mit CSS-Variablen angepasst werden:
+Alle Schatten-Effekte können mit CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -196,9 +196,9 @@ Die Schatten können auch für den Dark Mode angepasst werden, um die richtige v
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Schatten zur Darstellung von visueller Hierarchie ist es wichtig, auch andere visuelle Hinweise zu verwenden, damit Benutzer mit Sehschwächen die Hierarchie erkennen können:
+Bei der Usage von Schatten zur Darstellung von visueller Hierarchie ist es wichtig, auch andere visuelle Hinweise zu verwenden, damit Benutzer mit Sehschwächen die Hierarchie erkennen können:
 
 1. **Nicht nur auf Schatten verlassen**: Kombinieren Sie Schatten mit anderen visuellen Hinweisen wie Farbe, Größe oder Position.
 2. **Ausreichender Kontrast**: Stellen Sie sicher, dass der Kontrast zwischen Elementen auch ohne Schatten ausreichend ist.

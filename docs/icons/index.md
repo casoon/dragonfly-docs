@@ -5,16 +5,16 @@ category: Icons
 
 # Icon System
 
-Das Icon System der Casoon UI Library bietet eine umfassende Sammlung von Symbolen, die in verschiedenen Formaten und Stilen verfügbar sind, um eine konsistente visuelle Sprache in Ihrer Anwendung zu gewährleisten.
+Das Icon System der Casoon UI Library bietet eine umfassende Sammlung von Symbolen, die in verschiedenen Formaten und Stylesn verfügbar sind, um eine konsistente visuelle Sprache in Ihrer Anwendung zu gewährleisten.
 
-## Übersicht
+## Overview
 
 Das Icon System umfasst:
 
 - **Icon Sets**: Verschiedene Sammlungen von Icons für unterschiedliche Zwecke
 - **Formate**: SVG, Webfonts und CSS-basierte Icons
-- **Größen und Varianten**: Verschiedene Größen und Stilvarianten
-- **Barrierefreiheit**: Zugängliche Icons mit angemessenen Labels
+- **Sizes und Variants**: Verschiedene Sizes und Stilvarianten
+- **Accessibility**: Zugängliche Icons mit angemessenen Labels
 
 ## Icon Sets
 
@@ -50,27 +50,27 @@ Die Casoon UI Library bietet folgende Icon Sets:
 <i class="casoon-icon casoon-home" aria-hidden="true"></i>
 ```
 
-## Größen und Varianten
+## Sizes und Variants
 
-Icons sind in verschiedenen Größen und Varianten verfügbar:
+Icons sind in verschiedenen Sizes und Variants verfügbar:
 
 ```html
-<!-- Größen -->
+<!-- Sizes -->
 <span class="icon icon-xs">...</span>
 <span class="icon icon-s">...</span>
 <span class="icon icon-m">...</span>
 <span class="icon icon-l">...</span>
 <span class="icon icon-xl">...</span>
 
-<!-- Varianten -->
+<!-- Variants -->
 <span class="icon icon-outlined">...</span>
 <span class="icon icon-filled">...</span>
 <span class="icon icon-two-tone">...</span>
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für optimale Zugänglichkeit sollten Icons entweder:
+Für optimale Accessibility sollten Icons entweder:
 
 1. Mit `aria-hidden="true"` versehen werden, wenn sie rein dekorativ sind
 2. Mit einem aussagekräftigen Label versehen werden, wenn sie informativ sind
@@ -96,7 +96,7 @@ Das Icon System kann in Ihre Anwendung integriert werden durch:
 @import '@casoon/ui-lib/icons/social-icons.css';
 ```
 
-## Weiterführende Themen
+## Further Topics
 
 - [Icon Sets](/icons/sets)
 - [Icon Usage](/icons/usage)

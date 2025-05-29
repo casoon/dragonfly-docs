@@ -27,7 +27,7 @@ npm install @casoon/ui-lib
 @import '@casoon/ui-lib/components/radio.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <label class="radio">
@@ -55,11 +55,11 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-## Varianten
+## Variants
 
 ### Standard Radio
 
-Der grundlegende Radio-Button ohne spezielle Zustände.
+Der grundlegende Radio-Button ohne spezielle States.
 
 ```html
 <label class="radio">
@@ -129,7 +129,7 @@ Ein Radio-Button, der sowohl deaktiviert als auch ausgewählt ist.
   </label>
 </div>
 
-## Größenvarianten
+## Sizesvarianten
 
 ### Klein (Small)
 
@@ -265,7 +265,7 @@ Radio-Buttons können auch horizontal angeordnet werden.
 
 ## Anpassung
 
-Die Radio-Komponente kann über CSS-Variablen angepasst werden:
+Die Radio-Komponente kann über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -282,9 +282,9 @@ Die Radio-Komponente kann über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für eine bessere Barrierefreiheit beachten Sie bitte folgende Punkte:
+Für eine bessere Accessibility beachten Sie bitte folgende Punkte:
 
 - Verwenden Sie immer ein `<label>`-Element, das das Radio-Input umschließt
 - Gruppieren Sie zusammengehörige Radio-Buttons mit der Klasse `radio-group`
@@ -307,5 +307,5 @@ Das Radio-Element ist mit allen modernen Browsern kompatibel.
 |----------|--------|---------|--------|------|
 | Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
 | Anpassbares Styling | ✅ | ✅ | ✅ | ✅ |
-| Größenvarianten | ✅ | ✅ | ✅ | ✅ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ | 
+| Sizesvarianten | ✅ | ✅ | ✅ | ✅ |
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ | 

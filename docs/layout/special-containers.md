@@ -5,11 +5,11 @@ category: Layout
 
 # Special Containers
 
-Die Casoon UI Library bietet eine Reihe spezieller Container für bestimmte Layout-Anforderungen und Designmuster. Diese Dokumentation erklärt die verfügbaren speziellen Container und ihre Anwendungsfälle.
+Die Casoon UI Library bietet eine Reihe spezieller Container für bestimmte Layout-Anforderungen und Designmuster. Diese Dokumentation erklärt die verfügbaren speziellen Container und ihre Use Cases.
 
 ## Overview
 
-Die speziellen Container erweitern das Basis-Container-System um folgende Funktionen:
+Die speziellen Container erweitern das Basis-Container System um folgende Funktionen:
 
 1. **Full-Width Container** - Container, die die volle Viewport-Breite nutzen
 2. **Content Container** - Container für spezifische Inhaltstypen
@@ -104,7 +104,7 @@ Implementierung:
 <div class="form-container">
   <h2>Kontaktformular</h2>
   <form>
-    <!-- Formularelemente -->
+    <!-- Formelemente -->
   </form>
 </div>
 ```
@@ -339,11 +339,11 @@ Container mit speziellem Scrollverhalten:
 <!-- Horizontal scrollbarer Container -->
 <div class="scroll-container scroll-x">
   <div class="scroll-content">
-    <div class="card">Karte 1</div>
-    <div class="card">Karte 2</div>
-    <div class="card">Karte 3</div>
-    <div class="card">Karte 4</div>
-    <div class="card">Karte 5</div>
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
   </div>
 </div>
 
@@ -418,16 +418,16 @@ Implementierung:
 
 ## Card Grid Container
 
-Spezieller Container für Kartenraster mit besserer Responsive-Unterstützung:
+Spezieller Container für Cardnraster mit besserer Responsive-Unterstützung:
 
 ```html
 <div class="card-grid-container">
-  <div class="card">Karte 1</div>
-  <div class="card">Karte 2</div>
-  <div class="card">Karte 3</div>
-  <div class="card">Karte 4</div>
-  <div class="card">Karte 5</div>
-  <div class="card">Karte 6</div>
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <div class="card">Card 4</div>
+  <div class="card">Card 5</div>
+  <div class="card">Card 6</div>
 </div>
 ```
 
@@ -559,13 +559,13 @@ Implementierung:
 
 1. **Passenden Container-Typ wählen** - Wählen Sie den Container-Typ, der am besten zu Ihrem Inhaltstyp und Layout passt.
 2. **Vermeiden von Überspezialisierung** - Kombinieren Sie lieber Basis-Container mit Utility-Klassen statt zu viele spezialisierte Container zu erstellen.
-3. **Konsistente Namensgebung** - Halten Sie sich an die Namenskonventionen der Bibliothek für bessere Wartbarkeit.
-4. **Barrierefreiheit beachten** - Stellen Sie sicher, dass scrollbare Container und Overlays für alle Benutzer zugänglich sind.
+3. **Konsistente Namensgebung** - Halten Sie sich an die Namenskonventionen der Bibliothek für bessere Maintainability.
+4. **Accessibility beachten** - Stellen Sie sicher, dass scrollbare Container und Overlays für alle Benutzer zugänglich sind.
 5. **Responsive Design priorisieren** - Stellen Sie sicher, dass spezielle Container auf allen Bildschirmgrößen gut funktionieren.
 6. **Performance im Auge behalten** - Zu viele verschachtelte Container oder komplexe Hintergründe können die Performance beeinträchtigen.
 7. **Konsistentes Spacing** - Nutzen Sie die Spacing-Variablen der Bibliothek für einheitliche Abstände innerhalb und zwischen Containern.
 
-## Anwendungsfälle
+## Use Cases
 
 ### Hero-Sektion mit Hintergrundbild
 
@@ -652,4 +652,4 @@ Für ältere Browser werden Fallbacks bereitgestellt, um eine grundlegende Funkt
 
 ## Zusammenfassung
 
-Die speziellen Container der Casoon UI Library bieten vielseitige Lösungen für komplexe Layout-Anforderungen. Sie erweitern das Basis-Container-System um spezialisierte Funktionen wie Seitenverhältnis-Kontrolle, erweiterte Hintergründe, Scrollverhalten und mehr. Durch die Verwendung dieser speziellen Container können Sie anspruchsvolle Layouts mit weniger Code und besserer Konsistenz erstellen. 
+Die speziellen Container der Casoon UI Library bieten vielseitige Lösungen für komplexe Layout-Anforderungen. Sie erweitern das Basis-Container System um spezialisierte Funktionen wie Seitenverhältnis-Kontrolle, erweiterte Hintergründe, Scrollverhalten und mehr. Durch die Usage dieser speziellen Container können Sie anspruchsvolle Layouts mit weniger Code und besserer Consistency erstellen. 

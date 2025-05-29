@@ -7,11 +7,11 @@ category: Layout
 
 Das Layout System der Casoon UI Library bietet ein umfassendes Rahmenwerk für die Erstellung responsiver, konsistenter und anpassungsfähiger Layouts für moderne Webanwendungen.
 
-## Übersicht
+## Overview
 
 Das Layout System umfasst mehrere leistungsstarke Technologien und Ansätze:
 
-- **Grid System**: Flexibles und responsives CSS-Grid-System
+- **Grid System**: Flexibles und responsives CSS-Grid System
 - **Flexbox System**: Fortschrittliches Flexbox-Layout für eindimensionale Anordnungen
 - **Container System**: Einheitliche Container für konsistente Content-Bereiche
 - **Responsive Layout**: Strategien für die Anpassung an verschiedene Bildschirmgrößen
@@ -22,12 +22,12 @@ Das Layout System umfasst mehrere leistungsstarke Technologien und Ansätze:
 Das Layout System basiert auf folgenden Prinzipien:
 
 1. **Responsivität**: Nahtlose Anpassung an verschiedene Geräte und Bildschirmgrößen
-2. **Konsistenz**: Einheitliche Abstände und Proportionen
-3. **Flexibilität**: Anpassbar an unterschiedliche Anforderungen
-4. **Zugänglichkeit**: Berücksichtigung von Barrierefreiheit
-5. **Container Queries**: Verwendung moderner CSS-Techniken für kontextabhängige Layouts
+2. **Consistency**: Einheitliche Abstände und Proportionen
+3. **Flexibility**: Anpassbar an unterschiedliche Anforderungen
+4. **Accessibility**: Berücksichtigung von Accessibility
+5. **Container Queries**: Usage moderner CSS-Techniken für kontextabhängige Layouts
 
-## Verwendung
+## Usage
 
 Das Layout System kann als Teil des Core-Imports oder einzeln eingebunden werden:
 
@@ -39,7 +39,7 @@ Das Layout System kann als Teil des Core-Imports oder einzeln eingebunden werden
 @import '@casoon/ui-lib/layout.css';
 ```
 
-## Weiterführende Themen
+## Further Topics
 
 - [Grid System](/layout/grid)
 - [Flexbox System](/layout/flexbox)

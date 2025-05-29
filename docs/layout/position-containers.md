@@ -5,11 +5,11 @@ category: Layout
 
 # Position Containers
 
-Die Casoon UI Library bietet spezielle Container-Varianten, die mit Positionierungseigenschaften erweitert wurden. Diese Position Containers erlauben es, komplexe Layouts mit präziser Kontrolle über die Positionierung zu erstellen, ohne die grundlegenden Prinzipien des Container-Systems zu verletzen.
+Die Casoon UI Library bietet spezielle Container-Variants, die mit Positionierungseigenschaften erweitert wurden. Diese Position Containers erlauben es, komplexe Layouts mit präziser Kontrolle über die Positionierung zu erstellen, ohne die grundlegenden Prinzipien des Container Systems zu verletzen.
 
 ## Overview
 
-Position Containers kombinieren die Vorteile des Container-Systems mit den folgenden Positionierungsfunktionen:
+Position Containers kombinieren die Vorteile des Container Systems mit den folgenden Positionierungsfunktionen:
 
 1. **Relative Positionierung** - Container als Bezugspunkt für absolut positionierte Elemente
 2. **Absolute Positionierung** - Container, die aus dem normalen Dokumentfluss herausgenommen werden
@@ -298,7 +298,7 @@ Position Container können responsiv angepasst werden:
 
 ## Best Practices
 
-1. **Position Container sparsam einsetzen** - Übermäßige Verwendung kann zu komplexen und schwer wartbaren Layouts führen.
+1. **Position Container sparsam einsetzen** - Übermäßige Usage kann zu komplexen und schwer wartbaren Layouts führen.
 2. **Z-Index-Strategie definieren** - Legen Sie eine klare Strategie für Z-Index-Werte fest, um Konflikte zu vermeiden.
 3. **Accessibility beachten** - Stellen Sie sicher, dass fixierte oder absolut positionierte Elemente nicht die Bedienbarkeit beeinträchtigen.
 4. **Scrollverhalten testen** - Überprüfen Sie, wie sich sticky und fixed Container beim Scrollen verhalten, besonders auf mobilen Geräten.
@@ -306,7 +306,7 @@ Position Container können responsiv angepasst werden:
 6. **Responsives Verhalten berücksichtigen** - Positionierung kann auf verschiedenen Bildschirmgrößen unterschiedlich sein.
 7. **Inhaltsüberläufe beachten** - Stellen Sie sicher, dass positionierte Container mit übergroßem Inhalt korrekt umgehen.
 
-## Anwendungsfälle
+## Use Cases
 
 ### Sticky Header
 
@@ -377,4 +377,4 @@ Position Container sind gut unterstützt in modernen Browsern:
 
 ## Zusammenfassung
 
-Position Containers erweitern das Basis-Container-System der Casoon UI Library um leistungsstarke Positionierungsfunktionen. Sie ermöglichen komplexe, überlagerte Layouts, fixierte UI-Elemente und präzise Platzierung von Inhalten, während sie gleichzeitig die Vorteile des Container-Systems beibehalten. Durch die Kombination von Container-Größen, Positionierungsklassen und Z-Index-Management können anspruchsvolle Layouts auf strukturierte und wartbare Weise erstellt werden. 
+Position Containers erweitern das Basis-Container System der Casoon UI Library um leistungsstarke Positionierungsfunktionen. Sie ermöglichen komplexe, überlagerte Layouts, fixierte UI-Elemente und präzise Platzierung von Inhalten, während sie gleichzeitig die Vorteile des Container Systems beibehalten. Durch die Kombination von Container-Sizes, Positionierungsklassen und Z-Index-Management können anspruchsvolle Layouts auf strukturierte und wartbare Weise erstellt werden. 

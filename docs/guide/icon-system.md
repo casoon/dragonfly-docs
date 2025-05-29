@@ -5,11 +5,11 @@ category: Guide
 
 # Icon-System
 
-Das Icon-System der Casoon UI Library bietet eine umfassende Lösung für die Integration und Verwendung von Icons in Webanwendungen durch eine strukturierte Sammlung verschiedener Icon-Sets.
+Das Icon-System der Casoon UI Library bietet eine umfassende Lösung für die Integration und Usage von Icons in Webanwendungen durch eine strukturierte Sammlung verschiedener Icon-Sets.
 
 ## Struktur des Icon-Systems
 
-Die Icons sind Teil des Layer-Systems und werden unter dem `icons`-Layer definiert:
+Die Icons sind Teil des Layer Systems und werden unter dem `icons`-Layer definiert:
 
 ```css
 @layer reset,
@@ -64,7 +64,7 @@ Die Casoon UI Library integriert mehrere populäre Icon-Bibliotheken:
 | Lucide | Fortführung der Feather Icons | `lucide-` |
 | Tabler | Über 3000 pixelperfekte Icons | `tabler-` |
 
-## Icon-Verwendung in eigenen Projekten
+## Icon-Usage in eigenen Projekten
 
 Um Icons in Ihrem Projekt zu nutzen:
 
@@ -81,7 +81,7 @@ Importieren Sie die core.css, die automatisch alle Icon-Sets lädt:
 Sie können auch nur ausgewählte Icon-Sets importieren:
 
 ```css
-/* Basis-Layer-System importieren */
+/* Basis-Layer System importieren */
 @import "@casoon/ui-lib/layers.css";
 
 /* Icon-Basis importieren */
@@ -92,7 +92,7 @@ Sie können auch nur ausgewählte Icon-Sets importieren:
 @import "@casoon/ui-lib/icons/heroicons.css";
 ```
 
-## Icon-Verwendung
+## Icon-Usage
 
 ### Standardmethode mit Icon-Klassen
 
@@ -115,7 +115,7 @@ Das Icon-System verwendet einheitliche Klassennamen für alle Icon-Sets mit dem 
 <span class="mdi-account"></span>
 ```
 
-### Icon-Größen
+### Icon-Sizes
 
 Sie können die Größe der Icons anpassen:
 
@@ -128,7 +128,7 @@ Sie können die Größe der Icons anpassen:
 <span class="feather-home icon--xl"></span> <!-- Extra groß -->
 ```
 
-### Icon-Farben
+### Icon-Colors
 
 Icons erben standardmäßig die Textfarbe ihres Elternelements (`currentColor`):
 
@@ -146,7 +146,7 @@ Sie können auch direkte Farbklassen verwenden:
 <span class="heroicon-x-circle icon--error"></span> <!-- Fehlerfarbe -->
 ```
 
-## Icon-Anpassungen
+## Icon-Customizations
 
 ### Icon-Rotation und Spiegelung
 
@@ -166,9 +166,9 @@ Sie können auch direkte Farbklassen verwenden:
 <span class="feather-arrow-down icon--bounce"></span> <!-- Hüpfendes Icon -->
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Für bessere Barrierefreiheit sollten Icons, die funktionale Bedeutung haben, entsprechende Beschreibungen enthalten:
+Für bessere Accessibility sollten Icons, die funktionale Bedeutung haben, entsprechende Beschreibungen enthalten:
 
 ```html
 <button class="btn btn--icon" aria-label="Löschen">
@@ -187,7 +187,7 @@ Bei Icons mit begleitendem Text:
 
 ## Eigene Icons einbinden
 
-Sie können eigene Icons erstellen und in das Layer-System integrieren:
+Sie können eigene Icons erstellen und in das Layer System integrieren:
 
 ```css
 /* Eigene CSS-Datei */
@@ -197,12 +197,12 @@ Sie können eigene Icons erstellen und in das Layer-System integrieren:
 @layer icons {
   .custom-icon-home {
     background-image: url('path/to/home.svg');
-    /* Weitere Stile */
+    /* Weitere Styles */
   }
 
   .custom-icon-settings {
     background-image: url('path/to/settings.svg');
-    /* Weitere Stile */
+    /* Weitere Styles */
   }
 }
 ```
@@ -211,7 +211,7 @@ Sie können eigene Icons erstellen und in das Layer-System integrieren:
 
 - **Wählen Sie konsistente Icons** - Verwenden Sie Icons aus demselben Set für ein einheitliches Erscheinungsbild
 - **Semantische Icons nutzen** - Wählen Sie Icons, die intuitiv für ihre Funktion sind
-- **Barrierefreiheit beachten** - Fügen Sie aria-label für funktionale Icons hinzu
-- **Größenkonsistenz gewährleisten** - Halten Sie Icongrößen innerhalb von Funktionsgruppen konsistent
-- **Farben sinnvoll einsetzen** - Verwenden Sie Farbakzente sparsam und bedeutungsvoll
+- **Accessibility beachten** - Fügen Sie aria-label für funktionale Icons hinzu
+- **Sizeskonsistenz gewährleisten** - Halten Sie Icongrößen innerhalb von Funktionsgruppen konsistent
+- **Colors sinnvoll einsetzen** - Verwenden Sie Farbakzente sparsam und bedeutungsvoll
 - **Text mit Icons kombinieren** - Bei wichtigen Aktionen Text und Icons zusammen verwenden 

@@ -5,11 +5,11 @@ category: Guide
 
 # Color-Mix System
 
-Das Color-Mix System der Casoon UI Library ermöglicht die dynamische Erstellung von Farbvariationen und -mischungen durch modernes CSS. Es nutzt die `color-mix()` Funktion und andere CSS-Features, um ein flexibles und umfassendes Farbsystem zu schaffen.
+Das Color-Mix System der Casoon UI Library ermöglicht die dynamische Erstellung von Farbvariationen und -mischungen durch modernes CSS. Es nutzt die `color-mix()` Funktion und andere CSS-Features, um ein flexibles und umfassendes Color System zu schaffen.
 
-## Module importieren
+## Importing Modules
 
-Das Color-Mix System ist Teil des Layer-Systems und wird automatisch geladen, wenn Sie die `core.css` Datei importieren:
+Das Color-Mix System ist Teil des Layer Systems und wird automatisch geladen, wenn Sie die `core.css` Datei importieren:
 
 ```css
 @import '@casoon/ui-lib/core.css';
@@ -31,14 +31,14 @@ Die Reihenfolge der Layer ist wichtig, wobei das `color-mix` Layer nach dem `col
 
 Das Color-Mix System baut auf den grundlegenden Farb-Tokens auf und ermöglicht:
 
-1. **Farbmischungen**: Kombinieren von zwei oder mehr Farben mit unterschiedlichen Prozentanteilen
-2. **Farbvariationen**: Erstellen von helleren oder dunkleren Varianten einer Basisfarbe
+1. **Farbmischungen**: Kombinieren von zwei oder mehr Colors mit unterschiedlichen Prozentanteilen
+2. **Farbvariationen**: Erstellen von helleren oder dunkleren Variants einer Basisfarbe
 3. **Farbüberlagerungen**: Überlagern einer Farbe mit einer anderen für spezielle Effekte
-4. **Dynamische Farbberechnung**: Automatische Berechnung von kontrastierenden oder harmonischen Farben
+4. **Dynamische Farbberechnung**: Automatische Berechnung von kontrastierenden oder harmonischen Colors
 
 ## Farbmischungen
 
-Die `color-mix()` Funktion ermöglicht das Mischen von Farben:
+Die `color-mix()` Funktion ermöglicht das Mischen von Colors:
 
 ```css
 .mixed-color {
@@ -63,7 +63,7 @@ Die `color-mix()` Funktion ermöglicht das Mischen von Farben:
 
 ## Transparenzmischungen
 
-Mischen von Farben mit Transparenz:
+Mischen von Colors mit Transparenz:
 
 ```css
 .overlay-primary-30 {
@@ -132,7 +132,7 @@ Die Kontrastfarben werden automatisch berechnet:
 }
 ```
 
-## Verwendung in Utility-Klassen
+## Usage in Utility-Klassen
 
 Das Color-Mix System wird in vielen Utility-Klassen verwendet:
 
@@ -150,9 +150,9 @@ Das Color-Mix System wird in vielen Utility-Klassen verwendet:
 }
 ```
 
-## Verwendungsbeispiele
+## Usagesbeispiele
 
-### Schaltflächen mit Hover-Effekt
+### Buttonn mit Hover-Effekt
 
 ```css
 .button-primary {
@@ -166,7 +166,7 @@ Das Color-Mix System wird in vielen Utility-Klassen verwendet:
 }
 ```
 
-### Karten mit Farbverlauf
+### Cardn mit Farbverlauf
 
 ```css
 .card-gradient {
@@ -223,11 +223,11 @@ Das Color-Mix System ist für Lightning CSS optimiert:
 
 ## Best Practices
 
-1. **Konsistenz bewahren**: Verwenden Sie das Color-Mix System für alle Farbvariationen, anstatt hartcodierte Farbwerte zu definieren
-2. **Semantische Farbnamen verwenden**: Benennen Sie Farben nach ihrer Funktion, nicht nach ihrem Aussehen
-3. **Achten Sie auf Kontrast**: Prüfen Sie, ob Ihre gemischten Farben die WCAG-Richtlinien für Barrierefreiheit erfüllen
+1. **Consistency bewahren**: Verwenden Sie das Color-Mix System für alle Farbvariationen, anstatt hartcodierte Farbwerte zu definieren
+2. **Semantische Farbnamen verwenden**: Benennen Sie Colors nach ihrer Funktion, nicht nach ihrem Aussehen
+3. **Achten Sie auf Kontrast**: Prüfen Sie, ob Ihre gemischten Colors die WCAG-Richtlinien für Accessibility erfüllen
 4. **Sparsam mit Transparenz umgehen**: Übermäßige Transparenz kann die Lesbarkeit beeinträchtigen
-5. **CSS-Variablen für Zwischenergebnisse**: Definieren Sie häufig verwendete Mischungen als CSS-Variablen
+5. **CSS Variables für Zwischenergebnisse**: Definieren Sie häufig verwendete Mischungen als CSS Variables
 
 ## Anpassung des Color-Mix Systems
 

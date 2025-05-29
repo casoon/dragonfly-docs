@@ -100,11 +100,11 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
 | `.hover-filter-contrast-up` | Erhöht den Kontrast bei Hover |
 | `.hover-filter-grayscale` | Wendet Graustufen bei Hover an |
 | `.hover-filter-sepia` | Wendet Sepia-Effekt bei Hover an |
-| `.hover-filter-invert` | Invertiert Farben bei Hover |
+| `.hover-filter-invert` | Invertiert Colors bei Hover |
 | `.hover-filter-saturate-up` | Erhöht die Sättigung bei Hover |
 | `.hover-filter-saturate-down` | Reduziert die Sättigung bei Hover |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Filteranwendung
 
@@ -442,7 +442,7 @@ Importieren Sie das Filter-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Filter-Effekte können über CSS-Variablen angepasst werden:
+Die Filter-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -481,14 +481,14 @@ Die Filter-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Filter-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Filter-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Achten Sie darauf, dass Filter nicht den Kontrast so stark reduzieren, dass Text schwer lesbar wird
 2. **Farbwahrnehmung**: Berücksichtigen Sie, dass Farbanpassungen durch Filter für Menschen mit Farbfehlsichtigkeit problematisch sein können
 3. **Bewegung und Animation**: Verwenden Sie keine animierten Filter, die schnell blinken oder flackern, um Probleme bei Personen mit Vestibulärerkrankungen oder Epilepsie zu vermeiden
-4. **Alternative Stile**: Bieten Sie alternative Ansichten ohne Filter für Nutzer, die diese benötigen
+4. **Alternative Styles**: Bieten Sie alternative Ansichten ohne Filter für Nutzer, die diese benötigen
 
 ```css
 /* Verbesserte Lesbarkeit für Text über gefilterten Hintergründen */
@@ -505,7 +505,7 @@ Bei der Verwendung von Filter-Effekten sollten folgende Barrierefreiheitsaspekte
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Alternative Stile für reduzierte Bewegung */
+/* Alternative Styles für reduzierte Bewegung */
 @media (prefers-reduced-motion: reduce) {
   .animated-filter {
     transition: none !important;
@@ -540,4 +540,4 @@ Die Filter-Effekte werden von allen modernen Browsern unterstützt.
 | filter | ✓ | ✓ | ✓ | ✓ | ✗ |
 | backdrop-filter | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die keine Filter unterstützen, werden Fallback-Stile bereitgestellt. 
+Für ältere Browser, die keine Filter unterstützen, werden Fallback-Styles bereitgestellt. 

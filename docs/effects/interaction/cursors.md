@@ -2,7 +2,7 @@
 
 Cursor-Effekte ändern das Erscheinungsbild des Mauszeigers, um dem Benutzer zusätzliches Feedback über die Interaktionsmöglichkeiten zu geben. Die `@casoon/ui-lib` bietet eine umfangreiche Sammlung von Cursor-Effekten, die dazu beitragen, die Benutzererfahrung zu verbessern und die Interaktivität von Elementen zu verdeutlichen.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Cursor-Effekte können auf jedes HTML-Element angewendet werden:
 
@@ -14,7 +14,7 @@ Cursor-Effekte können auf jedes HTML-Element angewendet werden:
 
 Die folgenden Klassen sind für die gängigsten Cursor-Typen verfügbar:
 
-| Klasse | Beschreibung | Verwendung |
+| Klasse | Beschreibung | Usage |
 |--------|-------------|------------|
 | `.cursor-auto` | Standard-Cursor | Für normale Inhalte |
 | `.cursor-default` | Standardpfeil | Für normale UI-Elemente |
@@ -84,7 +84,7 @@ Die Bibliothek unterstützt auch animierte Cursor:
 <div class="cursor-follow">Folgender Cursor-Effekt</div>
 ```
 
-## Verwendung in Kombinationen
+## Usage in Kombinationen
 
 Cursor-Effekte können mit anderen Elementen kombiniert werden, um das Benutzererlebnis zu verbessern:
 
@@ -96,7 +96,7 @@ Cursor-Effekte können mit anderen Elementen kombiniert werden, um das Benutzere
 <div class="drag-handle cursor-grabbing">Drag-Handler (aktiv)</div>
 ```
 
-### Formularelemente
+### Formelemente
 
 ```html
 <input type="text" class="cursor-text">
@@ -134,9 +134,9 @@ Je nach Kontext können unterschiedliche Cursor verwendet werden:
 </div>
 ```
 
-## CSS-Variablen
+## CSS Variables
 
-Die Cursor-Effekte können über CSS-Variablen angepasst werden:
+Die Cursor-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -148,11 +148,11 @@ Die Cursor-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Cursor-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Cursor-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
-1. **Konsistenz**: Verwenden Sie konsistente Cursor für ähnliche Aktionen im gesamten Interface
+1. **Consistency**: Verwenden Sie konsistente Cursor für ähnliche Aktionen im gesamten Interface
 2. **Verständlichkeit**: Der Cursor sollte die mögliche Interaktion eindeutig vermitteln
 3. **Alternative Eingabe**: Stellen Sie sicher, dass alle Funktionen auch mit der Tastatur zugänglich sind
 4. **Kontrast**: Benutzerdefinierte Cursor sollten ausreichend Kontrast zum Hintergrund haben

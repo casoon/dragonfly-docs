@@ -2,7 +2,7 @@
 
 Outline-Effekte werden verwendet, um Elemente zu betonen oder hervorzuheben, ohne den Fluss oder das Layout der Seite zu beeinflussen. Die `@casoon/ui-lib` bietet verschiedene Outline-Effekte, die dazu beitragen, wichtige Elemente hervorzuheben und visuelle Hierarchien zu verdeutlichen.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Outline-Effekt kann auf jedes Element angewendet werden:
 
@@ -32,9 +32,9 @@ Die folgenden CSS-Klassen stehen für Outline-Effekte zur Verfügung:
 | `.outline-hover` | Outline bei Hover |
 | `.outline-active` | Outline bei Aktivierung |
 
-## Varianten
+## Variants
 
-### Dicke-Varianten
+### Dicke-Variants
 
 Verschiedene Dicken für Outlines:
 
@@ -45,9 +45,9 @@ Verschiedene Dicken für Outlines:
 <div class="outline-extra-thick">Extra dicke Outline</div>
 ```
 
-### Stil-Varianten
+### Stil-Variants
 
-Verschiedene Stile für Outlines:
+Verschiedene Styles für Outlines:
 
 ```html
 <div class="outline-solid">Durchgezogene Outline</div>
@@ -60,9 +60,9 @@ Verschiedene Stile für Outlines:
 <div class="outline-outset">Hervorstehende Outline</div>
 ```
 
-### Farb-Varianten
+### Farb-Variants
 
-Verschiedene Farben für Outlines:
+Verschiedene Colors für Outlines:
 
 ```html
 <div class="outline-primary">Primärfarbene Outline</div>
@@ -77,7 +77,7 @@ Verschiedene Farben für Outlines:
 <div class="outline-contrast">Kontrastreiche Outline</div>
 ```
 
-### Offset-Varianten
+### Offset-Variants
 
 Outlines mit verschiedenen Abständen zum Element:
 
@@ -103,7 +103,7 @@ Besondere Outline-Effekte für mehr Aufmerksamkeit:
 <div class="outline-rainbow">Regenbogen-Outline</div>
 ```
 
-### Ecken-Varianten
+### Ecken-Variants
 
 Outlines mit unterschiedlich geformten Ecken:
 
@@ -140,21 +140,21 @@ Outline-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 <button class="btn outline-focus-glow">Button mit Fokus-Glow</button>
 ```
 
-### Karten mit Outlines
+### Cardn mit Outlines
 
 ```html
 <div class="card outline">
-  <div class="card-header">Kartenüberschrift</div>
-  <div class="card-body">Karteninhalt</div>
+  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-body">Cardninhalt</div>
 </div>
 
 <div class="card outline-hover-accent">
-  <div class="card-header">Kartenüberschrift</div>
-  <div class="card-body">Karte mit Hover-Outline</div>
+  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-body">Card mit Hover-Outline</div>
 </div>
 ```
 
-### Formularelemente mit Outlines
+### Formelemente mit Outlines
 
 ```html
 <input type="text" class="outline-focus-success" placeholder="Fokus zeigt Erfolg">
@@ -175,7 +175,7 @@ Outline-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Outline-Effekte können über CSS-Variablen angepasst werden:
+Die Outline-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -184,12 +184,12 @@ Die Outline-Effekte können über CSS-Variablen angepasst werden:
   --outline-style: solid;
   --outline-color: currentColor;
   
-  /* Dicke-Varianten */
+  /* Dicke-Variants */
   --outline-thin-width: 1px;
   --outline-thick-width: 3px;
   --outline-extra-thick-width: 5px;
   
-  /* Offset-Varianten */
+  /* Offset-Variants */
   --outline-offset: 3px;
   --outline-offset-sm: 1px;
   --outline-offset-lg: 6px;
@@ -244,13 +244,13 @@ Ein wichtiger Unterschied zwischen `outline` und `border` in CSS:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Outline-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Outline-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Fokusindikator**: Entfernen Sie niemals die Outline für Fokuszustände ohne einen alternativen, gut sichtbaren Ersatz
 2. **Kontrast**: Stellen Sie sicher, dass Outlines ausreichenden Kontrast zum Hintergrund und zum Element bieten
-3. **Konsistenz**: Verwenden Sie konsistente Outline-Stile für ähnliche Interaktionen
+3. **Consistency**: Verwenden Sie konsistente Outline-Styles für ähnliche Interaktionen
 
 ```html
 <!-- Barrierefreier Fokusindikator -->

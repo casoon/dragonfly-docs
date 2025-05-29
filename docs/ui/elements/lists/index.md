@@ -27,7 +27,7 @@ npm install @casoon/ui-lib
 @import '@casoon/ui-lib/base/elements.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ### Ungeordnete Liste
 
@@ -93,7 +93,7 @@ npm install @casoon/ui-lib
   </dl>
 </div>
 
-## Varianten
+## Variants
 
 ### Verschachtelte Listen
 
@@ -135,7 +135,7 @@ Listen können verschachtelt werden, um Hierarchien darzustellen.
 
 ### Listen im Content-Bereich
 
-Im Content-Bereich haben Listen leicht angepasste Stile.
+Im Content-Bereich haben Listen leicht angepasste Styles.
 
 ```html
 <div class="content">
@@ -167,7 +167,7 @@ Im Content-Bereich haben Listen leicht angepasste Stile.
 
 ### Spezial-Listen: Dateiliste
 
-Ein spezielles Beispiel für eine angepasste Liste ist die Dateiliste, die für die Anzeige von Dateien in Upload-Komponenten verwendet wird.
+Ein spezielles Example für eine angepasste Liste ist die Dateiliste, die für die Anzeige von Dateien in Upload-Components verwendet wird.
 
 ```html
 <ul class="file-list">
@@ -213,7 +213,7 @@ Ein spezielles Beispiel für eine angepasste Liste ist die Dateiliste, die für 
 
 ## Anpassung
 
-Die Listen-Elemente können über CSS-Variablen angepasst werden:
+Die Listen-Elemente können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -243,7 +243,7 @@ Die Listen-Elemente können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
 - Verwende semantisch korrekte Listen-Elemente (`ul`, `ol`, `dl`) für Listen-Inhalte
 - Stelle sicher, dass die Liste eine logische Struktur hat
@@ -260,4 +260,4 @@ Das Listen-Element ist mit allen modernen Browsern kompatibel.
 | Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
 | Beschreibungslisten | ✅ | ✅ | ✅ | ✅ |
 | Verschachtelte Listen | ✅ | ✅ | ✅ | ✅ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ | 
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ | 

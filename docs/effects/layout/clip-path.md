@@ -2,7 +2,7 @@
 
 Clip-Path-Effekte werden verwendet, um Elemente in bestimmte Formen zu schneiden. Die `@casoon/ui-lib` bietet verschiedene Clip-Path-Effekte, die dazu beitragen, visuell interessante und dynamische Layouts zu erzeugen.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Clip-Path-Effekt kann auf jedes Element angewendet werden:
 
@@ -34,7 +34,7 @@ Die folgenden CSS-Klassen stehen für Clip-Path-Effekte zur Verfügung:
 | `.clip-diagonal` | Diagonaler Ausschnitt |
 | `.clip-frame` | Rahmenförmiger Ausschnitt |
 
-## Varianten
+## Variants
 
 ### Kreis-Ausschnitt
 
@@ -46,7 +46,7 @@ Der Kreis-Ausschnitt schneidet das Element in einer Kreisform aus:
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="clip-circle-center">Zentrierter Kreis</div>
@@ -64,7 +64,7 @@ Der elliptische Ausschnitt erstellt eine ovale Form:
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="clip-ellipse-horizontal">Horizontale Ellipse</div>
@@ -82,7 +82,7 @@ Der dreieckige Ausschnitt schneidet das Element in Dreiecksform aus:
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="clip-triangle-up">Nach oben zeigendes Dreieck</div>
@@ -165,12 +165,12 @@ Clip-Path-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 </div>
 ```
 
-### Karten mit Clip-Path
+### Cardn mit Clip-Path
 
 ```html
 <div class="card clip-bevel">
-  <div class="card-header">Kartenüberschrift</div>
-  <div class="card-body">Karteninhalt</div>
+  <div class="card-header">Cardnüberschrift</div>
+  <div class="card-body">Cardninhalt</div>
 </div>
 ```
 
@@ -205,7 +205,7 @@ Clip-Path-Effekte können mit Interaktionen kombiniert werden:
 
 ## Anpassung
 
-Die Clip-Path-Effekte können über CSS-Variablen angepasst werden:
+Die Clip-Path-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -273,13 +273,13 @@ Clip-Path-Effekte können animiert werden für dynamische Übergänge:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Clip-Path-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Clip-Path-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Inhaltsverständlichkeit**: Stellen Sie sicher, dass durch das Ausschneiden keine wichtigen Inhalte verloren gehen
 2. **Alternative Texte**: Bieten Sie immer alternative Texte für Bilder mit Clip-Path an
-3. **Konsistenz**: Verwenden Sie Clip-Path-Effekte konsistent in Ihrer Benutzeroberfläche
+3. **Consistency**: Verwenden Sie Clip-Path-Effekte konsistent in Ihrer Benutzeroberfläche
 
 ## Performance-Überlegungen
 

@@ -2,7 +2,7 @@
 
 Overlay-Effekte werden verwendet, um eine Ebene über Elementen zu platzieren, um zusätzliche visuelle Effekte oder Interaktionen zu ermöglichen. Die `@casoon/ui-lib` bietet verschiedene Overlay-Effekte, die dazu beitragen, dynamische und interaktive Benutzeroberflächen zu gestalten.
 
-## Grundlegende Verwendung
+## Basic Usage
 
 Der grundlegende Overlay-Effekt kann auf jedes Element angewendet werden:
 
@@ -36,7 +36,7 @@ Die folgenden CSS-Klassen stehen für Overlay-Effekte zur Verfügung:
 | `.overlay-zoom` | Zoomeffekt-Overlay |
 | `.overlay-interactive` | Interaktives Overlay |
 
-## Varianten
+## Variants
 
 ### Light-Overlay
 
@@ -259,7 +259,7 @@ Das Zoom-Overlay vergrößert oder verkleinert sich:
 </div>
 ```
 
-Verfügbare Varianten:
+Verfügbare Variants:
 
 ```html
 <div class="overlay-zoom-in">Vergrößert sich</div>
@@ -284,20 +284,20 @@ Das Interactive-Overlay bietet interaktive Elemente:
 
 Overlay-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
-### Karten mit Overlays
+### Cardn mit Overlays
 
 ```html
 <div class="card overlay-container">
-  <img src="image.jpg" alt="Kartenillustration" class="card-img-top">
+  <img src="image.jpg" alt="Cardnillustration" class="card-img-top">
   <div class="overlay-hover overlay-gradient-to-top">
     <div class="overlay-content">
-      <h3>Kartenüberschrift</h3>
-      <p>Kartenbeschreibung</p>
+      <h3>Cardnüberschrift</h3>
+      <p>Cardnbeschreibung</p>
     </div>
   </div>
   <div class="card-body">
-    <h5 class="card-title">Kartenüberschrift</h5>
-    <p class="card-text">Karteninhalt</p>
+    <h5 class="card-title">Cardnüberschrift</h5>
+    <p class="card-text">Cardninhalt</p>
   </div>
 </div>
 ```
@@ -343,7 +343,7 @@ Overlay-Effekte können mit verschiedenen UI-Elementen kombiniert werden:
 
 ## Anpassung
 
-Die Overlay-Effekte können über CSS-Variablen angepasst werden:
+Die Overlay-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -383,9 +383,9 @@ Die Overlay-Effekte können über CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Overlay-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Overlay-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Kontrast**: Stellen Sie sicher, dass Text auf Overlays ausreichenden Kontrast hat
 2. **Tastaturbedienung**: Stellen Sie sicher, dass interaktive Overlays auch per Tastatur zugänglich sind

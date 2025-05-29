@@ -52,7 +52,7 @@ Importieren Sie das Funkeln-Effekte-Modul über CSS:
 | `.sparkle-continuous` | Kontinuierlich funkelnder Effekt |
 | `.sparkle-follow` | Funkeln folgt der Mausposition |
 
-## Beispiele
+## Examples
 
 ### Grundlegende Funkeln-Effekte
 
@@ -65,7 +65,7 @@ Importieren Sie das Funkeln-Effekte-Modul über CSS:
 </div>
 ```
 
-### Interaktive Funkeln in UI-Komponenten
+### Interaktive Funkeln in UI-Components
 
 ```html
 <div class="ui-sparkle">
@@ -88,7 +88,7 @@ Importieren Sie das Funkeln-Effekte-Modul über CSS:
 
 ## Anpassung
 
-Die Funkeln-Effekte können über CSS-Variablen angepasst werden:
+Die Funkeln-Effekte können über CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -250,9 +250,9 @@ document.querySelectorAll('.sparkle-follow').forEach(element => {
 });
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Bei der Verwendung von Funkeln-Effekten sollten folgende Barrierefreiheitsaspekte berücksichtigt werden:
+Bei der Usage von Funkeln-Effekten sollten folgende Accessibilitysaspekte berücksichtigt werden:
 
 1. **Bewegung reduzieren**: Vermeiden Sie übermäßige Funkeln-Effekte, die ablenkend sein können
 2. **Photosensitive Epilepsie**: Stellen Sie sicher, dass die Funkeln-Effekte nicht zu hell oder blinkend sind
@@ -291,6 +291,6 @@ Die Funkeln-Effekte werden von allen modernen Browsern unterstützt.
 | Basis-Funkeln | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | CSS-Animationen | ✓ | ✓ | ✓ | ✓ | Teilweise |
 | Radial-Gradienten | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CSS-Variablen | ✓ | ✓ | ✓ | ✓ | ✗ |
+| CSS Variables | ✓ | ✓ | ✓ | ✓ | ✗ |
 
-Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Stile bereitgestellt. 
+Für ältere Browser, die einige Funktionen nicht vollständig unterstützen, werden vereinfachte Fallback-Styles bereitgestellt. 

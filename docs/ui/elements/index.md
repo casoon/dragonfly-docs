@@ -5,16 +5,16 @@ category: UI
 
 # UI Elements
 
-UI Elements sind die fundamentalen Bausteine der Casoon UI Library. Sie bilden die Grundlage für die Erstellung komplexerer Komponenten und Benutzeroberflächen.
+UI Elements sind die fundamentalen Bausteine der Casoon UI Library. Sie bilden die Grundlage für die Erstellung komplexerer Components und Benutzeroberflächen.
 
-## Übersicht
+## Overview
 
 UI Elements zeichnen sich durch folgende Eigenschaften aus:
 
 - **Einfachheit**: Fokus auf eine einzelne Funktionalität
 - **Wiederverwendbarkeit**: Können in verschiedenen Kontexten eingesetzt werden
-- **Komposition**: Können zu komplexeren Komponenten kombiniert werden
-- **Konsistenz**: Einheitliches Design und Verhalten
+- **Komposition**: Können zu komplexeren Components kombiniert werden
+- **Consistency**: Einheitliches Design und Verhalten
 
 ## Verfügbare Elements
 
@@ -22,12 +22,12 @@ Die Casoon UI Library bietet folgende UI Elements:
 
 ### Interaktionselemente
 
-- [Button](/ui/elements/button/): Schaltflächen für Aktionen
+- [Button](/ui/elements/button/): Buttonn für Aktionen
 - [Checkbox](/ui/elements/checkbox/): Auswahlboxen für Mehrfachauswahl
-- [Radio](/ui/elements/radio/): Optionsfelder für Einzelauswahl
-- [Select](/ui/elements/select/): Auswahlmenüs für Listen von Optionen
-- [Slider](/ui/elements/slider/): Schieberegler für Wertebereiche
-- [Switch](/ui/elements/switch/): Umschalter für binäre Zustände
+- [Radio](/ui/elements/radio/): Radioer für Einzelauswahl
+- [Select](/ui/elements/select/): Selects für Listen von Optionen
+- [Slider](/ui/elements/slider/): Slider für Wertebereiche
+- [Switch](/ui/elements/switch/): Umschalter für binäre States
 - [Input](/ui/elements/input/): Textfelder für Benutzereingaben
 - [Textarea](/ui/elements/textarea/): Mehrzeilige Textfelder
 
@@ -40,12 +40,12 @@ Die Casoon UI Library bietet folgende UI Elements:
 - [Spinner](/ui/elements/spinner/): Ladeanzeigen
 - [Tooltip](/ui/elements/tooltip/): Zusätzliche Informationen bei Hover
 
-## Verwendung
+## Usage
 
 UI Elements können individuell oder als Teil des gesamten UI-Systems importiert werden:
 
 ```css
-/* Gesamtes UI-System */
+/* Entire UI System */
 @import '@casoon/ui-lib/ui.css';
 
 /* Oder nur einzelne Elements */
@@ -53,25 +53,25 @@ UI Elements können individuell oder als Teil des gesamten UI-Systems importiert
 @import '@casoon/ui-lib/ui/elements/input.css';
 ```
 
-## Anpassbarkeit
+## Customizability
 
-Alle UI Elements können über CSS-Variablen angepasst werden:
+Alle UI Elements können über CSS Variables angepasst werden:
 
 ```css
 :root {
-  /* Button-Anpassungen */
+  /* Button-Customizations */
   --button-radius: 0.25rem;
   --button-primary-bg: #0066cc;
   
-  /* Input-Anpassungen */
+  /* Input-Customizations */
   --input-border-color: #cbd5e1;
   --input-focus-ring-color: rgba(0, 102, 204, 0.25);
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
-Alle UI Elements sind für optimale Zugänglichkeit entwickelt:
+Alle UI Elements sind für optimale Accessibility entwickelt:
 
 - Unterstützung für Tastaturnavigation
 - Semantische HTML-Struktur

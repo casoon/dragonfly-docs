@@ -19,14 +19,14 @@ npm install @casoon/ui-lib
 ## Import
 
 ```css
-/* Import aller UI-Komponenten */
+/* Import aller UI-Components */
 @import '@casoon/ui-lib/ui.css';
 
 /* Oder nur die Tabs-Komponente */
 @import '@casoon/ui-lib/ui/components/tabs.css';
 ```
 
-## Grundlegende Verwendung
+## Basic Usage
 
 ```html
 <div class="tabs">
@@ -64,12 +64,12 @@ npm install @casoon/ui-lib
     </div>
     <div style="padding: 1rem;">
       <p>Inhalt für Tab 1</p>
-      <p>Hier ist ein Beispieltext für den ersten Tab. Diese Inhalte werden angezeigt, wenn Tab 1 aktiv ist.</p>
+      <p>Hier ist ein Exampletext für den ersten Tab. Diese Inhalte werden angezeigt, wenn Tab 1 aktiv ist.</p>
     </div>
   </div>
 </div>
 
-## Varianten
+## Variants
 
 ### Tabs mit Icons
 
@@ -182,7 +182,7 @@ npm install @casoon/ui-lib
     </div>
     <div style="padding: 1rem; flex: 1;">
       <p>Inhalt für Tab 1</p>
-      <p>Vertikale Tabs eignen sich besonders für komplexe Formulare oder umfangreiche Einstellungen.</p>
+      <p>Vertikale Tabs eignen sich besonders für komplexe Forme oder umfangreiche Einstellungen.</p>
     </div>
   </div>
 </div>
@@ -222,7 +222,7 @@ npm install @casoon/ui-lib
   </div>
 </div>
 
-## Verwendungsbeispiele
+## Usagesbeispiele
 
 ### Produkt-Detailseite
 
@@ -378,7 +378,7 @@ npm install @casoon/ui-lib
 
 ## Anpassung
 
-Die Tabs-Komponente kann mit CSS-Variablen angepasst werden:
+Die Tabs-Komponente kann mit CSS Variables angepasst werden:
 
 ```css
 :root {
@@ -409,7 +409,7 @@ Die Tabs-Komponente kann mit CSS-Variablen angepasst werden:
 }
 ```
 
-## Barrierefreiheit
+## Accessibility
 
 - Verwende korrekte ARIA-Attribute (`role="tablist"`, `role="tab"`, `role="tabpanel"`)
 - Stelle sicher, dass Tabs mit der Tastatur bedient werden können (Pfeiltasten zum Navigieren)
@@ -418,9 +418,9 @@ Die Tabs-Komponente kann mit CSS-Variablen angepasst werden:
 - Setze `hidden` auf inaktive Panels, um sie von Screenreadern auszuschließen
 - Verwende `aria-controls` und `aria-labelledby` zur Verknüpfung von Tabs und Panels
 
-## JavaScript-Beispiel
+## JavaScript-Example
 
-Hier ist ein einfaches JavaScript-Beispiel, um die Tabs funktionsfähig zu machen:
+Hier ist ein einfaches JavaScript-Example, um die Tabs funktionsfähig zu machen:
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
@@ -482,4 +482,4 @@ Die Tabs-Komponente ist mit allen modernen Browsern kompatibel.
 |----------|--------|---------|--------|------|
 | Grundlegende Funktionalität | ✅ | ✅ | ✅ | ✅ |
 | Flexbox-Layout | 29+ | 28+ | 9+ | 16+ |
-| CSS-Variablen | 49+ | 31+ | 9.1+ | 15+ |
+| CSS Variables | 49+ | 31+ | 9.1+ | 15+ |
