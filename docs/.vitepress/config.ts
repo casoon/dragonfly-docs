@@ -121,9 +121,9 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/', activeMatch: '^/$' },
       { 
-        text: 'Einstieg', 
+        text: 'Getting Started', 
         items: [
-          { text: 'Übersicht', link: '/getting-started/' },
+          { text: 'Overview', link: '/getting-started/' },
           { text: 'Installation', link: '/getting-started/installation' },
           { text: 'Themes', link: '/getting-started/themes' },
           { text: 'Tokens', link: '/getting-started/tokens' },
@@ -137,11 +137,11 @@ export default defineConfig({
       { 
         text: 'UI System', 
         items: [
-          { text: 'Übersicht', link: '/ui/' },
+          { text: 'Overview', link: '/ui/' },
           { 
-            text: 'Elemente', 
+            text: 'Elements', 
             items: [
-              { text: 'Übersicht', link: '/ui/elements/' },
+              { text: 'Overview', link: '/ui/elements/' },
               { text: 'Avatar', link: '/ui/elements/avatar/' },
               { text: 'Blockquote', link: '/ui/elements/blockquote/' },
               { text: 'Button', link: '/ui/elements/button/' },
@@ -156,9 +156,9 @@ export default defineConfig({
             ]
           },
           { 
-            text: 'Komponenten', 
+            text: 'Components', 
             items: [
-              { text: 'Übersicht', link: '/ui/components/' },
+              { text: 'Overview', link: '/ui/components/' },
               { text: 'Back to Top', link: '/ui/components/back-to-top/' },
               { text: 'Breadcrumbs', link: '/ui/components/breadcrumbs/' },
               { text: 'Card', link: '/ui/components/card/' },
@@ -198,13 +198,13 @@ export default defineConfig({
         ] 
       },
       { 
-        text: 'Referenz', 
+        text: 'Reference', 
         items: [
-          { text: 'Leitfäden', link: '/guide/' },
-          { text: 'Beispiele', link: '/examples/' },
+          { text: 'Guides', link: '/guide/' },
+          { text: 'Examples', link: '/examples/' },
           { text: 'API', link: '/api/' },
-          { text: 'Kompatibilität', link: '/compatibility/' },
-          { text: 'Barrierefreiheit', link: '/accessibility/' }
+          { text: 'Compatibility', link: '/compatibility/' },
+          { text: 'Accessibility', link: '/accessibility/' }
         ] 
       },
       { 
@@ -219,7 +219,7 @@ export default defineConfig({
 
     footer: {
       message: `MIT License`,
-      copyright: 'Copyright © 2024 <a href="https://github.com/casoon/ui-lib" target="_blank">Casoon UI Library</a>'
+      copyright: 'Copyright © 2025 <a href="https://github.com/casoon/ui-lib" target="_blank">Casoon UI Library</a>'
     },
 
     sidebar: {
