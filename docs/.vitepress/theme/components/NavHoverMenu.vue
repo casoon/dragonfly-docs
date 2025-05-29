@@ -7,28 +7,23 @@
           <h3 class="nav-hover-menu-title">Komponenten-Kategorien</h3>
           <ul class="nav-hover-menu-category-list">
             <li>
-              <a href="/ui-docs/components/#basis-komponenten" class="nav-hover-menu-category-item">
-                Basis-Komponenten
+              <a href="/ui-docs/ui/#elements" class="nav-hover-menu-category-item">
+                Basis-Elemente
               </a>
             </li>
             <li>
-              <a href="/ui-docs/components/#formular-komponenten" class="nav-hover-menu-category-item">
-                Formular-Komponenten
+              <a href="/ui-docs/ui/#components" class="nav-hover-menu-category-item">
+                Komplexe Komponenten
               </a>
             </li>
             <li>
-              <a href="/ui-docs/components/#layout-komponenten" class="nav-hover-menu-category-item">
+              <a href="/ui-docs/ui/#layout-components" class="nav-hover-menu-category-item">
                 Layout-Komponenten
               </a>
             </li>
             <li>
-              <a href="/ui-docs/components/#feedback-komponenten" class="nav-hover-menu-category-item">
-                Feedback-Komponenten
-              </a>
-            </li>
-            <li>
-              <a href="/ui-docs/components/#erweiterte-komponenten" class="nav-hover-menu-category-item">
-                Erweiterte Komponenten
+              <a href="/ui-docs/ui/#patterns" class="nav-hover-menu-category-item">
+                UI-Muster
               </a>
             </li>
           </ul>
@@ -37,31 +32,31 @@
         <!-- Rechte Spalte mit Komponenten-Links -->
         <div class="nav-hover-menu-components">
           <div class="nav-hover-menu-components-section">
-            <h3 class="nav-hover-menu-subtitle">Basis-Komponenten</h3>
+            <h3 class="nav-hover-menu-subtitle">Basis-Elemente</h3>
             <div class="nav-hover-menu-components-grid">
-              <a href="/ui-docs/components/alert/" class="nav-hover-menu-component-item">Alert</a>
-              <a href="/ui-docs/components/avatar/" class="nav-hover-menu-component-item">Avatar</a>
-              <a href="/ui-docs/components/badge/" class="nav-hover-menu-component-item">Badge</a>
-              <a href="/ui-docs/components/button/" class="nav-hover-menu-component-item">Button</a>
-              <a href="/ui-docs/components/card/" class="nav-hover-menu-component-item">Card</a>
-              <a href="/ui-docs/components/chip/" class="nav-hover-menu-component-item">Chip</a>
+              <a href="/ui-docs/ui/elements/avatar" class="nav-hover-menu-component-item">Avatar</a>
+              <a href="/ui-docs/ui/elements/blockquote" class="nav-hover-menu-component-item">Blockquote</a>
+              <a href="/ui-docs/ui/elements/button" class="nav-hover-menu-component-item">Button</a>
+              <a href="/ui-docs/ui/elements/checkbox" class="nav-hover-menu-component-item">Checkbox</a>
+              <a href="/ui-docs/ui/elements/chip" class="nav-hover-menu-component-item">Chip</a>
+              <a href="/ui-docs/ui/elements/input" class="nav-hover-menu-component-item">Input</a>
             </div>
           </div>
           
           <div class="nav-hover-menu-components-section">
-            <h3 class="nav-hover-menu-subtitle">Formular-Komponenten</h3>
+            <h3 class="nav-hover-menu-subtitle">Komplexe Komponenten</h3>
             <div class="nav-hover-menu-components-grid">
-              <a href="/ui-docs/components/checkbox/" class="nav-hover-menu-component-item">Checkbox</a>
-              <a href="/ui-docs/components/input/" class="nav-hover-menu-component-item">Input</a>
-              <a href="/ui-docs/components/radio/" class="nav-hover-menu-component-item">Radio</a>
-              <a href="/ui-docs/components/select/" class="nav-hover-menu-component-item">Select</a>
-              <a href="/ui-docs/components/slider/" class="nav-hover-menu-component-item">Slider</a>
-              <a href="/ui-docs/components/switch/" class="nav-hover-menu-component-item">Switch</a>
+              <a href="/ui-docs/ui/components/action-bar" class="nav-hover-menu-component-item">Action Bar</a>
+              <a href="/ui-docs/ui/components/alert" class="nav-hover-menu-component-item">Alert</a>
+              <a href="/ui-docs/ui/components/badge" class="nav-hover-menu-component-item">Badge</a>
+              <a href="/ui-docs/ui/components/card" class="nav-hover-menu-component-item">Card</a>
+              <a href="/ui-docs/ui/components/dialog" class="nav-hover-menu-component-item">Dialog</a>
+              <a href="/ui-docs/ui/components/toast" class="nav-hover-menu-component-item">Toast</a>
             </div>
           </div>
           
           <div class="nav-hover-menu-footer">
-            <a href="/ui-docs/components/" class="nav-hover-menu-all-link">
+            <a href="/ui-docs/ui/" class="nav-hover-menu-all-link">
               Alle Komponenten anzeigen →
             </a>
           </div>
@@ -75,19 +70,21 @@
 // Keine zusätzliche Logik erforderlich
 </script>
 
-<style scoped>
+<style>
 .nav-hover-menu-wrapper {
   position: relative;
+  width: 100%;
+  height: 0;
 }
 
 .nav-hover-menu {
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 800px;
   max-width: calc(100vw - 32px);
-  background-color: white;
+  background-color: var(--vp-c-bg);
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   padding: 24px;
@@ -104,7 +101,7 @@
   transform: translateX(-50%) rotate(45deg);
   width: 16px;
   height: 16px;
-  background-color: white;
+  background-color: var(--vp-c-bg);
   box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -115,7 +112,7 @@
 
 .nav-hover-menu-categories {
   width: 220px;
-  border-right: 1px solid #eaeaea;
+  border-right: 1px solid var(--vp-c-divider);
   padding-right: 20px;
 }
 
@@ -128,7 +125,7 @@
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 16px;
-  color: #111827;
+  color: var(--vp-c-text-1);
 }
 
 .nav-hover-menu-subtitle {
@@ -136,7 +133,7 @@
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 12px;
-  color: #111827;
+  color: var(--vp-c-text-1);
 }
 
 .nav-hover-menu-category-list {
@@ -149,14 +146,14 @@
   display: block;
   padding: 8px 12px;
   border-radius: 6px;
-  color: #4b5563;
+  color: var(--vp-c-text-2);
   text-decoration: none;
   font-size: 14px;
   transition: all 0.2s ease;
 }
 
 .nav-hover-menu-category-item:hover {
-  background-color: #f3f4f6;
+  background-color: var(--vp-c-bg-soft);
   color: var(--vp-c-brand);
 }
 
@@ -174,25 +171,25 @@
   display: block;
   padding: 8px 12px;
   border-radius: 6px;
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  color: #334155;
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
   text-decoration: none;
   font-size: 14px;
   transition: all 0.2s ease;
 }
 
 .nav-hover-menu-component-item:hover {
-  background-color: #e0f2fe;
-  border-color: #bae6fd;
-  color: #0369a1;
+  background-color: var(--vp-c-bg-soft-up);
+  border-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand);
   transform: translateY(-2px);
 }
 
 .nav-hover-menu-footer {
   margin-top: 16px;
   padding-top: 16px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid var(--vp-c-divider);
   text-align: right;
 }
 

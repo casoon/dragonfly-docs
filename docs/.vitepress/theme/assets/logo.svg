@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Dragonfly Körper -->
+  <ellipse cx="100" cy="100" rx="45" ry="15" fill="#4A72B8" />
+  
+  <!-- Dragonfly Kopf -->
+  <circle cx="65" cy="100" r="15" fill="#4A72B8" />
+  
+  <!-- Dragonfly Flügel -->
+  <path d="M100,80 Q130,45 170,65 Q130,80 100,80" fill="#88C0FF" opacity="0.9" />
+  <path d="M100,120 Q130,155 170,135 Q130,120 100,120" fill="#88C0FF" opacity="0.9" />
+  <path d="M100,80 Q70,45 30,65 Q70,80 100,80" fill="#88C0FF" opacity="0.9" />
+  <path d="M100,120 Q70,155 30,135 Q70,120 100,120" fill="#88C0FF" opacity="0.9" />
+  
+  <!-- Dragonfly Augen -->
+  <circle cx="60" cy="95" r="4" fill="white" />
+  <circle cx="60" cy="105" r="4" fill="white" />
+  
+  <!-- Dragonfly Schwanz -->
+  <path d="M145,100 Q170,90 190,100 Q170,110 145,100" fill="#4A72B8" />
+  
+  <!-- Glänzende Effekte -->
+  <ellipse cx="80" cy="97" rx="25" ry="5" fill="white" opacity="0.3" />
+  <ellipse cx="150" cy="100" rx="15" ry="3" fill="white" opacity="0.3" />
+</svg> 

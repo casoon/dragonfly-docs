@@ -1,35 +1,48 @@
 <template>
   <div class="nav-container">
     <div class="nav-items">
-      <a href="/ui-docs/" class="nav-item">Home</a>
+      <a href="/ui-docs/" class="nav-item nav-logo">
+        <!-- Logo vorerst entfernt -->
+      </a>
       <a href="/ui-docs/getting-started/" class="nav-item">Getting Started</a>
       
-      <div class="nav-item-with-menu" 
-           @mouseenter="showComponentsMenu = true" 
-           @mouseleave="showComponentsMenu = false">
-        <a href="/ui-docs/components/" class="nav-item">Components</a>
-        <transition name="fade">
-          <NavHoverMenu v-if="showComponentsMenu" />
-        </transition>
+      <div class="nav-item-with-menu">
+        <a href="/ui-docs/ui/" class="nav-item" @click.prevent="toggleComponentsMenu">Components</a>
       </div>
       
       <a href="/ui-docs/effects/" class="nav-item">Effects</a>
       <a href="/ui-docs/examples/" class="nav-item">Examples</a>
-      <a href="https://github.com/casoon/ui-lib" class="nav-item" target="_blank">GitHub</a>
+      <a href="https://github.com/casoon/dragonfly" class="nav-item" target="_blank">GitHub</a>
     </div>
+    
+    <!-- Debug-Steuerung, immer sichtbar -->
+    <div class="debug-controls">
+      <button @click="toggleComponentsMenu" class="debug-button">
+        {{ showComponentsMenu ? 'Hide Menu' : 'Show Menu' }}
+      </button>
+    </div>
+    
+    <!-- Neue Komponenten-Übersicht -->
+    <ComponentsMenu :is-visible="showComponentsMenu" />
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import NavHoverMenu from './NavHoverMenu.vue'
+import ComponentsMenu from './ComponentsMenu.vue'
 
 const showComponentsMenu = ref(false)
+
+function toggleComponentsMenu() {
+  showComponentsMenu.value = !showComponentsMenu.value
+  console.log('Toggle Components Menu:', showComponentsMenu.value)
+}
 </script>
 
-<style scoped>
+<style>
 .nav-container {
   padding: 0 24px;
+  position: relative;
 }
 
 .nav-items {
@@ -50,23 +63,41 @@ const showComponentsMenu = ref(false)
   align-items: center;
 }
 
+.nav-logo {
+  padding: 0;
+  margin-right: 12px;
+}
+
+.logo-image {
+  height: 32px;
+  width: auto;
+}
+
 .nav-item:hover {
   color: var(--vp-c-brand);
 }
 
 .nav-item-with-menu {
   position: relative;
+  height: 56px;
+  cursor: pointer;
 }
 
-/* Transition Effekte für das Hover-Menü */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.25s ease, transform 0.25s ease;
+/* Debug-Steuerung */
+.debug-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
 }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
+.debug-button {
+  background-color: var(--vp-c-brand);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
 }
 </style> 

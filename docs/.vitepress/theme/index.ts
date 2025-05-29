@@ -3,25 +3,17 @@ import { UI_LIB_VERSION } from '../data/versions'
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 
+// Import CSS from @casoon/dragonfly
+import '@casoon/dragonfly/core.css'
+import '@casoon/dragonfly/themes/day.css'
+
 // Import custom components
 import CustomNav from './components/CustomNav.vue'
-
-// Import CSS files from @casoon/ui-lib
-import '@casoon/ui-lib/core.css'
-import '@casoon/ui-lib/themes/day.css'
-import '@casoon/ui-lib/components/button.css'
-import '@casoon/ui-lib/components/badge.css'
-import '@casoon/ui-lib/components/alert.css'
-import '@casoon/ui-lib/components/card.css'
-import '@casoon/ui-lib/components/chip.css'
-import '@casoon/ui-lib/components/tooltip.css'
-import '@casoon/ui-lib/components/spinner.css'
-import '@casoon/ui-lib/components/avatar.css'
 
 // Import custom CSS
 import './custom.css'
 
-export default {
+const theme: Theme = {
   extends: DefaultTheme,
   enhanceApp({ app }) {
     // Stellt die UI-Lib-Version global für alle Markdown-Dateien bereit
@@ -33,10 +25,12 @@ export default {
       document.body.classList.add('theme-day')
     }
   },
-  // Ersetze die Standardnavigation mit unserer benutzerdefinierten Navigation
+  // Füge die CustomNav in die Standardnavigationsleiste ein
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-content-before': () => h(CustomNav)
     })
   }
-} as Theme 
+}
+
+export default theme 

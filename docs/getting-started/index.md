@@ -1,174 +1,53 @@
 ---
-title: Introduction
-category: Getting Started
+title: Getting Started with Casoon UI
+outline: deep
 ---
 
-<script setup>
-import { UI_LIB_VERSION } from '../.vitepress/data/versions'
-</script>
+# Getting Started
 
-# Getting Started with Casoon UI
+Welcome to Casoon UI, a modern CSS framework designed to help you build beautiful, accessible, and responsive user interfaces. This guide will help you understand the core concepts.
 
-Welcome to the Casoon UI Library. This page provides a comprehensive introduction to the library and its core concepts. The current version is {{ UI_LIB_VERSION }}.
+## Introduction
 
-## Technical Foundations
+Casoon UI is a modular CSS framework that provides a comprehensive set of components, utilities, and design tokens for building modern web interfaces. The library is designed with accessibility, performance, and customization in mind.
 
-The Casoon UI Library is based on advanced web technologies and offers a modern approach to UI development:
+## Installation
 
-- **CSS Layer-based Architecture**: Precise control of specificity and clean code organization
-- **Container Queries**: Component-based responsiveness for more flexible layouts
-- **Lightning CSS Optimization**: Efficient processing of modern CSS features
-- **Accessibility**: Comprehensive support for assistive technologies
+The easiest way to get started with Casoon UI is through npm:
 
-## CSS Layer System in Detail
-
-The heart of the Casoon UI Library is the precisely structured layer system:
-
-```css
-@layer reset,                /* Basic browser reset */
-       tokens,               /* Design tokens and variables */
-       core,                 /* Core functionalities */
-       logical-properties,   /* Bidirectional layouts (RTL/LTR) */
-       colors,               /* Color system */
-       color-mix,            /* Color mixtures and variants */
-       layout,               /* Layout foundations */
-       layout-queries,       /* Responsive adaptations */
-       typography,           /* Typography system */
-       utilities,            /* Atomic utility classes */
-       smooth-scroll,        /* Scroll behavior */
-       accessibility,        /* Accessibility */
-       icons,                /* Icon system */
-       components,           /* UI components */
-       animations,           /* Motion system */
-       effects,              /* Visual effects */
-       themes;               /* Theming system */
+```bash
+npm install @casoon/ui-lib
 ```
 
-This layer system offers several advantages:
-- Avoidance of specificity conflicts
-- Better code organization
-- Possibility for selective overrides
+For other installation methods, see the [Installation guide](./installation).
 
-## Container Queries in Practice
+## Basic Usage
 
-The Casoon UI Library uses Container Queries for component-based responsiveness:
-
-```html
-<div class="container-query">
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-    <!-- Content adapts to the size of the container, not the viewport -->
-  </div>
-</div>
-```
-
-This enables more flexible layout design than classic media queries, as components can respond based on the available space of their container.
-
-## Working with Design Tokens
-
-Design tokens are the building blocks of the visual system:
-
-```css
-:root {
-  /* Primary colors */
-  --color-primary: #3366FF;
-  --color-primary-light: #6699FF;
-  --color-primary-dark: #0033CC;
-  
-  /* Spacing */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  /* ... more tokens ... */
-}
-```
-
-Using design tokens instead of hardcoded values ensures:
-- Consistent design
-- Easier maintenance
-- More flexible theming options
-
-## Getting Started for Developers
-
-To quickly work with the Casoon UI Library, we recommend the following first steps:
-
-1. **Installation**: Follow our [detailed installation guide](/getting-started/installation)
-2. **Explore the components**: Check out the available [components](/components/)
-3. **Learn the utility classes**: Use the [utility classes](/getting-started/utilities) for quick styling
-4. **Understand the themes**: Learn how to customize [themes](/getting-started/themes)
-
-## Framework Integration
-
-The Casoon UI Library works with all modern JavaScript frameworks:
-
-### React
-
-```jsx
-// In your App.jsx or index.jsx
-import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/day.css';
-
-function App() {
-  return (
-    <div className="theme-day">
-      <button className="button primary">Click me</button>
-    </div>
-  );
-}
-```
-
-### Vue.js
+After installation, you can import the entire library or just the parts you need:
 
 ```js
-// In your main.js
+// Import the entire library
+import '@casoon/ui-lib/dist/styles.css';
+
+// Or import specific modules
 import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/day.css';
+import '@casoon/ui-lib/ui.css';
+import '@casoon/ui-lib/effects.css';
 ```
 
-### Astro
+## Structure
 
-```astro
----
-// In your .astro file
-import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/day.css';
----
+Casoon UI is organized into several main sections:
 
-<div class="theme-day">
-  <button class="button primary">Click me</button>
-</div>
-```
-
-## Frequently Asked Questions (FAQ)
-
-### Can I use the library with React/Vue/Angular?
-Yes, the Casoon UI Library is framework-agnostic and works with all modern frontend frameworks.
-
-### Can I use only specific components?
-Yes, you can import individual modules to reduce file size.
-
-### Does the library support Dark Mode?
-Yes, the library offers full Dark Mode support through themes.
-
-### How can I adapt the design to my brand?
-You can override design tokens via CSS variables or create your own themes.
-
-## Troubleshooting
-
-### Components are not displayed correctly
-Make sure you have imported `core.css` and a theme, and that the theme class is present in the HTML.
-
-### CSS conflicts with other libraries
-Use the specific layer names to adjust the priority of Casoon styles.
-
-### Responsive layouts are not working as expected
-Check if you are using Container Queries correctly and using the appropriate classes.
+- **Core System**: Foundational elements like colors, typography, and spacing
+- **UI Components**: Ready-to-use UI elements and patterns
+- **Layout System**: Flexible grid and container utilities
+- **Effects System**: Visual effects and animations
+- **Utility Classes**: Helper classes for common styling needs
 
 ## Next Steps
 
-- [Installation and Configuration](/getting-started/installation) - Detailed installation instructions
-- [Learning the Layout System](/getting-started/layout) - Learn more about the layout system
-- [Exploring Components](/components/) - Discover the available components
-- [Effects](/effects-system) - Explore the visual effects and animations
-
-## Note on Version 0.5.5
-
-Version 0.5.5 includes minor optimizations and bug fixes. Please check the Release Notes for details on changes to layer structure, animations, and utilities.
+- [Browse UI Components](/ui/)
+- [Explore Effects](/effects/)
+- [View the Design Tokens](/tokens/)
+- [Read the API Reference](/api/)

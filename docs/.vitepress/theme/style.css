@@ -1,0 +1,12 @@
+/* Benutzerdefinierte Stile für das Theme */
+.version-badge {
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 0.5rem;
+  max-width: 200px;
+  font-size: 0.9rem;
+}
+
+/* Weitere benutzerdefinierte Stile können hier hinzugefügt werden */ 

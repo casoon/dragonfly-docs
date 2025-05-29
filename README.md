@@ -1,4 +1,4 @@
-# Casoon UI Library v0.5.5
+# Casoon Dragonfly UI Library v0.7.0
 
 <div align="center">
     <img src="https://placeholder.pics/svg/200x200/DEDEDE/555555/casoon-ui" alt="Casoon UI Logo" width="200"/>
@@ -20,13 +20,13 @@
 
 ```bash
 # npm
-npm install @casoon/ui-lib@0.5.5
+npm install @casoon/dragonfly@0.7.0
 
 # yarn
-yarn add @casoon/ui-lib@0.5.5
+yarn add @casoon/dragonfly@0.7.0
 
 # pnpm
-pnpm add @casoon/ui-lib@0.5.5
+pnpm add @casoon/dragonfly@0.7.0
 ```
 
 ## 🔧 Usage
@@ -37,11 +37,11 @@ With the current version, a single import is sufficient for the entire library:
 
 ```css
 /* All necessary styles are loaded through this single import */
-@import '@casoon/ui-lib@0.5.5/core.css';
+@import '@casoon/dragonfly@0.7.0/core.css';
 
 /* Effects must be imported individually */
-@import '@casoon/ui-lib/effects/glass.css';
-@import '@casoon/ui-lib/effects/animations.css';
+@import '@casoon/dragonfly/effects/glass.css';
+@import '@casoon/dragonfly/effects/animations.css';
 /* Import additional effects as needed */
 ```
 
@@ -53,7 +53,7 @@ The `core.css` automatically imports all necessary files in the optimal order.
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="node_modules/@casoon/ui-lib/core.css">
+    <link rel="stylesheet" href="node_modules/@casoon/dragonfly/core.css">
     <title>Casoon UI Example</title>
 </head>
 <body>
@@ -111,6 +111,32 @@ Casoon UI Library is based on a layer system that precisely controls CSS specifi
        themes;               /* Theming system */
 ```
 
+## 📝 Documentation Structure
+
+The documentation is organized according to the library's architecture:
+
+- **Core**: Core systems and principles
+- **Layout**: Grid, flexbox, and container systems
+- **Tokens**: Design tokens for colors, typography, spacing, etc.
+- **Typography**: Typography system and text formatting
+- **UI**: Interactive UI elements and components
+  - **Elements**: Basic UI building blocks (Button, Input, Checkbox, etc.)
+  - **Components**: More complex UI structures (Card, Dialog, Drawer, etc.)
+- **Themes**: Theming system and predefined themes
+- **Icons**: Icon system and icon sets
+- **Effects**: Visual effects and animations
+- **Utilities**: Utility classes for quick styling
+
+## 🛠️ Maintenance
+
+For maintainers and contributors, the `maintenance` directory contains various resources:
+
+- Documentation templates
+- Component templates
+- Progress tracking
+- Todo lists
+- Documentation workflow guidelines
+
 ## 🧩 Component System
 
 Casoon UI offers a comprehensive collection of UI components designed for various use cases:
@@ -157,9 +183,9 @@ Components can be imported individually if only specific ones are needed:
 
 ```css
 /* Load only specific components */
-@import '@casoon/ui-lib/components/button.css';
-@import '@casoon/ui-lib/components/card.css';
-@import '@casoon/ui-lib/components/input.css';
+@import '@casoon/dragonfly/ui/elements/button.css';
+@import '@casoon/dragonfly/ui/components/card.css';
+@import '@casoon/dragonfly/ui/elements/input.css';
 ```
 
 ## 🎨 Themes
@@ -188,7 +214,7 @@ Casoon UI supports a comprehensive theming system with predefined themes:
 Themes can be easily customized:
 
 ```css
-@import '@casoon/ui-lib/core.css';
+@import '@casoon/dragonfly/core.css';
 
 /* Define your own theme */
 @layer themes {
@@ -198,11 +224,35 @@ Themes can be easily customized:
     --color-accent: #f39c12;
     
     /* Background and text colors */
-    --color-background: #ffffff;
+    --color-background: #f5f5f5;
     --color-text: #333333;
+    
+    /* Component-specific variables */
+    --button-radius: 4px;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 }
 ```
+
+## 📄 Development
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+This will launch the VitePress development server at http://localhost:5173/ui-docs/.
+
+## 🚀 Building for Production
+
+```bash
+npm run build
+```
+
+## 📚 Further Documentation
+
+For more detailed information, refer to the [UPGRADE.md](UPGRADE.md) file for version upgrade information.
 
 ## 🖥️ Framework Integration
 
@@ -210,8 +260,8 @@ Themes can be easily customized:
 
 ```jsx
 // In index.jsx or App.jsx
-import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/night.css';
+import '@casoon/dragonfly/core.css';
+import '@casoon/dragonfly/themes/night.css';
 
 function App() {
   return (
@@ -239,8 +289,8 @@ function App() {
 </template>
 
 <script setup>
-import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/day.css';
+import '@casoon/dragonfly/core.css';
+import '@casoon/dragonfly/themes/day.css';
 </script>
 ```
 
@@ -249,8 +299,8 @@ import '@casoon/ui-lib/themes/day.css';
 ```astro
 ---
 // In a .astro file
-import '@casoon/ui-lib/core.css';
-import '@casoon/ui-lib/themes/ocean.css';
+import '@casoon/dragonfly/core.css';
+import '@casoon/dragonfly/themes/ocean.css';
 ---
 
 <html>
@@ -277,7 +327,7 @@ Add the following configuration to your tool's cursor.config.json or settings.js
 {
   "mcpServers": {
     "gitmcp-ui-lib": {
-      "url": "https://gitmcp.io/casoon/ui-lib"
+      "url": "https://gitmcp.io/casoon/dragonfly"
     },
     "gitmcp-ui-docs": {
       "url": "https://gitmcp.io/casoon/ui-docs"
