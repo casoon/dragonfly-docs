@@ -143,34 +143,79 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/ui/elements/' },
               { text: 'Avatar', link: '/ui/elements/avatar/' },
+              { text: 'Badge', link: '/ui/elements/badge/' },
               { text: 'Blockquote', link: '/ui/elements/blockquote/' },
               { text: 'Button', link: '/ui/elements/button/' },
+              { text: 'Checkbox', link: '/ui/elements/checkbox/' },
               { text: 'Chip', link: '/ui/elements/chip/' },
+              { text: 'Code', link: '/ui/elements/code/' },
+              { text: 'Input', link: '/ui/elements/input/' },
               { text: 'Lists', link: '/ui/elements/lists/' },
               { text: 'Media', link: '/ui/elements/media/' },
               { text: 'Radio', link: '/ui/elements/radio/' },
               { text: 'Select', link: '/ui/elements/select/' },
               { text: 'Slider', link: '/ui/elements/slider/' },
               { text: 'Spinner', link: '/ui/elements/spinner/' },
-              { text: 'Switch', link: '/ui/elements/switch/' }
+              { text: 'Switch', link: '/ui/elements/switch/' },
+              { text: 'Textarea', link: '/ui/elements/textarea/' },
+              { text: 'Tooltip', link: '/ui/elements/tooltip/' }
             ]
           },
           { 
             text: 'Components', 
             items: [
               { text: 'Overview', link: '/ui/components/' },
+              { text: 'Action Bar', link: '/ui/components/action-bar/' },
+              { text: 'Alert', link: '/ui/components/alert/' },
               { text: 'Back to Top', link: '/ui/components/back-to-top/' },
+              { text: 'Badge', link: '/ui/components/badge/' },
+              { text: 'Blog', link: '/ui/components/blog/' },
               { text: 'Breadcrumbs', link: '/ui/components/breadcrumbs/' },
-              { text: 'Card', link: '/ui/components/card/' },
+              { text: 'Calendar Picker', link: '/ui/components/calendar-picker/' },
+              { text: 'Card', link: '/ui/components/card/' }
+            ]
+          },
+          { 
+            text: 'Components (cont.)', 
+            items: [
+              { text: 'Chat', link: '/ui/components/chat/' },
+              { text: 'Code Block', link: '/ui/components/code-block/' },
+              { text: 'Comment', link: '/ui/components/comment/' },
+              { text: 'Data Table', link: '/ui/components/data-table/' },
               { text: 'Dialog', link: '/ui/components/dialog/' },
               { text: 'Drawer', link: '/ui/components/drawer/' },
               { text: 'Dropdown', link: '/ui/components/dropdown/' },
               { text: 'File', link: '/ui/components/file/' },
-              { text: 'Footer', link: '/ui/components/footer/' },
+              { text: 'Footer', link: '/ui/components/footer/' }
+            ]
+          },
+          { 
+            text: 'Components (cont.)', 
+            items: [
+              { text: 'Form', link: '/ui/components/form/' },
+              { text: 'Hamburger', link: '/ui/components/hamburger/' },
+              { text: 'Header', link: '/ui/components/header/' },
               { text: 'Input Group', link: '/ui/components/input-group/' },
               { text: 'Modal', link: '/ui/components/modal/' },
+              { text: 'Notification', link: '/ui/components/notification/' },
               { text: 'Pagination', link: '/ui/components/pagination/' },
-              { text: 'Tabs', link: '/ui/components/tabs/' }
+              { text: 'Popover', link: '/ui/components/popover/' },
+              { text: 'Progress', link: '/ui/components/progress/' }
+            ]
+          },
+          { 
+            text: 'Components (cont.)', 
+            items: [
+              { text: 'Progress Bar', link: '/ui/components/progress-bar/' },
+              { text: 'Search', link: '/ui/components/search/' },
+              { text: 'Sidebar', link: '/ui/components/sidebar/' },
+              { text: 'Skeleton', link: '/ui/components/skeleton/' },
+              { text: 'Table', link: '/ui/components/table/' },
+              { text: 'Tabs', link: '/ui/components/tabs/' },
+              { text: 'Tag', link: '/ui/components/tag/' },
+              { text: 'Toast', link: '/ui/components/toast/' },
+              { text: 'Widget', link: '/ui/components/widget/' },
+              { text: 'Wizard', link: '/ui/components/wizard/' }
             ]
           },
           { 
@@ -289,87 +334,92 @@ export default defineConfig({
           text: 'Elements',
           collapsed: false,
           items: [
-            { text: 'Avatar', link: '/ui/elements/avatar' },
-            { text: 'Blockquote', link: '/ui/elements/blockquote' },
-            { text: 'Button', link: '/ui/elements/button' },
-            { text: 'Checkbox', link: '/ui/elements/checkbox' },
-            { text: 'Chip', link: '/ui/elements/chip' },
-            { text: 'Code', link: '/ui/elements/code' },
-            { text: 'Input', link: '/ui/elements/input' },
-            { text: 'Lists', link: '/ui/elements/lists' },
-            { text: 'Media', link: '/ui/elements/media' },
-            { text: 'Radio', link: '/ui/elements/radio' },
-            { text: 'Select', link: '/ui/elements/select' },
-            { text: 'Slider', link: '/ui/elements/slider' },
-            { text: 'Spinner', link: '/ui/elements/spinner' },
-            { text: 'Switch', link: '/ui/elements/switch' },
-            { text: 'Tables', link: '/ui/elements/tables' },
-            { text: 'Textarea', link: '/ui/elements/textarea' }
+            { text: 'Overview', link: '/ui/elements/' },
+            { text: 'Avatar', link: '/ui/elements/avatar/' },
+            { text: 'Badge', link: '/ui/elements/badge/' },
+            { text: 'Blockquote', link: '/ui/elements/blockquote/' },
+            { text: 'Button', link: '/ui/elements/button/' },
+            { text: 'Checkbox', link: '/ui/elements/checkbox/' },
+            { text: 'Chip', link: '/ui/elements/chip/' },
+            { text: 'Code', link: '/ui/elements/code/' },
+            { text: 'Input', link: '/ui/elements/input/' },
+            { text: 'Lists', link: '/ui/elements/lists/' },
+            { text: 'Media', link: '/ui/elements/media/' },
+            { text: 'Radio', link: '/ui/elements/radio/' },
+            { text: 'Select', link: '/ui/elements/select/' },
+            { text: 'Slider', link: '/ui/elements/slider/' },
+            { text: 'Spinner', link: '/ui/elements/spinner/' },
+            { text: 'Switch', link: '/ui/elements/switch/' },
+            { text: 'Textarea', link: '/ui/elements/textarea/' },
+            { text: 'Tooltip', link: '/ui/elements/tooltip/' }
           ]
         },
         {
-          text: 'Components',
+          text: 'Components - Part 1',
           collapsed: false,
           items: [
-            { text: 'Action Bar', link: '/ui/components/action-bar' },
-            { text: 'Alert', link: '/ui/components/alert' },
-            { text: 'Back to Top', link: '/ui/components/back-to-top' },
-            { text: 'Badge', link: '/ui/components/badge' },
-            { text: 'Breadcrumbs', link: '/ui/components/breadcrumbs' },
-            { text: 'Calendar Picker', link: '/ui/components/calendar-picker' },
-            { text: 'Card', link: '/ui/components/card' },
-            { text: 'Chat', link: '/ui/components/chat' },
-            { text: 'Code Block', link: '/ui/components/code-block' },
-            { text: 'Comment', link: '/ui/components/comment' },
-            { text: 'Data Table', link: '/ui/components/data-table' },
-            { text: 'Dialog', link: '/ui/components/dialog' },
-            { text: 'Drawer', link: '/ui/components/drawer' },
-            { text: 'Dropdown', link: '/ui/components/dropdown' },
-            { text: 'File', link: '/ui/components/file' },
-            { text: 'Form', link: '/ui/components/form' }
+            { text: 'Overview', link: '/ui/components/' },
+            { text: 'Action Bar', link: '/ui/components/action-bar/' },
+            { text: 'Alert', link: '/ui/components/alert/' },
+            { text: 'Back to Top', link: '/ui/components/back-to-top/' },
+            { text: 'Badge', link: '/ui/components/badge/' },
+            { text: 'Blog', link: '/ui/components/blog/' },
+            { text: 'Breadcrumbs', link: '/ui/components/breadcrumbs/' },
+            { text: 'Calendar Picker', link: '/ui/components/calendar-picker/' },
+            { text: 'Card', link: '/ui/components/card/' },
+            { text: 'Chat', link: '/ui/components/chat/' },
+            { text: 'Code Block', link: '/ui/components/code-block/' }
           ]
         },
         {
-          text: 'Components (Cont.)',
+          text: 'Components - Part 2',
           collapsed: false,
           items: [
-            { text: 'Hamburger', link: '/ui/components/hamburger' },
-            { text: 'Input Group', link: '/ui/components/input-group' },
-            { text: 'Modal', link: '/ui/components/modal' },
-            { text: 'Notification', link: '/ui/components/notification' },
-            { text: 'Pagination', link: '/ui/components/pagination' },
-            { text: 'Popover', link: '/ui/components/popover' },
-            { text: 'Progress Bar', link: '/ui/components/progress-bar' },
-            { text: 'Progress', link: '/ui/components/progress' },
-            { text: 'Search', link: '/ui/components/search' },
-            { text: 'Sidebar', link: '/ui/components/sidebar' },
-            { text: 'Skeleton', link: '/ui/components/skeleton' },
-            { text: 'Table', link: '/ui/components/table' },
-            { text: 'Tabs', link: '/ui/components/tabs' },
-            { text: 'Tag', link: '/ui/components/tag' },
-            { text: 'Toast', link: '/ui/components/toast' },
-            { text: 'Tooltip', link: '/ui/components/tooltip' },
-            { text: 'Wizard', link: '/ui/components/wizard' }
+            { text: 'Comment', link: '/ui/components/comment/' },
+            { text: 'Data Table', link: '/ui/components/data-table/' },
+            { text: 'Dialog', link: '/ui/components/dialog/' },
+            { text: 'Drawer', link: '/ui/components/drawer/' },
+            { text: 'Dropdown', link: '/ui/components/dropdown/' },
+            { text: 'File', link: '/ui/components/file/' },
+            { text: 'Footer', link: '/ui/components/footer/' },
+            { text: 'Form', link: '/ui/components/form/' },
+            { text: 'Hamburger', link: '/ui/components/hamburger/' },
+            { text: 'Header', link: '/ui/components/header/' },
+            { text: 'Input Group', link: '/ui/components/input-group/' }
           ]
         },
         {
-          text: 'Layout Components',
-          collapsed: true,
+          text: 'Components - Part 3',
+          collapsed: false,
           items: [
-            { text: 'Footer', link: '/ui/layout/footer' },
-            { text: 'Header', link: '/ui/layout/header' },
-            { text: 'Sidebar', link: '/ui/layout/sidebar' }
+            { text: 'Modal', link: '/ui/components/modal/' },
+            { text: 'Notification', link: '/ui/components/notification/' },
+            { text: 'Pagination', link: '/ui/components/pagination/' },
+            { text: 'Popover', link: '/ui/components/popover/' },
+            { text: 'Progress', link: '/ui/components/progress/' },
+            { text: 'Progress Bar', link: '/ui/components/progress-bar/' },
+            { text: 'Search', link: '/ui/components/search/' },
+            { text: 'Sidebar', link: '/ui/components/sidebar/' },
+            { text: 'Skeleton', link: '/ui/components/skeleton/' },
+            { text: 'Table', link: '/ui/components/table/' }
+          ]
+        },
+        {
+          text: 'Components - Part 4',
+          collapsed: false,
+          items: [
+            { text: 'Tabs', link: '/ui/components/tabs/' },
+            { text: 'Tag', link: '/ui/components/tag/' },
+            { text: 'Toast', link: '/ui/components/toast/' },
+            { text: 'Widget', link: '/ui/components/widget/' },
+            { text: 'Wizard', link: '/ui/components/wizard/' }
           ]
         },
         {
           text: 'UI Patterns',
           collapsed: true,
           items: [
-            { text: 'Blog', link: '/ui/patterns/blog' },
-            { text: 'Code', link: '/ui/patterns/code' },
-            { text: 'Skeleton', link: '/ui/patterns/skeleton' },
-            { text: 'Tags', link: '/ui/patterns/tags' },
-            { text: 'Widget', link: '/ui/patterns/widget' }
+            { text: 'Tags', link: '/ui/patterns/tags' }
           ]
         }
       ],
