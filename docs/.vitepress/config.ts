@@ -121,52 +121,95 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/', activeMatch: '^/$' },
       { 
-        text: 'Getting Started', 
+        text: 'Einstieg', 
         items: [
-          { text: 'Introduction', link: '/getting-started/' },
-          { text: 'Installation', link: '/getting-started/installation' }
+          { text: 'Übersicht', link: '/getting-started/' },
+          { text: 'Installation', link: '/getting-started/installation' },
+          { text: 'Themes', link: '/getting-started/themes' },
+          { text: 'Tokens', link: '/getting-started/tokens' },
+          { text: 'Layout', link: '/getting-started/layout' },
+          { text: 'Utilities', link: '/getting-started/utilities' },
+          { text: 'Icon Sets', link: '/getting-started/iconsets' },
+          { text: 'Styles', link: '/getting-started/styles' },
+          { text: 'Typography', link: '/getting-started/typography' }
         ] 
       },
       { 
-        text: 'Components', 
+        text: 'UI System', 
         items: [
-          { text: 'UI Overview', link: '/ui/' },
+          { text: 'Übersicht', link: '/ui/' },
           { 
-            text: 'Basic Elements', 
-            link: '/ui/#elements'
+            text: 'Elemente', 
+            items: [
+              { text: 'Übersicht', link: '/ui/elements/' },
+              { text: 'Avatar', link: '/ui/elements/avatar/' },
+              { text: 'Blockquote', link: '/ui/elements/blockquote/' },
+              { text: 'Button', link: '/ui/elements/button/' },
+              { text: 'Chip', link: '/ui/elements/chip/' },
+              { text: 'Lists', link: '/ui/elements/lists/' },
+              { text: 'Media', link: '/ui/elements/media/' },
+              { text: 'Radio', link: '/ui/elements/radio/' },
+              { text: 'Select', link: '/ui/elements/select/' },
+              { text: 'Slider', link: '/ui/elements/slider/' },
+              { text: 'Spinner', link: '/ui/elements/spinner/' },
+              { text: 'Switch', link: '/ui/elements/switch/' }
+            ]
           },
           { 
-            text: 'Complex Components', 
-            link: '/ui/#components'
+            text: 'Komponenten', 
+            items: [
+              { text: 'Übersicht', link: '/ui/components/' },
+              { text: 'Back to Top', link: '/ui/components/back-to-top/' },
+              { text: 'Breadcrumbs', link: '/ui/components/breadcrumbs/' },
+              { text: 'Card', link: '/ui/components/card/' },
+              { text: 'Dialog', link: '/ui/components/dialog/' },
+              { text: 'Drawer', link: '/ui/components/drawer/' },
+              { text: 'Dropdown', link: '/ui/components/dropdown/' },
+              { text: 'File', link: '/ui/components/file/' },
+              { text: 'Footer', link: '/ui/components/footer/' },
+              { text: 'Input Group', link: '/ui/components/input-group/' },
+              { text: 'Modal', link: '/ui/components/modal/' },
+              { text: 'Pagination', link: '/ui/components/pagination/' },
+              { text: 'Tabs', link: '/ui/components/tabs/' }
+            ]
           },
-          { text: 'Layout Components', link: '/ui/#layout-components' },
-          { text: 'UI Patterns', link: '/ui/#patterns' }
+          { 
+            text: 'Patterns', 
+            link: '/ui/patterns/tags' 
+          }
+        ] 
+      },
+      { 
+        text: 'Layout & Core', 
+        items: [
+          { text: 'Layout System', link: '/layout/' },
+          { text: 'Core System', link: '/core/' },
+          { text: 'Typography', link: '/typography/' }
         ] 
       },
       { 
         text: 'Styling', 
         items: [
           { text: 'Themes', link: '/themes/' },
+          { text: 'Tokens', link: '/tokens/' },
           { text: 'Icons', link: '/icons/' },
           { text: 'Effects', link: '/effects/' },
           { text: 'Utilities', link: '/utilities/' }
         ] 
       },
       { 
-        text: 'Advanced', 
+        text: 'Referenz', 
         items: [
-          { text: 'Guides', link: '/guide/' },
-          { text: 'Examples', link: '/examples/' },
-          { text: 'API Reference', link: '/api/' },
-          { text: 'Browser Compatibility', link: '/compatibility/' }
+          { text: 'Leitfäden', link: '/guide/' },
+          { text: 'Beispiele', link: '/examples/' },
+          { text: 'API', link: '/api/' },
+          { text: 'Kompatibilität', link: '/compatibility/' },
+          { text: 'Barrierefreiheit', link: '/accessibility/' }
         ] 
       },
       { 
-        text: 'Development', 
-        items: [
-          { text: 'Documentation Maintenance', link: '/maintenance/' },
-          { text: 'GitHub', link: 'https://github.com/casoon/dragonfly' }
-        ] 
+        text: 'GitHub', 
+        link: 'https://github.com/casoon/dragonfly'
       }
     ],
 
@@ -176,7 +219,7 @@ export default defineConfig({
 
     footer: {
       message: `MIT License`,
-      copyright: 'Copyright © 2025 Casoon'
+      copyright: 'Copyright © 2024 <a href="https://github.com/casoon/ui-lib" target="_blank">Casoon UI Library</a>'
     },
 
     sidebar: {
