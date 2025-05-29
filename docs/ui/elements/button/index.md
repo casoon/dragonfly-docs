@@ -10,15 +10,15 @@ The Button component of the Casoon UI Library offers various styles and variants
 ## Basic Usage
 
 ```html
-<button class="button primary">Primary Button</button>
-<button class="button secondary">Secondary Button</button>
-<button class="button outline">Outline Button</button>
+<button class="button button--primary">Primary Button</button>
+<button class="button button--secondary">Secondary Button</button>
+<button class="button button--outline">Outline Button</button>
 ```
 
 <div class="example-wrapper">
-  <button class="button primary">Primary Button</button>
-  <button class="button secondary">Secondary Button</button>
-  <button class="button outline">Outline Button</button>
+  <button class="button button--primary">Primary Button</button>
+  <button class="button button--secondary">Secondary Button</button>
+  <button class="button button--outline">Outline Button</button>
 </div>
 
 ## Variants
@@ -28,15 +28,15 @@ The Button component of the Casoon UI Library offers various styles and variants
 Buttons can be displayed in different sizes to adapt to different contexts.
 
 ```html
-<button class="button sm">Small Button</button>
+<button class="button button--sm">Small Button</button>
 <button class="button">Standard Button</button>
-<button class="button lg">Large Button</button>
+<button class="button button--lg">Large Button</button>
 ```
 
 <div class="example-wrapper">
-  <button class="button primary sm">Small Button</button>
-  <button class="button primary">Standard Button</button>
-  <button class="button primary lg">Large Button</button>
+  <button class="button button--primary button--sm">Small Button</button>
+  <button class="button button--primary">Standard Button</button>
+  <button class="button button--primary button--lg">Large Button</button>
 </div>
 
 ### States
@@ -44,22 +44,22 @@ Buttons can be displayed in different sizes to adapt to different contexts.
 Buttons can have different states to provide feedback to the user.
 
 ```html
-<button class="button primary">Normal</button>
-<button class="button primary hover">Hover</button>
-<button class="button primary active">Active</button>
-<button class="button primary" disabled>Disabled</button>
-<button class="button primary loading">
+<button class="button button--primary">Normal</button>
+<button class="button button--primary is-hover">Hover</button>
+<button class="button button--primary is-active">Active</button>
+<button class="button button--primary" disabled>Disabled</button>
+<button class="button button--primary is-loading">
   <span class="button__text">Loading</span>
   <span class="button__loader"></span>
 </button>
 ```
 
 <div class="example-wrapper">
-  <button class="button primary">Normal</button>
-  <button class="button primary hover">Hover</button>
-  <button class="button primary active">Active</button>
-  <button class="button primary" disabled>Disabled</button>
-  <button class="button primary loading">
+  <button class="button button--primary">Normal</button>
+  <button class="button button--primary is-hover">Hover</button>
+  <button class="button button--primary is-active">Active</button>
+  <button class="button button--primary" disabled>Disabled</button>
+  <button class="button button--primary is-loading">
     <span class="button__text">Loading</span>
     <span class="button__loader"></span>
   </button>
@@ -70,27 +70,27 @@ Buttons can have different states to provide feedback to the user.
 The Button component offers various predefined colors and styles that indicate different types of actions.
 
 ```html
-<button class="button primary">Primary</button>
-<button class="button secondary">Secondary</button>
-<button class="button success">Success</button>
-<button class="button danger">Danger</button>
-<button class="button warning">Warning</button>
-<button class="button info">Info</button>
-<button class="button outline">Outline</button>
-<button class="button ghost">Ghost</button>
-<button class="button link">Link</button>
+<button class="button button--primary">Primary</button>
+<button class="button button--secondary">Secondary</button>
+<button class="button button--success">Success</button>
+<button class="button button--danger">Danger</button>
+<button class="button button--warning">Warning</button>
+<button class="button button--info">Info</button>
+<button class="button button--outline">Outline</button>
+<button class="button button--ghost">Ghost</button>
+<button class="button button--link">Link</button>
 ```
 
 <div class="example-wrapper">
-  <button class="button primary">Primary</button>
-  <button class="button secondary">Secondary</button>
-  <button class="button success">Success</button>
-  <button class="button danger">Danger</button>
-  <button class="button warning">Warning</button>
-  <button class="button info">Info</button>
-  <button class="button outline">Outline</button>
-  <button class="button ghost">Ghost</button>
-  <button class="button link">Link</button>
+  <button class="button button--primary">Primary</button>
+  <button class="button button--secondary">Secondary</button>
+  <button class="button button--success">Success</button>
+  <button class="button button--danger">Danger</button>
+  <button class="button button--warning">Warning</button>
+  <button class="button button--info">Info</button>
+  <button class="button button--outline">Outline</button>
+  <button class="button button--ghost">Ghost</button>
+  <button class="button button--link">Link</button>
 </div>
 
 ### With Icon
@@ -98,7 +98,7 @@ The Button component offers various predefined colors and styles that indicate d
 Buttons can contain icons to enhance visual cues.
 
 ```html
-<button class="button primary">
+<button class="button button--primary">
   <span class="button__icon">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M5 12h14"></path>
@@ -108,7 +108,7 @@ Buttons can contain icons to enhance visual cues.
   <span class="button__text">With Icon</span>
 </button>
 
-<button class="button outline">
+<button class="button button--outline">
   <span class="button__icon">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -120,7 +120,7 @@ Buttons can contain icons to enhance visual cues.
 ```
 
 <div class="example-wrapper">
-  <button class="button primary">
+  <button class="button button--primary">
     <span class="button__icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M5 12h14"></path>
@@ -129,7 +129,7 @@ Buttons can contain icons to enhance visual cues.
     </span>
     <span class="button__text">With Icon</span>
   </button>
-  <button class="button outline">
+  <button class="button button--outline">
     <span class="button__icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -143,14 +143,14 @@ Buttons can contain icons to enhance visual cues.
 ### Icon Button
 
 ```html
-<button class="button icon primary">
+<button class="button button--icon button--primary">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M12 5v14"></path>
     <path d="M5 12h14"></path>
   </svg>
 </button>
 
-<button class="button icon outline">
+<button class="button button--icon button--outline">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
   </svg>
@@ -158,13 +158,13 @@ Buttons can contain icons to enhance visual cues.
 ```
 
 <div class="example-wrapper">
-  <button class="button icon primary">
+  <button class="button button--icon button--primary">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M12 5v14"></path>
       <path d="M5 12h14"></path>
     </svg>
   </button>
-  <button class="button icon outline">
+  <button class="button button--icon button--outline">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
     </svg>
@@ -176,11 +176,11 @@ Buttons can contain icons to enhance visual cues.
 Block buttons take up the full width of their container, ideal for mobile views or when the button needs to be prominently displayed.
 
 ```html
-<button class="button primary block">Full Width</button>
+<button class="button button--primary button--block">Full Width</button>
 ```
 
 <div class="example-wrapper">
-  <button class="button primary block">Full Width</button>
+  <button class="button button--primary button--block">Full Width</button>
 </div>
 
 ## Usage Examples
@@ -192,14 +192,14 @@ Button groups can be used to group related actions.
 ```html
 <div class="button-group">
   <button class="button">Back</button>
-  <button class="button primary">Next</button>
+  <button class="button button--primary">Next</button>
 </div>
 ```
 
 <div class="example-wrapper">
   <div class="button-group">
     <button class="button">Back</button>
-    <button class="button primary">Next</button>
+    <button class="button button--primary">Next</button>
   </div>
 </div>
 
@@ -325,7 +325,7 @@ import '@casoon/ui-lib/components/button.css';
 
 function MyComponent() {
   return (
-    <button className="button primary">
+    <button className="button button--primary">
       Primary Button
     </button>
   );
@@ -336,7 +336,7 @@ function MyComponent() {
 
 ```vue
 <template>
-  <button class="button primary">
+  <button class="button button--primary">
     Primary Button
   </button>
 </template>
@@ -363,7 +363,7 @@ export default {
   <link rel="stylesheet" href="path/to/@casoon/ui-lib/components/button.css">
 </head>
 <body>
-  <button class="button primary">Primary Button</button>
+  <button class="button button--primary">Primary Button</button>
 </body>
 </html>
 ```

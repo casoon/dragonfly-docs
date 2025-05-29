@@ -65,7 +65,7 @@ The `core.css` automatically imports all necessary files in the optimal order.
                 <div class="card__header">Example Card</div>
                 <div class="card__body">
                     <p>This is a simple card with text.</p>
-                    <button class="button primary mt-4">Action</button>
+                    <button class="button button--primary mt-4">Action</button>
                 </div>
             </div>
             
@@ -77,7 +77,7 @@ The `core.css` automatically imports all necessary files in the optimal order.
                             <label for="name" class="form-label">Name</label>
                             <input id="name" type="text" class="input" placeholder="Enter name">
                         </div>
-                        <button type="submit" class="button primary mt-4">Submit</button>
+                        <button type="submit" class="button button--primary mt-4">Submit</button>
                     </form>
                 </div>
             </div>
@@ -146,9 +146,9 @@ Casoon UI offers a comprehensive collection of UI components designed for variou
 Here's a selection of the most important components:
 
 ```html
-<!-- Button component -->
-<button class="button primary">Primary Button</button>
-<button class="button secondary">Secondary Button</button>
+<!-- Button component with BEM convention -->
+<button class="button button--primary">Primary Button</button>
+<button class="button button--secondary">Secondary Button</button>
 
 <!-- Card component -->
 <div class="card">
@@ -166,7 +166,7 @@ Here's a selection of the most important components:
 </select>
 
 <!-- Alert -->
-<div class="alert success">
+<div class="alert alert--success">
     <div class="alert__icon">✓</div>
     <div class="alert__content">Successfully saved!</div>
 </div>
@@ -268,7 +268,7 @@ function App() {
     <div className="theme-night">
       <div className="container mx-auto p-4">
         <h1 className="text-2xl font-bold mb-4">Casoon UI in React</h1>
-        <button className="button primary">Click me</button>
+        <button className="button button--primary">Click me</button>
       </div>
     </div>
   );
@@ -283,7 +283,7 @@ function App() {
   <div class="theme-day">
     <div class="container mx-auto p-4">
       <h1 class="text-2xl font-bold mb-4">Casoon UI in Vue</h1>
-      <button class="button primary">Click me</button>
+      <button class="button button--primary">Click me</button>
     </div>
   </div>
 </template>
@@ -307,7 +307,7 @@ import '@casoon/dragonfly/themes/ocean.css';
   <body class="theme-ocean">
     <div class="container mx-auto p-4">
       <h1 class="text-2xl font-bold mb-4">Casoon UI in Astro</h1>
-      <button class="button primary">Click me</button>
+      <button class="button button--primary">Click me</button>
     </div>
   </body>
 </html>
