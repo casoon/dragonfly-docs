@@ -1,193 +1,221 @@
 /* Theme specific styling for VitePress */
 :root {
-  --vp-c-brand: #e72779;
-  --vp-c-brand-light: #f25996;
-  --vp-c-brand-dark: #d61a6a;
-  --vp-c-brand-darker: #672161;
-  
-  /* Erweiterte Farbpalette für konsistentes Branding */
-  --vp-c-brand-1: #e72779;
-  --vp-c-brand-2: #d61a6a;
-  --vp-c-brand-3: #672161;
-  --vp-c-brand-soft: rgba(231, 39, 121, 0.14);
-  
-  /* Button Styling */
-  --vp-button-brand-border: var(--vp-c-brand-dark);
-  --vp-button-brand-text: #ffffff;
-  --vp-button-brand-bg: var(--vp-c-brand);
-  --vp-button-brand-hover-border: var(--vp-c-brand-darker);
-  --vp-button-brand-hover-text: #ffffff;
-  --vp-button-brand-hover-bg: var(--vp-c-brand-dark);
-  --vp-button-brand-active-border: var(--vp-c-brand-darker);
-  --vp-button-brand-active-text: #ffffff;
-  --vp-button-brand-active-bg: var(--vp-c-brand-darker);
-  
-  /* Home Page Hero Styling */
-  --vp-home-hero-name-color: var(--vp-c-brand);
-  --vp-home-hero-name-background: linear-gradient(120deg, var(--vp-c-brand) 30%, var(--vp-c-brand-darker));
-  --vp-home-hero-image-background-image: linear-gradient(to right, rgba(231, 39, 121, 0.1), rgba(103, 33, 97, 0.1));
-  --vp-home-hero-image-filter: blur(80px);
-  
-  /* Anpassungen für Heading Anchor Links */
-  --vp-c-text-code: var(--vp-c-brand-dark);
-  
-  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --vp-font-family-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --vp-c-brand: #e72779;
+    --vp-c-brand-light: #f25996;
+    --vp-c-brand-dark: #d61a6a;
+    --vp-c-brand-darker: #672161;
+
+    /* Erweiterte Farbpalette für konsistentes Branding */
+    --vp-c-brand-1: #e72779;
+    --vp-c-brand-2: #d61a6a;
+    --vp-c-brand-3: #672161;
+    --vp-c-brand-soft: rgba(231, 39, 121, 0.14);
+    --vp-c-brand-softer: rgba(231, 39, 121, 0.08);
+
+    /* Button Styling */
+    --vp-button-brand-border: var(--vp-c-brand-dark);
+    --vp-button-brand-text: #ffffff;
+    --vp-button-brand-bg: var(--vp-c-brand);
+    --vp-button-brand-hover-border: var(--vp-c-brand-darker);
+    --vp-button-brand-hover-text: #ffffff;
+    --vp-button-brand-hover-bg: var(--vp-c-brand-dark);
+    --vp-button-brand-active-border: var(--vp-c-brand-darker);
+    --vp-button-brand-active-text: #ffffff;
+    --vp-button-brand-active-bg: var(--vp-c-brand-darker);
+
+    /* Home Page Hero Styling */
+    --vp-home-hero-name-color: var(--vp-c-brand);
+    --vp-home-hero-name-background: linear-gradient(
+        120deg,
+        var(--vp-c-brand) 30%,
+        var(--vp-c-brand-darker)
+    );
+    --vp-home-hero-image-background-image: linear-gradient(
+        to right,
+        rgba(231, 39, 121, 0.1),
+        rgba(103, 33, 97, 0.1)
+    );
+    --vp-home-hero-image-filter: blur(80px);
+
+    /* Code und Text Anpassungen */
+    --vp-c-text-code: var(--vp-c-brand-dark);
+
+    /* Typography */
+    --vp-font-family-base:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --vp-font-family-mono:
+        ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+
+    /* Code Block Styling */
+    --vp-code-block-bg: rgba(231, 39, 121, 0.04);
 }
 
-/* Hover Menu und Navigation Anpassungen */
+/* Navigation Bar Styling */
 .VPNavBar {
-  border-bottom: 1px solid rgba(60, 60, 60, 0.12);
+    border-bottom: 1px solid rgba(60, 60, 60, 0.12);
 }
 
 .VPNavBar .VPNavBarTitle {
-  height: 56px;
+    height: 56px;
 }
 
-.VPNavBar .VPNavBarMenu {
-  display: none;
-}
-
-/* Aktive Menüelemente und ausgewählte Links */
+/* Aktive Menüelemente und Links */
 .VPNavBarMenuLink.active,
 .VPNavBarMenuLink.active:hover,
 .VPSidebarItem.is-active .VPLink,
 .VPSidebarItem.is-active .VPLink:hover {
-  color: var(--vp-c-brand);
+    color: var(--vp-c-brand);
 }
 
 /* Seitenleisten-Menü aktive Links */
 .VPSidebar .VPSidebarItem.is-active > .item > .VPLink {
-  color: var(--vp-c-brand);
-  font-weight: 600;
+    color: var(--vp-c-brand);
+    font-weight: 600;
 }
 
-/* Überschriften mit Name-Clip */
+/* Link Hover Zustände */
+.VPLink:hover,
+.VPNavBarMenuLink:hover {
+    color: var(--vp-c-brand-dark);
+    transition: color 0.2s;
+}
+
+/* Focus States - entferne blauen Browser-Standard */
+.VPLink:focus,
+.VPNavBarMenuLink:focus,
+.VPLink:focus-visible,
+.VPNavBarMenuLink:focus-visible,
+a:focus,
+a:focus-visible {
+    outline: 2px solid var(--vp-c-brand);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Entferne Standard-Browser-Outline */
+.VPLink:focus:not(:focus-visible),
+.VPNavBarMenuLink:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Überschriften mit Brand Color */
 .clip-heading,
 .clipped-heading,
 h1[data-clip],
 h2[data-clip],
 h3[data-clip],
 .title-with-clip {
-  color: var(--vp-c-brand);
-  position: relative;
-}
-
-/* Link Hover Zustände */
-.VPLink:hover,
-.VPNavBarMenuLink:hover {
-  color: var(--vp-c-brand-dark);
-  transition: color 0.2s;
+    color: var(--vp-c-brand);
+    position: relative;
 }
 
 /* Badge Styling */
 .VPBadge.tip {
-  background-color: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-dark);
-  border: 1px solid var(--vp-c-brand-light);
+    background-color: var(--vp-c-brand-soft);
+    color: var(--vp-c-brand-dark);
+    border: 1px solid var(--vp-c-brand-light);
 }
 
-/* Hervorhebungen und Highlights */
+/* Custom Blocks */
 .custom-block.tip {
-  border-color: var(--vp-c-brand);
-  background-color: var(--vp-c-brand-soft);
+    border-color: var(--vp-c-brand);
+    background-color: var(--vp-c-brand-soft);
 }
 
 .custom-block.tip .custom-block-title {
-  color: var(--vp-c-brand-dark);
-}
-
-/* Example wrapper styles */
-.example-wrapper {
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin: 20px 0;
-}
-
-.example-wrapper > * {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.button-group {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.button-group.right {
-  justify-content: flex-end;
+    color: var(--vp-c-brand-dark);
 }
 
 /* Buttons */
 .VPButton.brand {
-  background-color: var(--vp-c-brand);
-  border-color: var(--vp-c-brand-dark);
-  color: white;
+    background-color: var(--vp-c-brand);
+    border-color: var(--vp-c-brand-dark);
+    color: white;
 }
 
 .VPButton.brand:hover {
-  background-color: var(--vp-c-brand-dark);
-  border-color: var(--vp-c-brand-darker);
+    background-color: var(--vp-c-brand-dark);
+    border-color: var(--vp-c-brand-darker);
 }
 
 .VPButton.brand:active {
-  background-color: var(--vp-c-brand-darker);
+    background-color: var(--vp-c-brand-darker);
 }
 
 /* Tabs */
 .VPTab:hover .VPTabTitle {
-  color: var(--vp-c-brand);
+    color: var(--vp-c-brand);
 }
 
 .VPTab.active .VPTabTitle {
-  color: var(--vp-c-brand-dark);
+    color: var(--vp-c-brand-dark);
 }
 
 .VPTab.active .VPTabTitle::after {
-  background-color: var(--vp-c-brand);
+    background-color: var(--vp-c-brand);
 }
 
 /* Heading Anchors */
 .header-anchor {
-  color: var(--vp-c-brand-light);
+    color: var(--vp-c-brand-light);
 }
 
 .header-anchor:hover {
-  color: var(--vp-c-brand);
+    color: var(--vp-c-brand);
 }
 
-/* Hervorhebungen im Code */
-:root {
-  --vp-code-block-bg: rgba(231, 39, 121, 0.04);
+/* Code Blocks */
+.vp-doc div[class*="language-"] {
+    background-color: var(--vp-code-block-bg);
 }
 
-.vp-doc div[class*='language-'] {
-  background-color: var(--vp-code-block-bg);
+/* Example wrapper styles für Dokumentation */
+.example-wrapper {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.example-wrapper > * {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button-group.right {
+    justify-content: flex-end;
 }
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--vp-c-brand-light);
-  border-radius: 4px;
+    background-color: var(--vp-c-brand-light);
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--vp-c-brand);
+    background-color: var(--vp-c-brand);
 }
 
 /* Ausgewählter Text */
 ::selection {
-  background-color: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-darker);
-} 
+    background-color: var(--vp-c-brand-soft);
+    color: var(--vp-c-brand-darker);
+}
