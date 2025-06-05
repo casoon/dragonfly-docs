@@ -11,7 +11,6 @@ export function generateNav() {
     { text: "Layout", link: "/layout/" },
     { text: "Effects", link: "/effects/" },
     { text: "Examples", link: "/examples/" },
-    { text: "GitHub", link: "https://github.com/casoon/dragonfly" },
   ];
 }
 
